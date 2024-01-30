@@ -72,8 +72,7 @@ namespace DX11_Base
 
             ImGui::Checkbox("InfStamina", &Config.IsInfStamina);
 
-            if (ImGui::Checkbox("InfAmmo", &Config.IsInfinAmmo))
-                SetInfiniteAmmo(Config.IsInfinAmmo);
+            ImGui::Checkbox("InfAmmo", &Config.IsInfinAmmo);
 
             ImGui::Checkbox("Godmode", &Config.IsGodMode);
 
@@ -789,5 +788,7 @@ namespace DX11_Base
 
         if (Config.IsGodMode)
             SetPlayerHealth(INT_MAX);
+
+        SetInfiniteAmmo(Config.IsInfinAmmo);
     }
 }

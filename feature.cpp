@@ -247,28 +247,24 @@ void SetFullbright(bool bIsSet)
 	if (!pViewport)
 		return;
 
-	pViewport->mViewMode = bIsSet ? 1 : 3;
+	//pViewport->mViewMode = bIsSet ? 1 : 3; //Garbage-ass code.
 }
 
 //	
 void SpeedHack(float mSpeed)
 {
-	UWorld* pWorld = Config.gWorld;
-	if (!pWorld)
+	auto player_controller = Config.GetPalPlayerController();
+	if (!player_controller)
 		return;
 
-	ULevel* pLevel = pWorld->PersistentLevel;
-	if (!pLevel)
+	auto acknowledged_pawn = player_controller->AcknowledgedPawn;
+
+	if (!acknowledged_pawn)
 		return;
 
-	AWorldSettings* pWorldSettings = pLevel->WorldSettings;
-	if (!pWorldSettings)
-		return;
-
-	pWorld->PersistentLevel->WorldSettings->TimeDilation = mSpeed;
-
-	//	pWorldSettings->TimeDilation = mSpeed;
+	acknowledged_pawn->CustomTimeDilation = mSpeed;
 }
+
 
 //	
 void SetDemiGodMode(bool bIsSet)
@@ -360,24 +356,6 @@ void ResetStamina()
 		return;
 
 	pParams->ResetSP();
-
-
-	//	Reset Pal Stamina ??
-	TArray<APalCharacter*> outPals;
-	Config.GetTAllPals(&outPals);
-	DWORD palsSize = outPals.Count();
-	for (int i = 0; i < palsSize; i++)
-	{
-		APalCharacter* cPal = outPals[i];
-		if (!cPal || cPal->IsA(APalMonsterCharacter::StaticClass()))
-			continue;
-
-		UPalCharacterParameterComponent* pPalParams = pPalCharacter->CharacterParameterComponent;
-		if (!pPalParams)
-			return;
-
-		pPalParams->ResetSP();
-	}
 }
 
 //	
