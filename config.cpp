@@ -233,7 +233,7 @@ bool config::GetAllActorsofType(SDK::UClass* mType, std::vector<SDK::AActor*>* o
 void config::Init()
 {
     //register hook
-    Config.ClientBase = (DWORD64)GetModuleHandleA("PalWorld-Win64-Shipping.exe");
+    Config.ClientBase = (DWORD64)GetModuleHandleA("PalWorld-WinGDK-Shipping.exe");
 
     SDK::InitGObjects();
 

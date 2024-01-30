@@ -19,7 +19,7 @@ namespace SDK
 struct FImgMediaSourceCustomizationSequenceProxy
 {
 public:
-	uint8                                        Pad_1843[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1A1D[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

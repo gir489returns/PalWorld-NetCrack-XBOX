@@ -16,11 +16,11 @@ class UBP_AIAction_SpawnItemBase_C : public UPalAIActionBase
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x130(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	int32                                        SpawnCount;                                        // 0x138(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2DCB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8B4[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class APalCharacter*                         ActionCharacter;                                   // 0x140(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FPalStaticItemIdAndNum                SpawnItemInfo;                                     // 0x148(0xC)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	class FName                                  SpawnSocketName;                                   // 0x154(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2DCE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8B5[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               SpawnLocationOffset;                               // 0x160(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                              SpawnItemRotator;                                  // 0x178(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
