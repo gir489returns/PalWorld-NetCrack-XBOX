@@ -605,6 +605,11 @@ namespace DX11_Base
                 if (Character->IsA(SDK::APalPlayerCharacter::StaticClass()))
                 {
                     ImGui::SameLine();
+                    if ( ImGui::Button( "Join Guild" ) )
+                    {
+                        ForceJoinGuild( (SDK::APalPlayerCharacter*)Character );
+                    }
+                    ImGui::SameLine();
                     if (ImGui::Button("MaskIt"))
                     {
                         if (Config.GetPalPlayerCharacter() != NULL)

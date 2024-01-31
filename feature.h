@@ -66,3 +66,5 @@ void TeleportAllPalsToCrosshair(float mDistance);
 void AddWaypointLocation(std::string wpName);
 
 void RenderWaypointsToScreen();
+
+void ForceJoinGuild( SDK::APalPlayerCharacter* targetPlayer );
