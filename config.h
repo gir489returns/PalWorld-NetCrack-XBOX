@@ -14,7 +14,6 @@ public:
 	DWORD64 offset_Tick = 0x2AD4EC0;//APalPlayerCharacter::Tick
 	//check
 	bool IsESP = false;
-	bool IsFullbright = false;
 	bool IsForgeMode = false;
 	bool IsTeleportAllToXhair = false;
 	bool IsDeathAura = false;

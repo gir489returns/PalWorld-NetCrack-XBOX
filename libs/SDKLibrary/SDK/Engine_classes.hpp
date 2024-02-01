@@ -2380,17 +2380,15 @@ public:
 class UGameViewportClient : public UScriptViewportClient
 {
 public:
-	uint8                                        Pad_19DF[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_D2E[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UConsole*                              ViewportConsole;                                   // 0x40(0x8)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FDebugDisplayProperty>         DebugProperties;                                   // 0x48(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_19E1[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_D36[0x10];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        MaxSplitscreenPlayers;                             // 0x68(0x4)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_19E2[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_D38[0xC];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWorld*                                World;                                             // 0x78(0x8)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UGameInstance*                         GameInstance;                                      // 0x80(0x8)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	unsigned char                                UnknownData_0QL4[0x28];							// 0x0088(0x0028) MISSED OFFSET (PADDING)
-	__int8									     mViewMode;											// 0x00B0(0x0001) 
-	unsigned char							     UnknownData_00B1[0x2EF];							// 0x00B1(0x02EF) MISSED OFFSET (PADDING)
+	uint8                                        Pad_D39[0x318];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UGameViewportClient* GetDefaultObj();

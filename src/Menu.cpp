@@ -76,9 +76,6 @@ namespace DX11_Base
 
             ImGui::Checkbox("Godmode", &Config.IsGodMode);
 
-            if (ImGui::Checkbox("FullBright", &Config.IsFullbright))
-                SetFullbright(Config.IsFullbright);
-
             if (ImGui::Button("RandomName", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
             {
                 if (Config.GetPalPlayerCharacter() != NULL)
@@ -742,7 +739,7 @@ namespace DX11_Base
         auto top_center = ImVec2({ draw_size.x * .5f, draw_size.y * 0.0f });
         
         //  Watermark
-        ImDraw->AddText(top_center, g_Menu->dbg_RAINBOW, "PalWorld-NetCrack");
+        //ImDraw->AddText(top_center, g_Menu->dbg_RAINBOW, "PalWorld-NetCrack");
 
         if (Config.IsESP)
             ESP();
