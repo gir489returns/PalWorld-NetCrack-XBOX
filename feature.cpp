@@ -244,7 +244,6 @@ void SpeedHack(float mSpeed)
 		return;
 
 	auto acknowledged_pawn = player_controller->AcknowledgedPawn;
-
 	if (!acknowledged_pawn)
 		return;
 

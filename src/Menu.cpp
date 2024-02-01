@@ -3,18 +3,6 @@
 #include "SDK.hpp"
 #include "config.h"
 #include <algorithm>
-std::string rand_str(const int len)
-{
-    std::string str;
-    char c;
-    int idx;
-    for (idx = 0; idx < len; idx++)
-    {
-        c = 'a' + rand() % 26;
-        str.push_back(c);
-    }
-    return str;
-}
 
 int InputTextCallback(ImGuiInputTextCallbackData* data) {
     char inputChar = data->EventChar;
@@ -62,8 +50,6 @@ namespace DX11_Base
     {
         void TABPlayer()
         {
-            
-            //�л�����һ��
             ImGui::Checkbox("SpeedHack", &Config.IsSpeedHack);
 
             ImGui::Checkbox("AttackHack", &Config.IsAttackModiler);
@@ -76,40 +62,28 @@ namespace DX11_Base
 
             ImGui::Checkbox("Godmode", &Config.IsGodMode);
 
-            if (ImGui::Button("RandomName", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
+            static char chNewName[20];
+            ImGui::InputText("New Name", chNewName, IM_ARRAYSIZE(chNewName));
+
+            if (ImGui::Button("Set New Name", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
             {
                 if (Config.GetPalPlayerCharacter() != NULL)
                 {
                     if (Config.GetPalPlayerCharacter()->GetPalPlayerController() != NULL)
                     {
                         SDK::UKismetStringLibrary* lib = SDK::UKismetStringLibrary::GetDefaultObj();
-                        std::string s = rand_str(20);
 
                         wchar_t  ws[255];
-                        swprintf(ws, 255, L"%hs", s.c_str());
+                        swprintf(ws, 255, L"%hs", chNewName);
 
                         Config.GetPalPlayerCharacter()->GetPalPlayerController()->Transmitter->NetworkIndividualComponent->UpdateCharacterNickName_ToServer(Config.GetPalPlayerCharacter()->CharacterParameterComponent->IndividualHandle->ID, SDK::FString(ws));
                     }
                 }
             }
-
-            //Creadit Mokobake
-            //ImGui::Checkbox("MuteKiGodmode", &Config.IsMuteki);
-
-            if (ImGui::Button("ToggleInfAmmo",ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
-            {
-                if (Config.GetPalPlayerCharacter()->ShooterComponent != NULL && Config.GetPalPlayerCharacter()->ShooterComponent->CanShoot())
-                {
-                    if (Config.GetPalPlayerCharacter()->ShooterComponent->GetHasWeapon() != NULL)
-                    {
-                        Config.GetPalPlayerCharacter()->ShooterComponent->GetHasWeapon()->IsRequiredBullet = !Config.GetPalPlayerCharacter()->ShooterComponent->GetHasWeapon()->IsRequiredBullet;
-                    }
-                }
-            }
             
-            ImGui::SliderFloat("SpeedModifilers", &Config.SpeedModiflers, 1, 10);
-            ImGui::SliderInt("AttackModifilers", &Config.DamageUp, 0, 200000);
-            ImGui::SliderInt("defenseModifilers", &Config.DefuseUp, 0, 200000);
+            ImGui::SliderFloat("Speed Modifilers", &Config.SpeedModiflers, 1, 10);
+            ImGui::SliderInt("Attack Modifilers", &Config.DamageUp, 0, 200000);
+            ImGui::SliderInt("Defense Modifilers", &Config.DefuseUp, 0, 200000);
         }
         
         void TABExploit()
