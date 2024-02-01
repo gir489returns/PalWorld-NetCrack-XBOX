@@ -171,7 +171,7 @@ namespace DX11_Base
                 }
             }*/
 
-            if (ImGui::Button("GodHealth", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
+            if (ImGui::Button("Revive/Fill HP", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
                 ReviveLocalPlayer();
 
             //Creadit WoodgamerHD
