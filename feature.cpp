@@ -303,12 +303,10 @@ void SetPlayerHealth(__int32 newHealth)
 	if (!pParams)
 		return;
 
-	FFixedPoint64 maxHP = pParams->GetMaxHP();
-	if (newHealth > maxHP.Value)
-		newHealth = maxHP.Value;
-
-	FFixedPoint newHealthPoint = FFixedPoint(newHealth);
-	pPalPlayerCharacter->ReviveCharacter_ToServer(newHealthPoint);
+	if (pParams->GetHP().Value < newHealth)
+	{
+		pPalPlayerCharacter->ReviveCharacter_ToServer(FFixedPoint(newHealth));
+	}
 }
 
 //	
@@ -325,9 +323,7 @@ void ReviveLocalPlayer()
 	if (pParams->IsDying())
 		pParams->ReviveFromDying();
 
-	FFixedPoint64 maxHP = pParams->GetMaxHP();
-	FFixedPoint newHealth = FFixedPoint(maxHP.Value);
-	pPalPlayerCharacter->ReviveCharacter_ToServer(newHealth);
+	pPalPlayerCharacter->ReviveCharacter_ToServer(FFixedPoint(INT_MAX));
 }
 
 //	
