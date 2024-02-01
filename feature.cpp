@@ -323,7 +323,7 @@ void ReviveLocalPlayer()
 	if (pParams->IsDying())
 		pParams->ReviveFromDying();
 
-	pPalPlayerCharacter->ReviveCharacter_ToServer(FFixedPoint(INT_MAX));
+	pPalPlayerCharacter->ReviveCharacter_ToServer(FFixedPoint(pParams->GetMaxHP().Value));
 }
 
 //	
