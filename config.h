@@ -14,7 +14,6 @@ public:
 	DWORD64 offset_Tick = 0x298F500;//APalPlayerCharacter::Tick
 	//check
 	bool IsESP = false;
-	bool IsFullbright = false;
 	bool IsForgeMode = false;
 	bool IsTeleportAllToXhair = false;
 	bool IsDeathAura = false;
@@ -67,7 +66,7 @@ public:
 
 	};
 	//Filtered Items
-	std::vector<std::string> db_filteredItems;
+	std::vector<std::string> db_filteredItems{};
 	
 	
 	

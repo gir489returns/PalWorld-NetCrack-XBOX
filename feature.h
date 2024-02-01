@@ -21,8 +21,6 @@ void AnyWhereTP(SDK::FVector& vector, bool IsSafe);
 
 void ExploitFly(bool IsFly);
 
-void SetFullbright(bool bIsSet);
-
 void SpeedHack(float mSpeed);
 
 void SetDemiGodMode(bool bIsSet);

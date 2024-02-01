@@ -233,7 +233,7 @@ bool config::GetAllActorsofType(SDK::UClass* mType, std::vector<SDK::AActor*>* o
 void config::Init()
 {
     //register hook
-    Config.ClientBase = (DWORD64)GetModuleHandleA("PalWorld-WinGDK-Shipping.exe");
+    Config.ClientBase = (DWORD64)GetModuleHandle(NULL);
 
     SDK::InitGObjects();
 
@@ -242,7 +242,4 @@ void config::Init()
     TickFunc = (Tick)(Config.ClientBase + Config.offset_Tick);
 
     MH_CreateHook(TickFunc, DetourTick, reinterpret_cast<void**>(&OldTickFunc));
-
-    //init database
-    ZeroMemory(&Config.db_filteredItems, sizeof(Config.db_filteredItems));
 }
