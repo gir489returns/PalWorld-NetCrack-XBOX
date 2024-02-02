@@ -302,6 +302,9 @@ void SetPlayerHealth(__int32 newHealth)
 	if (!pParams)
 		return;
 
+	if (pParams->IsDying())
+		pParams->ReviveFromDying();
+
 	if (pParams->GetHP().Value < newHealth)
 	{
 		pPalPlayerCharacter->ReviveCharacter_ToServer(FFixedPoint(newHealth));

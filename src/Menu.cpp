@@ -542,7 +542,7 @@ namespace DX11_Base
                 if (ImGui::Button("Kill"))
                 {
                     if (T[i]->IsA(SDK::APalCharacter::StaticClass()))
-                        SendDamageToActor(Character, 99999999999);
+                        SendDamageToActor(Character, INT_MAX);
                 }
                 ImGui::SameLine();
                 if (ImGui::Button("TP"))
