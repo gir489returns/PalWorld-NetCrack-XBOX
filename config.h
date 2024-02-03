@@ -41,8 +41,8 @@ public:
 	float mDebugEntCapDistance = 10.0f;
 	float mDeathAuraDistance = 10.f;
 	int mDeathAuraAmount = 1.f;
-	int DamageUp = 0;
-	int DefuseUp = 0;
+	int DamageUp = 1;
+	int DefuseUp = 1;
 	int EXP = 0;
 	int Item = 0;
 	float Pos[3] = { 0,0,0 };
