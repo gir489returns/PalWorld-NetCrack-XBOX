@@ -82,8 +82,8 @@ namespace DX11_Base
             }
 
             ImGui::SliderFloat("Speed Modifilers", &Config.SpeedModiflers, 1, 10);
-            ImGui::SliderInt("Attack Modifilers", &Config.DamageUp, 0, 200000);
-            ImGui::SliderInt("Defense Modifilers", &Config.DefuseUp, 0, 200000);
+            ImGui::SliderInt("Attack Modifilers", &Config.DamageUp, 1, 200000);
+            ImGui::SliderInt("Defense Modifilers", &Config.DefuseUp, 1, INT_MAX);
         }
 
         void TABExploit()

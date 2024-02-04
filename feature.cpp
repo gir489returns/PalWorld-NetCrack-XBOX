@@ -303,7 +303,10 @@ void SetPlayerHealth(__int32 newHealth)
 		return;
 
 	if (pParams->IsDying())
+	{
 		pParams->ReviveFromDying();
+		pPalPlayerCharacter->ReviveCharacter(FFixedPoint(newHealth));
+	}
 
 	if (pParams->GetHP().Value < newHealth)
 	{
@@ -323,7 +326,10 @@ void ReviveLocalPlayer()
 		return;
 
 	if (pParams->IsDying())
+	{
 		pParams->ReviveFromDying();
+		pPalPlayerCharacter->ReviveCharacter(FFixedPoint(pParams->GetMaxHP().Value));
+	}
 
 	pPalPlayerCharacter->ReviveCharacter_ToServer(FFixedPoint(pParams->GetMaxHP().Value));
 }
