@@ -21,15 +21,15 @@ public:
 	FMulticastInlineDelegateProperty_            OnFailedCapture;                                   // 0x2B8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UPalIndividualCharacterHandle*         TargetHandle;                                      // 0x2C8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                        CaptureLevel;                                      // 0x2D0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3C0E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4015[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnPassingCapturePhase;                             // 0x2D8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_            OnShakeBody;                                       // 0x2E8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         IsSneakBonus;                                      // 0x2F8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsIntoBall;                                        // 0x2F9(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3C11[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4016[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnBouncedBody;                                     // 0x300(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         IsRobberyBall;                                     // 0x310(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3C12[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4017[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       NonTargetTimer;                                    // 0x318(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
@@ -46,16 +46,19 @@ public:
 	class USceneComponent* GetAkOwnerComponent(class UStaticMeshComponent* CallFunc_GetComponentByClass_ReturnValue, class USkeletalMeshComponent* CallFunc_GetComponentByClass_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1);
 	void PlaySound(const struct FPalDataTableRowName_SoundID& ID, const struct FPalSoundOptions& K2Node_MakeStruct_PalSoundOptions);
 	void IsSneakBonusEnabled(bool* Enabled);
-	void SetSneakBonusFlag(bool Flag, class APalCharacter* CallFunc_FindOwnerPalCharacter_ReturnValue, class UPalNetworkMulticastGateComponent* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue);
-	void Setup(class APalCharacter* TargetCharacter, class APalCharacter* CallFunc_FindOwnerPalCharacter_ReturnValue, class UPalNetworkMulticastGateComponent* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue);
+	void SetSneakBonusFlag(bool Flag, class APalCharacter* CallFunc_FindOwnerPalCharacter_ReturnValue, class AController* CallFunc_GetController_ReturnValue, class APalPlayerController* K2Node_DynamicCast_AsPal_Player_Controller, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue);
+	void Setup(class APalCharacter* TargetCharacter, class APalCharacter* CallFunc_FindOwnerPalCharacter_ReturnValue, class AController* CallFunc_GetController_ReturnValue, class APalPlayerController* K2Node_DynamicCast_AsPal_Player_Controller, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue);
 	void GetTargetActor(class APalCharacter** TargetActor, class UPalIndividualCharacterHandle* CallFunc_GetTargetHandle_targetHandle, class APalCharacter* CallFunc_TryGetIndividualActor_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1);
 	void GetCaptureLevel(int32* Level);
-	void SetCaptureLevel(int32 NewParam, class APalCharacter* CallFunc_FindOwnerPalCharacter_ReturnValue, class UPalNetworkMulticastGateComponent* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue);
+	void SetCaptureLevel(int32 NewParam, class APalCharacter* CallFunc_FindOwnerPalCharacter_ReturnValue, class AController* CallFunc_GetController_ReturnValue, class APalPlayerController* K2Node_DynamicCast_AsPal_Player_Controller, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue);
 	void GetTargetHandle(class UPalIndividualCharacterHandle** TargetHandle);
 	void ReceiveBeginPlay();
 	void ReceiveTick(float DeltaSeconds);
 	void SetTargetIDToALL(const struct FPalInstanceID& TargetId);
-	void ExecuteUbergraph_BP_PalCaptureBodyBase(int32 EntryPoint, class UPalIndividualCharacterHandle* CallFunc_GetTargetHandle_targetHandle, float K2Node_Event_DeltaSeconds, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FPalInstanceID& K2Node_CustomEvent_TargetID, class UPalCharacterManager* CallFunc_GetCharacterManager_ReturnValue, class UPalIndividualCharacterHandle* CallFunc_GetIndividualHandle_ReturnValue, double CallFunc_Add_DoubleDouble_ReturnValue, class APalCharacter* CallFunc_GetTargetActor_TargetActor, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Greater_DoubleDouble_ReturnValue, bool CallFunc_IsServer_ReturnValue, double CallFunc_Add_DoubleDouble_B_ImplicitCast);
+	void SetCaptureLevelInternal(int32 Level);
+	void SetSneakBonusFlagInternal(bool IsSneak);
+	void SetupInternal(class APalCharacter* TargetCharacter);
+	void ExecuteUbergraph_BP_PalCaptureBodyBase(int32 EntryPoint, bool CallFunc_Greater_DoubleDouble_ReturnValue, float K2Node_Event_DeltaSeconds, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FPalInstanceID& K2Node_CustomEvent_TargetID, class UPalCharacterManager* CallFunc_GetCharacterManager_ReturnValue, class UPalIndividualCharacterHandle* CallFunc_GetIndividualHandle_ReturnValue, double CallFunc_Add_DoubleDouble_ReturnValue, class APalCharacter* CallFunc_GetTargetActor_TargetActor, bool CallFunc_HasAuthority_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsServer_ReturnValue, class UPalIndividualCharacterHandle* CallFunc_GetTargetHandle_targetHandle, int32 K2Node_Event_level, bool K2Node_Event_isSneak, class APalCharacter* K2Node_Event_targetCharacter, double CallFunc_Add_DoubleDouble_B_ImplicitCast);
 	void OnBouncedBody__DelegateSignature(enum class E_PalCaptureSphereBouncedReason ReasonType, class UPalIndividualCharacterHandle* TargetHandle);
 	void OnShakeBody__DelegateSignature(class ABP_PalCaptureBodyBase_C* ShakedBody);
 	void OnPassingCapturePhase__DelegateSignature(int32 PhaseCount, class UPalIndividualCharacterHandle* TargetHandle);

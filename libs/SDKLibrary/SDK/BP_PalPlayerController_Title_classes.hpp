@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xCE8 - 0xCE8)
+// 0x0 (0xD08 - 0xD08)
 // BlueprintGeneratedClass BP_PalPlayerController_Title.BP_PalPlayerController_Title_C
 class ABP_PalPlayerController_Title_C : public APalPlayerController
 {

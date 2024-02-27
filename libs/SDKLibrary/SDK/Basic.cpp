@@ -60,3 +60,5 @@ bool FWeakObjectPtr::operator!=(const class UObject* Other) const
 	return ObjectIndex != Other->Index;
 }
 }
+
+

@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x1C8 - 0x1C8)
+// 0x0 (0x240 - 0x240)
 // BlueprintGeneratedClass BP_PalBaseCampManager.BP_PalBaseCampManager_C
 class UBP_PalBaseCampManager_C : public UPalBaseCampManager
 {

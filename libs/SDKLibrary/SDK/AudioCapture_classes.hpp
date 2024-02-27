@@ -14,7 +14,7 @@ namespace SDK
 class UAudioCapture : public UAudioGenerator
 {
 public:
-	uint8                                        Pad_199C[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2248[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UAudioCapture* GetDefaultObj();
@@ -56,7 +56,7 @@ class UAudioCaptureComponent : public USynthComponent
 {
 public:
 	int32                                        JitterLatencyFrames;                               // 0x790(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_19B8[0xBC];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2262[0xBC];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UAudioCaptureComponent* GetDefaultObj();

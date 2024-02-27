@@ -26,7 +26,7 @@ public:
 	void OnBeginSequence();
 	void OnDeadBoss(const struct FPalDeadInfo& DeadInfo);
 	void TickSequence(float DeltaTime);
-	void ExecuteUbergraph_PalBossBattleSequence_Combat(int32 EntryPoint, class UPalBossBattleSequencer* CallFunc_GetOuterSequencer_ReturnValue, const struct FPalDeadInfo& K2Node_CustomEvent_DeadInfo, class APalCharacter* CallFunc_GetBossCharacter_ReturnValue, bool CallFunc_IsServer_ReturnValue, class UPalDamageReactionComponent* CallFunc_GetComponentByClass_ReturnValue, float K2Node_Event_DeltaTime, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate);
+	void ExecuteUbergraph_PalBossBattleSequence_Combat(int32 EntryPoint, class UPalBossBattleSequencer* CallFunc_GetOuterSequencer_ReturnValue, class UPalBossBattleSequencer* CallFunc_GetOuterSequencer_ReturnValue_1, const struct FPalDeadInfo& K2Node_CustomEvent_DeadInfo, class APalCharacter* CallFunc_GetBossCharacter_ReturnValue, bool CallFunc_IsServer_ReturnValue, class UPalDamageReactionComponent* CallFunc_GetComponentByClass_ReturnValue, float K2Node_Event_DeltaTime, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate);
 };
 
 }

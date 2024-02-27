@@ -9,19 +9,19 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x48 (0x858 - 0x810)
+// 0x48 (0x848 - 0x800)
 // BlueprintGeneratedClass BP_NPC_Base.BP_NPC_Base_C
 class ABP_NPC_Base_C : public APalNPC
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x810(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBP_NPCInteractionComponent_C*         BP_NPCInteractionComponent;                        // 0x818(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalFacialComponent*                   PalFacial;                                         // 0x820(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalNavigationInvokerComponent*        PalNavigationInvoker;                              // 0x828(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalInteractableSphereComponentNative* BP_InteractableSphere;                             // 0x830(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalShooterComponent*                  PalShooter;                                        // 0x838(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_            OnDestoryEvent;                                    // 0x840(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, AdvancedDisplay, BlueprintCallable)
-	class UClass*                                AnimLayerClass;                                    // 0x850(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x800(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBP_NPCInteractionComponent_C*         BP_NPCInteractionComponent;                        // 0x808(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalFacialComponent*                   PalFacial;                                         // 0x810(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalNavigationInvokerComponent*        PalNavigationInvoker;                              // 0x818(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalInteractableSphereComponentNative* BP_InteractableSphere;                             // 0x820(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalShooterComponent*                  PalShooter;                                        // 0x828(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_            OnDestoryEvent;                                    // 0x830(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, AdvancedDisplay, BlueprintCallable)
+	class UClass*                                AnimLayerClass;                                    // 0x840(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class ABP_NPC_Base_C* GetDefaultObj();

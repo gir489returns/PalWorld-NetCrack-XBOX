@@ -26,7 +26,7 @@ public:
 class UFontBulkData : public UObject
 {
 public:
-	uint8                                        Pad_1BC0[0x48];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2558[0x48];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UFontBulkData* GetDefaultObj();
@@ -71,7 +71,7 @@ public:
 class USlateWidgetStyleContainerBase : public UObject
 {
 public:
-	uint8                                        Pad_1BCB[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_255C[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class USlateWidgetStyleContainerBase* GetDefaultObj();

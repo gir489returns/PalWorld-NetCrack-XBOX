@@ -9,18 +9,18 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x30 (0xA00 - 0x9D0)
+// 0x30 (0xA40 - 0xA10)
 // BlueprintGeneratedClass BP_PlayerBase.BP_PlayerBase_C
 class ABP_PlayerBase_C : public APalPlayerCharacter
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x9D0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UCapsuleComponent*                     DeadColllision;                                    // 0x9D8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_PalTimerPointLightComponent_C*     PlayerLight;                                       // 0x9E0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalRiderComponent*                    Rider_Component;                                   // 0x9E8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                         bIsInCapturedCage;                                 // 0x9F0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_BF5[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
-	class ABP_Lamp_C*                            Lantern;                                           // 0x9F8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xA10(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UCapsuleComponent*                     DeadColllision;                                    // 0xA18(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_PalTimerPointLightComponent_C*     PlayerLight;                                       // 0xA20(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalRiderComponent*                    Rider_Component;                                   // 0xA28(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                         bIsInCapturedCage;                                 // 0xA30(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_26F2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class ABP_Lamp_C*                            Lantern;                                           // 0xA38(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class ABP_PlayerBase_C* GetDefaultObj();

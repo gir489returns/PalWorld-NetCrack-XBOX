@@ -15,7 +15,7 @@ class UFSR2MoviePipelineSettings : public UMoviePipelineViewFamilySetting
 {
 public:
 	enum class EFSR2MoviePipelineQuality         FSR2Quality;                                       // 0x48(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1008[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_152F[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UFSR2MoviePipelineSettings* GetDefaultObj();

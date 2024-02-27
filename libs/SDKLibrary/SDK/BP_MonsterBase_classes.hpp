@@ -9,26 +9,26 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x70 (0x900 - 0x890)
+// 0x70 (0x8F0 - 0x880)
 // BlueprintGeneratedClass BP_MonsterBase.BP_MonsterBase_C
 class ABP_MonsterBase_C : public APalMonsterCharacter
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x890(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPalAbilitySkillParameterComponent*    PalAbilitySkillParameter;                          // 0x898(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMotionWarpingComponent*               MotionWarping;                                     // 0x8A0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_PalCryComponent_C*                 BP_PalCryComponent;                                // 0x8A8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalPartnerSkillParameterComponent*    PalPartnerSkillParameter;                          // 0x8B0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalNavigationInvokerComponent*        PalNavigationInvoker;                              // 0x8B8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalInteractableSphereComponentNative* BP_InteractableSphere;                             // 0x8C0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalFacialComponent*                   PalFacial;                                         // 0x8C8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	enum class ECollisionChannel                 CapsuleCollisionChannel;                           // 0x8D0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1D2F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FName                                  CollisionProfileNameCache;                         // 0x8D4(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1D30[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UNiagaraComponent*                     FlyEffect;                                         // 0x8E0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	double                                       EffectiveAttackLogTimer;                           // 0x8E8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_            OnInflictDamageEvent;                              // 0x8F0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x880(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPalAbilitySkillParameterComponent*    PalAbilitySkillParameter;                          // 0x888(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMotionWarpingComponent*               MotionWarping;                                     // 0x890(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_PalCryComponent_C*                 BP_PalCryComponent;                                // 0x898(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalPartnerSkillParameterComponent*    PalPartnerSkillParameter;                          // 0x8A0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalNavigationInvokerComponent*        PalNavigationInvoker;                              // 0x8A8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalInteractableSphereComponentNative* BP_InteractableSphere;                             // 0x8B0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalFacialComponent*                   PalFacial;                                         // 0x8B8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	enum class ECollisionChannel                 CapsuleCollisionChannel;                           // 0x8C0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_2F05[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  CollisionProfileNameCache;                         // 0x8C4(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_2F06[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UNiagaraComponent*                     FlyEffect;                                         // 0x8D0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	double                                       EffectiveAttackLogTimer;                           // 0x8D8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_            OnInflictDamageEvent;                              // 0x8E0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 	static class UClass* StaticClass();
 	static class ABP_MonsterBase_C* GetDefaultObj();

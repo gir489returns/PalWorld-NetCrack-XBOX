@@ -9,14 +9,14 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x25 (0x540 - 0x51B)
+// 0x25 (0x568 - 0x543)
 // BlueprintGeneratedClass BP_MonsterAIController_BaseCamp.BP_MonsterAIController_BaseCamp_C
 class ABP_MonsterAIController_BaseCamp_C : public ABP_MonsterAIControllerBase_C
 {
 public:
-	uint8                                        Pad_3313[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x520(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FVector                               SpawnedPosition;                                   // 0x528(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_4372[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x548(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FVector                               SpawnedPosition;                                   // 0x550(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class ABP_MonsterAIController_BaseCamp_C* GetDefaultObj();

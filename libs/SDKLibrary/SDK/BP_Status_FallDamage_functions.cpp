@@ -40,6 +40,43 @@ class UBP_Status_FallDamage_C* UBP_Status_FallDamage_C::GetDefaultObj()
 }
 
 
+// Function BP_Status_FallDamage.BP_Status_FallDamage_C.IsIgnoreCharacter
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool                               Ignore                                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                      CallFunc_GetOwner_ReturnValue                                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APalPlayerCharacter*         K2Node_DynamicCast_AsPal_Player_Character                        (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                      CallFunc_GetOwner_ReturnValue_1                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsBaseCampPal_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalStaticCharacterParameterComponent*CallFunc_GetComponentByClass_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsTowerBossPal_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_Status_FallDamage_C::IsIgnoreCharacter(bool* Ignore, class AActor* CallFunc_GetOwner_ReturnValue, class APalPlayerCharacter* K2Node_DynamicCast_AsPal_Player_Character, bool K2Node_DynamicCast_bSuccess, class AActor* CallFunc_GetOwner_ReturnValue_1, bool CallFunc_IsBaseCampPal_ReturnValue, class UPalStaticCharacterParameterComponent* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsTowerBossPal_ReturnValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_Status_FallDamage_C", "IsIgnoreCharacter");
+
+	Params::UBP_Status_FallDamage_C_IsIgnoreCharacter_Params Parms{};
+
+	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
+	Parms.K2Node_DynamicCast_AsPal_Player_Character = K2Node_DynamicCast_AsPal_Player_Character;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.CallFunc_GetOwner_ReturnValue_1 = CallFunc_GetOwner_ReturnValue_1;
+	Parms.CallFunc_IsBaseCampPal_ReturnValue = CallFunc_IsBaseCampPal_ReturnValue;
+	Parms.CallFunc_GetComponentByClass_ReturnValue = CallFunc_GetComponentByClass_ReturnValue;
+	Parms.CallFunc_IsTowerBossPal_ReturnValue = CallFunc_IsTowerBossPal_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Ignore != nullptr)
+		*Ignore = Parms.Ignore;
+
+}
+
+
 // Function BP_Status_FallDamage.BP_Status_FallDamage_C.GetLastJumpedZ
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -355,15 +392,13 @@ void UBP_Status_FallDamage_C::SetUp_FallDamage(class APalCharacter* InCharacter)
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                      CallFunc_GetOwner_ReturnValue                                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPalStaticCharacterParameterComponent*CallFunc_GetComponentByClass_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsIgnoreCharacter_Ignore                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsTowerBossPal_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                      CallFunc_GetOwner_ReturnValue_1                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                      CallFunc_GetOwner_ReturnValue                                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UPalCharacterMovementComponent*K2Node_CustomEvent_component_1                                   (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                  K2Node_CustomEvent_Hit                                           (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// class UPalCharacterMovementComponent*CallFunc_GetComponentByClass_ReturnValue_1                       (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UPalCharacterMovementComponent*CallFunc_GetComponentByClass_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UPalCharacterMovementComponent*K2Node_CustomEvent_component                                     (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // enum class EMovementMode           K2Node_CustomEvent_prevMode                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EMovementMode           K2Node_CustomEvent_newMode                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -371,24 +406,22 @@ void UBP_Status_FallDamage_C::SetUp_FallDamage(class APalCharacter* InCharacter)
 // enum class EPalCharacterMovementCustomModeK2Node_CustomEvent_newCustomMode                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                      CallFunc_GetOwner_ReturnValue_2                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPalCharacterMovementComponent*CallFunc_GetComponentByClass_ReturnValue_2                       (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class AActor*                      CallFunc_GetOwner_ReturnValue_1                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalCharacterMovementComponent*CallFunc_GetComponentByClass_ReturnValue_1                       (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // enum class EPalCharacterMovementCustomModeCallFunc_GetCustomMovementMode_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue_1                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                      CallFunc_GetOwner_ReturnValue_2                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      CallFunc_GetOwner_ReturnValue_3                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                      CallFunc_GetOwner_ReturnValue_4                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPalCharacterMovementComponent*CallFunc_GetComponentByClass_ReturnValue_3                       (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UPalCharacterMovementComponent*CallFunc_GetComponentByClass_ReturnValue_2                       (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class APalCharacter*               K2Node_DynamicCast_AsPal_Character                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPalCharacterOnCompleteInitializeParameterWrapper*CallFunc_GetOnCompleteInitializeParameterDelegate_ReturnValue    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                      CallFunc_GetOwner_ReturnValue_5                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_Event_DeltaTime                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPalStaticCharacterParameterComponent*CallFunc_GetComponentByClass_ReturnValue_4                       (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsTowerBossPal_ReturnValue_1                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APalCharacter*               K2Node_CustomEvent_InCharacter                                   (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsIgnoreCharacter_Ignore_1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_Status_FallDamage_C::ExecuteUbergraph_BP_Status_FallDamage(int32 EntryPoint, class AActor* CallFunc_GetOwner_ReturnValue, class UPalStaticCharacterParameterComponent* CallFunc_GetComponentByClass_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_IsTowerBossPal_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class AActor* CallFunc_GetOwner_ReturnValue_1, class UPalCharacterMovementComponent* K2Node_CustomEvent_component_1, const struct FHitResult& K2Node_CustomEvent_Hit, class UPalCharacterMovementComponent* CallFunc_GetComponentByClass_ReturnValue_1, class UPalCharacterMovementComponent* K2Node_CustomEvent_component, enum class EMovementMode K2Node_CustomEvent_prevMode, enum class EMovementMode K2Node_CustomEvent_newMode, enum class EPalCharacterMovementCustomMode K2Node_CustomEvent_prevCustomMode, enum class EPalCharacterMovementCustomMode K2Node_CustomEvent_newCustomMode, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, class AActor* CallFunc_GetOwner_ReturnValue_2, class UPalCharacterMovementComponent* CallFunc_GetComponentByClass_ReturnValue_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, enum class EPalCharacterMovementCustomMode CallFunc_GetCustomMovementMode_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, class AActor* CallFunc_GetOwner_ReturnValue_3, class AActor* CallFunc_GetOwner_ReturnValue_4, class UPalCharacterMovementComponent* CallFunc_GetComponentByClass_ReturnValue_3, class APalCharacter* K2Node_DynamicCast_AsPal_Character, bool K2Node_DynamicCast_bSuccess, class UPalCharacterOnCompleteInitializeParameterWrapper* CallFunc_GetOnCompleteInitializeParameterDelegate_ReturnValue, class AActor* CallFunc_GetOwner_ReturnValue_5, float K2Node_Event_DeltaTime, class UPalStaticCharacterParameterComponent* CallFunc_GetComponentByClass_ReturnValue_4, bool CallFunc_IsTowerBossPal_ReturnValue_1, class APalCharacter* K2Node_CustomEvent_InCharacter)
+void UBP_Status_FallDamage_C::ExecuteUbergraph_BP_Status_FallDamage(int32 EntryPoint, bool CallFunc_IsIgnoreCharacter_Ignore, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class AActor* CallFunc_GetOwner_ReturnValue, class UPalCharacterMovementComponent* K2Node_CustomEvent_component_1, const struct FHitResult& K2Node_CustomEvent_Hit, class UPalCharacterMovementComponent* CallFunc_GetComponentByClass_ReturnValue, class UPalCharacterMovementComponent* K2Node_CustomEvent_component, enum class EMovementMode K2Node_CustomEvent_prevMode, enum class EMovementMode K2Node_CustomEvent_newMode, enum class EPalCharacterMovementCustomMode K2Node_CustomEvent_prevCustomMode, enum class EPalCharacterMovementCustomMode K2Node_CustomEvent_newCustomMode, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, class AActor* CallFunc_GetOwner_ReturnValue_1, class UPalCharacterMovementComponent* CallFunc_GetComponentByClass_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, enum class EPalCharacterMovementCustomMode CallFunc_GetCustomMovementMode_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, class AActor* CallFunc_GetOwner_ReturnValue_2, class AActor* CallFunc_GetOwner_ReturnValue_3, class UPalCharacterMovementComponent* CallFunc_GetComponentByClass_ReturnValue_2, class APalCharacter* K2Node_DynamicCast_AsPal_Character, bool K2Node_DynamicCast_bSuccess, class UPalCharacterOnCompleteInitializeParameterWrapper* CallFunc_GetOnCompleteInitializeParameterDelegate_ReturnValue, float K2Node_Event_DeltaTime, class APalCharacter* K2Node_CustomEvent_InCharacter, bool CallFunc_IsIgnoreCharacter_Ignore_1)
 {
 	static class UFunction* Func = nullptr;
 
@@ -398,15 +431,13 @@ void UBP_Status_FallDamage_C::ExecuteUbergraph_BP_Status_FallDamage(int32 EntryP
 	Params::UBP_Status_FallDamage_C_ExecuteUbergraph_BP_Status_FallDamage_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
-	Parms.CallFunc_GetComponentByClass_ReturnValue = CallFunc_GetComponentByClass_ReturnValue;
+	Parms.CallFunc_IsIgnoreCharacter_Ignore = CallFunc_IsIgnoreCharacter_Ignore;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
-	Parms.CallFunc_IsTowerBossPal_ReturnValue = CallFunc_IsTowerBossPal_ReturnValue;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
-	Parms.CallFunc_GetOwner_ReturnValue_1 = CallFunc_GetOwner_ReturnValue_1;
+	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
 	Parms.K2Node_CustomEvent_component_1 = K2Node_CustomEvent_component_1;
 	Parms.K2Node_CustomEvent_Hit = K2Node_CustomEvent_Hit;
-	Parms.CallFunc_GetComponentByClass_ReturnValue_1 = CallFunc_GetComponentByClass_ReturnValue_1;
+	Parms.CallFunc_GetComponentByClass_ReturnValue = CallFunc_GetComponentByClass_ReturnValue;
 	Parms.K2Node_CustomEvent_component = K2Node_CustomEvent_component;
 	Parms.K2Node_CustomEvent_prevMode = K2Node_CustomEvent_prevMode;
 	Parms.K2Node_CustomEvent_newMode = K2Node_CustomEvent_newMode;
@@ -414,22 +445,20 @@ void UBP_Status_FallDamage_C::ExecuteUbergraph_BP_Status_FallDamage(int32 EntryP
 	Parms.K2Node_CustomEvent_newCustomMode = K2Node_CustomEvent_newCustomMode;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
-	Parms.CallFunc_GetOwner_ReturnValue_2 = CallFunc_GetOwner_ReturnValue_2;
-	Parms.CallFunc_GetComponentByClass_ReturnValue_2 = CallFunc_GetComponentByClass_ReturnValue_2;
+	Parms.CallFunc_GetOwner_ReturnValue_1 = CallFunc_GetOwner_ReturnValue_1;
+	Parms.CallFunc_GetComponentByClass_ReturnValue_1 = CallFunc_GetComponentByClass_ReturnValue_1;
 	Parms.K2Node_CreateDelegate_OutputDelegate_2 = K2Node_CreateDelegate_OutputDelegate_2;
 	Parms.CallFunc_GetCustomMovementMode_ReturnValue = CallFunc_GetCustomMovementMode_ReturnValue;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue_1 = CallFunc_EqualEqual_ByteByte_ReturnValue_1;
+	Parms.CallFunc_GetOwner_ReturnValue_2 = CallFunc_GetOwner_ReturnValue_2;
 	Parms.CallFunc_GetOwner_ReturnValue_3 = CallFunc_GetOwner_ReturnValue_3;
-	Parms.CallFunc_GetOwner_ReturnValue_4 = CallFunc_GetOwner_ReturnValue_4;
-	Parms.CallFunc_GetComponentByClass_ReturnValue_3 = CallFunc_GetComponentByClass_ReturnValue_3;
+	Parms.CallFunc_GetComponentByClass_ReturnValue_2 = CallFunc_GetComponentByClass_ReturnValue_2;
 	Parms.K2Node_DynamicCast_AsPal_Character = K2Node_DynamicCast_AsPal_Character;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.CallFunc_GetOnCompleteInitializeParameterDelegate_ReturnValue = CallFunc_GetOnCompleteInitializeParameterDelegate_ReturnValue;
-	Parms.CallFunc_GetOwner_ReturnValue_5 = CallFunc_GetOwner_ReturnValue_5;
 	Parms.K2Node_Event_DeltaTime = K2Node_Event_DeltaTime;
-	Parms.CallFunc_GetComponentByClass_ReturnValue_4 = CallFunc_GetComponentByClass_ReturnValue_4;
-	Parms.CallFunc_IsTowerBossPal_ReturnValue_1 = CallFunc_IsTowerBossPal_ReturnValue_1;
 	Parms.K2Node_CustomEvent_InCharacter = K2Node_CustomEvent_InCharacter;
+	Parms.CallFunc_IsIgnoreCharacter_Ignore_1 = CallFunc_IsIgnoreCharacter_Ignore_1;
 
 	UObject::ProcessEvent(Func, &Parms);
 

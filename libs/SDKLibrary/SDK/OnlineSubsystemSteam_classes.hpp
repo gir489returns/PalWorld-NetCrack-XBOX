@@ -26,7 +26,7 @@ class USteamNetConnection : public UIpConnection
 {
 public:
 	bool                                         bIsPassthrough;                                    // 0x3398(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_AD6[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_104A[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class USteamNetConnection* GetDefaultObj();
@@ -38,7 +38,7 @@ public:
 class USteamNetDriver : public UIpNetDriver
 {
 public:
-	uint8                                        Pad_AD8[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_104C[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class USteamNetDriver* GetDefaultObj();

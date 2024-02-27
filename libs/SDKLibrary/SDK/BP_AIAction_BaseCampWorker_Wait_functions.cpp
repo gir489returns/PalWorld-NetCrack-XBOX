@@ -46,10 +46,10 @@ class UBP_AIAction_BaseCampWorker_Wait_C* UBP_AIAction_BaseCampWorker_Wait_C::Ge
 // float                              DeltaTime                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GetBaseCampRandomLocation_bResult                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     CallFunc_GetBaseCampRandomLocation_ToLocation                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class EPathFollowingRequestResultCallFunc_MoveToLocation_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class EPathFollowingRequestResultCallFunc_MoveToLocationInBaseCamp_ReturnValue                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_AIAction_BaseCampWorker_Wait_C::OnTickForWait(float DeltaTime, bool CallFunc_GetBaseCampRandomLocation_bResult, const struct FVector& CallFunc_GetBaseCampRandomLocation_ToLocation, enum class EPathFollowingRequestResult CallFunc_MoveToLocation_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess)
+void UBP_AIAction_BaseCampWorker_Wait_C::OnTickForWait(float DeltaTime, bool CallFunc_GetBaseCampRandomLocation_bResult, const struct FVector& CallFunc_GetBaseCampRandomLocation_ToLocation, enum class EPathFollowingRequestResult CallFunc_MoveToLocationInBaseCamp_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess)
 {
 	static class UFunction* Func = nullptr;
 
@@ -61,7 +61,7 @@ void UBP_AIAction_BaseCampWorker_Wait_C::OnTickForWait(float DeltaTime, bool Cal
 	Parms.DeltaTime = DeltaTime;
 	Parms.CallFunc_GetBaseCampRandomLocation_bResult = CallFunc_GetBaseCampRandomLocation_bResult;
 	Parms.CallFunc_GetBaseCampRandomLocation_ToLocation = CallFunc_GetBaseCampRandomLocation_ToLocation;
-	Parms.CallFunc_MoveToLocation_ReturnValue = CallFunc_MoveToLocation_ReturnValue;
+	Parms.CallFunc_MoveToLocationInBaseCamp_ReturnValue = CallFunc_MoveToLocationInBaseCamp_ReturnValue;
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
 
 	UObject::ProcessEvent(Func, &Parms);

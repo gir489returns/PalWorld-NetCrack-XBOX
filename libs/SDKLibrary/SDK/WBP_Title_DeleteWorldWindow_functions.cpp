@@ -73,8 +73,9 @@ void UWBP_Title_DeleteWorldWindow_C::OnClosedDeleteCheckDialog(bool bResult, cla
 // struct FDataTableRowHandle         NewLocalVar                                                      (Edit, BlueprintVisible, NoDestructor)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_GetLocalizedTextFromHandle_Text                         (None)
+// struct FGuid                       CallFunc_Dialog_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Title_DeleteWorldWindow_C::OpenCheckDialog(const struct FDataTableRowHandle& NewLocalVar, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class FText CallFunc_GetLocalizedTextFromHandle_Text)
+void UWBP_Title_DeleteWorldWindow_C::OpenCheckDialog(const struct FDataTableRowHandle& NewLocalVar, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class FText CallFunc_GetLocalizedTextFromHandle_Text, const struct FGuid& CallFunc_Dialog_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -86,6 +87,7 @@ void UWBP_Title_DeleteWorldWindow_C::OpenCheckDialog(const struct FDataTableRowH
 	Parms.NewLocalVar = NewLocalVar;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.CallFunc_GetLocalizedTextFromHandle_Text = CallFunc_GetLocalizedTextFromHandle_Text;
+	Parms.CallFunc_Dialog_ReturnValue = CallFunc_Dialog_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 

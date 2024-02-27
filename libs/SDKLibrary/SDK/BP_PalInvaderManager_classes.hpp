@@ -9,15 +9,15 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x20 (0x1E0 - 0x1C0)
+// 0x20 (0x238 - 0x218)
 // BlueprintGeneratedClass BP_PalInvaderManager.BP_PalInvaderManager_C
 class UBP_PalInvaderManager_C : public UPalInvaderManager
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1C0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBP_PalIncidentNotifyListener_C*       IncidentListener;                                  // 0x1C8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class FName                                  InvaderEnemyIncidentId;                            // 0x1D0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                  VisitorNPCIncidentId;                              // 0x1D8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x218(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBP_PalIncidentNotifyListener_C*       IncidentListener;                                  // 0x220(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class FName                                  InvaderEnemyIncidentId;                            // 0x228(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                  VisitorNPCIncidentId;                              // 0x230(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UBP_PalInvaderManager_C* GetDefaultObj();

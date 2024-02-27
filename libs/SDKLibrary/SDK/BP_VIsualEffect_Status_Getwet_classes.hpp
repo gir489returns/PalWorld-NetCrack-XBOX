@@ -24,7 +24,7 @@ public:
 	static class UClass* StaticClass();
 	static class UBP_VIsualEffect_Status_Getwet_C* GetDefaultObj();
 
-	void Set_Wet(double Value, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, class USkeletalMeshComponent* CallFunc_GetMainMesh_ReturnValue, TArray<class UMaterialInstanceDynamic*>& CallFunc_GetMainMeshMaterials_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, float CallFunc_SetScalarParameterValueOnMaterials_ParameterValue_ImplicitCast);
+	void Set_Wet(double Value, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, class USkeletalMeshComponent* CallFunc_GetPlayerHeadMesh_ReturnValue, TArray<class UMaterialInstanceDynamic*>& CallFunc_GetMainAndHeadMeshMaterials_ReturnValue, bool CallFunc_IsValid_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, class USkeletalMeshComponent* CallFunc_GetMainMesh_ReturnValue, float CallFunc_SetScalarParameterValueOnMaterials_ParameterValue_ImplicitCast, float CallFunc_SetScalarParameterValueOnMaterials_ParameterValue_ImplicitCast_1);
 	void OnBeginVisualEffect();
 	void OnEndVisualEffect();
 	void TerminatingTickVisualEffect(float DeltaTime);

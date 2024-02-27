@@ -25,7 +25,7 @@ public:
 	static class UWBP_Title_DeleteWorldWindow_C* GetDefaultObj();
 
 	void OnClosedDeleteCheckDialog(bool bResult, class UPalHUDDispatchParameterBase* CallFunc_GetParam_ReturnValue, class UBP_HUDDIspatchParameter_DeleteWorld_C* K2Node_DynamicCast_AsBP_HUDDIspatch_Parameter_Delete_World, bool K2Node_DynamicCast_bSuccess);
-	void OpenCheckDialog(const struct FDataTableRowHandle& NewLocalVar, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class FText CallFunc_GetLocalizedTextFromHandle_Text);
+	void OpenCheckDialog(const struct FDataTableRowHandle& NewLocalVar, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class FText CallFunc_GetLocalizedTextFromHandle_Text, const struct FGuid& CallFunc_Dialog_ReturnValue);
 	class UWidget* BP_GetDesiredFocusTarget();
 	void SetEnableConfirmButton(bool IsEnable, bool Temp_bool_Variable, float Temp_real_Variable, float Temp_real_Variable_1, bool Temp_bool_Variable_1, float K2Node_Select_Default, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default_1);
 	void Construct();

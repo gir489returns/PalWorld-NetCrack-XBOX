@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x158 - 0x158)
+// 0x0 (0x160 - 0x160)
 // BlueprintGeneratedClass BP_AIAction_Worker_Working.BP_AIAction_Worker_Working_C
 class UBP_AIAction_Worker_Working_C : public UPalAIActionWorkerWorking
 {

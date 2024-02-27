@@ -54,20 +54,20 @@ struct UWBP_Title_WorldSettings_C_ApplyDifficultyPreset_Params
 {
 public:
 	enum class EPalOptionWorldDifficulty         DifficultyType;                                    // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1AF6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_271D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  TmpPresetRowName;                                  // 0x4(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchEnum_CmpSuccess;                      // 0xC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1AF7[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_271F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPalOptionWorldPresetRow              CallFunc_GetDataTableRowFromName_OutRow;           // 0x10(0x90)(None)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue;      // 0xA0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x128 (0x128 - 0x0)
+// 0x138 (0x138 - 0x0)
 // Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.GetEditedWorldSetting
 struct UWBP_Title_WorldSettings_C_GetEditedWorldSetting_Params
 {
 public:
-	struct FPalOptionWorldSettings               WorldSetting;                                      // 0x0(0x128)(Parm, OutParm)
+	struct FPalOptionWorldSettings               WorldSetting;                                      // 0x0(0x138)(Parm, OutParm)
 };
 
 // 0x6 (0x6 - 0x0)
@@ -86,7 +86,7 @@ struct UWBP_Title_WorldSettings_C_ConvertDeathPenaltyToUIIndex_Params
 {
 public:
 	enum class EPalOptionWorldDeathPenalty       DeathPenaltyType;                                  // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1B17[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_272A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        UIIndex;                                           // 0x4(0x4)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchEnum_CmpSuccess;                      // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -118,7 +118,7 @@ struct UWBP_Title_WorldSettings_C_EndCustomDifficultySetting_Params
 {
 public:
 	int32                                        CallFunc_GetSelectNameIndex_NowIndex;              // 0x0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1B2B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2746[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue;                // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -136,17 +136,17 @@ struct UWBP_Title_WorldSettings_C_DisplayDifficultyDesc_Params
 {
 public:
 	enum class EPalOptionWorldDifficulty         DifficultyTyper;                                   // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1B3C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2765[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDataTableRowHandle                   TmpMsgID;                                          // 0x8(0x10)(Edit, BlueprintVisible, NoDestructor)
 	struct FDataTableRowHandle                   CustomMsgID;                                       // 0x18(0x10)(Edit, BlueprintVisible, NoDestructor)
 	struct FDataTableRowHandle                   VeryHardMsgID;                                     // 0x28(0x10)(Edit, BlueprintVisible, NoDestructor)
 	struct FDataTableRowHandle                   HardMsgID;                                         // 0x38(0x10)(Edit, BlueprintVisible, NoDestructor)
-	struct FDataTableRowHandle                   NormalMsgID;                                       // 0x48(0x10)(Edit, BlueprintVisible, NoDestructor)
+	struct FDataTableRowHandle                   NormalMsgId;                                       // 0x48(0x10)(Edit, BlueprintVisible, NoDestructor)
 	struct FDataTableRowHandle                   EasyMsgID;                                         // 0x58(0x10)(Edit, BlueprintVisible, NoDestructor)
 	struct FDataTableRowHandle                   VeryEasyMsgID;                                     // 0x68(0x10)(Edit, BlueprintVisible, NoDestructor)
 	class FText                                  TmpText;                                           // 0x78(0x18)(Edit, BlueprintVisible)
 	bool                                         K2Node_SwitchEnum_CmpSuccess;                      // 0x90(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1B40[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2768[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_GetLocalizedTextFromHandle_Text;          // 0x98(0x18)(None)
 };
 
@@ -166,7 +166,7 @@ struct UWBP_Title_WorldSettings_C_ConvertDifficultyToUIIndex_Params
 {
 public:
 	enum class EPalOptionWorldDifficulty         DifficultyType;                                    // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1B46[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_277B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        UIIndex;                                           // 0x4(0x4)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchEnum_CmpSuccess;                      // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -180,7 +180,7 @@ public:
 	struct FDataTableRowHandle                   CustomMsgID;                                       // 0x10(0x10)(Edit, BlueprintVisible, NoDestructor)
 	struct FDataTableRowHandle                   VeryHardMsgID;                                     // 0x20(0x10)(Edit, BlueprintVisible, NoDestructor)
 	struct FDataTableRowHandle                   HardMsgID;                                         // 0x30(0x10)(Edit, BlueprintVisible, NoDestructor)
-	struct FDataTableRowHandle                   NormalMsgID;                                       // 0x40(0x10)(Edit, BlueprintVisible, NoDestructor)
+	struct FDataTableRowHandle                   NormalMsgId;                                       // 0x40(0x10)(Edit, BlueprintVisible, NoDestructor)
 	struct FDataTableRowHandle                   EasyMsgID;                                         // 0x50(0x10)(Edit, BlueprintVisible, NoDestructor)
 	struct FDataTableRowHandle                   VeryEasyMsgID;                                     // 0x60(0x10)(Edit, BlueprintVisible, NoDestructor)
 	class FText                                  CallFunc_GetLocalizedTextFromHandle_Text;          // 0x70(0x18)(None)
@@ -223,135 +223,135 @@ public:
 	bool                                         CallFunc_IsXB1_ReturnValue;                        // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x390 (0x390 - 0x0)
+// 0x3A0 (0x3A0 - 0x0)
 // Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.ApplyWorldSettingToUI
 struct UWBP_Title_WorldSettings_C_ApplyWorldSettingToUI_Params
 {
 public:
-	struct FPalOptionWorldSettings               WorldSetting;                                      // 0x0(0x128)(BlueprintVisible, BlueprintReadOnly, Parm)
-	int32                                        CallFunc_FTrunc_ReturnValue;                       // 0x128(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1BA2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FString>                        CallFunc_CreateDeathPenaltySettingStrings_OutStrings; // 0x130(0x10)(ReferenceParm)
-	int32                                        CallFunc_ConvertDeathPenaltyToUIIndex_UIIndex;     // 0x140(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1BA5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_Conv_IntToDouble_ReturnValue;             // 0x148(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x150(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast;    // 0x158(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast;    // 0x160(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast;    // 0x168(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_FTrunc_A_ImplicitCast;                    // 0x170(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_1;  // 0x178(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_1;  // 0x180(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_1;  // 0x188(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_2;  // 0x190(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_2;  // 0x198(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_2;  // 0x1A0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_3;  // 0x1A8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_3;  // 0x1B0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_3;  // 0x1B8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_4;  // 0x1C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_4;  // 0x1C8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_4;  // 0x1D0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_5;  // 0x1D8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_5;  // 0x1E0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_5;  // 0x1E8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_6;  // 0x1F0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_6;  // 0x1F8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_6;  // 0x200(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_7;  // 0x208(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_7;  // 0x210(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_7;  // 0x218(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_8;  // 0x220(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_8;  // 0x228(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_8;  // 0x230(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_9;  // 0x238(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_9;  // 0x240(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_9;  // 0x248(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_10; // 0x250(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_10; // 0x258(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_10; // 0x260(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_11; // 0x268(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_11; // 0x270(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_11; // 0x278(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_12; // 0x280(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_12; // 0x288(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_12; // 0x290(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_13; // 0x298(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_13; // 0x2A0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_13; // 0x2A8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_14; // 0x2B0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_14; // 0x2B8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_14; // 0x2C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_15; // 0x2C8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_15; // 0x2D0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_15; // 0x2D8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_16; // 0x2E0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_16; // 0x2E8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_16; // 0x2F0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_17; // 0x2F8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_17; // 0x300(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_17; // 0x308(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_18; // 0x310(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_19; // 0x318(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_18; // 0x320(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_18; // 0x328(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_19; // 0x330(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_19; // 0x338(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_20; // 0x340(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_20; // 0x348(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_20; // 0x350(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_21; // 0x358(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_21; // 0x360(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_21; // 0x368(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_22; // 0x370(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_22; // 0x378(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_22; // 0x380(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_23; // 0x388(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalOptionWorldSettings               WorldSetting;                                      // 0x0(0x138)(BlueprintVisible, BlueprintReadOnly, Parm)
+	int32                                        CallFunc_FTrunc_ReturnValue;                       // 0x138(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_280F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FString>                        CallFunc_CreateDeathPenaltySettingStrings_OutStrings; // 0x140(0x10)(ReferenceParm)
+	int32                                        CallFunc_ConvertDeathPenaltyToUIIndex_UIIndex;     // 0x150(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_2811[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Conv_IntToDouble_ReturnValue;             // 0x158(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x160(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast;    // 0x168(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast;    // 0x170(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast;    // 0x178(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_FTrunc_A_ImplicitCast;                    // 0x180(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_1;  // 0x188(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_1;  // 0x190(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_1;  // 0x198(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_2;  // 0x1A0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_2;  // 0x1A8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_2;  // 0x1B0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_3;  // 0x1B8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_3;  // 0x1C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_3;  // 0x1C8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_4;  // 0x1D0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_4;  // 0x1D8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_4;  // 0x1E0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_5;  // 0x1E8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_5;  // 0x1F0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_5;  // 0x1F8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_6;  // 0x200(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_6;  // 0x208(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_6;  // 0x210(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_7;  // 0x218(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_7;  // 0x220(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_7;  // 0x228(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_8;  // 0x230(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_8;  // 0x238(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_8;  // 0x240(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_9;  // 0x248(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_9;  // 0x250(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_9;  // 0x258(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_10; // 0x260(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_10; // 0x268(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_10; // 0x270(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_11; // 0x278(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_11; // 0x280(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_11; // 0x288(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_12; // 0x290(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_12; // 0x298(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_12; // 0x2A0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_13; // 0x2A8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_13; // 0x2B0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_13; // 0x2B8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_14; // 0x2C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_14; // 0x2C8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_14; // 0x2D0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_15; // 0x2D8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_15; // 0x2E0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_15; // 0x2E8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_16; // 0x2F0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_16; // 0x2F8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_16; // 0x300(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_17; // 0x308(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_17; // 0x310(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_17; // 0x318(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_18; // 0x320(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_19; // 0x328(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_18; // 0x330(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_18; // 0x338(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_19; // 0x340(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_19; // 0x348(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_20; // 0x350(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_20; // 0x358(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_20; // 0x360(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_21; // 0x368(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_21; // 0x370(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_21; // 0x378(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_22; // 0x380(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MinValue_ImplicitCast_22; // 0x388(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_MaxValue_ImplicitCast_22; // 0x390(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetupFloatValue_NowValue_ImplicitCast_23; // 0x398(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x2C4 (0x2C4 - 0x0)
+// 0x2D4 (0x2D4 - 0x0)
 // Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.Setup
 struct UWBP_Title_WorldSettings_C_Setup_Params
 {
 public:
-	struct FPalOptionWorldSettings               WorldSetting;                                      // 0x0(0x128)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                         IsNewWorld;                                        // 0x128(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CanMulti;                                          // 0x129(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1BE2[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FString                                WorldSaveDirectoryName;                            // 0x130(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                WorldName;                                         // 0x140(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	bool                                         Temp_bool_Variable;                                // 0x150(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  Temp_byte_Variable;                                // 0x151(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  Temp_byte_Variable_1;                              // 0x152(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         Temp_bool_Variable_1;                              // 0x153(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1BE5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UBP_PalOptionSubsystem_C*              CallFunc_SpawnObject_ReturnValue;                  // 0x158(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	enum class EPalOptionWorldDifficulty         Temp_byte_Variable_2;                              // 0x160(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1BE7[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FPalOptionWorldStaticSettings         CallFunc_GetOptionWorldStaticSettings_ReturnValue; // 0x164(0xF0)(ConstParm, NoDestructor)
-	bool                                         Temp_bool_Variable_2;                              // 0x254(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  Temp_byte_Variable_3;                              // 0x255(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  Temp_byte_Variable_4;                              // 0x256(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsMultiplayRestricted_ReturnValue;        // 0x257(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  Temp_byte_Variable_5;                              // 0x258(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  Temp_byte_Variable_6;                              // 0x259(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         Temp_bool_Variable_3;                              // 0x25A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsXB1_ReturnValue;                        // 0x25B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_BooleanOR_ReturnValue;                    // 0x25C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  K2Node_Select_Default;                             // 0x25D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  K2Node_Select_Default_1;                           // 0x25E(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1BEE[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_SelectFloat_ReturnValue;                  // 0x260(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class EPalOptionWorldDifficulty         K2Node_Select_Default_2;                           // 0x268(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1BF2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FString>                        CallFunc_CreateDifficultySettingStrings_OutStrings; // 0x270(0x10)(ReferenceParm)
-	int32                                        CallFunc_ConvertDifficultyToUIIndex_UIIndex;       // 0x280(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  K2Node_Select_Default_3;                           // 0x284(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1BF6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FString                                CallFunc_SelectString_ReturnValue;                 // 0x288(0x10)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                  CallFunc_Conv_StringToText_ReturnValue;            // 0x298(0x18)(None)
-	class FString                                CallFunc_SelectString_ReturnValue_1;               // 0x2B0(0x10)(ZeroConstructor, HasGetValueTypeHash)
-	float                                        CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x2C0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalOptionWorldSettings               WorldSetting;                                      // 0x0(0x138)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                         IsNewWorld;                                        // 0x138(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CanMulti;                                          // 0x139(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_2874[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FString                                WorldSaveDirectoryName;                            // 0x140(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                WorldName;                                         // 0x150(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                         Temp_bool_Variable;                                // 0x160(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  Temp_byte_Variable;                                // 0x161(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  Temp_byte_Variable_1;                              // 0x162(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         Temp_bool_Variable_1;                              // 0x163(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_2879[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UBP_PalOptionSubsystem_C*              CallFunc_SpawnObject_ReturnValue;                  // 0x168(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	enum class EPalOptionWorldDifficulty         Temp_byte_Variable_2;                              // 0x170(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_287B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FPalOptionWorldStaticSettings         CallFunc_GetOptionWorldStaticSettings_ReturnValue; // 0x174(0xF0)(ConstParm, NoDestructor)
+	bool                                         Temp_bool_Variable_2;                              // 0x264(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  Temp_byte_Variable_3;                              // 0x265(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  Temp_byte_Variable_4;                              // 0x266(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsMultiplayRestricted_ReturnValue;        // 0x267(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  Temp_byte_Variable_5;                              // 0x268(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  Temp_byte_Variable_6;                              // 0x269(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         Temp_bool_Variable_3;                              // 0x26A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsXB1_ReturnValue;                        // 0x26B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_BooleanOR_ReturnValue;                    // 0x26C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  K2Node_Select_Default;                             // 0x26D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  K2Node_Select_Default_1;                           // 0x26E(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_2881[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_SelectFloat_ReturnValue;                  // 0x270(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class EPalOptionWorldDifficulty         K2Node_Select_Default_2;                           // 0x278(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_2884[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FString>                        CallFunc_CreateDifficultySettingStrings_OutStrings; // 0x280(0x10)(ReferenceParm)
+	int32                                        CallFunc_ConvertDifficultyToUIIndex_UIIndex;       // 0x290(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  K2Node_Select_Default_3;                           // 0x294(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_2887[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FString                                CallFunc_SelectString_ReturnValue;                 // 0x298(0x10)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                  CallFunc_Conv_StringToText_ReturnValue;            // 0x2A8(0x18)(None)
+	class FString                                CallFunc_SelectString_ReturnValue_1;               // 0x2C0(0x10)(ZeroConstructor, HasGetValueTypeHash)
+	float                                        CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x2D0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x1 (0x1 - 0x0)
@@ -681,21 +681,21 @@ public:
 	bool                                         CallFunc_IsOn_IsOn;                                // 0xA(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  K2Node_Select_Default;                             // 0xB(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_ComponentBoundEvent_IsOn_3;                 // 0xC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1D53[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_297D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                K2Node_ComponentBoundEvent_NewString;              // 0x10(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsOn_IsOn_1;                              // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1D55[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2980[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Len_ReturnValue;                          // 0x24(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_BooleanAND_ReturnValue;                   // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x29(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1D56[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2982[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        K2Node_ComponentBoundEvent_NewIndex_2;             // 0x2C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EPalOptionWorldDifficulty         CallFunc_ConvertUIIndexToDifficulty_DifficultyType; // 0x30(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1D58[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2985[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue;                // 0x38(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_ComponentBoundEvent_NewIndex_1;             // 0x40(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EPalOptionWorldDifficulty         CallFunc_ConvertUIIndexToDifficulty_DifficultyType_1; // 0x44(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1D5B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2988[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_ComponentBoundEvent_NewValue_28;            // 0x48(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       K2Node_ComponentBoundEvent_NewValue_27;            // 0x50(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       K2Node_ComponentBoundEvent_NewValue_26;            // 0x58(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -721,12 +721,12 @@ public:
 	int32                                        K2Node_ComponentBoundEvent_NewIndex;               // 0xF8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EPalOptionWorldDeathPenalty       CallFunc_ConvertUIIndexToDeathPenalty_DeathPenaltyType; // 0xFC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_ComponentBoundEvent_IsOn_2;                 // 0xFD(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1D65[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_298F[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_ComponentBoundEvent_NewValue_6;             // 0x100(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       K2Node_ComponentBoundEvent_NewValue_5;             // 0x108(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Round_ReturnValue;                        // 0x110(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_IsCustomPanel;                  // 0x114(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1D68[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2992[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue_1;              // 0x118(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_GetSelectNameIndex_NowIndex;              // 0x120(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable_1;                              // 0x124(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -738,14 +738,14 @@ public:
 	bool                                         K2Node_ComponentBoundEvent_IsOn_1;                 // 0x138(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable_2;                              // 0x139(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  K2Node_Select_Default_2;                           // 0x13A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1D70[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2995[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_ComponentBoundEvent_NewValue_2;             // 0x140(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_FTrunc_ReturnValue;                       // 0x148(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1D72[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2996[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_ComponentBoundEvent_NewValue_1;             // 0x150(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_FTrunc_ReturnValue_1;                     // 0x158(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_ComponentBoundEvent_IsOn;                   // 0x15C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1D73[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2997[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_ComponentBoundEvent_NewValue;               // 0x160(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_FTrunc_ReturnValue_2;                     // 0x168(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_SetFieldsInStruct_DayTimeSpeedRate_ImplicitCast; // 0x16C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

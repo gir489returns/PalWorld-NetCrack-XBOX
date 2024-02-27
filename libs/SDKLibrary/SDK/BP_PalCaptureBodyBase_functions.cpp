@@ -315,10 +315,12 @@ void ABP_PalCaptureBodyBase_C::IsSneakBonusEnabled(bool* Enabled)
 // Parameters:
 // bool                               Flag                                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APalCharacter*               CallFunc_FindOwnerPalCharacter_ReturnValue                       (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPalNetworkMulticastGateComponent*CallFunc_GetComponentByClass_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class AController*                 CallFunc_GetController_ReturnValue                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APalPlayerController*        K2Node_DynamicCast_AsPal_Player_Controller                       (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalCaptureBodyBase_C::SetSneakBonusFlag(bool Flag, class APalCharacter* CallFunc_FindOwnerPalCharacter_ReturnValue, class UPalNetworkMulticastGateComponent* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue)
+void ABP_PalCaptureBodyBase_C::SetSneakBonusFlag(bool Flag, class APalCharacter* CallFunc_FindOwnerPalCharacter_ReturnValue, class AController* CallFunc_GetController_ReturnValue, class APalPlayerController* K2Node_DynamicCast_AsPal_Player_Controller, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -329,7 +331,9 @@ void ABP_PalCaptureBodyBase_C::SetSneakBonusFlag(bool Flag, class APalCharacter*
 
 	Parms.Flag = Flag;
 	Parms.CallFunc_FindOwnerPalCharacter_ReturnValue = CallFunc_FindOwnerPalCharacter_ReturnValue;
-	Parms.CallFunc_GetComponentByClass_ReturnValue = CallFunc_GetComponentByClass_ReturnValue;
+	Parms.CallFunc_GetController_ReturnValue = CallFunc_GetController_ReturnValue;
+	Parms.K2Node_DynamicCast_AsPal_Player_Controller = K2Node_DynamicCast_AsPal_Player_Controller;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -342,10 +346,12 @@ void ABP_PalCaptureBodyBase_C::SetSneakBonusFlag(bool Flag, class APalCharacter*
 // Parameters:
 // class APalCharacter*               TargetCharacter                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class APalCharacter*               CallFunc_FindOwnerPalCharacter_ReturnValue                       (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPalNetworkMulticastGateComponent*CallFunc_GetComponentByClass_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class AController*                 CallFunc_GetController_ReturnValue                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APalPlayerController*        K2Node_DynamicCast_AsPal_Player_Controller                       (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalCaptureBodyBase_C::Setup(class APalCharacter* TargetCharacter, class APalCharacter* CallFunc_FindOwnerPalCharacter_ReturnValue, class UPalNetworkMulticastGateComponent* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue)
+void ABP_PalCaptureBodyBase_C::Setup(class APalCharacter* TargetCharacter, class APalCharacter* CallFunc_FindOwnerPalCharacter_ReturnValue, class AController* CallFunc_GetController_ReturnValue, class APalPlayerController* K2Node_DynamicCast_AsPal_Player_Controller, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -356,7 +362,9 @@ void ABP_PalCaptureBodyBase_C::Setup(class APalCharacter* TargetCharacter, class
 
 	Parms.TargetCharacter = TargetCharacter;
 	Parms.CallFunc_FindOwnerPalCharacter_ReturnValue = CallFunc_FindOwnerPalCharacter_ReturnValue;
-	Parms.CallFunc_GetComponentByClass_ReturnValue = CallFunc_GetComponentByClass_ReturnValue;
+	Parms.CallFunc_GetController_ReturnValue = CallFunc_GetController_ReturnValue;
+	Parms.K2Node_DynamicCast_AsPal_Player_Controller = K2Node_DynamicCast_AsPal_Player_Controller;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -423,10 +431,12 @@ void ABP_PalCaptureBodyBase_C::GetCaptureLevel(int32* Level)
 // Parameters:
 // int32                              NewParam                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APalCharacter*               CallFunc_FindOwnerPalCharacter_ReturnValue                       (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPalNetworkMulticastGateComponent*CallFunc_GetComponentByClass_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class AController*                 CallFunc_GetController_ReturnValue                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APalPlayerController*        K2Node_DynamicCast_AsPal_Player_Controller                       (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalCaptureBodyBase_C::SetCaptureLevel(int32 NewParam, class APalCharacter* CallFunc_FindOwnerPalCharacter_ReturnValue, class UPalNetworkMulticastGateComponent* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue)
+void ABP_PalCaptureBodyBase_C::SetCaptureLevel(int32 NewParam, class APalCharacter* CallFunc_FindOwnerPalCharacter_ReturnValue, class AController* CallFunc_GetController_ReturnValue, class APalPlayerController* K2Node_DynamicCast_AsPal_Player_Controller, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -437,7 +447,9 @@ void ABP_PalCaptureBodyBase_C::SetCaptureLevel(int32 NewParam, class APalCharact
 
 	Parms.NewParam = NewParam;
 	Parms.CallFunc_FindOwnerPalCharacter_ReturnValue = CallFunc_FindOwnerPalCharacter_ReturnValue;
-	Parms.CallFunc_GetComponentByClass_ReturnValue = CallFunc_GetComponentByClass_ReturnValue;
+	Parms.CallFunc_GetController_ReturnValue = CallFunc_GetController_ReturnValue;
+	Parms.K2Node_DynamicCast_AsPal_Player_Controller = K2Node_DynamicCast_AsPal_Player_Controller;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -528,11 +540,74 @@ void ABP_PalCaptureBodyBase_C::SetTargetIDToALL(const struct FPalInstanceID& Tar
 }
 
 
+// Function BP_PalCaptureBodyBase.BP_PalCaptureBodyBase_C.SetCaptureLevelInternal
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// int32                              Level                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalCaptureBodyBase_C::SetCaptureLevelInternal(int32 Level)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_PalCaptureBodyBase_C", "SetCaptureLevelInternal");
+
+	Params::ABP_PalCaptureBodyBase_C_SetCaptureLevelInternal_Params Parms{};
+
+	Parms.Level = Level;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function BP_PalCaptureBodyBase.BP_PalCaptureBodyBase_C.SetSneakBonusFlagInternal
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                               IsSneak                                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalCaptureBodyBase_C::SetSneakBonusFlagInternal(bool IsSneak)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_PalCaptureBodyBase_C", "SetSneakBonusFlagInternal");
+
+	Params::ABP_PalCaptureBodyBase_C_SetSneakBonusFlagInternal_Params Parms{};
+
+	Parms.IsSneak = IsSneak;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function BP_PalCaptureBodyBase.BP_PalCaptureBodyBase_C.SetupInternal
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APalCharacter*               TargetCharacter                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalCaptureBodyBase_C::SetupInternal(class APalCharacter* TargetCharacter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_PalCaptureBodyBase_C", "SetupInternal");
+
+	Params::ABP_PalCaptureBodyBase_C_SetupInternal_Params Parms{};
+
+	Parms.TargetCharacter = TargetCharacter;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function BP_PalCaptureBodyBase.BP_PalCaptureBodyBase_C.ExecuteUbergraph_BP_PalCaptureBodyBase
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPalIndividualCharacterHandle*CallFunc_GetTargetHandle_targetHandle                            (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Greater_DoubleDouble_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_Event_DeltaSeconds                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FPalInstanceID              K2Node_CustomEvent_TargetID                                      (HasGetValueTypeHash)
@@ -540,12 +615,16 @@ void ABP_PalCaptureBodyBase_C::SetTargetIDToALL(const struct FPalInstanceID& Tar
 // class UPalIndividualCharacterHandle*CallFunc_GetIndividualHandle_ReturnValue                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Add_DoubleDouble_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APalCharacter*               CallFunc_GetTargetActor_TargetActor                              (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_HasAuthority_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Greater_DoubleDouble_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsServer_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalIndividualCharacterHandle*CallFunc_GetTargetHandle_targetHandle                            (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                              K2Node_Event_level                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_Event_isSneak                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APalCharacter*               K2Node_Event_targetCharacter                                     (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Add_DoubleDouble_B_ImplicitCast                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalCaptureBodyBase_C::ExecuteUbergraph_BP_PalCaptureBodyBase(int32 EntryPoint, class UPalIndividualCharacterHandle* CallFunc_GetTargetHandle_targetHandle, float K2Node_Event_DeltaSeconds, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FPalInstanceID& K2Node_CustomEvent_TargetID, class UPalCharacterManager* CallFunc_GetCharacterManager_ReturnValue, class UPalIndividualCharacterHandle* CallFunc_GetIndividualHandle_ReturnValue, double CallFunc_Add_DoubleDouble_ReturnValue, class APalCharacter* CallFunc_GetTargetActor_TargetActor, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Greater_DoubleDouble_ReturnValue, bool CallFunc_IsServer_ReturnValue, double CallFunc_Add_DoubleDouble_B_ImplicitCast)
+void ABP_PalCaptureBodyBase_C::ExecuteUbergraph_BP_PalCaptureBodyBase(int32 EntryPoint, bool CallFunc_Greater_DoubleDouble_ReturnValue, float K2Node_Event_DeltaSeconds, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FPalInstanceID& K2Node_CustomEvent_TargetID, class UPalCharacterManager* CallFunc_GetCharacterManager_ReturnValue, class UPalIndividualCharacterHandle* CallFunc_GetIndividualHandle_ReturnValue, double CallFunc_Add_DoubleDouble_ReturnValue, class APalCharacter* CallFunc_GetTargetActor_TargetActor, bool CallFunc_HasAuthority_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsServer_ReturnValue, class UPalIndividualCharacterHandle* CallFunc_GetTargetHandle_targetHandle, int32 K2Node_Event_level, bool K2Node_Event_isSneak, class APalCharacter* K2Node_Event_targetCharacter, double CallFunc_Add_DoubleDouble_B_ImplicitCast)
 {
 	static class UFunction* Func = nullptr;
 
@@ -555,7 +634,7 @@ void ABP_PalCaptureBodyBase_C::ExecuteUbergraph_BP_PalCaptureBodyBase(int32 Entr
 	Params::ABP_PalCaptureBodyBase_C_ExecuteUbergraph_BP_PalCaptureBodyBase_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-	Parms.CallFunc_GetTargetHandle_targetHandle = CallFunc_GetTargetHandle_targetHandle;
+	Parms.CallFunc_Greater_DoubleDouble_ReturnValue = CallFunc_Greater_DoubleDouble_ReturnValue;
 	Parms.K2Node_Event_DeltaSeconds = K2Node_Event_DeltaSeconds;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CustomEvent_TargetID = K2Node_CustomEvent_TargetID;
@@ -563,9 +642,13 @@ void ABP_PalCaptureBodyBase_C::ExecuteUbergraph_BP_PalCaptureBodyBase(int32 Entr
 	Parms.CallFunc_GetIndividualHandle_ReturnValue = CallFunc_GetIndividualHandle_ReturnValue;
 	Parms.CallFunc_Add_DoubleDouble_ReturnValue = CallFunc_Add_DoubleDouble_ReturnValue;
 	Parms.CallFunc_GetTargetActor_TargetActor = CallFunc_GetTargetActor_TargetActor;
+	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
-	Parms.CallFunc_Greater_DoubleDouble_ReturnValue = CallFunc_Greater_DoubleDouble_ReturnValue;
 	Parms.CallFunc_IsServer_ReturnValue = CallFunc_IsServer_ReturnValue;
+	Parms.CallFunc_GetTargetHandle_targetHandle = CallFunc_GetTargetHandle_targetHandle;
+	Parms.K2Node_Event_level = K2Node_Event_level;
+	Parms.K2Node_Event_isSneak = K2Node_Event_isSneak;
+	Parms.K2Node_Event_targetCharacter = K2Node_Event_targetCharacter;
 	Parms.CallFunc_Add_DoubleDouble_B_ImplicitCast = CallFunc_Add_DoubleDouble_B_ImplicitCast;
 
 	UObject::ProcessEvent(Func, &Parms);

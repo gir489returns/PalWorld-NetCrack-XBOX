@@ -18,14 +18,14 @@ public:
 	TMap<class UMaterialInterface*, class UMaterialInterface*> MaterialRemapList;                                 // 0x158(0x50)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	bool                                         AutoActivate;                                      // 0x1A8(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         TickWhenPaused;                                    // 0x1A9(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1248[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_16BF[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector2D                             DesiredWidgetSize;                                 // 0x1B0(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         FakeDepthScale;                                    // 0x1C0(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_124B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_16C2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        FakeDepthScaleDistance;                            // 0x1C4(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ShowDebugSystemInWorld;                            // 0x1C8(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         DisableWarnings;                                   // 0x1C9(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_124D[0x16];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_16C4[0x16];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	class ANiagaraUIActor*                       NiagaraActor;                                      // 0x1E0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UNiagaraUIComponent*                   NiagaraComponent;                                  // 0x1E8(0x8)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
@@ -58,7 +58,7 @@ public:
 class UNiagaraUIComponent : public UNiagaraComponent
 {
 public:
-	uint8                                        Pad_125A[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_16D1[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UNiagaraUIComponent* GetDefaultObj();

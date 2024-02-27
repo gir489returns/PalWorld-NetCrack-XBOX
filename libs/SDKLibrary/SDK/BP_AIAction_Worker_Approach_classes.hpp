@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x158 - 0x158)
+// 0x0 (0x160 - 0x160)
 // BlueprintGeneratedClass BP_AIAction_Worker_Approach.BP_AIAction_Worker_Approach_C
 class UBP_AIAction_Worker_Approach_C : public UPalAIActionWorkerApproachToWorkArea
 {

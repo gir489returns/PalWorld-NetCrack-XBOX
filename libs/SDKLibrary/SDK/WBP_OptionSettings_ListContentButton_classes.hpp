@@ -22,9 +22,11 @@ public:
 	static class UClass* StaticClass();
 	static class UWBP_OptionSettings_ListContentButton_C* GetDefaultObj();
 
+	void GetCurrentIcon(struct FSlateBrush* Brush, const struct FSlateBrush& CallFunc_GetIcon_ReturnValue, bool CallFunc_IsVisible_ReturnValue);
 	void SetIcon(const struct FSlateBrush& KeyIcon);
 	void EnableWarning(bool IsEnable);
-	void ExecuteUbergraph_WBP_OptionSettings_ListContentButton(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, const struct FSlateBrush& K2Node_CustomEvent_KeyIcon, bool K2Node_CustomEvent_IsEnable, enum class ESlateVisibility K2Node_Select_Default);
+	void SetUIIcon(struct FSlateBrush& InBrush, class FName ActionName, enum class ECommonInputType InputType);
+	void ExecuteUbergraph_WBP_OptionSettings_ListContentButton(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_2, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, const struct FSlateBrush& K2Node_CustomEvent_KeyIcon, bool K2Node_CustomEvent_IsEnable, enum class ESlateVisibility K2Node_Select_Default, const struct FSlateBrush& K2Node_CustomEvent_InBrush, class FName K2Node_CustomEvent_ActionName, enum class ECommonInputType K2Node_CustomEvent_InputType, bool CallFunc_NotEqual_NameName_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_1, enum class ESlateVisibility K2Node_Select_Default_2);
 };
 
 }

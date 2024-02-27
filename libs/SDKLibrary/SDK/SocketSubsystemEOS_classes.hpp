@@ -16,7 +16,7 @@ class UNetDriverEOSBase : public UIpNetDriver
 public:
 	bool                                         bIsPassthrough;                                    // 0x840(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsUsingP2PSockets;                                // 0x841(0x1)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F6[0x6];                                       // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2A7[0x6];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UNetDriverEOSBase* GetDefaultObj();
@@ -28,7 +28,7 @@ public:
 class UNetConnectionEOS : public UIpConnection
 {
 public:
-	uint8                                        Pad_F8[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2A8[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UNetConnectionEOS* GetDefaultObj();

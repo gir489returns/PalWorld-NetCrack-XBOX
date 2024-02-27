@@ -9,13 +9,13 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x10 (0x178 - 0x168)
+// 0x10 (0x190 - 0x180)
 // BlueprintGeneratedClass BP_ActionPlanting_Player.BP_ActionPlanting_Player_C
-class UBP_ActionPlanting_Player_C : public UBP_ActionSimpleMonoMontage_C
+class UBP_ActionPlanting_Player_C : public UBP_ActionInteractBase_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x168(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class FName                                  FlagName;                                          // 0x170(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x180(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class FName                                  FlagName;                                          // 0x188(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UBP_ActionPlanting_Player_C* GetDefaultObj();

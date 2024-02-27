@@ -172,10 +172,13 @@ void ABP_GrapplingGun_C::IsGraplingAction(bool* bSuccess, class APalCharacter* C
 // Function BP_GrapplingGun.BP_GrapplingGun_C.ShotCable
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// struct FRotator                    CallFunc_K2_GetComponentRotation_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FVector                     CallFunc_K2_GetComponentLocation_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     CallFunc_CalcShootStartParam_ShootDirection                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     CallFunc_CalcShootStartParam_StartLocation                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UNiagaraComponent*           CallFunc_SpawnSystemAtLocation_ReturnValue                       (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_GrapplingGun_C::ShotCable(const struct FVector& CallFunc_CalcShootStartParam_ShootDirection, const struct FVector& CallFunc_CalcShootStartParam_StartLocation)
+void ABP_GrapplingGun_C::ShotCable(const struct FRotator& CallFunc_K2_GetComponentRotation_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, const struct FVector& CallFunc_CalcShootStartParam_ShootDirection, const struct FVector& CallFunc_CalcShootStartParam_StartLocation, class UNiagaraComponent* CallFunc_SpawnSystemAtLocation_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -184,24 +187,27 @@ void ABP_GrapplingGun_C::ShotCable(const struct FVector& CallFunc_CalcShootStart
 
 	Params::ABP_GrapplingGun_C_ShotCable_Params Parms{};
 
+	Parms.CallFunc_K2_GetComponentRotation_ReturnValue = CallFunc_K2_GetComponentRotation_ReturnValue;
+	Parms.CallFunc_K2_GetComponentLocation_ReturnValue = CallFunc_K2_GetComponentLocation_ReturnValue;
 	Parms.CallFunc_CalcShootStartParam_ShootDirection = CallFunc_CalcShootStartParam_ShootDirection;
 	Parms.CallFunc_CalcShootStartParam_StartLocation = CallFunc_CalcShootStartParam_StartLocation;
+	Parms.CallFunc_SpawnSystemAtLocation_ReturnValue = CallFunc_SpawnSystemAtLocation_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function BP_GrapplingGun.BP_GrapplingGun_C.OnGraplingActionStart
+// Function BP_GrapplingGun.BP_GrapplingGun_C.On Grapling Action Start
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
-void ABP_GrapplingGun_C::OnGraplingActionStart()
+void ABP_GrapplingGun_C::On_Grapling_Action_Start()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("BP_GrapplingGun_C", "OnGraplingActionStart");
+		Func = Class->GetFunction("BP_GrapplingGun_C", "On Grapling Action Start");
 
 
 
@@ -213,17 +219,24 @@ void ABP_GrapplingGun_C::OnGraplingActionStart()
 // Function BP_GrapplingGun.BP_GrapplingGun_C.OnGraplingActionEnd
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// class APalCharacter*               CallFunc_FindOwnerPalCharacter_ReturnValue                       (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APalPlayerCharacter*         K2Node_DynamicCast_AsPal_Player_Character                        (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_GrapplingGun_C::OnGraplingActionEnd()
+void ABP_GrapplingGun_C::OnGraplingActionEnd(class APalCharacter* CallFunc_FindOwnerPalCharacter_ReturnValue, class APalPlayerCharacter* K2Node_DynamicCast_AsPal_Player_Character, bool K2Node_DynamicCast_bSuccess)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
 		Func = Class->GetFunction("BP_GrapplingGun_C", "OnGraplingActionEnd");
 
+	Params::ABP_GrapplingGun_C_OnGraplingActionEnd_Params Parms{};
 
+	Parms.CallFunc_FindOwnerPalCharacter_ReturnValue = CallFunc_FindOwnerPalCharacter_ReturnValue;
+	Parms.K2Node_DynamicCast_AsPal_Player_Character = K2Node_DynamicCast_AsPal_Player_Character;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 
 }
 
@@ -533,12 +546,14 @@ void ABP_GrapplingGun_C::UpdateRopeEndLocation(const struct FTransform& CallFunc
 }
 
 
-// Function BP_GrapplingGun.BP_GrapplingGun_C.StartGraplling
+// Function BP_GrapplingGun.BP_GrapplingGun_C.Start Graplling
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UPalDebugSetting*            CallFunc_GetPalDebugSetting_ReturnValue                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class APalCharacter*               CallFunc_FindOwnerPalCharacter_ReturnValue                       (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APalPlayerCharacter*         K2Node_DynamicCast_AsPal_Player_Character                        (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_HasAuthority_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FPalNetArchive              K2Node_MakeStruct_PalNetArchive                                  (None)
 // struct FActionDynamicParameter     K2Node_MakeStruct_ActionDynamicParameter                         (None)
@@ -547,18 +562,20 @@ void ABP_GrapplingGun_C::UpdateRopeEndLocation(const struct FTransform& CallFunc
 // class UPalActionBase*              CallFunc_PlayActionByTypeParameter_ReturnValue                   (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_WritePlayerGrappling_Speed_ImplicitCast                 (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_GrapplingGun_C::StartGraplling(class UPalDebugSetting* CallFunc_GetPalDebugSetting_ReturnValue, class APalCharacter* CallFunc_FindOwnerPalCharacter_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, const struct FPalNetArchive& K2Node_MakeStruct_PalNetArchive, const struct FActionDynamicParameter& K2Node_MakeStruct_ActionDynamicParameter, class APalCharacter* CallFunc_FindOwnerPalCharacter_ReturnValue_1, class UPalActionComponent* CallFunc_GetActionComponent_ReturnValue, class UPalActionBase* CallFunc_PlayActionByTypeParameter_ReturnValue, float CallFunc_WritePlayerGrappling_Speed_ImplicitCast)
+void ABP_GrapplingGun_C::Start_Graplling(class UPalDebugSetting* CallFunc_GetPalDebugSetting_ReturnValue, class APalCharacter* CallFunc_FindOwnerPalCharacter_ReturnValue, bool CallFunc_IsValid_ReturnValue, class APalPlayerCharacter* K2Node_DynamicCast_AsPal_Player_Character, bool K2Node_DynamicCast_bSuccess, bool CallFunc_HasAuthority_ReturnValue, const struct FPalNetArchive& K2Node_MakeStruct_PalNetArchive, const struct FActionDynamicParameter& K2Node_MakeStruct_ActionDynamicParameter, class APalCharacter* CallFunc_FindOwnerPalCharacter_ReturnValue_1, class UPalActionComponent* CallFunc_GetActionComponent_ReturnValue, class UPalActionBase* CallFunc_PlayActionByTypeParameter_ReturnValue, float CallFunc_WritePlayerGrappling_Speed_ImplicitCast)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("BP_GrapplingGun_C", "StartGraplling");
+		Func = Class->GetFunction("BP_GrapplingGun_C", "Start Graplling");
 
-	Params::ABP_GrapplingGun_C_StartGraplling_Params Parms{};
+	Params::ABP_GrapplingGun_C_Start_Graplling_Params Parms{};
 
 	Parms.CallFunc_GetPalDebugSetting_ReturnValue = CallFunc_GetPalDebugSetting_ReturnValue;
 	Parms.CallFunc_FindOwnerPalCharacter_ReturnValue = CallFunc_FindOwnerPalCharacter_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.K2Node_DynamicCast_AsPal_Player_Character = K2Node_DynamicCast_AsPal_Player_Character;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
 	Parms.K2Node_MakeStruct_PalNetArchive = K2Node_MakeStruct_PalNetArchive;
 	Parms.K2Node_MakeStruct_ActionDynamicParameter = K2Node_MakeStruct_ActionDynamicParameter;
