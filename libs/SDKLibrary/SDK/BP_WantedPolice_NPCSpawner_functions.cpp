@@ -242,17 +242,17 @@ void ABP_WantedPolice_NPCSpawner_C::CheckReportCriminal(int32 Temp_int_Loop_Coun
 
 
 // Function BP_WantedPolice_NPCSpawner.BP_WantedPolice_NPCSpawner_C.DespawnPolices
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// TArray<class UPalIndividualCharacterHandle*>DespawnHandles                                                   (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UPalIndividualCharacterHandle*>CallFunc_Map_Keys_Keys                                           (ReferenceParm)
-// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPalIndividualCharacterHandle*CallFunc_Array_Get_Item                                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_WantedPolice_NPCSpawner_C::DespawnPolices(int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, TArray<class UPalIndividualCharacterHandle*>& CallFunc_Map_Keys_Keys, int32 CallFunc_Array_Length_ReturnValue, class UPalIndividualCharacterHandle* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue)
+void ABP_WantedPolice_NPCSpawner_C::DespawnPolices(TArray<class UPalIndividualCharacterHandle*>& DespawnHandles, int32 CallFunc_Array_Length_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, class UPalIndividualCharacterHandle* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -261,13 +261,13 @@ void ABP_WantedPolice_NPCSpawner_C::DespawnPolices(int32 Temp_int_Array_Index_Va
 
 	Params::ABP_WantedPolice_NPCSpawner_C_DespawnPolices_Params Parms{};
 
+	Parms.DespawnHandles = DespawnHandles;
+	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
-	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
-	Parms.CallFunc_Map_Keys_Keys = CallFunc_Map_Keys_Keys;
-	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
+	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -283,52 +283,57 @@ void ABP_WantedPolice_NPCSpawner_C::DespawnPolices(int32 Temp_int_Array_Index_Va
 // struct FPalWorldSecurityWantedPoliceSettingDataPreUsePoliceData                                                 (Edit, BlueprintVisible, NoDestructor)
 // struct FPalWorldSecurityWantedPoliceSettingDataUsePoliceData                                                    (Edit, BlueprintVisible, NoDestructor)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Subtract_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_GreaterEqual_IntInt_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Loop_Counter_Variable_1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class ABP_NPCAIController_C*>CallFunc_Map_Values_Values                                       (ReferenceParm)
+// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Loop_Counter_Variable_2                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable_1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Array_Index_Variable_2                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ABP_NPCAIController_C*       CallFunc_Array_Get_Item                                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APawn*                       CallFunc_K2_GetPawn_ReturnValue                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_K2_GetActorLocation_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Array_Add_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<class FName>                K2Node_MakeArray_Array                                           (ReferenceParm)
-// class FString                      CallFunc_Conv_IntToString_ReturnValue                            (ZeroConstructor, HasGetValueTypeHash)
-// class FString                      CallFunc_Conv_IntToString_ReturnValue_1                          (ZeroConstructor, HasGetValueTypeHash)
-// class FString                      CallFunc_Concat_StrStr_ReturnValue                               (ZeroConstructor, HasGetValueTypeHash)
 // bool                               CallFunc_NotEqual_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString                      CallFunc_Concat_StrStr_ReturnValue_1                             (ZeroConstructor, HasGetValueTypeHash)
-// class FString                      CallFunc_Concat_StrStr_ReturnValue_2                             (ZeroConstructor, HasGetValueTypeHash)
-// bool                               CallFunc_Map_IsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsDedicatedServer_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Map_IsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Not_PreBool_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPalWorldSecuritySystem*     CallFunc_GetWorldSecuritySystem_ReturnValue                      (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Map_Length_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_LessEqual_IntInt_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGuid                       CallFunc_Array_Get_Item                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGuid                       CallFunc_Array_Get_Item_1                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Array_Length_ReturnValue_1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                        CallFunc_GetCrimeIdByCrimeInstanceId_ReturnValue                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Less_IntInt_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FPalCrimeMasterData         CallFunc_GetDataTableRowFromName_OutRow                          (None)
 // bool                               CallFunc_GetDataTableRowFromName_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Loop_Counter_Variable_1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Subtract_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue_3                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Subtract_IntInt_ReturnValue_1                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Subtract_IntInt_ReturnValue_2                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_GreaterEqual_IntInt_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_LessEqual_IntInt_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPalGameSetting*             CallFunc_GetGameSetting_ReturnValue                              (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // TMap<int32, struct FPalWorldSecurityWantedPoliceSettingData>K2Node_Select_Default                                            (None)
 // TArray<int32>                      CallFunc_Map_Keys_Keys                                           (ReferenceParm)
 // struct FPalWorldSecurityWantedPoliceSettingDataCallFunc_Map_Find_Value                                          (NoDestructor)
 // bool                               CallFunc_Map_Find_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Array_Get_Item_1                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Array_Get_Item_2                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_LessEqual_IntInt_ReturnValue_1                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Array_Length_ReturnValue_1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Array_Length_ReturnValue_2                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Subtract_IntInt_ReturnValue_3                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Max_ReturnValue                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FPalWorldSecurityWantedPoliceSettingDataCallFunc_Map_Find_Value_1                                        (NoDestructor)
 // bool                               CallFunc_Map_Find_ReturnValue_1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_WantedPolice_NPCSpawner_C::SpawnPolices(const struct FPalWorldSecurityWantedStateInfo& WantedStateInfo, int32 LastIndex, bool IsFind, const struct FPalWorldSecurityWantedPoliceSettingData& PreUsePoliceData, const struct FPalWorldSecurityWantedPoliceSettingData& UsePoliceData, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Array_Index_Variable_1, int32 Temp_int_Variable, int32 CallFunc_Add_IntInt_ReturnValue_1, TArray<class FName>& K2Node_MakeArray_Array, const class FString& CallFunc_Conv_IntToString_ReturnValue, const class FString& CallFunc_Conv_IntToString_ReturnValue_1, const class FString& CallFunc_Concat_StrStr_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue_1, const class FString& CallFunc_Concat_StrStr_ReturnValue_2, bool CallFunc_Map_IsEmpty_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, class UPalWorldSecuritySystem* CallFunc_GetWorldSecuritySystem_ReturnValue, int32 CallFunc_Map_Length_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, const struct FGuid& CallFunc_Array_Get_Item, class FName CallFunc_GetCrimeIdByCrimeInstanceId_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, const struct FPalCrimeMasterData& CallFunc_GetDataTableRowFromName_OutRow, bool CallFunc_GetDataTableRowFromName_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool Temp_bool_Variable, int32 CallFunc_Add_IntInt_ReturnValue_2, int32 Temp_int_Loop_Counter_Variable_1, int32 CallFunc_Subtract_IntInt_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue_1, int32 CallFunc_Subtract_IntInt_ReturnValue_2, bool CallFunc_GreaterEqual_IntInt_ReturnValue, class UPalGameSetting* CallFunc_GetGameSetting_ReturnValue, TMap<int32, struct FPalWorldSecurityWantedPoliceSettingData> K2Node_Select_Default, TArray<int32>& CallFunc_Map_Keys_Keys, const struct FPalWorldSecurityWantedPoliceSettingData& CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, int32 CallFunc_Array_Get_Item_1, bool CallFunc_LessEqual_IntInt_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue_1, int32 CallFunc_Subtract_IntInt_ReturnValue_3, int32 CallFunc_Max_ReturnValue, const struct FPalWorldSecurityWantedPoliceSettingData& CallFunc_Map_Find_Value_1, bool CallFunc_Map_Find_ReturnValue_1)
+void ABP_WantedPolice_NPCSpawner_C::SpawnPolices(const struct FPalWorldSecurityWantedStateInfo& WantedStateInfo, int32 LastIndex, bool IsFind, const struct FPalWorldSecurityWantedPoliceSettingData& PreUsePoliceData, const struct FPalWorldSecurityWantedPoliceSettingData& UsePoliceData, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, int32 Temp_int_Loop_Counter_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue, TArray<class ABP_NPCAIController_C*>& CallFunc_Map_Values_Values, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 Temp_int_Loop_Counter_Variable_2, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Array_Index_Variable_1, int32 Temp_int_Array_Index_Variable_2, int32 Temp_int_Variable, class ABP_NPCAIController_C* CallFunc_Array_Get_Item, class APawn* CallFunc_K2_GetPawn_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_2, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, int32 CallFunc_Array_Add_ReturnValue, TArray<class FName>& K2Node_MakeArray_Array, bool CallFunc_NotEqual_IntInt_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_Map_IsEmpty_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, class UPalWorldSecuritySystem* CallFunc_GetWorldSecuritySystem_ReturnValue, int32 CallFunc_Map_Length_ReturnValue, const struct FGuid& CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue_1, class FName CallFunc_GetCrimeIdByCrimeInstanceId_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue_1, const struct FPalCrimeMasterData& CallFunc_GetDataTableRowFromName_OutRow, bool CallFunc_GetDataTableRowFromName_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_3, int32 CallFunc_Subtract_IntInt_ReturnValue_1, int32 CallFunc_Subtract_IntInt_ReturnValue_2, bool Temp_bool_Variable, bool CallFunc_LessEqual_IntInt_ReturnValue, class UPalGameSetting* CallFunc_GetGameSetting_ReturnValue, TMap<int32, struct FPalWorldSecurityWantedPoliceSettingData> K2Node_Select_Default, TArray<int32>& CallFunc_Map_Keys_Keys, const struct FPalWorldSecurityWantedPoliceSettingData& CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, int32 CallFunc_Array_Get_Item_2, bool CallFunc_LessEqual_IntInt_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue_2, int32 CallFunc_Subtract_IntInt_ReturnValue_3, int32 CallFunc_Max_ReturnValue, const struct FPalWorldSecurityWantedPoliceSettingData& CallFunc_Map_Find_Value_1, bool CallFunc_Map_Find_ReturnValue_1)
 {
 	static class UFunction* Func = nullptr;
 
@@ -343,46 +348,51 @@ void ABP_WantedPolice_NPCSpawner_C::SpawnPolices(const struct FPalWorldSecurityW
 	Parms.PreUsePoliceData = PreUsePoliceData;
 	Parms.UsePoliceData = UsePoliceData;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
+	Parms.CallFunc_Subtract_IntInt_ReturnValue = CallFunc_Subtract_IntInt_ReturnValue;
+	Parms.CallFunc_GreaterEqual_IntInt_ReturnValue = CallFunc_GreaterEqual_IntInt_ReturnValue;
+	Parms.Temp_int_Loop_Counter_Variable_1 = Temp_int_Loop_Counter_Variable_1;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
+	Parms.CallFunc_Map_Values_Values = CallFunc_Map_Values_Values;
+	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
+	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
+	Parms.Temp_int_Loop_Counter_Variable_2 = Temp_int_Loop_Counter_Variable_2;
+	Parms.CallFunc_Add_IntInt_ReturnValue_1 = CallFunc_Add_IntInt_ReturnValue_1;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Array_Index_Variable_1 = Temp_int_Array_Index_Variable_1;
+	Parms.Temp_int_Array_Index_Variable_2 = Temp_int_Array_Index_Variable_2;
 	Parms.Temp_int_Variable = Temp_int_Variable;
-	Parms.CallFunc_Add_IntInt_ReturnValue_1 = CallFunc_Add_IntInt_ReturnValue_1;
+	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
+	Parms.CallFunc_K2_GetPawn_ReturnValue = CallFunc_K2_GetPawn_ReturnValue;
+	Parms.CallFunc_Add_IntInt_ReturnValue_2 = CallFunc_Add_IntInt_ReturnValue_2;
+	Parms.CallFunc_K2_GetActorLocation_ReturnValue = CallFunc_K2_GetActorLocation_ReturnValue;
+	Parms.CallFunc_Array_Add_ReturnValue = CallFunc_Array_Add_ReturnValue;
 	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
-	Parms.CallFunc_Conv_IntToString_ReturnValue = CallFunc_Conv_IntToString_ReturnValue;
-	Parms.CallFunc_Conv_IntToString_ReturnValue_1 = CallFunc_Conv_IntToString_ReturnValue_1;
-	Parms.CallFunc_Concat_StrStr_ReturnValue = CallFunc_Concat_StrStr_ReturnValue;
 	Parms.CallFunc_NotEqual_IntInt_ReturnValue = CallFunc_NotEqual_IntInt_ReturnValue;
-	Parms.CallFunc_Concat_StrStr_ReturnValue_1 = CallFunc_Concat_StrStr_ReturnValue_1;
-	Parms.CallFunc_Concat_StrStr_ReturnValue_2 = CallFunc_Concat_StrStr_ReturnValue_2;
-	Parms.CallFunc_Map_IsEmpty_ReturnValue = CallFunc_Map_IsEmpty_ReturnValue;
 	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
+	Parms.CallFunc_Map_IsEmpty_ReturnValue = CallFunc_Map_IsEmpty_ReturnValue;
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
 	Parms.CallFunc_Not_PreBool_ReturnValue_1 = CallFunc_Not_PreBool_ReturnValue_1;
 	Parms.CallFunc_GetWorldSecuritySystem_ReturnValue = CallFunc_GetWorldSecuritySystem_ReturnValue;
 	Parms.CallFunc_Map_Length_ReturnValue = CallFunc_Map_Length_ReturnValue;
-	Parms.CallFunc_LessEqual_IntInt_ReturnValue = CallFunc_LessEqual_IntInt_ReturnValue;
-	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
+	Parms.CallFunc_Array_Get_Item_1 = CallFunc_Array_Get_Item_1;
+	Parms.CallFunc_Array_Length_ReturnValue_1 = CallFunc_Array_Length_ReturnValue_1;
 	Parms.CallFunc_GetCrimeIdByCrimeInstanceId_ReturnValue = CallFunc_GetCrimeIdByCrimeInstanceId_ReturnValue;
-	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
+	Parms.CallFunc_Less_IntInt_ReturnValue_1 = CallFunc_Less_IntInt_ReturnValue_1;
 	Parms.CallFunc_GetDataTableRowFromName_OutRow = CallFunc_GetDataTableRowFromName_OutRow;
 	Parms.CallFunc_GetDataTableRowFromName_ReturnValue = CallFunc_GetDataTableRowFromName_ReturnValue;
-	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
-	Parms.Temp_bool_Variable = Temp_bool_Variable;
-	Parms.CallFunc_Add_IntInt_ReturnValue_2 = CallFunc_Add_IntInt_ReturnValue_2;
-	Parms.Temp_int_Loop_Counter_Variable_1 = Temp_int_Loop_Counter_Variable_1;
-	Parms.CallFunc_Subtract_IntInt_ReturnValue = CallFunc_Subtract_IntInt_ReturnValue;
+	Parms.CallFunc_Add_IntInt_ReturnValue_3 = CallFunc_Add_IntInt_ReturnValue_3;
 	Parms.CallFunc_Subtract_IntInt_ReturnValue_1 = CallFunc_Subtract_IntInt_ReturnValue_1;
 	Parms.CallFunc_Subtract_IntInt_ReturnValue_2 = CallFunc_Subtract_IntInt_ReturnValue_2;
-	Parms.CallFunc_GreaterEqual_IntInt_ReturnValue = CallFunc_GreaterEqual_IntInt_ReturnValue;
+	Parms.Temp_bool_Variable = Temp_bool_Variable;
+	Parms.CallFunc_LessEqual_IntInt_ReturnValue = CallFunc_LessEqual_IntInt_ReturnValue;
 	Parms.CallFunc_GetGameSetting_ReturnValue = CallFunc_GetGameSetting_ReturnValue;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 	Parms.CallFunc_Map_Keys_Keys = CallFunc_Map_Keys_Keys;
 	Parms.CallFunc_Map_Find_Value = CallFunc_Map_Find_Value;
 	Parms.CallFunc_Map_Find_ReturnValue = CallFunc_Map_Find_ReturnValue;
-	Parms.CallFunc_Array_Get_Item_1 = CallFunc_Array_Get_Item_1;
+	Parms.CallFunc_Array_Get_Item_2 = CallFunc_Array_Get_Item_2;
 	Parms.CallFunc_LessEqual_IntInt_ReturnValue_1 = CallFunc_LessEqual_IntInt_ReturnValue_1;
-	Parms.CallFunc_Array_Length_ReturnValue_1 = CallFunc_Array_Length_ReturnValue_1;
+	Parms.CallFunc_Array_Length_ReturnValue_2 = CallFunc_Array_Length_ReturnValue_2;
 	Parms.CallFunc_Subtract_IntInt_ReturnValue_3 = CallFunc_Subtract_IntInt_ReturnValue_3;
 	Parms.CallFunc_Max_ReturnValue = CallFunc_Max_ReturnValue;
 	Parms.CallFunc_Map_Find_Value_1 = CallFunc_Map_Find_Value_1;
@@ -434,23 +444,26 @@ void ABP_WantedPolice_NPCSpawner_C::GetCombatGunBP(class UBP_AIAction_NPC_Combat
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // struct FVector                     Location                                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     PreLocation                                                      (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Array_IsEmpty_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Not_PreBool_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     CallFunc_K2_GetActorLocation_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     CallFunc_Add_VectorVector_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     CallFunc_Array_Get_Item                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_Array_Random_OutItem                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Array_Random_OutIndex                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     CallFunc_CheckValidSpawnLocation_Location                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_CheckValidSpawnLocation_IsValid                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_CheckValidSpawnLocation_Location_1                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_CheckValidSpawnLocation_IsValid_1                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_Array_Random_OutItem                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Array_Random_OutIndex                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_CheckValidSpawnLocation_Location_1                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_CheckValidSpawnLocation_IsValid_1                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_WantedPolice_NPCSpawner_C::FindSpawnLocation(struct FVector* Location, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FVector& CallFunc_Array_Get_Item, const struct FVector& CallFunc_Array_Random_OutItem, int32 CallFunc_Array_Random_OutIndex, const struct FVector& CallFunc_CheckValidSpawnLocation_Location, bool CallFunc_CheckValidSpawnLocation_IsValid, const struct FVector& CallFunc_CheckValidSpawnLocation_Location_1, bool CallFunc_CheckValidSpawnLocation_IsValid_1, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue)
+void ABP_WantedPolice_NPCSpawner_C::FindSpawnLocation(struct FVector* Location, const struct FVector& PreLocation, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_Array_IsEmpty_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FVector& CallFunc_Array_Get_Item, const struct FVector& CallFunc_CheckValidSpawnLocation_Location, bool CallFunc_CheckValidSpawnLocation_IsValid, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, const struct FVector& CallFunc_Array_Random_OutItem, int32 CallFunc_Array_Random_OutIndex, const struct FVector& CallFunc_CheckValidSpawnLocation_Location_1, bool CallFunc_CheckValidSpawnLocation_IsValid_1)
 {
 	static class UFunction* Func = nullptr;
 
@@ -459,21 +472,24 @@ void ABP_WantedPolice_NPCSpawner_C::FindSpawnLocation(struct FVector* Location, 
 
 	Params::ABP_WantedPolice_NPCSpawner_C_FindSpawnLocation_Params Parms{};
 
+	Parms.PreLocation = PreLocation;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
+	Parms.CallFunc_Array_IsEmpty_ReturnValue = CallFunc_Array_IsEmpty_ReturnValue;
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
+	Parms.CallFunc_Not_PreBool_ReturnValue_1 = CallFunc_Not_PreBool_ReturnValue_1;
 	Parms.CallFunc_K2_GetActorLocation_ReturnValue = CallFunc_K2_GetActorLocation_ReturnValue;
 	Parms.CallFunc_Add_VectorVector_ReturnValue = CallFunc_Add_VectorVector_ReturnValue;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
-	Parms.CallFunc_Array_Random_OutItem = CallFunc_Array_Random_OutItem;
-	Parms.CallFunc_Array_Random_OutIndex = CallFunc_Array_Random_OutIndex;
 	Parms.CallFunc_CheckValidSpawnLocation_Location = CallFunc_CheckValidSpawnLocation_Location;
 	Parms.CallFunc_CheckValidSpawnLocation_IsValid = CallFunc_CheckValidSpawnLocation_IsValid;
-	Parms.CallFunc_CheckValidSpawnLocation_Location_1 = CallFunc_CheckValidSpawnLocation_Location_1;
-	Parms.CallFunc_CheckValidSpawnLocation_IsValid_1 = CallFunc_CheckValidSpawnLocation_IsValid_1;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
 	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
+	Parms.CallFunc_Array_Random_OutItem = CallFunc_Array_Random_OutItem;
+	Parms.CallFunc_Array_Random_OutIndex = CallFunc_Array_Random_OutIndex;
+	Parms.CallFunc_CheckValidSpawnLocation_Location_1 = CallFunc_CheckValidSpawnLocation_Location_1;
+	Parms.CallFunc_CheckValidSpawnLocation_IsValid_1 = CallFunc_CheckValidSpawnLocation_IsValid_1;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -1136,12 +1152,12 @@ void ABP_WantedPolice_NPCSpawner_C::DebugShowPoints(double DeltaTime)
 // bool                               CallFunc_IsDead_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Add_DoubleDouble_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPalWorldSecuritySystem*     CallFunc_GetWorldSecuritySystem_ReturnValue_1                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GreaterEqual_DoubleDouble_ReturnValue                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UPalIndividualCharacterHandle*>CallFunc_Map_Keys_Keys                                           (ReferenceParm)
-// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Conv_DoubleToString_ReturnValue                         (ZeroConstructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Concat_StrStr_ReturnValue                               (ZeroConstructor, HasGetValueTypeHash)
+// class UPalWorldSecuritySystem*     CallFunc_GetWorldSecuritySystem_ReturnValue_1                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TArray<class UPalIndividualCharacterHandle*>CallFunc_Map_Keys_Keys                                           (ReferenceParm)
+// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable_1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UBP_AIAction_NPC_Combat_Gun_C*CallFunc_GetCombatGunBP_NewParam                                 (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UPalIndividualCharacterHandle*CallFunc_Array_Get_Item                                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -1171,19 +1187,28 @@ void ABP_WantedPolice_NPCSpawner_C::DebugShowPoints(double DeltaTime)
 // int32                              CallFunc_Add_IntInt_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GreaterEqual_DoubleDouble_ReturnValue_1                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Loop_Counter_Variable_1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Less_IntInt_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Add_DoubleDouble_ReturnValue_1                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Map_Remove_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GreaterEqual_IntInt_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsPoliceInSight_NoOneInSight                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class UPalIndividualCharacterHandle*>CallFunc_Map_Keys_Keys_1                                         (ReferenceParm)
+// class FString                      CallFunc_Conv_IntToString_ReturnValue                            (ZeroConstructor, HasGetValueTypeHash)
+// class FString                      CallFunc_Conv_IntToString_ReturnValue_1                          (ZeroConstructor, HasGetValueTypeHash)
+// class FString                      CallFunc_Concat_StrStr_ReturnValue_1                             (ZeroConstructor, HasGetValueTypeHash)
+// class FString                      CallFunc_Concat_StrStr_ReturnValue_2                             (ZeroConstructor, HasGetValueTypeHash)
+// bool                               CallFunc_Map_IsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_Concat_StrStr_ReturnValue_3                             (ZeroConstructor, HasGetValueTypeHash)
+// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class UPalIndividualCharacterHandle*>CallFunc_Map_Keys_Keys_2                                         (ReferenceParm)
+// bool                               CallFunc_Map_Remove_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Loop_Counter_Variable_1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Less_IntInt_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_DebugShowPoints_DeltaTime_ImplicitCast                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Add_DoubleDouble_A_ImplicitCast                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Add_DoubleDouble_A_ImplicitCast_1                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_WantedPolice_NPCSpawner_C::ExecuteUbergraph_BP_WantedPolice_NPCSpawner(int32 EntryPoint, int32 Temp_int_Array_Index_Variable, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, float K2Node_Event_DeltaTime, class UPalNPCAIWeaponHandle* CallFunc_GetWeaponHandle_WeaponHandle, bool CallFunc_IsEndInitialize_ReturnValue, class UPalAIActionComponent* CallFunc_GetComponentByClass_ReturnValue, class UPalAIActionBase* CallFunc_SetActionClassParameter_ReturnValue, class UBP_AIAction_CanCombatBase_C* K2Node_DynamicCast_AsBP_AIAction_Can_Combat_Base, bool K2Node_DynamicCast_bSuccess, class UPalWorldSecuritySystem* CallFunc_GetWorldSecuritySystem_ReturnValue, class UPalIndividualCharacterHandle* K2Node_CustomEvent_CriminalHandle_1, class AActor* CallFunc_GetOwner_ReturnValue, bool CallFunc_IsSelf_IsSelf, bool CallFunc_IsDead_ReturnValue, double CallFunc_Add_DoubleDouble_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UPalWorldSecuritySystem* CallFunc_GetWorldSecuritySystem_ReturnValue_1, bool CallFunc_GreaterEqual_DoubleDouble_ReturnValue, TArray<class UPalIndividualCharacterHandle*>& CallFunc_Map_Keys_Keys, int32 CallFunc_Array_Length_ReturnValue, const class FString& CallFunc_Conv_DoubleToString_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue, int32 Temp_int_Array_Index_Variable_1, class UBP_AIAction_NPC_Combat_Gun_C* CallFunc_GetCombatGunBP_NewParam, class UPalIndividualCharacterHandle* CallFunc_Array_Get_Item, bool CallFunc_IsValid_ReturnValue, class ABP_NPCAIController_C* CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class APawn* CallFunc_K2_GetPawn_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool CallFunc_CheckRespawn_IsRespawn, class UPalIndividualCharacterHandle* K2Node_CustomEvent_CriminalHandle, const struct FPalWorldSecurityWantedStateInfo& K2Node_CustomEvent_WantedStateInfo, bool CallFunc_IsSelf_IsSelf_1, double K2Node_CustomEvent_DeltaTime, bool CallFunc_IsValid_ReturnValue_3, class UPalDebugSetting* CallFunc_GetPalDebugSetting_ReturnValue, bool CallFunc_IsValid_ReturnValue_4, int32 Temp_int_Variable, const struct FVector& CallFunc_Array_Get_Item_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, const struct FVector& CallFunc_CheckValidSpawnLocation_Location, bool CallFunc_CheckValidSpawnLocation_IsValid, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_GreaterEqual_DoubleDouble_ReturnValue_1, int32 Temp_int_Loop_Counter_Variable_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, bool CallFunc_Less_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_2, double CallFunc_Add_DoubleDouble_ReturnValue_1, bool CallFunc_Map_Remove_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, bool CallFunc_IsPoliceInSight_NoOneInSight, double CallFunc_DebugShowPoints_DeltaTime_ImplicitCast, double CallFunc_Add_DoubleDouble_A_ImplicitCast, double CallFunc_Add_DoubleDouble_A_ImplicitCast_1)
+void ABP_WantedPolice_NPCSpawner_C::ExecuteUbergraph_BP_WantedPolice_NPCSpawner(int32 EntryPoint, int32 Temp_int_Array_Index_Variable, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, float K2Node_Event_DeltaTime, class UPalNPCAIWeaponHandle* CallFunc_GetWeaponHandle_WeaponHandle, bool CallFunc_IsEndInitialize_ReturnValue, class UPalAIActionComponent* CallFunc_GetComponentByClass_ReturnValue, class UPalAIActionBase* CallFunc_SetActionClassParameter_ReturnValue, class UBP_AIAction_CanCombatBase_C* K2Node_DynamicCast_AsBP_AIAction_Can_Combat_Base, bool K2Node_DynamicCast_bSuccess, class UPalWorldSecuritySystem* CallFunc_GetWorldSecuritySystem_ReturnValue, class UPalIndividualCharacterHandle* K2Node_CustomEvent_CriminalHandle_1, class AActor* CallFunc_GetOwner_ReturnValue, bool CallFunc_IsSelf_IsSelf, bool CallFunc_IsDead_ReturnValue, double CallFunc_Add_DoubleDouble_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool CallFunc_GreaterEqual_DoubleDouble_ReturnValue, const class FString& CallFunc_Conv_DoubleToString_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue, class UPalWorldSecuritySystem* CallFunc_GetWorldSecuritySystem_ReturnValue_1, TArray<class UPalIndividualCharacterHandle*>& CallFunc_Map_Keys_Keys, int32 CallFunc_Array_Length_ReturnValue, int32 Temp_int_Array_Index_Variable_1, class UBP_AIAction_NPC_Combat_Gun_C* CallFunc_GetCombatGunBP_NewParam, class UPalIndividualCharacterHandle* CallFunc_Array_Get_Item, bool CallFunc_IsValid_ReturnValue, class ABP_NPCAIController_C* CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class APawn* CallFunc_K2_GetPawn_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool CallFunc_CheckRespawn_IsRespawn, class UPalIndividualCharacterHandle* K2Node_CustomEvent_CriminalHandle, const struct FPalWorldSecurityWantedStateInfo& K2Node_CustomEvent_WantedStateInfo, bool CallFunc_IsSelf_IsSelf_1, double K2Node_CustomEvent_DeltaTime, bool CallFunc_IsValid_ReturnValue_3, class UPalDebugSetting* CallFunc_GetPalDebugSetting_ReturnValue, bool CallFunc_IsValid_ReturnValue_4, int32 Temp_int_Variable, const struct FVector& CallFunc_Array_Get_Item_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, const struct FVector& CallFunc_CheckValidSpawnLocation_Location, bool CallFunc_CheckValidSpawnLocation_IsValid, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_GreaterEqual_DoubleDouble_ReturnValue_1, double CallFunc_Add_DoubleDouble_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, bool CallFunc_GreaterEqual_IntInt_ReturnValue, bool CallFunc_IsPoliceInSight_NoOneInSight, TArray<class UPalIndividualCharacterHandle*>& CallFunc_Map_Keys_Keys_1, const class FString& CallFunc_Conv_IntToString_ReturnValue, const class FString& CallFunc_Conv_IntToString_ReturnValue_1, const class FString& CallFunc_Concat_StrStr_ReturnValue_1, const class FString& CallFunc_Concat_StrStr_ReturnValue_2, bool CallFunc_Map_IsEmpty_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue_3, bool CallFunc_Not_PreBool_ReturnValue, TArray<class UPalIndividualCharacterHandle*>& CallFunc_Map_Keys_Keys_2, bool CallFunc_Map_Remove_ReturnValue, int32 Temp_int_Loop_Counter_Variable_1, bool CallFunc_Less_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_2, double CallFunc_DebugShowPoints_DeltaTime_ImplicitCast, double CallFunc_Add_DoubleDouble_A_ImplicitCast, double CallFunc_Add_DoubleDouble_A_ImplicitCast_1)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1211,12 +1236,12 @@ void ABP_WantedPolice_NPCSpawner_C::ExecuteUbergraph_BP_WantedPolice_NPCSpawner(
 	Parms.CallFunc_IsDead_ReturnValue = CallFunc_IsDead_ReturnValue;
 	Parms.CallFunc_Add_DoubleDouble_ReturnValue = CallFunc_Add_DoubleDouble_ReturnValue;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
-	Parms.CallFunc_GetWorldSecuritySystem_ReturnValue_1 = CallFunc_GetWorldSecuritySystem_ReturnValue_1;
 	Parms.CallFunc_GreaterEqual_DoubleDouble_ReturnValue = CallFunc_GreaterEqual_DoubleDouble_ReturnValue;
-	Parms.CallFunc_Map_Keys_Keys = CallFunc_Map_Keys_Keys;
-	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
 	Parms.CallFunc_Conv_DoubleToString_ReturnValue = CallFunc_Conv_DoubleToString_ReturnValue;
 	Parms.CallFunc_Concat_StrStr_ReturnValue = CallFunc_Concat_StrStr_ReturnValue;
+	Parms.CallFunc_GetWorldSecuritySystem_ReturnValue_1 = CallFunc_GetWorldSecuritySystem_ReturnValue_1;
+	Parms.CallFunc_Map_Keys_Keys = CallFunc_Map_Keys_Keys;
+	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
 	Parms.Temp_int_Array_Index_Variable_1 = Temp_int_Array_Index_Variable_1;
 	Parms.CallFunc_GetCombatGunBP_NewParam = CallFunc_GetCombatGunBP_NewParam;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
@@ -1246,14 +1271,23 @@ void ABP_WantedPolice_NPCSpawner_C::ExecuteUbergraph_BP_WantedPolice_NPCSpawner(
 	Parms.CallFunc_Add_IntInt_ReturnValue_1 = CallFunc_Add_IntInt_ReturnValue_1;
 	Parms.CallFunc_Greater_IntInt_ReturnValue = CallFunc_Greater_IntInt_ReturnValue;
 	Parms.CallFunc_GreaterEqual_DoubleDouble_ReturnValue_1 = CallFunc_GreaterEqual_DoubleDouble_ReturnValue_1;
-	Parms.Temp_int_Loop_Counter_Variable_1 = Temp_int_Loop_Counter_Variable_1;
-	Parms.K2Node_CreateDelegate_OutputDelegate_2 = K2Node_CreateDelegate_OutputDelegate_2;
-	Parms.CallFunc_Less_IntInt_ReturnValue_1 = CallFunc_Less_IntInt_ReturnValue_1;
-	Parms.CallFunc_Add_IntInt_ReturnValue_2 = CallFunc_Add_IntInt_ReturnValue_2;
 	Parms.CallFunc_Add_DoubleDouble_ReturnValue_1 = CallFunc_Add_DoubleDouble_ReturnValue_1;
-	Parms.CallFunc_Map_Remove_ReturnValue = CallFunc_Map_Remove_ReturnValue;
+	Parms.K2Node_CreateDelegate_OutputDelegate_2 = K2Node_CreateDelegate_OutputDelegate_2;
 	Parms.CallFunc_GreaterEqual_IntInt_ReturnValue = CallFunc_GreaterEqual_IntInt_ReturnValue;
 	Parms.CallFunc_IsPoliceInSight_NoOneInSight = CallFunc_IsPoliceInSight_NoOneInSight;
+	Parms.CallFunc_Map_Keys_Keys_1 = CallFunc_Map_Keys_Keys_1;
+	Parms.CallFunc_Conv_IntToString_ReturnValue = CallFunc_Conv_IntToString_ReturnValue;
+	Parms.CallFunc_Conv_IntToString_ReturnValue_1 = CallFunc_Conv_IntToString_ReturnValue_1;
+	Parms.CallFunc_Concat_StrStr_ReturnValue_1 = CallFunc_Concat_StrStr_ReturnValue_1;
+	Parms.CallFunc_Concat_StrStr_ReturnValue_2 = CallFunc_Concat_StrStr_ReturnValue_2;
+	Parms.CallFunc_Map_IsEmpty_ReturnValue = CallFunc_Map_IsEmpty_ReturnValue;
+	Parms.CallFunc_Concat_StrStr_ReturnValue_3 = CallFunc_Concat_StrStr_ReturnValue_3;
+	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
+	Parms.CallFunc_Map_Keys_Keys_2 = CallFunc_Map_Keys_Keys_2;
+	Parms.CallFunc_Map_Remove_ReturnValue = CallFunc_Map_Remove_ReturnValue;
+	Parms.Temp_int_Loop_Counter_Variable_1 = Temp_int_Loop_Counter_Variable_1;
+	Parms.CallFunc_Less_IntInt_ReturnValue_1 = CallFunc_Less_IntInt_ReturnValue_1;
+	Parms.CallFunc_Add_IntInt_ReturnValue_2 = CallFunc_Add_IntInt_ReturnValue_2;
 	Parms.CallFunc_DebugShowPoints_DeltaTime_ImplicitCast = CallFunc_DebugShowPoints_DeltaTime_ImplicitCast;
 	Parms.CallFunc_Add_DoubleDouble_A_ImplicitCast = CallFunc_Add_DoubleDouble_A_ImplicitCast;
 	Parms.CallFunc_Add_DoubleDouble_A_ImplicitCast_1 = CallFunc_Add_DoubleDouble_A_ImplicitCast_1;

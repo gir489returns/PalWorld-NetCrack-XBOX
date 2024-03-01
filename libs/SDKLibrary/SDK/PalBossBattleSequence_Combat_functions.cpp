@@ -179,6 +179,7 @@ void UPalBossBattleSequence_Combat_C::TickSequence(float DeltaTime)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPalBossBattleSequencer*     CallFunc_GetOuterSequencer_ReturnValue                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalBossBattleSequencer*     CallFunc_GetOuterSequencer_ReturnValue_1                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FPalDeadInfo                K2Node_CustomEvent_DeadInfo                                      (NoDestructor)
 // class APalCharacter*               CallFunc_GetBossCharacter_ReturnValue                            (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsServer_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -186,7 +187,7 @@ void UPalBossBattleSequence_Combat_C::TickSequence(float DeltaTime)
 // float                              K2Node_Event_DeltaTime                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UPalBossBattleSequence_Combat_C::ExecuteUbergraph_PalBossBattleSequence_Combat(int32 EntryPoint, class UPalBossBattleSequencer* CallFunc_GetOuterSequencer_ReturnValue, const struct FPalDeadInfo& K2Node_CustomEvent_DeadInfo, class APalCharacter* CallFunc_GetBossCharacter_ReturnValue, bool CallFunc_IsServer_ReturnValue, class UPalDamageReactionComponent* CallFunc_GetComponentByClass_ReturnValue, float K2Node_Event_DeltaTime, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate)
+void UPalBossBattleSequence_Combat_C::ExecuteUbergraph_PalBossBattleSequence_Combat(int32 EntryPoint, class UPalBossBattleSequencer* CallFunc_GetOuterSequencer_ReturnValue, class UPalBossBattleSequencer* CallFunc_GetOuterSequencer_ReturnValue_1, const struct FPalDeadInfo& K2Node_CustomEvent_DeadInfo, class APalCharacter* CallFunc_GetBossCharacter_ReturnValue, bool CallFunc_IsServer_ReturnValue, class UPalDamageReactionComponent* CallFunc_GetComponentByClass_ReturnValue, float K2Node_Event_DeltaTime, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate)
 {
 	static class UFunction* Func = nullptr;
 
@@ -197,6 +198,7 @@ void UPalBossBattleSequence_Combat_C::ExecuteUbergraph_PalBossBattleSequence_Com
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetOuterSequencer_ReturnValue = CallFunc_GetOuterSequencer_ReturnValue;
+	Parms.CallFunc_GetOuterSequencer_ReturnValue_1 = CallFunc_GetOuterSequencer_ReturnValue_1;
 	Parms.K2Node_CustomEvent_DeadInfo = K2Node_CustomEvent_DeadInfo;
 	Parms.CallFunc_GetBossCharacter_ReturnValue = CallFunc_GetBossCharacter_ReturnValue;
 	Parms.CallFunc_IsServer_ReturnValue = CallFunc_IsServer_ReturnValue;

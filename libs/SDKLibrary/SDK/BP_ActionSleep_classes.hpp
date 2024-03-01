@@ -14,21 +14,21 @@ namespace SDK
 class UBP_ActionSleep_C : public UPalActionBase
 {
 public:
-	uint8                                        Pad_1A95[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BA9[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x140(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class UAnimMontage*                          TempMontage;                                       // 0x148(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsFlyPal;                                          // 0x150(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1A98[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BAA[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimerHandle                          TimeHandle;                                        // 0x158(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         EyeCloseAble;                                      // 0x160(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1A9A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BAB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UNiagaraComponent*                     Effect;                                            // 0x168(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         UseMontageFacial;                                  // 0x170(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1A9B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BAD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UPalFacialComponent*                   FacialComp;                                        // 0x178(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                         StartMontageNotifyExist;                           // 0x180(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         LoopMontageNotifyExist;                            // 0x181(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1A9E[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1BAE[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftObjectPtr<class UAkAudioEvent>          SmallSleepSound;                                   // 0x188(0x30)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	TSoftObjectPtr<class UAkAudioEvent>          MiddleSleepSound;                                  // 0x1B8(0x30)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	TSoftObjectPtr<class UAkAudioEvent>          BigSleepSound;                                     // 0x1E8(0x30)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)

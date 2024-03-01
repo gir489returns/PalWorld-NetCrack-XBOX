@@ -90,8 +90,9 @@ void UWBP_TItle_C::OnClosedQuitGameDialog(bool bResult, class APlayerController*
 // struct FDataTableRowHandle         NewLocalVar                                                      (Edit, BlueprintVisible, NoDestructor)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_GetLocalizedTextFromHandle_Text                         (None)
+// struct FGuid                       CallFunc_Dialog_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_TItle_C::OpenQuitGameDialog(const struct FDataTableRowHandle& NewLocalVar, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class FText CallFunc_GetLocalizedTextFromHandle_Text)
+void UWBP_TItle_C::OpenQuitGameDialog(const struct FDataTableRowHandle& NewLocalVar, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class FText CallFunc_GetLocalizedTextFromHandle_Text, const struct FGuid& CallFunc_Dialog_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -103,6 +104,7 @@ void UWBP_TItle_C::OpenQuitGameDialog(const struct FDataTableRowHandle& NewLocal
 	Parms.NewLocalVar = NewLocalVar;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.CallFunc_GetLocalizedTextFromHandle_Text = CallFunc_GetLocalizedTextFromHandle_Text;
+	Parms.CallFunc_Dialog_ReturnValue = CallFunc_Dialog_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -280,6 +282,7 @@ void UWBP_TItle_C::SwitchUser()
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         (None)
+// struct FGuid                       CallFunc_Dialog_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APlayerController*           CallFunc_GetLocalPlayerController_ReturnValue                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UPalDebugSetting*            CallFunc_GetPalDebugSetting_ReturnValue                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -287,7 +290,7 @@ void UWBP_TItle_C::SwitchUser()
 // class UPalHUDService*              CallFunc_GetHUDService_ReturnValue                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FGuid                       CallFunc_Push_ReturnValue                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_TItle_C::ExecuteUbergraph_WBP_TItle(int32 EntryPoint, bool CallFunc_IsCanOpenExternalWebSite_ReturnValue, class UPocketpairUserInfo* K2Node_CustomEvent_UserInfo, bool K2Node_CustomEvent_bSuccess, const class FString& K2Node_CustomEvent_ErrorStr, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const class FString& Temp_string_Variable, bool Temp_bool_Variable, class FText CallFunc_Conv_StringToText_ReturnValue, class UPocketpairUserInfo* Temp_object_Variable, class UPocketpairUserSubsystem* CallFunc_GetGameInstanceSubsystem_ReturnValue, class UWBP_Title_MenuButton_C* K2Node_ComponentBoundEvent_ButtonWidget, class USwitchUserUIDefaultOnlineSubsystemAsyncFunction* CallFunc_SwitchUserUIAsyncFunction_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UGameInstance* CallFunc_GetGameInstance_ReturnValue, class UPalGameInstance* K2Node_DynamicCast_AsPal_Game_Instance, bool K2Node_DynamicCast_bSuccess, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class FText CallFunc_Conv_StringToText_ReturnValue_1, class APlayerController* CallFunc_GetLocalPlayerController_ReturnValue, class UPalDebugSetting* CallFunc_GetPalDebugSetting_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class UPalGameInstance* CallFunc_GetPalGameInstance_ReturnValue, class UPalHUDService* CallFunc_GetHUDService_ReturnValue, const struct FGuid& CallFunc_Push_ReturnValue)
+void UWBP_TItle_C::ExecuteUbergraph_WBP_TItle(int32 EntryPoint, bool CallFunc_IsCanOpenExternalWebSite_ReturnValue, class UPocketpairUserInfo* K2Node_CustomEvent_UserInfo, bool K2Node_CustomEvent_bSuccess, const class FString& K2Node_CustomEvent_ErrorStr, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const class FString& Temp_string_Variable, bool Temp_bool_Variable, class FText CallFunc_Conv_StringToText_ReturnValue, class UPocketpairUserInfo* Temp_object_Variable, class UPocketpairUserSubsystem* CallFunc_GetGameInstanceSubsystem_ReturnValue, class UWBP_Title_MenuButton_C* K2Node_ComponentBoundEvent_ButtonWidget, class USwitchUserUIDefaultOnlineSubsystemAsyncFunction* CallFunc_SwitchUserUIAsyncFunction_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UGameInstance* CallFunc_GetGameInstance_ReturnValue, class UPalGameInstance* K2Node_DynamicCast_AsPal_Game_Instance, bool K2Node_DynamicCast_bSuccess, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class FText CallFunc_Conv_StringToText_ReturnValue_1, const struct FGuid& CallFunc_Dialog_ReturnValue, class APlayerController* CallFunc_GetLocalPlayerController_ReturnValue, class UPalDebugSetting* CallFunc_GetPalDebugSetting_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class UPalGameInstance* CallFunc_GetPalGameInstance_ReturnValue, class UPalHUDService* CallFunc_GetHUDService_ReturnValue, const struct FGuid& CallFunc_Push_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -315,6 +318,7 @@ void UWBP_TItle_C::ExecuteUbergraph_WBP_TItle(int32 EntryPoint, bool CallFunc_Is
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
 	Parms.CallFunc_Conv_StringToText_ReturnValue_1 = CallFunc_Conv_StringToText_ReturnValue_1;
+	Parms.CallFunc_Dialog_ReturnValue = CallFunc_Dialog_ReturnValue;
 	Parms.CallFunc_GetLocalPlayerController_ReturnValue = CallFunc_GetLocalPlayerController_ReturnValue;
 	Parms.CallFunc_GetPalDebugSetting_ReturnValue = CallFunc_GetPalDebugSetting_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;

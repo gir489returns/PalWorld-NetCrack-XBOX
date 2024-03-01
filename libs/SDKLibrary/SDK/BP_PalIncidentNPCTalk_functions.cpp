@@ -156,6 +156,73 @@ void UBP_PalIncidentNPCTalk_C::OnRegisteredItemShopEvent(FDelegateProperty_ K2No
 }
 
 
+// Function BP_PalIncidentNPCTalk.BP_PalIncidentNPCTalk_C.OnTalkCharacterBattleModeChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                               IsBattle                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalHUDService*              CallFunc_GetHUDService_ReturnValue                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_PalIncidentNPCTalk_C::OnTalkCharacterBattleModeChanged(bool IsBattle, class UPalHUDService* CallFunc_GetHUDService_ReturnValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_PalIncidentNPCTalk_C", "OnTalkCharacterBattleModeChanged");
+
+	Params::UBP_PalIncidentNPCTalk_C_OnTalkCharacterBattleModeChanged_Params Parms{};
+
+	Parms.IsBattle = IsBattle;
+	Parms.CallFunc_GetHUDService_ReturnValue = CallFunc_GetHUDService_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function BP_PalIncidentNPCTalk.BP_PalIncidentNPCTalk_C.OnTalkCharacterCaptured
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalHUDService*              CallFunc_GetHUDService_ReturnValue                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_PalIncidentNPCTalk_C::OnTalkCharacterCaptured(class UPalHUDService* CallFunc_GetHUDService_ReturnValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_PalIncidentNPCTalk_C", "OnTalkCharacterCaptured");
+
+	Params::UBP_PalIncidentNPCTalk_C_OnTalkCharacterCaptured_Params Parms{};
+
+	Parms.CallFunc_GetHUDService_ReturnValue = CallFunc_GetHUDService_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function BP_PalIncidentNPCTalk.BP_PalIncidentNPCTalk_C.OnTalkCharacterDead
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FPalDeadInfo                Info                                                             (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// class UPalHUDService*              CallFunc_GetHUDService_ReturnValue                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_PalIncidentNPCTalk_C::OnTalkCharacterDead(const struct FPalDeadInfo& Info, class UPalHUDService* CallFunc_GetHUDService_ReturnValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_PalIncidentNPCTalk_C", "OnTalkCharacterDead");
+
+	Params::UBP_PalIncidentNPCTalk_C_OnTalkCharacterDead_Params Parms{};
+
+	Parms.Info = Info;
+	Parms.CallFunc_GetHUDService_ReturnValue = CallFunc_GetHUDService_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function BP_PalIncidentNPCTalk.BP_PalIncidentNPCTalk_C.CunsumeRequestItem
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -768,33 +835,39 @@ void UBP_PalIncidentNPCTalk_C::Terminate(bool CallFunc_IsInitialized_ReturnValue
 }
 
 
-// Function BP_PalIncidentNPCTalk.BP_PalIncidentNPCTalk_C.SetDisableMovementForTarget
+// Function BP_PalIncidentNPCTalk.BP_PalIncidentNPCTalk_C.Set Disable Movement For Target
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                               IsDisable                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                        DisableFlagName                                                  (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APalCharacter*               TargetCharacter                                                  (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
+// class APlayerController*           CallFunc_GetLocalPlayerController_ReturnValue                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APalPlayerController*        K2Node_DynamicCast_AsPal_Player_Controller                       (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AController*                 CallFunc_GetController_ReturnValue                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UPalIncidentDynamicParameter*CallFunc_GetDynamicParameter_ReturnValue                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class APalCharacter*               K2Node_DynamicCast_AsPal_Character                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_PalIncidentNPCTalk_C::SetDisableMovementForTarget(bool IsDisable, class FName DisableFlagName, class APalCharacter* TargetCharacter, class AController* CallFunc_GetController_ReturnValue, class UPalIncidentDynamicParameter* CallFunc_GetDynamicParameter_ReturnValue, class APalCharacter* K2Node_DynamicCast_AsPal_Character, bool K2Node_DynamicCast_bSuccess)
+void UBP_PalIncidentNPCTalk_C::Set_Disable_Movement_For_Target(bool IsDisable, class FName DisableFlagName, class APalCharacter* TargetCharacter, class APlayerController* CallFunc_GetLocalPlayerController_ReturnValue, class APalPlayerController* K2Node_DynamicCast_AsPal_Player_Controller, bool K2Node_DynamicCast_bSuccess, class AController* CallFunc_GetController_ReturnValue, class UPalIncidentDynamicParameter* CallFunc_GetDynamicParameter_ReturnValue, class APalCharacter* K2Node_DynamicCast_AsPal_Character, bool K2Node_DynamicCast_bSuccess_1)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("BP_PalIncidentNPCTalk_C", "SetDisableMovementForTarget");
+		Func = Class->GetFunction("BP_PalIncidentNPCTalk_C", "Set Disable Movement For Target");
 
-	Params::UBP_PalIncidentNPCTalk_C_SetDisableMovementForTarget_Params Parms{};
+	Params::UBP_PalIncidentNPCTalk_C_Set_Disable_Movement_For_Target_Params Parms{};
 
 	Parms.IsDisable = IsDisable;
 	Parms.DisableFlagName = DisableFlagName;
 	Parms.TargetCharacter = TargetCharacter;
+	Parms.CallFunc_GetLocalPlayerController_ReturnValue = CallFunc_GetLocalPlayerController_ReturnValue;
+	Parms.K2Node_DynamicCast_AsPal_Player_Controller = K2Node_DynamicCast_AsPal_Player_Controller;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.CallFunc_GetController_ReturnValue = CallFunc_GetController_ReturnValue;
 	Parms.CallFunc_GetDynamicParameter_ReturnValue = CallFunc_GetDynamicParameter_ReturnValue;
 	Parms.K2Node_DynamicCast_AsPal_Character = K2Node_DynamicCast_AsPal_Character;
-	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.K2Node_DynamicCast_bSuccess_1 = K2Node_DynamicCast_bSuccess_1;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -1480,6 +1553,14 @@ void UBP_PalIncidentNPCTalk_C::Tick_Talking(double DeltaTime)
 // Parameters:
 // bool                               Talkable                                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APalCharacter*               Character                                                        (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APalCharacter*               CallFunc_GetTalkCharacter_TalkCharacter                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsDead_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalDamageReactionComponent* CallFunc_GetComponentByClass_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_GetBattleMode_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPalIncidentDynamicParameter*CallFunc_GetDynamicParameter_ReturnValue                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UPalIncidentDynamicParameterTalk*K2Node_DynamicCast_AsPal_Incident_Dynamic_Parameter_Talk         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1492,7 +1573,7 @@ void UBP_PalIncidentNPCTalk_C::Tick_Talking(double DeltaTime)
 // bool                               CallFunc_GetOneTalk_HasTalkData                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UDataTable*                  CallFunc_GetOneTalk_OneTalkData                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_PalIncidentNPCTalk_C::Setup(bool* Talkable, class APalCharacter* Character, class UPalIncidentDynamicParameter* CallFunc_GetDynamicParameter_ReturnValue, class UPalIncidentDynamicParameterTalk* K2Node_DynamicCast_AsPal_Incident_Dynamic_Parameter_Talk, bool K2Node_DynamicCast_bSuccess, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_GetCharacterTalk_HasTalkData, class UDataTable* CallFunc_GetCharacterTalk_TalkData, bool CallFunc_GetMultiTalk_HasTalkData, class UDataTable* CallFunc_GetMultiTalk_TalkData, const class FString& CallFunc_GetMultiTalk_TalkSequence, bool CallFunc_GetOneTalk_HasTalkData, class UDataTable* CallFunc_GetOneTalk_OneTalkData)
+void UBP_PalIncidentNPCTalk_C::Setup(bool* Talkable, class APalCharacter* Character, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class APalCharacter* CallFunc_GetTalkCharacter_TalkCharacter, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool CallFunc_IsDead_ReturnValue, class UPalDamageReactionComponent* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_GetBattleMode_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, bool CallFunc_BooleanOR_ReturnValue, class UPalIncidentDynamicParameter* CallFunc_GetDynamicParameter_ReturnValue, class UPalIncidentDynamicParameterTalk* K2Node_DynamicCast_AsPal_Incident_Dynamic_Parameter_Talk, bool K2Node_DynamicCast_bSuccess, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_GetCharacterTalk_HasTalkData, class UDataTable* CallFunc_GetCharacterTalk_TalkData, bool CallFunc_GetMultiTalk_HasTalkData, class UDataTable* CallFunc_GetMultiTalk_TalkData, const class FString& CallFunc_GetMultiTalk_TalkSequence, bool CallFunc_GetOneTalk_HasTalkData, class UDataTable* CallFunc_GetOneTalk_OneTalkData)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1502,6 +1583,14 @@ void UBP_PalIncidentNPCTalk_C::Setup(bool* Talkable, class APalCharacter* Charac
 	Params::UBP_PalIncidentNPCTalk_C_Setup_Params Parms{};
 
 	Parms.Character = Character;
+	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
+	Parms.CallFunc_GetTalkCharacter_TalkCharacter = CallFunc_GetTalkCharacter_TalkCharacter;
+	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
+	Parms.CallFunc_IsDead_ReturnValue = CallFunc_IsDead_ReturnValue;
+	Parms.CallFunc_GetComponentByClass_ReturnValue = CallFunc_GetComponentByClass_ReturnValue;
+	Parms.CallFunc_GetBattleMode_ReturnValue = CallFunc_GetBattleMode_ReturnValue;
+	Parms.K2Node_CreateDelegate_OutputDelegate_2 = K2Node_CreateDelegate_OutputDelegate_2;
+	Parms.CallFunc_BooleanOR_ReturnValue = CallFunc_BooleanOR_ReturnValue;
 	Parms.CallFunc_GetDynamicParameter_ReturnValue = CallFunc_GetDynamicParameter_ReturnValue;
 	Parms.K2Node_DynamicCast_AsPal_Incident_Dynamic_Parameter_Talk = K2Node_DynamicCast_AsPal_Incident_Dynamic_Parameter_Talk;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
@@ -1879,8 +1968,8 @@ void UBP_PalIncidentNPCTalk_C::OnShopUIClosed(class UPalHUDDispatchParameterBase
 // struct FGuid                       CallFunc_Push_ReturnValue_1                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGuid                       CallFunc_Push_ReturnValue_2                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TSubclassOf<class UObject>         K2Node_CustomEvent_Loaded_2                                      (ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_5                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class APalNetworkTransmitter*      CallFunc_GetNetworkTransmitter_ReturnValue                       (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_5                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UPalNetworkCharacterComponent*CallFunc_GetCharacter_ReturnValue                                (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UPalIncidentDynamicParameter*CallFunc_GetDynamicParameter_ReturnValue                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UPalIncidentDynamicParameter*CallFunc_GetDynamicParameter_ReturnValue_1                       (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -1889,7 +1978,7 @@ void UBP_PalIncidentNPCTalk_C::OnShopUIClosed(class UPalHUDDispatchParameterBase
 // bool                               CallFunc_HasAuthority_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Tick_DelayFinish_DeltaTime_ImplicitCast                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_PalIncidentNPCTalk_C::ExecuteUbergraph_BP_PalIncidentNPCTalk(int32 EntryPoint, class APalCharacter* CallFunc_GetTalkCharacter_TalkCharacter, TSubclassOf<class UObject> K2Node_CustomEvent_Loaded_1, class UClass* Temp_class_Variable, class UClass* K2Node_ClassDynamicCast_AsPal_User_Widget_Stackable_UI, bool K2Node_ClassDynamicCast_bSuccess, TSubclassOf<class UObject> K2Node_CustomEvent_Loaded, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UClass* Temp_class_Variable_1, class UClass* K2Node_ClassDynamicCast_AsPal_User_Widget_Stackable_UI_1, bool K2Node_ClassDynamicCast_bSuccess_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UPalHUDService* CallFunc_GetHUDService_ReturnValue, class UPalHUDDispatchParameterBase* K2Node_CustomEvent_Param_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class UPalTalkWidgetParameter* CallFunc_SpawnObject_ReturnValue, class UPalHUDService* CallFunc_GetHUDService_ReturnValue_1, const struct FGuid& CallFunc_Push_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class UPalHUDDispatchParameterBase* K2Node_CustomEvent_HUDParam_1, class UPalHUDDispatchParameterBase* K2Node_CustomEvent_Param_1, class UPalTalkWidgetParameter* K2Node_DynamicCast_AsPal_Talk_Widget_Parameter, bool K2Node_DynamicCast_bSuccess, bool CallFunc_Setup_Talkable, float K2Node_Event_DeltaTime, class APalCharacter* CallFunc_GetTalkCharacter_TalkCharacter_1, class UPalHUDDispatchParameterBase* K2Node_CustomEvent_HUDParam, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, class UPalHUDService* CallFunc_GetHUDService_ReturnValue_2, class UPalHUDDispatchParameterBase* K2Node_CustomEvent_Param, class UClass* Temp_class_Variable_2, class UClass* K2Node_ClassDynamicCast_AsPal_User_Widget_Stackable_UI_2, bool K2Node_ClassDynamicCast_bSuccess_2, class FName CallFunc_Conv_StringToName_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, const struct FGuid& CallFunc_Push_ReturnValue_1, const struct FGuid& CallFunc_Push_ReturnValue_2, TSubclassOf<class UObject> K2Node_CustomEvent_Loaded_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, class APalNetworkTransmitter* CallFunc_GetNetworkTransmitter_ReturnValue, class UPalNetworkCharacterComponent* CallFunc_GetCharacter_ReturnValue, class UPalIncidentDynamicParameter* CallFunc_GetDynamicParameter_ReturnValue, class UPalIncidentDynamicParameter* CallFunc_GetDynamicParameter_ReturnValue_1, class APalPlayerCharacter* K2Node_DynamicCast_AsPal_Player_Character, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_HasAuthority_ReturnValue, double CallFunc_Tick_DelayFinish_DeltaTime_ImplicitCast)
+void UBP_PalIncidentNPCTalk_C::ExecuteUbergraph_BP_PalIncidentNPCTalk(int32 EntryPoint, class APalCharacter* CallFunc_GetTalkCharacter_TalkCharacter, TSubclassOf<class UObject> K2Node_CustomEvent_Loaded_1, class UClass* Temp_class_Variable, class UClass* K2Node_ClassDynamicCast_AsPal_User_Widget_Stackable_UI, bool K2Node_ClassDynamicCast_bSuccess, TSubclassOf<class UObject> K2Node_CustomEvent_Loaded, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UClass* Temp_class_Variable_1, class UClass* K2Node_ClassDynamicCast_AsPal_User_Widget_Stackable_UI_1, bool K2Node_ClassDynamicCast_bSuccess_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UPalHUDService* CallFunc_GetHUDService_ReturnValue, class UPalHUDDispatchParameterBase* K2Node_CustomEvent_Param_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class UPalTalkWidgetParameter* CallFunc_SpawnObject_ReturnValue, class UPalHUDService* CallFunc_GetHUDService_ReturnValue_1, const struct FGuid& CallFunc_Push_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class UPalHUDDispatchParameterBase* K2Node_CustomEvent_HUDParam_1, class UPalHUDDispatchParameterBase* K2Node_CustomEvent_Param_1, class UPalTalkWidgetParameter* K2Node_DynamicCast_AsPal_Talk_Widget_Parameter, bool K2Node_DynamicCast_bSuccess, bool CallFunc_Setup_Talkable, float K2Node_Event_DeltaTime, class APalCharacter* CallFunc_GetTalkCharacter_TalkCharacter_1, class UPalHUDDispatchParameterBase* K2Node_CustomEvent_HUDParam, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, class UPalHUDService* CallFunc_GetHUDService_ReturnValue_2, class UPalHUDDispatchParameterBase* K2Node_CustomEvent_Param, class UClass* Temp_class_Variable_2, class UClass* K2Node_ClassDynamicCast_AsPal_User_Widget_Stackable_UI_2, bool K2Node_ClassDynamicCast_bSuccess_2, class FName CallFunc_Conv_StringToName_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, const struct FGuid& CallFunc_Push_ReturnValue_1, const struct FGuid& CallFunc_Push_ReturnValue_2, TSubclassOf<class UObject> K2Node_CustomEvent_Loaded_2, class APalNetworkTransmitter* CallFunc_GetNetworkTransmitter_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, class UPalNetworkCharacterComponent* CallFunc_GetCharacter_ReturnValue, class UPalIncidentDynamicParameter* CallFunc_GetDynamicParameter_ReturnValue, class UPalIncidentDynamicParameter* CallFunc_GetDynamicParameter_ReturnValue_1, class APalPlayerCharacter* K2Node_DynamicCast_AsPal_Player_Character, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_HasAuthority_ReturnValue, double CallFunc_Tick_DelayFinish_DeltaTime_ImplicitCast)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1937,8 +2026,8 @@ void UBP_PalIncidentNPCTalk_C::ExecuteUbergraph_BP_PalIncidentNPCTalk(int32 Entr
 	Parms.CallFunc_Push_ReturnValue_1 = CallFunc_Push_ReturnValue_1;
 	Parms.CallFunc_Push_ReturnValue_2 = CallFunc_Push_ReturnValue_2;
 	Parms.K2Node_CustomEvent_Loaded_2 = K2Node_CustomEvent_Loaded_2;
-	Parms.K2Node_CreateDelegate_OutputDelegate_5 = K2Node_CreateDelegate_OutputDelegate_5;
 	Parms.CallFunc_GetNetworkTransmitter_ReturnValue = CallFunc_GetNetworkTransmitter_ReturnValue;
+	Parms.K2Node_CreateDelegate_OutputDelegate_5 = K2Node_CreateDelegate_OutputDelegate_5;
 	Parms.CallFunc_GetCharacter_ReturnValue = CallFunc_GetCharacter_ReturnValue;
 	Parms.CallFunc_GetDynamicParameter_ReturnValue = CallFunc_GetDynamicParameter_ReturnValue;
 	Parms.CallFunc_GetDynamicParameter_ReturnValue_1 = CallFunc_GetDynamicParameter_ReturnValue_1;

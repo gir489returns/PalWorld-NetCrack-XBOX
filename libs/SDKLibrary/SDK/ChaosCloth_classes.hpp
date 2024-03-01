@@ -15,7 +15,7 @@ class UChaosClothConfig : public UClothConfigCommon
 {
 public:
 	enum class EClothMassMode                    MassMode;                                          // 0x28(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_18B1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_19C6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        UniformMass;                                       // 0x2C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        TotalMass;                                         // 0x30(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Density;                                           // 0x34(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -23,7 +23,7 @@ public:
 	struct FChaosClothWeightedValue              EdgeStiffnessWeighted;                             // 0x3C(0x8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FChaosClothWeightedValue              BendingStiffnessWeighted;                          // 0x44(0x8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         bUseBendingElements;                               // 0x4C(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_18B4[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_19CC[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        BucklingRatio;                                     // 0x50(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FChaosClothWeightedValue              BucklingStiffnessWeighted;                         // 0x54(0x8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FChaosClothWeightedValue              AreaStiffnessWeighted;                             // 0x5C(0x8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
@@ -31,28 +31,28 @@ public:
 	struct FChaosClothWeightedValue              TetherStiffness;                                   // 0x68(0x8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FChaosClothWeightedValue              TetherScale;                                       // 0x70(0x8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         bUseGeodesicDistance;                              // 0x78(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_18B8[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_19D2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        ShapeTargetStiffness;                              // 0x7C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        CollisionThickness;                                // 0x80(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        FrictionCoefficient;                               // 0x84(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUseCCD;                                           // 0x88(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUseSelfCollisions;                                // 0x89(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_18BD[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_19D5[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        SelfCollisionThickness;                            // 0x8C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        SelfCollisionFriction;                             // 0x90(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUseSelfIntersections;                             // 0x94(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUseLegacyBackstop;                                // 0x95(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_18BF[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_19D9[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        DampingCoefficient;                                // 0x98(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        LocalDampingCoefficient;                           // 0x9C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUsePointBasedWindModel;                           // 0xA0(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_18C2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_19DD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FChaosClothWeightedValue              Drag;                                              // 0xA4(0x8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FChaosClothWeightedValue              Lift;                                              // 0xAC(0x8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         bUseGravityOverride;                               // 0xB4(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_18C3[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_19DF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        GravityScale;                                      // 0xB8(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_18C4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_19E0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               Gravity;                                           // 0xC0(0x18)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FChaosClothWeightedValue              Pressure;                                          // 0xD8(0x8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FChaosClothWeightedValue              AnimDriveStiffness;                                // 0xE0(0x8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
@@ -63,7 +63,7 @@ public:
 	bool                                         bUseTetrahedralConstraints;                        // 0x110(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUseThinShellVolumeConstraints;                    // 0x111(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUseContinuousCollisionDetection;                  // 0x112(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_18C6[0x5];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_19E6[0x5];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UChaosClothConfig* GetDefaultObj();
@@ -80,7 +80,7 @@ public:
 	int32                                        SubdivisionCount;                                  // 0x30(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUseLocalSpaceSimulation;                          // 0x34(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUseXPBDConstraints;                               // 0x35(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_18C9[0x2];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_19E9[0x2];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UChaosClothSharedSimConfig* GetDefaultObj();
@@ -103,7 +103,7 @@ public:
 class UChaosClothingInteractor : public UClothingInteractor
 {
 public:
-	uint8                                        Pad_1927[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1A65[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UChaosClothingInteractor* GetDefaultObj();
@@ -130,7 +130,7 @@ public:
 class UChaosClothingSimulationInteractor : public UClothingSimulationInteractor
 {
 public:
-	uint8                                        Pad_1936[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1A7C[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UChaosClothingSimulationInteractor* GetDefaultObj();

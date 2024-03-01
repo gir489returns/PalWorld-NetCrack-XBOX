@@ -29,13 +29,13 @@ public:
 	class FString                                DirectoryName;                                     // 0x0(0x10)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 };
 
-// 0x60 (0x60 - 0x0)
+// 0x68 (0x68 - 0x0)
 // Function WBP_Title_WorldSelect_CreateWorld_ListContent.WBP_Title_WorldSelect_CreateWorld_ListContent_C.SetupByLocalWorldDisplayData
 struct UWBP_Title_WorldSelect_CreateWorld_ListContent_C_SetupByLocalWorldDisplayData_Params
 {
 public:
 	class FString                                SaveDirectoryName;                                 // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	struct FPalUILocalWorldDisplayData           DisplayData;                                       // 0x10(0x50)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FPalUILocalWorldDisplayData           DisplayData;                                       // 0x10(0x58)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 
 // 0x8 (0x8 - 0x0)
@@ -68,7 +68,7 @@ struct UWBP_Title_WorldSelect_CreateWorld_ListContent_C_ExecuteUbergraph_WBP_Tit
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4543[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_15BD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue;                // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue_1;              // 0x10(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UCommonButtonBase*                     K2Node_ComponentBoundEvent_Button_2;               // 0x18(0x8)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)

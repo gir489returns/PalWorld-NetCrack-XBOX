@@ -27,14 +27,14 @@ struct UBP_AINPC_CombatState_Base_C_ShootAbleSlefForwardDot_Params
 {
 public:
 	bool                                         ShootAble;                                         // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4064[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_409D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class APalCharacter*                         CallFunc_GetSelfActor_SelfActor;                   // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                CallFunc_GetTargetActor_TargetActor;               // 0x10(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_InFanShapAimTarget_ReturnValue;           // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4066[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_409E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class APalCharacter*                         CallFunc_GetSelfActor_SelfActor_1;                 // 0x20(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4067[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_409F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                CallFunc_GetTargetActor_TargetActor_1;             // 0x30(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -45,7 +45,7 @@ struct UBP_AINPC_CombatState_Base_C_AttackAblePlayerCamera_Params
 {
 public:
 	bool                                         AttackAble;                                        // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4068[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_40A7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class APalCharacter*                         CallFunc_GetSelfActor_SelfActor;                   // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                CallFunc_GetTargetActor_TargetActor;               // 0x10(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsAIAttackAbleByPlayerCamera_ReturnValue; // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

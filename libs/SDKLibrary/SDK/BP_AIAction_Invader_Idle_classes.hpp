@@ -19,7 +19,8 @@ public:
 	static class UClass* StaticClass();
 	static class UBP_AIAction_Invader_Idle_C* GetDefaultObj();
 
-	void ExecuteUbergraph_BP_AIAction_Invader_Idle(int32 EntryPoint);
+	void ActionStart(class APawn* ControlledPawn);
+	void ExecuteUbergraph_BP_AIAction_Invader_Idle(int32 EntryPoint, class AController* CallFunc_GetController_ReturnValue, TScriptInterface<class IBPI_GetPalAIBlackboard_C> K2Node_DynamicCast_AsBPI_Get_Pal_AIBlackboard, bool K2Node_DynamicCast_bSuccess, class UPalAISensorComponent* CallFunc_GetComponentByClass_ReturnValue, class UBP_PalAIBlackboard_Common_C* CallFunc_GetMyBB_PalBrackboard, class APawn* K2Node_Event_ControlledPawn);
 };
 
 }

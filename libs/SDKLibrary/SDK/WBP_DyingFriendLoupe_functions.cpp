@@ -40,17 +40,58 @@ class UWBP_DyingFriendLoupe_C* UWBP_DyingFriendLoupe_C::GetDefaultObj()
 }
 
 
+// Function WBP_DyingFriendLoupe.WBP_DyingFriendLoupe_C.OnSyncIndividualParameter
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FPalInstanceID              InstanceId                                                       (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// bool                               CallFunc_IsValidInstanceID_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APalCharacter*               CallFunc_TryGetIndividualActor_ReturnValue                       (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_EqualEqual_PalInstanceIDPalInstanceID_ReturnValue       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalStatusBase*              CallFunc_GetExecutionStatus_ReturnValue                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UBP_Status_Dying_C*          K2Node_DynamicCast_AsBP_Status_Dying                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DyingFriendLoupe_C::OnSyncIndividualParameter(const struct FPalInstanceID& InstanceId, bool CallFunc_IsValidInstanceID_ReturnValue, class APalCharacter* CallFunc_TryGetIndividualActor_ReturnValue, bool CallFunc_EqualEqual_PalInstanceIDPalInstanceID_ReturnValue, class UPalStatusBase* CallFunc_GetExecutionStatus_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, class UBP_Status_Dying_C* K2Node_DynamicCast_AsBP_Status_Dying, bool K2Node_DynamicCast_bSuccess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_DyingFriendLoupe_C", "OnSyncIndividualParameter");
+
+	Params::UWBP_DyingFriendLoupe_C_OnSyncIndividualParameter_Params Parms{};
+
+	Parms.InstanceId = InstanceId;
+	Parms.CallFunc_IsValidInstanceID_ReturnValue = CallFunc_IsValidInstanceID_ReturnValue;
+	Parms.CallFunc_TryGetIndividualActor_ReturnValue = CallFunc_TryGetIndividualActor_ReturnValue;
+	Parms.CallFunc_EqualEqual_PalInstanceIDPalInstanceID_ReturnValue = CallFunc_EqualEqual_PalInstanceIDPalInstanceID_ReturnValue;
+	Parms.CallFunc_GetExecutionStatus_ReturnValue = CallFunc_GetExecutionStatus_ReturnValue;
+	Parms.CallFunc_BooleanAND_ReturnValue = CallFunc_BooleanAND_ReturnValue;
+	Parms.K2Node_DynamicCast_AsBP_Status_Dying = K2Node_DynamicCast_AsBP_Status_Dying;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function WBP_DyingFriendLoupe.WBP_DyingFriendLoupe_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UBP_Status_Dying_C*          DyingStatus                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FPalInstanceID              CallFunc_GetIndividualID_ReturnValue                             (HasGetValueTypeHash)
 // class AActor*                      CallFunc_GetOwner_ReturnValue                                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValidInstanceID_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPalCharacterParameterComponent*CallFunc_GetComponentByClass_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UPalIndividualCharacterParameter*CallFunc_GetIndividualParameter_ReturnValue                      (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetNickName_outName                                     (ZeroConstructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalCharacterManager*        CallFunc_GetCharacterManager_ReturnValue                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DyingFriendLoupe_C::Setup(class UBP_Status_Dying_C* DyingStatus, class AActor* CallFunc_GetOwner_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UPalCharacterParameterComponent* CallFunc_GetComponentByClass_ReturnValue, class UPalIndividualCharacterParameter* CallFunc_GetIndividualParameter_ReturnValue, const class FString& CallFunc_GetNickName_outName)
+void UWBP_DyingFriendLoupe_C::Setup(class UBP_Status_Dying_C* DyingStatus, const struct FPalInstanceID& CallFunc_GetIndividualID_ReturnValue, class AActor* CallFunc_GetOwner_ReturnValue, bool CallFunc_IsValidInstanceID_ReturnValue, class UPalCharacterParameterComponent* CallFunc_GetComponentByClass_ReturnValue, class UPalIndividualCharacterParameter* CallFunc_GetIndividualParameter_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, const class FString& CallFunc_GetNickName_outName, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UPalCharacterManager* CallFunc_GetCharacterManager_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1)
 {
 	static class UFunction* Func = nullptr;
 
@@ -60,11 +101,17 @@ void UWBP_DyingFriendLoupe_C::Setup(class UBP_Status_Dying_C* DyingStatus, class
 	Params::UWBP_DyingFriendLoupe_C_Setup_Params Parms{};
 
 	Parms.DyingStatus = DyingStatus;
+	Parms.CallFunc_GetIndividualID_ReturnValue = CallFunc_GetIndividualID_ReturnValue;
 	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
-	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
+	Parms.CallFunc_IsValidInstanceID_ReturnValue = CallFunc_IsValidInstanceID_ReturnValue;
 	Parms.CallFunc_GetComponentByClass_ReturnValue = CallFunc_GetComponentByClass_ReturnValue;
 	Parms.CallFunc_GetIndividualParameter_ReturnValue = CallFunc_GetIndividualParameter_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
 	Parms.CallFunc_GetNickName_outName = CallFunc_GetNickName_outName;
+	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
+	Parms.CallFunc_GetCharacterManager_ReturnValue = CallFunc_GetCharacterManager_ReturnValue;
+	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -98,6 +145,7 @@ void UWBP_DyingFriendLoupe_C::SetFinalWidgetOpacity(double CalcedOpacity, float 
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPalGameSetting*             CallFunc_GetGameSetting_ReturnValue                              (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class APalCharacter*               CallFunc_TryGetIndividualActor_ReturnValue                       (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class APalPlayerCharacter*         CallFunc_GetPalmi_ReturnValue                                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -105,15 +153,19 @@ void UWBP_DyingFriendLoupe_C::SetFinalWidgetOpacity(double CalcedOpacity, float 
 // struct FVector                     CallFunc_K2_GetActorLocation_ReturnValue_1                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     CallFunc_Subtract_VectorVector_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_VSize_ReturnValue                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Greater_DoubleDouble_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APalCharacter*               CallFunc_TryGetIndividualActor_ReturnValue_1                     (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_2                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsVisible_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalStatusBase*              CallFunc_GetExecutionStatus_ReturnValue                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue_3                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UBP_Status_Dying_C*          K2Node_DynamicCast_AsBP_Status_Dying                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Greater_DoubleDouble_A_ImplicitCast                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-bool UWBP_DyingFriendLoupe_C::IsEnableLoupe(class UPalGameSetting* CallFunc_GetGameSetting_ReturnValue, class APalCharacter* CallFunc_TryGetIndividualActor_ReturnValue, class APalPlayerCharacter* CallFunc_GetPalmi_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, double CallFunc_VSize_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Greater_DoubleDouble_ReturnValue, class APalCharacter* CallFunc_TryGetIndividualActor_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsVisible_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, double CallFunc_Greater_DoubleDouble_A_ImplicitCast)
+bool UWBP_DyingFriendLoupe_C::IsEnableLoupe(bool CallFunc_IsValid_ReturnValue, class UPalGameSetting* CallFunc_GetGameSetting_ReturnValue, class APalCharacter* CallFunc_TryGetIndividualActor_ReturnValue, class APalPlayerCharacter* CallFunc_GetPalmi_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, double CallFunc_VSize_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_Greater_DoubleDouble_ReturnValue, class APalCharacter* CallFunc_TryGetIndividualActor_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsVisible_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, class UPalStatusBase* CallFunc_GetExecutionStatus_ReturnValue, bool CallFunc_IsValid_ReturnValue_3, class UBP_Status_Dying_C* K2Node_DynamicCast_AsBP_Status_Dying, bool K2Node_DynamicCast_bSuccess, double CallFunc_Greater_DoubleDouble_A_ImplicitCast)
 {
 	static class UFunction* Func = nullptr;
 
@@ -122,6 +174,7 @@ bool UWBP_DyingFriendLoupe_C::IsEnableLoupe(class UPalGameSetting* CallFunc_GetG
 
 	Params::UWBP_DyingFriendLoupe_C_IsEnableLoupe_Params Parms{};
 
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_GetGameSetting_ReturnValue = CallFunc_GetGameSetting_ReturnValue;
 	Parms.CallFunc_TryGetIndividualActor_ReturnValue = CallFunc_TryGetIndividualActor_ReturnValue;
 	Parms.CallFunc_GetPalmi_ReturnValue = CallFunc_GetPalmi_ReturnValue;
@@ -129,12 +182,16 @@ bool UWBP_DyingFriendLoupe_C::IsEnableLoupe(class UPalGameSetting* CallFunc_GetG
 	Parms.CallFunc_K2_GetActorLocation_ReturnValue_1 = CallFunc_K2_GetActorLocation_ReturnValue_1;
 	Parms.CallFunc_Subtract_VectorVector_ReturnValue = CallFunc_Subtract_VectorVector_ReturnValue;
 	Parms.CallFunc_VSize_ReturnValue = CallFunc_VSize_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
 	Parms.CallFunc_Greater_DoubleDouble_ReturnValue = CallFunc_Greater_DoubleDouble_ReturnValue;
 	Parms.CallFunc_TryGetIndividualActor_ReturnValue_1 = CallFunc_TryGetIndividualActor_ReturnValue_1;
-	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
+	Parms.CallFunc_IsValid_ReturnValue_2 = CallFunc_IsValid_ReturnValue_2;
 	Parms.CallFunc_IsVisible_ReturnValue = CallFunc_IsVisible_ReturnValue;
 	Parms.CallFunc_BooleanAND_ReturnValue = CallFunc_BooleanAND_ReturnValue;
+	Parms.CallFunc_GetExecutionStatus_ReturnValue = CallFunc_GetExecutionStatus_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue_3 = CallFunc_IsValid_ReturnValue_3;
+	Parms.K2Node_DynamicCast_AsBP_Status_Dying = K2Node_DynamicCast_AsBP_Status_Dying;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.CallFunc_Greater_DoubleDouble_A_ImplicitCast = CallFunc_Greater_DoubleDouble_A_ImplicitCast;
 
 	UObject::ProcessEvent(Func, &Parms);

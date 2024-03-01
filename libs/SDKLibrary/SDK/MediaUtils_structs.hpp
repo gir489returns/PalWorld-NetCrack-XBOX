@@ -42,11 +42,11 @@ struct FMediaPlayerOptions
 {
 public:
 	struct FMediaPlayerTrackOptions              Tracks;                                            // 0x0(0x1C)(BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2579[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_24A7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimespan                             SeekTime;                                          // 0x20(0x8)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EMediaPlayerOptionBooleanOverride PlayOnOpen;                                        // 0x28(0x1)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EMediaPlayerOptionBooleanOverride Loop;                                              // 0x29(0x1)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_257A[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_24A8[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

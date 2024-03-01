@@ -14,11 +14,11 @@ namespace SDK
 class UGameplayTask : public UObject
 {
 public:
-	uint8                                        Pad_2405[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E45[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  InstanceName;                                      // 0x30(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_2407[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E46[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	enum class ETaskResourceOverlapPolicy        ResourceOverlapPolicy;                             // 0x3A(0x1)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_240A[0x25];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E48[0x25];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	class UGameplayTask*                         ChildTask;                                         // 0x60(0x8)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 	static class UClass* StaticClass();
@@ -47,9 +47,9 @@ class UGameplayTaskResource : public UObject
 public:
 	int32                                        ManualResourceID;                                  // 0x28(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int8                                         AutoResourceID;                                    // 0x2C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_2418[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E54[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	uint8                                        bManuallySetID : 1;                                // Mask: 0x1, PropSize: 0x10x30(0x1)(Edit, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2419[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1E57[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UGameplayTaskResource* GetDefaultObj();
@@ -61,13 +61,13 @@ public:
 class UGameplayTasksComponent : public UActorComponent
 {
 public:
-	uint8                                        Pad_2441[0x14];                                    // Fixing Size After Last Property  [ Dumper-7 ]
-	uint8                                        BitPad_135 : 1;                                    // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_1E8C[0x14];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        BitPad_17E : 1;                                    // Fixing Bit-Field Size  [ Dumper-7 ]
 	uint8                                        bIsNetDirty : 1;                                   // Mask: 0x2, PropSize: 0x10xB4(0x1)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        BitPad_136 : 6;                                    // Fixing Bit-Field Size  [ Dumper-7 ]
-	uint8                                        Pad_2443[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        BitPad_17F : 6;                                    // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_1E8D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UGameplayTask*>                 TaskPriorityQueue;                                 // 0xB8(0x10)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	uint8                                        Pad_2444[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E8E[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UGameplayTask*>                 TickingTasks;                                      // 0xD8(0x10)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	TArray<class UGameplayTask*>                 KnownTasks;                                        // 0xE8(0x10)(ZeroConstructor, Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	FMulticastInlineDelegateProperty_            OnClaimedResourcesChange;                          // 0xF8(0x10)(BlueprintVisible, ZeroConstructor, InstancedReference, NativeAccessSpecifierPublic)
@@ -100,7 +100,7 @@ class UGameplayTask_SpawnActor : public UGameplayTask
 public:
 	FMulticastInlineDelegateProperty_            Success;                                           // 0x68(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_            DidNotSpawn;                                       // 0x78(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_249F[0x30];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1F10[0x30];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TSubclassOf<class AActor>                    ClassToSpawn;                                      // 0xB8(0x8)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 	static class UClass* StaticClass();
@@ -118,7 +118,7 @@ class UGameplayTask_TimeLimitedExecution : public UGameplayTask
 public:
 	FMulticastInlineDelegateProperty_            OnFinished;                                        // 0x68(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_            OnTimeExpired;                                     // 0x78(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_24A8[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1F1A[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UGameplayTask_TimeLimitedExecution* GetDefaultObj();
@@ -131,7 +131,7 @@ class UGameplayTask_WaitDelay : public UGameplayTask
 {
 public:
 	FMulticastInlineDelegateProperty_            OnFinish;                                          // 0x68(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_24C0[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1F33[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UGameplayTask_WaitDelay* GetDefaultObj();

@@ -13,6 +13,32 @@ namespace Params
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
 
+// 0xAC (0xAC - 0x0)
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.GetDisplayGraphicLevel
+struct UWBP_Graphic_Settings_C_GetDisplayGraphicLevel_Params
+{
+public:
+	struct FPalOptionGraphicsSettings            GraphicLevel;                                      // 0x0(0x54)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	enum class EPalOptionGraphicsLevel           Graphics___;                                       // 0x54(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_14B5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FString                                CallFunc_GetEnumeratorUserFriendlyName_ReturnValue; // 0x58(0x10)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                CallFunc_Replace_ReturnValue;                      // 0x68(0x10)(ZeroConstructor, HasGetValueTypeHash)
+	class FName                                  CallFunc_Conv_StringToName_ReturnValue;            // 0x78(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalOptionGraphicsPresetRow           CallFunc_GetDataTableRowFromName_OutRow;           // 0x80(0x20)(None)
+	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue;      // 0xA0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue;            // 0xA1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0xA2(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue_2;          // 0xA3(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue_3;          // 0xA4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue_4;          // 0xA5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0xA6(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_BooleanAND_ReturnValue;                   // 0xA7(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_BooleanAND_ReturnValue_1;                 // 0xA8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_BooleanAND_ReturnValue_2;                 // 0xA9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_BooleanAND_ReturnValue_3;                 // 0xAA(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_BooleanAND_ReturnValue_4;                 // 0xAB(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
 // 0x4 (0x4 - 0x0)
 // Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnPresetChanged
 struct UWBP_Graphic_Settings_C_OnPresetChanged_Params
@@ -173,7 +199,7 @@ public:
 	int32                                        Selection;                                         // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x5E8 (0x5E8 - 0x0)
+// 0x600 (0x600 - 0x0)
 // Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.ExecuteUbergraph_WBP_Graphic_Settings
 struct UWBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings_Params
 {
@@ -197,174 +223,181 @@ public:
 	bool                                         K2Node_CustomEvent_IsOn_2;                         // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x39(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_IsOn_1;                         // 0x3A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45BA[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1534[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_CustomEvent_Value_3;                        // 0x40(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                       K2Node_CustomEvent_Value_2;                        // 0x48(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Selection_5;                    // 0x50(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Selection_4;                    // 0x54(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        K2Node_CustomEvent_Selection_3;                    // 0x58(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45BC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1535[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       K2Node_CustomEvent_Value_1;                        // 0x60(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_IsOn;                           // 0x68(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45BD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1536[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        K2Node_CustomEvent_Selection_2;                    // 0x6C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_1;            // 0x70(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_2;            // 0x80(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_3;            // 0x90(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_4;            // 0xA0(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Round_ReturnValue;                        // 0xB0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0xB4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue_2;        // 0xB5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45BE[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        CallFunc_Conv_ByteToInt_ReturnValue;               // 0xB8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0xBC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45BF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        CallFunc_Subtract_IntInt_ReturnValue;              // 0xC0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0xC4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_5;            // 0xC8(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_6;            // 0xD8(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalOptionSubsystem*                   CallFunc_GetOptionSubsystem_ReturnValue_1;         // 0xE8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_7;            // 0xF0(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalOptionLocalStaticSettings         CallFunc_GetOptionLocalStaticSettings_ReturnValue; // 0x100(0x40)(ConstParm, NoDestructor)
-	struct FPalOptionGraphicsSettings            CallFunc_GetGraphicsSettings_ReturnValue;          // 0x140(0x54)(ConstParm, NoDestructor)
-	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_8;            // 0x194(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_9;            // 0x1A4(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_10;           // 0x1B4(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_11;           // 0x1C4(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_12;           // 0x1D4(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_13;           // 0x1E4(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_14;           // 0x1F4(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_15;           // 0x204(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  Temp_byte_Variable;                                // 0x214(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45C0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UPalOptionSubsystem*                   CallFunc_GetOptionSubsystem_ReturnValue_2;         // 0x218(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalOptionSubsystem*                   CallFunc_GetOptionSubsystem_ReturnValue_3;         // 0x220(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue_3;        // 0x228(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45C1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        CallFunc_Conv_ByteToInt_ReturnValue_2;             // 0x22C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_16;           // 0x230(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  Temp_byte_Variable_1;                              // 0x240(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45C2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       K2Node_CustomEvent_Value;                          // 0x248(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_17;           // 0x250(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                        K2Node_CustomEvent_DLSSLevel;                      // 0x260(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class EAntiAliasingMethod               CallFunc_Map_Find_Value;                           // 0x264(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_Map_Find_ReturnValue;                     // 0x265(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45C3[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<enum class EAntiAliasingMethod>       CallFunc_Map_Values_Values;                        // 0x268(0x10)(ReferenceParm)
-	int32                                        CallFunc_Array_Find_ReturnValue;                   // 0x278(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45C4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<enum class EAntiAliasingMethod>       CallFunc_Map_Values_Values_1;                      // 0x280(0x10)(ReferenceParm)
-	int32                                        CallFunc_Array_Find_ReturnValue_1;                 // 0x290(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         Temp_bool_Variable;                                // 0x294(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45C5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<enum class EAntiAliasingMethod>       CallFunc_Map_Values_Values_2;                      // 0x298(0x10)(ReferenceParm)
-	class UPalOptionSubsystem*                   CallFunc_GetOptionSubsystem_ReturnValue_4;         // 0x2A8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Array_Find_ReturnValue_2;                 // 0x2B0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45C6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_Add_DoubleDouble_ReturnValue;             // 0x2B8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalOptionSubsystem*                   CallFunc_GetOptionSubsystem_ReturnValue_5;         // 0x2C0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x2C8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalOptionSubsystem*                   CallFunc_GetOptionSubsystem_ReturnValue_6;         // 0x2D0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Add_DoubleDouble_ReturnValue_1;           // 0x2D8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_18;           // 0x2E0(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class FString>                        CallFunc_Map_Values_Values_3;                      // 0x2F0(0x10)(ReferenceParm)
-	class FString                                CallFunc_Map_Find_Value_1;                         // 0x300(0x10)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                         CallFunc_Map_Find_ReturnValue_1;                   // 0x310(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45C7[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        K2Node_CustomEvent_Selection_1;                    // 0x314(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Array_Find_ReturnValue_3;                 // 0x318(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x31C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45C8[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        CallFunc_SelectInt_ReturnValue;                    // 0x320(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45C9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<int32>                                CallFunc_Map_Keys_Keys;                            // 0x328(0x10)(ReferenceParm)
-	int32                                        CallFunc_Array_Get_Item;                           // 0x338(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45CA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class FString>                        K2Node_MakeArray_Array;                            // 0x340(0x10)(ReferenceParm)
-	float                                        CallFunc_Conv_IntToFloat_ReturnValue;              // 0x350(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45CB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FText                                  CallFunc_GetLocalizedTextFromHandle_Text;          // 0x358(0x18)(None)
-	class FString                                CallFunc_Conv_TextToString_ReturnValue;            // 0x370(0x10)(ZeroConstructor, HasGetValueTypeHash)
-	struct FPalOptionGraphicsSettings            K2Node_MakeStruct_PalOptionGraphicsSettings;       // 0x380(0x54)(NoDestructor)
-	uint8                                        Pad_45CC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TMap<int32, class FString>                   K2Node_MakeMap_Map;                                // 0x3D8(0x50)(None)
-	struct FIntPoint                             CallFunc_Array_Get_Item_1;                         // 0x428(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalOptionSubsystem*                   CallFunc_GetOptionSubsystem_ReturnValue_7;         // 0x430(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalOptionSubsystem*                   CallFunc_GetOptionSubsystem_ReturnValue_8;         // 0x438(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FIntPoint>                     CallFunc_GetSupportScreenSizes_SupportResolutions; // 0x440(0x10)(ReferenceParm)
-	TArray<struct FIntPoint>                     CallFunc_GetSupportScreenSizes_SupportResolutions_1; // 0x450(0x10)(ReferenceParm)
-	bool                                         Temp_bool_Variable_1;                              // 0x460(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45CD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_19;           // 0x464(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                        K2Node_CustomEvent_Selection;                      // 0x474(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class EPalSupportedPlatformType         CallFunc_GetPlatformType_ReturnValue;              // 0x478(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue_4;        // 0x479(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue_5;        // 0x47A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_BooleanOR_ReturnValue;                    // 0x47B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x47C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x480(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  K2Node_Select_Default;                             // 0x484(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45CE[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FIntPoint                             CallFunc_Array_Get_Item_2;                         // 0x488(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Array_Find_ReturnValue_4;                 // 0x490(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_Array_Contains_ReturnValue;               // 0x494(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45CF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        CallFunc_SelectInt_ReturnValue_1;                  // 0x498(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FIntPoint                             K2Node_Select_Default_1;                           // 0x49C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class EPalSupportedPlatformType         CallFunc_GetPlatformType_ReturnValue_1;            // 0x4A4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue_6;        // 0x4A5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue_7;        // 0x4A6(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_BooleanOR_ReturnValue_1;                  // 0x4A7(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalOptionSubsystem*                   CallFunc_GetOptionSubsystem_ReturnValue_9;         // 0x4A8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Add_DoubleDouble_ReturnValue_2;           // 0x4B0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsDLSSSupported_ReturnValue;              // 0x4B8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45D0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<enum class EUDLSSMode>                CallFunc_Map_Values_Values_4;                      // 0x4C0(0x10)(ReferenceParm)
-	int32                                        CallFunc_Array_Find_ReturnValue_5;                 // 0x4D0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class EUDLSSMode                        CallFunc_Map_Find_Value_2;                         // 0x4D4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_Map_Find_ReturnValue_2;                   // 0x4D5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue_8;        // 0x4D6(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45D1[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<enum class EUDLSSMode>                CallFunc_Map_Values_Values_5;                      // 0x4D8(0x10)(ReferenceParm)
-	int32                                        CallFunc_Array_Find_ReturnValue_6;                 // 0x4E8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45D2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<enum class EUDLSSMode>                CallFunc_Map_Values_Values_6;                      // 0x4F0(0x10)(ReferenceParm)
-	int32                                        CallFunc_Array_Find_ReturnValue_7;                 // 0x500(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsDLSSSupported_ReturnValue_1;            // 0x504(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsDLSSSupported_ReturnValue_2;            // 0x505(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45D3[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	float                                        K2Node_SetFieldsInStruct_LODBias_ImplicitCast;     // 0x508(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        K2Node_SetFieldsInStruct_Brightness_ImplicitCast;  // 0x50C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x510(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetSlider_CurrentValue_ImplicitCast;      // 0x518(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetSlider_CurrentValue_ImplicitCast_1;    // 0x520(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetSlider_CurrentValue_ImplicitCast_2;    // 0x528(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Round_A_ImplicitCast;                     // 0x530(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Add_DoubleDouble_A_ImplicitCast_1;        // 0x538(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetSlider_CurrentValue_ImplicitCast_3;    // 0x540(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        K2Node_SetFieldsInStruct_PalRideCameraLengthRate_ImplicitCast; // 0x548(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45D4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_SetSlider_Min_ImplicitCast;               // 0x550(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetSlider_Max_ImplicitCast;               // 0x558(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetSlider_Min_ImplicitCast_1;             // 0x560(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetSlider_Max_ImplicitCast_1;             // 0x568(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Add_DoubleDouble_B_ImplicitCast;          // 0x570(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Subtract_DoubleDouble_B_ImplicitCast;     // 0x578(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        K2Node_SetFieldsInStruct_FOV_ImplicitCast;         // 0x580(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45D5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CallFunc_SetSlider_Min_ImplicitCast_2;             // 0x588(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetSlider_Max_ImplicitCast_2;             // 0x590(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetSlider_Min_ImplicitCast_3;             // 0x598(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetSlider_Max_ImplicitCast_3;             // 0x5A0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Add_DoubleDouble_B_ImplicitCast_1;        // 0x5A8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Add_DoubleDouble_A_ImplicitCast_2;        // 0x5B0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetSlider_CurrentValue_ImplicitCast_4;    // 0x5B8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetSlider_Min_ImplicitCast_4;             // 0x5C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetSlider_Max_ImplicitCast_4;             // 0x5C8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_Add_DoubleDouble_B_ImplicitCast_2;        // 0x5D0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetSlider_Min_ImplicitCast_5;             // 0x5D8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CallFunc_SetSlider_Max_ImplicitCast_5;             // 0x5E0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class EPalOptionGraphicsLevel           CallFunc_GetDisplayGraphicLevel_Graphics___;       // 0xB0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1537[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        CallFunc_Conv_ByteToInt_ReturnValue;               // 0xB4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Round_ReturnValue;                        // 0xB8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0xBC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue_2;        // 0xBD(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1539[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0xC0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0xC4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_153B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        CallFunc_Subtract_IntInt_ReturnValue;              // 0xC8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_5;            // 0xCC(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_6;            // 0xDC(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_153C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UPalOptionSubsystem*                   CallFunc_GetOptionSubsystem_ReturnValue_1;         // 0xF0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_7;            // 0xF8(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalOptionLocalStaticSettings         CallFunc_GetOptionLocalStaticSettings_ReturnValue; // 0x108(0x40)(ConstParm, NoDestructor)
+	struct FPalOptionGraphicsSettings            CallFunc_GetGraphicsSettings_ReturnValue;          // 0x148(0x54)(ConstParm, NoDestructor)
+	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_8;            // 0x19C(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_9;            // 0x1AC(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_10;           // 0x1BC(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_11;           // 0x1CC(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_12;           // 0x1DC(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_13;           // 0x1EC(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_14;           // 0x1FC(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_15;           // 0x20C(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  Temp_byte_Variable;                                // 0x21C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_153F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UPalOptionSubsystem*                   CallFunc_GetOptionSubsystem_ReturnValue_2;         // 0x220(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalOptionSubsystem*                   CallFunc_GetOptionSubsystem_ReturnValue_3;         // 0x228(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	enum class EPalOptionGraphicsLevel           CallFunc_GetDisplayGraphicLevel_Graphics____1;     // 0x230(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1540[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        CallFunc_Conv_ByteToInt_ReturnValue_2;             // 0x234(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue_3;        // 0x238(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1541[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_16;           // 0x23C(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  Temp_byte_Variable_1;                              // 0x24C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1544[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       K2Node_CustomEvent_Value;                          // 0x250(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_17;           // 0x258(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                        K2Node_CustomEvent_DLSSLevel;                      // 0x268(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class EAntiAliasingMethod               CallFunc_Map_Find_Value;                           // 0x26C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_Map_Find_ReturnValue;                     // 0x26D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1545[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<enum class EAntiAliasingMethod>       CallFunc_Map_Values_Values;                        // 0x270(0x10)(ReferenceParm)
+	int32                                        CallFunc_Array_Find_ReturnValue;                   // 0x280(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1546[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<enum class EAntiAliasingMethod>       CallFunc_Map_Values_Values_1;                      // 0x288(0x10)(ReferenceParm)
+	int32                                        CallFunc_Array_Find_ReturnValue_1;                 // 0x298(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         Temp_bool_Variable;                                // 0x29C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_154A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<enum class EAntiAliasingMethod>       CallFunc_Map_Values_Values_2;                      // 0x2A0(0x10)(ReferenceParm)
+	class UPalOptionSubsystem*                   CallFunc_GetOptionSubsystem_ReturnValue_4;         // 0x2B0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Array_Find_ReturnValue_2;                 // 0x2B8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_154B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_Add_DoubleDouble_ReturnValue;             // 0x2C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalOptionSubsystem*                   CallFunc_GetOptionSubsystem_ReturnValue_5;         // 0x2C8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x2D0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalOptionSubsystem*                   CallFunc_GetOptionSubsystem_ReturnValue_6;         // 0x2D8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Add_DoubleDouble_ReturnValue_1;           // 0x2E0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_18;           // 0x2E8(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class FString>                        CallFunc_Map_Values_Values_3;                      // 0x2F8(0x10)(ReferenceParm)
+	class FString                                CallFunc_Map_Find_Value_1;                         // 0x308(0x10)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                         CallFunc_Map_Find_ReturnValue_1;                   // 0x318(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_154C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        K2Node_CustomEvent_Selection_1;                    // 0x31C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Array_Find_ReturnValue_3;                 // 0x320(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x324(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_154E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        CallFunc_SelectInt_ReturnValue;                    // 0x328(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_154F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<int32>                                CallFunc_Map_Keys_Keys;                            // 0x330(0x10)(ReferenceParm)
+	int32                                        CallFunc_Array_Get_Item;                           // 0x340(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1550[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class FString>                        K2Node_MakeArray_Array;                            // 0x348(0x10)(ReferenceParm)
+	float                                        CallFunc_Conv_IntToFloat_ReturnValue;              // 0x358(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1551[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_GetLocalizedTextFromHandle_Text;          // 0x360(0x18)(None)
+	class FString                                CallFunc_Conv_TextToString_ReturnValue;            // 0x378(0x10)(ZeroConstructor, HasGetValueTypeHash)
+	struct FPalOptionGraphicsSettings            K2Node_MakeStruct_PalOptionGraphicsSettings;       // 0x388(0x54)(NoDestructor)
+	uint8                                        Pad_1554[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TMap<int32, class FString>                   K2Node_MakeMap_Map;                                // 0x3E0(0x50)(None)
+	struct FIntPoint                             CallFunc_Array_Get_Item_1;                         // 0x430(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalOptionSubsystem*                   CallFunc_GetOptionSubsystem_ReturnValue_7;         // 0x438(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalOptionSubsystem*                   CallFunc_GetOptionSubsystem_ReturnValue_8;         // 0x440(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FIntPoint>                     CallFunc_GetSupportScreenSizes_SupportResolutions; // 0x448(0x10)(ReferenceParm)
+	TArray<struct FIntPoint>                     CallFunc_GetSupportScreenSizes_SupportResolutions_1; // 0x458(0x10)(ReferenceParm)
+	bool                                         Temp_bool_Variable_1;                              // 0x468(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1557[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	FDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_19;           // 0x46C(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                        K2Node_CustomEvent_Selection;                      // 0x47C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class EPalSupportedPlatformType         CallFunc_GetPlatformType_ReturnValue;              // 0x480(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue_4;        // 0x481(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue_5;        // 0x482(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_BooleanOR_ReturnValue;                    // 0x483(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x484(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x488(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  K2Node_Select_Default;                             // 0x48C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_155A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FIntPoint                             CallFunc_Array_Get_Item_2;                         // 0x490(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Array_Find_ReturnValue_4;                 // 0x498(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_Array_Contains_ReturnValue;               // 0x49C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_155C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        CallFunc_SelectInt_ReturnValue_1;                  // 0x4A0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FIntPoint                             K2Node_Select_Default_1;                           // 0x4A4(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class EPalSupportedPlatformType         CallFunc_GetPlatformType_ReturnValue_1;            // 0x4AC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue_6;        // 0x4AD(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue_7;        // 0x4AE(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_BooleanOR_ReturnValue_1;                  // 0x4AF(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalOptionSubsystem*                   CallFunc_GetOptionSubsystem_ReturnValue_9;         // 0x4B0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Add_DoubleDouble_ReturnValue_2;           // 0x4B8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsDLSSSupported_ReturnValue;              // 0x4C0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_155E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<enum class EUDLSSMode>                CallFunc_Map_Values_Values_4;                      // 0x4C8(0x10)(ReferenceParm)
+	int32                                        CallFunc_Array_Find_ReturnValue_5;                 // 0x4D8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class EUDLSSMode                        CallFunc_Map_Find_Value_2;                         // 0x4DC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_Map_Find_ReturnValue_2;                   // 0x4DD(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue_8;        // 0x4DE(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_155F[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<enum class EUDLSSMode>                CallFunc_Map_Values_Values_5;                      // 0x4E0(0x10)(ReferenceParm)
+	int32                                        CallFunc_Array_Find_ReturnValue_6;                 // 0x4F0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1561[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<enum class EUDLSSMode>                CallFunc_Map_Values_Values_6;                      // 0x4F8(0x10)(ReferenceParm)
+	int32                                        CallFunc_Array_Find_ReturnValue_7;                 // 0x508(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsDLSSSupported_ReturnValue_1;            // 0x50C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsDLSSSupported_ReturnValue_2;            // 0x50D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1564[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	float                                        K2Node_SetFieldsInStruct_LODBias_ImplicitCast;     // 0x510(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        K2Node_SetFieldsInStruct_Brightness_ImplicitCast;  // 0x514(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x518(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetSlider_CurrentValue_ImplicitCast;      // 0x520(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetSlider_CurrentValue_ImplicitCast_1;    // 0x528(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetSlider_CurrentValue_ImplicitCast_2;    // 0x530(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Round_A_ImplicitCast;                     // 0x538(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Add_DoubleDouble_A_ImplicitCast_1;        // 0x540(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetSlider_CurrentValue_ImplicitCast_3;    // 0x548(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetSlider_CurrentValue_ImplicitCast_4;    // 0x550(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        K2Node_SetFieldsInStruct_PalRideCameraLengthRate_ImplicitCast; // 0x558(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_1567[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_SetSlider_Min_ImplicitCast;               // 0x560(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetSlider_Max_ImplicitCast;               // 0x568(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetSlider_Min_ImplicitCast_1;             // 0x570(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetSlider_Max_ImplicitCast_1;             // 0x578(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Add_DoubleDouble_B_ImplicitCast;          // 0x580(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Subtract_DoubleDouble_B_ImplicitCast;     // 0x588(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        K2Node_SetFieldsInStruct_FOV_ImplicitCast;         // 0x590(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_156A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CallFunc_SetSlider_Min_ImplicitCast_2;             // 0x598(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetSlider_Max_ImplicitCast_2;             // 0x5A0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetSlider_Min_ImplicitCast_3;             // 0x5A8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetSlider_Max_ImplicitCast_3;             // 0x5B0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Add_DoubleDouble_B_ImplicitCast_1;        // 0x5B8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Add_DoubleDouble_A_ImplicitCast_2;        // 0x5C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetSlider_CurrentValue_ImplicitCast_5;    // 0x5C8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetSlider_CurrentValue_ImplicitCast_6;    // 0x5D0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetSlider_Min_ImplicitCast_4;             // 0x5D8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetSlider_Max_ImplicitCast_4;             // 0x5E0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_Add_DoubleDouble_B_ImplicitCast_2;        // 0x5E8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetSlider_Min_ImplicitCast_5;             // 0x5F0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CallFunc_SetSlider_Max_ImplicitCast_5;             // 0x5F8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 }

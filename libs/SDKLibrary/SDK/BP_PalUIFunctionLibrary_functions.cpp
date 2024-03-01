@@ -40,6 +40,113 @@ class UBP_PalUIFunctionLibrary_C* UBP_PalUIFunctionLibrary_C::GetDefaultObj()
 }
 
 
+// Function BP_PalUIFunctionLibrary.BP_PalUIFunctionLibrary_C.GetTalentValueTextMaterial
+// (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// int32                              TalentValue                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     __WorldContext                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UMaterialInstance*           FontMaterial                                                     (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Less_IntInt_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_PalUIFunctionLibrary_C::GetTalentValueTextMaterial(int32 TalentValue, class UObject* __WorldContext, class UMaterialInstance** FontMaterial, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue_1)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_PalUIFunctionLibrary_C", "GetTalentValueTextMaterial");
+
+	Params::UBP_PalUIFunctionLibrary_C_GetTalentValueTextMaterial_Params Parms{};
+
+	Parms.TalentValue = TalentValue;
+	Parms.__WorldContext = __WorldContext;
+	Parms.CallFunc_EqualEqual_IntInt_ReturnValue = CallFunc_EqualEqual_IntInt_ReturnValue;
+	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
+	Parms.CallFunc_Less_IntInt_ReturnValue_1 = CallFunc_Less_IntInt_ReturnValue_1;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (FontMaterial != nullptr)
+		*FontMaterial = Parms.FontMaterial;
+
+}
+
+
+// Function BP_PalUIFunctionLibrary.BP_PalUIFunctionLibrary_C.SetupTalentText
+// (Static, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UBP_PalTextBlock_C*          TalentHP_ValueText                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UBP_PalTextBlock_C*          TalentATK_ValueText                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UBP_PalTextBlock_C*          TalentDEF_ValueText                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                              TalentHP                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              TalentATK                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              TalentDEF                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     __WorldContext                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
+// class FText                        CallFunc_Conv_IntToText_ReturnValue_1                            (None)
+// class FText                        CallFunc_Conv_IntToText_ReturnValue_2                            (None)
+// class UMaterialInstance*           CallFunc_GetTalentValueTextMaterial_FontMaterial                 (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UMaterialInstance*           CallFunc_GetTalentValueTextMaterial_FontMaterial_1               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UMaterialInstance*           CallFunc_GetTalentValueTextMaterial_FontMaterial_2               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_PalUIFunctionLibrary_C::SetupTalentText(class UBP_PalTextBlock_C* TalentHP_ValueText, class UBP_PalTextBlock_C* TalentATK_ValueText, class UBP_PalTextBlock_C* TalentDEF_ValueText, int32 TalentHP, int32 TalentATK, int32 TalentDEF, class UObject* __WorldContext, class FText CallFunc_Conv_IntToText_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue_1, class FText CallFunc_Conv_IntToText_ReturnValue_2, class UMaterialInstance* CallFunc_GetTalentValueTextMaterial_FontMaterial, class UMaterialInstance* CallFunc_GetTalentValueTextMaterial_FontMaterial_1, class UMaterialInstance* CallFunc_GetTalentValueTextMaterial_FontMaterial_2)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_PalUIFunctionLibrary_C", "SetupTalentText");
+
+	Params::UBP_PalUIFunctionLibrary_C_SetupTalentText_Params Parms{};
+
+	Parms.TalentHP_ValueText = TalentHP_ValueText;
+	Parms.TalentATK_ValueText = TalentATK_ValueText;
+	Parms.TalentDEF_ValueText = TalentDEF_ValueText;
+	Parms.TalentHP = TalentHP;
+	Parms.TalentATK = TalentATK;
+	Parms.TalentDEF = TalentDEF;
+	Parms.__WorldContext = __WorldContext;
+	Parms.CallFunc_Conv_IntToText_ReturnValue = CallFunc_Conv_IntToText_ReturnValue;
+	Parms.CallFunc_Conv_IntToText_ReturnValue_1 = CallFunc_Conv_IntToText_ReturnValue_1;
+	Parms.CallFunc_Conv_IntToText_ReturnValue_2 = CallFunc_Conv_IntToText_ReturnValue_2;
+	Parms.CallFunc_GetTalentValueTextMaterial_FontMaterial = CallFunc_GetTalentValueTextMaterial_FontMaterial;
+	Parms.CallFunc_GetTalentValueTextMaterial_FontMaterial_1 = CallFunc_GetTalentValueTextMaterial_FontMaterial_1;
+	Parms.CallFunc_GetTalentValueTextMaterial_FontMaterial_2 = CallFunc_GetTalentValueTextMaterial_FontMaterial_2;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function BP_PalUIFunctionLibrary.BP_PalUIFunctionLibrary_C.ChangeTextFontMaterialInstance
+// (Static, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalTextBlockBase*           TargetTextBlock                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UMaterialInstance*           NewMaterial                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     __WorldContext                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FSlateFontInfo              K2Node_Copy_ReturnValue                                          (HasGetValueTypeHash)
+// struct FSlateFontInfo              K2Node_SetFieldsInStruct_StructOut                               (HasGetValueTypeHash)
+
+void UBP_PalUIFunctionLibrary_C::ChangeTextFontMaterialInstance(class UPalTextBlockBase* TargetTextBlock, class UMaterialInstance* NewMaterial, class UObject* __WorldContext, const struct FSlateFontInfo& K2Node_Copy_ReturnValue, const struct FSlateFontInfo& K2Node_SetFieldsInStruct_StructOut)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_PalUIFunctionLibrary_C", "ChangeTextFontMaterialInstance");
+
+	Params::UBP_PalUIFunctionLibrary_C_ChangeTextFontMaterialInstance_Params Parms{};
+
+	Parms.TargetTextBlock = TargetTextBlock;
+	Parms.NewMaterial = NewMaterial;
+	Parms.__WorldContext = __WorldContext;
+	Parms.K2Node_Copy_ReturnValue = K2Node_Copy_ReturnValue;
+	Parms.K2Node_SetFieldsInStruct_StructOut = K2Node_SetFieldsInStruct_StructOut;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function BP_PalUIFunctionLibrary.BP_PalUIFunctionLibrary_C.GetPartnerSkillIcon
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:

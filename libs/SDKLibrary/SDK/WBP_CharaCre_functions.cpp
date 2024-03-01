@@ -1113,16 +1113,16 @@ void UWBP_CharaCre_C::OnClickedEditNameButton__DelegateSignature()
 }
 
 
-// Function WBP_CharaCre.WBP_CharaCre_C.OnNotifyCloseSelectColorWIndow__DelegateSignature
+// Function WBP_CharaCre.WBP_CharaCre_C.OnNotifyCloseSelectColorWindow__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
-void UWBP_CharaCre_C::OnNotifyCloseSelectColorWIndow__DelegateSignature()
+void UWBP_CharaCre_C::OnNotifyCloseSelectColorWindow__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("WBP_CharaCre_C", "OnNotifyCloseSelectColorWIndow__DelegateSignature");
+		Func = Class->GetFunction("WBP_CharaCre_C", "OnNotifyCloseSelectColorWindow__DelegateSignature");
 
 
 

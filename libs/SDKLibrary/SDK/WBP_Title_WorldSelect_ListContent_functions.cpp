@@ -187,6 +187,8 @@ void UWBP_Title_WorldSelect_ListContent_C::GetBindedSaveDirectoryName(class FStr
 // Parameters:
 // class FString                      SaveDirectoryName                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 // struct FPalUILocalWorldDisplayData DisplayData                                                      (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText                        CallFunc_GetLocalizedTextFromHandle_Text                         (None)
+// bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_BreakDateTime_Year                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_BreakDateTime_Month                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_BreakDateTime_Day                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -213,8 +215,15 @@ void UWBP_Title_WorldSelect_ListContent_C::GetBindedSaveDirectoryName(class FStr
 // class FText                        CallFunc_Format_ReturnValue_1                                    (None)
 // class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         (None)
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor_1                                   (None)
+// class FText                        CallFunc_MakeLiteralText_ReturnValue                             (None)
+// class FText                        CallFunc_MakeLiteralText_ReturnValue_1                           (None)
+// class FText                        CallFunc_SelectText_ReturnValue                                  (None)
+// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FSlateColor                 K2Node_Select_Default                                            (None)
 
-void UWBP_Title_WorldSelect_ListContent_C::Setup_By_Local_World_Display_Data(const class FString& SaveDirectoryName, const struct FPalUILocalWorldDisplayData& DisplayData, int32 CallFunc_BreakDateTime_Year, int32 CallFunc_BreakDateTime_Month, int32 CallFunc_BreakDateTime_Day, int32 CallFunc_BreakDateTime_Hour, int32 CallFunc_BreakDateTime_Minute, int32 CallFunc_BreakDateTime_Second, int32 CallFunc_BreakDateTime_Millisecond, class FText CallFunc_Conv_IntToText_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue_1, class FText CallFunc_Conv_IntToText_ReturnValue_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, class FText CallFunc_Conv_IntToText_ReturnValue_3, class FText CallFunc_Conv_IntToText_ReturnValue_4, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, class FText CallFunc_Conv_IntToText_ReturnValue_5, int64 CallFunc_Conv_IntToInt64_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_4, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_5, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue, class FText CallFunc_Format_ReturnValue_1, class FText CallFunc_Conv_StringToText_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue_1)
+void UWBP_Title_WorldSelect_ListContent_C::Setup_By_Local_World_Display_Data(const class FString& SaveDirectoryName, const struct FPalUILocalWorldDisplayData& DisplayData, class FText CallFunc_GetLocalizedTextFromHandle_Text, bool K2Node_SwitchEnum_CmpSuccess, int32 CallFunc_BreakDateTime_Year, int32 CallFunc_BreakDateTime_Month, int32 CallFunc_BreakDateTime_Day, int32 CallFunc_BreakDateTime_Hour, int32 CallFunc_BreakDateTime_Minute, int32 CallFunc_BreakDateTime_Second, int32 CallFunc_BreakDateTime_Millisecond, class FText CallFunc_Conv_IntToText_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue_1, class FText CallFunc_Conv_IntToText_ReturnValue_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, class FText CallFunc_Conv_IntToText_ReturnValue_3, class FText CallFunc_Conv_IntToText_ReturnValue_4, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, class FText CallFunc_Conv_IntToText_ReturnValue_5, int64 CallFunc_Conv_IntToInt64_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_4, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_5, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue, class FText CallFunc_Format_ReturnValue_1, class FText CallFunc_Conv_StringToText_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue_1, const struct FSlateColor& K2Node_MakeStruct_SlateColor, const struct FSlateColor& K2Node_MakeStruct_SlateColor_1, class FText CallFunc_MakeLiteralText_ReturnValue, class FText CallFunc_MakeLiteralText_ReturnValue_1, class FText CallFunc_SelectText_ReturnValue, bool Temp_bool_Variable, const struct FSlateColor& K2Node_Select_Default)
 {
 	static class UFunction* Func = nullptr;
 
@@ -225,6 +234,8 @@ void UWBP_Title_WorldSelect_ListContent_C::Setup_By_Local_World_Display_Data(con
 
 	Parms.SaveDirectoryName = SaveDirectoryName;
 	Parms.DisplayData = DisplayData;
+	Parms.CallFunc_GetLocalizedTextFromHandle_Text = CallFunc_GetLocalizedTextFromHandle_Text;
+	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
 	Parms.CallFunc_BreakDateTime_Year = CallFunc_BreakDateTime_Year;
 	Parms.CallFunc_BreakDateTime_Month = CallFunc_BreakDateTime_Month;
 	Parms.CallFunc_BreakDateTime_Day = CallFunc_BreakDateTime_Day;
@@ -251,6 +262,13 @@ void UWBP_Title_WorldSelect_ListContent_C::Setup_By_Local_World_Display_Data(con
 	Parms.CallFunc_Format_ReturnValue_1 = CallFunc_Format_ReturnValue_1;
 	Parms.CallFunc_Conv_StringToText_ReturnValue = CallFunc_Conv_StringToText_ReturnValue;
 	Parms.CallFunc_Conv_StringToText_ReturnValue_1 = CallFunc_Conv_StringToText_ReturnValue_1;
+	Parms.K2Node_MakeStruct_SlateColor = K2Node_MakeStruct_SlateColor;
+	Parms.K2Node_MakeStruct_SlateColor_1 = K2Node_MakeStruct_SlateColor_1;
+	Parms.CallFunc_MakeLiteralText_ReturnValue = CallFunc_MakeLiteralText_ReturnValue;
+	Parms.CallFunc_MakeLiteralText_ReturnValue_1 = CallFunc_MakeLiteralText_ReturnValue_1;
+	Parms.CallFunc_SelectText_ReturnValue = CallFunc_SelectText_ReturnValue;
+	Parms.Temp_bool_Variable = Temp_bool_Variable;
+	Parms.K2Node_Select_Default = K2Node_Select_Default;
 
 	UObject::ProcessEvent(Func, &Parms);
 

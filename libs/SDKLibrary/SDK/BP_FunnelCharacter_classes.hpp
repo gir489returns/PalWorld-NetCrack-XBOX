@@ -9,14 +9,14 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x18 (0x858 - 0x840)
+// 0x18 (0x848 - 0x830)
 // BlueprintGeneratedClass BP_FunnelCharacter.BP_FunnelCharacter_C
 class ABP_FunnelCharacter_C : public APalFunnelCharacter
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x840(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPalNavigationInvokerComponent*        PalNavigationInvoker;                              // 0x848(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalFacialComponent*                   PalFacial;                                         // 0x850(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x830(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPalNavigationInvokerComponent*        PalNavigationInvoker;                              // 0x838(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalFacialComponent*                   PalFacial;                                         // 0x840(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class ABP_FunnelCharacter_C* GetDefaultObj();

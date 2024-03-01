@@ -780,7 +780,7 @@ void UPalBossBattleSequence_Opening_C::StartCustcene()
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     K2Node_CustomEvent_Loaded_2                                      (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     Temp_object_Variable                                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UAkAudioEvent*               K2Node_DynamicCast_AsAk_Audio_Event                              (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -806,8 +806,8 @@ void UPalBossBattleSequence_Opening_C::StartCustcene()
 // class APalCharacter*               K2Node_CustomEvent_SpawnedCharacter                              (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class APalPlayerCharacter*         CallFunc_GetJoinedLocalControlPlayer_ReturnValue                 (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     K2Node_CustomEvent_Loaded_2                                      (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class APalPlayerState*             CallFunc_GetLocalPlayerState_ReturnValue                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UPalSyncTeleportComponent*   CallFunc_GetSyncTeleportComp_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class APalPlayerCharacter*         CallFunc_GetJoinedLocalControlPlayer_ReturnValue_1               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -825,9 +825,11 @@ void UPalBossBattleSequence_Opening_C::StartCustcene()
 // bool                               CallFunc_IsAssetLoadingCompleted_NewParam_1                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsAssetLoadingCompleted_NewParam_2                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_4                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsServer_ReturnValue_1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalBossBattleSequencer*     CallFunc_GetOuterSequencer_ReturnValue_7                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_CheckLevelInstanceLoaded_DeltaTime_ImplicitCast         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UPalBossBattleSequence_Opening_C::ExecuteUbergraph_PalBossBattleSequence_Opening(int32 EntryPoint, class UObject* K2Node_CustomEvent_Loaded_2, class UObject* Temp_object_Variable, class UAkAudioEvent* K2Node_DynamicCast_AsAk_Audio_Event, bool K2Node_DynamicCast_bSuccess, class UObject* K2Node_CustomEvent_Loaded_1, class UObject* Temp_object_Variable_1, class UAkAudioEvent* K2Node_DynamicCast_AsAk_Audio_Event_1, bool K2Node_DynamicCast_bSuccess_1, TSubclassOf<class UObject> K2Node_CustomEvent_Loaded, class UClass* Temp_class_Variable, class UClass* K2Node_ClassDynamicCast_AsPal_Cutscene_Actor, bool K2Node_ClassDynamicCast_bSuccess, class UPalBossBattleSequencer* CallFunc_GetOuterSequencer_ReturnValue, TArray<class APalPlayerCharacter*>& CallFunc_GetInRoomPlayers_ReturnValue, enum class EPalBossType CallFunc_GetBossType_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_IsSkipCutscene_Skip, bool K2Node_Event_IsSuccess, bool CallFunc_IsServer_ReturnValue, class UPalBossBattleSequencer* CallFunc_GetOuterSequencer_ReturnValue_1, float K2Node_Event_DeltaTime, class UPalBossBattleSequencer* CallFunc_GetOuterSequencer_ReturnValue_2, class UPalBossBattleSequencer* CallFunc_GetOuterSequencer_ReturnValue_3, class APalCharacter* K2Node_CustomEvent_SpawnedCharacter, class APalPlayerCharacter* CallFunc_GetJoinedLocalControlPlayer_ReturnValue, bool CallFunc_IsValid_ReturnValue, class APalPlayerState* CallFunc_GetLocalPlayerState_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UPalSyncTeleportComponent* CallFunc_GetSyncTeleportComp_ReturnValue, class APalPlayerCharacter* CallFunc_GetJoinedLocalControlPlayer_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UPalBossBattleSequencer* CallFunc_GetOuterSequencer_ReturnValue_4, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class UPalBossBattleSequencer* CallFunc_GetOuterSequencer_ReturnValue_5, class UPalBossBattleInstanceModel* CallFunc_GetBossBattleInstanceModel_ReturnValue, bool CallFunc_IsValidSoftObjectReference_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class UPalBossBattleSequencer* CallFunc_GetOuterSequencer_ReturnValue_6, class UPalBossBattleInstanceModel* CallFunc_GetBossBattleInstanceModel_ReturnValue_1, bool CallFunc_IsValidSoftClassReference_ReturnValue, bool CallFunc_IsAssetLoadingCompleted_NewParam, bool CallFunc_IsAssetLoadingCompleted_NewParam_1, bool CallFunc_IsAssetLoadingCompleted_NewParam_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, double CallFunc_CheckLevelInstanceLoaded_DeltaTime_ImplicitCast)
+void UPalBossBattleSequence_Opening_C::ExecuteUbergraph_PalBossBattleSequence_Opening(int32 EntryPoint, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UObject* Temp_object_Variable, class UAkAudioEvent* K2Node_DynamicCast_AsAk_Audio_Event, bool K2Node_DynamicCast_bSuccess, class UObject* K2Node_CustomEvent_Loaded_1, class UObject* Temp_object_Variable_1, class UAkAudioEvent* K2Node_DynamicCast_AsAk_Audio_Event_1, bool K2Node_DynamicCast_bSuccess_1, TSubclassOf<class UObject> K2Node_CustomEvent_Loaded, class UClass* Temp_class_Variable, class UClass* K2Node_ClassDynamicCast_AsPal_Cutscene_Actor, bool K2Node_ClassDynamicCast_bSuccess, class UPalBossBattleSequencer* CallFunc_GetOuterSequencer_ReturnValue, TArray<class APalPlayerCharacter*>& CallFunc_GetInRoomPlayers_ReturnValue, enum class EPalBossType CallFunc_GetBossType_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_IsSkipCutscene_Skip, bool K2Node_Event_IsSuccess, bool CallFunc_IsServer_ReturnValue, class UPalBossBattleSequencer* CallFunc_GetOuterSequencer_ReturnValue_1, float K2Node_Event_DeltaTime, class UPalBossBattleSequencer* CallFunc_GetOuterSequencer_ReturnValue_2, class UPalBossBattleSequencer* CallFunc_GetOuterSequencer_ReturnValue_3, class APalCharacter* K2Node_CustomEvent_SpawnedCharacter, class APalPlayerCharacter* CallFunc_GetJoinedLocalControlPlayer_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UObject* K2Node_CustomEvent_Loaded_2, class APalPlayerState* CallFunc_GetLocalPlayerState_ReturnValue, class UPalSyncTeleportComponent* CallFunc_GetSyncTeleportComp_ReturnValue, class APalPlayerCharacter* CallFunc_GetJoinedLocalControlPlayer_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UPalBossBattleSequencer* CallFunc_GetOuterSequencer_ReturnValue_4, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class UPalBossBattleSequencer* CallFunc_GetOuterSequencer_ReturnValue_5, class UPalBossBattleInstanceModel* CallFunc_GetBossBattleInstanceModel_ReturnValue, bool CallFunc_IsValidSoftObjectReference_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class UPalBossBattleSequencer* CallFunc_GetOuterSequencer_ReturnValue_6, class UPalBossBattleInstanceModel* CallFunc_GetBossBattleInstanceModel_ReturnValue_1, bool CallFunc_IsValidSoftClassReference_ReturnValue, bool CallFunc_IsAssetLoadingCompleted_NewParam, bool CallFunc_IsAssetLoadingCompleted_NewParam_1, bool CallFunc_IsAssetLoadingCompleted_NewParam_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, bool CallFunc_IsServer_ReturnValue_1, class UPalBossBattleSequencer* CallFunc_GetOuterSequencer_ReturnValue_7, double CallFunc_CheckLevelInstanceLoaded_DeltaTime_ImplicitCast)
 {
 	static class UFunction* Func = nullptr;
 
@@ -837,7 +839,7 @@ void UPalBossBattleSequence_Opening_C::ExecuteUbergraph_PalBossBattleSequence_Op
 	Params::UPalBossBattleSequence_Opening_C_ExecuteUbergraph_PalBossBattleSequence_Opening_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-	Parms.K2Node_CustomEvent_Loaded_2 = K2Node_CustomEvent_Loaded_2;
+	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.Temp_object_Variable = Temp_object_Variable;
 	Parms.K2Node_DynamicCast_AsAk_Audio_Event = K2Node_DynamicCast_AsAk_Audio_Event;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
@@ -863,8 +865,8 @@ void UPalBossBattleSequence_Opening_C::ExecuteUbergraph_PalBossBattleSequence_Op
 	Parms.K2Node_CustomEvent_SpawnedCharacter = K2Node_CustomEvent_SpawnedCharacter;
 	Parms.CallFunc_GetJoinedLocalControlPlayer_ReturnValue = CallFunc_GetJoinedLocalControlPlayer_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.K2Node_CustomEvent_Loaded_2 = K2Node_CustomEvent_Loaded_2;
 	Parms.CallFunc_GetLocalPlayerState_ReturnValue = CallFunc_GetLocalPlayerState_ReturnValue;
-	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.CallFunc_GetSyncTeleportComp_ReturnValue = CallFunc_GetSyncTeleportComp_ReturnValue;
 	Parms.CallFunc_GetJoinedLocalControlPlayer_ReturnValue_1 = CallFunc_GetJoinedLocalControlPlayer_ReturnValue_1;
 	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
@@ -882,6 +884,8 @@ void UPalBossBattleSequence_Opening_C::ExecuteUbergraph_PalBossBattleSequence_Op
 	Parms.CallFunc_IsAssetLoadingCompleted_NewParam_1 = CallFunc_IsAssetLoadingCompleted_NewParam_1;
 	Parms.CallFunc_IsAssetLoadingCompleted_NewParam_2 = CallFunc_IsAssetLoadingCompleted_NewParam_2;
 	Parms.K2Node_CreateDelegate_OutputDelegate_4 = K2Node_CreateDelegate_OutputDelegate_4;
+	Parms.CallFunc_IsServer_ReturnValue_1 = CallFunc_IsServer_ReturnValue_1;
+	Parms.CallFunc_GetOuterSequencer_ReturnValue_7 = CallFunc_GetOuterSequencer_ReturnValue_7;
 	Parms.CallFunc_CheckLevelInstanceLoaded_DeltaTime_ImplicitCast = CallFunc_CheckLevelInstanceLoaded_DeltaTime_ImplicitCast;
 
 	UObject::ProcessEvent(Func, &Parms);

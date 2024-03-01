@@ -23,7 +23,7 @@ public:
 	bool                                         ForceLoadingScreenVisible;                         // 0x69(0x1)(Edit, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         HoldLoadingScreenAdditionalSecsEvenInEditor;       // 0x6A(0x1)(Edit, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ForceTickLoadingScreenEvenInEditor;                // 0x6B(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_0[0x4];                                        // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1[0x4];                                        // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UCommonLoadingScreenSettings* GetDefaultObj();
@@ -46,7 +46,7 @@ public:
 class ULoadingProcessTask : public UObject
 {
 public:
-	uint8                                        Pad_6[0x18];                                       // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_8[0x18];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULoadingProcessTask* GetDefaultObj();
@@ -61,7 +61,7 @@ public:
 class ULoadingScreenManager : public UGameInstanceSubsystem
 {
 public:
-	uint8                                        Pad_9[0x80];                                       // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_A[0x80];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULoadingScreenManager* GetDefaultObj();

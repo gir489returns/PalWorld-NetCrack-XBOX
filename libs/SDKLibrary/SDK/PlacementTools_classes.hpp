@@ -15,29 +15,29 @@ class APlacementToolBase : public AActor
 {
 public:
 	bool                                         IsInEditor;                                        // 0x290(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F05[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1282[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class USceneComponent*                       SceneComponent;                                    // 0x298(0x8)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UBillboardComponent*                   EasySelectBillboard;                               // 0x2A0(0x8)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FRandomStream                         RandomStream;                                      // 0x2A8(0x8)(ZeroConstructor, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	struct FLinearDistribution                   DistributionCurve;                                 // 0x2B0(0x10)(Protected, NativeAccessSpecifierProtected)
-	uint8                                        Pad_F08[0x20];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1285[0x20];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	enum class EPlacementMode                    PlacementMode;                                     // 0x2E0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	enum class EPlacementStyle                   PlacementStyle;                                    // 0x2E1(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_F0C[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1289[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FPlacementItem>                PlacementItems;                                    // 0x2E8(0x10)(Edit, BlueprintVisible, ZeroConstructor, Protected, ExposeOnSpawn, NativeAccessSpecifierProtected)
 	struct FDirections                           SurfaceDirection;                                  // 0x2F8(0x6)(Edit, BlueprintVisible, NoDestructor, Protected, ExposeOnSpawn, NativeAccessSpecifierProtected)
-	uint8                                        Pad_F12[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_128B[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Amount;                                            // 0x300(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                        Seed;                                              // 0x304(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_F15[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_128E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            Offset;                                            // 0x310(0x60)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                         bRandomizeRotation;                                // 0x370(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_F17[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1291[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRotator                              RotationMin;                                       // 0x378(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, NativeAccessSpecifierProtected)
 	struct FRotator                              RotationMax;                                       // 0x390(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, NativeAccessSpecifierProtected)
 	bool                                         bRandomizeScale;                                   // 0x3A8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                         bUniformScale;                                     // 0x3A9(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_F1B[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1295[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               ScaleMin;                                          // 0x3B0(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FVector                               ScaleMax;                                          // 0x3C8(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                         bRotateToSurface;                                  // 0x3E0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -45,7 +45,7 @@ public:
 	bool                                         bAvoidOverlapBounds;                               // 0x3E2(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                         bDeleteChildrenWhenDeleted;                        // 0x3E3(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                         bHideBrush;                                        // 0x3E4(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_F22[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_129C[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class APlacementToolBase* GetDefaultObj();
@@ -63,7 +63,7 @@ public:
 	class UBoxComponent*                         BoxBrush;                                          // 0x400(0x8)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FDirections                           FadeDirection;                                     // 0x408(0x6)(Edit, BlueprintVisible, NoDestructor, Protected, ExposeOnSpawn, NativeAccessSpecifierProtected)
 	enum class ECollisionChannel                 TraceChannel;                                      // 0x40E(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_F2C[0x1];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_12A1[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          NotPlaceOnActorTags;                               // 0x410(0x10)(Edit, BlueprintVisible, ZeroConstructor, Protected, ExposeOnSpawn, NativeAccessSpecifierProtected)
 
 	static class UClass* StaticClass();
@@ -77,11 +77,11 @@ class ASpherePlacement : public APlacementToolBase
 {
 public:
 	float                                        Radius;                                            // 0x3E8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_F35[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_12A3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class USphereComponent*                      SphereBrush;                                       // 0x3F0(0x8)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	enum class EFadeAxis                         FadeDirection;                                     // 0x3F8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	enum class ECollisionChannel                 TraceChannel;                                      // 0x3F9(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_F38[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_12A4[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          NotPlaceOnActorTags;                               // 0x400(0x10)(Edit, BlueprintVisible, ZeroConstructor, Protected, ExposeOnSpawn, NativeAccessSpecifierProtected)
 
 	static class UClass* StaticClass();

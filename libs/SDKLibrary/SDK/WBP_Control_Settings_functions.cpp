@@ -455,6 +455,48 @@ void UWBP_Control_Settings_C::OnHideChatChanged(bool IsOn)
 }
 
 
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnToggleLongPressChanged_GP
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                               IsOn                                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Control_Settings_C::OnToggleLongPressChanged_GP(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_Control_Settings_C", "OnToggleLongPressChanged_GP");
+
+	Params::UWBP_Control_Settings_C_OnToggleLongPressChanged_GP_Params Parms{};
+
+	Parms.IsOn = IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnToggleLongPressChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                               IsOn                                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Control_Settings_C::OnToggleLongPressChanged(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_Control_Settings_C", "OnToggleLongPressChanged");
+
+	Params::UWBP_Control_Settings_C_OnToggleLongPressChanged_Params Parms{};
+
+	Parms.IsOn = IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function WBP_Control_Settings.WBP_Control_Settings_C.ExecuteUbergraph_WBP_Control_Settings
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -477,9 +519,10 @@ void UWBP_Control_Settings_C::OnHideChatChanged(bool IsOn)
 // struct FPalOptionKeyboardSettings  CallFunc_GetKeyboardSettings_ReturnValue                         (ConstParm, NoDestructor)
 // bool                               K2Node_CustomEvent_Next                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UVerticalBox*                CallFunc_Array_Get_Item                                          (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UVerticalBox*                CallFunc_Array_Get_Item_1                                        (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UVerticalBox*                CallFunc_Array_Get_Item_2                                        (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UVerticalBox*                CallFunc_Array_Get_Item_3                                        (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -491,24 +534,28 @@ void UWBP_Control_Settings_C::OnHideChatChanged(bool IsOn)
 // int32                              CallFunc_Array_Length_ReturnValue_1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_CustomEvent_IsOn_7                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Not_PreBool_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Not_PreBool_ReturnValue_2                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_CustomEvent_IsOn_9                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Not_PreBool_ReturnValue_3                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // double                             K2Node_CustomEvent_Value_5                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             K2Node_CustomEvent_Value_4                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_CustomEvent_IsOn_6                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_CustomEvent_IsOn_5                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_CustomEvent_IsOn_8                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_CustomEvent_IsOn_7                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_3                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_4                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Not_PreBool_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FPalOptionKeyboardSettings  K2Node_MakeStruct_PalOptionKeyboardSettings                      (NoDestructor)
+// bool                               CallFunc_Not_PreBool_ReturnValue_4                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsVisible_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Not_PreBool_ReturnValue_5                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FPalOptionKeyboardSettings  K2Node_MakeStruct_PalOptionKeyboardSettings                      (NoDestructor)
 // class UWidget*                     CallFunc_GetDesiredFocusTarget_Target                            (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // TArray<class UWBP_PalCommonButtonBase_C*>K2Node_MakeArray_Array                                           (ReferenceParm, ContainsInstancedReference)
 // class UWidget*                     CallFunc_GetDesiredFocusTarget_Target_1                          (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Multiply_DoubleDouble_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Multiply_DoubleDouble_ReturnValue_1                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Not_PreBool_ReturnValue_6                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_5                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_6                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_7                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -517,16 +564,17 @@ void UWBP_Control_Settings_C::OnHideChatChanged(bool IsOn)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_10                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_11                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FPalOptionPadSettings       K2Node_MakeStruct_PalOptionPadSettings                           (NoDestructor)
-// bool                               K2Node_CustomEvent_IsOn_4                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_CustomEvent_IsOn_6                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Not_PreBool_ReturnValue_7                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             K2Node_CustomEvent_Value_3                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             K2Node_CustomEvent_Value_2                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Multiply_DoubleDouble_ReturnValue_2                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             K2Node_CustomEvent_Value_1                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_Multiply_DoubleDouble_ReturnValue_3                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             K2Node_CustomEvent_Value                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_CustomEvent_IsOn_5                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_CustomEvent_IsOn_4                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_CustomEvent_IsOn_3                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_CustomEvent_IsOn_2                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_CustomEvent_IsOn_1                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UVerticalBox*                CallFunc_Array_Get_Item_5                                        (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_12                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // enum class EPalSupportedPlatformTypeCallFunc_GetPlatformType_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -536,8 +584,12 @@ void UWBP_Control_Settings_C::OnHideChatChanged(bool IsOn)
 // class UVerticalBox*                K2Node_Select_Default_1                                          (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // TArray<class UVerticalBox*>        K2Node_MakeArray_Array_1                                         (ReferenceParm, ContainsInstancedReference)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_13                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_CustomEvent_IsOn_2                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Not_PreBool_ReturnValue_8                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_14                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_CustomEvent_IsOn_1                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_CustomEvent_IsOn                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Not_PreBool_ReturnValue_2                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_15                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_SetSlider_CurrentValue_ImplicitCast                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_SetSlider_CurrentValue_ImplicitCast_1                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                             CallFunc_SetSlider_CurrentValue_ImplicitCast_2                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -581,7 +633,7 @@ void UWBP_Control_Settings_C::OnHideChatChanged(bool IsOn)
 // float                              K2Node_SetFieldsInStruct_LeftStickThreshold_ImplicitCast         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_SetFieldsInStruct_RightStickSensitivity_ImplicitCast      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Control_Settings_C::ExecuteUbergraph_WBP_Control_Settings(int32 EntryPoint, bool CallFunc_IsUGCFilter_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, bool Temp_bool_Variable_1, int32 Temp_int_Variable, enum class ESlateVisibility K2Node_Select_Default, int32 Temp_int_Variable_1, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, class UPalOptionSubsystem* CallFunc_GetOptionSubsystem_ReturnValue, class UPalOptionSubsystem* CallFunc_GetOptionSubsystem_ReturnValue_1, const struct FPalOptionPadSettings& CallFunc_GetPadSettings_ReturnValue, const struct FPalOptionLocalStaticSettings& CallFunc_GetOptionLocalStaticSettings_ReturnValue, const struct FPalOptionKeyboardSettings& CallFunc_GetKeyboardSettings_ReturnValue, bool K2Node_CustomEvent_Next, class UVerticalBox* CallFunc_Array_Get_Item, class UVerticalBox* CallFunc_Array_Get_Item_1, bool CallFunc_Greater_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, class UVerticalBox* CallFunc_Array_Get_Item_2, class UVerticalBox* CallFunc_Array_Get_Item_3, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue_1, int32 K2Node_CustomEvent_Index, class UVerticalBox* CallFunc_Array_Get_Item_4, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_Not_PreBool_ReturnValue, bool K2Node_CustomEvent_IsOn_7, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, double K2Node_CustomEvent_Value_5, double K2Node_CustomEvent_Value_4, bool K2Node_CustomEvent_IsOn_6, bool K2Node_CustomEvent_IsOn_5, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, bool CallFunc_Not_PreBool_ReturnValue_1, const struct FPalOptionKeyboardSettings& K2Node_MakeStruct_PalOptionKeyboardSettings, bool CallFunc_IsVisible_ReturnValue, class UWidget* CallFunc_GetDesiredFocusTarget_Target, TArray<class UWBP_PalCommonButtonBase_C*>& K2Node_MakeArray_Array, class UWidget* CallFunc_GetDesiredFocusTarget_Target_1, double CallFunc_Multiply_DoubleDouble_ReturnValue, double CallFunc_Multiply_DoubleDouble_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_7, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_8, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_9, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_10, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_11, const struct FPalOptionPadSettings& K2Node_MakeStruct_PalOptionPadSettings, bool K2Node_CustomEvent_IsOn_4, double K2Node_CustomEvent_Value_3, double K2Node_CustomEvent_Value_2, double CallFunc_Multiply_DoubleDouble_ReturnValue_2, double K2Node_CustomEvent_Value_1, double CallFunc_Multiply_DoubleDouble_ReturnValue_3, double K2Node_CustomEvent_Value, bool K2Node_CustomEvent_IsOn_3, bool K2Node_CustomEvent_IsOn_2, bool K2Node_CustomEvent_IsOn_1, class UVerticalBox* CallFunc_Array_Get_Item_5, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_12, enum class EPalSupportedPlatformType CallFunc_GetPlatformType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue, class UVerticalBox* K2Node_Select_Default_1, TArray<class UVerticalBox*>& K2Node_MakeArray_Array_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_13, bool K2Node_CustomEvent_IsOn, bool CallFunc_Not_PreBool_ReturnValue_2, double CallFunc_SetSlider_CurrentValue_ImplicitCast, double CallFunc_SetSlider_CurrentValue_ImplicitCast_1, double CallFunc_SetSlider_CurrentValue_ImplicitCast_2, double CallFunc_SetSlider_CurrentValue_ImplicitCast_3, double CallFunc_SetSlider_CurrentValue_ImplicitCast_4, double CallFunc_SetSlider_CurrentValue_ImplicitCast_5, float K2Node_SetFieldsInStruct_MouseSensitivity_ImplicitCast, double CallFunc_SetSlider_Min_ImplicitCast, double CallFunc_SetSlider_Max_ImplicitCast, float K2Node_SetFieldsInStruct_MouseAimSensitivity_ImplicitCast, double CallFunc_SetSlider_Min_ImplicitCast_1, double CallFunc_SetSlider_Max_ImplicitCast_1, double CallFunc_SetSlider_CurrentValue_ImplicitCast_6, double CallFunc_SetSlider_CurrentValue_ImplicitCast_7, double CallFunc_SetSlider_Min_ImplicitCast_2, double CallFunc_SetSlider_Max_ImplicitCast_2, double CallFunc_SetSlider_Min_ImplicitCast_3, double CallFunc_SetSlider_Max_ImplicitCast_3, double CallFunc_Multiply_DoubleDouble_A_ImplicitCast, double CallFunc_SetSlider_CurrentValue_ImplicitCast_8, double CallFunc_SetSlider_CurrentValue_ImplicitCast_9, double CallFunc_Multiply_DoubleDouble_A_ImplicitCast_1, double CallFunc_SetSlider_Min_ImplicitCast_4, double CallFunc_SetSlider_Max_ImplicitCast_4, double CallFunc_SetSlider_Min_ImplicitCast_5, double CallFunc_SetSlider_Max_ImplicitCast_5, double CallFunc_SetSlider_Min_ImplicitCast_6, double CallFunc_SetSlider_Max_ImplicitCast_6, double CallFunc_SetSlider_Min_ImplicitCast_7, double CallFunc_SetSlider_Max_ImplicitCast_7, double CallFunc_SetSlider_Min_ImplicitCast_8, double CallFunc_SetSlider_Max_ImplicitCast_8, double CallFunc_SetSlider_Min_ImplicitCast_9, double CallFunc_SetSlider_Max_ImplicitCast_9, double CallFunc_SetSlider_Min_ImplicitCast_10, double CallFunc_SetSlider_Max_ImplicitCast_10, double CallFunc_SetSlider_Min_ImplicitCast_11, double CallFunc_SetSlider_Max_ImplicitCast_11, float K2Node_SetFieldsInStruct_RightStickAimSensitivity_ImplicitCast, float K2Node_SetFieldsInStruct_RightStickThreshold_ImplicitCast, float K2Node_SetFieldsInStruct_LeftStickThreshold_ImplicitCast, float K2Node_SetFieldsInStruct_RightStickSensitivity_ImplicitCast)
+void UWBP_Control_Settings_C::ExecuteUbergraph_WBP_Control_Settings(int32 EntryPoint, bool CallFunc_IsUGCFilter_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, bool Temp_bool_Variable_1, int32 Temp_int_Variable, enum class ESlateVisibility K2Node_Select_Default, int32 Temp_int_Variable_1, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, class UPalOptionSubsystem* CallFunc_GetOptionSubsystem_ReturnValue, class UPalOptionSubsystem* CallFunc_GetOptionSubsystem_ReturnValue_1, const struct FPalOptionPadSettings& CallFunc_GetPadSettings_ReturnValue, const struct FPalOptionLocalStaticSettings& CallFunc_GetOptionLocalStaticSettings_ReturnValue, const struct FPalOptionKeyboardSettings& CallFunc_GetKeyboardSettings_ReturnValue, bool K2Node_CustomEvent_Next, class UVerticalBox* CallFunc_Array_Get_Item, bool CallFunc_Not_PreBool_ReturnValue, class UVerticalBox* CallFunc_Array_Get_Item_1, int32 CallFunc_Add_IntInt_ReturnValue_1, bool CallFunc_Greater_IntInt_ReturnValue, class UVerticalBox* CallFunc_Array_Get_Item_2, class UVerticalBox* CallFunc_Array_Get_Item_3, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue_1, int32 K2Node_CustomEvent_Index, class UVerticalBox* CallFunc_Array_Get_Item_4, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue_2, bool K2Node_CustomEvent_IsOn_9, bool CallFunc_Not_PreBool_ReturnValue_3, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, double K2Node_CustomEvent_Value_5, double K2Node_CustomEvent_Value_4, bool K2Node_CustomEvent_IsOn_8, bool K2Node_CustomEvent_IsOn_7, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, bool CallFunc_Not_PreBool_ReturnValue_4, bool CallFunc_IsVisible_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_5, const struct FPalOptionKeyboardSettings& K2Node_MakeStruct_PalOptionKeyboardSettings, class UWidget* CallFunc_GetDesiredFocusTarget_Target, TArray<class UWBP_PalCommonButtonBase_C*>& K2Node_MakeArray_Array, class UWidget* CallFunc_GetDesiredFocusTarget_Target_1, double CallFunc_Multiply_DoubleDouble_ReturnValue, double CallFunc_Multiply_DoubleDouble_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue_6, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_7, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_8, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_9, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_10, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_11, const struct FPalOptionPadSettings& K2Node_MakeStruct_PalOptionPadSettings, bool K2Node_CustomEvent_IsOn_6, bool CallFunc_Not_PreBool_ReturnValue_7, double K2Node_CustomEvent_Value_3, double K2Node_CustomEvent_Value_2, double CallFunc_Multiply_DoubleDouble_ReturnValue_2, double K2Node_CustomEvent_Value_1, double CallFunc_Multiply_DoubleDouble_ReturnValue_3, double K2Node_CustomEvent_Value, bool K2Node_CustomEvent_IsOn_5, bool K2Node_CustomEvent_IsOn_4, bool K2Node_CustomEvent_IsOn_3, class UVerticalBox* CallFunc_Array_Get_Item_5, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_12, enum class EPalSupportedPlatformType CallFunc_GetPlatformType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue, class UVerticalBox* K2Node_Select_Default_1, TArray<class UVerticalBox*>& K2Node_MakeArray_Array_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_13, bool K2Node_CustomEvent_IsOn_2, bool CallFunc_Not_PreBool_ReturnValue_8, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_14, bool K2Node_CustomEvent_IsOn_1, bool K2Node_CustomEvent_IsOn, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_15, double CallFunc_SetSlider_CurrentValue_ImplicitCast, double CallFunc_SetSlider_CurrentValue_ImplicitCast_1, double CallFunc_SetSlider_CurrentValue_ImplicitCast_2, double CallFunc_SetSlider_CurrentValue_ImplicitCast_3, double CallFunc_SetSlider_CurrentValue_ImplicitCast_4, double CallFunc_SetSlider_CurrentValue_ImplicitCast_5, float K2Node_SetFieldsInStruct_MouseSensitivity_ImplicitCast, double CallFunc_SetSlider_Min_ImplicitCast, double CallFunc_SetSlider_Max_ImplicitCast, float K2Node_SetFieldsInStruct_MouseAimSensitivity_ImplicitCast, double CallFunc_SetSlider_Min_ImplicitCast_1, double CallFunc_SetSlider_Max_ImplicitCast_1, double CallFunc_SetSlider_CurrentValue_ImplicitCast_6, double CallFunc_SetSlider_CurrentValue_ImplicitCast_7, double CallFunc_SetSlider_Min_ImplicitCast_2, double CallFunc_SetSlider_Max_ImplicitCast_2, double CallFunc_SetSlider_Min_ImplicitCast_3, double CallFunc_SetSlider_Max_ImplicitCast_3, double CallFunc_Multiply_DoubleDouble_A_ImplicitCast, double CallFunc_SetSlider_CurrentValue_ImplicitCast_8, double CallFunc_SetSlider_CurrentValue_ImplicitCast_9, double CallFunc_Multiply_DoubleDouble_A_ImplicitCast_1, double CallFunc_SetSlider_Min_ImplicitCast_4, double CallFunc_SetSlider_Max_ImplicitCast_4, double CallFunc_SetSlider_Min_ImplicitCast_5, double CallFunc_SetSlider_Max_ImplicitCast_5, double CallFunc_SetSlider_Min_ImplicitCast_6, double CallFunc_SetSlider_Max_ImplicitCast_6, double CallFunc_SetSlider_Min_ImplicitCast_7, double CallFunc_SetSlider_Max_ImplicitCast_7, double CallFunc_SetSlider_Min_ImplicitCast_8, double CallFunc_SetSlider_Max_ImplicitCast_8, double CallFunc_SetSlider_Min_ImplicitCast_9, double CallFunc_SetSlider_Max_ImplicitCast_9, double CallFunc_SetSlider_Min_ImplicitCast_10, double CallFunc_SetSlider_Max_ImplicitCast_10, double CallFunc_SetSlider_Min_ImplicitCast_11, double CallFunc_SetSlider_Max_ImplicitCast_11, float K2Node_SetFieldsInStruct_RightStickAimSensitivity_ImplicitCast, float K2Node_SetFieldsInStruct_RightStickThreshold_ImplicitCast, float K2Node_SetFieldsInStruct_LeftStickThreshold_ImplicitCast, float K2Node_SetFieldsInStruct_RightStickSensitivity_ImplicitCast)
 {
 	static class UFunction* Func = nullptr;
 
@@ -609,9 +661,10 @@ void UWBP_Control_Settings_C::ExecuteUbergraph_WBP_Control_Settings(int32 EntryP
 	Parms.CallFunc_GetKeyboardSettings_ReturnValue = CallFunc_GetKeyboardSettings_ReturnValue;
 	Parms.K2Node_CustomEvent_Next = K2Node_CustomEvent_Next;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
+	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
 	Parms.CallFunc_Array_Get_Item_1 = CallFunc_Array_Get_Item_1;
-	Parms.CallFunc_Greater_IntInt_ReturnValue = CallFunc_Greater_IntInt_ReturnValue;
 	Parms.CallFunc_Add_IntInt_ReturnValue_1 = CallFunc_Add_IntInt_ReturnValue_1;
+	Parms.CallFunc_Greater_IntInt_ReturnValue = CallFunc_Greater_IntInt_ReturnValue;
 	Parms.CallFunc_Array_Get_Item_2 = CallFunc_Array_Get_Item_2;
 	Parms.CallFunc_Array_Get_Item_3 = CallFunc_Array_Get_Item_3;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
@@ -623,24 +676,28 @@ void UWBP_Control_Settings_C::ExecuteUbergraph_WBP_Control_Settings(int32 EntryP
 	Parms.CallFunc_Array_Length_ReturnValue_1 = CallFunc_Array_Length_ReturnValue_1;
 	Parms.CallFunc_Less_IntInt_ReturnValue_1 = CallFunc_Less_IntInt_ReturnValue_1;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
-	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
-	Parms.K2Node_CustomEvent_IsOn_7 = K2Node_CustomEvent_IsOn_7;
+	Parms.CallFunc_Not_PreBool_ReturnValue_1 = CallFunc_Not_PreBool_ReturnValue_1;
+	Parms.CallFunc_Not_PreBool_ReturnValue_2 = CallFunc_Not_PreBool_ReturnValue_2;
+	Parms.K2Node_CustomEvent_IsOn_9 = K2Node_CustomEvent_IsOn_9;
+	Parms.CallFunc_Not_PreBool_ReturnValue_3 = CallFunc_Not_PreBool_ReturnValue_3;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
 	Parms.K2Node_CustomEvent_Value_5 = K2Node_CustomEvent_Value_5;
 	Parms.K2Node_CustomEvent_Value_4 = K2Node_CustomEvent_Value_4;
-	Parms.K2Node_CustomEvent_IsOn_6 = K2Node_CustomEvent_IsOn_6;
-	Parms.K2Node_CustomEvent_IsOn_5 = K2Node_CustomEvent_IsOn_5;
+	Parms.K2Node_CustomEvent_IsOn_8 = K2Node_CustomEvent_IsOn_8;
+	Parms.K2Node_CustomEvent_IsOn_7 = K2Node_CustomEvent_IsOn_7;
 	Parms.K2Node_CreateDelegate_OutputDelegate_2 = K2Node_CreateDelegate_OutputDelegate_2;
 	Parms.K2Node_CreateDelegate_OutputDelegate_3 = K2Node_CreateDelegate_OutputDelegate_3;
 	Parms.K2Node_CreateDelegate_OutputDelegate_4 = K2Node_CreateDelegate_OutputDelegate_4;
-	Parms.CallFunc_Not_PreBool_ReturnValue_1 = CallFunc_Not_PreBool_ReturnValue_1;
-	Parms.K2Node_MakeStruct_PalOptionKeyboardSettings = K2Node_MakeStruct_PalOptionKeyboardSettings;
+	Parms.CallFunc_Not_PreBool_ReturnValue_4 = CallFunc_Not_PreBool_ReturnValue_4;
 	Parms.CallFunc_IsVisible_ReturnValue = CallFunc_IsVisible_ReturnValue;
+	Parms.CallFunc_Not_PreBool_ReturnValue_5 = CallFunc_Not_PreBool_ReturnValue_5;
+	Parms.K2Node_MakeStruct_PalOptionKeyboardSettings = K2Node_MakeStruct_PalOptionKeyboardSettings;
 	Parms.CallFunc_GetDesiredFocusTarget_Target = CallFunc_GetDesiredFocusTarget_Target;
 	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
 	Parms.CallFunc_GetDesiredFocusTarget_Target_1 = CallFunc_GetDesiredFocusTarget_Target_1;
 	Parms.CallFunc_Multiply_DoubleDouble_ReturnValue = CallFunc_Multiply_DoubleDouble_ReturnValue;
 	Parms.CallFunc_Multiply_DoubleDouble_ReturnValue_1 = CallFunc_Multiply_DoubleDouble_ReturnValue_1;
+	Parms.CallFunc_Not_PreBool_ReturnValue_6 = CallFunc_Not_PreBool_ReturnValue_6;
 	Parms.K2Node_CreateDelegate_OutputDelegate_5 = K2Node_CreateDelegate_OutputDelegate_5;
 	Parms.K2Node_CreateDelegate_OutputDelegate_6 = K2Node_CreateDelegate_OutputDelegate_6;
 	Parms.K2Node_CreateDelegate_OutputDelegate_7 = K2Node_CreateDelegate_OutputDelegate_7;
@@ -649,16 +706,17 @@ void UWBP_Control_Settings_C::ExecuteUbergraph_WBP_Control_Settings(int32 EntryP
 	Parms.K2Node_CreateDelegate_OutputDelegate_10 = K2Node_CreateDelegate_OutputDelegate_10;
 	Parms.K2Node_CreateDelegate_OutputDelegate_11 = K2Node_CreateDelegate_OutputDelegate_11;
 	Parms.K2Node_MakeStruct_PalOptionPadSettings = K2Node_MakeStruct_PalOptionPadSettings;
-	Parms.K2Node_CustomEvent_IsOn_4 = K2Node_CustomEvent_IsOn_4;
+	Parms.K2Node_CustomEvent_IsOn_6 = K2Node_CustomEvent_IsOn_6;
+	Parms.CallFunc_Not_PreBool_ReturnValue_7 = CallFunc_Not_PreBool_ReturnValue_7;
 	Parms.K2Node_CustomEvent_Value_3 = K2Node_CustomEvent_Value_3;
 	Parms.K2Node_CustomEvent_Value_2 = K2Node_CustomEvent_Value_2;
 	Parms.CallFunc_Multiply_DoubleDouble_ReturnValue_2 = CallFunc_Multiply_DoubleDouble_ReturnValue_2;
 	Parms.K2Node_CustomEvent_Value_1 = K2Node_CustomEvent_Value_1;
 	Parms.CallFunc_Multiply_DoubleDouble_ReturnValue_3 = CallFunc_Multiply_DoubleDouble_ReturnValue_3;
 	Parms.K2Node_CustomEvent_Value = K2Node_CustomEvent_Value;
+	Parms.K2Node_CustomEvent_IsOn_5 = K2Node_CustomEvent_IsOn_5;
+	Parms.K2Node_CustomEvent_IsOn_4 = K2Node_CustomEvent_IsOn_4;
 	Parms.K2Node_CustomEvent_IsOn_3 = K2Node_CustomEvent_IsOn_3;
-	Parms.K2Node_CustomEvent_IsOn_2 = K2Node_CustomEvent_IsOn_2;
-	Parms.K2Node_CustomEvent_IsOn_1 = K2Node_CustomEvent_IsOn_1;
 	Parms.CallFunc_Array_Get_Item_5 = CallFunc_Array_Get_Item_5;
 	Parms.K2Node_CreateDelegate_OutputDelegate_12 = K2Node_CreateDelegate_OutputDelegate_12;
 	Parms.CallFunc_GetPlatformType_ReturnValue = CallFunc_GetPlatformType_ReturnValue;
@@ -668,8 +726,12 @@ void UWBP_Control_Settings_C::ExecuteUbergraph_WBP_Control_Settings(int32 EntryP
 	Parms.K2Node_Select_Default_1 = K2Node_Select_Default_1;
 	Parms.K2Node_MakeArray_Array_1 = K2Node_MakeArray_Array_1;
 	Parms.K2Node_CreateDelegate_OutputDelegate_13 = K2Node_CreateDelegate_OutputDelegate_13;
+	Parms.K2Node_CustomEvent_IsOn_2 = K2Node_CustomEvent_IsOn_2;
+	Parms.CallFunc_Not_PreBool_ReturnValue_8 = CallFunc_Not_PreBool_ReturnValue_8;
+	Parms.K2Node_CreateDelegate_OutputDelegate_14 = K2Node_CreateDelegate_OutputDelegate_14;
+	Parms.K2Node_CustomEvent_IsOn_1 = K2Node_CustomEvent_IsOn_1;
 	Parms.K2Node_CustomEvent_IsOn = K2Node_CustomEvent_IsOn;
-	Parms.CallFunc_Not_PreBool_ReturnValue_2 = CallFunc_Not_PreBool_ReturnValue_2;
+	Parms.K2Node_CreateDelegate_OutputDelegate_15 = K2Node_CreateDelegate_OutputDelegate_15;
 	Parms.CallFunc_SetSlider_CurrentValue_ImplicitCast = CallFunc_SetSlider_CurrentValue_ImplicitCast;
 	Parms.CallFunc_SetSlider_CurrentValue_ImplicitCast_1 = CallFunc_SetSlider_CurrentValue_ImplicitCast_1;
 	Parms.CallFunc_SetSlider_CurrentValue_ImplicitCast_2 = CallFunc_SetSlider_CurrentValue_ImplicitCast_2;

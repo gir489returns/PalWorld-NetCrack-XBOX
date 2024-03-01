@@ -9,13 +9,13 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x10 (0x178 - 0x168)
+// 0x10 (0x190 - 0x180)
 // BlueprintGeneratedClass BP_ActionCooking.BP_ActionCooking_C
-class UBP_ActionCooking_C : public UBP_ActionSimpleMonoMontage_C
+class UBP_ActionCooking_C : public UBP_ActionInteractBase_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x168(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class AActor*                                HammerActor;                                       // 0x170(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x180(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class AActor*                                HammerActor;                                       // 0x188(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UBP_ActionCooking_C* GetDefaultObj();

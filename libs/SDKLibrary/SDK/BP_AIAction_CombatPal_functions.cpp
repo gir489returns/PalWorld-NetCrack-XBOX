@@ -673,9 +673,10 @@ void UBP_AIAction_CombatPal_C::DamageResponseForCombatPal(const struct FPalDamag
 // class APalCharacter*               TempTarget                                                       (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 // bool                               HitPlayer                                                        (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<class APalCharacter*>       TempTargetList                                                   (Edit, BlueprintVisible, DisableEditOnTemplate)
-// class AController*                 CallFunc_GetController_ReturnValue                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UBP_PalAIBlackboard_Common_C*CallFunc_GetSelfPalBlackBoard_PalBB                              (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FPalAIActionDynamicParameterK2Node_MakeStruct_PalAIActionDynamicParameter                    (NoDestructor)
 // class UPalAIActionBase*            CallFunc_SetAIActionClassParameter_ReturnValue                   (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AController*                 CallFunc_GetController_ReturnValue                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class AController*                 CallFunc_GetController_ReturnValue_1                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UPalAISensorComponent*       CallFunc_GetComponentByClass_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class APalCharacter*               CallFunc_SelectResponseBySenses_OutTargetCharacter               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -687,7 +688,7 @@ void UBP_AIAction_CombatPal_C::DamageResponseForCombatPal(const struct FPalDamag
 // TArray<class APalCharacter*>       CallFunc_SightCheckAllPlayer_InSightPlayers                      (ReferenceParm)
 // TArray<class APalCharacter*>       CallFunc_SightCheckAllAliveNPC_InSightCharacters                 (ReferenceParm)
 
-void UBP_AIAction_CombatPal_C::SightCheckAndResponseForCombatPal(bool* ChangeNextAction, class APalCharacter* TempTarget, bool HitPlayer, const TArray<class APalCharacter*>& TempTargetList, class AController* CallFunc_GetController_ReturnValue, const struct FPalAIActionDynamicParameter& K2Node_MakeStruct_PalAIActionDynamicParameter, class UPalAIActionBase* CallFunc_SetAIActionClassParameter_ReturnValue, class AController* CallFunc_GetController_ReturnValue_1, class UPalAISensorComponent* CallFunc_GetComponentByClass_ReturnValue, class APalCharacter* CallFunc_SelectResponseBySenses_OutTargetCharacter, enum class EPalAIResponseType CallFunc_SelectResponseBySenses_ReturnValue, class AController* CallFunc_GetController_ReturnValue_2, bool K2Node_SwitchEnum_CmpSuccess, class UPalAISensorComponent* CallFunc_GetComponentByClass_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, TArray<class APalCharacter*>& CallFunc_SightCheckAllPlayer_InSightPlayers, TArray<class APalCharacter*>& CallFunc_SightCheckAllAliveNPC_InSightCharacters)
+void UBP_AIAction_CombatPal_C::SightCheckAndResponseForCombatPal(bool* ChangeNextAction, class APalCharacter* TempTarget, bool HitPlayer, const TArray<class APalCharacter*>& TempTargetList, class UBP_PalAIBlackboard_Common_C* CallFunc_GetSelfPalBlackBoard_PalBB, const struct FPalAIActionDynamicParameter& K2Node_MakeStruct_PalAIActionDynamicParameter, class UPalAIActionBase* CallFunc_SetAIActionClassParameter_ReturnValue, class AController* CallFunc_GetController_ReturnValue, class AController* CallFunc_GetController_ReturnValue_1, class UPalAISensorComponent* CallFunc_GetComponentByClass_ReturnValue, class APalCharacter* CallFunc_SelectResponseBySenses_OutTargetCharacter, enum class EPalAIResponseType CallFunc_SelectResponseBySenses_ReturnValue, class AController* CallFunc_GetController_ReturnValue_2, bool K2Node_SwitchEnum_CmpSuccess, class UPalAISensorComponent* CallFunc_GetComponentByClass_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, TArray<class APalCharacter*>& CallFunc_SightCheckAllPlayer_InSightPlayers, TArray<class APalCharacter*>& CallFunc_SightCheckAllAliveNPC_InSightCharacters)
 {
 	static class UFunction* Func = nullptr;
 
@@ -699,9 +700,10 @@ void UBP_AIAction_CombatPal_C::SightCheckAndResponseForCombatPal(bool* ChangeNex
 	Parms.TempTarget = TempTarget;
 	Parms.HitPlayer = HitPlayer;
 	Parms.TempTargetList = TempTargetList;
-	Parms.CallFunc_GetController_ReturnValue = CallFunc_GetController_ReturnValue;
+	Parms.CallFunc_GetSelfPalBlackBoard_PalBB = CallFunc_GetSelfPalBlackBoard_PalBB;
 	Parms.K2Node_MakeStruct_PalAIActionDynamicParameter = K2Node_MakeStruct_PalAIActionDynamicParameter;
 	Parms.CallFunc_SetAIActionClassParameter_ReturnValue = CallFunc_SetAIActionClassParameter_ReturnValue;
+	Parms.CallFunc_GetController_ReturnValue = CallFunc_GetController_ReturnValue;
 	Parms.CallFunc_GetController_ReturnValue_1 = CallFunc_GetController_ReturnValue_1;
 	Parms.CallFunc_GetComponentByClass_ReturnValue = CallFunc_GetComponentByClass_ReturnValue;
 	Parms.CallFunc_SelectResponseBySenses_OutTargetCharacter = CallFunc_SelectResponseBySenses_OutTargetCharacter;

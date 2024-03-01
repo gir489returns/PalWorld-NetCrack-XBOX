@@ -97,7 +97,7 @@ struct FMetasoundFrontendLiteral
 {
 public:
 	enum class EMetasoundFrontendLiteralType     Type;                                              // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_251D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_245C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        AsNumDefault;                                      // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<bool>                                 AsBoolean;                                         // 0x8(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	TArray<int32>                                AsInteger;                                         // 0x18(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
@@ -145,7 +145,7 @@ public:
 struct FMetasoundFrontendNodeStyleDisplay
 {
 public:
-	uint8                                        Pad_2525[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_246B[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -153,7 +153,7 @@ public:
 struct FMetasoundFrontendNodeStyle
 {
 public:
-	uint8                                        Pad_2526[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_246C[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x68 (0x68 - 0x0)
@@ -204,7 +204,7 @@ struct FMetasoundFrontendGraphStyle
 {
 public:
 	bool                                         bIsGraphEditable;                                  // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_252E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2480[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FMetasoundFrontendEdgeStyle>   EdgeStyles;                                        // 0x8(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
 
@@ -223,7 +223,7 @@ public:
 struct FMetasoundFrontendVertexMetadata
 {
 public:
-	uint8                                        Pad_2532[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_248B[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x14 (0x34 - 0x20)
@@ -240,7 +240,7 @@ public:
 struct FMetasoundFrontendClassStyleDisplay
 {
 public:
-	uint8                                        Pad_2534[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_248E[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x5C (0x90 - 0x34)
@@ -248,7 +248,7 @@ public:
 struct FMetasoundFrontendClassInput : public FMetasoundFrontendClassVertex
 {
 public:
-	uint8                                        Pad_2536[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2490[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMetasoundFrontendLiteral             DefaultLiteral;                                    // 0x38(0x58)(Edit, NativeAccessSpecifierPublic)
 };
 
@@ -257,7 +257,7 @@ public:
 struct FMetasoundFrontendClassVariable : public FMetasoundFrontendClassVertex
 {
 public:
-	uint8                                        Pad_2538[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2492[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMetasoundFrontendLiteral             DefaultLiteral;                                    // 0x38(0x58)(Edit, NativeAccessSpecifierPublic)
 };
 
@@ -276,7 +276,7 @@ public:
 	class FName                                  Name;                                              // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                  TypeName;                                          // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsRequired;                                       // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_253A[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_249A[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -284,7 +284,7 @@ public:
 struct FMetasoundFrontendInterfaceStyle
 {
 public:
-	uint8                                        Pad_253B[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_249E[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x40 (0x40 - 0x0)
@@ -326,7 +326,7 @@ public:
 	enum class EMetasoundFrontendClassType       Type;                                              // 0x20(0x1)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                         bIsDeprecated;                                     // 0x21(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                         bAutoUpdateManagesInterface;                       // 0x22(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_2545[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_24B4[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGuid                                 ChangeID;                                          // 0x24(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
 
@@ -335,7 +335,7 @@ public:
 struct FMetasoundFrontendClassStyle
 {
 public:
-	uint8                                        Pad_2547[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_24B5[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x90 (0x90 - 0x0)
@@ -343,10 +343,10 @@ public:
 struct FMetasoundFrontendClass
 {
 public:
-	uint8                                        Pad_2548[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_24B7[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGuid                                 ID;                                                // 0x8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMetasoundFrontendClassMetadata       MetaData;                                          // 0x18(0x34)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_254A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_24BA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMetasoundFrontendClassInterface      Interface;                                         // 0x50(0x40)(Edit, NativeAccessSpecifierPublic)
 };
 
@@ -356,7 +356,7 @@ struct FMetasoundFrontendGraphClassPresetOptions
 {
 public:
 	bool                                         bIsPreset;                                         // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_254E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_24BD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSet<class FName>                            InputsInheritingDefault;                           // 0x8(0x50)(NativeAccessSpecifierPublic)
 };
 
@@ -382,7 +382,7 @@ public:
 struct FMetasoundFrontendDocument
 {
 public:
-	uint8                                        Pad_2553[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_24C1[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMetasoundFrontendDocumentMetadata    MetaData;                                          // 0x10(0x10)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	TSet<struct FMetasoundFrontendVersion>       Interfaces;                                        // 0x20(0x50)(Edit, EditConst, NativeAccessSpecifierPublic)
 	struct FMetasoundFrontendGraphClass          RootGraph;                                         // 0x70(0x118)(Edit, NativeAccessSpecifierPublic)

@@ -32,7 +32,7 @@ public:
 	class FString                                MachineName;                                       // 0x10(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGuid                                 PollRequest;                                       // 0x20(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        LiveLinkVersion;                                   // 0x30(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1451[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_25F4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       CreationPlatformTime;                              // 0x38(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -49,7 +49,7 @@ public:
 struct FLiveLinkHeartbeatMessage
 {
 public:
-	uint8                                        Pad_1452[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_25F9[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x8 - 0x0)

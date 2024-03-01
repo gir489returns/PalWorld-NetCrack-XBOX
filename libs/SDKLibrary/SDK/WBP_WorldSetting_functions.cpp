@@ -45,8 +45,9 @@ class UWBP_WorldSetting_C* UWBP_WorldSetting_C::GetDefaultObj()
 // Parameters:
 // class UPalHUDDispatchParameterBase*Param                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_TryRequestWorldNameFilter_ReturnValue                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_WorldSetting_C::OnClosedWorldNameInputWindow(class UPalHUDDispatchParameterBase* Param, bool CallFunc_IsValid_ReturnValue)
+void UWBP_WorldSetting_C::OnClosedWorldNameInputWindow(class UPalHUDDispatchParameterBase* Param, bool CallFunc_IsValid_ReturnValue, bool CallFunc_TryRequestWorldNameFilter_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -57,6 +58,7 @@ void UWBP_WorldSetting_C::OnClosedWorldNameInputWindow(class UPalHUDDispatchPara
 
 	Parms.Param = Param;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_TryRequestWorldNameFilter_ReturnValue = CallFunc_TryRequestWorldNameFilter_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -123,8 +125,9 @@ void UWBP_WorldSetting_C::OnClosedStartGameDialog(bool bResult, class UWidget* C
 // struct FDataTableRowHandle         NewLocalVar_0                                                    (Edit, BlueprintVisible, NoDestructor)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_GetLocalizedTextFromHandle_Text                         (None)
+// struct FGuid                       CallFunc_Dialog_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_WorldSetting_C::OpenStartGameCheckDialog(const struct FDataTableRowHandle& NewLocalVar_0, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class FText CallFunc_GetLocalizedTextFromHandle_Text)
+void UWBP_WorldSetting_C::OpenStartGameCheckDialog(const struct FDataTableRowHandle& NewLocalVar_0, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class FText CallFunc_GetLocalizedTextFromHandle_Text, const struct FGuid& CallFunc_Dialog_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -136,6 +139,7 @@ void UWBP_WorldSetting_C::OpenStartGameCheckDialog(const struct FDataTableRowHan
 	Parms.NewLocalVar_0 = NewLocalVar_0;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.CallFunc_GetLocalizedTextFromHandle_Text = CallFunc_GetLocalizedTextFromHandle_Text;
+	Parms.CallFunc_Dialog_ReturnValue = CallFunc_Dialog_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -212,8 +216,9 @@ void UWBP_WorldSetting_C::OnClosedSaveSettingDialog(bool bResult, const struct F
 // struct FDataTableRowHandle         NewLocalVar                                                      (Edit, BlueprintVisible, NoDestructor)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_GetLocalizedTextFromHandle_Text                         (None)
+// struct FGuid                       CallFunc_Dialog_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_WorldSetting_C::OpenCheckSaveSettingDialog(const struct FDataTableRowHandle& NewLocalVar, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class FText CallFunc_GetLocalizedTextFromHandle_Text)
+void UWBP_WorldSetting_C::OpenCheckSaveSettingDialog(const struct FDataTableRowHandle& NewLocalVar, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class FText CallFunc_GetLocalizedTextFromHandle_Text, const struct FGuid& CallFunc_Dialog_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -225,6 +230,7 @@ void UWBP_WorldSetting_C::OpenCheckSaveSettingDialog(const struct FDataTableRowH
 	Parms.NewLocalVar = NewLocalVar;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.CallFunc_GetLocalizedTextFromHandle_Text = CallFunc_GetLocalizedTextFromHandle_Text;
+	Parms.CallFunc_Dialog_ReturnValue = CallFunc_Dialog_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -405,6 +411,27 @@ void UWBP_WorldSetting_C::BndEvt__WBP_WorldSetting_WBP_Title_WorldSettings_K2Nod
 }
 
 
+// Function WBP_WorldSetting.WBP_WorldSetting_C.OnFilteredWorldName
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class FString                      NewWorldName                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UWBP_WorldSetting_C::OnFilteredWorldName(const class FString& NewWorldName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_WorldSetting_C", "OnFilteredWorldName");
+
+	Params::UWBP_WorldSetting_C_OnFilteredWorldName_Params Parms{};
+
+	Parms.NewWorldName = NewWorldName;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function WBP_WorldSetting.WBP_WorldSetting_C.ExecuteUbergraph_WBP_WorldSetting
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -416,8 +443,9 @@ void UWBP_WorldSetting_C::BndEvt__WBP_WorldSetting_WBP_Title_WorldSettings_K2Nod
 // class FText                        CallFunc_GetLocalizedTextFromHandle_Text                         (None)
 // bool                               CallFunc_IsEditedSetting_IsEdited                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_IsSuccess                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      K2Node_Event_NewWorldName                                        (ZeroConstructor, HasGetValueTypeHash)
 
-void UWBP_WorldSetting_C::ExecuteUbergraph_WBP_WorldSetting(int32 EntryPoint, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UPalHUDDispatchParameterBase* CallFunc_GetParam_ReturnValue, class UPalHUDDispatchParameter_WorldSetting* K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_World_Setting, bool K2Node_DynamicCast_bSuccess, class FText CallFunc_GetLocalizedTextFromHandle_Text, bool CallFunc_IsEditedSetting_IsEdited, bool K2Node_Event_IsSuccess)
+void UWBP_WorldSetting_C::ExecuteUbergraph_WBP_WorldSetting(int32 EntryPoint, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UPalHUDDispatchParameterBase* CallFunc_GetParam_ReturnValue, class UPalHUDDispatchParameter_WorldSetting* K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_World_Setting, bool K2Node_DynamicCast_bSuccess, class FText CallFunc_GetLocalizedTextFromHandle_Text, bool CallFunc_IsEditedSetting_IsEdited, bool K2Node_Event_IsSuccess, const class FString& K2Node_Event_NewWorldName)
 {
 	static class UFunction* Func = nullptr;
 
@@ -434,6 +462,7 @@ void UWBP_WorldSetting_C::ExecuteUbergraph_WBP_WorldSetting(int32 EntryPoint, FD
 	Parms.CallFunc_GetLocalizedTextFromHandle_Text = CallFunc_GetLocalizedTextFromHandle_Text;
 	Parms.CallFunc_IsEditedSetting_IsEdited = CallFunc_IsEditedSetting_IsEdited;
 	Parms.K2Node_Event_IsSuccess = K2Node_Event_IsSuccess;
+	Parms.K2Node_Event_NewWorldName = K2Node_Event_NewWorldName;
 
 	UObject::ProcessEvent(Func, &Parms);
 

@@ -14,7 +14,7 @@ namespace SDK
 class UBP_AINPC_CombatGunState_AimMove_C : public UBP_AINPC_CombatState_Base_C
 {
 public:
-	uint8                                        Pad_3D61[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4153[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x38(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FVector                               MoveDirection;                                     // 0x40(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

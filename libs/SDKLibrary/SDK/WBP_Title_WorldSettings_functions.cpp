@@ -343,14 +343,14 @@ void UWBP_Title_WorldSettings_C::IsEditingCustomDifficulty(bool* IsEditing)
 // struct FDataTableRowHandle         CustomMsgID                                                      (Edit, BlueprintVisible, NoDestructor)
 // struct FDataTableRowHandle         VeryHardMsgID                                                    (Edit, BlueprintVisible, NoDestructor)
 // struct FDataTableRowHandle         HardMsgID                                                        (Edit, BlueprintVisible, NoDestructor)
-// struct FDataTableRowHandle         NormalMsgID                                                      (Edit, BlueprintVisible, NoDestructor)
+// struct FDataTableRowHandle         NormalMsgId                                                      (Edit, BlueprintVisible, NoDestructor)
 // struct FDataTableRowHandle         EasyMsgID                                                        (Edit, BlueprintVisible, NoDestructor)
 // struct FDataTableRowHandle         VeryEasyMsgID                                                    (Edit, BlueprintVisible, NoDestructor)
 // class FText                        TmpText                                                          (Edit, BlueprintVisible)
 // bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_GetLocalizedTextFromHandle_Text                         (None)
 
-void UWBP_Title_WorldSettings_C::DisplayDifficultyDesc(enum class EPalOptionWorldDifficulty DifficultyTyper, const struct FDataTableRowHandle& TmpMsgID, const struct FDataTableRowHandle& CustomMsgID, const struct FDataTableRowHandle& VeryHardMsgID, const struct FDataTableRowHandle& HardMsgID, const struct FDataTableRowHandle& NormalMsgID, const struct FDataTableRowHandle& EasyMsgID, const struct FDataTableRowHandle& VeryEasyMsgID, class FText TmpText, bool K2Node_SwitchEnum_CmpSuccess, class FText CallFunc_GetLocalizedTextFromHandle_Text)
+void UWBP_Title_WorldSettings_C::DisplayDifficultyDesc(enum class EPalOptionWorldDifficulty DifficultyTyper, const struct FDataTableRowHandle& TmpMsgID, const struct FDataTableRowHandle& CustomMsgID, const struct FDataTableRowHandle& VeryHardMsgID, const struct FDataTableRowHandle& HardMsgID, const struct FDataTableRowHandle& NormalMsgId, const struct FDataTableRowHandle& EasyMsgID, const struct FDataTableRowHandle& VeryEasyMsgID, class FText TmpText, bool K2Node_SwitchEnum_CmpSuccess, class FText CallFunc_GetLocalizedTextFromHandle_Text)
 {
 	static class UFunction* Func = nullptr;
 
@@ -364,7 +364,7 @@ void UWBP_Title_WorldSettings_C::DisplayDifficultyDesc(enum class EPalOptionWorl
 	Parms.CustomMsgID = CustomMsgID;
 	Parms.VeryHardMsgID = VeryHardMsgID;
 	Parms.HardMsgID = HardMsgID;
-	Parms.NormalMsgID = NormalMsgID;
+	Parms.NormalMsgId = NormalMsgId;
 	Parms.EasyMsgID = EasyMsgID;
 	Parms.VeryEasyMsgID = VeryEasyMsgID;
 	Parms.TmpText = TmpText;
@@ -437,7 +437,7 @@ void UWBP_Title_WorldSettings_C::ConvertDifficultyToUIIndex(enum class EPalOptio
 // struct FDataTableRowHandle         CustomMsgID                                                      (Edit, BlueprintVisible, NoDestructor)
 // struct FDataTableRowHandle         VeryHardMsgID                                                    (Edit, BlueprintVisible, NoDestructor)
 // struct FDataTableRowHandle         HardMsgID                                                        (Edit, BlueprintVisible, NoDestructor)
-// struct FDataTableRowHandle         NormalMsgID                                                      (Edit, BlueprintVisible, NoDestructor)
+// struct FDataTableRowHandle         NormalMsgId                                                      (Edit, BlueprintVisible, NoDestructor)
 // struct FDataTableRowHandle         EasyMsgID                                                        (Edit, BlueprintVisible, NoDestructor)
 // struct FDataTableRowHandle         VeryEasyMsgID                                                    (Edit, BlueprintVisible, NoDestructor)
 // class FText                        CallFunc_GetLocalizedTextFromHandle_Text                         (None)
@@ -450,7 +450,7 @@ void UWBP_Title_WorldSettings_C::ConvertDifficultyToUIIndex(enum class EPalOptio
 // class FString                      CallFunc_Conv_TextToString_ReturnValue_3                         (ZeroConstructor, HasGetValueTypeHash)
 // TArray<class FString>              K2Node_MakeArray_Array                                           (ReferenceParm)
 
-void UWBP_Title_WorldSettings_C::CreateDifficultySettingStrings(TArray<class FString>* OutStrings, const struct FDataTableRowHandle& CustomMsgID, const struct FDataTableRowHandle& VeryHardMsgID, const struct FDataTableRowHandle& HardMsgID, const struct FDataTableRowHandle& NormalMsgID, const struct FDataTableRowHandle& EasyMsgID, const struct FDataTableRowHandle& VeryEasyMsgID, class FText CallFunc_GetLocalizedTextFromHandle_Text, class FText CallFunc_GetLocalizedTextFromHandle_Text_1, const class FString& CallFunc_Conv_TextToString_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue_1, class FText CallFunc_GetLocalizedTextFromHandle_Text_2, class FText CallFunc_GetLocalizedTextFromHandle_Text_3, const class FString& CallFunc_Conv_TextToString_ReturnValue_2, const class FString& CallFunc_Conv_TextToString_ReturnValue_3, TArray<class FString>& K2Node_MakeArray_Array)
+void UWBP_Title_WorldSettings_C::CreateDifficultySettingStrings(TArray<class FString>* OutStrings, const struct FDataTableRowHandle& CustomMsgID, const struct FDataTableRowHandle& VeryHardMsgID, const struct FDataTableRowHandle& HardMsgID, const struct FDataTableRowHandle& NormalMsgId, const struct FDataTableRowHandle& EasyMsgID, const struct FDataTableRowHandle& VeryEasyMsgID, class FText CallFunc_GetLocalizedTextFromHandle_Text, class FText CallFunc_GetLocalizedTextFromHandle_Text_1, const class FString& CallFunc_Conv_TextToString_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue_1, class FText CallFunc_GetLocalizedTextFromHandle_Text_2, class FText CallFunc_GetLocalizedTextFromHandle_Text_3, const class FString& CallFunc_Conv_TextToString_ReturnValue_2, const class FString& CallFunc_Conv_TextToString_ReturnValue_3, TArray<class FString>& K2Node_MakeArray_Array)
 {
 	static class UFunction* Func = nullptr;
 
@@ -462,7 +462,7 @@ void UWBP_Title_WorldSettings_C::CreateDifficultySettingStrings(TArray<class FSt
 	Parms.CustomMsgID = CustomMsgID;
 	Parms.VeryHardMsgID = VeryHardMsgID;
 	Parms.HardMsgID = HardMsgID;
-	Parms.NormalMsgID = NormalMsgID;
+	Parms.NormalMsgId = NormalMsgId;
 	Parms.EasyMsgID = EasyMsgID;
 	Parms.VeryEasyMsgID = VeryEasyMsgID;
 	Parms.CallFunc_GetLocalizedTextFromHandle_Text = CallFunc_GetLocalizedTextFromHandle_Text;

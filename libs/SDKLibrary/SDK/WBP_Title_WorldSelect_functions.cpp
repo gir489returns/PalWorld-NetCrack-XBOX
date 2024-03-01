@@ -40,6 +40,33 @@ class UWBP_Title_WorldSelect_C* UWBP_Title_WorldSelect_C::GetDefaultObj()
 }
 
 
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.Update Local World List Content
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                      WorldPathName                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// struct FPalUILocalWorldDisplayData DisplayData                                                      (BlueprintVisible, BlueprintReadOnly, Parm)
+// class UWBP_Title_WorldSelect_ListContent_C*CallFunc_Map_Find_Value                                          (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Map_Find_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_WorldSelect_C::Update_Local_World_List_Content(const class FString& WorldPathName, const struct FPalUILocalWorldDisplayData& DisplayData, class UWBP_Title_WorldSelect_ListContent_C* CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "Update Local World List Content");
+
+	Params::UWBP_Title_WorldSelect_C_Update_Local_World_List_Content_Params Parms{};
+
+	Parms.WorldPathName = WorldPathName;
+	Parms.DisplayData = DisplayData;
+	Parms.CallFunc_Map_Find_Value = CallFunc_Map_Find_Value;
+	Parms.CallFunc_Map_Find_ReturnValue = CallFunc_Map_Find_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.GetSelectRegion
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -560,7 +587,7 @@ void UWBP_Title_WorldSelect_C::OnClickedWorldButton_Internal(class UWBP_Title_Wo
 // Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.AddLocalWorldDisplayData
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FPalUILocalWorldDisplayData>DIsplayDataArray                                                 (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// TArray<struct FPalUILocalWorldDisplayData>DisplayDataArray                                                 (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -587,7 +614,7 @@ void UWBP_Title_WorldSelect_C::OnClickedWorldButton_Internal(class UWBP_Title_Wo
 // class UScrollBoxSlot*              K2Node_DynamicCast_AsScroll_Box_Slot                             (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Title_WorldSelect_C::AddLocalWorldDisplayData(TArray<struct FPalUILocalWorldDisplayData>& DIsplayDataArray, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_1, int32 Temp_int_Array_Index_Variable, bool CallFunc_Less_IntInt_ReturnValue, const struct FPalUILocalWorldDisplayData& CallFunc_Array_Get_Item, class UPalSaveGameManager* CallFunc_GetSaveGameManager_ReturnValue, bool CallFunc_IsValid_ReturnValue, int32 CallFunc_GetMaxWorldSaveDataNum_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin, bool CallFunc_GreaterEqual_IntInt_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UScrollBox* CallFunc_GetScrollBox_ScrollBox, class APlayerController* CallFunc_GetLocalPlayerController_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UWBP_Title_WorldSelect_CreateWorld_ListContent_C* CallFunc_Create_ReturnValue, class UPanelSlot* CallFunc_AddChild_ReturnValue, class APlayerController* CallFunc_GetLocalPlayerController_ReturnValue_1, class UScrollBox* CallFunc_GetScrollBox_ScrollBox_1, class UWBP_Title_WorldSelect_ListContent_C* CallFunc_Create_ReturnValue_1, class UPanelSlot* CallFunc_AddChild_ReturnValue_1, class UScrollBoxSlot* K2Node_DynamicCast_AsScroll_Box_Slot, bool K2Node_DynamicCast_bSuccess)
+void UWBP_Title_WorldSelect_C::AddLocalWorldDisplayData(TArray<struct FPalUILocalWorldDisplayData>& DisplayDataArray, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_1, int32 Temp_int_Array_Index_Variable, bool CallFunc_Less_IntInt_ReturnValue, const struct FPalUILocalWorldDisplayData& CallFunc_Array_Get_Item, class UPalSaveGameManager* CallFunc_GetSaveGameManager_ReturnValue, bool CallFunc_IsValid_ReturnValue, int32 CallFunc_GetMaxWorldSaveDataNum_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin, bool CallFunc_GreaterEqual_IntInt_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UScrollBox* CallFunc_GetScrollBox_ScrollBox, class APlayerController* CallFunc_GetLocalPlayerController_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UWBP_Title_WorldSelect_CreateWorld_ListContent_C* CallFunc_Create_ReturnValue, class UPanelSlot* CallFunc_AddChild_ReturnValue, class APlayerController* CallFunc_GetLocalPlayerController_ReturnValue_1, class UScrollBox* CallFunc_GetScrollBox_ScrollBox_1, class UWBP_Title_WorldSelect_ListContent_C* CallFunc_Create_ReturnValue_1, class UPanelSlot* CallFunc_AddChild_ReturnValue_1, class UScrollBoxSlot* K2Node_DynamicCast_AsScroll_Box_Slot, bool K2Node_DynamicCast_bSuccess)
 {
 	static class UFunction* Func = nullptr;
 
@@ -596,7 +623,7 @@ void UWBP_Title_WorldSelect_C::AddLocalWorldDisplayData(TArray<struct FPalUILoca
 
 	Params::UWBP_Title_WorldSelect_C_AddLocalWorldDisplayData_Params Parms{};
 
-	Parms.DIsplayDataArray = DIsplayDataArray;
+	Parms.DisplayDataArray = DisplayDataArray;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
@@ -1000,6 +1027,24 @@ void UWBP_Title_WorldSelect_C::BndEvt__WBP_Title_WorldSelect_WBP_PalInvisibleBut
 }
 
 
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.BndEvt__WBP_Title_WorldSelect_WBP_Title_SettingsButtonBackupSelect_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+
+void UWBP_Title_WorldSelect_C::BndEvt__WBP_Title_WorldSelect_WBP_Title_SettingsButtonBackupSelect_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "BndEvt__WBP_Title_WorldSelect_WBP_Title_SettingsButtonBackupSelect_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.ExecuteUbergraph_WBP_Title_WorldSelect
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -1018,7 +1063,6 @@ void UWBP_Title_WorldSelect_C::BndEvt__WBP_Title_WorldSelect_WBP_PalInvisibleBut
 // class FText                        CallFunc_GetText_ReturnValue                                     (None)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
 // TArray<class FString>              CallFunc_Map_Keys_Keys                                           (ReferenceParm)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class FText                        K2Node_CustomEvent_Text                                          (ConstParm)
 // class FText                        CallFunc_GetLocalizedTextFromHandle_Text_2                       (None)
 // class FText                        CallFunc_GetLocalizedTextFromHandle_Text_3                       (None)
@@ -1028,7 +1072,7 @@ void UWBP_Title_WorldSelect_C::BndEvt__WBP_Title_WorldSelect_WBP_PalInvisibleBut
 // bool                               CallFunc_IsWindows_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Title_WorldSelect_C::ExecuteUbergraph_WBP_Title_WorldSelect(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, const class FString& K2Node_ComponentBoundEvent_SelectedOption_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, const class FString& K2Node_ComponentBoundEvent_SelectedOption, enum class EPalUIServerListSortType CallFunc_SortTypeStringToSortType_SortType, class FText CallFunc_GetLocalizedTextFromHandle_Text, class FText CallFunc_GetLocalizedTextFromHandle_Text_1, class FText CallFunc_GetText_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue, TArray<class FString>& CallFunc_Map_Keys_Keys, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class FText K2Node_CustomEvent_Text, class FText CallFunc_GetLocalizedTextFromHandle_Text_2, class FText CallFunc_GetLocalizedTextFromHandle_Text_3, class FText CallFunc_GetText_ReturnValue_1, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button, const class FString& CallFunc_Conv_TextToString_ReturnValue_1, bool CallFunc_IsWindows_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
+void UWBP_Title_WorldSelect_C::ExecuteUbergraph_WBP_Title_WorldSelect(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, const class FString& K2Node_ComponentBoundEvent_SelectedOption_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, const class FString& K2Node_ComponentBoundEvent_SelectedOption, enum class EPalUIServerListSortType CallFunc_SortTypeStringToSortType_SortType, class FText CallFunc_GetLocalizedTextFromHandle_Text, class FText CallFunc_GetLocalizedTextFromHandle_Text_1, class FText CallFunc_GetText_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue, TArray<class FString>& CallFunc_Map_Keys_Keys, class FText K2Node_CustomEvent_Text, class FText CallFunc_GetLocalizedTextFromHandle_Text_2, class FText CallFunc_GetLocalizedTextFromHandle_Text_3, class FText CallFunc_GetText_ReturnValue_1, class UCommonButtonBase* K2Node_ComponentBoundEvent_Button, const class FString& CallFunc_Conv_TextToString_ReturnValue_1, bool CallFunc_IsWindows_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1052,7 +1096,6 @@ void UWBP_Title_WorldSelect_C::ExecuteUbergraph_WBP_Title_WorldSelect(int32 Entr
 	Parms.CallFunc_GetText_ReturnValue = CallFunc_GetText_ReturnValue;
 	Parms.CallFunc_Conv_TextToString_ReturnValue = CallFunc_Conv_TextToString_ReturnValue;
 	Parms.CallFunc_Map_Keys_Keys = CallFunc_Map_Keys_Keys;
-	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CustomEvent_Text = K2Node_CustomEvent_Text;
 	Parms.CallFunc_GetLocalizedTextFromHandle_Text_2 = CallFunc_GetLocalizedTextFromHandle_Text_2;
 	Parms.CallFunc_GetLocalizedTextFromHandle_Text_3 = CallFunc_GetLocalizedTextFromHandle_Text_3;
@@ -1061,6 +1104,27 @@ void UWBP_Title_WorldSelect_C::ExecuteUbergraph_WBP_Title_WorldSelect(int32 Entr
 	Parms.CallFunc_Conv_TextToString_ReturnValue_1 = CallFunc_Conv_TextToString_ReturnValue_1;
 	Parms.CallFunc_IsWindows_ReturnValue = CallFunc_IsWindows_ReturnValue;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedSelectBackupButton__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_Title_WorldSelect_ListContent_C*SelectedWorldButton                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_WorldSelect_C::OnClickedSelectBackupButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* SelectedWorldButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedSelectBackupButton__DelegateSignature");
+
+	Params::UWBP_Title_WorldSelect_C_OnClickedSelectBackupButton__DelegateSignature_Params Parms{};
+
+	Parms.SelectedWorldButton = SelectedWorldButton;
 
 	UObject::ProcessEvent(Func, &Parms);
 

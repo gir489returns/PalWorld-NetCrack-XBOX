@@ -61,7 +61,7 @@ void UWBP_TitleLocalWorldSelect_C::WBP_TitleLocalWorldSelect_AutoGenFunc(bool bR
 }
 
 
-// Function WBP_TitleLocalWorldSelect.WBP_TitleLocalWorldSelect_C.OnClosedDeleteWorldWindow
+// Function WBP_TitleLocalWorldSelect.WBP_TitleLocalWorldSelect_C.On Closed Delete World Window
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UPalHUDDispatchParameterBase*Param                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -72,14 +72,14 @@ void UWBP_TitleLocalWorldSelect_C::WBP_TitleLocalWorldSelect_AutoGenFunc(bool bR
 // class UWidget*                     CallFunc_GetFocusTargetForLocalWorldList_TargetWidget            (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_DeleteWorld_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_TitleLocalWorldSelect_C::OnClosedDeleteWorldWindow(class UPalHUDDispatchParameterBase* Param, class UBP_HUDDIspatchParameter_DeleteWorld_C* K2Node_DynamicCast_AsBP_HUDDIspatch_Parameter_Delete_World, bool K2Node_DynamicCast_bSuccess, TArray<struct FPalUILocalWorldDisplayData>& CallFunc_GetSortedWorldDisplayInfoArray_ReturnValue, bool CallFunc_Map_Remove_ReturnValue, class UWidget* CallFunc_GetFocusTargetForLocalWorldList_TargetWidget, bool CallFunc_DeleteWorld_ReturnValue)
+void UWBP_TitleLocalWorldSelect_C::On_Closed_Delete_World_Window(class UPalHUDDispatchParameterBase* Param, class UBP_HUDDIspatchParameter_DeleteWorld_C* K2Node_DynamicCast_AsBP_HUDDIspatch_Parameter_Delete_World, bool K2Node_DynamicCast_bSuccess, TArray<struct FPalUILocalWorldDisplayData>& CallFunc_GetSortedWorldDisplayInfoArray_ReturnValue, bool CallFunc_Map_Remove_ReturnValue, class UWidget* CallFunc_GetFocusTargetForLocalWorldList_TargetWidget, bool CallFunc_DeleteWorld_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("WBP_TitleLocalWorldSelect_C", "OnClosedDeleteWorldWindow");
+		Func = Class->GetFunction("WBP_TitleLocalWorldSelect_C", "On Closed Delete World Window");
 
-	Params::UWBP_TitleLocalWorldSelect_C_OnClosedDeleteWorldWindow_Params Parms{};
+	Params::UWBP_TitleLocalWorldSelect_C_On_Closed_Delete_World_Window_Params Parms{};
 
 	Parms.Param = Param;
 	Parms.K2Node_DynamicCast_AsBP_HUDDIspatch_Parameter_Delete_World = K2Node_DynamicCast_AsBP_HUDDIspatch_Parameter_Delete_World;
@@ -94,21 +94,31 @@ void UWBP_TitleLocalWorldSelect_C::OnClosedDeleteWorldWindow(class UPalHUDDispat
 }
 
 
-// Function WBP_TitleLocalWorldSelect.WBP_TitleLocalWorldSelect_C.OnClosedWorldSettingWindow
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_TitleLocalWorldSelect.WBP_TitleLocalWorldSelect_C.On Closed World Setting Window
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UPalHUDDispatchParameterBase*Param                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalHUDDispatchParameter_WorldSetting*K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_World_Setting     (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FPalUILocalWorldDisplayData CallFunc_Map_Find_Value                                          (None)
+// bool                               CallFunc_Map_Find_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FPalUILocalWorldDisplayData K2Node_SetFieldsInStruct_StructOut                               (None)
 
-void UWBP_TitleLocalWorldSelect_C::OnClosedWorldSettingWindow(class UPalHUDDispatchParameterBase* Param)
+void UWBP_TitleLocalWorldSelect_C::On_Closed_World_Setting_Window(class UPalHUDDispatchParameterBase* Param, class UPalHUDDispatchParameter_WorldSetting* K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_World_Setting, bool K2Node_DynamicCast_bSuccess, const struct FPalUILocalWorldDisplayData& CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, const struct FPalUILocalWorldDisplayData& K2Node_SetFieldsInStruct_StructOut)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("WBP_TitleLocalWorldSelect_C", "OnClosedWorldSettingWindow");
+		Func = Class->GetFunction("WBP_TitleLocalWorldSelect_C", "On Closed World Setting Window");
 
-	Params::UWBP_TitleLocalWorldSelect_C_OnClosedWorldSettingWindow_Params Parms{};
+	Params::UWBP_TitleLocalWorldSelect_C_On_Closed_World_Setting_Window_Params Parms{};
 
 	Parms.Param = Param;
+	Parms.K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_World_Setting = K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_World_Setting;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.CallFunc_Map_Find_Value = CallFunc_Map_Find_Value;
+	Parms.CallFunc_Map_Find_ReturnValue = CallFunc_Map_Find_ReturnValue;
+	Parms.K2Node_SetFieldsInStruct_StructOut = K2Node_SetFieldsInStruct_StructOut;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -395,42 +405,69 @@ void UWBP_TitleLocalWorldSelect_C::BndEvt__WBP_TitleLocalWorldSelect_WBP_Title_W
 }
 
 
+// Function WBP_TitleLocalWorldSelect.WBP_TitleLocalWorldSelect_C.BndEvt__WBP_TitleLocalWorldSelect_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedSelectBackupButton__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWBP_Title_WorldSelect_ListContent_C*SelectedWorldButton                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_TitleLocalWorldSelect_C::BndEvt__WBP_TitleLocalWorldSelect_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedSelectBackupButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* SelectedWorldButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("WBP_TitleLocalWorldSelect_C", "BndEvt__WBP_TitleLocalWorldSelect_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedSelectBackupButton__DelegateSignature");
+
+	Params::UWBP_TitleLocalWorldSelect_C_BndEvt__WBP_TitleLocalWorldSelect_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedSelectBackupButton__DelegateSignature_Params Parms{};
+
+	Parms.SelectedWorldButton = SelectedWorldButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function WBP_TitleLocalWorldSelect.WBP_TitleLocalWorldSelect_C.ExecuteUbergraph_WBP_TitleLocalWorldSelect
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsWindows_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWBP_Title_WorldSelect_CreateWorld_ListContent_C*K2Node_ComponentBoundEvent_ButtonWidget                          (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UPalHUDService*              CallFunc_GetHUDService_ReturnValue                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalHUDDispatchParameter_SaveDataBackupSelect*CallFunc_SpawnObject_ReturnValue                                 (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FGuid                       CallFunc_Push_ReturnValue                                        (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                     CallFunc_GetFocusTargetForLocalWorldList_TargetWidget            (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPalHUDService*              CallFunc_GetHUDService_ReturnValue                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalHUDService*              CallFunc_GetHUDService_ReturnValue_1                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPalHUDDispatchParameter_WorldSetting*CallFunc_SpawnObject_ReturnValue                                 (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FGuid                       CallFunc_Push_ReturnValue                                        (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UBP_HUDDIspatchParameter_DeleteWorld_C*CallFunc_CreateDispatchParameterForK2Node_ReturnValue            (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalHUDDispatchParameter_WorldSetting*CallFunc_SpawnObject_ReturnValue_1                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FGuid                       CallFunc_Push_ReturnValue_1                                      (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UWBP_Title_WorldSelect_CreateWorld_ListContent_C*K2Node_ComponentBoundEvent_ButtonWidget                          (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UWBP_Title_WorldSelect_ListContent_C*K2Node_ComponentBoundEvent_ButtonWidget_1                        (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetBindedSaveDirectoryName_DirectoryName                (ZeroConstructor, HasGetValueTypeHash)
-// class UPalHUDService*              CallFunc_GetHUDService_ReturnValue_1                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_3                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPalHUDDispatchParameter_WorldSetting*CallFunc_SpawnObject_ReturnValue_1                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UBP_HUDDIspatchParameter_DeleteWorld_C*CallFunc_CreateDispatchParameterForK2Node_ReturnValue            (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FGuid                       CallFunc_Push_ReturnValue_2                                      (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalHUDService*              CallFunc_GetHUDService_ReturnValue_2                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_3                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalHUDDispatchParameter_WorldSetting*CallFunc_SpawnObject_ReturnValue_2                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FGuid                       CallFunc_Push_ReturnValue_3                                      (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_4                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FPalOptionWorldSaveData     CallFunc_SelectWorld_OptionWorldData                             (None)
 // bool                               CallFunc_SelectWorld_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_4                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FGuid                       CallFunc_Dialog_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_CustomEvent_bResult                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UGameInstance*               CallFunc_GetGameInstance_ReturnValue                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UBP_PalGameInstance_C*       K2Node_DynamicCast_AsBP_Pal_Game_Instance                        (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWBP_Title_WorldSelect_ListContent_C*K2Node_ComponentBoundEvent_SelectedWorldButton                   (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWBP_Title_WorldSelect_ListContent_C*K2Node_ComponentBoundEvent_SelectedWorldButton_1                 (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetBindedSaveDirectoryName_DirectoryName_1              (ZeroConstructor, HasGetValueTypeHash)
 // struct FPalUILocalWorldDisplayData CallFunc_Map_Find_Value                                          (None)
 // bool                               CallFunc_Map_Find_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsWindows_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_Title_WorldSelect_ListContent_C*K2Node_ComponentBoundEvent_SelectedWorldButton                   (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Concat_StrStr_ReturnValue                               (ZeroConstructor, HasGetValueTypeHash)
+// class FString                      CallFunc_GetBindedSaveDirectoryName_DirectoryName_2              (ZeroConstructor, HasGetValueTypeHash)
 
-void UWBP_TitleLocalWorldSelect_C::ExecuteUbergraph_WBP_TitleLocalWorldSelect(int32 EntryPoint, bool CallFunc_IsWindows_ReturnValue, class UWBP_Title_WorldSelect_CreateWorld_ListContent_C* K2Node_ComponentBoundEvent_ButtonWidget, class UWidget* CallFunc_GetFocusTargetForLocalWorldList_TargetWidget, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UPalHUDService* CallFunc_GetHUDService_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UPalHUDDispatchParameter_WorldSetting* CallFunc_SpawnObject_ReturnValue, const struct FGuid& CallFunc_Push_ReturnValue, class UBP_HUDDIspatchParameter_DeleteWorld_C* CallFunc_CreateDispatchParameterForK2Node_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, const struct FGuid& CallFunc_Push_ReturnValue_1, class UWBP_Title_WorldSelect_ListContent_C* K2Node_ComponentBoundEvent_ButtonWidget_1, const class FString& CallFunc_GetBindedSaveDirectoryName_DirectoryName, class UPalHUDService* CallFunc_GetHUDService_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class UPalHUDDispatchParameter_WorldSetting* CallFunc_SpawnObject_ReturnValue_1, const struct FGuid& CallFunc_Push_ReturnValue_2, const struct FPalOptionWorldSaveData& CallFunc_SelectWorld_OptionWorldData, bool CallFunc_SelectWorld_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, bool K2Node_CustomEvent_bResult, class UGameInstance* CallFunc_GetGameInstance_ReturnValue, class UBP_PalGameInstance_C* K2Node_DynamicCast_AsBP_Pal_Game_Instance, bool K2Node_DynamicCast_bSuccess, class UWBP_Title_WorldSelect_ListContent_C* K2Node_ComponentBoundEvent_SelectedWorldButton, bool CallFunc_IsValid_ReturnValue, const class FString& CallFunc_GetBindedSaveDirectoryName_DirectoryName_1, const struct FPalUILocalWorldDisplayData& CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue)
+void UWBP_TitleLocalWorldSelect_C::ExecuteUbergraph_WBP_TitleLocalWorldSelect(int32 EntryPoint, class UPalHUDService* CallFunc_GetHUDService_ReturnValue, class UPalHUDDispatchParameter_SaveDataBackupSelect* CallFunc_SpawnObject_ReturnValue, const struct FGuid& CallFunc_Push_ReturnValue, class UWidget* CallFunc_GetFocusTargetForLocalWorldList_TargetWidget, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UPalHUDService* CallFunc_GetHUDService_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UPalHUDDispatchParameter_WorldSetting* CallFunc_SpawnObject_ReturnValue_1, const struct FGuid& CallFunc_Push_ReturnValue_1, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class UWBP_Title_WorldSelect_CreateWorld_ListContent_C* K2Node_ComponentBoundEvent_ButtonWidget, class UWBP_Title_WorldSelect_ListContent_C* K2Node_ComponentBoundEvent_ButtonWidget_1, const class FString& CallFunc_GetBindedSaveDirectoryName_DirectoryName, class UBP_HUDDIspatchParameter_DeleteWorld_C* CallFunc_CreateDispatchParameterForK2Node_ReturnValue, const struct FGuid& CallFunc_Push_ReturnValue_2, class UPalHUDService* CallFunc_GetHUDService_ReturnValue_2, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class UPalHUDDispatchParameter_WorldSetting* CallFunc_SpawnObject_ReturnValue_2, const struct FGuid& CallFunc_Push_ReturnValue_3, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, const struct FPalOptionWorldSaveData& CallFunc_SelectWorld_OptionWorldData, bool CallFunc_SelectWorld_ReturnValue, const struct FGuid& CallFunc_Dialog_ReturnValue, bool K2Node_CustomEvent_bResult, class UGameInstance* CallFunc_GetGameInstance_ReturnValue, class UBP_PalGameInstance_C* K2Node_DynamicCast_AsBP_Pal_Game_Instance, bool K2Node_DynamicCast_bSuccess, class UWBP_Title_WorldSelect_ListContent_C* K2Node_ComponentBoundEvent_SelectedWorldButton_1, bool CallFunc_IsValid_ReturnValue, const class FString& CallFunc_GetBindedSaveDirectoryName_DirectoryName_1, const struct FPalUILocalWorldDisplayData& CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, bool CallFunc_IsWindows_ReturnValue, class UWBP_Title_WorldSelect_ListContent_C* K2Node_ComponentBoundEvent_SelectedWorldButton, const class FString& CallFunc_Concat_StrStr_ReturnValue, const class FString& CallFunc_GetBindedSaveDirectoryName_DirectoryName_2)
 {
 	static class UFunction* Func = nullptr;
 
@@ -440,36 +477,42 @@ void UWBP_TitleLocalWorldSelect_C::ExecuteUbergraph_WBP_TitleLocalWorldSelect(in
 	Params::UWBP_TitleLocalWorldSelect_C_ExecuteUbergraph_WBP_TitleLocalWorldSelect_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-	Parms.CallFunc_IsWindows_ReturnValue = CallFunc_IsWindows_ReturnValue;
-	Parms.K2Node_ComponentBoundEvent_ButtonWidget = K2Node_ComponentBoundEvent_ButtonWidget;
-	Parms.CallFunc_GetFocusTargetForLocalWorldList_TargetWidget = CallFunc_GetFocusTargetForLocalWorldList_TargetWidget;
-	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.CallFunc_GetHUDService_ReturnValue = CallFunc_GetHUDService_ReturnValue;
-	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
 	Parms.CallFunc_SpawnObject_ReturnValue = CallFunc_SpawnObject_ReturnValue;
 	Parms.CallFunc_Push_ReturnValue = CallFunc_Push_ReturnValue;
-	Parms.CallFunc_CreateDispatchParameterForK2Node_ReturnValue = CallFunc_CreateDispatchParameterForK2Node_ReturnValue;
-	Parms.K2Node_CreateDelegate_OutputDelegate_2 = K2Node_CreateDelegate_OutputDelegate_2;
+	Parms.CallFunc_GetFocusTargetForLocalWorldList_TargetWidget = CallFunc_GetFocusTargetForLocalWorldList_TargetWidget;
+	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
+	Parms.CallFunc_GetHUDService_ReturnValue_1 = CallFunc_GetHUDService_ReturnValue_1;
+	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
+	Parms.CallFunc_SpawnObject_ReturnValue_1 = CallFunc_SpawnObject_ReturnValue_1;
 	Parms.CallFunc_Push_ReturnValue_1 = CallFunc_Push_ReturnValue_1;
+	Parms.K2Node_CreateDelegate_OutputDelegate_2 = K2Node_CreateDelegate_OutputDelegate_2;
+	Parms.K2Node_ComponentBoundEvent_ButtonWidget = K2Node_ComponentBoundEvent_ButtonWidget;
 	Parms.K2Node_ComponentBoundEvent_ButtonWidget_1 = K2Node_ComponentBoundEvent_ButtonWidget_1;
 	Parms.CallFunc_GetBindedSaveDirectoryName_DirectoryName = CallFunc_GetBindedSaveDirectoryName_DirectoryName;
-	Parms.CallFunc_GetHUDService_ReturnValue_1 = CallFunc_GetHUDService_ReturnValue_1;
-	Parms.K2Node_CreateDelegate_OutputDelegate_3 = K2Node_CreateDelegate_OutputDelegate_3;
-	Parms.CallFunc_SpawnObject_ReturnValue_1 = CallFunc_SpawnObject_ReturnValue_1;
+	Parms.CallFunc_CreateDispatchParameterForK2Node_ReturnValue = CallFunc_CreateDispatchParameterForK2Node_ReturnValue;
 	Parms.CallFunc_Push_ReturnValue_2 = CallFunc_Push_ReturnValue_2;
+	Parms.CallFunc_GetHUDService_ReturnValue_2 = CallFunc_GetHUDService_ReturnValue_2;
+	Parms.K2Node_CreateDelegate_OutputDelegate_3 = K2Node_CreateDelegate_OutputDelegate_3;
+	Parms.CallFunc_SpawnObject_ReturnValue_2 = CallFunc_SpawnObject_ReturnValue_2;
+	Parms.CallFunc_Push_ReturnValue_3 = CallFunc_Push_ReturnValue_3;
+	Parms.K2Node_CreateDelegate_OutputDelegate_4 = K2Node_CreateDelegate_OutputDelegate_4;
 	Parms.CallFunc_SelectWorld_OptionWorldData = CallFunc_SelectWorld_OptionWorldData;
 	Parms.CallFunc_SelectWorld_ReturnValue = CallFunc_SelectWorld_ReturnValue;
-	Parms.K2Node_CreateDelegate_OutputDelegate_4 = K2Node_CreateDelegate_OutputDelegate_4;
+	Parms.CallFunc_Dialog_ReturnValue = CallFunc_Dialog_ReturnValue;
 	Parms.K2Node_CustomEvent_bResult = K2Node_CustomEvent_bResult;
 	Parms.CallFunc_GetGameInstance_ReturnValue = CallFunc_GetGameInstance_ReturnValue;
 	Parms.K2Node_DynamicCast_AsBP_Pal_Game_Instance = K2Node_DynamicCast_AsBP_Pal_Game_Instance;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
-	Parms.K2Node_ComponentBoundEvent_SelectedWorldButton = K2Node_ComponentBoundEvent_SelectedWorldButton;
+	Parms.K2Node_ComponentBoundEvent_SelectedWorldButton_1 = K2Node_ComponentBoundEvent_SelectedWorldButton_1;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_GetBindedSaveDirectoryName_DirectoryName_1 = CallFunc_GetBindedSaveDirectoryName_DirectoryName_1;
 	Parms.CallFunc_Map_Find_Value = CallFunc_Map_Find_Value;
 	Parms.CallFunc_Map_Find_ReturnValue = CallFunc_Map_Find_ReturnValue;
+	Parms.CallFunc_IsWindows_ReturnValue = CallFunc_IsWindows_ReturnValue;
+	Parms.K2Node_ComponentBoundEvent_SelectedWorldButton = K2Node_ComponentBoundEvent_SelectedWorldButton;
 	Parms.CallFunc_Concat_StrStr_ReturnValue = CallFunc_Concat_StrStr_ReturnValue;
+	Parms.CallFunc_GetBindedSaveDirectoryName_DirectoryName_2 = CallFunc_GetBindedSaveDirectoryName_DirectoryName_2;
 
 	UObject::ProcessEvent(Func, &Parms);
 

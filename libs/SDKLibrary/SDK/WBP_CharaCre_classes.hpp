@@ -109,7 +109,7 @@ public:
 	void OnClickedCompleteButton__DelegateSignature();
 	void OnSelectedEyeMaterial__DelegateSignature(class FName EyeMaterialName);
 	void OnClickedEditNameButton__DelegateSignature();
-	void OnNotifyCloseSelectColorWIndow__DelegateSignature();
+	void OnNotifyCloseSelectColorWindow__DelegateSignature();
 	void OnNotifyOpenSelectColorWindow__DelegateSignature();
 	void OnClickedCategoryButton__DelegateSignature(enum class E_UICharacterMakeCategory CategoryType);
 	void OnSelectedHairMesh__DelegateSignature(class FName MeshPresetRowName);

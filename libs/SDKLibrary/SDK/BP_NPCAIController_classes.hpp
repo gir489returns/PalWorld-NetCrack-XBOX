@@ -9,21 +9,21 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x60 (0x558 - 0x4F8)
+// 0x60 (0x580 - 0x520)
 // BlueprintGeneratedClass BP_NPCAIController.BP_NPCAIController_C
 class ABP_NPCAIController_C : public APalAIController
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x4F8(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBP_OtomoPalHolderComponentForNPC_C*   BP_OtomoPalHolderComponentForNPC;                  // 0x500(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalAISensorComponent*                 PalAISensor;                                       // 0x508(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_AIADamageReaction_C*               BP_AIADamageReaction;                              // 0x510(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                DefaultActionClass;                                // 0x518(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UPalNPCAIWeaponHandle*                 WeaponHandle;                                      // 0x520(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UBP_PalIncidentNotifyListener_C*       IncidentNotifyListener;                            // 0x528(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                          Filter_Incident_Ids;                               // 0x530(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FF_NPC_PathWalkArray                  PathWalk;                                          // 0x540(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, AdvancedDisplay, HasGetValueTypeHash)
-	class FName                                  OtomoName;                                         // 0x550(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x520(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBP_OtomoPalHolderComponentForNPC_C*   BP_OtomoPalHolderComponentForNPC;                  // 0x528(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalAISensorComponent*                 PalAISensor;                                       // 0x530(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_AIADamageReaction_C*               BP_AIADamageReaction;                              // 0x538(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                DefaultActionClass;                                // 0x540(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UPalNPCAIWeaponHandle*                 WeaponHandle;                                      // 0x548(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UBP_PalIncidentNotifyListener_C*       IncidentNotifyListener;                            // 0x550(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                          Filter_Incident_Ids;                               // 0x558(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FF_NPC_PathWalkArray                  PathWalk;                                          // 0x568(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, AdvancedDisplay, HasGetValueTypeHash)
+	class FName                                  OtomoName;                                         // 0x578(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class ABP_NPCAIController_C* GetDefaultObj();

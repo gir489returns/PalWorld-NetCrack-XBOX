@@ -311,17 +311,23 @@ void UWBP_InventoryEquipment_ItemInfo_C::Get_Display_Technology_Category_Name(cl
 // class FName                        TechnologyName                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               IsMasked                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UTexture2D*                  IconTexture                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class FName                        Temp_name_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                        Temp_name_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetTechnologyDescription_OutDescription                 (None)
 // enum class ESlateVisibility        Temp_byte_Variable_3                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                  Temp_object_Variable                                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class FText                        CallFunc_GetTechnologyDescription_OutDescription                 (None)
+// class UTexture2D*                  Temp_object_Variable_1                                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_GetLocalizedTextFromHandle_Text                         (None)
 // class FText                        CallFunc_GetLocalizedTextFromHandle_Text_1                       (None)
 // class FText                        CallFunc_SelectText_ReturnValue                                  (None)
 // class FText                        CallFunc_Get_Display_Technology_Category_Name_CategoryText       (None)
-// bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable_3                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPalTechnologyData*          CallFunc_GetLocalTechnologyData_ReturnValue                      (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsUnlockRecipeTechnology_ReturnValue                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -330,13 +336,16 @@ void UWBP_InventoryEquipment_ItemInfo_C::Get_Display_Technology_Category_Name(cl
 // class FText                        CallFunc_GetLocalizedText_ReturnValue                            (None)
 // class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 // class FText                        CallFunc_SelectText_ReturnValue_1                                (None)
+// class UTexture2D*                  K2Node_Select_Default_1                                          (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class FName                        K2Node_Select_Default_2                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText                        CallFunc_GetLocalizedText_ReturnValue_1                          (None)
 // bool                               CallFunc_EqualEqual_NameName_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsUnlockRecipeTechnology_ReturnValue_1                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class ESlateVisibility        K2Node_Select_Default_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FPalTechnologyRecipeUnlockDataTableRowCallFunc_GetRecipeTechlonogy_ReturnValue_1                       (ConstParm)
-// class FText                        CallFunc_GetLocalizedText_ReturnValue_1                          (None)
+// enum class ESlateVisibility        K2Node_Select_Default_3                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText                        CallFunc_GetLocalizedText_ReturnValue_2                          (None)
 
-void UWBP_InventoryEquipment_ItemInfo_C::SetupByTechnologyName(class FName TechnologyName, bool IsMasked, class UTexture2D* IconTexture, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, class FText CallFunc_GetTechnologyDescription_OutDescription, enum class ESlateVisibility Temp_byte_Variable_3, class FText CallFunc_GetLocalizedTextFromHandle_Text, class FText CallFunc_GetLocalizedTextFromHandle_Text_1, class FText CallFunc_SelectText_ReturnValue, class FText CallFunc_Get_Display_Technology_Category_Name_CategoryText, bool Temp_bool_Variable_1, class UPalTechnologyData* CallFunc_GetLocalTechnologyData_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsUnlockRecipeTechnology_ReturnValue, const struct FPalTechnologyRecipeUnlockDataTableRow& CallFunc_GetRecipeTechlonogy_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, class FText CallFunc_GetLocalizedText_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, class FText CallFunc_SelectText_ReturnValue_1, bool CallFunc_EqualEqual_NameName_ReturnValue, bool CallFunc_IsUnlockRecipeTechnology_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default_1, const struct FPalTechnologyRecipeUnlockDataTableRow& CallFunc_GetRecipeTechlonogy_ReturnValue_1, class FText CallFunc_GetLocalizedText_ReturnValue_1)
+void UWBP_InventoryEquipment_ItemInfo_C::SetupByTechnologyName(class FName TechnologyName, bool IsMasked, class UTexture2D* IconTexture, class FName Temp_name_Variable, class FName Temp_name_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_2, class UTexture2D* Temp_object_Variable, class FText CallFunc_GetTechnologyDescription_OutDescription, class UTexture2D* Temp_object_Variable_1, class FText CallFunc_GetLocalizedTextFromHandle_Text, class FText CallFunc_GetLocalizedTextFromHandle_Text_1, class FText CallFunc_SelectText_ReturnValue, class FText CallFunc_Get_Display_Technology_Category_Name_CategoryText, bool Temp_bool_Variable_3, class UPalTechnologyData* CallFunc_GetLocalTechnologyData_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsUnlockRecipeTechnology_ReturnValue, const struct FPalTechnologyRecipeUnlockDataTableRow& CallFunc_GetRecipeTechlonogy_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, class FText CallFunc_GetLocalizedText_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, class FText CallFunc_SelectText_ReturnValue_1, class UTexture2D* K2Node_Select_Default_1, class FName K2Node_Select_Default_2, class FText CallFunc_GetLocalizedText_ReturnValue_1, bool CallFunc_EqualEqual_NameName_ReturnValue, bool CallFunc_IsUnlockRecipeTechnology_ReturnValue_1, const struct FPalTechnologyRecipeUnlockDataTableRow& CallFunc_GetRecipeTechlonogy_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default_3, class FText CallFunc_GetLocalizedText_ReturnValue_2)
 {
 	static class UFunction* Func = nullptr;
 
@@ -348,17 +357,23 @@ void UWBP_InventoryEquipment_ItemInfo_C::SetupByTechnologyName(class FName Techn
 	Parms.TechnologyName = TechnologyName;
 	Parms.IsMasked = IsMasked;
 	Parms.IconTexture = IconTexture;
+	Parms.Temp_name_Variable = Temp_name_Variable;
+	Parms.Temp_name_Variable_1 = Temp_name_Variable_1;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
+	Parms.Temp_bool_Variable_1 = Temp_bool_Variable_1;
 	Parms.Temp_byte_Variable_2 = Temp_byte_Variable_2;
-	Parms.CallFunc_GetTechnologyDescription_OutDescription = CallFunc_GetTechnologyDescription_OutDescription;
 	Parms.Temp_byte_Variable_3 = Temp_byte_Variable_3;
+	Parms.Temp_bool_Variable_2 = Temp_bool_Variable_2;
+	Parms.Temp_object_Variable = Temp_object_Variable;
+	Parms.CallFunc_GetTechnologyDescription_OutDescription = CallFunc_GetTechnologyDescription_OutDescription;
+	Parms.Temp_object_Variable_1 = Temp_object_Variable_1;
 	Parms.CallFunc_GetLocalizedTextFromHandle_Text = CallFunc_GetLocalizedTextFromHandle_Text;
 	Parms.CallFunc_GetLocalizedTextFromHandle_Text_1 = CallFunc_GetLocalizedTextFromHandle_Text_1;
 	Parms.CallFunc_SelectText_ReturnValue = CallFunc_SelectText_ReturnValue;
 	Parms.CallFunc_Get_Display_Technology_Category_Name_CategoryText = CallFunc_Get_Display_Technology_Category_Name_CategoryText;
-	Parms.Temp_bool_Variable_1 = Temp_bool_Variable_1;
+	Parms.Temp_bool_Variable_3 = Temp_bool_Variable_3;
 	Parms.CallFunc_GetLocalTechnologyData_ReturnValue = CallFunc_GetLocalTechnologyData_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_IsUnlockRecipeTechnology_ReturnValue = CallFunc_IsUnlockRecipeTechnology_ReturnValue;
@@ -367,11 +382,14 @@ void UWBP_InventoryEquipment_ItemInfo_C::SetupByTechnologyName(class FName Techn
 	Parms.CallFunc_GetLocalizedText_ReturnValue = CallFunc_GetLocalizedText_ReturnValue;
 	Parms.CallFunc_Conv_IntToText_ReturnValue = CallFunc_Conv_IntToText_ReturnValue;
 	Parms.CallFunc_SelectText_ReturnValue_1 = CallFunc_SelectText_ReturnValue_1;
+	Parms.K2Node_Select_Default_1 = K2Node_Select_Default_1;
+	Parms.K2Node_Select_Default_2 = K2Node_Select_Default_2;
+	Parms.CallFunc_GetLocalizedText_ReturnValue_1 = CallFunc_GetLocalizedText_ReturnValue_1;
 	Parms.CallFunc_EqualEqual_NameName_ReturnValue = CallFunc_EqualEqual_NameName_ReturnValue;
 	Parms.CallFunc_IsUnlockRecipeTechnology_ReturnValue_1 = CallFunc_IsUnlockRecipeTechnology_ReturnValue_1;
-	Parms.K2Node_Select_Default_1 = K2Node_Select_Default_1;
 	Parms.CallFunc_GetRecipeTechlonogy_ReturnValue_1 = CallFunc_GetRecipeTechlonogy_ReturnValue_1;
-	Parms.CallFunc_GetLocalizedText_ReturnValue_1 = CallFunc_GetLocalizedText_ReturnValue_1;
+	Parms.K2Node_Select_Default_3 = K2Node_Select_Default_3;
+	Parms.CallFunc_GetLocalizedText_ReturnValue_2 = CallFunc_GetLocalizedText_ReturnValue_2;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -1091,7 +1109,7 @@ void UWBP_InventoryEquipment_ItemInfo_C::Setup_Item_Name(class FName ItemStaticI
 }
 
 
-// Function WBP_InventoryEquipment_ItemInfo.WBP_InventoryEquipment_ItemInfo_C.SetPalGearIcon
+// Function WBP_InventoryEquipment_ItemInfo.WBP_InventoryEquipment_ItemInfo_C.Set Pal Gear Icon
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                        ItemId                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1106,14 +1124,14 @@ void UWBP_InventoryEquipment_ItemInfo_C::Setup_Item_Name(class FName ItemStaticI
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_InventoryEquipment_ItemInfo_C::SetPalGearIcon(class FName ItemId, bool Temp_bool_Variable, const class FString& CallFunc_Conv_NameToString_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, const class FString& CallFunc_Split_LeftS, const class FString& CallFunc_Split_RightS, bool CallFunc_Split_ReturnValue, class FName CallFunc_Conv_StringToName_ReturnValue, bool CallFunc_EqualEqual_StrStr_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default)
+void UWBP_InventoryEquipment_ItemInfo_C::Set_Pal_Gear_Icon(class FName ItemId, bool Temp_bool_Variable, const class FString& CallFunc_Conv_NameToString_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, const class FString& CallFunc_Split_LeftS, const class FString& CallFunc_Split_RightS, bool CallFunc_Split_ReturnValue, class FName CallFunc_Conv_StringToName_ReturnValue, bool CallFunc_EqualEqual_StrStr_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("WBP_InventoryEquipment_ItemInfo_C", "SetPalGearIcon");
+		Func = Class->GetFunction("WBP_InventoryEquipment_ItemInfo_C", "Set Pal Gear Icon");
 
-	Params::UWBP_InventoryEquipment_ItemInfo_C_SetPalGearIcon_Params Parms{};
+	Params::UWBP_InventoryEquipment_ItemInfo_C_Set_Pal_Gear_Icon_Params Parms{};
 
 	Parms.ItemId = ItemId;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;

@@ -15,7 +15,7 @@ class UCR_PlayerClavicleAdjust_C : public UControlRig
 {
 public:
 	float                                        ClavicleAdjustFloat;                               // 0x560(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_345A[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_12CD[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FQuat                                 RigUnit_GetTransform_1_Transform_Rotation;         // 0x570(0x20)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
@@ -31,17 +31,17 @@ public:
 	struct FRigElementKey                        RigVMModel___CollapseNode_RigUnit_GetTransform_1_Item__Const; // 0x28(0xC)(Edit, EditConst, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	enum class EBoneGetterSetterMode             RigVMModel___CollapseNode_RigUnit_GetTransform_1_Space__Const; // 0x34(0x1)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	uint8                                        RigVMModel___CollapseNode_RigUnit_GetTransform_1_bInitial__Const : 1; // Mask: 0x1, PropSize: 0x10x35(0x1)(Edit, EditConst, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	uint8                                        BitPad_1CA : 7;                                    // Fixing Bit-Field Size  [ Dumper-7 ]
-	uint8                                        Pad_345E[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        BitPad_D9 : 7;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_12DB[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRigElementKey                        RigVMModel___CollapseNode_RigUnit_SetTransform_Item__Const; // 0x38(0xC)(Edit, EditConst, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_345F[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_12DC[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            RigVMModel___CollapseNode_RigUnit_SetTransform_Value__Const; // 0x50(0x60)(Edit, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                              RigVMModel___CollapseNode_MathQuaternionFromRotator_Rotator__Const; // 0xB0(0x18)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor)
 	float                                        RigVMModel___CollapseNode_MathFloatAdd_1_1_B__Const; // 0xC8(0x4)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                        RigVMModel___CollapseNode_RigUnit_SetTransform_Weight__Const; // 0xCC(0x4)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	uint8                                        RigVMModel___CollapseNode_RigUnit_SetTransform_bPropagateToChildren__Const : 1; // Mask: 0x1, PropSize: 0x10xD0(0x1)(Edit, EditConst, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	uint8                                        BitPad_1CB : 7;                                    // Fixing Bit-Field Size  [ Dumper-7 ]
-	uint8                                        Pad_3460[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        BitPad_DA : 7;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_12DE[0xF];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            RigVMModel___CollapseNode_RigUnit_SetTransform_1_Value__Const; // 0xE0(0x60)(Edit, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	struct FRigElementKey                        RigVMModel___CollapseNode_1_RigUnit_GetTransform_1_Item__Const; // 0x140(0xC)(Edit, EditConst, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	struct FRigElementKey                        RigVMModel___CollapseNode_1_RigUnit_SetTransform_Item__Const; // 0x14C(0xC)(Edit, EditConst, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -62,7 +62,7 @@ public:
 	TArray<struct FCachedRigElement>             RigVMModel___CollapseNode_RigUnit_GetTransform_1_CachedIndex; // 0xC0(0x10)(Edit, EditConst, NonTransactional)
 	struct FQuat                                 RigVMModel___CollapseNode_MathQuaternionFromRotator_Result; // 0xD0(0x20)(Edit, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                        RigVMModel___CollapseNode_MathFloatAdd_1_Result;   // 0xF0(0x4)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3465[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_12F0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRotator                              RigVMModel___CollapseNode_MathQuaternionToRotator_Result; // 0xF8(0x18)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor)
 	struct FTransform                            RigVMModel___CollapseNode_RigUnit_GetTransform_Transform; // 0x110(0x60)(Edit, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FCachedRigElement>             RigVMModel___CollapseNode_RigUnit_GetTransform_CachedIndex; // 0x170(0x10)(Edit, EditConst, NonTransactional)
@@ -84,7 +84,7 @@ public:
 	TArray<struct FCachedRigElement>             RigVMModel___CollapseNode_1_RigUnit_GetTransform_1_CachedIndex; // 0x380(0x10)(Edit, EditConst, NonTransactional)
 	struct FQuat                                 RigVMModel___CollapseNode_1_MathQuaternionFromRotator_Result; // 0x390(0x20)(Edit, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                        RigVMModel___CollapseNode_1_MathFloatAdd_1_Result; // 0x3B0(0x4)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3466[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1300[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRotator                              RigVMModel___CollapseNode_1_MathQuaternionToRotator_Result; // 0x3B8(0x18)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor)
 	struct FTransform                            RigVMModel___CollapseNode_1_RigUnit_GetTransform_Transform; // 0x3D0(0x60)(Edit, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FCachedRigElement>             RigVMModel___CollapseNode_1_RigUnit_GetTransform_CachedIndex; // 0x430(0x10)(Edit, EditConst, NonTransactional)
@@ -96,9 +96,9 @@ public:
 	float                                        RigVMModel___CollapseNode_1_MathFloatAdd_1_1_A;    // 0x470(0x4)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                        RigVMModel___CollapseNode_1_MathFloatAdd_Result;   // 0x474(0x4)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                        RigVMModel___CollapseNode_1_MathFloatAdd_A;        // 0x478(0x4)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3467[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1308[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRotator                              RigVMModel___CollapseNode_1_MathQuaternionFromRotator_Rotator__IO; // 0x480(0x18)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor)
-	uint8                                        Pad_3469[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_130A[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            RigVMModel___CollapseNode_1_RigUnit_SetTransform_Value__IO; // 0x4A0(0x60)(Edit, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FCachedRigElement>             RigVMModel___CollapseNode_1_RigUnit_SetTransform_CachedIndex; // 0x500(0x10)(Edit, EditConst, NonTransactional)
 	struct FTransform                            RigVMModel___CollapseNode_1_RigUnit_GetTransform_2_Transform; // 0x510(0x60)(Edit, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)

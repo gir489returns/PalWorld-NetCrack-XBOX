@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x538 (0x940 - 0x408)
+// 0x558 (0x960 - 0x408)
 // WidgetBlueprintGeneratedClass WBP_Title_WorldSettings.WBP_Title_WorldSettings_C
 class UWBP_Title_WorldSettings_C : public UPalUserWidget
 {
@@ -72,16 +72,16 @@ public:
 	FMulticastInlineDelegateProperty_            OnClickedCancel;                                   // 0x5C0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_            OnClickedConfirm;                                  // 0x5D0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         IsCustomDifficultySetting;                         // 0x5E0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_358B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2B6F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPalOptionWorldStaticSettings         SatticWorldSetting;                                // 0x5E4(0xF0)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	uint8                                        Pad_358C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FPalOptionWorldSettings               CachedOriginalWorldSetting;                        // 0x6D8(0x128)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FPalOptionWorldSettings               EditedWorldSetting;                                // 0x800(0x128)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                         IsEditedSettingFlag;                               // 0x928(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         IsEditedFromPreset;                                // 0x929(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         Is_New_World;                                      // 0x92A(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_358F[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	FMulticastInlineDelegateProperty_            OnClickedWorldNameInputButton;                     // 0x930(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	uint8                                        Pad_2B71[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FPalOptionWorldSettings               CachedOriginalWorldSetting;                        // 0x6D8(0x138)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPalOptionWorldSettings               EditedWorldSetting;                                // 0x810(0x138)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                         IsEditedSettingFlag;                               // 0x948(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         IsEditedFromPreset;                                // 0x949(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         Is_New_World;                                      // 0x94A(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_2B73[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	FMulticastInlineDelegateProperty_            OnClickedWorldNameInputButton;                     // 0x950(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 	static class UClass* StaticClass();
 	static class UWBP_Title_WorldSettings_C* GetDefaultObj();
@@ -97,10 +97,10 @@ public:
 	void CreateDeathPenaltySettingStrings(TArray<class FString>* OutStrings, const struct FDataTableRowHandle& FullPenaltyMsgID, const struct FDataTableRowHandle& AllItemPenaltylMsgID, const struct FDataTableRowHandle& ItemPenaltyMsgID, const struct FDataTableRowHandle& NoPanaltyMsgID, class FText CallFunc_GetLocalizedTextFromHandle_Text, class FText CallFunc_GetLocalizedTextFromHandle_Text_1, const class FString& CallFunc_Conv_TextToString_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue_1, class FText CallFunc_GetLocalizedTextFromHandle_Text_2, class FText CallFunc_GetLocalizedTextFromHandle_Text_3, const class FString& CallFunc_Conv_TextToString_ReturnValue_2, const class FString& CallFunc_Conv_TextToString_ReturnValue_3, TArray<class FString>& K2Node_MakeArray_Array);
 	void EndCustomDifficultySetting(int32 CallFunc_GetSelectNameIndex_NowIndex, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue);
 	void IsEditingCustomDifficulty(bool* IsEditing);
-	void DisplayDifficultyDesc(enum class EPalOptionWorldDifficulty DifficultyTyper, const struct FDataTableRowHandle& TmpMsgID, const struct FDataTableRowHandle& CustomMsgID, const struct FDataTableRowHandle& VeryHardMsgID, const struct FDataTableRowHandle& HardMsgID, const struct FDataTableRowHandle& NormalMsgID, const struct FDataTableRowHandle& EasyMsgID, const struct FDataTableRowHandle& VeryEasyMsgID, class FText TmpText, bool K2Node_SwitchEnum_CmpSuccess, class FText CallFunc_GetLocalizedTextFromHandle_Text);
+	void DisplayDifficultyDesc(enum class EPalOptionWorldDifficulty DifficultyTyper, const struct FDataTableRowHandle& TmpMsgID, const struct FDataTableRowHandle& CustomMsgID, const struct FDataTableRowHandle& VeryHardMsgID, const struct FDataTableRowHandle& HardMsgID, const struct FDataTableRowHandle& NormalMsgId, const struct FDataTableRowHandle& EasyMsgID, const struct FDataTableRowHandle& VeryEasyMsgID, class FText TmpText, bool K2Node_SwitchEnum_CmpSuccess, class FText CallFunc_GetLocalizedTextFromHandle_Text);
 	void ConvertUIIndexToDifficulty(int32 UIIndex, enum class EPalOptionWorldDifficulty* DifficultyType, bool K2Node_SwitchInteger_CmpSuccess);
 	void ConvertDifficultyToUIIndex(enum class EPalOptionWorldDifficulty DifficultyType, int32* UIIndex, bool K2Node_SwitchEnum_CmpSuccess);
-	void CreateDifficultySettingStrings(TArray<class FString>* OutStrings, const struct FDataTableRowHandle& CustomMsgID, const struct FDataTableRowHandle& VeryHardMsgID, const struct FDataTableRowHandle& HardMsgID, const struct FDataTableRowHandle& NormalMsgID, const struct FDataTableRowHandle& EasyMsgID, const struct FDataTableRowHandle& VeryEasyMsgID, class FText CallFunc_GetLocalizedTextFromHandle_Text, class FText CallFunc_GetLocalizedTextFromHandle_Text_1, const class FString& CallFunc_Conv_TextToString_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue_1, class FText CallFunc_GetLocalizedTextFromHandle_Text_2, class FText CallFunc_GetLocalizedTextFromHandle_Text_3, const class FString& CallFunc_Conv_TextToString_ReturnValue_2, const class FString& CallFunc_Conv_TextToString_ReturnValue_3, TArray<class FString>& K2Node_MakeArray_Array);
+	void CreateDifficultySettingStrings(TArray<class FString>* OutStrings, const struct FDataTableRowHandle& CustomMsgID, const struct FDataTableRowHandle& VeryHardMsgID, const struct FDataTableRowHandle& HardMsgID, const struct FDataTableRowHandle& NormalMsgId, const struct FDataTableRowHandle& EasyMsgID, const struct FDataTableRowHandle& VeryEasyMsgID, class FText CallFunc_GetLocalizedTextFromHandle_Text, class FText CallFunc_GetLocalizedTextFromHandle_Text_1, const class FString& CallFunc_Conv_TextToString_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue_1, class FText CallFunc_GetLocalizedTextFromHandle_Text_2, class FText CallFunc_GetLocalizedTextFromHandle_Text_3, const class FString& CallFunc_Conv_TextToString_ReturnValue_2, const class FString& CallFunc_Conv_TextToString_ReturnValue_3, TArray<class FString>& K2Node_MakeArray_Array);
 	void CancelTextEdit(bool CallFunc_IsEditingText_IsEditing, bool CallFunc_IsEditingText_IsEditing_1);
 	void IsTextEditing(bool* IsEditing, bool CallFunc_IsEditingText_IsEditing, bool CallFunc_IsEditingText_IsEditing_1, bool CallFunc_BooleanOR_ReturnValue);
 	void GetFocusTarget(class UWidget** TargetWidget, bool CallFunc_IsXB1_ReturnValue);

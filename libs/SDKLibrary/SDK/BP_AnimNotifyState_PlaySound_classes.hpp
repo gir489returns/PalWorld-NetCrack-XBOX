@@ -15,13 +15,13 @@ class UBP_AnimNotifyState_PlaySound_C : public UAnimNotifyState
 {
 public:
 	bool                                         Mute;                                              // 0x30(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_350C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2AEC[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPalDataTableRowName_SoundID          SoundId;                                           // 0x34(0x8)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
 	bool                                         StopOnNotifyEnded;                                 // 0x3C(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_350E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2AEE[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPalSoundOptions                      SoundOption;                                       // 0x40(0x4)(Edit, BlueprintVisible, NoDestructor)
 	class FName                                  SocketName;                                        // 0x44(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_350F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2AEF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftClassPtr<class UPalSoundSlot>           DebugSoundSlot;                                    // 0x50(0x30)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	enum class EPhysicalSurface                  DebugPhysicsMaterial;                              // 0x80(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

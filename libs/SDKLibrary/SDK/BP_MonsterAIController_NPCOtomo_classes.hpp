@@ -9,17 +9,17 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x25 (0x540 - 0x51B)
+// 0x25 (0x568 - 0x543)
 // BlueprintGeneratedClass BP_MonsterAIController_NPCOtomo.BP_MonsterAIController_NPCOtomo_C
 class ABP_MonsterAIController_NPCOtomo_C : public ABP_MonsterAIControllerBase_C
 {
 public:
-	uint8                                        Pad_347[0x5];                                      // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x520(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPalAISensorComponent*                 PalAISensor;                                       // 0x528(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                         IsOnpossessed;                                     // 0x530(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_348[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
-	class APalCharacter*                         TrainerNPC;                                        // 0x538(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_32D[0x5];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x548(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPalAISensorComponent*                 PalAISensor;                                       // 0x550(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                         IsOnpossessed;                                     // 0x558(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_330[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	class APalCharacter*                         TrainerNPC;                                        // 0x560(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class ABP_MonsterAIController_NPCOtomo_C* GetDefaultObj();

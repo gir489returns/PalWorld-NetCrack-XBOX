@@ -47,7 +47,7 @@ struct FTypedElementSelectionSetState
 {
 public:
 	TWeakObjectPtr<class UTypedElementSelectionSet> CreatedFromSelectionSet;                           // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_2397[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_23C8[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)

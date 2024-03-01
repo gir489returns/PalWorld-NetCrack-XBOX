@@ -9,13 +9,13 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x18 (0x570 - 0x558)
+// 0x18 (0x598 - 0x580)
 // BlueprintGeneratedClass BP_NPCAIController_Invader.BP_NPCAIController_Invader_C
 class ABP_NPCAIController_Invader_C : public ABP_NPCAIController_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x558(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	FMulticastInlineDelegateProperty_            OnInvaderArrivedDelegate;                          // 0x560(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x580(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	FMulticastInlineDelegateProperty_            OnInvaderArrivedDelegate;                          // 0x588(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 	static class UClass* StaticClass();
 	static class ABP_NPCAIController_Invader_C* GetDefaultObj();

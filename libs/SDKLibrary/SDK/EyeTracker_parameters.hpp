@@ -44,7 +44,7 @@ struct UEyeTrackerFunctionLibrary_GetStereoGazeData_Params
 public:
 	struct FEyeTrackerStereoGazeData             OutGazeData;                                       // 0x0(0x80)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x80(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1EF3[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1EA1[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x60 (0x60 - 0x0)
@@ -54,7 +54,7 @@ struct UEyeTrackerFunctionLibrary_GetGazeData_Params
 public:
 	struct FEyeTrackerGazeData                   OutGazeData;                                       // 0x0(0x58)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x58(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1EFD[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1EC2[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

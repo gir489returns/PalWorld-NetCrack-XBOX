@@ -9,38 +9,39 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0xB0 (0xAB0 - 0xA00)
+// 0xB0 (0xAF0 - 0xA40)
 // BlueprintGeneratedClass BP_Player_Female.BP_Player_Female_C
 class ABP_Player_Female_C : public ABP_PlayerBase_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xA00(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPalSkeletalMeshComponent*             HairAttachAccessory;                               // 0xA08(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalBodyPartsCapsuleComponent*         PalBodyPartsCapsule;                               // 0xA10(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalBodyPartsSphereComponent*          PalBodyPartsSphere;                                // 0xA18(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalBodyTemperatureComponent*          PalBodyTemperature;                                // 0xA20(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_GliderComponent_C*                 BP_GliderComponent;                                // 0xA28(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalInteractableSphereComponentNative* BP_InteractableSphere;                             // 0xA30(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalSkeletalMeshComponent*             HairMesh;                                          // 0xA38(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalSkeletalMeshComponent*             HeadMesh;                                          // 0xA40(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_PalClimbingComponent_C*            BP_PalClimbingComponent;                           // 0xA48(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalFacialComponent*                   PalFacial;                                         // 0xA50(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_FluidImplementation_C*             BP_FluidImplementation;                            // 0xA58(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_PlayerSoundEmitterComponent_C*     BP_PlayerSoundEmitterComponent;                    // 0xA60(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                     SlidingParticle;                                   // 0xA68(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                         UsePhysicalBone;                                   // 0xA70(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_425B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UNiagaraSystem*                        SlidingSmokeNiagara;                               // 0xA78(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraSystem*                        JumpNiagara;                                       // 0xA80(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class FName                                  SoundID_Sliding;                                   // 0xA88(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ABP_Lamp_C*                            Lamp;                                              // 0xA90(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraSystem*                        SlidingSmokeNiagara_Snow;                          // 0xA98(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraSystem*                        JumpNiagara_Snow;                                  // 0xAA0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UBP_PalLocalPlayerSystemSound_C*       LocalPlayerSound;                                  // 0xAA8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xA40(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPalSkeletalMeshComponent*             HairAttachAccessory;                               // 0xA48(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalBodyPartsCapsuleComponent*         PalBodyPartsCapsule;                               // 0xA50(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalBodyPartsSphereComponent*          PalBodyPartsSphere;                                // 0xA58(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalBodyTemperatureComponent*          PalBodyTemperature;                                // 0xA60(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_GliderComponent_C*                 BP_GliderComponent;                                // 0xA68(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalInteractableSphereComponentNative* BP_InteractableSphere;                             // 0xA70(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalSkeletalMeshComponent*             HairMesh;                                          // 0xA78(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalSkeletalMeshComponent*             HeadMesh;                                          // 0xA80(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_PalClimbingComponent_C*            BP_PalClimbingComponent;                           // 0xA88(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalFacialComponent*                   PalFacial;                                         // 0xA90(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_FluidImplementation_C*             BP_FluidImplementation;                            // 0xA98(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_PlayerSoundEmitterComponent_C*     BP_PlayerSoundEmitterComponent;                    // 0xAA0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                     SlidingParticle;                                   // 0xAA8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                         UsePhysicalBone;                                   // 0xAB0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_42FF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UNiagaraSystem*                        SlidingSmokeNiagara;                               // 0xAB8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraSystem*                        JumpNiagara;                                       // 0xAC0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class FName                                  SoundID_Sliding;                                   // 0xAC8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABP_Lamp_C*                            Lamp;                                              // 0xAD0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraSystem*                        SlidingSmokeNiagara_Snow;                          // 0xAD8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraSystem*                        JumpNiagara_Snow;                                  // 0xAE0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UBP_PalLocalPlayerSystemSound_C*       LocalPlayerSound;                                  // 0xAE8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class ABP_Player_Female_C* GetDefaultObj();
 
+	class USkeletalMeshComponent* GetHeadMesh();
 	void GetVisual_ExceptMainMesh_SyncAnyway(TArray<class USceneComponent*>* OutComponent, const TArray<class USceneComponent*>& Components, int32 CallFunc_Array_Add_ReturnValue, int32 CallFunc_Array_Add_ReturnValue_1, int32 CallFunc_Array_Add_ReturnValue_2);
 	class USkeletalMeshComponent* GetOverrideFaceMesh();
 	void OnUpdateSliding(class UPalCharacterMovementComponent* K2Node_DynamicCast_AsPal_Character_Movement_Component, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsSliding_ReturnValue, class UAnimInstance* CallFunc_GetAnimInstance_ReturnValue, class UPalAnimInstance* K2Node_DynamicCast_AsPal_Anim_Instance, bool K2Node_DynamicCast_bSuccess_1, float CallFunc_GetMaxSpeed_ReturnValue, double CallFunc_Divide_DoubleDouble_ReturnValue, double CallFunc_FClamp_ReturnValue, double CallFunc_Multiply_DoubleDouble_ReturnValue, double CallFunc_Divide_DoubleDouble_B_ImplicitCast, double CallFunc_Divide_DoubleDouble_A_ImplicitCast, float CallFunc_SetRTPCValueByActor_value_ImplicitCast);

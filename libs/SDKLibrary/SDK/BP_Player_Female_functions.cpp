@@ -40,6 +40,28 @@ class ABP_Player_Female_C* ABP_Player_Female_C::GetDefaultObj()
 }
 
 
+// Function BP_Player_Female.BP_Player_Female_C.GetHeadMesh
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class USkeletalMeshComponent*      ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class USkeletalMeshComponent* ABP_Player_Female_C::GetHeadMesh()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_Player_Female_C", "GetHeadMesh");
+
+	Params::ABP_Player_Female_C_GetHeadMesh_Params Parms{};
+
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+
+}
+
+
 // Function BP_Player_Female.BP_Player_Female_C.GetVisual_ExceptMainMesh_SyncAnyway
 // (Event, Protected, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:

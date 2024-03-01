@@ -155,16 +155,16 @@ void UWBP_CharaCre_ScrollBoxContentBase_C::ApplyMakeInfo(const struct FPalPlayer
 }
 
 
-// Function WBP_CharaCre_ScrollBoxContentBase.WBP_CharaCre_ScrollBoxContentBase_C.OnNotifyCloseSelectColorWIndow__DelegateSignature
+// Function WBP_CharaCre_ScrollBoxContentBase.WBP_CharaCre_ScrollBoxContentBase_C.OnNotifyCloseSelectColorWindow__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
-void UWBP_CharaCre_ScrollBoxContentBase_C::OnNotifyCloseSelectColorWIndow__DelegateSignature()
+void UWBP_CharaCre_ScrollBoxContentBase_C::OnNotifyCloseSelectColorWindow__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("WBP_CharaCre_ScrollBoxContentBase_C", "OnNotifyCloseSelectColorWIndow__DelegateSignature");
+		Func = Class->GetFunction("WBP_CharaCre_ScrollBoxContentBase_C", "OnNotifyCloseSelectColorWindow__DelegateSignature");
 
 
 

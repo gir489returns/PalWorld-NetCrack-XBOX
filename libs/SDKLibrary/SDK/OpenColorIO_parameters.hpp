@@ -23,7 +23,7 @@ public:
 	class UTexture*                              InputTexture;                                      // 0x88(0x8)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UTextureRenderTarget2D*                OutputRenderTarget;                                // 0x90(0x8)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x98(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1251[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_14C3[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -56,10 +56,10 @@ struct UOpenColorIODisplayExtensionWrapper_CreateOpenColorIODisplayExtension_Par
 {
 public:
 	struct FOpenColorIODisplayConfiguration      InDisplayConfiguration;                            // 0x0(0x88)(Parm, NativeAccessSpecifierPublic)
-	uint8                                        Pad_126E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_14E1[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSceneViewExtensionIsActiveFunctor    IsActiveFunction;                                  // 0x90(0x50)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class UOpenColorIODisplayExtensionWrapper*   ReturnValue;                                       // 0xE0(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1270[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_14E2[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x90 (0x90 - 0x0)

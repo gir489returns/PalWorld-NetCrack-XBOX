@@ -25,7 +25,7 @@ public:
 	void OpenColorSelectWindow(class UBP_CharaCre_ColorSelectWindowDispatchParameter_C* Parameter, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_IsValid_ReturnValue, const struct FGuid& CallFunc_Push_ReturnValue);
 	void GetTopFocusTarget(class UWidget** Widget);
 	void ApplyMakeInfo(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo);
-	void OnNotifyCloseSelectColorWIndow__DelegateSignature();
+	void OnNotifyCloseSelectColorWindow__DelegateSignature();
 	void OnNotifyOpenSelectColorWindow__DelegateSignature();
 };
 

@@ -57,7 +57,7 @@ struct FQosPingServerInfo
 public:
 	class FString                                Address;                                           // 0x0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        Port;                                              // 0x10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_CF4[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_115C[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x38 (0x38 - 0x0)
@@ -68,7 +68,7 @@ public:
 	class FString                                ID;                                                // 0x0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                RegionId;                                          // 0x10(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bEnabled;                                          // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_CF6[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_115E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FQosPingServerInfo>            Servers;                                           // 0x28(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
 
@@ -84,7 +84,7 @@ public:
 	bool                                         bAutoAssignable;                                   // 0x2A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bAllowSubspaceBias;                                // 0x2B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FQosSubspaceComparisonParams          SubspaceBiasParams;                                // 0x2C(0x10)(NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_CFD[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1164[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x68 (0x68 - 0x0)
@@ -94,13 +94,13 @@ struct FDatacenterQosInstance
 public:
 	struct FQosDatacenterInfo                    Definition;                                        // 0x0(0x38)(Transient, NativeAccessSpecifierPublic)
 	enum class EQosDatacenterResult              Result;                                            // 0x38(0x1)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D02[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1168[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        AvgPingMs;                                         // 0x3C(0x4)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<int32>                                PingResults;                                       // 0x40(0x10)(ZeroConstructor, Transient, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D04[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1169[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDateTime                             LastCheckTimestamp;                                // 0x58(0x8)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUsable;                                           // 0x60(0x1)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D06[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_116A[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x50 (0x50 - 0x0)

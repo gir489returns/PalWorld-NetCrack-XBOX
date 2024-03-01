@@ -40,6 +40,33 @@ class UBP_AIAction_OtomoDefault_C* UBP_AIAction_OtomoDefault_C::GetDefaultObj()
 }
 
 
+// Function BP_AIAction_OtomoDefault.BP_AIAction_OtomoDefault_C.Set Action Berserker
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                      Target                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AController*                 CallFunc_GetController_ReturnValue                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ABP_MonsterAIController_Otomo_C*K2Node_DynamicCast_AsBP_Monster_AIController_Otomo               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_OtomoDefault_C::Set_Action_Berserker(class AActor* Target, class AController* CallFunc_GetController_ReturnValue, class ABP_MonsterAIController_Otomo_C* K2Node_DynamicCast_AsBP_Monster_AIController_Otomo, bool K2Node_DynamicCast_bSuccess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_AIAction_OtomoDefault_C", "Set Action Berserker");
+
+	Params::UBP_AIAction_OtomoDefault_C_Set_Action_Berserker_Params Parms{};
+
+	Parms.Target = Target;
+	Parms.CallFunc_GetController_ReturnValue = CallFunc_GetController_ReturnValue;
+	Parms.K2Node_DynamicCast_AsBP_Monster_AIController_Otomo = K2Node_DynamicCast_AsBP_Monster_AIController_Otomo;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function BP_AIAction_OtomoDefault.BP_AIAction_OtomoDefault_C.SetActionComposite
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -303,12 +330,34 @@ void UBP_AIAction_OtomoDefault_C::SetOtomoBaseCampAction()
 }
 
 
+// Function BP_AIAction_OtomoDefault.BP_AIAction_OtomoDefault_C.SetOtomoBerserker
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class AActor*                      Target                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_OtomoDefault_C::SetOtomoBerserker(class AActor* Target)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_AIAction_OtomoDefault_C", "SetOtomoBerserker");
+
+	Params::UBP_AIAction_OtomoDefault_C_SetOtomoBerserker_Params Parms{};
+
+	Parms.Target = Target;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function BP_AIAction_OtomoDefault.BP_AIAction_OtomoDefault_C.ExecuteUbergraph_BP_AIAction_OtomoDefault
 // (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                      K2Node_Event_Target                                              (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_AIAction_OtomoDefault_C::ExecuteUbergraph_BP_AIAction_OtomoDefault(int32 EntryPoint)
+void UBP_AIAction_OtomoDefault_C::ExecuteUbergraph_BP_AIAction_OtomoDefault(int32 EntryPoint, class AActor* K2Node_Event_Target)
 {
 	static class UFunction* Func = nullptr;
 
@@ -318,6 +367,7 @@ void UBP_AIAction_OtomoDefault_C::ExecuteUbergraph_BP_AIAction_OtomoDefault(int3
 	Params::UBP_AIAction_OtomoDefault_C_ExecuteUbergraph_BP_AIAction_OtomoDefault_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+	Parms.K2Node_Event_Target = K2Node_Event_Target;
 
 	UObject::ProcessEvent(Func, &Parms);
 
