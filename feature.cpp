@@ -169,7 +169,7 @@ void IncrementInventoryItemCountByIndex(__int32 mCount, __int32 mIndex)
 	FPalItemId FirstItemId = pSelectedSlot->GetItemId();
 	__int32 StackCount = pSelectedSlot->GetStackCount();
 	__int32 mNewCount = StackCount += mCount;
-	InventoryData->RequestAddItem(FirstItemId.StaticId, mNewCount, true);
+	InventoryData->AddItem_ServerInternal(FirstItemId.StaticId, mNewCount, true);
 }
 
 //	
@@ -184,7 +184,7 @@ void AddItemToInventoryByName(UPalPlayerInventoryData* data, char* itemName, int
 	FName Name = lib->Conv_StringToName(FString(ws));
 
 	// Call
-	data->RequestAddItem(Name, count, true);
+	data->AddItem_ServerInternal(Name, count, true);
 }
 
 // Credit: asashi
