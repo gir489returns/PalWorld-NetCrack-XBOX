@@ -76,7 +76,7 @@ namespace DX11_Base
                         wchar_t  ws[255];
                         swprintf(ws, 255, L"%hs", chNewName);
 
-                        Config.GetPalPlayerCharacter()->GetPalPlayerController()->Transmitter->NetworkIndividualComponent->UpdateCharacterNickName_ToServer(Config.GetPalPlayerCharacter()->CharacterParameterComponent->IndividualHandle->ID, SDK::FString(ws));
+                        Config.GetPalPlayerCharacter()->GetPalPlayerController()->UpdateCharacterNickName_ToServer(Config.GetPalPlayerCharacter()->CharacterParameterComponent->IndividualHandle->ID, SDK::FString(ws));
                     }
                 }
             }
@@ -491,7 +491,7 @@ namespace DX11_Base
         {
             ImGui::Checkbox("filterPlayer", &Config.filterPlayer);
             SDK::TArray<SDK::AActor*> T = Config.GetUWorld()->PersistentLevel->Actors;
-            for (int i = 0; i < T.Count(); i++)
+            for (int i = 0; i < T.Num(); i++)
             {
                 if (!T[i])
                     continue;
@@ -575,11 +575,11 @@ namespace DX11_Base
                 }*/
                 if (Character->IsA(SDK::APalPlayerCharacter::StaticClass()))
                 {
-                    ImGui::SameLine();
+                    /*ImGui::SameLine();
                     if ( ImGui::Button( "Join Guild" ) )
                     {
                         ForceJoinGuild( (SDK::APalPlayerCharacter*)Character );
-                    }
+                    }*/
                     ImGui::SameLine();
                     if (ImGui::Button("MaskIt"))
                     {
@@ -591,7 +591,7 @@ namespace DX11_Base
                                 auto player = (SDK::APalPlayerCharacter*)Character;
                                 SDK::FString fakename;
                                 player->CharacterParameterComponent->GetNickname(&fakename);
-                                Config.GetPalPlayerCharacter()->GetPalPlayerController()->Transmitter->NetworkIndividualComponent->UpdateCharacterNickName_ToServer(Config.GetPalPlayerCharacter()->CharacterParameterComponent->IndividualHandle->ID, fakename);
+                                Config.GetPalPlayerCharacter()->GetPalPlayerController()->UpdateCharacterNickName_ToServer(Config.GetPalPlayerCharacter()->CharacterParameterComponent->IndividualHandle->ID, fakename);
                             }
                         }
                     }
