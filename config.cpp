@@ -188,7 +188,7 @@ bool config::GetAllActorsofType(SDK::UClass* mType, std::vector<SDK::AActor*>* o
 
     //	Get Levels
     SDK::TArray<SDK::ULevel*> pLevelsArray = pWorld->Levels;
-    __int32 levelsCount = pLevelsArray.Count();
+    __int32 levelsCount = pLevelsArray.Num();
 
     //	Loop Levels Array
     for (int i = 0; i < levelsCount; i++)
@@ -203,7 +203,7 @@ bool config::GetAllActorsofType(SDK::UClass* mType, std::vector<SDK::AActor*>* o
             break;
 
         SDK::TArray<SDK::AActor*> pActorsArray = pLevelsArray[i]->Actors;
-        __int32 actorsCount = pActorsArray.Count();
+        __int32 actorsCount = pActorsArray.Num();
 
         //	Loop Actor Array
         for (int j = 0; j < actorsCount; j++)
@@ -234,8 +234,6 @@ void config::Init()
 {
     //register hook
     Config.ClientBase = (DWORD64)GetModuleHandle(NULL);
-
-    SDK::InitGObjects();
 
     Config.gWorld = Config.GetUWorld();
 

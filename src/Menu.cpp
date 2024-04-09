@@ -76,7 +76,7 @@ namespace DX11_Base
                         wchar_t  ws[255];
                         swprintf(ws, 255, L"%hs", chNewName);
 
-                        Config.GetPalPlayerCharacter()->GetPalPlayerController()->Transmitter->NetworkIndividualComponent->UpdateCharacterNickName_ToServer(Config.GetPalPlayerCharacter()->CharacterParameterComponent->IndividualHandle->ID, SDK::FString(ws));
+                        Config.GetPalPlayerCharacter()->GetPalPlayerController()->UpdateCharacterNickName_ToServer(Config.GetPalPlayerCharacter()->CharacterParameterComponent->IndividualHandle->ID, SDK::FString(ws));
                     }
                 }
             }
@@ -224,7 +224,7 @@ namespace DX11_Base
 
             ImGui::InputInt("Num To Add", &num_to_add);
 
-            ImGui::Combo("Item Category", &category, "Accessories\0Ammo\0Armor\0Crafting Materials\0Eggs\0Food\0Hats\0\Medicine\0Money\0Other\0Pal Spheres\0Seeds\0Tools\0Weapons\0");
+            ImGui::Combo("Item Category", &category, "Accessories\0Ammo\0Armor\0Crafting Materials\0Eggs\0Food\0Hats\0Medicine\0Money\0Other\0Pal Spheres\0Seeds\0Tools\0Weapons\0");
 
             std::initializer_list list = itemlist::accessories;
 
@@ -273,7 +273,7 @@ namespace DX11_Base
                     list = itemlist::accessories;
             }
 
-            int cur_size = 0;
+            auto cur_size = 0;
 
             static char item_search[100];
 
@@ -304,7 +304,7 @@ namespace DX11_Base
                     cur_size = 0;
                 }
 
-                cur_size += right_text.length();
+                cur_size += (int)right_text.length();
 
                 ImGui::PushID(item);
                 if (ImGui::Button(right_text.c_str()))
@@ -491,7 +491,7 @@ namespace DX11_Base
         {
             ImGui::Checkbox("filterPlayer", &Config.filterPlayer);
             SDK::TArray<SDK::AActor*> T = Config.GetUWorld()->PersistentLevel->Actors;
-            for (int i = 0; i < T.Count(); i++)
+            for (int i = 0; i < T.Num(); i++)
             {
                 if (!T[i])
                     continue;
@@ -531,9 +531,8 @@ namespace DX11_Base
                         if (secondUnderscorePos != std::string::npos) {
                             result = result.substr(0, secondUnderscorePos);
                         }
-                        wchar_t  ws[255];
-                        swprintf(ws, 255, L"%hs", result);
-                        name = SDK::FString(ws);
+                        std::wstring ws = std::wstring(result.begin(), result.end());
+                        name = SDK::FString(ws.c_str());
                     }
                 }
                 ImGui::Text(name.ToString().c_str());
@@ -575,11 +574,11 @@ namespace DX11_Base
                 }*/
                 if (Character->IsA(SDK::APalPlayerCharacter::StaticClass()))
                 {
-                    ImGui::SameLine();
+                    /*ImGui::SameLine();
                     if ( ImGui::Button( "Join Guild" ) )
                     {
                         ForceJoinGuild( (SDK::APalPlayerCharacter*)Character );
-                    }
+                    }*/
                     ImGui::SameLine();
                     if (ImGui::Button("MaskIt"))
                     {
@@ -591,7 +590,7 @@ namespace DX11_Base
                                 auto player = (SDK::APalPlayerCharacter*)Character;
                                 SDK::FString fakename;
                                 player->CharacterParameterComponent->GetNickname(&fakename);
-                                Config.GetPalPlayerCharacter()->GetPalPlayerController()->Transmitter->NetworkIndividualComponent->UpdateCharacterNickName_ToServer(Config.GetPalPlayerCharacter()->CharacterParameterComponent->IndividualHandle->ID, fakename);
+                                Config.GetPalPlayerCharacter()->GetPalPlayerController()->UpdateCharacterNickName_ToServer(Config.GetPalPlayerCharacter()->CharacterParameterComponent->IndividualHandle->ID, fakename);
                             }
                         }
                     }

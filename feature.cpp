@@ -25,7 +25,7 @@ void ESP()
 	if (!T.IsValid())
 		return;
 
-	for (int i = 0; i < T.Count(); i++)
+	for (int i = 0; i < T.Num(); i++)
 		ImGui::GetBackgroundDrawList()->AddText(nullptr, 16, ImVec2(10, 10 + (i * 30)), ImColor(128,0,0), T[i]->GetFullName().c_str());
 }
 
@@ -48,7 +48,7 @@ void ESP_DEBUG(float mDist, ImVec4 color, UClass* mEntType)
 	
 	auto draw = ImGui::GetBackgroundDrawList();
 
-	__int32 actorsCount = actors.size();
+	auto actorsCount = actors.size();
 	for (AActor* actor : actors)
 	{
 		FVector actorLocation = actor->K2_GetActorLocation();
@@ -81,7 +81,7 @@ void DrawUActorComponent(TArray<UActorComponent*> Comps,ImColor color)
 	ImGui::GetBackgroundDrawList()->AddText(nullptr, 16, ImVec2(ImGui::GetIO().DisplaySize.x / 2, ImGui::GetIO().DisplaySize.y / 2), color, "Drawing...");
 	if (!Comps.IsValid())
 		return; 
-	for (int i = 0; i < Comps.Count(); i++)
+	for (int i = 0; i < Comps.Num(); i++)
 	{
 		
 		if (!Comps[i])
@@ -92,7 +92,7 @@ void DrawUActorComponent(TArray<UActorComponent*> Comps,ImColor color)
 }
 
 //	credit: 
-void UnlockAllEffigies() 
+void UnlockAllEffigies()
 {
 	APalPlayerCharacter* pPalCharacter = Config.GetPalPlayerCharacter();
 	APalPlayerState* pPalPlayerState = Config.GetPalPlayerState();
@@ -103,24 +103,34 @@ void UnlockAllEffigies()
 	if (!world)
 		return;
 
-	TUObjectArray* objects = world->GObjects;
-
-	for (int i = 0; i < objects->NumElements; ++i) 
+	SDK::TArray<SDK::ULevel*> pLevelsArray = world->Levels;
+	__int32 levelsCount = pLevelsArray.Num();
+	for (int i = 0; i < levelsCount; i++)
 	{
-		UObject* object = objects->GetByIndex(i);
-
-		if (!object)
+		if (!pLevelsArray.IsValidIndex(i))
 			continue;
 
-		if (!object->IsA(APalLevelObjectRelic::StaticClass()))
+		SDK::ULevel* pLevel = pLevelsArray[i];
+		if (!pLevel)
 			continue;
 
-		APalLevelObjectObtainable* relic = (APalLevelObjectObtainable*)object;
-		if (!relic) {
-			continue;
+		SDK::TArray<SDK::AActor*> pActorsArray = pLevelsArray[i]->Actors;
+		__int32 actorsCount = pActorsArray.Num();
+
+		for (int j = 0; j < actorsCount; j++)
+		{
+			if (!pActorsArray.IsValidIndex(j))
+				continue;
+
+			SDK::AActor* pActor = pActorsArray[j];
+
+			if (!pActor || !pActor->IsA(APalLevelObjectRelic::StaticClass()))
+				continue;
+
+			APalLevelObjectObtainable* relic = (APalLevelObjectObtainable*)pActor;
+
+			pPalPlayerState->RequestObtainLevelObject_ToServer(relic);
 		}
-
-		pPalPlayerState->RequestObtainLevelObject_ToServer(relic);
 	}
 }
 
@@ -148,7 +158,7 @@ void IncrementInventoryItemCountByIndex(__int32 mCount, __int32 mIndex)
 		return;
 
 	TArray<class SDK::UPalItemContainer*> Containers = InventoryMultiHelper->Containers;
-	if (Containers.Count() <= 0)
+	if (Containers.Num() <= 0)
 		return;
 
 	UPalItemSlot* pSelectedSlot = Containers[0]->Get(mIndex);
@@ -159,7 +169,7 @@ void IncrementInventoryItemCountByIndex(__int32 mCount, __int32 mIndex)
 	FPalItemId FirstItemId = pSelectedSlot->GetItemId();
 	__int32 StackCount = pSelectedSlot->GetStackCount();
 	__int32 mNewCount = StackCount += mCount;
-	InventoryData->RequestAddItem(FirstItemId.StaticId, mNewCount, true);
+	InventoryData->AddItem_ServerInternal(FirstItemId.StaticId, mNewCount, true);
 }
 
 //	
@@ -174,7 +184,7 @@ void AddItemToInventoryByName(UPalPlayerInventoryData* data, char* itemName, int
 	FName Name = lib->Conv_StringToName(FString(ws));
 
 	// Call
-	data->RequestAddItem(Name, count, true);
+	data->AddItem_ServerInternal(Name, count, true);
 }
 
 // Credit: asashi
@@ -423,7 +433,7 @@ void SetCraftingSpeed(float mNewSpeed, bool bRestoreDefault)
 	FPalIndividualCharacterSaveParameter sParams = ivParams->SaveParameter;
 	TArray<FFloatContainer_FloatPair> mCraftSpeedArray = sParams.CraftSpeedRates.Values;
 
-	if (mCraftSpeedArray.Count() > 0)
+	if (mCraftSpeedArray.Num() > 0)
 		mCraftSpeedArray[0].Value = bRestoreDefault ? 1.0f : mNewSpeed;
 }
 
@@ -561,7 +571,7 @@ void DeathAura(__int32 dmgAmount, float mDistance, bool bIntensityEffect, bool b
 	if (!Config.GetTAllPals(&outPals))
 		return;
 
-	DWORD palsCount = outPals.Count();
+	auto palsCount = outPals.Num();
 	for (auto i = 0; i < palsCount; i++)
 	{
 		APalCharacter* cEnt = outPals[i];
@@ -581,7 +591,7 @@ void DeathAura(__int32 dmgAmount, float mDistance, bool bIntensityEffect, bool b
 		if (bVisualAffect && pVisComp)
 		{
 			FPalVisualEffectDynamicParameter fvedp;
-			if (!pVisComp->ExecutionVisualEffects.Count())
+			if (!pVisComp->ExecutionVisualEffects.Num())
 				pVisComp->AddVisualEffect_ToServer(visID, fvedp, 1);	//	uc: killer1478
 		}
 		SendDamageToActor(cEnt, dmgAmount);
@@ -593,7 +603,7 @@ void TeleportAllPalsToCrosshair(float mDistance)
 {
 	TArray<APalCharacter*> outPals;
 	Config.GetTAllPals(&outPals);
-	DWORD palsCount = outPals.Count();
+	auto palsCount = outPals.Num();
 	for (int i = 0; i < palsCount; i++)
 	{
 		APalCharacter* cPal = outPals[i];
@@ -647,22 +657,22 @@ void RenderWaypointsToScreen()
 	}
 }
 
-void ForceJoinGuild( SDK::APalPlayerCharacter* targetPlayer )
-{
-	if ( !targetPlayer->CharacterParameterComponent->IndividualHandle )
-		return;
-	if ( !Config.GetPalPlayerController() )
-		return;
-
-	UPalNetworkGroupComponent* group = Config.GetPalPlayerController()->Transmitter->Group;
-	if ( !group )
-		return;
-
-	SDK::FGuid myPlayerId = Config.GetPalPlayerController()->GetPlayerUId();
-	SDK::FGuid playerId = targetPlayer->CharacterParameterComponent->IndividualHandle->ID.PlayerUId;
-
-	group->RequestJoinGuildForPlayer_ToServer( myPlayerId, playerId );
-}
+//void ForceJoinGuild( SDK::APalPlayerCharacter* targetPlayer )
+//{
+//	if ( !targetPlayer->CharacterParameterComponent->IndividualHandle )
+//		return;
+//	if ( !Config.GetPalPlayerController() )
+//		return;
+//
+//	UPalNetworkGroupComponent* group = Config.GetPalPlayerController()->Transmitter->Group;
+//	if ( !group )
+//		return;
+//
+//	SDK::FGuid myPlayerId = Config.GetPalPlayerController()->GetPlayerUId();
+//	SDK::FGuid playerId = targetPlayer->CharacterParameterComponent->IndividualHandle->ID.PlayerUId;
+//
+//	group->RequestJoinGuildForPlayer_ToServer( myPlayerId, playerId );
+//}
 
 ///	OLDER METHODS
 //SDK::FPalDebugOtomoPalInfo palinfo = SDK::FPalDebugOtomoPalInfo();
