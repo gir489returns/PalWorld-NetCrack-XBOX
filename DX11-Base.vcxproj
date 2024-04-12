@@ -136,6 +136,7 @@
       <LanguageStandard_C>stdc17</LanguageStandard_C>
       <AdditionalOptions>/bigobj</AdditionalOptions>
       <AdditionalIncludeDirectories>$(SolutionDir)\libs\SDKLibrary\;$(SolutionDir);</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
