@@ -31,11 +31,11 @@ using namespace UC;
 */
 namespace Offsets
 {
-	constexpr int32 GObjects          = 0x08883A00;
-	constexpr int32 AppendString      = 0x02D5AF70;
-	constexpr int32 GNames            = 0x087E4300;
-	constexpr int32 GWorld            = 0x089F1718;
-	constexpr int32 ProcessEvent      = 0x02EDD9F0;
+	constexpr int32 GObjects          = 0x08884A00;
+	constexpr int32 AppendString      = 0x02D5B6A0;
+	constexpr int32 GNames            = 0x087E5300;
+	constexpr int32 GWorld            = 0x089F2718;
+	constexpr int32 ProcessEvent      = 0x02EDE120;
 	constexpr int32 ProcessEventIdx   = 0x0000004C;
 }
 
@@ -253,6 +253,11 @@ private:
 	}
 
 public:
+	inline void InitGObjectsManually(void* GObjectsAddressParameter)
+	{
+		GObjectsAddress = GObjectsAddressParameter;
+	}
+
 	inline class TUObjectArray* operator->()
 	{
 		if (!GObjectsAddress) [[unlikely]]
@@ -292,6 +297,10 @@ public:
 	static void InitInternal()
 	{
 		AppendString = reinterpret_cast<void*>(InSDKUtils::GetImageBase() + Offsets::AppendString);
+	}
+	static void InitManually(void* Location)
+	{
+		AppendString = reinterpret_cast<void*>(Location);
 	}
 
 	int32 GetDisplayIndex() const
