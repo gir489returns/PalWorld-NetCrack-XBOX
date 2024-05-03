@@ -32,10 +32,10 @@ using namespace UC;
 namespace Offsets
 {
 	constexpr int32 GObjects          = 0x081860B0;
-	constexpr int32 AppendString      = 0x02C2C1B0;
+	constexpr int32 AppendString      = 0x02C2C190;
 	constexpr int32 GNames            = 0x080E6D00;
 	constexpr int32 GWorld            = 0x082F3E28;
-	constexpr int32 ProcessEvent      = 0x02DAEAB0;
+	constexpr int32 ProcessEvent      = 0x02DAEA90;
 	constexpr int32 ProcessEventIdx   = 0x0000004C;
 }
 
@@ -253,7 +253,7 @@ private:
 	}
 
 public:
-	inline void InitGObjectsManually(void* GObjectsAddressParameter)
+	inline void InitManually(void* GObjectsAddressParameter)
 	{
 		GObjectsAddress = GObjectsAddressParameter;
 	}
