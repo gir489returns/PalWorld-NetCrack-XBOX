@@ -26,7 +26,7 @@ public:
 	TMap<EPalPassiveSkillEffectType, class UClass*> ModifierMap;                                       // 0x0028(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	class APalBullet* CreateBullet(const class UObject* WorldContextObject, class APalWeaponBase* Weapon, TSubclassOf<class APalBullet> bulletClass, const struct FTransform& SpawnTransform, ESpawnActorCollisionHandlingMethod CollisionHandlingOverride, class AActor* Owner, class APawn* Instigator);
+	class APalBullet* CreateBullet(const class UObject* WorldContextObject, class APalWeaponBase* Weapon, TSubclassOf<class APalBullet> BulletClass, const struct FTransform& SpawnTransform, ESpawnActorCollisionHandlingMethod CollisionHandlingOverride, class AActor* Owner, class APawn* Instigator);
 
 public:
 	static class UClass* StaticClass()

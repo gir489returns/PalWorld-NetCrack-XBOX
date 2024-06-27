@@ -764,6 +764,6 @@ namespace DX11_Base
         if (Config.IsGodMode)
             SetPlayerHealth(INT_MAX);
 
-        SetInfiniteAmmo(Config.IsInfinAmmo);
+        SetInfiniteAmmo(Config.IsInfinAmmo); //Patched?
     }
 }

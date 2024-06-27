@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "Pal_structs.hpp"
-#include "Pal_classes.hpp"
 #include "UMG_structs.hpp"
 #include "CommonInput_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Pal_structs.hpp"
+#include "Pal_classes.hpp"
 #include "Engine_structs.hpp"
 
 
@@ -50,45 +50,46 @@ public:
 	class FName                                   LeftActionName;                                    // 0x04A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   RightActionName;                                   // 0x04B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Editing;                                           // 0x04B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35FA[0x7];                                     // 0x04B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4A69[0x7];                                     // 0x04B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           SubtractTimer;                                     // 0x04C0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                           AddTimer;                                          // 0x04C8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           OriginalColor;                                     // 0x04D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        ChangePercent;                                     // 0x04E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          BlockMouseClick;                                   // 0x04E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35FB[0x7];                                     // 0x04E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4A6A[0x7];                                     // 0x04E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnKeyConfigClicked;                                // 0x04F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class FName                                   ActionKeyName;                                     // 0x0500(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECommonInputType                              Input_Type;                                        // 0x0508(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPalKeyConfigAxisFilterType                   Filter_Type;                                       // 0x0509(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AddValue();
-	void BackToList();
-	void BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Param_Button);
-	void BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Param_Button);
-	void BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Param_Button);
-	void Construct();
-	void ExecuteUbergraph_WBP_OptionSettings_ListContent(int32 EntryPoint);
-	void Gamepad_LeftPress();
-	void Gamepad_LeftRelease();
-	void Gamepad_RightPress();
-	void Gamepad_RightRelease();
-	void InputMethodChanged(ECommonInputType InputType);
-	void OnKeyConfigClicked__DelegateSignature(class FName KeyName, ECommonInputType InputType, EPalKeyConfigAxisFilterType AxisType);
-	void SetClickableButton();
-	void SetConfigButton(class FName ActionName, ECommonInputType InputType, EPalKeyConfigAxisFilterType FilterType);
-	void SetInteractable(bool CanInteract);
-	void SetKeyIcon(const struct FKey& Key, ECommonInputType InputType);
-	void SetKeyWarning(bool EnableWarning);
-	void SetMsgId(const struct FDataTableRowHandle& RowHandle);
-	void SetResolution(const struct FIntPoint& CurrentResolution, const TArray<struct FIntPoint>& Resolutions);
-	void SetSelecter(const TArray<struct FDataTableRowHandle>& Selections, const int32 Param_Current);
-	void SetSelecter_String(const TArray<class FString>& Selections, const int32 Param_Current);
-	void SetSlider(double CurrentValue, double Min, double Max, double FixedChangeValue, bool UseFixedValue);
-	void SetSwitcher(const bool CurrentOn);
-	void SetUIConfigButton(class FName UIActionName, ECommonInputType InputType, const struct FKey& Key);
 	void SubtractValue();
+	void SetUIConfigButton(class FName UIActionName, ECommonInputType InputType, const struct FKey& Key);
+	void SetSwitcher(const bool CurrentOn);
+	void SetSlider(double CurrentValue, double Min, double Max, double FixedChangeValue, bool UseFixedValue);
+	void SetSelecter_String(const TArray<class FString>& Selections, const int32 Param_Current);
+	void SetSelecter(const TArray<struct FDataTableRowHandle>& Selections, const int32 Param_Current);
+	void SetResolution(const struct FIntPoint& CurrentResolution, const TArray<struct FIntPoint>& Resolutions);
+	void SetMsgId(const struct FDataTableRowHandle& RowHandle);
+	void SetKeyWarning(bool EnableWarning);
+	void SetKeyIcon(const struct FKey& Key, ECommonInputType InputType);
+	void SetInteractable(bool CanInteract);
+	void SetConfigButton(class FName ActionName, ECommonInputType InputType, EPalKeyConfigAxisFilterType FilterType);
+	void SetClickableButton();
+	void OnKeyConfigClicked__DelegateSignature(class FName KeyName, ECommonInputType InputType, EPalKeyConfigAxisFilterType AxisType);
+	void InputMethodChanged(ECommonInputType InputType);
+	void Gamepad_RightRelease();
+	void Gamepad_RightPress();
+	void Gamepad_LeftRelease();
+	void Gamepad_LeftPress();
+	void ExecuteUbergraph_WBP_OptionSettings_ListContent(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Param_Button);
+	void BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Param_Button);
+	void BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Param_Button);
+	void BackToList();
+	void AddValue();
 
 public:
 	static class UClass* StaticClass()

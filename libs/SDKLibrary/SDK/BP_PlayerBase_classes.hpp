@@ -18,22 +18,23 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PlayerBase.BP_PlayerBase_C
-// 0x0030 (0x0B50 - 0x0B20)
+// 0x0030 (0x0C60 - 0x0C30)
 class ABP_PlayerBase_C : public APalPlayerCharacter
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B20(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UCapsuleComponent*                      DeadColllision;                                    // 0x0B28(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_PalTimerPointLightComponent_C*      PlayerLight;                                       // 0x0B30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalRiderComponent*                     Rider_Component;                                   // 0x0B38(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsInCapturedCage;                                 // 0x0B40(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_405C[0x7];                                     // 0x0B41(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_Lamp_C*                             Lantern;                                           // 0x0B48(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0C30(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UCapsuleComponent*                      DeadColllision;                                    // 0x0C38(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_PalTimerPointLightComponent_C*      PlayerLight;                                       // 0x0C40(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalRiderComponent*                     Rider_Component;                                   // 0x0C48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsInCapturedCage;                                 // 0x0C50(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_43D7[0x7];                                     // 0x0C51(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_Lamp_C*                             Lantern;                                           // 0x0C58(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void BndEvt__BP_PlayerBase_CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 	void BndEvt__BP_PlayerBase_CapsuleComponent_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 	void BndEvt__BP_PlayerBase_CharacterMovement_K2Node_ComponentBoundEvent_2_OnJumpDelegate__DelegateSignature(class UPalCharacterMovementComponent* Component);
+	void ClearLantern();
 	void CreateLantern();
 	void ExecuteUbergraph_BP_PlayerBase(int32 EntryPoint);
 	void OnCompleteInitializeParameterDelegate______0(class APalCharacter* InCharacter);
@@ -58,13 +59,13 @@ public:
 	}
 };
 static_assert(alignof(ABP_PlayerBase_C) == 0x000010, "Wrong alignment on ABP_PlayerBase_C");
-static_assert(sizeof(ABP_PlayerBase_C) == 0x000B50, "Wrong size on ABP_PlayerBase_C");
-static_assert(offsetof(ABP_PlayerBase_C, UberGraphFrame) == 0x000B20, "Member 'ABP_PlayerBase_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_PlayerBase_C, DeadColllision) == 0x000B28, "Member 'ABP_PlayerBase_C::DeadColllision' has a wrong offset!");
-static_assert(offsetof(ABP_PlayerBase_C, PlayerLight) == 0x000B30, "Member 'ABP_PlayerBase_C::PlayerLight' has a wrong offset!");
-static_assert(offsetof(ABP_PlayerBase_C, Rider_Component) == 0x000B38, "Member 'ABP_PlayerBase_C::Rider_Component' has a wrong offset!");
-static_assert(offsetof(ABP_PlayerBase_C, bIsInCapturedCage) == 0x000B40, "Member 'ABP_PlayerBase_C::bIsInCapturedCage' has a wrong offset!");
-static_assert(offsetof(ABP_PlayerBase_C, Lantern) == 0x000B48, "Member 'ABP_PlayerBase_C::Lantern' has a wrong offset!");
+static_assert(sizeof(ABP_PlayerBase_C) == 0x000C60, "Wrong size on ABP_PlayerBase_C");
+static_assert(offsetof(ABP_PlayerBase_C, UberGraphFrame) == 0x000C30, "Member 'ABP_PlayerBase_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ABP_PlayerBase_C, DeadColllision) == 0x000C38, "Member 'ABP_PlayerBase_C::DeadColllision' has a wrong offset!");
+static_assert(offsetof(ABP_PlayerBase_C, PlayerLight) == 0x000C40, "Member 'ABP_PlayerBase_C::PlayerLight' has a wrong offset!");
+static_assert(offsetof(ABP_PlayerBase_C, Rider_Component) == 0x000C48, "Member 'ABP_PlayerBase_C::Rider_Component' has a wrong offset!");
+static_assert(offsetof(ABP_PlayerBase_C, bIsInCapturedCage) == 0x000C50, "Member 'ABP_PlayerBase_C::bIsInCapturedCage' has a wrong offset!");
+static_assert(offsetof(ABP_PlayerBase_C, Lantern) == 0x000C58, "Member 'ABP_PlayerBase_C::Lantern' has a wrong offset!");
 
 }
 

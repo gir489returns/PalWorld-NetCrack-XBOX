@@ -179,7 +179,7 @@ public:
 	const class USceneComponent*                  Component;                                         // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   BoneName;                                          // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFollowComponent;                                  // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B79[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B62[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MotionWarpingComponent_AddOrUpdateWarpTargetFromComponent) == 0x000008, "Wrong alignment on MotionWarpingComponent_AddOrUpdateWarpTargetFromComponent");
 static_assert(sizeof(MotionWarpingComponent_AddOrUpdateWarpTargetFromComponent) == 0x000020, "Wrong size on MotionWarpingComponent_AddOrUpdateWarpTargetFromComponent");
@@ -222,7 +222,7 @@ struct MotionWarpingComponent_AddOrUpdateWarpTargetFromTransform final
 {
 public:
 	class FName                                   WarpTargetName;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B7A[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B63[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             TargetTransform;                                   // 0x0010(0x0060)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MotionWarpingComponent_AddOrUpdateWarpTargetFromTransform) == 0x000010, "Wrong alignment on MotionWarpingComponent_AddOrUpdateWarpTargetFromTransform");
@@ -275,7 +275,7 @@ public:
 	float                                         InEndTime;                                         // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   InWarpTargetName;                                  // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EWarpPointAnimProvider                        InWarpPointAnimProvider;                           // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B83[0xF];                                     // 0x0021(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B6C[0xF];                                     // 0x0021(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             InWarpPointAnimTransform;                          // 0x0030(0x0060)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   InWarpPointAnimBoneName;                           // 0x0090(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInWarpTranslation;                                // 0x0098(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -284,7 +284,7 @@ public:
 	EMotionWarpRotationType                       InRotationType;                                    // 0x009B(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         InWarpRotationTimeMultiplier;                      // 0x009C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class URootMotionModifier_SkewWarp*           ReturnValue;                                       // 0x00A0(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B84[0x8];                                     // 0x00A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B6D[0x8];                                     // 0x00A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(RootMotionModifier_SkewWarp_AddRootMotionModifierSkewWarp) == 0x000010, "Wrong alignment on RootMotionModifier_SkewWarp_AddRootMotionModifierSkewWarp");
 static_assert(sizeof(RootMotionModifier_SkewWarp_AddRootMotionModifierSkewWarp) == 0x0000B0, "Wrong size on RootMotionModifier_SkewWarp_AddRootMotionModifierSkewWarp");

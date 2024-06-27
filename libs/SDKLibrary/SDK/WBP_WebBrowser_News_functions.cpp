@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_WebBrowser_News.WBP_WebBrowser_News_C.BndEvt__WBP_WebBrowser_News_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_WebBrowser_News_C::BndEvt__WBP_WebBrowser_News_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WebBrowser_News_C", "BndEvt__WBP_WebBrowser_News_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WebBrowser_News.WBP_WebBrowser_News_C.BndEvt__WBP_WebBrowserTest_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_WebBrowser_News_C::BndEvt__WBP_WebBrowserTest_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WebBrowser_News_C", "BndEvt__WBP_WebBrowserTest_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_WebBrowser_News.WBP_WebBrowser_News_C.ExecuteUbergraph_WBP_WebBrowser_News
 // (Final, UbergraphFunction)
 // Parameters:
@@ -62,6 +34,34 @@ void UWBP_WebBrowser_News_C::ExecuteUbergraph_WBP_WebBrowser_News(int32 EntryPoi
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WebBrowser_News.WBP_WebBrowser_News_C.BndEvt__WBP_WebBrowserTest_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_WebBrowser_News_C::BndEvt__WBP_WebBrowserTest_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WebBrowser_News_C", "BndEvt__WBP_WebBrowserTest_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WebBrowser_News.WBP_WebBrowser_News_C.BndEvt__WBP_WebBrowser_News_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_WebBrowser_News_C::BndEvt__WBP_WebBrowser_News_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WebBrowser_News_C", "BndEvt__WBP_WebBrowser_News_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

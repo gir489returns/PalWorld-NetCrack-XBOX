@@ -254,11 +254,24 @@ public:
 	uint8                                         bCtrl : 1;                                         // 0x0018(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bAlt : 1;                                          // 0x0018(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bCmd : 1;                                          // 0x0018(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_3159[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3275[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FInputChord) == 0x000008, "Wrong alignment on FInputChord");
 static_assert(sizeof(FInputChord) == 0x000020, "Wrong size on FInputChord");
 static_assert(offsetof(FInputChord, Key) == 0x000000, "Member 'FInputChord::Key' has a wrong offset!");
+
+// ScriptStruct Slate.Anchors
+// 0x0020 (0x0020 - 0x0000)
+struct FAnchors final
+{
+public:
+	struct FVector2D                              Minimum;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              Maximum;                                           // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FAnchors) == 0x000008, "Wrong alignment on FAnchors");
+static_assert(sizeof(FAnchors) == 0x000020, "Wrong size on FAnchors");
+static_assert(offsetof(FAnchors, Minimum) == 0x000000, "Member 'FAnchors::Minimum' has a wrong offset!");
+static_assert(offsetof(FAnchors, Maximum) == 0x000010, "Member 'FAnchors::Maximum' has a wrong offset!");
 
 // ScriptStruct Slate.CustomizedToolMenuEntry
 // 0x0004 (0x0004 - 0x0000)
@@ -303,7 +316,7 @@ public:
 	TMap<class FName, struct FCustomizedToolMenuSection> Sections;                                          // 0x0058(0x0050)(NativeAccessSpecifierPublic)
 	TMap<class FName, struct FCustomizedToolMenuNameArray> EntryOrder;                                        // 0x00A8(0x0050)(NativeAccessSpecifierPublic)
 	TArray<class FName>                           SectionOrder;                                      // 0x00F8(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_315A[0xE8];                                    // 0x0108(0x00E8)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3276[0xE8];                                    // 0x0108(0x00E8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FCustomizedToolMenu) == 0x000008, "Wrong alignment on FCustomizedToolMenu");
 static_assert(sizeof(FCustomizedToolMenu) == 0x0001F0, "Wrong size on FCustomizedToolMenu");
@@ -312,19 +325,6 @@ static_assert(offsetof(FCustomizedToolMenu, Entries) == 0x000008, "Member 'FCust
 static_assert(offsetof(FCustomizedToolMenu, Sections) == 0x000058, "Member 'FCustomizedToolMenu::Sections' has a wrong offset!");
 static_assert(offsetof(FCustomizedToolMenu, EntryOrder) == 0x0000A8, "Member 'FCustomizedToolMenu::EntryOrder' has a wrong offset!");
 static_assert(offsetof(FCustomizedToolMenu, SectionOrder) == 0x0000F8, "Member 'FCustomizedToolMenu::SectionOrder' has a wrong offset!");
-
-// ScriptStruct Slate.Anchors
-// 0x0020 (0x0020 - 0x0000)
-struct FAnchors final
-{
-public:
-	struct FVector2D                              Minimum;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              Maximum;                                           // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FAnchors) == 0x000008, "Wrong alignment on FAnchors");
-static_assert(sizeof(FAnchors) == 0x000020, "Wrong size on FAnchors");
-static_assert(offsetof(FAnchors, Minimum) == 0x000000, "Member 'FAnchors::Minimum' has a wrong offset!");
-static_assert(offsetof(FAnchors, Maximum) == 0x000010, "Member 'FAnchors::Maximum' has a wrong offset!");
 
 }
 

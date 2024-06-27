@@ -59,21 +59,43 @@ void UWBP_Title_WorldSelect_ListContent_C::Setup_By_Local_World_Display_Data(con
 }
 
 
-// Function WBP_Title_WorldSelect_ListContent.WBP_Title_WorldSelect_ListContent_C.OnCompletePing
+// Function WBP_Title_WorldSelect_ListContent.WBP_Title_WorldSelect_ListContent_C.OnPingFailure
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPingIP*                          PingOperation                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class FString                           HostName                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UWBP_Title_WorldSelect_ListContent_C::OnPingFailure(class UPingIP* PingOperation, const class FString& HostName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_ListContent_C", "OnPingFailure");
+
+	Params::WBP_Title_WorldSelect_ListContent_C_OnPingFailure Parms{};
+
+	Parms.PingOperation = PingOperation;
+	Parms.HostName = std::move(HostName);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_WorldSelect_ListContent.WBP_Title_WorldSelect_ListContent_C.OnPingComplete
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UPingIP*                          PingOperation                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class FString                           HostName                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 // int32                                   TimeMS                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Title_WorldSelect_ListContent_C::OnCompletePing(class UPingIP* PingOperation, const class FString& HostName, int32 TimeMS)
+void UWBP_Title_WorldSelect_ListContent_C::OnPingComplete(class UPingIP* PingOperation, const class FString& HostName, int32 TimeMS)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_ListContent_C", "OnCompletePing");
+		Func = Class->GetFunction("WBP_Title_WorldSelect_ListContent_C", "OnPingComplete");
 
-	Params::WBP_Title_WorldSelect_ListContent_C_OnCompletePing Parms{};
+	Params::WBP_Title_WorldSelect_ListContent_C_OnPingComplete Parms{};
 
 	Parms.PingOperation = PingOperation;
 	Parms.HostName = std::move(HostName);

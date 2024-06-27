@@ -87,7 +87,7 @@ public:
 	uint8                                         bAccurateRaycasts : 1;                             // 0x0000(0x0001)(BitIndex: 0x06, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bUseValidBounds : 1;                               // 0x0000(0x0001)(BitIndex: 0x07, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bFormExtendedStructures : 1;                       // 0x0001(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_11BC[0x2];                                     // 0x0002(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11C0[0x2];                                     // 0x0002(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FDestructibleParametersFlag) == 0x000004, "Wrong alignment on FDestructibleParametersFlag");
 static_assert(sizeof(FDestructibleParametersFlag) == 0x000004, "Wrong size on FDestructibleParametersFlag");
@@ -100,11 +100,11 @@ public:
 	float                                         DamageThreshold;                                   // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DamageSpread;                                      // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnableImpactDamage;                               // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11BD[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11C1[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ImpactDamage;                                      // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         DefaultImpactDamageDepth;                          // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCustomImpactResistance;                           // 0x0014(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11BE[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11C2[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ImpactResistance;                                  // 0x0018(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FDestructibleDamageParameters) == 0x000004, "Wrong alignment on FDestructibleDamageParameters");
@@ -161,7 +161,7 @@ public:
 	int32                                         SupportDepth;                                      // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MinimumFractureDepth;                              // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnableDebris;                                     // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11BF[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11C3[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         DebrisDepth;                                       // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         EssentialDepth;                                    // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -179,14 +179,14 @@ struct FDestructibleParameters final
 {
 public:
 	struct FDestructibleDamageParameters          DamageParameters;                                  // 0x0000(0x001C)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11C0[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11C4[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDestructibleDebrisParameters          DebrisParameters;                                  // 0x0020(0x0048)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FDestructibleAdvancedParameters        AdvancedParameters;                                // 0x0068(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FDestructibleSpecialHierarchyDepths    SpecialHierarchyDepths;                            // 0x0078(0x0014)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11C1[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11C5[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FDestructibleDepthParameters>   DepthParameters;                                   // 0x0090(0x0010)(Edit, EditFixedSize, ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FDestructibleParametersFlag            Flags;                                             // 0x00A0(0x0004)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11C2[0x4];                                     // 0x00A4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11C6[0x4];                                     // 0x00A4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FDestructibleParameters) == 0x000008, "Wrong alignment on FDestructibleParameters");
 static_assert(sizeof(FDestructibleParameters) == 0x0000A8, "Wrong size on FDestructibleParameters");

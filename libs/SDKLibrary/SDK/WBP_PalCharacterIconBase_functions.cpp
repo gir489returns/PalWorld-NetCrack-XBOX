@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function WBP_PalCharacterIconBase.WBP_PalCharacterIconBase_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PalCharacterIconBase_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCharacterIconBase_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_PalCharacterIconBase.WBP_PalCharacterIconBase_C.ExecuteUbergraph_WBP_PalCharacterIconBase
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -125,6 +139,26 @@ void UWBP_PalCharacterIconBase_C::OnStartLoadTexture__DelegateSignature()
 }
 
 
+// Function WBP_PalCharacterIconBase.WBP_PalCharacterIconBase_C.OnUpdateSkinName
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NewSkinName                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalCharacterIconBase_C::OnUpdateSkinName(const class FName& NewSkinName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCharacterIconBase_C", "OnUpdateSkinName");
+
+	Params::WBP_PalCharacterIconBase_C_OnUpdateSkinName Parms{};
+
+	Parms.NewSkinName = NewSkinName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_PalCharacterIconBase.WBP_PalCharacterIconBase_C.SetEmpty
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -156,6 +190,60 @@ void UWBP_PalCharacterIconBase_C::Setup(class FName CharacterID)
 	Parms.CharacterID = CharacterID;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalCharacterIconBase.WBP_PalCharacterIconBase_C.SetupByHandle
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterHandle*    IndividualHandle                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalCharacterIconBase_C::SetupByHandle(class UPalIndividualCharacterHandle* IndividualHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCharacterIconBase_C", "SetupByHandle");
+
+	Params::WBP_PalCharacterIconBase_C_SetupByHandle Parms{};
+
+	Parms.IndividualHandle = IndividualHandle;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalCharacterIconBase.WBP_PalCharacterIconBase_C.SetupByParameter
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterParameter* Parameter                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalCharacterIconBase_C::SetupByParameter(class UPalIndividualCharacterParameter* Parameter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCharacterIconBase_C", "SetupByParameter");
+
+	Params::WBP_PalCharacterIconBase_C_SetupByParameter Parms{};
+
+	Parms.Parameter = Parameter;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalCharacterIconBase.WBP_PalCharacterIconBase_C.UnbindEvent
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalCharacterIconBase_C::UnbindEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCharacterIconBase_C", "UnbindEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

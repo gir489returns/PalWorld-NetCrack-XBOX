@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "MediaAssets_classes.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -23,14 +23,14 @@ class UImgMediaSource final : public UBaseMediaSource
 {
 public:
 	bool                                          IsPathRelativeToProjectRoot;                       // 0x0088(0x0001)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23BE[0x3];                                     // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23D7[0x3];                                     // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFrameRate                             FrameRateOverride;                                 // 0x008C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23BF[0x4];                                     // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23D8[0x4];                                     // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ProxyOverride;                                     // 0x0098(0x0010)(Edit, BlueprintVisible, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFillGapsInSequence;                               // 0x00A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23C0[0x7];                                     // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23D9[0x7];                                     // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDirectoryPath                         SequencePath;                                      // 0x00B0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_23C1[0x10];                                    // 0x00C0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23DA[0x10];                                    // 0x00C0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AddGlobalCamera(class AActor* InActor);

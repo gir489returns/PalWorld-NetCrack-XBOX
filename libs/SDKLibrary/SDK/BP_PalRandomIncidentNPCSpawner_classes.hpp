@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
 #include "F_NPC_PathWalkArray_structs.hpp"
+#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -21,23 +21,23 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalRandomIncidentNPCSpawner.BP_PalRandomIncidentNPCSpawner_C
-// 0x0270 (0x0648 - 0x03D8)
+// 0x0270 (0x0658 - 0x03E8)
 class ABP_PalRandomIncidentNPCSpawner_C final : public APalRandomIncidentNPCSpawner
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x03E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	double                                        ReturnRadius;                                      // 0x03E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        WalkRadius;                                        // 0x03F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMap<class FName, struct FF_NPC_PathWalkArray> WalkPathLists;                                     // 0x03F8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class UPalIndividualCharacterHandle*>  IndividualHandleList;                              // 0x0448(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class UPalIndividualCharacterHandle*, struct FPalRandomIncidentSpawnMonsterData> MonsterSpawnData;                                  // 0x0458(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class UPalIndividualCharacterHandle*, struct FPalRandomIncidentSpawnNPCData> NPCSpawnData;                                      // 0x04A8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class UPalIndividualCharacterHandle*, class FName> PathNames;                                         // 0x04F8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class UPalIndividualCharacterHandle*, class FName> RowNames;                                          // 0x0548(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	FMulticastInlineDelegateProperty_             GetWalkPathDelegate;                               // 0x0598(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMap<class UPalIndividualCharacterHandle*, struct FVector> SpawnedLocation;                                   // 0x05A8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class UPalIndividualCharacterHandle*, class FName> OtomoNames;                                        // 0x05F8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x03F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	double                                        ReturnRadius;                                      // 0x03F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        WalkRadius;                                        // 0x0400(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMap<class FName, struct FF_NPC_PathWalkArray> WalkPathLists;                                     // 0x0408(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class UPalIndividualCharacterHandle*>  IndividualHandleList;                              // 0x0458(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class UPalIndividualCharacterHandle*, struct FPalRandomIncidentSpawnMonsterData> MonsterSpawnData;                                  // 0x0468(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class UPalIndividualCharacterHandle*, struct FPalRandomIncidentSpawnNPCData> NPCSpawnData;                                      // 0x04B8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class UPalIndividualCharacterHandle*, class FName> PathNames;                                         // 0x0508(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class UPalIndividualCharacterHandle*, class FName> RowNames;                                          // 0x0558(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	FMulticastInlineDelegateProperty_             GetWalkPathDelegate;                               // 0x05A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMap<class UPalIndividualCharacterHandle*, struct FVector> SpawnedLocation;                                   // 0x05B8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class UPalIndividualCharacterHandle*, class FName> OtomoNames;                                        // 0x0608(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void Despawn_Characters();
@@ -59,6 +59,7 @@ public:
 	void On_Character_Spawned_(const struct FPalInstanceID& ID);
 	void OnCharacterDespawned(const struct FPalInstanceID& ID);
 	void OnCharacterDestroyed(class AActor* DestroyedActor);
+	void OnOtomoSpawned(class AController* HolderController, class APalCharacter* OtomoPal);
 	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
 	void RemoveHandle(class UPalIndividualCharacterHandle* Handle);
 	void Setup_Npc_Controller(class ABP_NPCAIController_C* NPCController, class APalCharacter* SpawnedChara, const struct FPalInstanceID& ID);
@@ -83,20 +84,20 @@ public:
 	}
 };
 static_assert(alignof(ABP_PalRandomIncidentNPCSpawner_C) == 0x000008, "Wrong alignment on ABP_PalRandomIncidentNPCSpawner_C");
-static_assert(sizeof(ABP_PalRandomIncidentNPCSpawner_C) == 0x000648, "Wrong size on ABP_PalRandomIncidentNPCSpawner_C");
-static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, UberGraphFrame) == 0x0003D8, "Member 'ABP_PalRandomIncidentNPCSpawner_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, DefaultSceneRoot) == 0x0003E0, "Member 'ABP_PalRandomIncidentNPCSpawner_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, ReturnRadius) == 0x0003E8, "Member 'ABP_PalRandomIncidentNPCSpawner_C::ReturnRadius' has a wrong offset!");
-static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, WalkRadius) == 0x0003F0, "Member 'ABP_PalRandomIncidentNPCSpawner_C::WalkRadius' has a wrong offset!");
-static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, WalkPathLists) == 0x0003F8, "Member 'ABP_PalRandomIncidentNPCSpawner_C::WalkPathLists' has a wrong offset!");
-static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, IndividualHandleList) == 0x000448, "Member 'ABP_PalRandomIncidentNPCSpawner_C::IndividualHandleList' has a wrong offset!");
-static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, MonsterSpawnData) == 0x000458, "Member 'ABP_PalRandomIncidentNPCSpawner_C::MonsterSpawnData' has a wrong offset!");
-static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, NPCSpawnData) == 0x0004A8, "Member 'ABP_PalRandomIncidentNPCSpawner_C::NPCSpawnData' has a wrong offset!");
-static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, PathNames) == 0x0004F8, "Member 'ABP_PalRandomIncidentNPCSpawner_C::PathNames' has a wrong offset!");
-static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, RowNames) == 0x000548, "Member 'ABP_PalRandomIncidentNPCSpawner_C::RowNames' has a wrong offset!");
-static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, GetWalkPathDelegate) == 0x000598, "Member 'ABP_PalRandomIncidentNPCSpawner_C::GetWalkPathDelegate' has a wrong offset!");
-static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, SpawnedLocation) == 0x0005A8, "Member 'ABP_PalRandomIncidentNPCSpawner_C::SpawnedLocation' has a wrong offset!");
-static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, OtomoNames) == 0x0005F8, "Member 'ABP_PalRandomIncidentNPCSpawner_C::OtomoNames' has a wrong offset!");
+static_assert(sizeof(ABP_PalRandomIncidentNPCSpawner_C) == 0x000658, "Wrong size on ABP_PalRandomIncidentNPCSpawner_C");
+static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, UberGraphFrame) == 0x0003E8, "Member 'ABP_PalRandomIncidentNPCSpawner_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, DefaultSceneRoot) == 0x0003F0, "Member 'ABP_PalRandomIncidentNPCSpawner_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, ReturnRadius) == 0x0003F8, "Member 'ABP_PalRandomIncidentNPCSpawner_C::ReturnRadius' has a wrong offset!");
+static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, WalkRadius) == 0x000400, "Member 'ABP_PalRandomIncidentNPCSpawner_C::WalkRadius' has a wrong offset!");
+static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, WalkPathLists) == 0x000408, "Member 'ABP_PalRandomIncidentNPCSpawner_C::WalkPathLists' has a wrong offset!");
+static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, IndividualHandleList) == 0x000458, "Member 'ABP_PalRandomIncidentNPCSpawner_C::IndividualHandleList' has a wrong offset!");
+static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, MonsterSpawnData) == 0x000468, "Member 'ABP_PalRandomIncidentNPCSpawner_C::MonsterSpawnData' has a wrong offset!");
+static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, NPCSpawnData) == 0x0004B8, "Member 'ABP_PalRandomIncidentNPCSpawner_C::NPCSpawnData' has a wrong offset!");
+static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, PathNames) == 0x000508, "Member 'ABP_PalRandomIncidentNPCSpawner_C::PathNames' has a wrong offset!");
+static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, RowNames) == 0x000558, "Member 'ABP_PalRandomIncidentNPCSpawner_C::RowNames' has a wrong offset!");
+static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, GetWalkPathDelegate) == 0x0005A8, "Member 'ABP_PalRandomIncidentNPCSpawner_C::GetWalkPathDelegate' has a wrong offset!");
+static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, SpawnedLocation) == 0x0005B8, "Member 'ABP_PalRandomIncidentNPCSpawner_C::SpawnedLocation' has a wrong offset!");
+static_assert(offsetof(ABP_PalRandomIncidentNPCSpawner_C, OtomoNames) == 0x000608, "Member 'ABP_PalRandomIncidentNPCSpawner_C::OtomoNames' has a wrong offset!");
 
 }
 

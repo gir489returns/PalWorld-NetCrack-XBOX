@@ -14,30 +14,16 @@
 namespace SDK::Params
 {
 
-// Function WBP_Title_WorldSettings_ListButton.WBP_Title_WorldSettings_ListButton_C.BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Title_WorldSettings_ListButton_C_BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_Title_WorldSettings_ListButton.WBP_Title_WorldSettings_ListButton_C.SetButtonText
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Title_WorldSettings_ListButton_C_SetButtonText final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FText                                   NewText;                                           // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_Title_WorldSettings_ListButton_C_BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSettings_ListButton_C_BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
-static_assert(sizeof(WBP_Title_WorldSettings_ListButton_C_BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature) == 0x000008, "Wrong size on WBP_Title_WorldSettings_ListButton_C_BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
-static_assert(offsetof(WBP_Title_WorldSettings_ListButton_C_BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature, Button) == 0x000000, "Member 'WBP_Title_WorldSettings_ListButton_C_BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature::Button' has a wrong offset!");
-
-// Function WBP_Title_WorldSettings_ListButton.WBP_Title_WorldSettings_ListButton_C.ExecuteUbergraph_WBP_Title_WorldSettings_ListButton
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Title_WorldSettings_ListButton_C_ExecuteUbergraph_WBP_Title_WorldSettings_ListButton final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4603[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSettings_ListButton_C_ExecuteUbergraph_WBP_Title_WorldSettings_ListButton) == 0x000008, "Wrong alignment on WBP_Title_WorldSettings_ListButton_C_ExecuteUbergraph_WBP_Title_WorldSettings_ListButton");
-static_assert(sizeof(WBP_Title_WorldSettings_ListButton_C_ExecuteUbergraph_WBP_Title_WorldSettings_ListButton) == 0x000010, "Wrong size on WBP_Title_WorldSettings_ListButton_C_ExecuteUbergraph_WBP_Title_WorldSettings_ListButton");
-static_assert(offsetof(WBP_Title_WorldSettings_ListButton_C_ExecuteUbergraph_WBP_Title_WorldSettings_ListButton, EntryPoint) == 0x000000, "Member 'WBP_Title_WorldSettings_ListButton_C_ExecuteUbergraph_WBP_Title_WorldSettings_ListButton::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_ListButton_C_ExecuteUbergraph_WBP_Title_WorldSettings_ListButton, K2Node_ComponentBoundEvent_Button) == 0x000008, "Member 'WBP_Title_WorldSettings_ListButton_C_ExecuteUbergraph_WBP_Title_WorldSettings_ListButton::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
+static_assert(alignof(WBP_Title_WorldSettings_ListButton_C_SetButtonText) == 0x000008, "Wrong alignment on WBP_Title_WorldSettings_ListButton_C_SetButtonText");
+static_assert(sizeof(WBP_Title_WorldSettings_ListButton_C_SetButtonText) == 0x000018, "Wrong size on WBP_Title_WorldSettings_ListButton_C_SetButtonText");
+static_assert(offsetof(WBP_Title_WorldSettings_ListButton_C_SetButtonText, NewText) == 0x000000, "Member 'WBP_Title_WorldSettings_ListButton_C_SetButtonText::NewText' has a wrong offset!");
 
 // Function WBP_Title_WorldSettings_ListButton.WBP_Title_WorldSettings_ListButton_C.GetButtonText
 // 0x0030 (0x0030 - 0x0000)
@@ -52,16 +38,30 @@ static_assert(sizeof(WBP_Title_WorldSettings_ListButton_C_GetButtonText) == 0x00
 static_assert(offsetof(WBP_Title_WorldSettings_ListButton_C_GetButtonText, ButtonText) == 0x000000, "Member 'WBP_Title_WorldSettings_ListButton_C_GetButtonText::ButtonText' has a wrong offset!");
 static_assert(offsetof(WBP_Title_WorldSettings_ListButton_C_GetButtonText, CallFunc_GetText_ReturnValue) == 0x000018, "Member 'WBP_Title_WorldSettings_ListButton_C_GetButtonText::CallFunc_GetText_ReturnValue' has a wrong offset!");
 
-// Function WBP_Title_WorldSettings_ListButton.WBP_Title_WorldSettings_ListButton_C.SetButtonText
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Title_WorldSettings_ListButton_C_SetButtonText final
+// Function WBP_Title_WorldSettings_ListButton.WBP_Title_WorldSettings_ListButton_C.ExecuteUbergraph_WBP_Title_WorldSettings_ListButton
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Title_WorldSettings_ListButton_C_ExecuteUbergraph_WBP_Title_WorldSettings_ListButton final
 {
 public:
-	class FText                                   NewText;                                           // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4BAA[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Title_WorldSettings_ListButton_C_SetButtonText) == 0x000008, "Wrong alignment on WBP_Title_WorldSettings_ListButton_C_SetButtonText");
-static_assert(sizeof(WBP_Title_WorldSettings_ListButton_C_SetButtonText) == 0x000018, "Wrong size on WBP_Title_WorldSettings_ListButton_C_SetButtonText");
-static_assert(offsetof(WBP_Title_WorldSettings_ListButton_C_SetButtonText, NewText) == 0x000000, "Member 'WBP_Title_WorldSettings_ListButton_C_SetButtonText::NewText' has a wrong offset!");
+static_assert(alignof(WBP_Title_WorldSettings_ListButton_C_ExecuteUbergraph_WBP_Title_WorldSettings_ListButton) == 0x000008, "Wrong alignment on WBP_Title_WorldSettings_ListButton_C_ExecuteUbergraph_WBP_Title_WorldSettings_ListButton");
+static_assert(sizeof(WBP_Title_WorldSettings_ListButton_C_ExecuteUbergraph_WBP_Title_WorldSettings_ListButton) == 0x000010, "Wrong size on WBP_Title_WorldSettings_ListButton_C_ExecuteUbergraph_WBP_Title_WorldSettings_ListButton");
+static_assert(offsetof(WBP_Title_WorldSettings_ListButton_C_ExecuteUbergraph_WBP_Title_WorldSettings_ListButton, EntryPoint) == 0x000000, "Member 'WBP_Title_WorldSettings_ListButton_C_ExecuteUbergraph_WBP_Title_WorldSettings_ListButton::EntryPoint' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_ListButton_C_ExecuteUbergraph_WBP_Title_WorldSettings_ListButton, K2Node_ComponentBoundEvent_Button) == 0x000008, "Member 'WBP_Title_WorldSettings_ListButton_C_ExecuteUbergraph_WBP_Title_WorldSettings_ListButton::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
+
+// Function WBP_Title_WorldSettings_ListButton.WBP_Title_WorldSettings_ListButton_C.BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Title_WorldSettings_ListButton_C_BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSettings_ListButton_C_BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSettings_ListButton_C_BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+static_assert(sizeof(WBP_Title_WorldSettings_ListButton_C_BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature) == 0x000008, "Wrong size on WBP_Title_WorldSettings_ListButton_C_BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+static_assert(offsetof(WBP_Title_WorldSettings_ListButton_C_BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature, Button) == 0x000000, "Member 'WBP_Title_WorldSettings_ListButton_C_BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature::Button' has a wrong offset!");
 
 }
 

@@ -733,23 +733,6 @@ static_assert(offsetof(FInterpCurveVector2D, Points) == 0x000000, "Member 'FInte
 static_assert(offsetof(FInterpCurveVector2D, bIsLooped) == 0x000010, "Member 'FInterpCurveVector2D::bIsLooped' has a wrong offset!");
 static_assert(offsetof(FInterpCurveVector2D, LoopKeyOffset) == 0x000014, "Member 'FInterpCurveVector2D::LoopKeyOffset' has a wrong offset!");
 
-// ScriptStruct CoreUObject.Vector4
-// 0x0020 (0x0020 - 0x0000)
-struct alignas(0x10) FVector4 final
-{
-public:
-	double                                        X;                                                 // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	double                                        Y;                                                 // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	double                                        Z;                                                 // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	double                                        W;                                                 // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FVector4) == 0x000010, "Wrong alignment on FVector4");
-static_assert(sizeof(FVector4) == 0x000020, "Wrong size on FVector4");
-static_assert(offsetof(FVector4, X) == 0x000000, "Member 'FVector4::X' has a wrong offset!");
-static_assert(offsetof(FVector4, Y) == 0x000008, "Member 'FVector4::Y' has a wrong offset!");
-static_assert(offsetof(FVector4, Z) == 0x000010, "Member 'FVector4::Z' has a wrong offset!");
-static_assert(offsetof(FVector4, W) == 0x000018, "Member 'FVector4::W' has a wrong offset!");
-
 // ScriptStruct CoreUObject.AssetBundleEntry
 // 0x0018 (0x0018 - 0x0000)
 struct FAssetBundleEntry final
@@ -2137,6 +2120,23 @@ static_assert(offsetof(FUintVector4, X) == 0x000000, "Member 'FUintVector4::X' h
 static_assert(offsetof(FUintVector4, Y) == 0x000004, "Member 'FUintVector4::Y' has a wrong offset!");
 static_assert(offsetof(FUintVector4, Z) == 0x000008, "Member 'FUintVector4::Z' has a wrong offset!");
 static_assert(offsetof(FUintVector4, W) == 0x00000C, "Member 'FUintVector4::W' has a wrong offset!");
+
+// ScriptStruct CoreUObject.Vector4
+// 0x0020 (0x0020 - 0x0000)
+struct alignas(0x10) FVector4 final
+{
+public:
+	double                                        X;                                                 // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	double                                        Y;                                                 // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	double                                        Z;                                                 // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	double                                        W;                                                 // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FVector4) == 0x000010, "Wrong alignment on FVector4");
+static_assert(sizeof(FVector4) == 0x000020, "Wrong size on FVector4");
+static_assert(offsetof(FVector4, X) == 0x000000, "Member 'FVector4::X' has a wrong offset!");
+static_assert(offsetof(FVector4, Y) == 0x000008, "Member 'FVector4::Y' has a wrong offset!");
+static_assert(offsetof(FVector4, Z) == 0x000010, "Member 'FVector4::Z' has a wrong offset!");
+static_assert(offsetof(FVector4, W) == 0x000018, "Member 'FVector4::W' has a wrong offset!");
 
 // ScriptStruct CoreUObject.Vector4d
 // 0x0020 (0x0020 - 0x0000)

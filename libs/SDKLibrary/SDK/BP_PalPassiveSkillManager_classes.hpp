@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalPassiveSkillManager.BP_PalPassiveSkillManager_C
-// 0x0000 (0x0210 - 0x0210)
+// 0x0000 (0x02A0 - 0x02A0)
 class UBP_PalPassiveSkillManager_C final : public UPalPassiveSkillManager
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UBP_PalPassiveSkillManager_C) == 0x000008, "Wrong alignment on UBP_PalPassiveSkillManager_C");
-static_assert(sizeof(UBP_PalPassiveSkillManager_C) == 0x000210, "Wrong size on UBP_PalPassiveSkillManager_C");
+static_assert(sizeof(UBP_PalPassiveSkillManager_C) == 0x0002A0, "Wrong size on UBP_PalPassiveSkillManager_C");
 
 }
 

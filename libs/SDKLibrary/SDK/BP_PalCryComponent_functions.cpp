@@ -182,7 +182,7 @@ void UBP_PalCryComponent_C::OnSpawnPal(bool Param_bIsActive)
 
 
 // Function BP_PalCryComponent.BP_PalCryComponent_C.PlayCry
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             EmoState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

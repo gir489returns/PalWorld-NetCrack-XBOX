@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalSpawner_DebugSpawn.BP_PalSpawner_DebugSpawn_C
-// 0x0000 (0x0430 - 0x0430)
+// 0x0000 (0x0440 - 0x0440)
 class ABP_PalSpawner_DebugSpawn_C final : public ABP_PalSpawner_Standard_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(ABP_PalSpawner_DebugSpawn_C) == 0x000008, "Wrong alignment on ABP_PalSpawner_DebugSpawn_C");
-static_assert(sizeof(ABP_PalSpawner_DebugSpawn_C) == 0x000430, "Wrong size on ABP_PalSpawner_DebugSpawn_C");
+static_assert(sizeof(ABP_PalSpawner_DebugSpawn_C) == 0x000440, "Wrong size on ABP_PalSpawner_DebugSpawn_C");
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "F_NPC_PathWalkArray_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
 
@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_NPCAIController.BP_NPCAIController_C
-// 0x0060 (0x0588 - 0x0528)
+// 0x0068 (0x0590 - 0x0528)
 class ABP_NPCAIController_C : public APalAIController
 {
 public:
@@ -34,6 +34,7 @@ public:
 	TArray<class FName>                           Filter_Incident_Ids;                               // 0x0560(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FF_NPC_PathWalkArray                   PathWalk;                                          // 0x0570(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, AdvancedDisplay, HasGetValueTypeHash)
 	class FName                                   OtomoName;                                         // 0x0580(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 WeaponHandleClass;                                 // 0x0588(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void CreateOtomo();
@@ -81,7 +82,7 @@ public:
 	}
 };
 static_assert(alignof(ABP_NPCAIController_C) == 0x000008, "Wrong alignment on ABP_NPCAIController_C");
-static_assert(sizeof(ABP_NPCAIController_C) == 0x000588, "Wrong size on ABP_NPCAIController_C");
+static_assert(sizeof(ABP_NPCAIController_C) == 0x000590, "Wrong size on ABP_NPCAIController_C");
 static_assert(offsetof(ABP_NPCAIController_C, UberGraphFrame) == 0x000528, "Member 'ABP_NPCAIController_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(ABP_NPCAIController_C, BP_OtomoPalHolderComponentForNPC) == 0x000530, "Member 'ABP_NPCAIController_C::BP_OtomoPalHolderComponentForNPC' has a wrong offset!");
 static_assert(offsetof(ABP_NPCAIController_C, PalAISensor) == 0x000538, "Member 'ABP_NPCAIController_C::PalAISensor' has a wrong offset!");
@@ -92,6 +93,7 @@ static_assert(offsetof(ABP_NPCAIController_C, IncidentNotifyListener) == 0x00055
 static_assert(offsetof(ABP_NPCAIController_C, Filter_Incident_Ids) == 0x000560, "Member 'ABP_NPCAIController_C::Filter_Incident_Ids' has a wrong offset!");
 static_assert(offsetof(ABP_NPCAIController_C, PathWalk) == 0x000570, "Member 'ABP_NPCAIController_C::PathWalk' has a wrong offset!");
 static_assert(offsetof(ABP_NPCAIController_C, OtomoName) == 0x000580, "Member 'ABP_NPCAIController_C::OtomoName' has a wrong offset!");
+static_assert(offsetof(ABP_NPCAIController_C, WeaponHandleClass) == 0x000588, "Member 'ABP_NPCAIController_C::WeaponHandleClass' has a wrong offset!");
 
 }
 

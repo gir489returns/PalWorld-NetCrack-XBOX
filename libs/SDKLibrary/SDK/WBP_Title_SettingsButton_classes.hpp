@@ -41,12 +41,12 @@ public:
 	struct FDataTableRowHandle                    MsgId;                                             // 0x02F8(0x0010)(Edit, BlueprintVisible, NoDestructor)
 
 public:
-	void BndEvt__WBP_Title_SettingsButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Title_SettingsButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Title_SettingsButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ExecuteUbergraph_WBP_Title_SettingsButton(int32 EntryPoint);
-	void OnClicked__DelegateSignature();
 	void OnInitialized();
+	void OnClicked__DelegateSignature();
+	void ExecuteUbergraph_WBP_Title_SettingsButton(int32 EntryPoint);
+	void BndEvt__WBP_Title_SettingsButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Title_SettingsButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Title_SettingsButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 
 public:
 	static class UClass* StaticClass()

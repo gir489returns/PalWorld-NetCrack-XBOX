@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Chaos_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Chaos_structs.hpp"
 
 
 namespace SDK
@@ -101,32 +101,32 @@ struct FGeomComponentCacheParameters final
 {
 public:
 	EGeometryCollectionCacheType                  CacheMode;                                         // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_332D[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3468[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGeometryCollectionCache*               TargetCache;                                       // 0x0008(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReverseCacheBeginTime;                             // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          SaveCollisionData;                                 // 0x0014(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          DoGenerateCollisionData;                           // 0x0015(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_332E[0x2];                                     // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3469[0x2];                                     // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CollisionDataSizeMax;                              // 0x0018(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          DoCollisionDataSpatialHash;                        // 0x001C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_332F[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_346A[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CollisionDataSpatialHashRadius;                    // 0x0020(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxCollisionPerCell;                               // 0x0024(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          SaveBreakingData;                                  // 0x0028(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          DoGenerateBreakingData;                            // 0x0029(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3330[0x2];                                     // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_346B[0x2];                                     // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         BreakingDataSizeMax;                               // 0x002C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          DoBreakingDataSpatialHash;                         // 0x0030(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3331[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_346C[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         BreakingDataSpatialHashRadius;                     // 0x0034(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxBreakingPerCell;                                // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          SaveTrailingData;                                  // 0x003C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          DoGenerateTrailingData;                            // 0x003D(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3332[0x2];                                     // 0x003E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_346D[0x2];                                     // 0x003E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         TrailingDataSizeMax;                               // 0x0040(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         TrailingMinSpeedThreshold;                         // 0x0044(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         TrailingMinVolumeThreshold;                        // 0x0048(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3333[0x4];                                     // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_346E[0x4];                                     // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FGeomComponentCacheParameters) == 0x000008, "Wrong alignment on FGeomComponentCacheParameters");
 static_assert(sizeof(FGeomComponentCacheParameters) == 0x000050, "Wrong size on FGeomComponentCacheParameters");
@@ -151,6 +151,75 @@ static_assert(offsetof(FGeomComponentCacheParameters, TrailingDataSizeMax) == 0x
 static_assert(offsetof(FGeomComponentCacheParameters, TrailingMinSpeedThreshold) == 0x000044, "Member 'FGeomComponentCacheParameters::TrailingMinSpeedThreshold' has a wrong offset!");
 static_assert(offsetof(FGeomComponentCacheParameters, TrailingMinVolumeThreshold) == 0x000048, "Member 'FGeomComponentCacheParameters::TrailingMinVolumeThreshold' has a wrong offset!");
 
+// ScriptStruct GeometryCollectionEngine.GeometryCollectionLevelSetData
+// 0x0010 (0x0010 - 0x0000)
+struct FGeometryCollectionLevelSetData final
+{
+public:
+	int32                                         MinLevelSetResolution;                             // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxLevelSetResolution;                             // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MinClusterLevelSetResolution;                      // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxClusterLevelSetResolution;                      // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FGeometryCollectionLevelSetData) == 0x000004, "Wrong alignment on FGeometryCollectionLevelSetData");
+static_assert(sizeof(FGeometryCollectionLevelSetData) == 0x000010, "Wrong size on FGeometryCollectionLevelSetData");
+static_assert(offsetof(FGeometryCollectionLevelSetData, MinLevelSetResolution) == 0x000000, "Member 'FGeometryCollectionLevelSetData::MinLevelSetResolution' has a wrong offset!");
+static_assert(offsetof(FGeometryCollectionLevelSetData, MaxLevelSetResolution) == 0x000004, "Member 'FGeometryCollectionLevelSetData::MaxLevelSetResolution' has a wrong offset!");
+static_assert(offsetof(FGeometryCollectionLevelSetData, MinClusterLevelSetResolution) == 0x000008, "Member 'FGeometryCollectionLevelSetData::MinClusterLevelSetResolution' has a wrong offset!");
+static_assert(offsetof(FGeometryCollectionLevelSetData, MaxClusterLevelSetResolution) == 0x00000C, "Member 'FGeometryCollectionLevelSetData::MaxClusterLevelSetResolution' has a wrong offset!");
+
+// ScriptStruct GeometryCollectionEngine.GeometryCollectionCollisionParticleData
+// 0x0008 (0x0008 - 0x0000)
+struct FGeometryCollectionCollisionParticleData final
+{
+public:
+	float                                         CollisionParticlesFraction;                        // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaximumCollisionParticles;                         // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FGeometryCollectionCollisionParticleData) == 0x000004, "Wrong alignment on FGeometryCollectionCollisionParticleData");
+static_assert(sizeof(FGeometryCollectionCollisionParticleData) == 0x000008, "Wrong size on FGeometryCollectionCollisionParticleData");
+static_assert(offsetof(FGeometryCollectionCollisionParticleData, CollisionParticlesFraction) == 0x000000, "Member 'FGeometryCollectionCollisionParticleData::CollisionParticlesFraction' has a wrong offset!");
+static_assert(offsetof(FGeometryCollectionCollisionParticleData, MaximumCollisionParticles) == 0x000004, "Member 'FGeometryCollectionCollisionParticleData::MaximumCollisionParticles' has a wrong offset!");
+
+// ScriptStruct GeometryCollectionEngine.GeometryCollectionCollisionTypeData
+// 0x0024 (0x0024 - 0x0000)
+struct FGeometryCollectionCollisionTypeData final
+{
+public:
+	ECollisionTypeEnum                            CollisionType;                                     // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EImplicitTypeEnum                             ImplicitType;                                      // 0x0001(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_346F[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGeometryCollectionLevelSetData        LevelSet;                                          // 0x0004(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FGeometryCollectionCollisionParticleData CollisionParticles;                                // 0x0014(0x0008)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	float                                         CollisionObjectReductionPercentage;                // 0x001C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CollisionMarginFraction;                           // 0x0020(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FGeometryCollectionCollisionTypeData) == 0x000004, "Wrong alignment on FGeometryCollectionCollisionTypeData");
+static_assert(sizeof(FGeometryCollectionCollisionTypeData) == 0x000024, "Wrong size on FGeometryCollectionCollisionTypeData");
+static_assert(offsetof(FGeometryCollectionCollisionTypeData, CollisionType) == 0x000000, "Member 'FGeometryCollectionCollisionTypeData::CollisionType' has a wrong offset!");
+static_assert(offsetof(FGeometryCollectionCollisionTypeData, ImplicitType) == 0x000001, "Member 'FGeometryCollectionCollisionTypeData::ImplicitType' has a wrong offset!");
+static_assert(offsetof(FGeometryCollectionCollisionTypeData, LevelSet) == 0x000004, "Member 'FGeometryCollectionCollisionTypeData::LevelSet' has a wrong offset!");
+static_assert(offsetof(FGeometryCollectionCollisionTypeData, CollisionParticles) == 0x000014, "Member 'FGeometryCollectionCollisionTypeData::CollisionParticles' has a wrong offset!");
+static_assert(offsetof(FGeometryCollectionCollisionTypeData, CollisionObjectReductionPercentage) == 0x00001C, "Member 'FGeometryCollectionCollisionTypeData::CollisionObjectReductionPercentage' has a wrong offset!");
+static_assert(offsetof(FGeometryCollectionCollisionTypeData, CollisionMarginFraction) == 0x000020, "Member 'FGeometryCollectionCollisionTypeData::CollisionMarginFraction' has a wrong offset!");
+
+// ScriptStruct GeometryCollectionEngine.GeometryCollectionSizeSpecificData
+// 0x0020 (0x0020 - 0x0000)
+struct FGeometryCollectionSizeSpecificData final
+{
+public:
+	float                                         MaxSize;                                           // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3470[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FGeometryCollectionCollisionTypeData> CollisionShapes;                                   // 0x0008(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+	int32                                         DamageThreshold;                                   // 0x0018(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3471[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FGeometryCollectionSizeSpecificData) == 0x000008, "Wrong alignment on FGeometryCollectionSizeSpecificData");
+static_assert(sizeof(FGeometryCollectionSizeSpecificData) == 0x000020, "Wrong size on FGeometryCollectionSizeSpecificData");
+static_assert(offsetof(FGeometryCollectionSizeSpecificData, MaxSize) == 0x000000, "Member 'FGeometryCollectionSizeSpecificData::MaxSize' has a wrong offset!");
+static_assert(offsetof(FGeometryCollectionSizeSpecificData, CollisionShapes) == 0x000008, "Member 'FGeometryCollectionSizeSpecificData::CollisionShapes' has a wrong offset!");
+static_assert(offsetof(FGeometryCollectionSizeSpecificData, DamageThreshold) == 0x000018, "Member 'FGeometryCollectionSizeSpecificData::DamageThreshold' has a wrong offset!");
+
 // ScriptStruct GeometryCollectionEngine.ChaosRemovalEventData
 // 0x0020 (0x0020 - 0x0000)
 struct FChaosRemovalEventData final
@@ -174,7 +243,7 @@ public:
 	struct FVector                                Location;                                          // 0x0000(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Velocity;                                          // 0x0018(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Mass;                                              // 0x0030(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3334[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3472[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FChaosBreakingEventData) == 0x000008, "Wrong alignment on FChaosBreakingEventData");
 static_assert(sizeof(FChaosBreakingEventData) == 0x000038, "Wrong size on FChaosBreakingEventData");
@@ -229,7 +298,7 @@ static_assert(offsetof(FChaosCollisionEventData, Impulse) == 0x000068, "Member '
 struct alignas(0x08) FGeometryCollectionRepData final
 {
 public:
-	uint8                                         Pad_3335[0x28];                                    // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3473[0x28];                                    // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FGeometryCollectionRepData) == 0x000008, "Wrong alignment on FGeometryCollectionRepData");
 static_assert(sizeof(FGeometryCollectionRepData) == 0x000028, "Wrong size on FGeometryCollectionRepData");
@@ -240,7 +309,7 @@ struct FGeometryCollectionDamagePropagationData final
 {
 public:
 	bool                                          bEnabled;                                          // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3336[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3474[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         BreakDamagePropagationFactor;                      // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ShockDamagePropagationFactor;                      // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -261,7 +330,7 @@ public:
 	float                                         MinMass;                                           // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxDistance;                                       // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EChaosBreakingSortMethod                      SortMethod;                                        // 0x0014(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3337[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3475[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FChaosBreakingEventRequestSettings) == 0x000004, "Wrong alignment on FChaosBreakingEventRequestSettings");
 static_assert(sizeof(FChaosBreakingEventRequestSettings) == 0x000018, "Wrong size on FChaosBreakingEventRequestSettings");
@@ -283,7 +352,7 @@ public:
 	float                                         MinImpulse;                                        // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxDistance;                                       // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EChaosCollisionSortMethod                     SortMethod;                                        // 0x0014(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3338[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3476[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FChaosCollisionEventRequestSettings) == 0x000004, "Wrong alignment on FChaosCollisionEventRequestSettings");
 static_assert(sizeof(FChaosCollisionEventRequestSettings) == 0x000018, "Wrong size on FChaosCollisionEventRequestSettings");
@@ -303,7 +372,7 @@ public:
 	float                                         MinMass;                                           // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxDistance;                                       // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EChaosRemovalSortMethod                       SortMethod;                                        // 0x000C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3339[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3477[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FChaosRemovalEventRequestSettings) == 0x000004, "Wrong alignment on FChaosRemovalEventRequestSettings");
 static_assert(sizeof(FChaosRemovalEventRequestSettings) == 0x000010, "Wrong size on FChaosRemovalEventRequestSettings");
@@ -323,7 +392,7 @@ public:
 	float                                         MinAngularSpeed;                                   // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxDistance;                                       // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EChaosTrailingSortMethod                      SortMethod;                                        // 0x0014(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_333A[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3478[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FChaosTrailingEventRequestSettings) == 0x000004, "Wrong alignment on FChaosTrailingEventRequestSettings");
 static_assert(sizeof(FChaosTrailingEventRequestSettings) == 0x000018, "Wrong size on FChaosTrailingEventRequestSettings");
@@ -339,7 +408,7 @@ static_assert(offsetof(FChaosTrailingEventRequestSettings, SortMethod) == 0x0000
 struct FGeometryCollectionDebugDrawWarningMessage final
 {
 public:
-	uint8                                         Pad_333B[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3479[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FGeometryCollectionDebugDrawWarningMessage) == 0x000001, "Wrong alignment on FGeometryCollectionDebugDrawWarningMessage");
 static_assert(sizeof(FGeometryCollectionDebugDrawWarningMessage) == 0x000001, "Wrong size on FGeometryCollectionDebugDrawWarningMessage");
@@ -350,7 +419,7 @@ struct FGeometryCollectionDebugDrawActorSelectedRigidBody final
 {
 public:
 	int32                                         ID;                                                // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_333C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_347A[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AChaosSolverActor*                      Solver;                                            // 0x0008(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AGeometryCollectionActor*               GeometryCollection;                                // 0x0010(0x0008)(Edit, ZeroConstructor, EditConst, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -370,7 +439,7 @@ public:
 	TArray<class UMaterialInterface*>             SourceMaterial;                                    // 0x0080(0x0010)(Edit, BlueprintVisible, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
 	bool                                          bAddInternalMaterials;                             // 0x0090(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSplitComponents;                                  // 0x0091(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_333D[0xE];                                     // 0x0092(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_347B[0xE];                                     // 0x0092(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FGeometryCollectionSource) == 0x000010, "Wrong alignment on FGeometryCollectionSource");
 static_assert(sizeof(FGeometryCollectionSource) == 0x0000A0, "Wrong size on FGeometryCollectionSource");
@@ -402,7 +471,7 @@ public:
 	float                                         StartCullDistance;                                 // 0x0020(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         EndCullDistance;                                   // 0x0024(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         InstanceCount;                                     // 0x0028(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_333E[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_347C[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FGeometryCollectionEmbeddedExemplar) == 0x000008, "Wrong alignment on FGeometryCollectionEmbeddedExemplar");
 static_assert(sizeof(FGeometryCollectionEmbeddedExemplar) == 0x000030, "Wrong size on FGeometryCollectionEmbeddedExemplar");
@@ -410,75 +479,6 @@ static_assert(offsetof(FGeometryCollectionEmbeddedExemplar, StaticMeshExemplar) 
 static_assert(offsetof(FGeometryCollectionEmbeddedExemplar, StartCullDistance) == 0x000020, "Member 'FGeometryCollectionEmbeddedExemplar::StartCullDistance' has a wrong offset!");
 static_assert(offsetof(FGeometryCollectionEmbeddedExemplar, EndCullDistance) == 0x000024, "Member 'FGeometryCollectionEmbeddedExemplar::EndCullDistance' has a wrong offset!");
 static_assert(offsetof(FGeometryCollectionEmbeddedExemplar, InstanceCount) == 0x000028, "Member 'FGeometryCollectionEmbeddedExemplar::InstanceCount' has a wrong offset!");
-
-// ScriptStruct GeometryCollectionEngine.GeometryCollectionLevelSetData
-// 0x0010 (0x0010 - 0x0000)
-struct FGeometryCollectionLevelSetData final
-{
-public:
-	int32                                         MinLevelSetResolution;                             // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaxLevelSetResolution;                             // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MinClusterLevelSetResolution;                      // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaxClusterLevelSetResolution;                      // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FGeometryCollectionLevelSetData) == 0x000004, "Wrong alignment on FGeometryCollectionLevelSetData");
-static_assert(sizeof(FGeometryCollectionLevelSetData) == 0x000010, "Wrong size on FGeometryCollectionLevelSetData");
-static_assert(offsetof(FGeometryCollectionLevelSetData, MinLevelSetResolution) == 0x000000, "Member 'FGeometryCollectionLevelSetData::MinLevelSetResolution' has a wrong offset!");
-static_assert(offsetof(FGeometryCollectionLevelSetData, MaxLevelSetResolution) == 0x000004, "Member 'FGeometryCollectionLevelSetData::MaxLevelSetResolution' has a wrong offset!");
-static_assert(offsetof(FGeometryCollectionLevelSetData, MinClusterLevelSetResolution) == 0x000008, "Member 'FGeometryCollectionLevelSetData::MinClusterLevelSetResolution' has a wrong offset!");
-static_assert(offsetof(FGeometryCollectionLevelSetData, MaxClusterLevelSetResolution) == 0x00000C, "Member 'FGeometryCollectionLevelSetData::MaxClusterLevelSetResolution' has a wrong offset!");
-
-// ScriptStruct GeometryCollectionEngine.GeometryCollectionCollisionParticleData
-// 0x0008 (0x0008 - 0x0000)
-struct FGeometryCollectionCollisionParticleData final
-{
-public:
-	float                                         CollisionParticlesFraction;                        // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaximumCollisionParticles;                         // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FGeometryCollectionCollisionParticleData) == 0x000004, "Wrong alignment on FGeometryCollectionCollisionParticleData");
-static_assert(sizeof(FGeometryCollectionCollisionParticleData) == 0x000008, "Wrong size on FGeometryCollectionCollisionParticleData");
-static_assert(offsetof(FGeometryCollectionCollisionParticleData, CollisionParticlesFraction) == 0x000000, "Member 'FGeometryCollectionCollisionParticleData::CollisionParticlesFraction' has a wrong offset!");
-static_assert(offsetof(FGeometryCollectionCollisionParticleData, MaximumCollisionParticles) == 0x000004, "Member 'FGeometryCollectionCollisionParticleData::MaximumCollisionParticles' has a wrong offset!");
-
-// ScriptStruct GeometryCollectionEngine.GeometryCollectionCollisionTypeData
-// 0x0024 (0x0024 - 0x0000)
-struct FGeometryCollectionCollisionTypeData final
-{
-public:
-	ECollisionTypeEnum                            CollisionType;                                     // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EImplicitTypeEnum                             ImplicitType;                                      // 0x0001(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_333F[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGeometryCollectionLevelSetData        LevelSet;                                          // 0x0004(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FGeometryCollectionCollisionParticleData CollisionParticles;                                // 0x0014(0x0008)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	float                                         CollisionObjectReductionPercentage;                // 0x001C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CollisionMarginFraction;                           // 0x0020(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FGeometryCollectionCollisionTypeData) == 0x000004, "Wrong alignment on FGeometryCollectionCollisionTypeData");
-static_assert(sizeof(FGeometryCollectionCollisionTypeData) == 0x000024, "Wrong size on FGeometryCollectionCollisionTypeData");
-static_assert(offsetof(FGeometryCollectionCollisionTypeData, CollisionType) == 0x000000, "Member 'FGeometryCollectionCollisionTypeData::CollisionType' has a wrong offset!");
-static_assert(offsetof(FGeometryCollectionCollisionTypeData, ImplicitType) == 0x000001, "Member 'FGeometryCollectionCollisionTypeData::ImplicitType' has a wrong offset!");
-static_assert(offsetof(FGeometryCollectionCollisionTypeData, LevelSet) == 0x000004, "Member 'FGeometryCollectionCollisionTypeData::LevelSet' has a wrong offset!");
-static_assert(offsetof(FGeometryCollectionCollisionTypeData, CollisionParticles) == 0x000014, "Member 'FGeometryCollectionCollisionTypeData::CollisionParticles' has a wrong offset!");
-static_assert(offsetof(FGeometryCollectionCollisionTypeData, CollisionObjectReductionPercentage) == 0x00001C, "Member 'FGeometryCollectionCollisionTypeData::CollisionObjectReductionPercentage' has a wrong offset!");
-static_assert(offsetof(FGeometryCollectionCollisionTypeData, CollisionMarginFraction) == 0x000020, "Member 'FGeometryCollectionCollisionTypeData::CollisionMarginFraction' has a wrong offset!");
-
-// ScriptStruct GeometryCollectionEngine.GeometryCollectionSizeSpecificData
-// 0x0020 (0x0020 - 0x0000)
-struct FGeometryCollectionSizeSpecificData final
-{
-public:
-	float                                         MaxSize;                                           // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3340[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FGeometryCollectionCollisionTypeData> CollisionShapes;                                   // 0x0008(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	int32                                         DamageThreshold;                                   // 0x0018(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3341[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FGeometryCollectionSizeSpecificData) == 0x000008, "Wrong alignment on FGeometryCollectionSizeSpecificData");
-static_assert(sizeof(FGeometryCollectionSizeSpecificData) == 0x000020, "Wrong size on FGeometryCollectionSizeSpecificData");
-static_assert(offsetof(FGeometryCollectionSizeSpecificData, MaxSize) == 0x000000, "Member 'FGeometryCollectionSizeSpecificData::MaxSize' has a wrong offset!");
-static_assert(offsetof(FGeometryCollectionSizeSpecificData, CollisionShapes) == 0x000008, "Member 'FGeometryCollectionSizeSpecificData::CollisionShapes' has a wrong offset!");
-static_assert(offsetof(FGeometryCollectionSizeSpecificData, DamageThreshold) == 0x000018, "Member 'FGeometryCollectionSizeSpecificData::DamageThreshold' has a wrong offset!");
 
 }
 

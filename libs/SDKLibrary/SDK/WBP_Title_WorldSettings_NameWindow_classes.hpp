@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "Pal_classes.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK
@@ -31,11 +31,11 @@ public:
 	class FString                                 Default_Input_Name;                                // 0x0458(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
+	void OnSetup();
+	void ExecuteUbergraph_WBP_Title_WorldSettings_NameWindow(int32 EntryPoint);
 	void BndEvt__WBP_Title_WorldSettings_NameWindow_WBP_CommonButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
 	void BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
 	void BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text);
-	void OnSetup();
-	void ExecuteUbergraph_WBP_Title_WorldSettings_NameWindow(int32 EntryPoint);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

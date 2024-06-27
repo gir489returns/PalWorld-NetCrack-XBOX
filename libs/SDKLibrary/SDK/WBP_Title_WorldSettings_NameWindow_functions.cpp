@@ -17,6 +17,40 @@
 namespace SDK
 {
 
+// Function WBP_Title_WorldSettings_NameWindow.WBP_Title_WorldSettings_NameWindow_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Title_WorldSettings_NameWindow_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSettings_NameWindow_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Title_WorldSettings_NameWindow.WBP_Title_WorldSettings_NameWindow_C.ExecuteUbergraph_WBP_Title_WorldSettings_NameWindow
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_WorldSettings_NameWindow_C::ExecuteUbergraph_WBP_Title_WorldSettings_NameWindow(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSettings_NameWindow_C", "ExecuteUbergraph_WBP_Title_WorldSettings_NameWindow");
+
+	Params::WBP_Title_WorldSettings_NameWindow_C_ExecuteUbergraph_WBP_Title_WorldSettings_NameWindow Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Title_WorldSettings_NameWindow.WBP_Title_WorldSettings_NameWindow_C.BndEvt__WBP_Title_WorldSettings_NameWindow_WBP_CommonButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature
 // (BlueprintEvent)
 
@@ -68,40 +102,6 @@ void UWBP_Title_WorldSettings_NameWindow_C::BndEvt__WBP_Title_WorldSettings_Name
 	Params::WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature Parms{};
 
 	Parms.Text = std::move(Text);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Title_WorldSettings_NameWindow.WBP_Title_WorldSettings_NameWindow_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Title_WorldSettings_NameWindow_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSettings_NameWindow_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Title_WorldSettings_NameWindow.WBP_Title_WorldSettings_NameWindow_C.ExecuteUbergraph_WBP_Title_WorldSettings_NameWindow
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Title_WorldSettings_NameWindow_C::ExecuteUbergraph_WBP_Title_WorldSettings_NameWindow(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSettings_NameWindow_C", "ExecuteUbergraph_WBP_Title_WorldSettings_NameWindow");
-
-	Params::WBP_Title_WorldSettings_NameWindow_C_ExecuteUbergraph_WBP_Title_WorldSettings_NameWindow Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

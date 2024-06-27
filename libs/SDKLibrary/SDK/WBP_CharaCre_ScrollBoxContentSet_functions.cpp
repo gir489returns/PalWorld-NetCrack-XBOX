@@ -20,7 +20,7 @@ namespace SDK
 // Function WBP_CharaCre_ScrollBoxContentSet.WBP_CharaCre_ScrollBoxContentSet_C.ApplyMakeInfo
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPalPlayerDataCharacterMakeInfo  MakeInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FPalPlayerDataCharacterMakeInfo  MakeInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 
 void UWBP_CharaCre_ScrollBoxContentSet_C::ApplyMakeInfo(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo)
 {

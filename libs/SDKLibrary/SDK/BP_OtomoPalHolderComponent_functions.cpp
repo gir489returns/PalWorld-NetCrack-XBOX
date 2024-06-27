@@ -17,28 +17,6 @@
 namespace SDK
 {
 
-// Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.ActivateAllPalInArena
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<struct FTransform>               SpawnTransform                                         (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UBP_OtomoPalHolderComponent_C::ActivateAllPalInArena(TArray<struct FTransform>& SpawnTransform)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OtomoPalHolderComponent_C", "ActivateAllPalInArena");
-
-	Params::BP_OtomoPalHolderComponent_C_ActivateAllPalInArena Parms{};
-
-	Parms.SpawnTransform = std::move(SpawnTransform);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	SpawnTransform = std::move(Parms.SpawnTransform);
-}
-
-
 // Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.ActivateCurrentOtomo
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -152,6 +130,38 @@ void UBP_OtomoPalHolderComponent_C::ActivateOtomo(int32 SlotID, const struct FTr
 }
 
 
+// Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.ActivatePalByHandle
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterHandle*    Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FTransform                       Transform                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          Transform_Location                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FRotator                         Transform_Rotation                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FVector                          Transform_Scale                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    KeepActigvateOtomoId                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_OtomoPalHolderComponent_C::ActivatePalByHandle(class UPalIndividualCharacterHandle* Handle, struct FTransform& Transform, const struct FVector& Transform_Location, const struct FRotator& Transform_Rotation, const struct FVector& Transform_Scale, bool KeepActigvateOtomoId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_OtomoPalHolderComponent_C", "ActivatePalByHandle");
+
+	Params::BP_OtomoPalHolderComponent_C_ActivatePalByHandle Parms{};
+
+	Parms.Handle = Handle;
+	Parms.Transform = std::move(Transform);
+	Parms.Transform_Location = std::move(Transform_Location);
+	Parms.Transform_Rotation = std::move(Transform_Rotation);
+	Parms.Transform_Scale = std::move(Transform_Scale);
+	Parms.KeepActigvateOtomoId = KeepActigvateOtomoId;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Transform = std::move(Parms.Transform);
+}
+
+
 // Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.ActiveAndAttackCurrentPal
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -173,7 +183,7 @@ void UBP_OtomoPalHolderComponent_C::ActiveAndAttackCurrentPal(class AActor* Targ
 
 
 // Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.Add Otomo Down Log
-// (Private, BlueprintCallable, BlueprintEvent)
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FPalDeadInfo                     Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
@@ -266,8 +276,9 @@ void UBP_OtomoPalHolderComponent_C::DecrementSelectOtomoID_Internal()
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class APalCharacter*                    Otomo                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDelay                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_OtomoPalHolderComponent_C::DelayAddOtomoForReserverList(class APalCharacter* Otomo)
+void UBP_OtomoPalHolderComponent_C::DelayAddOtomoForReserverList(class APalCharacter* Otomo, bool IsDelay)
 {
 	static class UFunction* Func = nullptr;
 
@@ -277,6 +288,7 @@ void UBP_OtomoPalHolderComponent_C::DelayAddOtomoForReserverList(class APalChara
 	Params::BP_OtomoPalHolderComponent_C_DelayAddOtomoForReserverList Parms{};
 
 	Parms.Otomo = Otomo;
+	Parms.IsDelay = IsDelay;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -470,9 +482,10 @@ void UBP_OtomoPalHolderComponent_C::Inactivate_Otomo(bool* IsSuccess)
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UPalIndividualCharacterHandle*    IndividualHandle                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDelayAddReserver                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    IsSuccess                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_OtomoPalHolderComponent_C::Inactivate_Otomo_By_Handle(class UPalIndividualCharacterHandle* IndividualHandle, bool* IsSuccess)
+void UBP_OtomoPalHolderComponent_C::Inactivate_Otomo_By_Handle(class UPalIndividualCharacterHandle* IndividualHandle, bool IsDelayAddReserver, bool* IsSuccess)
 {
 	static class UFunction* Func = nullptr;
 
@@ -482,6 +495,7 @@ void UBP_OtomoPalHolderComponent_C::Inactivate_Otomo_By_Handle(class UPalIndivid
 	Params::BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle Parms{};
 
 	Parms.IndividualHandle = IndividualHandle;
+	Parms.IsDelayAddReserver = IsDelayAddReserver;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -490,15 +504,15 @@ void UBP_OtomoPalHolderComponent_C::Inactivate_Otomo_By_Handle(class UPalIndivid
 }
 
 
-// Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.InactivateAllPalInArena
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.InactivateAllOtomo
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void UBP_OtomoPalHolderComponent_C::InactivateAllPalInArena()
+void UBP_OtomoPalHolderComponent_C::InactivateAllOtomo()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OtomoPalHolderComponent_C", "InactivateAllPalInArena");
+		Func = Class->GetFunction("BP_OtomoPalHolderComponent_C", "InactivateAllOtomo");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -713,6 +727,26 @@ void UBP_OtomoPalHolderComponent_C::OnInactiveOtomoEvent__DelegateSignature()
 		Func = Class->GetFunction("BP_OtomoPalHolderComponent_C", "OnInactiveOtomoEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.OnOtomoDeath_ToAll
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FPalDeadInfo                     DeadInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void UBP_OtomoPalHolderComponent_C::OnOtomoDeath_ToAll(const struct FPalDeadInfo& DeadInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_OtomoPalHolderComponent_C", "OnOtomoDeath_ToAll");
+
+	Params::BP_OtomoPalHolderComponent_C_OnOtomoDeath_ToAll Parms{};
+
+	Parms.DeadInfo = std::move(DeadInfo);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -942,19 +976,19 @@ void UBP_OtomoPalHolderComponent_C::Setup_ToServer()
 }
 
 
-// Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.SpawnCharacterCallback
+// Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.Spawn Character Callback
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FPalInstanceID                   ID                                                     (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void UBP_OtomoPalHolderComponent_C::SpawnCharacterCallback(const struct FPalInstanceID& ID)
+void UBP_OtomoPalHolderComponent_C::Spawn_Character_Callback(const struct FPalInstanceID& ID)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OtomoPalHolderComponent_C", "SpawnCharacterCallback");
+		Func = Class->GetFunction("BP_OtomoPalHolderComponent_C", "Spawn Character Callback");
 
-	Params::BP_OtomoPalHolderComponent_C_SpawnCharacterCallback Parms{};
+	Params::BP_OtomoPalHolderComponent_C_Spawn_Character_Callback Parms{};
 
 	Parms.ID = std::move(ID);
 

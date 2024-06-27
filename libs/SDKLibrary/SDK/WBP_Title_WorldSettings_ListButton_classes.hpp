@@ -35,12 +35,12 @@ public:
 	FMulticastInlineDelegateProperty_             OnClicked;                                         // 0x02C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Click();
-	void ExecuteUbergraph_WBP_Title_WorldSettings_ListButton(int32 EntryPoint);
-	void GetButtonText(class FText* ButtonText);
-	void OnClicked__DelegateSignature();
 	void SetButtonText(const class FText& NewText);
+	void OnClicked__DelegateSignature();
+	void GetButtonText(class FText* ButtonText);
+	void ExecuteUbergraph_WBP_Title_WorldSettings_ListButton(int32 EntryPoint);
+	void Click();
+	void BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 
 public:
 	static class UClass* StaticClass()

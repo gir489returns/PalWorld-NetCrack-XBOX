@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -35,24 +35,24 @@ public:
 	class FString                                 Options;                                           // 0x0520(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_TitleLocalWorldSelect_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_0_OnClickedWorldButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* ButtonWidget);
-	void BndEvt__WBP_TitleLocalWorldSelect_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_1_OnClickedNewWorldButton__DelegateSignature(class UWBP_Title_WorldSelect_CreateWorld_ListContent_C* ButtonWidget);
-	void BndEvt__WBP_TitleLocalWorldSelect_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_2_OnClickedStartWorldButton__DelegateSignature();
-	void BndEvt__WBP_TitleLocalWorldSelect_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnClickedWorldSettingButton__DelegateSignature();
-	void BndEvt__WBP_TitleLocalWorldSelect_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_4_OnClickedDeleteWorldButton__DelegateSignature();
-	void BndEvt__WBP_TitleLocalWorldSelect_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedOpenDirectoryButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* SelectedWorldButton);
-	void BndEvt__WBP_TitleLocalWorldSelect_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedSelectBackupButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* SelectedWorldButton);
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_TitleLocalWorldSelect(int32 EntryPoint);
-	void On_Closed_Delete_World_Window(class UPalHUDDispatchParameterBase* Param_Param);
-	void On_Closed_World_Setting_Window(class UPalHUDDispatchParameterBase* Param_Param);
-	void OnCancelAction();
-	void OnInitialized();
-	void OnSetup();
-	void SetupWorldList();
-	void WBP_TitleLocalWorldSelect_AutoGenFunc(bool bResult);
 	void ________(bool bResult);
+	void WBP_TitleLocalWorldSelect_AutoGenFunc(bool bResult);
+	void SetupWorldList();
+	void OnSetup();
+	void OnInitialized();
+	void OnCancelAction();
+	void On_Closed_World_Setting_Window(class UPalHUDDispatchParameterBase* Param_Param);
+	void On_Closed_Delete_World_Window(class UPalHUDDispatchParameterBase* Param_Param);
+	void ExecuteUbergraph_WBP_TitleLocalWorldSelect(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void BndEvt__WBP_TitleLocalWorldSelect_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedSelectBackupButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* SelectedWorldButton);
+	void BndEvt__WBP_TitleLocalWorldSelect_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedOpenDirectoryButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* SelectedWorldButton);
+	void BndEvt__WBP_TitleLocalWorldSelect_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_4_OnClickedDeleteWorldButton__DelegateSignature();
+	void BndEvt__WBP_TitleLocalWorldSelect_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnClickedWorldSettingButton__DelegateSignature();
+	void BndEvt__WBP_TitleLocalWorldSelect_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_2_OnClickedStartWorldButton__DelegateSignature();
+	void BndEvt__WBP_TitleLocalWorldSelect_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_1_OnClickedNewWorldButton__DelegateSignature(class UWBP_Title_WorldSelect_CreateWorld_ListContent_C* ButtonWidget);
+	void BndEvt__WBP_TitleLocalWorldSelect_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_0_OnClickedWorldButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* ButtonWidget);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

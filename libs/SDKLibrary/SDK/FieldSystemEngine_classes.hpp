@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "FieldSystemEngine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "Chaos_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "FieldSystemEngine_structs.hpp"
+#include "Chaos_structs.hpp"
 
 
 namespace SDK
@@ -46,7 +46,7 @@ static_assert(offsetof(AFieldSystemActor, FieldSystemComponent) == 0x000290, "Me
 class UFieldSystem final : public UObject
 {
 public:
-	uint8                                         Pad_32E2[0x10];                                    // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_341E[0x10];                                    // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -69,11 +69,11 @@ public:
 	class UFieldSystem*                           FieldSystem;                                       // 0x0538(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, AdvancedDisplay, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsWorldField;                                     // 0x0540(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsChaosField;                                     // 0x0541(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32E3[0x6];                                     // 0x0542(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_341F[0x6];                                     // 0x0542(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<TSoftObjectPtr<class AChaosSolverActor>> SupportedSolvers;                                  // 0x0548(0x0010)(Edit, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
 	struct FFieldObjectCommands                   ConstructionCommands;                              // 0x0558(0x0030)(ContainsInstancedReference, NativeAccessSpecifierPublic)
 	struct FFieldObjectCommands                   BufferCommands;                                    // 0x0588(0x0030)(ContainsInstancedReference, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32E4[0x58];                                    // 0x05B8(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3420[0x58];                                    // 0x05B8(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AddFieldCommand(bool Enabled, EFieldPhysicsType Target, class UFieldSystemMetaData* MetaData, class UFieldNodeBase* Field);
@@ -130,7 +130,7 @@ class UFieldSystemMetaDataIteration final : public UFieldSystemMetaData
 {
 public:
 	int32                                         Iterations;                                        // 0x00A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32F2[0x4];                                     // 0x00A4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_342E[0x4];                                     // 0x00A4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UFieldSystemMetaDataIteration* SetMetaDataIteration(int32 Param_Iterations);
@@ -155,7 +155,7 @@ class UFieldSystemMetaDataProcessingResolution final : public UFieldSystemMetaDa
 {
 public:
 	EFieldResolutionType                          ResolutionType;                                    // 0x00A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32F4[0x7];                                     // 0x00A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3430[0x7];                                     // 0x00A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UFieldSystemMetaDataProcessingResolution* SetMetaDataaProcessingResolutionType(EFieldResolutionType Param_ResolutionType);
@@ -182,7 +182,7 @@ public:
 	EFieldFilterType                              FilterType;                                        // 0x00A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFieldObjectType                              ObjectType;                                        // 0x00A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFieldPositionType                            PositionType;                                      // 0x00A2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32F6[0x5];                                     // 0x00A3(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3432[0x5];                                     // 0x00A3(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UFieldSystemMetaDataFilter* SetMetaDataFilterType(EFieldFilterType Param_FilterType, EFieldObjectType Param_ObjectType, EFieldPositionType Param_PositionType);
@@ -277,7 +277,7 @@ class UUniformInteger final : public UFieldNodeInt
 {
 public:
 	int32                                         Magnitude;                                         // 0x00A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32F8[0x4];                                     // 0x00A4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3434[0x4];                                     // 0x00A4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UUniformInteger* SetUniformInteger(int32 Param_Magnitude);
@@ -302,12 +302,12 @@ class URadialIntMask final : public UFieldNodeInt
 {
 public:
 	float                                         Radius;                                            // 0x00A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32FA[0x4];                                     // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3436[0x4];                                     // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Position;                                          // 0x00A8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         InteriorValue;                                     // 0x00C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ExteriorValue;                                     // 0x00C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESetMaskConditionType                         SetMaskCondition;                                  // 0x00C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32FB[0x7];                                     // 0x00C9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3437[0x7];                                     // 0x00C9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class URadialIntMask* SetRadialIntMask(float Param_Radius, const struct FVector& Param_Position, int32 Param_InteriorValue, int32 Param_ExteriorValue, ESetMaskConditionType SetMaskConditionIn);
@@ -336,7 +336,7 @@ class UUniformScalar final : public UFieldNodeFloat
 {
 public:
 	float                                         Magnitude;                                         // 0x00A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32FE[0x4];                                     // 0x00A4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_343A[0x4];                                     // 0x00A4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UUniformScalar* SetUniformScalar(float Param_Magnitude);
@@ -361,13 +361,13 @@ class UWaveScalar final : public UFieldNodeFloat
 {
 public:
 	float                                         Magnitude;                                         // 0x00A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3300[0x4];                                     // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_343C[0x4];                                     // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Position;                                          // 0x00A8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         WaveLength;                                        // 0x00C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Period;                                            // 0x00C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EWaveFunctionType                             Function;                                          // 0x00C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFieldFalloffType                             Falloff;                                           // 0x00C9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3301[0x6];                                     // 0x00CA(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_343D[0x6];                                     // 0x00CA(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UWaveScalar* SetWaveScalar(float Param_Magnitude, const struct FVector& Param_Position, float Param_WaveLength, float Param_Period, float Time, EWaveFunctionType Param_Function, EFieldFalloffType Param_Falloff);
@@ -401,10 +401,10 @@ public:
 	float                                         MaxRange;                                          // 0x00A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Default;                                           // 0x00AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Radius;                                            // 0x00B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3304[0x4];                                     // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3440[0x4];                                     // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Position;                                          // 0x00B8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFieldFalloffType                             Falloff;                                           // 0x00D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3305[0x7];                                     // 0x00D1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3441[0x7];                                     // 0x00D1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class URadialFalloff* SetRadialFalloff(float Param_Magnitude, float Param_MinRange, float Param_MaxRange, float Param_Default, float Param_Radius, const struct FVector& Param_Position, EFieldFalloffType Param_Falloff);
@@ -439,11 +439,11 @@ public:
 	float                                         MaxRange;                                          // 0x00A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Default;                                           // 0x00AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Distance;                                          // 0x00B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3308[0x4];                                     // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3444[0x4];                                     // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Position;                                          // 0x00B8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Normal;                                            // 0x00D0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFieldFalloffType                             Falloff;                                           // 0x00E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3309[0x7];                                     // 0x00E9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3445[0x7];                                     // 0x00E9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UPlaneFalloff* SetPlaneFalloff(float Param_Magnitude, float Param_MinRange, float Param_MaxRange, float Param_Default, float Param_Distance, const struct FVector& Param_Position, const struct FVector& Param_Normal, EFieldFalloffType Param_Falloff);
@@ -480,7 +480,7 @@ public:
 	float                                         Default;                                           // 0x00AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FTransform                             Transform;                                         // 0x00B0(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFieldFalloffType                             Falloff;                                           // 0x0110(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_330C[0xF];                                     // 0x0111(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3448[0xF];                                     // 0x0111(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UBoxFalloff* SetBoxFalloff(float Param_Magnitude, float Param_MinRange, float Param_MaxRange, float Param_Default, const struct FTransform& Param_Transform, EFieldFalloffType Param_Falloff);
@@ -511,7 +511,7 @@ class UNoiseField final : public UFieldNodeFloat
 public:
 	float                                         MinRange;                                          // 0x00A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxRange;                                          // 0x00A4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_330E[0x8];                                     // 0x00A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_344A[0x8];                                     // 0x00A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Transform;                                         // 0x00B0(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
@@ -539,7 +539,7 @@ class UUniformVector final : public UFieldNodeVector
 {
 public:
 	float                                         Magnitude;                                         // 0x00A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3311[0x4];                                     // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_344D[0x4];                                     // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Direction;                                         // 0x00A8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
@@ -566,7 +566,7 @@ class URadialVector final : public UFieldNodeVector
 {
 public:
 	float                                         Magnitude;                                         // 0x00A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3313[0x4];                                     // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_344F[0x4];                                     // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Position;                                          // 0x00A8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
@@ -593,7 +593,7 @@ class URandomVector final : public UFieldNodeVector
 {
 public:
 	float                                         Magnitude;                                         // 0x00A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3315[0x4];                                     // 0x00A4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3451[0x4];                                     // 0x00A4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class URandomVector* SetRandomVector(float Param_Magnitude);
@@ -618,11 +618,11 @@ class UOperatorField final : public UFieldNodeBase
 {
 public:
 	float                                         Magnitude;                                         // 0x00A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3317[0x4];                                     // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3453[0x4];                                     // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFieldNodeBase*                         RightField;                                        // 0x00A8(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFieldNodeBase*                         LeftField;                                         // 0x00B0(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFieldOperationType                           Operation;                                         // 0x00B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3318[0x7];                                     // 0x00B9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3454[0x7];                                     // 0x00B9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UOperatorField* SetOperatorField(float Param_Magnitude, const class UFieldNodeBase* Param_LeftField, const class UFieldNodeBase* Param_RightField, EFieldOperationType Param_Operation);
@@ -700,7 +700,7 @@ public:
 	class UFieldNodeBase*                         Culling;                                           // 0x00A0(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFieldNodeBase*                         Field;                                             // 0x00A8(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFieldCullingOperationType                    Operation;                                         // 0x00B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_331B[0x7];                                     // 0x00B1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3457[0x7];                                     // 0x00B1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UCullingField* SetCullingField(const class UFieldNodeBase* Param_Culling, const class UFieldNodeBase* Param_Field, EFieldCullingOperationType Param_Operation);

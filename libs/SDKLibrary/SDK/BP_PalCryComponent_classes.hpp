@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "AkAudio_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
 #include "E_PalEmo_structs.hpp"
+#include "Engine_structs.hpp"
+#include "AkAudio_structs.hpp"
 
 
 namespace SDK
@@ -27,23 +27,24 @@ class UBP_PalCryComponent_C final : public UPalCryComponentBase
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x00A0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	float                                         ElapsedTimeFromLastIdleCry;                        // 0x00A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3888[0x4];                                     // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4143[0x4];                                     // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CryingCharacter;                                   // 0x00B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TMap<class UClass*, E_PalEmo>                 ActionEmoMap;                                      // 0x00B8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TMap<class UClass*, E_PalEmo>                 AIActionEmoMap;                                    // 0x0108(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	double                                        CoolTImeIdleCry;                                   // 0x0158(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsCryingOnAIAction;                                // 0x0160(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3889[0x7];                                     // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4144[0x7];                                     // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 CryingAIActionClass;                               // 0x0168(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 CurrentAIActionClass;                              // 0x0170(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UPalIndividualCharacterParameter*       IndividualParameter;                               // 0x0178(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          HasHungry;                                         // 0x0180(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsDebug;                                           // 0x0181(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_388A[0x6];                                     // 0x0182(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4145[0x6];                                     // 0x0182(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        GeneralCoolTime;                                   // 0x0188(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   LastCryEmoState;                                   // 0x0190(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        DeltaTimeFromLastCry;                              // 0x0198(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPalTribeID                                   CryPalID;                                          // 0x01A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          DisableCrying;                                     // 0x01A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void CheckAction(const class UPalActionBase* Action);
@@ -88,6 +89,7 @@ static_assert(offsetof(UBP_PalCryComponent_C, GeneralCoolTime) == 0x000188, "Mem
 static_assert(offsetof(UBP_PalCryComponent_C, LastCryEmoState) == 0x000190, "Member 'UBP_PalCryComponent_C::LastCryEmoState' has a wrong offset!");
 static_assert(offsetof(UBP_PalCryComponent_C, DeltaTimeFromLastCry) == 0x000198, "Member 'UBP_PalCryComponent_C::DeltaTimeFromLastCry' has a wrong offset!");
 static_assert(offsetof(UBP_PalCryComponent_C, CryPalID) == 0x0001A0, "Member 'UBP_PalCryComponent_C::CryPalID' has a wrong offset!");
+static_assert(offsetof(UBP_PalCryComponent_C, DisableCrying) == 0x0001A1, "Member 'UBP_PalCryComponent_C::DisableCrying' has a wrong offset!");
 
 }
 

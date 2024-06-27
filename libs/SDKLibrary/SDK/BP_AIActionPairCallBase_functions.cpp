@@ -113,5 +113,19 @@ void UBP_AIActionPairCallBase_C::OnFinish()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
+
+// Function BP_AIActionPairCallBase.BP_AIActionPairCallBase_C.OnStartPair
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBP_AIActionPairCallBase_C::OnStartPair()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIActionPairCallBase_C", "OnStartPair");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
 }
 

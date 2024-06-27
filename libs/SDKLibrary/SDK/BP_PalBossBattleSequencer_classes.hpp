@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalBossBattleSequencer.BP_PalBossBattleSequencer_C
-// 0x0008 (0x0130 - 0x0128)
+// 0x0008 (0x0150 - 0x0148)
 class UBP_PalBossBattleSequencer_C final : public UPalBossBattleSequencer
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0128(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0148(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_BP_PalBossBattleSequencer(int32 EntryPoint);
@@ -39,8 +39,8 @@ public:
 	}
 };
 static_assert(alignof(UBP_PalBossBattleSequencer_C) == 0x000008, "Wrong alignment on UBP_PalBossBattleSequencer_C");
-static_assert(sizeof(UBP_PalBossBattleSequencer_C) == 0x000130, "Wrong size on UBP_PalBossBattleSequencer_C");
-static_assert(offsetof(UBP_PalBossBattleSequencer_C, UberGraphFrame) == 0x000128, "Member 'UBP_PalBossBattleSequencer_C::UberGraphFrame' has a wrong offset!");
+static_assert(sizeof(UBP_PalBossBattleSequencer_C) == 0x000150, "Wrong size on UBP_PalBossBattleSequencer_C");
+static_assert(offsetof(UBP_PalBossBattleSequencer_C, UberGraphFrame) == 0x000148, "Member 'UBP_PalBossBattleSequencer_C::UberGraphFrame' has a wrong offset!");
 
 }
 

@@ -11,17 +11,283 @@
 #include "Basic.hpp"
 
 #include "Pal_structs.hpp"
-#include "DLSSBlueprint_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "DLSSBlueprint_structs.hpp"
 #include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnWindowChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnWindowChanged final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Graphic_Settings_C_OnWindowChanged) == 0x000004, "Wrong alignment on WBP_Graphic_Settings_C_OnWindowChanged");
+static_assert(sizeof(WBP_Graphic_Settings_C_OnWindowChanged) == 0x000004, "Wrong size on WBP_Graphic_Settings_C_OnWindowChanged");
+static_assert(offsetof(WBP_Graphic_Settings_C_OnWindowChanged, Selection) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnWindowChanged::Selection' has a wrong offset!");
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnVSyncChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Graphic_Settings_C_OnVSyncChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Graphic_Settings_C_OnVSyncChanged) == 0x000001, "Wrong alignment on WBP_Graphic_Settings_C_OnVSyncChanged");
+static_assert(sizeof(WBP_Graphic_Settings_C_OnVSyncChanged) == 0x000001, "Wrong size on WBP_Graphic_Settings_C_OnVSyncChanged");
+static_assert(offsetof(WBP_Graphic_Settings_C_OnVSyncChanged, IsOn) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnVSyncChanged::IsOn' has a wrong offset!");
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnViewDisChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnViewDisChanged final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Graphic_Settings_C_OnViewDisChanged) == 0x000004, "Wrong alignment on WBP_Graphic_Settings_C_OnViewDisChanged");
+static_assert(sizeof(WBP_Graphic_Settings_C_OnViewDisChanged) == 0x000004, "Wrong size on WBP_Graphic_Settings_C_OnViewDisChanged");
+static_assert(offsetof(WBP_Graphic_Settings_C_OnViewDisChanged, Selection) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnViewDisChanged::Selection' has a wrong offset!");
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnTextureChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnTextureChanged final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Graphic_Settings_C_OnTextureChanged) == 0x000004, "Wrong alignment on WBP_Graphic_Settings_C_OnTextureChanged");
+static_assert(sizeof(WBP_Graphic_Settings_C_OnTextureChanged) == 0x000004, "Wrong size on WBP_Graphic_Settings_C_OnTextureChanged");
+static_assert(offsetof(WBP_Graphic_Settings_C_OnTextureChanged, Selection) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnTextureChanged::Selection' has a wrong offset!");
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnShadowChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnShadowChanged final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Graphic_Settings_C_OnShadowChanged) == 0x000004, "Wrong alignment on WBP_Graphic_Settings_C_OnShadowChanged");
+static_assert(sizeof(WBP_Graphic_Settings_C_OnShadowChanged) == 0x000004, "Wrong size on WBP_Graphic_Settings_C_OnShadowChanged");
+static_assert(offsetof(WBP_Graphic_Settings_C_OnShadowChanged, Selection) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnShadowChanged::Selection' has a wrong offset!");
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnRideCameraChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Graphic_Settings_C_OnRideCameraChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Graphic_Settings_C_OnRideCameraChanged) == 0x000008, "Wrong alignment on WBP_Graphic_Settings_C_OnRideCameraChanged");
+static_assert(sizeof(WBP_Graphic_Settings_C_OnRideCameraChanged) == 0x000008, "Wrong size on WBP_Graphic_Settings_C_OnRideCameraChanged");
+static_assert(offsetof(WBP_Graphic_Settings_C_OnRideCameraChanged, Value) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnRideCameraChanged::Value' has a wrong offset!");
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnResolutionChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnResolutionChanged final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Graphic_Settings_C_OnResolutionChanged) == 0x000004, "Wrong alignment on WBP_Graphic_Settings_C_OnResolutionChanged");
+static_assert(sizeof(WBP_Graphic_Settings_C_OnResolutionChanged) == 0x000004, "Wrong size on WBP_Graphic_Settings_C_OnResolutionChanged");
+static_assert(offsetof(WBP_Graphic_Settings_C_OnResolutionChanged, Selection) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnResolutionChanged::Selection' has a wrong offset!");
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnPresetChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnPresetChanged final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Graphic_Settings_C_OnPresetChanged) == 0x000004, "Wrong alignment on WBP_Graphic_Settings_C_OnPresetChanged");
+static_assert(sizeof(WBP_Graphic_Settings_C_OnPresetChanged) == 0x000004, "Wrong size on WBP_Graphic_Settings_C_OnPresetChanged");
+static_assert(offsetof(WBP_Graphic_Settings_C_OnPresetChanged, Selection) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnPresetChanged::Selection' has a wrong offset!");
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnMotionBlurChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Graphic_Settings_C_OnMotionBlurChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Graphic_Settings_C_OnMotionBlurChanged) == 0x000001, "Wrong alignment on WBP_Graphic_Settings_C_OnMotionBlurChanged");
+static_assert(sizeof(WBP_Graphic_Settings_C_OnMotionBlurChanged) == 0x000001, "Wrong size on WBP_Graphic_Settings_C_OnMotionBlurChanged");
+static_assert(offsetof(WBP_Graphic_Settings_C_OnMotionBlurChanged, IsOn) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnMotionBlurChanged::IsOn' has a wrong offset!");
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnMaxFPSChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnMaxFPSChanged final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Graphic_Settings_C_OnMaxFPSChanged) == 0x000004, "Wrong alignment on WBP_Graphic_Settings_C_OnMaxFPSChanged");
+static_assert(sizeof(WBP_Graphic_Settings_C_OnMaxFPSChanged) == 0x000004, "Wrong size on WBP_Graphic_Settings_C_OnMaxFPSChanged");
+static_assert(offsetof(WBP_Graphic_Settings_C_OnMaxFPSChanged, Selection) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnMaxFPSChanged::Selection' has a wrong offset!");
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnLODChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Graphic_Settings_C_OnLODChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Graphic_Settings_C_OnLODChanged) == 0x000008, "Wrong alignment on WBP_Graphic_Settings_C_OnLODChanged");
+static_assert(sizeof(WBP_Graphic_Settings_C_OnLODChanged) == 0x000008, "Wrong size on WBP_Graphic_Settings_C_OnLODChanged");
+static_assert(offsetof(WBP_Graphic_Settings_C_OnLODChanged, Value) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnLODChanged::Value' has a wrong offset!");
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnFOVChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Graphic_Settings_C_OnFOVChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Graphic_Settings_C_OnFOVChanged) == 0x000008, "Wrong alignment on WBP_Graphic_Settings_C_OnFOVChanged");
+static_assert(sizeof(WBP_Graphic_Settings_C_OnFOVChanged) == 0x000008, "Wrong size on WBP_Graphic_Settings_C_OnFOVChanged");
+static_assert(offsetof(WBP_Graphic_Settings_C_OnFOVChanged, Value) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnFOVChanged::Value' has a wrong offset!");
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnFoliageChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnFoliageChanged final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Graphic_Settings_C_OnFoliageChanged) == 0x000004, "Wrong alignment on WBP_Graphic_Settings_C_OnFoliageChanged");
+static_assert(sizeof(WBP_Graphic_Settings_C_OnFoliageChanged) == 0x000004, "Wrong size on WBP_Graphic_Settings_C_OnFoliageChanged");
+static_assert(offsetof(WBP_Graphic_Settings_C_OnFoliageChanged, Selection) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnFoliageChanged::Selection' has a wrong offset!");
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnDLSSChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnDLSSChanged final
+{
+public:
+	int32                                         DLSSLevel;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Graphic_Settings_C_OnDLSSChanged) == 0x000004, "Wrong alignment on WBP_Graphic_Settings_C_OnDLSSChanged");
+static_assert(sizeof(WBP_Graphic_Settings_C_OnDLSSChanged) == 0x000004, "Wrong size on WBP_Graphic_Settings_C_OnDLSSChanged");
+static_assert(offsetof(WBP_Graphic_Settings_C_OnDLSSChanged, DLSSLevel) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnDLSSChanged::DLSSLevel' has a wrong offset!");
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnCommonQualityChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnCommonQualityChanged final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Graphic_Settings_C_OnCommonQualityChanged) == 0x000004, "Wrong alignment on WBP_Graphic_Settings_C_OnCommonQualityChanged");
+static_assert(sizeof(WBP_Graphic_Settings_C_OnCommonQualityChanged) == 0x000004, "Wrong size on WBP_Graphic_Settings_C_OnCommonQualityChanged");
+static_assert(offsetof(WBP_Graphic_Settings_C_OnCommonQualityChanged, Selection) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnCommonQualityChanged::Selection' has a wrong offset!");
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnCameraShakeChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Graphic_Settings_C_OnCameraShakeChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Graphic_Settings_C_OnCameraShakeChanged) == 0x000001, "Wrong alignment on WBP_Graphic_Settings_C_OnCameraShakeChanged");
+static_assert(sizeof(WBP_Graphic_Settings_C_OnCameraShakeChanged) == 0x000001, "Wrong size on WBP_Graphic_Settings_C_OnCameraShakeChanged");
+static_assert(offsetof(WBP_Graphic_Settings_C_OnCameraShakeChanged, IsOn) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnCameraShakeChanged::IsOn' has a wrong offset!");
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnCameraRecoilChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Graphic_Settings_C_OnCameraRecoilChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Graphic_Settings_C_OnCameraRecoilChanged) == 0x000001, "Wrong alignment on WBP_Graphic_Settings_C_OnCameraRecoilChanged");
+static_assert(sizeof(WBP_Graphic_Settings_C_OnCameraRecoilChanged) == 0x000001, "Wrong size on WBP_Graphic_Settings_C_OnCameraRecoilChanged");
+static_assert(offsetof(WBP_Graphic_Settings_C_OnCameraRecoilChanged, IsOn) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnCameraRecoilChanged::IsOn' has a wrong offset!");
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnBrightnessChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Graphic_Settings_C_OnBrightnessChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Graphic_Settings_C_OnBrightnessChanged) == 0x000008, "Wrong alignment on WBP_Graphic_Settings_C_OnBrightnessChanged");
+static_assert(sizeof(WBP_Graphic_Settings_C_OnBrightnessChanged) == 0x000008, "Wrong size on WBP_Graphic_Settings_C_OnBrightnessChanged");
+static_assert(offsetof(WBP_Graphic_Settings_C_OnBrightnessChanged, Value) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnBrightnessChanged::Value' has a wrong offset!");
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnAutoContrastChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Graphic_Settings_C_OnAutoContrastChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Graphic_Settings_C_OnAutoContrastChanged) == 0x000001, "Wrong alignment on WBP_Graphic_Settings_C_OnAutoContrastChanged");
+static_assert(sizeof(WBP_Graphic_Settings_C_OnAutoContrastChanged) == 0x000001, "Wrong size on WBP_Graphic_Settings_C_OnAutoContrastChanged");
+static_assert(offsetof(WBP_Graphic_Settings_C_OnAutoContrastChanged, IsOn) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnAutoContrastChanged::IsOn' has a wrong offset!");
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnAAChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Graphic_Settings_C_OnAAChanged final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Graphic_Settings_C_OnAAChanged) == 0x000004, "Wrong alignment on WBP_Graphic_Settings_C_OnAAChanged");
+static_assert(sizeof(WBP_Graphic_Settings_C_OnAAChanged) == 0x000004, "Wrong size on WBP_Graphic_Settings_C_OnAAChanged");
+static_assert(offsetof(WBP_Graphic_Settings_C_OnAAChanged, Selection) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnAAChanged::Selection' has a wrong offset!");
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.GetDisplayGraphicLevel
+// 0x00C0 (0x00C0 - 0x0000)
+struct WBP_Graphic_Settings_C_GetDisplayGraphicLevel final
+{
+public:
+	struct FPalOptionGraphicsSettings             GraphicLevel;                                      // 0x0000(0x0058)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	EPalOptionGraphicsLevel                       Graphics___;                                       // 0x0058(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3EB8[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue; // 0x0060(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Replace_ReturnValue;                      // 0x0070(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalOptionGraphicsPresetRow            CallFunc_GetDataTableRowFromName_OutRow;           // 0x0088(0x0028)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_2;          // 0x00B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_3;          // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_4;          // 0x00B5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00B6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00B7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x00BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_4;                 // 0x00BB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel) == 0x000008, "Wrong alignment on WBP_Graphic_Settings_C_GetDisplayGraphicLevel");
+static_assert(sizeof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel) == 0x0000C0, "Wrong size on WBP_Graphic_Settings_C_GetDisplayGraphicLevel");
+static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, GraphicLevel) == 0x000000, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::GraphicLevel' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, Graphics___) == 0x000058, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::Graphics___' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x000060, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_Replace_ReturnValue) == 0x000070, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_Replace_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_Conv_StringToName_ReturnValue) == 0x000080, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_GetDataTableRowFromName_OutRow) == 0x000088, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0000B0, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000B1, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x0000B2, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x0000B3, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_EqualEqual_IntInt_ReturnValue_3) == 0x0000B4, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_EqualEqual_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_EqualEqual_IntInt_ReturnValue_4) == 0x0000B5, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_EqualEqual_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000B6, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_BooleanAND_ReturnValue) == 0x0000B7, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_BooleanAND_ReturnValue_1) == 0x0000B8, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_BooleanAND_ReturnValue_2) == 0x0000B9, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_BooleanAND_ReturnValue_3) == 0x0000BA, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_BooleanAND_ReturnValue_4) == 0x0000BB, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
+
 // Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.ExecuteUbergraph_WBP_Graphic_Settings
-// 0x0610 (0x0610 - 0x0000)
+// 0x0620 (0x0620 - 0x0000)
 struct WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings final
 {
 public:
@@ -36,192 +302,191 @@ public:
 	int32                                         K2Node_CustomEvent_Selection_8;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_CustomEvent_Selection_7;                    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsOn_4;                         // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_IsON_4;                         // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_Conv_IntToByte_ReturnValue_1;             // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsOn_3;                         // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_IsON_3;                         // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_GetValidValue_ReturnValue_1;              // 0x0033(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_CustomEvent_Selection_6;                    // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsOn_2;                         // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_IsON_2;                         // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsOn_1;                         // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47D1[0x5];                                     // 0x003B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          K2Node_CustomEvent_IsON_1;                         // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3EB9[0x5];                                     // 0x003B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        K2Node_CustomEvent_Value_3;                        // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_CustomEvent_Value_2;                        // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_CustomEvent_Selection_5;                    // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_CustomEvent_Selection_4;                    // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_CustomEvent_Selection_3;                    // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47D2[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3EBA[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        K2Node_CustomEvent_Value_1;                        // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsOn;                           // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47D3[0x3];                                     // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          K2Node_CustomEvent_IsON;                           // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3EBB[0x3];                                     // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_CustomEvent_Selection_2;                    // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(int32 Selection)>              K2Node_CreateDelegate_OutputDelegate_1;            // 0x0070(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(int32 Selection)>              K2Node_CreateDelegate_OutputDelegate_2;            // 0x0080(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool IsOn)>                    K2Node_CreateDelegate_OutputDelegate_3;            // 0x0090(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool IsOn)>                    K2Node_CreateDelegate_OutputDelegate_4;            // 0x00A0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EPalOptionGraphicsLevel                       CallFunc_GetDisplayGraphicLevel_Graphics___;       // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47D4[0x3];                                     // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3EBC[0x3];                                     // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Round_ReturnValue;                        // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x00BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_2;        // 0x00BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47D5[0x2];                                     // 0x00BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3EBD[0x2];                                     // 0x00BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47D6[0x3];                                     // 0x00C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3EBE[0x3];                                     // 0x00C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(int32 Selection)>              K2Node_CreateDelegate_OutputDelegate_5;            // 0x00CC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool IsOn)>                    K2Node_CreateDelegate_OutputDelegate_6;            // 0x00DC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47D7[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3EBF[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalOptionSubsystem*                    CallFunc_GetOptionSubsystem_ReturnValue_1;         // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool IsOn)>                    K2Node_CreateDelegate_OutputDelegate_7;            // 0x00F8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalOptionLocalStaticSettings          CallFunc_GetOptionLocalStaticSettings_ReturnValue; // 0x0108(0x0050)(ConstParm, NoDestructor)
-	struct FPalOptionGraphicsSettings             CallFunc_GetGraphicsSettings_ReturnValue;          // 0x0158(0x0054)(ConstParm, NoDestructor)
-	TDelegate<void(double Value)>                 K2Node_CreateDelegate_OutputDelegate_8;            // 0x01AC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(double Value)>                 K2Node_CreateDelegate_OutputDelegate_9;            // 0x01BC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 Selection)>              K2Node_CreateDelegate_OutputDelegate_10;           // 0x01CC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 Selection)>              K2Node_CreateDelegate_OutputDelegate_11;           // 0x01DC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 Selection)>              K2Node_CreateDelegate_OutputDelegate_12;           // 0x01EC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(double Value)>                 K2Node_CreateDelegate_OutputDelegate_13;           // 0x01FC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(bool IsOn)>                    K2Node_CreateDelegate_OutputDelegate_14;           // 0x020C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 Selection)>              K2Node_CreateDelegate_OutputDelegate_15;           // 0x021C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x022C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47D8[0x3];                                     // 0x022D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalOptionSubsystem*                    CallFunc_GetOptionSubsystem_ReturnValue_2;         // 0x0230(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalOptionSubsystem*                    CallFunc_GetOptionSubsystem_ReturnValue_3;         // 0x0238(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPalOptionGraphicsLevel                       CallFunc_GetDisplayGraphicLevel_Graphics____1;     // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47D9[0x3];                                     // 0x0241(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_2;             // 0x0244(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_3;        // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47DA[0x3];                                     // 0x0249(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(double Value)>                 K2Node_CreateDelegate_OutputDelegate_16;           // 0x024C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x025C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47DB[0x3];                                     // 0x025D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        K2Node_CustomEvent_Value;                          // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 Selection)>              K2Node_CreateDelegate_OutputDelegate_17;           // 0x0268(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_DLSSLevel;                      // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EAntiAliasingMethod                           CallFunc_Map_Find_Value;                           // 0x027C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x027D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47DC[0x2];                                     // 0x027E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EAntiAliasingMethod>                   CallFunc_Map_Values_Values;                        // 0x0280(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0290(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47DD[0x4];                                     // 0x0294(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EAntiAliasingMethod>                   CallFunc_Map_Values_Values_1;                      // 0x0298(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Find_ReturnValue_1;                 // 0x02A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x02AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47DE[0x3];                                     // 0x02AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EAntiAliasingMethod>                   CallFunc_Map_Values_Values_2;                      // 0x02B0(0x0010)(ReferenceParm)
-	class UPalOptionSubsystem*                    CallFunc_GetOptionSubsystem_ReturnValue_4;         // 0x02C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Find_ReturnValue_2;                 // 0x02C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47DF[0x4];                                     // 0x02CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x02D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalOptionSubsystem*                    CallFunc_GetOptionSubsystem_ReturnValue_5;         // 0x02D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalOptionSubsystem*                    CallFunc_GetOptionSubsystem_ReturnValue_6;         // 0x02E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue_1;           // 0x02F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 Selection)>              K2Node_CreateDelegate_OutputDelegate_18;           // 0x02F8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class FString>                         CallFunc_Map_Values_Values_3;                      // 0x0308(0x0010)(ReferenceParm)
-	class FString                                 CallFunc_Map_Find_Value_1;                         // 0x0318(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x0328(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47E0[0x3];                                     // 0x0329(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_CustomEvent_Selection_1;                    // 0x032C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Find_ReturnValue_3;                 // 0x0330(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0334(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47E1[0x3];                                     // 0x0335(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0338(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47E2[0x4];                                     // 0x033C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int32>                                 CallFunc_Map_Keys_Keys;                            // 0x0340(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Get_Item;                           // 0x0350(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47E3[0x4];                                     // 0x0354(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         K2Node_MakeArray_Array;                            // 0x0358(0x0010)(ReferenceParm)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0368(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47E4[0x4];                                     // 0x036C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0370(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0388(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FPalOptionGraphicsSettings             K2Node_MakeStruct_PalOptionGraphicsSettings;       // 0x0398(0x0054)(NoDestructor)
-	uint8                                         Pad_47E5[0x4];                                     // 0x03EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<int32, class FString>                    K2Node_MakeMap_Map;                                // 0x03F0(0x0050)()
-	struct FIntPoint                              CallFunc_Array_Get_Item_1;                         // 0x0440(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalOptionSubsystem*                    CallFunc_GetOptionSubsystem_ReturnValue_7;         // 0x0448(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalOptionSubsystem*                    CallFunc_GetOptionSubsystem_ReturnValue_8;         // 0x0450(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FIntPoint>                      CallFunc_GetSupportScreenSizes_SupportResolutions; // 0x0458(0x0010)(ReferenceParm)
-	TArray<struct FIntPoint>                      CallFunc_GetSupportScreenSizes_SupportResolutions_1; // 0x0468(0x0010)(ReferenceParm)
-	bool                                          Temp_bool_Variable_1;                              // 0x0478(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47E6[0x3];                                     // 0x0479(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(int32 Selection)>              K2Node_CreateDelegate_OutputDelegate_19;           // 0x047C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_Selection;                      // 0x048C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalSupportedPlatformType                     CallFunc_GetPlatformType_ReturnValue;              // 0x0490(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_4;        // 0x0491(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_5;        // 0x0492(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0493(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0494(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x0498(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x049C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47E7[0x3];                                     // 0x049D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FIntPoint                              CallFunc_Array_Get_Item_2;                         // 0x04A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Find_ReturnValue_4;                 // 0x04A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x04AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47E8[0x3];                                     // 0x04AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_SelectInt_ReturnValue_1;                  // 0x04B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FIntPoint                              K2Node_Select_Default_1;                           // 0x04B4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalSupportedPlatformType                     CallFunc_GetPlatformType_ReturnValue_1;            // 0x04BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_6;        // 0x04BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_7;        // 0x04BE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x04BF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalOptionSubsystem*                    CallFunc_GetOptionSubsystem_ReturnValue_9;         // 0x04C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue_2;           // 0x04C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDLSSSupported_ReturnValue;              // 0x04D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47E9[0x7];                                     // 0x04D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EUDLSSMode>                            CallFunc_Map_Values_Values_4;                      // 0x04D8(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Find_ReturnValue_5;                 // 0x04E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUDLSSMode                                    CallFunc_Map_Find_Value_2;                         // 0x04EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue_2;                   // 0x04ED(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_8;        // 0x04EE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47EA[0x1];                                     // 0x04EF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EUDLSSMode>                            CallFunc_Map_Values_Values_5;                      // 0x04F0(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Find_ReturnValue_6;                 // 0x0500(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47EB[0x4];                                     // 0x0504(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EUDLSSMode>                            CallFunc_Map_Values_Values_6;                      // 0x0508(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Find_ReturnValue_7;                 // 0x0518(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDLSSSupported_ReturnValue_1;            // 0x051C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDLSSSupported_ReturnValue_2;            // 0x051D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47EC[0x2];                                     // 0x051E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_SetFieldsInStruct_LODBias_ImplicitCast;     // 0x0520(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_SetFieldsInStruct_Brightness_ImplicitCast;  // 0x0524(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0528(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast;      // 0x0530(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_1;    // 0x0538(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_2;    // 0x0540(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Round_A_ImplicitCast;                     // 0x0548(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast_1;        // 0x0550(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_3;    // 0x0558(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_4;    // 0x0560(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_SetFieldsInStruct_PalRideCameraLengthRate_ImplicitCast; // 0x0568(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47ED[0x4];                                     // 0x056C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_SetSlider_Min_ImplicitCast;               // 0x0570(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast;               // 0x0578(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Min_ImplicitCast_1;             // 0x0580(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast_1;             // 0x0588(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_B_ImplicitCast;          // 0x0590(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Subtract_DoubleDouble_B_ImplicitCast;     // 0x0598(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_SetFieldsInStruct_FOV_ImplicitCast;         // 0x05A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47EE[0x4];                                     // 0x05A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_SetSlider_Min_ImplicitCast_2;             // 0x05A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast_2;             // 0x05B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Min_ImplicitCast_3;             // 0x05B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast_3;             // 0x05C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_B_ImplicitCast_1;        // 0x05C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast_2;        // 0x05D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_5;    // 0x05D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_6;    // 0x05E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Min_ImplicitCast_4;             // 0x05E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast_4;             // 0x05F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_B_ImplicitCast_2;        // 0x05F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Min_ImplicitCast_5;             // 0x0600(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast_5;             // 0x0608(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalOptionLocalStaticSettings          CallFunc_GetOptionLocalStaticSettings_ReturnValue; // 0x0108(0x0058)(ConstParm, NoDestructor)
+	struct FPalOptionGraphicsSettings             CallFunc_GetGraphicsSettings_ReturnValue;          // 0x0160(0x0058)(ConstParm, NoDestructor)
+	TDelegate<void(double Value)>                 K2Node_CreateDelegate_OutputDelegate_8;            // 0x01B8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(double Value)>                 K2Node_CreateDelegate_OutputDelegate_9;            // 0x01C8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(int32 Selection)>              K2Node_CreateDelegate_OutputDelegate_10;           // 0x01D8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(int32 Selection)>              K2Node_CreateDelegate_OutputDelegate_11;           // 0x01E8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(int32 Selection)>              K2Node_CreateDelegate_OutputDelegate_12;           // 0x01F8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(double Value)>                 K2Node_CreateDelegate_OutputDelegate_13;           // 0x0208(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(bool IsOn)>                    K2Node_CreateDelegate_OutputDelegate_14;           // 0x0218(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(int32 Selection)>              K2Node_CreateDelegate_OutputDelegate_15;           // 0x0228(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3EC0[0x7];                                     // 0x0239(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalOptionSubsystem*                    CallFunc_GetOptionSubsystem_ReturnValue_2;         // 0x0240(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalOptionSubsystem*                    CallFunc_GetOptionSubsystem_ReturnValue_3;         // 0x0248(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPalOptionGraphicsLevel                       CallFunc_GetDisplayGraphicLevel_Graphics____1;     // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3EC1[0x3];                                     // 0x0251(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_2;             // 0x0254(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_3;        // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3EC2[0x3];                                     // 0x0259(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(double Value)>                 K2Node_CreateDelegate_OutputDelegate_16;           // 0x025C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x026C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3EC3[0x3];                                     // 0x026D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        K2Node_CustomEvent_Value;                          // 0x0270(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(int32 Selection)>              K2Node_CreateDelegate_OutputDelegate_17;           // 0x0278(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_DLSSLevel;                      // 0x0288(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EAntiAliasingMethod                           CallFunc_Map_Find_Value;                           // 0x028C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x028D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3EC4[0x2];                                     // 0x028E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EAntiAliasingMethod>                   CallFunc_Map_Values_Values;                        // 0x0290(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x02A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3EC5[0x4];                                     // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EAntiAliasingMethod>                   CallFunc_Map_Values_Values_1;                      // 0x02A8(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Find_ReturnValue_1;                 // 0x02B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x02BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3EC6[0x3];                                     // 0x02BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EAntiAliasingMethod>                   CallFunc_Map_Values_Values_2;                      // 0x02C0(0x0010)(ReferenceParm)
+	class UPalOptionSubsystem*                    CallFunc_GetOptionSubsystem_ReturnValue_4;         // 0x02D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Find_ReturnValue_2;                 // 0x02D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3EC7[0x4];                                     // 0x02DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalOptionSubsystem*                    CallFunc_GetOptionSubsystem_ReturnValue_5;         // 0x02E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x02F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalOptionSubsystem*                    CallFunc_GetOptionSubsystem_ReturnValue_6;         // 0x02F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue_1;           // 0x0300(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(int32 Selection)>              K2Node_CreateDelegate_OutputDelegate_18;           // 0x0308(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class FString>                         CallFunc_Map_Values_Values_3;                      // 0x0318(0x0010)(ReferenceParm)
+	class FString                                 CallFunc_Map_Find_Value_1;                         // 0x0328(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x0338(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3EC8[0x3];                                     // 0x0339(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_Selection_1;                    // 0x033C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Find_ReturnValue_3;                 // 0x0340(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0344(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3EC9[0x3];                                     // 0x0345(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0348(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3ECA[0x4];                                     // 0x034C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int32>                                 CallFunc_Map_Keys_Keys;                            // 0x0350(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Get_Item;                           // 0x0360(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3ECB[0x4];                                     // 0x0364(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         K2Node_MakeArray_Array;                            // 0x0368(0x0010)(ReferenceParm)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0378(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3ECC[0x4];                                     // 0x037C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0380(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0398(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FPalOptionGraphicsSettings             K2Node_MakeStruct_PalOptionGraphicsSettings;       // 0x03A8(0x0058)(NoDestructor)
+	TMap<int32, class FString>                    K2Node_MakeMap_Map;                                // 0x0400(0x0050)()
+	struct FIntPoint                              CallFunc_Array_Get_Item_1;                         // 0x0450(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalOptionSubsystem*                    CallFunc_GetOptionSubsystem_ReturnValue_7;         // 0x0458(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalOptionSubsystem*                    CallFunc_GetOptionSubsystem_ReturnValue_8;         // 0x0460(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FIntPoint>                      CallFunc_GetSupportScreenSizes_SupportResolutions; // 0x0468(0x0010)(ReferenceParm)
+	TArray<struct FIntPoint>                      CallFunc_GetSupportScreenSizes_SupportResolutions_1; // 0x0478(0x0010)(ReferenceParm)
+	bool                                          Temp_bool_Variable_1;                              // 0x0488(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3ECD[0x3];                                     // 0x0489(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(int32 Selection)>              K2Node_CreateDelegate_OutputDelegate_19;           // 0x048C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_Selection;                      // 0x049C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalSupportedPlatformType                     CallFunc_GetPlatformType_ReturnValue;              // 0x04A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_4;        // 0x04A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_5;        // 0x04A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x04A3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x04A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x04A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x04AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3ECE[0x3];                                     // 0x04AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FIntPoint                              CallFunc_Array_Get_Item_2;                         // 0x04B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Find_ReturnValue_4;                 // 0x04B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x04BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3ECF[0x3];                                     // 0x04BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue_1;                  // 0x04C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FIntPoint                              K2Node_Select_Default_1;                           // 0x04C4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalSupportedPlatformType                     CallFunc_GetPlatformType_ReturnValue_1;            // 0x04CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_6;        // 0x04CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_7;        // 0x04CE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x04CF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalOptionSubsystem*                    CallFunc_GetOptionSubsystem_ReturnValue_9;         // 0x04D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue_2;           // 0x04D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDLSSSupported_ReturnValue;              // 0x04E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3ED0[0x7];                                     // 0x04E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EUDLSSMode>                            CallFunc_Map_Values_Values_4;                      // 0x04E8(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Find_ReturnValue_5;                 // 0x04F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUDLSSMode                                    CallFunc_Map_Find_Value_2;                         // 0x04FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue_2;                   // 0x04FD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_8;        // 0x04FE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3ED1[0x1];                                     // 0x04FF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EUDLSSMode>                            CallFunc_Map_Values_Values_5;                      // 0x0500(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Find_ReturnValue_6;                 // 0x0510(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3ED2[0x4];                                     // 0x0514(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EUDLSSMode>                            CallFunc_Map_Values_Values_6;                      // 0x0518(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Find_ReturnValue_7;                 // 0x0528(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDLSSSupported_ReturnValue_1;            // 0x052C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDLSSSupported_ReturnValue_2;            // 0x052D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3ED3[0x2];                                     // 0x052E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_SetFieldsInStruct_LODBias_ImplicitCast;     // 0x0530(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_SetFieldsInStruct_Brightness_ImplicitCast;  // 0x0534(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0538(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast;      // 0x0540(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_1;    // 0x0548(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_2;    // 0x0550(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Round_A_ImplicitCast;                     // 0x0558(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast_1;        // 0x0560(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_3;    // 0x0568(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_4;    // 0x0570(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_SetFieldsInStruct_PalRideCameraLengthRate_ImplicitCast; // 0x0578(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3ED4[0x4];                                     // 0x057C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_SetSlider_Min_ImplicitCast;               // 0x0580(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast;               // 0x0588(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Min_ImplicitCast_1;             // 0x0590(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast_1;             // 0x0598(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_B_ImplicitCast;          // 0x05A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Subtract_DoubleDouble_B_ImplicitCast;     // 0x05A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_SetFieldsInStruct_FOV_ImplicitCast;         // 0x05B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3ED5[0x4];                                     // 0x05B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_SetSlider_Min_ImplicitCast_2;             // 0x05B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast_2;             // 0x05C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Min_ImplicitCast_3;             // 0x05C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast_3;             // 0x05D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_B_ImplicitCast_1;        // 0x05D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast_2;        // 0x05E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_5;    // 0x05E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_6;    // 0x05F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Min_ImplicitCast_4;             // 0x05F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast_4;             // 0x0600(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_B_ImplicitCast_2;        // 0x0608(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Min_ImplicitCast_5;             // 0x0610(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast_5;             // 0x0618(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings) == 0x000008, "Wrong alignment on WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings");
-static_assert(sizeof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings) == 0x000610, "Wrong size on WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings");
+static_assert(sizeof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings) == 0x000620, "Wrong size on WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings");
 static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, EntryPoint) == 0x000000, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::EntryPoint' has a wrong offset!");
 static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_Selection_9) == 0x000014, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_Selection_9' has a wrong offset!");
@@ -233,21 +498,21 @@ static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Setti
 static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_Selection_8) == 0x000024, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_Selection_8' has a wrong offset!");
 static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_Selection_7) == 0x000028, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_Selection_7' has a wrong offset!");
 static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Add_IntInt_ReturnValue) == 0x00002C, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_IsOn_4) == 0x000030, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_IsOn_4' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_IsON_4) == 0x000030, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_IsON_4' has a wrong offset!");
 static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Conv_IntToByte_ReturnValue_1) == 0x000031, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Conv_IntToByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_IsOn_3) == 0x000032, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_IsOn_3' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_IsON_3) == 0x000032, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_IsON_3' has a wrong offset!");
 static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetValidValue_ReturnValue_1) == 0x000033, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetValidValue_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_Selection_6) == 0x000034, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_Selection_6' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_IsOn_2) == 0x000038, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_IsOn_2' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_IsON_2) == 0x000038, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_IsON_2' has a wrong offset!");
 static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000039, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_IsOn_1) == 0x00003A, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_IsOn_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_IsON_1) == 0x00003A, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_IsON_1' has a wrong offset!");
 static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_Value_3) == 0x000040, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_Value_3' has a wrong offset!");
 static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_Value_2) == 0x000048, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_Value_2' has a wrong offset!");
 static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_Selection_5) == 0x000050, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_Selection_5' has a wrong offset!");
 static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_Selection_4) == 0x000054, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_Selection_4' has a wrong offset!");
 static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_Selection_3) == 0x000058, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_Selection_3' has a wrong offset!");
 static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_Value_1) == 0x000060, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_Value_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_IsOn) == 0x000068, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_IsOn' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_IsON) == 0x000068, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_IsON' has a wrong offset!");
 static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_Selection_2) == 0x00006C, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_Selection_2' has a wrong offset!");
 static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_1) == 0x000070, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
 static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_2) == 0x000080, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
@@ -266,392 +531,126 @@ static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Setti
 static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetOptionSubsystem_ReturnValue_1) == 0x0000F0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetOptionSubsystem_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_7) == 0x0000F8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
 static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetOptionLocalStaticSettings_ReturnValue) == 0x000108, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetOptionLocalStaticSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetGraphicsSettings_ReturnValue) == 0x000158, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetGraphicsSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_8) == 0x0001AC, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_9) == 0x0001BC, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_10) == 0x0001CC, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_10' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_11) == 0x0001DC, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_11' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_12) == 0x0001EC, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_12' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_13) == 0x0001FC, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_13' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_14) == 0x00020C, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_14' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_15) == 0x00021C, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_15' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, Temp_byte_Variable) == 0x00022C, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetOptionSubsystem_ReturnValue_2) == 0x000230, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetOptionSubsystem_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetOptionSubsystem_ReturnValue_3) == 0x000238, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetOptionSubsystem_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetDisplayGraphicLevel_Graphics____1) == 0x000240, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetDisplayGraphicLevel_Graphics____1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Conv_ByteToInt_ReturnValue_2) == 0x000244, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Conv_ByteToInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x000248, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_16) == 0x00024C, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_16' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, Temp_byte_Variable_1) == 0x00025C, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_Value) == 0x000260, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_Value' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_17) == 0x000268, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_17' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_DLSSLevel) == 0x000278, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_DLSSLevel' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Find_Value) == 0x00027C, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Find_ReturnValue) == 0x00027D, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Values_Values) == 0x000280, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Values_Values' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Find_ReturnValue) == 0x000290, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Values_Values_1) == 0x000298, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Values_Values_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Find_ReturnValue_1) == 0x0002A8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, Temp_bool_Variable) == 0x0002AC, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Values_Values_2) == 0x0002B0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Values_Values_2' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetOptionSubsystem_ReturnValue_4) == 0x0002C0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetOptionSubsystem_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Find_ReturnValue_2) == 0x0002C8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Find_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Add_DoubleDouble_ReturnValue) == 0x0002D0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetOptionSubsystem_ReturnValue_5) == 0x0002D8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetOptionSubsystem_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x0002E0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetOptionSubsystem_ReturnValue_6) == 0x0002E8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetOptionSubsystem_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Add_DoubleDouble_ReturnValue_1) == 0x0002F0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Add_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_18) == 0x0002F8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_18' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Values_Values_3) == 0x000308, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Values_Values_3' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Find_Value_1) == 0x000318, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Find_Value_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Find_ReturnValue_1) == 0x000328, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_Selection_1) == 0x00032C, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_Selection_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Find_ReturnValue_3) == 0x000330, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Find_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000334, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SelectInt_ReturnValue) == 0x000338, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Keys_Keys) == 0x000340, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Keys_Keys' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Get_Item) == 0x000350, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_MakeArray_Array) == 0x000358, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000368, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetLocalizedTextFromHandle_Text) == 0x000370, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetLocalizedTextFromHandle_Text' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Conv_TextToString_ReturnValue) == 0x000388, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_MakeStruct_PalOptionGraphicsSettings) == 0x000398, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_MakeStruct_PalOptionGraphicsSettings' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_MakeMap_Map) == 0x0003F0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_MakeMap_Map' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Get_Item_1) == 0x000440, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetOptionSubsystem_ReturnValue_7) == 0x000448, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetOptionSubsystem_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetOptionSubsystem_ReturnValue_8) == 0x000450, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetOptionSubsystem_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetSupportScreenSizes_SupportResolutions) == 0x000458, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetSupportScreenSizes_SupportResolutions' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetSupportScreenSizes_SupportResolutions_1) == 0x000468, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetSupportScreenSizes_SupportResolutions_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, Temp_bool_Variable_1) == 0x000478, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_19) == 0x00047C, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_19' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_Selection) == 0x00048C, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_Selection' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetPlatformType_ReturnValue) == 0x000490, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetPlatformType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_EqualEqual_ByteByte_ReturnValue_4) == 0x000491, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_EqualEqual_ByteByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_EqualEqual_ByteByte_ReturnValue_5) == 0x000492, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_EqualEqual_ByteByte_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_BooleanOR_ReturnValue) == 0x000493, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Length_ReturnValue) == 0x000494, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x000498, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_Select_Default) == 0x00049C, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Get_Item_2) == 0x0004A0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Find_ReturnValue_4) == 0x0004A8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Find_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Contains_ReturnValue) == 0x0004AC, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SelectInt_ReturnValue_1) == 0x0004B0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SelectInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_Select_Default_1) == 0x0004B4, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetPlatformType_ReturnValue_1) == 0x0004BC, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetPlatformType_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_EqualEqual_ByteByte_ReturnValue_6) == 0x0004BD, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_EqualEqual_ByteByte_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_EqualEqual_ByteByte_ReturnValue_7) == 0x0004BE, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_EqualEqual_ByteByte_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_BooleanOR_ReturnValue_1) == 0x0004BF, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetOptionSubsystem_ReturnValue_9) == 0x0004C0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetOptionSubsystem_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Add_DoubleDouble_ReturnValue_2) == 0x0004C8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Add_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_IsDLSSSupported_ReturnValue) == 0x0004D0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_IsDLSSSupported_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Values_Values_4) == 0x0004D8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Values_Values_4' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Find_ReturnValue_5) == 0x0004E8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Find_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Find_Value_2) == 0x0004EC, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Find_Value_2' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Find_ReturnValue_2) == 0x0004ED, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Find_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_EqualEqual_ByteByte_ReturnValue_8) == 0x0004EE, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_EqualEqual_ByteByte_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Values_Values_5) == 0x0004F0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Values_Values_5' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Find_ReturnValue_6) == 0x000500, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Find_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Values_Values_6) == 0x000508, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Values_Values_6' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Find_ReturnValue_7) == 0x000518, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Find_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_IsDLSSSupported_ReturnValue_1) == 0x00051C, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_IsDLSSSupported_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_IsDLSSSupported_ReturnValue_2) == 0x00051D, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_IsDLSSSupported_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_SetFieldsInStruct_LODBias_ImplicitCast) == 0x000520, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_SetFieldsInStruct_LODBias_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_SetFieldsInStruct_Brightness_ImplicitCast) == 0x000524, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_SetFieldsInStruct_Brightness_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Add_DoubleDouble_A_ImplicitCast) == 0x000528, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Add_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_CurrentValue_ImplicitCast) == 0x000530, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_CurrentValue_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_CurrentValue_ImplicitCast_1) == 0x000538, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_CurrentValue_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_CurrentValue_ImplicitCast_2) == 0x000540, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_CurrentValue_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Round_A_ImplicitCast) == 0x000548, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Round_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Add_DoubleDouble_A_ImplicitCast_1) == 0x000550, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Add_DoubleDouble_A_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_CurrentValue_ImplicitCast_3) == 0x000558, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_CurrentValue_ImplicitCast_3' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_CurrentValue_ImplicitCast_4) == 0x000560, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_CurrentValue_ImplicitCast_4' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_SetFieldsInStruct_PalRideCameraLengthRate_ImplicitCast) == 0x000568, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_SetFieldsInStruct_PalRideCameraLengthRate_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Min_ImplicitCast) == 0x000570, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Min_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Max_ImplicitCast) == 0x000578, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Max_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Min_ImplicitCast_1) == 0x000580, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Min_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Max_ImplicitCast_1) == 0x000588, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Max_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Add_DoubleDouble_B_ImplicitCast) == 0x000590, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Add_DoubleDouble_B_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Subtract_DoubleDouble_B_ImplicitCast) == 0x000598, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Subtract_DoubleDouble_B_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_SetFieldsInStruct_FOV_ImplicitCast) == 0x0005A0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_SetFieldsInStruct_FOV_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Min_ImplicitCast_2) == 0x0005A8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Min_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Max_ImplicitCast_2) == 0x0005B0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Max_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Min_ImplicitCast_3) == 0x0005B8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Min_ImplicitCast_3' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Max_ImplicitCast_3) == 0x0005C0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Max_ImplicitCast_3' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Add_DoubleDouble_B_ImplicitCast_1) == 0x0005C8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Add_DoubleDouble_B_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Add_DoubleDouble_A_ImplicitCast_2) == 0x0005D0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Add_DoubleDouble_A_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_CurrentValue_ImplicitCast_5) == 0x0005D8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_CurrentValue_ImplicitCast_5' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_CurrentValue_ImplicitCast_6) == 0x0005E0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_CurrentValue_ImplicitCast_6' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Min_ImplicitCast_4) == 0x0005E8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Min_ImplicitCast_4' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Max_ImplicitCast_4) == 0x0005F0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Max_ImplicitCast_4' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Add_DoubleDouble_B_ImplicitCast_2) == 0x0005F8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Add_DoubleDouble_B_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Min_ImplicitCast_5) == 0x000600, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Min_ImplicitCast_5' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Max_ImplicitCast_5) == 0x000608, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Max_ImplicitCast_5' has a wrong offset!");
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.GetDisplayGraphicLevel
-// 0x00B0 (0x00B0 - 0x0000)
-struct WBP_Graphic_Settings_C_GetDisplayGraphicLevel final
-{
-public:
-	struct FPalOptionGraphicsSettings             GraphicLevel;                                      // 0x0000(0x0054)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	EPalOptionGraphicsLevel                       Graphics___;                                       // 0x0054(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47EF[0x3];                                     // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue; // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Replace_ReturnValue;                      // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalOptionGraphicsPresetRow            CallFunc_GetDataTableRowFromName_OutRow;           // 0x0080(0x0020)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x00A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_2;          // 0x00A3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_3;          // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_4;          // 0x00A5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00A6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00A7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x00AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_4;                 // 0x00AB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel) == 0x000008, "Wrong alignment on WBP_Graphic_Settings_C_GetDisplayGraphicLevel");
-static_assert(sizeof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel) == 0x0000B0, "Wrong size on WBP_Graphic_Settings_C_GetDisplayGraphicLevel");
-static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, GraphicLevel) == 0x000000, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::GraphicLevel' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, Graphics___) == 0x000054, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::Graphics___' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_GetEnumeratorUserFriendlyName_ReturnValue) == 0x000058, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_GetEnumeratorUserFriendlyName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_Replace_ReturnValue) == 0x000068, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_Replace_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_Conv_StringToName_ReturnValue) == 0x000078, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_GetDataTableRowFromName_OutRow) == 0x000080, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0000A0, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000A1, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x0000A2, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x0000A3, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_EqualEqual_IntInt_ReturnValue_3) == 0x0000A4, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_EqualEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_EqualEqual_IntInt_ReturnValue_4) == 0x0000A5, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_EqualEqual_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000A6, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_BooleanAND_ReturnValue) == 0x0000A7, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_BooleanAND_ReturnValue_1) == 0x0000A8, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_BooleanAND_ReturnValue_2) == 0x0000A9, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_BooleanAND_ReturnValue_3) == 0x0000AA, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Graphic_Settings_C_GetDisplayGraphicLevel, CallFunc_BooleanAND_ReturnValue_4) == 0x0000AB, "Member 'WBP_Graphic_Settings_C_GetDisplayGraphicLevel::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnAAChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnAAChanged final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Graphic_Settings_C_OnAAChanged) == 0x000004, "Wrong alignment on WBP_Graphic_Settings_C_OnAAChanged");
-static_assert(sizeof(WBP_Graphic_Settings_C_OnAAChanged) == 0x000004, "Wrong size on WBP_Graphic_Settings_C_OnAAChanged");
-static_assert(offsetof(WBP_Graphic_Settings_C_OnAAChanged, Selection) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnAAChanged::Selection' has a wrong offset!");
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnAutoContrastChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Graphic_Settings_C_OnAutoContrastChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Graphic_Settings_C_OnAutoContrastChanged) == 0x000001, "Wrong alignment on WBP_Graphic_Settings_C_OnAutoContrastChanged");
-static_assert(sizeof(WBP_Graphic_Settings_C_OnAutoContrastChanged) == 0x000001, "Wrong size on WBP_Graphic_Settings_C_OnAutoContrastChanged");
-static_assert(offsetof(WBP_Graphic_Settings_C_OnAutoContrastChanged, IsOn) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnAutoContrastChanged::IsOn' has a wrong offset!");
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnBrightnessChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Graphic_Settings_C_OnBrightnessChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Graphic_Settings_C_OnBrightnessChanged) == 0x000008, "Wrong alignment on WBP_Graphic_Settings_C_OnBrightnessChanged");
-static_assert(sizeof(WBP_Graphic_Settings_C_OnBrightnessChanged) == 0x000008, "Wrong size on WBP_Graphic_Settings_C_OnBrightnessChanged");
-static_assert(offsetof(WBP_Graphic_Settings_C_OnBrightnessChanged, Value) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnBrightnessChanged::Value' has a wrong offset!");
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnCameraRecoilChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Graphic_Settings_C_OnCameraRecoilChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Graphic_Settings_C_OnCameraRecoilChanged) == 0x000001, "Wrong alignment on WBP_Graphic_Settings_C_OnCameraRecoilChanged");
-static_assert(sizeof(WBP_Graphic_Settings_C_OnCameraRecoilChanged) == 0x000001, "Wrong size on WBP_Graphic_Settings_C_OnCameraRecoilChanged");
-static_assert(offsetof(WBP_Graphic_Settings_C_OnCameraRecoilChanged, IsOn) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnCameraRecoilChanged::IsOn' has a wrong offset!");
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnCameraShakeChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Graphic_Settings_C_OnCameraShakeChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Graphic_Settings_C_OnCameraShakeChanged) == 0x000001, "Wrong alignment on WBP_Graphic_Settings_C_OnCameraShakeChanged");
-static_assert(sizeof(WBP_Graphic_Settings_C_OnCameraShakeChanged) == 0x000001, "Wrong size on WBP_Graphic_Settings_C_OnCameraShakeChanged");
-static_assert(offsetof(WBP_Graphic_Settings_C_OnCameraShakeChanged, IsOn) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnCameraShakeChanged::IsOn' has a wrong offset!");
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnCommonQualityChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnCommonQualityChanged final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Graphic_Settings_C_OnCommonQualityChanged) == 0x000004, "Wrong alignment on WBP_Graphic_Settings_C_OnCommonQualityChanged");
-static_assert(sizeof(WBP_Graphic_Settings_C_OnCommonQualityChanged) == 0x000004, "Wrong size on WBP_Graphic_Settings_C_OnCommonQualityChanged");
-static_assert(offsetof(WBP_Graphic_Settings_C_OnCommonQualityChanged, Selection) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnCommonQualityChanged::Selection' has a wrong offset!");
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnDLSSChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnDLSSChanged final
-{
-public:
-	int32                                         DLSSLevel;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Graphic_Settings_C_OnDLSSChanged) == 0x000004, "Wrong alignment on WBP_Graphic_Settings_C_OnDLSSChanged");
-static_assert(sizeof(WBP_Graphic_Settings_C_OnDLSSChanged) == 0x000004, "Wrong size on WBP_Graphic_Settings_C_OnDLSSChanged");
-static_assert(offsetof(WBP_Graphic_Settings_C_OnDLSSChanged, DLSSLevel) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnDLSSChanged::DLSSLevel' has a wrong offset!");
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnFoliageChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnFoliageChanged final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Graphic_Settings_C_OnFoliageChanged) == 0x000004, "Wrong alignment on WBP_Graphic_Settings_C_OnFoliageChanged");
-static_assert(sizeof(WBP_Graphic_Settings_C_OnFoliageChanged) == 0x000004, "Wrong size on WBP_Graphic_Settings_C_OnFoliageChanged");
-static_assert(offsetof(WBP_Graphic_Settings_C_OnFoliageChanged, Selection) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnFoliageChanged::Selection' has a wrong offset!");
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnFOVChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Graphic_Settings_C_OnFOVChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Graphic_Settings_C_OnFOVChanged) == 0x000008, "Wrong alignment on WBP_Graphic_Settings_C_OnFOVChanged");
-static_assert(sizeof(WBP_Graphic_Settings_C_OnFOVChanged) == 0x000008, "Wrong size on WBP_Graphic_Settings_C_OnFOVChanged");
-static_assert(offsetof(WBP_Graphic_Settings_C_OnFOVChanged, Value) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnFOVChanged::Value' has a wrong offset!");
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnLODChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Graphic_Settings_C_OnLODChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Graphic_Settings_C_OnLODChanged) == 0x000008, "Wrong alignment on WBP_Graphic_Settings_C_OnLODChanged");
-static_assert(sizeof(WBP_Graphic_Settings_C_OnLODChanged) == 0x000008, "Wrong size on WBP_Graphic_Settings_C_OnLODChanged");
-static_assert(offsetof(WBP_Graphic_Settings_C_OnLODChanged, Value) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnLODChanged::Value' has a wrong offset!");
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnMaxFPSChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnMaxFPSChanged final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Graphic_Settings_C_OnMaxFPSChanged) == 0x000004, "Wrong alignment on WBP_Graphic_Settings_C_OnMaxFPSChanged");
-static_assert(sizeof(WBP_Graphic_Settings_C_OnMaxFPSChanged) == 0x000004, "Wrong size on WBP_Graphic_Settings_C_OnMaxFPSChanged");
-static_assert(offsetof(WBP_Graphic_Settings_C_OnMaxFPSChanged, Selection) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnMaxFPSChanged::Selection' has a wrong offset!");
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnMotionBlurChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Graphic_Settings_C_OnMotionBlurChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Graphic_Settings_C_OnMotionBlurChanged) == 0x000001, "Wrong alignment on WBP_Graphic_Settings_C_OnMotionBlurChanged");
-static_assert(sizeof(WBP_Graphic_Settings_C_OnMotionBlurChanged) == 0x000001, "Wrong size on WBP_Graphic_Settings_C_OnMotionBlurChanged");
-static_assert(offsetof(WBP_Graphic_Settings_C_OnMotionBlurChanged, IsOn) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnMotionBlurChanged::IsOn' has a wrong offset!");
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnPresetChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnPresetChanged final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Graphic_Settings_C_OnPresetChanged) == 0x000004, "Wrong alignment on WBP_Graphic_Settings_C_OnPresetChanged");
-static_assert(sizeof(WBP_Graphic_Settings_C_OnPresetChanged) == 0x000004, "Wrong size on WBP_Graphic_Settings_C_OnPresetChanged");
-static_assert(offsetof(WBP_Graphic_Settings_C_OnPresetChanged, Selection) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnPresetChanged::Selection' has a wrong offset!");
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnResolutionChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnResolutionChanged final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Graphic_Settings_C_OnResolutionChanged) == 0x000004, "Wrong alignment on WBP_Graphic_Settings_C_OnResolutionChanged");
-static_assert(sizeof(WBP_Graphic_Settings_C_OnResolutionChanged) == 0x000004, "Wrong size on WBP_Graphic_Settings_C_OnResolutionChanged");
-static_assert(offsetof(WBP_Graphic_Settings_C_OnResolutionChanged, Selection) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnResolutionChanged::Selection' has a wrong offset!");
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnRideCameraChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Graphic_Settings_C_OnRideCameraChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Graphic_Settings_C_OnRideCameraChanged) == 0x000008, "Wrong alignment on WBP_Graphic_Settings_C_OnRideCameraChanged");
-static_assert(sizeof(WBP_Graphic_Settings_C_OnRideCameraChanged) == 0x000008, "Wrong size on WBP_Graphic_Settings_C_OnRideCameraChanged");
-static_assert(offsetof(WBP_Graphic_Settings_C_OnRideCameraChanged, Value) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnRideCameraChanged::Value' has a wrong offset!");
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnShadowChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnShadowChanged final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Graphic_Settings_C_OnShadowChanged) == 0x000004, "Wrong alignment on WBP_Graphic_Settings_C_OnShadowChanged");
-static_assert(sizeof(WBP_Graphic_Settings_C_OnShadowChanged) == 0x000004, "Wrong size on WBP_Graphic_Settings_C_OnShadowChanged");
-static_assert(offsetof(WBP_Graphic_Settings_C_OnShadowChanged, Selection) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnShadowChanged::Selection' has a wrong offset!");
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnTextureChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnTextureChanged final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Graphic_Settings_C_OnTextureChanged) == 0x000004, "Wrong alignment on WBP_Graphic_Settings_C_OnTextureChanged");
-static_assert(sizeof(WBP_Graphic_Settings_C_OnTextureChanged) == 0x000004, "Wrong size on WBP_Graphic_Settings_C_OnTextureChanged");
-static_assert(offsetof(WBP_Graphic_Settings_C_OnTextureChanged, Selection) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnTextureChanged::Selection' has a wrong offset!");
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnViewDisChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnViewDisChanged final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Graphic_Settings_C_OnViewDisChanged) == 0x000004, "Wrong alignment on WBP_Graphic_Settings_C_OnViewDisChanged");
-static_assert(sizeof(WBP_Graphic_Settings_C_OnViewDisChanged) == 0x000004, "Wrong size on WBP_Graphic_Settings_C_OnViewDisChanged");
-static_assert(offsetof(WBP_Graphic_Settings_C_OnViewDisChanged, Selection) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnViewDisChanged::Selection' has a wrong offset!");
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnVSyncChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Graphic_Settings_C_OnVSyncChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Graphic_Settings_C_OnVSyncChanged) == 0x000001, "Wrong alignment on WBP_Graphic_Settings_C_OnVSyncChanged");
-static_assert(sizeof(WBP_Graphic_Settings_C_OnVSyncChanged) == 0x000001, "Wrong size on WBP_Graphic_Settings_C_OnVSyncChanged");
-static_assert(offsetof(WBP_Graphic_Settings_C_OnVSyncChanged, IsOn) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnVSyncChanged::IsOn' has a wrong offset!");
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnWindowChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Graphic_Settings_C_OnWindowChanged final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Graphic_Settings_C_OnWindowChanged) == 0x000004, "Wrong alignment on WBP_Graphic_Settings_C_OnWindowChanged");
-static_assert(sizeof(WBP_Graphic_Settings_C_OnWindowChanged) == 0x000004, "Wrong size on WBP_Graphic_Settings_C_OnWindowChanged");
-static_assert(offsetof(WBP_Graphic_Settings_C_OnWindowChanged, Selection) == 0x000000, "Member 'WBP_Graphic_Settings_C_OnWindowChanged::Selection' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetGraphicsSettings_ReturnValue) == 0x000160, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetGraphicsSettings_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_8) == 0x0001B8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_9) == 0x0001C8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_10) == 0x0001D8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_10' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_11) == 0x0001E8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_11' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_12) == 0x0001F8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_12' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_13) == 0x000208, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_13' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_14) == 0x000218, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_14' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_15) == 0x000228, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_15' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, Temp_byte_Variable) == 0x000238, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetOptionSubsystem_ReturnValue_2) == 0x000240, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetOptionSubsystem_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetOptionSubsystem_ReturnValue_3) == 0x000248, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetOptionSubsystem_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetDisplayGraphicLevel_Graphics____1) == 0x000250, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetDisplayGraphicLevel_Graphics____1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Conv_ByteToInt_ReturnValue_2) == 0x000254, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Conv_ByteToInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x000258, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_16) == 0x00025C, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_16' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, Temp_byte_Variable_1) == 0x00026C, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_Value) == 0x000270, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_Value' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_17) == 0x000278, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_17' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_DLSSLevel) == 0x000288, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_DLSSLevel' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Find_Value) == 0x00028C, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Find_Value' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Find_ReturnValue) == 0x00028D, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Values_Values) == 0x000290, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Values_Values' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Find_ReturnValue) == 0x0002A0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Values_Values_1) == 0x0002A8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Values_Values_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Find_ReturnValue_1) == 0x0002B8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Find_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, Temp_bool_Variable) == 0x0002BC, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Values_Values_2) == 0x0002C0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Values_Values_2' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetOptionSubsystem_ReturnValue_4) == 0x0002D0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetOptionSubsystem_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Find_ReturnValue_2) == 0x0002D8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Find_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Add_DoubleDouble_ReturnValue) == 0x0002E0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetOptionSubsystem_ReturnValue_5) == 0x0002E8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetOptionSubsystem_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x0002F0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetOptionSubsystem_ReturnValue_6) == 0x0002F8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetOptionSubsystem_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Add_DoubleDouble_ReturnValue_1) == 0x000300, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Add_DoubleDouble_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_18) == 0x000308, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_18' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Values_Values_3) == 0x000318, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Values_Values_3' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Find_Value_1) == 0x000328, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Find_Value_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Find_ReturnValue_1) == 0x000338, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_Selection_1) == 0x00033C, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_Selection_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Find_ReturnValue_3) == 0x000340, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Find_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000344, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SelectInt_ReturnValue) == 0x000348, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Keys_Keys) == 0x000350, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Keys_Keys' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Get_Item) == 0x000360, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_MakeArray_Array) == 0x000368, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000378, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetLocalizedTextFromHandle_Text) == 0x000380, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetLocalizedTextFromHandle_Text' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Conv_TextToString_ReturnValue) == 0x000398, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_MakeStruct_PalOptionGraphicsSettings) == 0x0003A8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_MakeStruct_PalOptionGraphicsSettings' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_MakeMap_Map) == 0x000400, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_MakeMap_Map' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Get_Item_1) == 0x000450, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetOptionSubsystem_ReturnValue_7) == 0x000458, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetOptionSubsystem_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetOptionSubsystem_ReturnValue_8) == 0x000460, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetOptionSubsystem_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetSupportScreenSizes_SupportResolutions) == 0x000468, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetSupportScreenSizes_SupportResolutions' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetSupportScreenSizes_SupportResolutions_1) == 0x000478, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetSupportScreenSizes_SupportResolutions_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, Temp_bool_Variable_1) == 0x000488, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CreateDelegate_OutputDelegate_19) == 0x00048C, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CreateDelegate_OutputDelegate_19' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_CustomEvent_Selection) == 0x00049C, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_CustomEvent_Selection' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetPlatformType_ReturnValue) == 0x0004A0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetPlatformType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_EqualEqual_ByteByte_ReturnValue_4) == 0x0004A1, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_EqualEqual_ByteByte_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_EqualEqual_ByteByte_ReturnValue_5) == 0x0004A2, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_EqualEqual_ByteByte_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_BooleanOR_ReturnValue) == 0x0004A3, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Length_ReturnValue) == 0x0004A4, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x0004A8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_Select_Default) == 0x0004AC, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Get_Item_2) == 0x0004B0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Get_Item_2' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Find_ReturnValue_4) == 0x0004B8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Find_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Contains_ReturnValue) == 0x0004BC, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SelectInt_ReturnValue_1) == 0x0004C0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SelectInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_Select_Default_1) == 0x0004C4, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetPlatformType_ReturnValue_1) == 0x0004CC, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetPlatformType_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_EqualEqual_ByteByte_ReturnValue_6) == 0x0004CD, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_EqualEqual_ByteByte_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_EqualEqual_ByteByte_ReturnValue_7) == 0x0004CE, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_EqualEqual_ByteByte_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_BooleanOR_ReturnValue_1) == 0x0004CF, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_GetOptionSubsystem_ReturnValue_9) == 0x0004D0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_GetOptionSubsystem_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Add_DoubleDouble_ReturnValue_2) == 0x0004D8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Add_DoubleDouble_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_IsDLSSSupported_ReturnValue) == 0x0004E0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_IsDLSSSupported_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Values_Values_4) == 0x0004E8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Values_Values_4' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Find_ReturnValue_5) == 0x0004F8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Find_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Find_Value_2) == 0x0004FC, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Find_Value_2' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Find_ReturnValue_2) == 0x0004FD, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Find_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_EqualEqual_ByteByte_ReturnValue_8) == 0x0004FE, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_EqualEqual_ByteByte_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Values_Values_5) == 0x000500, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Values_Values_5' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Find_ReturnValue_6) == 0x000510, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Find_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Map_Values_Values_6) == 0x000518, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Map_Values_Values_6' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Array_Find_ReturnValue_7) == 0x000528, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Array_Find_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_IsDLSSSupported_ReturnValue_1) == 0x00052C, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_IsDLSSSupported_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_IsDLSSSupported_ReturnValue_2) == 0x00052D, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_IsDLSSSupported_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_SetFieldsInStruct_LODBias_ImplicitCast) == 0x000530, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_SetFieldsInStruct_LODBias_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_SetFieldsInStruct_Brightness_ImplicitCast) == 0x000534, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_SetFieldsInStruct_Brightness_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Add_DoubleDouble_A_ImplicitCast) == 0x000538, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Add_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_CurrentValue_ImplicitCast) == 0x000540, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_CurrentValue_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_CurrentValue_ImplicitCast_1) == 0x000548, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_CurrentValue_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_CurrentValue_ImplicitCast_2) == 0x000550, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_CurrentValue_ImplicitCast_2' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Round_A_ImplicitCast) == 0x000558, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Round_A_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Add_DoubleDouble_A_ImplicitCast_1) == 0x000560, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Add_DoubleDouble_A_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_CurrentValue_ImplicitCast_3) == 0x000568, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_CurrentValue_ImplicitCast_3' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_CurrentValue_ImplicitCast_4) == 0x000570, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_CurrentValue_ImplicitCast_4' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_SetFieldsInStruct_PalRideCameraLengthRate_ImplicitCast) == 0x000578, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_SetFieldsInStruct_PalRideCameraLengthRate_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Min_ImplicitCast) == 0x000580, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Min_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Max_ImplicitCast) == 0x000588, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Max_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Min_ImplicitCast_1) == 0x000590, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Min_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Max_ImplicitCast_1) == 0x000598, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Max_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Add_DoubleDouble_B_ImplicitCast) == 0x0005A0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Add_DoubleDouble_B_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Subtract_DoubleDouble_B_ImplicitCast) == 0x0005A8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Subtract_DoubleDouble_B_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, K2Node_SetFieldsInStruct_FOV_ImplicitCast) == 0x0005B0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::K2Node_SetFieldsInStruct_FOV_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Min_ImplicitCast_2) == 0x0005B8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Min_ImplicitCast_2' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Max_ImplicitCast_2) == 0x0005C0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Max_ImplicitCast_2' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Min_ImplicitCast_3) == 0x0005C8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Min_ImplicitCast_3' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Max_ImplicitCast_3) == 0x0005D0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Max_ImplicitCast_3' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Add_DoubleDouble_B_ImplicitCast_1) == 0x0005D8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Add_DoubleDouble_B_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Add_DoubleDouble_A_ImplicitCast_2) == 0x0005E0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Add_DoubleDouble_A_ImplicitCast_2' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_CurrentValue_ImplicitCast_5) == 0x0005E8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_CurrentValue_ImplicitCast_5' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_CurrentValue_ImplicitCast_6) == 0x0005F0, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_CurrentValue_ImplicitCast_6' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Min_ImplicitCast_4) == 0x0005F8, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Min_ImplicitCast_4' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Max_ImplicitCast_4) == 0x000600, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Max_ImplicitCast_4' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_Add_DoubleDouble_B_ImplicitCast_2) == 0x000608, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_Add_DoubleDouble_B_ImplicitCast_2' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Min_ImplicitCast_5) == 0x000610, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Min_ImplicitCast_5' has a wrong offset!");
+static_assert(offsetof(WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings, CallFunc_SetSlider_Max_ImplicitCast_5) == 0x000618, "Member 'WBP_Graphic_Settings_C_ExecuteUbergraph_WBP_Graphic_Settings::CallFunc_SetSlider_Max_ImplicitCast_5' has a wrong offset!");
 
 }
 

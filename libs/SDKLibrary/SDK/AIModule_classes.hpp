@@ -13,48 +13,88 @@
 #include "AIModule_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "GameplayTasks_classes.hpp"
-#include "GameplayTags_structs.hpp"
 #include "NavigationSystem_classes.hpp"
 
 
 namespace SDK
 {
 
-// Class AIModule.EnvQueryNode
-// 0x0008 (0x0030 - 0x0028)
-class UEnvQueryNode : public UObject
+// Class AIModule.EQSTestingPawn
+// 0x00A0 (0x06C0 - 0x0620)
+class AEQSTestingPawn final : public ACharacter
 {
 public:
-	int32                                         VerNum;                                            // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_ECF[0x4];                                      // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EDF[0x8];                                      // 0x0618(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UEnvQuery*                              QueryTemplate;                                     // 0x0620(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FEnvNamedValue>                 QueryParams;                                       // 0x0628(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FAIDynamicParam>                QueryConfig;                                       // 0x0638(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+	float                                         TimeLimitPerStep;                                  // 0x0648(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         StepToDebugDraw;                                   // 0x064C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EEnvQueryHightlightMode                       HighlightMode;                                     // 0x0650(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_EE0[0x3];                                      // 0x0651(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         bDrawLabels : 1;                                   // 0x0654(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bDrawFailedItems : 1;                              // 0x0654(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bReRunQueryOnlyOnFinishedMove : 1;                 // 0x0654(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bShouldBeVisibleInGame : 1;                        // 0x0654(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bTickDuringGame : 1;                               // 0x0654(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         Pad_EE1[0x3];                                      // 0x0655(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	EEnvQueryRunMode                              QueryingMode;                                      // 0x0658(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_EE2[0x7];                                      // 0x0659(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FNavAgentProperties                    NavAgentProperties;                                // 0x0660(0x0038)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_EE3[0x28];                                     // 0x0698(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EnvQueryNode">();
+		return StaticClassImpl<"EQSTestingPawn">();
 	}
-	static class UEnvQueryNode* GetDefaultObj()
+	static class AEQSTestingPawn* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UEnvQueryNode>();
+		return GetDefaultObjImpl<AEQSTestingPawn>();
 	}
 };
-static_assert(alignof(UEnvQueryNode) == 0x000008, "Wrong alignment on UEnvQueryNode");
-static_assert(sizeof(UEnvQueryNode) == 0x000030, "Wrong size on UEnvQueryNode");
-static_assert(offsetof(UEnvQueryNode, VerNum) == 0x000028, "Member 'UEnvQueryNode::VerNum' has a wrong offset!");
+static_assert(alignof(AEQSTestingPawn) == 0x000010, "Wrong alignment on AEQSTestingPawn");
+static_assert(sizeof(AEQSTestingPawn) == 0x0006C0, "Wrong size on AEQSTestingPawn");
+static_assert(offsetof(AEQSTestingPawn, QueryTemplate) == 0x000620, "Member 'AEQSTestingPawn::QueryTemplate' has a wrong offset!");
+static_assert(offsetof(AEQSTestingPawn, QueryParams) == 0x000628, "Member 'AEQSTestingPawn::QueryParams' has a wrong offset!");
+static_assert(offsetof(AEQSTestingPawn, QueryConfig) == 0x000638, "Member 'AEQSTestingPawn::QueryConfig' has a wrong offset!");
+static_assert(offsetof(AEQSTestingPawn, TimeLimitPerStep) == 0x000648, "Member 'AEQSTestingPawn::TimeLimitPerStep' has a wrong offset!");
+static_assert(offsetof(AEQSTestingPawn, StepToDebugDraw) == 0x00064C, "Member 'AEQSTestingPawn::StepToDebugDraw' has a wrong offset!");
+static_assert(offsetof(AEQSTestingPawn, HighlightMode) == 0x000650, "Member 'AEQSTestingPawn::HighlightMode' has a wrong offset!");
+static_assert(offsetof(AEQSTestingPawn, QueryingMode) == 0x000658, "Member 'AEQSTestingPawn::QueryingMode' has a wrong offset!");
+static_assert(offsetof(AEQSTestingPawn, NavAgentProperties) == 0x000660, "Member 'AEQSTestingPawn::NavAgentProperties' has a wrong offset!");
+
+// Class AIModule.AISenseBlueprintListener
+// 0x0000 (0x0108 - 0x0108)
+class UAISenseBlueprintListener final : public UUserDefinedStruct
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"AISenseBlueprintListener">();
+	}
+	static class UAISenseBlueprintListener* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAISenseBlueprintListener>();
+	}
+};
+static_assert(alignof(UAISenseBlueprintListener) == 0x000008, "Wrong alignment on UAISenseBlueprintListener");
+static_assert(sizeof(UAISenseBlueprintListener) == 0x000108, "Wrong size on UAISenseBlueprintListener");
 
 // Class AIModule.BTNode
 // 0x0030 (0x0058 - 0x0028)
 class UBTNode : public UObject
 {
 public:
-	uint8                                         Pad_ED0[0x8];                                      // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EE4[0x8];                                      // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 NodeName;                                          // 0x0030(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UBehaviorTree*                          TreeAsset;                                         // 0x0040(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UBTCompositeNode*                       ParentNode;                                        // 0x0048(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_ED1[0x8];                                      // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EE5[0x8];                                      // 0x0050(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -72,85 +112,273 @@ static_assert(offsetof(UBTNode, NodeName) == 0x000030, "Member 'UBTNode::NodeNam
 static_assert(offsetof(UBTNode, TreeAsset) == 0x000040, "Member 'UBTNode::TreeAsset' has a wrong offset!");
 static_assert(offsetof(UBTNode, ParentNode) == 0x000048, "Member 'UBTNode::ParentNode' has a wrong offset!");
 
-// Class AIModule.BTCompositeNode
-// 0x0038 (0x0090 - 0x0058)
-class UBTCompositeNode : public UBTNode
+// Class AIModule.BTAuxiliaryNode
+// 0x0008 (0x0060 - 0x0058)
+class UBTAuxiliaryNode : public UBTNode
 {
 public:
-	TArray<struct FBTCompositeChild>              Children;                                          // 0x0058(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<class UBTService*>                     Services;                                          // 0x0068(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
-	uint8                                         Pad_ED2[0x10];                                     // 0x0078(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	uint8                                         bApplyDecoratorScope : 1;                          // 0x0088(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_ED3[0x7];                                      // 0x0089(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EE6[0x8];                                      // 0x0058(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTCompositeNode">();
+		return StaticClassImpl<"BTAuxiliaryNode">();
 	}
-	static class UBTCompositeNode* GetDefaultObj()
+	static class UBTAuxiliaryNode* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UBTCompositeNode>();
+		return GetDefaultObjImpl<UBTAuxiliaryNode>();
 	}
 };
-static_assert(alignof(UBTCompositeNode) == 0x000008, "Wrong alignment on UBTCompositeNode");
-static_assert(sizeof(UBTCompositeNode) == 0x000090, "Wrong size on UBTCompositeNode");
-static_assert(offsetof(UBTCompositeNode, Children) == 0x000058, "Member 'UBTCompositeNode::Children' has a wrong offset!");
-static_assert(offsetof(UBTCompositeNode, Services) == 0x000068, "Member 'UBTCompositeNode::Services' has a wrong offset!");
+static_assert(alignof(UBTAuxiliaryNode) == 0x000008, "Wrong alignment on UBTAuxiliaryNode");
+static_assert(sizeof(UBTAuxiliaryNode) == 0x000060, "Wrong size on UBTAuxiliaryNode");
 
-// Class AIModule.BTComposite_Sequence
-// 0x0000 (0x0090 - 0x0090)
-class UBTComposite_Sequence final : public UBTCompositeNode
+// Class AIModule.BTDecorator
+// 0x0008 (0x0068 - 0x0060)
+class UBTDecorator : public UBTAuxiliaryNode
 {
+public:
+	uint8                                         BitPad_4B : 7;                                     // 0x0060(0x0001)(Fixing Bit-Field Size Between Bits [ Dumper-7 ])
+	uint8                                         bInverseCondition : 1;                             // 0x0060(0x0001)(BitIndex: 0x07, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
+	uint8                                         Pad_EE7[0x3];                                      // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	EBTFlowAbortMode                              FlowAbortMode;                                     // 0x0064(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_EE8[0x3];                                      // 0x0065(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTComposite_Sequence">();
+		return StaticClassImpl<"BTDecorator">();
 	}
-	static class UBTComposite_Sequence* GetDefaultObj()
+	static class UBTDecorator* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UBTComposite_Sequence>();
+		return GetDefaultObjImpl<UBTDecorator>();
 	}
 };
-static_assert(alignof(UBTComposite_Sequence) == 0x000008, "Wrong alignment on UBTComposite_Sequence");
-static_assert(sizeof(UBTComposite_Sequence) == 0x000090, "Wrong size on UBTComposite_Sequence");
+static_assert(alignof(UBTDecorator) == 0x000008, "Wrong alignment on UBTDecorator");
+static_assert(sizeof(UBTDecorator) == 0x000068, "Wrong size on UBTDecorator");
+static_assert(offsetof(UBTDecorator, FlowAbortMode) == 0x000064, "Member 'UBTDecorator::FlowAbortMode' has a wrong offset!");
 
-// Class AIModule.BlackboardKeyType
+// Class AIModule.BTDecorator_BlackboardBase
+// 0x0028 (0x0090 - 0x0068)
+class UBTDecorator_BlackboardBase : public UBTDecorator
+{
+public:
+	struct FBlackboardKeySelector                 BlackboardKey;                                     // 0x0068(0x0028)(Edit, Protected, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"BTDecorator_BlackboardBase">();
+	}
+	static class UBTDecorator_BlackboardBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTDecorator_BlackboardBase>();
+	}
+};
+static_assert(alignof(UBTDecorator_BlackboardBase) == 0x000008, "Wrong alignment on UBTDecorator_BlackboardBase");
+static_assert(sizeof(UBTDecorator_BlackboardBase) == 0x000090, "Wrong size on UBTDecorator_BlackboardBase");
+static_assert(offsetof(UBTDecorator_BlackboardBase, BlackboardKey) == 0x000068, "Member 'UBTDecorator_BlackboardBase::BlackboardKey' has a wrong offset!");
+
+// Class AIModule.BTDecorator_IsBBEntryOfClass
+// 0x0008 (0x0098 - 0x0090)
+class UBTDecorator_IsBBEntryOfClass final : public UBTDecorator_BlackboardBase
+{
+public:
+	TSubclassOf<class UObject>                    TestClass;                                         // 0x0090(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"BTDecorator_IsBBEntryOfClass">();
+	}
+	static class UBTDecorator_IsBBEntryOfClass* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTDecorator_IsBBEntryOfClass>();
+	}
+};
+static_assert(alignof(UBTDecorator_IsBBEntryOfClass) == 0x000008, "Wrong alignment on UBTDecorator_IsBBEntryOfClass");
+static_assert(sizeof(UBTDecorator_IsBBEntryOfClass) == 0x000098, "Wrong size on UBTDecorator_IsBBEntryOfClass");
+static_assert(offsetof(UBTDecorator_IsBBEntryOfClass, TestClass) == 0x000090, "Member 'UBTDecorator_IsBBEntryOfClass::TestClass' has a wrong offset!");
+
+// Class AIModule.PathFollowingComponent
+// 0x0218 (0x02B8 - 0x00A0)
+class UPathFollowingComponent : public UActorComponent
+{
+public:
+	uint8                                         Pad_EE9[0x38];                                     // 0x00A0(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNavMovementComponent*                  MovementComp;                                      // 0x00D8(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_EEA[0x8];                                      // 0x00E0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class ANavigationData*                        MyNavData;                                         // 0x00E8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_EEB[0x1C8];                                    // 0x00F0(0x01C8)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void OnActorBump(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
+	void OnNavDataRegistered(class ANavigationData* NavData);
+
+	EPathFollowingAction GetPathActionType() const;
+	struct FVector GetPathDestination() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"PathFollowingComponent">();
+	}
+	static class UPathFollowingComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPathFollowingComponent>();
+	}
+};
+static_assert(alignof(UPathFollowingComponent) == 0x000008, "Wrong alignment on UPathFollowingComponent");
+static_assert(sizeof(UPathFollowingComponent) == 0x0002B8, "Wrong size on UPathFollowingComponent");
+static_assert(offsetof(UPathFollowingComponent, MovementComp) == 0x0000D8, "Member 'UPathFollowingComponent::MovementComp' has a wrong offset!");
+static_assert(offsetof(UPathFollowingComponent, MyNavData) == 0x0000E8, "Member 'UPathFollowingComponent::MyNavData' has a wrong offset!");
+
+// Class AIModule.EnvQueryNode
 // 0x0008 (0x0030 - 0x0028)
-class UBlackboardKeyType : public UObject
+class UEnvQueryNode : public UObject
 {
 public:
-	uint8                                         Pad_ED4[0x8];                                      // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	int32                                         VerNum;                                            // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_EEC[0x4];                                      // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BlackboardKeyType">();
+		return StaticClassImpl<"EnvQueryNode">();
 	}
-	static class UBlackboardKeyType* GetDefaultObj()
+	static class UEnvQueryNode* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UBlackboardKeyType>();
+		return GetDefaultObjImpl<UEnvQueryNode>();
 	}
 };
-static_assert(alignof(UBlackboardKeyType) == 0x000008, "Wrong alignment on UBlackboardKeyType");
-static_assert(sizeof(UBlackboardKeyType) == 0x000030, "Wrong size on UBlackboardKeyType");
+static_assert(alignof(UEnvQueryNode) == 0x000008, "Wrong alignment on UEnvQueryNode");
+static_assert(sizeof(UEnvQueryNode) == 0x000030, "Wrong size on UEnvQueryNode");
+static_assert(offsetof(UEnvQueryNode, VerNum) == 0x000028, "Member 'UEnvQueryNode::VerNum' has a wrong offset!");
 
-// Class AIModule.BlackboardKeyType_Vector
-// 0x0000 (0x0030 - 0x0030)
-class UBlackboardKeyType_Vector final : public UBlackboardKeyType
+// Class AIModule.EnvQueryGenerator
+// 0x0020 (0x0050 - 0x0030)
+class UEnvQueryGenerator : public UEnvQueryNode
+{
+public:
+	class FString                                 OptionName;                                        // 0x0030(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UEnvQueryItemType>          ItemType;                                          // 0x0040(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         bAutoSortTests : 1;                                // 0x0048(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         Pad_EED[0x7];                                      // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"EnvQueryGenerator">();
+	}
+	static class UEnvQueryGenerator* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryGenerator>();
+	}
+};
+static_assert(alignof(UEnvQueryGenerator) == 0x000008, "Wrong alignment on UEnvQueryGenerator");
+static_assert(sizeof(UEnvQueryGenerator) == 0x000050, "Wrong size on UEnvQueryGenerator");
+static_assert(offsetof(UEnvQueryGenerator, OptionName) == 0x000030, "Member 'UEnvQueryGenerator::OptionName' has a wrong offset!");
+static_assert(offsetof(UEnvQueryGenerator, ItemType) == 0x000040, "Member 'UEnvQueryGenerator::ItemType' has a wrong offset!");
+
+// Class AIModule.EnvQueryGenerator_ProjectedPoints
+// 0x0040 (0x0090 - 0x0050)
+class UEnvQueryGenerator_ProjectedPoints : public UEnvQueryGenerator
+{
+public:
+	struct FEnvTraceData                          ProjectionData;                                    // 0x0050(0x0040)(Edit, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"EnvQueryGenerator_ProjectedPoints">();
+	}
+	static class UEnvQueryGenerator_ProjectedPoints* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryGenerator_ProjectedPoints>();
+	}
+};
+static_assert(alignof(UEnvQueryGenerator_ProjectedPoints) == 0x000008, "Wrong alignment on UEnvQueryGenerator_ProjectedPoints");
+static_assert(sizeof(UEnvQueryGenerator_ProjectedPoints) == 0x000090, "Wrong size on UEnvQueryGenerator_ProjectedPoints");
+static_assert(offsetof(UEnvQueryGenerator_ProjectedPoints, ProjectionData) == 0x000050, "Member 'UEnvQueryGenerator_ProjectedPoints::ProjectionData' has a wrong offset!");
+
+// Class AIModule.EnvQueryGenerator_OnCircle
+// 0x01A0 (0x0230 - 0x0090)
+class UEnvQueryGenerator_OnCircle final : public UEnvQueryGenerator_ProjectedPoints
+{
+public:
+	struct FAIDataProviderFloatValue              CircleRadius;                                      // 0x0090(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FAIDataProviderFloatValue              SpaceBetween;                                      // 0x00C8(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FAIDataProviderIntValue                NumberOfPoints;                                    // 0x0100(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	EPointOnCircleSpacingMethod                   PointOnCircleSpacingMethod;                        // 0x0138(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_EEE[0x7];                                      // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEnvDirection                          ArcDirection;                                      // 0x0140(0x0020)(Edit, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+	struct FAIDataProviderFloatValue              ArcAngle;                                          // 0x0160(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	float                                         AngleRadians;                                      // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_EEF[0x4];                                      // 0x019C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UEnvQueryContext>           CircleCenter;                                      // 0x01A0(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIgnoreAnyContextActorsWhenGeneratingCircle;       // 0x01A8(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_EF0[0x7];                                      // 0x01A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FAIDataProviderFloatValue              CircleCenterZOffset;                               // 0x01B0(0x0038)(Edit, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FEnvTraceData                          TraceData;                                         // 0x01E8(0x0040)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         bDefineArc : 1;                                    // 0x0228(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         Pad_EF1[0x7];                                      // 0x0229(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"EnvQueryGenerator_OnCircle">();
+	}
+	static class UEnvQueryGenerator_OnCircle* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryGenerator_OnCircle>();
+	}
+};
+static_assert(alignof(UEnvQueryGenerator_OnCircle) == 0x000008, "Wrong alignment on UEnvQueryGenerator_OnCircle");
+static_assert(sizeof(UEnvQueryGenerator_OnCircle) == 0x000230, "Wrong size on UEnvQueryGenerator_OnCircle");
+static_assert(offsetof(UEnvQueryGenerator_OnCircle, CircleRadius) == 0x000090, "Member 'UEnvQueryGenerator_OnCircle::CircleRadius' has a wrong offset!");
+static_assert(offsetof(UEnvQueryGenerator_OnCircle, SpaceBetween) == 0x0000C8, "Member 'UEnvQueryGenerator_OnCircle::SpaceBetween' has a wrong offset!");
+static_assert(offsetof(UEnvQueryGenerator_OnCircle, NumberOfPoints) == 0x000100, "Member 'UEnvQueryGenerator_OnCircle::NumberOfPoints' has a wrong offset!");
+static_assert(offsetof(UEnvQueryGenerator_OnCircle, PointOnCircleSpacingMethod) == 0x000138, "Member 'UEnvQueryGenerator_OnCircle::PointOnCircleSpacingMethod' has a wrong offset!");
+static_assert(offsetof(UEnvQueryGenerator_OnCircle, ArcDirection) == 0x000140, "Member 'UEnvQueryGenerator_OnCircle::ArcDirection' has a wrong offset!");
+static_assert(offsetof(UEnvQueryGenerator_OnCircle, ArcAngle) == 0x000160, "Member 'UEnvQueryGenerator_OnCircle::ArcAngle' has a wrong offset!");
+static_assert(offsetof(UEnvQueryGenerator_OnCircle, AngleRadians) == 0x000198, "Member 'UEnvQueryGenerator_OnCircle::AngleRadians' has a wrong offset!");
+static_assert(offsetof(UEnvQueryGenerator_OnCircle, CircleCenter) == 0x0001A0, "Member 'UEnvQueryGenerator_OnCircle::CircleCenter' has a wrong offset!");
+static_assert(offsetof(UEnvQueryGenerator_OnCircle, bIgnoreAnyContextActorsWhenGeneratingCircle) == 0x0001A8, "Member 'UEnvQueryGenerator_OnCircle::bIgnoreAnyContextActorsWhenGeneratingCircle' has a wrong offset!");
+static_assert(offsetof(UEnvQueryGenerator_OnCircle, CircleCenterZOffset) == 0x0001B0, "Member 'UEnvQueryGenerator_OnCircle::CircleCenterZOffset' has a wrong offset!");
+static_assert(offsetof(UEnvQueryGenerator_OnCircle, TraceData) == 0x0001E8, "Member 'UEnvQueryGenerator_OnCircle::TraceData' has a wrong offset!");
+
+// Class AIModule.AISenseEvent
+// 0x0000 (0x0028 - 0x0028)
+class UAISenseEvent : public UObject
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BlackboardKeyType_Vector">();
+		return StaticClassImpl<"AISenseEvent">();
 	}
-	static class UBlackboardKeyType_Vector* GetDefaultObj()
+	static class UAISenseEvent* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UBlackboardKeyType_Vector>();
+		return GetDefaultObjImpl<UAISenseEvent>();
 	}
 };
-static_assert(alignof(UBlackboardKeyType_Vector) == 0x000008, "Wrong alignment on UBlackboardKeyType_Vector");
-static_assert(sizeof(UBlackboardKeyType_Vector) == 0x000030, "Wrong size on UBlackboardKeyType_Vector");
+static_assert(alignof(UAISenseEvent) == 0x000008, "Wrong alignment on UAISenseEvent");
+static_assert(sizeof(UAISenseEvent) == 0x000028, "Wrong size on UAISenseEvent");
+
+// Class AIModule.AIResourceInterface
+// 0x0000 (0x0028 - 0x0028)
+class IAIResourceInterface final : public IInterface
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"AIResourceInterface">();
+	}
+	static class IAIResourceInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<IAIResourceInterface>();
+	}
+};
+static_assert(alignof(IAIResourceInterface) == 0x000008, "Wrong alignment on IAIResourceInterface");
+static_assert(sizeof(IAIResourceInterface) == 0x000028, "Wrong size on IAIResourceInterface");
 
 // Class AIModule.EnvQueryTest
 // 0x01C8 (0x01F8 - 0x0030)
@@ -159,29 +387,29 @@ class UEnvQueryTest : public UEnvQueryNode
 public:
 	int32                                         TestOrder;                                         // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EEnvTestPurpose                               TestPurpose;                                       // 0x0034(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_ED5[0x3];                                      // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EF2[0x3];                                      // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 TestComment;                                       // 0x0038(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EEnvTestFilterOperator                        MultipleContextFilterOp;                           // 0x0048(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EEnvTestScoreOperator                         MultipleContextScoreOp;                            // 0x0049(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EEnvTestFilterType                            FilterType;                                        // 0x004A(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_ED6[0x5];                                      // 0x004B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EF3[0x5];                                      // 0x004B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAIDataProviderBoolValue               BoolValue;                                         // 0x0050(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	struct FAIDataProviderFloatValue              FloatValueMin;                                     // 0x0088(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	struct FAIDataProviderFloatValue              FloatValueMax;                                     // 0x00C0(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	uint8                                         Pad_ED7[0x1];                                      // 0x00F8(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EF4[0x1];                                      // 0x00F8(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	EEnvTestScoreEquation                         ScoringEquation;                                   // 0x00F9(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EEnvQueryTestClamping                         ClampMinType;                                      // 0x00FA(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EEnvQueryTestClamping                         ClampMaxType;                                      // 0x00FB(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EEQSNormalizationType                         NormalizationType;                                 // 0x00FC(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_ED8[0x3];                                      // 0x00FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EF5[0x3];                                      // 0x00FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAIDataProviderFloatValue              ScoreClampMin;                                     // 0x0100(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	struct FAIDataProviderFloatValue              ScoreClampMax;                                     // 0x0138(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	struct FAIDataProviderFloatValue              ScoringFactor;                                     // 0x0170(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	struct FAIDataProviderFloatValue              ReferenceValue;                                    // 0x01A8(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	bool                                          bDefineReferenceValue;                             // 0x01E0(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_ED9[0xF];                                      // 0x01E1(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EF6[0xF];                                      // 0x01E1(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bWorkOnFloatValues : 1;                            // 0x01F0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         Pad_EDA[0x7];                                      // 0x01F1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EF7[0x7];                                      // 0x01F1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -214,117 +442,12 @@ static_assert(offsetof(UEnvQueryTest, ScoringFactor) == 0x000170, "Member 'UEnvQ
 static_assert(offsetof(UEnvQueryTest, ReferenceValue) == 0x0001A8, "Member 'UEnvQueryTest::ReferenceValue' has a wrong offset!");
 static_assert(offsetof(UEnvQueryTest, bDefineReferenceValue) == 0x0001E0, "Member 'UEnvQueryTest::bDefineReferenceValue' has a wrong offset!");
 
-// Class AIModule.PawnAction
-// 0x0068 (0x0090 - 0x0028)
-class UPawnAction : public UObject
-{
-public:
-	class UPawnAction*                            ChildAction;                                       // 0x0028(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UPawnAction*                            ParentAction;                                      // 0x0030(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UPawnActionsComponent*                  OwnerComponent;                                    // 0x0038(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UObject*                                Instigator;                                        // 0x0040(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UBrainComponent*                        BrainComp;                                         // 0x0048(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_EDB[0x30];                                     // 0x0050(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
-	uint8                                         bAllowNewSameClassInstance : 1;                    // 0x0080(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         bReplaceActiveSameClassInstance : 1;               // 0x0080(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         bShouldPauseMovement : 1;                          // 0x0080(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         bAlwaysNotifyOnFinished : 1;                       // 0x0080(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         bDoParallelTick : 1;                               // 0x0080(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_EDC[0xF];                                      // 0x0081(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UPawnAction* CreateActionInstance(class UObject* WorldContextObject, TSubclassOf<class UPawnAction> ActionClass);
-
-	void Finish(EPawnActionResult WithResult);
-	EAIRequestPriority GetActionPriority();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PawnAction">();
-	}
-	static class UPawnAction* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPawnAction>();
-	}
-};
-static_assert(alignof(UPawnAction) == 0x000008, "Wrong alignment on UPawnAction");
-static_assert(sizeof(UPawnAction) == 0x000090, "Wrong size on UPawnAction");
-static_assert(offsetof(UPawnAction, ChildAction) == 0x000028, "Member 'UPawnAction::ChildAction' has a wrong offset!");
-static_assert(offsetof(UPawnAction, ParentAction) == 0x000030, "Member 'UPawnAction::ParentAction' has a wrong offset!");
-static_assert(offsetof(UPawnAction, OwnerComponent) == 0x000038, "Member 'UPawnAction::OwnerComponent' has a wrong offset!");
-static_assert(offsetof(UPawnAction, Instigator) == 0x000040, "Member 'UPawnAction::Instigator' has a wrong offset!");
-static_assert(offsetof(UPawnAction, BrainComp) == 0x000048, "Member 'UPawnAction::BrainComp' has a wrong offset!");
-
-// Class AIModule.BTFunctionLibrary
-// 0x0000 (0x0028 - 0x0028)
-class UBTFunctionLibrary final : public UBlueprintFunctionLibrary
-{
-public:
-	static void ClearBlackboardValue(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
-	static void ClearBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
-	static class AActor* GetBlackboardValueAsActor(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
-	static bool GetBlackboardValueAsBool(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
-	static class UClass* GetBlackboardValueAsClass(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
-	static uint8 GetBlackboardValueAsEnum(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
-	static float GetBlackboardValueAsFloat(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
-	static int32 GetBlackboardValueAsInt(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
-	static class FName GetBlackboardValueAsName(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
-	static class UObject* GetBlackboardValueAsObject(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
-	static struct FRotator GetBlackboardValueAsRotator(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
-	static class FString GetBlackboardValueAsString(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
-	static struct FVector GetBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
-	static class UBehaviorTreeComponent* GetOwnerComponent(class UBTNode* NodeOwner);
-	static class UBlackboardComponent* GetOwnersBlackboard(class UBTNode* NodeOwner);
-	static void SetBlackboardValueAsBool(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, bool Value);
-	static void SetBlackboardValueAsClass(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, class UClass* Value);
-	static void SetBlackboardValueAsEnum(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, uint8 Value);
-	static void SetBlackboardValueAsFloat(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, float Value);
-	static void SetBlackboardValueAsInt(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, int32 Value);
-	static void SetBlackboardValueAsName(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, class FName Value);
-	static void SetBlackboardValueAsObject(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, class UObject* Value);
-	static void SetBlackboardValueAsRotator(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const struct FRotator& Value);
-	static void SetBlackboardValueAsString(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const class FString& Value);
-	static void SetBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const struct FVector& Value);
-	static void StartUsingExternalEvent(class UBTNode* NodeOwner, class AActor* OwningActor);
-	static void StopUsingExternalEvent(class UBTNode* NodeOwner);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTFunctionLibrary">();
-	}
-	static class UBTFunctionLibrary* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTFunctionLibrary>();
-	}
-};
-static_assert(alignof(UBTFunctionLibrary) == 0x000008, "Wrong alignment on UBTFunctionLibrary");
-static_assert(sizeof(UBTFunctionLibrary) == 0x000028, "Wrong size on UBTFunctionLibrary");
-
-// Class AIModule.AIResourceInterface
-// 0x0000 (0x0028 - 0x0028)
-class IAIResourceInterface final : public IInterface
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AIResourceInterface">();
-	}
-	static class IAIResourceInterface* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<IAIResourceInterface>();
-	}
-};
-static_assert(alignof(IAIResourceInterface) == 0x000008, "Wrong alignment on IAIResourceInterface");
-static_assert(sizeof(IAIResourceInterface) == 0x000028, "Wrong size on IAIResourceInterface");
-
 // Class AIModule.AIController
 // 0x0090 (0x03B8 - 0x0328)
 class AAIController : public AController
 {
 public:
-	uint8                                         Pad_EE5[0x38];                                     // 0x0328(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EF8[0x38];                                     // 0x0328(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bStartAILogicOnPossess : 1;                        // 0x0360(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bStopAILogicOnUnposses : 1;                        // 0x0360(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bLOSflag : 1;                                      // 0x0360(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
@@ -332,7 +455,7 @@ public:
 	uint8                                         bAllowStrafe : 1;                                  // 0x0360(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bWantsPlayerState : 1;                             // 0x0360(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bSetControlRotationFromPawnOrientation : 1;        // 0x0360(0x0001)(BitIndex: 0x06, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_EE6[0x7];                                      // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EF9[0x7];                                      // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPathFollowingComponent*                PathFollowingComponent;                            // 0x0368(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UBrainComponent*                        BrainComponent;                                    // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAIPerceptionComponent*                 PerceptionComponent;                               // 0x0378(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -341,7 +464,7 @@ public:
 	class UGameplayTasksComponent*                CachedGameplayTasksComponent;                      // 0x0390(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TSubclassOf<class UNavigationQueryFilter>     DefaultNavigationFilterClass;                      // 0x0398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	FMulticastInlineDelegateProperty_             ReceiveMoveCompleted;                              // 0x03A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EE7[0x8];                                      // 0x03B0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EFA[0x8];                                      // 0x03B0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ClaimTaskResource(TSubclassOf<class UGameplayTaskResource> ResourceClass);
@@ -388,60 +511,173 @@ static_assert(offsetof(AAIController, CachedGameplayTasksComponent) == 0x000390,
 static_assert(offsetof(AAIController, DefaultNavigationFilterClass) == 0x000398, "Member 'AAIController::DefaultNavigationFilterClass' has a wrong offset!");
 static_assert(offsetof(AAIController, ReceiveMoveCompleted) == 0x0003A0, "Member 'AAIController::ReceiveMoveCompleted' has a wrong offset!");
 
-// Class AIModule.PawnAction_Repeat
-// 0x0020 (0x00B0 - 0x0090)
-class UPawnAction_Repeat final : public UPawnAction
+// Class AIModule.GridPathAIController
+// 0x0000 (0x03B8 - 0x03B8)
+class AGridPathAIController final : public AAIController
 {
 public:
-	class UPawnAction*                            ActionToRepeat;                                    // 0x0090(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UPawnAction*                            RecentActionCopy;                                  // 0x0098(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"GridPathAIController">();
+	}
+	static class AGridPathAIController* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AGridPathAIController>();
+	}
+};
+static_assert(alignof(AGridPathAIController) == 0x000008, "Wrong alignment on AGridPathAIController");
+static_assert(sizeof(AGridPathAIController) == 0x0003B8, "Wrong size on AGridPathAIController");
+
+// Class AIModule.AIResource_Logic
+// 0x0000 (0x0038 - 0x0038)
+class UAIResource_Logic final : public UGameplayTaskResource
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"AIResource_Logic">();
+	}
+	static class UAIResource_Logic* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIResource_Logic>();
+	}
+};
+static_assert(alignof(UAIResource_Logic) == 0x000008, "Wrong alignment on UAIResource_Logic");
+static_assert(sizeof(UAIResource_Logic) == 0x000038, "Wrong size on UAIResource_Logic");
+
+// Class AIModule.PawnAction
+// 0x0068 (0x0090 - 0x0028)
+class UPawnAction : public UObject
+{
+public:
+	class UPawnAction*                            ChildAction;                                       // 0x0028(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UPawnAction*                            ParentAction;                                      // 0x0030(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UPawnActionsComponent*                  OwnerComponent;                                    // 0x0038(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UObject*                                Instigator;                                        // 0x0040(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UBrainComponent*                        BrainComp;                                         // 0x0048(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_F00[0x30];                                     // 0x0050(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         bAllowNewSameClassInstance : 1;                    // 0x0080(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         bReplaceActiveSameClassInstance : 1;               // 0x0080(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         bShouldPauseMovement : 1;                          // 0x0080(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         bAlwaysNotifyOnFinished : 1;                       // 0x0080(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         bDoParallelTick : 1;                               // 0x0080(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         Pad_F01[0xF];                                      // 0x0081(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UPawnAction* CreateActionInstance(class UObject* WorldContextObject, TSubclassOf<class UPawnAction> ActionClass);
+
+	void Finish(EPawnActionResult WithResult);
+	EAIRequestPriority GetActionPriority();
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"PawnAction">();
+	}
+	static class UPawnAction* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPawnAction>();
+	}
+};
+static_assert(alignof(UPawnAction) == 0x000008, "Wrong alignment on UPawnAction");
+static_assert(sizeof(UPawnAction) == 0x000090, "Wrong size on UPawnAction");
+static_assert(offsetof(UPawnAction, ChildAction) == 0x000028, "Member 'UPawnAction::ChildAction' has a wrong offset!");
+static_assert(offsetof(UPawnAction, ParentAction) == 0x000030, "Member 'UPawnAction::ParentAction' has a wrong offset!");
+static_assert(offsetof(UPawnAction, OwnerComponent) == 0x000038, "Member 'UPawnAction::OwnerComponent' has a wrong offset!");
+static_assert(offsetof(UPawnAction, Instigator) == 0x000040, "Member 'UPawnAction::Instigator' has a wrong offset!");
+static_assert(offsetof(UPawnAction, BrainComp) == 0x000048, "Member 'UPawnAction::BrainComp' has a wrong offset!");
+
+// Class AIModule.PawnAction_Sequence
+// 0x0028 (0x00B8 - 0x0090)
+class UPawnAction_Sequence final : public UPawnAction
+{
+public:
+	TArray<class UPawnAction*>                    ActionSequence;                                    // 0x0090(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
 	EPawnActionFailHandling                       ChildFailureHandlingMode;                          // 0x00A0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EED[0xF];                                      // 0x00A1(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F02[0x7];                                      // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPawnAction*                            RecentActionCopy;                                  // 0x00A8(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F03[0x8];                                      // 0x00B0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PawnAction_Repeat">();
+		return StaticClassImpl<"PawnAction_Sequence">();
 	}
-	static class UPawnAction_Repeat* GetDefaultObj()
+	static class UPawnAction_Sequence* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UPawnAction_Repeat>();
+		return GetDefaultObjImpl<UPawnAction_Sequence>();
 	}
 };
-static_assert(alignof(UPawnAction_Repeat) == 0x000008, "Wrong alignment on UPawnAction_Repeat");
-static_assert(sizeof(UPawnAction_Repeat) == 0x0000B0, "Wrong size on UPawnAction_Repeat");
-static_assert(offsetof(UPawnAction_Repeat, ActionToRepeat) == 0x000090, "Member 'UPawnAction_Repeat::ActionToRepeat' has a wrong offset!");
-static_assert(offsetof(UPawnAction_Repeat, RecentActionCopy) == 0x000098, "Member 'UPawnAction_Repeat::RecentActionCopy' has a wrong offset!");
-static_assert(offsetof(UPawnAction_Repeat, ChildFailureHandlingMode) == 0x0000A0, "Member 'UPawnAction_Repeat::ChildFailureHandlingMode' has a wrong offset!");
+static_assert(alignof(UPawnAction_Sequence) == 0x000008, "Wrong alignment on UPawnAction_Sequence");
+static_assert(sizeof(UPawnAction_Sequence) == 0x0000B8, "Wrong size on UPawnAction_Sequence");
+static_assert(offsetof(UPawnAction_Sequence, ActionSequence) == 0x000090, "Member 'UPawnAction_Sequence::ActionSequence' has a wrong offset!");
+static_assert(offsetof(UPawnAction_Sequence, ChildFailureHandlingMode) == 0x0000A0, "Member 'UPawnAction_Sequence::ChildFailureHandlingMode' has a wrong offset!");
+static_assert(offsetof(UPawnAction_Sequence, RecentActionCopy) == 0x0000A8, "Member 'UPawnAction_Sequence::RecentActionCopy' has a wrong offset!");
 
-// Class AIModule.NavLocalGridManager
-// 0x0030 (0x0058 - 0x0028)
-class UNavLocalGridManager final : public UObject
+// Class AIModule.EnvQueryContext
+// 0x0000 (0x0028 - 0x0028)
+class UEnvQueryContext : public UObject
 {
 public:
-	uint8                                         Pad_EEE[0x30];                                     // 0x0028(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"EnvQueryContext">();
+	}
+	static class UEnvQueryContext* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryContext>();
+	}
+};
+static_assert(alignof(UEnvQueryContext) == 0x000008, "Wrong alignment on UEnvQueryContext");
+static_assert(sizeof(UEnvQueryContext) == 0x000028, "Wrong size on UEnvQueryContext");
+
+// Class AIModule.EnvQueryContext_BlueprintBase
+// 0x0008 (0x0030 - 0x0028)
+class UEnvQueryContext_BlueprintBase final : public UEnvQueryContext
+{
+public:
+	uint8                                         Pad_F04[0x8];                                      // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	static int32 AddLocalNavigationGridForBox(class UObject* WorldContextObject, const struct FVector& Location, const struct FVector& Extent, const struct FRotator& Rotation, const int32 Radius2D, const float Height, bool bRebuildGrids);
-	static int32 AddLocalNavigationGridForCapsule(class UObject* WorldContextObject, const struct FVector& Location, float CapsuleRadius, float CapsuleHalfHeight, const int32 Radius2D, const float Height, bool bRebuildGrids);
-	static int32 AddLocalNavigationGridForPoint(class UObject* WorldContextObject, const struct FVector& Location, const int32 Radius2D, const float Height, bool bRebuildGrids);
-	static int32 AddLocalNavigationGridForPoints(class UObject* WorldContextObject, const TArray<struct FVector>& Locations, const int32 Radius2D, const float Height, bool bRebuildGrids);
-	static bool FindLocalNavigationGridPath(class UObject* WorldContextObject, const struct FVector& Start, const struct FVector& End, TArray<struct FVector>* PathPoints);
-	static void RemoveLocalNavigationGrid(class UObject* WorldContextObject, int32 GridId, bool bRebuildGrids);
-	static bool SetLocalNavigationGridDensity(class UObject* WorldContextObject, float CellSize);
+	void ProvideActorsSet(class UObject* QuerierObject, class AActor* QuerierActor, TArray<class AActor*>* ResultingActorsSet) const;
+	void ProvideLocationsSet(class UObject* QuerierObject, class AActor* QuerierActor, TArray<struct FVector>* ResultingLocationSet) const;
+	void ProvideSingleActor(class UObject* QuerierObject, class AActor* QuerierActor, class AActor** ResultingActor) const;
+	void ProvideSingleLocation(class UObject* QuerierObject, class AActor* QuerierActor, struct FVector* ResultingLocation) const;
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NavLocalGridManager">();
+		return StaticClassImpl<"EnvQueryContext_BlueprintBase">();
 	}
-	static class UNavLocalGridManager* GetDefaultObj()
+	static class UEnvQueryContext_BlueprintBase* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UNavLocalGridManager>();
+		return GetDefaultObjImpl<UEnvQueryContext_BlueprintBase>();
 	}
 };
-static_assert(alignof(UNavLocalGridManager) == 0x000008, "Wrong alignment on UNavLocalGridManager");
-static_assert(sizeof(UNavLocalGridManager) == 0x000058, "Wrong size on UNavLocalGridManager");
+static_assert(alignof(UEnvQueryContext_BlueprintBase) == 0x000008, "Wrong alignment on UEnvQueryContext_BlueprintBase");
+static_assert(sizeof(UEnvQueryContext_BlueprintBase) == 0x000030, "Wrong size on UEnvQueryContext_BlueprintBase");
+
+// Class AIModule.PawnAction_Wait
+// 0x0010 (0x00A0 - 0x0090)
+class UPawnAction_Wait final : public UPawnAction
+{
+public:
+	float                                         TimeToWait;                                        // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F05[0xC];                                      // 0x0094(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"PawnAction_Wait">();
+	}
+	static class UPawnAction_Wait* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPawnAction_Wait>();
+	}
+};
+static_assert(alignof(UPawnAction_Wait) == 0x000008, "Wrong alignment on UPawnAction_Wait");
+static_assert(sizeof(UPawnAction_Wait) == 0x0000A0, "Wrong size on UPawnAction_Wait");
+static_assert(offsetof(UPawnAction_Wait, TimeToWait) == 0x000090, "Member 'UPawnAction_Wait::TimeToWait' has a wrong offset!");
 
 // Class AIModule.PawnAction_BlueprintBase
 // 0x0000 (0x0090 - 0x0090)
@@ -469,74 +705,48 @@ public:
 static_assert(alignof(UPawnAction_BlueprintBase) == 0x000008, "Wrong alignment on UPawnAction_BlueprintBase");
 static_assert(sizeof(UPawnAction_BlueprintBase) == 0x000090, "Wrong size on UPawnAction_BlueprintBase");
 
-// Class AIModule.AIAsyncTaskBlueprintProxy
-// 0x0040 (0x0068 - 0x0028)
-class UAIAsyncTaskBlueprintProxy final : public UObject
+// Class AIModule.BTCompositeNode
+// 0x0038 (0x0090 - 0x0058)
+class UBTCompositeNode : public UBTNode
 {
 public:
-	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	FMulticastInlineDelegateProperty_             OnFail;                                            // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EFA[0x20];                                     // 0x0048(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void OnMoveCompleted(const struct FAIRequestID& RequestID, EPathFollowingResult MovementResult);
+	TArray<struct FBTCompositeChild>              Children;                                          // 0x0058(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<class UBTService*>                     Services;                                          // 0x0068(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F0A[0x10];                                     // 0x0078(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         bApplyDecoratorScope : 1;                          // 0x0088(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         Pad_F0B[0x7];                                      // 0x0089(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIAsyncTaskBlueprintProxy">();
+		return StaticClassImpl<"BTCompositeNode">();
 	}
-	static class UAIAsyncTaskBlueprintProxy* GetDefaultObj()
+	static class UBTCompositeNode* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UAIAsyncTaskBlueprintProxy>();
+		return GetDefaultObjImpl<UBTCompositeNode>();
 	}
 };
-static_assert(alignof(UAIAsyncTaskBlueprintProxy) == 0x000008, "Wrong alignment on UAIAsyncTaskBlueprintProxy");
-static_assert(sizeof(UAIAsyncTaskBlueprintProxy) == 0x000068, "Wrong size on UAIAsyncTaskBlueprintProxy");
-static_assert(offsetof(UAIAsyncTaskBlueprintProxy, OnSuccess) == 0x000028, "Member 'UAIAsyncTaskBlueprintProxy::OnSuccess' has a wrong offset!");
-static_assert(offsetof(UAIAsyncTaskBlueprintProxy, OnFail) == 0x000038, "Member 'UAIAsyncTaskBlueprintProxy::OnFail' has a wrong offset!");
+static_assert(alignof(UBTCompositeNode) == 0x000008, "Wrong alignment on UBTCompositeNode");
+static_assert(sizeof(UBTCompositeNode) == 0x000090, "Wrong size on UBTCompositeNode");
+static_assert(offsetof(UBTCompositeNode, Children) == 0x000058, "Member 'UBTCompositeNode::Children' has a wrong offset!");
+static_assert(offsetof(UBTCompositeNode, Services) == 0x000068, "Member 'UBTCompositeNode::Services' has a wrong offset!");
 
-// Class AIModule.BlackboardData
-// 0x0020 (0x0050 - 0x0030)
-class UBlackboardData final : public UDataAsset
-{
-public:
-	class UBlackboardData*                        Parent;                                            // 0x0030(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FBlackboardEntry>               Keys;                                              // 0x0038(0x0010)(Edit, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	uint8                                         bHasSynchronizedKeys : 1;                          // 0x0048(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         Pad_EFC[0x7];                                      // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BlackboardData">();
-	}
-	static class UBlackboardData* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBlackboardData>();
-	}
-};
-static_assert(alignof(UBlackboardData) == 0x000008, "Wrong alignment on UBlackboardData");
-static_assert(sizeof(UBlackboardData) == 0x000050, "Wrong size on UBlackboardData");
-static_assert(offsetof(UBlackboardData, Parent) == 0x000030, "Member 'UBlackboardData::Parent' has a wrong offset!");
-static_assert(offsetof(UBlackboardData, Keys) == 0x000038, "Member 'UBlackboardData::Keys' has a wrong offset!");
-
-// Class AIModule.AIDataProvider
-// 0x0000 (0x0028 - 0x0028)
-class UAIDataProvider : public UObject
+// Class AIModule.BTComposite_Sequence
+// 0x0000 (0x0090 - 0x0090)
+class UBTComposite_Sequence final : public UBTCompositeNode
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AIDataProvider">();
+		return StaticClassImpl<"BTComposite_Sequence">();
 	}
-	static class UAIDataProvider* GetDefaultObj()
+	static class UBTComposite_Sequence* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UAIDataProvider>();
+		return GetDefaultObjImpl<UBTComposite_Sequence>();
 	}
 };
-static_assert(alignof(UAIDataProvider) == 0x000008, "Wrong alignment on UAIDataProvider");
-static_assert(sizeof(UAIDataProvider) == 0x000028, "Wrong size on UAIDataProvider");
+static_assert(alignof(UBTComposite_Sequence) == 0x000008, "Wrong alignment on UBTComposite_Sequence");
+static_assert(sizeof(UBTComposite_Sequence) == 0x000090, "Wrong size on UBTComposite_Sequence");
 
 // Class AIModule.PawnActionsComponent
 // 0x0040 (0x00E0 - 0x00A0)
@@ -547,7 +757,7 @@ public:
 	TArray<struct FPawnActionStack>               ActionStacks;                                      // 0x00A8(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	TArray<struct FPawnActionEvent>               ActionEvents;                                      // 0x00B8(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	class UPawnAction*                            CurrentAction;                                     // 0x00C8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_EFD[0x10];                                     // 0x00D0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F0C[0x10];                                     // 0x00D0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static bool K2_PerformAction(class APawn* Pawn, class UPawnAction* Action, EAIRequestPriority Priority);
@@ -573,138 +783,49 @@ static_assert(offsetof(UPawnActionsComponent, ActionStacks) == 0x0000A8, "Member
 static_assert(offsetof(UPawnActionsComponent, ActionEvents) == 0x0000B8, "Member 'UPawnActionsComponent::ActionEvents' has a wrong offset!");
 static_assert(offsetof(UPawnActionsComponent, CurrentAction) == 0x0000C8, "Member 'UPawnActionsComponent::CurrentAction' has a wrong offset!");
 
-// Class AIModule.EnvQueryTypes
+// Class AIModule.EnvQueryDebugHelpers
 // 0x0000 (0x0028 - 0x0028)
-class UEnvQueryTypes final : public UObject
+class UEnvQueryDebugHelpers final : public UObject
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EnvQueryTypes">();
+		return StaticClassImpl<"EnvQueryDebugHelpers">();
 	}
-	static class UEnvQueryTypes* GetDefaultObj()
+	static class UEnvQueryDebugHelpers* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UEnvQueryTypes>();
+		return GetDefaultObjImpl<UEnvQueryDebugHelpers>();
 	}
 };
-static_assert(alignof(UEnvQueryTypes) == 0x000008, "Wrong alignment on UEnvQueryTypes");
-static_assert(sizeof(UEnvQueryTypes) == 0x000028, "Wrong size on UEnvQueryTypes");
+static_assert(alignof(UEnvQueryDebugHelpers) == 0x000008, "Wrong alignment on UEnvQueryDebugHelpers");
+static_assert(sizeof(UEnvQueryDebugHelpers) == 0x000028, "Wrong size on UEnvQueryDebugHelpers");
 
-// Class AIModule.BTTaskNode
-// 0x0018 (0x0070 - 0x0058)
-class UBTTaskNode : public UBTNode
+// Class AIModule.AIAsyncTaskBlueprintProxy
+// 0x0040 (0x0068 - 0x0028)
+class UAIAsyncTaskBlueprintProxy final : public UObject
 {
 public:
-	TArray<class UBTService*>                     Services;                                          // 0x0058(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
-	uint8                                         bIgnoreRestartSelf : 1;                            // 0x0068(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_F03[0x7];                                      // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_             OnFail;                                            // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F12[0x20];                                     // 0x0048(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void OnMoveCompleted(const struct FAIRequestID& RequestID, EPathFollowingResult MovementResult);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTTaskNode">();
+		return StaticClassImpl<"AIAsyncTaskBlueprintProxy">();
 	}
-	static class UBTTaskNode* GetDefaultObj()
+	static class UAIAsyncTaskBlueprintProxy* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UBTTaskNode>();
+		return GetDefaultObjImpl<UAIAsyncTaskBlueprintProxy>();
 	}
 };
-static_assert(alignof(UBTTaskNode) == 0x000008, "Wrong alignment on UBTTaskNode");
-static_assert(sizeof(UBTTaskNode) == 0x000070, "Wrong size on UBTTaskNode");
-static_assert(offsetof(UBTTaskNode, Services) == 0x000058, "Member 'UBTTaskNode::Services' has a wrong offset!");
-
-// Class AIModule.BTTask_BlueprintBase
-// 0x0038 (0x00A8 - 0x0070)
-class UBTTask_BlueprintBase final : public UBTTaskNode
-{
-public:
-	class AAIController*                          AIOwner;                                           // 0x0070(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class AActor*                                 ActorOwner;                                        // 0x0078(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FIntervalCountdown                     TickInterval;                                      // 0x0080(0x0008)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F04[0x18];                                     // 0x0088(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	uint8                                         bShowPropertyDetails : 1;                          // 0x00A0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, DisableEditOnTemplate, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_F05[0x7];                                      // 0x00A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void FinishAbort();
-	void FinishExecute(bool bSuccess);
-	void ReceiveAbort(class AActor* OwnerActor);
-	void ReceiveAbortAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-	void ReceiveExecute(class AActor* OwnerActor);
-	void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
-	void ReceiveTick(class AActor* OwnerActor, float DeltaSeconds);
-	void ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds);
-	void SetFinishOnMessage(class FName MessageName);
-	void SetFinishOnMessageWithId(class FName MessageName, int32 RequestID);
-
-	bool IsTaskAborting() const;
-	bool IsTaskExecuting() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTTask_BlueprintBase">();
-	}
-	static class UBTTask_BlueprintBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTTask_BlueprintBase>();
-	}
-};
-static_assert(alignof(UBTTask_BlueprintBase) == 0x000008, "Wrong alignment on UBTTask_BlueprintBase");
-static_assert(sizeof(UBTTask_BlueprintBase) == 0x0000A8, "Wrong size on UBTTask_BlueprintBase");
-static_assert(offsetof(UBTTask_BlueprintBase, AIOwner) == 0x000070, "Member 'UBTTask_BlueprintBase::AIOwner' has a wrong offset!");
-static_assert(offsetof(UBTTask_BlueprintBase, ActorOwner) == 0x000078, "Member 'UBTTask_BlueprintBase::ActorOwner' has a wrong offset!");
-static_assert(offsetof(UBTTask_BlueprintBase, TickInterval) == 0x000080, "Member 'UBTTask_BlueprintBase::TickInterval' has a wrong offset!");
-
-// Class AIModule.PathFollowingComponent
-// 0x0218 (0x02B8 - 0x00A0)
-class UPathFollowingComponent : public UActorComponent
-{
-public:
-	uint8                                         Pad_F08[0x38];                                     // 0x00A0(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNavMovementComponent*                  MovementComp;                                      // 0x00D8(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F09[0x8];                                      // 0x00E0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class ANavigationData*                        MyNavData;                                         // 0x00E8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F0A[0x1C8];                                    // 0x00F0(0x01C8)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void OnActorBump(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
-	void OnNavDataRegistered(class ANavigationData* NavData);
-
-	EPathFollowingAction GetPathActionType() const;
-	struct FVector GetPathDestination() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PathFollowingComponent">();
-	}
-	static class UPathFollowingComponent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPathFollowingComponent>();
-	}
-};
-static_assert(alignof(UPathFollowingComponent) == 0x000008, "Wrong alignment on UPathFollowingComponent");
-static_assert(sizeof(UPathFollowingComponent) == 0x0002B8, "Wrong size on UPathFollowingComponent");
-static_assert(offsetof(UPathFollowingComponent, MovementComp) == 0x0000D8, "Member 'UPathFollowingComponent::MovementComp' has a wrong offset!");
-static_assert(offsetof(UPathFollowingComponent, MyNavData) == 0x0000E8, "Member 'UPathFollowingComponent::MyNavData' has a wrong offset!");
-
-// Class AIModule.AISenseBlueprintListener
-// 0x0000 (0x0108 - 0x0108)
-class UAISenseBlueprintListener final : public UUserDefinedStruct
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AISenseBlueprintListener">();
-	}
-	static class UAISenseBlueprintListener* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAISenseBlueprintListener>();
-	}
-};
-static_assert(alignof(UAISenseBlueprintListener) == 0x000008, "Wrong alignment on UAISenseBlueprintListener");
-static_assert(sizeof(UAISenseBlueprintListener) == 0x000108, "Wrong size on UAISenseBlueprintListener");
+static_assert(alignof(UAIAsyncTaskBlueprintProxy) == 0x000008, "Wrong alignment on UAIAsyncTaskBlueprintProxy");
+static_assert(sizeof(UAIAsyncTaskBlueprintProxy) == 0x000068, "Wrong size on UAIAsyncTaskBlueprintProxy");
+static_assert(offsetof(UAIAsyncTaskBlueprintProxy, OnSuccess) == 0x000028, "Member 'UAIAsyncTaskBlueprintProxy::OnSuccess' has a wrong offset!");
+static_assert(offsetof(UAIAsyncTaskBlueprintProxy, OnFail) == 0x000038, "Member 'UAIAsyncTaskBlueprintProxy::OnFail' has a wrong offset!");
 
 // Class AIModule.AISenseConfig
 // 0x0020 (0x0048 - 0x0028)
@@ -714,7 +835,7 @@ public:
 	struct FColor                                 DebugColor;                                        // 0x0028(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         MaxAge;                                            // 0x002C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         bStartsEnabled : 1;                                // 0x0030(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_F0B[0x17];                                     // 0x0031(0x0017)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F14[0x17];                                     // 0x0031(0x0017)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -730,6 +851,23 @@ static_assert(alignof(UAISenseConfig) == 0x000008, "Wrong alignment on UAISenseC
 static_assert(sizeof(UAISenseConfig) == 0x000048, "Wrong size on UAISenseConfig");
 static_assert(offsetof(UAISenseConfig, DebugColor) == 0x000028, "Member 'UAISenseConfig::DebugColor' has a wrong offset!");
 static_assert(offsetof(UAISenseConfig, MaxAge) == 0x00002C, "Member 'UAISenseConfig::MaxAge' has a wrong offset!");
+
+// Class AIModule.AIPerceptionListenerInterface
+// 0x0000 (0x0028 - 0x0028)
+class IAIPerceptionListenerInterface final : public IInterface
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"AIPerceptionListenerInterface">();
+	}
+	static class IAIPerceptionListenerInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<IAIPerceptionListenerInterface>();
+	}
+};
+static_assert(alignof(IAIPerceptionListenerInterface) == 0x000008, "Wrong alignment on IAIPerceptionListenerInterface");
+static_assert(sizeof(IAIPerceptionListenerInterface) == 0x000028, "Wrong size on IAIPerceptionListenerInterface");
 
 // Class AIModule.AISenseConfig_Blueprint
 // 0x0008 (0x0050 - 0x0048)
@@ -761,7 +899,7 @@ public:
 	float                                         HearingRange;                                      // 0x0050(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         LoSHearingRange;                                   // 0x0054(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bUseLoSHearing : 1;                                // 0x0058(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_F0C[0x3];                                      // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F15[0x3];                                      // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAISenseAffiliationFilter              DetectionByAffiliation;                            // 0x005C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
@@ -811,7 +949,7 @@ public:
 	float                                         AutoSuccessRangeFromLastSeenLocation;              // 0x0060(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         PointOfViewBackwardOffset;                         // 0x0064(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         NearClippingRadius;                                // 0x0068(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F0D[0x4];                                      // 0x006C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F16[0x4];                                      // 0x006C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -868,23 +1006,6 @@ public:
 static_assert(alignof(UAISenseConfig_Touch) == 0x000008, "Wrong alignment on UAISenseConfig_Touch");
 static_assert(sizeof(UAISenseConfig_Touch) == 0x000048, "Wrong size on UAISenseConfig_Touch");
 
-// Class AIModule.AISenseEvent
-// 0x0000 (0x0028 - 0x0028)
-class UAISenseEvent : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AISenseEvent">();
-	}
-	static class UAISenseEvent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAISenseEvent>();
-	}
-};
-static_assert(alignof(UAISenseEvent) == 0x000008, "Wrong alignment on UAISenseEvent");
-static_assert(sizeof(UAISenseEvent) == 0x000028, "Wrong size on UAISenseEvent");
-
 // Class AIModule.AISenseEvent_Damage
 // 0x0050 (0x0078 - 0x0028)
 class UAISenseEvent_Damage final : public UAISenseEvent
@@ -905,6 +1026,61 @@ public:
 static_assert(alignof(UAISenseEvent_Damage) == 0x000008, "Wrong alignment on UAISenseEvent_Damage");
 static_assert(sizeof(UAISenseEvent_Damage) == 0x000078, "Wrong size on UAISenseEvent_Damage");
 static_assert(offsetof(UAISenseEvent_Damage, Event) == 0x000028, "Member 'UAISenseEvent_Damage::Event' has a wrong offset!");
+
+// Class AIModule.AISense
+// 0x0058 (0x0080 - 0x0028)
+class UAISense : public UObject
+{
+public:
+	float                                         DefaultExpirationAge;                              // 0x0028(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EAISenseNotifyType                            NotifyType;                                        // 0x002C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_F17[0x3];                                      // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         bWantsNewPawnNotification : 1;                     // 0x0030(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         bAutoRegisterAllPawnsAsSources : 1;                // 0x0030(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         Pad_F18[0x7];                                      // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAIPerceptionSystem*                    PerceptionSystemInstance;                          // 0x0038(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_F19[0x40];                                     // 0x0040(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"AISense">();
+	}
+	static class UAISense* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAISense>();
+	}
+};
+static_assert(alignof(UAISense) == 0x000008, "Wrong alignment on UAISense");
+static_assert(sizeof(UAISense) == 0x000080, "Wrong size on UAISense");
+static_assert(offsetof(UAISense, DefaultExpirationAge) == 0x000028, "Member 'UAISense::DefaultExpirationAge' has a wrong offset!");
+static_assert(offsetof(UAISense, NotifyType) == 0x00002C, "Member 'UAISense::NotifyType' has a wrong offset!");
+static_assert(offsetof(UAISense, PerceptionSystemInstance) == 0x000038, "Member 'UAISense::PerceptionSystemInstance' has a wrong offset!");
+
+// Class AIModule.AISense_Prediction
+// 0x0010 (0x0090 - 0x0080)
+class UAISense_Prediction final : public UAISense
+{
+public:
+	TArray<struct FAIPredictionEvent>             RegisteredEvents;                                  // 0x0080(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+
+public:
+	static void RequestControllerPredictionEvent(class AAIController* Requestor, class AActor* PredictedActor, float PredictionTime);
+	static void RequestPawnPredictionEvent(class APawn* Requestor, class AActor* PredictedActor, float PredictionTime);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"AISense_Prediction">();
+	}
+	static class UAISense_Prediction* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAISense_Prediction>();
+	}
+};
+static_assert(alignof(UAISense_Prediction) == 0x000008, "Wrong alignment on UAISense_Prediction");
+static_assert(sizeof(UAISense_Prediction) == 0x000090, "Wrong size on UAISense_Prediction");
+static_assert(offsetof(UAISense_Prediction, RegisteredEvents) == 0x000080, "Member 'UAISense_Prediction::RegisteredEvents' has a wrong offset!");
 
 // Class AIModule.AISenseEvent_Hearing
 // 0x0040 (0x0068 - 0x0028)
@@ -943,6 +1119,53 @@ public:
 };
 static_assert(alignof(ICrowdAgentInterface) == 0x000008, "Wrong alignment on ICrowdAgentInterface");
 static_assert(sizeof(ICrowdAgentInterface) == 0x000028, "Wrong size on ICrowdAgentInterface");
+
+// Class AIModule.EnvQueryTest_GameplayTags
+// 0x0070 (0x0268 - 0x01F8)
+class UEnvQueryTest_GameplayTags final : public UEnvQueryTest
+{
+public:
+	struct FGameplayTagQuery                      TagQueryToMatch;                                   // 0x01F8(0x0048)(Edit, Protected, NativeAccessSpecifierProtected)
+	bool                                          bRejectIncompatibleItems;                          // 0x0240(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bUpdatedToUseQuery;                                // 0x0241(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EGameplayContainerMatchType                   TagsToMatch;                                       // 0x0242(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_F1C[0x5];                                      // 0x0243(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  GameplayTags;                                      // 0x0248(0x0020)(Protected, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"EnvQueryTest_GameplayTags">();
+	}
+	static class UEnvQueryTest_GameplayTags* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryTest_GameplayTags>();
+	}
+};
+static_assert(alignof(UEnvQueryTest_GameplayTags) == 0x000008, "Wrong alignment on UEnvQueryTest_GameplayTags");
+static_assert(sizeof(UEnvQueryTest_GameplayTags) == 0x000268, "Wrong size on UEnvQueryTest_GameplayTags");
+static_assert(offsetof(UEnvQueryTest_GameplayTags, TagQueryToMatch) == 0x0001F8, "Member 'UEnvQueryTest_GameplayTags::TagQueryToMatch' has a wrong offset!");
+static_assert(offsetof(UEnvQueryTest_GameplayTags, bRejectIncompatibleItems) == 0x000240, "Member 'UEnvQueryTest_GameplayTags::bRejectIncompatibleItems' has a wrong offset!");
+static_assert(offsetof(UEnvQueryTest_GameplayTags, bUpdatedToUseQuery) == 0x000241, "Member 'UEnvQueryTest_GameplayTags::bUpdatedToUseQuery' has a wrong offset!");
+static_assert(offsetof(UEnvQueryTest_GameplayTags, TagsToMatch) == 0x000242, "Member 'UEnvQueryTest_GameplayTags::TagsToMatch' has a wrong offset!");
+static_assert(offsetof(UEnvQueryTest_GameplayTags, GameplayTags) == 0x000248, "Member 'UEnvQueryTest_GameplayTags::GameplayTags' has a wrong offset!");
+
+// Class AIModule.EnvQueryTypes
+// 0x0000 (0x0028 - 0x0028)
+class UEnvQueryTypes final : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"EnvQueryTypes">();
+	}
+	static class UEnvQueryTypes* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryTypes>();
+	}
+};
+static_assert(alignof(UEnvQueryTypes) == 0x000008, "Wrong alignment on UEnvQueryTypes");
+static_assert(sizeof(UEnvQueryTypes) == 0x000028, "Wrong size on UEnvQueryTypes");
 
 // Class AIModule.EQSQueryResultSourceInterface
 // 0x0000 (0x0028 - 0x0028)
@@ -986,7 +1209,7 @@ public:
 	class AActor*                                 GoalActor;                                         // 0x0090(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FVector                                GoalLocation;                                      // 0x0098(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         AcceptableRadius;                                  // 0x00B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F0E[0x4];                                      // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F1D[0x4];                                      // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UNavigationQueryFilter>     FilterClass;                                       // 0x00B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         bAllowStrafe : 1;                                  // 0x00C0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bFinishOnOverlap : 1;                              // 0x00C0(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
@@ -995,7 +1218,7 @@ public:
 	uint8                                         bProjectGoalToNavigation : 1;                      // 0x00C0(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bUpdatePathToGoal : 1;                             // 0x00C0(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bAbortSubActionOnPathChange : 1;                   // 0x00C0(0x0001)(BitIndex: 0x06, PropSize: 0x0001 (NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_F0F[0x2F];                                     // 0x00C1(0x002F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F1E[0x2F];                                     // 0x00C1(0x002F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1014,54 +1237,85 @@ static_assert(offsetof(UPawnAction_Move, GoalLocation) == 0x000098, "Member 'UPa
 static_assert(offsetof(UPawnAction_Move, AcceptableRadius) == 0x0000B0, "Member 'UPawnAction_Move::AcceptableRadius' has a wrong offset!");
 static_assert(offsetof(UPawnAction_Move, FilterClass) == 0x0000B8, "Member 'UPawnAction_Move::FilterClass' has a wrong offset!");
 
-// Class AIModule.PawnAction_Sequence
-// 0x0028 (0x00B8 - 0x0090)
-class UPawnAction_Sequence final : public UPawnAction
+// Class AIModule.EnvQueryItemType
+// 0x0008 (0x0030 - 0x0028)
+class UEnvQueryItemType : public UObject
 {
 public:
-	TArray<class UPawnAction*>                    ActionSequence;                                    // 0x0090(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F1F[0x8];                                      // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"EnvQueryItemType">();
+	}
+	static class UEnvQueryItemType* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryItemType>();
+	}
+};
+static_assert(alignof(UEnvQueryItemType) == 0x000008, "Wrong alignment on UEnvQueryItemType");
+static_assert(sizeof(UEnvQueryItemType) == 0x000030, "Wrong size on UEnvQueryItemType");
+
+// Class AIModule.EnvQueryItemType_VectorBase
+// 0x0000 (0x0030 - 0x0030)
+class UEnvQueryItemType_VectorBase : public UEnvQueryItemType
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"EnvQueryItemType_VectorBase">();
+	}
+	static class UEnvQueryItemType_VectorBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryItemType_VectorBase>();
+	}
+};
+static_assert(alignof(UEnvQueryItemType_VectorBase) == 0x000008, "Wrong alignment on UEnvQueryItemType_VectorBase");
+static_assert(sizeof(UEnvQueryItemType_VectorBase) == 0x000030, "Wrong size on UEnvQueryItemType_VectorBase");
+
+// Class AIModule.EnvQueryItemType_Direction
+// 0x0000 (0x0030 - 0x0030)
+class UEnvQueryItemType_Direction final : public UEnvQueryItemType_VectorBase
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"EnvQueryItemType_Direction">();
+	}
+	static class UEnvQueryItemType_Direction* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryItemType_Direction>();
+	}
+};
+static_assert(alignof(UEnvQueryItemType_Direction) == 0x000008, "Wrong alignment on UEnvQueryItemType_Direction");
+static_assert(sizeof(UEnvQueryItemType_Direction) == 0x000030, "Wrong size on UEnvQueryItemType_Direction");
+
+// Class AIModule.PawnAction_Repeat
+// 0x0020 (0x00B0 - 0x0090)
+class UPawnAction_Repeat final : public UPawnAction
+{
+public:
+	class UPawnAction*                            ActionToRepeat;                                    // 0x0090(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UPawnAction*                            RecentActionCopy;                                  // 0x0098(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPawnActionFailHandling                       ChildFailureHandlingMode;                          // 0x00A0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F10[0x7];                                      // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPawnAction*                            RecentActionCopy;                                  // 0x00A8(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F11[0x8];                                      // 0x00B0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F20[0xF];                                      // 0x00A1(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PawnAction_Sequence">();
+		return StaticClassImpl<"PawnAction_Repeat">();
 	}
-	static class UPawnAction_Sequence* GetDefaultObj()
+	static class UPawnAction_Repeat* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UPawnAction_Sequence>();
+		return GetDefaultObjImpl<UPawnAction_Repeat>();
 	}
 };
-static_assert(alignof(UPawnAction_Sequence) == 0x000008, "Wrong alignment on UPawnAction_Sequence");
-static_assert(sizeof(UPawnAction_Sequence) == 0x0000B8, "Wrong size on UPawnAction_Sequence");
-static_assert(offsetof(UPawnAction_Sequence, ActionSequence) == 0x000090, "Member 'UPawnAction_Sequence::ActionSequence' has a wrong offset!");
-static_assert(offsetof(UPawnAction_Sequence, ChildFailureHandlingMode) == 0x0000A0, "Member 'UPawnAction_Sequence::ChildFailureHandlingMode' has a wrong offset!");
-static_assert(offsetof(UPawnAction_Sequence, RecentActionCopy) == 0x0000A8, "Member 'UPawnAction_Sequence::RecentActionCopy' has a wrong offset!");
-
-// Class AIModule.PawnAction_Wait
-// 0x0010 (0x00A0 - 0x0090)
-class UPawnAction_Wait final : public UPawnAction
-{
-public:
-	float                                         TimeToWait;                                        // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F12[0xC];                                      // 0x0094(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PawnAction_Wait">();
-	}
-	static class UPawnAction_Wait* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPawnAction_Wait>();
-	}
-};
-static_assert(alignof(UPawnAction_Wait) == 0x000008, "Wrong alignment on UPawnAction_Wait");
-static_assert(sizeof(UPawnAction_Wait) == 0x0000A0, "Wrong size on UPawnAction_Wait");
-static_assert(offsetof(UPawnAction_Wait, TimeToWait) == 0x000090, "Member 'UPawnAction_Wait::TimeToWait' has a wrong offset!");
+static_assert(alignof(UPawnAction_Repeat) == 0x000008, "Wrong alignment on UPawnAction_Repeat");
+static_assert(sizeof(UPawnAction_Repeat) == 0x0000B0, "Wrong size on UPawnAction_Repeat");
+static_assert(offsetof(UPawnAction_Repeat, ActionToRepeat) == 0x000090, "Member 'UPawnAction_Repeat::ActionToRepeat' has a wrong offset!");
+static_assert(offsetof(UPawnAction_Repeat, RecentActionCopy) == 0x000098, "Member 'UPawnAction_Repeat::RecentActionCopy' has a wrong offset!");
+static_assert(offsetof(UPawnAction_Repeat, ChildFailureHandlingMode) == 0x0000A0, "Member 'UPawnAction_Repeat::ChildFailureHandlingMode' has a wrong offset!");
 
 // Class AIModule.AIResource_Movement
 // 0x0000 (0x0038 - 0x0038)
@@ -1080,29 +1334,12 @@ public:
 static_assert(alignof(UAIResource_Movement) == 0x000008, "Wrong alignment on UAIResource_Movement");
 static_assert(sizeof(UAIResource_Movement) == 0x000038, "Wrong size on UAIResource_Movement");
 
-// Class AIModule.AIResource_Logic
-// 0x0000 (0x0038 - 0x0038)
-class UAIResource_Logic final : public UGameplayTaskResource
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AIResource_Logic">();
-	}
-	static class UAIResource_Logic* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAIResource_Logic>();
-	}
-};
-static_assert(alignof(UAIResource_Logic) == 0x000008, "Wrong alignment on UAIResource_Logic");
-static_assert(sizeof(UAIResource_Logic) == 0x000038, "Wrong size on UAIResource_Logic");
-
 // Class AIModule.AISubsystem
 // 0x0010 (0x0038 - 0x0028)
 class UAISubsystem : public UObject
 {
 public:
-	uint8                                         Pad_F13[0x8];                                      // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F21[0x8];                                      // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAISystem*                              AISystem;                                          // 0x0030(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
@@ -1140,14 +1377,14 @@ public:
 	bool                                          bAddBlackboardSelfKey;                             // 0x00D3(0x0001)(Edit, ZeroConstructor, Config, DisableEditOnInstance, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bClearBBEntryOnBTEQSFail;                          // 0x00D4(0x0001)(Edit, ZeroConstructor, Config, DisableEditOnInstance, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ECollisionChannel                             DefaultSightCollisionChannel;                      // 0x00D5(0x0001)(Edit, ZeroConstructor, Config, DisableEditOnInstance, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F14[0x2];                                      // 0x00D6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F22[0x2];                                      // 0x00D6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBehaviorTreeManager*                   BehaviorTreeManager;                               // 0x00D8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UEnvQueryManager*                       EnvironmentQueryManager;                           // 0x00E0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UAIPerceptionSystem*                    PerceptionSystem;                                  // 0x00E8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TArray<class UAIAsyncTaskBlueprintProxy*>     AllProxyObjects;                                   // 0x00F0(0x0010)(ZeroConstructor, Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	class UAIHotSpotManager*                      HotSpotManager;                                    // 0x0100(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UNavLocalGridManager*                   NavLocalGrids;                                     // 0x0108(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F15[0x58];                                     // 0x0110(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F23[0x58];                                     // 0x0110(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AIIgnorePlayers();
@@ -1193,12 +1430,12 @@ static_assert(offsetof(UAISystem, NavLocalGrids) == 0x000108, "Member 'UAISystem
 class UBehaviorTree final : public UObject
 {
 public:
-	uint8                                         Pad_F16[0x8];                                      // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F24[0x8];                                      // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBTCompositeNode*                       RootNode;                                          // 0x0030(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UBlackboardData*                        BlackboardAsset;                                   // 0x0038(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class UBTDecorator*>                   RootDecorators;                                    // 0x0040(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
 	TArray<struct FBTDecoratorLogic>              RootDecoratorOps;                                  // 0x0050(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F17[0x8];                                      // 0x0060(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F25[0x8];                                      // 0x0060(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1222,10 +1459,10 @@ static_assert(offsetof(UBehaviorTree, RootDecoratorOps) == 0x000050, "Member 'UB
 class UBrainComponent : public UActorComponent
 {
 public:
-	uint8                                         Pad_F18[0x8];                                      // 0x00A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F26[0x8];                                      // 0x00A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBlackboardComponent*                   BlackboardComp;                                    // 0x00A8(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class AAIController*                          AIOwner;                                           // 0x00B0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F19[0x40];                                     // 0x00B8(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F27[0x40];                                     // 0x00B8(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void RestartLogic();
@@ -1255,11 +1492,11 @@ static_assert(offsetof(UBrainComponent, AIOwner) == 0x0000B0, "Member 'UBrainCom
 class UBehaviorTreeComponent final : public UBrainComponent
 {
 public:
-	uint8                                         Pad_F1A[0x20];                                     // 0x00F8(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F28[0x20];                                     // 0x00F8(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UBTNode*>                        NodeInstances;                                     // 0x0118(0x0010)(ZeroConstructor, Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F1B[0x148];                                    // 0x0128(0x0148)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F29[0x148];                                    // 0x0128(0x0148)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBehaviorTree*                          DefaultBehaviorTreeAsset;                          // 0x0270(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F1C[0x10];                                     // 0x0278(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F2A[0x10];                                     // 0x0278(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AddCooldownTagDuration(const struct FGameplayTag& CooldownTag, float CooldownDuration, bool bAddToExistingDuration);
@@ -1282,13 +1519,36 @@ static_assert(sizeof(UBehaviorTreeComponent) == 0x000288, "Wrong size on UBehavi
 static_assert(offsetof(UBehaviorTreeComponent, NodeInstances) == 0x000118, "Member 'UBehaviorTreeComponent::NodeInstances' has a wrong offset!");
 static_assert(offsetof(UBehaviorTreeComponent, DefaultBehaviorTreeAsset) == 0x000270, "Member 'UBehaviorTreeComponent::DefaultBehaviorTreeAsset' has a wrong offset!");
 
+// Class AIModule.EnvQueryOption
+// 0x0018 (0x0040 - 0x0028)
+class UEnvQueryOption final : public UObject
+{
+public:
+	class UEnvQueryGenerator*                     Generator;                                         // 0x0028(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UEnvQueryTest*>                  Tests;                                             // 0x0030(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"EnvQueryOption">();
+	}
+	static class UEnvQueryOption* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryOption>();
+	}
+};
+static_assert(alignof(UEnvQueryOption) == 0x000008, "Wrong alignment on UEnvQueryOption");
+static_assert(sizeof(UEnvQueryOption) == 0x000040, "Wrong size on UEnvQueryOption");
+static_assert(offsetof(UEnvQueryOption, Generator) == 0x000028, "Member 'UEnvQueryOption::Generator' has a wrong offset!");
+static_assert(offsetof(UEnvQueryOption, Tests) == 0x000030, "Member 'UEnvQueryOption::Tests' has a wrong offset!");
+
 // Class AIModule.BehaviorTreeManager
 // 0x0028 (0x0050 - 0x0028)
 class UBehaviorTreeManager final : public UObject
 {
 public:
 	int32                                         MaxDebuggerSteps;                                  // 0x0028(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F1E[0x4];                                      // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F2C[0x4];                                      // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FBehaviorTreeTemplateInfo>      LoadedTemplates;                                   // 0x0030(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	TArray<class UBehaviorTreeComponent*>         ActiveComponents;                                  // 0x0040(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 
@@ -1325,6 +1585,23 @@ public:
 static_assert(alignof(UBehaviorTreeTypes) == 0x000008, "Wrong alignment on UBehaviorTreeTypes");
 static_assert(sizeof(UBehaviorTreeTypes) == 0x000028, "Wrong size on UBehaviorTreeTypes");
 
+// Class AIModule.PathFollowingManager
+// 0x0000 (0x0028 - 0x0028)
+class UPathFollowingManager final : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"PathFollowingManager">();
+	}
+	static class UPathFollowingManager* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPathFollowingManager>();
+	}
+};
+static_assert(alignof(UPathFollowingManager) == 0x000008, "Wrong alignment on UPathFollowingManager");
+static_assert(sizeof(UPathFollowingManager) == 0x000028, "Wrong size on UPathFollowingManager");
+
 // Class AIModule.BlackboardAssetProvider
 // 0x0000 (0x0028 - 0x0028)
 class IBlackboardAssetProvider final : public IInterface
@@ -1353,9 +1630,9 @@ public:
 	class UBrainComponent*                        BrainComp;                                         // 0x00A0(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UBlackboardData*                        DefaultBlackboardAsset;                            // 0x00A8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UBlackboardData*                        BlackboardAsset;                                   // 0x00B0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F1F[0x20];                                     // 0x00B8(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F2D[0x20];                                     // 0x00B8(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UBlackboardKeyType*>             KeyInstances;                                      // 0x00D8(0x0010)(ZeroConstructor, Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F20[0xC0];                                     // 0x00E8(0x00C0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F2E[0xC0];                                     // 0x00E8(0x00C0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ClearValue(const class FName& KeyName);
@@ -1400,6 +1677,80 @@ static_assert(offsetof(UBlackboardComponent, BrainComp) == 0x0000A0, "Member 'UB
 static_assert(offsetof(UBlackboardComponent, DefaultBlackboardAsset) == 0x0000A8, "Member 'UBlackboardComponent::DefaultBlackboardAsset' has a wrong offset!");
 static_assert(offsetof(UBlackboardComponent, BlackboardAsset) == 0x0000B0, "Member 'UBlackboardComponent::BlackboardAsset' has a wrong offset!");
 static_assert(offsetof(UBlackboardComponent, KeyInstances) == 0x0000D8, "Member 'UBlackboardComponent::KeyInstances' has a wrong offset!");
+
+// Class AIModule.EnvQueryTest_Trace
+// 0x00F0 (0x02E8 - 0x01F8)
+class UEnvQueryTest_Trace final : public UEnvQueryTest
+{
+public:
+	struct FEnvTraceData                          TraceData;                                         // 0x01F8(0x0040)(Edit, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
+	struct FAIDataProviderBoolValue               TraceFromContext;                                  // 0x0238(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FAIDataProviderFloatValue              ItemHeightOffset;                                  // 0x0270(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, AdvancedDisplay, NativeAccessSpecifierPublic)
+	struct FAIDataProviderFloatValue              ContextHeightOffset;                               // 0x02A8(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, AdvancedDisplay, NativeAccessSpecifierPublic)
+	TSubclassOf<class UEnvQueryContext>           Context;                                           // 0x02E0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"EnvQueryTest_Trace">();
+	}
+	static class UEnvQueryTest_Trace* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryTest_Trace>();
+	}
+};
+static_assert(alignof(UEnvQueryTest_Trace) == 0x000008, "Wrong alignment on UEnvQueryTest_Trace");
+static_assert(sizeof(UEnvQueryTest_Trace) == 0x0002E8, "Wrong size on UEnvQueryTest_Trace");
+static_assert(offsetof(UEnvQueryTest_Trace, TraceData) == 0x0001F8, "Member 'UEnvQueryTest_Trace::TraceData' has a wrong offset!");
+static_assert(offsetof(UEnvQueryTest_Trace, TraceFromContext) == 0x000238, "Member 'UEnvQueryTest_Trace::TraceFromContext' has a wrong offset!");
+static_assert(offsetof(UEnvQueryTest_Trace, ItemHeightOffset) == 0x000270, "Member 'UEnvQueryTest_Trace::ItemHeightOffset' has a wrong offset!");
+static_assert(offsetof(UEnvQueryTest_Trace, ContextHeightOffset) == 0x0002A8, "Member 'UEnvQueryTest_Trace::ContextHeightOffset' has a wrong offset!");
+static_assert(offsetof(UEnvQueryTest_Trace, Context) == 0x0002E0, "Member 'UEnvQueryTest_Trace::Context' has a wrong offset!");
+
+// Class AIModule.BlackboardData
+// 0x0020 (0x0050 - 0x0030)
+class UBlackboardData final : public UDataAsset
+{
+public:
+	class UBlackboardData*                        Parent;                                            // 0x0030(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FBlackboardEntry>               Keys;                                              // 0x0038(0x0010)(Edit, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	uint8                                         bHasSynchronizedKeys : 1;                          // 0x0048(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
+	uint8                                         Pad_F36[0x7];                                      // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"BlackboardData">();
+	}
+	static class UBlackboardData* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBlackboardData>();
+	}
+};
+static_assert(alignof(UBlackboardData) == 0x000008, "Wrong alignment on UBlackboardData");
+static_assert(sizeof(UBlackboardData) == 0x000050, "Wrong size on UBlackboardData");
+static_assert(offsetof(UBlackboardData, Parent) == 0x000030, "Member 'UBlackboardData::Parent' has a wrong offset!");
+static_assert(offsetof(UBlackboardData, Keys) == 0x000038, "Member 'UBlackboardData::Keys' has a wrong offset!");
+
+// Class AIModule.BlackboardKeyType
+// 0x0008 (0x0030 - 0x0028)
+class UBlackboardKeyType : public UObject
+{
+public:
+	uint8                                         Pad_F37[0x8];                                      // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"BlackboardKeyType">();
+	}
+	static class UBlackboardKeyType* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBlackboardKeyType>();
+	}
+};
+static_assert(alignof(UBlackboardKeyType) == 0x000008, "Wrong alignment on UBlackboardKeyType");
+static_assert(sizeof(UBlackboardKeyType) == 0x000030, "Wrong size on UBlackboardKeyType");
 
 // Class AIModule.BlackboardKeyType_Bool
 // 0x0000 (0x0030 - 0x0030)
@@ -1447,7 +1798,7 @@ public:
 	class UEnum*                                  EnumType;                                          // 0x0030(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 EnumName;                                          // 0x0038(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bIsEnumNameValid : 1;                              // 0x0048(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, DisableEditOnInstance, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_F28[0x7];                                      // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F38[0x7];                                      // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1597,50 +1948,89 @@ static_assert(alignof(UBlackboardKeyType_String) == 0x000008, "Wrong alignment o
 static_assert(sizeof(UBlackboardKeyType_String) == 0x000040, "Wrong size on UBlackboardKeyType_String");
 static_assert(offsetof(UBlackboardKeyType_String, StringValue) == 0x000030, "Member 'UBlackboardKeyType_String::StringValue' has a wrong offset!");
 
-// Class AIModule.BTAuxiliaryNode
-// 0x0008 (0x0060 - 0x0058)
-class UBTAuxiliaryNode : public UBTNode
+// Class AIModule.BlackboardKeyType_Vector
+// 0x0000 (0x0030 - 0x0030)
+class UBlackboardKeyType_Vector final : public UBlackboardKeyType
 {
 public:
-	uint8                                         Pad_F29[0x8];                                      // 0x0058(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"BlackboardKeyType_Vector">();
+	}
+	static class UBlackboardKeyType_Vector* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBlackboardKeyType_Vector>();
+	}
+};
+static_assert(alignof(UBlackboardKeyType_Vector) == 0x000008, "Wrong alignment on UBlackboardKeyType_Vector");
+static_assert(sizeof(UBlackboardKeyType_Vector) == 0x000030, "Wrong size on UBlackboardKeyType_Vector");
+
+// Class AIModule.AITask
+// 0x0008 (0x0070 - 0x0068)
+class UAITask : public UGameplayTask
+{
+public:
+	class AAIController*                          OwnerController;                                   // 0x0068(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTAuxiliaryNode">();
+		return StaticClassImpl<"AITask">();
 	}
-	static class UBTAuxiliaryNode* GetDefaultObj()
+	static class UAITask* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UBTAuxiliaryNode>();
+		return GetDefaultObjImpl<UAITask>();
 	}
 };
-static_assert(alignof(UBTAuxiliaryNode) == 0x000008, "Wrong alignment on UBTAuxiliaryNode");
-static_assert(sizeof(UBTAuxiliaryNode) == 0x000060, "Wrong size on UBTAuxiliaryNode");
+static_assert(alignof(UAITask) == 0x000008, "Wrong alignment on UAITask");
+static_assert(sizeof(UAITask) == 0x000070, "Wrong size on UAITask");
+static_assert(offsetof(UAITask, OwnerController) == 0x000068, "Member 'UAITask::OwnerController' has a wrong offset!");
 
-// Class AIModule.BTDecorator
-// 0x0008 (0x0068 - 0x0060)
-class UBTDecorator : public UBTAuxiliaryNode
+// Class AIModule.BTFunctionLibrary
+// 0x0000 (0x0028 - 0x0028)
+class UBTFunctionLibrary final : public UBlueprintFunctionLibrary
 {
 public:
-	uint8                                         BitPad_4B : 7;                                     // 0x0060(0x0001)(Fixing Bit-Field Size Between Bits [ Dumper-7 ])
-	uint8                                         bInverseCondition : 1;                             // 0x0060(0x0001)(BitIndex: 0x07, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         Pad_F2A[0x3];                                      // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	EBTFlowAbortMode                              FlowAbortMode;                                     // 0x0064(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F2B[0x3];                                      // 0x0065(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	static void ClearBlackboardValue(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
+	static void ClearBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
+	static class AActor* GetBlackboardValueAsActor(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
+	static bool GetBlackboardValueAsBool(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
+	static class UClass* GetBlackboardValueAsClass(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
+	static uint8 GetBlackboardValueAsEnum(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
+	static float GetBlackboardValueAsFloat(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
+	static int32 GetBlackboardValueAsInt(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
+	static class FName GetBlackboardValueAsName(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
+	static class UObject* GetBlackboardValueAsObject(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
+	static struct FRotator GetBlackboardValueAsRotator(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
+	static class FString GetBlackboardValueAsString(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
+	static struct FVector GetBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key);
+	static class UBehaviorTreeComponent* GetOwnerComponent(class UBTNode* NodeOwner);
+	static class UBlackboardComponent* GetOwnersBlackboard(class UBTNode* NodeOwner);
+	static void SetBlackboardValueAsBool(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, bool Value);
+	static void SetBlackboardValueAsClass(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, class UClass* Value);
+	static void SetBlackboardValueAsEnum(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, uint8 Value);
+	static void SetBlackboardValueAsFloat(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, float Value);
+	static void SetBlackboardValueAsInt(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, int32 Value);
+	static void SetBlackboardValueAsName(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, class FName Value);
+	static void SetBlackboardValueAsObject(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, class UObject* Value);
+	static void SetBlackboardValueAsRotator(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const struct FRotator& Value);
+	static void SetBlackboardValueAsString(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const class FString& Value);
+	static void SetBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const struct FVector& Value);
+	static void StartUsingExternalEvent(class UBTNode* NodeOwner, class AActor* OwningActor);
+	static void StopUsingExternalEvent(class UBTNode* NodeOwner);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTDecorator">();
+		return StaticClassImpl<"BTFunctionLibrary">();
 	}
-	static class UBTDecorator* GetDefaultObj()
+	static class UBTFunctionLibrary* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UBTDecorator>();
+		return GetDefaultObjImpl<UBTFunctionLibrary>();
 	}
 };
-static_assert(alignof(UBTDecorator) == 0x000008, "Wrong alignment on UBTDecorator");
-static_assert(sizeof(UBTDecorator) == 0x000068, "Wrong size on UBTDecorator");
-static_assert(offsetof(UBTDecorator, FlowAbortMode) == 0x000064, "Member 'UBTDecorator::FlowAbortMode' has a wrong offset!");
+static_assert(alignof(UBTFunctionLibrary) == 0x000008, "Wrong alignment on UBTFunctionLibrary");
+static_assert(sizeof(UBTFunctionLibrary) == 0x000028, "Wrong size on UBTFunctionLibrary");
 
 // Class AIModule.BTService
 // 0x0010 (0x0070 - 0x0060)
@@ -1651,7 +2041,7 @@ public:
 	float                                         RandomDeviation;                                   // 0x0064(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         bCallTickOnSearchStart : 1;                        // 0x0068(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bRestartTimerOnEachActivation : 1;                 // 0x0068(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_F2C[0x7];                                      // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F41[0x7];                                      // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1667,6 +2057,29 @@ static_assert(alignof(UBTService) == 0x000008, "Wrong alignment on UBTService");
 static_assert(sizeof(UBTService) == 0x000070, "Wrong size on UBTService");
 static_assert(offsetof(UBTService, Interval) == 0x000060, "Member 'UBTService::Interval' has a wrong offset!");
 static_assert(offsetof(UBTService, RandomDeviation) == 0x000064, "Member 'UBTService::RandomDeviation' has a wrong offset!");
+
+// Class AIModule.BTTaskNode
+// 0x0018 (0x0070 - 0x0058)
+class UBTTaskNode : public UBTNode
+{
+public:
+	TArray<class UBTService*>                     Services;                                          // 0x0058(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
+	uint8                                         bIgnoreRestartSelf : 1;                            // 0x0068(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         Pad_F42[0x7];                                      // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"BTTaskNode">();
+	}
+	static class UBTTaskNode* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTTaskNode>();
+	}
+};
+static_assert(alignof(UBTTaskNode) == 0x000008, "Wrong alignment on UBTTaskNode");
+static_assert(sizeof(UBTTaskNode) == 0x000070, "Wrong size on UBTTaskNode");
+static_assert(offsetof(UBTTaskNode, Services) == 0x000058, "Member 'UBTTaskNode::Services' has a wrong offset!");
 
 // Class AIModule.BTComposite_Selector
 // 0x0000 (0x0090 - 0x0090)
@@ -1691,7 +2104,7 @@ class UBTComposite_SimpleParallel final : public UBTCompositeNode
 {
 public:
 	EBTParallelMode                               FinishMode;                                        // 0x0090(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F2D[0x7];                                      // 0x0091(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F43[0x7];                                      // 0x0091(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1707,27 +2120,6 @@ static_assert(alignof(UBTComposite_SimpleParallel) == 0x000008, "Wrong alignment
 static_assert(sizeof(UBTComposite_SimpleParallel) == 0x000098, "Wrong size on UBTComposite_SimpleParallel");
 static_assert(offsetof(UBTComposite_SimpleParallel, FinishMode) == 0x000090, "Member 'UBTComposite_SimpleParallel::FinishMode' has a wrong offset!");
 
-// Class AIModule.BTDecorator_BlackboardBase
-// 0x0028 (0x0090 - 0x0068)
-class UBTDecorator_BlackboardBase : public UBTDecorator
-{
-public:
-	struct FBlackboardKeySelector                 BlackboardKey;                                     // 0x0068(0x0028)(Edit, Protected, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTDecorator_BlackboardBase">();
-	}
-	static class UBTDecorator_BlackboardBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTDecorator_BlackboardBase>();
-	}
-};
-static_assert(alignof(UBTDecorator_BlackboardBase) == 0x000008, "Wrong alignment on UBTDecorator_BlackboardBase");
-static_assert(sizeof(UBTDecorator_BlackboardBase) == 0x000090, "Wrong size on UBTDecorator_BlackboardBase");
-static_assert(offsetof(UBTDecorator_BlackboardBase, BlackboardKey) == 0x000068, "Member 'UBTDecorator_BlackboardBase::BlackboardKey' has a wrong offset!");
-
 // Class AIModule.BTDecorator_Blackboard
 // 0x0030 (0x00C0 - 0x0090)
 class UBTDecorator_Blackboard : public UBTDecorator_BlackboardBase
@@ -1739,7 +2131,7 @@ public:
 	class FString                                 CachedDescription;                                 // 0x00A8(0x0010)(ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         OperationType;                                     // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EBTBlackboardRestart                          NotifyObserver;                                    // 0x00B9(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F2E[0x6];                                      // 0x00BA(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F44[0x6];                                      // 0x00BA(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1768,11 +2160,11 @@ public:
 	class AAIController*                          AIOwner;                                           // 0x0068(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class AActor*                                 ActorOwner;                                        // 0x0070(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TArray<class FName>                           ObservedKeyNames;                                  // 0x0078(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F2F[0x10];                                     // 0x0088(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F45[0x10];                                     // 0x0088(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bShowPropertyDetails : 1;                          // 0x0098(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, DisableEditOnTemplate, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bCheckConditionOnlyBlackBoardChanges : 1;          // 0x0098(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bIsObservingBB : 1;                                // 0x0098(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_F30[0x7];                                      // 0x0099(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F46[0x7];                                      // 0x0099(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool PerformConditionCheck(class AActor* OwnerActor);
@@ -1814,7 +2206,7 @@ class UBTDecorator_CheckGameplayTagsOnActor final : public UBTDecorator
 public:
 	struct FBlackboardKeySelector                 ActorToCheck;                                      // 0x0068(0x0028)(Edit, Protected, NativeAccessSpecifierProtected)
 	EGameplayContainerMatchType                   TagsToMatch;                                       // 0x0090(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F37[0x7];                                      // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F4D[0x7];                                      // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayTagContainer                  GameplayTags;                                      // 0x0098(0x0020)(Edit, Protected, NativeAccessSpecifierProtected)
 	class FString                                 CachedDescription;                                 // 0x00B8(0x0010)(ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
@@ -1841,7 +2233,7 @@ class UBTDecorator_CompareBBEntries final : public UBTDecorator
 {
 public:
 	EBlackBoardEntryComparison                    Operator;                                          // 0x0068(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F38[0x7];                                      // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F4E[0x7];                                      // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FBlackboardKeySelector                 BlackboardKeyA;                                    // 0x0070(0x0028)(Edit, Protected, NativeAccessSpecifierProtected)
 	struct FBlackboardKeySelector                 BlackboardKeyB;                                    // 0x0098(0x0028)(Edit, Protected, NativeAccessSpecifierProtected)
 
@@ -1884,11 +2276,11 @@ class UBTDecorator_ConeCheck final : public UBTDecorator
 {
 public:
 	float                                         ConeHalfAngle;                                     // 0x0068(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F39[0x4];                                      // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F4F[0x4];                                      // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FBlackboardKeySelector                 ConeOrigin;                                        // 0x0070(0x0028)(Edit, NativeAccessSpecifierPublic)
 	struct FBlackboardKeySelector                 ConeDirection;                                     // 0x0098(0x0028)(Edit, NativeAccessSpecifierPublic)
 	struct FBlackboardKeySelector                 Observed;                                          // 0x00C0(0x0028)(Edit, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F3A[0x8];                                      // 0x00E8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F50[0x8];                                      // 0x00E8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1913,7 +2305,7 @@ class UBTDecorator_Cooldown final : public UBTDecorator
 {
 public:
 	float                                         CoolDownTime;                                      // 0x0068(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F3B[0x4];                                      // 0x006C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F51[0x4];                                      // 0x006C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1937,9 +2329,9 @@ public:
 	struct FBlackboardKeySelector                 BlackboardKeyA;                                    // 0x0068(0x0028)(Edit, Protected, NativeAccessSpecifierProtected)
 	struct FBlackboardKeySelector                 BlackboardKeyB;                                    // 0x0090(0x0028)(Edit, Protected, NativeAccessSpecifierProtected)
 	uint8                                         bUseSelf : 1;                                      // 0x00B8(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_F3C[0x3];                                      // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F52[0x3];                                      // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	EPathExistanceQueryType                       PathQueryType;                                     // 0x00BC(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F3D[0x3];                                      // 0x00BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F53[0x3];                                      // 0x00BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UNavigationQueryFilter>     FilterClass;                                       // 0x00C0(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
@@ -1982,14 +2374,14 @@ class UBTDecorator_IsAtLocation final : public UBTDecorator_BlackboardBase
 {
 public:
 	float                                         AcceptableRadius;                                  // 0x0090(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F3E[0x4];                                      // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F54[0x4];                                      // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAIDataProviderFloatValue              ParametrizedAcceptableRadius;                      // 0x0098(0x0038)(Edit, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	EFAIDistanceType                              GeometricDistanceType;                             // 0x00D0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F3F[0x3];                                      // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F55[0x3];                                      // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bUseParametrizedRadius : 1;                        // 0x00D4(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bUseNavAgentGoalLocation : 1;                      // 0x00D4(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bPathFindingBasedTest : 1;                         // 0x00D4(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_F40[0x3];                                      // 0x00D5(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F56[0x3];                                      // 0x00D5(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2007,39 +2399,18 @@ static_assert(offsetof(UBTDecorator_IsAtLocation, AcceptableRadius) == 0x000090,
 static_assert(offsetof(UBTDecorator_IsAtLocation, ParametrizedAcceptableRadius) == 0x000098, "Member 'UBTDecorator_IsAtLocation::ParametrizedAcceptableRadius' has a wrong offset!");
 static_assert(offsetof(UBTDecorator_IsAtLocation, GeometricDistanceType) == 0x0000D0, "Member 'UBTDecorator_IsAtLocation::GeometricDistanceType' has a wrong offset!");
 
-// Class AIModule.BTDecorator_IsBBEntryOfClass
-// 0x0008 (0x0098 - 0x0090)
-class UBTDecorator_IsBBEntryOfClass final : public UBTDecorator_BlackboardBase
-{
-public:
-	TSubclassOf<class UObject>                    TestClass;                                         // 0x0090(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BTDecorator_IsBBEntryOfClass">();
-	}
-	static class UBTDecorator_IsBBEntryOfClass* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBTDecorator_IsBBEntryOfClass>();
-	}
-};
-static_assert(alignof(UBTDecorator_IsBBEntryOfClass) == 0x000008, "Wrong alignment on UBTDecorator_IsBBEntryOfClass");
-static_assert(sizeof(UBTDecorator_IsBBEntryOfClass) == 0x000098, "Wrong size on UBTDecorator_IsBBEntryOfClass");
-static_assert(offsetof(UBTDecorator_IsBBEntryOfClass, TestClass) == 0x000090, "Member 'UBTDecorator_IsBBEntryOfClass::TestClass' has a wrong offset!");
-
 // Class AIModule.BTDecorator_KeepInCone
 // 0x0060 (0x00C8 - 0x0068)
 class UBTDecorator_KeepInCone final : public UBTDecorator
 {
 public:
 	float                                         ConeHalfAngle;                                     // 0x0068(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F41[0x4];                                      // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F57[0x4];                                      // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FBlackboardKeySelector                 ConeOrigin;                                        // 0x0070(0x0028)(Edit, NativeAccessSpecifierPublic)
 	struct FBlackboardKeySelector                 Observed;                                          // 0x0098(0x0028)(Edit, NativeAccessSpecifierPublic)
 	uint8                                         bUseSelfAsOrigin : 1;                              // 0x00C0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bUseSelfAsObserved : 1;                            // 0x00C0(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_F42[0x7];                                      // 0x00C1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F58[0x7];                                      // 0x00C1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2064,9 +2435,9 @@ class UBTDecorator_Loop final : public UBTDecorator
 public:
 	int32                                         NumLoops;                                          // 0x0068(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInfiniteLoop;                                     // 0x006C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F43[0x3];                                      // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F59[0x3];                                      // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         InfiniteLoopTimeoutTime;                           // 0x0070(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F44[0x4];                                      // 0x0074(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F5A[0x4];                                      // 0x0074(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2109,7 +2480,7 @@ public:
 	struct FGameplayTag                           CooldownTag;                                       // 0x0068(0x0008)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CooldownDuration;                                  // 0x0070(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAddToExistingDuration;                            // 0x0074(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F45[0x3];                                      // 0x0075(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F5B[0x3];                                      // 0x0075(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2136,7 +2507,7 @@ public:
 	float                                         CooldownDuration;                                  // 0x0070(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAddToExistingDuration;                            // 0x0074(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bActivatesCooldown;                                // 0x0075(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F46[0x2];                                      // 0x0076(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F5C[0x2];                                      // 0x0076(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2155,13 +2526,46 @@ static_assert(offsetof(UBTDecorator_TagCooldown, CooldownDuration) == 0x000070, 
 static_assert(offsetof(UBTDecorator_TagCooldown, bAddToExistingDuration) == 0x000074, "Member 'UBTDecorator_TagCooldown::bAddToExistingDuration' has a wrong offset!");
 static_assert(offsetof(UBTDecorator_TagCooldown, bActivatesCooldown) == 0x000075, "Member 'UBTDecorator_TagCooldown::bActivatesCooldown' has a wrong offset!");
 
+// Class AIModule.EnvQueryGenerator_BlueprintBase
+// 0x0038 (0x0088 - 0x0050)
+class UEnvQueryGenerator_BlueprintBase final : public UEnvQueryGenerator
+{
+public:
+	class FText                                   GeneratorsActionDescription;                       // 0x0050(0x0018)(Edit, NativeAccessSpecifierPublic)
+	TSubclassOf<class UEnvQueryContext>           Context;                                           // 0x0068(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UEnvQueryItemType>          GeneratedItemType;                                 // 0x0070(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F5D[0x10];                                     // 0x0078(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void AddGeneratedActor(class AActor* GeneratedActor) const;
+	void AddGeneratedVector(const struct FVector& GeneratedVector) const;
+	void DoItemGeneration(const TArray<struct FVector>& ContextLocations) const;
+	void DoItemGenerationFromActors(const TArray<class AActor*>& ContextActors) const;
+	class UObject* GetQuerier() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"EnvQueryGenerator_BlueprintBase">();
+	}
+	static class UEnvQueryGenerator_BlueprintBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryGenerator_BlueprintBase>();
+	}
+};
+static_assert(alignof(UEnvQueryGenerator_BlueprintBase) == 0x000008, "Wrong alignment on UEnvQueryGenerator_BlueprintBase");
+static_assert(sizeof(UEnvQueryGenerator_BlueprintBase) == 0x000088, "Wrong size on UEnvQueryGenerator_BlueprintBase");
+static_assert(offsetof(UEnvQueryGenerator_BlueprintBase, GeneratorsActionDescription) == 0x000050, "Member 'UEnvQueryGenerator_BlueprintBase::GeneratorsActionDescription' has a wrong offset!");
+static_assert(offsetof(UEnvQueryGenerator_BlueprintBase, Context) == 0x000068, "Member 'UEnvQueryGenerator_BlueprintBase::Context' has a wrong offset!");
+static_assert(offsetof(UEnvQueryGenerator_BlueprintBase, GeneratedItemType) == 0x000070, "Member 'UEnvQueryGenerator_BlueprintBase::GeneratedItemType' has a wrong offset!");
+
 // Class AIModule.BTDecorator_TimeLimit
 // 0x0008 (0x0070 - 0x0068)
 class UBTDecorator_TimeLimit final : public UBTDecorator
 {
 public:
 	float                                         TimeLimit;                                         // 0x0068(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F47[0x4];                                      // 0x006C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F5E[0x4];                                      // 0x006C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2205,10 +2609,10 @@ class UBTService_BlueprintBase final : public UBTService
 public:
 	class AAIController*                          AIOwner;                                           // 0x0070(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class AActor*                                 ActorOwner;                                        // 0x0078(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F48[0x10];                                     // 0x0080(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F5F[0x10];                                     // 0x0080(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bShowPropertyDetails : 1;                          // 0x0090(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, DisableEditOnTemplate, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bShowEventDetails : 1;                             // 0x0090(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, DisableEditOnTemplate, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_F49[0x7];                                      // 0x0091(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F60[0x7];                                      // 0x0091(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ReceiveActivation(class AActor* OwnerActor);
@@ -2243,7 +2647,7 @@ class UBTService_DefaultFocus final : public UBTService_BlackboardBase
 {
 public:
 	uint8                                         FocusPriority;                                     // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F4C[0x7];                                      // 0x0099(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F63[0x7];                                      // 0x0099(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2266,7 +2670,7 @@ class UBTService_RunEQS final : public UBTService_BlackboardBase
 public:
 	struct FEQSParametrizedQueryExecutionRequest  EQSRequest;                                        // 0x0098(0x0048)(Edit, Protected, NativeAccessSpecifierProtected)
 	bool                                          bUpdateBBOnFail;                                   // 0x00E0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F4D[0x17];                                     // 0x00E1(0x0017)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F64[0x17];                                     // 0x00E1(0x0017)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2304,13 +2708,56 @@ static_assert(alignof(UBTTask_BlackboardBase) == 0x000008, "Wrong alignment on U
 static_assert(sizeof(UBTTask_BlackboardBase) == 0x000098, "Wrong size on UBTTask_BlackboardBase");
 static_assert(offsetof(UBTTask_BlackboardBase, BlackboardKey) == 0x000070, "Member 'UBTTask_BlackboardBase::BlackboardKey' has a wrong offset!");
 
+// Class AIModule.BTTask_BlueprintBase
+// 0x0038 (0x00A8 - 0x0070)
+class UBTTask_BlueprintBase final : public UBTTaskNode
+{
+public:
+	class AAIController*                          AIOwner;                                           // 0x0070(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class AActor*                                 ActorOwner;                                        // 0x0078(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FIntervalCountdown                     TickInterval;                                      // 0x0080(0x0008)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_F65[0x18];                                     // 0x0088(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         bShowPropertyDetails : 1;                          // 0x00A0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, DisableEditOnTemplate, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         Pad_F66[0x7];                                      // 0x00A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void FinishAbort();
+	void FinishExecute(bool bSuccess);
+	void ReceiveAbort(class AActor* OwnerActor);
+	void ReceiveAbortAI(class AAIController* OwnerController, class APawn* ControlledPawn);
+	void ReceiveExecute(class AActor* OwnerActor);
+	void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
+	void ReceiveTick(class AActor* OwnerActor, float DeltaSeconds);
+	void ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds);
+	void SetFinishOnMessage(class FName MessageName);
+	void SetFinishOnMessageWithId(class FName MessageName, int32 RequestID);
+
+	bool IsTaskAborting() const;
+	bool IsTaskExecuting() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"BTTask_BlueprintBase">();
+	}
+	static class UBTTask_BlueprintBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UBTTask_BlueprintBase>();
+	}
+};
+static_assert(alignof(UBTTask_BlueprintBase) == 0x000008, "Wrong alignment on UBTTask_BlueprintBase");
+static_assert(sizeof(UBTTask_BlueprintBase) == 0x0000A8, "Wrong size on UBTTask_BlueprintBase");
+static_assert(offsetof(UBTTask_BlueprintBase, AIOwner) == 0x000070, "Member 'UBTTask_BlueprintBase::AIOwner' has a wrong offset!");
+static_assert(offsetof(UBTTask_BlueprintBase, ActorOwner) == 0x000078, "Member 'UBTTask_BlueprintBase::ActorOwner' has a wrong offset!");
+static_assert(offsetof(UBTTask_BlueprintBase, TickInterval) == 0x000080, "Member 'UBTTask_BlueprintBase::TickInterval' has a wrong offset!");
+
 // Class AIModule.BTTask_FinishWithResult
 // 0x0008 (0x0078 - 0x0070)
 class UBTTask_FinishWithResult final : public UBTTaskNode
 {
 public:
 	EBTNodeResult                                 Result;                                            // 0x0070(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F4E[0x7];                                      // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F69[0x7];                                      // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2326,13 +2773,63 @@ static_assert(alignof(UBTTask_FinishWithResult) == 0x000008, "Wrong alignment on
 static_assert(sizeof(UBTTask_FinishWithResult) == 0x000078, "Wrong size on UBTTask_FinishWithResult");
 static_assert(offsetof(UBTTask_FinishWithResult, Result) == 0x000070, "Member 'UBTTask_FinishWithResult::Result' has a wrong offset!");
 
+// Class AIModule.EnvQueryGenerator_SimpleGrid
+// 0x0078 (0x0108 - 0x0090)
+class UEnvQueryGenerator_SimpleGrid : public UEnvQueryGenerator_ProjectedPoints
+{
+public:
+	struct FAIDataProviderFloatValue              GridSize;                                          // 0x0090(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FAIDataProviderFloatValue              SpaceBetween;                                      // 0x00C8(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	TSubclassOf<class UEnvQueryContext>           GenerateAround;                                    // 0x0100(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"EnvQueryGenerator_SimpleGrid">();
+	}
+	static class UEnvQueryGenerator_SimpleGrid* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryGenerator_SimpleGrid>();
+	}
+};
+static_assert(alignof(UEnvQueryGenerator_SimpleGrid) == 0x000008, "Wrong alignment on UEnvQueryGenerator_SimpleGrid");
+static_assert(sizeof(UEnvQueryGenerator_SimpleGrid) == 0x000108, "Wrong size on UEnvQueryGenerator_SimpleGrid");
+static_assert(offsetof(UEnvQueryGenerator_SimpleGrid, GridSize) == 0x000090, "Member 'UEnvQueryGenerator_SimpleGrid::GridSize' has a wrong offset!");
+static_assert(offsetof(UEnvQueryGenerator_SimpleGrid, SpaceBetween) == 0x0000C8, "Member 'UEnvQueryGenerator_SimpleGrid::SpaceBetween' has a wrong offset!");
+static_assert(offsetof(UEnvQueryGenerator_SimpleGrid, GenerateAround) == 0x000100, "Member 'UEnvQueryGenerator_SimpleGrid::GenerateAround' has a wrong offset!");
+
+// Class AIModule.EnvQueryGenerator_PathingGrid
+// 0x0078 (0x0180 - 0x0108)
+class UEnvQueryGenerator_PathingGrid final : public UEnvQueryGenerator_SimpleGrid
+{
+public:
+	struct FAIDataProviderBoolValue               PathToItem;                                        // 0x0108(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	TSubclassOf<class UNavigationQueryFilter>     NavigationFilter;                                  // 0x0140(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FAIDataProviderFloatValue              ScanRangeMultiplier;                               // 0x0148(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, AdvancedDisplay, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"EnvQueryGenerator_PathingGrid">();
+	}
+	static class UEnvQueryGenerator_PathingGrid* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryGenerator_PathingGrid>();
+	}
+};
+static_assert(alignof(UEnvQueryGenerator_PathingGrid) == 0x000008, "Wrong alignment on UEnvQueryGenerator_PathingGrid");
+static_assert(sizeof(UEnvQueryGenerator_PathingGrid) == 0x000180, "Wrong size on UEnvQueryGenerator_PathingGrid");
+static_assert(offsetof(UEnvQueryGenerator_PathingGrid, PathToItem) == 0x000108, "Member 'UEnvQueryGenerator_PathingGrid::PathToItem' has a wrong offset!");
+static_assert(offsetof(UEnvQueryGenerator_PathingGrid, NavigationFilter) == 0x000140, "Member 'UEnvQueryGenerator_PathingGrid::NavigationFilter' has a wrong offset!");
+static_assert(offsetof(UEnvQueryGenerator_PathingGrid, ScanRangeMultiplier) == 0x000148, "Member 'UEnvQueryGenerator_PathingGrid::ScanRangeMultiplier' has a wrong offset!");
+
 // Class AIModule.BTTask_GameplayTaskBase
 // 0x0008 (0x0078 - 0x0070)
 class UBTTask_GameplayTaskBase final : public UBTTaskNode
 {
 public:
 	uint8                                         bWaitForGameplayTask : 1;                          // 0x0070(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_F4F[0x7];                                      // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F6A[0x7];                                      // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2353,7 +2850,7 @@ class UBTTask_MakeNoise final : public UBTTaskNode
 {
 public:
 	float                                         Loudnes;                                           // 0x0070(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F50[0x4];                                      // 0x0074(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F6B[0x4];                                      // 0x0074(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2375,7 +2872,7 @@ class UBTTask_MoveTo : public UBTTask_BlackboardBase
 {
 public:
 	float                                         AcceptableRadius;                                  // 0x0098(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F51[0x4];                                      // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F6C[0x4];                                      // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UNavigationQueryFilter>     FilterClass;                                       // 0x00A0(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ObservedBlackboardValueTolerance;                  // 0x00A8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bObserveBlackboardValue : 1;                       // 0x00AC(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
@@ -2387,7 +2884,7 @@ public:
 	uint8                                         bReachTestIncludesGoalRadius : 1;                  // 0x00AC(0x0001)(BitIndex: 0x06, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bStopOnOverlap : 1;                                // 0x00AC(0x0001)(BitIndex: 0x07, PropSize: 0x0001 (Edit, DisableEditOnTemplate, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bStopOnOverlapNeedsUpdate : 1;                     // 0x00AD(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_F52[0x2];                                      // 0x00AE(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F6D[0x2];                                      // 0x00AE(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2413,7 +2910,7 @@ public:
 	uint8                                         bDisablePathUpdateOnGoalLocationChange : 1;        // 0x00B0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bProjectVectorGoalToNavigation : 1;                // 0x00B0(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bUpdatedDeprecatedProperties : 1;                  // 0x00B0(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         Pad_F53[0x7];                                      // 0x00B1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F6E[0x7];                                      // 0x00B1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2427,6 +2924,35 @@ public:
 };
 static_assert(alignof(UBTTask_MoveDirectlyToward) == 0x000008, "Wrong alignment on UBTTask_MoveDirectlyToward");
 static_assert(sizeof(UBTTask_MoveDirectlyToward) == 0x0000B8, "Wrong size on UBTTask_MoveDirectlyToward");
+
+// Class AIModule.AITask_MoveTo
+// 0x00A8 (0x0118 - 0x0070)
+class UAITask_MoveTo final : public UAITask
+{
+public:
+	FMulticastInlineDelegateProperty_             OnRequestFailed;                                   // 0x0070(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
+	FMulticastInlineDelegateProperty_             OnMoveFinished;                                    // 0x0080(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
+	struct FAIMoveRequest                         MoveRequest;                                       // 0x0090(0x0048)(Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_F6F[0x40];                                     // 0x00D8(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UAITask_MoveTo* AIMoveTo(class AAIController* Controller, const struct FVector& GoalLocation, class AActor* GoalActor, float AcceptanceRadius, EAIOptionFlag StopOnOverlap, EAIOptionFlag AcceptPartialPath, bool bUsePathfinding, bool bLockAILogic, bool bUseContinuousGoalTracking, EAIOptionFlag ProjectGoalOnNavigation);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"AITask_MoveTo">();
+	}
+	static class UAITask_MoveTo* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAITask_MoveTo>();
+	}
+};
+static_assert(alignof(UAITask_MoveTo) == 0x000008, "Wrong alignment on UAITask_MoveTo");
+static_assert(sizeof(UAITask_MoveTo) == 0x000118, "Wrong size on UAITask_MoveTo");
+static_assert(offsetof(UAITask_MoveTo, OnRequestFailed) == 0x000070, "Member 'UAITask_MoveTo::OnRequestFailed' has a wrong offset!");
+static_assert(offsetof(UAITask_MoveTo, OnMoveFinished) == 0x000080, "Member 'UAITask_MoveTo::OnMoveFinished' has a wrong offset!");
+static_assert(offsetof(UAITask_MoveTo, MoveRequest) == 0x000090, "Member 'UAITask_MoveTo::MoveRequest' has a wrong offset!");
 
 // Class AIModule.BTTask_PawnActionBase
 // 0x0000 (0x0070 - 0x0070)
@@ -2453,10 +2979,10 @@ public:
 	class UAnimationAsset*                        AnimationToPlay;                                   // 0x0070(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bLooping : 1;                                      // 0x0078(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bNonBlocking : 1;                                  // 0x0078(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_F54[0x7];                                      // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F71[0x7];                                      // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBehaviorTreeComponent*                 MyOwnerComp;                                       // 0x0080(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USkeletalMeshComponent*                 CachedSkelMesh;                                    // 0x0088(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F55[0x20];                                     // 0x0090(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F72[0x20];                                     // 0x0090(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2516,13 +3042,37 @@ static_assert(alignof(UBTTask_PushPawnAction) == 0x000008, "Wrong alignment on U
 static_assert(sizeof(UBTTask_PushPawnAction) == 0x000078, "Wrong size on UBTTask_PushPawnAction");
 static_assert(offsetof(UBTTask_PushPawnAction, Action) == 0x000070, "Member 'UBTTask_PushPawnAction::Action' has a wrong offset!");
 
+// Class AIModule.EnvQueryTest_Distance
+// 0x0010 (0x0208 - 0x01F8)
+class UEnvQueryTest_Distance final : public UEnvQueryTest
+{
+public:
+	EEnvTestDistance                              TestMode;                                          // 0x01F8(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F73[0x7];                                      // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UEnvQueryContext>           DistanceTo;                                        // 0x0200(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"EnvQueryTest_Distance">();
+	}
+	static class UEnvQueryTest_Distance* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEnvQueryTest_Distance>();
+	}
+};
+static_assert(alignof(UEnvQueryTest_Distance) == 0x000008, "Wrong alignment on UEnvQueryTest_Distance");
+static_assert(sizeof(UEnvQueryTest_Distance) == 0x000208, "Wrong size on UEnvQueryTest_Distance");
+static_assert(offsetof(UEnvQueryTest_Distance, TestMode) == 0x0001F8, "Member 'UEnvQueryTest_Distance::TestMode' has a wrong offset!");
+static_assert(offsetof(UEnvQueryTest_Distance, DistanceTo) == 0x000200, "Member 'UEnvQueryTest_Distance::DistanceTo' has a wrong offset!");
+
 // Class AIModule.BTTask_RotateToFaceBBEntry
 // 0x0008 (0x00A0 - 0x0098)
 class UBTTask_RotateToFaceBBEntry final : public UBTTask_BlackboardBase
 {
 public:
 	float                                         Precision;                                         // 0x0098(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F56[0x4];                                      // 0x009C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F74[0x4];                                      // 0x009C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2593,13 +3143,13 @@ public:
 	TArray<struct FEnvNamedValue>                 QueryParams;                                       // 0x00A0(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FAIDynamicParam>                QueryConfig;                                       // 0x00B0(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	EEnvQueryRunMode                              RunMode;                                           // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F57[0x7];                                      // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F75[0x7];                                      // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FBlackboardKeySelector                 EQSQueryBlackboardKey;                             // 0x00C8(0x0028)(NativeAccessSpecifierPublic)
 	bool                                          bUseBBKey;                                         // 0x00F0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F58[0x7];                                      // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F76[0x7];                                      // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEQSParametrizedQueryExecutionRequest  EQSRequest;                                        // 0x00F8(0x0048)(Edit, NativeAccessSpecifierPublic)
 	bool                                          bUpdateBBOnFail;                                   // 0x0140(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F59[0x17];                                     // 0x0141(0x0017)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F77[0x17];                                     // 0x0141(0x0017)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2629,7 +3179,7 @@ class UBTTask_SetTagCooldown final : public UBTTaskNode
 public:
 	struct FGameplayTag                           CooldownTag;                                       // 0x0070(0x0008)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAddToExistingDuration;                            // 0x0078(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F5A[0x3];                                      // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F78[0x3];                                      // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CooldownDuration;                                  // 0x007C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
@@ -2727,6 +3277,23 @@ public:
 static_assert(alignof(UAIBlueprintHelperLibrary) == 0x000008, "Wrong alignment on UAIBlueprintHelperLibrary");
 static_assert(sizeof(UAIBlueprintHelperLibrary) == 0x000028, "Wrong size on UAIBlueprintHelperLibrary");
 
+// Class AIModule.AIDataProvider
+// 0x0000 (0x0028 - 0x0028)
+class UAIDataProvider : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"AIDataProvider">();
+	}
+	static class UAIDataProvider* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAIDataProvider>();
+	}
+};
+static_assert(alignof(UAIDataProvider) == 0x000008, "Wrong alignment on UAIDataProvider");
+static_assert(sizeof(UAIDataProvider) == 0x000028, "Wrong size on UAIDataProvider");
+
 // Class AIModule.AIDataProvider_QueryParams
 // 0x0018 (0x0040 - 0x0028)
 class UAIDataProvider_QueryParams : public UAIDataProvider
@@ -2736,7 +3303,7 @@ public:
 	float                                         FloatValue;                                        // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         IntValue;                                          // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          BoolValue;                                         // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F65[0x7];                                      // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F83[0x7];                                      // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2763,7 +3330,7 @@ public:
 	float                                         Min;                                               // 0x0040(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         Max;                                               // 0x0044(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         bInteger : 1;                                      // 0x0048(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_F66[0x7];                                      // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F84[0x7];                                      // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2796,49 +3363,6 @@ public:
 };
 static_assert(alignof(ADetourCrowdAIController) == 0x000008, "Wrong alignment on ADetourCrowdAIController");
 static_assert(sizeof(ADetourCrowdAIController) == 0x0003B8, "Wrong size on ADetourCrowdAIController");
-
-// Class AIModule.EnvQueryContext
-// 0x0000 (0x0028 - 0x0028)
-class UEnvQueryContext : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryContext">();
-	}
-	static class UEnvQueryContext* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryContext>();
-	}
-};
-static_assert(alignof(UEnvQueryContext) == 0x000008, "Wrong alignment on UEnvQueryContext");
-static_assert(sizeof(UEnvQueryContext) == 0x000028, "Wrong size on UEnvQueryContext");
-
-// Class AIModule.EnvQueryContext_BlueprintBase
-// 0x0008 (0x0030 - 0x0028)
-class UEnvQueryContext_BlueprintBase final : public UEnvQueryContext
-{
-public:
-	uint8                                         Pad_F67[0x8];                                      // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void ProvideActorsSet(class UObject* QuerierObject, class AActor* QuerierActor, TArray<class AActor*>* ResultingActorsSet) const;
-	void ProvideLocationsSet(class UObject* QuerierObject, class AActor* QuerierActor, TArray<struct FVector>* ResultingLocationSet) const;
-	void ProvideSingleActor(class UObject* QuerierObject, class AActor* QuerierActor, class AActor** ResultingActor) const;
-	void ProvideSingleLocation(class UObject* QuerierObject, class AActor* QuerierActor, struct FVector* ResultingLocation) const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryContext_BlueprintBase">();
-	}
-	static class UEnvQueryContext_BlueprintBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryContext_BlueprintBase>();
-	}
-};
-static_assert(alignof(UEnvQueryContext_BlueprintBase) == 0x000008, "Wrong alignment on UEnvQueryContext_BlueprintBase");
-static_assert(sizeof(UEnvQueryContext_BlueprintBase) == 0x000030, "Wrong size on UEnvQueryContext_BlueprintBase");
 
 // Class AIModule.EnvQueryContext_Item
 // 0x0000 (0x0028 - 0x0028)
@@ -2897,59 +3421,17 @@ static_assert(sizeof(UEnvQuery) == 0x000048, "Wrong size on UEnvQuery");
 static_assert(offsetof(UEnvQuery, QueryName) == 0x000030, "Member 'UEnvQuery::QueryName' has a wrong offset!");
 static_assert(offsetof(UEnvQuery, Options) == 0x000038, "Member 'UEnvQuery::Options' has a wrong offset!");
 
-// Class AIModule.EnvQueryDebugHelpers
-// 0x0000 (0x0028 - 0x0028)
-class UEnvQueryDebugHelpers final : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryDebugHelpers">();
-	}
-	static class UEnvQueryDebugHelpers* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryDebugHelpers>();
-	}
-};
-static_assert(alignof(UEnvQueryDebugHelpers) == 0x000008, "Wrong alignment on UEnvQueryDebugHelpers");
-static_assert(sizeof(UEnvQueryDebugHelpers) == 0x000028, "Wrong size on UEnvQueryDebugHelpers");
-
-// Class AIModule.EnvQueryGenerator
-// 0x0020 (0x0050 - 0x0030)
-class UEnvQueryGenerator : public UEnvQueryNode
-{
-public:
-	class FString                                 OptionName;                                        // 0x0030(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UEnvQueryItemType>          ItemType;                                          // 0x0040(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         bAutoSortTests : 1;                                // 0x0048(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_F68[0x7];                                      // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryGenerator">();
-	}
-	static class UEnvQueryGenerator* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryGenerator>();
-	}
-};
-static_assert(alignof(UEnvQueryGenerator) == 0x000008, "Wrong alignment on UEnvQueryGenerator");
-static_assert(sizeof(UEnvQueryGenerator) == 0x000050, "Wrong size on UEnvQueryGenerator");
-static_assert(offsetof(UEnvQueryGenerator, OptionName) == 0x000030, "Member 'UEnvQueryGenerator::OptionName' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator, ItemType) == 0x000040, "Member 'UEnvQueryGenerator::ItemType' has a wrong offset!");
-
 // Class AIModule.EnvQueryInstanceBlueprintWrapper
 // 0x0050 (0x0078 - 0x0028)
 class UEnvQueryInstanceBlueprintWrapper final : public UObject
 {
 public:
-	uint8                                         Pad_F69[0x8];                                      // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F85[0x8];                                      // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         QueryID;                                           // 0x0030(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F6A[0x24];                                     // 0x0034(0x0024)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F86[0x24];                                     // 0x0034(0x0024)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UEnvQueryItemType>          ItemType;                                          // 0x0058(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         OptionIndex;                                       // 0x0060(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F6B[0x4];                                      // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F87[0x4];                                      // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnQueryFinishedEvent;                              // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
 
 public:
@@ -2984,14 +3466,14 @@ static_assert(offsetof(UEnvQueryInstanceBlueprintWrapper, OnQueryFinishedEvent) 
 class UEnvQueryManager final : public UAISubsystem
 {
 public:
-	uint8                                         Pad_F6F[0x70];                                     // 0x0038(0x0070)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F8B[0x70];                                     // 0x0038(0x0070)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FEnvQueryInstanceCache>         InstanceCache;                                     // 0x00A8(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
 	TArray<class UEnvQueryContext*>               LocalContexts;                                     // 0x00B8(0x0010)(ZeroConstructor, Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	TArray<class UEnvQueryInstanceBlueprintWrapper*> GCShieldedWrappers;                                // 0x00C8(0x0010)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F70[0x54];                                     // 0x00D8(0x0054)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F8C[0x54];                                     // 0x00D8(0x0054)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         MaxAllowedTestingTime;                             // 0x012C(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bTestQueriesUsingBreadth;                          // 0x0130(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F71[0x3];                                      // 0x0131(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F8D[0x3];                                      // 0x0131(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         QueryCountWarningThreshold;                        // 0x0134(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	double                                        QueryCountWarningInterval;                         // 0x0138(0x0008)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	double                                        ExecutionTimeWarningSeconds;                       // 0x0140(0x0008)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -3024,35 +3506,12 @@ static_assert(offsetof(UEnvQueryManager, ExecutionTimeWarningSeconds) == 0x00014
 static_assert(offsetof(UEnvQueryManager, HandlingResultTimeWarningSeconds) == 0x000148, "Member 'UEnvQueryManager::HandlingResultTimeWarningSeconds' has a wrong offset!");
 static_assert(offsetof(UEnvQueryManager, GenerationTimeWarningSeconds) == 0x000150, "Member 'UEnvQueryManager::GenerationTimeWarningSeconds' has a wrong offset!");
 
-// Class AIModule.EnvQueryOption
-// 0x0018 (0x0040 - 0x0028)
-class UEnvQueryOption final : public UObject
-{
-public:
-	class UEnvQueryGenerator*                     Generator;                                         // 0x0028(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UEnvQueryTest*>                  Tests;                                             // 0x0030(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryOption">();
-	}
-	static class UEnvQueryOption* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryOption>();
-	}
-};
-static_assert(alignof(UEnvQueryOption) == 0x000008, "Wrong alignment on UEnvQueryOption");
-static_assert(sizeof(UEnvQueryOption) == 0x000040, "Wrong size on UEnvQueryOption");
-static_assert(offsetof(UEnvQueryOption, Generator) == 0x000028, "Member 'UEnvQueryOption::Generator' has a wrong offset!");
-static_assert(offsetof(UEnvQueryOption, Tests) == 0x000030, "Member 'UEnvQueryOption::Tests' has a wrong offset!");
-
 // Class AIModule.EQSRenderingComponent
 // 0x0030 (0x05C0 - 0x0590)
 class UEQSRenderingComponent final : public UDebugDrawComponent
 {
 public:
-	uint8                                         Pad_F73[0x30];                                     // 0x0590(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F8F[0x30];                                     // 0x0590(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -3066,51 +3525,6 @@ public:
 };
 static_assert(alignof(UEQSRenderingComponent) == 0x000010, "Wrong alignment on UEQSRenderingComponent");
 static_assert(sizeof(UEQSRenderingComponent) == 0x0005C0, "Wrong size on UEQSRenderingComponent");
-
-// Class AIModule.EQSTestingPawn
-// 0x00A0 (0x06C0 - 0x0620)
-class AEQSTestingPawn final : public ACharacter
-{
-public:
-	uint8                                         Pad_F74[0x8];                                      // 0x0618(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UEnvQuery*                              QueryTemplate;                                     // 0x0620(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FEnvNamedValue>                 QueryParams;                                       // 0x0628(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FAIDynamicParam>                QueryConfig;                                       // 0x0638(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	float                                         TimeLimitPerStep;                                  // 0x0648(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         StepToDebugDraw;                                   // 0x064C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EEnvQueryHightlightMode                       HighlightMode;                                     // 0x0650(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F75[0x3];                                      // 0x0651(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	uint8                                         bDrawLabels : 1;                                   // 0x0654(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bDrawFailedItems : 1;                              // 0x0654(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bReRunQueryOnlyOnFinishedMove : 1;                 // 0x0654(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bShouldBeVisibleInGame : 1;                        // 0x0654(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bTickDuringGame : 1;                               // 0x0654(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_F76[0x3];                                      // 0x0655(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	EEnvQueryRunMode                              QueryingMode;                                      // 0x0658(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F77[0x7];                                      // 0x0659(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FNavAgentProperties                    NavAgentProperties;                                // 0x0660(0x0038)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F78[0x28];                                     // 0x0698(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EQSTestingPawn">();
-	}
-	static class AEQSTestingPawn* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AEQSTestingPawn>();
-	}
-};
-static_assert(alignof(AEQSTestingPawn) == 0x000010, "Wrong alignment on AEQSTestingPawn");
-static_assert(sizeof(AEQSTestingPawn) == 0x0006C0, "Wrong size on AEQSTestingPawn");
-static_assert(offsetof(AEQSTestingPawn, QueryTemplate) == 0x000620, "Member 'AEQSTestingPawn::QueryTemplate' has a wrong offset!");
-static_assert(offsetof(AEQSTestingPawn, QueryParams) == 0x000628, "Member 'AEQSTestingPawn::QueryParams' has a wrong offset!");
-static_assert(offsetof(AEQSTestingPawn, QueryConfig) == 0x000638, "Member 'AEQSTestingPawn::QueryConfig' has a wrong offset!");
-static_assert(offsetof(AEQSTestingPawn, TimeLimitPerStep) == 0x000648, "Member 'AEQSTestingPawn::TimeLimitPerStep' has a wrong offset!");
-static_assert(offsetof(AEQSTestingPawn, StepToDebugDraw) == 0x00064C, "Member 'AEQSTestingPawn::StepToDebugDraw' has a wrong offset!");
-static_assert(offsetof(AEQSTestingPawn, HighlightMode) == 0x000650, "Member 'AEQSTestingPawn::HighlightMode' has a wrong offset!");
-static_assert(offsetof(AEQSTestingPawn, QueryingMode) == 0x000658, "Member 'AEQSTestingPawn::QueryingMode' has a wrong offset!");
-static_assert(offsetof(AEQSTestingPawn, NavAgentProperties) == 0x000660, "Member 'AEQSTestingPawn::NavAgentProperties' has a wrong offset!");
 
 // Class AIModule.EnvQueryGenerator_ActorsOfClass
 // 0x0080 (0x00D0 - 0x0050)
@@ -3139,39 +3553,6 @@ static_assert(offsetof(UEnvQueryGenerator_ActorsOfClass, GenerateOnlyActorsInRad
 static_assert(offsetof(UEnvQueryGenerator_ActorsOfClass, SearchRadius) == 0x000090, "Member 'UEnvQueryGenerator_ActorsOfClass::SearchRadius' has a wrong offset!");
 static_assert(offsetof(UEnvQueryGenerator_ActorsOfClass, SearchCenter) == 0x0000C8, "Member 'UEnvQueryGenerator_ActorsOfClass::SearchCenter' has a wrong offset!");
 
-// Class AIModule.EnvQueryGenerator_BlueprintBase
-// 0x0038 (0x0088 - 0x0050)
-class UEnvQueryGenerator_BlueprintBase final : public UEnvQueryGenerator
-{
-public:
-	class FText                                   GeneratorsActionDescription;                       // 0x0050(0x0018)(Edit, NativeAccessSpecifierPublic)
-	TSubclassOf<class UEnvQueryContext>           Context;                                           // 0x0068(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UEnvQueryItemType>          GeneratedItemType;                                 // 0x0070(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F79[0x10];                                     // 0x0078(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void AddGeneratedActor(class AActor* GeneratedActor) const;
-	void AddGeneratedVector(const struct FVector& GeneratedVector) const;
-	void DoItemGeneration(const TArray<struct FVector>& ContextLocations) const;
-	void DoItemGenerationFromActors(const TArray<class AActor*>& ContextActors) const;
-	class UObject* GetQuerier() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryGenerator_BlueprintBase">();
-	}
-	static class UEnvQueryGenerator_BlueprintBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryGenerator_BlueprintBase>();
-	}
-};
-static_assert(alignof(UEnvQueryGenerator_BlueprintBase) == 0x000008, "Wrong alignment on UEnvQueryGenerator_BlueprintBase");
-static_assert(sizeof(UEnvQueryGenerator_BlueprintBase) == 0x000088, "Wrong size on UEnvQueryGenerator_BlueprintBase");
-static_assert(offsetof(UEnvQueryGenerator_BlueprintBase, GeneratorsActionDescription) == 0x000050, "Member 'UEnvQueryGenerator_BlueprintBase::GeneratorsActionDescription' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_BlueprintBase, Context) == 0x000068, "Member 'UEnvQueryGenerator_BlueprintBase::Context' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_BlueprintBase, GeneratedItemType) == 0x000070, "Member 'UEnvQueryGenerator_BlueprintBase::GeneratedItemType' has a wrong offset!");
-
 // Class AIModule.EnvQueryGenerator_Composite
 // 0x0020 (0x0070 - 0x0050)
 class UEnvQueryGenerator_Composite final : public UEnvQueryGenerator
@@ -3180,7 +3561,7 @@ public:
 	TArray<class UEnvQueryGenerator*>             Generators;                                        // 0x0050(0x0010)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPublic)
 	uint8                                         bAllowDifferentItemTypes : 1;                      // 0x0060(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bHasMatchingItemType : 1;                          // 0x0060(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_F7A[0x7];                                      // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F90[0x7];                                      // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UEnvQueryItemType>          ForcedItemType;                                    // 0x0068(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, AdvancedDisplay, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
@@ -3198,27 +3579,6 @@ static_assert(sizeof(UEnvQueryGenerator_Composite) == 0x000070, "Wrong size on U
 static_assert(offsetof(UEnvQueryGenerator_Composite, Generators) == 0x000050, "Member 'UEnvQueryGenerator_Composite::Generators' has a wrong offset!");
 static_assert(offsetof(UEnvQueryGenerator_Composite, ForcedItemType) == 0x000068, "Member 'UEnvQueryGenerator_Composite::ForcedItemType' has a wrong offset!");
 
-// Class AIModule.EnvQueryGenerator_ProjectedPoints
-// 0x0040 (0x0090 - 0x0050)
-class UEnvQueryGenerator_ProjectedPoints : public UEnvQueryGenerator
-{
-public:
-	struct FEnvTraceData                          ProjectionData;                                    // 0x0050(0x0040)(Edit, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryGenerator_ProjectedPoints">();
-	}
-	static class UEnvQueryGenerator_ProjectedPoints* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryGenerator_ProjectedPoints>();
-	}
-};
-static_assert(alignof(UEnvQueryGenerator_ProjectedPoints) == 0x000008, "Wrong alignment on UEnvQueryGenerator_ProjectedPoints");
-static_assert(sizeof(UEnvQueryGenerator_ProjectedPoints) == 0x000090, "Wrong size on UEnvQueryGenerator_ProjectedPoints");
-static_assert(offsetof(UEnvQueryGenerator_ProjectedPoints, ProjectionData) == 0x000050, "Member 'UEnvQueryGenerator_ProjectedPoints::ProjectionData' has a wrong offset!");
-
 // Class AIModule.EnvQueryGenerator_Cone
 // 0x00F0 (0x0180 - 0x0090)
 class UEnvQueryGenerator_Cone final : public UEnvQueryGenerator_ProjectedPoints
@@ -3230,7 +3590,7 @@ public:
 	struct FAIDataProviderFloatValue              Range;                                             // 0x0138(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
 	TSubclassOf<class UEnvQueryContext>           CenterActor;                                       // 0x0170(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         bIncludeContextLocation : 1;                       // 0x0178(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_F7B[0x7];                                      // 0x0179(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F91[0x7];                                      // 0x0179(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -3283,10 +3643,10 @@ public:
 	struct FEnvDirection                          ArcDirection;                                      // 0x0170(0x0020)(Edit, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
 	struct FAIDataProviderFloatValue              ArcAngle;                                          // 0x0190(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	bool                                          bUseSpiralPattern;                                 // 0x01C8(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F7C[0x7];                                      // 0x01C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F92[0x7];                                      // 0x01C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UEnvQueryContext>           Center;                                            // 0x01D0(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bDefineArc : 1;                                    // 0x01D8(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_F7D[0x7];                                      // 0x01D9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F93[0x7];                                      // 0x01D9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -3309,102 +3669,6 @@ static_assert(offsetof(UEnvQueryGenerator_Donut, ArcAngle) == 0x000190, "Member 
 static_assert(offsetof(UEnvQueryGenerator_Donut, bUseSpiralPattern) == 0x0001C8, "Member 'UEnvQueryGenerator_Donut::bUseSpiralPattern' has a wrong offset!");
 static_assert(offsetof(UEnvQueryGenerator_Donut, Center) == 0x0001D0, "Member 'UEnvQueryGenerator_Donut::Center' has a wrong offset!");
 
-// Class AIModule.EnvQueryGenerator_OnCircle
-// 0x01A0 (0x0230 - 0x0090)
-class UEnvQueryGenerator_OnCircle final : public UEnvQueryGenerator_ProjectedPoints
-{
-public:
-	struct FAIDataProviderFloatValue              CircleRadius;                                      // 0x0090(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	struct FAIDataProviderFloatValue              SpaceBetween;                                      // 0x00C8(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	struct FAIDataProviderIntValue                NumberOfPoints;                                    // 0x0100(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	EPointOnCircleSpacingMethod                   PointOnCircleSpacingMethod;                        // 0x0138(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F7E[0x7];                                      // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEnvDirection                          ArcDirection;                                      // 0x0140(0x0020)(Edit, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
-	struct FAIDataProviderFloatValue              ArcAngle;                                          // 0x0160(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	float                                         AngleRadians;                                      // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F7F[0x4];                                      // 0x019C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UEnvQueryContext>           CircleCenter;                                      // 0x01A0(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIgnoreAnyContextActorsWhenGeneratingCircle;       // 0x01A8(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F80[0x7];                                      // 0x01A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAIDataProviderFloatValue              CircleCenterZOffset;                               // 0x01B0(0x0038)(Edit, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	struct FEnvTraceData                          TraceData;                                         // 0x01E8(0x0040)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         bDefineArc : 1;                                    // 0x0228(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_F81[0x7];                                      // 0x0229(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryGenerator_OnCircle">();
-	}
-	static class UEnvQueryGenerator_OnCircle* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryGenerator_OnCircle>();
-	}
-};
-static_assert(alignof(UEnvQueryGenerator_OnCircle) == 0x000008, "Wrong alignment on UEnvQueryGenerator_OnCircle");
-static_assert(sizeof(UEnvQueryGenerator_OnCircle) == 0x000230, "Wrong size on UEnvQueryGenerator_OnCircle");
-static_assert(offsetof(UEnvQueryGenerator_OnCircle, CircleRadius) == 0x000090, "Member 'UEnvQueryGenerator_OnCircle::CircleRadius' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_OnCircle, SpaceBetween) == 0x0000C8, "Member 'UEnvQueryGenerator_OnCircle::SpaceBetween' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_OnCircle, NumberOfPoints) == 0x000100, "Member 'UEnvQueryGenerator_OnCircle::NumberOfPoints' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_OnCircle, PointOnCircleSpacingMethod) == 0x000138, "Member 'UEnvQueryGenerator_OnCircle::PointOnCircleSpacingMethod' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_OnCircle, ArcDirection) == 0x000140, "Member 'UEnvQueryGenerator_OnCircle::ArcDirection' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_OnCircle, ArcAngle) == 0x000160, "Member 'UEnvQueryGenerator_OnCircle::ArcAngle' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_OnCircle, AngleRadians) == 0x000198, "Member 'UEnvQueryGenerator_OnCircle::AngleRadians' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_OnCircle, CircleCenter) == 0x0001A0, "Member 'UEnvQueryGenerator_OnCircle::CircleCenter' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_OnCircle, bIgnoreAnyContextActorsWhenGeneratingCircle) == 0x0001A8, "Member 'UEnvQueryGenerator_OnCircle::bIgnoreAnyContextActorsWhenGeneratingCircle' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_OnCircle, CircleCenterZOffset) == 0x0001B0, "Member 'UEnvQueryGenerator_OnCircle::CircleCenterZOffset' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_OnCircle, TraceData) == 0x0001E8, "Member 'UEnvQueryGenerator_OnCircle::TraceData' has a wrong offset!");
-
-// Class AIModule.EnvQueryGenerator_SimpleGrid
-// 0x0078 (0x0108 - 0x0090)
-class UEnvQueryGenerator_SimpleGrid : public UEnvQueryGenerator_ProjectedPoints
-{
-public:
-	struct FAIDataProviderFloatValue              GridSize;                                          // 0x0090(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	struct FAIDataProviderFloatValue              SpaceBetween;                                      // 0x00C8(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	TSubclassOf<class UEnvQueryContext>           GenerateAround;                                    // 0x0100(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryGenerator_SimpleGrid">();
-	}
-	static class UEnvQueryGenerator_SimpleGrid* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryGenerator_SimpleGrid>();
-	}
-};
-static_assert(alignof(UEnvQueryGenerator_SimpleGrid) == 0x000008, "Wrong alignment on UEnvQueryGenerator_SimpleGrid");
-static_assert(sizeof(UEnvQueryGenerator_SimpleGrid) == 0x000108, "Wrong size on UEnvQueryGenerator_SimpleGrid");
-static_assert(offsetof(UEnvQueryGenerator_SimpleGrid, GridSize) == 0x000090, "Member 'UEnvQueryGenerator_SimpleGrid::GridSize' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_SimpleGrid, SpaceBetween) == 0x0000C8, "Member 'UEnvQueryGenerator_SimpleGrid::SpaceBetween' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_SimpleGrid, GenerateAround) == 0x000100, "Member 'UEnvQueryGenerator_SimpleGrid::GenerateAround' has a wrong offset!");
-
-// Class AIModule.EnvQueryGenerator_PathingGrid
-// 0x0078 (0x0180 - 0x0108)
-class UEnvQueryGenerator_PathingGrid final : public UEnvQueryGenerator_SimpleGrid
-{
-public:
-	struct FAIDataProviderBoolValue               PathToItem;                                        // 0x0108(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	TSubclassOf<class UNavigationQueryFilter>     NavigationFilter;                                  // 0x0140(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FAIDataProviderFloatValue              ScanRangeMultiplier;                               // 0x0148(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, AdvancedDisplay, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryGenerator_PathingGrid">();
-	}
-	static class UEnvQueryGenerator_PathingGrid* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryGenerator_PathingGrid>();
-	}
-};
-static_assert(alignof(UEnvQueryGenerator_PathingGrid) == 0x000008, "Wrong alignment on UEnvQueryGenerator_PathingGrid");
-static_assert(sizeof(UEnvQueryGenerator_PathingGrid) == 0x000180, "Wrong size on UEnvQueryGenerator_PathingGrid");
-static_assert(offsetof(UEnvQueryGenerator_PathingGrid, PathToItem) == 0x000108, "Member 'UEnvQueryGenerator_PathingGrid::PathToItem' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_PathingGrid, NavigationFilter) == 0x000140, "Member 'UEnvQueryGenerator_PathingGrid::NavigationFilter' has a wrong offset!");
-static_assert(offsetof(UEnvQueryGenerator_PathingGrid, ScanRangeMultiplier) == 0x000148, "Member 'UEnvQueryGenerator_PathingGrid::ScanRangeMultiplier' has a wrong offset!");
-
 // Class AIModule.EnvQueryGenerator_PerceivedActors
 // 0x0058 (0x00A8 - 0x0050)
 class UEnvQueryGenerator_PerceivedActors final : public UEnvQueryGenerator
@@ -3415,7 +3679,7 @@ public:
 	TSubclassOf<class UEnvQueryContext>           ListenerContext;                                   // 0x0090(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TSubclassOf<class UAISense>                   SenseToUse;                                        // 0x0098(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bIncludeKnownActors;                               // 0x00A0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F82[0x7];                                      // 0x00A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F94[0x7];                                      // 0x00A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -3434,43 +3698,6 @@ static_assert(offsetof(UEnvQueryGenerator_PerceivedActors, SearchRadius) == 0x00
 static_assert(offsetof(UEnvQueryGenerator_PerceivedActors, ListenerContext) == 0x000090, "Member 'UEnvQueryGenerator_PerceivedActors::ListenerContext' has a wrong offset!");
 static_assert(offsetof(UEnvQueryGenerator_PerceivedActors, SenseToUse) == 0x000098, "Member 'UEnvQueryGenerator_PerceivedActors::SenseToUse' has a wrong offset!");
 static_assert(offsetof(UEnvQueryGenerator_PerceivedActors, bIncludeKnownActors) == 0x0000A0, "Member 'UEnvQueryGenerator_PerceivedActors::bIncludeKnownActors' has a wrong offset!");
-
-// Class AIModule.EnvQueryItemType
-// 0x0008 (0x0030 - 0x0028)
-class UEnvQueryItemType : public UObject
-{
-public:
-	uint8                                         Pad_F83[0x8];                                      // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryItemType">();
-	}
-	static class UEnvQueryItemType* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryItemType>();
-	}
-};
-static_assert(alignof(UEnvQueryItemType) == 0x000008, "Wrong alignment on UEnvQueryItemType");
-static_assert(sizeof(UEnvQueryItemType) == 0x000030, "Wrong size on UEnvQueryItemType");
-
-// Class AIModule.EnvQueryItemType_VectorBase
-// 0x0000 (0x0030 - 0x0030)
-class UEnvQueryItemType_VectorBase : public UEnvQueryItemType
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryItemType_VectorBase">();
-	}
-	static class UEnvQueryItemType_VectorBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryItemType_VectorBase>();
-	}
-};
-static_assert(alignof(UEnvQueryItemType_VectorBase) == 0x000008, "Wrong alignment on UEnvQueryItemType_VectorBase");
-static_assert(sizeof(UEnvQueryItemType_VectorBase) == 0x000030, "Wrong size on UEnvQueryItemType_VectorBase");
 
 // Class AIModule.EnvQueryItemType_ActorBase
 // 0x0000 (0x0030 - 0x0030)
@@ -3506,23 +3733,6 @@ public:
 static_assert(alignof(UEnvQueryItemType_Actor) == 0x000008, "Wrong alignment on UEnvQueryItemType_Actor");
 static_assert(sizeof(UEnvQueryItemType_Actor) == 0x000030, "Wrong size on UEnvQueryItemType_Actor");
 
-// Class AIModule.EnvQueryItemType_Direction
-// 0x0000 (0x0030 - 0x0030)
-class UEnvQueryItemType_Direction final : public UEnvQueryItemType_VectorBase
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryItemType_Direction">();
-	}
-	static class UEnvQueryItemType_Direction* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryItemType_Direction>();
-	}
-};
-static_assert(alignof(UEnvQueryItemType_Direction) == 0x000008, "Wrong alignment on UEnvQueryItemType_Direction");
-static_assert(sizeof(UEnvQueryItemType_Direction) == 0x000030, "Wrong size on UEnvQueryItemType_Direction");
-
 // Class AIModule.EnvQueryItemType_Point
 // 0x0000 (0x0030 - 0x0030)
 class UEnvQueryItemType_Point final : public UEnvQueryItemType_VectorBase
@@ -3540,30 +3750,6 @@ public:
 static_assert(alignof(UEnvQueryItemType_Point) == 0x000008, "Wrong alignment on UEnvQueryItemType_Point");
 static_assert(sizeof(UEnvQueryItemType_Point) == 0x000030, "Wrong size on UEnvQueryItemType_Point");
 
-// Class AIModule.EnvQueryTest_Distance
-// 0x0010 (0x0208 - 0x01F8)
-class UEnvQueryTest_Distance final : public UEnvQueryTest
-{
-public:
-	EEnvTestDistance                              TestMode;                                          // 0x01F8(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F84[0x7];                                      // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UEnvQueryContext>           DistanceTo;                                        // 0x0200(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryTest_Distance">();
-	}
-	static class UEnvQueryTest_Distance* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryTest_Distance>();
-	}
-};
-static_assert(alignof(UEnvQueryTest_Distance) == 0x000008, "Wrong alignment on UEnvQueryTest_Distance");
-static_assert(sizeof(UEnvQueryTest_Distance) == 0x000208, "Wrong size on UEnvQueryTest_Distance");
-static_assert(offsetof(UEnvQueryTest_Distance, TestMode) == 0x0001F8, "Member 'UEnvQueryTest_Distance::TestMode' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_Distance, DistanceTo) == 0x000200, "Member 'UEnvQueryTest_Distance::DistanceTo' has a wrong offset!");
-
 // Class AIModule.EnvQueryTest_Dot
 // 0x0048 (0x0240 - 0x01F8)
 class UEnvQueryTest_Dot final : public UEnvQueryTest
@@ -3573,7 +3759,7 @@ public:
 	struct FEnvDirection                          LineB;                                             // 0x0218(0x0020)(Edit, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	EEnvTestDot                                   TestMode;                                          // 0x0238(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bAbsoluteValue;                                    // 0x0239(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F85[0x6];                                      // 0x023A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F95[0x6];                                      // 0x023A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -3591,36 +3777,6 @@ static_assert(offsetof(UEnvQueryTest_Dot, LineA) == 0x0001F8, "Member 'UEnvQuery
 static_assert(offsetof(UEnvQueryTest_Dot, LineB) == 0x000218, "Member 'UEnvQueryTest_Dot::LineB' has a wrong offset!");
 static_assert(offsetof(UEnvQueryTest_Dot, TestMode) == 0x000238, "Member 'UEnvQueryTest_Dot::TestMode' has a wrong offset!");
 static_assert(offsetof(UEnvQueryTest_Dot, bAbsoluteValue) == 0x000239, "Member 'UEnvQueryTest_Dot::bAbsoluteValue' has a wrong offset!");
-
-// Class AIModule.EnvQueryTest_GameplayTags
-// 0x0070 (0x0268 - 0x01F8)
-class UEnvQueryTest_GameplayTags final : public UEnvQueryTest
-{
-public:
-	struct FGameplayTagQuery                      TagQueryToMatch;                                   // 0x01F8(0x0048)(Edit, Protected, NativeAccessSpecifierProtected)
-	bool                                          bRejectIncompatibleItems;                          // 0x0240(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bUpdatedToUseQuery;                                // 0x0241(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EGameplayContainerMatchType                   TagsToMatch;                                       // 0x0242(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F86[0x5];                                      // 0x0243(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  GameplayTags;                                      // 0x0248(0x0020)(Protected, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryTest_GameplayTags">();
-	}
-	static class UEnvQueryTest_GameplayTags* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryTest_GameplayTags>();
-	}
-};
-static_assert(alignof(UEnvQueryTest_GameplayTags) == 0x000008, "Wrong alignment on UEnvQueryTest_GameplayTags");
-static_assert(sizeof(UEnvQueryTest_GameplayTags) == 0x000268, "Wrong size on UEnvQueryTest_GameplayTags");
-static_assert(offsetof(UEnvQueryTest_GameplayTags, TagQueryToMatch) == 0x0001F8, "Member 'UEnvQueryTest_GameplayTags::TagQueryToMatch' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_GameplayTags, bRejectIncompatibleItems) == 0x000240, "Member 'UEnvQueryTest_GameplayTags::bRejectIncompatibleItems' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_GameplayTags, bUpdatedToUseQuery) == 0x000241, "Member 'UEnvQueryTest_GameplayTags::bUpdatedToUseQuery' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_GameplayTags, TagsToMatch) == 0x000242, "Member 'UEnvQueryTest_GameplayTags::TagsToMatch' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_GameplayTags, GameplayTags) == 0x000248, "Member 'UEnvQueryTest_GameplayTags::GameplayTags' has a wrong offset!");
 
 // Class AIModule.EnvQueryTest_Overlap
 // 0x0030 (0x0228 - 0x01F8)
@@ -3649,7 +3805,7 @@ class UEnvQueryTest_Pathfinding : public UEnvQueryTest
 {
 public:
 	EEnvTestPathfinding                           TestMode;                                          // 0x01F8(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F87[0x7];                                      // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F96[0x7];                                      // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UEnvQueryContext>           Context;                                           // 0x0200(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAIDataProviderBoolValue               PathFromContext;                                   // 0x0208(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	struct FAIDataProviderBoolValue               SkipUnreachable;                                   // 0x0240(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, AdvancedDisplay, NativeAccessSpecifierPublic)
@@ -3732,35 +3888,6 @@ public:
 static_assert(alignof(UEnvQueryTest_Random) == 0x000008, "Wrong alignment on UEnvQueryTest_Random");
 static_assert(sizeof(UEnvQueryTest_Random) == 0x0001F8, "Wrong size on UEnvQueryTest_Random");
 
-// Class AIModule.EnvQueryTest_Trace
-// 0x00F0 (0x02E8 - 0x01F8)
-class UEnvQueryTest_Trace final : public UEnvQueryTest
-{
-public:
-	struct FEnvTraceData                          TraceData;                                         // 0x01F8(0x0040)(Edit, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
-	struct FAIDataProviderBoolValue               TraceFromContext;                                  // 0x0238(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	struct FAIDataProviderFloatValue              ItemHeightOffset;                                  // 0x0270(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, AdvancedDisplay, NativeAccessSpecifierPublic)
-	struct FAIDataProviderFloatValue              ContextHeightOffset;                               // 0x02A8(0x0038)(Edit, DisableEditOnInstance, ContainsInstancedReference, AdvancedDisplay, NativeAccessSpecifierPublic)
-	TSubclassOf<class UEnvQueryContext>           Context;                                           // 0x02E0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"EnvQueryTest_Trace">();
-	}
-	static class UEnvQueryTest_Trace* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEnvQueryTest_Trace>();
-	}
-};
-static_assert(alignof(UEnvQueryTest_Trace) == 0x000008, "Wrong alignment on UEnvQueryTest_Trace");
-static_assert(sizeof(UEnvQueryTest_Trace) == 0x0002E8, "Wrong size on UEnvQueryTest_Trace");
-static_assert(offsetof(UEnvQueryTest_Trace, TraceData) == 0x0001F8, "Member 'UEnvQueryTest_Trace::TraceData' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_Trace, TraceFromContext) == 0x000238, "Member 'UEnvQueryTest_Trace::TraceFromContext' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_Trace, ItemHeightOffset) == 0x000270, "Member 'UEnvQueryTest_Trace::ItemHeightOffset' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_Trace, ContextHeightOffset) == 0x0002A8, "Member 'UEnvQueryTest_Trace::ContextHeightOffset' has a wrong offset!");
-static_assert(offsetof(UEnvQueryTest_Trace, Context) == 0x0002E0, "Member 'UEnvQueryTest_Trace::Context' has a wrong offset!");
-
 // Class AIModule.EnvQueryTest_Volume
 // 0x0018 (0x0210 - 0x01F8)
 class UEnvQueryTest_Volume final : public UEnvQueryTest
@@ -3769,7 +3896,7 @@ public:
 	TSubclassOf<class UEnvQueryContext>           VolumeContext;                                     // 0x01F8(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TSubclassOf<class AVolume>                    VolumeClass;                                       // 0x0200(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         bDoComplexVolumeTest : 1;                          // 0x0208(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         Pad_F88[0x7];                                      // 0x0209(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F97[0x7];                                      // 0x0209(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -3785,23 +3912,6 @@ static_assert(alignof(UEnvQueryTest_Volume) == 0x000008, "Wrong alignment on UEn
 static_assert(sizeof(UEnvQueryTest_Volume) == 0x000210, "Wrong size on UEnvQueryTest_Volume");
 static_assert(offsetof(UEnvQueryTest_Volume, VolumeContext) == 0x0001F8, "Member 'UEnvQueryTest_Volume::VolumeContext' has a wrong offset!");
 static_assert(offsetof(UEnvQueryTest_Volume, VolumeClass) == 0x000200, "Member 'UEnvQueryTest_Volume::VolumeClass' has a wrong offset!");
-
-// Class AIModule.GridPathAIController
-// 0x0000 (0x03B8 - 0x03B8)
-class AGridPathAIController final : public AAIController
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"GridPathAIController">();
-	}
-	static class AGridPathAIController* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AGridPathAIController>();
-	}
-};
-static_assert(alignof(AGridPathAIController) == 0x000008, "Wrong alignment on AGridPathAIController");
-static_assert(sizeof(AGridPathAIController) == 0x0003B8, "Wrong size on AGridPathAIController");
 
 // Class AIModule.AIHotSpotManager
 // 0x0000 (0x0028 - 0x0028)
@@ -3825,9 +3935,9 @@ static_assert(sizeof(UAIHotSpotManager) == 0x000028, "Wrong size on UAIHotSpotMa
 class UCrowdFollowingComponent final : public UPathFollowingComponent
 {
 public:
-	uint8                                         Pad_F89[0x18];                                     // 0x02B8(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F98[0x18];                                     // 0x02B8(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CrowdAgentMoveDirection;                           // 0x02D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F8A[0x20];                                     // 0x02E8(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F99[0x20];                                     // 0x02E8(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SuspendCrowdSteering(bool bSuspend);
@@ -3864,7 +3974,7 @@ public:
 	float                                         PathOffsetRadiusMultiplier;                        // 0x006C(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         BitPad_4C : 4;                                     // 0x0070(0x0001)(Fixing Bit-Field Size Between Bits [ Dumper-7 ])
 	uint8                                         bResolveCollisions : 1;                            // 0x0070(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (Edit, Config, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_F8B[0x7F];                                     // 0x0071(0x007F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F9A[0x7F];                                     // 0x0071(0x007F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -3896,7 +4006,7 @@ class UGridPathFollowingComponent final : public UPathFollowingComponent
 {
 public:
 	class UNavLocalGridManager*                   GridManager;                                       // 0x02B8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F8C[0x28];                                     // 0x02C0(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F9B[0x28];                                     // 0x02C0(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -3934,12 +4044,12 @@ static_assert(sizeof(UNavFilter_AIControllerDefault) == 0x000048, "Wrong size on
 class ANavLinkProxy final : public AActor
 {
 public:
-	uint8                                         Pad_F8D[0x10];                                     // 0x0290(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F9C[0x10];                                     // 0x0290(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FNavigationLink>                PointLinks;                                        // 0x02A0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FNavigationSegmentLink>         SegmentLinks;                                      // 0x02B0(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	class UNavLinkCustomComponent*                SmartLinkComp;                                     // 0x02C0(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bSmartLinkIsRelevant;                              // 0x02C8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F8E[0x7];                                      // 0x02C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F9D[0x7];                                      // 0x02C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnSmartLinkReached;                                // 0x02D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
 
 public:
@@ -3968,22 +4078,34 @@ static_assert(offsetof(ANavLinkProxy, SmartLinkComp) == 0x0002C0, "Member 'ANavL
 static_assert(offsetof(ANavLinkProxy, bSmartLinkIsRelevant) == 0x0002C8, "Member 'ANavLinkProxy::bSmartLinkIsRelevant' has a wrong offset!");
 static_assert(offsetof(ANavLinkProxy, OnSmartLinkReached) == 0x0002D0, "Member 'ANavLinkProxy::OnSmartLinkReached' has a wrong offset!");
 
-// Class AIModule.PathFollowingManager
-// 0x0000 (0x0028 - 0x0028)
-class UPathFollowingManager final : public UObject
+// Class AIModule.NavLocalGridManager
+// 0x0030 (0x0058 - 0x0028)
+class UNavLocalGridManager final : public UObject
 {
+public:
+	uint8                                         Pad_F9E[0x30];                                     // 0x0028(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static int32 AddLocalNavigationGridForBox(class UObject* WorldContextObject, const struct FVector& Location, const struct FVector& Extent, const struct FRotator& Rotation, const int32 Radius2D, const float Height, bool bRebuildGrids);
+	static int32 AddLocalNavigationGridForCapsule(class UObject* WorldContextObject, const struct FVector& Location, float CapsuleRadius, float CapsuleHalfHeight, const int32 Radius2D, const float Height, bool bRebuildGrids);
+	static int32 AddLocalNavigationGridForPoint(class UObject* WorldContextObject, const struct FVector& Location, const int32 Radius2D, const float Height, bool bRebuildGrids);
+	static int32 AddLocalNavigationGridForPoints(class UObject* WorldContextObject, const TArray<struct FVector>& Locations, const int32 Radius2D, const float Height, bool bRebuildGrids);
+	static bool FindLocalNavigationGridPath(class UObject* WorldContextObject, const struct FVector& Start, const struct FVector& End, TArray<struct FVector>* PathPoints);
+	static void RemoveLocalNavigationGrid(class UObject* WorldContextObject, int32 GridId, bool bRebuildGrids);
+	static bool SetLocalNavigationGridDensity(class UObject* WorldContextObject, float CellSize);
+
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PathFollowingManager">();
+		return StaticClassImpl<"NavLocalGridManager">();
 	}
-	static class UPathFollowingManager* GetDefaultObj()
+	static class UNavLocalGridManager* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UPathFollowingManager>();
+		return GetDefaultObjImpl<UNavLocalGridManager>();
 	}
 };
-static_assert(alignof(UPathFollowingManager) == 0x000008, "Wrong alignment on UPathFollowingManager");
-static_assert(sizeof(UPathFollowingManager) == 0x000028, "Wrong size on UPathFollowingManager");
+static_assert(alignof(UNavLocalGridManager) == 0x000008, "Wrong alignment on UNavLocalGridManager");
+static_assert(sizeof(UNavLocalGridManager) == 0x000058, "Wrong size on UNavLocalGridManager");
 
 // Class AIModule.AIPerceptionComponent
 // 0x00E0 (0x0180 - 0x00A0)
@@ -3992,9 +4114,9 @@ class UAIPerceptionComponent final : public UActorComponent
 public:
 	TArray<class UAISenseConfig*>                 SensesConfig;                                      // 0x00A0(0x0010)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	TSubclassOf<class UAISense>                   DominantSense;                                     // 0x00B0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F8F[0x10];                                     // 0x00B8(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_FA6[0x10];                                     // 0x00B8(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	class AAIController*                          AIOwner;                                           // 0x00C8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F90[0x80];                                     // 0x00D0(0x0080)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_FA7[0x80];                                     // 0x00D0(0x0080)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnPerceptionUpdated;                               // 0x0150(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnTargetPerceptionUpdated;                         // 0x0160(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnTargetPerceptionInfoUpdated;                     // 0x0170(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -4031,30 +4153,13 @@ static_assert(offsetof(UAIPerceptionComponent, OnPerceptionUpdated) == 0x000150,
 static_assert(offsetof(UAIPerceptionComponent, OnTargetPerceptionUpdated) == 0x000160, "Member 'UAIPerceptionComponent::OnTargetPerceptionUpdated' has a wrong offset!");
 static_assert(offsetof(UAIPerceptionComponent, OnTargetPerceptionInfoUpdated) == 0x000170, "Member 'UAIPerceptionComponent::OnTargetPerceptionInfoUpdated' has a wrong offset!");
 
-// Class AIModule.AIPerceptionListenerInterface
-// 0x0000 (0x0028 - 0x0028)
-class IAIPerceptionListenerInterface final : public IInterface
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AIPerceptionListenerInterface">();
-	}
-	static class IAIPerceptionListenerInterface* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<IAIPerceptionListenerInterface>();
-	}
-};
-static_assert(alignof(IAIPerceptionListenerInterface) == 0x000008, "Wrong alignment on IAIPerceptionListenerInterface");
-static_assert(sizeof(IAIPerceptionListenerInterface) == 0x000028, "Wrong size on IAIPerceptionListenerInterface");
-
 // Class AIModule.AIPerceptionStimuliSourceComponent
 // 0x0018 (0x00B8 - 0x00A0)
 class UAIPerceptionStimuliSourceComponent final : public UActorComponent
 {
 public:
 	uint8                                         bAutoRegisterAsSource : 1;                         // 0x00A0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, Config, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_F94[0x7];                                      // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_FAB[0x7];                                      // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<TSubclassOf<class UAISense>>           RegisterAsSourceForSenses;                         // 0x00A8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 
 public:
@@ -4082,10 +4187,10 @@ static_assert(offsetof(UAIPerceptionStimuliSourceComponent, RegisterAsSourceForS
 class UAIPerceptionSystem final : public UAISubsystem
 {
 public:
-	uint8                                         Pad_F95[0x50];                                     // 0x0038(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_FAC[0x50];                                     // 0x0038(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UAISense*>                       Senses;                                            // 0x0088(0x0010)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	float                                         PerceptionAgingRate;                               // 0x0098(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F96[0x94];                                     // 0x009C(0x0094)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_FAD[0x94];                                     // 0x009C(0x0094)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static TSubclassOf<class UAISense> GetSenseClassForStimulus(class UObject* WorldContextObject, const struct FAIStimulus& Stimulus);
@@ -4109,36 +4214,6 @@ static_assert(alignof(UAIPerceptionSystem) == 0x000008, "Wrong alignment on UAIP
 static_assert(sizeof(UAIPerceptionSystem) == 0x000130, "Wrong size on UAIPerceptionSystem");
 static_assert(offsetof(UAIPerceptionSystem, Senses) == 0x000088, "Member 'UAIPerceptionSystem::Senses' has a wrong offset!");
 static_assert(offsetof(UAIPerceptionSystem, PerceptionAgingRate) == 0x000098, "Member 'UAIPerceptionSystem::PerceptionAgingRate' has a wrong offset!");
-
-// Class AIModule.AISense
-// 0x0058 (0x0080 - 0x0028)
-class UAISense : public UObject
-{
-public:
-	float                                         DefaultExpirationAge;                              // 0x0028(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EAISenseNotifyType                            NotifyType;                                        // 0x002C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F99[0x3];                                      // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	uint8                                         bWantsNewPawnNotification : 1;                     // 0x0030(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         bAutoRegisterAllPawnsAsSources : 1;                // 0x0030(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_F9A[0x7];                                      // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAIPerceptionSystem*                    PerceptionSystemInstance;                          // 0x0038(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_F9B[0x40];                                     // 0x0040(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AISense">();
-	}
-	static class UAISense* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAISense>();
-	}
-};
-static_assert(alignof(UAISense) == 0x000008, "Wrong alignment on UAISense");
-static_assert(sizeof(UAISense) == 0x000080, "Wrong size on UAISense");
-static_assert(offsetof(UAISense, DefaultExpirationAge) == 0x000028, "Member 'UAISense::DefaultExpirationAge' has a wrong offset!");
-static_assert(offsetof(UAISense, NotifyType) == 0x00002C, "Member 'UAISense::NotifyType' has a wrong offset!");
-static_assert(offsetof(UAISense, PerceptionSystemInstance) == 0x000038, "Member 'UAISense::PerceptionSystemInstance' has a wrong offset!");
 
 // Class AIModule.AISenseConfig_Damage
 // 0x0008 (0x0050 - 0x0048)
@@ -4227,7 +4302,7 @@ class UAISense_Hearing final : public UAISense
 public:
 	TArray<struct FAINoiseEvent>                  NoiseEvents;                                       // 0x0080(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	float                                         SpeedOfSoundSq;                                    // 0x0090(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F9E[0x54];                                     // 0x0094(0x0054)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_FB2[0x54];                                     // 0x0094(0x0054)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static void ReportNoiseEvent(class UObject* WorldContextObject, const struct FVector& NoiseLocation, float Loudness, class AActor* Instigator, float MaxRange, class FName Tag);
@@ -4247,45 +4322,20 @@ static_assert(sizeof(UAISense_Hearing) == 0x0000E8, "Wrong size on UAISense_Hear
 static_assert(offsetof(UAISense_Hearing, NoiseEvents) == 0x000080, "Member 'UAISense_Hearing::NoiseEvents' has a wrong offset!");
 static_assert(offsetof(UAISense_Hearing, SpeedOfSoundSq) == 0x000090, "Member 'UAISense_Hearing::SpeedOfSoundSq' has a wrong offset!");
 
-// Class AIModule.AISense_Prediction
-// 0x0010 (0x0090 - 0x0080)
-class UAISense_Prediction final : public UAISense
-{
-public:
-	TArray<struct FAIPredictionEvent>             RegisteredEvents;                                  // 0x0080(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-
-public:
-	static void RequestControllerPredictionEvent(class AAIController* Requestor, class AActor* PredictedActor, float PredictionTime);
-	static void RequestPawnPredictionEvent(class APawn* Requestor, class AActor* PredictedActor, float PredictionTime);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AISense_Prediction">();
-	}
-	static class UAISense_Prediction* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAISense_Prediction>();
-	}
-};
-static_assert(alignof(UAISense_Prediction) == 0x000008, "Wrong alignment on UAISense_Prediction");
-static_assert(sizeof(UAISense_Prediction) == 0x000090, "Wrong size on UAISense_Prediction");
-static_assert(offsetof(UAISense_Prediction, RegisteredEvents) == 0x000080, "Member 'UAISense_Prediction::RegisteredEvents' has a wrong offset!");
-
 // Class AIModule.AISense_Sight
 // 0x00F0 (0x0170 - 0x0080)
 class UAISense_Sight final : public UAISense
 {
 public:
-	uint8                                         Pad_FA3[0xC8];                                     // 0x0080(0x00C8)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_FB5[0xC8];                                     // 0x0080(0x00C8)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         MaxTracesPerTick;                                  // 0x0148(0x0004)(Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         MinQueriesPerTimeSliceCheck;                       // 0x014C(0x0004)(Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	double                                        MaxTimeSlicePerTick;                               // 0x0150(0x0008)(Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         HighImportanceQueryDistanceThreshold;              // 0x0158(0x0004)(Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_FA4[0x4];                                      // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_FB6[0x4];                                      // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         MaxQueryImportance;                                // 0x0160(0x0004)(Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         SightLimitQueryImportance;                         // 0x0164(0x0004)(Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_FA5[0x8];                                      // 0x0168(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_FB7[0x8];                                      // 0x0168(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -4382,7 +4432,7 @@ public:
 	uint8                                         bOnlySensePlayers : 1;                             // 0x00B4(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bSeePawns : 1;                                     // 0x00B4(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bHearNoises : 1;                                   // 0x00B4(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_FA6[0xB];                                      // 0x00B5(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_FB8[0xB];                                      // 0x00B5(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnSeePawn;                                         // 0x00C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnHearNoise;                                       // 0x00D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	float                                         PeripheralVisionAngle;                             // 0x00E0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -4420,27 +4470,6 @@ static_assert(offsetof(UPawnSensingComponent, OnHearNoise) == 0x0000D0, "Member 
 static_assert(offsetof(UPawnSensingComponent, PeripheralVisionAngle) == 0x0000E0, "Member 'UPawnSensingComponent::PeripheralVisionAngle' has a wrong offset!");
 static_assert(offsetof(UPawnSensingComponent, PeripheralVisionCosine) == 0x0000E4, "Member 'UPawnSensingComponent::PeripheralVisionCosine' has a wrong offset!");
 
-// Class AIModule.AITask
-// 0x0008 (0x0070 - 0x0068)
-class UAITask : public UGameplayTask
-{
-public:
-	class AAIController*                          OwnerController;                                   // 0x0068(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AITask">();
-	}
-	static class UAITask* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAITask>();
-	}
-};
-static_assert(alignof(UAITask) == 0x000008, "Wrong alignment on UAITask");
-static_assert(sizeof(UAITask) == 0x000070, "Wrong size on UAITask");
-static_assert(offsetof(UAITask, OwnerController) == 0x000068, "Member 'UAITask::OwnerController' has a wrong offset!");
-
 // Class AIModule.AITask_LockLogic
 // 0x0000 (0x0070 - 0x0070)
 class UAITask_LockLogic final : public UAITask
@@ -4458,41 +4487,12 @@ public:
 static_assert(alignof(UAITask_LockLogic) == 0x000008, "Wrong alignment on UAITask_LockLogic");
 static_assert(sizeof(UAITask_LockLogic) == 0x000070, "Wrong size on UAITask_LockLogic");
 
-// Class AIModule.AITask_MoveTo
-// 0x00A8 (0x0118 - 0x0070)
-class UAITask_MoveTo final : public UAITask
-{
-public:
-	FMulticastInlineDelegateProperty_             OnRequestFailed;                                   // 0x0070(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
-	FMulticastInlineDelegateProperty_             OnMoveFinished;                                    // 0x0080(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
-	struct FAIMoveRequest                         MoveRequest;                                       // 0x0090(0x0048)(Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_FA8[0x40];                                     // 0x00D8(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UAITask_MoveTo* AIMoveTo(class AAIController* Controller, const struct FVector& GoalLocation, class AActor* GoalActor, float AcceptanceRadius, EAIOptionFlag StopOnOverlap, EAIOptionFlag AcceptPartialPath, bool bUsePathfinding, bool bLockAILogic, bool bUseContinuousGoalTracking, EAIOptionFlag ProjectGoalOnNavigation);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AITask_MoveTo">();
-	}
-	static class UAITask_MoveTo* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAITask_MoveTo>();
-	}
-};
-static_assert(alignof(UAITask_MoveTo) == 0x000008, "Wrong alignment on UAITask_MoveTo");
-static_assert(sizeof(UAITask_MoveTo) == 0x000118, "Wrong size on UAITask_MoveTo");
-static_assert(offsetof(UAITask_MoveTo, OnRequestFailed) == 0x000070, "Member 'UAITask_MoveTo::OnRequestFailed' has a wrong offset!");
-static_assert(offsetof(UAITask_MoveTo, OnMoveFinished) == 0x000080, "Member 'UAITask_MoveTo::OnMoveFinished' has a wrong offset!");
-static_assert(offsetof(UAITask_MoveTo, MoveRequest) == 0x000090, "Member 'UAITask_MoveTo::MoveRequest' has a wrong offset!");
-
 // Class AIModule.AITask_RunEQS
 // 0x0078 (0x00E8 - 0x0070)
 class UAITask_RunEQS final : public UAITask
 {
 public:
-	uint8                                         Pad_FAA[0x78];                                     // 0x0070(0x0078)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_FBA[0x78];                                     // 0x0070(0x0078)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UAITask_RunEQS* RunEQS(class AAIController* Controller, class UEnvQuery* QueryTemplate);

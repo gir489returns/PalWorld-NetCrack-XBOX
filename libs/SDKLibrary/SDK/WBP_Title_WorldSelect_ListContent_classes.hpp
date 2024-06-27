@@ -53,7 +53,8 @@ public:
 public:
 	void SetupByServerDisplayData(const struct FPalUIServerDisplayData& DisplayData);
 	void Setup_By_Local_World_Display_Data(const class FString& SaveDirectoryName, const struct FPalUILocalWorldDisplayData& DisplayData);
-	void OnCompletePing(class UPingIP* PingOperation, const class FString& HostName, int32 TimeMS);
+	void OnPingFailure(class UPingIP* PingOperation, const class FString& HostName);
+	void OnPingComplete(class UPingIP* PingOperation, const class FString& HostName, int32 TimeMS);
 	void OnClicked__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* Widget);
 	void GetBindedServerDisplayData(struct FPalUIServerDisplayData* DisplayData);
 	void GetBindedSaveDirectoryName(class FString* DirectoryName);

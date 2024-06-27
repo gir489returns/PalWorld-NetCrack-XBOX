@@ -39,37 +39,40 @@ static_assert(offsetof(BP_AIAction_NPCSpawnOtomo_C_ActionTick, ControlledPawn) =
 static_assert(offsetof(BP_AIAction_NPCSpawnOtomo_C_ActionTick, DeltaSeconds) == 0x000008, "Member 'BP_AIAction_NPCSpawnOtomo_C_ActionTick::DeltaSeconds' has a wrong offset!");
 
 // Function BP_AIAction_NPCSpawnOtomo.BP_AIAction_NPCSpawnOtomo_C.ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo
-// 0x0048 (0x0048 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DF8[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_380B[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  K2Node_Event_ControlledPawn_1;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalActionComponent*                    CallFunc_GetActionComponent_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  K2Node_Event_ControlledPawn;                       // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DF9[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_380C[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalActionBase*                         CallFunc_PlayActionByType_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetCharacter_ReturnValue;                 // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetCharacter_ReturnValue_1;               // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_InFanShap_ReturnValue;                    // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_380D[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetCharacter_ReturnValue;                 // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetCharacter_ReturnValue_1;               // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_InFanShap_ReturnValue;                    // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo) == 0x000008, "Wrong alignment on BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo");
-static_assert(sizeof(BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo) == 0x000048, "Wrong size on BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo");
+static_assert(sizeof(BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo) == 0x000050, "Wrong size on BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo");
 static_assert(offsetof(BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo, EntryPoint) == 0x000000, "Member 'BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo, Temp_bool_Has_Been_Initd_Variable) == 0x000004, "Member 'BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo, Temp_bool_IsClosed_Variable) == 0x000005, "Member 'BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo::Temp_bool_IsClosed_Variable' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo, Temp_bool_Has_Been_Initd_Variable) == 0x000005, "Member 'BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo, K2Node_Event_ControlledPawn_1) == 0x000008, "Member 'BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo::K2Node_Event_ControlledPawn_1' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo, CallFunc_GetActionComponent_ReturnValue) == 0x000010, "Member 'BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo::CallFunc_GetActionComponent_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo, K2Node_Event_ControlledPawn) == 0x000018, "Member 'BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo::K2Node_Event_ControlledPawn' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo, K2Node_Event_DeltaSeconds) == 0x000020, "Member 'BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo::K2Node_Event_DeltaSeconds' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo, CallFunc_PlayActionByType_ReturnValue) == 0x000028, "Member 'BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo::CallFunc_PlayActionByType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo, CallFunc_GetCharacter_ReturnValue) == 0x000030, "Member 'BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo::CallFunc_GetCharacter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo, CallFunc_GetCharacter_ReturnValue_1) == 0x000038, "Member 'BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo::CallFunc_GetCharacter_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo, CallFunc_InFanShap_ReturnValue) == 0x000040, "Member 'BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo::CallFunc_InFanShap_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo, Temp_bool_IsClosed_Variable) == 0x000030, "Member 'BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo::Temp_bool_IsClosed_Variable' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo, CallFunc_GetCharacter_ReturnValue) == 0x000038, "Member 'BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo::CallFunc_GetCharacter_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo, CallFunc_GetCharacter_ReturnValue_1) == 0x000040, "Member 'BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo::CallFunc_GetCharacter_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo, CallFunc_InFanShap_ReturnValue) == 0x000048, "Member 'BP_AIAction_NPCSpawnOtomo_C_ExecuteUbergraph_BP_AIAction_NPCSpawnOtomo::CallFunc_InFanShap_ReturnValue' has a wrong offset!");
 
 }
 

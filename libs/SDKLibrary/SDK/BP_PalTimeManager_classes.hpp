@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalTimeManager.BP_PalTimeManager_C
-// 0x0010 (0x0140 - 0x0130)
+// 0x0010 (0x0158 - 0x0148)
 class UBP_PalTimeManager_C final : public UPalTimeManager
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0130(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	double                                        NPCSetTime;                                        // 0x0138(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0148(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	double                                        NPCSetTime;                                        // 0x0150(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_PalTimeManager(int32 EntryPoint);
@@ -40,9 +40,9 @@ public:
 	}
 };
 static_assert(alignof(UBP_PalTimeManager_C) == 0x000008, "Wrong alignment on UBP_PalTimeManager_C");
-static_assert(sizeof(UBP_PalTimeManager_C) == 0x000140, "Wrong size on UBP_PalTimeManager_C");
-static_assert(offsetof(UBP_PalTimeManager_C, UberGraphFrame) == 0x000130, "Member 'UBP_PalTimeManager_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_PalTimeManager_C, NPCSetTime) == 0x000138, "Member 'UBP_PalTimeManager_C::NPCSetTime' has a wrong offset!");
+static_assert(sizeof(UBP_PalTimeManager_C) == 0x000158, "Wrong size on UBP_PalTimeManager_C");
+static_assert(offsetof(UBP_PalTimeManager_C, UberGraphFrame) == 0x000148, "Member 'UBP_PalTimeManager_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UBP_PalTimeManager_C, NPCSetTime) == 0x000150, "Member 'UBP_PalTimeManager_C::NPCSetTime' has a wrong offset!");
 
 }
 

@@ -20,7 +20,7 @@ namespace SDK
 // Function WBP_CharaCre_ScrollBoxContent_Body.WBP_CharaCre_ScrollBoxContent_Body_C.ApplyMakeInfo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPalPlayerDataCharacterMakeInfo  MakeInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FPalPlayerDataCharacterMakeInfo  MakeInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 
 void UWBP_CharaCre_ScrollBoxContent_Body_C::ApplyMakeInfo(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo)
 {
@@ -158,6 +158,27 @@ void UWBP_CharaCre_ScrollBoxContent_Body_C::GetRestoreFocusTarget(class UWidget*
 }
 
 
+// Function WBP_CharaCre_ScrollBoxContent_Body.WBP_CharaCre_ScrollBoxContent_Body_C.GetTopFocusTarget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWidget*                          Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CharaCre_ScrollBoxContent_Body_C::GetTopFocusTarget(class UWidget** Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CharaCre_ScrollBoxContent_Body_C", "GetTopFocusTarget");
+
+	Params::WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Widget != nullptr)
+		*Widget = Parms.Widget;
+}
+
+
 // Function WBP_CharaCre_ScrollBoxContent_Body.WBP_CharaCre_ScrollBoxContent_Body_C.OnChangedSelectColor
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -275,27 +296,6 @@ void UWBP_CharaCre_ScrollBoxContent_Body_C::SetDefaultBodyTypePresetName(class F
 	Parms.PresetName = PresetName;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CharaCre_ScrollBoxContent_Body.WBP_CharaCre_ScrollBoxContent_Body_C.GetTopFocusTarget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget*                          Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CharaCre_ScrollBoxContent_Body_C::GetTopFocusTarget(class UWidget** Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CharaCre_ScrollBoxContent_Body_C", "GetTopFocusTarget");
-
-	Params::WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Widget != nullptr)
-		*Widget = Parms.Widget;
 }
 
 }

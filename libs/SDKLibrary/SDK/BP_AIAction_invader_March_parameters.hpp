@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 
 
@@ -51,34 +51,34 @@ public:
 	class UPalActionComponent*                    Local_ActionComp;                                  // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UPalActiveSkillSlot*                    Local_SkillSlot;                                   // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         SkillID;                                           // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35E1[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_460E[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35E2[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_460F[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalMapObject*                          CallFunc_GetNearestEnemyBuildObject_ReturnValue;   // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_ChoiceEnableSlotIDByRandom_ReturnValue;   // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35E3[0x3];                                     // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4610[0x3];                                     // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue_1;              // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_1;                 // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalStaticCharacterParameterComponent*  CallFunc_GetComponentByClass_ReturnValue;          // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	EPalWazaID                                    CallFunc_GetWazaType_ReturnValue;                  // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35E4[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4611[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue_2;              // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TSubclassOf<class UPalActionBase>             CallFunc_Map_Find_Value;                           // 0x0070(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35E5[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4612[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_NPCAIController_Invader_C*          K2Node_DynamicCast_AsBP_NPCAIController_Invader;   // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35E6[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4613[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_2;                 // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalActionBase*                         CallFunc_PlayAction_ReturnValue;                   // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalActionComponent*                    CallFunc_GetComponentByClass_ReturnValue_1;        // 0x00A0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class APalAIController*                       K2Node_DynamicCast_AsPal_AIController;             // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35E7[0x6];                                     // 0x00B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4614[0x6];                                     // 0x00B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalActionBase*                         CallFunc_PlayAction_ReturnValue_1;                 // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AController*                            CallFunc_GetController_ReturnValue_3;              // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_3;                 // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -125,7 +125,7 @@ struct BP_AIAction_invader_March_C_CountupNotStartTimer final
 public:
 	double                                        DeltaTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35E8[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4615[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -143,77 +143,84 @@ static_assert(offsetof(BP_AIAction_invader_March_C_CountupNotStartTimer, CallFun
 static_assert(offsetof(BP_AIAction_invader_March_C_CountupNotStartTimer, CallFunc_IsNearTwoPoint_ReturnValue) == 0x000040, "Member 'BP_AIAction_invader_March_C_CountupNotStartTimer::CallFunc_IsNearTwoPoint_ReturnValue' has a wrong offset!");
 
 // Function BP_AIAction_invader_March.BP_AIAction_invader_March_C.ExecuteUbergraph_BP_AIAction_invader_March
-// 0x0120 (0x0120 - 0x0000)
+// 0x0130 (0x0130 - 0x0000)
 struct BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35E9[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  K2Node_Event_ControlledPawn_1;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35EA[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsNearTwoPoint_ReturnValue;               // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35EB[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  K2Node_Event_ControlledPawn;                       // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AController*                            CallFunc_GetController_ReturnValue_1;              // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35EC[0x7];                                     // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IBP_AIController_Interface_Invader_C> K2Node_DynamicCast_AsBP_AIController_Interface_Invader; // 0x0058(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35ED[0x7];                                     // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AController*                            CallFunc_GetController_ReturnValue_2;              // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0080(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsNearTwoPoint_ReturnValue_1;             // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35EE[0x7];                                     // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AController*                            CallFunc_GetController_ReturnValue_3;              // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_1;                 // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalAIController*                       CallFunc_GetPalAIController_ReturnValue;           // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x00C0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IBPI_GetPalAIBlackboard_C> K2Node_DynamicCast_AsBPI_Get_Pal_AIBlackboard;     // 0x00D8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35EF[0x7];                                     // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBP_PalAIBlackboard_Common_C*           CallFunc_GetMyBB_PalBrackboard;                    // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35F0[0x7];                                     // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue_1;           // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_CountupNotStartTimer_DeltaTime_ImplicitCast; // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4616[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalGameSetting*                        CallFunc_GetGameSetting_ReturnValue;               // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  K2Node_Event_ControlledPawn_1;                     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4617[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsNearTwoPoint_ReturnValue;               // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4618[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  K2Node_Event_ControlledPawn;                       // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AController*                            CallFunc_GetController_ReturnValue_1;              // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AController*                            CallFunc_GetController_ReturnValue_2;              // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4619[0x7];                                     // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0078(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IBP_AIController_Interface_Invader_C> K2Node_DynamicCast_AsBP_AIController_Interface_Invader; // 0x0090(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsNearTwoPoint_ReturnValue_1;             // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_461A[0x6];                                     // 0x00A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue_1;           // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AController*                            CallFunc_GetController_ReturnValue_3;              // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_1;                 // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalAIController*                       CallFunc_GetPalAIController_ReturnValue;           // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x00C8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IBPI_GetPalAIBlackboard_C> K2Node_DynamicCast_AsBPI_Get_Pal_AIBlackboard;     // 0x00E0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_461B[0x7];                                     // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBP_PalAIBlackboard_Common_C*           CallFunc_GetMyBB_PalBrackboard;                    // 0x00F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_461C[0x7];                                     // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue_2;           // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_CountupNotStartTimer_DeltaTime_ImplicitCast; // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast_1;        // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_IsNearTwoPoint_distance_ImplicitCast;     // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x012C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March) == 0x000008, "Wrong alignment on BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March");
-static_assert(sizeof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March) == 0x000120, "Wrong size on BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March");
+static_assert(sizeof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March) == 0x000130, "Wrong size on BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March");
 static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, EntryPoint) == 0x000000, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, K2Node_Event_ControlledPawn_1) == 0x000008, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::K2Node_Event_ControlledPawn_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, K2Node_Event_DeltaSeconds) == 0x000010, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_GetController_ReturnValue) == 0x000018, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_GetController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000020, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_IsNearTwoPoint_ReturnValue) == 0x000038, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_IsNearTwoPoint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, K2Node_Event_ControlledPawn) == 0x000040, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::K2Node_Event_ControlledPawn' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_GetController_ReturnValue_1) == 0x000048, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_GetController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_IsValid_ReturnValue) == 0x000050, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, K2Node_DynamicCast_AsBP_AIController_Interface_Invader) == 0x000058, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::K2Node_DynamicCast_AsBP_AIController_Interface_Invader' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, K2Node_DynamicCast_bSuccess) == 0x000068, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_GetController_ReturnValue_2) == 0x000070, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_GetController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_K2_GetPawn_ReturnValue) == 0x000078, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_K2_GetPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000080, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000098, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_IsNearTwoPoint_ReturnValue_1) == 0x0000A0, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_IsNearTwoPoint_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_GetController_ReturnValue_3) == 0x0000A8, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_GetController_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_K2_GetPawn_ReturnValue_1) == 0x0000B0, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_K2_GetPawn_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_GetPalAIController_ReturnValue) == 0x0000B8, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_GetPalAIController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x0000C0, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, K2Node_DynamicCast_AsBPI_Get_Pal_AIBlackboard) == 0x0000D8, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::K2Node_DynamicCast_AsBPI_Get_Pal_AIBlackboard' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, K2Node_DynamicCast_bSuccess_1) == 0x0000E8, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_GetMyBB_PalBrackboard) == 0x0000F0, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_GetMyBB_PalBrackboard' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x0000F8, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_Add_DoubleDouble_ReturnValue_1) == 0x000100, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_Add_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_CountupNotStartTimer_DeltaTime_ImplicitCast) == 0x000108, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_CountupNotStartTimer_DeltaTime_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_GetGameSetting_ReturnValue) == 0x000008, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_GetGameSetting_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, K2Node_Event_ControlledPawn_1) == 0x000010, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::K2Node_Event_ControlledPawn_1' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, K2Node_Event_DeltaSeconds) == 0x000018, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000020, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000028, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_GetController_ReturnValue) == 0x000040, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_GetController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_IsNearTwoPoint_ReturnValue) == 0x000048, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_IsNearTwoPoint_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, K2Node_Event_ControlledPawn) == 0x000050, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::K2Node_Event_ControlledPawn' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_GetController_ReturnValue_1) == 0x000058, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_GetController_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_GetController_ReturnValue_2) == 0x000060, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_GetController_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_IsValid_ReturnValue) == 0x000068, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_K2_GetPawn_ReturnValue) == 0x000070, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_K2_GetPawn_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000078, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, K2Node_DynamicCast_AsBP_AIController_Interface_Invader) == 0x000090, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::K2Node_DynamicCast_AsBP_AIController_Interface_Invader' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, K2Node_DynamicCast_bSuccess) == 0x0000A0, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_IsNearTwoPoint_ReturnValue_1) == 0x0000A1, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_IsNearTwoPoint_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_Add_DoubleDouble_ReturnValue_1) == 0x0000A8, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_Add_DoubleDouble_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_GetController_ReturnValue_3) == 0x0000B0, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_GetController_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_K2_GetPawn_ReturnValue_1) == 0x0000B8, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_K2_GetPawn_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_GetPalAIController_ReturnValue) == 0x0000C0, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_GetPalAIController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x0000C8, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, K2Node_DynamicCast_AsBPI_Get_Pal_AIBlackboard) == 0x0000E0, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::K2Node_DynamicCast_AsBPI_Get_Pal_AIBlackboard' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, K2Node_DynamicCast_bSuccess_1) == 0x0000F0, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_GetMyBB_PalBrackboard) == 0x0000F8, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_GetMyBB_PalBrackboard' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x000100, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_Add_DoubleDouble_ReturnValue_2) == 0x000108, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_Add_DoubleDouble_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_Add_DoubleDouble_A_ImplicitCast) == 0x000110, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_Add_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_Delay_Duration_ImplicitCast) == 0x000118, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_Delay_Duration_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_CountupNotStartTimer_DeltaTime_ImplicitCast) == 0x000118, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_CountupNotStartTimer_DeltaTime_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_Add_DoubleDouble_A_ImplicitCast_1) == 0x000120, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_Add_DoubleDouble_A_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_IsNearTwoPoint_distance_ImplicitCast) == 0x000128, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_IsNearTwoPoint_distance_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March, CallFunc_Delay_Duration_ImplicitCast) == 0x00012C, "Member 'BP_AIAction_invader_March_C_ExecuteUbergraph_BP_AIAction_invader_March::CallFunc_Delay_Duration_ImplicitCast' has a wrong offset!");
 
 // Function BP_AIAction_invader_March.BP_AIAction_invader_March_C.FindNearPlayer
 // 0x00B0 (0x00B0 - 0x0000)
@@ -226,22 +233,22 @@ public:
 	double                                        NearestDistance;                                   // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Const_NearDistance;                                // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          SelfPos;                                           // 0x0028(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35F1[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_461D[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_DoubleDouble_ReturnValue;            // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35F2[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_461E[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalCharacterImportanceManager*         CallFunc_GetCharacterImportanceManager_ReturnValue; // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<class APalCharacter*>                  CallFunc_GetAllPlayer_OutArray;                    // 0x0048(0x0010)(ReferenceParm)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35F3[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_461F[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_Array_Get_Item;                           // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35F4[0x7];                                     // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4620[0x7];                                     // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character;         // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35F5[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4621[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0080(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x0098(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Vector_Distance2DSquared_ReturnValue;     // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -322,17 +329,17 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35F6[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4622[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AController*                            CallFunc_GetController_ReturnValue_1;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalAIController*                       K2Node_DynamicCast_AsPal_AIController;             // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35F7[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4623[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35F8[0x6];                                     // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4624[0x6];                                     // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<EPalWazaID>                            CallFunc_GetEquipWaza_ReturnValue;                 // 0x0048(0x0010)(ReferenceParm)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPalWazaID                                    CallFunc_Array_Get_Item;                           // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -365,7 +372,7 @@ public:
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ABP_NPCAIController_Invader_C*          K2Node_DynamicCast_AsBP_NPCAIController_Invader;   // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35F9[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4625[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalAIActionBase*                       CallFunc_SetAIActionClassParameter_ReturnValue;    // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalNPCAIWeaponHandle*                  CallFunc_GetWeaponHandle_WeaponHandle;             // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TSubclassOf<class UPalAIActionBase>           CallFunc_GetCombatClass_ReturnValue;               // 0x0030(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)

@@ -19,25 +19,25 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MonsterBase.BP_MonsterBase_C
-// 0x0070 (0x0A10 - 0x09A0)
+// 0x0070 (0x0A50 - 0x09E0)
 class ABP_MonsterBase_C final : public APalMonsterCharacter
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x09A0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPalAbilitySkillParameterComponent*     PalAbilitySkillParameter;                          // 0x09A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMotionWarpingComponent*                MotionWarping;                                     // 0x09B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_PalCryComponent_C*                  BP_PalCryComponent;                                // 0x09B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalPartnerSkillParameterComponent*     PalPartnerSkillParameter;                          // 0x09C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalNavigationInvokerComponent*         PalNavigationInvoker;                              // 0x09C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalInteractableSphereComponentNative*  BP_InteractableSphere;                             // 0x09D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalFacialComponent*                    PalFacial;                                         // 0x09D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	ECollisionChannel                             CapsuleCollisionChannel;                           // 0x09E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2525[0x3];                                     // 0x09E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CollisionProfileNameCache;                         // 0x09E4(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2526[0x4];                                     // 0x09EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNiagaraComponent*                      FlyEffect;                                         // 0x09F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	double                                        EffectiveAttackLogTimer;                           // 0x09F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_             OnInflictDamageEvent;                              // 0x0A00(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x09E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPalAbilitySkillParameterComponent*     PalAbilitySkillParameter;                          // 0x09E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMotionWarpingComponent*                MotionWarping;                                     // 0x09F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_PalCryComponent_C*                  BP_PalCryComponent;                                // 0x09F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalPartnerSkillParameterComponent*     PalPartnerSkillParameter;                          // 0x0A00(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalNavigationInvokerComponent*         PalNavigationInvoker;                              // 0x0A08(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalInteractableSphereComponentNative*  BP_InteractableSphere;                             // 0x0A10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalFacialComponent*                    PalFacial;                                         // 0x0A18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	ECollisionChannel                             CapsuleCollisionChannel;                           // 0x0A20(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4450[0x3];                                     // 0x0A21(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CollisionProfileNameCache;                         // 0x0A24(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4451[0x4];                                     // 0x0A2C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNiagaraComponent*                      FlyEffect;                                         // 0x0A30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	double                                        EffectiveAttackLogTimer;                           // 0x0A38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_             OnInflictDamageEvent;                              // 0x0A40(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void AddEffectivceAttackLog(const struct FPalDeadInfo& Info);
@@ -81,20 +81,20 @@ public:
 	}
 };
 static_assert(alignof(ABP_MonsterBase_C) == 0x000010, "Wrong alignment on ABP_MonsterBase_C");
-static_assert(sizeof(ABP_MonsterBase_C) == 0x000A10, "Wrong size on ABP_MonsterBase_C");
-static_assert(offsetof(ABP_MonsterBase_C, UberGraphFrame) == 0x0009A0, "Member 'ABP_MonsterBase_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_MonsterBase_C, PalAbilitySkillParameter) == 0x0009A8, "Member 'ABP_MonsterBase_C::PalAbilitySkillParameter' has a wrong offset!");
-static_assert(offsetof(ABP_MonsterBase_C, MotionWarping) == 0x0009B0, "Member 'ABP_MonsterBase_C::MotionWarping' has a wrong offset!");
-static_assert(offsetof(ABP_MonsterBase_C, BP_PalCryComponent) == 0x0009B8, "Member 'ABP_MonsterBase_C::BP_PalCryComponent' has a wrong offset!");
-static_assert(offsetof(ABP_MonsterBase_C, PalPartnerSkillParameter) == 0x0009C0, "Member 'ABP_MonsterBase_C::PalPartnerSkillParameter' has a wrong offset!");
-static_assert(offsetof(ABP_MonsterBase_C, PalNavigationInvoker) == 0x0009C8, "Member 'ABP_MonsterBase_C::PalNavigationInvoker' has a wrong offset!");
-static_assert(offsetof(ABP_MonsterBase_C, BP_InteractableSphere) == 0x0009D0, "Member 'ABP_MonsterBase_C::BP_InteractableSphere' has a wrong offset!");
-static_assert(offsetof(ABP_MonsterBase_C, PalFacial) == 0x0009D8, "Member 'ABP_MonsterBase_C::PalFacial' has a wrong offset!");
-static_assert(offsetof(ABP_MonsterBase_C, CapsuleCollisionChannel) == 0x0009E0, "Member 'ABP_MonsterBase_C::CapsuleCollisionChannel' has a wrong offset!");
-static_assert(offsetof(ABP_MonsterBase_C, CollisionProfileNameCache) == 0x0009E4, "Member 'ABP_MonsterBase_C::CollisionProfileNameCache' has a wrong offset!");
-static_assert(offsetof(ABP_MonsterBase_C, FlyEffect) == 0x0009F0, "Member 'ABP_MonsterBase_C::FlyEffect' has a wrong offset!");
-static_assert(offsetof(ABP_MonsterBase_C, EffectiveAttackLogTimer) == 0x0009F8, "Member 'ABP_MonsterBase_C::EffectiveAttackLogTimer' has a wrong offset!");
-static_assert(offsetof(ABP_MonsterBase_C, OnInflictDamageEvent) == 0x000A00, "Member 'ABP_MonsterBase_C::OnInflictDamageEvent' has a wrong offset!");
+static_assert(sizeof(ABP_MonsterBase_C) == 0x000A50, "Wrong size on ABP_MonsterBase_C");
+static_assert(offsetof(ABP_MonsterBase_C, UberGraphFrame) == 0x0009E0, "Member 'ABP_MonsterBase_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ABP_MonsterBase_C, PalAbilitySkillParameter) == 0x0009E8, "Member 'ABP_MonsterBase_C::PalAbilitySkillParameter' has a wrong offset!");
+static_assert(offsetof(ABP_MonsterBase_C, MotionWarping) == 0x0009F0, "Member 'ABP_MonsterBase_C::MotionWarping' has a wrong offset!");
+static_assert(offsetof(ABP_MonsterBase_C, BP_PalCryComponent) == 0x0009F8, "Member 'ABP_MonsterBase_C::BP_PalCryComponent' has a wrong offset!");
+static_assert(offsetof(ABP_MonsterBase_C, PalPartnerSkillParameter) == 0x000A00, "Member 'ABP_MonsterBase_C::PalPartnerSkillParameter' has a wrong offset!");
+static_assert(offsetof(ABP_MonsterBase_C, PalNavigationInvoker) == 0x000A08, "Member 'ABP_MonsterBase_C::PalNavigationInvoker' has a wrong offset!");
+static_assert(offsetof(ABP_MonsterBase_C, BP_InteractableSphere) == 0x000A10, "Member 'ABP_MonsterBase_C::BP_InteractableSphere' has a wrong offset!");
+static_assert(offsetof(ABP_MonsterBase_C, PalFacial) == 0x000A18, "Member 'ABP_MonsterBase_C::PalFacial' has a wrong offset!");
+static_assert(offsetof(ABP_MonsterBase_C, CapsuleCollisionChannel) == 0x000A20, "Member 'ABP_MonsterBase_C::CapsuleCollisionChannel' has a wrong offset!");
+static_assert(offsetof(ABP_MonsterBase_C, CollisionProfileNameCache) == 0x000A24, "Member 'ABP_MonsterBase_C::CollisionProfileNameCache' has a wrong offset!");
+static_assert(offsetof(ABP_MonsterBase_C, FlyEffect) == 0x000A30, "Member 'ABP_MonsterBase_C::FlyEffect' has a wrong offset!");
+static_assert(offsetof(ABP_MonsterBase_C, EffectiveAttackLogTimer) == 0x000A38, "Member 'ABP_MonsterBase_C::EffectiveAttackLogTimer' has a wrong offset!");
+static_assert(offsetof(ABP_MonsterBase_C, OnInflictDamageEvent) == 0x000A40, "Member 'ABP_MonsterBase_C::OnInflictDamageEvent' has a wrong offset!");
 
 }
 

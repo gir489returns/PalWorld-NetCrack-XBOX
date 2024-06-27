@@ -17,28 +17,6 @@
 namespace SDK
 {
 
-// Class AudioAnalyzer.AudioAnalyzerSubsystem
-// 0x0020 (0x0050 - 0x0030)
-class UAudioAnalyzerSubsystem final : public UEngineSubsystem
-{
-public:
-	TArray<class UAudioAnalyzer*>                 AudioAnalyzers;                                    // 0x0030(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2462[0x10];                                    // 0x0040(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AudioAnalyzerSubsystem">();
-	}
-	static class UAudioAnalyzerSubsystem* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAudioAnalyzerSubsystem>();
-	}
-};
-static_assert(alignof(UAudioAnalyzerSubsystem) == 0x000008, "Wrong alignment on UAudioAnalyzerSubsystem");
-static_assert(sizeof(UAudioAnalyzerSubsystem) == 0x000050, "Wrong size on UAudioAnalyzerSubsystem");
-static_assert(offsetof(UAudioAnalyzerSubsystem, AudioAnalyzers) == 0x000030, "Member 'UAudioAnalyzerSubsystem::AudioAnalyzers' has a wrong offset!");
-
 // Class AudioAnalyzer.AudioAnalyzerAssetBase
 // 0x0000 (0x0028 - 0x0028)
 class UAudioAnalyzerAssetBase : public UObject
@@ -63,7 +41,7 @@ class UAudioAnalyzerNRT : public UAudioAnalyzerAssetBase
 public:
 	class USoundWave*                             Sound;                                             // 0x0028(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DurationInSeconds;                                 // 0x0030(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2463[0x44];                                    // 0x0034(0x0044)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_136B[0x44];                                    // 0x0034(0x0044)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -103,9 +81,9 @@ class UAudioAnalyzer : public UObject
 {
 public:
 	class UAudioBus*                              AudioBus;                                          // 0x0028(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2464[0x8];                                     // 0x0030(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_136C[0x8];                                     // 0x0030(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAudioAnalyzerSubsystem*                AudioAnalyzerSubsystem;                            // 0x0038(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2465[0x50];                                    // 0x0040(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_136D[0x50];                                    // 0x0040(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void StartAnalyzing(const class UObject* WorldContextObject, class UAudioBus* AudioBusToAnalyze);
@@ -142,6 +120,28 @@ public:
 };
 static_assert(alignof(UAudioAnalyzerNRTSettings) == 0x000008, "Wrong alignment on UAudioAnalyzerNRTSettings");
 static_assert(sizeof(UAudioAnalyzerNRTSettings) == 0x000028, "Wrong size on UAudioAnalyzerNRTSettings");
+
+// Class AudioAnalyzer.AudioAnalyzerSubsystem
+// 0x0020 (0x0050 - 0x0030)
+class UAudioAnalyzerSubsystem final : public UEngineSubsystem
+{
+public:
+	TArray<class UAudioAnalyzer*>                 AudioAnalyzers;                                    // 0x0030(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_136E[0x10];                                    // 0x0040(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"AudioAnalyzerSubsystem">();
+	}
+	static class UAudioAnalyzerSubsystem* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAudioAnalyzerSubsystem>();
+	}
+};
+static_assert(alignof(UAudioAnalyzerSubsystem) == 0x000008, "Wrong alignment on UAudioAnalyzerSubsystem");
+static_assert(sizeof(UAudioAnalyzerSubsystem) == 0x000050, "Wrong size on UAudioAnalyzerSubsystem");
+static_assert(offsetof(UAudioAnalyzerSubsystem, AudioAnalyzers) == 0x000030, "Member 'UAudioAnalyzerSubsystem::AudioAnalyzers' has a wrong offset!");
 
 }
 

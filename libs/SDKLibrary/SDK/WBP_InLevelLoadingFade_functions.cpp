@@ -107,6 +107,20 @@ void UWBP_InLevelLoadingFade_C::FadeIn()
 }
 
 
+// Function WBP_InLevelLoadingFade.WBP_InLevelLoadingFade_C.FadeOut
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_InLevelLoadingFade_C::FadeOut()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InLevelLoadingFade_C", "FadeOut");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_InLevelLoadingFade.WBP_InLevelLoadingFade_C.Finished_50648C2D41952F044CFD8F9629D4027A
 // (BlueprintCallable, BlueprintEvent)
 
@@ -135,17 +149,23 @@ void UWBP_InLevelLoadingFade_C::Finished_BCA2D9DB46EBD8925174F885E2A96DAA()
 }
 
 
-// Function WBP_InLevelLoadingFade.WBP_InLevelLoadingFade_C.FadeOut
+// Function WBP_InLevelLoadingFade.WBP_InLevelLoadingFade_C.Setup
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalHUDDispatchParameter_FadeWidget*Param_FadeParameter                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_InLevelLoadingFade_C::FadeOut()
+void UWBP_InLevelLoadingFade_C::Setup(class UPalHUDDispatchParameter_FadeWidget* Param_FadeParameter)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InLevelLoadingFade_C", "FadeOut");
+		Func = Class->GetFunction("WBP_InLevelLoadingFade_C", "Setup");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_InLevelLoadingFade_C_Setup Parms{};
+
+	Parms.Param_FadeParameter = Param_FadeParameter;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -160,6 +180,28 @@ void UWBP_InLevelLoadingFade_C::Setup_ForOverride()
 		Func = Class->GetFunction("WBP_InLevelLoadingFade_C", "Setup_ForOverride");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InLevelLoadingFade.WBP_InLevelLoadingFade_C.UpdateProgressStep
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   AddStep                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   MaxStep                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_InLevelLoadingFade_C::UpdateProgressStep(int32 AddStep, int32 MaxStep)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InLevelLoadingFade_C", "UpdateProgressStep");
+
+	Params::WBP_InLevelLoadingFade_C_UpdateProgressStep Parms{};
+
+	Parms.AddStep = AddStep;
+	Parms.MaxStep = MaxStep;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

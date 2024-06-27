@@ -33,7 +33,7 @@ public:
 	class FName                                   K2Node_CustomEvent_NotifyName;                     // 0x0064(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_4;            // 0x006C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Temp_name_Variable;                                // 0x007C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F7D[0x4];                                     // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E3B[0x4];                                     // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalSkeletalMeshComponent*              CallFunc_GetMainMesh_ReturnValue;                  // 0x0090(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UAnimMontage*                           CallFunc_FindLiftupMontage_ReturnValue;            // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -69,7 +69,7 @@ struct BP_ActionPalLiftup_Player_C_FindLiftupMontage final
 public:
 	class UAnimMontage*                           ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 	EPalActionType                                Temp_byte_Variable;                                // 0x0008(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F7E[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E3C[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalStaticCharacterParameterComponent*  CallFunc_GetComponentByClass_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UAnimMontage*                           CallFunc_Map_Find_Value;                           // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -90,13 +90,13 @@ struct BP_ActionPalLiftup_Player_C_MovementSetFlag final
 {
 public:
 	bool                                          Disable;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F7F[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E3D[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   FlagName;                                          // 0x0004(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F80[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E3E[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalCharacterMovementComponent*         Movement;                                          // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F81[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E3F[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue;          // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_ActionPalLiftup_Player_C_MovementSetFlag) == 0x000008, "Wrong alignment on BP_ActionPalLiftup_Player_C_MovementSetFlag");
@@ -209,27 +209,38 @@ static_assert(sizeof(BP_ActionPalLiftup_Player_C_StopAnimation) == 0x000008, "Wr
 static_assert(offsetof(BP_ActionPalLiftup_Player_C_StopAnimation, CallFunc_GetActionCharacter_ReturnValue) == 0x000000, "Member 'BP_ActionPalLiftup_Player_C_StopAnimation::CallFunc_GetActionCharacter_ReturnValue' has a wrong offset!");
 
 // Function BP_ActionPalLiftup_Player.BP_ActionPalLiftup_Player_C.WeaponSetFlag
-// 0x0030 (0x0030 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct BP_ActionPalLiftup_Player_C_WeaponSetFlag final
 {
 public:
 	bool                                          Disable;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F82[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E40[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalShooterComponent*                   ShooterComp;                                       // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class FName                                   FlagName;                                          // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F83[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalShooterComponent*                   CallFunc_GetComponentByClass_ReturnValue;          // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E41[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalPlayerController*                   K2Node_DynamicCast_AsPal_Player_Controller;        // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E42[0x6];                                     // 0x003A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_1;         // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalShooterComponent*                   CallFunc_GetComponentByClass_ReturnValue;          // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_ActionPalLiftup_Player_C_WeaponSetFlag) == 0x000008, "Wrong alignment on BP_ActionPalLiftup_Player_C_WeaponSetFlag");
-static_assert(sizeof(BP_ActionPalLiftup_Player_C_WeaponSetFlag) == 0x000030, "Wrong size on BP_ActionPalLiftup_Player_C_WeaponSetFlag");
+static_assert(sizeof(BP_ActionPalLiftup_Player_C_WeaponSetFlag) == 0x000050, "Wrong size on BP_ActionPalLiftup_Player_C_WeaponSetFlag");
 static_assert(offsetof(BP_ActionPalLiftup_Player_C_WeaponSetFlag, Disable) == 0x000000, "Member 'BP_ActionPalLiftup_Player_C_WeaponSetFlag::Disable' has a wrong offset!");
 static_assert(offsetof(BP_ActionPalLiftup_Player_C_WeaponSetFlag, ShooterComp) == 0x000008, "Member 'BP_ActionPalLiftup_Player_C_WeaponSetFlag::ShooterComp' has a wrong offset!");
 static_assert(offsetof(BP_ActionPalLiftup_Player_C_WeaponSetFlag, FlagName) == 0x000010, "Member 'BP_ActionPalLiftup_Player_C_WeaponSetFlag::FlagName' has a wrong offset!");
-static_assert(offsetof(BP_ActionPalLiftup_Player_C_WeaponSetFlag, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'BP_ActionPalLiftup_Player_C_WeaponSetFlag::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ActionPalLiftup_Player_C_WeaponSetFlag, CallFunc_GetActionCharacter_ReturnValue) == 0x000020, "Member 'BP_ActionPalLiftup_Player_C_WeaponSetFlag::CallFunc_GetActionCharacter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ActionPalLiftup_Player_C_WeaponSetFlag, CallFunc_GetComponentByClass_ReturnValue) == 0x000028, "Member 'BP_ActionPalLiftup_Player_C_WeaponSetFlag::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ActionPalLiftup_Player_C_WeaponSetFlag, CallFunc_GetActionCharacter_ReturnValue) == 0x000018, "Member 'BP_ActionPalLiftup_Player_C_WeaponSetFlag::CallFunc_GetActionCharacter_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ActionPalLiftup_Player_C_WeaponSetFlag, CallFunc_GetController_ReturnValue) == 0x000020, "Member 'BP_ActionPalLiftup_Player_C_WeaponSetFlag::CallFunc_GetController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ActionPalLiftup_Player_C_WeaponSetFlag, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'BP_ActionPalLiftup_Player_C_WeaponSetFlag::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ActionPalLiftup_Player_C_WeaponSetFlag, K2Node_DynamicCast_AsPal_Player_Controller) == 0x000030, "Member 'BP_ActionPalLiftup_Player_C_WeaponSetFlag::K2Node_DynamicCast_AsPal_Player_Controller' has a wrong offset!");
+static_assert(offsetof(BP_ActionPalLiftup_Player_C_WeaponSetFlag, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'BP_ActionPalLiftup_Player_C_WeaponSetFlag::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_ActionPalLiftup_Player_C_WeaponSetFlag, CallFunc_IsValid_ReturnValue_1) == 0x000039, "Member 'BP_ActionPalLiftup_Player_C_WeaponSetFlag::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ActionPalLiftup_Player_C_WeaponSetFlag, CallFunc_GetActionCharacter_ReturnValue_1) == 0x000040, "Member 'BP_ActionPalLiftup_Player_C_WeaponSetFlag::CallFunc_GetActionCharacter_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ActionPalLiftup_Player_C_WeaponSetFlag, CallFunc_GetComponentByClass_ReturnValue) == 0x000048, "Member 'BP_ActionPalLiftup_Player_C_WeaponSetFlag::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
 
 }
 

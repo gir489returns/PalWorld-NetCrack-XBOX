@@ -36,6 +36,11 @@ int32 BasicFilesImpleUtils::GetObjectIndex(class UClass* Class)
 	return Class->Index;
 }
 
+uint64 BasicFilesImpleUtils::GetObjFNameAsUInt64(class UClass* Class)
+{
+	return *reinterpret_cast<uint64*>(&Class->Name);
+}
+
 class UObject* BasicFilesImpleUtils::GetObjectByIndex(int32 Index)
 {
 	return UObject::GObjects->GetByIndex(Index);

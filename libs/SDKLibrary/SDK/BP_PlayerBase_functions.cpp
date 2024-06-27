@@ -93,6 +93,20 @@ void ABP_PlayerBase_C::BndEvt__BP_PlayerBase_CharacterMovement_K2Node_ComponentB
 }
 
 
+// Function BP_PlayerBase.BP_PlayerBase_C.ClearLantern
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_PlayerBase_C::ClearLantern()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PlayerBase_C", "ClearLantern");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_PlayerBase.BP_PlayerBase_C.CreateLantern
 // (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 

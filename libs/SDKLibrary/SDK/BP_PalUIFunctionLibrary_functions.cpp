@@ -281,21 +281,21 @@ void UBP_PalUIFunctionLibrary_C::GetWorkDetailName(class UPalIndividualCharacter
 }
 
 
-// Function BP_PalUIFunctionLibrary.BP_PalUIFunctionLibrary_C.IsDislayWorkSuitability_ForUI
+// Function BP_PalUIFunctionLibrary.BP_PalUIFunctionLibrary_C.IsDisplayWorkSuitability_ForUI
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // EPalWorkSuitability                     Suitability                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                                    ShouldDisplay                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_PalUIFunctionLibrary_C::IsDislayWorkSuitability_ForUI(EPalWorkSuitability Suitability, class UObject* __WorldContext, bool* ShouldDisplay)
+void UBP_PalUIFunctionLibrary_C::IsDisplayWorkSuitability_ForUI(EPalWorkSuitability Suitability, class UObject* __WorldContext, bool* ShouldDisplay)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BP_PalUIFunctionLibrary_C", "IsDislayWorkSuitability_ForUI");
+		Func = StaticClass()->GetFunction("BP_PalUIFunctionLibrary_C", "IsDisplayWorkSuitability_ForUI");
 
-	Params::BP_PalUIFunctionLibrary_C_IsDislayWorkSuitability_ForUI Parms{};
+	Params::BP_PalUIFunctionLibrary_C_IsDisplayWorkSuitability_ForUI Parms{};
 
 	Parms.Suitability = Suitability;
 	Parms.__WorldContext = __WorldContext;

@@ -12,10 +12,10 @@
 namespace ABP_NPC_Child { struct FAnimBlueprintGeneratedConstantData; }
 
 
-namespace ABP_NPC_Base
+namespace ABP_Player_Head
 {
-	struct FAnimBlueprintGeneratedMutableData;
 	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
 }
 
 namespace ABP_Player
@@ -30,8 +30,8 @@ namespace ABP_Player_Hair
 	struct FAnimBlueprintGeneratedConstantData;
 }
 
-namespace ABP_Player_Head
+namespace ABP_NPC_Base
 {
-	struct FAnimBlueprintGeneratedMutableData;
 	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
 }

@@ -20,121 +20,116 @@ namespace SDK::Params
 {
 
 // Function BP_MonsterAIController_BaseCamp.BP_MonsterAIController_BaseCamp_C.ExecuteUbergraph_BP_MonsterAIController_BaseCamp
-// 0x03A0 (0x03A0 - 0x0000)
+// 0x0388 (0x0388 - 0x0000)
 struct BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4212[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4219[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UPalAIActionBase>           K2Node_Event_ActionClass;                          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0010(0x0010)(ConstParm, ReferenceParm)
 	TDelegate<void(const struct FPalDeadInfo& DeadInfo)> K2Node_CreateDelegate_OutputDelegate;              // 0x0020(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0050(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_1;                 // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_LineTraceSingle_OutHit;                   // 0x0088(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_LineTraceSingle_ReturnValue;              // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4213[0x7];                                     // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0178(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0191(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4214[0x2];                                     // 0x0192(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4215[0x4];                                     // 0x019C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x01A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x01B8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x01D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x01E8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0200(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0208(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0210(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_BoneName;                  // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x022C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4216[0x4];                                     // 0x0234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0238(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0250(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  K2Node_Event_TargetWorkProgressId;                 // 0x0268(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DistanceFixAssignTargetting;          // 0x0278(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4217[0x4];                                     // 0x027C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalAIActionCompositeBase*              CallFunc_SetAction_BaseCamp_Worker_ReturnValue;    // 0x0280(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalAIActionBaseCampBase*               CallFunc_SetAction_BaseCamp_Fighter_Action;        // 0x0288(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPalMapBaseCampWorkerOrderType                K2Node_Event_OrderType;                            // 0x0290(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4218[0x7];                                     // 0x0291(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  K2Node_Event_PossessedPawn;                        // 0x0298(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalAIActionBaseCampBase*               CallFunc_SetAction_BaseCamp_FighterGunner_Action;  // 0x02A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_2;                 // 0x02A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalDeadInfo                           K2Node_CustomEvent_DeadInfo;                       // 0x02B0(0x0050)(NoDestructor)
-	class UPalDamageReactionComponent*            CallFunc_GetComponentByClass_ReturnValue;          // 0x0300(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0308(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FPalMonsterControllerBaseCampHungryParameter K2Node_Event_Parameter_1;                          // 0x0310(0x000C)(ConstParm, NoDestructor)
-	uint8                                         Pad_4219[0x4];                                     // 0x031C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalAIActionBaseCampBase*               CallFunc_SetAction_RecoverHungry_Action;           // 0x0320(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  K2Node_Event_TargetBedConcreteModelId;             // 0x0328(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalAIActionBase*                       K2Node_Event_Action;                               // 0x0338(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EAIRequestPriority                            K2Node_Event_Priority;                             // 0x0340(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_421A[0x7];                                     // 0x0341(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalMonsterControllerBaseCampLogContent K2Node_Event_Content;                              // 0x0348(0x0048)(ConstParm)
-	struct FPalAIActionBaseCampSleepActivelyParameter K2Node_Event_Parameter;                            // 0x0390(0x0004)(ConstParm, NoDestructor)
-	uint8                                         Pad_421B[0x4];                                     // 0x0394(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_SetAction_WithFixAssignRange_Range_ImplicitCast; // 0x0398(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_1;                 // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0070(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0088(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_LineTraceSingle_OutHit;                   // 0x00A0(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_LineTraceSingle_ReturnValue;              // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_421A[0x3];                                     // 0x0189(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuid                                  K2Node_Event_TargetWorkProgressId;                 // 0x018C(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DistanceFixAssignTargetting;          // 0x019C(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x01A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_421B[0x2];                                     // 0x01A2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_421C[0x4];                                     // 0x01AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x01B0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x01C8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x01E0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x01F8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0210(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0218(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0220(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_BoneName;                  // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x023C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0240(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_421D[0x4];                                     // 0x0244(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0248(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0260(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalAIActionCompositeBase*              CallFunc_SetAction_BaseCamp_Worker_ReturnValue;    // 0x0278(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPalMapBaseCampWorkerOrderType                K2Node_Event_OrderType;                            // 0x0280(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_421E[0x7];                                     // 0x0281(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  K2Node_Event_PossessedPawn;                        // 0x0288(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_2;                 // 0x0290(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalDeadInfo                           K2Node_CustomEvent_DeadInfo;                       // 0x0298(0x0050)(NoDestructor)
+	class UPalDamageReactionComponent*            CallFunc_GetComponentByClass_ReturnValue;          // 0x02E8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue_1;        // 0x02F0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FPalMonsterControllerBaseCampHungryParameter K2Node_Event_parameter_1;                          // 0x02F8(0x000C)(ConstParm, NoDestructor)
+	uint8                                         Pad_421F[0x4];                                     // 0x0304(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalAIActionBaseCampBase*               CallFunc_SetAction_RecoverHungry_Action;           // 0x0308(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  K2Node_Event_TargetBedConcreteModelId;             // 0x0310(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalAIActionBase*                       K2Node_Event_Action;                               // 0x0320(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EAIRequestPriority                            K2Node_Event_Priority;                             // 0x0328(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4220[0x7];                                     // 0x0329(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalMonsterControllerBaseCampLogContent K2Node_Event_Content;                              // 0x0330(0x0048)(ConstParm)
+	struct FPalAIActionBaseCampSleepActivelyParameter K2Node_Event_parameter;                            // 0x0378(0x0004)(ConstParm, NoDestructor)
+	uint8                                         Pad_4221[0x4];                                     // 0x037C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_SetAction_WithFixAssignRange_Range_ImplicitCast; // 0x0380(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp) == 0x000008, "Wrong alignment on BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp");
-static_assert(sizeof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp) == 0x0003A0, "Wrong size on BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp");
+static_assert(sizeof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp) == 0x000388, "Wrong size on BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp");
 static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, EntryPoint) == 0x000000, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_ActionClass) == 0x000008, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_ActionClass' has a wrong offset!");
 static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, Temp_object_Variable) == 0x000010, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_CreateDelegate_OutputDelegate) == 0x000020, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_K2_GetPawn_ReturnValue) == 0x000030, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_K2_GetPawn_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000038, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_Add_VectorVector_ReturnValue) == 0x000050, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000068, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_K2_GetPawn_ReturnValue_1) == 0x000080, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_K2_GetPawn_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_LineTraceSingle_OutHit) == 0x000088, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_LineTraceSingle_OutHit' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_LineTraceSingle_ReturnValue) == 0x000170, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_LineTraceSingle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000178, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_bBlockingHit) == 0x000190, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_bInitialOverlap) == 0x000191, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_Time) == 0x000194, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_Distance) == 0x000198, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_Location) == 0x0001A0, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_ImpactPoint) == 0x0001B8, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_Normal) == 0x0001D0, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_ImpactNormal) == 0x0001E8, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_PhysMat) == 0x000200, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_HitActor) == 0x000208, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_HitComponent) == 0x000210, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_HitBoneName) == 0x000218, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_BoneName) == 0x000220, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_BoneName' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_HitItem) == 0x000228, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_ElementIndex) == 0x00022C, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_FaceIndex) == 0x000230, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_TraceStart) == 0x000238, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_TraceEnd) == 0x000250, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_TargetWorkProgressId) == 0x000268, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_TargetWorkProgressId' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_DistanceFixAssignTargetting) == 0x000278, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_DistanceFixAssignTargetting' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_SetAction_BaseCamp_Worker_ReturnValue) == 0x000280, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_SetAction_BaseCamp_Worker_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_SetAction_BaseCamp_Fighter_Action) == 0x000288, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_SetAction_BaseCamp_Fighter_Action' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_OrderType) == 0x000290, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_OrderType' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_PossessedPawn) == 0x000298, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_PossessedPawn' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_SetAction_BaseCamp_FighterGunner_Action) == 0x0002A0, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_SetAction_BaseCamp_FighterGunner_Action' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_K2_GetPawn_ReturnValue_2) == 0x0002A8, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_K2_GetPawn_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_CustomEvent_DeadInfo) == 0x0002B0, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_CustomEvent_DeadInfo' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_GetComponentByClass_ReturnValue) == 0x000300, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_GetComponentByClass_ReturnValue_1) == 0x000308, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_Parameter_1) == 0x000310, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_Parameter_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_SetAction_RecoverHungry_Action) == 0x000320, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_SetAction_RecoverHungry_Action' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_TargetBedConcreteModelId) == 0x000328, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_TargetBedConcreteModelId' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_Action) == 0x000338, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_Action' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_Priority) == 0x000340, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_Priority' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_Content) == 0x000348, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_Content' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_Parameter) == 0x000390, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_Parameter' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_SetAction_WithFixAssignRange_Range_ImplicitCast) == 0x000398, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_SetAction_WithFixAssignRange_Range_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_K2_GetPawn_ReturnValue_1) == 0x000050, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_K2_GetPawn_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_Add_VectorVector_ReturnValue) == 0x000058, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000070, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000088, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_LineTraceSingle_OutHit) == 0x0000A0, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_LineTraceSingle_OutHit' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_LineTraceSingle_ReturnValue) == 0x000188, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_LineTraceSingle_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_TargetWorkProgressId) == 0x00018C, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_TargetWorkProgressId' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_DistanceFixAssignTargetting) == 0x00019C, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_DistanceFixAssignTargetting' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_bBlockingHit) == 0x0001A0, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_bInitialOverlap) == 0x0001A1, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_Time) == 0x0001A4, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_Distance) == 0x0001A8, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_Location) == 0x0001B0, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_ImpactPoint) == 0x0001C8, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_Normal) == 0x0001E0, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_ImpactNormal) == 0x0001F8, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_PhysMat) == 0x000210, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_HitActor) == 0x000218, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_HitComponent) == 0x000220, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_HitBoneName) == 0x000228, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_BoneName) == 0x000230, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_BoneName' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_HitItem) == 0x000238, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_ElementIndex) == 0x00023C, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_FaceIndex) == 0x000240, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_TraceStart) == 0x000248, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_BreakHitResult_TraceEnd) == 0x000260, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_SetAction_BaseCamp_Worker_ReturnValue) == 0x000278, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_SetAction_BaseCamp_Worker_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_OrderType) == 0x000280, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_OrderType' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_PossessedPawn) == 0x000288, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_PossessedPawn' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_K2_GetPawn_ReturnValue_2) == 0x000290, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_K2_GetPawn_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_CustomEvent_DeadInfo) == 0x000298, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_CustomEvent_DeadInfo' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_GetComponentByClass_ReturnValue) == 0x0002E8, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_GetComponentByClass_ReturnValue_1) == 0x0002F0, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_parameter_1) == 0x0002F8, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_parameter_1' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_SetAction_RecoverHungry_Action) == 0x000308, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_SetAction_RecoverHungry_Action' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_TargetBedConcreteModelId) == 0x000310, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_TargetBedConcreteModelId' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_Action) == 0x000320, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_Action' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_Priority) == 0x000328, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_Priority' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_Content) == 0x000330, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_Content' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_parameter) == 0x000378, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_parameter' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_SetAction_WithFixAssignRange_Range_ImplicitCast) == 0x000380, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_SetAction_WithFixAssignRange_Range_ImplicitCast' has a wrong offset!");
 
 // Function BP_MonsterAIController_BaseCamp.BP_MonsterAIController_BaseCamp_C.FailedFixedAssign
 // 0x00D0 (0x00D0 - 0x0000)
@@ -145,18 +140,18 @@ public:
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalNetworkTransmitter*                 CallFunc_GetNetworkTransmitter_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_421C[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4222[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalNetworkBaseCampComponent*           CallFunc_GetBaseCamp_ReturnValue;                  // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UPalAIActionCompositeBase*              CallFunc_SetAction_BaseCamp_Worker_ReturnValue;    // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_421D[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4223[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalAIActionCompositeWorker*            K2Node_DynamicCast_AsPal_AIAction_Composite_Worker; // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_421E[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4224[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalInstanceID                         CallFunc_GetIndividualID_ReturnValue;              // 0x0050(0x0030)(HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_421F[0x7];                                     // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4225[0x7];                                     // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalMonsterControllerBaseCampLogContent K2Node_MakeStruct_PalMonsterControllerBaseCampLogContent; // 0x0088(0x0048)()
 };
 static_assert(alignof(BP_MonsterAIController_BaseCamp_C_FailedFixedAssign) == 0x000008, "Wrong alignment on BP_MonsterAIController_BaseCamp_C_FailedFixedAssign");
@@ -183,7 +178,7 @@ public:
 	struct FGuid                                  WorkId;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Range;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFound;                                            // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4220[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4226[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IPalBaseCampAssignableObjectInterface> FoundObject;                                       // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalIndividualCharacterHandle*          IndividualHandle;                                  // 0x0030(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalBaseCampModel*                      BaseCamp;                                          // 0x0038(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -192,24 +187,24 @@ public:
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_1;                 // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetRadius_ReturnValue;                    // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4221[0x4];                                     // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4227[0x4];                                     // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_2;                 // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4222[0x8];                                     // 0x0078(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4228[0x8];                                     // 0x0078(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0080(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IPalBaseCampAssignableObjectInterface> CallFunc_FindNearestAssignableObject_FoundObject;  // 0x00E0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	bool                                          CallFunc_FindNearestAssignableObject_ReturnValue;  // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4223[0x2];                                     // 0x00F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4229[0x2];                                     // 0x00F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGuid                                  CallFunc_GetBaseCampId_Base_Camp_Id;               // 0x00F4(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4224[0x4];                                     // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_422A[0x4];                                     // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalWorkBase*                           CallFunc_FindWorkAssignableObject_FoundObject;     // 0x0108(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_FindWorkAssignableObject_ReturnValue;     // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4225[0x7];                                     // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_422B[0x7];                                     // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalBaseCampManager*                    CallFunc_GetBaseCampManager_ReturnValue;           // 0x0118(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalBaseCampModel*                      CallFunc_TryGetModel_OutModel;                     // 0x0120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_TryGetModel_ReturnValue;                  // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4226[0x7];                                     // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_422C[0x7];                                     // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Add_DoubleDouble_B_ImplicitCast;          // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FindNearestAssignableObject_Range_ImplicitCast; // 0x0138(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -304,11 +299,11 @@ struct BP_MonsterAIController_BaseCamp_C_NotifyOrderCommandToCurrentRootAction f
 {
 public:
 	EPalMapBaseCampWorkerOrderType                OrderType;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4227[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_422D[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalAIActionComponent*                  K2Node_DynamicCast_AsPal_AIAction_Component;       // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4228[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_422E[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UPalAIActionCompositeBase*              CallFunc_GetCompositeRoot_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalAIActionCompositeBaseCamp*          K2Node_DynamicCast_AsPal_AIAction_Composite_Base_Camp; // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -354,7 +349,7 @@ struct BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp final
 public:
 	class UClass*                                 AIActionClass;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EAIRequestPriority                            Priority;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4229[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_422F[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalAIActionBaseCampBase*               Action;                                            // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalAIActionComponent*                  CallFunc_GetAIActionComponent_ReturnValue;         // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UPalAIActionBaseCampBase*               CallFunc_SpawnObject_ReturnValue;                  // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -366,59 +361,6 @@ static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp, Pri
 static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp, Action) == 0x000010, "Member 'BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp::Action' has a wrong offset!");
 static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp, CallFunc_GetAIActionComponent_ReturnValue) == 0x000018, "Member 'BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp::CallFunc_GetAIActionComponent_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp, CallFunc_SpawnObject_ReturnValue) == 0x000020, "Member 'BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-
-// Function BP_MonsterAIController_BaseCamp.BP_MonsterAIController_BaseCamp_C.SetAction_BaseCamp_Fighter
-// 0x0010 (0x0010 - 0x0000)
-struct BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter final
-{
-public:
-	class UPalAIActionBaseCampBase*               Action;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalAIActionBaseCampBase*               CallFunc_SetAction_BaseCamp_Action;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter) == 0x000008, "Wrong alignment on BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter");
-static_assert(sizeof(BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter) == 0x000010, "Wrong size on BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter, Action) == 0x000000, "Member 'BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter::Action' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter, CallFunc_SetAction_BaseCamp_Action) == 0x000008, "Member 'BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter::CallFunc_SetAction_BaseCamp_Action' has a wrong offset!");
-
-// Function BP_MonsterAIController_BaseCamp.BP_MonsterAIController_BaseCamp_C.SetAction_BaseCamp_Fighter_ByDefenseType
-// 0x0038 (0x0038 - 0x0000)
-struct BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter_ByDefenseType final
-{
-public:
-	EPalMapObjectDefenseType                      DefenseType;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_422A[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalAIActionBaseCampFighter*            FighterAction;                                     // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	class UPalAIActionBaseCampBase*               Action;                                            // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalAIActionBaseCampFighter*            K2Node_DynamicCast_AsPal_AIAction_Base_Camp_Fighter; // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_422B[0x6];                                     // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalAIActionBaseCampBase*               CallFunc_SetAction_BaseCamp_FighterGunner_Action;  // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalAIActionBaseCampBase*               CallFunc_SetAction_BaseCamp_Fighter_Action;        // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter_ByDefenseType) == 0x000008, "Wrong alignment on BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter_ByDefenseType");
-static_assert(sizeof(BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter_ByDefenseType) == 0x000038, "Wrong size on BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter_ByDefenseType");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter_ByDefenseType, DefenseType) == 0x000000, "Member 'BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter_ByDefenseType::DefenseType' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter_ByDefenseType, FighterAction) == 0x000008, "Member 'BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter_ByDefenseType::FighterAction' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter_ByDefenseType, Action) == 0x000010, "Member 'BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter_ByDefenseType::Action' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter_ByDefenseType, K2Node_DynamicCast_AsPal_AIAction_Base_Camp_Fighter) == 0x000018, "Member 'BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter_ByDefenseType::K2Node_DynamicCast_AsPal_AIAction_Base_Camp_Fighter' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter_ByDefenseType, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter_ByDefenseType::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter_ByDefenseType, K2Node_SwitchEnum_CmpSuccess) == 0x000021, "Member 'BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter_ByDefenseType::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter_ByDefenseType, CallFunc_SetAction_BaseCamp_FighterGunner_Action) == 0x000028, "Member 'BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter_ByDefenseType::CallFunc_SetAction_BaseCamp_FighterGunner_Action' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter_ByDefenseType, CallFunc_SetAction_BaseCamp_Fighter_Action) == 0x000030, "Member 'BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter_ByDefenseType::CallFunc_SetAction_BaseCamp_Fighter_Action' has a wrong offset!");
-
-// Function BP_MonsterAIController_BaseCamp.BP_MonsterAIController_BaseCamp_C.SetAction_BaseCamp_FighterGunner
-// 0x0010 (0x0010 - 0x0000)
-struct BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_FighterGunner final
-{
-public:
-	class UPalAIActionBaseCampBase*               Action;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalAIActionBaseCampBase*               CallFunc_SetAction_BaseCamp_Action;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_FighterGunner) == 0x000008, "Wrong alignment on BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_FighterGunner");
-static_assert(sizeof(BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_FighterGunner) == 0x000010, "Wrong size on BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_FighterGunner");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_FighterGunner, Action) == 0x000000, "Member 'BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_FighterGunner::Action' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_FighterGunner, CallFunc_SetAction_BaseCamp_Action) == 0x000008, "Member 'BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_FighterGunner::CallFunc_SetAction_BaseCamp_Action' has a wrong offset!");
 
 // Function BP_MonsterAIController_BaseCamp.BP_MonsterAIController_BaseCamp_C.SetAction_BaseCamp_Worker
 // 0x0018 (0x0018 - 0x0000)
@@ -460,17 +402,17 @@ public:
 	struct FGuid                                  CallFunc_GetBaseCampId_Base_Camp_Id;               // 0x0010(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalBaseCampModel*                      CallFunc_TryGetModel_OutModel;                     // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_TryGetModel_ReturnValue;                  // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_422C[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4230[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBP_AIAction_ReturnToDefaultPosition_C* CallFunc_SpawnObject_ReturnValue;                  // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetRange_ReturnValue;                     // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_422D[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4231[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0040(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x00A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x00B8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x00D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalAIActionComponent*                  K2Node_DynamicCast_AsPal_AIAction_Component;       // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_422E[0x7];                                     // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4232[0x7];                                     // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Setup_MoveEndDistance_ImplicitCast;       // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_MonsterAIController_BaseCamp_C_SetAction_DefaultPos) == 0x000010, "Wrong alignment on BP_MonsterAIController_BaseCamp_C_SetAction_DefaultPos");
@@ -528,11 +470,11 @@ struct BP_MonsterAIController_BaseCamp_C_SetAction_RecoverHungry final
 {
 public:
 	struct FPalMonsterControllerBaseCampHungryParameter Parameter;                                         // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	uint8                                         Pad_422F[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4233[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalAIActionBaseCampBase*               Action;                                            // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalAIActionBaseCampBase*               CallFunc_SetAction_BaseCamp_Action;                // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FPalMonsterControllerBaseCampHungryParameter CallFunc_SetHungryParameterToDefault_ReturnValue;  // 0x0020(0x000C)(NoDestructor)
-	uint8                                         Pad_4230[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4234[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalAIActionBaseCampRecoverHungry*      K2Node_DynamicCast_AsPal_AIAction_Base_Camp_Recover_Hungry; // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -566,7 +508,7 @@ struct BP_MonsterAIController_BaseCamp_C_SetAction_SleepActively final
 {
 public:
 	struct FPalAIActionBaseCampSleepActivelyParameter Parameter;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-	uint8                                         Pad_4231[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4235[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBP_AIActionBaseCamp_SleepActively_C*   CallFunc_SpawnObject_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalAIActionComponent*                  K2Node_DynamicCast_AsPal_AIAction_Component;       // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -607,20 +549,20 @@ public:
 	class UPalBaseCampModel*                      BaseCamp;                                          // 0x0030(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalAIActionCompositeBase*              CallFunc_SetAction_BaseCamp_Worker_ReturnValue;    // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_FindFixedAssignableObject_bFound;         // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4232[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4236[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IPalBaseCampAssignableObjectInterface> CallFunc_FindFixedAssignableObject_FoundObject;    // 0x0048(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalAIActionCompositeWorker*            K2Node_DynamicCast_AsPal_AIAction_Composite_Worker; // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4233[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4237[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IPalMapObjectModelInterface> CallFunc_ToMapObjectModel_ReturnValue;             // 0x0068(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	class UPalWorkBase*                           K2Node_DynamicCast_AsPal_Work_Base;                // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4234[0x3];                                     // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4238[0x3];                                     // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGuid                                  CallFunc_GetModelId_ReturnValue;                   // 0x0084(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGuid                                  CallFunc_GetWorkId_ReturnValue;                    // 0x0094(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPalBaseCampAssignType                        CallFunc_GetAssignType_ReturnValue;                // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00A5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4235[0x2];                                     // 0x00A6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4239[0x2];                                     // 0x00A6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalAIActionCompositeBase*              CallFunc_SetAction_BaseCamp_Worker_ReturnValue_1;  // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalAIActionCompositeWorker*            K2Node_DynamicCast_AsPal_AIAction_Composite_Worker_1; // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -655,7 +597,7 @@ struct BP_MonsterAIController_BaseCamp_C_SetAction_WorkerEvent final
 public:
 	class UPalAIActionBase*                       Action;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EAIRequestPriority                            Priority;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4236[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_423A[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalAIActionComponent*                  CallFunc_GetAIActionComponent_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_MonsterAIController_BaseCamp_C_SetAction_WorkerEvent) == 0x000008, "Wrong alignment on BP_MonsterAIController_BaseCamp_C_SetAction_WorkerEvent");
@@ -739,7 +681,7 @@ public:
 	class UPalAIActionCompositeBase*              CallFunc_GetCompositeRoot_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ClassIsChildOf_ReturnValue;               // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4237[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_423B[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalAIActionCompositeBase*              CallFunc_GetCompositeRoot_ReturnValue_1;           // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalAIActionCompositeBase*              CallFunc_SpawnObject_ReturnValue_1;                // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };

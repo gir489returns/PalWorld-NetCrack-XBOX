@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function BP_ActionUnlockCagePalLock.BP_ActionUnlockCagePalLock_C.ExecuteUbergraph_BP_ActionUnlockCagePalLock
-// (Final, UbergraphFunction, HasDefaults)
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

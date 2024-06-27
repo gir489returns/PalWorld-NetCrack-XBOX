@@ -20,20 +20,22 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ActionReturnOtomoPal.BP_ActionReturnOtomoPal_C
-// 0x0040 (0x0180 - 0x0140)
+// 0x0050 (0x0190 - 0x0140)
 class UBP_ActionReturnOtomoPal_C final : public UPalActionBase
 {
 public:
-	uint8                                         Pad_4099[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_441A[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0140(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	double                                        Const_PalDeactiveTime;                             // 0x0148(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Const_PlayerMotionTime;                            // 0x0150(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                ToOtomoDirection;                                  // 0x0158(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	double                                        Const_WalkSpeedRate;                               // 0x0170(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UBP_ReturnOtomoSphereComponent_C*       BallComponent;                                     // 0x0178(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterHandle*          PreHandle;                                         // 0x0180(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void AttachBallModel();
+	void CompleteDeactivateOtomo();
 	void DeactivateOtomo();
 	void DeleteBallModel();
 	void ExecuteUbergraph_BP_ActionReturnOtomoPal(int32 EntryPoint);
@@ -54,13 +56,14 @@ public:
 	}
 };
 static_assert(alignof(UBP_ActionReturnOtomoPal_C) == 0x000010, "Wrong alignment on UBP_ActionReturnOtomoPal_C");
-static_assert(sizeof(UBP_ActionReturnOtomoPal_C) == 0x000180, "Wrong size on UBP_ActionReturnOtomoPal_C");
+static_assert(sizeof(UBP_ActionReturnOtomoPal_C) == 0x000190, "Wrong size on UBP_ActionReturnOtomoPal_C");
 static_assert(offsetof(UBP_ActionReturnOtomoPal_C, UberGraphFrame) == 0x000140, "Member 'UBP_ActionReturnOtomoPal_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBP_ActionReturnOtomoPal_C, Const_PalDeactiveTime) == 0x000148, "Member 'UBP_ActionReturnOtomoPal_C::Const_PalDeactiveTime' has a wrong offset!");
 static_assert(offsetof(UBP_ActionReturnOtomoPal_C, Const_PlayerMotionTime) == 0x000150, "Member 'UBP_ActionReturnOtomoPal_C::Const_PlayerMotionTime' has a wrong offset!");
 static_assert(offsetof(UBP_ActionReturnOtomoPal_C, ToOtomoDirection) == 0x000158, "Member 'UBP_ActionReturnOtomoPal_C::ToOtomoDirection' has a wrong offset!");
 static_assert(offsetof(UBP_ActionReturnOtomoPal_C, Const_WalkSpeedRate) == 0x000170, "Member 'UBP_ActionReturnOtomoPal_C::Const_WalkSpeedRate' has a wrong offset!");
 static_assert(offsetof(UBP_ActionReturnOtomoPal_C, BallComponent) == 0x000178, "Member 'UBP_ActionReturnOtomoPal_C::BallComponent' has a wrong offset!");
+static_assert(offsetof(UBP_ActionReturnOtomoPal_C, PreHandle) == 0x000180, "Member 'UBP_ActionReturnOtomoPal_C::PreHandle' has a wrong offset!");
 
 }
 

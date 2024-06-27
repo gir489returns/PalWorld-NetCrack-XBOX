@@ -19,30 +19,33 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_PalInGameMenuItemSlotButton.WBP_PalInGameMenuItemSlotButton_C
-// 0x00A0 (0x0608 - 0x0568)
+// 0x00B8 (0x0630 - 0x0578)
 class UWBP_PalInGameMenuItemSlotButton_C final : public UWBP_PalItemSlotButtonBase_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_WBP_PalInGameMenuItemSlotButton_C;  // 0x0568(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Anm_UnselectToSelect;                              // 0x0570(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anm_RepairOnToOff;                                 // 0x0578(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anm_Bg_Lock;                                       // 0x0580(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anm_Focus;                                         // 0x0588(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anm_Rarity_0To4;                                   // 0x0590(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anm_Bg_Empty;                                      // 0x0598(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Anm_Bg_Normal;                                     // 0x05A0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UCanvasPanel*                           CanvasPanelCorrution;                              // 0x05A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPalProgressBar*                        CorruptionProgressBar;                             // 0x05B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBP_PalTextBlock_C*                     CorruptionRemainTime;                              // 0x05B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 FocusBase;                                         // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 FocusFrame;                                        // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               OverlayRepair;                                     // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UProgressBar*                           ProgressBar_Durable;                               // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBP_PalTextBlock_C*                     Text_ItemWeight;                                   // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_InventoryEquipment_PalIcon_C*      WBP_InventoryEquipment_PalIcon;                    // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_PalInGameMenuItemSlot_C*           WBP_PalInGameMenuItemSlot;                         // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_PalInvisibleButton_C*              WBP_PalInvisibleButton;                            // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          HasLiftting;                                       // 0x0600(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_WBP_PalInGameMenuItemSlotButton_C;  // 0x0578(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Anm_UnselectToSelect;                              // 0x0580(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anm_Bg_Lock;                                       // 0x0588(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anm_Focus;                                         // 0x0590(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Anm_Rarity_0To4;                                   // 0x0598(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 Base;                                              // 0x05A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Base_Empty;                                        // 0x05A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           CanvasPanel_BaseShadow;                            // 0x05B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           CanvasPanelCorrution;                              // 0x05B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           CanvasPanelLineLock;                               // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPalProgressBar*                        CorruptionProgressBar;                             // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBP_PalTextBlock_C*                     CorruptionRemainTime;                              // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 FocusBase;                                         // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 FocusFrame;                                        // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Frame_Empty;                                       // 0x05E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               OverlayRepair;                                     // 0x05F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UProgressBar*                           ProgressBar_Durable;                               // 0x05F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBP_PalTextBlock_C*                     Text_ItemWeight;                                   // 0x0600(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_InventoryEquipment_PalIcon_C*      WBP_InventoryEquipment_PalIcon;                    // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_PalInGameMenuItemSlot_C*           WBP_PalInGameMenuItemSlot;                         // 0x0610(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_PalInvisibleButton_C*              WBP_PalInvisibleButton;                            // 0x0618(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 WeightnumBase;                                     // 0x0620(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          HasLiftting;                                       // 0x0628(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void AnmEvent_Focus();
@@ -82,27 +85,30 @@ public:
 	}
 };
 static_assert(alignof(UWBP_PalInGameMenuItemSlotButton_C) == 0x000008, "Wrong alignment on UWBP_PalInGameMenuItemSlotButton_C");
-static_assert(sizeof(UWBP_PalInGameMenuItemSlotButton_C) == 0x000608, "Wrong size on UWBP_PalInGameMenuItemSlotButton_C");
-static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, UberGraphFrame_WBP_PalInGameMenuItemSlotButton_C) == 0x000568, "Member 'UWBP_PalInGameMenuItemSlotButton_C::UberGraphFrame_WBP_PalInGameMenuItemSlotButton_C' has a wrong offset!");
-static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, Anm_UnselectToSelect) == 0x000570, "Member 'UWBP_PalInGameMenuItemSlotButton_C::Anm_UnselectToSelect' has a wrong offset!");
-static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, Anm_RepairOnToOff) == 0x000578, "Member 'UWBP_PalInGameMenuItemSlotButton_C::Anm_RepairOnToOff' has a wrong offset!");
-static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, Anm_Bg_Lock) == 0x000580, "Member 'UWBP_PalInGameMenuItemSlotButton_C::Anm_Bg_Lock' has a wrong offset!");
-static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, Anm_Focus) == 0x000588, "Member 'UWBP_PalInGameMenuItemSlotButton_C::Anm_Focus' has a wrong offset!");
-static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, Anm_Rarity_0To4) == 0x000590, "Member 'UWBP_PalInGameMenuItemSlotButton_C::Anm_Rarity_0To4' has a wrong offset!");
-static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, Anm_Bg_Empty) == 0x000598, "Member 'UWBP_PalInGameMenuItemSlotButton_C::Anm_Bg_Empty' has a wrong offset!");
-static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, Anm_Bg_Normal) == 0x0005A0, "Member 'UWBP_PalInGameMenuItemSlotButton_C::Anm_Bg_Normal' has a wrong offset!");
-static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, CanvasPanelCorrution) == 0x0005A8, "Member 'UWBP_PalInGameMenuItemSlotButton_C::CanvasPanelCorrution' has a wrong offset!");
-static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, CorruptionProgressBar) == 0x0005B0, "Member 'UWBP_PalInGameMenuItemSlotButton_C::CorruptionProgressBar' has a wrong offset!");
-static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, CorruptionRemainTime) == 0x0005B8, "Member 'UWBP_PalInGameMenuItemSlotButton_C::CorruptionRemainTime' has a wrong offset!");
-static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, FocusBase) == 0x0005C0, "Member 'UWBP_PalInGameMenuItemSlotButton_C::FocusBase' has a wrong offset!");
-static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, FocusFrame) == 0x0005C8, "Member 'UWBP_PalInGameMenuItemSlotButton_C::FocusFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, OverlayRepair) == 0x0005D0, "Member 'UWBP_PalInGameMenuItemSlotButton_C::OverlayRepair' has a wrong offset!");
-static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, ProgressBar_Durable) == 0x0005D8, "Member 'UWBP_PalInGameMenuItemSlotButton_C::ProgressBar_Durable' has a wrong offset!");
-static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, Text_ItemWeight) == 0x0005E0, "Member 'UWBP_PalInGameMenuItemSlotButton_C::Text_ItemWeight' has a wrong offset!");
-static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, WBP_InventoryEquipment_PalIcon) == 0x0005E8, "Member 'UWBP_PalInGameMenuItemSlotButton_C::WBP_InventoryEquipment_PalIcon' has a wrong offset!");
-static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, WBP_PalInGameMenuItemSlot) == 0x0005F0, "Member 'UWBP_PalInGameMenuItemSlotButton_C::WBP_PalInGameMenuItemSlot' has a wrong offset!");
-static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, WBP_PalInvisibleButton) == 0x0005F8, "Member 'UWBP_PalInGameMenuItemSlotButton_C::WBP_PalInvisibleButton' has a wrong offset!");
-static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, HasLiftting) == 0x000600, "Member 'UWBP_PalInGameMenuItemSlotButton_C::HasLiftting' has a wrong offset!");
+static_assert(sizeof(UWBP_PalInGameMenuItemSlotButton_C) == 0x000630, "Wrong size on UWBP_PalInGameMenuItemSlotButton_C");
+static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, UberGraphFrame_WBP_PalInGameMenuItemSlotButton_C) == 0x000578, "Member 'UWBP_PalInGameMenuItemSlotButton_C::UberGraphFrame_WBP_PalInGameMenuItemSlotButton_C' has a wrong offset!");
+static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, Anm_UnselectToSelect) == 0x000580, "Member 'UWBP_PalInGameMenuItemSlotButton_C::Anm_UnselectToSelect' has a wrong offset!");
+static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, Anm_Bg_Lock) == 0x000588, "Member 'UWBP_PalInGameMenuItemSlotButton_C::Anm_Bg_Lock' has a wrong offset!");
+static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, Anm_Focus) == 0x000590, "Member 'UWBP_PalInGameMenuItemSlotButton_C::Anm_Focus' has a wrong offset!");
+static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, Anm_Rarity_0To4) == 0x000598, "Member 'UWBP_PalInGameMenuItemSlotButton_C::Anm_Rarity_0To4' has a wrong offset!");
+static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, Base) == 0x0005A0, "Member 'UWBP_PalInGameMenuItemSlotButton_C::Base' has a wrong offset!");
+static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, Base_Empty) == 0x0005A8, "Member 'UWBP_PalInGameMenuItemSlotButton_C::Base_Empty' has a wrong offset!");
+static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, CanvasPanel_BaseShadow) == 0x0005B0, "Member 'UWBP_PalInGameMenuItemSlotButton_C::CanvasPanel_BaseShadow' has a wrong offset!");
+static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, CanvasPanelCorrution) == 0x0005B8, "Member 'UWBP_PalInGameMenuItemSlotButton_C::CanvasPanelCorrution' has a wrong offset!");
+static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, CanvasPanelLineLock) == 0x0005C0, "Member 'UWBP_PalInGameMenuItemSlotButton_C::CanvasPanelLineLock' has a wrong offset!");
+static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, CorruptionProgressBar) == 0x0005C8, "Member 'UWBP_PalInGameMenuItemSlotButton_C::CorruptionProgressBar' has a wrong offset!");
+static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, CorruptionRemainTime) == 0x0005D0, "Member 'UWBP_PalInGameMenuItemSlotButton_C::CorruptionRemainTime' has a wrong offset!");
+static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, FocusBase) == 0x0005D8, "Member 'UWBP_PalInGameMenuItemSlotButton_C::FocusBase' has a wrong offset!");
+static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, FocusFrame) == 0x0005E0, "Member 'UWBP_PalInGameMenuItemSlotButton_C::FocusFrame' has a wrong offset!");
+static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, Frame_Empty) == 0x0005E8, "Member 'UWBP_PalInGameMenuItemSlotButton_C::Frame_Empty' has a wrong offset!");
+static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, OverlayRepair) == 0x0005F0, "Member 'UWBP_PalInGameMenuItemSlotButton_C::OverlayRepair' has a wrong offset!");
+static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, ProgressBar_Durable) == 0x0005F8, "Member 'UWBP_PalInGameMenuItemSlotButton_C::ProgressBar_Durable' has a wrong offset!");
+static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, Text_ItemWeight) == 0x000600, "Member 'UWBP_PalInGameMenuItemSlotButton_C::Text_ItemWeight' has a wrong offset!");
+static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, WBP_InventoryEquipment_PalIcon) == 0x000608, "Member 'UWBP_PalInGameMenuItemSlotButton_C::WBP_InventoryEquipment_PalIcon' has a wrong offset!");
+static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, WBP_PalInGameMenuItemSlot) == 0x000610, "Member 'UWBP_PalInGameMenuItemSlotButton_C::WBP_PalInGameMenuItemSlot' has a wrong offset!");
+static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, WBP_PalInvisibleButton) == 0x000618, "Member 'UWBP_PalInGameMenuItemSlotButton_C::WBP_PalInvisibleButton' has a wrong offset!");
+static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, WeightnumBase) == 0x000620, "Member 'UWBP_PalInGameMenuItemSlotButton_C::WeightnumBase' has a wrong offset!");
+static_assert(offsetof(UWBP_PalInGameMenuItemSlotButton_C, HasLiftting) == 0x000628, "Member 'UWBP_PalInGameMenuItemSlotButton_C::HasLiftting' has a wrong offset!");
 
 }
 

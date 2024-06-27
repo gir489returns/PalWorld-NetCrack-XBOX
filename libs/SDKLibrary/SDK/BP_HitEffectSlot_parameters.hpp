@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "AkAudio_structs.hpp"
 #include "Pal_structs.hpp"
+#include "AkAudio_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -24,7 +24,7 @@ struct BP_HitEffectSlot_C_CryCoolTime final
 {
 public:
 	EAkCallbackType                               CallbackType;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C58[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_42EC[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAkCallbackInfo*                        CallbackInfo;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_HitEffectSlot_C_CryCoolTime) == 0x000008, "Wrong alignment on BP_HitEffectSlot_C_CryCoolTime");
@@ -38,14 +38,14 @@ struct BP_HitEffectSlot_C_ExecuteUbergraph_BP_HitEffectSlot final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C59[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_42ED[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UNiagaraSystem*                         K2Node_DynamicCast_AsNiagara_System;               // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C5A[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_42EE[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                K2Node_CustomEvent_Loaded;                         // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TSoftObjectPtr<class UNiagaraSystem>          K2Node_CustomEvent_EffectPath;                     // 0x0028(0x0030)(HasGetValueTypeHash)
-	uint8                                         Pad_3C5B[0x8];                                     // 0x0058(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_42EF[0x8];                                     // 0x0058(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             K2Node_CustomEvent_Transform;                      // 0x0060(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x00C0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x00D8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -55,7 +55,7 @@ public:
 	struct FPalDamageInfo                         K2Node_Event_info;                                 // 0x0120(0x00D0)(ConstParm)
 	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x01F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EAkCallbackType                               K2Node_CustomEvent_CallbackType;                   // 0x01F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C5C[0x3];                                     // 0x01F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_42F0[0x3];                                     // 0x01F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAkCallbackInfo*                        K2Node_CustomEvent_CallbackInfo;                   // 0x01F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_SpawnSpecializationEffect_Played;         // 0x0201(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -88,19 +88,19 @@ static_assert(offsetof(BP_HitEffectSlot_C_ExecuteUbergraph_BP_HitEffectSlot, K2N
 static_assert(offsetof(BP_HitEffectSlot_C_ExecuteUbergraph_BP_HitEffectSlot, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000204, "Member 'BP_HitEffectSlot_C_ExecuteUbergraph_BP_HitEffectSlot::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
 
 // Function BP_HitEffectSlot.BP_HitEffectSlot_C.IsEnableCameraShake
-// 0x0068 (0x0068 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct BP_HitEffectSlot_C_IsEnableCameraShake final
 {
 public:
 	bool                                          IsEnable;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C5D[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_42F1[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalOptionSubsystem*                    CallFunc_GetOptionSubsystem_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C5E[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalOptionGraphicsSettings             CallFunc_GetGraphicsSettings_ReturnValue;          // 0x0014(0x0054)(ConstParm, NoDestructor)
+	uint8                                         Pad_42F2[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalOptionGraphicsSettings             CallFunc_GetGraphicsSettings_ReturnValue;          // 0x0014(0x0058)(ConstParm, NoDestructor)
 };
 static_assert(alignof(BP_HitEffectSlot_C_IsEnableCameraShake) == 0x000008, "Wrong alignment on BP_HitEffectSlot_C_IsEnableCameraShake");
-static_assert(sizeof(BP_HitEffectSlot_C_IsEnableCameraShake) == 0x000068, "Wrong size on BP_HitEffectSlot_C_IsEnableCameraShake");
+static_assert(sizeof(BP_HitEffectSlot_C_IsEnableCameraShake) == 0x000070, "Wrong size on BP_HitEffectSlot_C_IsEnableCameraShake");
 static_assert(offsetof(BP_HitEffectSlot_C_IsEnableCameraShake, IsEnable) == 0x000000, "Member 'BP_HitEffectSlot_C_IsEnableCameraShake::IsEnable' has a wrong offset!");
 static_assert(offsetof(BP_HitEffectSlot_C_IsEnableCameraShake, CallFunc_GetOptionSubsystem_ReturnValue) == 0x000008, "Member 'BP_HitEffectSlot_C_IsEnableCameraShake::CallFunc_GetOptionSubsystem_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_HitEffectSlot_C_IsEnableCameraShake, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BP_HitEffectSlot_C_IsEnableCameraShake::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -131,39 +131,37 @@ static_assert(sizeof(BP_HitEffectSlot_C_OnLoaded_D5A0C82B4BA3C329BE0E728CCA76191
 static_assert(offsetof(BP_HitEffectSlot_C_OnLoaded_D5A0C82B4BA3C329BE0E728CCA761919, Loaded) == 0x000000, "Member 'BP_HitEffectSlot_C_OnLoaded_D5A0C82B4BA3C329BE0E728CCA761919::Loaded' has a wrong offset!");
 
 // Function BP_HitEffectSlot.BP_HitEffectSlot_C.PlayCameraShakeAndSoundEffect
-// 0x0098 (0x0098 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect final
 {
 public:
 	EPalWazaCategory                              Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C5F[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_42F3[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Attacker;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          SpecializedEffectPlayed;                           // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsEnableCameraShake_IsEnable;             // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C60[0x6];                                     // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_42F4[0x6];                                     // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character;         // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C61[0x6];                                     // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_42F5[0x6];                                     // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalPlayerController*                   CallFunc_GetPalPlayerController_ReturnValue;       // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable;                            // 0x0030(0x0010)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C62[0x6];                                     // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FAkExternalSourceInfo>          Temp_struct_Variable;                              // 0x0058(0x0010)(ConstParm, ReferenceParm)
-	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C63[0x4];                                     // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue_1;     // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalShooterComponent*                   CallFunc_GetComponentByClass_ReturnValue;          // 0x0078(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UCameraShakeBase*                       CallFunc_StartCameraShake_ReturnValue;             // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalWeaponBase*                         CallFunc_GetHasWeapon_ReturnValue;                 // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_1;    // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_42F6[0x2];                                     // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable;                            // 0x0044(0x0010)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue_1;     // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalShooterComponent*                   CallFunc_GetComponentByClass_ReturnValue;          // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UCameraShakeBase*                       CallFunc_StartCameraShake_ReturnValue;             // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalWeaponBase*                         CallFunc_GetHasWeapon_ReturnValue;                 // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_1;    // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect) == 0x000008, "Wrong alignment on BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect");
-static_assert(sizeof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect) == 0x000098, "Wrong size on BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect");
+static_assert(sizeof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect) == 0x000080, "Wrong size on BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect");
 static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, Category) == 0x000000, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::Category' has a wrong offset!");
 static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, Attacker) == 0x000008, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::Attacker' has a wrong offset!");
 static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, SpecializedEffectPlayed) == 0x000010, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::SpecializedEffectPlayed' has a wrong offset!");
@@ -172,19 +170,18 @@ static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, K2Node_
 static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000021, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_GetPalPlayerController_ReturnValue) == 0x000028, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_GetPalPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, Temp_delegate_Variable) == 0x000030, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::Temp_delegate_Variable' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000040, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_GetOwner_ReturnValue) == 0x000048, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000050, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_BooleanAND_ReturnValue) == 0x000051, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, Temp_struct_Variable) == 0x000058, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_PostEvent_ReturnValue) == 0x000068, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_PostEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_GetPlayerCameraManager_ReturnValue_1) == 0x000070, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_GetPlayerCameraManager_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_GetComponentByClass_ReturnValue) == 0x000078, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_StartCameraShake_ReturnValue) == 0x000080, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_StartCameraShake_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_GetHasWeapon_ReturnValue) == 0x000088, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_GetHasWeapon_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_EqualEqual_ObjectObject_ReturnValue_1) == 0x000090, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_EqualEqual_ObjectObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_BooleanAND_ReturnValue_1) == 0x000091, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000030, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_GetOwner_ReturnValue) == 0x000038, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000040, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_BooleanAND_ReturnValue) == 0x000041, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, Temp_delegate_Variable) == 0x000044, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::Temp_delegate_Variable' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_PostEvent_ReturnValue) == 0x000054, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_PostEvent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_GetPlayerCameraManager_ReturnValue_1) == 0x000058, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_GetPlayerCameraManager_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_GetComponentByClass_ReturnValue) == 0x000060, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_StartCameraShake_ReturnValue) == 0x000068, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_StartCameraShake_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_GetHasWeapon_ReturnValue) == 0x000070, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_GetHasWeapon_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_EqualEqual_ObjectObject_ReturnValue_1) == 0x000078, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_EqualEqual_ObjectObject_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect, CallFunc_BooleanAND_ReturnValue_1) == 0x000079, "Member 'BP_HitEffectSlot_C_PlayCameraShakeAndSoundEffect::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
 
 // Function BP_HitEffectSlot.BP_HitEffectSlot_C.PlayHitEffect
 // 0x00D0 (0x00D0 - 0x0000)
@@ -204,7 +201,7 @@ struct BP_HitEffectSlot_C_PlayHitSound final
 public:
 	struct FPalDamageInfo                         PalDamageInfo;                                     // 0x0000(0x00D0)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	EPalBodyPartsType                             Temp_byte_Variable;                                // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C64[0x7];                                     // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_42F7[0x7];                                     // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAkAudioEvent*                          Temp_object_Variable;                              // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UAkAudioEvent*                          Temp_object_Variable_1;                            // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UAkAudioEvent*                          Temp_object_Variable_2;                            // 0x00E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -233,17 +230,17 @@ struct BP_HitEffectSlot_C_SpawnElementalHitEffectBullet final
 {
 public:
 	EPalElementType                               Element;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C65[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_42F8[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Location;                                          // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        EffectScale;                                       // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TSoftObjectPtr<class UNiagaraSystem>          EffectPath;                                        // 0x0028(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	double                                        Scale;                                             // 0x0058(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C66[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_42F9[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue;           // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0080(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C67[0x3];                                     // 0x00E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_42FA[0x3];                                     // 0x00E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_FloatToVector_InFloat_ImplicitCast;  // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_HitEffectSlot_C_SpawnElementalHitEffectBullet) == 0x000010, "Wrong alignment on BP_HitEffectSlot_C_SpawnElementalHitEffectBullet");
@@ -265,17 +262,17 @@ struct BP_HitEffectSlot_C_SpawnElementalHitEffectFar final
 {
 public:
 	EPalElementType                               Element;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C68[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_42FB[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Location;                                          // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        EffectScale;                                       // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsPoison;                                          // 0x0028(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C69[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_42FC[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UNiagaraSystem>          EffectPath;                                        // 0x0030(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	double                                        Scale;                                             // 0x0060(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C6A[0x7];                                     // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_42FD[0x7];                                     // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue;           // 0x0070(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C6B[0x8];                                     // 0x0088(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_42FE[0x8];                                     // 0x0088(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0090(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_FloatToVector_InFloat_ImplicitCast;  // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -298,13 +295,13 @@ struct BP_HitEffectSlot_C_SpawnElementalHitEffectNear final
 {
 public:
 	EPalElementType                               Element;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C6C[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_42FF[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Location;                                          // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        EffectScale;                                       // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TSoftObjectPtr<class UNiagaraSystem>          EffectPath;                                        // 0x0028(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	double                                        Scale;                                             // 0x0058(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C6D[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4300[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue;           // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0080(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_FloatToVector_InFloat_ImplicitCast;  // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -327,7 +324,7 @@ struct BP_HitEffectSlot_C_SpawnSneakAttackEffect final
 {
 public:
 	struct FVector                                Location;                                          // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C6E[0x8];                                     // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4301[0x8];                                     // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0020(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_HitEffectSlot_C_SpawnSneakAttackEffect) == 0x000010, "Wrong alignment on BP_HitEffectSlot_C_SpawnSneakAttackEffect");
@@ -336,7 +333,7 @@ static_assert(offsetof(BP_HitEffectSlot_C_SpawnSneakAttackEffect, Location) == 0
 static_assert(offsetof(BP_HitEffectSlot_C_SpawnSneakAttackEffect, CallFunc_MakeTransform_ReturnValue) == 0x000020, "Member 'BP_HitEffectSlot_C_SpawnSneakAttackEffect::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
 
 // Function BP_HitEffectSlot.BP_HitEffectSlot_C.SpawnSpecializationEffect
-// 0x0310 (0x0310 - 0x0000)
+// 0x02C0 (0x02C0 - 0x0000)
 struct BP_HitEffectSlot_C_SpawnSpecializationEffect final
 {
 public:
@@ -344,75 +341,69 @@ public:
 	struct FVector                                Location;                                          // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        EffectScale;                                       // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Played;                                            // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C6F[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4302[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalShooterComponent*                   LocalShooter;                                      // 0x0030(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable;                            // 0x0038(0x0010)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalShooterComponent*                   CallFunc_GetComponentByClass_ReturnValue;          // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C70[0x7];                                     // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FAkExternalSourceInfo>          Temp_struct_Variable;                              // 0x0058(0x0010)(ConstParm, ReferenceParm)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_1;                          // 0x0070(0x0010)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C71[0x4];                                     // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FAkExternalSourceInfo>          Temp_struct_Variable_1;                            // 0x0088(0x0010)(ConstParm, ReferenceParm)
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_2;                          // 0x0098(0x0010)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FAkExternalSourceInfo>          Temp_struct_Variable_2;                            // 0x00A8(0x0010)(ConstParm, ReferenceParm)
-	class UPalCharacterCameraComponent*           CallFunc_GetComponentByClass_ReturnValue_1;        // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue;           // 0x00C0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x00D8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_FindLookAtRotation_ReturnValue;           // 0x00F0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3C72[0x8];                                     // 0x0108(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0110(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_3;                          // 0x0170(0x0010)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_PostEvent_ReturnValue_1;                  // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_PostEvent_ReturnValue_2;                  // 0x0184(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalCharacterCameraComponent*           CallFunc_GetComponentByClass_ReturnValue_2;        // 0x0188(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                CallFunc_GetOuterObject_ReturnValue;               // 0x0190(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_1;    // 0x0198(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalFoliageDamageReactionComponent*     K2Node_DynamicCast_AsPal_Foliage_Damage_Reaction_Component; // 0x01B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C73[0x7];                                     // 0x01B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_FindLookAtRotation_ReturnValue_1;         // 0x01C0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	TArray<struct FAkExternalSourceInfo>          Temp_struct_Variable_3;                            // 0x01D8(0x0010)(ConstParm, ReferenceParm)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_PostEvent_ReturnValue_3;                  // 0x01EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C74[0x3];                                     // 0x01F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 CallFunc_Array_Get_Item;                           // 0x01F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue_1;         // 0x0200(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C75[0x8];                                     // 0x0218(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x0220(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APalWeaponBase*                         CallFunc_GetHasWeapon_ReturnValue;                 // 0x0280(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0288(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C76[0x7];                                     // 0x0289(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_AxeBase_C*                          K2Node_DynamicCast_AsBP_Axe_Base;                  // 0x0290(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C77[0x7];                                     // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_FindOwnerActor_ReturnValue;               // 0x02A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x02A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ClassClass_ReturnValue;        // 0x02B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ClassIsChildOf_ReturnValue;               // 0x02B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x02B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C78[0x5];                                     // 0x02B3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalWeaponBase*                         CallFunc_GetHasWeapon_ReturnValue_1;               // 0x02B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_1;    // 0x02C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C79[0x7];                                     // 0x02C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_PickaxeBase_C*                      K2Node_DynamicCast_AsBP_Pickaxe_Base;              // 0x02C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C7A[0x7];                                     // 0x02D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_FindOwnerActor_ReturnValue_1;             // 0x02D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 CallFunc_GetObjectClass_ReturnValue_1;             // 0x02E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_GetClassDisplayName_ReturnValue;          // 0x02E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_StartsWith_ReturnValue;                   // 0x02F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C7B[0x3];                                     // 0x02F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Conv_FloatToVector_InFloat_ImplicitCast;  // 0x02FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_FloatToVector_InFloat_ImplicitCast_1; // 0x0300(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4303[0x3];                                     // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalCharacterCameraComponent*           CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue;           // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0080(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_FindLookAtRotation_ReturnValue;           // 0x0098(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x00B0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_1;                          // 0x0110(0x0010)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_2;                          // 0x0120(0x0010)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostEvent_ReturnValue_1;                  // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostEvent_ReturnValue_2;                  // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalCharacterCameraComponent*           CallFunc_GetComponentByClass_ReturnValue_2;        // 0x0138(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                CallFunc_GetOuterObject_ReturnValue;               // 0x0140(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_1;    // 0x0148(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalFoliageDamageReactionComponent*     K2Node_DynamicCast_AsPal_Foliage_Damage_Reaction_Component; // 0x0160(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4304[0x7];                                     // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               CallFunc_FindLookAtRotation_ReturnValue_1;         // 0x0170(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 CallFunc_Array_Get_Item;                           // 0x0190(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4305[0x7];                                     // 0x0199(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue_1;         // 0x01A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4306[0x8];                                     // 0x01B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x01C0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalWeaponBase*                         CallFunc_GetHasWeapon_ReturnValue;                 // 0x0220(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0228(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4307[0x7];                                     // 0x0229(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_AxeBase_C*                          K2Node_DynamicCast_AsBP_Axe_Base;                  // 0x0230(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4308[0x7];                                     // 0x0239(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_FindOwnerActor_ReturnValue;               // 0x0240(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x0248(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ClassClass_ReturnValue;        // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ClassIsChildOf_ReturnValue;               // 0x0251(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0252(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4309[0x5];                                     // 0x0253(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalWeaponBase*                         CallFunc_GetHasWeapon_ReturnValue_1;               // 0x0258(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_1;    // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_430A[0x7];                                     // 0x0261(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_PickaxeBase_C*                      K2Node_DynamicCast_AsBP_Pickaxe_Base;              // 0x0268(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_430B[0x3];                                     // 0x0271(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_3;                          // 0x0274(0x0010)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostEvent_ReturnValue_3;                  // 0x0284(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_FindOwnerActor_ReturnValue_1;             // 0x0288(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 CallFunc_GetObjectClass_ReturnValue_1;             // 0x0290(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetClassDisplayName_ReturnValue;          // 0x0298(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_StartsWith_ReturnValue;                   // 0x02A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_430C[0x3];                                     // 0x02A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Conv_FloatToVector_InFloat_ImplicitCast;  // 0x02AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_FloatToVector_InFloat_ImplicitCast_1; // 0x02B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_HitEffectSlot_C_SpawnSpecializationEffect) == 0x000010, "Wrong alignment on BP_HitEffectSlot_C_SpawnSpecializationEffect");
-static_assert(sizeof(BP_HitEffectSlot_C_SpawnSpecializationEffect) == 0x000310, "Wrong size on BP_HitEffectSlot_C_SpawnSpecializationEffect");
+static_assert(sizeof(BP_HitEffectSlot_C_SpawnSpecializationEffect) == 0x0002C0, "Wrong size on BP_HitEffectSlot_C_SpawnSpecializationEffect");
 static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, Attacker) == 0x000000, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::Attacker' has a wrong offset!");
 static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, Location) == 0x000008, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::Location' has a wrong offset!");
 static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, EffectScale) == 0x000020, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::EffectScale' has a wrong offset!");
@@ -421,55 +412,51 @@ static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, LocalShoote
 static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, Temp_delegate_Variable) == 0x000038, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::Temp_delegate_Variable' has a wrong offset!");
 static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_GetComponentByClass_ReturnValue) == 0x000048, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_IsValid_ReturnValue) == 0x000050, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, Temp_struct_Variable) == 0x000058, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, Temp_int_Loop_Counter_Variable) == 0x000068, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_Add_IntInt_ReturnValue) == 0x00006C, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, Temp_delegate_Variable_1) == 0x000070, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::Temp_delegate_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_PostEvent_ReturnValue) == 0x000080, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_PostEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, Temp_struct_Variable_1) == 0x000088, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, Temp_delegate_Variable_2) == 0x000098, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::Temp_delegate_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, Temp_struct_Variable_2) == 0x0000A8, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_GetComponentByClass_ReturnValue_1) == 0x0000B8, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_Conv_FloatToVector_ReturnValue) == 0x0000C0, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_Conv_FloatToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0000D8, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_FindLookAtRotation_ReturnValue) == 0x0000F0, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_FindLookAtRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_MakeTransform_ReturnValue) == 0x000110, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, Temp_delegate_Variable_3) == 0x000170, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::Temp_delegate_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_PostEvent_ReturnValue_1) == 0x000180, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_PostEvent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_PostEvent_ReturnValue_2) == 0x000184, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_PostEvent_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_GetComponentByClass_ReturnValue_2) == 0x000188, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_GetComponentByClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_GetOuterObject_ReturnValue) == 0x000190, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_GetOuterObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x000198, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, K2Node_DynamicCast_AsPal_Foliage_Damage_Reaction_Component) == 0x0001B0, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::K2Node_DynamicCast_AsPal_Foliage_Damage_Reaction_Component' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, K2Node_DynamicCast_bSuccess) == 0x0001B8, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_FindLookAtRotation_ReturnValue_1) == 0x0001C0, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_FindLookAtRotation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, Temp_struct_Variable_3) == 0x0001D8, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::Temp_struct_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_Array_Length_ReturnValue) == 0x0001E8, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_PostEvent_ReturnValue_3) == 0x0001EC, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_PostEvent_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_Less_IntInt_ReturnValue) == 0x0001F0, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, Temp_int_Array_Index_Variable) == 0x0001F4, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_Array_Get_Item) == 0x0001F8, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_Conv_FloatToVector_ReturnValue_1) == 0x000200, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_Conv_FloatToVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_MakeTransform_ReturnValue_1) == 0x000220, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_GetHasWeapon_ReturnValue) == 0x000280, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_GetHasWeapon_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000288, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, K2Node_DynamicCast_AsBP_Axe_Base) == 0x000290, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::K2Node_DynamicCast_AsBP_Axe_Base' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, K2Node_DynamicCast_bSuccess_1) == 0x000298, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_FindOwnerActor_ReturnValue) == 0x0002A0, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_FindOwnerActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_GetObjectClass_ReturnValue) == 0x0002A8, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_GetObjectClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_EqualEqual_ClassClass_ReturnValue) == 0x0002B0, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_EqualEqual_ClassClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_ClassIsChildOf_ReturnValue) == 0x0002B1, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_ClassIsChildOf_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_BooleanOR_ReturnValue) == 0x0002B2, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_GetHasWeapon_ReturnValue_1) == 0x0002B8, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_GetHasWeapon_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_EqualEqual_ObjectObject_ReturnValue_1) == 0x0002C0, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_EqualEqual_ObjectObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, K2Node_DynamicCast_AsBP_Pickaxe_Base) == 0x0002C8, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::K2Node_DynamicCast_AsBP_Pickaxe_Base' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, K2Node_DynamicCast_bSuccess_2) == 0x0002D0, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_FindOwnerActor_ReturnValue_1) == 0x0002D8, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_FindOwnerActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_GetObjectClass_ReturnValue_1) == 0x0002E0, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_GetObjectClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_GetClassDisplayName_ReturnValue) == 0x0002E8, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_GetClassDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_StartsWith_ReturnValue) == 0x0002F8, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_StartsWith_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_Conv_FloatToVector_InFloat_ImplicitCast) == 0x0002FC, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_Conv_FloatToVector_InFloat_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_Conv_FloatToVector_InFloat_ImplicitCast_1) == 0x000300, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_Conv_FloatToVector_InFloat_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_PostEvent_ReturnValue) == 0x000054, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_PostEvent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, Temp_int_Loop_Counter_Variable) == 0x000058, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_Add_IntInt_ReturnValue) == 0x00005C, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_GetComponentByClass_ReturnValue_1) == 0x000060, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_Conv_FloatToVector_ReturnValue) == 0x000068, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_Conv_FloatToVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000080, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_FindLookAtRotation_ReturnValue) == 0x000098, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_FindLookAtRotation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_MakeTransform_ReturnValue) == 0x0000B0, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, Temp_delegate_Variable_1) == 0x000110, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::Temp_delegate_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, Temp_delegate_Variable_2) == 0x000120, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::Temp_delegate_Variable_2' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_PostEvent_ReturnValue_1) == 0x000130, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_PostEvent_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_PostEvent_ReturnValue_2) == 0x000134, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_PostEvent_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_GetComponentByClass_ReturnValue_2) == 0x000138, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_GetComponentByClass_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_GetOuterObject_ReturnValue) == 0x000140, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_GetOuterObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x000148, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, K2Node_DynamicCast_AsPal_Foliage_Damage_Reaction_Component) == 0x000160, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::K2Node_DynamicCast_AsPal_Foliage_Damage_Reaction_Component' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, K2Node_DynamicCast_bSuccess) == 0x000168, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_FindLookAtRotation_ReturnValue_1) == 0x000170, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_FindLookAtRotation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, Temp_int_Array_Index_Variable) == 0x000188, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_Array_Length_ReturnValue) == 0x00018C, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_Array_Get_Item) == 0x000190, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_Less_IntInt_ReturnValue) == 0x000198, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_Conv_FloatToVector_ReturnValue_1) == 0x0001A0, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_Conv_FloatToVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_MakeTransform_ReturnValue_1) == 0x0001C0, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_MakeTransform_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_GetHasWeapon_ReturnValue) == 0x000220, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_GetHasWeapon_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000228, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, K2Node_DynamicCast_AsBP_Axe_Base) == 0x000230, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::K2Node_DynamicCast_AsBP_Axe_Base' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, K2Node_DynamicCast_bSuccess_1) == 0x000238, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_FindOwnerActor_ReturnValue) == 0x000240, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_FindOwnerActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_GetObjectClass_ReturnValue) == 0x000248, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_GetObjectClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_EqualEqual_ClassClass_ReturnValue) == 0x000250, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_EqualEqual_ClassClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_ClassIsChildOf_ReturnValue) == 0x000251, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_ClassIsChildOf_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_BooleanOR_ReturnValue) == 0x000252, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_GetHasWeapon_ReturnValue_1) == 0x000258, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_GetHasWeapon_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_EqualEqual_ObjectObject_ReturnValue_1) == 0x000260, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_EqualEqual_ObjectObject_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, K2Node_DynamicCast_AsBP_Pickaxe_Base) == 0x000268, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::K2Node_DynamicCast_AsBP_Pickaxe_Base' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, K2Node_DynamicCast_bSuccess_2) == 0x000270, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, Temp_delegate_Variable_3) == 0x000274, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::Temp_delegate_Variable_3' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_PostEvent_ReturnValue_3) == 0x000284, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_PostEvent_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_FindOwnerActor_ReturnValue_1) == 0x000288, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_FindOwnerActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_GetObjectClass_ReturnValue_1) == 0x000290, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_GetObjectClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_GetClassDisplayName_ReturnValue) == 0x000298, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_GetClassDisplayName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_StartsWith_ReturnValue) == 0x0002A8, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_StartsWith_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_Conv_FloatToVector_InFloat_ImplicitCast) == 0x0002AC, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_Conv_FloatToVector_InFloat_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_HitEffectSlot_C_SpawnSpecializationEffect, CallFunc_Conv_FloatToVector_InFloat_ImplicitCast_1) == 0x0002B0, "Member 'BP_HitEffectSlot_C_SpawnSpecializationEffect::CallFunc_Conv_FloatToVector_InFloat_ImplicitCast_1' has a wrong offset!");
 
 }
 

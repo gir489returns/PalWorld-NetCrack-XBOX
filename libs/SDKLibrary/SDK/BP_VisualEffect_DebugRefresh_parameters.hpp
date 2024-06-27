@@ -20,7 +20,7 @@ struct BP_VisualEffect_DebugRefresh_C_ExecuteUbergraph_BP_VisualEffect_DebugRefr
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_464F[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4ABE[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_GetCharacter_ReturnValue;                 // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_VisualEffect_DebugRefresh_C_ExecuteUbergraph_BP_VisualEffect_DebugRefresh) == 0x000008, "Wrong alignment on BP_VisualEffect_DebugRefresh_C_ExecuteUbergraph_BP_VisualEffect_DebugRefresh");

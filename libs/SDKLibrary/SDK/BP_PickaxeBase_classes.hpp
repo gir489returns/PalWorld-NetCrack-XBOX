@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PickaxeBase.BP_PickaxeBase_C
-// 0x0000 (0x0548 - 0x0548)
+// 0x0000 (0x0580 - 0x0580)
 class ABP_PickaxeBase_C final : public ABP_MeleeWeaponBase_C
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(ABP_PickaxeBase_C) == 0x000008, "Wrong alignment on ABP_PickaxeBase_C");
-static_assert(sizeof(ABP_PickaxeBase_C) == 0x000548, "Wrong size on ABP_PickaxeBase_C");
+static_assert(sizeof(ABP_PickaxeBase_C) == 0x000580, "Wrong size on ABP_PickaxeBase_C");
 
 }
 

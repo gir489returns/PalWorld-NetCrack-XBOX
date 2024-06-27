@@ -20,7 +20,7 @@ namespace SDK
 // Function WBP_CharaCre_ScrollBoxContent_Voice.WBP_CharaCre_ScrollBoxContent_Voice_C.ApplyMakeInfo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPalPlayerDataCharacterMakeInfo  MakeInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FPalPlayerDataCharacterMakeInfo  MakeInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 
 void UWBP_CharaCre_ScrollBoxContent_Voice_C::ApplyMakeInfo(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo)
 {
@@ -37,23 +37,17 @@ void UWBP_CharaCre_ScrollBoxContent_Voice_C::ApplyMakeInfo(const struct FPalPlay
 }
 
 
-// Function WBP_CharaCre_ScrollBoxContent_Voice.WBP_CharaCre_ScrollBoxContent_Voice_C.BndEvt__WBP_CharaCre_ScrollBoxContent_Voice_WBP_Chara_Cre_VoiceTypeSlider_K2Node_ComponentBoundEvent_1_OnChangedValue__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_CharaCre_ScrollBoxContent_Voice.WBP_CharaCre_ScrollBoxContent_Voice_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_CharaCre_ScrollBoxContent_Voice_C::BndEvt__WBP_CharaCre_ScrollBoxContent_Voice_WBP_Chara_Cre_VoiceTypeSlider_K2Node_ComponentBoundEvent_1_OnChangedValue__DelegateSignature(double Value)
+void UWBP_CharaCre_ScrollBoxContent_Voice_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CharaCre_ScrollBoxContent_Voice_C", "BndEvt__WBP_CharaCre_ScrollBoxContent_Voice_WBP_Chara_Cre_VoiceTypeSlider_K2Node_ComponentBoundEvent_1_OnChangedValue__DelegateSignature");
+		Func = Class->GetFunction("WBP_CharaCre_ScrollBoxContent_Voice_C", "Construct");
 
-	Params::WBP_CharaCre_ScrollBoxContent_Voice_C_BndEvt__WBP_CharaCre_ScrollBoxContent_Voice_WBP_Chara_Cre_VoiceTypeSlider_K2Node_ComponentBoundEvent_1_OnChangedValue__DelegateSignature Parms{};
-
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -98,6 +92,27 @@ void UWBP_CharaCre_ScrollBoxContent_Voice_C::GetRestoreFocusTarget(class UWidget
 }
 
 
+// Function WBP_CharaCre_ScrollBoxContent_Voice.WBP_CharaCre_ScrollBoxContent_Voice_C.GetTopFocusTarget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWidget*                          Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CharaCre_ScrollBoxContent_Voice_C::GetTopFocusTarget(class UWidget** Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CharaCre_ScrollBoxContent_Voice_C", "GetTopFocusTarget");
+
+	Params::WBP_CharaCre_ScrollBoxContent_Voice_C_GetTopFocusTarget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Widget != nullptr)
+		*Widget = Parms.Widget;
+}
+
+
 // Function WBP_CharaCre_ScrollBoxContent_Voice.WBP_CharaCre_ScrollBoxContent_Voice_C.OnChangedVoiceID__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -118,44 +133,43 @@ void UWBP_CharaCre_ScrollBoxContent_Voice_C::OnChangedVoiceID__DelegateSignature
 }
 
 
-// Function WBP_CharaCre_ScrollBoxContent_Voice.WBP_CharaCre_ScrollBoxContent_Voice_C.PlaySampleVoice
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_CharaCre_ScrollBoxContent_Voice.WBP_CharaCre_ScrollBoxContent_Voice_C.OnClickedVoiceTypeButton
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   VoiceID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_CharaCre_BodyTypeButton_C*   Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CharaCre_ScrollBoxContent_Voice_C::PlaySampleVoice(int32 VoiceID)
+void UWBP_CharaCre_ScrollBoxContent_Voice_C::OnClickedVoiceTypeButton(class UWBP_CharaCre_BodyTypeButton_C* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CharaCre_ScrollBoxContent_Voice_C", "PlaySampleVoice");
+		Func = Class->GetFunction("WBP_CharaCre_ScrollBoxContent_Voice_C", "OnClickedVoiceTypeButton");
 
-	Params::WBP_CharaCre_ScrollBoxContent_Voice_C_PlaySampleVoice Parms{};
+	Params::WBP_CharaCre_ScrollBoxContent_Voice_C_OnClickedVoiceTypeButton Parms{};
 
-	Parms.VoiceID = VoiceID;
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CharaCre_ScrollBoxContent_Voice.WBP_CharaCre_ScrollBoxContent_Voice_C.GetTopFocusTarget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_CharaCre_ScrollBoxContent_Voice.WBP_CharaCre_ScrollBoxContent_Voice_C.Play Sample Voice
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWidget*                          Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   VoiceID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CharaCre_ScrollBoxContent_Voice_C::GetTopFocusTarget(class UWidget** Widget)
+void UWBP_CharaCre_ScrollBoxContent_Voice_C::Play_Sample_Voice(int32 VoiceID)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CharaCre_ScrollBoxContent_Voice_C", "GetTopFocusTarget");
+		Func = Class->GetFunction("WBP_CharaCre_ScrollBoxContent_Voice_C", "Play Sample Voice");
 
-	Params::WBP_CharaCre_ScrollBoxContent_Voice_C_GetTopFocusTarget Parms{};
+	Params::WBP_CharaCre_ScrollBoxContent_Voice_C_Play_Sample_Voice Parms{};
+
+	Parms.VoiceID = VoiceID;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (Widget != nullptr)
-		*Widget = Parms.Widget;
 }
 
 }

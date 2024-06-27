@@ -31,6 +31,20 @@ void UBP_ActionReturnOtomoPal_C::AttachBallModel()
 }
 
 
+// Function BP_ActionReturnOtomoPal.BP_ActionReturnOtomoPal_C.CompleteDeactivateOtomo
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBP_ActionReturnOtomoPal_C::CompleteDeactivateOtomo()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionReturnOtomoPal_C", "CompleteDeactivateOtomo");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_ActionReturnOtomoPal.BP_ActionReturnOtomoPal_C.DeactivateOtomo
 // (Public, BlueprintCallable, BlueprintEvent)
 

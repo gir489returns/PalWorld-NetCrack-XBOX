@@ -19,19 +19,19 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_NPC_Base.BP_NPC_Base_C
-// 0x0050 (0x0970 - 0x0920)
+// 0x0050 (0x0990 - 0x0940)
 #pragma pack(push, 0x1)
 class alignas(0x10) ABP_NPC_Base_C : public APalNPC
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0920(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBP_NPCInteractionComponent_C*          BP_NPCInteractionComponent;                        // 0x0928(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalFacialComponent*                    PalFacial;                                         // 0x0930(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalNavigationInvokerComponent*         PalNavigationInvoker;                              // 0x0938(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalInteractableSphereComponentNative*  BP_InteractableSphere;                             // 0x0940(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalShooterComponent*                   PalShooter;                                        // 0x0948(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_             OnDestoryEvent;                                    // 0x0950(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, AdvancedDisplay, BlueprintCallable)
-	class UClass*                                 AnimLayerClass;                                    // 0x0960(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0940(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBP_NPCInteractionComponent_C*          BP_NPCInteractionComponent;                        // 0x0948(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalFacialComponent*                    PalFacial;                                         // 0x0950(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalNavigationInvokerComponent*         PalNavigationInvoker;                              // 0x0958(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalInteractableSphereComponentNative*  BP_InteractableSphere;                             // 0x0960(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalShooterComponent*                   PalShooter;                                        // 0x0968(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_             OnDestoryEvent;                                    // 0x0970(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, AdvancedDisplay, BlueprintCallable)
+	class UClass*                                 AnimLayerClass;                                    // 0x0980(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void BndEvt__BP_NPC_Base_CharacterMovement_K2Node_ComponentBoundEvent_0_OnJumpDelegate__DelegateSignature(class UPalCharacterMovementComponent* Component);
@@ -59,15 +59,15 @@ public:
 };
 #pragma pack(pop)
 static_assert(alignof(ABP_NPC_Base_C) == 0x000010, "Wrong alignment on ABP_NPC_Base_C");
-static_assert(sizeof(ABP_NPC_Base_C) == 0x000970, "Wrong size on ABP_NPC_Base_C");
-static_assert(offsetof(ABP_NPC_Base_C, UberGraphFrame) == 0x000920, "Member 'ABP_NPC_Base_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_NPC_Base_C, BP_NPCInteractionComponent) == 0x000928, "Member 'ABP_NPC_Base_C::BP_NPCInteractionComponent' has a wrong offset!");
-static_assert(offsetof(ABP_NPC_Base_C, PalFacial) == 0x000930, "Member 'ABP_NPC_Base_C::PalFacial' has a wrong offset!");
-static_assert(offsetof(ABP_NPC_Base_C, PalNavigationInvoker) == 0x000938, "Member 'ABP_NPC_Base_C::PalNavigationInvoker' has a wrong offset!");
-static_assert(offsetof(ABP_NPC_Base_C, BP_InteractableSphere) == 0x000940, "Member 'ABP_NPC_Base_C::BP_InteractableSphere' has a wrong offset!");
-static_assert(offsetof(ABP_NPC_Base_C, PalShooter) == 0x000948, "Member 'ABP_NPC_Base_C::PalShooter' has a wrong offset!");
-static_assert(offsetof(ABP_NPC_Base_C, OnDestoryEvent) == 0x000950, "Member 'ABP_NPC_Base_C::OnDestoryEvent' has a wrong offset!");
-static_assert(offsetof(ABP_NPC_Base_C, AnimLayerClass) == 0x000960, "Member 'ABP_NPC_Base_C::AnimLayerClass' has a wrong offset!");
+static_assert(sizeof(ABP_NPC_Base_C) == 0x000990, "Wrong size on ABP_NPC_Base_C");
+static_assert(offsetof(ABP_NPC_Base_C, UberGraphFrame) == 0x000940, "Member 'ABP_NPC_Base_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ABP_NPC_Base_C, BP_NPCInteractionComponent) == 0x000948, "Member 'ABP_NPC_Base_C::BP_NPCInteractionComponent' has a wrong offset!");
+static_assert(offsetof(ABP_NPC_Base_C, PalFacial) == 0x000950, "Member 'ABP_NPC_Base_C::PalFacial' has a wrong offset!");
+static_assert(offsetof(ABP_NPC_Base_C, PalNavigationInvoker) == 0x000958, "Member 'ABP_NPC_Base_C::PalNavigationInvoker' has a wrong offset!");
+static_assert(offsetof(ABP_NPC_Base_C, BP_InteractableSphere) == 0x000960, "Member 'ABP_NPC_Base_C::BP_InteractableSphere' has a wrong offset!");
+static_assert(offsetof(ABP_NPC_Base_C, PalShooter) == 0x000968, "Member 'ABP_NPC_Base_C::PalShooter' has a wrong offset!");
+static_assert(offsetof(ABP_NPC_Base_C, OnDestoryEvent) == 0x000970, "Member 'ABP_NPC_Base_C::OnDestoryEvent' has a wrong offset!");
+static_assert(offsetof(ABP_NPC_Base_C, AnimLayerClass) == 0x000980, "Member 'ABP_NPC_Base_C::AnimLayerClass' has a wrong offset!");
 
 }
 

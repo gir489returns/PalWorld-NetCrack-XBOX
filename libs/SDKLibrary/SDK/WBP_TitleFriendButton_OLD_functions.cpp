@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_TitleFriendButton_OLD.WBP_TitleFriendButton_OLD_C.BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_TitleFriendButton_OLD.WBP_TitleFriendButton_OLD_C.ExecuteUbergraph_WBP_TitleFriendButton_OLD
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_TitleFriendButton_OLD_C::BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_TitleFriendButton_OLD_C::ExecuteUbergraph_WBP_TitleFriendButton_OLD(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TitleFriendButton_OLD_C", "BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_TitleFriendButton_OLD_C", "ExecuteUbergraph_WBP_TitleFriendButton_OLD");
 
-	Params::WBP_TitleFriendButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD Parms{};
 
-	Parms.Button = Button;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -51,21 +51,21 @@ void UWBP_TitleFriendButton_OLD_C::Construct()
 }
 
 
-// Function WBP_TitleFriendButton_OLD.WBP_TitleFriendButton_OLD_C.ExecuteUbergraph_WBP_TitleFriendButton_OLD
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_TitleFriendButton_OLD.WBP_TitleFriendButton_OLD_C.BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_TitleFriendButton_OLD_C::ExecuteUbergraph_WBP_TitleFriendButton_OLD(int32 EntryPoint)
+void UWBP_TitleFriendButton_OLD_C::BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TitleFriendButton_OLD_C", "ExecuteUbergraph_WBP_TitleFriendButton_OLD");
+		Func = Class->GetFunction("WBP_TitleFriendButton_OLD_C", "BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD Parms{};
+	Params::WBP_TitleFriendButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

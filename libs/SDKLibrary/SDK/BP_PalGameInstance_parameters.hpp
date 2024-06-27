@@ -34,7 +34,7 @@ struct BP_PalGameInstance_C_Completed_32AFD11A49E65B7255FF4BA375D305CC final
 {
 public:
 	bool                                          IsSuccess;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16CC[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_481D[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ErrorStr;                                          // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_PalGameInstance_C_Completed_32AFD11A49E65B7255FF4BA375D305CC) == 0x000008, "Wrong alignment on BP_PalGameInstance_C_Completed_32AFD11A49E65B7255FF4BA375D305CC");
@@ -43,22 +43,22 @@ static_assert(offsetof(BP_PalGameInstance_C_Completed_32AFD11A49E65B7255FF4BA375
 static_assert(offsetof(BP_PalGameInstance_C_Completed_32AFD11A49E65B7255FF4BA375D305CC, ErrorStr) == 0x000008, "Member 'BP_PalGameInstance_C_Completed_32AFD11A49E65B7255FF4BA375D305CC::ErrorStr' has a wrong offset!");
 
 // Function BP_PalGameInstance.BP_PalGameInstance_C.ExecuteUbergraph_BP_PalGameInstance
-// 0x04E8 (0x04E8 - 0x0000)
+// 0x0508 (0x0508 - 0x0000)
 struct BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16CD[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_481E[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UWorld>                  K2Node_Event_world;                                // 0x0008(0x0030)(ConstParm, UObjectWrapper, HasGetValueTypeHash)
 	class UPocketpairUserSubsystem*               CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UCreateSessionAsyncFunction*            CallFunc_CreateSessionAsyncFunction_ReturnValue;   // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class UPalHUDDispatchParameterBase* Param)> K2Node_CreateDelegate_OutputDelegate;              // 0x0048(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16CE[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_481F[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0060(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	const class UWBP_LoadingScreen_Transition_C*  K2Node_CustomEvent_CurrentLoadingWidget;           // 0x0070(0x0008)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16CF[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4820[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalHUDDispatchParameter_CharacterMake* CallFunc_SpawnObject_ReturnValue;                  // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool bResult)>                 K2Node_CreateDelegate_OutputDelegate_1;            // 0x0090(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -66,12 +66,12 @@ public:
 	struct FGuid                                  CallFunc_Push_ReturnValue;                         // 0x00A8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_IsSkipped;                      // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16D0[0x6];                                     // 0x00BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4821[0x6];                                     // 0x00BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool bIsSkipped)>              K2Node_CreateDelegate_OutputDelegate_2;            // 0x00C8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalPlayerController*                   K2Node_DynamicCast_AsPal_Player_Controller;        // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16D1[0x7];                                     // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4822[0x7];                                     // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalPlayerState*                        CallFunc_GetLocalPlayerState_ReturnValue;          // 0x00E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalPlayerLocalRecordData*              CallFunc_GetLocalRecordData_ReturnValue;           // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalPlayerState*                        CallFunc_GetLocalPlayerState_ReturnValue_1;        // 0x00F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -80,7 +80,7 @@ public:
 	class APalPlayerController*                   K2Node_DynamicCast_AsPal_Player_Controller_1;      // 0x0110(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Contains_ReturnValue;                 // 0x0119(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16D2[0x6];                                     // 0x011A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4823[0x6];                                     // 0x011A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_BoolToString_ReturnValue;            // 0x0120(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue_2;              // 0x0130(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0138(0x0010)(ZeroConstructor, HasGetValueTypeHash)
@@ -88,85 +88,85 @@ public:
 	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue_2;   // 0x0158(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalPlayerController*                   K2Node_DynamicCast_AsPal_Player_Controller_2;      // 0x0160(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16D3[0x7];                                     // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4824[0x7];                                     // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ULoadingProcessTask*                    CallFunc_CreateLoadingScreenProcessTask_ReturnValue; // 0x0170(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TSoftObjectPtr<class UWorld>                  K2Node_CustomEvent_Level;                          // 0x0178(0x0030)(ConstParm, UObjectWrapper, HasGetValueTypeHash)
 	class FString                                 K2Node_CustomEvent_Options;                        // 0x01A8(0x0010)(ConstParm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_AutoClose;                      // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x01B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsPlayFromTitle_ReturnValue;              // 0x01BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16D4[0x5];                                     // 0x01BB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4825[0x5];                                     // 0x01BB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalPlayerState*                        CallFunc_GetLocalPlayerState_ReturnValue_2;        // 0x01C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsEnableBotLocationFlag_ReturnValue;      // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x01C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_bNewGame;                       // 0x01CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_bListenServer;                  // 0x01CB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16D5[0x4];                                     // 0x01CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4826[0x4];                                     // 0x01CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameInstance*                          CallFunc_GetGameInstance_ReturnValue;              // 0x01D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UBP_PalGameInstance_C*                  K2Node_DynamicCast_AsBP_Pal_Game_Instance;         // 0x01D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16D6[0x7];                                     // 0x01E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4827[0x7];                                     // 0x01E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_MakeLiteralString_ReturnValue;            // 0x01E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class UGameInstance*                          CallFunc_GetGameInstance_ReturnValue_1;            // 0x01F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_bResult;                        // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16D7[0x7];                                     // 0x0201(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4828[0x7];                                     // 0x0201(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBP_PalGameInstance_C*                  K2Node_DynamicCast_AsBP_Pal_Game_Instance_1;       // 0x0208(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16D8[0x7];                                     // 0x0211(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4829[0x7];                                     // 0x0211(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_MakeLiteralString_ReturnValue_1;          // 0x0218(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class UGameInstance*                          CallFunc_GetGameInstance_ReturnValue_2;            // 0x0228(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UBP_PalGameInstance_C*                  K2Node_DynamicCast_AsBP_Pal_Game_Instance_2;       // 0x0230(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0239(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16D9[0x6];                                     // 0x023A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalOptionWorldSettings                CallFunc_GetOptionWorldSettings_ReturnValue;       // 0x0240(0x0138)(ConstParm)
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue_3;              // 0x0378(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x0380(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16DA[0x7];                                     // 0x0381(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue_4;              // 0x0388(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDDispatchParameter_WorldMap*      CallFunc_SpawnObject_ReturnValue_1;                // 0x0390(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsSelecting;                    // 0x0398(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16DB[0x3];                                     // 0x0399(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuid                                  CallFunc_ShowCommonUI_ReturnValue;                 // 0x039C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16DC[0x4];                                     // 0x03AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue_3;   // 0x03B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDDispatchParameterBase*           K2Node_CustomEvent_Param;                          // 0x03B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalPlayerController*                   K2Node_DynamicCast_AsPal_Player_Controller_3;      // 0x03C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_6;                     // 0x03C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEnableBotLocationFlag_ReturnValue_1;    // 0x03C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16DD[0x6];                                     // 0x03CA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue_5;              // 0x03D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 Temp_string_Variable;                              // 0x03D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue_6;              // 0x03E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue_7;              // 0x03F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  CallFunc_Push_ReturnValue_1;                       // 0x03F8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  CallFunc_Push_ReturnValue_2;                       // 0x0408(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalGameSetting*                        CallFunc_GetGameSetting_ReturnValue;               // 0x0418(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsSuccess;                      // 0x0420(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16DE[0x7];                                     // 0x0421(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 K2Node_CustomEvent_ErrorStr;                       // 0x0428(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class APalPlayerState*                        CallFunc_GetLocalPlayerState_ReturnValue_3;        // 0x0438(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalPlayerState*                        CallFunc_GetLocalPlayerState_ReturnValue_4;        // 0x0440(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsSelectedInitMapPoint_ReturnValue;       // 0x0448(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16DF[0x7];                                     // 0x0449(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_MakeLiteralString_ReturnValue_2;          // 0x0450(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsMultiplayRestricted_ReturnValue;        // 0x0460(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16E0[0x7];                                     // 0x0461(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalGameInstance*                       CallFunc_GetPalGameInstance_ReturnValue;           // 0x0468(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(bool bResult)>                 K2Node_CreateDelegate_OutputDelegate_4;            // 0x0470(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  CallFunc_Dialog_ReturnValue;                       // 0x0480(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(bool IsSuccess, const class FString& ErrorStr)> K2Node_CreateDelegate_OutputDelegate_5;            // 0x0490(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 CallFunc_LoadClassAsset_Blocking_ReturnValue;      // 0x04A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x04A8(0x0018)()
-	class UClass*                                 K2Node_ClassDynamicCast_AsPal_Cutscene_Actor;      // 0x04C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ClassDynamicCast_bSuccess;                  // 0x04C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16E1[0x3];                                     // 0x04C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuid                                  CallFunc_Dialog_ReturnValue_1;                     // 0x04CC(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16E2[0x4];                                     // 0x04DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCutsceneActor*                      CallFunc_SpawnCutsceneActor_ReturnValue;           // 0x04E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_482A[0x6];                                     // 0x023A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalOptionWorldSettings                CallFunc_GetOptionWorldSettings_ReturnValue;       // 0x0240(0x0158)(ConstParm)
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue_3;              // 0x0398(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x03A0(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_482B[0x7];                                     // 0x03A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue_4;              // 0x03A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParameter_WorldMap*      CallFunc_SpawnObject_ReturnValue_1;                // 0x03B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_IsSelecting;                    // 0x03B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_482C[0x3];                                     // 0x03B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuid                                  CallFunc_ShowCommonUI_ReturnValue;                 // 0x03BC(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_482D[0x4];                                     // 0x03CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue_3;   // 0x03D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParameterBase*           K2Node_CustomEvent_Param;                          // 0x03D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerController*                   K2Node_DynamicCast_AsPal_Player_Controller_3;      // 0x03E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_6;                     // 0x03E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEnableBotLocationFlag_ReturnValue_1;    // 0x03E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_482E[0x6];                                     // 0x03EA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue_5;              // 0x03F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 Temp_string_Variable;                              // 0x03F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue_6;              // 0x0408(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue_7;              // 0x0410(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_Push_ReturnValue_1;                       // 0x0418(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_Push_ReturnValue_2;                       // 0x0428(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalGameSetting*                        CallFunc_GetGameSetting_ReturnValue;               // 0x0438(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_IsSuccess;                      // 0x0440(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_482F[0x7];                                     // 0x0441(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 K2Node_CustomEvent_ErrorStr;                       // 0x0448(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class APalPlayerState*                        CallFunc_GetLocalPlayerState_ReturnValue_3;        // 0x0458(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerState*                        CallFunc_GetLocalPlayerState_ReturnValue_4;        // 0x0460(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsSelectedInitMapPoint_ReturnValue;       // 0x0468(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4830[0x7];                                     // 0x0469(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_MakeLiteralString_ReturnValue_2;          // 0x0470(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsMultiplayRestricted_ReturnValue;        // 0x0480(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4831[0x7];                                     // 0x0481(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalGameInstance*                       CallFunc_GetPalGameInstance_ReturnValue;           // 0x0488(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(bool bResult)>                 K2Node_CreateDelegate_OutputDelegate_4;            // 0x0490(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_Dialog_ReturnValue;                       // 0x04A0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(bool IsSuccess, const class FString& ErrorStr)> K2Node_CreateDelegate_OutputDelegate_5;            // 0x04B0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 CallFunc_LoadClassAsset_Blocking_ReturnValue;      // 0x04C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x04C8(0x0018)()
+	class UClass*                                 K2Node_ClassDynamicCast_AsPal_Cutscene_Actor;      // 0x04E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ClassDynamicCast_bSuccess;                  // 0x04E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4832[0x3];                                     // 0x04E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuid                                  CallFunc_Dialog_ReturnValue_1;                     // 0x04EC(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4833[0x4];                                     // 0x04FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCutsceneActor*                      CallFunc_SpawnCutsceneActor_ReturnValue;           // 0x0500(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance) == 0x000008, "Wrong alignment on BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance");
-static_assert(sizeof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance) == 0x0004E8, "Wrong size on BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance");
+static_assert(sizeof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance) == 0x000508, "Wrong size on BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance");
 static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, EntryPoint) == 0x000000, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, K2Node_Event_world) == 0x000008, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::K2Node_Event_world' has a wrong offset!");
 static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000038, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
@@ -227,41 +227,41 @@ static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance,
 static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, K2Node_DynamicCast_bSuccess_5) == 0x000238, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
 static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, Temp_bool_Variable) == 0x000239, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetOptionWorldSettings_ReturnValue) == 0x000240, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetOptionWorldSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetHUDService_ReturnValue_3) == 0x000378, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetHUDService_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, Temp_bool_Variable_1) == 0x000380, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetHUDService_ReturnValue_4) == 0x000388, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetHUDService_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_SpawnObject_ReturnValue_1) == 0x000390, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_SpawnObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, K2Node_CustomEvent_IsSelecting) == 0x000398, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::K2Node_CustomEvent_IsSelecting' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_ShowCommonUI_ReturnValue) == 0x00039C, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_ShowCommonUI_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetLocalPlayerController_ReturnValue_3) == 0x0003B0, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetLocalPlayerController_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, K2Node_CustomEvent_Param) == 0x0003B8, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::K2Node_CustomEvent_Param' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, K2Node_DynamicCast_AsPal_Player_Controller_3) == 0x0003C0, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::K2Node_DynamicCast_AsPal_Player_Controller_3' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, K2Node_DynamicCast_bSuccess_6) == 0x0003C8, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_IsEnableBotLocationFlag_ReturnValue_1) == 0x0003C9, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_IsEnableBotLocationFlag_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetHUDService_ReturnValue_5) == 0x0003D0, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetHUDService_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, Temp_string_Variable) == 0x0003D8, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::Temp_string_Variable' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetHUDService_ReturnValue_6) == 0x0003E8, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetHUDService_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetHUDService_ReturnValue_7) == 0x0003F0, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetHUDService_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_Push_ReturnValue_1) == 0x0003F8, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_Push_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_Push_ReturnValue_2) == 0x000408, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_Push_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetGameSetting_ReturnValue) == 0x000418, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetGameSetting_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, K2Node_CustomEvent_IsSuccess) == 0x000420, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::K2Node_CustomEvent_IsSuccess' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, K2Node_CustomEvent_ErrorStr) == 0x000428, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::K2Node_CustomEvent_ErrorStr' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetLocalPlayerState_ReturnValue_3) == 0x000438, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetLocalPlayerState_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetLocalPlayerState_ReturnValue_4) == 0x000440, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetLocalPlayerState_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_IsSelectedInitMapPoint_ReturnValue) == 0x000448, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_IsSelectedInitMapPoint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_MakeLiteralString_ReturnValue_2) == 0x000450, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_MakeLiteralString_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_IsMultiplayRestricted_ReturnValue) == 0x000460, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_IsMultiplayRestricted_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetPalGameInstance_ReturnValue) == 0x000468, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetPalGameInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, K2Node_CreateDelegate_OutputDelegate_4) == 0x000470, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_Dialog_ReturnValue) == 0x000480, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_Dialog_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, K2Node_CreateDelegate_OutputDelegate_5) == 0x000490, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_LoadClassAsset_Blocking_ReturnValue) == 0x0004A0, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_LoadClassAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetLocalizedTextFromHandle_Text) == 0x0004A8, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetLocalizedTextFromHandle_Text' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, K2Node_ClassDynamicCast_AsPal_Cutscene_Actor) == 0x0004C0, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::K2Node_ClassDynamicCast_AsPal_Cutscene_Actor' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, K2Node_ClassDynamicCast_bSuccess) == 0x0004C8, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_Dialog_ReturnValue_1) == 0x0004CC, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_Dialog_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_SpawnCutsceneActor_ReturnValue) == 0x0004E0, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_SpawnCutsceneActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetHUDService_ReturnValue_3) == 0x000398, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetHUDService_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, Temp_bool_Variable_1) == 0x0003A0, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetHUDService_ReturnValue_4) == 0x0003A8, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetHUDService_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_SpawnObject_ReturnValue_1) == 0x0003B0, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_SpawnObject_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, K2Node_CustomEvent_IsSelecting) == 0x0003B8, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::K2Node_CustomEvent_IsSelecting' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_ShowCommonUI_ReturnValue) == 0x0003BC, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_ShowCommonUI_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetLocalPlayerController_ReturnValue_3) == 0x0003D0, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetLocalPlayerController_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, K2Node_CustomEvent_Param) == 0x0003D8, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::K2Node_CustomEvent_Param' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, K2Node_DynamicCast_AsPal_Player_Controller_3) == 0x0003E0, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::K2Node_DynamicCast_AsPal_Player_Controller_3' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, K2Node_DynamicCast_bSuccess_6) == 0x0003E8, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_IsEnableBotLocationFlag_ReturnValue_1) == 0x0003E9, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_IsEnableBotLocationFlag_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetHUDService_ReturnValue_5) == 0x0003F0, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetHUDService_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, Temp_string_Variable) == 0x0003F8, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::Temp_string_Variable' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetHUDService_ReturnValue_6) == 0x000408, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetHUDService_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetHUDService_ReturnValue_7) == 0x000410, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetHUDService_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_Push_ReturnValue_1) == 0x000418, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_Push_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_Push_ReturnValue_2) == 0x000428, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_Push_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetGameSetting_ReturnValue) == 0x000438, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetGameSetting_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, K2Node_CustomEvent_IsSuccess) == 0x000440, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::K2Node_CustomEvent_IsSuccess' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, K2Node_CustomEvent_ErrorStr) == 0x000448, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::K2Node_CustomEvent_ErrorStr' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetLocalPlayerState_ReturnValue_3) == 0x000458, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetLocalPlayerState_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetLocalPlayerState_ReturnValue_4) == 0x000460, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetLocalPlayerState_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_IsSelectedInitMapPoint_ReturnValue) == 0x000468, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_IsSelectedInitMapPoint_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_MakeLiteralString_ReturnValue_2) == 0x000470, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_MakeLiteralString_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_IsMultiplayRestricted_ReturnValue) == 0x000480, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_IsMultiplayRestricted_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetPalGameInstance_ReturnValue) == 0x000488, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetPalGameInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, K2Node_CreateDelegate_OutputDelegate_4) == 0x000490, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_Dialog_ReturnValue) == 0x0004A0, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_Dialog_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, K2Node_CreateDelegate_OutputDelegate_5) == 0x0004B0, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_LoadClassAsset_Blocking_ReturnValue) == 0x0004C0, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_LoadClassAsset_Blocking_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_GetLocalizedTextFromHandle_Text) == 0x0004C8, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_GetLocalizedTextFromHandle_Text' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, K2Node_ClassDynamicCast_AsPal_Cutscene_Actor) == 0x0004E0, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::K2Node_ClassDynamicCast_AsPal_Cutscene_Actor' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, K2Node_ClassDynamicCast_bSuccess) == 0x0004E8, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_Dialog_ReturnValue_1) == 0x0004EC, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_Dialog_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance, CallFunc_SpawnCutsceneActor_ReturnValue) == 0x000500, "Member 'BP_PalGameInstance_C_ExecuteUbergraph_BP_PalGameInstance::CallFunc_SpawnCutsceneActor_ReturnValue' has a wrong offset!");
 
 // Function BP_PalGameInstance.BP_PalGameInstance_C.LoadLevel
 // 0x0048 (0x0048 - 0x0000)
@@ -317,11 +317,11 @@ struct BP_PalGameInstance_C_SetActivePlayerActor final
 {
 public:
 	bool                                          Active;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16E3[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4834[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalPlayerController*                   K2Node_DynamicCast_AsPal_Player_Controller;        // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16E4[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4835[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_GetDefaultPlayerCharacter_ReturnValue;    // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

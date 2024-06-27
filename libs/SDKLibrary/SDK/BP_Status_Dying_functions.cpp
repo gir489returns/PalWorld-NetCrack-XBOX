@@ -279,6 +279,20 @@ void UBP_Status_Dying_C::TickStatus(float DeltaTime)
 }
 
 
+// Function BP_Status_Dying.BP_Status_Dying_C.ToDeath
+// (BlueprintCallable, BlueprintEvent)
+
+void UBP_Status_Dying_C::ToDeath()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Status_Dying_C", "ToDeath");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_Status_Dying.BP_Status_Dying_C.UpdateDyingWidget
 // (BlueprintCallable, BlueprintEvent)
 

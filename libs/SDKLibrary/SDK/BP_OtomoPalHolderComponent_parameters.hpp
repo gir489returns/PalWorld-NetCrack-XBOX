@@ -18,47 +18,6 @@
 namespace SDK::Params
 {
 
-// Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.ActivateAllPalInArena
-// 0x00F0 (0x00F0 - 0x0000)
-struct BP_OtomoPalHolderComponent_C_ActivateAllPalInArena final
-{
-public:
-	TArray<struct FTransform>                     SpawnTransform;                                    // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	int32                                         Temp_int_Variable;                                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4288[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalIndividualCharacterHandle*          CallFunc_GetOtomoIndividualHandle_ReturnValue;     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4289[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetMaxOtomoNum_ReturnValue;               // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_428A[0x3];                                     // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_428B[0x3];                                     // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0050(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0080(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ActivateOtomo_isSuccess;                  // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_OtomoPalHolderComponent_C_ActivateAllPalInArena) == 0x000010, "Wrong alignment on BP_OtomoPalHolderComponent_C_ActivateAllPalInArena");
-static_assert(sizeof(BP_OtomoPalHolderComponent_C_ActivateAllPalInArena) == 0x0000F0, "Wrong size on BP_OtomoPalHolderComponent_C_ActivateAllPalInArena");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivateAllPalInArena, SpawnTransform) == 0x000000, "Member 'BP_OtomoPalHolderComponent_C_ActivateAllPalInArena::SpawnTransform' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivateAllPalInArena, Temp_int_Variable) == 0x000010, "Member 'BP_OtomoPalHolderComponent_C_ActivateAllPalInArena::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivateAllPalInArena, CallFunc_GetOtomoIndividualHandle_ReturnValue) == 0x000018, "Member 'BP_OtomoPalHolderComponent_C_ActivateAllPalInArena::CallFunc_GetOtomoIndividualHandle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivateAllPalInArena, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'BP_OtomoPalHolderComponent_C_ActivateAllPalInArena::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivateAllPalInArena, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'BP_OtomoPalHolderComponent_C_ActivateAllPalInArena::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivateAllPalInArena, CallFunc_GetMaxOtomoNum_ReturnValue) == 0x000028, "Member 'BP_OtomoPalHolderComponent_C_ActivateAllPalInArena::CallFunc_GetMaxOtomoNum_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivateAllPalInArena, CallFunc_Array_IsValidIndex_ReturnValue) == 0x00002C, "Member 'BP_OtomoPalHolderComponent_C_ActivateAllPalInArena::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivateAllPalInArena, CallFunc_Subtract_IntInt_ReturnValue) == 0x000030, "Member 'BP_OtomoPalHolderComponent_C_ActivateAllPalInArena::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivateAllPalInArena, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000034, "Member 'BP_OtomoPalHolderComponent_C_ActivateAllPalInArena::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivateAllPalInArena, CallFunc_BreakTransform_Location) == 0x000038, "Member 'BP_OtomoPalHolderComponent_C_ActivateAllPalInArena::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivateAllPalInArena, CallFunc_BreakTransform_Rotation) == 0x000050, "Member 'BP_OtomoPalHolderComponent_C_ActivateAllPalInArena::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivateAllPalInArena, CallFunc_BreakTransform_Scale) == 0x000068, "Member 'BP_OtomoPalHolderComponent_C_ActivateAllPalInArena::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivateAllPalInArena, CallFunc_MakeTransform_ReturnValue) == 0x000080, "Member 'BP_OtomoPalHolderComponent_C_ActivateAllPalInArena::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivateAllPalInArena, CallFunc_ActivateOtomo_isSuccess) == 0x0000E0, "Member 'BP_OtomoPalHolderComponent_C_ActivateAllPalInArena::CallFunc_ActivateOtomo_isSuccess' has a wrong offset!");
-
 // Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.ActivateCurrentOtomo
 // 0x0070 (0x0070 - 0x0000)
 struct BP_OtomoPalHolderComponent_C_ActivateCurrentOtomo final
@@ -112,7 +71,7 @@ struct BP_OtomoPalHolderComponent_C_ActivateCurrentOtomoNearThePlayer final
 {
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_428C[0xF];                                     // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B1A[0xF];                                     // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_GetTransform_SpawnPalNearTrainer_ReturnValue; // 0x0010(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ActivateCurrentOtomo_ReturnValue;         // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -128,70 +87,70 @@ struct BP_OtomoPalHolderComponent_C_ActivateOtomo final
 {
 public:
 	int32                                         SlotID;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_428D[0xC];                                     // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B1B[0xC];                                     // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             StartTransform;                                    // 0x0010(0x0060)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsSuccess;                                         // 0x0070(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_428E[0x7];                                     // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B1C[0x7];                                     // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          TempPal;                                           // 0x0078(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsDead;                                            // 0x0080(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_428F[0x7];                                     // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B1D[0x7];                                     // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        TempAngle;                                         // 0x0088(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          Trainer;                                           // 0x0090(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	class UPalAbilitySkillParameterComponent*     CallFunc_GetComponentByClass_ReturnValue;          // 0x0098(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4290[0x6];                                     // 0x00A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B1E[0x6];                                     // 0x00A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalActionComponent*                    CallFunc_GetComponentByClass_ReturnValue_1;        // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalAIActionComponent*                  CallFunc_GetComponentByClass_ReturnValue_2;        // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class AController*                            CallFunc_GetController_ReturnValue_1;              // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalAIController*                       K2Node_DynamicCast_AsPal_AIController;             // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4291[0x7];                                     // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B1F[0x7];                                     // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalVisualEffectBase*                   CallFunc_AddVisualEffectForActor_ReturnValue;      // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ABP_MonsterAIController_NPCOtomo_C*     K2Node_DynamicCast_AsBP_Monster_AIController_NPCOtomo; // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4292[0x7];                                     // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B20[0x7];                                     // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_MonsterAIControllerBase_C*          K2Node_DynamicCast_AsBP_Monster_AIController_Base; // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4293[0x7];                                     // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B21[0x7];                                     // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalPartnerSkillParameterComponent*     CallFunc_GetComponentByClass_ReturnValue_3;        // 0x0100(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsLive_ReturnValue;                       // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0109(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4294[0x6];                                     // 0x010A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B22[0x6];                                     // 0x010A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue_4;        // 0x0110(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0118(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4295[0x7];                                     // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B23[0x7];                                     // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalPlayerController*                   K2Node_DynamicCast_AsPal_Player_Controller;        // 0x0128(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4296[0x7];                                     // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B24[0x7];                                     // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalPlayerState*                        CallFunc_GetPalPlayerState_ReturnValue;            // 0x0138(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDead_ReturnValue;                       // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4297[0x7];                                     // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B25[0x7];                                     // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalPlayerRecordData*                   CallFunc_GetRecordData_ReturnValue;                // 0x0148(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4298[0x7];                                     // 0x0151(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B26[0x7];                                     // 0x0151(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterHandle*          CallFunc_GetOtomoIndividualHandle_ReturnValue;     // 0x0158(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0160(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsControlledByPlayer_ReturnValue;         // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4299[0x7];                                     // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B27[0x7];                                     // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x0170(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_429A[0x3];                                     // 0x0179(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B28[0x3];                                     // 0x0179(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   CallFunc_GetCharacterID_ReturnValue;               // 0x017C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_429B[0x4];                                     // 0x0184(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B29[0x4];                                     // 0x0184(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterHandle*          CallFunc_GetOtomoIndividualHandle_ReturnValue_1;   // 0x0188(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalIndividualCharacterHandle*          CallFunc_GetOtomoIndividualHandle_ReturnValue_2;   // 0x0190(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_429C[0x7];                                     // 0x0199(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B2A[0x7];                                     // 0x0199(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue_1;      // 0x01A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_429D[0x7];                                     // 0x01A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B2B[0x7];                                     // 0x01A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetOwner_ReturnValue_1;                   // 0x01B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AController*                            K2Node_DynamicCast_AsController;                   // 0x01B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_429E[0x7];                                     // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B2C[0x7];                                     // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x01C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character;                // 0x01D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -249,6 +208,51 @@ static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivateOtomo, CallFunc_K2_G
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivateOtomo, K2Node_DynamicCast_AsPal_Character) == 0x0001D0, "Member 'BP_OtomoPalHolderComponent_C_ActivateOtomo::K2Node_DynamicCast_AsPal_Character' has a wrong offset!");
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivateOtomo, K2Node_DynamicCast_bSuccess_5) == 0x0001D8, "Member 'BP_OtomoPalHolderComponent_C_ActivateOtomo::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
 
+// Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.ActivatePalByHandle
+// 0x0180 (0x0180 - 0x0000)
+struct BP_OtomoPalHolderComponent_C_ActivatePalByHandle final
+{
+public:
+	class UPalIndividualCharacterHandle*          Handle;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B2D[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             Transform;                                         // 0x0010(0x0060)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Transform_Location;                                // 0x0070(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               Transform_Rotation;                                // 0x0088(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                Transform_Scale;                                   // 0x00A0(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          KeepActigvateOtomoId;                              // 0x00B8(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B2E[0x7];                                     // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x00C0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x00D8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x00F0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetSlotIndexByIndividualHandle_ReturnValue; // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B2F[0x4];                                     // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0110(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ActivateOtomo_isSuccess;                  // 0x0171(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0172(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B30[0x1];                                     // 0x0173(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue_1;            // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_OtomoPalHolderComponent_C_ActivatePalByHandle) == 0x000010, "Wrong alignment on BP_OtomoPalHolderComponent_C_ActivatePalByHandle");
+static_assert(sizeof(BP_OtomoPalHolderComponent_C_ActivatePalByHandle) == 0x000180, "Wrong size on BP_OtomoPalHolderComponent_C_ActivatePalByHandle");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivatePalByHandle, Handle) == 0x000000, "Member 'BP_OtomoPalHolderComponent_C_ActivatePalByHandle::Handle' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivatePalByHandle, Transform) == 0x000010, "Member 'BP_OtomoPalHolderComponent_C_ActivatePalByHandle::Transform' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivatePalByHandle, Transform_Location) == 0x000070, "Member 'BP_OtomoPalHolderComponent_C_ActivatePalByHandle::Transform_Location' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivatePalByHandle, Transform_Rotation) == 0x000088, "Member 'BP_OtomoPalHolderComponent_C_ActivatePalByHandle::Transform_Rotation' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivatePalByHandle, Transform_Scale) == 0x0000A0, "Member 'BP_OtomoPalHolderComponent_C_ActivatePalByHandle::Transform_Scale' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivatePalByHandle, KeepActigvateOtomoId) == 0x0000B8, "Member 'BP_OtomoPalHolderComponent_C_ActivatePalByHandle::KeepActigvateOtomoId' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivatePalByHandle, CallFunc_BreakTransform_Location) == 0x0000C0, "Member 'BP_OtomoPalHolderComponent_C_ActivatePalByHandle::CallFunc_BreakTransform_Location' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivatePalByHandle, CallFunc_BreakTransform_Rotation) == 0x0000D8, "Member 'BP_OtomoPalHolderComponent_C_ActivatePalByHandle::CallFunc_BreakTransform_Rotation' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivatePalByHandle, CallFunc_BreakTransform_Scale) == 0x0000F0, "Member 'BP_OtomoPalHolderComponent_C_ActivatePalByHandle::CallFunc_BreakTransform_Scale' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivatePalByHandle, CallFunc_GetSlotIndexByIndividualHandle_ReturnValue) == 0x000108, "Member 'BP_OtomoPalHolderComponent_C_ActivatePalByHandle::CallFunc_GetSlotIndexByIndividualHandle_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivatePalByHandle, CallFunc_MakeTransform_ReturnValue) == 0x000110, "Member 'BP_OtomoPalHolderComponent_C_ActivatePalByHandle::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivatePalByHandle, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000170, "Member 'BP_OtomoPalHolderComponent_C_ActivatePalByHandle::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivatePalByHandle, CallFunc_ActivateOtomo_isSuccess) == 0x000171, "Member 'BP_OtomoPalHolderComponent_C_ActivatePalByHandle::CallFunc_ActivateOtomo_isSuccess' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivatePalByHandle, CallFunc_Not_PreBool_ReturnValue) == 0x000172, "Member 'BP_OtomoPalHolderComponent_C_ActivatePalByHandle::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivatePalByHandle, CallFunc_SelectInt_ReturnValue) == 0x000174, "Member 'BP_OtomoPalHolderComponent_C_ActivatePalByHandle::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActivatePalByHandle, CallFunc_NotEqual_IntInt_ReturnValue_1) == 0x000178, "Member 'BP_OtomoPalHolderComponent_C_ActivatePalByHandle::CallFunc_NotEqual_IntInt_ReturnValue_1' has a wrong offset!");
+
 // Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.ActiveAndAttackCurrentPal
 // 0x0030 (0x0030 - 0x0000)
 struct BP_OtomoPalHolderComponent_C_ActiveAndAttackCurrentPal final
@@ -258,7 +262,7 @@ public:
 	class APalCharacter*                          CallFunc_TryGetOtomoActorBySlotIndex_ReturnValue;  // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_429F[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B31[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_MonsterAIController_Otomo_C*        K2Node_DynamicCast_AsBP_Monster_AIController_Otomo; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -272,35 +276,45 @@ static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActiveAndAttackCurrentPal, K
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_ActiveAndAttackCurrentPal, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'BP_OtomoPalHolderComponent_C_ActiveAndAttackCurrentPal::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.Add Otomo Down Log
-// 0x0080 (0x0080 - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log final
 {
 public:
 	struct FPalDeadInfo                           Actor;                                             // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	bool                                          CallFunc_IsControlledByPlayer_ReturnValue;         // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42A0[0x7];                                     // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character;                // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42A1[0x6];                                     // 0x006A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x0070(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x007A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterParameter*       CallFunc_GetIndividualCharacterParameterByActor_ReturnValue; // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character;                // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B32[0x6];                                     // 0x0062(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x0068(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B33[0x7];                                     // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetCharacterID_ReturnValue;               // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B34[0x3];                                     // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_GetCharacterID_ReturnValue_1;             // 0x008C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B35[0x4];                                     // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetNickName_outName;                      // 0x0098(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetNickName_outName_1;                    // 0x00A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FPalKillLogDisplayData                 K2Node_MakeStruct_PalKillLogDisplayData;           // 0x00B8(0x0038)()
 };
 static_assert(alignof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log) == 0x000008, "Wrong alignment on BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log");
-static_assert(sizeof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log) == 0x000080, "Wrong size on BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log");
+static_assert(sizeof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log) == 0x0000F0, "Wrong size on BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log");
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log, Actor) == 0x000000, "Member 'BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log::Actor' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log, CallFunc_IsControlledByPlayer_ReturnValue) == 0x000050, "Member 'BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log::CallFunc_IsControlledByPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log, CallFunc_GetOwner_ReturnValue) == 0x000058, "Member 'BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log, K2Node_DynamicCast_AsPal_Character) == 0x000060, "Member 'BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log::K2Node_DynamicCast_AsPal_Character' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log, K2Node_DynamicCast_bSuccess) == 0x000068, "Member 'BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log, CallFunc_HasAuthority_ReturnValue) == 0x000069, "Member 'BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log, CallFunc_GetComponentByClass_ReturnValue) == 0x000070, "Member 'BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log, CallFunc_BooleanAND_ReturnValue) == 0x000078, "Member 'BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log, CallFunc_IsValid_ReturnValue) == 0x000079, "Member 'BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log, CallFunc_IsValid_ReturnValue_1) == 0x00007A, "Member 'BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log, CallFunc_GetIndividualCharacterParameterByActor_ReturnValue) == 0x000050, "Member 'BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log::CallFunc_GetIndividualCharacterParameterByActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log, K2Node_DynamicCast_AsPal_Character) == 0x000058, "Member 'BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log::K2Node_DynamicCast_AsPal_Character' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log, CallFunc_IsValid_ReturnValue) == 0x000061, "Member 'BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log, CallFunc_GetComponentByClass_ReturnValue) == 0x000068, "Member 'BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log, CallFunc_IsValid_ReturnValue_1) == 0x000070, "Member 'BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log, CallFunc_TryGetIndividualParameter_ReturnValue) == 0x000078, "Member 'BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log::CallFunc_TryGetIndividualParameter_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log, CallFunc_GetCharacterID_ReturnValue) == 0x000080, "Member 'BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log::CallFunc_GetCharacterID_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log, CallFunc_IsValid_ReturnValue_2) == 0x000088, "Member 'BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log, CallFunc_GetCharacterID_ReturnValue_1) == 0x00008C, "Member 'BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log::CallFunc_GetCharacterID_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log, CallFunc_GetNickName_outName) == 0x000098, "Member 'BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log::CallFunc_GetNickName_outName' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log, CallFunc_GetNickName_outName_1) == 0x0000A8, "Member 'BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log::CallFunc_GetNickName_outName_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log, K2Node_MakeStruct_PalKillLogDisplayData) == 0x0000B8, "Member 'BP_OtomoPalHolderComponent_C_Add_Otomo_Down_Log::K2Node_MakeStruct_PalKillLogDisplayData' has a wrong offset!");
 
 // Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.CallCancelCommand
 // 0x0060 (0x0060 - 0x0000)
@@ -308,20 +322,20 @@ struct BP_OtomoPalHolderComponent_C_CallCancelCommand final
 {
 public:
 	int32                                         CallFunc_GetSelectedOtomoID_ReturnValue;           // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42A2[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B36[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalIndividualCharacterHandle*          CallFunc_GetOtomoIndividualHandle_ReturnValue;     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalPlayerController*                   K2Node_DynamicCast_AsPal_Player_Controller;        // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42A3[0x6];                                     // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B37[0x6];                                     // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42A4[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B38[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_MonsterAIController_Otomo_C*        K2Node_DynamicCast_AsBP_Monster_AIController_Otomo; // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42A5[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B39[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalAIActionComponent*                  CallFunc_GetAIActionComponent_ReturnValue;         // 0x0050(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	EPalAIActionCategory                          CallFunc_GetCurrentAIActionCategory_ReturnValue;   // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -349,16 +363,16 @@ struct BP_OtomoPalHolderComponent_C_CoopCallCommand final
 {
 public:
 	int32                                         SlotID;                                            // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42A6[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B3A[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterHandle*          CallFunc_GetOtomoIndividualHandle_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42A7[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B3B[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ABP_MonsterAIController_Otomo_C*        K2Node_DynamicCast_AsBP_Monster_AIController_Otomo; // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42A8[0x6];                                     // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B3C[0x6];                                     // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalAIActionComponent*                  CallFunc_GetAIActionComponent_ReturnValue;         // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	EPalAIActionCategory                          CallFunc_GetCurrentAIActionCategory_ReturnValue;   // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -390,7 +404,7 @@ public:
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsALLEmpty_ReturnValue;                   // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42A9[0x1];                                     // 0x001B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B3D[0x1];                                     // 0x001B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetSelectedOtomoID_ReturnValue;           // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetMaxOtomoNum_ReturnValue_1;             // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -414,15 +428,17 @@ static_assert(offsetof(BP_OtomoPalHolderComponent_C_DecrementSelectOtomoID_Inter
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_DecrementSelectOtomoID_Internal, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00002C, "Member 'BP_OtomoPalHolderComponent_C_DecrementSelectOtomoID_Internal::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.DelayAddOtomoForReserverList
-// 0x0008 (0x0008 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct BP_OtomoPalHolderComponent_C_DelayAddOtomoForReserverList final
 {
 public:
 	class APalCharacter*                          Otomo;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDelay;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_OtomoPalHolderComponent_C_DelayAddOtomoForReserverList) == 0x000008, "Wrong alignment on BP_OtomoPalHolderComponent_C_DelayAddOtomoForReserverList");
-static_assert(sizeof(BP_OtomoPalHolderComponent_C_DelayAddOtomoForReserverList) == 0x000008, "Wrong size on BP_OtomoPalHolderComponent_C_DelayAddOtomoForReserverList");
+static_assert(sizeof(BP_OtomoPalHolderComponent_C_DelayAddOtomoForReserverList) == 0x000010, "Wrong size on BP_OtomoPalHolderComponent_C_DelayAddOtomoForReserverList");
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_DelayAddOtomoForReserverList, Otomo) == 0x000000, "Member 'BP_OtomoPalHolderComponent_C_DelayAddOtomoForReserverList::Otomo' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_DelayAddOtomoForReserverList, IsDelay) == 0x000008, "Member 'BP_OtomoPalHolderComponent_C_DelayAddOtomoForReserverList::IsDelay' has a wrong offset!");
 
 // Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.Dummy Despawn Callback
 // 0x0030 (0x0030 - 0x0000)
@@ -436,112 +452,126 @@ static_assert(sizeof(BP_OtomoPalHolderComponent_C_Dummy_Despawn_Callback) == 0x0
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_Dummy_Despawn_Callback, ID) == 0x000000, "Member 'BP_OtomoPalHolderComponent_C_Dummy_Despawn_Callback::ID' has a wrong offset!");
 
 // Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.ExecuteUbergraph_BP_OtomoPalHolderComponent
-// 0x0340 (0x0340 - 0x0000)
+// 0x03B0 (0x03B0 - 0x0000)
 struct BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42AA[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalTutorialManager*                    CallFunc_GetTutorialManager_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             K2Node_CustomEvent_BallTransform;                  // 0x0010(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_CustomEvent_HitActor;                       // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0078(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0090(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x00A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ActivateCurrentOtomo_ReturnValue;         // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42AB[0x7];                                     // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_FindNearstEnemy_Actor;                    // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42AC[0x3];                                     // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_CustomEvent_ID;                             // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_TryGetCurrentSelectPalActor_ReturnValue;  // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AController*                            CallFunc_GetController_ReturnValue;                // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalGameSetting*                        CallFunc_GetGameSetting_ReturnValue;               // 0x00E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalAIController*                       K2Node_DynamicCast_AsPal_AIController;             // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42AD[0x7];                                     // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_CustomEvent_Otomo_1;                        // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42AE[0x8];                                     // 0x0108(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             K2Node_CustomEvent_TF;                             // 0x0110(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EEndPlayReason                                K2Node_Event_EndPlayReason;                        // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42AF[0x7];                                     // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetActorTransform_SweepHitResult;      // 0x0178(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_K2_SetActorTransform_ReturnValue;         // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0261(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42B0[0x2];                                     // 0x0262(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_CustomEvent_slotIndex_1;                    // 0x0264(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalIndividualCharacterHandle*          K2Node_CustomEvent_LastHandle_1;                   // 0x0268(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalDeadInfo                           K2Node_CustomEvent_DeadInfo;                       // 0x0270(0x0050)(NoDestructor)
-	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character;                // 0x02C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x02C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42B1[0x7];                                     // 0x02C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character_1;              // 0x02D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x02D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetActiveActorFlag_ReturnValue;           // 0x02D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42B2[0x6];                                     // 0x02DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x02E0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Inactivate_Otomo_isSuccess;               // 0x02E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x02E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42B3[0x2];                                     // 0x02EA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(int32 SlotIndex, class UPalIndividualCharacterHandle* LastHandle)> K2Node_CreateDelegate_OutputDelegate;              // 0x02EC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Inactivate_Otomo_isSuccess_1;             // 0x02FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42B4[0x3];                                     // 0x02FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_CustomEvent_slotIndex;                      // 0x0300(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42B5[0x4];                                     // 0x0304(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalIndividualCharacterHandle*          K2Node_CustomEvent_LastHandle;                     // 0x0308(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_slotIndex;                            // 0x0310(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0314(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          K2Node_CustomEvent_Otomo;                          // 0x0318(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0320(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 SlotIndex, class UPalIndividualCharacterHandle* LastHandle)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0324(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42B6[0x4];                                     // 0x0334(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Update_Reserve_Pal_Location_DeltaTime_ImplicitCast; // 0x0338(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(int32 SlotIndex, class UPalIndividualCharacterHandle* LastHandle)> K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_ID;                             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_TryGetCurrentSelectPalActor_ReturnValue;  // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalGameSetting*                        CallFunc_GetGameSetting_ReturnValue;               // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalAIController*                       K2Node_DynamicCast_AsPal_AIController;             // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B3E[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_CustomEvent_Otomo_1;                        // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B3F[0x8];                                     // 0x0048(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             K2Node_CustomEvent_TF;                             // 0x0050(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EEndPlayReason                                K2Node_Event_EndPlayReason;                        // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B40[0x7];                                     // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_K2_SetActorTransform_SweepHitResult;      // 0x00B8(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_K2_SetActorTransform_ReturnValue;         // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x01A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B41[0x2];                                     // 0x01A2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_slotIndex_1;                    // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterHandle*          K2Node_CustomEvent_LastHandle_1;                   // 0x01A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalDeadInfo                           K2Node_CustomEvent_DeadInfo_1;                     // 0x01B0(0x0050)(NoDestructor)
+	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character;                // 0x0200(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B42[0x3];                                     // 0x0209(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(int32 SlotIndex, class UPalIndividualCharacterHandle* LastHandle)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x020C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetActiveActorFlag_ReturnValue;           // 0x021C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B43[0x3];                                     // 0x021D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character_1;              // 0x0220(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0228(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B44[0x7];                                     // 0x0229(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x0230(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Inactivate_Otomo_isSuccess;               // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0239(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Inactivate_Otomo_isSuccess_1;             // 0x023A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B45[0x1];                                     // 0x023B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_slotIndex;                      // 0x023C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterHandle*          K2Node_CustomEvent_LastHandle;                     // 0x0240(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_slotIndex;                            // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x024C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          K2Node_CustomEvent_Otomo;                          // 0x0250(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_IsDelay;                        // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B46[0x7];                                     // 0x0259(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             K2Node_CustomEvent_BallTransform;                  // 0x0260(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_CustomEvent_HitActor;                       // 0x02C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x02C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B47[0x4];                                     // 0x02CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x02D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x02E8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0300(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ActivateCurrentOtomo_ReturnValue;         // 0x0318(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B48[0x7];                                     // 0x0319(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_FindNearstEnemy_Actor;                    // 0x0320(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0328(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B49[0x7];                                     // 0x0329(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalDeadInfo                           K2Node_CustomEvent_DeadInfo;                       // 0x0330(0x0050)(NoDestructor)
+	class UPalTutorialManager*                    CallFunc_GetTutorialManager_ReturnValue;           // 0x0380(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerCharacter*                    CallFunc_GetTrainerPlayer_ReturnValue;             // 0x0388(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0390(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0398(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0399(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x039A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B4A[0x5];                                     // 0x039B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Update_Reserve_Pal_Location_DeltaTime_ImplicitCast; // 0x03A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent) == 0x000010, "Wrong alignment on BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent");
-static_assert(sizeof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent) == 0x000340, "Wrong size on BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent");
+static_assert(sizeof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent) == 0x0003B0, "Wrong size on BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent");
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, EntryPoint) == 0x000000, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_GetTutorialManager_ReturnValue) == 0x000008, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_GetTutorialManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_BallTransform) == 0x000010, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_BallTransform' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_HitActor) == 0x000070, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_HitActor' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_BreakTransform_Location) == 0x000078, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_BreakTransform_Rotation) == 0x000090, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_BreakTransform_Scale) == 0x0000A8, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_ActivateCurrentOtomo_ReturnValue) == 0x0000C0, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_ActivateCurrentOtomo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_FindNearstEnemy_Actor) == 0x0000C8, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_FindNearstEnemy_Actor' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_IsValid_ReturnValue) == 0x0000D0, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_ID) == 0x0000D4, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_ID' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_TryGetCurrentSelectPalActor_ReturnValue) == 0x0000D8, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_TryGetCurrentSelectPalActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_GetController_ReturnValue) == 0x0000E0, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_GetController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_GetGameSetting_ReturnValue) == 0x0000E8, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_GetGameSetting_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_DynamicCast_AsPal_AIController) == 0x0000F0, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_DynamicCast_AsPal_AIController' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_DynamicCast_bSuccess) == 0x0000F8, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_Otomo_1) == 0x000100, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_Otomo_1' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_TF) == 0x000110, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_TF' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_Event_EndPlayReason) == 0x000170, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_Event_EndPlayReason' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_K2_SetActorTransform_SweepHitResult) == 0x000178, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_K2_SetActorTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_K2_SetActorTransform_ReturnValue) == 0x000260, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_K2_SetActorTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_IsValid_ReturnValue_1) == 0x000261, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_slotIndex_1) == 0x000264, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_slotIndex_1' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_LastHandle_1) == 0x000268, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_LastHandle_1' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_DeadInfo) == 0x000270, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_DeadInfo' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_DynamicCast_AsPal_Character) == 0x0002C0, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_DynamicCast_AsPal_Character' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_DynamicCast_bSuccess_1) == 0x0002C8, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_DynamicCast_AsPal_Character_1) == 0x0002D0, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_DynamicCast_AsPal_Character_1' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_DynamicCast_bSuccess_2) == 0x0002D8, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_GetActiveActorFlag_ReturnValue) == 0x0002D9, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_GetActiveActorFlag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_GetComponentByClass_ReturnValue) == 0x0002E0, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_Inactivate_Otomo_isSuccess) == 0x0002E8, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_Inactivate_Otomo_isSuccess' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_IsValid_ReturnValue_2) == 0x0002E9, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CreateDelegate_OutputDelegate) == 0x0002EC, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_Inactivate_Otomo_isSuccess_1) == 0x0002FC, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_Inactivate_Otomo_isSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_slotIndex) == 0x000300, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_slotIndex' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_LastHandle) == 0x000308, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_LastHandle' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_Event_slotIndex) == 0x000310, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_Event_slotIndex' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_Event_DeltaSeconds) == 0x000314, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_Otomo) == 0x000318, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_Otomo' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_Array_AddUnique_ReturnValue) == 0x000320, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CreateDelegate_OutputDelegate_1) == 0x000324, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_Update_Reserve_Pal_Location_DeltaTime_ImplicitCast) == 0x000338, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_Update_Reserve_Pal_Location_DeltaTime_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_ID) == 0x000014, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_ID' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_TryGetCurrentSelectPalActor_ReturnValue) == 0x000018, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_TryGetCurrentSelectPalActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_GetController_ReturnValue) == 0x000020, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_GetController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_GetGameSetting_ReturnValue) == 0x000028, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_GetGameSetting_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_DynamicCast_AsPal_AIController) == 0x000030, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_DynamicCast_AsPal_AIController' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_Otomo_1) == 0x000040, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_Otomo_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_TF) == 0x000050, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_TF' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_Event_EndPlayReason) == 0x0000B0, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_Event_EndPlayReason' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_K2_SetActorTransform_SweepHitResult) == 0x0000B8, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_K2_SetActorTransform_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_K2_SetActorTransform_ReturnValue) == 0x0001A0, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_K2_SetActorTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_IsValid_ReturnValue) == 0x0001A1, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_slotIndex_1) == 0x0001A4, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_slotIndex_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_LastHandle_1) == 0x0001A8, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_LastHandle_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_DeadInfo_1) == 0x0001B0, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_DeadInfo_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_DynamicCast_AsPal_Character) == 0x000200, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_DynamicCast_AsPal_Character' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_DynamicCast_bSuccess_1) == 0x000208, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CreateDelegate_OutputDelegate_1) == 0x00020C, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_GetActiveActorFlag_ReturnValue) == 0x00021C, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_GetActiveActorFlag_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_DynamicCast_AsPal_Character_1) == 0x000220, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_DynamicCast_AsPal_Character_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_DynamicCast_bSuccess_2) == 0x000228, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_GetComponentByClass_ReturnValue) == 0x000230, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_Inactivate_Otomo_isSuccess) == 0x000238, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_Inactivate_Otomo_isSuccess' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_IsValid_ReturnValue_1) == 0x000239, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_Inactivate_Otomo_isSuccess_1) == 0x00023A, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_Inactivate_Otomo_isSuccess_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_slotIndex) == 0x00023C, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_slotIndex' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_LastHandle) == 0x000240, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_LastHandle' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_Event_slotIndex) == 0x000248, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_Event_slotIndex' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_Event_DeltaSeconds) == 0x00024C, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_Otomo) == 0x000250, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_Otomo' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_IsDelay) == 0x000258, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_IsDelay' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_BallTransform) == 0x000260, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_BallTransform' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_HitActor) == 0x0002C0, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_HitActor' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_Array_AddUnique_ReturnValue) == 0x0002C8, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_BreakTransform_Location) == 0x0002D0, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_BreakTransform_Location' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_BreakTransform_Rotation) == 0x0002E8, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_BreakTransform_Rotation' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_BreakTransform_Scale) == 0x000300, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_BreakTransform_Scale' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_ActivateCurrentOtomo_ReturnValue) == 0x000318, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_ActivateCurrentOtomo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_FindNearstEnemy_Actor) == 0x000320, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_FindNearstEnemy_Actor' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_IsValid_ReturnValue_2) == 0x000328, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, K2Node_CustomEvent_DeadInfo) == 0x000330, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::K2Node_CustomEvent_DeadInfo' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_GetTutorialManager_ReturnValue) == 0x000380, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_GetTutorialManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_GetTrainerPlayer_ReturnValue) == 0x000388, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_GetTrainerPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_GetPalmi_ReturnValue) == 0x000390, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_GetPalmi_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000398, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_Not_PreBool_ReturnValue) == 0x000399, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_BooleanAND_ReturnValue) == 0x00039A, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent, CallFunc_Update_Reserve_Pal_Location_DeltaTime_ImplicitCast) == 0x0003A0, "Member 'BP_OtomoPalHolderComponent_C_ExecuteUbergraph_BP_OtomoPalHolderComponent::CallFunc_Update_Reserve_Pal_Location_DeltaTime_ImplicitCast' has a wrong offset!");
 
 // Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.FindNearstEnemy
 // 0x0028 (0x0028 - 0x0000)
@@ -571,11 +601,11 @@ public:
 	TArray<class UPalIndividualCharacterSlot*>    CallFunc_GetSlots_Slots;                           // 0x0040(0x0010)(ReferenceParm)
 	class UPalIndividualCharacterSlot*            CallFunc_Array_Get_Item;                           // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42B7[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B4B[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterHandle*          CallFunc_GetHandle_ReturnValue;                    // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42B8[0x6];                                     // 0x006A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B4C[0x6];                                     // 0x006A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalInstanceID                         CallFunc_GetIndividualID_ReturnValue;              // 0x0070(0x0030)(HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_PalInstanceIDPalInstanceID_ReturnValue; // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -607,7 +637,7 @@ public:
 	int32                                         TempStartIndex;                                    // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CalcSlotID;                                        // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsLoop;                                            // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42B9[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B4D[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetMaxOtomoNum_ReturnValue;               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable;                                 // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -616,7 +646,7 @@ public:
 	int32                                         CallFunc_GetMaxOtomoNum_ReturnValue_1;             // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42BA[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B4E[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalIndividualCharacterHandle*          CallFunc_GetOtomoIndividualHandle_ReturnValue;     // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -649,7 +679,7 @@ public:
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AController*                            K2Node_DynamicCast_AsController;                   // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42BB[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B4F[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character;                // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -675,16 +705,16 @@ public:
 	int32                                         Temp_int_Variable;                                 // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_1;                               // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42BC[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B50[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42BD[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B51[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterHandle*          CallFunc_GetOtomoIndividualHandle_ReturnValue;     // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42BE[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B52[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetMaxOtomoNum_ReturnValue;               // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsALLEmpty_ReturnValue;                   // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42BF[0x3];                                     // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B53[0x3];                                     // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -711,7 +741,7 @@ struct BP_OtomoPalHolderComponent_C_Inactivate_Otomo final
 {
 public:
 	bool                                          IsSuccess;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42C0[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B54[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterHandle*          CallFunc_GetOtomoIndividualHandle_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Inactivate_Otomo_By_Handle_isSuccess;     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -727,25 +757,26 @@ struct BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle final
 {
 public:
 	class UPalIndividualCharacterHandle*          IndividualHandle;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsSuccess;                                         // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42C1[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          IsDelayAddReserver;                                // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsSuccess;                                         // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B55[0x6];                                     // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          TempOtomoActor;                                    // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	class UPalAbilitySkillParameterComponent*     CallFunc_GetComponentByClass_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42C2[0x6];                                     // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B56[0x6];                                     // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsCooping_ReturnValue;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42C3[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B57[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalPartnerSkillParameterComponent*     CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetActiveActorFlag_ReturnValue;           // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42C4[0x5];                                     // 0x0043(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B58[0x5];                                     // 0x0043(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0048(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0060(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_InactiveActor_isSuccess;                  // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42C5[0x7];                                     // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B59[0x7];                                     // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ABP_ReturnPalEffect_C*                  CallFunc_FinishSpawningActor_ReturnValue;          // 0x00D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          CallFunc_TryGetOwnerControlledCharacter_ReturnValue; // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -754,7 +785,8 @@ public:
 static_assert(alignof(BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle) == 0x000010, "Wrong alignment on BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle");
 static_assert(sizeof(BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle) == 0x0000F0, "Wrong size on BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle");
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle, IndividualHandle) == 0x000000, "Member 'BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle::IndividualHandle' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle, IsSuccess) == 0x000008, "Member 'BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle::IsSuccess' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle, IsDelayAddReserver) == 0x000008, "Member 'BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle::IsDelayAddReserver' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle, IsSuccess) == 0x000009, "Member 'BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle::IsSuccess' has a wrong offset!");
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle, TempOtomoActor) == 0x000010, "Member 'BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle::TempOtomoActor' has a wrong offset!");
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle, CallFunc_GetComponentByClass_ReturnValue) == 0x000018, "Member 'BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -773,32 +805,38 @@ static_assert(offsetof(BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle, 
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle, CallFunc_TryGetOwnerControlledCharacter_ReturnValue) == 0x0000D8, "Member 'BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle::CallFunc_TryGetOwnerControlledCharacter_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle, CallFunc_IsValid_ReturnValue_3) == 0x0000E0, "Member 'BP_OtomoPalHolderComponent_C_Inactivate_Otomo_By_Handle::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
 
-// Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.InactivateAllPalInArena
+// Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.InactivateAllOtomo
 // 0x0028 (0x0028 - 0x0000)
-struct BP_OtomoPalHolderComponent_C_InactivateAllPalInArena final
+struct BP_OtomoPalHolderComponent_C_InactivateAllOtomo final
 {
 public:
 	int32                                         Temp_int_Variable;                                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42C6[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetMaxOtomoNum_ReturnValue;               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalIndividualCharacterHandle*          CallFunc_GetOtomoIndividualHandle_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Inactivate_Otomo_By_Handle_isSuccess;     // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42C7[0x2];                                     // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetMaxOtomoNum_ReturnValue;               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Inactivate_Otomo_By_Handle_isSuccess;     // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B5A[0x2];                                     // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetActiveActorFlag_ReturnValue;           // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B5B[0x1];                                     // 0x0023(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_OtomoPalHolderComponent_C_InactivateAllPalInArena) == 0x000008, "Wrong alignment on BP_OtomoPalHolderComponent_C_InactivateAllPalInArena");
-static_assert(sizeof(BP_OtomoPalHolderComponent_C_InactivateAllPalInArena) == 0x000028, "Wrong size on BP_OtomoPalHolderComponent_C_InactivateAllPalInArena");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_InactivateAllPalInArena, Temp_int_Variable) == 0x000000, "Member 'BP_OtomoPalHolderComponent_C_InactivateAllPalInArena::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_InactivateAllPalInArena, CallFunc_GetOtomoIndividualHandle_ReturnValue) == 0x000008, "Member 'BP_OtomoPalHolderComponent_C_InactivateAllPalInArena::CallFunc_GetOtomoIndividualHandle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_InactivateAllPalInArena, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BP_OtomoPalHolderComponent_C_InactivateAllPalInArena::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_InactivateAllPalInArena, CallFunc_Inactivate_Otomo_By_Handle_isSuccess) == 0x000011, "Member 'BP_OtomoPalHolderComponent_C_InactivateAllPalInArena::CallFunc_Inactivate_Otomo_By_Handle_isSuccess' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_InactivateAllPalInArena, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'BP_OtomoPalHolderComponent_C_InactivateAllPalInArena::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_InactivateAllPalInArena, CallFunc_GetMaxOtomoNum_ReturnValue) == 0x000018, "Member 'BP_OtomoPalHolderComponent_C_InactivateAllPalInArena::CallFunc_GetMaxOtomoNum_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_InactivateAllPalInArena, CallFunc_Subtract_IntInt_ReturnValue) == 0x00001C, "Member 'BP_OtomoPalHolderComponent_C_InactivateAllPalInArena::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_InactivateAllPalInArena, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000020, "Member 'BP_OtomoPalHolderComponent_C_InactivateAllPalInArena::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(alignof(BP_OtomoPalHolderComponent_C_InactivateAllOtomo) == 0x000008, "Wrong alignment on BP_OtomoPalHolderComponent_C_InactivateAllOtomo");
+static_assert(sizeof(BP_OtomoPalHolderComponent_C_InactivateAllOtomo) == 0x000028, "Wrong size on BP_OtomoPalHolderComponent_C_InactivateAllOtomo");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_InactivateAllOtomo, Temp_int_Variable) == 0x000000, "Member 'BP_OtomoPalHolderComponent_C_InactivateAllOtomo::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_InactivateAllOtomo, CallFunc_GetMaxOtomoNum_ReturnValue) == 0x000004, "Member 'BP_OtomoPalHolderComponent_C_InactivateAllOtomo::CallFunc_GetMaxOtomoNum_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_InactivateAllOtomo, CallFunc_GetOtomoIndividualHandle_ReturnValue) == 0x000008, "Member 'BP_OtomoPalHolderComponent_C_InactivateAllOtomo::CallFunc_GetOtomoIndividualHandle_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_InactivateAllOtomo, CallFunc_Subtract_IntInt_ReturnValue) == 0x000010, "Member 'BP_OtomoPalHolderComponent_C_InactivateAllOtomo::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_InactivateAllOtomo, CallFunc_Inactivate_Otomo_By_Handle_isSuccess) == 0x000014, "Member 'BP_OtomoPalHolderComponent_C_InactivateAllOtomo::CallFunc_Inactivate_Otomo_By_Handle_isSuccess' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_InactivateAllOtomo, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000015, "Member 'BP_OtomoPalHolderComponent_C_InactivateAllOtomo::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_InactivateAllOtomo, CallFunc_TryGetIndividualActor_ReturnValue) == 0x000018, "Member 'BP_OtomoPalHolderComponent_C_InactivateAllOtomo::CallFunc_TryGetIndividualActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_InactivateAllOtomo, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'BP_OtomoPalHolderComponent_C_InactivateAllOtomo::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_InactivateAllOtomo, CallFunc_GetActiveActorFlag_ReturnValue) == 0x000021, "Member 'BP_OtomoPalHolderComponent_C_InactivateAllOtomo::CallFunc_GetActiveActorFlag_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_InactivateAllOtomo, CallFunc_IsValid_ReturnValue_1) == 0x000022, "Member 'BP_OtomoPalHolderComponent_C_InactivateAllOtomo::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_InactivateAllOtomo, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'BP_OtomoPalHolderComponent_C_InactivateAllOtomo::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.InactiveActor
 // 0x0038 (0x0038 - 0x0000)
@@ -808,12 +846,12 @@ public:
 	class APalCharacter*                          Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          StayVisible;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsSuccess;                                         // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42C8[0x6];                                     // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B5C[0x6];                                     // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalAIController*                       K2Node_DynamicCast_AsPal_AIController;             // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42C9[0x6];                                     // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B5D[0x6];                                     // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_MonsterAIController_Otomo_C*        K2Node_DynamicCast_AsBP_Monster_AIController_Otomo; // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -850,15 +888,15 @@ public:
 	int32                                         TempStartIndex;                                    // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42CA[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B5E[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterHandle*          CallFunc_GetOtomoIndividualHandle_ReturnValue;     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable_1;                               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42CB[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B5F[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetMaxOtomoNum_ReturnValue;               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42CC[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B60[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetMaxOtomoNum_ReturnValue_1;             // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -897,7 +935,7 @@ struct BP_OtomoPalHolderComponent_C_IsRidingBySelectSlotID final
 {
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42CD[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B61[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetSelectedOtomoID_ReturnValue;           // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsRidingByOtomoSlotID_isRiding;           // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -926,7 +964,7 @@ struct BP_OtomoPalHolderComponent_C_IsValidCurrentSelectPalActor final
 {
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42CE[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B62[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_TryGetCurrentSelectPalActor_ReturnValue;  // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -935,6 +973,17 @@ static_assert(sizeof(BP_OtomoPalHolderComponent_C_IsValidCurrentSelectPalActor) 
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_IsValidCurrentSelectPalActor, ReturnValue) == 0x000000, "Member 'BP_OtomoPalHolderComponent_C_IsValidCurrentSelectPalActor::ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_IsValidCurrentSelectPalActor, CallFunc_TryGetCurrentSelectPalActor_ReturnValue) == 0x000008, "Member 'BP_OtomoPalHolderComponent_C_IsValidCurrentSelectPalActor::CallFunc_TryGetCurrentSelectPalActor_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_IsValidCurrentSelectPalActor, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BP_OtomoPalHolderComponent_C_IsValidCurrentSelectPalActor::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+
+// Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.OnOtomoDeath_ToAll
+// 0x0050 (0x0050 - 0x0000)
+struct BP_OtomoPalHolderComponent_C_OnOtomoDeath_ToAll final
+{
+public:
+	struct FPalDeadInfo                           DeadInfo;                                          // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+static_assert(alignof(BP_OtomoPalHolderComponent_C_OnOtomoDeath_ToAll) == 0x000008, "Wrong alignment on BP_OtomoPalHolderComponent_C_OnOtomoDeath_ToAll");
+static_assert(sizeof(BP_OtomoPalHolderComponent_C_OnOtomoDeath_ToAll) == 0x000050, "Wrong size on BP_OtomoPalHolderComponent_C_OnOtomoDeath_ToAll");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_OnOtomoDeath_ToAll, DeadInfo) == 0x000000, "Member 'BP_OtomoPalHolderComponent_C_OnOtomoDeath_ToAll::DeadInfo' has a wrong offset!");
 
 // Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.Otomo_DeathEvent
 // 0x0050 (0x0050 - 0x0000)
@@ -978,13 +1027,13 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42CF[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B63[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UPalIndividualCharacterSlot*>    CallFunc_GetSlots_Slots;                           // 0x0018(0x0010)(ReferenceParm)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42D0[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B64[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterSlot*            CallFunc_Array_Get_Item;                           // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42D1[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B65[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalCharacterSlotId                    CallFunc_GetSlotId_ReturnValue;                    // 0x003C(0x0014)(NoDestructor)
 	class UPalIndividualCharacterHandle*          CallFunc_GetHandle_ReturnValue;                    // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1020,7 +1069,7 @@ struct BP_OtomoPalHolderComponent_C_SetLocationOtomoForActive_ToAll final
 {
 public:
 	class AActor*                                 Otomo;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42D2[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B66[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             TF;                                                // 0x0010(0x0060)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_OtomoPalHolderComponent_C_SetLocationOtomoForActive_ToAll) == 0x000010, "Wrong alignment on BP_OtomoPalHolderComponent_C_SetLocationOtomoForActive_ToAll");
@@ -1035,7 +1084,7 @@ struct BP_OtomoPalHolderComponent_C_SetOtomoInvokerDisable final
 public:
 	class AActor*                                 Otomo;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsDisable;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42D3[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B67[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalNavigationInvokerComponent*         CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -1066,7 +1115,7 @@ public:
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalPlayerController*                   K2Node_DynamicCast_AsPal_Player_Controller;        // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42D4[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B68[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          CallFunc_GetDefaultPlayerCharacter_ReturnValue;    // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1083,114 +1132,114 @@ static_assert(offsetof(BP_OtomoPalHolderComponent_C_SetTrainer, CallFunc_GetDefa
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_SetTrainer, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'BP_OtomoPalHolderComponent_C_SetTrainer::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_SetTrainer, CallFunc_IsControlledByPlayer_ReturnValue) == 0x000031, "Member 'BP_OtomoPalHolderComponent_C_SetTrainer::CallFunc_IsControlledByPlayer_ReturnValue' has a wrong offset!");
 
-// Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.SpawnCharacterCallback
+// Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.Spawn Character Callback
 // 0x0168 (0x0168 - 0x0000)
-struct BP_OtomoPalHolderComponent_C_SpawnCharacterCallback final
+struct BP_OtomoPalHolderComponent_C_Spawn_Character_Callback final
 {
 public:
 	struct FPalInstanceID                         ID;                                                // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	int32                                         SlotID;                                            // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42D5[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B69[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          Trainer;                                           // 0x0038(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          TempSpawnedMonster;                                // 0x0040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FindSlotByIndividualID_SlotID;            // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42D6[0x4];                                     // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B6A[0x4];                                     // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalPartnerSkillParameterComponent*     CallFunc_GetComponentByClass_ReturnValue;          // 0x0050(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42D7[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B6B[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsControlledByPlayer_ReturnValue;         // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42D8[0x7];                                     // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B6C[0x7];                                     // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            K2Node_DynamicCast_AsController;                   // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsControlledByPlayer_ReturnValue_1;       // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsControlledByPlayer_ReturnValue_2;       // 0x007A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42D9[0x5];                                     // 0x007B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B6D[0x5];                                     // 0x007B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalRideMarkerComponent*                CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0080(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42DA[0x3];                                     // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B6E[0x3];                                     // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(class UPalIndividualCharacterHandle* IndividualHandle)> K2Node_CreateDelegate_OutputDelegate;              // 0x008C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42DB[0x4];                                     // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B6F[0x4];                                     // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterHandle*          CallFunc_GetOtomoIndividualHandle_ReturnValue;     // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalIndividualCharacterHandle*          CallFunc_GetOtomoIndividualHandle_ReturnValue_1;   // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42DC[0x7];                                     // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B70[0x7];                                     // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalNavigationInvokerComponent*         CallFunc_GetComponentByClass_ReturnValue_2;        // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42DD[0x7];                                     // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B71[0x7];                                     // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalAIController*                       K2Node_DynamicCast_AsPal_AIController;             // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42DE[0x3];                                     // 0x00E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B72[0x3];                                     // 0x00E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(const struct FPalDeadInfo& DeadInfo)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x00EC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42DF[0x4];                                     // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B73[0x4];                                     // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_MonsterAIController_Otomo_C*        K2Node_DynamicCast_AsBP_Monster_AIController_Otomo; // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42E0[0x3];                                     // 0x0109(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B74[0x3];                                     // 0x0109(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue_3;        // 0x0110(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_AdjustActorToFloor_ReturnValue;           // 0x0118(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_GetOwner_ReturnValue_1;                   // 0x0120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AController*                            K2Node_DynamicCast_AsController_1;                 // 0x0128(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42E1[0x7];                                     // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B75[0x7];                                     // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0138(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AController*                            CallFunc_GetController_ReturnValue_1;              // 0x0140(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character;                // 0x0148(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42E2[0x7];                                     // 0x0151(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B76[0x7];                                     // 0x0151(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_MonsterAIController_Otomo_C*        K2Node_DynamicCast_AsBP_Monster_AIController_Otomo_1; // 0x0158(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0161(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0162(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback) == 0x000008, "Wrong alignment on BP_OtomoPalHolderComponent_C_SpawnCharacterCallback");
-static_assert(sizeof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback) == 0x000168, "Wrong size on BP_OtomoPalHolderComponent_C_SpawnCharacterCallback");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, ID) == 0x000000, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::ID' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, SlotID) == 0x000030, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::SlotID' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, Trainer) == 0x000038, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::Trainer' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, TempSpawnedMonster) == 0x000040, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::TempSpawnedMonster' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_FindSlotByIndividualID_SlotID) == 0x000048, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_FindSlotByIndividualID_SlotID' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_GetComponentByClass_ReturnValue) == 0x000050, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_IsValid_ReturnValue) == 0x000058, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_GetOwner_ReturnValue) == 0x000060, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_IsControlledByPlayer_ReturnValue) == 0x000068, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_IsControlledByPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, K2Node_DynamicCast_AsController) == 0x000070, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::K2Node_DynamicCast_AsController' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, K2Node_DynamicCast_bSuccess) == 0x000078, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_IsControlledByPlayer_ReturnValue_1) == 0x000079, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_IsControlledByPlayer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_IsControlledByPlayer_ReturnValue_2) == 0x00007A, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_IsControlledByPlayer_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_GetComponentByClass_ReturnValue_1) == 0x000080, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_IsValid_ReturnValue_1) == 0x000088, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, K2Node_CreateDelegate_OutputDelegate) == 0x00008C, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_GetOtomoIndividualHandle_ReturnValue) == 0x0000A0, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_GetOtomoIndividualHandle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_GetOtomoIndividualHandle_ReturnValue_1) == 0x0000A8, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_GetOtomoIndividualHandle_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_TryGetIndividualParameter_ReturnValue) == 0x0000B0, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_TryGetIndividualParameter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_TryGetIndividualActor_ReturnValue) == 0x0000B8, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_TryGetIndividualActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_IsValid_ReturnValue_2) == 0x0000C0, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_GetComponentByClass_ReturnValue_2) == 0x0000C8, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_GetComponentByClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_IsValid_ReturnValue_3) == 0x0000D0, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_GetController_ReturnValue) == 0x0000D8, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_GetController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, K2Node_DynamicCast_AsPal_AIController) == 0x0000E0, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::K2Node_DynamicCast_AsPal_AIController' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, K2Node_DynamicCast_bSuccess_1) == 0x0000E8, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000EC, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, K2Node_DynamicCast_AsBP_Monster_AIController_Otomo) == 0x000100, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::K2Node_DynamicCast_AsBP_Monster_AIController_Otomo' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, K2Node_DynamicCast_bSuccess_2) == 0x000108, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_Array_AddUnique_ReturnValue) == 0x00010C, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_GetComponentByClass_ReturnValue_3) == 0x000110, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_GetComponentByClass_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_AdjustActorToFloor_ReturnValue) == 0x000118, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_AdjustActorToFloor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_GetOwner_ReturnValue_1) == 0x000120, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_GetOwner_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, K2Node_DynamicCast_AsController_1) == 0x000128, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::K2Node_DynamicCast_AsController_1' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, K2Node_DynamicCast_bSuccess_3) == 0x000130, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_K2_GetPawn_ReturnValue) == 0x000138, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_K2_GetPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_GetController_ReturnValue_1) == 0x000140, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_GetController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, K2Node_DynamicCast_AsPal_Character) == 0x000148, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::K2Node_DynamicCast_AsPal_Character' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, K2Node_DynamicCast_bSuccess_4) == 0x000150, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, K2Node_DynamicCast_AsBP_Monster_AIController_Otomo_1) == 0x000158, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::K2Node_DynamicCast_AsBP_Monster_AIController_Otomo_1' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, K2Node_DynamicCast_bSuccess_5) == 0x000160, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000161, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_SpawnCharacterCallback, CallFunc_IsValid_ReturnValue_4) == 0x000162, "Member 'BP_OtomoPalHolderComponent_C_SpawnCharacterCallback::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
+static_assert(alignof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback) == 0x000008, "Wrong alignment on BP_OtomoPalHolderComponent_C_Spawn_Character_Callback");
+static_assert(sizeof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback) == 0x000168, "Wrong size on BP_OtomoPalHolderComponent_C_Spawn_Character_Callback");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, ID) == 0x000000, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::ID' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, SlotID) == 0x000030, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::SlotID' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, Trainer) == 0x000038, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::Trainer' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, TempSpawnedMonster) == 0x000040, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::TempSpawnedMonster' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_FindSlotByIndividualID_SlotID) == 0x000048, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_FindSlotByIndividualID_SlotID' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_GetComponentByClass_ReturnValue) == 0x000050, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_IsValid_ReturnValue) == 0x000058, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_GetOwner_ReturnValue) == 0x000060, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_IsControlledByPlayer_ReturnValue) == 0x000068, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_IsControlledByPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, K2Node_DynamicCast_AsController) == 0x000070, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::K2Node_DynamicCast_AsController' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, K2Node_DynamicCast_bSuccess) == 0x000078, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_IsControlledByPlayer_ReturnValue_1) == 0x000079, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_IsControlledByPlayer_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_IsControlledByPlayer_ReturnValue_2) == 0x00007A, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_IsControlledByPlayer_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_GetComponentByClass_ReturnValue_1) == 0x000080, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_IsValid_ReturnValue_1) == 0x000088, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, K2Node_CreateDelegate_OutputDelegate) == 0x00008C, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_GetOtomoIndividualHandle_ReturnValue) == 0x0000A0, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_GetOtomoIndividualHandle_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_GetOtomoIndividualHandle_ReturnValue_1) == 0x0000A8, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_GetOtomoIndividualHandle_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_TryGetIndividualParameter_ReturnValue) == 0x0000B0, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_TryGetIndividualParameter_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_TryGetIndividualActor_ReturnValue) == 0x0000B8, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_TryGetIndividualActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_IsValid_ReturnValue_2) == 0x0000C0, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_GetComponentByClass_ReturnValue_2) == 0x0000C8, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_GetComponentByClass_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_IsValid_ReturnValue_3) == 0x0000D0, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_GetController_ReturnValue) == 0x0000D8, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_GetController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, K2Node_DynamicCast_AsPal_AIController) == 0x0000E0, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::K2Node_DynamicCast_AsPal_AIController' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, K2Node_DynamicCast_bSuccess_1) == 0x0000E8, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000EC, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, K2Node_DynamicCast_AsBP_Monster_AIController_Otomo) == 0x000100, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::K2Node_DynamicCast_AsBP_Monster_AIController_Otomo' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, K2Node_DynamicCast_bSuccess_2) == 0x000108, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_Array_AddUnique_ReturnValue) == 0x00010C, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_GetComponentByClass_ReturnValue_3) == 0x000110, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_GetComponentByClass_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_AdjustActorToFloor_ReturnValue) == 0x000118, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_AdjustActorToFloor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_GetOwner_ReturnValue_1) == 0x000120, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_GetOwner_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, K2Node_DynamicCast_AsController_1) == 0x000128, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::K2Node_DynamicCast_AsController_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, K2Node_DynamicCast_bSuccess_3) == 0x000130, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_K2_GetPawn_ReturnValue) == 0x000138, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_K2_GetPawn_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_GetController_ReturnValue_1) == 0x000140, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_GetController_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, K2Node_DynamicCast_AsPal_Character) == 0x000148, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::K2Node_DynamicCast_AsPal_Character' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, K2Node_DynamicCast_bSuccess_4) == 0x000150, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, K2Node_DynamicCast_AsBP_Monster_AIController_Otomo_1) == 0x000158, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::K2Node_DynamicCast_AsBP_Monster_AIController_Otomo_1' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, K2Node_DynamicCast_bSuccess_5) == 0x000160, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000161, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Spawn_Character_Callback, CallFunc_IsValid_ReturnValue_4) == 0x000162, "Member 'BP_OtomoPalHolderComponent_C_Spawn_Character_Callback::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
 
 // Function BP_OtomoPalHolderComponent.BP_OtomoPalHolderComponent_C.SpawnOtomo
 // 0x00C0 (0x00C0 - 0x0000)
@@ -1198,16 +1247,16 @@ struct BP_OtomoPalHolderComponent_C_SpawnOtomo final
 {
 public:
 	int32                                         SlotID;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42E3[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B77[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        TempAngle;                                         // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          Trainer;                                           // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class APalCharacter* InCharacter)> K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalIndividualCharacterHandle*          CallFunc_GetOtomoIndividualHandle_ReturnValue;     // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalCharacterManager*                   CallFunc_GetCharacterManager_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42E4[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B78[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(const struct FPalInstanceID& ID)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x003C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42E5[0x4];                                     // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B79[0x4];                                     // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FNetworkActorSpawnParameters           K2Node_MakeStruct_NetworkActorSpawnParameters;     // 0x0050(0x0070)(NoDestructor)
 };
 static_assert(alignof(BP_OtomoPalHolderComponent_C_SpawnOtomo) == 0x000008, "Wrong alignment on BP_OtomoPalHolderComponent_C_SpawnOtomo");
@@ -1255,13 +1304,13 @@ public:
 	class APalCharacter*                          CallFunc_TryGetOtomoActorBySlotIndex_ReturnValue;  // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42E6[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B7A[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_MonsterAIController_Otomo_C*        K2Node_DynamicCast_AsBP_Monster_AIController_Otomo; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42E7[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B7B[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalAIActionComponent*                  K2Node_DynamicCast_AsPal_AIAction_Component;       // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42E8[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B7C[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalAIActionCompositeBase*              CallFunc_GetCompositeRoot_ReturnValue;             // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalAIActionOtomoDefault*               K2Node_DynamicCast_AsPal_AIAction_Otomo_Default;   // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1299,7 +1348,7 @@ struct BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_in_Local final
 {
 public:
 	int32                                         SlotIndex;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42E9[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B7D[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterHandle*          LastHandle;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_in_Local) == 0x000008, "Wrong alignment on BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_in_Local");
@@ -1313,15 +1362,16 @@ struct BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server final
 {
 public:
 	int32                                         SlotIndex;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42EA[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B7E[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterHandle*          LastHandle;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Inactivate_Otomo_By_Handle_isSuccess;     // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42EB[0x1];                                     // 0x001B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FPalInstanceID& ID)> K2Node_CreateDelegate_OutputDelegate;              // 0x001C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42EC[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Inactivate_Otomo_By_Handle_isSuccess;     // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B7F[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(const struct FPalInstanceID& ID)> K2Node_CreateDelegate_OutputDelegate;              // 0x0020(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalCharacterManager*                   CallFunc_GetCharacterManager_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -1331,9 +1381,11 @@ static_assert(offsetof(BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server,
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server, LastHandle) == 0x000008, "Member 'BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server::LastHandle' has a wrong offset!");
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server, CallFunc_GetOwner_ReturnValue) == 0x000010, "Member 'BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server, CallFunc_HasAuthority_ReturnValue) == 0x000018, "Member 'BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server, CallFunc_Inactivate_Otomo_By_Handle_isSuccess) == 0x000019, "Member 'BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server::CallFunc_Inactivate_Otomo_By_Handle_isSuccess' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00001A, "Member 'BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server, K2Node_CreateDelegate_OutputDelegate) == 0x00001C, "Member 'BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server, CallFunc_Not_PreBool_ReturnValue) == 0x000019, "Member 'BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server, CallFunc_BooleanAND_ReturnValue) == 0x00001A, "Member 'BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server, CallFunc_Inactivate_Otomo_By_Handle_isSuccess) == 0x00001B, "Member 'BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server::CallFunc_Inactivate_Otomo_By_Handle_isSuccess' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00001C, "Member 'BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server, K2Node_CreateDelegate_OutputDelegate) == 0x000020, "Member 'BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server, CallFunc_GetCharacterManager_ReturnValue) == 0x000030, "Member 'BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server::CallFunc_GetCharacterManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server, CallFunc_IsValid_ReturnValue) == 0x000038, "Member 'BP_OtomoPalHolderComponent_C_Update_Otomo_Slot_In_Server::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
@@ -1346,7 +1398,7 @@ public:
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42ED[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B80[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          CallFunc_GetOwnerCharacter_Character;              // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -1358,10 +1410,10 @@ public:
 	class APalCharacter*                          CallFunc_Array_Get_Item;                           // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42EE[0x7];                                     // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B81[0x7];                                     // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult;       // 0x0088(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_SetActorLocation_ReturnValue;          // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42EF[0x3];                                     // 0x0171(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B82[0x3];                                     // 0x0171(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -1393,7 +1445,7 @@ struct BP_OtomoPalHolderComponent_C_UpdateSlot final
 {
 public:
 	int32                                         SlotIndex;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42F0[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B83[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterHandle*          LastHandle;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_OtomoPalHolderComponent_C_UpdateSlot) == 0x000008, "Wrong alignment on BP_OtomoPalHolderComponent_C_UpdateSlot");
@@ -1407,7 +1459,7 @@ struct BP_OtomoPalHolderComponent_C_UpdateSlotInServer final
 {
 public:
 	int32                                         SlotIndex;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42F1[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B84[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterHandle*          LastHandle;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_OtomoPalHolderComponent_C_UpdateSlotInServer) == 0x000008, "Wrong alignment on BP_OtomoPalHolderComponent_C_UpdateSlotInServer");
@@ -1455,22 +1507,22 @@ struct BP_OtomoPalHolderComponent_C_IsRidingByOtomoSlotID final
 public:
 	int32                                         SlotID;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsRiding;                                          // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42F2[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B85[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         SelectedSlotID;                                    // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42F3[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B86[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 ControlledPawn;                                    // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	class UPalIndividualCharacterHandle*          CallFunc_GetOtomoIndividualHandle_ReturnValue;     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42F4[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B87[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42F5[0x5];                                     // 0x0033(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B88[0x5];                                     // 0x0033(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AController*                            K2Node_DynamicCast_AsController;                   // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42F6[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B89[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_OtomoPalHolderComponent_C_IsRidingByOtomoSlotID) == 0x000008, "Wrong alignment on BP_OtomoPalHolderComponent_C_IsRidingByOtomoSlotID");

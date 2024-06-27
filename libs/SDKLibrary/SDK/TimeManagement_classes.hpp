@@ -18,30 +18,6 @@
 namespace SDK
 {
 
-// Class TimeManagement.TimeSynchronizationSource
-// 0x0008 (0x0030 - 0x0028)
-class UTimeSynchronizationSource : public UObject
-{
-public:
-	bool                                          bUseForSynchronization;                            // 0x0028(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_121D[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         FrameOffset;                                       // 0x002C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"TimeSynchronizationSource">();
-	}
-	static class UTimeSynchronizationSource* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UTimeSynchronizationSource>();
-	}
-};
-static_assert(alignof(UTimeSynchronizationSource) == 0x000008, "Wrong alignment on UTimeSynchronizationSource");
-static_assert(sizeof(UTimeSynchronizationSource) == 0x000030, "Wrong size on UTimeSynchronizationSource");
-static_assert(offsetof(UTimeSynchronizationSource, bUseForSynchronization) == 0x000028, "Member 'UTimeSynchronizationSource::bUseForSynchronization' has a wrong offset!");
-static_assert(offsetof(UTimeSynchronizationSource, FrameOffset) == 0x00002C, "Member 'UTimeSynchronizationSource::FrameOffset' has a wrong offset!");
-
 // Class TimeManagement.FixedFrameRateCustomTimeStep
 // 0x0000 (0x0028 - 0x0028)
 class UFixedFrameRateCustomTimeStep : public UEngineCustomTimeStep
@@ -65,7 +41,7 @@ class UGenlockedCustomTimeStep : public UFixedFrameRateCustomTimeStep
 {
 public:
 	bool                                          bAutoDetectFormat;                                 // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_121E[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1219[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -89,7 +65,7 @@ public:
 	struct FFrameRate                             FrameRate;                                         // 0x0030(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShouldBlock;                                      // 0x0038(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bForceSingleFrameDeltaTime;                        // 0x0039(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_121F[0x16];                                    // 0x003A(0x0016)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_121A[0x16];                                    // 0x003A(0x0016)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -107,13 +83,37 @@ static_assert(offsetof(UGenlockedFixedRateCustomTimeStep, FrameRate) == 0x000030
 static_assert(offsetof(UGenlockedFixedRateCustomTimeStep, bShouldBlock) == 0x000038, "Member 'UGenlockedFixedRateCustomTimeStep::bShouldBlock' has a wrong offset!");
 static_assert(offsetof(UGenlockedFixedRateCustomTimeStep, bForceSingleFrameDeltaTime) == 0x000039, "Member 'UGenlockedFixedRateCustomTimeStep::bForceSingleFrameDeltaTime' has a wrong offset!");
 
+// Class TimeManagement.TimeSynchronizationSource
+// 0x0008 (0x0030 - 0x0028)
+class UTimeSynchronizationSource : public UObject
+{
+public:
+	bool                                          bUseForSynchronization;                            // 0x0028(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_121B[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         FrameOffset;                                       // 0x002C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"TimeSynchronizationSource">();
+	}
+	static class UTimeSynchronizationSource* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UTimeSynchronizationSource>();
+	}
+};
+static_assert(alignof(UTimeSynchronizationSource) == 0x000008, "Wrong alignment on UTimeSynchronizationSource");
+static_assert(sizeof(UTimeSynchronizationSource) == 0x000030, "Wrong size on UTimeSynchronizationSource");
+static_assert(offsetof(UTimeSynchronizationSource, bUseForSynchronization) == 0x000028, "Member 'UTimeSynchronizationSource::bUseForSynchronization' has a wrong offset!");
+static_assert(offsetof(UTimeSynchronizationSource, FrameOffset) == 0x00002C, "Member 'UTimeSynchronizationSource::FrameOffset' has a wrong offset!");
+
 // Class TimeManagement.GenlockedTimecodeProvider
 // 0x0028 (0x0058 - 0x0030)
 class UGenlockedTimecodeProvider final : public UTimecodeProvider
 {
 public:
 	bool                                          bUseGenlockToCount;                                // 0x0030(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1220[0x27];                                    // 0x0031(0x0027)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_121C[0x27];                                    // 0x0031(0x0027)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

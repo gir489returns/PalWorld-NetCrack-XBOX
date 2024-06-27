@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "AIModule_structs.hpp"
 #include "EPal_NPC_CombatGunState_structs.hpp"
+#include "AIModule_structs.hpp"
 #include "BP_AIAction_NPC_CombatBase_classes.hpp"
 
 
@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_AIAction_NPC_Combat_Gun.BP_AIAction_NPC_Combat_Gun_C
-// 0x0080 (0x0208 - 0x0188)
+// 0x0088 (0x0210 - 0x0188)
 class UBP_AIAction_NPC_Combat_Gun_C final : public UBP_AIAction_NPC_CombatBase_C
 {
 public:
@@ -28,11 +28,12 @@ public:
 	TMap<EPal_NPC_CombatGunState, class UClass*>  StateMap;                                          // 0x0190(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	EPal_NPC_CombatGunState                       CurrentState;                                      // 0x01E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsStopTick;                                        // 0x01E1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F3C[0x6];                                     // 0x01E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4739[0x6];                                     // 0x01E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Timer;                                             // 0x01E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        RandomMoveTime;                                    // 0x01F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        SideMoveTime;                                      // 0x01F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Const_NearOffset;                                  // 0x0200(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          PreSideMove;                                       // 0x0208(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
@@ -41,12 +42,14 @@ public:
 	void ActionStart(class APawn* ControlledPawn);
 	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void Add_Gun_Combat_State(EPal_NPC_CombatGunState GunState);
+	void AddAllState();
 	void AddTimer(double* CurrentTime);
 	void Change_NextState(EPal_NPC_CombatGunState Next);
 	void ExecuteUbergraph_BP_AIAction_NPC_Combat_Gun(int32 EntryPoint);
 	void IsInMeleeAttackRange(bool* InRange);
 	void IsNear_FarRange(double Offset, bool* Near);
 	void IsNear_NearRange(double Offset, bool* Near);
+	void SwitchTickState();
 
 public:
 	static class UClass* StaticClass()
@@ -59,7 +62,7 @@ public:
 	}
 };
 static_assert(alignof(UBP_AIAction_NPC_Combat_Gun_C) == 0x000008, "Wrong alignment on UBP_AIAction_NPC_Combat_Gun_C");
-static_assert(sizeof(UBP_AIAction_NPC_Combat_Gun_C) == 0x000208, "Wrong size on UBP_AIAction_NPC_Combat_Gun_C");
+static_assert(sizeof(UBP_AIAction_NPC_Combat_Gun_C) == 0x000210, "Wrong size on UBP_AIAction_NPC_Combat_Gun_C");
 static_assert(offsetof(UBP_AIAction_NPC_Combat_Gun_C, UberGraphFrame_BP_AIAction_NPC_Combat_Gun_C) == 0x000188, "Member 'UBP_AIAction_NPC_Combat_Gun_C::UberGraphFrame_BP_AIAction_NPC_Combat_Gun_C' has a wrong offset!");
 static_assert(offsetof(UBP_AIAction_NPC_Combat_Gun_C, StateMap) == 0x000190, "Member 'UBP_AIAction_NPC_Combat_Gun_C::StateMap' has a wrong offset!");
 static_assert(offsetof(UBP_AIAction_NPC_Combat_Gun_C, CurrentState) == 0x0001E0, "Member 'UBP_AIAction_NPC_Combat_Gun_C::CurrentState' has a wrong offset!");
@@ -68,6 +71,7 @@ static_assert(offsetof(UBP_AIAction_NPC_Combat_Gun_C, Timer) == 0x0001E8, "Membe
 static_assert(offsetof(UBP_AIAction_NPC_Combat_Gun_C, RandomMoveTime) == 0x0001F0, "Member 'UBP_AIAction_NPC_Combat_Gun_C::RandomMoveTime' has a wrong offset!");
 static_assert(offsetof(UBP_AIAction_NPC_Combat_Gun_C, SideMoveTime) == 0x0001F8, "Member 'UBP_AIAction_NPC_Combat_Gun_C::SideMoveTime' has a wrong offset!");
 static_assert(offsetof(UBP_AIAction_NPC_Combat_Gun_C, Const_NearOffset) == 0x000200, "Member 'UBP_AIAction_NPC_Combat_Gun_C::Const_NearOffset' has a wrong offset!");
+static_assert(offsetof(UBP_AIAction_NPC_Combat_Gun_C, PreSideMove) == 0x000208, "Member 'UBP_AIAction_NPC_Combat_Gun_C::PreSideMove' has a wrong offset!");
 
 }
 

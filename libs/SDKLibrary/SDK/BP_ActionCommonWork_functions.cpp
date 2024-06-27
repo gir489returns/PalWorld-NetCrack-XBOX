@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function BP_ActionCommonWork.BP_ActionCommonWork_C.ExecuteUbergraph_BP_ActionCommonWork
-// (Final, UbergraphFunction, HasDefaults)
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

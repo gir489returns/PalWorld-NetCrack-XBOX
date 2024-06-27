@@ -17,37 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_TitleSaveDataButton_OLD.WBP_TitleSaveDataButton_OLD_C.BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_TitleSaveDataButton_OLD.WBP_TitleSaveDataButton_OLD_C.OnClickedSaveDataButton__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class FString                           Param_WorldSaveDirectoryName                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void UWBP_TitleSaveDataButton_OLD_C::BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_TitleSaveDataButton_OLD_C::OnClickedSaveDataButton__DelegateSignature(const class FString& Param_WorldSaveDirectoryName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TitleSaveDataButton_OLD_C", "BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_TitleSaveDataButton_OLD_C", "OnClickedSaveDataButton__DelegateSignature");
 
-	Params::WBP_TitleSaveDataButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_TitleSaveDataButton_OLD_C_OnClickedSaveDataButton__DelegateSignature Parms{};
 
-	Parms.Button = Button;
+	Parms.Param_WorldSaveDirectoryName = std::move(Param_WorldSaveDirectoryName);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_TitleSaveDataButton_OLD.WBP_TitleSaveDataButton_OLD_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_TitleSaveDataButton_OLD_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TitleSaveDataButton_OLD_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -71,21 +57,35 @@ void UWBP_TitleSaveDataButton_OLD_C::ExecuteUbergraph_WBP_TitleSaveDataButton_OL
 }
 
 
-// Function WBP_TitleSaveDataButton_OLD.WBP_TitleSaveDataButton_OLD_C.OnClickedSaveDataButton__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                           Param_WorldSaveDirectoryName                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// Function WBP_TitleSaveDataButton_OLD.WBP_TitleSaveDataButton_OLD_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_TitleSaveDataButton_OLD_C::OnClickedSaveDataButton__DelegateSignature(const class FString& Param_WorldSaveDirectoryName)
+void UWBP_TitleSaveDataButton_OLD_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TitleSaveDataButton_OLD_C", "OnClickedSaveDataButton__DelegateSignature");
+		Func = Class->GetFunction("WBP_TitleSaveDataButton_OLD_C", "Construct");
 
-	Params::WBP_TitleSaveDataButton_OLD_C_OnClickedSaveDataButton__DelegateSignature Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Param_WorldSaveDirectoryName = std::move(Param_WorldSaveDirectoryName);
+
+// Function WBP_TitleSaveDataButton_OLD.WBP_TitleSaveDataButton_OLD_C.BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_TitleSaveDataButton_OLD_C::BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_TitleSaveDataButton_OLD_C", "BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_TitleSaveDataButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

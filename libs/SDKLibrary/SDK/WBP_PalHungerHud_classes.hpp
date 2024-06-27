@@ -33,7 +33,7 @@ public:
 	void CheckGroup();
 	void Destruct();
 	void ExecuteUbergraph_WBP_PalHungerHud(int32 EntryPoint);
-	void GetLocalPlayerGroupID(struct FGuid* GroupID);
+	void GetLocalPlayerGroupID(struct FGuid* GroupId);
 	void OnInitialized();
 	void OnRequestRemove();
 	void OnSetup();

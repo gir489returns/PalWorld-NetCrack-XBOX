@@ -65,7 +65,7 @@ class AComposurePipelineBaseActor : public AActor
 public:
 	bool                                          bAutoRun;                                          // 0x0290(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAutoRunChildElementsAndSelf;                      // 0x0291(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_17DD[0x16];                                    // 0x0292(0x0016)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17E5[0x16];                                    // 0x0292(0x0016)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void EnqueueRendering(bool bCameraCutThisFrame);
@@ -95,7 +95,7 @@ static_assert(offsetof(AComposurePipelineBaseActor, bAutoRunChildElementsAndSelf
 class ACompositingElement : public AComposurePipelineBaseActor
 {
 public:
-	uint8                                         Pad_17DE[0x8];                                     // 0x02A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17E6[0x8];                                     // 0x02A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class UComposureCompositingTargetComponent*   CompositingTarget;                                 // 0x02B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UComposurePostProcessingPassProxy*      PostProcessProxy;                                  // 0x02B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class UCompositingElementInput*>       Inputs;                                            // 0x02C0(0x0010)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
@@ -107,15 +107,15 @@ public:
 	struct FIntPoint                              RenderResolution;                                  // 0x0314(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	ETextureRenderTargetFormat                    RenderFormat;                                      // 0x031C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseSharedTargetPool;                              // 0x031D(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17DF[0x32];                                    // 0x031E(0x0032)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17E7[0x32];                                    // 0x031E(0x0032)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         FreezeFrameMask;                                   // 0x0350(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_17E0[0x4];                                     // 0x0354(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17E8[0x4];                                     // 0x0354(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnTransformPassRendered_BP;                        // 0x0358(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFinalPassRendered_BP;                            // 0x0368(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 	class FName                                   CompShotIdName;                                    // 0x0378(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class ACompositingElement*                    Parent;                                            // 0x0380(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<class ACompositingElement*>            ChildLayers;                                       // 0x0388(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_17E1[0x4];                                     // 0x0398(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17E9[0x4];                                     // 0x0398(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         OutputOpacity;                                     // 0x039C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TMap<class UCompositingElementInput*, ECompPassConstructionType> UserConstructedInputs;                             // 0x03A0(0x0050)(NativeAccessSpecifierPrivate)
 	TMap<class UCompositingElementTransform*, ECompPassConstructionType> UserConstructedTransforms;                         // 0x03F0(0x0050)(NativeAccessSpecifierPrivate)
@@ -124,7 +124,7 @@ public:
 	TArray<class UCompositingElementTransform*>   InternalTransformPasses;                           // 0x04A0(0x0010)(ExportObject, ZeroConstructor, Transient, DuplicateTransient, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate)
 	TArray<class UCompositingElementOutput*>      InternalOutputs;                                   // 0x04B0(0x0010)(ExportObject, ZeroConstructor, Transient, DuplicateTransient, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate)
 	class UAlphaTransformPass*                    InternalAlphaPass;                                 // 0x04C0(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_17E2[0xB8];                                    // 0x04C8(0x00B8)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17EA[0xB8];                                    // 0x04C8(0x00B8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UCompositingElementInput* AddNewInputPass(class FName PassName, TSubclassOf<class UCompositingElementInput> InputType);
@@ -209,7 +209,7 @@ class ACompositingCaptureBase final : public ACompositingElement
 public:
 	class USceneCaptureComponent2D*               SceneCaptureComponent2D;                           // 0x0580(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bApplyDistortion;                                  // 0x0588(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_17EA[0x7];                                     // 0x0589(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17F2[0x7];                                     // 0x0589(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FComponentReference                    LensComponentPicker;                               // 0x0590(0x0028)(Edit, DisableEditOnTemplate, Protected, NativeAccessSpecifierProtected)
 	float                                         OverscanFactor;                                    // 0x05B8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         OriginalFocalLength;                               // 0x05BC(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -242,13 +242,13 @@ static_assert(offsetof(ACompositingCaptureBase, LastDistortionMID) == 0x0005C0, 
 class UCompositingPickerAsyncTask final : public UBlueprintAsyncActionBase
 {
 public:
-	uint8                                         Pad_17EB[0x8];                                     // 0x0030(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17F3[0x8];                                     // 0x0030(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnPick;                                            // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnCancel;                                          // 0x0048(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnAccept;                                          // 0x0058(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	class UTextureRenderTarget2D*                 PickerTarget;                                      // 0x0068(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UTexture*                               PickerDisplayImage;                                // 0x0070(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_17EC[0x8];                                     // 0x0078(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17F4[0x8];                                     // 0x0078(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UCompositingPickerAsyncTask* OpenCompositingPicker(class UTextureRenderTarget2D* Param_PickerTarget, class UTexture* DisplayImage, const class FText& WindowTitle, const bool bAverageColorOnDrag, const bool bUseImplicitGamma);
@@ -277,9 +277,9 @@ class UCompositingElementPass : public UObject
 {
 public:
 	bool                                          bEnabled;                                          // 0x0028(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_17EE[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17F6[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   PassName;                                          // 0x002C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17EF[0x2C];                                    // 0x0034(0x002C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17F7[0x2C];                                    // 0x0034(0x002C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnDisabled();
@@ -315,7 +315,7 @@ class UCompositingElementInput : public UCompositingElementPass
 {
 public:
 	bool                                          bIntermediate;                                     // 0x0060(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17F3[0x7];                                     // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17FB[0x7];                                     // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UTexture* GenerateInput();
@@ -450,7 +450,7 @@ static_assert(sizeof(UCompositingElementOutput) == 0x000060, "Wrong size on UCom
 class UColorConverterOutputPass : public UCompositingElementOutput
 {
 public:
-	uint8                                         Pad_17F5[0x8];                                     // 0x0060(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17FD[0x8];                                     // 0x0060(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCompositingElementTransform*           ColorConverter;                                    // 0x0068(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSubclassOf<class UCompositingElementTransform> DefaultConverterClass;                             // 0x0070(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
@@ -522,7 +522,7 @@ public:
 	class FString                                 FilenameFormat;                                    // 0x0070(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFrameRate                             OutputFrameRate;                                   // 0x0080(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EExrCompressionOptions                        Compression;                                       // 0x0088(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17F6[0xF];                                     // 0x0089(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17FE[0xF];                                     // 0x0089(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -547,7 +547,7 @@ class UCompositingElementTransform : public UCompositingElementPass
 {
 public:
 	bool                                          bIntermediate;                                     // 0x0060(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17F7[0xF];                                     // 0x0061(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17FF[0xF];                                     // 0x0061(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UTexture* ApplyTransform(class UTexture* Input, class UComposurePostProcessingPassProxy* PostProcessProxy, class ACameraActor* TargetCamera);
@@ -573,7 +573,7 @@ class UCompositingPostProcessPass : public UCompositingElementTransform
 {
 public:
 	float                                         RenderScale;                                       // 0x0070(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17F8[0x4];                                     // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1800[0x4];                                     // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UComposurePostProcessPassPolicy*> PostProcessPasses;                                 // 0x0078(0x0010)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPublic)
 
 public:
@@ -700,7 +700,7 @@ class UAlphaTransformPass final : public UCompositingElementTransform
 {
 public:
 	float                                         AlphaScale;                                        // 0x0070(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17FA[0x4];                                     // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1802[0x4];                                     // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     DefaultMaterial;                                   // 0x0078(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UMaterialInstanceDynamic*               AlphaTransformMID;                                 // 0x0080(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
@@ -783,7 +783,7 @@ class UComposureGameSettings final : public UObject
 public:
 	struct FSoftObjectPath                        StaticVideoPlateDebugImage;                        // 0x0028(0x0020)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSceneCapWarnOfMissingCam;                         // 0x0048(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1802[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_180A[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSoftObjectPath                        FallbackCompositingTexture;                        // 0x0050(0x0020)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UTexture*                               FallbackCompositingTextureObj;                     // 0x0070(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
@@ -845,7 +845,7 @@ class UComposureLensBloomPass final : public UComposurePostProcessPass
 public:
 	struct FLensBloomSettings                     Settings;                                          // 0x02C0(0x00C0)(Edit, BlueprintVisible, Interp, NoDestructor, NativeAccessSpecifierPublic)
 	class UMaterialInstanceDynamic*               TonemapperReplacingMID;                            // 0x0380(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1803[0x8];                                     // 0x0388(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_180B[0x8];                                     // 0x0388(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void BloomToRenderTarget();
@@ -918,7 +918,7 @@ static_assert(offsetof(UComposureLensBloomPassPolicy, TonemapperReplacmentMID) =
 class UComposurePlayerCompositingCameraModifier final : public UCameraModifier
 {
 public:
-	uint8                                         Pad_1804[0x8];                                     // 0x0048(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_180C[0x8];                                     // 0x0048(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IComposurePlayerCompositingInterface> Target;                                            // 0x0050(0x0010)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
@@ -957,11 +957,11 @@ static_assert(sizeof(IComposurePlayerCompositingInterface) == 0x000028, "Wrong s
 class UComposurePlayerCompositingTarget final : public UObject
 {
 public:
-	uint8                                         Pad_1805[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_180D[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerCameraManager*                   PlayerCameraManager;                               // 0x0030(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UComposurePlayerCompositingCameraModifier* PlayerCameraModifier;                              // 0x0038(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UMaterialInstanceDynamic*               ReplaceTonemapperMID;                              // 0x0040(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1806[0x30];                                    // 0x0048(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_180E[0x30];                                    // 0x0048(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class APlayerCameraManager* SetPlayerCameraManager(class APlayerCameraManager* Param_PlayerCameraManager);
@@ -990,7 +990,7 @@ static_assert(offsetof(UComposurePlayerCompositingTarget, ReplaceTonemapperMID) 
 class UComposureCompositingTargetComponent final : public UActorComponent
 {
 public:
-	uint8                                         Pad_1807[0x8];                                     // 0x00A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_180F[0x8];                                     // 0x00A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture*                               DisplayTexture;                                    // 0x00A8(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
@@ -1017,7 +1017,7 @@ static_assert(offsetof(UComposureCompositingTargetComponent, DisplayTexture) == 
 class UComposurePostProcessBlendable final : public UObject
 {
 public:
-	uint8                                         Pad_1808[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1810[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class UComposurePostProcessPass*              Target;                                            // 0x0030(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
@@ -1040,7 +1040,7 @@ class UComposurePostProcessingPassProxy final : public UComposurePostProcessPass
 {
 public:
 	class UMaterialInstanceDynamic*               SetupMID;                                          // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1809[0x8];                                     // 0x02C8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1811[0x8];                                     // 0x02C8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void Execute(class UTexture* PrePassInput, class UComposurePostProcessPassPolicy* PostProcessPass);
@@ -1067,7 +1067,7 @@ public:
 	struct FColorGradingSettings                  ColorGradingSettings;                              // 0x02C0(0x0290)(Edit, BlueprintVisible, Interp, NoDestructor, NativeAccessSpecifierPublic)
 	struct FFilmStockSettings                     FilmStockSettings;                                 // 0x0550(0x0014)(Edit, BlueprintVisible, Interp, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         ChromaticAberration;                               // 0x0564(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_180A[0x8];                                     // 0x0568(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1812[0x8];                                     // 0x0568(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void TonemapToRenderTarget();
@@ -1093,11 +1093,11 @@ static_assert(offsetof(UComposureTonemapperPass, ChromaticAberration) == 0x00056
 class UComposureTonemapperPassPolicy final : public UComposurePostProcessPassPolicy
 {
 public:
-	uint8                                         Pad_180B[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1813[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FColorGradingSettings                  ColorGradingSettings;                              // 0x0030(0x0290)(Edit, BlueprintVisible, Interp, NoDestructor, NativeAccessSpecifierPublic)
 	struct FFilmStockSettings                     FilmStockSettings;                                 // 0x02C0(0x0014)(Edit, BlueprintVisible, Interp, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         ChromaticAberration;                               // 0x02D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_180C[0x8];                                     // 0x02D8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1814[0x8];                                     // 0x02D8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1160,7 +1160,7 @@ static_assert(sizeof(IMovieSceneComposureExportClient) == 0x000028, "Wrong size 
 class UMovieSceneComposureExportInitializer final : public UObject
 {
 public:
-	uint8                                         Pad_180E[0x10];                                    // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1816[0x10];                                    // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ExportSceneCaptureBuffers(class ACompositingElement* CompShotElement, class USceneCaptureComponent2D* SceneCapture, const TArray<class FString>& BuffersToExport);
@@ -1183,9 +1183,9 @@ static_assert(sizeof(UMovieSceneComposureExportInitializer) == 0x000038, "Wrong 
 class UMovieSceneComposureExportTrack final : public UMovieSceneTrack
 {
 public:
-	uint8                                         Pad_180F[0x8];                                     // 0x0098(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1817[0x8];                                     // 0x0098(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMovieSceneComposureExportPass         Pass;                                              // 0x00A0(0x0014)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1810[0x4];                                     // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1818[0x4];                                     // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UMovieSceneSection*>             Sections;                                          // 0x00B8(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate)
 
 public:
@@ -1252,7 +1252,7 @@ static_assert(offsetof(UMovieSceneComposurePostMoveSettingsSection, Scale) == 0x
 class UMovieSceneComposurePostMoveSettingsTrack final : public UMovieScenePropertyTrack
 {
 public:
-	uint8                                         Pad_1811[0x8];                                     // 0x00C8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1819[0x8];                                     // 0x00C8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1272,15 +1272,15 @@ static_assert(sizeof(UMovieSceneComposurePostMoveSettingsTrack) == 0x0000D0, "Wr
 class UPlayerViewportCompositingOutput final : public UColorConverterOutputPass
 {
 public:
-	uint8                                         Pad_1812[0x8];                                     // 0x0078(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_181A[0x8];                                     // 0x0078(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         PlayerIndex;                                       // 0x0080(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ApplyToneCurve;                                    // 0x0084(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1813[0xB];                                     // 0x0085(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_181B[0xB];                                     // 0x0085(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPlayerCompOutputCameraModifier*        ActiveCamModifier;                                 // 0x0090(0x0008)(ZeroConstructor, Transient, DuplicateTransient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UMaterialInterface*                     TonemapperBaseMat;                                 // 0x0098(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UMaterialInterface*                     PreTonemapBaseMat;                                 // 0x00A0(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UMaterialInstanceDynamic*               ViewportOverrideMID;                               // 0x00A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1814[0x8];                                     // 0x00B0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_181C[0x8];                                     // 0x00B0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

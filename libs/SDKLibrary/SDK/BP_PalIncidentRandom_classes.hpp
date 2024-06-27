@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalIncidentRandom.BP_PalIncidentRandom_C
-// 0x0060 (0x01F0 - 0x0190)
+// 0x0070 (0x0200 - 0x0190)
 class UBP_PalIncidentRandom_C final : public UPalRandomIncidentBase
 {
 public:
@@ -31,9 +31,11 @@ public:
 	class ABP_PalRandomIncidentNPCSpawner_C*      NPCSpawner;                                        // 0x01C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          ExcludedEvenOnce;                                  // 0x01C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          InsideActionAreaEvenOnce;                          // 0x01C9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_383D[0x6];                                     // 0x01CA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4667[0x6];                                     // 0x01CA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FPalRandomIncidentSpawnMonsterData> OutbreakMonsters;                                  // 0x01D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class FName>                           OutbreakMonsterNames;                              // 0x01E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class APalRandomIncidentMapObjectSpawner*     MapObjectSpawner;                                  // 0x01F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class APalRandomIncidentObjectPlacement*      ObjectgPlacement;                                  // 0x01F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void BindDelegate_Action();
@@ -41,7 +43,9 @@ public:
 	void BindIDelegate_AreaInOut();
 	void CreateAction();
 	void CreateCharacterIdList(TArray<class FName>* CharacterIds);
+	void CreateMapObjectSpawner();
 	void CreateNpcSpawner();
+	void CreateObjectPlacement();
 	void ExcludeOtherPal();
 	void ExecuteUbergraph_BP_PalIncidentRandom(int32 EntryPoint);
 	void GetGroupList(TArray<int32>* GroupNo);
@@ -66,6 +70,8 @@ public:
 	void Spawn_Characters();
 	void Spawn_Monsters(class UDataTable* SpawnDataList);
 	void Spawn_NPCs(class UDataTable* SpawnDataList);
+	void SpawnDropItems();
+	void SpawnEggs();
 	void StartAction();
 	void TerminateAction();
 	void UnbindDelegate_Action();
@@ -87,7 +93,7 @@ public:
 	}
 };
 static_assert(alignof(UBP_PalIncidentRandom_C) == 0x000010, "Wrong alignment on UBP_PalIncidentRandom_C");
-static_assert(sizeof(UBP_PalIncidentRandom_C) == 0x0001F0, "Wrong size on UBP_PalIncidentRandom_C");
+static_assert(sizeof(UBP_PalIncidentRandom_C) == 0x000200, "Wrong size on UBP_PalIncidentRandom_C");
 static_assert(offsetof(UBP_PalIncidentRandom_C, UberGraphFrame) == 0x000190, "Member 'UBP_PalIncidentRandom_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBP_PalIncidentRandom_C, Parameter) == 0x000198, "Member 'UBP_PalIncidentRandom_C::Parameter' has a wrong offset!");
 static_assert(offsetof(UBP_PalIncidentRandom_C, SettingDT) == 0x0001A0, "Member 'UBP_PalIncidentRandom_C::SettingDT' has a wrong offset!");
@@ -98,6 +104,8 @@ static_assert(offsetof(UBP_PalIncidentRandom_C, ExcludedEvenOnce) == 0x0001C8, "
 static_assert(offsetof(UBP_PalIncidentRandom_C, InsideActionAreaEvenOnce) == 0x0001C9, "Member 'UBP_PalIncidentRandom_C::InsideActionAreaEvenOnce' has a wrong offset!");
 static_assert(offsetof(UBP_PalIncidentRandom_C, OutbreakMonsters) == 0x0001D0, "Member 'UBP_PalIncidentRandom_C::OutbreakMonsters' has a wrong offset!");
 static_assert(offsetof(UBP_PalIncidentRandom_C, OutbreakMonsterNames) == 0x0001E0, "Member 'UBP_PalIncidentRandom_C::OutbreakMonsterNames' has a wrong offset!");
+static_assert(offsetof(UBP_PalIncidentRandom_C, MapObjectSpawner) == 0x0001F0, "Member 'UBP_PalIncidentRandom_C::MapObjectSpawner' has a wrong offset!");
+static_assert(offsetof(UBP_PalIncidentRandom_C, ObjectgPlacement) == 0x0001F8, "Member 'UBP_PalIncidentRandom_C::ObjectgPlacement' has a wrong offset!");
 
 }
 

@@ -47,6 +47,7 @@ public:
 	void StartBindInteract(class UPalInteractDelegates* InteractDelegates);
 	void StartUnBindInteract(class UPalInteractDelegates* InteractDelegates);
 	void TickStatus(float DeltaTime);
+	void ToDeath();
 	void UpdateDyingWidget();
 
 public:

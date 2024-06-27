@@ -24,10 +24,10 @@ namespace SDK
 class alignas(0x10) UBP_ActionSimpleMonoMontage_C : public UPalActionBase
 {
 public:
-	uint8                                         Pad_3D24[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E78[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0140(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	EPalActionType                                ActionType;                                        // 0x0148(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D25[0x7];                                     // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E79[0x7];                                     // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ErrorString;                                       // 0x0150(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	double                                        AnimPlayRate;                                      // 0x0160(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

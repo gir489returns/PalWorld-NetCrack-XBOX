@@ -36,7 +36,7 @@ struct AudioParameterControllerInterface_SetBoolParameter final
 public:
 	class FName                                   InName;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          InBool;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2492[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24B8[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AudioParameterControllerInterface_SetBoolParameter) == 0x000004, "Wrong alignment on AudioParameterControllerInterface_SetBoolParameter");
 static_assert(sizeof(AudioParameterControllerInterface_SetBoolParameter) == 0x00000C, "Wrong size on AudioParameterControllerInterface_SetBoolParameter");

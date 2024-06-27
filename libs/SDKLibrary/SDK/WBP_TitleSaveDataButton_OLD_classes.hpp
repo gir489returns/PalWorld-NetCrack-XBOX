@@ -32,10 +32,10 @@ public:
 	struct FPalWorldBaseInfoSaveData              WorldBaseInfo;                                     // 0x02B8(0x0028)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 public:
-	void BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
-	void ExecuteUbergraph_WBP_TitleSaveDataButton_OLD(int32 EntryPoint);
 	void OnClickedSaveDataButton__DelegateSignature(const class FString& Param_WorldSaveDirectoryName);
+	void ExecuteUbergraph_WBP_TitleSaveDataButton_OLD(int32 EntryPoint);
+	void Construct();
+	void BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 
 public:
 	static class UClass* StaticClass()

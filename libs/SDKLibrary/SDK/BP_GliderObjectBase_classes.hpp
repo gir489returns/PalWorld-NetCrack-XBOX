@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_GliderObjectBase.BP_GliderObjectBase_C
-// 0x0010 (0x0318 - 0x0308)
+// 0x0010 (0x0338 - 0x0328)
 class ABP_GliderObjectBase_C : public APalGliderObject
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0308(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0310(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0328(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0330(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_GliderObjectBase(int32 EntryPoint);
@@ -42,9 +42,9 @@ public:
 	}
 };
 static_assert(alignof(ABP_GliderObjectBase_C) == 0x000008, "Wrong alignment on ABP_GliderObjectBase_C");
-static_assert(sizeof(ABP_GliderObjectBase_C) == 0x000318, "Wrong size on ABP_GliderObjectBase_C");
-static_assert(offsetof(ABP_GliderObjectBase_C, UberGraphFrame) == 0x000308, "Member 'ABP_GliderObjectBase_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_GliderObjectBase_C, DefaultSceneRoot) == 0x000310, "Member 'ABP_GliderObjectBase_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(sizeof(ABP_GliderObjectBase_C) == 0x000338, "Wrong size on ABP_GliderObjectBase_C");
+static_assert(offsetof(ABP_GliderObjectBase_C, UberGraphFrame) == 0x000328, "Member 'ABP_GliderObjectBase_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(ABP_GliderObjectBase_C, DefaultSceneRoot) == 0x000330, "Member 'ABP_GliderObjectBase_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

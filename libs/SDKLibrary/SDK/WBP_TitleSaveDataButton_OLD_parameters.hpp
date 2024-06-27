@@ -14,16 +14,16 @@
 namespace SDK::Params
 {
 
-// Function WBP_TitleSaveDataButton_OLD.WBP_TitleSaveDataButton_OLD_C.BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_TitleSaveDataButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_TitleSaveDataButton_OLD.WBP_TitleSaveDataButton_OLD_C.OnClickedSaveDataButton__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_TitleSaveDataButton_OLD_C_OnClickedSaveDataButton__DelegateSignature final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FString                                 Param_WorldSaveDirectoryName;                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TitleSaveDataButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature) == 0x000008, "Wrong alignment on WBP_TitleSaveDataButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
-static_assert(sizeof(WBP_TitleSaveDataButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature) == 0x000008, "Wrong size on WBP_TitleSaveDataButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
-static_assert(offsetof(WBP_TitleSaveDataButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature, Button) == 0x000000, "Member 'WBP_TitleSaveDataButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature::Button' has a wrong offset!");
+static_assert(alignof(WBP_TitleSaveDataButton_OLD_C_OnClickedSaveDataButton__DelegateSignature) == 0x000008, "Wrong alignment on WBP_TitleSaveDataButton_OLD_C_OnClickedSaveDataButton__DelegateSignature");
+static_assert(sizeof(WBP_TitleSaveDataButton_OLD_C_OnClickedSaveDataButton__DelegateSignature) == 0x000010, "Wrong size on WBP_TitleSaveDataButton_OLD_C_OnClickedSaveDataButton__DelegateSignature");
+static_assert(offsetof(WBP_TitleSaveDataButton_OLD_C_OnClickedSaveDataButton__DelegateSignature, Param_WorldSaveDirectoryName) == 0x000000, "Member 'WBP_TitleSaveDataButton_OLD_C_OnClickedSaveDataButton__DelegateSignature::Param_WorldSaveDirectoryName' has a wrong offset!");
 
 // Function WBP_TitleSaveDataButton_OLD.WBP_TitleSaveDataButton_OLD_C.ExecuteUbergraph_WBP_TitleSaveDataButton_OLD
 // 0x0038 (0x0038 - 0x0000)
@@ -31,7 +31,7 @@ struct WBP_TitleSaveDataButton_OLD_C_ExecuteUbergraph_WBP_TitleSaveDataButton_OL
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2412[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_409C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_GetWorldName_ReturnValue;                 // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0020(0x0018)()
@@ -43,16 +43,16 @@ static_assert(offsetof(WBP_TitleSaveDataButton_OLD_C_ExecuteUbergraph_WBP_TitleS
 static_assert(offsetof(WBP_TitleSaveDataButton_OLD_C_ExecuteUbergraph_WBP_TitleSaveDataButton_OLD, CallFunc_GetWorldName_ReturnValue) == 0x000010, "Member 'WBP_TitleSaveDataButton_OLD_C_ExecuteUbergraph_WBP_TitleSaveDataButton_OLD::CallFunc_GetWorldName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_TitleSaveDataButton_OLD_C_ExecuteUbergraph_WBP_TitleSaveDataButton_OLD, CallFunc_Conv_StringToText_ReturnValue) == 0x000020, "Member 'WBP_TitleSaveDataButton_OLD_C_ExecuteUbergraph_WBP_TitleSaveDataButton_OLD::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
 
-// Function WBP_TitleSaveDataButton_OLD.WBP_TitleSaveDataButton_OLD_C.OnClickedSaveDataButton__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_TitleSaveDataButton_OLD_C_OnClickedSaveDataButton__DelegateSignature final
+// Function WBP_TitleSaveDataButton_OLD.WBP_TitleSaveDataButton_OLD_C.BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_TitleSaveDataButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	class FString                                 Param_WorldSaveDirectoryName;                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TitleSaveDataButton_OLD_C_OnClickedSaveDataButton__DelegateSignature) == 0x000008, "Wrong alignment on WBP_TitleSaveDataButton_OLD_C_OnClickedSaveDataButton__DelegateSignature");
-static_assert(sizeof(WBP_TitleSaveDataButton_OLD_C_OnClickedSaveDataButton__DelegateSignature) == 0x000010, "Wrong size on WBP_TitleSaveDataButton_OLD_C_OnClickedSaveDataButton__DelegateSignature");
-static_assert(offsetof(WBP_TitleSaveDataButton_OLD_C_OnClickedSaveDataButton__DelegateSignature, Param_WorldSaveDirectoryName) == 0x000000, "Member 'WBP_TitleSaveDataButton_OLD_C_OnClickedSaveDataButton__DelegateSignature::Param_WorldSaveDirectoryName' has a wrong offset!");
+static_assert(alignof(WBP_TitleSaveDataButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature) == 0x000008, "Wrong alignment on WBP_TitleSaveDataButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+static_assert(sizeof(WBP_TitleSaveDataButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature) == 0x000008, "Wrong size on WBP_TitleSaveDataButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+static_assert(offsetof(WBP_TitleSaveDataButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature, Button) == 0x000000, "Member 'WBP_TitleSaveDataButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature::Button' has a wrong offset!");
 
 }
 

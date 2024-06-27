@@ -17,27 +17,39 @@
 namespace SDK
 {
 
-// Class AudioExtensions.AudioCodecEncoderSettings
-// 0x0008 (0x0030 - 0x0028)
-class UAudioCodecEncoderSettings : public UObject
+// Class AudioExtensions.SourceDataOverridePluginSourceSettingsBase
+// 0x0000 (0x0028 - 0x0028)
+class USourceDataOverridePluginSourceSettingsBase final : public UObject
 {
-public:
-	int32                                         Version;                                           // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2491[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AudioCodecEncoderSettings">();
+		return StaticClassImpl<"SourceDataOverridePluginSourceSettingsBase">();
 	}
-	static class UAudioCodecEncoderSettings* GetDefaultObj()
+	static class USourceDataOverridePluginSourceSettingsBase* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UAudioCodecEncoderSettings>();
+		return GetDefaultObjImpl<USourceDataOverridePluginSourceSettingsBase>();
 	}
 };
-static_assert(alignof(UAudioCodecEncoderSettings) == 0x000008, "Wrong alignment on UAudioCodecEncoderSettings");
-static_assert(sizeof(UAudioCodecEncoderSettings) == 0x000030, "Wrong size on UAudioCodecEncoderSettings");
-static_assert(offsetof(UAudioCodecEncoderSettings, Version) == 0x000028, "Member 'UAudioCodecEncoderSettings::Version' has a wrong offset!");
+static_assert(alignof(USourceDataOverridePluginSourceSettingsBase) == 0x000008, "Wrong alignment on USourceDataOverridePluginSourceSettingsBase");
+static_assert(sizeof(USourceDataOverridePluginSourceSettingsBase) == 0x000028, "Wrong size on USourceDataOverridePluginSourceSettingsBase");
+
+// Class AudioExtensions.SoundfieldEndpointSettingsBase
+// 0x0000 (0x0028 - 0x0028)
+class USoundfieldEndpointSettingsBase final : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"SoundfieldEndpointSettingsBase">();
+	}
+	static class USoundfieldEndpointSettingsBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<USoundfieldEndpointSettingsBase>();
+	}
+};
+static_assert(alignof(USoundfieldEndpointSettingsBase) == 0x000008, "Wrong alignment on USoundfieldEndpointSettingsBase");
+static_assert(sizeof(USoundfieldEndpointSettingsBase) == 0x000028, "Wrong size on USoundfieldEndpointSettingsBase");
 
 // Class AudioExtensions.SoundfieldEncodingSettingsBase
 // 0x0000 (0x0028 - 0x0028)
@@ -72,23 +84,6 @@ public:
 };
 static_assert(alignof(USpatializationPluginSourceSettingsBase) == 0x000008, "Wrong alignment on USpatializationPluginSourceSettingsBase");
 static_assert(sizeof(USpatializationPluginSourceSettingsBase) == 0x000028, "Wrong size on USpatializationPluginSourceSettingsBase");
-
-// Class AudioExtensions.SourceDataOverridePluginSourceSettingsBase
-// 0x0000 (0x0028 - 0x0028)
-class USourceDataOverridePluginSourceSettingsBase final : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"SourceDataOverridePluginSourceSettingsBase">();
-	}
-	static class USourceDataOverridePluginSourceSettingsBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<USourceDataOverridePluginSourceSettingsBase>();
-	}
-};
-static_assert(alignof(USourceDataOverridePluginSourceSettingsBase) == 0x000008, "Wrong alignment on USourceDataOverridePluginSourceSettingsBase");
-static_assert(sizeof(USourceDataOverridePluginSourceSettingsBase) == 0x000028, "Wrong size on USourceDataOverridePluginSourceSettingsBase");
 
 // Class AudioExtensions.OcclusionPluginSourceSettingsBase
 // 0x0000 (0x0028 - 0x0028)
@@ -156,6 +151,28 @@ public:
 static_assert(alignof(IAudioParameterControllerInterface) == 0x000008, "Wrong alignment on IAudioParameterControllerInterface");
 static_assert(sizeof(IAudioParameterControllerInterface) == 0x000028, "Wrong size on IAudioParameterControllerInterface");
 
+// Class AudioExtensions.AudioCodecEncoderSettings
+// 0x0008 (0x0030 - 0x0028)
+class UAudioCodecEncoderSettings : public UObject
+{
+public:
+	int32                                         Version;                                           // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_24B9[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"AudioCodecEncoderSettings">();
+	}
+	static class UAudioCodecEncoderSettings* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAudioCodecEncoderSettings>();
+	}
+};
+static_assert(alignof(UAudioCodecEncoderSettings) == 0x000008, "Wrong alignment on UAudioCodecEncoderSettings");
+static_assert(sizeof(UAudioCodecEncoderSettings) == 0x000030, "Wrong size on UAudioCodecEncoderSettings");
+static_assert(offsetof(UAudioCodecEncoderSettings, Version) == 0x000028, "Member 'UAudioCodecEncoderSettings::Version' has a wrong offset!");
+
 // Class AudioExtensions.AudioEndpointSettingsBase
 // 0x0000 (0x0028 - 0x0028)
 class UAudioEndpointSettingsBase : public UObject
@@ -195,7 +212,7 @@ static_assert(sizeof(UDummyEndpointSettings) == 0x000028, "Wrong size on UDummyE
 class USoundModulatorBase final : public UObject
 {
 public:
-	uint8                                         Pad_2493[0x8];                                     // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24BA[0x8];                                     // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -209,23 +226,6 @@ public:
 };
 static_assert(alignof(USoundModulatorBase) == 0x000008, "Wrong alignment on USoundModulatorBase");
 static_assert(sizeof(USoundModulatorBase) == 0x000030, "Wrong size on USoundModulatorBase");
-
-// Class AudioExtensions.SoundfieldEndpointSettingsBase
-// 0x0000 (0x0028 - 0x0028)
-class USoundfieldEndpointSettingsBase final : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"SoundfieldEndpointSettingsBase">();
-	}
-	static class USoundfieldEndpointSettingsBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<USoundfieldEndpointSettingsBase>();
-	}
-};
-static_assert(alignof(USoundfieldEndpointSettingsBase) == 0x000008, "Wrong alignment on USoundfieldEndpointSettingsBase");
-static_assert(sizeof(USoundfieldEndpointSettingsBase) == 0x000028, "Wrong size on USoundfieldEndpointSettingsBase");
 
 // Class AudioExtensions.SoundfieldEffectSettingsBase
 // 0x0000 (0x0028 - 0x0028)
@@ -309,7 +309,7 @@ class UAudioPcmEncoderSettings final : public UAudioCodecEncoderSettings
 {
 public:
 	EPcmBitDepthConversion                        BitDepthConversion;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2494[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24BB[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

@@ -291,6 +291,28 @@ void ABP_MonoNPCSpawner_C::InitializeSpawnedCharacter(class UPalIndividualCharac
 }
 
 
+// Function BP_MonoNPCSpawner.BP_MonoNPCSpawner_C.OnOtomoSpawned
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AController*                      HolderController                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APalCharacter*                    OtomoPal                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MonoNPCSpawner_C::OnOtomoSpawned(class AController* HolderController, class APalCharacter* OtomoPal)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MonoNPCSpawner_C", "OnOtomoSpawned");
+
+	Params::BP_MonoNPCSpawner_C_OnOtomoSpawned Parms{};
+
+	Parms.HolderController = HolderController;
+	Parms.OtomoPal = OtomoPal;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_MonoNPCSpawner.BP_MonoNPCSpawner_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
@@ -366,6 +388,26 @@ void ABP_MonoNPCSpawner_C::SetNullHandleWhenDestoryNPC(class AActor* DestroyedAc
 		Func = Class->GetFunction("BP_MonoNPCSpawner_C", "SetNullHandleWhenDestoryNPC");
 
 	Params::BP_MonoNPCSpawner_C_SetNullHandleWhenDestoryNPC Parms{};
+
+	Parms.DestroyedActor = DestroyedActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MonoNPCSpawner.BP_MonoNPCSpawner_C.SetNullHandleWhenDestoryOtomo
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           DestroyedActor                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MonoNPCSpawner_C::SetNullHandleWhenDestoryOtomo(class AActor* DestroyedActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MonoNPCSpawner_C", "SetNullHandleWhenDestoryOtomo");
+
+	Params::BP_MonoNPCSpawner_C_SetNullHandleWhenDestoryOtomo Parms{};
 
 	Parms.DestroyedActor = DestroyedActor;
 

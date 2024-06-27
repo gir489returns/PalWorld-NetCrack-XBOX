@@ -28,33 +28,33 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2422[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3791[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_GetOwner_ReturnValue_1;                   // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UPalPassiveSkillComponent*              CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsServer_ReturnValue;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2423[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3792[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetOwner_ReturnValue_2;                   // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaTime;                            // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2424[0x4];                                     // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3793[0x4];                                     // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue_2;        // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Conv_FloatToDouble_ReturnValue;           // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalIndividualCharacterParameter*       CallFunc_GetIndividualParameter_ReturnValue;       // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsServer_ReturnValue_1;                   // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2425[0x7];                                     // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3794[0x7];                                     // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetOwner_ReturnValue_3;                   // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue_3;        // 0x0080(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFixedPoint64                          CallFunc_GetHP_ReturnValue;                        // 0x0090(0x0008)(NoDestructor)
 	float                                         CallFunc_Convert_FixedPoint64ToFloat_ReturnValue;  // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2426[0x4];                                     // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3795[0x4];                                     // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFixedPoint64                          CallFunc_GetMaxHP_ReturnValue;                     // 0x00A0(0x0008)(NoDestructor)
 	float                                         CallFunc_Convert_FixedPoint64ToFloat_ReturnValue_1; // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2427[0x4];                                     // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3796[0x4];                                     // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_DoubleDouble_ReturnValue;            // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2428[0x7];                                     // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3797[0x7];                                     // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Add_DoubleDouble_ReturnValue_1;           // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_GetOwner_ReturnValue_4;                   // 0x00D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -68,7 +68,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x00F5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2429[0x2];                                     // 0x00F6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3798[0x2];                                     // 0x00F6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalRaidBossManager*                    CallFunc_GetRaidBossManager_ReturnValue;           // 0x00F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_GetOwner_ReturnValue_5;                   // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_GetOwner_ReturnValue_6;                   // 0x0108(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -85,7 +85,7 @@ public:
 	class UPalVisualEffectComponent*              CallFunc_GetComponentByClass_ReturnValue_8;        // 0x01B8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	EPalVisualEffectID                            CallFunc_FindModeChangeVisualEffectType_VisualEffect_1; // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x01C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_242A[0x6];                                     // 0x01C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3799[0x6];                                     // 0x01C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Add_DoubleDouble_B_ImplicitCast;          // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_A_ImplicitCast;     // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -155,19 +155,41 @@ static_assert(offsetof(BP_Status_RaidBossModeChange_C_ExecuteUbergraph_BP_Status
 static_assert(offsetof(BP_Status_RaidBossModeChange_C_ExecuteUbergraph_BP_Status_RaidBossModeChange, CallFunc_Convert_FloatToFixedPoint64_value_ImplicitCast) == 0x0001E0, "Member 'BP_Status_RaidBossModeChange_C_ExecuteUbergraph_BP_Status_RaidBossModeChange::CallFunc_Convert_FloatToFixedPoint64_value_ImplicitCast' has a wrong offset!");
 
 // Function BP_Status_RaidBossModeChange.BP_Status_RaidBossModeChange_C.FindModeChangeVisualEffectType
-// 0x0003 (0x0003 - 0x0000)
+// 0x000E (0x000E - 0x0000)
 struct BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType final
 {
 public:
 	EPalElementType                               Element;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPalVisualEffectID                            VisualEffect;                                      // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalElementType                               Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalVisualEffectID                            Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalVisualEffectID                            Temp_byte_Variable_2;                              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalVisualEffectID                            Temp_byte_Variable_3;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalVisualEffectID                            Temp_byte_Variable_4;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalVisualEffectID                            Temp_byte_Variable_5;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalVisualEffectID                            Temp_byte_Variable_6;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalVisualEffectID                            Temp_byte_Variable_7;                              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalVisualEffectID                            Temp_byte_Variable_8;                              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalVisualEffectID                            Temp_byte_Variable_9;                              // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalVisualEffectID                            Temp_byte_Variable_10;                             // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalVisualEffectID                            K2Node_Select_Default;                             // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType) == 0x000001, "Wrong alignment on BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType");
-static_assert(sizeof(BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType) == 0x000003, "Wrong size on BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType");
+static_assert(sizeof(BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType) == 0x00000E, "Wrong size on BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType");
 static_assert(offsetof(BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType, Element) == 0x000000, "Member 'BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType::Element' has a wrong offset!");
 static_assert(offsetof(BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType, VisualEffect) == 0x000001, "Member 'BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType::VisualEffect' has a wrong offset!");
-static_assert(offsetof(BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType, K2Node_SwitchEnum_CmpSuccess) == 0x000002, "Member 'BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType, Temp_byte_Variable) == 0x000002, "Member 'BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType, Temp_byte_Variable_1) == 0x000003, "Member 'BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType, Temp_byte_Variable_2) == 0x000004, "Member 'BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType::Temp_byte_Variable_2' has a wrong offset!");
+static_assert(offsetof(BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType, Temp_byte_Variable_3) == 0x000005, "Member 'BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType::Temp_byte_Variable_3' has a wrong offset!");
+static_assert(offsetof(BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType, Temp_byte_Variable_4) == 0x000006, "Member 'BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType::Temp_byte_Variable_4' has a wrong offset!");
+static_assert(offsetof(BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType, Temp_byte_Variable_5) == 0x000007, "Member 'BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType::Temp_byte_Variable_5' has a wrong offset!");
+static_assert(offsetof(BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType, Temp_byte_Variable_6) == 0x000008, "Member 'BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType::Temp_byte_Variable_6' has a wrong offset!");
+static_assert(offsetof(BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType, Temp_byte_Variable_7) == 0x000009, "Member 'BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType::Temp_byte_Variable_7' has a wrong offset!");
+static_assert(offsetof(BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType, Temp_byte_Variable_8) == 0x00000A, "Member 'BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType::Temp_byte_Variable_8' has a wrong offset!");
+static_assert(offsetof(BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType, Temp_byte_Variable_9) == 0x00000B, "Member 'BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType::Temp_byte_Variable_9' has a wrong offset!");
+static_assert(offsetof(BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType, Temp_byte_Variable_10) == 0x00000C, "Member 'BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType::Temp_byte_Variable_10' has a wrong offset!");
+static_assert(offsetof(BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType, K2Node_Select_Default) == 0x00000D, "Member 'BP_Status_RaidBossModeChange_C_FindModeChangeVisualEffectType::K2Node_Select_Default' has a wrong offset!");
 
 // Function BP_Status_RaidBossModeChange.BP_Status_RaidBossModeChange_C.FindRaidBossData
 // 0x0190 (0x0190 - 0x0000)
@@ -178,7 +200,7 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_242B[0x4];                                     // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_379A[0x4];                                     // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x0070(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UPalIndividualCharacterParameter*       CallFunc_GetIndividualParameter_ReturnValue;       // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -186,7 +208,7 @@ public:
 	class FName                                   CallFunc_GetCharacterID_ReturnValue;               // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FPalRaidBossDataRow                    CallFunc_FindRaidBossData_ReturnValue;             // 0x0090(0x0098)()
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_242C[0x4];                                     // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_379B[0x4];                                     // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalRaidBossSpawnInfo                  CallFunc_Array_Get_Item;                           // 0x0130(0x0058)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

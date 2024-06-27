@@ -19,9 +19,9 @@ namespace SDK
 struct alignas(0x08) FDataflowNode
 {
 public:
-	uint8                                         Pad_35A4[0xC8];                                    // 0x0000(0x00C8)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_36D2[0xC8];                                    // 0x0000(0x00C8)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bActive;                                           // 0x00C8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_35A5[0x7];                                     // 0x00C9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_36D3[0x7];                                     // 0x00C9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FDataflowNode) == 0x000008, "Wrong alignment on FDataflowNode");
 static_assert(sizeof(FDataflowNode) == 0x0000D0, "Wrong size on FDataflowNode");
@@ -32,7 +32,7 @@ static_assert(offsetof(FDataflowNode, bActive) == 0x0000C8, "Member 'FDataflowNo
 struct alignas(0x08) FDataflowConnection
 {
 public:
-	uint8                                         Pad_35A6[0x40];                                    // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_36D4[0x40];                                    // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FDataflowConnection) == 0x000008, "Wrong alignment on FDataflowConnection");
 static_assert(sizeof(FDataflowConnection) == 0x000040, "Wrong size on FDataflowConnection");
@@ -42,7 +42,7 @@ static_assert(sizeof(FDataflowConnection) == 0x000040, "Wrong size on FDataflowC
 struct FDataflowInput final : public FDataflowConnection
 {
 public:
-	uint8                                         Pad_35A7[0x8];                                     // 0x0040(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_36D5[0x8];                                     // 0x0040(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FDataflowInput) == 0x000008, "Wrong alignment on FDataflowInput");
 static_assert(sizeof(FDataflowInput) == 0x000048, "Wrong size on FDataflowInput");
@@ -52,7 +52,7 @@ static_assert(sizeof(FDataflowInput) == 0x000048, "Wrong size on FDataflowInput"
 struct FDataflowOutput final : public FDataflowConnection
 {
 public:
-	uint8                                         Pad_35A8[0x28];                                    // 0x0040(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_36D6[0x28];                                    // 0x0040(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FDataflowOutput) == 0x000008, "Wrong alignment on FDataflowOutput");
 static_assert(sizeof(FDataflowOutput) == 0x000068, "Wrong size on FDataflowOutput");

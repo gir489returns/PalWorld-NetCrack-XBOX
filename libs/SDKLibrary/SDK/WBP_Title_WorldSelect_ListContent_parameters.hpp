@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Pal_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
 
 
@@ -21,56 +21,74 @@ namespace SDK::Params
 {
 
 // Function WBP_Title_WorldSelect_ListContent.WBP_Title_WorldSelect_ListContent_C.SetupByServerDisplayData
-// 0x0310 (0x0310 - 0x0000)
+// 0x03B8 (0x03B8 - 0x0000)
 struct WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData final
 {
 public:
 	struct FPalUIServerDisplayData                DisplayData;                                       // 0x0000(0x01A0)(BlueprintVisible, BlueprintReadOnly, Parm)
 	struct FDataTableRowHandle                    PVEMsgID;                                          // 0x01A0(0x0010)(Edit, BlueprintVisible, NoDestructor)
 	struct FDataTableRowHandle                    PVPMsgID;                                          // 0x01B0(0x0010)(Edit, BlueprintVisible, NoDestructor)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x01C0(0x0018)()
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_1;            // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x01E8(0x0050)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0238(0x0050)(HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0288(0x0018)()
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x02A0(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x02B0(0x0018)()
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x02C8(0x0018)()
-	TDelegate<void(class UPingIP* PingOperation, const class FString& HostName, int32 TimeMS)> K2Node_CreateDelegate_OutputDelegate;              // 0x02E0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPingIP*                                CallFunc_ConstructPingObject_ReturnValue;          // 0x02F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x02F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x02F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x02FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_43C5[0x5];                                     // 0x02FB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPocketpairUserSubsystem*               CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0300(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetPingResultCache_ReturnValue;           // 0x0308(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x030C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x030D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4138[0x7];                                     // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x01C8(0x0018)()
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_1;            // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x01F0(0x0050)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0240(0x0050)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0290(0x0010)(ReferenceParm)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x02A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4139[0x7];                                     // 0x02A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x02A8(0x0018)()
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_2;            // 0x02C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x02C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_413A[0x7];                                     // 0x02C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x02D0(0x0050)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0320(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0330(0x0018)()
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0348(0x0018)()
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0360(0x0018)()
+	TDelegate<void(class UPingIP* PingOperation, const class FString& HostName)> K2Node_CreateDelegate_OutputDelegate;              // 0x0378(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0388(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0389(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x038A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_413B[0x5];                                     // 0x038B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPocketpairUserSubsystem*               CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0390(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetPingResultCache_ReturnValue;           // 0x0398(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x039C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_413C[0x3];                                     // 0x039D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UPingIP* PingOperation, const class FString& HostName, int32 TimeMS)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x03A0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPingIP*                                CallFunc_ConstructPingObject_ReturnValue;          // 0x03B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData");
-static_assert(sizeof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData) == 0x000310, "Wrong size on WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData");
+static_assert(sizeof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData) == 0x0003B8, "Wrong size on WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData");
 static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, DisplayData) == 0x000000, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::DisplayData' has a wrong offset!");
 static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, PVEMsgID) == 0x0001A0, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::PVEMsgID' has a wrong offset!");
 static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, PVPMsgID) == 0x0001B0, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::PVPMsgID' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_Conv_StringToText_ReturnValue) == 0x0001C0, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_Conv_IntToInt64_ReturnValue) == 0x0001D8, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_Conv_IntToInt64_ReturnValue_1) == 0x0001E0, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_Conv_IntToInt64_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, K2Node_MakeStruct_FormatArgumentData) == 0x0001E8, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, K2Node_MakeStruct_FormatArgumentData_1) == 0x000238, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_Conv_IntToText_ReturnValue) == 0x000288, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, K2Node_MakeArray_Array) == 0x0002A0, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_Conv_StringToText_ReturnValue_1) == 0x0002B0, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_Format_ReturnValue) == 0x0002C8, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, K2Node_CreateDelegate_OutputDelegate) == 0x0002E0, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_ConstructPingObject_ReturnValue) == 0x0002F0, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_ConstructPingObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, Temp_byte_Variable) == 0x0002F8, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, Temp_byte_Variable_1) == 0x0002F9, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, Temp_bool_Variable) == 0x0002FA, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000300, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_GetPingResultCache_ReturnValue) == 0x000308, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_GetPingResultCache_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, K2Node_Select_Default) == 0x00030C, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00030D, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, Temp_byte_Variable) == 0x0001C0, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_Conv_StringToText_ReturnValue) == 0x0001C8, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_Conv_IntToInt64_ReturnValue) == 0x0001E0, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_Conv_IntToInt64_ReturnValue_1) == 0x0001E8, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_Conv_IntToInt64_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, K2Node_MakeStruct_FormatArgumentData) == 0x0001F0, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, K2Node_MakeStruct_FormatArgumentData_1) == 0x000240, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, K2Node_MakeArray_Array) == 0x000290, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_Less_IntInt_ReturnValue) == 0x0002A0, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_Format_ReturnValue) == 0x0002A8, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_Conv_IntToInt64_ReturnValue_2) == 0x0002C0, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_Conv_IntToInt64_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_Less_IntInt_ReturnValue_1) == 0x0002C8, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, K2Node_MakeStruct_FormatArgumentData_2) == 0x0002D0, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, K2Node_MakeArray_Array_1) == 0x000320, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::K2Node_MakeArray_Array_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_Conv_IntToText_ReturnValue) == 0x000330, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_Format_ReturnValue_1) == 0x000348, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_Format_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000360, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, K2Node_CreateDelegate_OutputDelegate) == 0x000378, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, Temp_byte_Variable_1) == 0x000388, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, Temp_bool_Variable) == 0x000389, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, K2Node_Select_Default) == 0x00038A, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000390, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_GetPingResultCache_ReturnValue) == 0x000398, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_GetPingResultCache_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00039C, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, K2Node_CreateDelegate_OutputDelegate_1) == 0x0003A0, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData, CallFunc_ConstructPingObject_ReturnValue) == 0x0003B0, "Member 'WBP_Title_WorldSelect_ListContent_C_SetupByServerDisplayData::CallFunc_ConstructPingObject_ReturnValue' has a wrong offset!");
 
 // Function WBP_Title_WorldSelect_ListContent.WBP_Title_WorldSelect_ListContent_C.Setup By Local World Display Data
 // 0x0420 (0x0420 - 0x0000)
@@ -81,7 +99,7 @@ public:
 	struct FPalUILocalWorldDisplayData            DisplayData;                                       // 0x0010(0x0058)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0068(0x0018)()
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_43C6[0x3];                                     // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_413D[0x3];                                     // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_BreakDateTime_Year;                       // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_BreakDateTime_Month;                      // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_BreakDateTime_Day;                        // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -114,7 +132,7 @@ public:
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x03D8(0x0018)()
 	class FText                                   CallFunc_SelectText_ReturnValue;                   // 0x03F0(0x0018)()
 	bool                                          Temp_bool_Variable;                                // 0x0408(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_43C7[0x3];                                     // 0x0409(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_413E[0x3];                                     // 0x0409(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_Select_Default;                             // 0x040C(0x0014)()
 };
 static_assert(alignof(WBP_Title_WorldSelect_ListContent_C_Setup_By_Local_World_Display_Data) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_ListContent_C_Setup_By_Local_World_Display_Data");
@@ -157,9 +175,22 @@ static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_Setup_By_Local_World_
 static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_Setup_By_Local_World_Display_Data, Temp_bool_Variable) == 0x000408, "Member 'WBP_Title_WorldSelect_ListContent_C_Setup_By_Local_World_Display_Data::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_Setup_By_Local_World_Display_Data, K2Node_Select_Default) == 0x00040C, "Member 'WBP_Title_WorldSelect_ListContent_C_Setup_By_Local_World_Display_Data::K2Node_Select_Default' has a wrong offset!");
 
-// Function WBP_Title_WorldSelect_ListContent.WBP_Title_WorldSelect_ListContent_C.OnCompletePing
+// Function WBP_Title_WorldSelect_ListContent.WBP_Title_WorldSelect_ListContent_C.OnPingFailure
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Title_WorldSelect_ListContent_C_OnPingFailure final
+{
+public:
+	class UPingIP*                                PingOperation;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 HostName;                                          // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSelect_ListContent_C_OnPingFailure) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_ListContent_C_OnPingFailure");
+static_assert(sizeof(WBP_Title_WorldSelect_ListContent_C_OnPingFailure) == 0x000018, "Wrong size on WBP_Title_WorldSelect_ListContent_C_OnPingFailure");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_OnPingFailure, PingOperation) == 0x000000, "Member 'WBP_Title_WorldSelect_ListContent_C_OnPingFailure::PingOperation' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_OnPingFailure, HostName) == 0x000008, "Member 'WBP_Title_WorldSelect_ListContent_C_OnPingFailure::HostName' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect_ListContent.WBP_Title_WorldSelect_ListContent_C.OnPingComplete
 // 0x0068 (0x0068 - 0x0000)
-struct WBP_Title_WorldSelect_ListContent_C_OnCompletePing final
+struct WBP_Title_WorldSelect_ListContent_C_OnPingComplete final
 {
 public:
 	class UPingIP*                                PingOperation;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -167,21 +198,21 @@ public:
 	int32                                         TimeMS;                                            // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           LocalPingColor;                                    // 0x001C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_43C8[0x3];                                     // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_413F[0x3];                                     // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0030(0x0018)()
 	class UPocketpairUserSubsystem*               CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0050(0x0014)()
 };
-static_assert(alignof(WBP_Title_WorldSelect_ListContent_C_OnCompletePing) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_ListContent_C_OnCompletePing");
-static_assert(sizeof(WBP_Title_WorldSelect_ListContent_C_OnCompletePing) == 0x000068, "Wrong size on WBP_Title_WorldSelect_ListContent_C_OnCompletePing");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_OnCompletePing, PingOperation) == 0x000000, "Member 'WBP_Title_WorldSelect_ListContent_C_OnCompletePing::PingOperation' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_OnCompletePing, HostName) == 0x000008, "Member 'WBP_Title_WorldSelect_ListContent_C_OnCompletePing::HostName' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_OnCompletePing, TimeMS) == 0x000018, "Member 'WBP_Title_WorldSelect_ListContent_C_OnCompletePing::TimeMS' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_OnCompletePing, LocalPingColor) == 0x00001C, "Member 'WBP_Title_WorldSelect_ListContent_C_OnCompletePing::LocalPingColor' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_OnCompletePing, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00002C, "Member 'WBP_Title_WorldSelect_ListContent_C_OnCompletePing::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_OnCompletePing, CallFunc_Conv_IntToText_ReturnValue) == 0x000030, "Member 'WBP_Title_WorldSelect_ListContent_C_OnCompletePing::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_OnCompletePing, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000048, "Member 'WBP_Title_WorldSelect_ListContent_C_OnCompletePing::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_OnCompletePing, K2Node_MakeStruct_SlateColor) == 0x000050, "Member 'WBP_Title_WorldSelect_ListContent_C_OnCompletePing::K2Node_MakeStruct_SlateColor' has a wrong offset!");
+static_assert(alignof(WBP_Title_WorldSelect_ListContent_C_OnPingComplete) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_ListContent_C_OnPingComplete");
+static_assert(sizeof(WBP_Title_WorldSelect_ListContent_C_OnPingComplete) == 0x000068, "Wrong size on WBP_Title_WorldSelect_ListContent_C_OnPingComplete");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_OnPingComplete, PingOperation) == 0x000000, "Member 'WBP_Title_WorldSelect_ListContent_C_OnPingComplete::PingOperation' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_OnPingComplete, HostName) == 0x000008, "Member 'WBP_Title_WorldSelect_ListContent_C_OnPingComplete::HostName' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_OnPingComplete, TimeMS) == 0x000018, "Member 'WBP_Title_WorldSelect_ListContent_C_OnPingComplete::TimeMS' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_OnPingComplete, LocalPingColor) == 0x00001C, "Member 'WBP_Title_WorldSelect_ListContent_C_OnPingComplete::LocalPingColor' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_OnPingComplete, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00002C, "Member 'WBP_Title_WorldSelect_ListContent_C_OnPingComplete::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_OnPingComplete, CallFunc_Conv_IntToText_ReturnValue) == 0x000030, "Member 'WBP_Title_WorldSelect_ListContent_C_OnPingComplete::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_OnPingComplete, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000048, "Member 'WBP_Title_WorldSelect_ListContent_C_OnPingComplete::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_ListContent_C_OnPingComplete, K2Node_MakeStruct_SlateColor) == 0x000050, "Member 'WBP_Title_WorldSelect_ListContent_C_OnPingComplete::K2Node_MakeStruct_SlateColor' has a wrong offset!");
 
 // Function WBP_Title_WorldSelect_ListContent.WBP_Title_WorldSelect_ListContent_C.OnClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -222,7 +253,7 @@ struct WBP_Title_WorldSelect_ListContent_C_ExecuteUbergraph_WBP_Title_WorldSelec
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_43C9[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4140[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_2;               // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)

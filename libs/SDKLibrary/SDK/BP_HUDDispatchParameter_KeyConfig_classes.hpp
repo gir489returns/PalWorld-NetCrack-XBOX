@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK
@@ -25,7 +25,7 @@ class UBP_HUDDispatchParameter_KeyConfig_C final : public UPalHUDDispatchParamet
 public:
 	class FName                                   ActionName;                                        // 0x0038(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	ECommonInputType                              InputType;                                         // 0x0040(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_43CF[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_40A7[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnKeyChanged;                                      // 0x0048(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FPalKeyConfigSettings                  KeyConfigSetting;                                  // 0x0058(0x0160)(Edit, BlueprintVisible, ExposeOnSpawn)
 	EPalKeyConfigAxisFilterType                   AxisType;                                          // 0x01B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)

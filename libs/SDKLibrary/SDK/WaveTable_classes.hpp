@@ -22,10 +22,10 @@ namespace SDK
 class UWaveTableBank final : public UObject
 {
 public:
-	uint8                                         Pad_2479[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_248D[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	EWaveTableResolution                          Resolution;                                        // 0x0030(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bBipolar;                                          // 0x0031(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_247A[0x6];                                     // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_248E[0x6];                                     // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FWaveTableBankEntry>            Entries;                                           // 0x0038(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 
 public:

@@ -19,17 +19,17 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_AIADamageReaction.BP_AIADamageReaction_C
-// 0x0090 (0x0130 - 0x00A0)
+// 0x0090 (0x0138 - 0x00A8)
 class UBP_AIADamageReaction_C final : public UPalAIDamageReactionComponent
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x00A0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	TSoftObjectPtr<class UPalAIActionComponent>   PalAIActionComponent;                              // 0x00A8(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, InstancedReference, HasGetValueTypeHash)
-	TSoftObjectPtr<class UPalDamageReactionComponent> DamageReactionComponent;                           // 0x00D8(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, InstancedReference, HasGetValueTypeHash)
-	class UPalDamageReactionComponent*            LocalDamageReactionComponent;                      // 0x0108(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TArray<class UClass*>                         OnDamageIgnoreAIActionArray;                       // 0x0110(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	double                                        StepPercentage;                                    // 0x0120(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          DefaultPawn;                                       // 0x0128(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x00A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	TSoftObjectPtr<class UPalAIActionComponent>   PalAIActionComponent;                              // 0x00B0(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, InstancedReference, HasGetValueTypeHash)
+	TSoftObjectPtr<class UPalDamageReactionComponent> DamageReactionComponent;                           // 0x00E0(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, InstancedReference, HasGetValueTypeHash)
+	class UPalDamageReactionComponent*            LocalDamageReactionComponent;                      // 0x0110(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<class UClass*>                         OnDamageIgnoreAIActionArray;                       // 0x0118(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	double                                        StepPercentage;                                    // 0x0128(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          DefaultPawn;                                       // 0x0130(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void CheckIgnoreAction(bool* IsIgnore);
@@ -61,14 +61,14 @@ public:
 	}
 };
 static_assert(alignof(UBP_AIADamageReaction_C) == 0x000008, "Wrong alignment on UBP_AIADamageReaction_C");
-static_assert(sizeof(UBP_AIADamageReaction_C) == 0x000130, "Wrong size on UBP_AIADamageReaction_C");
-static_assert(offsetof(UBP_AIADamageReaction_C, UberGraphFrame) == 0x0000A0, "Member 'UBP_AIADamageReaction_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_AIADamageReaction_C, PalAIActionComponent) == 0x0000A8, "Member 'UBP_AIADamageReaction_C::PalAIActionComponent' has a wrong offset!");
-static_assert(offsetof(UBP_AIADamageReaction_C, DamageReactionComponent) == 0x0000D8, "Member 'UBP_AIADamageReaction_C::DamageReactionComponent' has a wrong offset!");
-static_assert(offsetof(UBP_AIADamageReaction_C, LocalDamageReactionComponent) == 0x000108, "Member 'UBP_AIADamageReaction_C::LocalDamageReactionComponent' has a wrong offset!");
-static_assert(offsetof(UBP_AIADamageReaction_C, OnDamageIgnoreAIActionArray) == 0x000110, "Member 'UBP_AIADamageReaction_C::OnDamageIgnoreAIActionArray' has a wrong offset!");
-static_assert(offsetof(UBP_AIADamageReaction_C, StepPercentage) == 0x000120, "Member 'UBP_AIADamageReaction_C::StepPercentage' has a wrong offset!");
-static_assert(offsetof(UBP_AIADamageReaction_C, DefaultPawn) == 0x000128, "Member 'UBP_AIADamageReaction_C::DefaultPawn' has a wrong offset!");
+static_assert(sizeof(UBP_AIADamageReaction_C) == 0x000138, "Wrong size on UBP_AIADamageReaction_C");
+static_assert(offsetof(UBP_AIADamageReaction_C, UberGraphFrame) == 0x0000A8, "Member 'UBP_AIADamageReaction_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UBP_AIADamageReaction_C, PalAIActionComponent) == 0x0000B0, "Member 'UBP_AIADamageReaction_C::PalAIActionComponent' has a wrong offset!");
+static_assert(offsetof(UBP_AIADamageReaction_C, DamageReactionComponent) == 0x0000E0, "Member 'UBP_AIADamageReaction_C::DamageReactionComponent' has a wrong offset!");
+static_assert(offsetof(UBP_AIADamageReaction_C, LocalDamageReactionComponent) == 0x000110, "Member 'UBP_AIADamageReaction_C::LocalDamageReactionComponent' has a wrong offset!");
+static_assert(offsetof(UBP_AIADamageReaction_C, OnDamageIgnoreAIActionArray) == 0x000118, "Member 'UBP_AIADamageReaction_C::OnDamageIgnoreAIActionArray' has a wrong offset!");
+static_assert(offsetof(UBP_AIADamageReaction_C, StepPercentage) == 0x000128, "Member 'UBP_AIADamageReaction_C::StepPercentage' has a wrong offset!");
+static_assert(offsetof(UBP_AIADamageReaction_C, DefaultPawn) == 0x000130, "Member 'UBP_AIADamageReaction_C::DefaultPawn' has a wrong offset!");
 
 }
 

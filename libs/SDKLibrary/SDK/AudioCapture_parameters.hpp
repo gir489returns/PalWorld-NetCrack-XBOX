@@ -23,7 +23,7 @@ struct AudioCapture_GetAudioCaptureDeviceInfo final
 public:
 	struct FAudioCaptureDeviceInfo                OutInfo;                                           // 0x0000(0x0010)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_242F[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_244B[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AudioCapture_GetAudioCaptureDeviceInfo) == 0x000004, "Wrong alignment on AudioCapture_GetAudioCaptureDeviceInfo");
 static_assert(sizeof(AudioCapture_GetAudioCaptureDeviceInfo) == 0x000014, "Wrong size on AudioCapture_GetAudioCaptureDeviceInfo");

@@ -29,9 +29,9 @@ public:
 	class UPocketpairFriend*                      Friend;                                            // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
 	void ExecuteUbergraph_WBP_TitleFriendButton_OLD(int32 EntryPoint);
+	void Construct();
+	void BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 
 public:
 	static class UClass* StaticClass()

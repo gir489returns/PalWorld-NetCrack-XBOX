@@ -17,55 +17,49 @@
 namespace SDK::Params
 {
 
-// Function LevelSequence.LevelSequence.CopyMetaData
-// 0x0010 (0x0010 - 0x0000)
-struct LevelSequence_CopyMetaData final
+// Function LevelSequence.LevelSequenceBurnInOptions.SetBurnIn
+// 0x0020 (0x0020 - 0x0000)
+struct LevelSequenceBurnInOptions_SetBurnIn final
 {
 public:
-	class UObject*                                InMetaData;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UObject*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftClassPath                         InBurnInClass;                                     // 0x0000(0x0020)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LevelSequence_CopyMetaData) == 0x000008, "Wrong alignment on LevelSequence_CopyMetaData");
-static_assert(sizeof(LevelSequence_CopyMetaData) == 0x000010, "Wrong size on LevelSequence_CopyMetaData");
-static_assert(offsetof(LevelSequence_CopyMetaData, InMetaData) == 0x000000, "Member 'LevelSequence_CopyMetaData::InMetaData' has a wrong offset!");
-static_assert(offsetof(LevelSequence_CopyMetaData, ReturnValue) == 0x000008, "Member 'LevelSequence_CopyMetaData::ReturnValue' has a wrong offset!");
+static_assert(alignof(LevelSequenceBurnInOptions_SetBurnIn) == 0x000008, "Wrong alignment on LevelSequenceBurnInOptions_SetBurnIn");
+static_assert(sizeof(LevelSequenceBurnInOptions_SetBurnIn) == 0x000020, "Wrong size on LevelSequenceBurnInOptions_SetBurnIn");
+static_assert(offsetof(LevelSequenceBurnInOptions_SetBurnIn, InBurnInClass) == 0x000000, "Member 'LevelSequenceBurnInOptions_SetBurnIn::InBurnInClass' has a wrong offset!");
 
-// Function LevelSequence.LevelSequence.FindOrAddMetaDataByClass
-// 0x0010 (0x0010 - 0x0000)
-struct LevelSequence_FindOrAddMetaDataByClass final
+// Function LevelSequence.LevelSequenceMediaController.SynchronizeToServer
+// 0x0004 (0x0004 - 0x0000)
+struct LevelSequenceMediaController_SynchronizeToServer final
 {
 public:
-	TSubclassOf<class UObject>                    InClass;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UObject*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DesyncThresholdSeconds;                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LevelSequence_FindOrAddMetaDataByClass) == 0x000008, "Wrong alignment on LevelSequence_FindOrAddMetaDataByClass");
-static_assert(sizeof(LevelSequence_FindOrAddMetaDataByClass) == 0x000010, "Wrong size on LevelSequence_FindOrAddMetaDataByClass");
-static_assert(offsetof(LevelSequence_FindOrAddMetaDataByClass, InClass) == 0x000000, "Member 'LevelSequence_FindOrAddMetaDataByClass::InClass' has a wrong offset!");
-static_assert(offsetof(LevelSequence_FindOrAddMetaDataByClass, ReturnValue) == 0x000008, "Member 'LevelSequence_FindOrAddMetaDataByClass::ReturnValue' has a wrong offset!");
+static_assert(alignof(LevelSequenceMediaController_SynchronizeToServer) == 0x000004, "Wrong alignment on LevelSequenceMediaController_SynchronizeToServer");
+static_assert(sizeof(LevelSequenceMediaController_SynchronizeToServer) == 0x000004, "Wrong size on LevelSequenceMediaController_SynchronizeToServer");
+static_assert(offsetof(LevelSequenceMediaController_SynchronizeToServer, DesyncThresholdSeconds) == 0x000000, "Member 'LevelSequenceMediaController_SynchronizeToServer::DesyncThresholdSeconds' has a wrong offset!");
 
-// Function LevelSequence.LevelSequence.RemoveMetaDataByClass
+// Function LevelSequence.LevelSequenceMediaController.GetMediaComponent
 // 0x0008 (0x0008 - 0x0000)
-struct LevelSequence_RemoveMetaDataByClass final
+struct LevelSequenceMediaController_GetMediaComponent final
 {
 public:
-	TSubclassOf<class UObject>                    InClass;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMediaComponent*                        ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LevelSequence_RemoveMetaDataByClass) == 0x000008, "Wrong alignment on LevelSequence_RemoveMetaDataByClass");
-static_assert(sizeof(LevelSequence_RemoveMetaDataByClass) == 0x000008, "Wrong size on LevelSequence_RemoveMetaDataByClass");
-static_assert(offsetof(LevelSequence_RemoveMetaDataByClass, InClass) == 0x000000, "Member 'LevelSequence_RemoveMetaDataByClass::InClass' has a wrong offset!");
+static_assert(alignof(LevelSequenceMediaController_GetMediaComponent) == 0x000008, "Wrong alignment on LevelSequenceMediaController_GetMediaComponent");
+static_assert(sizeof(LevelSequenceMediaController_GetMediaComponent) == 0x000008, "Wrong size on LevelSequenceMediaController_GetMediaComponent");
+static_assert(offsetof(LevelSequenceMediaController_GetMediaComponent, ReturnValue) == 0x000000, "Member 'LevelSequenceMediaController_GetMediaComponent::ReturnValue' has a wrong offset!");
 
-// Function LevelSequence.LevelSequence.FindMetaDataByClass
-// 0x0010 (0x0010 - 0x0000)
-struct LevelSequence_FindMetaDataByClass final
+// Function LevelSequence.LevelSequenceMediaController.GetSequence
+// 0x0008 (0x0008 - 0x0000)
+struct LevelSequenceMediaController_GetSequence final
 {
 public:
-	TSubclassOf<class UObject>                    InClass;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UObject*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ALevelSequenceActor*                    ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LevelSequence_FindMetaDataByClass) == 0x000008, "Wrong alignment on LevelSequence_FindMetaDataByClass");
-static_assert(sizeof(LevelSequence_FindMetaDataByClass) == 0x000010, "Wrong size on LevelSequence_FindMetaDataByClass");
-static_assert(offsetof(LevelSequence_FindMetaDataByClass, InClass) == 0x000000, "Member 'LevelSequence_FindMetaDataByClass::InClass' has a wrong offset!");
-static_assert(offsetof(LevelSequence_FindMetaDataByClass, ReturnValue) == 0x000008, "Member 'LevelSequence_FindMetaDataByClass::ReturnValue' has a wrong offset!");
+static_assert(alignof(LevelSequenceMediaController_GetSequence) == 0x000008, "Wrong alignment on LevelSequenceMediaController_GetSequence");
+static_assert(sizeof(LevelSequenceMediaController_GetSequence) == 0x000008, "Wrong size on LevelSequenceMediaController_GetSequence");
+static_assert(offsetof(LevelSequenceMediaController_GetSequence, ReturnValue) == 0x000000, "Member 'LevelSequenceMediaController_GetSequence::ReturnValue' has a wrong offset!");
 
 // Function LevelSequence.LevelSequenceActor.AddBinding
 // 0x0028 (0x0028 - 0x0000)
@@ -75,7 +69,7 @@ public:
 	struct FMovieSceneObjectBindingID             Binding;                                           // 0x0000(0x0018)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 Actor;                                             // 0x0018(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAllowBindingsFromAsset;                           // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_218B[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21D1[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(LevelSequenceActor_AddBinding) == 0x000008, "Wrong alignment on LevelSequenceActor_AddBinding");
 static_assert(sizeof(LevelSequenceActor_AddBinding) == 0x000028, "Wrong size on LevelSequenceActor_AddBinding");
@@ -91,7 +85,7 @@ public:
 	class FName                                   BindingTag;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 Actor;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAllowBindingsFromAsset;                           // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_218C[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21D2[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(LevelSequenceActor_AddBindingByTag) == 0x000008, "Wrong alignment on LevelSequenceActor_AddBindingByTag");
 static_assert(sizeof(LevelSequenceActor_AddBindingByTag) == 0x000018, "Wrong size on LevelSequenceActor_AddBindingByTag");
@@ -144,7 +138,7 @@ public:
 	struct FMovieSceneObjectBindingID             Binding;                                           // 0x0000(0x0018)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class AActor*>                         Actors;                                            // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bAllowBindingsFromAsset;                           // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_218D[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21D3[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(LevelSequenceActor_SetBinding) == 0x000008, "Wrong alignment on LevelSequenceActor_SetBinding");
 static_assert(sizeof(LevelSequenceActor_SetBinding) == 0x000030, "Wrong size on LevelSequenceActor_SetBinding");
@@ -160,7 +154,7 @@ public:
 	class FName                                   BindingTag;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class AActor*>                         Actors;                                            // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bAllowBindingsFromAsset;                           // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_218E[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21D4[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(LevelSequenceActor_SetBindingByTag) == 0x000008, "Wrong alignment on LevelSequenceActor_SetBindingByTag");
 static_assert(sizeof(LevelSequenceActor_SetBindingByTag) == 0x000020, "Wrong size on LevelSequenceActor_SetBindingByTag");
@@ -249,16 +243,55 @@ static_assert(alignof(LevelSequenceActor_LoadSequence) == 0x000008, "Wrong align
 static_assert(sizeof(LevelSequenceActor_LoadSequence) == 0x000008, "Wrong size on LevelSequenceActor_LoadSequence");
 static_assert(offsetof(LevelSequenceActor_LoadSequence, ReturnValue) == 0x000000, "Member 'LevelSequenceActor_LoadSequence::ReturnValue' has a wrong offset!");
 
-// Function LevelSequence.LevelSequenceBurnInOptions.SetBurnIn
-// 0x0020 (0x0020 - 0x0000)
-struct LevelSequenceBurnInOptions_SetBurnIn final
+// Function LevelSequence.LevelSequence.CopyMetaData
+// 0x0010 (0x0010 - 0x0000)
+struct LevelSequence_CopyMetaData final
 {
 public:
-	struct FSoftClassPath                         InBurnInClass;                                     // 0x0000(0x0020)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                InMetaData;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(LevelSequenceBurnInOptions_SetBurnIn) == 0x000008, "Wrong alignment on LevelSequenceBurnInOptions_SetBurnIn");
-static_assert(sizeof(LevelSequenceBurnInOptions_SetBurnIn) == 0x000020, "Wrong size on LevelSequenceBurnInOptions_SetBurnIn");
-static_assert(offsetof(LevelSequenceBurnInOptions_SetBurnIn, InBurnInClass) == 0x000000, "Member 'LevelSequenceBurnInOptions_SetBurnIn::InBurnInClass' has a wrong offset!");
+static_assert(alignof(LevelSequence_CopyMetaData) == 0x000008, "Wrong alignment on LevelSequence_CopyMetaData");
+static_assert(sizeof(LevelSequence_CopyMetaData) == 0x000010, "Wrong size on LevelSequence_CopyMetaData");
+static_assert(offsetof(LevelSequence_CopyMetaData, InMetaData) == 0x000000, "Member 'LevelSequence_CopyMetaData::InMetaData' has a wrong offset!");
+static_assert(offsetof(LevelSequence_CopyMetaData, ReturnValue) == 0x000008, "Member 'LevelSequence_CopyMetaData::ReturnValue' has a wrong offset!");
+
+// Function LevelSequence.LevelSequence.FindOrAddMetaDataByClass
+// 0x0010 (0x0010 - 0x0000)
+struct LevelSequence_FindOrAddMetaDataByClass final
+{
+public:
+	TSubclassOf<class UObject>                    InClass;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(LevelSequence_FindOrAddMetaDataByClass) == 0x000008, "Wrong alignment on LevelSequence_FindOrAddMetaDataByClass");
+static_assert(sizeof(LevelSequence_FindOrAddMetaDataByClass) == 0x000010, "Wrong size on LevelSequence_FindOrAddMetaDataByClass");
+static_assert(offsetof(LevelSequence_FindOrAddMetaDataByClass, InClass) == 0x000000, "Member 'LevelSequence_FindOrAddMetaDataByClass::InClass' has a wrong offset!");
+static_assert(offsetof(LevelSequence_FindOrAddMetaDataByClass, ReturnValue) == 0x000008, "Member 'LevelSequence_FindOrAddMetaDataByClass::ReturnValue' has a wrong offset!");
+
+// Function LevelSequence.LevelSequence.RemoveMetaDataByClass
+// 0x0008 (0x0008 - 0x0000)
+struct LevelSequence_RemoveMetaDataByClass final
+{
+public:
+	TSubclassOf<class UObject>                    InClass;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(LevelSequence_RemoveMetaDataByClass) == 0x000008, "Wrong alignment on LevelSequence_RemoveMetaDataByClass");
+static_assert(sizeof(LevelSequence_RemoveMetaDataByClass) == 0x000008, "Wrong size on LevelSequence_RemoveMetaDataByClass");
+static_assert(offsetof(LevelSequence_RemoveMetaDataByClass, InClass) == 0x000000, "Member 'LevelSequence_RemoveMetaDataByClass::InClass' has a wrong offset!");
+
+// Function LevelSequence.LevelSequence.FindMetaDataByClass
+// 0x0010 (0x0010 - 0x0000)
+struct LevelSequence_FindMetaDataByClass final
+{
+public:
+	TSubclassOf<class UObject>                    InClass;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(LevelSequence_FindMetaDataByClass) == 0x000008, "Wrong alignment on LevelSequence_FindMetaDataByClass");
+static_assert(sizeof(LevelSequence_FindMetaDataByClass) == 0x000010, "Wrong size on LevelSequence_FindMetaDataByClass");
+static_assert(offsetof(LevelSequence_FindMetaDataByClass, InClass) == 0x000000, "Member 'LevelSequence_FindMetaDataByClass::InClass' has a wrong offset!");
+static_assert(offsetof(LevelSequence_FindMetaDataByClass, ReturnValue) == 0x000008, "Member 'LevelSequence_FindMetaDataByClass::ReturnValue' has a wrong offset!");
 
 // Function LevelSequence.LevelSequenceBurnIn.SetSettings
 // 0x0008 (0x0008 - 0x0000)
@@ -396,39 +429,6 @@ public:
 static_assert(alignof(LevelSequencePlayer_GetActiveCameraComponent) == 0x000008, "Wrong alignment on LevelSequencePlayer_GetActiveCameraComponent");
 static_assert(sizeof(LevelSequencePlayer_GetActiveCameraComponent) == 0x000008, "Wrong size on LevelSequencePlayer_GetActiveCameraComponent");
 static_assert(offsetof(LevelSequencePlayer_GetActiveCameraComponent, ReturnValue) == 0x000000, "Member 'LevelSequencePlayer_GetActiveCameraComponent::ReturnValue' has a wrong offset!");
-
-// Function LevelSequence.LevelSequenceMediaController.SynchronizeToServer
-// 0x0004 (0x0004 - 0x0000)
-struct LevelSequenceMediaController_SynchronizeToServer final
-{
-public:
-	float                                         DesyncThresholdSeconds;                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelSequenceMediaController_SynchronizeToServer) == 0x000004, "Wrong alignment on LevelSequenceMediaController_SynchronizeToServer");
-static_assert(sizeof(LevelSequenceMediaController_SynchronizeToServer) == 0x000004, "Wrong size on LevelSequenceMediaController_SynchronizeToServer");
-static_assert(offsetof(LevelSequenceMediaController_SynchronizeToServer, DesyncThresholdSeconds) == 0x000000, "Member 'LevelSequenceMediaController_SynchronizeToServer::DesyncThresholdSeconds' has a wrong offset!");
-
-// Function LevelSequence.LevelSequenceMediaController.GetMediaComponent
-// 0x0008 (0x0008 - 0x0000)
-struct LevelSequenceMediaController_GetMediaComponent final
-{
-public:
-	class UMediaComponent*                        ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelSequenceMediaController_GetMediaComponent) == 0x000008, "Wrong alignment on LevelSequenceMediaController_GetMediaComponent");
-static_assert(sizeof(LevelSequenceMediaController_GetMediaComponent) == 0x000008, "Wrong size on LevelSequenceMediaController_GetMediaComponent");
-static_assert(offsetof(LevelSequenceMediaController_GetMediaComponent, ReturnValue) == 0x000000, "Member 'LevelSequenceMediaController_GetMediaComponent::ReturnValue' has a wrong offset!");
-
-// Function LevelSequence.LevelSequenceMediaController.GetSequence
-// 0x0008 (0x0008 - 0x0000)
-struct LevelSequenceMediaController_GetSequence final
-{
-public:
-	class ALevelSequenceActor*                    ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(LevelSequenceMediaController_GetSequence) == 0x000008, "Wrong alignment on LevelSequenceMediaController_GetSequence");
-static_assert(sizeof(LevelSequenceMediaController_GetSequence) == 0x000008, "Wrong size on LevelSequenceMediaController_GetSequence");
-static_assert(offsetof(LevelSequenceMediaController_GetSequence, ReturnValue) == 0x000000, "Member 'LevelSequenceMediaController_GetSequence::ReturnValue' has a wrong offset!");
 
 }
 

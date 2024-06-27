@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "Pal_classes.hpp"
 #include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK
@@ -33,16 +33,16 @@ public:
 	FMulticastInlineDelegateProperty_             OnClickedBackup;                                   // 0x0440(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__WBP_Title_BackupSelect_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	class UWidget* CustomNavi_ToCloseButton(EUINavigation Param_Navigation);
-	class UWidget* CustomNavi_ToListTop(EUINavigation Param_Navigation);
-	void Destruct();
-	void ExecuteUbergraph_WBP_Title_BackupSelect(int32 EntryPoint);
-	void GetTopFocusTarget(class UWidget** TargetWidget);
-	void OnClickedBackup__DelegateSignature(class UWBP_Title_BackupSelect_ListContent_C* Widget);
-	void OnClickedBackupButton_Internal(class UWBP_Title_BackupSelect_ListContent_C* Widget);
-	void OnClickedCloseButton__DelegateSignature();
 	void SetBackupDisplayData(TArray<struct FPalUIBackupSaveDisplayData>& DisplayData);
+	void OnClickedCloseButton__DelegateSignature();
+	void OnClickedBackupButton_Internal(class UWBP_Title_BackupSelect_ListContent_C* Widget);
+	void OnClickedBackup__DelegateSignature(class UWBP_Title_BackupSelect_ListContent_C* Widget);
+	void GetTopFocusTarget(class UWidget** TargetWidget);
+	void ExecuteUbergraph_WBP_Title_BackupSelect(int32 EntryPoint);
+	void Destruct();
+	class UWidget* CustomNavi_ToListTop(EUINavigation Param_Navigation);
+	class UWidget* CustomNavi_ToCloseButton(EUINavigation Param_Navigation);
+	void BndEvt__WBP_Title_BackupSelect_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

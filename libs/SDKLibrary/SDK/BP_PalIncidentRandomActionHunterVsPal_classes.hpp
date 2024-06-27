@@ -34,13 +34,13 @@ public:
 	void GetSpawnedLocation(class APalAIController* Controller, bool* Found, struct FVector* Location);
 	void GetSpawnerLocation(struct FVector* Location);
 	void GetSpawnRadius(double* Radius);
-	void GetWinnerGroup(int32* GroupID);
+	void GetWinnerGroup(int32* GroupId);
 	void OnAllNpcSpawned();
 	void OnInitialized();
 	void OnStart();
 	void OnTerminate();
 	void OnTick(float DeltaTime);
-	void ResetAIController(int32 GroupID);
+	void ResetAIController(int32 GroupId);
 	void ResetAIController_Monster(class ABP_MonsterAIControllerBase_C* Controller);
 	void ResetAIController_NPC(class ABP_NPCAIController_C* Controller);
 	void Set_Hate_To_Targets(class APalCharacter* Character, TArray<class APalCharacter*>& Targets);

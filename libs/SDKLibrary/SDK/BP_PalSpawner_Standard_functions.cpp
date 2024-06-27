@@ -673,12 +673,53 @@ TArray<struct FPalSpawnerGroupInfo> ABP_PalSpawner_Standard_C::GetOriginalSpawnG
 }
 
 
+// Function BP_PalSpawner_Standard.BP_PalSpawner_Standard_C.GetSpawnerName
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class FName ABP_PalSpawner_Standard_C::GetSpawnerName() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSpawner_Standard_C", "GetSpawnerName");
+
+	Params::BP_PalSpawner_Standard_C_GetSpawnerName Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_PalSpawner_Standard.BP_PalSpawner_Standard_C.GetSpawnerType
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// EPalSpawnedCharacterType                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+EPalSpawnedCharacterType ABP_PalSpawner_Standard_C::GetSpawnerType() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSpawner_Standard_C", "GetSpawnerType");
+
+	Params::BP_PalSpawner_Standard_C_GetSpawnerType Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
 // Function BP_PalSpawner_Standard.BP_PalSpawner_Standard_C.GetSpawnGroupList
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
+// class UObject*                          WorldContextObject                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FPalSpawnerGroupInfo>     ReturnValue                                            (Parm, OutParm, ReturnParm)
 
-TArray<struct FPalSpawnerGroupInfo> ABP_PalSpawner_Standard_C::GetSpawnGroupList() const
+TArray<struct FPalSpawnerGroupInfo> ABP_PalSpawner_Standard_C::GetSpawnGroupList(class UObject* WorldContextObject) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -686,6 +727,8 @@ TArray<struct FPalSpawnerGroupInfo> ABP_PalSpawner_Standard_C::GetSpawnGroupList
 		Func = Class->GetFunction("BP_PalSpawner_Standard_C", "GetSpawnGroupList");
 
 	Params::BP_PalSpawner_Standard_C_GetSpawnGroupList Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 

@@ -182,6 +182,30 @@ void UBP_AnimNotify_FootStep_C::IsSteppingShallows(class AActor* OwnerActor, boo
 }
 
 
+// Function BP_AnimNotify_FootStep.BP_AnimNotify_FootStep_C.IsSwimming
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// class AActor*                           Owner                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    Param_IsSwimming                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AnimNotify_FootStep_C::IsSwimming(class AActor* Owner, bool* Param_IsSwimming) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AnimNotify_FootStep_C", "IsSwimming");
+
+	Params::BP_AnimNotify_FootStep_C_IsSwimming Parms{};
+
+	Parms.Owner = Owner;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Param_IsSwimming != nullptr)
+		*Param_IsSwimming = Parms.Param_IsSwimming;
+}
+
+
 // Function BP_AnimNotify_FootStep.BP_AnimNotify_FootStep_C.MakeSwitchStatePalSize
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:

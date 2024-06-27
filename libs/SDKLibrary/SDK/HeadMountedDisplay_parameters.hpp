@@ -24,7 +24,7 @@ struct HandKeypointConversion_Conv_HandKeypointToInt32 final
 {
 public:
 	EHandKeypoint                                 Input;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31F4[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3304[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HandKeypointConversion_Conv_HandKeypointToInt32) == 0x000004, "Wrong alignment on HandKeypointConversion_Conv_HandKeypointToInt32");
@@ -40,9 +40,9 @@ public:
 	struct FKey                                   InKey;                                             // 0x0000(0x0018)(Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 InteractionProfile;                                // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EControllerHand                               Hand;                                              // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31F5[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3305[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   MotionSource;                                      // 0x002C(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31F6[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3306[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Indentifier;                                       // 0x0038(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Component;                                         // 0x0048(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -98,7 +98,7 @@ public:
 	class FString                                 IpAddress;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         BitRate;                                           // 0x0010(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EXRDeviceConnectionResult                     ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31F7[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3307[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HeadMountedDisplayFunctionLibrary_ConnectRemoteXRDevice) == 0x000008, "Wrong alignment on HeadMountedDisplayFunctionLibrary_ConnectRemoteXRDevice");
 static_assert(sizeof(HeadMountedDisplayFunctionLibrary_ConnectRemoteXRDevice) == 0x000018, "Wrong size on HeadMountedDisplayFunctionLibrary_ConnectRemoteXRDevice");
@@ -137,7 +137,7 @@ struct HeadMountedDisplayFunctionLibrary_EnumerateTrackedDevices final
 public:
 	class FName                                   SystemId;                                          // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EXRTrackedDeviceType                          DeviceType;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31F8[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3308[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FXRDeviceId>                    ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HeadMountedDisplayFunctionLibrary_EnumerateTrackedDevices) == 0x000008, "Wrong alignment on HeadMountedDisplayFunctionLibrary_EnumerateTrackedDevices");
@@ -154,23 +154,23 @@ public:
 	class UObject*                                WorldContext;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ControllerIndex;                                   // 0x0008(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   MotionSource;                                      // 0x000C(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31F9[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3309[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimespan                              Time;                                              // 0x0018(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bTimeWasUsed;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31FA[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_330A[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRotator                               Orientation;                                       // 0x0028(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FVector                                Position;                                          // 0x0040(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bProvidedLinearVelocity;                           // 0x0058(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31FB[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_330B[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                LinearVelocity;                                    // 0x0060(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bProvidedAngularVelocity;                          // 0x0078(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31FC[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_330C[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                AngularVelocityRadPerSec;                          // 0x0080(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bProvidedLinearAcceleration;                       // 0x0098(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31FD[0x7];                                     // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_330D[0x7];                                     // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                LinearAcceleration;                                // 0x00A0(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x00B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31FE[0x7];                                     // 0x00B9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_330E[0x7];                                     // 0x00B9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HeadMountedDisplayFunctionLibrary_GetControllerTransformForTime) == 0x000008, "Wrong alignment on HeadMountedDisplayFunctionLibrary_GetControllerTransformForTime");
 static_assert(sizeof(HeadMountedDisplayFunctionLibrary_GetControllerTransformForTime) == 0x0000C0, "Wrong size on HeadMountedDisplayFunctionLibrary_GetControllerTransformForTime");
@@ -195,10 +195,10 @@ struct HeadMountedDisplayFunctionLibrary_GetCurrentInteractionProfile final
 {
 public:
 	EControllerHand                               Hand;                                              // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31FF[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_330F[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 InteractionProfile;                                // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3200[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3310[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HeadMountedDisplayFunctionLibrary_GetCurrentInteractionProfile) == 0x000008, "Wrong alignment on HeadMountedDisplayFunctionLibrary_GetCurrentInteractionProfile");
 static_assert(sizeof(HeadMountedDisplayFunctionLibrary_GetCurrentInteractionProfile) == 0x000020, "Wrong size on HeadMountedDisplayFunctionLibrary_GetCurrentInteractionProfile");
@@ -213,10 +213,10 @@ struct HeadMountedDisplayFunctionLibrary_GetDevicePose final
 public:
 	struct FXRDeviceId                            XRDeviceId;                                        // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bIsTracked;                                        // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3201[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3311[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRotator                               Orientation;                                       // 0x0010(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bHasPositionalTracking;                            // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3202[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3312[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Position;                                          // 0x0030(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HeadMountedDisplayFunctionLibrary_GetDevicePose) == 0x000008, "Wrong alignment on HeadMountedDisplayFunctionLibrary_GetDevicePose");
@@ -235,10 +235,10 @@ public:
 	class UObject*                                WorldContext;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FXRDeviceId                            XRDeviceId;                                        // 0x0008(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bIsTracked;                                        // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3203[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3313[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRotator                               Orientation;                                       // 0x0018(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bHasPositionalTracking;                            // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3204[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3314[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Position;                                          // 0x0038(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HeadMountedDisplayFunctionLibrary_GetDeviceWorldPose) == 0x000008, "Wrong alignment on HeadMountedDisplayFunctionLibrary_GetDeviceWorldPose");
@@ -256,7 +256,7 @@ struct HeadMountedDisplayFunctionLibrary_GetHMDData final
 {
 public:
 	class UObject*                                WorldContext;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3205[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3315[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FXRHMDData                             HMDData;                                           // 0x0010(0x0060)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HeadMountedDisplayFunctionLibrary_GetHMDData) == 0x000010, "Wrong alignment on HeadMountedDisplayFunctionLibrary_GetHMDData");
@@ -293,7 +293,7 @@ struct HeadMountedDisplayFunctionLibrary_GetMotionControllerData final
 public:
 	class UObject*                                WorldContext;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EControllerHand                               Hand;                                              // 0x0008(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3206[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3316[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FXRMotionControllerData                MotionControllerData;                              // 0x0010(0x00E0)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HeadMountedDisplayFunctionLibrary_GetMotionControllerData) == 0x000010, "Wrong alignment on HeadMountedDisplayFunctionLibrary_GetMotionControllerData");
@@ -343,7 +343,7 @@ struct HeadMountedDisplayFunctionLibrary_GetPlayAreaBounds final
 {
 public:
 	EHMDTrackingOrigin                            Origin;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3207[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3317[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HeadMountedDisplayFunctionLibrary_GetPlayAreaBounds) == 0x000008, "Wrong alignment on HeadMountedDisplayFunctionLibrary_GetPlayAreaBounds");
@@ -359,7 +359,7 @@ public:
 	struct FTransform                             OutTransform;                                      // 0x0000(0x0060)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                              OutRect;                                           // 0x0060(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0070(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3208[0xF];                                     // 0x0071(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3318[0xF];                                     // 0x0071(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HeadMountedDisplayFunctionLibrary_GetPlayAreaRect) == 0x000010, "Wrong alignment on HeadMountedDisplayFunctionLibrary_GetPlayAreaRect");
 static_assert(sizeof(HeadMountedDisplayFunctionLibrary_GetPlayAreaRect) == 0x000080, "Wrong size on HeadMountedDisplayFunctionLibrary_GetPlayAreaRect");
@@ -379,7 +379,7 @@ public:
 	float                                         CameraDistance;                                    // 0x0038(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         NearPlane;                                         // 0x003C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         FarPlane;                                          // 0x0040(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3209[0x4];                                     // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3319[0x4];                                     // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HeadMountedDisplayFunctionLibrary_GetPositionalTrackingCameraParameters) == 0x000008, "Wrong alignment on HeadMountedDisplayFunctionLibrary_GetPositionalTrackingCameraParameters");
 static_assert(sizeof(HeadMountedDisplayFunctionLibrary_GetPositionalTrackingCameraParameters) == 0x000048, "Wrong size on HeadMountedDisplayFunctionLibrary_GetPositionalTrackingCameraParameters");
@@ -408,10 +408,10 @@ struct HeadMountedDisplayFunctionLibrary_GetTrackingOriginTransform final
 {
 public:
 	EHMDTrackingOrigin                            Origin;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_320A[0xF];                                     // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_331A[0xF];                                     // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             OutTransform;                                      // 0x0010(0x0060)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0070(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_320B[0xF];                                     // 0x0071(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_331B[0xF];                                     // 0x0071(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HeadMountedDisplayFunctionLibrary_GetTrackingOriginTransform) == 0x000010, "Wrong alignment on HeadMountedDisplayFunctionLibrary_GetTrackingOriginTransform");
 static_assert(sizeof(HeadMountedDisplayFunctionLibrary_GetTrackingOriginTransform) == 0x000080, "Wrong size on HeadMountedDisplayFunctionLibrary_GetTrackingOriginTransform");
@@ -434,9 +434,9 @@ public:
 	float                                         NearPlane;                                         // 0x0044(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         FarPlane;                                          // 0x0048(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IsActive;                                          // 0x004C(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_320C[0x3];                                     // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_331C[0x3];                                     // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Param_Index;                                       // 0x0050(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_320D[0x4];                                     // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_331D[0x4];                                     // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HeadMountedDisplayFunctionLibrary_GetTrackingSensorParameters) == 0x000008, "Wrong alignment on HeadMountedDisplayFunctionLibrary_GetTrackingSensorParameters");
 static_assert(sizeof(HeadMountedDisplayFunctionLibrary_GetTrackingSensorParameters) == 0x000058, "Wrong size on HeadMountedDisplayFunctionLibrary_GetTrackingSensorParameters");
@@ -458,7 +458,7 @@ struct HeadMountedDisplayFunctionLibrary_GetTrackingToWorldTransform final
 {
 public:
 	class UObject*                                WorldContext;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_320E[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_331E[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             ReturnValue;                                       // 0x0010(0x0060)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HeadMountedDisplayFunctionLibrary_GetTrackingToWorldTransform) == 0x000010, "Wrong alignment on HeadMountedDisplayFunctionLibrary_GetTrackingToWorldTransform");
@@ -497,7 +497,7 @@ struct HeadMountedDisplayFunctionLibrary_GetWorldToMetersScale final
 public:
 	class UObject*                                WorldContext;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_320F[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_331F[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HeadMountedDisplayFunctionLibrary_GetWorldToMetersScale) == 0x000008, "Wrong alignment on HeadMountedDisplayFunctionLibrary_GetWorldToMetersScale");
 static_assert(sizeof(HeadMountedDisplayFunctionLibrary_GetWorldToMetersScale) == 0x000010, "Wrong size on HeadMountedDisplayFunctionLibrary_GetWorldToMetersScale");
@@ -533,7 +533,7 @@ struct HeadMountedDisplayFunctionLibrary_IsDeviceTracking final
 public:
 	struct FXRDeviceId                            XRDeviceId;                                        // 0x0000(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3210[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3320[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HeadMountedDisplayFunctionLibrary_IsDeviceTracking) == 0x000004, "Wrong alignment on HeadMountedDisplayFunctionLibrary_IsDeviceTracking");
 static_assert(sizeof(HeadMountedDisplayFunctionLibrary_IsDeviceTracking) == 0x000010, "Wrong size on HeadMountedDisplayFunctionLibrary_IsDeviceTracking");
@@ -591,7 +591,7 @@ struct HeadMountedDisplayFunctionLibrary_ResetOrientationAndPosition final
 public:
 	float                                         Yaw;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EOrientPositionSelector                       Options;                                           // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3211[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3321[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HeadMountedDisplayFunctionLibrary_ResetOrientationAndPosition) == 0x000004, "Wrong alignment on HeadMountedDisplayFunctionLibrary_ResetOrientationAndPosition");
 static_assert(sizeof(HeadMountedDisplayFunctionLibrary_ResetOrientationAndPosition) == 0x000008, "Wrong size on HeadMountedDisplayFunctionLibrary_ResetOrientationAndPosition");
@@ -634,7 +634,7 @@ public:
 	bool                                          bDrawEyeFirst;                                     // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bClearBlack;                                       // 0x0041(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseAlpha;                                         // 0x0042(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3212[0x5];                                     // 0x0043(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3322[0x5];                                     // 0x0043(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HeadMountedDisplayFunctionLibrary_SetSpectatorScreenModeTexturePlusEyeLayout) == 0x000008, "Wrong alignment on HeadMountedDisplayFunctionLibrary_SetSpectatorScreenModeTexturePlusEyeLayout");
 static_assert(sizeof(HeadMountedDisplayFunctionLibrary_SetSpectatorScreenModeTexturePlusEyeLayout) == 0x000048, "Wrong size on HeadMountedDisplayFunctionLibrary_SetSpectatorScreenModeTexturePlusEyeLayout");
@@ -675,7 +675,7 @@ struct HeadMountedDisplayFunctionLibrary_SetWorldToMetersScale final
 public:
 	class UObject*                                WorldContext;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         NewScale;                                          // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3213[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3323[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HeadMountedDisplayFunctionLibrary_SetWorldToMetersScale) == 0x000008, "Wrong alignment on HeadMountedDisplayFunctionLibrary_SetWorldToMetersScale");
 static_assert(sizeof(HeadMountedDisplayFunctionLibrary_SetWorldToMetersScale) == 0x000010, "Wrong size on HeadMountedDisplayFunctionLibrary_SetWorldToMetersScale");
@@ -724,7 +724,7 @@ struct MotionControllerComponent_GetHandJointPosition final
 public:
 	int32                                         JointIndex;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bValueFound;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3219[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3329[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MotionControllerComponent_GetHandJointPosition) == 0x000008, "Wrong alignment on MotionControllerComponent_GetHandJointPosition");
@@ -740,7 +740,7 @@ struct MotionControllerComponent_GetParameterValue final
 public:
 	class FName                                   InName;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bValueFound;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_321A[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_332A[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MotionControllerComponent_GetParameterValue) == 0x000004, "Wrong alignment on MotionControllerComponent_GetParameterValue");
@@ -866,7 +866,7 @@ struct MotionTrackedDeviceFunctionLibrary_DisableMotionTrackingOfDevice final
 public:
 	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EControllerHand                               Hand;                                              // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_321B[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_332B[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MotionTrackedDeviceFunctionLibrary_DisableMotionTrackingOfDevice) == 0x000004, "Wrong alignment on MotionTrackedDeviceFunctionLibrary_DisableMotionTrackingOfDevice");
 static_assert(sizeof(MotionTrackedDeviceFunctionLibrary_DisableMotionTrackingOfDevice) == 0x000008, "Wrong size on MotionTrackedDeviceFunctionLibrary_DisableMotionTrackingOfDevice");
@@ -893,7 +893,7 @@ struct MotionTrackedDeviceFunctionLibrary_EnableMotionTrackingForComponent final
 public:
 	class UMotionControllerComponent*             MotionControllerComponent;                         // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_321C[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_332C[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MotionTrackedDeviceFunctionLibrary_EnableMotionTrackingForComponent) == 0x000008, "Wrong alignment on MotionTrackedDeviceFunctionLibrary_EnableMotionTrackingForComponent");
 static_assert(sizeof(MotionTrackedDeviceFunctionLibrary_EnableMotionTrackingForComponent) == 0x000010, "Wrong size on MotionTrackedDeviceFunctionLibrary_EnableMotionTrackingForComponent");
@@ -908,7 +908,7 @@ public:
 	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EControllerHand                               Hand;                                              // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0005(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_321D[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_332D[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MotionTrackedDeviceFunctionLibrary_EnableMotionTrackingOfDevice) == 0x000004, "Wrong alignment on MotionTrackedDeviceFunctionLibrary_EnableMotionTrackingOfDevice");
 static_assert(sizeof(MotionTrackedDeviceFunctionLibrary_EnableMotionTrackingOfDevice) == 0x000008, "Wrong size on MotionTrackedDeviceFunctionLibrary_EnableMotionTrackingOfDevice");
@@ -924,7 +924,7 @@ public:
 	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   SourceName;                                        // 0x0004(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_321E[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_332E[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MotionTrackedDeviceFunctionLibrary_EnableMotionTrackingOfSource) == 0x000004, "Wrong alignment on MotionTrackedDeviceFunctionLibrary_EnableMotionTrackingOfSource");
 static_assert(sizeof(MotionTrackedDeviceFunctionLibrary_EnableMotionTrackingOfSource) == 0x000010, "Wrong size on MotionTrackedDeviceFunctionLibrary_EnableMotionTrackingOfSource");
@@ -984,7 +984,7 @@ public:
 	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   SourceName;                                        // 0x0004(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_321F[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_332F[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MotionTrackedDeviceFunctionLibrary_IsMotionSourceTracking) == 0x000004, "Wrong alignment on MotionTrackedDeviceFunctionLibrary_IsMotionSourceTracking");
 static_assert(sizeof(MotionTrackedDeviceFunctionLibrary_IsMotionSourceTracking) == 0x000010, "Wrong size on MotionTrackedDeviceFunctionLibrary_IsMotionSourceTracking");
@@ -1010,7 +1010,7 @@ struct MotionTrackedDeviceFunctionLibrary_IsMotionTrackingEnabledForComponent fi
 public:
 	const class UMotionControllerComponent*       MotionControllerComponent;                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3220[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3330[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MotionTrackedDeviceFunctionLibrary_IsMotionTrackingEnabledForComponent) == 0x000008, "Wrong alignment on MotionTrackedDeviceFunctionLibrary_IsMotionTrackingEnabledForComponent");
 static_assert(sizeof(MotionTrackedDeviceFunctionLibrary_IsMotionTrackingEnabledForComponent) == 0x000010, "Wrong size on MotionTrackedDeviceFunctionLibrary_IsMotionTrackingEnabledForComponent");
@@ -1025,7 +1025,7 @@ public:
 	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EControllerHand                               Hand;                                              // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0005(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3221[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3331[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MotionTrackedDeviceFunctionLibrary_IsMotionTrackingEnabledForDevice) == 0x000004, "Wrong alignment on MotionTrackedDeviceFunctionLibrary_IsMotionTrackingEnabledForDevice");
 static_assert(sizeof(MotionTrackedDeviceFunctionLibrary_IsMotionTrackingEnabledForDevice) == 0x000008, "Wrong size on MotionTrackedDeviceFunctionLibrary_IsMotionTrackingEnabledForDevice");
@@ -1041,7 +1041,7 @@ public:
 	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   SourceName;                                        // 0x0004(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3222[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3332[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MotionTrackedDeviceFunctionLibrary_IsMotionTrackingEnabledForSource) == 0x000004, "Wrong alignment on MotionTrackedDeviceFunctionLibrary_IsMotionTrackingEnabledForSource");
 static_assert(sizeof(MotionTrackedDeviceFunctionLibrary_IsMotionTrackingEnabledForSource) == 0x000010, "Wrong size on MotionTrackedDeviceFunctionLibrary_IsMotionTrackingEnabledForSource");
@@ -1068,10 +1068,10 @@ public:
 	class AActor*                                 Target;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FXRDeviceId                            XRDeviceId;                                        // 0x0008(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bManualAttachment;                                 // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3223[0xB];                                     // 0x0015(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3333[0xB];                                     // 0x0015(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             RelativeTransform;                                 // 0x0020(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPrimitiveComponent*                    ReturnValue;                                       // 0x0080(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3224[0x8];                                     // 0x0088(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3334[0x8];                                     // 0x0088(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(XRAssetFunctionLibrary_AddDeviceVisualizationComponentBlocking) == 0x000010, "Wrong alignment on XRAssetFunctionLibrary_AddDeviceVisualizationComponentBlocking");
 static_assert(sizeof(XRAssetFunctionLibrary_AddDeviceVisualizationComponentBlocking) == 0x000090, "Wrong size on XRAssetFunctionLibrary_AddDeviceVisualizationComponentBlocking");
@@ -1090,12 +1090,12 @@ public:
 	class FName                                   SystemName;                                        // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   DeviceName;                                        // 0x0010(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bManualAttachment;                                 // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3225[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3335[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             RelativeTransform;                                 // 0x0020(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FXRDeviceId                            XRDeviceId;                                        // 0x0080(0x000C)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3226[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3336[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    ReturnValue;                                       // 0x0090(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3227[0x8];                                     // 0x0098(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3337[0x8];                                     // 0x0098(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking) == 0x000010, "Wrong alignment on XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking");
 static_assert(sizeof(XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking) == 0x0000A0, "Wrong size on XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking");
@@ -1115,7 +1115,7 @@ public:
 	class AActor*                                 Target;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FXRDeviceId                            XRDeviceId;                                        // 0x0008(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bManualAttachment;                                 // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3229[0xB];                                     // 0x0015(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3339[0xB];                                     // 0x0015(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             RelativeTransform;                                 // 0x0020(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPrimitiveComponent*                    NewComponent;                                      // 0x0080(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAsyncTask_LoadXRDeviceVisComponent*    ReturnValue;                                       // 0x0088(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1138,10 +1138,10 @@ public:
 	class FName                                   SystemName;                                        // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   DeviceName;                                        // 0x0010(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bManualAttachment;                                 // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_322A[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_333A[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             RelativeTransform;                                 // 0x0020(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FXRDeviceId                            XRDeviceId;                                        // 0x0080(0x000C)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_322B[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_333B[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    NewComponent;                                      // 0x0090(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAsyncTask_LoadXRDeviceVisComponent*    ReturnValue;                                       // 0x0098(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -1167,7 +1167,7 @@ public:
 	struct FVector2D                              Size;                                              // 0x0038(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                               DeltaRotation;                                     // 0x0048(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bClearBeforeAdd;                                   // 0x0060(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_322C[0x7];                                     // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_333C[0x7];                                     // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(XRLoadingScreenFunctionLibrary_AddLoadingScreenSplash) == 0x000008, "Wrong alignment on XRLoadingScreenFunctionLibrary_AddLoadingScreenSplash");
 static_assert(sizeof(XRLoadingScreenFunctionLibrary_AddLoadingScreenSplash) == 0x000068, "Wrong size on XRLoadingScreenFunctionLibrary_AddLoadingScreenSplash");
@@ -1188,7 +1188,7 @@ public:
 	struct FVector                                Offset;                                            // 0x0018(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShowLoadingMovie;                                 // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShowOnSet;                                        // 0x0031(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_322D[0x6];                                     // 0x0032(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_333D[0x6];                                     // 0x0032(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(XRLoadingScreenFunctionLibrary_SetLoadingScreen) == 0x000008, "Wrong alignment on XRLoadingScreenFunctionLibrary_SetLoadingScreen");
 static_assert(sizeof(XRLoadingScreenFunctionLibrary_SetLoadingScreen) == 0x000038, "Wrong size on XRLoadingScreenFunctionLibrary_SetLoadingScreen");

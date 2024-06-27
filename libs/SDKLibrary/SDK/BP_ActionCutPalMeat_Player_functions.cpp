@@ -273,5 +273,26 @@ void UBP_ActionCutPalMeat_Player_C::TickAction(float DeltaTime)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function BP_ActionCutPalMeat_Player.BP_ActionCutPalMeat_Player_C.Use Meat Cut Knife
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool                                    UseKnife                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_ActionCutPalMeat_Player_C::Use_Meat_Cut_Knife(bool* UseKnife)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionCutPalMeat_Player_C", "Use Meat Cut Knife");
+
+	Params::BP_ActionCutPalMeat_Player_C_Use_Meat_Cut_Knife Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (UseKnife != nullptr)
+		*UseKnife = Parms.UseKnife;
+}
+
 }
 

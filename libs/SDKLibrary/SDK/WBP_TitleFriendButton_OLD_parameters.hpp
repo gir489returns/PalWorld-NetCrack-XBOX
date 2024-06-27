@@ -14,6 +14,22 @@
 namespace SDK::Params
 {
 
+// Function WBP_TitleFriendButton_OLD.WBP_TitleFriendButton_OLD_C.ExecuteUbergraph_WBP_TitleFriendButton_OLD
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2319[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0018)()
+};
+static_assert(alignof(WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD) == 0x000008, "Wrong alignment on WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD");
+static_assert(sizeof(WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD) == 0x000028, "Wrong size on WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD");
+static_assert(offsetof(WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD, EntryPoint) == 0x000000, "Member 'WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD::EntryPoint' has a wrong offset!");
+static_assert(offsetof(WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD, K2Node_ComponentBoundEvent_Button) == 0x000008, "Member 'WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
+static_assert(offsetof(WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD, CallFunc_Conv_StringToText_ReturnValue) == 0x000010, "Member 'WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+
 // Function WBP_TitleFriendButton_OLD.WBP_TitleFriendButton_OLD_C.BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_TitleFriendButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
@@ -24,22 +40,6 @@ public:
 static_assert(alignof(WBP_TitleFriendButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature) == 0x000008, "Wrong alignment on WBP_TitleFriendButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 static_assert(sizeof(WBP_TitleFriendButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature) == 0x000008, "Wrong size on WBP_TitleFriendButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 static_assert(offsetof(WBP_TitleFriendButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature, Button) == 0x000000, "Member 'WBP_TitleFriendButton_OLD_C_BndEvt__WBP_TitleFriendButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature::Button' has a wrong offset!");
-
-// Function WBP_TitleFriendButton_OLD.WBP_TitleFriendButton_OLD_C.ExecuteUbergraph_WBP_TitleFriendButton_OLD
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4818[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0018)()
-};
-static_assert(alignof(WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD) == 0x000008, "Wrong alignment on WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD");
-static_assert(sizeof(WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD) == 0x000028, "Wrong size on WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD");
-static_assert(offsetof(WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD, EntryPoint) == 0x000000, "Member 'WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD, K2Node_ComponentBoundEvent_Button) == 0x000008, "Member 'WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD, CallFunc_Conv_StringToText_ReturnValue) == 0x000010, "Member 'WBP_TitleFriendButton_OLD_C_ExecuteUbergraph_WBP_TitleFriendButton_OLD::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
 
 }
 

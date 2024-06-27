@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_NPCAIController_Invader.BP_NPCAIController_Invader_C
-// 0x0018 (0x05A0 - 0x0588)
+// 0x0018 (0x05A8 - 0x0590)
 class ABP_NPCAIController_Invader_C final : public ABP_NPCAIController_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_NPCAIController_Invader_C;       // 0x0588(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	FMulticastInlineDelegateProperty_             OnInvaderArrivedDelegate;                          // 0x0590(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_NPCAIController_Invader_C;       // 0x0590(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	FMulticastInlineDelegateProperty_             OnInvaderArrivedDelegate;                          // 0x0598(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void BindOnInvaderArrivedDelegate(TDelegate<void()> Event);
@@ -31,11 +31,11 @@ public:
 	void ForceBattleStartForOutside(class AActor* StartActor);
 	void OnInvaderArrived();
 	void OnInvaderArrivedDelegate__DelegateSignature();
-	void ReturnSpawnedPoint(const struct FVector& ReturnPos);
-	void StartMarch(const struct FVector& GoalPos);
 	void ReceiveBeginPlay();
+	void ReturnSpawnedPoint(const struct FVector& ReturnPos);
 	void SetAutoDefaultAIAction();
 	void StartDefaultAIAction();
+	void StartMarch(const struct FVector& GoalPos);
 
 public:
 	static class UClass* StaticClass()
@@ -48,9 +48,9 @@ public:
 	}
 };
 static_assert(alignof(ABP_NPCAIController_Invader_C) == 0x000008, "Wrong alignment on ABP_NPCAIController_Invader_C");
-static_assert(sizeof(ABP_NPCAIController_Invader_C) == 0x0005A0, "Wrong size on ABP_NPCAIController_Invader_C");
-static_assert(offsetof(ABP_NPCAIController_Invader_C, UberGraphFrame_BP_NPCAIController_Invader_C) == 0x000588, "Member 'ABP_NPCAIController_Invader_C::UberGraphFrame_BP_NPCAIController_Invader_C' has a wrong offset!");
-static_assert(offsetof(ABP_NPCAIController_Invader_C, OnInvaderArrivedDelegate) == 0x000590, "Member 'ABP_NPCAIController_Invader_C::OnInvaderArrivedDelegate' has a wrong offset!");
+static_assert(sizeof(ABP_NPCAIController_Invader_C) == 0x0005A8, "Wrong size on ABP_NPCAIController_Invader_C");
+static_assert(offsetof(ABP_NPCAIController_Invader_C, UberGraphFrame_BP_NPCAIController_Invader_C) == 0x000590, "Member 'ABP_NPCAIController_Invader_C::UberGraphFrame_BP_NPCAIController_Invader_C' has a wrong offset!");
+static_assert(offsetof(ABP_NPCAIController_Invader_C, OnInvaderArrivedDelegate) == 0x000598, "Member 'ABP_NPCAIController_Invader_C::OnInvaderArrivedDelegate' has a wrong offset!");
 
 }
 

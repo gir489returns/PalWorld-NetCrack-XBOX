@@ -16,42 +16,18 @@
 namespace SDK::Params
 {
 
-// Function WBP_Title_WorldSettings_NameWindow.WBP_Title_WorldSettings_NameWindow_C.BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	ETextCommit                                   CommitMethod;                                      // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature");
-static_assert(sizeof(WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature) == 0x000020, "Wrong size on WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature");
-static_assert(offsetof(WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature, Text) == 0x000000, "Member 'WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature::Text' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature, CommitMethod) == 0x000018, "Member 'WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature::CommitMethod' has a wrong offset!");
-
-// Function WBP_Title_WorldSettings_NameWindow.WBP_Title_WorldSettings_NameWindow_C.BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-static_assert(alignof(WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature");
-static_assert(sizeof(WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature) == 0x000018, "Wrong size on WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature");
-static_assert(offsetof(WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature, Text) == 0x000000, "Member 'WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature::Text' has a wrong offset!");
-
 // Function WBP_Title_WorldSettings_NameWindow.WBP_Title_WorldSettings_NameWindow_C.ExecuteUbergraph_WBP_Title_WorldSettings_NameWindow
 // 0x0170 (0x0170 - 0x0000)
 struct WBP_Title_WorldSettings_NameWindow_C_ExecuteUbergraph_WBP_Title_WorldSettings_NameWindow final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45FA[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B19[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0018)()
 	class UBP_HUDDispatchParameter_WorldNameInput_C* K2Node_DynamicCast_AsBP_HUDDispatch_Parameter_World_Name_Input; // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45FB[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B1A[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_ComponentBoundEvent_Text_1;                 // 0x0038(0x0018)(ConstParm)
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0060(0x0018)()
@@ -59,28 +35,28 @@ public:
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue_2;          // 0x0088(0x0018)()
 	int32                                         CallFunc_Len_ReturnValue;                          // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45FC[0x3];                                     // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B1B[0x3];                                     // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_ComponentBoundEvent_Text;                   // 0x00A8(0x0018)(ConstParm)
 	ETextCommit                                   K2Node_ComponentBoundEvent_CommitMethod;           // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45FD[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B1C[0x6];                                     // 0x00C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45FE[0x7];                                     // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B1D[0x7];                                     // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Left_ReturnValue_1;                       // 0x00E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Len_ReturnValue_1;                        // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45FF[0x4];                                     // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B1E[0x4];                                     // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue_3;          // 0x00F8(0x0018)()
 	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4600[0x7];                                     // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B1F[0x7];                                     // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue_1;                   // 0x0118(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UBP_HUDDispatchParameter_WorldNameInput_C* K2Node_DynamicCast_AsBP_HUDDispatch_Parameter_World_Name_Input_1; // 0x0120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4601[0x7];                                     // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B20[0x7];                                     // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0130(0x0018)()
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue_2;          // 0x0148(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsEmpty_ReturnValue_1;                    // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4602[0x7];                                     // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B21[0x7];                                     // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_SelectString_ReturnValue;                 // 0x0160(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Title_WorldSettings_NameWindow_C_ExecuteUbergraph_WBP_Title_WorldSettings_NameWindow) == 0x000008, "Wrong alignment on WBP_Title_WorldSettings_NameWindow_C_ExecuteUbergraph_WBP_Title_WorldSettings_NameWindow");
@@ -113,6 +89,30 @@ static_assert(offsetof(WBP_Title_WorldSettings_NameWindow_C_ExecuteUbergraph_WBP
 static_assert(offsetof(WBP_Title_WorldSettings_NameWindow_C_ExecuteUbergraph_WBP_Title_WorldSettings_NameWindow, CallFunc_Conv_TextToString_ReturnValue_2) == 0x000148, "Member 'WBP_Title_WorldSettings_NameWindow_C_ExecuteUbergraph_WBP_Title_WorldSettings_NameWindow::CallFunc_Conv_TextToString_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(WBP_Title_WorldSettings_NameWindow_C_ExecuteUbergraph_WBP_Title_WorldSettings_NameWindow, CallFunc_IsEmpty_ReturnValue_1) == 0x000158, "Member 'WBP_Title_WorldSettings_NameWindow_C_ExecuteUbergraph_WBP_Title_WorldSettings_NameWindow::CallFunc_IsEmpty_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(WBP_Title_WorldSettings_NameWindow_C_ExecuteUbergraph_WBP_Title_WorldSettings_NameWindow, CallFunc_SelectString_ReturnValue) == 0x000160, "Member 'WBP_Title_WorldSettings_NameWindow_C_ExecuteUbergraph_WBP_Title_WorldSettings_NameWindow::CallFunc_SelectString_ReturnValue' has a wrong offset!");
+
+// Function WBP_Title_WorldSettings_NameWindow.WBP_Title_WorldSettings_NameWindow_C.BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	ETextCommit                                   CommitMethod;                                      // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature");
+static_assert(sizeof(WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature) == 0x000020, "Wrong size on WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature");
+static_assert(offsetof(WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature, Text) == 0x000000, "Member 'WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature::Text' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature, CommitMethod) == 0x000018, "Member 'WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature::CommitMethod' has a wrong offset!");
+
+// Function WBP_Title_WorldSettings_NameWindow.WBP_Title_WorldSettings_NameWindow_C.BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+static_assert(alignof(WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature");
+static_assert(sizeof(WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature) == 0x000018, "Wrong size on WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature");
+static_assert(offsetof(WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature, Text) == 0x000000, "Member 'WBP_Title_WorldSettings_NameWindow_C_BndEvt__WBP_Title_WorldSettings_NameWindow_EditableTextBox_Name_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature::Text' has a wrong offset!");
 
 // Function WBP_Title_WorldSettings_NameWindow.WBP_Title_WorldSettings_NameWindow_C.BP_GetDesiredFocusTarget
 // 0x0008 (0x0008 - 0x0000)

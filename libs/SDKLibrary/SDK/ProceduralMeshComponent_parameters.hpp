@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ProceduralMeshComponent_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "ProceduralMeshComponent_structs.hpp"
 
 
 namespace SDK::Params
@@ -45,7 +45,7 @@ struct ProceduralMeshComponent_CreateMeshSection final
 {
 public:
 	int32                                         SectionIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_181A[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1822[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVector>                        Vertices;                                          // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<int32>                                 Triangles;                                         // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<struct FVector>                        Normals;                                           // 0x0028(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
@@ -53,7 +53,7 @@ public:
 	TArray<struct FColor>                         VertexColors;                                      // 0x0048(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<struct FProcMeshTangent>               Tangents;                                          // 0x0058(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bCreateCollision;                                  // 0x0068(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_181B[0x7];                                     // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1823[0x7];                                     // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ProceduralMeshComponent_CreateMeshSection) == 0x000008, "Wrong alignment on ProceduralMeshComponent_CreateMeshSection");
 static_assert(sizeof(ProceduralMeshComponent_CreateMeshSection) == 0x000070, "Wrong size on ProceduralMeshComponent_CreateMeshSection");
@@ -72,7 +72,7 @@ struct ProceduralMeshComponent_CreateMeshSection_LinearColor final
 {
 public:
 	int32                                         SectionIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_181C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1824[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVector>                        Vertices;                                          // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<int32>                                 Triangles;                                         // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<struct FVector>                        Normals;                                           // 0x0028(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
@@ -84,7 +84,7 @@ public:
 	TArray<struct FProcMeshTangent>               Tangents;                                          // 0x0088(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bCreateCollision;                                  // 0x0098(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSRGBConversion;                                   // 0x0099(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_181D[0x6];                                     // 0x009A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1825[0x6];                                     // 0x009A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ProceduralMeshComponent_CreateMeshSection_LinearColor) == 0x000008, "Wrong alignment on ProceduralMeshComponent_CreateMeshSection_LinearColor");
 static_assert(sizeof(ProceduralMeshComponent_CreateMeshSection_LinearColor) == 0x0000A0, "Wrong size on ProceduralMeshComponent_CreateMeshSection_LinearColor");
@@ -108,7 +108,7 @@ struct ProceduralMeshComponent_SetMeshSectionVisible final
 public:
 	int32                                         SectionIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bNewVisibility;                                    // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_181E[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1826[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ProceduralMeshComponent_SetMeshSectionVisible) == 0x000004, "Wrong alignment on ProceduralMeshComponent_SetMeshSectionVisible");
 static_assert(sizeof(ProceduralMeshComponent_SetMeshSectionVisible) == 0x000008, "Wrong size on ProceduralMeshComponent_SetMeshSectionVisible");
@@ -121,7 +121,7 @@ struct ProceduralMeshComponent_UpdateMeshSection final
 {
 public:
 	int32                                         SectionIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_181F[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1827[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVector>                        Vertices;                                          // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<struct FVector>                        Normals;                                           // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<struct FVector2D>                      UV0;                                               // 0x0028(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
@@ -143,7 +143,7 @@ struct ProceduralMeshComponent_UpdateMeshSection_LinearColor final
 {
 public:
 	int32                                         SectionIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1820[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1828[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVector>                        Vertices;                                          // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<struct FVector>                        Normals;                                           // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<struct FVector2D>                      UV0;                                               // 0x0028(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
@@ -153,7 +153,7 @@ public:
 	TArray<struct FLinearColor>                   VertexColors;                                      // 0x0068(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<struct FProcMeshTangent>               Tangents;                                          // 0x0078(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bSRGBConversion;                                   // 0x0088(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1821[0x7];                                     // 0x0089(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1829[0x7];                                     // 0x0089(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ProceduralMeshComponent_UpdateMeshSection_LinearColor) == 0x000008, "Wrong alignment on ProceduralMeshComponent_UpdateMeshSection_LinearColor");
 static_assert(sizeof(ProceduralMeshComponent_UpdateMeshSection_LinearColor) == 0x000090, "Wrong size on ProceduralMeshComponent_UpdateMeshSection_LinearColor");
@@ -186,7 +186,7 @@ struct ProceduralMeshComponent_IsMeshSectionVisible final
 public:
 	int32                                         SectionIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1822[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_182A[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ProceduralMeshComponent_IsMeshSectionVisible) == 0x000004, "Wrong alignment on ProceduralMeshComponent_IsMeshSectionVisible");
 static_assert(sizeof(ProceduralMeshComponent_IsMeshSectionVisible) == 0x000008, "Wrong size on ProceduralMeshComponent_IsMeshSectionVisible");
@@ -238,10 +238,10 @@ struct KismetProceduralMeshLibrary_CopyProceduralMeshFromStaticMeshComponent fin
 public:
 	class UStaticMeshComponent*                   StaticMeshComponent;                               // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         LODIndex;                                          // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1823[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_182B[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UProceduralMeshComponent*               ProcMeshComponent;                                 // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCreateCollision;                                  // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1824[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_182C[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(KismetProceduralMeshLibrary_CopyProceduralMeshFromStaticMeshComponent) == 0x000008, "Wrong alignment on KismetProceduralMeshLibrary_CopyProceduralMeshFromStaticMeshComponent");
 static_assert(sizeof(KismetProceduralMeshLibrary_CopyProceduralMeshFromStaticMeshComponent) == 0x000020, "Wrong size on KismetProceduralMeshLibrary_CopyProceduralMeshFromStaticMeshComponent");
@@ -262,7 +262,7 @@ public:
 	TArray<struct FVector2D>                      UVs;                                               // 0x0028(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FVector2D>                      UV1s;                                              // 0x0038(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	float                                         GridSpacing;                                       // 0x0048(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1825[0x4];                                     // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_182D[0x4];                                     // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(KismetProceduralMeshLibrary_CreateGridMeshSplit) == 0x000008, "Wrong alignment on KismetProceduralMeshLibrary_CreateGridMeshSplit");
 static_assert(sizeof(KismetProceduralMeshLibrary_CreateGridMeshSplit) == 0x000050, "Wrong size on KismetProceduralMeshLibrary_CreateGridMeshSplit");
@@ -282,7 +282,7 @@ public:
 	int32                                         NumX;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         NumY;                                              // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bWinding;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1826[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_182E[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<int32>                                 Triangles;                                         // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(KismetProceduralMeshLibrary_CreateGridMeshTriangles) == 0x000008, "Wrong alignment on KismetProceduralMeshLibrary_CreateGridMeshTriangles");
@@ -303,7 +303,7 @@ public:
 	TArray<struct FVector>                        Vertices;                                          // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FVector2D>                      UVs;                                               // 0x0028(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	float                                         GridSpacing;                                       // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1827[0x4];                                     // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_182F[0x4];                                     // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(KismetProceduralMeshLibrary_CreateGridMeshWelded) == 0x000008, "Wrong alignment on KismetProceduralMeshLibrary_CreateGridMeshWelded");
 static_assert(sizeof(KismetProceduralMeshLibrary_CreateGridMeshWelded) == 0x000040, "Wrong size on KismetProceduralMeshLibrary_CreateGridMeshWelded");
@@ -342,7 +342,7 @@ struct KismetProceduralMeshLibrary_GetSectionFromProceduralMesh final
 public:
 	class UProceduralMeshComponent*               InProcMesh;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         SectionIndex;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1828[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1830[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVector>                        Vertices;                                          // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<int32>                                 Triangles;                                         // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FVector>                        Normals;                                           // 0x0030(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
@@ -393,10 +393,10 @@ public:
 	struct FVector                                PlanePosition;                                     // 0x0008(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                PlaneNormal;                                       // 0x0020(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCreateOtherHalf;                                  // 0x0038(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1829[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1831[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UProceduralMeshComponent*               OutOtherHalfProcMesh;                              // 0x0040(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EProcMeshSliceCapOption                       CapOption;                                         // 0x0048(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_182A[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1832[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     CapMaterial;                                       // 0x0050(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(KismetProceduralMeshLibrary_SliceProceduralMesh) == 0x000008, "Wrong alignment on KismetProceduralMeshLibrary_SliceProceduralMesh");

@@ -38,6 +38,51 @@ void UBP_Action_WaitLoadingWorldPartition_C::CanTimeout(bool* Param_CanTimeout)
 }
 
 
+// Function BP_Action_WaitLoadingWorldPartition.BP_Action_WaitLoadingWorldPartition_C.CheckEndAction
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsEnd                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_Action_WaitLoadingWorldPartition_C::CheckEndAction(double DeltaTime, bool* IsEnd)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Action_WaitLoadingWorldPartition_C", "CheckEndAction");
+
+	Params::BP_Action_WaitLoadingWorldPartition_C_CheckEndAction Parms{};
+
+	Parms.DeltaTime = DeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsEnd != nullptr)
+		*IsEnd = Parms.IsEnd;
+}
+
+
+// Function BP_Action_WaitLoadingWorldPartition.BP_Action_WaitLoadingWorldPartition_C.CheckGround
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EGroundHitResult                        Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_Action_WaitLoadingWorldPartition_C::CheckGround(EGroundHitResult* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Action_WaitLoadingWorldPartition_C", "CheckGround");
+
+	Params::BP_Action_WaitLoadingWorldPartition_C_CheckGround Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
 // Function BP_Action_WaitLoadingWorldPartition.BP_Action_WaitLoadingWorldPartition_C.CheckLoadLocationDistance
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -97,6 +142,30 @@ void UBP_Action_WaitLoadingWorldPartition_C::GetFadeInParameter(class UPalHUDDis
 
 	if (NewParam != nullptr)
 		*NewParam = Parms.NewParam;
+}
+
+
+// Function BP_Action_WaitLoadingWorldPartition.BP_Action_WaitLoadingWorldPartition_C.IsWaterActor
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class AActor*                           TargetActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsWater                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_Action_WaitLoadingWorldPartition_C::IsWaterActor(class AActor* TargetActor, bool* IsWater)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Action_WaitLoadingWorldPartition_C", "IsWaterActor");
+
+	Params::BP_Action_WaitLoadingWorldPartition_C_IsWaterActor Parms{};
+
+	Parms.TargetActor = TargetActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsWater != nullptr)
+		*IsWater = Parms.IsWater;
 }
 
 

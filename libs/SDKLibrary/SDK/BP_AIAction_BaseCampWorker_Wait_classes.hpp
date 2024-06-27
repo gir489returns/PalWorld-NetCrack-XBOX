@@ -11,27 +11,16 @@
 #include "Basic.hpp"
 
 #include "BP_AIAction_Work_Wait_classes.hpp"
-#include "Engine_structs.hpp"
-#include "AIModule_structs.hpp"
-#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_AIAction_BaseCampWorker_Wait.BP_AIAction_BaseCampWorker_Wait_C
-// 0x0028 (0x0180 - 0x0158)
+// 0x0000 (0x0198 - 0x0198)
 class UBP_AIAction_BaseCampWorker_Wait_C final : public UBP_AIAction_Work_Wait_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0158(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	double                                        RandomPositionRadius;                              // 0x0160(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                To_Location;                                       // 0x0168(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-public:
-	void ActionStart(class APawn* ControlledPawn);
-	void ExecuteUbergraph_BP_AIAction_BaseCampWorker_Wait(int32 EntryPoint);
-	void GetBaseCampRandomLocation(bool* bResult, struct FVector* ToLocation);
 	void OnTickForWait(float DeltaTime);
 
 public:
@@ -45,10 +34,7 @@ public:
 	}
 };
 static_assert(alignof(UBP_AIAction_BaseCampWorker_Wait_C) == 0x000008, "Wrong alignment on UBP_AIAction_BaseCampWorker_Wait_C");
-static_assert(sizeof(UBP_AIAction_BaseCampWorker_Wait_C) == 0x000180, "Wrong size on UBP_AIAction_BaseCampWorker_Wait_C");
-static_assert(offsetof(UBP_AIAction_BaseCampWorker_Wait_C, UberGraphFrame) == 0x000158, "Member 'UBP_AIAction_BaseCampWorker_Wait_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_AIAction_BaseCampWorker_Wait_C, RandomPositionRadius) == 0x000160, "Member 'UBP_AIAction_BaseCampWorker_Wait_C::RandomPositionRadius' has a wrong offset!");
-static_assert(offsetof(UBP_AIAction_BaseCampWorker_Wait_C, To_Location) == 0x000168, "Member 'UBP_AIAction_BaseCampWorker_Wait_C::To_Location' has a wrong offset!");
+static_assert(sizeof(UBP_AIAction_BaseCampWorker_Wait_C) == 0x000198, "Wrong size on UBP_AIAction_BaseCampWorker_Wait_C");
 
 }
 

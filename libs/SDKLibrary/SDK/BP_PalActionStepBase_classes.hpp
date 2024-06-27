@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -24,23 +24,23 @@ namespace SDK
 class UBP_PalActionStepBase_C final : public UPalActionBase
 {
 public:
-	uint8                                         Pad_389F[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F49[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0140(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class FName                                   FlagName;                                          // 0x0148(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        StepTime;                                          // 0x0150(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Timer;                                             // 0x0158(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPalGeneralMontageType                        StepType;                                          // 0x0160(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CanEndStep;                                        // 0x0161(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_38A0[0x6];                                     // 0x0162(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F4A[0x6];                                     // 0x0162(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimMontage*                           Montage;                                           // 0x0168(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          CanCrouchCancel;                                   // 0x0170(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_38A1[0x7];                                     // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F4B[0x7];                                     // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CrouchCancelTime;                                  // 0x0178(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        StepDistance;                                      // 0x0180(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UNiagaraComponent*                      Effect;                                            // 0x0188(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                StepEndLocation;                                   // 0x0190(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsPlayStepEffect;                                  // 0x01A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_38A2[0x7];                                     // 0x01A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F4C[0x7];                                     // 0x01A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                StepStartLocation;                                 // 0x01B0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

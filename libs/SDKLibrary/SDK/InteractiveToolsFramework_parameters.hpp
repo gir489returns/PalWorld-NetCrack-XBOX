@@ -16,6 +16,70 @@
 namespace SDK::Params
 {
 
+// Function InteractiveToolsFramework.GizmoFloatParameterSource.SetParameter
+// 0x0004 (0x0004 - 0x0000)
+struct GizmoFloatParameterSource_SetParameter final
+{
+public:
+	float                                         NewValue;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GizmoFloatParameterSource_SetParameter) == 0x000004, "Wrong alignment on GizmoFloatParameterSource_SetParameter");
+static_assert(sizeof(GizmoFloatParameterSource_SetParameter) == 0x000004, "Wrong size on GizmoFloatParameterSource_SetParameter");
+static_assert(offsetof(GizmoFloatParameterSource_SetParameter, NewValue) == 0x000000, "Member 'GizmoFloatParameterSource_SetParameter::NewValue' has a wrong offset!");
+
+// Function InteractiveToolsFramework.GizmoFloatParameterSource.GetParameter
+// 0x0004 (0x0004 - 0x0000)
+struct GizmoFloatParameterSource_GetParameter final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GizmoFloatParameterSource_GetParameter) == 0x000004, "Wrong alignment on GizmoFloatParameterSource_GetParameter");
+static_assert(sizeof(GizmoFloatParameterSource_GetParameter) == 0x000004, "Wrong size on GizmoFloatParameterSource_GetParameter");
+static_assert(offsetof(GizmoFloatParameterSource_GetParameter, ReturnValue) == 0x000000, "Member 'GizmoFloatParameterSource_GetParameter::ReturnValue' has a wrong offset!");
+
+// Function InteractiveToolsFramework.GizmoClickMultiTarget.UpdateHittableState
+// 0x0008 (0x0008 - 0x0000)
+struct GizmoClickMultiTarget_UpdateHittableState final
+{
+public:
+	bool                                          bHittable;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_18D1[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint32                                        InPartIdentifier;                                  // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GizmoClickMultiTarget_UpdateHittableState) == 0x000004, "Wrong alignment on GizmoClickMultiTarget_UpdateHittableState");
+static_assert(sizeof(GizmoClickMultiTarget_UpdateHittableState) == 0x000008, "Wrong size on GizmoClickMultiTarget_UpdateHittableState");
+static_assert(offsetof(GizmoClickMultiTarget_UpdateHittableState, bHittable) == 0x000000, "Member 'GizmoClickMultiTarget_UpdateHittableState::bHittable' has a wrong offset!");
+static_assert(offsetof(GizmoClickMultiTarget_UpdateHittableState, InPartIdentifier) == 0x000004, "Member 'GizmoClickMultiTarget_UpdateHittableState::InPartIdentifier' has a wrong offset!");
+
+// Function InteractiveToolsFramework.GizmoClickMultiTarget.UpdateHoverState
+// 0x0008 (0x0008 - 0x0000)
+struct GizmoClickMultiTarget_UpdateHoverState final
+{
+public:
+	bool                                          bHovering;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_18D2[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint32                                        InPartIdentifier;                                  // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GizmoClickMultiTarget_UpdateHoverState) == 0x000004, "Wrong alignment on GizmoClickMultiTarget_UpdateHoverState");
+static_assert(sizeof(GizmoClickMultiTarget_UpdateHoverState) == 0x000008, "Wrong size on GizmoClickMultiTarget_UpdateHoverState");
+static_assert(offsetof(GizmoClickMultiTarget_UpdateHoverState, bHovering) == 0x000000, "Member 'GizmoClickMultiTarget_UpdateHoverState::bHovering' has a wrong offset!");
+static_assert(offsetof(GizmoClickMultiTarget_UpdateHoverState, InPartIdentifier) == 0x000004, "Member 'GizmoClickMultiTarget_UpdateHoverState::InPartIdentifier' has a wrong offset!");
+
+// Function InteractiveToolsFramework.GizmoClickMultiTarget.UpdateInteractingState
+// 0x0008 (0x0008 - 0x0000)
+struct GizmoClickMultiTarget_UpdateInteractingState final
+{
+public:
+	bool                                          bInteracting;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_18D3[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint32                                        InPartIdentifier;                                  // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GizmoClickMultiTarget_UpdateInteractingState) == 0x000004, "Wrong alignment on GizmoClickMultiTarget_UpdateInteractingState");
+static_assert(sizeof(GizmoClickMultiTarget_UpdateInteractingState) == 0x000008, "Wrong size on GizmoClickMultiTarget_UpdateInteractingState");
+static_assert(offsetof(GizmoClickMultiTarget_UpdateInteractingState, bInteracting) == 0x000000, "Member 'GizmoClickMultiTarget_UpdateInteractingState::bInteracting' has a wrong offset!");
+static_assert(offsetof(GizmoClickMultiTarget_UpdateInteractingState, InPartIdentifier) == 0x000004, "Member 'GizmoClickMultiTarget_UpdateInteractingState::InPartIdentifier' has a wrong offset!");
+
 // Function InteractiveToolsFramework.GizmoBaseComponent.UpdateHoverState
 // 0x0001 (0x0001 - 0x0000)
 struct GizmoBaseComponent_UpdateHoverState final
@@ -128,83 +192,19 @@ static_assert(alignof(GizmoClickTarget_UpdateInteractingState) == 0x000001, "Wro
 static_assert(sizeof(GizmoClickTarget_UpdateInteractingState) == 0x000001, "Wrong size on GizmoClickTarget_UpdateInteractingState");
 static_assert(offsetof(GizmoClickTarget_UpdateInteractingState, bInteracting) == 0x000000, "Member 'GizmoClickTarget_UpdateInteractingState::bInteracting' has a wrong offset!");
 
-// Function InteractiveToolsFramework.GizmoClickMultiTarget.UpdateHittableState
-// 0x0008 (0x0008 - 0x0000)
-struct GizmoClickMultiTarget_UpdateHittableState final
-{
-public:
-	bool                                          bHittable;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1922[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	uint32                                        InPartIdentifier;                                  // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GizmoClickMultiTarget_UpdateHittableState) == 0x000004, "Wrong alignment on GizmoClickMultiTarget_UpdateHittableState");
-static_assert(sizeof(GizmoClickMultiTarget_UpdateHittableState) == 0x000008, "Wrong size on GizmoClickMultiTarget_UpdateHittableState");
-static_assert(offsetof(GizmoClickMultiTarget_UpdateHittableState, bHittable) == 0x000000, "Member 'GizmoClickMultiTarget_UpdateHittableState::bHittable' has a wrong offset!");
-static_assert(offsetof(GizmoClickMultiTarget_UpdateHittableState, InPartIdentifier) == 0x000004, "Member 'GizmoClickMultiTarget_UpdateHittableState::InPartIdentifier' has a wrong offset!");
-
-// Function InteractiveToolsFramework.GizmoClickMultiTarget.UpdateHoverState
-// 0x0008 (0x0008 - 0x0000)
-struct GizmoClickMultiTarget_UpdateHoverState final
-{
-public:
-	bool                                          bHovering;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1923[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	uint32                                        InPartIdentifier;                                  // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GizmoClickMultiTarget_UpdateHoverState) == 0x000004, "Wrong alignment on GizmoClickMultiTarget_UpdateHoverState");
-static_assert(sizeof(GizmoClickMultiTarget_UpdateHoverState) == 0x000008, "Wrong size on GizmoClickMultiTarget_UpdateHoverState");
-static_assert(offsetof(GizmoClickMultiTarget_UpdateHoverState, bHovering) == 0x000000, "Member 'GizmoClickMultiTarget_UpdateHoverState::bHovering' has a wrong offset!");
-static_assert(offsetof(GizmoClickMultiTarget_UpdateHoverState, InPartIdentifier) == 0x000004, "Member 'GizmoClickMultiTarget_UpdateHoverState::InPartIdentifier' has a wrong offset!");
-
-// Function InteractiveToolsFramework.GizmoClickMultiTarget.UpdateInteractingState
-// 0x0008 (0x0008 - 0x0000)
-struct GizmoClickMultiTarget_UpdateInteractingState final
-{
-public:
-	bool                                          bInteracting;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1924[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	uint32                                        InPartIdentifier;                                  // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GizmoClickMultiTarget_UpdateInteractingState) == 0x000004, "Wrong alignment on GizmoClickMultiTarget_UpdateInteractingState");
-static_assert(sizeof(GizmoClickMultiTarget_UpdateInteractingState) == 0x000008, "Wrong size on GizmoClickMultiTarget_UpdateInteractingState");
-static_assert(offsetof(GizmoClickMultiTarget_UpdateInteractingState, bInteracting) == 0x000000, "Member 'GizmoClickMultiTarget_UpdateInteractingState::bInteracting' has a wrong offset!");
-static_assert(offsetof(GizmoClickMultiTarget_UpdateInteractingState, InPartIdentifier) == 0x000004, "Member 'GizmoClickMultiTarget_UpdateInteractingState::InPartIdentifier' has a wrong offset!");
-
 // Function InteractiveToolsFramework.GizmoRenderMultiTarget.UpdateVisibilityState
 // 0x0008 (0x0008 - 0x0000)
 struct GizmoRenderMultiTarget_UpdateVisibilityState final
 {
 public:
 	bool                                          bVisible;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1925[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_191C[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	uint32                                        InPartIdentifier;                                  // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(GizmoRenderMultiTarget_UpdateVisibilityState) == 0x000004, "Wrong alignment on GizmoRenderMultiTarget_UpdateVisibilityState");
 static_assert(sizeof(GizmoRenderMultiTarget_UpdateVisibilityState) == 0x000008, "Wrong size on GizmoRenderMultiTarget_UpdateVisibilityState");
 static_assert(offsetof(GizmoRenderMultiTarget_UpdateVisibilityState, bVisible) == 0x000000, "Member 'GizmoRenderMultiTarget_UpdateVisibilityState::bVisible' has a wrong offset!");
 static_assert(offsetof(GizmoRenderMultiTarget_UpdateVisibilityState, InPartIdentifier) == 0x000004, "Member 'GizmoRenderMultiTarget_UpdateVisibilityState::InPartIdentifier' has a wrong offset!");
-
-// Function InteractiveToolsFramework.GizmoFloatParameterSource.SetParameter
-// 0x0004 (0x0004 - 0x0000)
-struct GizmoFloatParameterSource_SetParameter final
-{
-public:
-	float                                         NewValue;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GizmoFloatParameterSource_SetParameter) == 0x000004, "Wrong alignment on GizmoFloatParameterSource_SetParameter");
-static_assert(sizeof(GizmoFloatParameterSource_SetParameter) == 0x000004, "Wrong size on GizmoFloatParameterSource_SetParameter");
-static_assert(offsetof(GizmoFloatParameterSource_SetParameter, NewValue) == 0x000000, "Member 'GizmoFloatParameterSource_SetParameter::NewValue' has a wrong offset!");
-
-// Function InteractiveToolsFramework.GizmoFloatParameterSource.GetParameter
-// 0x0004 (0x0004 - 0x0000)
-struct GizmoFloatParameterSource_GetParameter final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GizmoFloatParameterSource_GetParameter) == 0x000004, "Wrong alignment on GizmoFloatParameterSource_GetParameter");
-static_assert(sizeof(GizmoFloatParameterSource_GetParameter) == 0x000004, "Wrong size on GizmoFloatParameterSource_GetParameter");
-static_assert(offsetof(GizmoFloatParameterSource_GetParameter, ReturnValue) == 0x000000, "Member 'GizmoFloatParameterSource_GetParameter::ReturnValue' has a wrong offset!");
 
 // Function InteractiveToolsFramework.GizmoVec2ParameterSource.SetParameter
 // 0x0010 (0x0010 - 0x0000)

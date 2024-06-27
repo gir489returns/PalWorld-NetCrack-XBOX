@@ -23,7 +23,7 @@ namespace SDK
 class UBP_ActionCutPalMeat_Player_C final : public UPalActionBase
 {
 public:
-	uint8                                         Pad_40CB[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_435A[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0140(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class APalCharacter*                          TargetCharacter;                                   // 0x0148(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsDeletePal;                                       // 0x0150(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -43,6 +43,7 @@ public:
 	void PlayDamageMotion();
 	void SetDisableFlag(bool Disable);
 	void TickAction(float DeltaTime);
+	void Use_Meat_Cut_Knife(bool* UseKnife);
 
 public:
 	static class UClass* StaticClass()

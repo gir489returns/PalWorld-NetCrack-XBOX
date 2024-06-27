@@ -44,9 +44,9 @@ void UBP_PalPlayerDataCharacterMake_C::CalcSubsurfaceColor(const struct FLinearC
 // Function BP_PalPlayerDataCharacterMake.BP_PalPlayerDataCharacterMake_C.ConvertMakeInfo_HSVToRGB
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FPalPlayerDataCharacterMakeInfo  MakeInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FPalPlayerDataCharacterMakeInfo  MakeInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 // double                                  SVLimit                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FPalPlayerDataCharacterMakeInfo  ConvertedMakeInfo                                      (Parm, OutParm, NoDestructor)
+// struct FPalPlayerDataCharacterMakeInfo  ConvertedMakeInfo                                      (Parm, OutParm)
 
 void UBP_PalPlayerDataCharacterMake_C::ConvertMakeInfo_HSVToRGB(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo, double SVLimit, struct FPalPlayerDataCharacterMakeInfo* ConvertedMakeInfo)
 {
@@ -70,9 +70,9 @@ void UBP_PalPlayerDataCharacterMake_C::ConvertMakeInfo_HSVToRGB(const struct FPa
 // Function BP_PalPlayerDataCharacterMake.BP_PalPlayerDataCharacterMake_C.ConvertMakeInfo_RGBToHSV
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FPalPlayerDataCharacterMakeInfo  MakeInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FPalPlayerDataCharacterMakeInfo  MakeInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 // double                                  SVLimitValur                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FPalPlayerDataCharacterMakeInfo  ConvertedMakeInfo                                      (Parm, OutParm, NoDestructor)
+// struct FPalPlayerDataCharacterMakeInfo  ConvertedMakeInfo                                      (Parm, OutParm)
 
 void UBP_PalPlayerDataCharacterMake_C::ConvertMakeInfo_RGBToHSV(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo, double SVLimitValur, struct FPalPlayerDataCharacterMakeInfo* ConvertedMakeInfo)
 {
@@ -195,7 +195,7 @@ void UBP_PalPlayerDataCharacterMake_C::GetHairShiftRGB(class FName HairMeshName,
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class FName                             PresetName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FPalPlayerDataCharacterMakeInfo  OutMakeInfo                                            (Parm, OutParm, NoDestructor)
+// struct FPalPlayerDataCharacterMakeInfo  OutMakeInfo                                            (Parm, OutParm)
 
 void UBP_PalPlayerDataCharacterMake_C::GetOriginalPresetMakeInfo(class FName PresetName, struct FPalPlayerDataCharacterMakeInfo* OutMakeInfo)
 {
@@ -220,7 +220,7 @@ void UBP_PalPlayerDataCharacterMake_C::GetOriginalPresetMakeInfo(class FName Pre
 // Parameters:
 // class UObject*                          WorldContextObject                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class FName                             PresetName                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FPalPlayerDataCharacterMakeInfo  OutMakeInfo                                            (Parm, OutParm, NoDestructor)
+// struct FPalPlayerDataCharacterMakeInfo  OutMakeInfo                                            (Parm, OutParm)
 
 void UBP_PalPlayerDataCharacterMake_C::GetPresetMakeInfo(class UObject* WorldContextObject, const class FName& PresetName, struct FPalPlayerDataCharacterMakeInfo* OutMakeInfo)
 {

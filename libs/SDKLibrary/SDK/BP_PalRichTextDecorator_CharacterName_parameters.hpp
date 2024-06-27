@@ -36,7 +36,7 @@ public:
 	class UPalDatabaseCharacterParameter*         CallFunc_GetDatabaseCharacterParameter_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetLocalizedCharacterName_OutText;        // 0x0028(0x0018)()
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44B0[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4845[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_PalRichTextDecorator_CharacterName_C_GetTextStringInternal) == 0x000008, "Wrong alignment on BP_PalRichTextDecorator_CharacterName_C_GetTextStringInternal");

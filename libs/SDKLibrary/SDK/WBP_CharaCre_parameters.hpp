@@ -11,24 +11,24 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "UMG_structs.hpp"
-#include "Pal_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
 #include "E_UICharacterMakeCategory_structs.hpp"
+#include "Pal_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function WBP_CharaCre.WBP_CharaCre_C.ApplyMakeInfo
-// 0x0094 (0x0094 - 0x0000)
+// 0x0150 (0x0150 - 0x0000)
 struct WBP_CharaCre_C_ApplyMakeInfo final
 {
 public:
-	struct FPalPlayerDataCharacterMakeInfo        MakeInfo;                                          // 0x0000(0x0094)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPalPlayerDataCharacterMakeInfo        MakeInfo;                                          // 0x0000(0x0150)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(WBP_CharaCre_C_ApplyMakeInfo) == 0x000004, "Wrong alignment on WBP_CharaCre_C_ApplyMakeInfo");
-static_assert(sizeof(WBP_CharaCre_C_ApplyMakeInfo) == 0x000094, "Wrong size on WBP_CharaCre_C_ApplyMakeInfo");
+static_assert(alignof(WBP_CharaCre_C_ApplyMakeInfo) == 0x000008, "Wrong alignment on WBP_CharaCre_C_ApplyMakeInfo");
+static_assert(sizeof(WBP_CharaCre_C_ApplyMakeInfo) == 0x000150, "Wrong size on WBP_CharaCre_C_ApplyMakeInfo");
 static_assert(offsetof(WBP_CharaCre_C_ApplyMakeInfo, MakeInfo) == 0x000000, "Member 'WBP_CharaCre_C_ApplyMakeInfo::MakeInfo' has a wrong offset!");
 
 // Function WBP_CharaCre.WBP_CharaCre_C.BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_1_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature
@@ -52,6 +52,17 @@ public:
 static_assert(alignof(WBP_CharaCre_C_BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_2_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature) == 0x000008, "Wrong alignment on WBP_CharaCre_C_BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_2_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature");
 static_assert(sizeof(WBP_CharaCre_C_BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_2_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature) == 0x000008, "Wrong size on WBP_CharaCre_C_BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_2_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature");
 static_assert(offsetof(WBP_CharaCre_C_BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_2_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature, Button) == 0x000000, "Member 'WBP_CharaCre_C_BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_2_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature::Button' has a wrong offset!");
+
+// Function WBP_CharaCre.WBP_CharaCre_C.BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_Cancel_InGame_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CharaCre_C_BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_Cancel_InGame_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature final
+{
+public:
+	class UWBP_CharaCre_MenuButton_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CharaCre_C_BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_Cancel_InGame_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature) == 0x000008, "Wrong alignment on WBP_CharaCre_C_BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_Cancel_InGame_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature");
+static_assert(sizeof(WBP_CharaCre_C_BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_Cancel_InGame_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature) == 0x000008, "Wrong size on WBP_CharaCre_C_BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_Cancel_InGame_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature");
+static_assert(offsetof(WBP_CharaCre_C_BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_Cancel_InGame_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature, Button) == 0x000000, "Member 'WBP_CharaCre_C_BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_Cancel_InGame_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function WBP_CharaCre.WBP_CharaCre_C.BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_Finish_InGame_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -125,7 +136,7 @@ struct WBP_CharaCre_C_CustomNavi_ToCategoryTop final
 {
 public:
 	EUINavigation                                 Param_Navigation;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_454F[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3403[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_CharaCre_C_CustomNavi_ToCategoryTop) == 0x000008, "Wrong alignment on WBP_CharaCre_C_CustomNavi_ToCategoryTop");
@@ -139,13 +150,13 @@ struct WBP_CharaCre_C_CustomNavi_ToNameChange final
 {
 public:
 	EUINavigation                                 Param_Navigation;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4550[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3404[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4551[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3405[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                Temp_object_Variable;                              // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4552[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3406[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                K2Node_Select_Default;                             // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_CharaCre_C_CustomNavi_ToNameChange) == 0x000008, "Wrong alignment on WBP_CharaCre_C_CustomNavi_ToNameChange");
@@ -158,38 +169,40 @@ static_assert(offsetof(WBP_CharaCre_C_CustomNavi_ToNameChange, CallFunc_IsVisibl
 static_assert(offsetof(WBP_CharaCre_C_CustomNavi_ToNameChange, K2Node_Select_Default) == 0x000028, "Member 'WBP_CharaCre_C_CustomNavi_ToNameChange::K2Node_Select_Default' has a wrong offset!");
 
 // Function WBP_CharaCre.WBP_CharaCre_C.ExecuteUbergraph_WBP_CharaCre
-// 0x0070 (0x0070 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4553[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3407[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UWBP_CharaCre_ScrollBoxContentSet_C*    CallFunc_Create_ReturnValue;                       // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_CharaCre_MenuButton_C*             K2Node_ComponentBoundEvent_Button_6;               // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_CharaCre_MenuButton_C*             K2Node_ComponentBoundEvent_Button_5;               // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_CharaCre_MenuButton_C*             K2Node_ComponentBoundEvent_Button_4;               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_CharaCre_MenuButton_C*             K2Node_ComponentBoundEvent_Button_7;               // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_CharaCre_MenuButton_C*             K2Node_ComponentBoundEvent_Button_6;               // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_CharaCre_MenuButton_C*             K2Node_ComponentBoundEvent_Button_5;               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0030(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0040(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWBP_CharaCre_MenuButton_C*             K2Node_ComponentBoundEvent_Button_3;               // 0x0050(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_CharaCre_MenuButton_C*             K2Node_ComponentBoundEvent_Button_2;               // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_CharaCre_MenuButton_C*             K2Node_ComponentBoundEvent_Button_1;               // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_CharaCre_MenuButton_C*             K2Node_ComponentBoundEvent_Button;                 // 0x0068(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_CharaCre_MenuButton_C*             K2Node_ComponentBoundEvent_Button_4;               // 0x0050(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_CharaCre_MenuButton_C*             K2Node_ComponentBoundEvent_Button_3;               // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_CharaCre_MenuButton_C*             K2Node_ComponentBoundEvent_Button_2;               // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_CharaCre_MenuButton_C*             K2Node_ComponentBoundEvent_Button_1;               // 0x0068(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_CharaCre_MenuButton_C*             K2Node_ComponentBoundEvent_Button;                 // 0x0070(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre) == 0x000008, "Wrong alignment on WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre");
-static_assert(sizeof(WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre) == 0x000070, "Wrong size on WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre");
+static_assert(sizeof(WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre) == 0x000078, "Wrong size on WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre");
 static_assert(offsetof(WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre, EntryPoint) == 0x000000, "Member 'WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre::EntryPoint' has a wrong offset!");
 static_assert(offsetof(WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre, CallFunc_GetLocalPlayerController_ReturnValue) == 0x000008, "Member 'WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre::CallFunc_GetLocalPlayerController_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre, CallFunc_Create_ReturnValue) == 0x000010, "Member 'WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre, K2Node_ComponentBoundEvent_Button_6) == 0x000018, "Member 'WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre::K2Node_ComponentBoundEvent_Button_6' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre, K2Node_ComponentBoundEvent_Button_5) == 0x000020, "Member 'WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre::K2Node_ComponentBoundEvent_Button_5' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre, K2Node_ComponentBoundEvent_Button_4) == 0x000028, "Member 'WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre::K2Node_ComponentBoundEvent_Button_4' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre, K2Node_ComponentBoundEvent_Button_7) == 0x000018, "Member 'WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre::K2Node_ComponentBoundEvent_Button_7' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre, K2Node_ComponentBoundEvent_Button_6) == 0x000020, "Member 'WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre::K2Node_ComponentBoundEvent_Button_6' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre, K2Node_ComponentBoundEvent_Button_5) == 0x000028, "Member 'WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre::K2Node_ComponentBoundEvent_Button_5' has a wrong offset!");
 static_assert(offsetof(WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre, K2Node_CreateDelegate_OutputDelegate) == 0x000030, "Member 'WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre, K2Node_CreateDelegate_OutputDelegate_1) == 0x000040, "Member 'WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre, K2Node_ComponentBoundEvent_Button_3) == 0x000050, "Member 'WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre::K2Node_ComponentBoundEvent_Button_3' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre, K2Node_ComponentBoundEvent_Button_2) == 0x000058, "Member 'WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre::K2Node_ComponentBoundEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre, K2Node_ComponentBoundEvent_Button_1) == 0x000060, "Member 'WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre, K2Node_ComponentBoundEvent_Button) == 0x000068, "Member 'WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre, K2Node_ComponentBoundEvent_Button_4) == 0x000050, "Member 'WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre::K2Node_ComponentBoundEvent_Button_4' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre, K2Node_ComponentBoundEvent_Button_3) == 0x000058, "Member 'WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre::K2Node_ComponentBoundEvent_Button_3' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre, K2Node_ComponentBoundEvent_Button_2) == 0x000060, "Member 'WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre::K2Node_ComponentBoundEvent_Button_2' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre, K2Node_ComponentBoundEvent_Button_1) == 0x000068, "Member 'WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre, K2Node_ComponentBoundEvent_Button) == 0x000070, "Member 'WBP_CharaCre_C_ExecuteUbergraph_WBP_CharaCre::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
 // Function WBP_CharaCre.WBP_CharaCre_C.GetCategoryButtonByCategory
 // 0x0018 (0x0018 - 0x0000)
@@ -197,7 +210,7 @@ struct WBP_CharaCre_C_GetCategoryButtonByCategory final
 {
 public:
 	E_UICharacterMakeCategory                     CategoryType;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4554[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3408[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_CharaCre_MenuButton_C*             Button;                                            // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -213,7 +226,7 @@ struct WBP_CharaCre_C_GetRestoreFocusTarget final
 {
 public:
 	E_UICharacterMakeCategory                     CategoryType;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4555[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3409[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                Widget;                                            // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_GetRestoreFocusTarget_Widget;             // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
@@ -242,7 +255,7 @@ struct WBP_CharaCre_C_GetTopFocusTarget final
 {
 public:
 	E_UICharacterMakeCategory                     NewCategory;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4556[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_340A[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                Widget;                                            // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_GetTopFocusTarget_Widget;                 // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
@@ -269,7 +282,7 @@ struct WBP_CharaCre_C_OnChangedArmSize_Internal final
 {
 public:
 	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4557[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_340B[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        K2Node_CallDelegate_Size_ImplicitCast;             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_CharaCre_C_OnChangedArmSize_Internal) == 0x000008, "Wrong alignment on WBP_CharaCre_C_OnChangedArmSize_Internal");

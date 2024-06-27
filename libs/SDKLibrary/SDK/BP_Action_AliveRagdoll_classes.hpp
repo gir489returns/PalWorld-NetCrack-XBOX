@@ -24,23 +24,23 @@ namespace SDK
 class UBP_Action_AliveRagdoll_C : public UPalActionBase
 {
 public:
-	uint8                                         Pad_3B20[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A4A[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0140(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	bool                                          IsRagdoll;                                         // 0x0148(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B21[0x7];                                     // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A4B[0x7];                                     // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                PreLocation;                                       // 0x0150(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B22[0x8];                                     // 0x0168(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A4C[0x8];                                     // 0x0168(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             MeshTF;                                            // 0x0170(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          EndAble;                                           // 0x01D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B23[0x3];                                     // 0x01D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A4D[0x3];                                     // 0x01D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   InBoneName;                                        // 0x01D4(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   FlagName;                                          // 0x01DC(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   DefaultCollisionProfile;                           // 0x01E4(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B24[0x4];                                     // 0x01EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A4E[0x4];                                     // 0x01EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UNiagaraComponent*                      Niagara;                                           // 0x01F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	double                                        Scale;                                             // 0x01F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          AomukeOrLeft;                                      // 0x0200(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B25[0x7];                                     // 0x0201(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A4F[0x7];                                     // 0x0201(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        StartHeight;                                       // 0x0208(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

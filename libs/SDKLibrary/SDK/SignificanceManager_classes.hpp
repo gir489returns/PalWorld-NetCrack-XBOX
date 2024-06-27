@@ -19,10 +19,10 @@ namespace SDK
 
 // Class SignificanceManager.SignificanceManager
 // 0x0118 (0x0140 - 0x0028)
-class USignificanceManager final : public UObject
+class USignificanceManager : public UObject
 {
 public:
-	uint8                                         Pad_2270[0xF8];                                    // 0x0028(0x00F8)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22B5[0xF8];                                    // 0x0028(0x00F8)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSoftClassPath                         SignificanceManagerClassName;                      // 0x0120(0x0020)(Edit, ZeroConstructor, Config, GlobalConfig, NoClear, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:

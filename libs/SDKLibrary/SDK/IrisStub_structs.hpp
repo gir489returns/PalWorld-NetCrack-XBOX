@@ -29,7 +29,7 @@ static_assert(sizeof(FNetSerializerConfig) == 0x000001, "Wrong size on FNetSeria
 struct FPolymorphicStructNetSerializerConfig final : public FNetSerializerConfig
 {
 public:
-	uint8                                         Pad_3489[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_35C6[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FPolymorphicStructNetSerializerConfig) == 0x000001, "Wrong alignment on FPolymorphicStructNetSerializerConfig");
 static_assert(sizeof(FPolymorphicStructNetSerializerConfig) == 0x000001, "Wrong size on FPolymorphicStructNetSerializerConfig");
@@ -39,7 +39,7 @@ static_assert(sizeof(FPolymorphicStructNetSerializerConfig) == 0x000001, "Wrong 
 struct FPolymorphicArrayStructNetSerializerConfig final : public FNetSerializerConfig
 {
 public:
-	uint8                                         Pad_348A[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_35C7[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FPolymorphicArrayStructNetSerializerConfig) == 0x000001, "Wrong alignment on FPolymorphicArrayStructNetSerializerConfig");
 static_assert(sizeof(FPolymorphicArrayStructNetSerializerConfig) == 0x000001, "Wrong size on FPolymorphicArrayStructNetSerializerConfig");

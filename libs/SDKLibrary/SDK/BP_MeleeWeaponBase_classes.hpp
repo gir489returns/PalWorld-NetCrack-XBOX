@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MeleeWeaponBase.BP_MeleeWeaponBase_C
-// 0x0010 (0x0548 - 0x0538)
+// 0x0010 (0x0580 - 0x0570)
 class ABP_MeleeWeaponBase_C : public APalWeaponBase
 {
 public:
-	class USkeletalMeshComponent*                 SkeletalMesh;                                      // 0x0538(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0540(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 SkeletalMesh;                                      // 0x0570(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0578(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	class FName GetEquipSocketName();
@@ -43,9 +43,9 @@ public:
 	}
 };
 static_assert(alignof(ABP_MeleeWeaponBase_C) == 0x000008, "Wrong alignment on ABP_MeleeWeaponBase_C");
-static_assert(sizeof(ABP_MeleeWeaponBase_C) == 0x000548, "Wrong size on ABP_MeleeWeaponBase_C");
-static_assert(offsetof(ABP_MeleeWeaponBase_C, SkeletalMesh) == 0x000538, "Member 'ABP_MeleeWeaponBase_C::SkeletalMesh' has a wrong offset!");
-static_assert(offsetof(ABP_MeleeWeaponBase_C, DefaultSceneRoot) == 0x000540, "Member 'ABP_MeleeWeaponBase_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(sizeof(ABP_MeleeWeaponBase_C) == 0x000580, "Wrong size on ABP_MeleeWeaponBase_C");
+static_assert(offsetof(ABP_MeleeWeaponBase_C, SkeletalMesh) == 0x000570, "Member 'ABP_MeleeWeaponBase_C::SkeletalMesh' has a wrong offset!");
+static_assert(offsetof(ABP_MeleeWeaponBase_C, DefaultSceneRoot) == 0x000578, "Member 'ABP_MeleeWeaponBase_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

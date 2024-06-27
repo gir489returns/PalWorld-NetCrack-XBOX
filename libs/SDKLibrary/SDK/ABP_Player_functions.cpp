@@ -1125,7 +1125,7 @@ void UABP_Player_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Player_AnimG
 
 
 // Function ABP_Player.ABP_Player_C.ExecuteUbergraph_ABP_Player
-// (Final, UbergraphFunction, HasDefaults)
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

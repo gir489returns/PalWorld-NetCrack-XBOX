@@ -22,7 +22,7 @@ namespace SDK
 class UBP_Action_NPC_MeleeAttackWithGun_C final : public UPalActionBase
 {
 public:
-	uint8                                         Pad_2409[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_406F[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0140(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:

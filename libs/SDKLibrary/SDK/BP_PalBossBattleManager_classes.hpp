@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalBossBattleManager.BP_PalBossBattleManager_C
-// 0x0008 (0x0218 - 0x0210)
+// 0x0008 (0x0220 - 0x0218)
 class UBP_PalBossBattleManager_C final : public UPalBossBattleManager
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0210(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0218(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void DisableSky(bool Activce, class APPSkyCreator* Sky);
@@ -40,8 +40,8 @@ public:
 	}
 };
 static_assert(alignof(UBP_PalBossBattleManager_C) == 0x000008, "Wrong alignment on UBP_PalBossBattleManager_C");
-static_assert(sizeof(UBP_PalBossBattleManager_C) == 0x000218, "Wrong size on UBP_PalBossBattleManager_C");
-static_assert(offsetof(UBP_PalBossBattleManager_C, UberGraphFrame) == 0x000210, "Member 'UBP_PalBossBattleManager_C::UberGraphFrame' has a wrong offset!");
+static_assert(sizeof(UBP_PalBossBattleManager_C) == 0x000220, "Wrong size on UBP_PalBossBattleManager_C");
+static_assert(offsetof(UBP_PalBossBattleManager_C, UberGraphFrame) == 0x000218, "Member 'UBP_PalBossBattleManager_C::UberGraphFrame' has a wrong offset!");
 
 }
 

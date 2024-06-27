@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
-#include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "UMG_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -101,7 +101,7 @@ struct WBP_PalLiftItem_C_OnUpdateCount final
 {
 public:
 	int32                                         Count;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_474B[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B8E[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
 };
 static_assert(alignof(WBP_PalLiftItem_C_OnUpdateCount) == 0x000008, "Wrong alignment on WBP_PalLiftItem_C_OnUpdateCount");

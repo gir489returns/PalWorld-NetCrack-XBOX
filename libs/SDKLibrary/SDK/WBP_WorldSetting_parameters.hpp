@@ -19,32 +19,32 @@ namespace SDK::Params
 {
 
 // Function WBP_WorldSetting.WBP_WorldSetting_C.StartNewGame
-// 0x02B0 (0x02B0 - 0x0000)
+// 0x02F0 (0x02F0 - 0x0000)
 struct WBP_WorldSetting_C_StartNewGame final
 {
 public:
-	struct FPalOptionWorldSettings                Option;                                            // 0x0000(0x0138)(BlueprintVisible, BlueprintReadOnly, Parm)
-	struct FPalOptionWorldSettings                NewLocalVar_1;                                     // 0x0138(0x0138)(Edit, BlueprintVisible)
-	class FString                                 CallFunc_GetWorldName_WorldName;                   // 0x0270(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class UGameInstance*                          CallFunc_GetGameInstance_ReturnValue;              // 0x0280(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_PalGameInstance_C*                  K2Node_DynamicCast_AsBP_Pal_Game_Instance;         // 0x0288(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0290(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44A0[0x7];                                     // 0x0291(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGameInstance*                          CallFunc_GetGameInstance_ReturnValue_1;            // 0x0298(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalGameInstance*                       K2Node_DynamicCast_AsPal_Game_Instance;            // 0x02A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x02A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalOptionWorldSettings                Option;                                            // 0x0000(0x0158)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FPalOptionWorldSettings                NewLocalVar_1;                                     // 0x0158(0x0158)(Edit, BlueprintVisible)
+	class FString                                 CallFunc_GetWorldName_WorldName;                   // 0x02B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UGameInstance*                          CallFunc_GetGameInstance_ReturnValue;              // 0x02C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_PalGameInstance_C*                  K2Node_DynamicCast_AsBP_Pal_Game_Instance;         // 0x02C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B9C[0x7];                                     // 0x02D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGameInstance*                          CallFunc_GetGameInstance_ReturnValue_1;            // 0x02D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalGameInstance*                       K2Node_DynamicCast_AsPal_Game_Instance;            // 0x02E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x02E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_WorldSetting_C_StartNewGame) == 0x000008, "Wrong alignment on WBP_WorldSetting_C_StartNewGame");
-static_assert(sizeof(WBP_WorldSetting_C_StartNewGame) == 0x0002B0, "Wrong size on WBP_WorldSetting_C_StartNewGame");
+static_assert(sizeof(WBP_WorldSetting_C_StartNewGame) == 0x0002F0, "Wrong size on WBP_WorldSetting_C_StartNewGame");
 static_assert(offsetof(WBP_WorldSetting_C_StartNewGame, Option) == 0x000000, "Member 'WBP_WorldSetting_C_StartNewGame::Option' has a wrong offset!");
-static_assert(offsetof(WBP_WorldSetting_C_StartNewGame, NewLocalVar_1) == 0x000138, "Member 'WBP_WorldSetting_C_StartNewGame::NewLocalVar_1' has a wrong offset!");
-static_assert(offsetof(WBP_WorldSetting_C_StartNewGame, CallFunc_GetWorldName_WorldName) == 0x000270, "Member 'WBP_WorldSetting_C_StartNewGame::CallFunc_GetWorldName_WorldName' has a wrong offset!");
-static_assert(offsetof(WBP_WorldSetting_C_StartNewGame, CallFunc_GetGameInstance_ReturnValue) == 0x000280, "Member 'WBP_WorldSetting_C_StartNewGame::CallFunc_GetGameInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_WorldSetting_C_StartNewGame, K2Node_DynamicCast_AsBP_Pal_Game_Instance) == 0x000288, "Member 'WBP_WorldSetting_C_StartNewGame::K2Node_DynamicCast_AsBP_Pal_Game_Instance' has a wrong offset!");
-static_assert(offsetof(WBP_WorldSetting_C_StartNewGame, K2Node_DynamicCast_bSuccess) == 0x000290, "Member 'WBP_WorldSetting_C_StartNewGame::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_WorldSetting_C_StartNewGame, CallFunc_GetGameInstance_ReturnValue_1) == 0x000298, "Member 'WBP_WorldSetting_C_StartNewGame::CallFunc_GetGameInstance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_WorldSetting_C_StartNewGame, K2Node_DynamicCast_AsPal_Game_Instance) == 0x0002A0, "Member 'WBP_WorldSetting_C_StartNewGame::K2Node_DynamicCast_AsPal_Game_Instance' has a wrong offset!");
-static_assert(offsetof(WBP_WorldSetting_C_StartNewGame, K2Node_DynamicCast_bSuccess_1) == 0x0002A8, "Member 'WBP_WorldSetting_C_StartNewGame::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(WBP_WorldSetting_C_StartNewGame, NewLocalVar_1) == 0x000158, "Member 'WBP_WorldSetting_C_StartNewGame::NewLocalVar_1' has a wrong offset!");
+static_assert(offsetof(WBP_WorldSetting_C_StartNewGame, CallFunc_GetWorldName_WorldName) == 0x0002B0, "Member 'WBP_WorldSetting_C_StartNewGame::CallFunc_GetWorldName_WorldName' has a wrong offset!");
+static_assert(offsetof(WBP_WorldSetting_C_StartNewGame, CallFunc_GetGameInstance_ReturnValue) == 0x0002C0, "Member 'WBP_WorldSetting_C_StartNewGame::CallFunc_GetGameInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_WorldSetting_C_StartNewGame, K2Node_DynamicCast_AsBP_Pal_Game_Instance) == 0x0002C8, "Member 'WBP_WorldSetting_C_StartNewGame::K2Node_DynamicCast_AsBP_Pal_Game_Instance' has a wrong offset!");
+static_assert(offsetof(WBP_WorldSetting_C_StartNewGame, K2Node_DynamicCast_bSuccess) == 0x0002D0, "Member 'WBP_WorldSetting_C_StartNewGame::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_WorldSetting_C_StartNewGame, CallFunc_GetGameInstance_ReturnValue_1) == 0x0002D8, "Member 'WBP_WorldSetting_C_StartNewGame::CallFunc_GetGameInstance_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_WorldSetting_C_StartNewGame, K2Node_DynamicCast_AsPal_Game_Instance) == 0x0002E0, "Member 'WBP_WorldSetting_C_StartNewGame::K2Node_DynamicCast_AsPal_Game_Instance' has a wrong offset!");
+static_assert(offsetof(WBP_WorldSetting_C_StartNewGame, K2Node_DynamicCast_bSuccess_1) == 0x0002E8, "Member 'WBP_WorldSetting_C_StartNewGame::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
 
 // Function WBP_WorldSetting.WBP_WorldSetting_C.OpenWorldNameInputWindow
 // 0x0038 (0x0038 - 0x0000)
@@ -79,6 +79,23 @@ static_assert(offsetof(WBP_WorldSetting_C_OpenStartGameCheckDialog, NewLocalVar_
 static_assert(offsetof(WBP_WorldSetting_C_OpenStartGameCheckDialog, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'WBP_WorldSetting_C_OpenStartGameCheckDialog::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(WBP_WorldSetting_C_OpenStartGameCheckDialog, CallFunc_GetLocalizedTextFromHandle_Text) == 0x000020, "Member 'WBP_WorldSetting_C_OpenStartGameCheckDialog::CallFunc_GetLocalizedTextFromHandle_Text' has a wrong offset!");
 static_assert(offsetof(WBP_WorldSetting_C_OpenStartGameCheckDialog, CallFunc_Dialog_ReturnValue) == 0x000038, "Member 'WBP_WorldSetting_C_OpenStartGameCheckDialog::CallFunc_Dialog_ReturnValue' has a wrong offset!");
+
+// Function WBP_WorldSetting.WBP_WorldSetting_C.OpenRandomizerSeedInputWindow
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_WorldSetting_C_OpenRandomizerSeedInputWindow final
+{
+public:
+	TDelegate<void(class UPalHUDDispatchParameterBase* Param)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_HUDDispatchParameter_RandomizerSeedInput_C* CallFunc_SpawnObject_ReturnValue;                  // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetRandomizerSeed_WorldName;              // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_Push_ReturnValue;                         // 0x0028(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_WorldSetting_C_OpenRandomizerSeedInputWindow) == 0x000008, "Wrong alignment on WBP_WorldSetting_C_OpenRandomizerSeedInputWindow");
+static_assert(sizeof(WBP_WorldSetting_C_OpenRandomizerSeedInputWindow) == 0x000038, "Wrong size on WBP_WorldSetting_C_OpenRandomizerSeedInputWindow");
+static_assert(offsetof(WBP_WorldSetting_C_OpenRandomizerSeedInputWindow, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'WBP_WorldSetting_C_OpenRandomizerSeedInputWindow::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(WBP_WorldSetting_C_OpenRandomizerSeedInputWindow, CallFunc_SpawnObject_ReturnValue) == 0x000010, "Member 'WBP_WorldSetting_C_OpenRandomizerSeedInputWindow::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_WorldSetting_C_OpenRandomizerSeedInputWindow, CallFunc_GetRandomizerSeed_WorldName) == 0x000018, "Member 'WBP_WorldSetting_C_OpenRandomizerSeedInputWindow::CallFunc_GetRandomizerSeed_WorldName' has a wrong offset!");
+static_assert(offsetof(WBP_WorldSetting_C_OpenRandomizerSeedInputWindow, CallFunc_Push_ReturnValue) == 0x000028, "Member 'WBP_WorldSetting_C_OpenRandomizerSeedInputWindow::CallFunc_Push_ReturnValue' has a wrong offset!");
 
 // Function WBP_WorldSetting.WBP_WorldSetting_C.OpenCheckSaveSettingDialog
 // 0x0048 (0x0048 - 0x0000)
@@ -135,40 +152,53 @@ static_assert(offsetof(WBP_WorldSetting_C_OnClosedWorldNameInputWindow, CallFunc
 static_assert(offsetof(WBP_WorldSetting_C_OnClosedWorldNameInputWindow, CallFunc_TryRequestWorldNameFilter_ReturnValue) == 0x000009, "Member 'WBP_WorldSetting_C_OnClosedWorldNameInputWindow::CallFunc_TryRequestWorldNameFilter_ReturnValue' has a wrong offset!");
 
 // Function WBP_WorldSetting.WBP_WorldSetting_C.OnClosedStartGameDialog
-// 0x0150 (0x0150 - 0x0000)
+// 0x0170 (0x0170 - 0x0000)
 struct WBP_WorldSetting_C_OnClosedStartGameDialog final
 {
 public:
 	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44A1[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B9D[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_GetFocusTarget_TargetWidget;              // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FPalOptionWorldSettings                CallFunc_GetEditedWorldSetting_WorldSetting;       // 0x0010(0x0138)()
-	bool                                          CallFunc_CompleteSetting_ReturnValue;              // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalOptionWorldSettings                CallFunc_GetEditedWorldSetting_WorldSetting;       // 0x0010(0x0158)()
+	bool                                          CallFunc_CompleteSetting_ReturnValue;              // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_WorldSetting_C_OnClosedStartGameDialog) == 0x000008, "Wrong alignment on WBP_WorldSetting_C_OnClosedStartGameDialog");
-static_assert(sizeof(WBP_WorldSetting_C_OnClosedStartGameDialog) == 0x000150, "Wrong size on WBP_WorldSetting_C_OnClosedStartGameDialog");
+static_assert(sizeof(WBP_WorldSetting_C_OnClosedStartGameDialog) == 0x000170, "Wrong size on WBP_WorldSetting_C_OnClosedStartGameDialog");
 static_assert(offsetof(WBP_WorldSetting_C_OnClosedStartGameDialog, bResult) == 0x000000, "Member 'WBP_WorldSetting_C_OnClosedStartGameDialog::bResult' has a wrong offset!");
 static_assert(offsetof(WBP_WorldSetting_C_OnClosedStartGameDialog, CallFunc_GetFocusTarget_TargetWidget) == 0x000008, "Member 'WBP_WorldSetting_C_OnClosedStartGameDialog::CallFunc_GetFocusTarget_TargetWidget' has a wrong offset!");
 static_assert(offsetof(WBP_WorldSetting_C_OnClosedStartGameDialog, CallFunc_GetEditedWorldSetting_WorldSetting) == 0x000010, "Member 'WBP_WorldSetting_C_OnClosedStartGameDialog::CallFunc_GetEditedWorldSetting_WorldSetting' has a wrong offset!");
-static_assert(offsetof(WBP_WorldSetting_C_OnClosedStartGameDialog, CallFunc_CompleteSetting_ReturnValue) == 0x000148, "Member 'WBP_WorldSetting_C_OnClosedStartGameDialog::CallFunc_CompleteSetting_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_WorldSetting_C_OnClosedStartGameDialog, CallFunc_CompleteSetting_ReturnValue) == 0x000168, "Member 'WBP_WorldSetting_C_OnClosedStartGameDialog::CallFunc_CompleteSetting_ReturnValue' has a wrong offset!");
 
 // Function WBP_WorldSetting.WBP_WorldSetting_C.OnClosedSaveSettingDialog
-// 0x0150 (0x0150 - 0x0000)
+// 0x0170 (0x0170 - 0x0000)
 struct WBP_WorldSetting_C_OnClosedSaveSettingDialog final
 {
 public:
 	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44A2[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalOptionWorldSettings                CallFunc_GetEditedWorldSetting_WorldSetting;       // 0x0008(0x0138)()
-	class UWidget*                                CallFunc_GetFocusTarget_TargetWidget;              // 0x0140(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CompleteSetting_ReturnValue;              // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B9E[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalOptionWorldSettings                CallFunc_GetEditedWorldSetting_WorldSetting;       // 0x0008(0x0158)()
+	class UWidget*                                CallFunc_GetFocusTarget_TargetWidget;              // 0x0160(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CompleteSetting_ReturnValue;              // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_WorldSetting_C_OnClosedSaveSettingDialog) == 0x000008, "Wrong alignment on WBP_WorldSetting_C_OnClosedSaveSettingDialog");
-static_assert(sizeof(WBP_WorldSetting_C_OnClosedSaveSettingDialog) == 0x000150, "Wrong size on WBP_WorldSetting_C_OnClosedSaveSettingDialog");
+static_assert(sizeof(WBP_WorldSetting_C_OnClosedSaveSettingDialog) == 0x000170, "Wrong size on WBP_WorldSetting_C_OnClosedSaveSettingDialog");
 static_assert(offsetof(WBP_WorldSetting_C_OnClosedSaveSettingDialog, bResult) == 0x000000, "Member 'WBP_WorldSetting_C_OnClosedSaveSettingDialog::bResult' has a wrong offset!");
 static_assert(offsetof(WBP_WorldSetting_C_OnClosedSaveSettingDialog, CallFunc_GetEditedWorldSetting_WorldSetting) == 0x000008, "Member 'WBP_WorldSetting_C_OnClosedSaveSettingDialog::CallFunc_GetEditedWorldSetting_WorldSetting' has a wrong offset!");
-static_assert(offsetof(WBP_WorldSetting_C_OnClosedSaveSettingDialog, CallFunc_GetFocusTarget_TargetWidget) == 0x000140, "Member 'WBP_WorldSetting_C_OnClosedSaveSettingDialog::CallFunc_GetFocusTarget_TargetWidget' has a wrong offset!");
-static_assert(offsetof(WBP_WorldSetting_C_OnClosedSaveSettingDialog, CallFunc_CompleteSetting_ReturnValue) == 0x000148, "Member 'WBP_WorldSetting_C_OnClosedSaveSettingDialog::CallFunc_CompleteSetting_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_WorldSetting_C_OnClosedSaveSettingDialog, CallFunc_GetFocusTarget_TargetWidget) == 0x000160, "Member 'WBP_WorldSetting_C_OnClosedSaveSettingDialog::CallFunc_GetFocusTarget_TargetWidget' has a wrong offset!");
+static_assert(offsetof(WBP_WorldSetting_C_OnClosedSaveSettingDialog, CallFunc_CompleteSetting_ReturnValue) == 0x000168, "Member 'WBP_WorldSetting_C_OnClosedSaveSettingDialog::CallFunc_CompleteSetting_ReturnValue' has a wrong offset!");
+
+// Function WBP_WorldSetting.WBP_WorldSetting_C.OnClosedRandomizerSeedInputWindow
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_WorldSetting_C_OnClosedRandomizerSeedInputWindow final
+{
+public:
+	class UPalHUDDispatchParameterBase*           Param_Param;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_WorldSetting_C_OnClosedRandomizerSeedInputWindow) == 0x000008, "Wrong alignment on WBP_WorldSetting_C_OnClosedRandomizerSeedInputWindow");
+static_assert(sizeof(WBP_WorldSetting_C_OnClosedRandomizerSeedInputWindow) == 0x000010, "Wrong size on WBP_WorldSetting_C_OnClosedRandomizerSeedInputWindow");
+static_assert(offsetof(WBP_WorldSetting_C_OnClosedRandomizerSeedInputWindow, Param_Param) == 0x000000, "Member 'WBP_WorldSetting_C_OnClosedRandomizerSeedInputWindow::Param_Param' has a wrong offset!");
+static_assert(offsetof(WBP_WorldSetting_C_OnClosedRandomizerSeedInputWindow, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'WBP_WorldSetting_C_OnClosedRandomizerSeedInputWindow::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function WBP_WorldSetting.WBP_WorldSetting_C.OnCancelAction
 // 0x0001 (0x0001 - 0x0000)
@@ -188,15 +218,15 @@ struct WBP_WorldSetting_C_ExecuteUbergraph_WBP_WorldSetting final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44A3[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B9F[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalHUDDispatchParameter_WorldSetting*  K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_World_Setting; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44A4[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BA0[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0030(0x0018)()
 	bool                                          CallFunc_IsEditedSetting_IsEdited;                 // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsSuccess;                            // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44A5[0x6];                                     // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BA1[0x6];                                     // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 K2Node_Event_NewWorldName;                         // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_WorldSetting_C_ExecuteUbergraph_WBP_WorldSetting) == 0x000008, "Wrong alignment on WBP_WorldSetting_C_ExecuteUbergraph_WBP_WorldSetting");

@@ -13,6 +13,7 @@
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
 #include "PhysicsCore_structs.hpp"
+#include "AkAudio_structs.hpp"
 
 
 namespace SDK
@@ -28,10 +29,10 @@ public:
 	bool                                          Mute;                                              // 0x0080(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPalLandingType                               LandingType;                                       // 0x0081(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPalFootType                                  FootType;                                          // 0x0082(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AC8[0x5];                                     // 0x0083(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15A2[0x5];                                     // 0x0083(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftClassPtr<class UClass>                   DebugSoundSlot;                                    // 0x0088(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, HasGetValueTypeHash)
 	EPhysicalSurface                              DebugPhysicsMaterial;                              // 0x00B8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AC9[0x3];                                     // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15A3[0x3];                                     // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         StepCount;                                         // 0x00BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
@@ -42,6 +43,7 @@ public:
 	void IsFootStepRun(class AActor* Owner, bool* Param_IsFootStepRun) const;
 	void IsPlaySound(bool* PlaySound) const;
 	void IsSteppingShallows(class AActor* OwnerActor, bool* NewParam) const;
+	void IsSwimming(class AActor* Owner, bool* Param_IsSwimming) const;
 	void MakeSwitchStatePalSize(class APalMonsterCharacter* Pal, class FString* PalSize) const;
 	void PlaySound(class AActor* Owner, const struct FPalDataTableRowName_SoundID& SoundId) const;
 	void PlayStepSound(class AActor* Owner) const;

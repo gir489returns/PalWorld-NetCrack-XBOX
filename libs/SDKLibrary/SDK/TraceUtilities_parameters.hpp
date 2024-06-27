@@ -43,7 +43,7 @@ struct TraceUtilLibrary_IsChannelEnabled final
 public:
 	class FString                                 ChannelName;                                       // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_251F[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2545[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(TraceUtilLibrary_IsChannelEnabled) == 0x000008, "Wrong alignment on TraceUtilLibrary_IsChannelEnabled");
 static_assert(sizeof(TraceUtilLibrary_IsChannelEnabled) == 0x000018, "Wrong size on TraceUtilLibrary_IsChannelEnabled");
@@ -91,7 +91,7 @@ public:
 	class FString                                 Target;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                         Channels;                                          // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2520[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2546[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(TraceUtilLibrary_StartTraceSendTo) == 0x000008, "Wrong alignment on TraceUtilLibrary_StartTraceSendTo");
 static_assert(sizeof(TraceUtilLibrary_StartTraceSendTo) == 0x000028, "Wrong size on TraceUtilLibrary_StartTraceSendTo");
@@ -107,7 +107,7 @@ public:
 	class FString                                 Filename;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                         Channels;                                          // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2521[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2547[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(TraceUtilLibrary_StartTraceToFile) == 0x000008, "Wrong alignment on TraceUtilLibrary_StartTraceToFile");
 static_assert(sizeof(TraceUtilLibrary_StartTraceToFile) == 0x000028, "Wrong size on TraceUtilLibrary_StartTraceToFile");
@@ -134,7 +134,7 @@ public:
 	class FString                                 ChannelName;                                       // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          Enabled;                                           // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2522[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2548[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(TraceUtilLibrary_ToggleChannel) == 0x000008, "Wrong alignment on TraceUtilLibrary_ToggleChannel");
 static_assert(sizeof(TraceUtilLibrary_ToggleChannel) == 0x000018, "Wrong size on TraceUtilLibrary_ToggleChannel");

@@ -17,409 +17,59 @@
 namespace SDK
 {
 
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.addValue
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SubtractValue
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_OptionSettings_ListContent_C::AddValue()
+void UWBP_OptionSettings_ListContent_C::SubtractValue()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "addValue");
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SubtractValue");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.BackToList
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetUIConfigButton
 // (BlueprintCallable, BlueprintEvent)
-
-void UWBP_OptionSettings_ListContent_C::BackToList()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "BackToList");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
 // Parameters:
-// class UCommonButtonBase*                Param_Button                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OptionSettings_ListContent_C::BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Param_Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Param_Button = Param_Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Param_Button                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OptionSettings_ListContent_C::BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Param_Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Param_Button = Param_Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Param_Button                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OptionSettings_ListContent_C::BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Param_Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Param_Button = Param_Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_OptionSettings_ListContent_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.ExecuteUbergraph_WBP_OptionSettings_ListContent
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OptionSettings_ListContent_C::ExecuteUbergraph_WBP_OptionSettings_ListContent(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "ExecuteUbergraph_WBP_OptionSettings_ListContent");
-
-	Params::WBP_OptionSettings_ListContent_C_ExecuteUbergraph_WBP_OptionSettings_ListContent Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.Gamepad_LeftPress
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_OptionSettings_ListContent_C::Gamepad_LeftPress()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "Gamepad_LeftPress");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.Gamepad_LeftRelease
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_OptionSettings_ListContent_C::Gamepad_LeftRelease()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "Gamepad_LeftRelease");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.Gamepad_RightPress
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_OptionSettings_ListContent_C::Gamepad_RightPress()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "Gamepad_RightPress");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.Gamepad_RightRelease
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_OptionSettings_ListContent_C::Gamepad_RightRelease()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "Gamepad_RightRelease");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.InputMethodChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
+// class FName                             UIActionName                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // ECommonInputType                        InputType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FKey                             Key                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void UWBP_OptionSettings_ListContent_C::InputMethodChanged(ECommonInputType InputType)
+void UWBP_OptionSettings_ListContent_C::SetUIConfigButton(class FName UIActionName, ECommonInputType InputType, const struct FKey& Key)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "InputMethodChanged");
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SetUIConfigButton");
 
-	Params::WBP_OptionSettings_ListContent_C_InputMethodChanged Parms{};
+	Params::WBP_OptionSettings_ListContent_C_SetUIConfigButton Parms{};
 
+	Parms.UIActionName = UIActionName;
 	Parms.InputType = InputType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.OnKeyConfigClicked__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             KeyName                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ECommonInputType                        InputType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPalKeyConfigAxisFilterType             AxisType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OptionSettings_ListContent_C::OnKeyConfigClicked__DelegateSignature(class FName KeyName, ECommonInputType InputType, EPalKeyConfigAxisFilterType AxisType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "OnKeyConfigClicked__DelegateSignature");
-
-	Params::WBP_OptionSettings_ListContent_C_OnKeyConfigClicked__DelegateSignature Parms{};
-
-	Parms.KeyName = KeyName;
-	Parms.InputType = InputType;
-	Parms.AxisType = AxisType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetClickableButton
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_OptionSettings_ListContent_C::SetClickableButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SetClickableButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetConfigButton
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ECommonInputType                        InputType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPalKeyConfigAxisFilterType             FilterType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OptionSettings_ListContent_C::SetConfigButton(class FName ActionName, ECommonInputType InputType, EPalKeyConfigAxisFilterType FilterType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SetConfigButton");
-
-	Params::WBP_OptionSettings_ListContent_C_SetConfigButton Parms{};
-
-	Parms.ActionName = ActionName;
-	Parms.InputType = InputType;
-	Parms.FilterType = FilterType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetInteractable
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    CanInteract                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OptionSettings_ListContent_C::SetInteractable(bool CanInteract)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SetInteractable");
-
-	Params::WBP_OptionSettings_ListContent_C_SetInteractable Parms{};
-
-	Parms.CanInteract = CanInteract;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetKeyIcon
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// ECommonInputType                        InputType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OptionSettings_ListContent_C::SetKeyIcon(const struct FKey& Key, ECommonInputType InputType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SetKeyIcon");
-
-	Params::WBP_OptionSettings_ListContent_C_SetKeyIcon Parms{};
-
 	Parms.Key = std::move(Key);
-	Parms.InputType = InputType;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetKeyWarning
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetSwitcher
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    EnableWarning                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    CurrentOn                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_OptionSettings_ListContent_C::SetKeyWarning(bool EnableWarning)
+void UWBP_OptionSettings_ListContent_C::SetSwitcher(const bool CurrentOn)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SetKeyWarning");
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SetSwitcher");
 
-	Params::WBP_OptionSettings_ListContent_C_SetKeyWarning Parms{};
+	Params::WBP_OptionSettings_ListContent_C_SetSwitcher Parms{};
 
-	Parms.EnableWarning = EnableWarning;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetMsgId
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FDataTableRowHandle              RowHandle                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void UWBP_OptionSettings_ListContent_C::SetMsgId(const struct FDataTableRowHandle& RowHandle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SetMsgId");
-
-	Params::WBP_OptionSettings_ListContent_C_SetMsgId Parms{};
-
-	Parms.RowHandle = std::move(RowHandle);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetResolution
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FIntPoint                        CurrentResolution                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FIntPoint>                Resolutions                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_OptionSettings_ListContent_C::SetResolution(const struct FIntPoint& CurrentResolution, const TArray<struct FIntPoint>& Resolutions)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SetResolution");
-
-	Params::WBP_OptionSettings_ListContent_C_SetResolution Parms{};
-
-	Parms.CurrentResolution = std::move(CurrentResolution);
-	Parms.Resolutions = std::move(Resolutions);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetSelecter
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<struct FDataTableRowHandle>      Selections                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// int32                                   Param_Current                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OptionSettings_ListContent_C::SetSelecter(const TArray<struct FDataTableRowHandle>& Selections, const int32 Param_Current)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SetSelecter");
-
-	Params::WBP_OptionSettings_ListContent_C_SetSelecter Parms{};
-
-	Parms.Selections = std::move(Selections);
-	Parms.Param_Current = Param_Current;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetSelecter_String
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<class FString>                   Selections                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// int32                                   Param_Current                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OptionSettings_ListContent_C::SetSelecter_String(const TArray<class FString>& Selections, const int32 Param_Current)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SetSelecter_String");
-
-	Params::WBP_OptionSettings_ListContent_C_SetSelecter_String Parms{};
-
-	Parms.Selections = std::move(Selections);
-	Parms.Param_Current = Param_Current;
+	Parms.CurrentOn = CurrentOn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -453,59 +103,423 @@ void UWBP_OptionSettings_ListContent_C::SetSlider(double CurrentValue, double Mi
 }
 
 
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetSwitcher
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetSelecter_String
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    CurrentOn                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class FString>                   Selections                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// int32                                   Param_Current                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_OptionSettings_ListContent_C::SetSwitcher(const bool CurrentOn)
+void UWBP_OptionSettings_ListContent_C::SetSelecter_String(const TArray<class FString>& Selections, const int32 Param_Current)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SetSwitcher");
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SetSelecter_String");
 
-	Params::WBP_OptionSettings_ListContent_C_SetSwitcher Parms{};
+	Params::WBP_OptionSettings_ListContent_C_SetSelecter_String Parms{};
 
-	Parms.CurrentOn = CurrentOn;
+	Parms.Selections = std::move(Selections);
+	Parms.Param_Current = Param_Current;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetUIConfigButton
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetSelecter
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<struct FDataTableRowHandle>      Selections                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// int32                                   Param_Current                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OptionSettings_ListContent_C::SetSelecter(const TArray<struct FDataTableRowHandle>& Selections, const int32 Param_Current)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SetSelecter");
+
+	Params::WBP_OptionSettings_ListContent_C_SetSelecter Parms{};
+
+	Parms.Selections = std::move(Selections);
+	Parms.Param_Current = Param_Current;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetResolution
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FIntPoint                        CurrentResolution                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FIntPoint>                Resolutions                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_OptionSettings_ListContent_C::SetResolution(const struct FIntPoint& CurrentResolution, const TArray<struct FIntPoint>& Resolutions)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SetResolution");
+
+	Params::WBP_OptionSettings_ListContent_C_SetResolution Parms{};
+
+	Parms.CurrentResolution = std::move(CurrentResolution);
+	Parms.Resolutions = std::move(Resolutions);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetMsgId
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             UIActionName                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FDataTableRowHandle              RowHandle                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void UWBP_OptionSettings_ListContent_C::SetMsgId(const struct FDataTableRowHandle& RowHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SetMsgId");
+
+	Params::WBP_OptionSettings_ListContent_C_SetMsgId Parms{};
+
+	Parms.RowHandle = std::move(RowHandle);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetKeyWarning
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    EnableWarning                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OptionSettings_ListContent_C::SetKeyWarning(bool EnableWarning)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SetKeyWarning");
+
+	Params::WBP_OptionSettings_ListContent_C_SetKeyWarning Parms{};
+
+	Parms.EnableWarning = EnableWarning;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetKeyIcon
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FKey                             Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // ECommonInputType                        InputType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FKey                             Key                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void UWBP_OptionSettings_ListContent_C::SetUIConfigButton(class FName UIActionName, ECommonInputType InputType, const struct FKey& Key)
+void UWBP_OptionSettings_ListContent_C::SetKeyIcon(const struct FKey& Key, ECommonInputType InputType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SetUIConfigButton");
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SetKeyIcon");
 
-	Params::WBP_OptionSettings_ListContent_C_SetUIConfigButton Parms{};
+	Params::WBP_OptionSettings_ListContent_C_SetKeyIcon Parms{};
 
-	Parms.UIActionName = UIActionName;
-	Parms.InputType = InputType;
 	Parms.Key = std::move(Key);
+	Parms.InputType = InputType;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SubtractValue
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetInteractable
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    CanInteract                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_OptionSettings_ListContent_C::SubtractValue()
+void UWBP_OptionSettings_ListContent_C::SetInteractable(bool CanInteract)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SubtractValue");
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SetInteractable");
+
+	Params::WBP_OptionSettings_ListContent_C_SetInteractable Parms{};
+
+	Parms.CanInteract = CanInteract;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetConfigButton
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ECommonInputType                        InputType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalKeyConfigAxisFilterType             FilterType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OptionSettings_ListContent_C::SetConfigButton(class FName ActionName, ECommonInputType InputType, EPalKeyConfigAxisFilterType FilterType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SetConfigButton");
+
+	Params::WBP_OptionSettings_ListContent_C_SetConfigButton Parms{};
+
+	Parms.ActionName = ActionName;
+	Parms.InputType = InputType;
+	Parms.FilterType = FilterType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetClickableButton
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_OptionSettings_ListContent_C::SetClickableButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "SetClickableButton");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.OnKeyConfigClicked__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             KeyName                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ECommonInputType                        InputType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalKeyConfigAxisFilterType             AxisType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OptionSettings_ListContent_C::OnKeyConfigClicked__DelegateSignature(class FName KeyName, ECommonInputType InputType, EPalKeyConfigAxisFilterType AxisType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "OnKeyConfigClicked__DelegateSignature");
+
+	Params::WBP_OptionSettings_ListContent_C_OnKeyConfigClicked__DelegateSignature Parms{};
+
+	Parms.KeyName = KeyName;
+	Parms.InputType = InputType;
+	Parms.AxisType = AxisType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.InputMethodChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ECommonInputType                        InputType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OptionSettings_ListContent_C::InputMethodChanged(ECommonInputType InputType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "InputMethodChanged");
+
+	Params::WBP_OptionSettings_ListContent_C_InputMethodChanged Parms{};
+
+	Parms.InputType = InputType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.Gamepad_RightRelease
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_OptionSettings_ListContent_C::Gamepad_RightRelease()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "Gamepad_RightRelease");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.Gamepad_RightPress
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_OptionSettings_ListContent_C::Gamepad_RightPress()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "Gamepad_RightPress");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.Gamepad_LeftRelease
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_OptionSettings_ListContent_C::Gamepad_LeftRelease()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "Gamepad_LeftRelease");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.Gamepad_LeftPress
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_OptionSettings_ListContent_C::Gamepad_LeftPress()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "Gamepad_LeftPress");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.ExecuteUbergraph_WBP_OptionSettings_ListContent
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OptionSettings_ListContent_C::ExecuteUbergraph_WBP_OptionSettings_ListContent(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "ExecuteUbergraph_WBP_OptionSettings_ListContent");
+
+	Params::WBP_OptionSettings_ListContent_C_ExecuteUbergraph_WBP_OptionSettings_ListContent Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_OptionSettings_ListContent_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_OptionSettings_ListContent_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Param_Button                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OptionSettings_ListContent_C::BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Param_Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Param_Button = Param_Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Param_Button                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OptionSettings_ListContent_C::BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Param_Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Param_Button = Param_Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Param_Button                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OptionSettings_ListContent_C::BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Param_Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Param_Button = Param_Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.BackToList
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_OptionSettings_ListContent_C::BackToList()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "BackToList");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.addValue
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_OptionSettings_ListContent_C::AddValue()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "addValue");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

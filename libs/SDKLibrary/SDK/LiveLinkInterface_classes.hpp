@@ -58,7 +58,7 @@ class ULiveLinkSourceSettings : public UObject
 {
 public:
 	ELiveLinkSourceMode                           Mode;                                              // 0x0028(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11E2[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11E6[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLiveLinkSourceBufferManagementSettings BufferSettings;                                    // 0x0030(0x0060)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 ConnectionString;                                  // 0x0090(0x0010)(Edit, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSubclassOf<class ULiveLinkSourceFactory>     Factory;                                           // 0x00A0(0x0008)(Edit, ZeroConstructor, EditConst, NoDestructor, AdvancedDisplay, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -106,12 +106,12 @@ static_assert(offsetof(ULiveLinkCurveRemapSettings, CurveConversionSettings) == 
 class ULiveLinkVirtualSubject : public UObject
 {
 public:
-	uint8                                         Pad_11E3[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11E7[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class ULiveLinkRole>              Role;                                              // 0x0030(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TArray<struct FLiveLinkSubjectName>           Subjects;                                          // 0x0038(0x0010)(Edit, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	TArray<class ULiveLinkFrameTranslator*>       FrameTranslators;                                  // 0x0048(0x0010)(Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	bool                                          bRebroadcastSubject;                               // 0x0058(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_11E4[0x107];                                   // 0x0059(0x0107)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11E8[0x107];                                   // 0x0059(0x0107)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -147,23 +147,6 @@ public:
 static_assert(alignof(ULiveLinkSourceFactory) == 0x000008, "Wrong alignment on ULiveLinkSourceFactory");
 static_assert(sizeof(ULiveLinkSourceFactory) == 0x000028, "Wrong size on ULiveLinkSourceFactory");
 
-// Class LiveLinkInterface.LiveLinkFrameTranslator
-// 0x0000 (0x0028 - 0x0028)
-class ULiveLinkFrameTranslator : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"LiveLinkFrameTranslator">();
-	}
-	static class ULiveLinkFrameTranslator* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ULiveLinkFrameTranslator>();
-	}
-};
-static_assert(alignof(ULiveLinkFrameTranslator) == 0x000008, "Wrong alignment on ULiveLinkFrameTranslator");
-static_assert(sizeof(ULiveLinkFrameTranslator) == 0x000028, "Wrong size on ULiveLinkFrameTranslator");
-
 // Class LiveLinkInterface.LiveLinkController
 // 0x0000 (0x0028 - 0x0028)
 class ULiveLinkController final : public UObject
@@ -180,6 +163,23 @@ public:
 };
 static_assert(alignof(ULiveLinkController) == 0x000008, "Wrong alignment on ULiveLinkController");
 static_assert(sizeof(ULiveLinkController) == 0x000028, "Wrong size on ULiveLinkController");
+
+// Class LiveLinkInterface.LiveLinkFrameTranslator
+// 0x0000 (0x0028 - 0x0028)
+class ULiveLinkFrameTranslator : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"LiveLinkFrameTranslator">();
+	}
+	static class ULiveLinkFrameTranslator* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULiveLinkFrameTranslator>();
+	}
+};
+static_assert(alignof(ULiveLinkFrameTranslator) == 0x000008, "Wrong alignment on ULiveLinkFrameTranslator");
+static_assert(sizeof(ULiveLinkFrameTranslator) == 0x000028, "Wrong size on ULiveLinkFrameTranslator");
 
 // Class LiveLinkInterface.LiveLinkRole
 // 0x0000 (0x0028 - 0x0028)
@@ -209,7 +209,7 @@ public:
 	TSubclassOf<class ULiveLinkRole>              Role;                                              // 0x0050(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFrameRate                             FrameRate;                                         // 0x0058(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bRebroadcastSubject;                               // 0x0060(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11E5[0x7];                                     // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11E9[0x7];                                     // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

@@ -17,57 +17,37 @@
 namespace SDK
 {
 
-// Function WBP_Title_WorldSettings_ListButton.WBP_Title_WorldSettings_ListButton_C.BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Title_WorldSettings_ListButton.WBP_Title_WorldSettings_ListButton_C.SetButtonText
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class FText                             NewText                                                (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_Title_WorldSettings_ListButton_C::BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Title_WorldSettings_ListButton_C::SetButtonText(const class FText& NewText)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSettings_ListButton_C", "BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Title_WorldSettings_ListButton_C", "SetButtonText");
 
-	Params::WBP_Title_WorldSettings_ListButton_C_BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Title_WorldSettings_ListButton_C_SetButtonText Parms{};
 
-	Parms.Button = Button;
+	Parms.NewText = std::move(NewText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Title_WorldSettings_ListButton.WBP_Title_WorldSettings_ListButton_C.Click
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Title_WorldSettings_ListButton.WBP_Title_WorldSettings_ListButton_C.OnClicked__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Title_WorldSettings_ListButton_C::Click()
+void UWBP_Title_WorldSettings_ListButton_C::OnClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSettings_ListButton_C", "Click");
+		Func = Class->GetFunction("WBP_Title_WorldSettings_ListButton_C", "OnClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Title_WorldSettings_ListButton.WBP_Title_WorldSettings_ListButton_C.ExecuteUbergraph_WBP_Title_WorldSettings_ListButton
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Title_WorldSettings_ListButton_C::ExecuteUbergraph_WBP_Title_WorldSettings_ListButton(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSettings_ListButton_C", "ExecuteUbergraph_WBP_Title_WorldSettings_ListButton");
-
-	Params::WBP_Title_WorldSettings_ListButton_C_ExecuteUbergraph_WBP_Title_WorldSettings_ListButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -92,35 +72,55 @@ void UWBP_Title_WorldSettings_ListButton_C::GetButtonText(class FText* ButtonTex
 }
 
 
-// Function WBP_Title_WorldSettings_ListButton.WBP_Title_WorldSettings_ListButton_C.OnClicked__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Function WBP_Title_WorldSettings_ListButton.WBP_Title_WorldSettings_ListButton_C.ExecuteUbergraph_WBP_Title_WorldSettings_ListButton
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Title_WorldSettings_ListButton_C::OnClicked__DelegateSignature()
+void UWBP_Title_WorldSettings_ListButton_C::ExecuteUbergraph_WBP_Title_WorldSettings_ListButton(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSettings_ListButton_C", "OnClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Title_WorldSettings_ListButton_C", "ExecuteUbergraph_WBP_Title_WorldSettings_ListButton");
+
+	Params::WBP_Title_WorldSettings_ListButton_C_ExecuteUbergraph_WBP_Title_WorldSettings_ListButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_WorldSettings_ListButton.WBP_Title_WorldSettings_ListButton_C.Click
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Title_WorldSettings_ListButton_C::Click()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSettings_ListButton_C", "Click");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Title_WorldSettings_ListButton.WBP_Title_WorldSettings_ListButton_C.SetButtonText
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Title_WorldSettings_ListButton.WBP_Title_WorldSettings_ListButton_C.BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class FText                             NewText                                                (BlueprintVisible, BlueprintReadOnly, Parm)
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Title_WorldSettings_ListButton_C::SetButtonText(const class FText& NewText)
+void UWBP_Title_WorldSettings_ListButton_C::BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSettings_ListButton_C", "SetButtonText");
+		Func = Class->GetFunction("WBP_Title_WorldSettings_ListButton_C", "BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Title_WorldSettings_ListButton_C_SetButtonText Parms{};
+	Params::WBP_Title_WorldSettings_ListButton_C_BndEvt__WBP_Title_WorldSettings_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
-	Parms.NewText = std::move(NewText);
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

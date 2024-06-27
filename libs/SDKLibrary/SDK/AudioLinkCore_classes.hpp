@@ -18,10 +18,10 @@ namespace SDK
 
 // Class AudioLinkCore.AudioLinkSettingsAbstract
 // 0x0010 (0x0038 - 0x0028)
-class UAudioLinkSettingsAbstract final : public UObject
+class UAudioLinkSettingsAbstract : public UObject
 {
 public:
-	uint8                                         Pad_331D[0x10];                                    // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CE0[0x10];                                    // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

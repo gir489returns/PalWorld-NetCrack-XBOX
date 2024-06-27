@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_AxeBase.BP_AxeBase_C
-// 0x0000 (0x0548 - 0x0548)
+// 0x0000 (0x0580 - 0x0580)
 class ABP_AxeBase_C final : public ABP_MeleeWeaponBase_C
 {
 public:
@@ -34,7 +34,7 @@ public:
 	}
 };
 static_assert(alignof(ABP_AxeBase_C) == 0x000008, "Wrong alignment on ABP_AxeBase_C");
-static_assert(sizeof(ABP_AxeBase_C) == 0x000548, "Wrong size on ABP_AxeBase_C");
+static_assert(sizeof(ABP_AxeBase_C) == 0x000580, "Wrong size on ABP_AxeBase_C");
 
 }
 

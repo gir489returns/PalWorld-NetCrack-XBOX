@@ -33,19 +33,6 @@ enum class ETypedElementSelectionMethod : uint8
 	ETypedElementSelectionMethod_MAX         = 2,
 };
 
-// ScriptStruct TypedElementRuntime.TypedElementSelectionNormalizationOptions
-// 0x0002 (0x0002 - 0x0000)
-struct FTypedElementSelectionNormalizationOptions final
-{
-public:
-	bool                                          bExpandGroups;                                     // 0x0000(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bFollowAttachment;                                 // 0x0001(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-};
-static_assert(alignof(FTypedElementSelectionNormalizationOptions) == 0x000001, "Wrong alignment on FTypedElementSelectionNormalizationOptions");
-static_assert(sizeof(FTypedElementSelectionNormalizationOptions) == 0x000002, "Wrong size on FTypedElementSelectionNormalizationOptions");
-static_assert(offsetof(FTypedElementSelectionNormalizationOptions, bExpandGroups) == 0x000000, "Member 'FTypedElementSelectionNormalizationOptions::bExpandGroups' has a wrong offset!");
-static_assert(offsetof(FTypedElementSelectionNormalizationOptions, bFollowAttachment) == 0x000001, "Member 'FTypedElementSelectionNormalizationOptions::bFollowAttachment' has a wrong offset!");
-
 // ScriptStruct TypedElementRuntime.TypedElementSelectionOptions
 // 0x0005 (0x0005 - 0x0000)
 struct FTypedElementSelectionOptions final
@@ -71,7 +58,7 @@ struct alignas(0x08) FTypedElementSelectionSetState final
 {
 public:
 	TWeakObjectPtr<class UTypedElementSelectionSet> CreatedFromSelectionSet;                           // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_343B[0x10];                                    // 0x0008(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3576[0x10];                                    // 0x0008(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FTypedElementSelectionSetState) == 0x000008, "Wrong alignment on FTypedElementSelectionSetState");
 static_assert(sizeof(FTypedElementSelectionSetState) == 0x000018, "Wrong size on FTypedElementSelectionSetState");
@@ -87,6 +74,19 @@ public:
 static_assert(alignof(FTypedElementIsSelectedOptions) == 0x000001, "Wrong alignment on FTypedElementIsSelectedOptions");
 static_assert(sizeof(FTypedElementIsSelectedOptions) == 0x000001, "Wrong size on FTypedElementIsSelectedOptions");
 static_assert(offsetof(FTypedElementIsSelectedOptions, bAllowIndirect) == 0x000000, "Member 'FTypedElementIsSelectedOptions::bAllowIndirect' has a wrong offset!");
+
+// ScriptStruct TypedElementRuntime.TypedElementSelectionNormalizationOptions
+// 0x0002 (0x0002 - 0x0000)
+struct FTypedElementSelectionNormalizationOptions final
+{
+public:
+	bool                                          bExpandGroups;                                     // 0x0000(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bFollowAttachment;                                 // 0x0001(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+};
+static_assert(alignof(FTypedElementSelectionNormalizationOptions) == 0x000001, "Wrong alignment on FTypedElementSelectionNormalizationOptions");
+static_assert(sizeof(FTypedElementSelectionNormalizationOptions) == 0x000002, "Wrong size on FTypedElementSelectionNormalizationOptions");
+static_assert(offsetof(FTypedElementSelectionNormalizationOptions, bExpandGroups) == 0x000000, "Member 'FTypedElementSelectionNormalizationOptions::bExpandGroups' has a wrong offset!");
+static_assert(offsetof(FTypedElementSelectionNormalizationOptions, bFollowAttachment) == 0x000001, "Member 'FTypedElementSelectionNormalizationOptions::bFollowAttachment' has a wrong offset!");
 
 }
 

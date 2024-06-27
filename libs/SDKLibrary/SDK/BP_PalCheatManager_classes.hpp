@@ -11,7 +11,6 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "AkAudio_structs.hpp"
 #include "Pal_classes.hpp"
 #include "UMG_structs.hpp"
 
@@ -32,7 +31,6 @@ public:
 	void HideTutorialQuest_BP();
 	void OpenMultiBattleMapForBP();
 	void OpenPrivateServerForBP();
-	void PostAkEventByName(const class FString& EventName);
 	void SpectatorOnForBP();
 	void StartWildPalCombat();
 	void TimeStopForBP();

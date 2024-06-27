@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "Engine_structs.hpp"
 #include "E_UICharacterMakeCategory_structs.hpp"
 #include "CommonInput_structs.hpp"
 #include "CoreUObject_structs.hpp"
@@ -22,7 +22,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CharacterMake.WBP_CharacterMake_C
-// 0x0208 (0x0638 - 0x0430)
+// 0x02C8 (0x06F8 - 0x0430)
 class UWBP_CharacterMake_C final : public UPalUICharacterMakeBase
 {
 public:
@@ -36,42 +36,43 @@ public:
 	class UWBP_PalPlayerInframeRender_C*          WBP_PalPlayerInframeRender;                        // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	struct FPalDataTableRowName_UIInputAction     MouseZoomInInputAction;                            // 0x0470(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FPalDataTableRowName_UIInputAction     MouseZoomOutInputAction;                           // 0x0478(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalPlayerDataCharacterMakeInfo        MakeInfo;                                          // 0x0480(0x0094)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	E_UICharacterMakeCategory                     NowDisplayCategory;                                // 0x0514(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4581[0x3];                                     // 0x0515(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalDataTableRowName_UIInputAction     DecideInputAction;                                 // 0x0518(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction     RandomizeInputAction;                              // 0x0520(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction     PrevCategoryInputAction;                           // 0x0528(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction     NextCategoryInputAction;                           // 0x0530(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	E_UICharacterMakeCategory                     LastActivatedCategory;                             // 0x0538(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4582[0x7];                                     // 0x0539(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        SVMax;                                             // 0x0540(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDDispatchParameter_CharacterMake* DispaltchParameter;                                // 0x0548(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CachedPlayerName;                                  // 0x0550(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	double                                        RotationSpeed_Pad;                                 // 0x0568(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        RotationSpeed_MouseDrag;                           // 0x0570(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        ZoomSpeed_Pad;                                     // 0x0578(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        ZoomRate_WheelTrigger;                             // 0x0580(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CachedAnalogValueX;                                // 0x0588(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CachedAnalogValueY;                                // 0x0590(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CameraRelativeLocation;                            // 0x0598(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsMLBDown;                                         // 0x05B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4583[0x7];                                     // 0x05B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        MaxZoomCameraOffset_BodySetting;                   // 0x05B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        MaxZoomCameraOffset_HeadSetting;                   // 0x05C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    CompleteCheckMsgID;                                // 0x05C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	bool                                          IsRTriggerDown;                                    // 0x05D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsLTriggerDown;                                    // 0x05D9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4584[0x6];                                     // 0x05DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CameraUpDownSpeed_ForPad;                          // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDDispatchParameter_FadeWidget*    FadeInParameter;                                   // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                DefaultHeadCameraLocation;                         // 0x05F0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                DefaultBodyCameraLocation;                         // 0x0608(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction     PlaySampleVoiceInInputAction;                      // 0x0620(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   PlaySampleVoiceActionHandle;                       // 0x0628(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	bool                                          IsCachingMakeData;                                 // 0x062C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4585[0x3];                                     // 0x062D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBP_PalPlayerDataCharacterMake_C*       CharacterMakeData;                                 // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalPlayerDataCharacterMakeInfo        MakeInfo;                                          // 0x0480(0x0150)(Edit, BlueprintVisible, DisableEditOnInstance)
+	E_UICharacterMakeCategory                     NowDisplayCategory;                                // 0x05D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4A0E[0x3];                                     // 0x05D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalDataTableRowName_UIInputAction     DecideInputAction;                                 // 0x05D4(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction     RandomizeInputAction;                              // 0x05DC(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction     PrevCategoryInputAction;                           // 0x05E4(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction     NextCategoryInputAction;                           // 0x05EC(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	E_UICharacterMakeCategory                     LastActivatedCategory;                             // 0x05F4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4A0F[0x3];                                     // 0x05F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        SVMax;                                             // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParameter_CharacterMake* DispaltchParameter;                                // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CachedPlayerName;                                  // 0x0608(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	double                                        RotationSpeed_Pad;                                 // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        RotationSpeed_MouseDrag;                           // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        ZoomSpeed_Pad;                                     // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        ZoomRate_WheelTrigger;                             // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CachedAnalogValueX;                                // 0x0640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CachedAnalogValueY;                                // 0x0648(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CameraRelativeLocation;                            // 0x0650(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsMLBDown;                                         // 0x0668(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4A10[0x7];                                     // 0x0669(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        MaxZoomCameraOffset_BodySetting;                   // 0x0670(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        MaxZoomCameraOffset_HeadSetting;                   // 0x0678(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    CompleteCheckMsgID;                                // 0x0680(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	bool                                          IsRTriggerDown;                                    // 0x0690(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsLTriggerDown;                                    // 0x0691(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4A11[0x6];                                     // 0x0692(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CameraUpDownSpeed_ForPad;                          // 0x0698(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParameter_FadeWidget*    FadeInParameter;                                   // 0x06A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                DefaultHeadCameraLocation;                         // 0x06A8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                DefaultBodyCameraLocation;                         // 0x06C0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction     PlaySampleVoiceInInputAction;                      // 0x06D8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   PlaySampleVoiceActionHandle;                       // 0x06E0(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	bool                                          IsCachingMakeData;                                 // 0x06E4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4A12[0x3];                                     // 0x06E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBP_PalPlayerDataCharacterMake_C*       CharacterMakeData;                                 // 0x06E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class FName                                   FlagName;                                          // 0x06F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ApplyPreset(class FName PresetName);
@@ -163,7 +164,7 @@ public:
 	}
 };
 static_assert(alignof(UWBP_CharacterMake_C) == 0x000008, "Wrong alignment on UWBP_CharacterMake_C");
-static_assert(sizeof(UWBP_CharacterMake_C) == 0x000638, "Wrong size on UWBP_CharacterMake_C");
+static_assert(sizeof(UWBP_CharacterMake_C) == 0x0006F8, "Wrong size on UWBP_CharacterMake_C");
 static_assert(offsetof(UWBP_CharacterMake_C, UberGraphFrame) == 0x000430, "Member 'UWBP_CharacterMake_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_CharacterMake_C, WBP_CharaCre) == 0x000438, "Member 'UWBP_CharacterMake_C::WBP_CharaCre' has a wrong offset!");
 static_assert(offsetof(UWBP_CharacterMake_C, WBP_CharaCre_BG) == 0x000440, "Member 'UWBP_CharacterMake_C::WBP_CharaCre_BG' has a wrong offset!");
@@ -175,36 +176,37 @@ static_assert(offsetof(UWBP_CharacterMake_C, WBP_PalPlayerInframeRender) == 0x00
 static_assert(offsetof(UWBP_CharacterMake_C, MouseZoomInInputAction) == 0x000470, "Member 'UWBP_CharacterMake_C::MouseZoomInInputAction' has a wrong offset!");
 static_assert(offsetof(UWBP_CharacterMake_C, MouseZoomOutInputAction) == 0x000478, "Member 'UWBP_CharacterMake_C::MouseZoomOutInputAction' has a wrong offset!");
 static_assert(offsetof(UWBP_CharacterMake_C, MakeInfo) == 0x000480, "Member 'UWBP_CharacterMake_C::MakeInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, NowDisplayCategory) == 0x000514, "Member 'UWBP_CharacterMake_C::NowDisplayCategory' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, DecideInputAction) == 0x000518, "Member 'UWBP_CharacterMake_C::DecideInputAction' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, RandomizeInputAction) == 0x000520, "Member 'UWBP_CharacterMake_C::RandomizeInputAction' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, PrevCategoryInputAction) == 0x000528, "Member 'UWBP_CharacterMake_C::PrevCategoryInputAction' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, NextCategoryInputAction) == 0x000530, "Member 'UWBP_CharacterMake_C::NextCategoryInputAction' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, LastActivatedCategory) == 0x000538, "Member 'UWBP_CharacterMake_C::LastActivatedCategory' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, SVMax) == 0x000540, "Member 'UWBP_CharacterMake_C::SVMax' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, DispaltchParameter) == 0x000548, "Member 'UWBP_CharacterMake_C::DispaltchParameter' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, CachedPlayerName) == 0x000550, "Member 'UWBP_CharacterMake_C::CachedPlayerName' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, RotationSpeed_Pad) == 0x000568, "Member 'UWBP_CharacterMake_C::RotationSpeed_Pad' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, RotationSpeed_MouseDrag) == 0x000570, "Member 'UWBP_CharacterMake_C::RotationSpeed_MouseDrag' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, ZoomSpeed_Pad) == 0x000578, "Member 'UWBP_CharacterMake_C::ZoomSpeed_Pad' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, ZoomRate_WheelTrigger) == 0x000580, "Member 'UWBP_CharacterMake_C::ZoomRate_WheelTrigger' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, CachedAnalogValueX) == 0x000588, "Member 'UWBP_CharacterMake_C::CachedAnalogValueX' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, CachedAnalogValueY) == 0x000590, "Member 'UWBP_CharacterMake_C::CachedAnalogValueY' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, CameraRelativeLocation) == 0x000598, "Member 'UWBP_CharacterMake_C::CameraRelativeLocation' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, IsMLBDown) == 0x0005B0, "Member 'UWBP_CharacterMake_C::IsMLBDown' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, MaxZoomCameraOffset_BodySetting) == 0x0005B8, "Member 'UWBP_CharacterMake_C::MaxZoomCameraOffset_BodySetting' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, MaxZoomCameraOffset_HeadSetting) == 0x0005C0, "Member 'UWBP_CharacterMake_C::MaxZoomCameraOffset_HeadSetting' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, CompleteCheckMsgID) == 0x0005C8, "Member 'UWBP_CharacterMake_C::CompleteCheckMsgID' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, IsRTriggerDown) == 0x0005D8, "Member 'UWBP_CharacterMake_C::IsRTriggerDown' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, IsLTriggerDown) == 0x0005D9, "Member 'UWBP_CharacterMake_C::IsLTriggerDown' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, CameraUpDownSpeed_ForPad) == 0x0005E0, "Member 'UWBP_CharacterMake_C::CameraUpDownSpeed_ForPad' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, FadeInParameter) == 0x0005E8, "Member 'UWBP_CharacterMake_C::FadeInParameter' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, DefaultHeadCameraLocation) == 0x0005F0, "Member 'UWBP_CharacterMake_C::DefaultHeadCameraLocation' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, DefaultBodyCameraLocation) == 0x000608, "Member 'UWBP_CharacterMake_C::DefaultBodyCameraLocation' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, PlaySampleVoiceInInputAction) == 0x000620, "Member 'UWBP_CharacterMake_C::PlaySampleVoiceInInputAction' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, PlaySampleVoiceActionHandle) == 0x000628, "Member 'UWBP_CharacterMake_C::PlaySampleVoiceActionHandle' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, IsCachingMakeData) == 0x00062C, "Member 'UWBP_CharacterMake_C::IsCachingMakeData' has a wrong offset!");
-static_assert(offsetof(UWBP_CharacterMake_C, CharacterMakeData) == 0x000630, "Member 'UWBP_CharacterMake_C::CharacterMakeData' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, NowDisplayCategory) == 0x0005D0, "Member 'UWBP_CharacterMake_C::NowDisplayCategory' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, DecideInputAction) == 0x0005D4, "Member 'UWBP_CharacterMake_C::DecideInputAction' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, RandomizeInputAction) == 0x0005DC, "Member 'UWBP_CharacterMake_C::RandomizeInputAction' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, PrevCategoryInputAction) == 0x0005E4, "Member 'UWBP_CharacterMake_C::PrevCategoryInputAction' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, NextCategoryInputAction) == 0x0005EC, "Member 'UWBP_CharacterMake_C::NextCategoryInputAction' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, LastActivatedCategory) == 0x0005F4, "Member 'UWBP_CharacterMake_C::LastActivatedCategory' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, SVMax) == 0x0005F8, "Member 'UWBP_CharacterMake_C::SVMax' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, DispaltchParameter) == 0x000600, "Member 'UWBP_CharacterMake_C::DispaltchParameter' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, CachedPlayerName) == 0x000608, "Member 'UWBP_CharacterMake_C::CachedPlayerName' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, RotationSpeed_Pad) == 0x000620, "Member 'UWBP_CharacterMake_C::RotationSpeed_Pad' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, RotationSpeed_MouseDrag) == 0x000628, "Member 'UWBP_CharacterMake_C::RotationSpeed_MouseDrag' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, ZoomSpeed_Pad) == 0x000630, "Member 'UWBP_CharacterMake_C::ZoomSpeed_Pad' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, ZoomRate_WheelTrigger) == 0x000638, "Member 'UWBP_CharacterMake_C::ZoomRate_WheelTrigger' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, CachedAnalogValueX) == 0x000640, "Member 'UWBP_CharacterMake_C::CachedAnalogValueX' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, CachedAnalogValueY) == 0x000648, "Member 'UWBP_CharacterMake_C::CachedAnalogValueY' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, CameraRelativeLocation) == 0x000650, "Member 'UWBP_CharacterMake_C::CameraRelativeLocation' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, IsMLBDown) == 0x000668, "Member 'UWBP_CharacterMake_C::IsMLBDown' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, MaxZoomCameraOffset_BodySetting) == 0x000670, "Member 'UWBP_CharacterMake_C::MaxZoomCameraOffset_BodySetting' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, MaxZoomCameraOffset_HeadSetting) == 0x000678, "Member 'UWBP_CharacterMake_C::MaxZoomCameraOffset_HeadSetting' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, CompleteCheckMsgID) == 0x000680, "Member 'UWBP_CharacterMake_C::CompleteCheckMsgID' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, IsRTriggerDown) == 0x000690, "Member 'UWBP_CharacterMake_C::IsRTriggerDown' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, IsLTriggerDown) == 0x000691, "Member 'UWBP_CharacterMake_C::IsLTriggerDown' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, CameraUpDownSpeed_ForPad) == 0x000698, "Member 'UWBP_CharacterMake_C::CameraUpDownSpeed_ForPad' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, FadeInParameter) == 0x0006A0, "Member 'UWBP_CharacterMake_C::FadeInParameter' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, DefaultHeadCameraLocation) == 0x0006A8, "Member 'UWBP_CharacterMake_C::DefaultHeadCameraLocation' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, DefaultBodyCameraLocation) == 0x0006C0, "Member 'UWBP_CharacterMake_C::DefaultBodyCameraLocation' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, PlaySampleVoiceInInputAction) == 0x0006D8, "Member 'UWBP_CharacterMake_C::PlaySampleVoiceInInputAction' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, PlaySampleVoiceActionHandle) == 0x0006E0, "Member 'UWBP_CharacterMake_C::PlaySampleVoiceActionHandle' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, IsCachingMakeData) == 0x0006E4, "Member 'UWBP_CharacterMake_C::IsCachingMakeData' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, CharacterMakeData) == 0x0006E8, "Member 'UWBP_CharacterMake_C::CharacterMakeData' has a wrong offset!");
+static_assert(offsetof(UWBP_CharacterMake_C, FlagName) == 0x0006F0, "Member 'UWBP_CharacterMake_C::FlagName' has a wrong offset!");
 
 }
 

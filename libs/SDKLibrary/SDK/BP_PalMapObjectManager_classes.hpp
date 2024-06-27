@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalMapObjectManager.BP_PalMapObjectManager_C
-// 0x0000 (0x07A8 - 0x07A8)
+// 0x0000 (0x0898 - 0x0898)
 class UBP_PalMapObjectManager_C final : public UPalMapObjectManager
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UBP_PalMapObjectManager_C) == 0x000008, "Wrong alignment on UBP_PalMapObjectManager_C");
-static_assert(sizeof(UBP_PalMapObjectManager_C) == 0x0007A8, "Wrong size on UBP_PalMapObjectManager_C");
+static_assert(sizeof(UBP_PalMapObjectManager_C) == 0x000898, "Wrong size on UBP_PalMapObjectManager_C");
 
 }
 

@@ -29,253 +29,34 @@ static_assert(alignof(BP_AIAction_NPC_Relax_Wander_C_ActionStart) == 0x000008, "
 static_assert(sizeof(BP_AIAction_NPC_Relax_Wander_C_ActionStart) == 0x000008, "Wrong size on BP_AIAction_NPC_Relax_Wander_C_ActionStart");
 static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_ActionStart, ControlledPawn) == 0x000000, "Member 'BP_AIAction_NPC_Relax_Wander_C_ActionStart::ControlledPawn' has a wrong offset!");
 
-// Function BP_AIAction_NPC_Relax_Wander.BP_AIAction_NPC_Relax_Wander_C.Create Inside Nodes
-// 0x0108 (0x0108 - 0x0000)
-struct BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes final
-{
-public:
-	double                                        Radius;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         SplitNum;                                          // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D6E[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FVector>                        Nodes;                                             // 0x0010(0x0010)(Parm, OutParm)
-	TArray<struct FVector>                        Results;                                           // 0x0020(0x0010)(Edit, BlueprintVisible)
-	double                                        RadiusSq;                                          // 0x0030(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        SplitNumHalf;                                      // 0x0038(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                V;                                                 // 0x0040(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        X;                                                 // 0x0058(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Y;                                                 // 0x0060(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D6F[0x4];                                     // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_VSizeSquared_ReturnValue;                 // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D70[0x4];                                     // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Multiply_IntInt_ReturnValue;              // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D71[0x4];                                     // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_2;           // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D72[0x7];                                     // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Square_ReturnValue;                       // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x00C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D73[0x3];                                     // 0x00C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_2;      // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x00E8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue_1;      // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes) == 0x000008, "Wrong alignment on BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes");
-static_assert(sizeof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes) == 0x000108, "Wrong size on BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, Radius) == 0x000000, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::Radius' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, SplitNum) == 0x000008, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::SplitNum' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, Nodes) == 0x000010, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::Nodes' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, Results) == 0x000020, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::Results' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, RadiusSq) == 0x000030, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::RadiusSq' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, SplitNumHalf) == 0x000038, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::SplitNumHalf' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, V) == 0x000040, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::V' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, X) == 0x000058, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::X' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, Y) == 0x000060, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::Y' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, Temp_int_Variable) == 0x000068, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, CallFunc_VSizeSquared_ReturnValue) == 0x000070, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::CallFunc_VSizeSquared_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, CallFunc_Add_IntInt_ReturnValue) == 0x000078, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, CallFunc_Percent_IntInt_ReturnValue) == 0x00007C, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, CallFunc_Divide_IntInt_ReturnValue) == 0x000080, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::CallFunc_Divide_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000088, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, CallFunc_Conv_IntToDouble_ReturnValue_1) == 0x000090, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::CallFunc_Conv_IntToDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, CallFunc_Multiply_IntInt_ReturnValue) == 0x000098, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, CallFunc_Conv_IntToDouble_ReturnValue_2) == 0x0000A0, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::CallFunc_Conv_IntToDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0000A8, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x0000B0, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, CallFunc_Square_ReturnValue) == 0x0000B8, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::CallFunc_Square_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, CallFunc_Array_Add_ReturnValue) == 0x0000C0, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x0000C4, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x0000C8, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x0000D0, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x0000D8, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, CallFunc_Multiply_DoubleDouble_ReturnValue_2) == 0x0000E0, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::CallFunc_Multiply_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, CallFunc_MakeVector_ReturnValue) == 0x0000E8, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes, CallFunc_Subtract_DoubleDouble_ReturnValue_1) == 0x000100, "Member 'BP_AIAction_NPC_Relax_Wander_C_Create_Inside_Nodes::CallFunc_Subtract_DoubleDouble_ReturnValue_1' has a wrong offset!");
-
-// Function BP_AIAction_NPC_Relax_Wander.BP_AIAction_NPC_Relax_Wander_C.CreateCircumferenceNodes
-// 0x0150 (0x0150 - 0x0000)
-struct BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes final
-{
-public:
-	double                                        Radius;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         SplitNum;                                          // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D74[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FVector>                        Nodes;                                             // 0x0010(0x0010)(Parm, OutParm)
-	TArray<struct FVector>                        Results;                                           // 0x0020(0x0010)(Edit, BlueprintVisible)
-	double                                        M;                                                 // 0x0030(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        N_Sq;                                              // 0x0038(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        N;                                                 // 0x0040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        R_Sq;                                              // 0x0048(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        R;                                                 // 0x0050(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        SplitNumHalf;                                      // 0x0058(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Square_ReturnValue;                       // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Square_ReturnValue_1;                     // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D75[0x4];                                     // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D76[0x4];                                     // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0090(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x00A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue_2;                 // 0x00D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D77[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_MakeVector_ReturnValue_3;                 // 0x00F0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_3;                  // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D78[0x4];                                     // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Sqrt_ReturnValue;                         // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue_1;      // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_2;      // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_3;      // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes) == 0x000008, "Wrong alignment on BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes");
-static_assert(sizeof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes) == 0x000150, "Wrong size on BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, Radius) == 0x000000, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::Radius' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, SplitNum) == 0x000008, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::SplitNum' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, Nodes) == 0x000010, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::Nodes' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, Results) == 0x000020, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::Results' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, M) == 0x000030, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::M' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, N_Sq) == 0x000038, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::N_Sq' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, N) == 0x000040, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::N' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, R_Sq) == 0x000048, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::R_Sq' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, R) == 0x000050, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::R' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, SplitNumHalf) == 0x000058, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::SplitNumHalf' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, CallFunc_Square_ReturnValue) == 0x000060, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::CallFunc_Square_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, CallFunc_Square_ReturnValue_1) == 0x000068, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::CallFunc_Square_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, Temp_int_Variable) == 0x000070, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000078, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, CallFunc_Add_IntInt_ReturnValue) == 0x000080, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000088, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, CallFunc_MakeVector_ReturnValue) == 0x000090, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, CallFunc_MakeVector_ReturnValue_1) == 0x0000A8, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, CallFunc_Array_Add_ReturnValue) == 0x0000C0, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, CallFunc_Array_Add_ReturnValue_1) == 0x0000C4, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x0000C8, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, CallFunc_MakeVector_ReturnValue_2) == 0x0000D0, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::CallFunc_MakeVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, CallFunc_Array_Add_ReturnValue_2) == 0x0000E8, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::CallFunc_Array_Add_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, CallFunc_MakeVector_ReturnValue_3) == 0x0000F0, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::CallFunc_MakeVector_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, CallFunc_Array_Add_ReturnValue_3) == 0x000108, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::CallFunc_Array_Add_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000110, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, CallFunc_Sqrt_ReturnValue) == 0x000118, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::CallFunc_Sqrt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000120, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, CallFunc_Subtract_DoubleDouble_ReturnValue_1) == 0x000128, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::CallFunc_Subtract_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, CallFunc_Conv_IntToDouble_ReturnValue_1) == 0x000130, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::CallFunc_Conv_IntToDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, CallFunc_Multiply_DoubleDouble_ReturnValue_2) == 0x000138, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::CallFunc_Multiply_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, CallFunc_Multiply_DoubleDouble_ReturnValue_3) == 0x000140, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::CallFunc_Multiply_DoubleDouble_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000148, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateCircumferenceNodes::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-
-// Function BP_AIAction_NPC_Relax_Wander.BP_AIAction_NPC_Relax_Wander_C.CreateNodes
-// 0x0108 (0x0108 - 0x0000)
-struct BP_AIAction_NPC_Relax_Wander_C_CreateNodes final
-{
-public:
-	struct FVector                                Center;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Radius;                                            // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         SplitNum;                                          // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D79[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FVector>                        Nodes;                                             // 0x0028(0x0010)(Parm, OutParm)
-	TArray<struct FVector>                        Results;                                           // 0x0038(0x0010)(Edit, BlueprintVisible)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D7A[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FVector>                        CallFunc_Create_Inside_Nodes_Nodes;                // 0x0060(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D7B[0x4];                                     // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FVector>                        CallFunc_CreateCircumferenceNodes_Nodes;           // 0x0078(0x0010)(ReferenceParm)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D7C[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Array_Get_Item;                           // 0x0090(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x00A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasNearPoint_Result;                      // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D7D[0x2];                                     // 0x00CA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Array_Get_Item_1;                         // 0x00D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x00E8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasNearPoint_Result_1;                    // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D7E[0x3];                                     // 0x0101(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes) == 0x000008, "Wrong alignment on BP_AIAction_NPC_Relax_Wander_C_CreateNodes");
-static_assert(sizeof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes) == 0x000108, "Wrong size on BP_AIAction_NPC_Relax_Wander_C_CreateNodes");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, Center) == 0x000000, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::Center' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, Radius) == 0x000018, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::Radius' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, SplitNum) == 0x000020, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::SplitNum' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, Nodes) == 0x000028, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::Nodes' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, Results) == 0x000038, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::Results' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, Temp_int_Loop_Counter_Variable) == 0x000048, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, CallFunc_Add_IntInt_ReturnValue) == 0x00004C, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, Temp_int_Loop_Counter_Variable_1) == 0x000050, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, CallFunc_Add_IntInt_ReturnValue_1) == 0x000054, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, Temp_int_Array_Index_Variable) == 0x000058, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, CallFunc_Create_Inside_Nodes_Nodes) == 0x000060, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::CallFunc_Create_Inside_Nodes_Nodes' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, CallFunc_Array_Length_ReturnValue) == 0x000070, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, CallFunc_CreateCircumferenceNodes_Nodes) == 0x000078, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::CallFunc_CreateCircumferenceNodes_Nodes' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, CallFunc_Less_IntInt_ReturnValue) == 0x000088, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, CallFunc_Array_Get_Item) == 0x000090, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, CallFunc_Add_VectorVector_ReturnValue) == 0x0000A8, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, CallFunc_Array_Length_ReturnValue_1) == 0x0000C0, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, CallFunc_Array_Add_ReturnValue) == 0x0000C4, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000C8, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, CallFunc_HasNearPoint_Result) == 0x0000C9, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::CallFunc_HasNearPoint_Result' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, Temp_int_Array_Index_Variable_1) == 0x0000CC, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, CallFunc_Array_Get_Item_1) == 0x0000D0, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, CallFunc_Add_VectorVector_ReturnValue_1) == 0x0000E8, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, CallFunc_HasNearPoint_Result_1) == 0x000100, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::CallFunc_HasNearPoint_Result_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_CreateNodes, CallFunc_Array_Add_ReturnValue_1) == 0x000104, "Member 'BP_AIAction_NPC_Relax_Wander_C_CreateNodes::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-
 // Function BP_AIAction_NPC_Relax_Wander.BP_AIAction_NPC_Relax_Wander_C.ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander
 // 0x0058 (0x0058 - 0x0000)
 struct BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D7F[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F62[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  K2Node_Event_ControlledPawn;                       // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Max_ReturnValue;                          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D80[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IBPI_GetPalAIBlackboard_C> K2Node_DynamicCast_AsBPI_Get_Pal_AIBlackboard;     // 0x0020(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D81[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBP_PalAIBlackboard_Common_C*           CallFunc_GetMyBB_PalBrackboard;                    // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FVector>                        CallFunc_CreateNodes_Nodes;                        // 0x0040(0x0010)(ReferenceParm)
-	double                                        CallFunc_FMax_ReturnValue;                         // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IBPI_GetPalAIBlackboard_C> K2Node_DynamicCast_AsBPI_Get_Pal_AIBlackboard;     // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3F63[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBP_PalAIBlackboard_Common_C*           CallFunc_GetMyBB_PalBrackboard;                    // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_FMax_ReturnValue;                         // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FVector>                        CallFunc_CreateWalkPointNodes_OutNodes;            // 0x0040(0x0010)(ReferenceParm)
+	float                                         CallFunc_CreateWalkPointNodes_Radius_ImplicitCast; // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander) == 0x000008, "Wrong alignment on BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander");
 static_assert(sizeof(BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander) == 0x000058, "Wrong size on BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander");
 static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander, EntryPoint) == 0x000000, "Member 'BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander, K2Node_Event_ControlledPawn) == 0x000008, "Member 'BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander::K2Node_Event_ControlledPawn' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander, CallFunc_Max_ReturnValue) == 0x000010, "Member 'BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander::CallFunc_Max_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander, CallFunc_GetController_ReturnValue) == 0x000018, "Member 'BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander::CallFunc_GetController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander, K2Node_DynamicCast_AsBPI_Get_Pal_AIBlackboard) == 0x000020, "Member 'BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander::K2Node_DynamicCast_AsBPI_Get_Pal_AIBlackboard' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander, CallFunc_GetMyBB_PalBrackboard) == 0x000038, "Member 'BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander::CallFunc_GetMyBB_PalBrackboard' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander, CallFunc_CreateNodes_Nodes) == 0x000040, "Member 'BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander::CallFunc_CreateNodes_Nodes' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander, CallFunc_FMax_ReturnValue) == 0x000050, "Member 'BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander::CallFunc_FMax_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander, CallFunc_GetController_ReturnValue) == 0x000010, "Member 'BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander::CallFunc_GetController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander, K2Node_DynamicCast_AsBPI_Get_Pal_AIBlackboard) == 0x000018, "Member 'BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander::K2Node_DynamicCast_AsBPI_Get_Pal_AIBlackboard' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander, CallFunc_GetMyBB_PalBrackboard) == 0x000030, "Member 'BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander::CallFunc_GetMyBB_PalBrackboard' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander, CallFunc_FMax_ReturnValue) == 0x000038, "Member 'BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander::CallFunc_FMax_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander, CallFunc_CreateWalkPointNodes_OutNodes) == 0x000040, "Member 'BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander::CallFunc_CreateWalkPointNodes_OutNodes' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander, CallFunc_CreateWalkPointNodes_Radius_ImplicitCast) == 0x000050, "Member 'BP_AIAction_NPC_Relax_Wander_C_ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander::CallFunc_CreateWalkPointNodes_Radius_ImplicitCast' has a wrong offset!");
 
 // Function BP_AIAction_NPC_Relax_Wander.BP_AIAction_NPC_Relax_Wander_C.Get Arrivable Location
 // 0x00E0 (0x00E0 - 0x0000)
@@ -284,7 +65,7 @@ struct BP_AIAction_NPC_Relax_Wander_C_Get_Arrivable_Location final
 public:
 	struct FVector                                V;                                                 // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Result;                                            // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D82[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F64[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Location;                                          // 0x0020(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FVector>                        PathPoints;                                        // 0x0038(0x0010)(Edit, BlueprintVisible)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0048(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -321,37 +102,6 @@ static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Get_Arrivable_Location, Ca
 static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Get_Arrivable_Location, CallFunc_GetArrivableLocation_ReturnValue) == 0x0000DC, "Member 'BP_AIAction_NPC_Relax_Wander_C_Get_Arrivable_Location::CallFunc_GetArrivableLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_Get_Arrivable_Location, CallFunc_IsValid_ReturnValue) == 0x0000DD, "Member 'BP_AIAction_NPC_Relax_Wander_C_Get_Arrivable_Location::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
-// Function BP_AIAction_NPC_Relax_Wander.BP_AIAction_NPC_Relax_Wander_C.HasNearPoint
-// 0x0060 (0x0060 - 0x0000)
-struct BP_AIAction_NPC_Relax_Wander_C_HasNearPoint final
-{
-public:
-	TArray<struct FVector>                        Nodes;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FVector                                Point;                                             // 0x0010(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D83[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Array_Get_Item;                           // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D84[0x3];                                     // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsNearTwoPoint_ReturnValue;               // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_NPC_Relax_Wander_C_HasNearPoint) == 0x000008, "Wrong alignment on BP_AIAction_NPC_Relax_Wander_C_HasNearPoint");
-static_assert(sizeof(BP_AIAction_NPC_Relax_Wander_C_HasNearPoint) == 0x000060, "Wrong size on BP_AIAction_NPC_Relax_Wander_C_HasNearPoint");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_HasNearPoint, Nodes) == 0x000000, "Member 'BP_AIAction_NPC_Relax_Wander_C_HasNearPoint::Nodes' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_HasNearPoint, Point) == 0x000010, "Member 'BP_AIAction_NPC_Relax_Wander_C_HasNearPoint::Point' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_HasNearPoint, Result) == 0x000028, "Member 'BP_AIAction_NPC_Relax_Wander_C_HasNearPoint::Result' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_HasNearPoint, CallFunc_Array_Length_ReturnValue) == 0x00002C, "Member 'BP_AIAction_NPC_Relax_Wander_C_HasNearPoint::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_HasNearPoint, Temp_int_Array_Index_Variable) == 0x000030, "Member 'BP_AIAction_NPC_Relax_Wander_C_HasNearPoint::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_HasNearPoint, Temp_int_Loop_Counter_Variable) == 0x000034, "Member 'BP_AIAction_NPC_Relax_Wander_C_HasNearPoint::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_HasNearPoint, CallFunc_Array_Get_Item) == 0x000038, "Member 'BP_AIAction_NPC_Relax_Wander_C_HasNearPoint::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_HasNearPoint, CallFunc_Less_IntInt_ReturnValue) == 0x000050, "Member 'BP_AIAction_NPC_Relax_Wander_C_HasNearPoint::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_HasNearPoint, CallFunc_Add_IntInt_ReturnValue) == 0x000054, "Member 'BP_AIAction_NPC_Relax_Wander_C_HasNearPoint::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_Relax_Wander_C_HasNearPoint, CallFunc_IsNearTwoPoint_ReturnValue) == 0x000058, "Member 'BP_AIAction_NPC_Relax_Wander_C_HasNearPoint::CallFunc_IsNearTwoPoint_ReturnValue' has a wrong offset!");
-
 // Function BP_AIAction_NPC_Relax_Wander.BP_AIAction_NPC_Relax_Wander_C.OnTargetPointUpdateStart
 // 0x0140 (0x0140 - 0x0000)
 struct BP_AIAction_NPC_Relax_Wander_C_OnTargetPointUpdateStart final
@@ -359,10 +109,10 @@ struct BP_AIAction_NPC_Relax_Wander_C_OnTargetPointUpdateStart final
 public:
 	struct FVector                                TargetLocation;                                    // 0x0000(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Param_Index;                                       // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D85[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F65[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                V;                                                 // 0x0020(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D86[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F66[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0050(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -375,7 +125,7 @@ public:
 	struct FF_NPC_PathWalkPoint                   K2Node_MakeStruct_F_NPC_PathWalkPoint_1;           // 0x00D0(0x0030)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FF_NPC_PathWalkPoint>           K2Node_MakeArray_Array_1;                          // 0x0100(0x0010)(ReferenceParm)
 	bool                                          CallFunc_TryGetTargetLocation_Result;              // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D87[0x7];                                     // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F67[0x7];                                     // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_TryGetTargetLocation_Location;            // 0x0118(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FF_NPC_PathWalkArray                   K2Node_MakeStruct_F_NPC_PathWalkArray_1;           // 0x0130(0x0010)(HasGetValueTypeHash)
 };
@@ -416,12 +166,12 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D88[0x2];                                     // 0x004A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F68[0x2];                                     // 0x004A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_RandomInteger_ReturnValue;                // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Get_Item;                           // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D89[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F69[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0068(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_VSize2DSquared_ReturnValue;               // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -436,10 +186,10 @@ public:
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_1;               // 0x00E0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue_2;               // 0x00F0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D8A[0x4];                                     // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F6A[0x4];                                     // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              CallFunc_Subtract_Vector2DVector2D_ReturnValue;    // 0x0108(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D8B[0x7];                                     // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F6B[0x7];                                     // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_VSize2DSquared_ReturnValue_1;             // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -486,29 +236,29 @@ struct BP_AIAction_NPC_Relax_Wander_C_TryGetTargetLocation final
 public:
 	int32                                         TryCount;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Result;                                            // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D8C[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F6C[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Location;                                          // 0x0008(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsFind;                                            // 0x0020(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D8D[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F6D[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                TargetLocation;                                    // 0x0028(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Param_Index;                                       // 0x0040(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D8E[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F6E[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                V;                                                 // 0x0048(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D8F[0x2];                                     // 0x0062(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F6F[0x2];                                     // 0x0062(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Get_Arrivable_Location_Result;            // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D90[0x7];                                     // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F70[0x7];                                     // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_Get_Arrivable_Location_Location;          // 0x0070(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D91[0x3];                                     // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F71[0x3];                                     // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0095(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0096(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D92[0x1];                                     // 0x0097(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F72[0x1];                                     // 0x0097(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_SelectTargetNode_Location;                // 0x0098(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_SelectTargetNode_index;                   // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

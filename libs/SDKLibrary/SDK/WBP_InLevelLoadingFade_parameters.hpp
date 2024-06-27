@@ -10,86 +10,151 @@
 
 #include "Basic.hpp"
 
+#include "UMG_structs.hpp"
+
 
 namespace SDK::Params
 {
 
 // Function WBP_InLevelLoadingFade.WBP_InLevelLoadingFade_C.ExecuteUbergraph_WBP_InLevelLoadingFade
-// 0x0108 (0x0108 - 0x0000)
+// 0x0178 (0x0178 - 0x0000)
 struct WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_474C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetObjectName_ReturnValue;                // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0030(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_DoubleDouble_ReturnValue;      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_474D[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result;    // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue; // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_474E[0x6];                                     // 0x0062(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Divide_DoubleDouble_ReturnValue_1;        // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_DoubleDouble_ReturnValue_1;    // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_474F[0x7];                                     // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result; // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue; // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4750[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalPlayerController*                   K2Node_DynamicCast_AsPal_Player_Controller;        // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4751[0x7];                                     // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetObjectName_ReturnValue_1;              // 0x00A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue_1;   // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue_1;          // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APalPlayerController*                   K2Node_DynamicCast_AsPal_Player_Controller_1;      // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4752[0x7];                                     // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_EqualEqual_DoubleDouble_A_ImplicitCast;   // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Divide_DoubleDouble_B_ImplicitCast;       // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_CreatePlayAnimationProxyObject_PlaybackSpeed_ImplicitCast; // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4753[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_EqualEqual_DoubleDouble_A_ImplicitCast_1; // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Divide_DoubleDouble_B_ImplicitCast_1;     // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_CreatePlayAnimationTimeRangeProxyObject_PlaybackSpeed_ImplicitCast; // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4B48[0x1];                                     // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4B49[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_DoubleDouble_ReturnValue;      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4B4A[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result;    // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue; // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4B4B[0x2];                                     // 0x004A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x004C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4B4C[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Divide_DoubleDouble_ReturnValue_1;        // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result; // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue; // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_DoubleDouble_ReturnValue_1;    // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4B4D[0x6];                                     // 0x007A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalPlayerState*                        CallFunc_GetLocalPlayerState_ReturnValue;          // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4B4E[0x3];                                     // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(int32 AddStep, int32 MaxStep)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x008C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4B4F[0x4];                                     // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerController*                   K2Node_DynamicCast_AsPal_Player_Controller;        // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4B50[0x7];                                     // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetObjectName_ReturnValue;                // 0x00B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue_1;   // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerController*                   K2Node_DynamicCast_AsPal_Player_Controller_1;      // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4B51[0x7];                                     // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalHUDDispatchParameter_FadeWidget*    K2Node_Event_FadeParameter;                        // 0x00E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetObjectName_ReturnValue_1;              // 0x00F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue_1;          // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerState*                        CallFunc_GetLocalPlayerState_ReturnValue_1;        // 0x0108(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_AddStep;                        // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_MaxStep;                        // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4B52[0x7];                                     // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Divide_DoubleDouble_ReturnValue_2;        // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(int32 AddStep, int32 MaxStep)> K2Node_CreateDelegate_OutputDelegate_3;            // 0x0134(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4B53[0x4];                                     // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_EqualEqual_DoubleDouble_A_ImplicitCast;   // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Divide_DoubleDouble_B_ImplicitCast;       // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_CreatePlayAnimationProxyObject_PlaybackSpeed_ImplicitCast; // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4B54[0x4];                                     // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_EqualEqual_DoubleDouble_A_ImplicitCast_1; // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Divide_DoubleDouble_B_ImplicitCast_1;     // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_CreatePlayAnimationTimeRangeProxyObject_PlaybackSpeed_ImplicitCast; // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade) == 0x000008, "Wrong alignment on WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade");
-static_assert(sizeof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade) == 0x000108, "Wrong size on WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade");
+static_assert(sizeof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade) == 0x000178, "Wrong size on WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade");
 static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, EntryPoint) == 0x000000, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_GetObjectName_ReturnValue) == 0x000008, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_GetObjectName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_Conv_StringToName_ReturnValue) == 0x000028, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, K2Node_CreateDelegate_OutputDelegate_1) == 0x000030, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000040, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_EqualEqual_DoubleDouble_ReturnValue) == 0x000048, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_EqualEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x000050, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x000058, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_IsValid_ReturnValue) == 0x000060, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000061, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_Divide_DoubleDouble_ReturnValue_1) == 0x000068, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_Divide_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_EqualEqual_DoubleDouble_ReturnValue_1) == 0x000070, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_EqualEqual_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result) == 0x000078, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue) == 0x000080, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_IsValid_ReturnValue_1) == 0x000088, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_GetLocalPlayerController_ReturnValue) == 0x000090, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_GetLocalPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, K2Node_DynamicCast_AsPal_Player_Controller) == 0x000098, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::K2Node_DynamicCast_AsPal_Player_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, K2Node_DynamicCast_bSuccess) == 0x0000A0, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_GetObjectName_ReturnValue_1) == 0x0000A8, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_GetObjectName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_GetLocalPlayerController_ReturnValue_1) == 0x0000B8, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_GetLocalPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_Conv_StringToName_ReturnValue_1) == 0x0000C0, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_Conv_StringToName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, K2Node_DynamicCast_AsPal_Player_Controller_1) == 0x0000C8, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::K2Node_DynamicCast_AsPal_Player_Controller_1' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, K2Node_DynamicCast_bSuccess_1) == 0x0000D0, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_EqualEqual_DoubleDouble_A_ImplicitCast) == 0x0000D8, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_EqualEqual_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_Divide_DoubleDouble_B_ImplicitCast) == 0x0000E0, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_Divide_DoubleDouble_B_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_CreatePlayAnimationProxyObject_PlaybackSpeed_ImplicitCast) == 0x0000E8, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_CreatePlayAnimationProxyObject_PlaybackSpeed_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_EqualEqual_DoubleDouble_A_ImplicitCast_1) == 0x0000F0, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_EqualEqual_DoubleDouble_A_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_Divide_DoubleDouble_B_ImplicitCast_1) == 0x0000F8, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_Divide_DoubleDouble_B_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_CreatePlayAnimationTimeRangeProxyObject_PlaybackSpeed_ImplicitCast) == 0x000100, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_CreatePlayAnimationTimeRangeProxyObject_PlaybackSpeed_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, Temp_bool_Variable) == 0x000014, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, Temp_byte_Variable) == 0x000015, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, Temp_byte_Variable_1) == 0x000016, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000018, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, K2Node_Select_Default) == 0x000020, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000028, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_EqualEqual_DoubleDouble_ReturnValue) == 0x000030, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_EqualEqual_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_CreatePlayAnimationProxyObject_Result) == 0x000038, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_CreatePlayAnimationProxyObject_Result' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_CreatePlayAnimationProxyObject_ReturnValue) == 0x000040, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_CreatePlayAnimationProxyObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_IsValid_ReturnValue) == 0x000048, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000049, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, K2Node_CreateDelegate_OutputDelegate_1) == 0x00004C, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_Divide_DoubleDouble_ReturnValue_1) == 0x000060, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_Divide_DoubleDouble_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result) == 0x000068, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_CreatePlayAnimationTimeRangeProxyObject_Result' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue) == 0x000070, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_CreatePlayAnimationTimeRangeProxyObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_EqualEqual_DoubleDouble_ReturnValue_1) == 0x000078, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_EqualEqual_DoubleDouble_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_IsValid_ReturnValue_1) == 0x000079, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_GetLocalPlayerState_ReturnValue) == 0x000080, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_GetLocalPlayerState_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_IsValid_ReturnValue_2) == 0x000088, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, K2Node_CreateDelegate_OutputDelegate_2) == 0x00008C, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_GetLocalPlayerController_ReturnValue) == 0x0000A0, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_GetLocalPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, K2Node_DynamicCast_AsPal_Player_Controller) == 0x0000A8, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::K2Node_DynamicCast_AsPal_Player_Controller' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, K2Node_DynamicCast_bSuccess) == 0x0000B0, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_GetObjectName_ReturnValue) == 0x0000B8, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_GetObjectName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_GetLocalPlayerController_ReturnValue_1) == 0x0000C8, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_GetLocalPlayerController_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_Conv_StringToName_ReturnValue) == 0x0000D0, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, K2Node_DynamicCast_AsPal_Player_Controller_1) == 0x0000D8, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::K2Node_DynamicCast_AsPal_Player_Controller_1' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, K2Node_DynamicCast_bSuccess_1) == 0x0000E0, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, K2Node_Event_FadeParameter) == 0x0000E8, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::K2Node_Event_FadeParameter' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_GetObjectName_ReturnValue_1) == 0x0000F0, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_GetObjectName_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_Conv_StringToName_ReturnValue_1) == 0x000100, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_Conv_StringToName_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_GetLocalPlayerState_ReturnValue_1) == 0x000108, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_GetLocalPlayerState_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, K2Node_CustomEvent_AddStep) == 0x000110, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::K2Node_CustomEvent_AddStep' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, K2Node_CustomEvent_MaxStep) == 0x000114, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::K2Node_CustomEvent_MaxStep' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_IsValid_ReturnValue_3) == 0x000118, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_Conv_IntToDouble_ReturnValue_1) == 0x000120, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_Conv_IntToDouble_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_Divide_DoubleDouble_ReturnValue_2) == 0x000128, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_Divide_DoubleDouble_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_Add_IntInt_ReturnValue) == 0x000130, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, K2Node_CreateDelegate_OutputDelegate_3) == 0x000134, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_EqualEqual_DoubleDouble_A_ImplicitCast) == 0x000148, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_EqualEqual_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_Divide_DoubleDouble_B_ImplicitCast) == 0x000150, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_Divide_DoubleDouble_B_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_CreatePlayAnimationProxyObject_PlaybackSpeed_ImplicitCast) == 0x000158, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_CreatePlayAnimationProxyObject_PlaybackSpeed_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_EqualEqual_DoubleDouble_A_ImplicitCast_1) == 0x000160, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_EqualEqual_DoubleDouble_A_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_Divide_DoubleDouble_B_ImplicitCast_1) == 0x000168, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_Divide_DoubleDouble_B_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade, CallFunc_CreatePlayAnimationTimeRangeProxyObject_PlaybackSpeed_ImplicitCast) == 0x000170, "Member 'WBP_InLevelLoadingFade_C_ExecuteUbergraph_WBP_InLevelLoadingFade::CallFunc_CreatePlayAnimationTimeRangeProxyObject_PlaybackSpeed_ImplicitCast' has a wrong offset!");
+
+// Function WBP_InLevelLoadingFade.WBP_InLevelLoadingFade_C.Setup
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_InLevelLoadingFade_C_Setup final
+{
+public:
+	class UPalHUDDispatchParameter_FadeWidget*    Param_FadeParameter;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_InLevelLoadingFade_C_Setup) == 0x000008, "Wrong alignment on WBP_InLevelLoadingFade_C_Setup");
+static_assert(sizeof(WBP_InLevelLoadingFade_C_Setup) == 0x000008, "Wrong size on WBP_InLevelLoadingFade_C_Setup");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_Setup, Param_FadeParameter) == 0x000000, "Member 'WBP_InLevelLoadingFade_C_Setup::Param_FadeParameter' has a wrong offset!");
+
+// Function WBP_InLevelLoadingFade.WBP_InLevelLoadingFade_C.UpdateProgressStep
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_InLevelLoadingFade_C_UpdateProgressStep final
+{
+public:
+	int32                                         AddStep;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         MaxStep;                                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_InLevelLoadingFade_C_UpdateProgressStep) == 0x000004, "Wrong alignment on WBP_InLevelLoadingFade_C_UpdateProgressStep");
+static_assert(sizeof(WBP_InLevelLoadingFade_C_UpdateProgressStep) == 0x000008, "Wrong size on WBP_InLevelLoadingFade_C_UpdateProgressStep");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_UpdateProgressStep, AddStep) == 0x000000, "Member 'WBP_InLevelLoadingFade_C_UpdateProgressStep::AddStep' has a wrong offset!");
+static_assert(offsetof(WBP_InLevelLoadingFade_C_UpdateProgressStep, MaxStep) == 0x000004, "Member 'WBP_InLevelLoadingFade_C_UpdateProgressStep::MaxStep' has a wrong offset!");
 
 }
 

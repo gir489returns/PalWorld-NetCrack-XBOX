@@ -172,9 +172,8 @@ void UBP_PalRaidBossComponent_C::Spawn_Volume()
 // Parameters:
 // struct FPalRaidBossSpawnInfoList        SpawnInfo                                              (BlueprintVisible, BlueprintReadOnly, Parm)
 // struct FTransform                       SpawnTransform                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UPalIndividualCharacterHandle*>OutIndividualHandle                                    (Parm, OutParm)
 
-void UBP_PalRaidBossComponent_C::SpawnRaidBoss_BP(const struct FPalRaidBossSpawnInfoList& SpawnInfo, const struct FTransform& SpawnTransform, TArray<class UPalIndividualCharacterHandle*>* OutIndividualHandle)
+void UBP_PalRaidBossComponent_C::SpawnRaidBoss_BP(const struct FPalRaidBossSpawnInfoList& SpawnInfo, const struct FTransform& SpawnTransform)
 {
 	static class UFunction* Func = nullptr;
 
@@ -187,9 +186,6 @@ void UBP_PalRaidBossComponent_C::SpawnRaidBoss_BP(const struct FPalRaidBossSpawn
 	Parms.SpawnTransform = std::move(SpawnTransform);
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutIndividualHandle != nullptr)
-		*OutIndividualHandle = std::move(Parms.OutIndividualHandle);
 }
 
 }

@@ -17,6 +17,46 @@
 namespace SDK
 {
 
+// Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.ActionResume
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_TurnAndEscape_C::ActionResume(class APawn* ControlledPawn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_TurnAndEscape_C", "ActionResume");
+
+	Params::BP_AIAction_TurnAndEscape_C_ActionResume Parms{};
+
+	Parms.ControlledPawn = ControlledPawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.ActionStart
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_TurnAndEscape_C::ActionStart(class APawn* ControlledPawn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_TurnAndEscape_C", "ActionStart");
+
+	Params::BP_AIAction_TurnAndEscape_C_ActionStart Parms{};
+
+	Parms.ControlledPawn = ControlledPawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.ActionTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -59,66 +99,6 @@ void UBP_AIAction_TurnAndEscape_C::ExecuteUbergraph_BP_AIAction_TurnAndEscape(in
 }
 
 
-// Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           TargetActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_TurnAndEscape_C::Setup(class AActor* TargetActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_TurnAndEscape_C", "Setup");
-
-	Params::BP_AIAction_TurnAndEscape_C_Setup Parms{};
-
-	Parms.TargetActor = TargetActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.ActionResume
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_TurnAndEscape_C::ActionResume(class APawn* ControlledPawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_TurnAndEscape_C", "ActionResume");
-
-	Params::BP_AIAction_TurnAndEscape_C_ActionResume Parms{};
-
-	Parms.ControlledPawn = ControlledPawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.ActionStart
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_TurnAndEscape_C::ActionStart(class APawn* ControlledPawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_TurnAndEscape_C", "ActionStart");
-
-	Params::BP_AIAction_TurnAndEscape_C_ActionStart Parms{};
-
-	Parms.ControlledPawn = ControlledPawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.OnSquadMemberDeadEvent
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -134,6 +114,26 @@ void UBP_AIAction_TurnAndEscape_C::OnSquadMemberDeadEvent(const struct FPalDeadI
 	Params::BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent Parms{};
 
 	Parms.DeadInbfo = std::move(DeadInbfo);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.Setup
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           TargetActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_TurnAndEscape_C::Setup(class AActor* TargetActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_TurnAndEscape_C", "Setup");
+
+	Params::BP_AIAction_TurnAndEscape_C_Setup Parms{};
+
+	Parms.TargetActor = TargetActor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

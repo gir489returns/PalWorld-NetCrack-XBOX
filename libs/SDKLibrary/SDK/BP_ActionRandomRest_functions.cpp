@@ -37,6 +37,26 @@ void UBP_ActionRandomRest_C::ExecuteUbergraph_BP_ActionRandomRest(int32 EntryPoi
 }
 
 
+// Function BP_ActionRandomRest.BP_ActionRandomRest_C.GetRandomRestInfo
+// (Protected, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FPalRandomRestInfo               ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor)
+
+struct FPalRandomRestInfo UBP_ActionRandomRest_C::GetRandomRestInfo()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionRandomRest_C", "GetRandomRestInfo");
+
+	Params::BP_ActionRandomRest_C_GetRandomRestInfo Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
 // Function BP_ActionRandomRest.BP_ActionRandomRest_C.OnBeginAction
 // (Event, Public, BlueprintEvent)
 

@@ -30,6 +30,7 @@ public:
 	void ActionStart(class APawn* ControlledPawn);
 	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void ExecuteUbergraph_BP_AIAction_Visitor_ReturnSpawnedPoint(int32 EntryPoint);
+	void ________(class UPalVisualEffectBase* VisualEffect);
 	void _________0(const struct FPalInstanceID& ID);
 
 public:

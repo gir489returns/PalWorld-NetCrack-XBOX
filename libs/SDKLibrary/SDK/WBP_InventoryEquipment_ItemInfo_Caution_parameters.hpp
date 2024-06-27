@@ -20,7 +20,7 @@ struct WBP_InventoryEquipment_ItemInfo_Caution_C_ExecuteUbergraph_WBP_InventoryE
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4738[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13BD[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_CustomEvent_Name;                           // 0x0008(0x0018)()
 };
 static_assert(alignof(WBP_InventoryEquipment_ItemInfo_Caution_C_ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Caution) == 0x000008, "Wrong alignment on WBP_InventoryEquipment_ItemInfo_Caution_C_ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_Caution");

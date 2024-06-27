@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "F_NPC_PathWalkArray_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
 
@@ -21,7 +21,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_PalRandomIncidentSpawner.BP_PalRandomIncidentSpawner_C
 // 0x0098 (0x0458 - 0x03C0)
-class ABP_PalRandomIncidentSpawner_C final : public APalRandomIncidentSpawnerBase
+class ABP_PalRandomIncidentSpawner_C : public APalRandomIncidentSpawnerBase
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

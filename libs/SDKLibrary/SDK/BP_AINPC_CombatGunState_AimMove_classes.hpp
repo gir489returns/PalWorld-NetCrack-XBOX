@@ -27,6 +27,7 @@ public:
 	struct FVector                                MoveDirection;                                     // 0x0040(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void CanMove(bool* Param_CanMove);
 	void ExecuteUbergraph_BP_AINPC_CombatGunState_AimMove(int32 EntryPoint);
 	void FindMoveGoal(bool* Success, struct FVector* GoalPos);
 	void MoveDIrectionWorldSpace(struct FVector* Direction);

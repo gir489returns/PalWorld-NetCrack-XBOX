@@ -12,8 +12,8 @@
 
 #include "ClothingSystemRuntimeInterface_structs.hpp"
 #include "ClothingSystemRuntimeInterface_classes.hpp"
-#include "ClothingSystemRuntimeCommon_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "ClothingSystemRuntimeCommon_structs.hpp"
 
 
 namespace SDK
@@ -36,23 +36,6 @@ public:
 static_assert(alignof(UClothConfigCommon) == 0x000008, "Wrong alignment on UClothConfigCommon");
 static_assert(sizeof(UClothConfigCommon) == 0x000028, "Wrong size on UClothConfigCommon");
 
-// Class ClothingSystemRuntimeCommon.ClothSharedConfigCommon
-// 0x0000 (0x0028 - 0x0028)
-class UClothSharedConfigCommon : public UClothConfigCommon
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ClothSharedConfigCommon">();
-	}
-	static class UClothSharedConfigCommon* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UClothSharedConfigCommon>();
-	}
-};
-static_assert(alignof(UClothSharedConfigCommon) == 0x000008, "Wrong alignment on UClothSharedConfigCommon");
-static_assert(sizeof(UClothSharedConfigCommon) == 0x000028, "Wrong size on UClothSharedConfigCommon");
-
 // Class ClothingSystemRuntimeCommon.ClothingAssetCustomData
 // 0x0000 (0x0028 - 0x0028)
 class UClothingAssetCustomData final : public UObject
@@ -70,6 +53,23 @@ public:
 static_assert(alignof(UClothingAssetCustomData) == 0x000008, "Wrong alignment on UClothingAssetCustomData");
 static_assert(sizeof(UClothingAssetCustomData) == 0x000028, "Wrong size on UClothingAssetCustomData");
 
+// Class ClothingSystemRuntimeCommon.ClothSharedConfigCommon
+// 0x0000 (0x0028 - 0x0028)
+class UClothSharedConfigCommon : public UClothConfigCommon
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"ClothSharedConfigCommon">();
+	}
+	static class UClothSharedConfigCommon* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UClothSharedConfigCommon>();
+	}
+};
+static_assert(alignof(UClothSharedConfigCommon) == 0x000008, "Wrong alignment on UClothSharedConfigCommon");
+static_assert(sizeof(UClothSharedConfigCommon) == 0x000028, "Wrong size on UClothSharedConfigCommon");
+
 // Class ClothingSystemRuntimeCommon.ClothingAssetCommon
 // 0x00A8 (0x00F0 - 0x0048)
 class UClothingAssetCommon final : public UClothingAssetBase
@@ -82,7 +82,7 @@ public:
 	TArray<class FName>                           UsedBoneNames;                                     // 0x00C0(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<int32>                                 UsedBoneIndices;                                   // 0x00D0(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         ReferenceBoneIndex;                                // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2334[0x4];                                     // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2354[0x4];                                     // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClothingAssetCustomData*               CustomData;                                        // 0x00E8(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
@@ -114,7 +114,7 @@ public:
 	class UClothPhysicalMeshDataBase_Legacy*      PhysicalMeshData;                                  // 0x0028(0x0008)(ZeroConstructor, Deprecated, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FClothPhysicalMeshData                 ClothPhysicalMeshData;                             // 0x0030(0x00D8)(NativeAccessSpecifierPublic)
 	struct FClothCollisionData                    CollisionData;                                     // 0x0108(0x0040)(NativeAccessSpecifierPublic)
-	uint8                                         Pad_2335[0x20];                                    // 0x0148(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2355[0x20];                                    // 0x0148(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

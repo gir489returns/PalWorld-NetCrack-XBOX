@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function BP_Action_LargeDown.BP_Action_LargeDown_C.ExecuteUbergraph_BP_Action_LargeDown
-// (Final, UbergraphFunction, HasDefaults)
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

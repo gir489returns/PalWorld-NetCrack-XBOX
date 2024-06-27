@@ -51,11 +51,11 @@ public:
 	class UChaosCacheCollection*                  CacheCollection;                                   // 0x0290(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ECacheMode                                    CacheMode;                                         // 0x0298(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EStartMode                                    StartMode;                                         // 0x0299(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1239[0x2];                                     // 0x029A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2377[0x2];                                     // 0x029A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         StartTime;                                         // 0x029C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_123A[0x8];                                     // 0x02A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2378[0x8];                                     // 0x02A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FObservedComponent>             ObservedComponents;                                // 0x02A8(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_123B[0x80];                                    // 0x02B8(0x0080)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2379[0x80];                                    // 0x02B8(0x0080)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ResetAllComponentTransforms();
@@ -115,7 +115,7 @@ public:
 	struct FCacheSpawnableTemplate                Spawnable;                                         // 0x0140(0x00D0)(Edit, EditConst, NoDestructor, NativeAccessSpecifierPrivate)
 	struct FGuid                                  AdapterGuid;                                       // 0x0210(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	int32                                         Version;                                           // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_123C[0x2C];                                    // 0x0224(0x002C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_237A[0x2C];                                    // 0x0224(0x002C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -166,7 +166,7 @@ static_assert(offsetof(UMovieSceneChaosCacheSection, Params) == 0x0000F8, "Membe
 class UMovieSceneChaosCacheTrack final : public UMovieSceneNameableTrack
 {
 public:
-	uint8                                         Pad_123D[0x8];                                     // 0x0098(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_237B[0x8];                                     // 0x0098(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UMovieSceneSection*>             AnimationSections;                                 // 0x00A0(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate)
 
 public:

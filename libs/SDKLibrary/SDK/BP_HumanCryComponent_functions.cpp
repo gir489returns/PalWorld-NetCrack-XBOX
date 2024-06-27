@@ -72,7 +72,7 @@ void UBP_HumanCryComponent_C::Initialize()
 
 
 // Function BP_HumanCryComponent.BP_HumanCryComponent_C.PlayCry
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UAkAudioEvent*                    AkEvent                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 

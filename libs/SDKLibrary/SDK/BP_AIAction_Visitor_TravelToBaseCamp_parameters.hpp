@@ -18,112 +18,6 @@
 namespace SDK::Params
 {
 
-// Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.ActionTick
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIAction_Visitor_TravelToBaseCamp_C_ActionTick final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         DeltaSeconds;                                      // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionTick) == 0x000008, "Wrong alignment on BP_AIAction_Visitor_TravelToBaseCamp_C_ActionTick");
-static_assert(sizeof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionTick) == 0x000010, "Wrong size on BP_AIAction_Visitor_TravelToBaseCamp_C_ActionTick");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionTick, ControlledPawn) == 0x000000, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ActionTick::ControlledPawn' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionTick, DeltaSeconds) == 0x000008, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ActionTick::DeltaSeconds' has a wrong offset!");
-
-// Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp
-// 0x0080 (0x0080 - 0x0000)
-struct BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3ECE[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  K2Node_Event_ControlledPawn_4;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3ECF[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  K2Node_Event_ControlledPawn_3;                     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  K2Node_Event_ControlledPawn_2;                     // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  K2Node_Event_ControlledPawn_1;                     // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPawnActionResult                             K2Node_Event_WithResult;                           // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3ED0[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  K2Node_Event_ControlledPawn;                       // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue;          // 0x0050(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  K2Node_Event_ControlledPawn_5;                     // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp) == 0x000008, "Wrong alignment on BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp");
-static_assert(sizeof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp) == 0x000080, "Wrong size on BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, EntryPoint) == 0x000000, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, K2Node_Event_ControlledPawn_4) == 0x000008, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::K2Node_Event_ControlledPawn_4' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, K2Node_Event_DeltaSeconds) == 0x000010, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, K2Node_Event_ControlledPawn_3) == 0x000018, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::K2Node_Event_ControlledPawn_3' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, K2Node_Event_ControlledPawn_2) == 0x000020, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::K2Node_Event_ControlledPawn_2' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, K2Node_Event_ControlledPawn_1) == 0x000028, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::K2Node_Event_ControlledPawn_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, K2Node_Event_WithResult) == 0x000030, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::K2Node_Event_WithResult' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, CallFunc_GetController_ReturnValue) == 0x000038, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::CallFunc_GetController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, K2Node_Event_ControlledPawn) == 0x000040, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::K2Node_Event_ControlledPawn' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, CallFunc_K2_GetPawn_ReturnValue) == 0x000048, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::CallFunc_K2_GetPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, CallFunc_GetComponentByClass_ReturnValue) == 0x000050, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, K2Node_Event_ControlledPawn_5) == 0x000058, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::K2Node_Event_ControlledPawn_5' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, CallFunc_GetComponentByClass_ReturnValue_1) == 0x000060, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000068, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-
-// Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.Tick Move to Base Camp
-// 0x0100 (0x0100 - 0x0000)
-struct BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp final
-{
-public:
-	class AActor*                                 ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         DeltaTime;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3ED1[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                TempCampToSelf;                                    // 0x0010(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3ED2[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsNearTwoPoint_ReturnValue;               // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3ED3[0x6];                                     // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0070(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_InFanShap_TargetLocation_ReturnValue;     // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3ED4[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x0090(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_3;        // 0x00A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3ED5[0x7];                                     // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x00C8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AController*                            CallFunc_GetController_ReturnValue;                // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsNearTwoPoint_ReturnValue_1;             // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3ED6[0x7];                                     // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AController*                            CallFunc_GetController_ReturnValue_1;              // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_B_ImplicitCast;          // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp) == 0x000008, "Wrong alignment on BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp");
-static_assert(sizeof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp) == 0x000100, "Wrong size on BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, ControlledPawn) == 0x000000, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::ControlledPawn' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, DeltaTime) == 0x000008, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::DeltaTime' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, TempCampToSelf) == 0x000010, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::TempCampToSelf' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_Not_PreBool_ReturnValue) == 0x000028, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000030, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000038, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_IsNearTwoPoint_ReturnValue) == 0x000050, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_IsNearTwoPoint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_Not_PreBool_ReturnValue_1) == 0x000051, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000058, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_Add_VectorVector_ReturnValue) == 0x000070, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_InFanShap_TargetLocation_ReturnValue) == 0x000088, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_InFanShap_TargetLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x000090, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_K2_GetActorLocation_ReturnValue_3) == 0x0000A8, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_K2_GetActorLocation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x0000C0, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0000C8, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_GetController_ReturnValue) == 0x0000E0, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_GetController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_IsNearTwoPoint_ReturnValue_1) == 0x0000E8, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_IsNearTwoPoint_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_GetController_ReturnValue_1) == 0x0000F0, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_GetController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_Add_DoubleDouble_B_ImplicitCast) == 0x0000F8, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_Add_DoubleDouble_B_ImplicitCast' has a wrong offset!");
-
 // Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.ActionAbort
 // 0x0008 (0x0008 - 0x0000)
 struct BP_AIAction_Visitor_TravelToBaseCamp_C_ActionAbort final
@@ -181,6 +75,59 @@ static_assert(alignof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionStart) == 0x0
 static_assert(sizeof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionStart) == 0x000008, "Wrong size on BP_AIAction_Visitor_TravelToBaseCamp_C_ActionStart");
 static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionStart, ControlledPawn) == 0x000000, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ActionStart::ControlledPawn' has a wrong offset!");
 
+// Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.ActionTick
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIAction_Visitor_TravelToBaseCamp_C_ActionTick final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaSeconds;                                      // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionTick) == 0x000008, "Wrong alignment on BP_AIAction_Visitor_TravelToBaseCamp_C_ActionTick");
+static_assert(sizeof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionTick) == 0x000010, "Wrong size on BP_AIAction_Visitor_TravelToBaseCamp_C_ActionTick");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionTick, ControlledPawn) == 0x000000, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ActionTick::ControlledPawn' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionTick, DeltaSeconds) == 0x000008, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ActionTick::DeltaSeconds' has a wrong offset!");
+
+// Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp
+// 0x0080 (0x0080 - 0x0000)
+struct BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E44[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  K2Node_Event_ControlledPawn_4;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E45[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  K2Node_Event_ControlledPawn_3;                     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  K2Node_Event_ControlledPawn_2;                     // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  K2Node_Event_ControlledPawn_1;                     // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPawnActionResult                             K2Node_Event_WithResult;                           // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E46[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  K2Node_Event_ControlledPawn;                       // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue;          // 0x0050(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  K2Node_Event_ControlledPawn_5;                     // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp) == 0x000008, "Wrong alignment on BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp");
+static_assert(sizeof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp) == 0x000080, "Wrong size on BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, EntryPoint) == 0x000000, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::EntryPoint' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, K2Node_Event_ControlledPawn_4) == 0x000008, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::K2Node_Event_ControlledPawn_4' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, K2Node_Event_DeltaSeconds) == 0x000010, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, K2Node_Event_ControlledPawn_3) == 0x000018, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::K2Node_Event_ControlledPawn_3' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, K2Node_Event_ControlledPawn_2) == 0x000020, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::K2Node_Event_ControlledPawn_2' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, K2Node_Event_ControlledPawn_1) == 0x000028, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::K2Node_Event_ControlledPawn_1' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, K2Node_Event_WithResult) == 0x000030, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::K2Node_Event_WithResult' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, CallFunc_GetController_ReturnValue) == 0x000038, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::CallFunc_GetController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, K2Node_Event_ControlledPawn) == 0x000040, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::K2Node_Event_ControlledPawn' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, CallFunc_K2_GetPawn_ReturnValue) == 0x000048, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::CallFunc_K2_GetPawn_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, CallFunc_GetComponentByClass_ReturnValue) == 0x000050, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, K2Node_Event_ControlledPawn_5) == 0x000058, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::K2Node_Event_ControlledPawn_5' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, CallFunc_GetComponentByClass_ReturnValue_1) == 0x000060, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000068, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+
 // Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.Fun_Damage_AIResponse
 // 0x0068 (0x0068 - 0x0000)
 struct BP_AIAction_Visitor_TravelToBaseCamp_C_Fun_Damage_AIResponse final
@@ -223,6 +170,59 @@ public:
 static_assert(alignof(BP_AIAction_Visitor_TravelToBaseCamp_C_SoundEvent) == 0x000008, "Wrong alignment on BP_AIAction_Visitor_TravelToBaseCamp_C_SoundEvent");
 static_assert(sizeof(BP_AIAction_Visitor_TravelToBaseCamp_C_SoundEvent) == 0x000018, "Wrong size on BP_AIAction_Visitor_TravelToBaseCamp_C_SoundEvent");
 static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_SoundEvent, EmitLocation) == 0x000000, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_SoundEvent::EmitLocation' has a wrong offset!");
+
+// Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.Tick Move to Base Camp
+// 0x0100 (0x0100 - 0x0000)
+struct BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp final
+{
+public:
+	class AActor*                                 ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaTime;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E47[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                TempCampToSelf;                                    // 0x0010(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E48[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsNearTwoPoint_ReturnValue;               // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E49[0x6];                                     // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0070(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_InFanShap_TargetLocation_ReturnValue;     // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E4A[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x0090(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_3;        // 0x00A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E4B[0x7];                                     // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x00C8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AController*                            CallFunc_GetController_ReturnValue;                // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsNearTwoPoint_ReturnValue_1;             // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E4C[0x7];                                     // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AController*                            CallFunc_GetController_ReturnValue_1;              // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_B_ImplicitCast;          // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp) == 0x000008, "Wrong alignment on BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp");
+static_assert(sizeof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp) == 0x000100, "Wrong size on BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, ControlledPawn) == 0x000000, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::ControlledPawn' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, DeltaTime) == 0x000008, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::DeltaTime' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, TempCampToSelf) == 0x000010, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::TempCampToSelf' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_Not_PreBool_ReturnValue) == 0x000028, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000030, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000038, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_IsNearTwoPoint_ReturnValue) == 0x000050, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_IsNearTwoPoint_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_Not_PreBool_ReturnValue_1) == 0x000051, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000058, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_Add_VectorVector_ReturnValue) == 0x000070, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_InFanShap_TargetLocation_ReturnValue) == 0x000088, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_InFanShap_TargetLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x000090, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_K2_GetActorLocation_ReturnValue_3) == 0x0000A8, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_K2_GetActorLocation_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x0000C0, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0000C8, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_GetController_ReturnValue) == 0x0000E0, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_GetController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_IsNearTwoPoint_ReturnValue_1) == 0x0000E8, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_IsNearTwoPoint_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_GetController_ReturnValue_1) == 0x0000F0, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_GetController_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_Add_DoubleDouble_B_ImplicitCast) == 0x0000F8, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_Add_DoubleDouble_B_ImplicitCast' has a wrong offset!");
 
 }
 

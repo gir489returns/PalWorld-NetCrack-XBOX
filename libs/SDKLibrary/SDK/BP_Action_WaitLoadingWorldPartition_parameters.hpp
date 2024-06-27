@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "EGroundHitResult_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
@@ -23,7 +24,7 @@ struct BP_Action_WaitLoadingWorldPartition_C_CanTimeout final
 {
 public:
 	bool                                          Param_CanTimeout;                                  // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4127[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CB8[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalDebugSetting*                       CallFunc_GetPalDebugSetting_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -35,13 +36,105 @@ static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CanTimeout, CallFun
 static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CanTimeout, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BP_Action_WaitLoadingWorldPartition_C_CanTimeout::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CanTimeout, CallFunc_Not_PreBool_ReturnValue) == 0x000011, "Member 'BP_Action_WaitLoadingWorldPartition_C_CanTimeout::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
+// Function BP_Action_WaitLoadingWorldPartition.BP_Action_WaitLoadingWorldPartition_C.CheckEndAction
+// 0x0030 (0x0030 - 0x0000)
+struct BP_Action_WaitLoadingWorldPartition_C_CheckEndAction final
+{
+public:
+	double                                        DeltaTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEnd;                                             // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CB9[0x6];                                     // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue_1;  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CBA[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue_1;           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EGroundHitResult                              CallFunc_CheckGround_Result;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Action_WaitLoadingWorldPartition_C_CheckEndAction) == 0x000008, "Wrong alignment on BP_Action_WaitLoadingWorldPartition_C_CheckEndAction");
+static_assert(sizeof(BP_Action_WaitLoadingWorldPartition_C_CheckEndAction) == 0x000030, "Wrong size on BP_Action_WaitLoadingWorldPartition_C_CheckEndAction");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckEndAction, DeltaTime) == 0x000000, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckEndAction::DeltaTime' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckEndAction, IsEnd) == 0x000008, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckEndAction::IsEnd' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckEndAction, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x000009, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckEndAction::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckEndAction, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000010, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckEndAction::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckEndAction, CallFunc_GreaterEqual_DoubleDouble_ReturnValue_1) == 0x000018, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckEndAction::CallFunc_GreaterEqual_DoubleDouble_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckEndAction, CallFunc_Add_DoubleDouble_ReturnValue_1) == 0x000020, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckEndAction::CallFunc_Add_DoubleDouble_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckEndAction, CallFunc_CheckGround_Result) == 0x000028, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckEndAction::CallFunc_CheckGround_Result' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckEndAction, K2Node_SwitchEnum_CmpSuccess) == 0x000029, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckEndAction::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+
+// Function BP_Action_WaitLoadingWorldPartition.BP_Action_WaitLoadingWorldPartition_C.CheckGround
+// 0x0218 (0x0218 - 0x0000)
+struct BP_Action_WaitLoadingWorldPartition_C_CheckGround final
+{
+public:
+	EGroundHitResult                              Result;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CBB[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetFloorLocationByActor_ReturnValue;      // 0x0010(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         K2Node_MakeArray_Array;                            // 0x0028(0x0010)(ConstParm, ReferenceParm)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_LineTraceSingle_OutHit;                   // 0x0050(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_LineTraceSingle_ReturnValue;              // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0139(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x013A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CBC[0x1];                                     // 0x013B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CBD[0x4];                                     // 0x0144(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0148(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0160(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0178(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0190(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x01A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x01B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x01B8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_BoneName;                  // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x01D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CBE[0x4];                                     // 0x01DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x01E0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x01F8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsWaterActor_IsWater;                     // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Action_WaitLoadingWorldPartition_C_CheckGround) == 0x000008, "Wrong alignment on BP_Action_WaitLoadingWorldPartition_C_CheckGround");
+static_assert(sizeof(BP_Action_WaitLoadingWorldPartition_C_CheckGround) == 0x000218, "Wrong size on BP_Action_WaitLoadingWorldPartition_C_CheckGround");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, Result) == 0x000000, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::Result' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_GetActionCharacter_ReturnValue) == 0x000008, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_GetActionCharacter_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_GetFloorLocationByActor_ReturnValue) == 0x000010, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_GetFloorLocationByActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, K2Node_MakeArray_Array) == 0x000028, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000038, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_LineTraceSingle_OutHit) == 0x000050, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_LineTraceSingle_OutHit' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_LineTraceSingle_ReturnValue) == 0x000138, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_LineTraceSingle_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_BreakHitResult_bBlockingHit) == 0x000139, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_BreakHitResult_bInitialOverlap) == 0x00013A, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_BreakHitResult_Time) == 0x00013C, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_BreakHitResult_Distance) == 0x000140, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_BreakHitResult_Location) == 0x000148, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_BreakHitResult_ImpactPoint) == 0x000160, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_BreakHitResult_Normal) == 0x000178, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_BreakHitResult_ImpactNormal) == 0x000190, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_BreakHitResult_PhysMat) == 0x0001A8, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_BreakHitResult_HitActor) == 0x0001B0, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_BreakHitResult_HitComponent) == 0x0001B8, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_BreakHitResult_HitBoneName) == 0x0001C0, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_BreakHitResult_BoneName) == 0x0001C8, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_BreakHitResult_BoneName' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_BreakHitResult_HitItem) == 0x0001D0, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_BreakHitResult_ElementIndex) == 0x0001D4, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_BreakHitResult_FaceIndex) == 0x0001D8, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_BreakHitResult_TraceStart) == 0x0001E0, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_BreakHitResult_TraceEnd) == 0x0001F8, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckGround, CallFunc_IsWaterActor_IsWater) == 0x000210, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckGround::CallFunc_IsWaterActor_IsWater' has a wrong offset!");
+
 // Function BP_Action_WaitLoadingWorldPartition.BP_Action_WaitLoadingWorldPartition_C.CheckLoadLocationDistance
 // 0x0030 (0x0030 - 0x0000)
 struct BP_Action_WaitLoadingWorldPartition_C_CheckLoadLocationDistance final
 {
 public:
 	bool                                          IsReWait;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4128[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CBF[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Vector_Distance_ReturnValue;              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -54,119 +147,129 @@ static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckLoadLocationDi
 static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_CheckLoadLocationDistance, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000028, "Member 'BP_Action_WaitLoadingWorldPartition_C_CheckLoadLocationDistance::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
 
 // Function BP_Action_WaitLoadingWorldPartition.BP_Action_WaitLoadingWorldPartition_C.ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition
-// 0x0190 (0x0190 - 0x0000)
+// 0x01A8 (0x01A8 - 0x0000)
 struct BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaTime;                            // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWorldPartitionSubsystem*               CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_AdjustActorToFloor_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4129[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_1;         // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_412A[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character;         // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_412B[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_2;         // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_CanAdjustActorToFloor_OutLocation;        // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanAdjustActorToFloor_ReturnValue;        // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_412C[0x7];                                     // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue_1;           // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue_1;              // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDDispatchParameter_FadeWidget*    CallFunc_GetFadeInParameter_NewParam;              // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_3;         // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_4;         // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsLocallyControlled_ReturnValue;          // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_412D[0x7];                                     // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character_1;       // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsAdjustedLocation_ReturnValue;           // 0x00CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00CB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CheckLoadLocationDistance_IsReWait;       // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_412E[0x3];                                     // 0x00CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x00D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_VectorToString_ReturnValue;          // 0x00E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class AController*                            CallFunc_GetController_ReturnValue;                // 0x00F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsInClientConnection_ReturnValue;         // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_412F[0x7];                                     // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalPlayerController*                   K2Node_DynamicCast_AsPal_Player_Controller;        // 0x0108(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanTimeout_CanTimeOut;                    // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4130[0x6];                                     // 0x0112(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalGameSetting*                        CallFunc_GetGameSetting_ReturnValue;               // 0x0118(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsOpenListenServer_ReturnValue;           // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0121(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0122(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4131[0x5];                                     // 0x0123(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_5;         // 0x0128(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsLocallyControlled_ReturnValue_1;        // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4132[0x7];                                     // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_VectorToString_ReturnValue_1;        // 0x0138(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0148(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0158(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x0168(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_B_ImplicitCast;          // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_GreaterEqual_DoubleDouble_B_ImplicitCast; // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckEndAction_IsEnd;                     // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CC0[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWorldPartitionSubsystem*               CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_AdjustActorToFloor_ReturnValue;           // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CC1[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_1;         // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_2;         // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character;         // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CC2[0x7];                                     // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue_1;           // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue_1;              // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParameter_FadeWidget*    CallFunc_GetFadeInParameter_NewParam;              // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_3;         // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_4;         // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsLocallyControlled_ReturnValue;          // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CC3[0x7];                                     // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character_1;       // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsAdjustedLocation_ReturnValue;           // 0x00AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00AB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CheckLoadLocationDistance_IsReWait;       // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CC4[0x3];                                     // 0x00AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x00B0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_VectorToString_ReturnValue;          // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class AController*                            CallFunc_GetController_ReturnValue;                // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsInClientConnection_ReturnValue;         // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CC5[0x7];                                     // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalPlayerController*                   K2Node_DynamicCast_AsPal_Player_Controller;        // 0x00E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanTimeout_CanTimeOut;                    // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CC6[0x6];                                     // 0x00F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalGameSetting*                        CallFunc_GetGameSetting_ReturnValue;               // 0x00F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsOpenListenServer_ReturnValue;           // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CC7[0x7];                                     // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_5;         // 0x0108(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsLocallyControlled_ReturnValue_1;        // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0112(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CC8[0x5];                                     // 0x0113(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_VectorToString_ReturnValue_1;        // 0x0118(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0128(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0138(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x0148(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CC9[0x7];                                     // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_CanAdjustActorToFloor_OutLocation;        // 0x0160(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanAdjustActorToFloor_ReturnValue;        // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CCA[0x3];                                     // 0x0179(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetGeneralPurposeIndex_ReturnValue;       // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CCB[0x7];                                     // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_CheckEndAction_DeltaTime_ImplicitCast;    // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_B_ImplicitCast;          // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_GreaterEqual_DoubleDouble_B_ImplicitCast; // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition) == 0x000008, "Wrong alignment on BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition");
-static_assert(sizeof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition) == 0x000190, "Wrong size on BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition");
+static_assert(sizeof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition) == 0x0001A8, "Wrong size on BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition");
 static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, EntryPoint) == 0x000000, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, K2Node_Event_DeltaTime) == 0x000004, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::K2Node_Event_DeltaTime' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetActionCharacter_ReturnValue) == 0x000008, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetActionCharacter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000010, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_AdjustActorToFloor_ReturnValue) == 0x000018, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_AdjustActorToFloor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000028, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetActionCharacter_ReturnValue_1) == 0x000030, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetActionCharacter_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000038, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, K2Node_DynamicCast_AsPal_Player_Character) == 0x000040, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::K2Node_DynamicCast_AsPal_Player_Character' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetActionCharacter_ReturnValue_2) == 0x000050, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetActionCharacter_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_CanAdjustActorToFloor_OutLocation) == 0x000058, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_CanAdjustActorToFloor_OutLocation' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_CanAdjustActorToFloor_ReturnValue) == 0x000070, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_CanAdjustActorToFloor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_Concat_StrStr_ReturnValue) == 0x000078, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_Add_DoubleDouble_ReturnValue_1) == 0x000088, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_Add_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetHUDService_ReturnValue) == 0x000090, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetHUDService_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetHUDService_ReturnValue_1) == 0x000098, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetHUDService_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetFadeInParameter_NewParam) == 0x0000A0, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetFadeInParameter_NewParam' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetActionCharacter_ReturnValue_3) == 0x0000A8, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetActionCharacter_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetActionCharacter_ReturnValue_4) == 0x0000B0, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetActionCharacter_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_IsLocallyControlled_ReturnValue) == 0x0000B8, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, K2Node_DynamicCast_AsPal_Player_Character_1) == 0x0000C0, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::K2Node_DynamicCast_AsPal_Player_Character_1' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, K2Node_DynamicCast_bSuccess_1) == 0x0000C8, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_IsDedicatedServer_ReturnValue) == 0x0000C9, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_IsAdjustedLocation_ReturnValue) == 0x0000CA, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_IsAdjustedLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_BooleanOR_ReturnValue) == 0x0000CB, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_CheckLoadLocationDistance_IsReWait) == 0x0000CC, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_CheckLoadLocationDistance_IsReWait' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000D0, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_Conv_VectorToString_ReturnValue) == 0x0000E8, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_Conv_VectorToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetController_ReturnValue) == 0x0000F8, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_IsInClientConnection_ReturnValue) == 0x000100, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_IsInClientConnection_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, K2Node_DynamicCast_AsPal_Player_Controller) == 0x000108, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::K2Node_DynamicCast_AsPal_Player_Controller' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, K2Node_DynamicCast_bSuccess_2) == 0x000110, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_CanTimeout_CanTimeOut) == 0x000111, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_CanTimeout_CanTimeOut' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetGameSetting_ReturnValue) == 0x000118, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetGameSetting_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_IsOpenListenServer_ReturnValue) == 0x000120, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_IsOpenListenServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x000121, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_BooleanOR_ReturnValue_1) == 0x000122, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetActionCharacter_ReturnValue_5) == 0x000128, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetActionCharacter_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_IsLocallyControlled_ReturnValue_1) == 0x000130, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_IsLocallyControlled_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_Conv_VectorToString_ReturnValue_1) == 0x000138, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_Conv_VectorToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000148, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000158, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000168, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_Add_DoubleDouble_B_ImplicitCast) == 0x000178, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_Add_DoubleDouble_B_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_Add_DoubleDouble_A_ImplicitCast) == 0x000180, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_Add_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GreaterEqual_DoubleDouble_B_ImplicitCast) == 0x000188, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GreaterEqual_DoubleDouble_B_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_CheckEndAction_IsEnd) == 0x000008, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_CheckEndAction_IsEnd' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetActionCharacter_ReturnValue) == 0x000010, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetActionCharacter_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000018, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_AdjustActorToFloor_ReturnValue) == 0x000020, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_AdjustActorToFloor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000030, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetActionCharacter_ReturnValue_1) == 0x000038, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetActionCharacter_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetActionCharacter_ReturnValue_2) == 0x000040, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetActionCharacter_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, K2Node_DynamicCast_AsPal_Player_Character) == 0x000048, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::K2Node_DynamicCast_AsPal_Player_Character' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_Concat_StrStr_ReturnValue) == 0x000058, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_Add_DoubleDouble_ReturnValue_1) == 0x000068, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_Add_DoubleDouble_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetHUDService_ReturnValue) == 0x000070, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetHUDService_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetHUDService_ReturnValue_1) == 0x000078, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetHUDService_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetFadeInParameter_NewParam) == 0x000080, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetFadeInParameter_NewParam' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetActionCharacter_ReturnValue_3) == 0x000088, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetActionCharacter_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetActionCharacter_ReturnValue_4) == 0x000090, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetActionCharacter_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_IsLocallyControlled_ReturnValue) == 0x000098, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, K2Node_DynamicCast_AsPal_Player_Character_1) == 0x0000A0, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::K2Node_DynamicCast_AsPal_Player_Character_1' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, K2Node_DynamicCast_bSuccess_1) == 0x0000A8, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_IsDedicatedServer_ReturnValue) == 0x0000A9, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_IsAdjustedLocation_ReturnValue) == 0x0000AA, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_IsAdjustedLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_BooleanOR_ReturnValue) == 0x0000AB, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_CheckLoadLocationDistance_IsReWait) == 0x0000AC, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_CheckLoadLocationDistance_IsReWait' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000B0, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_Conv_VectorToString_ReturnValue) == 0x0000C8, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_Conv_VectorToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetController_ReturnValue) == 0x0000D8, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_IsInClientConnection_ReturnValue) == 0x0000E0, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_IsInClientConnection_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, K2Node_DynamicCast_AsPal_Player_Controller) == 0x0000E8, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::K2Node_DynamicCast_AsPal_Player_Controller' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, K2Node_DynamicCast_bSuccess_2) == 0x0000F0, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_CanTimeout_CanTimeOut) == 0x0000F1, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_CanTimeout_CanTimeOut' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetGameSetting_ReturnValue) == 0x0000F8, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetGameSetting_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_IsOpenListenServer_ReturnValue) == 0x000100, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_IsOpenListenServer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetActionCharacter_ReturnValue_5) == 0x000108, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetActionCharacter_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_BooleanOR_ReturnValue_1) == 0x000110, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_IsLocallyControlled_ReturnValue_1) == 0x000111, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_IsLocallyControlled_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x000112, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_Conv_VectorToString_ReturnValue_1) == 0x000118, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_Conv_VectorToString_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000128, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000138, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000148, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000158, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_CanAdjustActorToFloor_OutLocation) == 0x000160, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_CanAdjustActorToFloor_OutLocation' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_CanAdjustActorToFloor_ReturnValue) == 0x000178, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_CanAdjustActorToFloor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GetGeneralPurposeIndex_ReturnValue) == 0x00017C, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GetGeneralPurposeIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000180, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_CheckEndAction_DeltaTime_ImplicitCast) == 0x000188, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_CheckEndAction_DeltaTime_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_Add_DoubleDouble_B_ImplicitCast) == 0x000190, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_Add_DoubleDouble_B_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_Add_DoubleDouble_A_ImplicitCast) == 0x000198, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_Add_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition, CallFunc_GreaterEqual_DoubleDouble_B_ImplicitCast) == 0x0001A0, "Member 'BP_Action_WaitLoadingWorldPartition_C_ExecuteUbergraph_BP_Action_WaitLoadingWorldPartition::CallFunc_GreaterEqual_DoubleDouble_B_ImplicitCast' has a wrong offset!");
 
 // Function BP_Action_WaitLoadingWorldPartition.BP_Action_WaitLoadingWorldPartition_C.GetFadeInParameter
 // 0x0010 (0x0010 - 0x0000)
@@ -181,6 +284,29 @@ static_assert(sizeof(BP_Action_WaitLoadingWorldPartition_C_GetFadeInParameter) =
 static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_GetFadeInParameter, NewParam) == 0x000000, "Member 'BP_Action_WaitLoadingWorldPartition_C_GetFadeInParameter::NewParam' has a wrong offset!");
 static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_GetFadeInParameter, CallFunc_SpawnObject_ReturnValue) == 0x000008, "Member 'BP_Action_WaitLoadingWorldPartition_C_GetFadeInParameter::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
 
+// Function BP_Action_WaitLoadingWorldPartition.BP_Action_WaitLoadingWorldPartition_C.IsWaterActor
+// 0x0030 (0x0030 - 0x0000)
+struct BP_Action_WaitLoadingWorldPartition_C_IsWaterActor final
+{
+public:
+	class AActor*                                 TargetActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsWater;                                           // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CCC[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_UltimateRiverTool_C*                K2Node_DynamicCast_AsBP_Ultimate_River_Tool;       // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CCD[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_SimpleWater_C*                      K2Node_DynamicCast_AsBP_Simple_Water;              // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Action_WaitLoadingWorldPartition_C_IsWaterActor) == 0x000008, "Wrong alignment on BP_Action_WaitLoadingWorldPartition_C_IsWaterActor");
+static_assert(sizeof(BP_Action_WaitLoadingWorldPartition_C_IsWaterActor) == 0x000030, "Wrong size on BP_Action_WaitLoadingWorldPartition_C_IsWaterActor");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_IsWaterActor, TargetActor) == 0x000000, "Member 'BP_Action_WaitLoadingWorldPartition_C_IsWaterActor::TargetActor' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_IsWaterActor, IsWater) == 0x000008, "Member 'BP_Action_WaitLoadingWorldPartition_C_IsWaterActor::IsWater' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_IsWaterActor, K2Node_DynamicCast_AsBP_Ultimate_River_Tool) == 0x000010, "Member 'BP_Action_WaitLoadingWorldPartition_C_IsWaterActor::K2Node_DynamicCast_AsBP_Ultimate_River_Tool' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_IsWaterActor, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BP_Action_WaitLoadingWorldPartition_C_IsWaterActor::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_IsWaterActor, K2Node_DynamicCast_AsBP_Simple_Water) == 0x000020, "Member 'BP_Action_WaitLoadingWorldPartition_C_IsWaterActor::K2Node_DynamicCast_AsBP_Simple_Water' has a wrong offset!");
+static_assert(offsetof(BP_Action_WaitLoadingWorldPartition_C_IsWaterActor, K2Node_DynamicCast_bSuccess_1) == 0x000028, "Member 'BP_Action_WaitLoadingWorldPartition_C_IsWaterActor::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+
 // Function BP_Action_WaitLoadingWorldPartition.BP_Action_WaitLoadingWorldPartition_C.RequestWaitWorldPartition
 // 0x0060 (0x0060 - 0x0000)
 struct BP_Action_WaitLoadingWorldPartition_C_RequestWaitWorldPartition final
@@ -192,9 +318,9 @@ public:
 	class APalPlayerState*                        CallFunc_GetPlayerStateByPlayer_ReturnValue;       // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_IsValidTimerHandle_ReturnValue;        // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4133[0x2];                                     // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CCE[0x2];                                     // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0044(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4134[0x4];                                     // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CCF[0x4];                                     // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           CallFunc_WaitWorldPartitionDelegate_OutTimerHandle; // 0x0058(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_Action_WaitLoadingWorldPartition_C_RequestWaitWorldPartition) == 0x000008, "Wrong alignment on BP_Action_WaitLoadingWorldPartition_C_RequestWaitWorldPartition");
@@ -229,13 +355,13 @@ struct BP_Action_WaitLoadingWorldPartition_C_SetMoveDisable final
 {
 public:
 	bool                                          Disable;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4135[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CD0[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalCharacterMovementComponent*         TempMoveComp;                                      // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4136[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CD1[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_BoolToFloat_ReturnValue;             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4137[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CD2[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_BoolToFloat_ReturnValue_1;           // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalCharacterMovementComponent*         CallFunc_GetPalCharacterMovementComponent_ReturnValue; // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)

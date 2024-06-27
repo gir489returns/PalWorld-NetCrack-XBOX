@@ -185,9 +185,9 @@ void UBP_PalIncidentRandomActionHunterVsPal_C::GetSpawnRadius(double* Radius)
 // Function BP_PalIncidentRandomActionHunterVsPal.BP_PalIncidentRandomActionHunterVsPal_C.GetWinnerGroup
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   GroupID                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   GroupId                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_PalIncidentRandomActionHunterVsPal_C::GetWinnerGroup(int32* GroupID)
+void UBP_PalIncidentRandomActionHunterVsPal_C::GetWinnerGroup(int32* GroupId)
 {
 	static class UFunction* Func = nullptr;
 
@@ -198,8 +198,8 @@ void UBP_PalIncidentRandomActionHunterVsPal_C::GetWinnerGroup(int32* GroupID)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (GroupID != nullptr)
-		*GroupID = Parms.GroupID;
+	if (GroupId != nullptr)
+		*GroupId = Parms.GroupId;
 }
 
 
@@ -282,9 +282,9 @@ void UBP_PalIncidentRandomActionHunterVsPal_C::OnTick(float DeltaTime)
 // Function BP_PalIncidentRandomActionHunterVsPal.BP_PalIncidentRandomActionHunterVsPal_C.ResetAIController
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   GroupID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   GroupId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_PalIncidentRandomActionHunterVsPal_C::ResetAIController(int32 GroupID)
+void UBP_PalIncidentRandomActionHunterVsPal_C::ResetAIController(int32 GroupId)
 {
 	static class UFunction* Func = nullptr;
 
@@ -293,7 +293,7 @@ void UBP_PalIncidentRandomActionHunterVsPal_C::ResetAIController(int32 GroupID)
 
 	Params::BP_PalIncidentRandomActionHunterVsPal_C_ResetAIController Parms{};
 
-	Parms.GroupID = GroupID;
+	Parms.GroupId = GroupId;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "BP_MonsterAIControllerBase_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "BP_MonsterAIControllerBase_classes.hpp"
 
 
 namespace SDK
@@ -37,6 +37,7 @@ public:
 	void StartEscape(class AActor* TargetActor);
 	void ________(const struct FPalInstanceID& ID);
 	void _________1(const struct FPalDeadInfo& DeadInfo);
+	void _________2(class UPalVisualEffectBase* VisualEffect);
 
 public:
 	static class UClass* StaticClass()

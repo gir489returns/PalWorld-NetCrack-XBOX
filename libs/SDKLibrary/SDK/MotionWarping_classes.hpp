@@ -78,7 +78,7 @@ class UMotionWarpingComponent final : public UActorComponent
 {
 public:
 	bool                                          bSearchForWindowsInAnimsWithinMontages;            // 0x00A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B78[0x7];                                     // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B61[0x7];                                     // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnPreUpdate;                                       // 0x00A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TWeakObjectPtr<class ACharacter>              CharacterOwner;                                    // 0x00B8(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TArray<class URootMotionModifier*>            Modifiers;                                         // 0x00C0(0x0010)(ZeroConstructor, Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
@@ -123,14 +123,14 @@ public:
 	float                                         PreviousPosition;                                  // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CurrentPosition;                                   // 0x003C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Weight;                                            // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B7B[0xC];                                     // 0x0044(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B64[0xC];                                     // 0x0044(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             StartTransform;                                    // 0x0050(0x0060)(BlueprintVisible, BlueprintReadOnly, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ActualStartTime;                                   // 0x00B0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(class UMotionWarpingComponent* MotionWarpingComp, class URootMotionModifier* RootMotionModifier)> OnActivateDelegate;                                // 0x00B4(0x0010)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(class UMotionWarpingComponent* MotionWarpingComp, class URootMotionModifier* RootMotionModifier)> OnUpdateDelegate;                                  // 0x00C4(0x0010)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(class UMotionWarpingComponent* MotionWarpingComp, class URootMotionModifier* RootMotionModifier)> OnDeactivateDelegate;                              // 0x00D4(0x0010)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERootMotionModifierState                      State;                                             // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1B7C[0x3];                                     // 0x00E5(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B65[0x3];                                     // 0x00E5(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -165,20 +165,20 @@ class URootMotionModifier_Warp : public URootMotionModifier
 public:
 	class FName                                   WarpTargetName;                                    // 0x00E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EWarpPointAnimProvider                        WarpPointAnimProvider;                             // 0x00F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B7D[0xF];                                     // 0x00F1(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B66[0xF];                                     // 0x00F1(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             WarpPointAnimTransform;                            // 0x0100(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   WarpPointAnimBoneName;                             // 0x0160(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bWarpTranslation;                                  // 0x0168(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnoreZAxis;                                      // 0x0169(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAlphaBlendOption                             AddTranslationEasingFunc;                          // 0x016A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B7E[0x5];                                     // 0x016B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B67[0x5];                                     // 0x016B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCurveFloat*                            AddTranslationEasingCurve;                         // 0x0170(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bWarpRotation;                                     // 0x0178(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EMotionWarpRotationType                       RotationType;                                      // 0x0179(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B7F[0x2];                                     // 0x017A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B68[0x2];                                     // 0x017A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         WarpRotationTimeMultiplier;                        // 0x017C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FTransform                             CachedTargetTransform;                             // 0x0180(0x0060)(IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1B80[0x70];                                    // 0x01E0(0x0070)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B69[0x70];                                    // 0x01E0(0x0070)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -252,9 +252,9 @@ class URootMotionModifier_AdjustmentBlendWarp final : public URootMotionModifier
 {
 public:
 	bool                                          bWarpIKBones;                                      // 0x0250(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B81[0x7];                                     // 0x0251(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B6A[0x7];                                     // 0x0251(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           IKBones;                                           // 0x0258(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B82[0x8];                                     // 0x0268(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B6B[0x8];                                     // 0x0268(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CachedMeshTransform;                               // 0x0270(0x0060)(IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FTransform                             CachedMeshRelativeTransform;                       // 0x02D0(0x0060)(IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FTransform                             CachedRootMotion;                                  // 0x0330(0x0060)(IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)

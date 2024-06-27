@@ -10,82 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "AIModule_structs.hpp"
-#include "CoreUObject_structs.hpp"
-
 
 namespace SDK::Params
 {
 
-// Function BP_AIAction_BaseCampWorker_Wait.BP_AIAction_BaseCampWorker_Wait_C.ActionStart
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_BaseCampWorker_Wait_C_ActionStart final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_BaseCampWorker_Wait_C_ActionStart) == 0x000008, "Wrong alignment on BP_AIAction_BaseCampWorker_Wait_C_ActionStart");
-static_assert(sizeof(BP_AIAction_BaseCampWorker_Wait_C_ActionStart) == 0x000008, "Wrong size on BP_AIAction_BaseCampWorker_Wait_C_ActionStart");
-static_assert(offsetof(BP_AIAction_BaseCampWorker_Wait_C_ActionStart, ControlledPawn) == 0x000000, "Member 'BP_AIAction_BaseCampWorker_Wait_C_ActionStart::ControlledPawn' has a wrong offset!");
-
-// Function BP_AIAction_BaseCampWorker_Wait.BP_AIAction_BaseCampWorker_Wait_C.ExecuteUbergraph_BP_AIAction_BaseCampWorker_Wait
-// 0x0028 (0x0028 - 0x0000)
-struct BP_AIAction_BaseCampWorker_Wait_C_ExecuteUbergraph_BP_AIAction_BaseCampWorker_Wait final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetBaseCampRandomLocation_bResult;        // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C01[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetBaseCampRandomLocation_ToLocation;     // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  K2Node_Event_ControlledPawn;                       // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_BaseCampWorker_Wait_C_ExecuteUbergraph_BP_AIAction_BaseCampWorker_Wait) == 0x000008, "Wrong alignment on BP_AIAction_BaseCampWorker_Wait_C_ExecuteUbergraph_BP_AIAction_BaseCampWorker_Wait");
-static_assert(sizeof(BP_AIAction_BaseCampWorker_Wait_C_ExecuteUbergraph_BP_AIAction_BaseCampWorker_Wait) == 0x000028, "Wrong size on BP_AIAction_BaseCampWorker_Wait_C_ExecuteUbergraph_BP_AIAction_BaseCampWorker_Wait");
-static_assert(offsetof(BP_AIAction_BaseCampWorker_Wait_C_ExecuteUbergraph_BP_AIAction_BaseCampWorker_Wait, EntryPoint) == 0x000000, "Member 'BP_AIAction_BaseCampWorker_Wait_C_ExecuteUbergraph_BP_AIAction_BaseCampWorker_Wait::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_BaseCampWorker_Wait_C_ExecuteUbergraph_BP_AIAction_BaseCampWorker_Wait, CallFunc_GetBaseCampRandomLocation_bResult) == 0x000004, "Member 'BP_AIAction_BaseCampWorker_Wait_C_ExecuteUbergraph_BP_AIAction_BaseCampWorker_Wait::CallFunc_GetBaseCampRandomLocation_bResult' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_BaseCampWorker_Wait_C_ExecuteUbergraph_BP_AIAction_BaseCampWorker_Wait, CallFunc_GetBaseCampRandomLocation_ToLocation) == 0x000008, "Member 'BP_AIAction_BaseCampWorker_Wait_C_ExecuteUbergraph_BP_AIAction_BaseCampWorker_Wait::CallFunc_GetBaseCampRandomLocation_ToLocation' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_BaseCampWorker_Wait_C_ExecuteUbergraph_BP_AIAction_BaseCampWorker_Wait, K2Node_Event_ControlledPawn) == 0x000020, "Member 'BP_AIAction_BaseCampWorker_Wait_C_ExecuteUbergraph_BP_AIAction_BaseCampWorker_Wait::K2Node_Event_ControlledPawn' has a wrong offset!");
-
-// Function BP_AIAction_BaseCampWorker_Wait.BP_AIAction_BaseCampWorker_Wait_C.GetBaseCampRandomLocation
-// 0x0040 (0x0040 - 0x0000)
-struct BP_AIAction_BaseCampWorker_Wait_C_GetBaseCampRandomLocation final
-{
-public:
-	bool                                          bResult;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C02[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                ToLocation;                                        // 0x0008(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_CalcWalkAroundDestination_OutDestination; // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CalcWalkAroundDestination_ReturnValue;    // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C03[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_CalcWalkAroundDestination_Radius_ImplicitCast; // 0x003C(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_BaseCampWorker_Wait_C_GetBaseCampRandomLocation) == 0x000008, "Wrong alignment on BP_AIAction_BaseCampWorker_Wait_C_GetBaseCampRandomLocation");
-static_assert(sizeof(BP_AIAction_BaseCampWorker_Wait_C_GetBaseCampRandomLocation) == 0x000040, "Wrong size on BP_AIAction_BaseCampWorker_Wait_C_GetBaseCampRandomLocation");
-static_assert(offsetof(BP_AIAction_BaseCampWorker_Wait_C_GetBaseCampRandomLocation, bResult) == 0x000000, "Member 'BP_AIAction_BaseCampWorker_Wait_C_GetBaseCampRandomLocation::bResult' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_BaseCampWorker_Wait_C_GetBaseCampRandomLocation, ToLocation) == 0x000008, "Member 'BP_AIAction_BaseCampWorker_Wait_C_GetBaseCampRandomLocation::ToLocation' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_BaseCampWorker_Wait_C_GetBaseCampRandomLocation, CallFunc_CalcWalkAroundDestination_OutDestination) == 0x000020, "Member 'BP_AIAction_BaseCampWorker_Wait_C_GetBaseCampRandomLocation::CallFunc_CalcWalkAroundDestination_OutDestination' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_BaseCampWorker_Wait_C_GetBaseCampRandomLocation, CallFunc_CalcWalkAroundDestination_ReturnValue) == 0x000038, "Member 'BP_AIAction_BaseCampWorker_Wait_C_GetBaseCampRandomLocation::CallFunc_CalcWalkAroundDestination_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_BaseCampWorker_Wait_C_GetBaseCampRandomLocation, CallFunc_CalcWalkAroundDestination_Radius_ImplicitCast) == 0x00003C, "Member 'BP_AIAction_BaseCampWorker_Wait_C_GetBaseCampRandomLocation::CallFunc_CalcWalkAroundDestination_Radius_ImplicitCast' has a wrong offset!");
-
 // Function BP_AIAction_BaseCampWorker_Wait.BP_AIAction_BaseCampWorker_Wait_C.OnTickForWait
-// 0x0028 (0x0028 - 0x0000)
+// 0x0004 (0x0004 - 0x0000)
 struct BP_AIAction_BaseCampWorker_Wait_C_OnTickForWait final
 {
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetBaseCampRandomLocation_bResult;        // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C04[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetBaseCampRandomLocation_ToLocation;     // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPathFollowingRequestResult                   CallFunc_MoveToLocationInBaseCamp_ReturnValue;     // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_AIAction_BaseCampWorker_Wait_C_OnTickForWait) == 0x000008, "Wrong alignment on BP_AIAction_BaseCampWorker_Wait_C_OnTickForWait");
-static_assert(sizeof(BP_AIAction_BaseCampWorker_Wait_C_OnTickForWait) == 0x000028, "Wrong size on BP_AIAction_BaseCampWorker_Wait_C_OnTickForWait");
+static_assert(alignof(BP_AIAction_BaseCampWorker_Wait_C_OnTickForWait) == 0x000004, "Wrong alignment on BP_AIAction_BaseCampWorker_Wait_C_OnTickForWait");
+static_assert(sizeof(BP_AIAction_BaseCampWorker_Wait_C_OnTickForWait) == 0x000004, "Wrong size on BP_AIAction_BaseCampWorker_Wait_C_OnTickForWait");
 static_assert(offsetof(BP_AIAction_BaseCampWorker_Wait_C_OnTickForWait, DeltaTime) == 0x000000, "Member 'BP_AIAction_BaseCampWorker_Wait_C_OnTickForWait::DeltaTime' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_BaseCampWorker_Wait_C_OnTickForWait, CallFunc_GetBaseCampRandomLocation_bResult) == 0x000004, "Member 'BP_AIAction_BaseCampWorker_Wait_C_OnTickForWait::CallFunc_GetBaseCampRandomLocation_bResult' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_BaseCampWorker_Wait_C_OnTickForWait, CallFunc_GetBaseCampRandomLocation_ToLocation) == 0x000008, "Member 'BP_AIAction_BaseCampWorker_Wait_C_OnTickForWait::CallFunc_GetBaseCampRandomLocation_ToLocation' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_BaseCampWorker_Wait_C_OnTickForWait, CallFunc_MoveToLocationInBaseCamp_ReturnValue) == 0x000020, "Member 'BP_AIAction_BaseCampWorker_Wait_C_OnTickForWait::CallFunc_MoveToLocationInBaseCamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_BaseCampWorker_Wait_C_OnTickForWait, K2Node_SwitchEnum_CmpSuccess) == 0x000021, "Member 'BP_AIAction_BaseCampWorker_Wait_C_OnTickForWait::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 }
 

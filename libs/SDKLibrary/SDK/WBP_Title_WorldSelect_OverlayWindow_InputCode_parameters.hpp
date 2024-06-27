@@ -10,24 +10,24 @@
 
 #include "Basic.hpp"
 
-#include "Pal_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Pal_structs.hpp"
 
 
 namespace SDK::Params
 {
 
-// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_1_OnEditableTextBoxChangedEvent__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_1_OnEditableTextBoxChangedEvent__DelegateSignature final
+// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_WBP_PalInvisibleButton_ShoiwHideInviteCode_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_WBP_PalInvisibleButton_ShoiwHideInviteCode_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_1_OnEditableTextBoxChangedEvent__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_1_OnEditableTextBoxChangedEvent__DelegateSignature");
-static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_1_OnEditableTextBoxChangedEvent__DelegateSignature) == 0x000018, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_1_OnEditableTextBoxChangedEvent__DelegateSignature");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_1_OnEditableTextBoxChangedEvent__DelegateSignature, Text) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_1_OnEditableTextBoxChangedEvent__DelegateSignature::Text' has a wrong offset!");
+static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_WBP_PalInvisibleButton_ShoiwHideInviteCode_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_WBP_PalInvisibleButton_ShoiwHideInviteCode_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature");
+static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_WBP_PalInvisibleButton_ShoiwHideInviteCode_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature) == 0x000008, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_WBP_PalInvisibleButton_ShoiwHideInviteCode_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_WBP_PalInvisibleButton_ShoiwHideInviteCode_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature, Button) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_WBP_PalInvisibleButton_ShoiwHideInviteCode_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature
 // 0x0020 (0x0020 - 0x0000)
@@ -42,113 +42,110 @@ static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP
 static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature, Text) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature::Text' has a wrong offset!");
 static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature, CommitMethod) == 0x000018, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature::CommitMethod' has a wrong offset!");
 
-// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.ChangeMode
+// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_1_OnEditableTextBoxChangedEvent__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_1_OnEditableTextBoxChangedEvent__DelegateSignature final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_1_OnEditableTextBoxChangedEvent__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_1_OnEditableTextBoxChangedEvent__DelegateSignature");
+static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_1_OnEditableTextBoxChangedEvent__DelegateSignature) == 0x000018, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_1_OnEditableTextBoxChangedEvent__DelegateSignature");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_1_OnEditableTextBoxChangedEvent__DelegateSignature, Text) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_1_OnEditableTextBoxChangedEvent__DelegateSignature::Text' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.ShowHideInputText
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ShowHideInputText final
+{
+public:
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4AEF[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4AF0[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             K2Node_Select_Default;                             // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ShowHideInputText) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ShowHideInputText");
+static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ShowHideInputText) == 0x000030, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ShowHideInputText");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ShowHideInputText, Temp_bool_Variable) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ShowHideInputText::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ShowHideInputText, Temp_object_Variable) == 0x000008, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ShowHideInputText::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ShowHideInputText, Temp_object_Variable_1) == 0x000010, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ShowHideInputText::Temp_object_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ShowHideInputText, CallFunc_Not_PreBool_ReturnValue) == 0x000018, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ShowHideInputText::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ShowHideInputText, K2Node_Select_Default) == 0x000020, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ShowHideInputText::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ShowHideInputText, CallFunc_Not_PreBool_ReturnValue_1) == 0x000028, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ShowHideInputText::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.OpenWaitWindow
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OpenWaitWindow final
+{
+public:
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OpenWaitWindow) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OpenWaitWindow");
+static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OpenWaitWindow) == 0x000018, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OpenWaitWindow");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OpenWaitWindow, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OpenWaitWindow::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OpenWaitWindow, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000010, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OpenWaitWindow::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.OnNotifyVerifyPasswordImpl
 // 0x0038 (0x0038 - 0x0000)
-struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode final
+struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl final
 {
 public:
-	EPalUIJoinGameInputCodeType                   Param_InputMode;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_480B[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0008(0x0018)()
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text_1;        // 0x0020(0x0018)()
+	bool                                          IsValidPassword;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4AF1[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0008(0x0018)()
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode");
-static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode) == 0x000038, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode, Param_InputMode) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode::Param_InputMode' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode, K2Node_SwitchEnum_CmpSuccess) == 0x000001, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode, CallFunc_GetLocalizedTextFromHandle_Text) == 0x000008, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode::CallFunc_GetLocalizedTextFromHandle_Text' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode, CallFunc_GetLocalizedTextFromHandle_Text_1) == 0x000020, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode::CallFunc_GetLocalizedTextFromHandle_Text_1' has a wrong offset!");
+static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl");
+static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl) == 0x000038, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl, IsValidPassword) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl::IsValidPassword' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl, CallFunc_GetText_ReturnValue) == 0x000008, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl::CallFunc_GetText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl, CallFunc_PlayAnimation_ReturnValue) == 0x000020, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl, CallFunc_Conv_TextToString_ReturnValue) == 0x000028, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
 
-// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.CustomNavi_ToCloseButton
+// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.OnNotifyVerifyPassword
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPassword final
+{
+public:
+	bool                                          IsMatchPassword;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPassword) == 0x000001, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPassword");
+static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPassword) == 0x000001, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPassword");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPassword, IsMatchPassword) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPassword::IsMatchPassword' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.OnNotifyVerifyInviteCodeImpl
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToCloseButton final
+struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCodeImpl final
 {
 public:
-	EUINavigation                                 Param_Navigation;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_480C[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsValidCode;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsRequirePassword;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4AF2[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToCloseButton) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToCloseButton");
-static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToCloseButton) == 0x000010, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToCloseButton");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToCloseButton, Param_Navigation) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToCloseButton::Param_Navigation' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToCloseButton, ReturnValue) == 0x000008, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToCloseButton::ReturnValue' has a wrong offset!");
+static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCodeImpl) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCodeImpl");
+static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCodeImpl) == 0x000010, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCodeImpl");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCodeImpl, IsValidCode) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCodeImpl::IsValidCode' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCodeImpl, IsRequirePassword) == 0x000001, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCodeImpl::IsRequirePassword' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCodeImpl, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCodeImpl::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
-// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.CustomNavi_ToTextBox
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToTextBox final
+// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.OnNotifyVerifyInviteCode
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCode final
 {
 public:
-	EUINavigation                                 Param_Navigation;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_480D[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsValidCode;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsRequirePassword;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToTextBox) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToTextBox");
-static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToTextBox) == 0x000010, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToTextBox");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToTextBox, Param_Navigation) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToTextBox::Param_Navigation' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToTextBox, ReturnValue) == 0x000008, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToTextBox::ReturnValue' has a wrong offset!");
-
-// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode
-// 0x00B8 (0x00B8 - 0x0000)
-struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_480E[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDDispatchParame_JoinGameInputCode* K2Node_DynamicCast_AsPal_HUDDispatch_Parame_Join_Game_Input_Code; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsValidCode;                          // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsRequirePassword;                    // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsMatchPassword;                      // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_480F[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0020(0x0018)()
-	class FText                                   K2Node_ComponentBoundEvent_Text_1;                 // 0x0038(0x0018)(ConstParm)
-	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0050(0x0018)()
-	class FText                                   K2Node_ComponentBoundEvent_Text;                   // 0x0068(0x0018)(ConstParm)
-	ETextCommit                                   K2Node_ComponentBoundEvent_CommitMethod;           // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4810[0x3];                                     // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0084(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4811[0x3];                                     // 0x0095(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0098(0x0018)()
-	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode");
-static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode) == 0x0000B8, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, EntryPoint) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_SwitchEnum_CmpSuccess) == 0x000004, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, CallFunc_GetParam_ReturnValue) == 0x000008, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::CallFunc_GetParam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_DynamicCast_AsPal_HUDDispatch_Parame_Join_Game_Input_Code) == 0x000010, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_DynamicCast_AsPal_HUDDispatch_Parame_Join_Game_Input_Code' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_Event_IsValidCode) == 0x000019, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_Event_IsValidCode' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_Event_IsRequirePassword) == 0x00001A, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_Event_IsRequirePassword' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_Event_IsMatchPassword) == 0x00001B, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_Event_IsMatchPassword' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, CallFunc_GetLocalizedTextFromHandle_Text) == 0x000020, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::CallFunc_GetLocalizedTextFromHandle_Text' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_ComponentBoundEvent_Text_1) == 0x000038, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_ComponentBoundEvent_Text_1' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, CallFunc_TextToUpper_ReturnValue) == 0x000050, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_ComponentBoundEvent_Text) == 0x000068, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_ComponentBoundEvent_Text' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_ComponentBoundEvent_CommitMethod) == 0x000080, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_ComponentBoundEvent_CommitMethod' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_CreateDelegate_OutputDelegate) == 0x000084, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_SwitchEnum_CmpSuccess_1) == 0x000094, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, CallFunc_GetText_ReturnValue) == 0x000098, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::CallFunc_GetText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, CallFunc_TextIsEmpty_ReturnValue) == 0x0000B0, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-
-// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.On Cancel Action
-// 0x0003 (0x0003 - 0x0000)
-struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action final
-{
-public:
-	bool                                          CallFunc_HasAnyUserFocus_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action) == 0x000001, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action");
-static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action) == 0x000003, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action, CallFunc_HasAnyUserFocus_ReturnValue) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action::CallFunc_HasAnyUserFocus_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action, CallFunc_HasKeyboardFocus_ReturnValue) == 0x000001, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action::CallFunc_HasKeyboardFocus_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action, CallFunc_BooleanOR_ReturnValue) == 0x000002, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCode) == 0x000001, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCode");
+static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCode) == 0x000002, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCode");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCode, IsValidCode) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCode::IsValidCode' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCode, IsRequirePassword) == 0x000001, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCode::IsRequirePassword' has a wrong offset!");
 
 // Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.OnConfirmInternal
 // 0x0030 (0x0030 - 0x0000)
@@ -169,76 +166,134 @@ static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnConfirm
 static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnConfirmInternal, CallFunc_Greater_IntInt_ReturnValue) == 0x00002C, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnConfirmInternal::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnConfirmInternal, K2Node_SwitchEnum_CmpSuccess) == 0x00002D, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnConfirmInternal::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
-// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.OnNotifyVerifyInviteCode
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCode final
+// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.On Cancel Action
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action final
 {
 public:
-	bool                                          IsValidCode;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsRequirePassword;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4AF3[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalHUDDispatchParame_JoinGameInputCode* K2Node_DynamicCast_AsPal_HUDDispatch_Parame_Join_Game_Input_Code; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAnyUserFocus_ReturnValue;              // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCode) == 0x000001, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCode");
-static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCode) == 0x000002, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCode");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCode, IsValidCode) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCode::IsValidCode' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCode, IsRequirePassword) == 0x000001, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCode::IsRequirePassword' has a wrong offset!");
+static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action");
+static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action) == 0x000020, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action, CallFunc_GetParam_ReturnValue) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action::CallFunc_GetParam_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action, K2Node_DynamicCast_AsPal_HUDDispatch_Parame_Join_Game_Input_Code) == 0x000010, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action::K2Node_DynamicCast_AsPal_HUDDispatch_Parame_Join_Game_Input_Code' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action, CallFunc_HasAnyUserFocus_ReturnValue) == 0x000019, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action::CallFunc_HasAnyUserFocus_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action, CallFunc_HasKeyboardFocus_ReturnValue) == 0x00001A, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action::CallFunc_HasKeyboardFocus_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action, CallFunc_BooleanOR_ReturnValue) == 0x00001B, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_On_Cancel_Action::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
-// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.OnNotifyVerifyInviteCodeImpl
+// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode
+// 0x00E0 (0x00E0 - 0x0000)
+struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4AF4[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParame_JoinGameInputCode* K2Node_DynamicCast_AsPal_HUDDispatch_Parame_Join_Game_Input_Code; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsValidCode;                          // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsRequirePassword;                    // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsMatchPassword;                      // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4AF5[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0020(0x0018)()
+	class FText                                   K2Node_ComponentBoundEvent_Text_1;                 // 0x0038(0x0018)(ConstParm)
+	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0050(0x0018)()
+	class FText                                   K2Node_ComponentBoundEvent_Text;                   // 0x0068(0x0018)(ConstParm)
+	ETextCommit                                   K2Node_ComponentBoundEvent_CommitMethod;           // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4AF6[0x3];                                     // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0084(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4AF7[0x3];                                     // 0x0095(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0098(0x0018)()
+	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4AF8[0x6];                                     // 0x00B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue_1;                   // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4AF9[0x7];                                     // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalHUDDispatchParame_JoinGameInputCode* K2Node_DynamicCast_AsPal_HUDDispatch_Parame_Join_Game_Input_Code_1; // 0x00D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode");
+static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode) == 0x0000E0, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, EntryPoint) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::EntryPoint' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, CallFunc_GetParam_ReturnValue) == 0x000008, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::CallFunc_GetParam_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_DynamicCast_AsPal_HUDDispatch_Parame_Join_Game_Input_Code) == 0x000010, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_DynamicCast_AsPal_HUDDispatch_Parame_Join_Game_Input_Code' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_Event_IsValidCode) == 0x000019, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_Event_IsValidCode' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_Event_IsRequirePassword) == 0x00001A, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_Event_IsRequirePassword' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_Event_IsMatchPassword) == 0x00001B, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_Event_IsMatchPassword' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, CallFunc_GetLocalizedTextFromHandle_Text) == 0x000020, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::CallFunc_GetLocalizedTextFromHandle_Text' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_ComponentBoundEvent_Text_1) == 0x000038, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_ComponentBoundEvent_Text_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, CallFunc_TextToUpper_ReturnValue) == 0x000050, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_ComponentBoundEvent_Text) == 0x000068, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_ComponentBoundEvent_Text' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_ComponentBoundEvent_CommitMethod) == 0x000080, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_ComponentBoundEvent_CommitMethod' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_CreateDelegate_OutputDelegate) == 0x000084, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_SwitchEnum_CmpSuccess) == 0x000094, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, CallFunc_GetText_ReturnValue) == 0x000098, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::CallFunc_GetText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, CallFunc_TextIsEmpty_ReturnValue) == 0x0000B0, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_SwitchEnum_CmpSuccess_1) == 0x0000B1, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_ComponentBoundEvent_Button) == 0x0000B8, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, CallFunc_GetParam_ReturnValue_1) == 0x0000C0, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::CallFunc_GetParam_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, CallFunc_IsValid_ReturnValue) == 0x0000C8, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_DynamicCast_AsPal_HUDDispatch_Parame_Join_Game_Input_Code_1) == 0x0000D0, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_DynamicCast_AsPal_HUDDispatch_Parame_Join_Game_Input_Code_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode, K2Node_DynamicCast_bSuccess_1) == 0x0000D8, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.CustomNavi_ToTextBox
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCodeImpl final
+struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToTextBox final
 {
 public:
-	bool                                          IsValidCode;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsRequirePassword;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4812[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Param_Navigation;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4AFA[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCodeImpl) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCodeImpl");
-static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCodeImpl) == 0x000010, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCodeImpl");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCodeImpl, IsValidCode) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCodeImpl::IsValidCode' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCodeImpl, IsRequirePassword) == 0x000001, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCodeImpl::IsRequirePassword' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCodeImpl, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyInviteCodeImpl::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToTextBox) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToTextBox");
+static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToTextBox) == 0x000010, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToTextBox");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToTextBox, Param_Navigation) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToTextBox::Param_Navigation' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToTextBox, ReturnValue) == 0x000008, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToTextBox::ReturnValue' has a wrong offset!");
 
-// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.OnNotifyVerifyPassword
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPassword final
+// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.CustomNavi_ToCloseButton
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToCloseButton final
 {
 public:
-	bool                                          IsMatchPassword;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Param_Navigation;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4AFB[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPassword) == 0x000001, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPassword");
-static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPassword) == 0x000001, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPassword");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPassword, IsMatchPassword) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPassword::IsMatchPassword' has a wrong offset!");
+static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToCloseButton) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToCloseButton");
+static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToCloseButton) == 0x000010, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToCloseButton");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToCloseButton, Param_Navigation) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToCloseButton::Param_Navigation' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToCloseButton, ReturnValue) == 0x000008, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_CustomNavi_ToCloseButton::ReturnValue' has a wrong offset!");
 
-// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.OnNotifyVerifyPasswordImpl
+// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.ChangeMode
 // 0x0038 (0x0038 - 0x0000)
-struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl final
+struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode final
 {
 public:
-	bool                                          IsValidPassword;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4813[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0008(0x0018)()
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	EPalUIJoinGameInputCodeType                   Param_InputMode;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4AFC[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0008(0x0018)()
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text_1;        // 0x0020(0x0018)()
 };
-static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl");
-static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl) == 0x000038, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl, IsValidPassword) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl::IsValidPassword' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl, CallFunc_GetText_ReturnValue) == 0x000008, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl::CallFunc_GetText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl, CallFunc_PlayAnimation_ReturnValue) == 0x000020, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl, CallFunc_Conv_TextToString_ReturnValue) == 0x000028, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OnNotifyVerifyPasswordImpl::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-
-// Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.OpenWaitWindow
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OpenWaitWindow final
-{
-public:
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OpenWaitWindow) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OpenWaitWindow");
-static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OpenWaitWindow) == 0x000018, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OpenWaitWindow");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OpenWaitWindow, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OpenWaitWindow::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OpenWaitWindow, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000010, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_OpenWaitWindow::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+static_assert(alignof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode");
+static_assert(sizeof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode) == 0x000038, "Wrong size on WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode, Param_InputMode) == 0x000000, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode::Param_InputMode' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode, K2Node_SwitchEnum_CmpSuccess) == 0x000001, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode, CallFunc_GetLocalizedTextFromHandle_Text) == 0x000008, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode::CallFunc_GetLocalizedTextFromHandle_Text' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode, CallFunc_GetLocalizedTextFromHandle_Text_1) == 0x000020, "Member 'WBP_Title_WorldSelect_OverlayWindow_InputCode_C_ChangeMode::CallFunc_GetLocalizedTextFromHandle_Text_1' has a wrong offset!");
 
 // Function WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C.BP_GetDesiredFocusTarget
 // 0x0010 (0x0010 - 0x0000)

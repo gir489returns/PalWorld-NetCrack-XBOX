@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalPlayerController_Title.BP_PalPlayerController_Title_C
-// 0x0000 (0x0D18 - 0x0D18)
+// 0x0000 (0x0D78 - 0x0D78)
 class ABP_PalPlayerController_Title_C final : public APalPlayerController
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(ABP_PalPlayerController_Title_C) == 0x000008, "Wrong alignment on ABP_PalPlayerController_Title_C");
-static_assert(sizeof(ABP_PalPlayerController_Title_C) == 0x000D18, "Wrong size on ABP_PalPlayerController_Title_C");
+static_assert(sizeof(ABP_PalPlayerController_Title_C) == 0x000D78, "Wrong size on ABP_PalPlayerController_Title_C");
 
 }
 

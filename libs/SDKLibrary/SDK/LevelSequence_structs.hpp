@@ -77,7 +77,7 @@ static_assert(offsetof(FLevelSequenceCameraSettings, AspectRatioAxisConstraint) 
 struct alignas(0x08) FLevelSequenceLegacyObjectReference final
 {
 public:
-	uint8                                         Pad_2180[0x20];                                    // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21C4[0x20];                                    // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLevelSequenceLegacyObjectReference) == 0x000008, "Wrong alignment on FLevelSequenceLegacyObjectReference");
 static_assert(sizeof(FLevelSequenceLegacyObjectReference) == 0x000020, "Wrong size on FLevelSequenceLegacyObjectReference");
@@ -87,7 +87,7 @@ static_assert(sizeof(FLevelSequenceLegacyObjectReference) == 0x000020, "Wrong si
 struct alignas(0x08) FLevelSequenceObjectReferenceMap final
 {
 public:
-	uint8                                         Pad_2181[0x50];                                    // 0x0000(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21C5[0x50];                                    // 0x0000(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLevelSequenceObjectReferenceMap) == 0x000008, "Wrong alignment on FLevelSequenceObjectReferenceMap");
 static_assert(sizeof(FLevelSequenceObjectReferenceMap) == 0x000050, "Wrong size on FLevelSequenceObjectReferenceMap");
@@ -97,7 +97,7 @@ static_assert(sizeof(FLevelSequenceObjectReferenceMap) == 0x000050, "Wrong size 
 struct FBoundActorProxy final
 {
 public:
-	uint8                                         Pad_2182[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21C6[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FBoundActorProxy) == 0x000001, "Wrong alignment on FBoundActorProxy");
 static_assert(sizeof(FBoundActorProxy) == 0x000001, "Wrong size on FBoundActorProxy");
@@ -137,7 +137,7 @@ struct FLevelSequenceObject final
 {
 public:
 	TLazyObjectPtr<class UObject>                 ObjectOrOwner;                                     // 0x0000(0x001C)(IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2183[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21C7[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ComponentName;                                     // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TWeakObjectPtr<class UObject>                 CachedComponent;                                   // 0x0030(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
@@ -152,7 +152,7 @@ static_assert(offsetof(FLevelSequenceObject, CachedComponent) == 0x000030, "Memb
 struct FLevelSequenceSnapshotSettings final
 {
 public:
-	uint8                                         Pad_2184[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21C8[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLevelSequenceSnapshotSettings) == 0x000001, "Wrong alignment on FLevelSequenceSnapshotSettings");
 static_assert(sizeof(FLevelSequenceSnapshotSettings) == 0x000001, "Wrong size on FLevelSequenceSnapshotSettings");
@@ -172,7 +172,7 @@ public:
 	TSoftObjectPtr<class UCameraComponent>        CameraComponent;                                   // 0x0070(0x0030)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, EditConst, InstancedReference, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ULevelSequence*                         ActiveShot;                                        // 0x00A0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMovieSceneSequenceID                  ShotID;                                            // 0x00A8(0x0004)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2185[0x4];                                     // 0x00AC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21C9[0x4];                                     // 0x00AC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLevelSequencePlayerSnapshot) == 0x000008, "Wrong alignment on FLevelSequencePlayerSnapshot");
 static_assert(sizeof(FLevelSequencePlayerSnapshot) == 0x0000B0, "Wrong size on FLevelSequencePlayerSnapshot");

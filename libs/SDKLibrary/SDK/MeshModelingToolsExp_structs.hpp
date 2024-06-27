@@ -944,7 +944,7 @@ public:
 	class UStaticMesh*                            SourceMesh;                                        // 0x0000(0x0008)(Edit, ZeroConstructor, EditConst, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UTexture2D*                             SourceTexture;                                     // 0x0008(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         SourceTextureUVLayer;                              // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_195B[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1950[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FBakeMultiMeshDetailProperties) == 0x000008, "Wrong alignment on FBakeMultiMeshDetailProperties");
 static_assert(sizeof(FBakeMultiMeshDetailProperties) == 0x000018, "Wrong size on FBakeMultiMeshDetailProperties");
@@ -984,7 +984,7 @@ struct FPhysicsSphereData final
 {
 public:
 	float                                         Radius;                                            // 0x0000(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_195C[0xC];                                     // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1951[0xC];                                     // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Transform;                                         // 0x0010(0x0060)(Edit, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FKShapeElem                            Element;                                           // 0x0070(0x0030)(Edit, EditConst, NativeAccessSpecifierPublic)
 };
@@ -1000,7 +1000,7 @@ struct FPhysicsBoxData final
 {
 public:
 	struct FVector                                Dimensions;                                        // 0x0000(0x0018)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_195D[0x8];                                     // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1952[0x8];                                     // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Transform;                                         // 0x0020(0x0060)(Edit, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FKShapeElem                            Element;                                           // 0x0080(0x0030)(Edit, EditConst, NativeAccessSpecifierPublic)
 };
@@ -1017,7 +1017,7 @@ struct FPhysicsCapsuleData final
 public:
 	float                                         Radius;                                            // 0x0000(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Length;                                            // 0x0004(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_195E[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1953[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Transform;                                         // 0x0010(0x0060)(Edit, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FKShapeElem                            Element;                                           // 0x0070(0x0030)(Edit, EditConst, NativeAccessSpecifierPublic)
 };
@@ -1049,10 +1049,10 @@ struct FBrushToolRadius final
 {
 public:
 	EBrushToolSizeType                            SizeType;                                          // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_195F[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1954[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         AdaptiveSize;                                      // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         WorldRadius;                                       // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1960[0x8];                                     // 0x000C(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1955[0x8];                                     // 0x000C(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FBrushToolRadius) == 0x000004, "Wrong alignment on FBrushToolRadius");
 static_assert(sizeof(FBrushToolRadius) == 0x000014, "Wrong size on FBrushToolRadius");

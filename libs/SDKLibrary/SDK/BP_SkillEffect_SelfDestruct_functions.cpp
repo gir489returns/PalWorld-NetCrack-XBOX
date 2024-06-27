@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function BP_SkillEffect_SelfDestruct.BP_SkillEffect_SelfDestruct_C.ExecuteUbergraph_BP_SkillEffect_SelfDestruct
-// (Final, UbergraphFunction, HasDefaults)
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

@@ -31,17 +31,17 @@ public:
 	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalIndividualCharacterHandle*          CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_369A[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23F8[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterHandle*          CallFunc_Array_Get_Item_1;                         // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_369B[0x2];                                     // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23F9[0x2];                                     // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(const struct FPalInstanceID& ID)> K2Node_CreateDelegate_OutputDelegate;              // 0x0048(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_369C[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23FA[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalCharacterManager*                   CallFunc_GetCharacterManager_ReturnValue;          // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_PalRandomIncidentNPCSpawner_C_Despawn_Characters) == 0x000008, "Wrong alignment on BP_PalRandomIncidentNPCSpawner_C_Despawn_Characters");
@@ -70,7 +70,7 @@ struct BP_PalRandomIncidentNPCSpawner_C_ExecuteUbergraph_BP_PalRandomIncidentNPC
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   K2Node_Event_RowName_1;                            // 0x0004(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_369D[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23FB[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalRandomIncidentSpawnMonsterData     K2Node_Event_SpawnData_1;                          // 0x0010(0x0048)(ConstParm)
 	int32                                         K2Node_Event_SpawnPointIndex_1;                    // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Event_SpawnPointCount_1;                    // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -134,11 +134,11 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_369E[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23FC[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterHandle*          CallFunc_Array_Get_Item;                           // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_369F[0x3];                                     // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23FD[0x3];                                     // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalInstanceID                         CallFunc_GetIndividualID_ReturnValue;              // 0x0058(0x0030)(HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_PalInstanceIDPalInstanceID_ReturnValue; // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -186,16 +186,16 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36A0[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23FE[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UPalIndividualCharacterHandle*>  CallFunc_Map_Keys_Keys;                            // 0x0048(0x0010)(ReferenceParm)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36A1[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23FF[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterHandle*          CallFunc_Array_Get_Item;                           // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36A2[0x3];                                     // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2400[0x3];                                     // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   CallFunc_Map_Find_Value;                           // 0x006C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36A3[0x3];                                     // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2401[0x3];                                     // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalInstanceID                         CallFunc_GetIndividualID_ReturnValue;              // 0x0078(0x0030)(HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_PalInstanceIDPalInstanceID_ReturnValue; // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -226,7 +226,7 @@ public:
 	class UPalIndividualCharacterHandle*          CallFunc_FindIndividualHandle_Handle;              // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FPalRandomIncidentSpawnNPCData         CallFunc_Map_Find_Value;                           // 0x0048(0x0068)()
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36A4[0x7];                                     // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2402[0x7];                                     // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalRandomIncidentSpawnMonsterData     CallFunc_Map_Find_Value_1;                         // 0x00B8(0x0048)()
 	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -248,10 +248,10 @@ struct BP_PalRandomIncidentNPCSpawner_C_GetGroupNo final
 public:
 	class UPalIndividualCharacterHandle*          IndividualHandle;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         GroupNo;                                           // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36A5[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2403[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalRandomIncidentSpawnNPCData         CallFunc_Map_Find_Value;                           // 0x0010(0x0068)()
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36A6[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2404[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalRandomIncidentSpawnMonsterData     CallFunc_Map_Find_Value_1;                         // 0x0080(0x0048)()
 	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -272,17 +272,17 @@ public:
 	class APalCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalIndividualCharacterHandle*          Handle;                                            // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36A7[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2405[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36A8[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2406[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalIndividualCharacterHandle*          CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36A9[0x6];                                     // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2407[0x6];                                     // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -315,10 +315,10 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalIndividualCharacterHandle*          CallFunc_Array_Get_Item;                           // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36AA[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2408[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36AB[0x3];                                     // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2409[0x3];                                     // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_PalRandomIncidentNPCSpawner_C_GetSpawnedCharacters) == 0x000008, "Wrong alignment on BP_PalRandomIncidentNPCSpawner_C_GetSpawnedCharacters");
@@ -342,7 +342,7 @@ struct BP_PalRandomIncidentNPCSpawner_C_GetSpawnedLocation final
 public:
 	class UPalIndividualCharacterHandle*          Handle;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          Found;                                             // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36AC[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_240A[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Param_SpawnedLocation;                             // 0x0010(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Map_Find_Value;                           // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -364,7 +364,7 @@ public:
 	struct FF_NPC_PathWalkArray                   WalkPathList;                                      // 0x0008(0x0010)(Parm, OutParm, HasGetValueTypeHash)
 	class FName                                   Name_None;                                         // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36AD[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_240B[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FF_NPC_PathWalkArray                   CallFunc_Map_Find_Value;                           // 0x0028(0x0010)(HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -395,15 +395,15 @@ struct BP_PalRandomIncidentNPCSpawner_C_IsSpawnedCharacter final
 public:
 	const class UPalIndividualCharacterHandle*    Handle;                                            // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36AE[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_240C[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalInstanceID                         CallFunc_GetIndividualID_ReturnValue;              // 0x0010(0x0030)(HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36AF[0x4];                                     // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_240D[0x4];                                     // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterHandle*          CallFunc_Array_Get_Item;                           // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36B0[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_240E[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalInstanceID                         CallFunc_GetIndividualID_ReturnValue_1;            // 0x0060(0x0030)(HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_PalInstanceIDPalInstanceID_ReturnValue; // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -429,11 +429,11 @@ struct BP_PalRandomIncidentNPCSpawner_C_IsSquad final
 public:
 	struct FPalInstanceID                         ID;                                                // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          Param_IsSquad;                                     // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36B1[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_240F[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterHandle*          CallFunc_FindIndividualHandle_Handle;              // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FPalRandomIncidentSpawnNPCData         CallFunc_Map_Find_Value;                           // 0x0040(0x0068)()
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36B2[0x7];                                     // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2410[0x7];                                     // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalRandomIncidentSpawnMonsterData     CallFunc_Map_Find_Value_1;                         // 0x00B0(0x0048)()
 	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -478,7 +478,7 @@ public:
 	class UPalIndividualCharacterHandle*          TepHandle;                                         // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36B3[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2411[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterHandle*          CallFunc_GetHandleByCharacter_Handle;              // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_Map_Find_Value;                           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -492,6 +492,25 @@ static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_OnCharacterDestroyed, K2
 static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_OnCharacterDestroyed, CallFunc_GetHandleByCharacter_Handle) == 0x000020, "Member 'BP_PalRandomIncidentNPCSpawner_C_OnCharacterDestroyed::CallFunc_GetHandleByCharacter_Handle' has a wrong offset!");
 static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_OnCharacterDestroyed, CallFunc_Map_Find_Value) == 0x000028, "Member 'BP_PalRandomIncidentNPCSpawner_C_OnCharacterDestroyed::CallFunc_Map_Find_Value' has a wrong offset!");
 static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_OnCharacterDestroyed, CallFunc_Map_Find_ReturnValue) == 0x000030, "Member 'BP_PalRandomIncidentNPCSpawner_C_OnCharacterDestroyed::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+
+// Function BP_PalRandomIncidentNPCSpawner.BP_PalRandomIncidentNPCSpawner_C.OnOtomoSpawned
+// 0x0030 (0x0030 - 0x0000)
+struct BP_PalRandomIncidentNPCSpawner_C_OnOtomoSpawned final
+{
+public:
+	class AController*                            HolderController;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          OtomoPal;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class AActor* DestroyedActor)> K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterHandle*          CallFunc_GetIndividualCharacterHandleByActor_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_PalRandomIncidentNPCSpawner_C_OnOtomoSpawned) == 0x000008, "Wrong alignment on BP_PalRandomIncidentNPCSpawner_C_OnOtomoSpawned");
+static_assert(sizeof(BP_PalRandomIncidentNPCSpawner_C_OnOtomoSpawned) == 0x000030, "Wrong size on BP_PalRandomIncidentNPCSpawner_C_OnOtomoSpawned");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_OnOtomoSpawned, HolderController) == 0x000000, "Member 'BP_PalRandomIncidentNPCSpawner_C_OnOtomoSpawned::HolderController' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_OnOtomoSpawned, OtomoPal) == 0x000008, "Member 'BP_PalRandomIncidentNPCSpawner_C_OnOtomoSpawned::OtomoPal' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_OnOtomoSpawned, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'BP_PalRandomIncidentNPCSpawner_C_OnOtomoSpawned::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_OnOtomoSpawned, CallFunc_GetIndividualCharacterHandleByActor_ReturnValue) == 0x000020, "Member 'BP_PalRandomIncidentNPCSpawner_C_OnOtomoSpawned::CallFunc_GetIndividualCharacterHandleByActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_OnOtomoSpawned, CallFunc_Array_Add_ReturnValue) == 0x000028, "Member 'BP_PalRandomIncidentNPCSpawner_C_OnOtomoSpawned::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 
 // Function BP_PalRandomIncidentNPCSpawner.BP_PalRandomIncidentNPCSpawner_C.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -542,50 +561,56 @@ static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_RemoveHandle, CallFunc_M
 static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_RemoveHandle, CallFunc_Map_Contains_ReturnValue_4) == 0x00001B, "Member 'BP_PalRandomIncidentNPCSpawner_C_RemoveHandle::CallFunc_Map_Contains_ReturnValue_4' has a wrong offset!");
 
 // Function BP_PalRandomIncidentNPCSpawner.BP_PalRandomIncidentNPCSpawner_C.Setup Npc Controller
-// 0x0150 (0x0150 - 0x0000)
+// 0x0170 (0x0170 - 0x0000)
 struct BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller final
 {
 public:
 	class ABP_NPCAIController_C*                  NPCController;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          SpawnedChara;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FPalInstanceID                         ID;                                                // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	class UPalIndividualCharacterHandle*          CallFunc_FindIndividualHandle_Handle;              // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IBPI_GetPalAIBlackboard_C> CallFunc_GetMyBB_self_CastInput;                   // 0x0048(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UBP_PalAIBlackboard_Common_C*           CallFunc_GetMyBB_PalBrackboard;                    // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Map_Find_Value;                           // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36B4[0x3];                                     // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_Get_Path_Name_PathName;                   // 0x006C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36B5[0x4];                                     // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalIndividualCharacterHandle*          CallFunc_GetHandleByCharacter_Handle;              // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FF_NPC_PathWalkArray                   CallFunc_GetWalkPath_WalkPathList;                 // 0x0080(0x0010)(HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0090(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalRandomIncidentSpawnNPCData         CallFunc_Map_Find_Value_1;                         // 0x00A8(0x0068)()
-	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36B6[0x7];                                     // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Conv_Vector2DToVector_ReturnValue;        // 0x0118(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0130(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_VariableSet_WalkingRadius_BB_ImplicitCast;  // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class AController* HolderController, class APalCharacter* OtomoPal)> K2Node_CreateDelegate_OutputDelegate;              // 0x0040(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalOtomoHolderComponentBase*           CallFunc_GetComponentByClass_ReturnValue;          // 0x0050(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2412[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterHandle*          CallFunc_FindIndividualHandle_Handle;              // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Map_Find_Value;                           // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2413[0x7];                                     // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IBPI_GetPalAIBlackboard_C> CallFunc_GetMyBB_self_CastInput;                   // 0x0078(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UBP_PalAIBlackboard_Common_C*           CallFunc_GetMyBB_PalBrackboard;                    // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Get_Path_Name_PathName;                   // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FF_NPC_PathWalkArray                   CallFunc_GetWalkPath_WalkPathList;                 // 0x0098(0x0010)(HasGetValueTypeHash)
+	class UPalIndividualCharacterHandle*          CallFunc_GetHandleByCharacter_Handle;              // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x00B0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalRandomIncidentSpawnNPCData         CallFunc_Map_Find_Value_1;                         // 0x00C8(0x0068)()
+	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2414[0x7];                                     // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Conv_Vector2DToVector_ReturnValue;        // 0x0138(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0150(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_WalkingRadius_BB_ImplicitCast;  // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller) == 0x000008, "Wrong alignment on BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller");
-static_assert(sizeof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller) == 0x000150, "Wrong size on BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller");
+static_assert(sizeof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller) == 0x000170, "Wrong size on BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller");
 static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, NPCController) == 0x000000, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::NPCController' has a wrong offset!");
 static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, SpawnedChara) == 0x000008, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::SpawnedChara' has a wrong offset!");
 static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, ID) == 0x000010, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::ID' has a wrong offset!");
-static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_FindIndividualHandle_Handle) == 0x000040, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_FindIndividualHandle_Handle' has a wrong offset!");
-static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_GetMyBB_self_CastInput) == 0x000048, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_GetMyBB_self_CastInput' has a wrong offset!");
-static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_GetMyBB_PalBrackboard) == 0x000058, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_GetMyBB_PalBrackboard' has a wrong offset!");
-static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_Map_Find_Value) == 0x000060, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_Map_Find_ReturnValue) == 0x000068, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_Get_Path_Name_PathName) == 0x00006C, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_Get_Path_Name_PathName' has a wrong offset!");
-static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_GetHandleByCharacter_Handle) == 0x000078, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_GetHandleByCharacter_Handle' has a wrong offset!");
-static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_GetWalkPath_WalkPathList) == 0x000080, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_GetWalkPath_WalkPathList' has a wrong offset!");
-static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000090, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_Map_Find_Value_1) == 0x0000A8, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_Map_Find_Value_1' has a wrong offset!");
-static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_Map_Find_ReturnValue_1) == 0x000110, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_Conv_Vector2DToVector_ReturnValue) == 0x000118, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_Conv_Vector2DToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_Add_VectorVector_ReturnValue) == 0x000130, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, K2Node_VariableSet_WalkingRadius_BB_ImplicitCast) == 0x000148, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::K2Node_VariableSet_WalkingRadius_BB_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, K2Node_CreateDelegate_OutputDelegate) == 0x000040, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_GetComponentByClass_ReturnValue) == 0x000050, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_IsValid_ReturnValue) == 0x000058, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_FindIndividualHandle_Handle) == 0x000060, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_FindIndividualHandle_Handle' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_Map_Find_Value) == 0x000068, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_Map_Find_Value' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_Map_Find_ReturnValue) == 0x000070, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_GetMyBB_self_CastInput) == 0x000078, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_GetMyBB_self_CastInput' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_GetMyBB_PalBrackboard) == 0x000088, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_GetMyBB_PalBrackboard' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_Get_Path_Name_PathName) == 0x000090, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_Get_Path_Name_PathName' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_GetWalkPath_WalkPathList) == 0x000098, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_GetWalkPath_WalkPathList' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_GetHandleByCharacter_Handle) == 0x0000A8, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_GetHandleByCharacter_Handle' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000B0, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_Map_Find_Value_1) == 0x0000C8, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_Map_Find_Value_1' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_Map_Find_ReturnValue_1) == 0x000130, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_Conv_Vector2DToVector_ReturnValue) == 0x000138, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_Conv_Vector2DToVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, CallFunc_Add_VectorVector_ReturnValue) == 0x000150, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller, K2Node_VariableSet_WalkingRadius_BB_ImplicitCast) == 0x000168, "Member 'BP_PalRandomIncidentNPCSpawner_C_Setup_Npc_Controller::K2Node_VariableSet_WalkingRadius_BB_ImplicitCast' has a wrong offset!");
 
 // Function BP_PalRandomIncidentNPCSpawner.BP_PalRandomIncidentNPCSpawner_C.Setup Spawned Character
 // 0x0158 (0x0158 - 0x0000)
@@ -602,46 +627,46 @@ public:
 	class ABP_MonsterBase_C*                      K2Node_DynamicCast_AsBP_Monster_Base;              // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36B7[0x6];                                     // 0x0072(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2415[0x6];                                     // 0x0072(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ABP_NPCAIController_C*                  K2Node_DynamicCast_AsBP_NPCAIController;           // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36B8[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2416[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 CallFunc_GetDefaultAction_DefaultAction;           // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 CallFunc_GetDefaultAction_DefaultAIAction;         // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValidClass_ReturnValue_1;               // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36B9[0x7];                                     // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2417[0x7];                                     // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterHandle*          CallFunc_FindIndividualHandle_Handle;              // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_Map_Find_Value;                           // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36BA[0x7];                                     // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2418[0x7];                                     // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue_1;              // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ABP_MonsterAIController_Wild_C*         K2Node_DynamicCast_AsBP_Monster_AIController_Wild; // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36BB[0x7];                                     // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2419[0x7];                                     // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue_2;              // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ABP_NPCAIController_C*                  K2Node_DynamicCast_AsBP_NPCAIController_1;         // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36BC[0x7];                                     // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_241A[0x7];                                     // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalActionComponent*                    CallFunc_GetComponentByClass_ReturnValue;          // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36BD[0x7];                                     // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_241B[0x7];                                     // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalActionBase*                         CallFunc_PlayAction_ReturnValue;                   // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AController*                            CallFunc_GetController_ReturnValue_3;              // 0x0108(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalAIController*                       K2Node_DynamicCast_AsPal_AIController;             // 0x0110(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsSquad_IsSquad;                          // 0x0119(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36BE[0x6];                                     // 0x011A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_241C[0x6];                                     // 0x011A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterHandle*          CallFunc_FindIndividualHandle_Handle_1;            // 0x0120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36BF[0x7];                                     // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_241D[0x7];                                     // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0130(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36C0[0x7];                                     // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_241E[0x7];                                     // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue_4;              // 0x0140(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ABP_MonsterAIControllerBase_C*          K2Node_DynamicCast_AsBP_Monster_AIController_Base; // 0x0148(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36C1[0x3];                                     // 0x0151(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_241F[0x3];                                     // 0x0151(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetGroupNo_GroupNo;                       // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_PalRandomIncidentNPCSpawner_C_Setup_Spawned_Character) == 0x000008, "Wrong alignment on BP_PalRandomIncidentNPCSpawner_C_Setup_Spawned_Character");
@@ -698,7 +723,7 @@ public:
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FPalRandomIncidentSpawnMonsterData     CallFunc_Map_Find_Value;                           // 0x0030(0x0048)()
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36C2[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2420[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_Conv_Vector2DToVector_ReturnValue;        // 0x0080(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0098(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -787,7 +812,7 @@ static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Spawn_NPC, CallFunc_Spaw
 static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_Spawn_NPC, CallFunc_SpawnCharacter_RotZ_ImplicitCast) == 0x0000D8, "Member 'BP_PalRandomIncidentNPCSpawner_C_Spawn_NPC::CallFunc_SpawnCharacter_RotZ_ImplicitCast' has a wrong offset!");
 
 // Function BP_PalRandomIncidentNPCSpawner.BP_PalRandomIncidentNPCSpawner_C.SpawnCharacter
-// 0x0490 (0x0490 - 0x0000)
+// 0x04D0 (0x04D0 - 0x0000)
 struct BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter final
 {
 public:
@@ -796,7 +821,7 @@ public:
 	class FName                                   UniqueName;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   OtomoName;                                         // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Level;                                             // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36C3[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2421[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 AIController;                                      // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FName                                   PathName;                                          // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Location;                                          // 0x0038(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -811,7 +836,7 @@ public:
 	class FName                                   Name_None;                                         // 0x00A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x00B0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36C4[0x3];                                     // 0x00C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2422[0x3];                                     // 0x00C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakRotator_Roll;                        // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakRotator_Pitch;                       // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakRotator_Yaw;                         // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -821,26 +846,26 @@ public:
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0110(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_RandomSpawnLocationByRadiusLineTraceWithWorldLocation_OutLocation; // 0x0128(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_RandomSpawnLocationByRadiusLineTraceWithWorldLocation_ReturnValue; // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36C5[0x3];                                     // 0x0141(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2423[0x3];                                     // 0x0141(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(const struct FPalInstanceID& ID)> K2Node_CreateDelegate_OutputDelegate;              // 0x0144(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Max_ReturnValue;                          // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_NameName_ReturnValue_1;          // 0x015C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36C6[0x3];                                     // 0x015D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2424[0x3];                                     // 0x015D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalCharacterManager*                   CallFunc_GetCharacterManager_ReturnValue;          // 0x0160(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0168(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGuid                                  K2Node_MakeStruct_Guid;                            // 0x0170(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FNetworkActorSpawnParameters           K2Node_MakeStruct_NetworkActorSpawnParameters;     // 0x0180(0x0070)(NoDestructor)
-	struct FPalIndividualCharacterSaveParameter   CallFunc_GetInitializedCharacterSaveParemter_outParameter; // 0x01F0(0x0280)()
-	bool                                          CallFunc_GetInitializedCharacterSaveParemter_ReturnValue; // 0x0470(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36C7[0x7];                                     // 0x0471(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalIndividualCharacterHandle*          CallFunc_SpawnNewCharacter_ReturnValue;            // 0x0478(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0480(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomSpawnLocationByRadiusLineTraceWithWorldLocation_Radius_ImplicitCast; // 0x0488(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast;             // 0x048C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalIndividualCharacterSaveParameter   CallFunc_GetInitializedCharacterSaveParemter_outParameter; // 0x01F0(0x02C0)()
+	bool                                          CallFunc_GetInitializedCharacterSaveParemter_ReturnValue; // 0x04B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2425[0x7];                                     // 0x04B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterHandle*          CallFunc_SpawnNewCharacter_ReturnValue;            // 0x04B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x04C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RandomSpawnLocationByRadiusLineTraceWithWorldLocation_Radius_ImplicitCast; // 0x04C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast;             // 0x04CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter) == 0x000008, "Wrong alignment on BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter");
-static_assert(sizeof(BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter) == 0x000490, "Wrong size on BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter");
+static_assert(sizeof(BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter) == 0x0004D0, "Wrong size on BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter");
 static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter, RowName) == 0x000000, "Member 'BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter::RowName' has a wrong offset!");
 static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter, CharacterID) == 0x000008, "Member 'BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter::CharacterID' has a wrong offset!");
 static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter, UniqueName) == 0x000010, "Member 'BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter::UniqueName' has a wrong offset!");
@@ -878,11 +903,11 @@ static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter, CallFunc
 static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter, K2Node_MakeStruct_Guid) == 0x000170, "Member 'BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter::K2Node_MakeStruct_Guid' has a wrong offset!");
 static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter, K2Node_MakeStruct_NetworkActorSpawnParameters) == 0x000180, "Member 'BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter::K2Node_MakeStruct_NetworkActorSpawnParameters' has a wrong offset!");
 static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter, CallFunc_GetInitializedCharacterSaveParemter_outParameter) == 0x0001F0, "Member 'BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter::CallFunc_GetInitializedCharacterSaveParemter_outParameter' has a wrong offset!");
-static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter, CallFunc_GetInitializedCharacterSaveParemter_ReturnValue) == 0x000470, "Member 'BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter::CallFunc_GetInitializedCharacterSaveParemter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter, CallFunc_SpawnNewCharacter_ReturnValue) == 0x000478, "Member 'BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter::CallFunc_SpawnNewCharacter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter, CallFunc_Add_DoubleDouble_A_ImplicitCast) == 0x000480, "Member 'BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter::CallFunc_Add_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter, CallFunc_RandomSpawnLocationByRadiusLineTraceWithWorldLocation_Radius_ImplicitCast) == 0x000488, "Member 'BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter::CallFunc_RandomSpawnLocationByRadiusLineTraceWithWorldLocation_Radius_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter, CallFunc_MakeRotator_Yaw_ImplicitCast) == 0x00048C, "Member 'BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter::CallFunc_MakeRotator_Yaw_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter, CallFunc_GetInitializedCharacterSaveParemter_ReturnValue) == 0x0004B0, "Member 'BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter::CallFunc_GetInitializedCharacterSaveParemter_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter, CallFunc_SpawnNewCharacter_ReturnValue) == 0x0004B8, "Member 'BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter::CallFunc_SpawnNewCharacter_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter, CallFunc_Add_DoubleDouble_A_ImplicitCast) == 0x0004C0, "Member 'BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter::CallFunc_Add_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter, CallFunc_RandomSpawnLocationByRadiusLineTraceWithWorldLocation_Radius_ImplicitCast) == 0x0004C8, "Member 'BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter::CallFunc_RandomSpawnLocationByRadiusLineTraceWithWorldLocation_Radius_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter, CallFunc_MakeRotator_Yaw_ImplicitCast) == 0x0004CC, "Member 'BP_PalRandomIncidentNPCSpawner_C_SpawnCharacter::CallFunc_MakeRotator_Yaw_ImplicitCast' has a wrong offset!");
 
 // Function BP_PalRandomIncidentNPCSpawner.BP_PalRandomIncidentNPCSpawner_C.SpawnMonster
 // 0x0058 (0x0058 - 0x0000)

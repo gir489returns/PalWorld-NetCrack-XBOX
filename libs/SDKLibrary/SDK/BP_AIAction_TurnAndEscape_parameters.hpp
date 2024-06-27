@@ -17,6 +17,28 @@
 namespace SDK::Params
 {
 
+// Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.ActionResume
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_TurnAndEscape_C_ActionResume final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_TurnAndEscape_C_ActionResume) == 0x000008, "Wrong alignment on BP_AIAction_TurnAndEscape_C_ActionResume");
+static_assert(sizeof(BP_AIAction_TurnAndEscape_C_ActionResume) == 0x000008, "Wrong size on BP_AIAction_TurnAndEscape_C_ActionResume");
+static_assert(offsetof(BP_AIAction_TurnAndEscape_C_ActionResume, ControlledPawn) == 0x000000, "Member 'BP_AIAction_TurnAndEscape_C_ActionResume::ControlledPawn' has a wrong offset!");
+
+// Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.ActionStart
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_TurnAndEscape_C_ActionStart final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_TurnAndEscape_C_ActionStart) == 0x000008, "Wrong alignment on BP_AIAction_TurnAndEscape_C_ActionStart");
+static_assert(sizeof(BP_AIAction_TurnAndEscape_C_ActionStart) == 0x000008, "Wrong size on BP_AIAction_TurnAndEscape_C_ActionStart");
+static_assert(offsetof(BP_AIAction_TurnAndEscape_C_ActionStart, ControlledPawn) == 0x000000, "Member 'BP_AIAction_TurnAndEscape_C_ActionStart::ControlledPawn' has a wrong offset!");
+
 // Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.ActionTick
 // 0x0010 (0x0010 - 0x0000)
 struct BP_AIAction_TurnAndEscape_C_ActionTick final
@@ -36,19 +58,19 @@ struct BP_AIAction_TurnAndEscape_C_ExecuteUbergraph_BP_AIAction_TurnAndEscape fi
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F36[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4132[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AController*                            CallFunc_GetController_ReturnValue_1;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_1;                 // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F37[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4133[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  K2Node_Event_ControlledPawn_2;                     // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F38[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4134[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_InFanShap_ReturnValue;                    // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F39[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4135[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  K2Node_Event_ControlledPawn_1;                     // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AController*                            CallFunc_GetController_ReturnValue_2;              // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_2;                 // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -62,7 +84,7 @@ public:
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_4;                 // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalActionComponent*                    CallFunc_GetComponentByClass_ReturnValue_3;        // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ActionIsEmpty_ReturnValue;                // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F3A[0x7];                                     // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4136[0x7];                                     // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_BreakVector_X;                            // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector_Y;                            // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector_Z;                            // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -70,7 +92,7 @@ public:
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_5;                 // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalActionComponent*                    CallFunc_GetComponentByClass_ReturnValue_4;        // 0x00E0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ActionIsEmpty_ReturnValue_1;              // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F3B[0x7];                                     // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4137[0x7];                                     // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalAIActionDynamicParameter           K2Node_MakeStruct_PalAIActionDynamicParameter;     // 0x00F0(0x0050)(NoDestructor)
 	class UPalAIActionBase*                       CallFunc_SetAIActionClassParameter_ReturnValue;    // 0x0140(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  K2Node_Event_ControlledPawn;                       // 0x0148(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -113,6 +135,17 @@ static_assert(offsetof(BP_AIAction_TurnAndEscape_C_ExecuteUbergraph_BP_AIAction_
 static_assert(offsetof(BP_AIAction_TurnAndEscape_C_ExecuteUbergraph_BP_AIAction_TurnAndEscape, K2Node_Event_ControlledPawn) == 0x000148, "Member 'BP_AIAction_TurnAndEscape_C_ExecuteUbergraph_BP_AIAction_TurnAndEscape::K2Node_Event_ControlledPawn' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_TurnAndEscape_C_ExecuteUbergraph_BP_AIAction_TurnAndEscape, CallFunc_Delay_Duration_ImplicitCast) == 0x000150, "Member 'BP_AIAction_TurnAndEscape_C_ExecuteUbergraph_BP_AIAction_TurnAndEscape::CallFunc_Delay_Duration_ImplicitCast' has a wrong offset!");
 
+// Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.OnSquadMemberDeadEvent
+// 0x0050 (0x0050 - 0x0000)
+struct BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent final
+{
+public:
+	struct FPalDeadInfo                           DeadInbfo;                                         // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+static_assert(alignof(BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent) == 0x000008, "Wrong alignment on BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent");
+static_assert(sizeof(BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent) == 0x000050, "Wrong size on BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent");
+static_assert(offsetof(BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent, DeadInbfo) == 0x000000, "Member 'BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent::DeadInbfo' has a wrong offset!");
+
 // Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.Setup
 // 0x0010 (0x0010 - 0x0000)
 struct BP_AIAction_TurnAndEscape_C_Setup final
@@ -125,39 +158,6 @@ static_assert(alignof(BP_AIAction_TurnAndEscape_C_Setup) == 0x000008, "Wrong ali
 static_assert(sizeof(BP_AIAction_TurnAndEscape_C_Setup) == 0x000010, "Wrong size on BP_AIAction_TurnAndEscape_C_Setup");
 static_assert(offsetof(BP_AIAction_TurnAndEscape_C_Setup, TargetActor) == 0x000000, "Member 'BP_AIAction_TurnAndEscape_C_Setup::TargetActor' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_TurnAndEscape_C_Setup, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'BP_AIAction_TurnAndEscape_C_Setup::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-
-// Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.ActionResume
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_TurnAndEscape_C_ActionResume final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_TurnAndEscape_C_ActionResume) == 0x000008, "Wrong alignment on BP_AIAction_TurnAndEscape_C_ActionResume");
-static_assert(sizeof(BP_AIAction_TurnAndEscape_C_ActionResume) == 0x000008, "Wrong size on BP_AIAction_TurnAndEscape_C_ActionResume");
-static_assert(offsetof(BP_AIAction_TurnAndEscape_C_ActionResume, ControlledPawn) == 0x000000, "Member 'BP_AIAction_TurnAndEscape_C_ActionResume::ControlledPawn' has a wrong offset!");
-
-// Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.ActionStart
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_TurnAndEscape_C_ActionStart final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_TurnAndEscape_C_ActionStart) == 0x000008, "Wrong alignment on BP_AIAction_TurnAndEscape_C_ActionStart");
-static_assert(sizeof(BP_AIAction_TurnAndEscape_C_ActionStart) == 0x000008, "Wrong size on BP_AIAction_TurnAndEscape_C_ActionStart");
-static_assert(offsetof(BP_AIAction_TurnAndEscape_C_ActionStart, ControlledPawn) == 0x000000, "Member 'BP_AIAction_TurnAndEscape_C_ActionStart::ControlledPawn' has a wrong offset!");
-
-// Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.OnSquadMemberDeadEvent
-// 0x0050 (0x0050 - 0x0000)
-struct BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent final
-{
-public:
-	struct FPalDeadInfo                           DeadInbfo;                                         // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-static_assert(alignof(BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent) == 0x000008, "Wrong alignment on BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent");
-static_assert(sizeof(BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent) == 0x000050, "Wrong size on BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent");
-static_assert(offsetof(BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent, DeadInbfo) == 0x000000, "Member 'BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent::DeadInbfo' has a wrong offset!");
 
 // Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.SoundEvent
 // 0x0018 (0x0018 - 0x0000)

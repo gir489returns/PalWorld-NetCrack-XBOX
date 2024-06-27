@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 
 
@@ -19,13 +19,13 @@ namespace SDK::Params
 {
 
 // Function WBP_PalCommonCharacterSlot.WBP_PalCommonCharacterSlot_C.ExecuteUbergraph_WBP_PalCommonCharacterSlot
-// 0x00E8 (0x00E8 - 0x0000)
+// 0x00F8 (0x00F8 - 0x0000)
 struct WBP_PalCommonCharacterSlot_C_ExecuteUbergraph_WBP_PalCommonCharacterSlot final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(double NowTimer)>              K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4704[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3843[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -41,9 +41,10 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_9;            // 0x00B8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_10;           // 0x00C8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool IsBoss, bool IsRare)>     K2Node_CreateDelegate_OutputDelegate_11;           // 0x00D8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(double NowTimer)>              K2Node_CreateDelegate_OutputDelegate_12;           // 0x00E8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_PalCommonCharacterSlot_C_ExecuteUbergraph_WBP_PalCommonCharacterSlot) == 0x000008, "Wrong alignment on WBP_PalCommonCharacterSlot_C_ExecuteUbergraph_WBP_PalCommonCharacterSlot");
-static_assert(sizeof(WBP_PalCommonCharacterSlot_C_ExecuteUbergraph_WBP_PalCommonCharacterSlot) == 0x0000E8, "Wrong size on WBP_PalCommonCharacterSlot_C_ExecuteUbergraph_WBP_PalCommonCharacterSlot");
+static_assert(sizeof(WBP_PalCommonCharacterSlot_C_ExecuteUbergraph_WBP_PalCommonCharacterSlot) == 0x0000F8, "Wrong size on WBP_PalCommonCharacterSlot_C_ExecuteUbergraph_WBP_PalCommonCharacterSlot");
 static_assert(offsetof(WBP_PalCommonCharacterSlot_C_ExecuteUbergraph_WBP_PalCommonCharacterSlot, EntryPoint) == 0x000000, "Member 'WBP_PalCommonCharacterSlot_C_ExecuteUbergraph_WBP_PalCommonCharacterSlot::EntryPoint' has a wrong offset!");
 static_assert(offsetof(WBP_PalCommonCharacterSlot_C_ExecuteUbergraph_WBP_PalCommonCharacterSlot, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_PalCommonCharacterSlot_C_ExecuteUbergraph_WBP_PalCommonCharacterSlot::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(WBP_PalCommonCharacterSlot_C_ExecuteUbergraph_WBP_PalCommonCharacterSlot, CallFunc_PlayAnimation_ReturnValue) == 0x000018, "Member 'WBP_PalCommonCharacterSlot_C_ExecuteUbergraph_WBP_PalCommonCharacterSlot::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
@@ -61,6 +62,7 @@ static_assert(offsetof(WBP_PalCommonCharacterSlot_C_ExecuteUbergraph_WBP_PalComm
 static_assert(offsetof(WBP_PalCommonCharacterSlot_C_ExecuteUbergraph_WBP_PalCommonCharacterSlot, K2Node_CreateDelegate_OutputDelegate_9) == 0x0000B8, "Member 'WBP_PalCommonCharacterSlot_C_ExecuteUbergraph_WBP_PalCommonCharacterSlot::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
 static_assert(offsetof(WBP_PalCommonCharacterSlot_C_ExecuteUbergraph_WBP_PalCommonCharacterSlot, K2Node_CreateDelegate_OutputDelegate_10) == 0x0000C8, "Member 'WBP_PalCommonCharacterSlot_C_ExecuteUbergraph_WBP_PalCommonCharacterSlot::K2Node_CreateDelegate_OutputDelegate_10' has a wrong offset!");
 static_assert(offsetof(WBP_PalCommonCharacterSlot_C_ExecuteUbergraph_WBP_PalCommonCharacterSlot, K2Node_CreateDelegate_OutputDelegate_11) == 0x0000D8, "Member 'WBP_PalCommonCharacterSlot_C_ExecuteUbergraph_WBP_PalCommonCharacterSlot::K2Node_CreateDelegate_OutputDelegate_11' has a wrong offset!");
+static_assert(offsetof(WBP_PalCommonCharacterSlot_C_ExecuteUbergraph_WBP_PalCommonCharacterSlot, K2Node_CreateDelegate_OutputDelegate_12) == 0x0000E8, "Member 'WBP_PalCommonCharacterSlot_C_ExecuteUbergraph_WBP_PalCommonCharacterSlot::K2Node_CreateDelegate_OutputDelegate_12' has a wrong offset!");
 
 // Function WBP_PalCommonCharacterSlot.WBP_PalCommonCharacterSlot_C.On Set Rarity Binded
 // 0x000C (0x000C - 0x0000)
@@ -117,6 +119,40 @@ static_assert(alignof(WBP_PalCommonCharacterSlot_C_OnNotifyWorkDetail_Binded) ==
 static_assert(sizeof(WBP_PalCommonCharacterSlot_C_OnNotifyWorkDetail_Binded) == 0x000001, "Wrong size on WBP_PalCommonCharacterSlot_C_OnNotifyWorkDetail_Binded");
 static_assert(offsetof(WBP_PalCommonCharacterSlot_C_OnNotifyWorkDetail_Binded, IsWorking) == 0x000000, "Member 'WBP_PalCommonCharacterSlot_C_OnNotifyWorkDetail_Binded::IsWorking' has a wrong offset!");
 
+// Function WBP_PalCommonCharacterSlot.WBP_PalCommonCharacterSlot_C.OnUpdateFavorite_Binded
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded final
+{
+public:
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3844[0x5];                                     // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterSlot*            CallFunc_GetIndividualSlot_Slot;                   // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3845[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterHandle*          CallFunc_GetHandle_ReturnValue;                    // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3846[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsFavoritePal_ReturnValue;                // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded) == 0x000008, "Wrong alignment on WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded");
+static_assert(sizeof(WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded) == 0x000038, "Wrong size on WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded");
+static_assert(offsetof(WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded, Temp_byte_Variable) == 0x000000, "Member 'WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded, Temp_byte_Variable_1) == 0x000001, "Member 'WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded, Temp_bool_Variable) == 0x000002, "Member 'WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded, CallFunc_GetIndividualSlot_Slot) == 0x000008, "Member 'WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded::CallFunc_GetIndividualSlot_Slot' has a wrong offset!");
+static_assert(offsetof(WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded, CallFunc_GetHandle_ReturnValue) == 0x000018, "Member 'WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded::CallFunc_GetHandle_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded, CallFunc_IsValid_ReturnValue_1) == 0x000020, "Member 'WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded, CallFunc_TryGetIndividualParameter_ReturnValue) == 0x000028, "Member 'WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded::CallFunc_TryGetIndividualParameter_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded, CallFunc_IsValid_ReturnValue_2) == 0x000030, "Member 'WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded, CallFunc_IsFavoritePal_ReturnValue) == 0x000031, "Member 'WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded::CallFunc_IsFavoritePal_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded, K2Node_Select_Default) == 0x000032, "Member 'WBP_PalCommonCharacterSlot_C_OnUpdateFavorite_Binded::K2Node_Select_Default' has a wrong offset!");
+
 // Function WBP_PalCommonCharacterSlot.WBP_PalCommonCharacterSlot_C.OnUpdateHP_Binded
 // 0x00C8 (0x00C8 - 0x0000)
 struct WBP_PalCommonCharacterSlot_C_OnUpdateHP_Binded final
@@ -131,10 +167,10 @@ public:
 	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue_1;       // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue_2;       // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4705[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3847[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4706[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3848[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0048(0x0050)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0098(0x0010)(ReferenceParm)
@@ -169,11 +205,11 @@ struct WBP_PalCommonCharacterSlot_C_OnUpdateReviveTimer_Binded final
 public:
 	double                                        NowTimer;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_DoubleDouble_ReturnValue;      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4707[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3849[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_ConvertReviveTimerToUIDisplayRemainReviveTime_ReturnValue; // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_DoubleDouble_ReturnValue_1;    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4708[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_384A[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_DoubleToText_ReturnValue;            // 0x0020(0x0018)()
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0038(0x0050)(HasGetValueTypeHash)
 	double                                        CallFunc_Percent_FloatFloat_ReturnValue;           // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -182,7 +218,7 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00F8(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0108(0x0018)()
 	float                                         CallFunc_ConvertReviveTimerToUIDisplayRemainReviveTime_ReviveTimer_ImplicitCast; // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4709[0x4];                                     // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_384B[0x4];                                     // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Percent_FloatFloat_A_ImplicitCast;        // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_EqualEqual_DoubleDouble_A_ImplicitCast;   // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Divide_DoubleDouble_A_ImplicitCast;       // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -214,10 +250,10 @@ public:
 	class UPalIndividualCharacterSlot*            Param_TargetSlot;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalIndividualCharacterHandle*          CallFunc_GetHandle_ReturnValue;                    // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_470A[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_384C[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_470B[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_384D[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFixedPoint64                          CallFunc_GetHP_ReturnValue;                        // 0x0028(0x0008)(NoDestructor)
 	int64                                         CallFunc_Convert_FixedPoint64ToInt64_ReturnValue;  // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFixedPoint64                          CallFunc_GetMaxHP_withBuff_ReturnValue;            // 0x0038(0x0008)(NoDestructor)

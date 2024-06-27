@@ -17,48 +17,6 @@
 namespace SDK
 {
 
-// Function BP_AIAction_FriendlyLookat.BP_AIAction_FriendlyLookat_C.ActionTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_FriendlyLookat_C::ActionTick(class APawn* ControlledPawn, float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_FriendlyLookat_C", "ActionTick");
-
-	Params::BP_AIAction_FriendlyLookat_C_ActionTick Parms{};
-
-	Parms.ControlledPawn = ControlledPawn;
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_AIAction_FriendlyLookat.BP_AIAction_FriendlyLookat_C.ExecuteUbergraph_BP_AIAction_FriendlyLookat
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_FriendlyLookat_C::ExecuteUbergraph_BP_AIAction_FriendlyLookat(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_FriendlyLookat_C", "ExecuteUbergraph_BP_AIAction_FriendlyLookat");
-
-	Params::BP_AIAction_FriendlyLookat_C_ExecuteUbergraph_BP_AIAction_FriendlyLookat Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_AIAction_FriendlyLookat.BP_AIAction_FriendlyLookat_C.ActionFinished
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -96,6 +54,48 @@ void UBP_AIAction_FriendlyLookat_C::ActionStart(class APawn* ControlledPawn)
 	Params::BP_AIAction_FriendlyLookat_C_ActionStart Parms{};
 
 	Parms.ControlledPawn = ControlledPawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AIAction_FriendlyLookat.BP_AIAction_FriendlyLookat_C.ActionTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_FriendlyLookat_C::ActionTick(class APawn* ControlledPawn, float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_FriendlyLookat_C", "ActionTick");
+
+	Params::BP_AIAction_FriendlyLookat_C_ActionTick Parms{};
+
+	Parms.ControlledPawn = ControlledPawn;
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AIAction_FriendlyLookat.BP_AIAction_FriendlyLookat_C.ExecuteUbergraph_BP_AIAction_FriendlyLookat
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_FriendlyLookat_C::ExecuteUbergraph_BP_AIAction_FriendlyLookat(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_FriendlyLookat_C", "ExecuteUbergraph_BP_AIAction_FriendlyLookat");
+
+	Params::BP_AIAction_FriendlyLookat_C_ExecuteUbergraph_BP_AIAction_FriendlyLookat Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

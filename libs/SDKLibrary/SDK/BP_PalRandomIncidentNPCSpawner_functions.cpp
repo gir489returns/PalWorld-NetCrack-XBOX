@@ -436,6 +436,28 @@ void ABP_PalRandomIncidentNPCSpawner_C::OnCharacterDestroyed(class AActor* Destr
 }
 
 
+// Function BP_PalRandomIncidentNPCSpawner.BP_PalRandomIncidentNPCSpawner_C.OnOtomoSpawned
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AController*                      HolderController                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APalCharacter*                    OtomoPal                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalRandomIncidentNPCSpawner_C::OnOtomoSpawned(class AController* HolderController, class APalCharacter* OtomoPal)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalRandomIncidentNPCSpawner_C", "OnOtomoSpawned");
+
+	Params::BP_PalRandomIncidentNPCSpawner_C_OnOtomoSpawned Parms{};
+
+	Parms.HolderController = HolderController;
+	Parms.OtomoPal = OtomoPal;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_PalRandomIncidentNPCSpawner.BP_PalRandomIncidentNPCSpawner_C.ReceiveEndPlay
 // (Event, Protected, BlueprintEvent)
 // Parameters:

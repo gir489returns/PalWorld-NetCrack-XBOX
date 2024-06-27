@@ -215,5 +215,25 @@ void UWBP_CharaCre_BodyTypeButton_C::Setup(class FName BindPresetName, int32 But
 	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function WBP_CharaCre_BodyTypeButton.WBP_CharaCre_BodyTypeButton_C.SetupAsVoice
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   ButtonIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CharaCre_BodyTypeButton_C::SetupAsVoice(int32 ButtonIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CharaCre_BodyTypeButton_C", "SetupAsVoice");
+
+	Params::WBP_CharaCre_BodyTypeButton_C_SetupAsVoice Parms{};
+
+	Parms.ButtonIndex = ButtonIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
 }
 

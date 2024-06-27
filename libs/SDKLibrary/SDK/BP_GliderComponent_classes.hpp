@@ -18,17 +18,17 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_GliderComponent.BP_GliderComponent_C
-// 0x0038 (0x0150 - 0x0118)
+// 0x0038 (0x0158 - 0x0120)
 class UBP_GliderComponent_C final : public UPalGliderComponent
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0118(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPalCharacterMovementComponent*         CharacterMovement;                                 // 0x0120(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      GlidingEffect;                                     // 0x0128(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class APalGliderObject*                       CurrentGliderObject;                               // 0x0130(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class FName                                   GliderDisableFlag;                                 // 0x0138(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 CurrentGliderActorClass;                           // 0x0140(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           TimerHandle;                                       // 0x0148(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0120(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPalCharacterMovementComponent*         CharacterMovement;                                 // 0x0128(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      GlidingEffect;                                     // 0x0130(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class APalGliderObject*                       CurrentGliderObject;                               // 0x0138(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class FName                                   GliderDisableFlag;                                 // 0x0140(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 CurrentGliderActorClass;                           // 0x0148(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           TimerHandle;                                       // 0x0150(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void CheckReturnSpawnedOtomo();
@@ -55,14 +55,14 @@ public:
 	}
 };
 static_assert(alignof(UBP_GliderComponent_C) == 0x000008, "Wrong alignment on UBP_GliderComponent_C");
-static_assert(sizeof(UBP_GliderComponent_C) == 0x000150, "Wrong size on UBP_GliderComponent_C");
-static_assert(offsetof(UBP_GliderComponent_C, UberGraphFrame) == 0x000118, "Member 'UBP_GliderComponent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_GliderComponent_C, CharacterMovement) == 0x000120, "Member 'UBP_GliderComponent_C::CharacterMovement' has a wrong offset!");
-static_assert(offsetof(UBP_GliderComponent_C, GlidingEffect) == 0x000128, "Member 'UBP_GliderComponent_C::GlidingEffect' has a wrong offset!");
-static_assert(offsetof(UBP_GliderComponent_C, CurrentGliderObject) == 0x000130, "Member 'UBP_GliderComponent_C::CurrentGliderObject' has a wrong offset!");
-static_assert(offsetof(UBP_GliderComponent_C, GliderDisableFlag) == 0x000138, "Member 'UBP_GliderComponent_C::GliderDisableFlag' has a wrong offset!");
-static_assert(offsetof(UBP_GliderComponent_C, CurrentGliderActorClass) == 0x000140, "Member 'UBP_GliderComponent_C::CurrentGliderActorClass' has a wrong offset!");
-static_assert(offsetof(UBP_GliderComponent_C, TimerHandle) == 0x000148, "Member 'UBP_GliderComponent_C::TimerHandle' has a wrong offset!");
+static_assert(sizeof(UBP_GliderComponent_C) == 0x000158, "Wrong size on UBP_GliderComponent_C");
+static_assert(offsetof(UBP_GliderComponent_C, UberGraphFrame) == 0x000120, "Member 'UBP_GliderComponent_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UBP_GliderComponent_C, CharacterMovement) == 0x000128, "Member 'UBP_GliderComponent_C::CharacterMovement' has a wrong offset!");
+static_assert(offsetof(UBP_GliderComponent_C, GlidingEffect) == 0x000130, "Member 'UBP_GliderComponent_C::GlidingEffect' has a wrong offset!");
+static_assert(offsetof(UBP_GliderComponent_C, CurrentGliderObject) == 0x000138, "Member 'UBP_GliderComponent_C::CurrentGliderObject' has a wrong offset!");
+static_assert(offsetof(UBP_GliderComponent_C, GliderDisableFlag) == 0x000140, "Member 'UBP_GliderComponent_C::GliderDisableFlag' has a wrong offset!");
+static_assert(offsetof(UBP_GliderComponent_C, CurrentGliderActorClass) == 0x000148, "Member 'UBP_GliderComponent_C::CurrentGliderActorClass' has a wrong offset!");
+static_assert(offsetof(UBP_GliderComponent_C, TimerHandle) == 0x000150, "Member 'UBP_GliderComponent_C::TimerHandle' has a wrong offset!");
 
 }
 

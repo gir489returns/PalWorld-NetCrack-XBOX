@@ -17,51 +17,27 @@
 namespace SDK
 {
 
-// Function AIModule.PawnAction.CreateActionInstance
-// (Final, Native, Static, Public, BlueprintCallable)
+// Function AIModule.PathFollowingComponent.OnActorBump
+// (Native, Public, HasOutParams, HasDefaults)
 // Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TSubclassOf<class UPawnAction>          ActionClass                                            (Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UPawnAction*                      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           SelfActor                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           OtherActor                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector                          NormalImpulse                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FHitResult                       Hit                                                    (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 
-class UPawnAction* UPawnAction::CreateActionInstance(class UObject* WorldContextObject, TSubclassOf<class UPawnAction> ActionClass)
+void UPathFollowingComponent::OnActorBump(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("PawnAction", "CreateActionInstance");
+		Func = Class->GetFunction("PathFollowingComponent", "OnActorBump");
 
-	Params::PawnAction_CreateActionInstance Parms{};
+	Params::PathFollowingComponent_OnActorBump Parms{};
 
-	Parms.WorldContextObject = WorldContextObject;
-	Parms.ActionClass = ActionClass;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AIModule.PawnAction.Finish
-// (Native, Protected, BlueprintCallable)
-// Parameters:
-// EPawnActionResult                       WithResult                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UPawnAction::Finish(EPawnActionResult WithResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PawnAction", "Finish");
-
-	Params::PawnAction_Finish Parms{};
-
-	Parms.WithResult = WithResult;
+	Parms.SelfActor = SelfActor;
+	Parms.OtherActor = OtherActor;
+	Parms.NormalImpulse = std::move(NormalImpulse);
+	Parms.Hit = std::move(Hit);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -72,19 +48,44 @@ void UPawnAction::Finish(EPawnActionResult WithResult)
 }
 
 
-// Function AIModule.PawnAction.GetActionPriority
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Function AIModule.PathFollowingComponent.OnNavDataRegistered
+// (Final, Native, Protected)
 // Parameters:
-// EAIRequestPriority                      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class ANavigationData*                  NavData                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-EAIRequestPriority UPawnAction::GetActionPriority()
+void UPathFollowingComponent::OnNavDataRegistered(class ANavigationData* NavData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PawnAction", "GetActionPriority");
+		Func = Class->GetFunction("PathFollowingComponent", "OnNavDataRegistered");
 
-	Params::PawnAction_GetActionPriority Parms{};
+	Params::PathFollowingComponent_OnNavDataRegistered Parms{};
+
+	Parms.NavData = NavData;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AIModule.PathFollowingComponent.GetPathActionType
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EPathFollowingAction                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EPathFollowingAction UPathFollowingComponent::GetPathActionType() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PathFollowingComponent", "GetPathActionType");
+
+	Params::PathFollowingComponent_GetPathActionType Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -97,785 +98,28 @@ EAIRequestPriority UPawnAction::GetActionPriority()
 }
 
 
-// Function AIModule.BTFunctionLibrary.ClearBlackboardValue
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Function AIModule.PathFollowingComponent.GetPathDestination
+// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UBTFunctionLibrary::ClearBlackboardValue(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "ClearBlackboardValue");
-
-	Params::BTFunctionLibrary_ClearBlackboardValue Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.Key = std::move(Key);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AIModule.BTFunctionLibrary.ClearBlackboardValueAsVector
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UBTFunctionLibrary::ClearBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "ClearBlackboardValueAsVector");
-
-	Params::BTFunctionLibrary_ClearBlackboardValueAsVector Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.Key = std::move(Key);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsActor
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// class AActor*                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class AActor* UBTFunctionLibrary::GetBlackboardValueAsActor(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsActor");
-
-	Params::BTFunctionLibrary_GetBlackboardValueAsActor Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.Key = std::move(Key);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsBool
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UBTFunctionLibrary::GetBlackboardValueAsBool(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsBool");
-
-	Params::BTFunctionLibrary_GetBlackboardValueAsBool Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.Key = std::move(Key);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsClass
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// class UClass*                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UClass* UBTFunctionLibrary::GetBlackboardValueAsClass(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsClass");
-
-	Params::BTFunctionLibrary_GetBlackboardValueAsClass Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.Key = std::move(Key);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsEnum
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// uint8                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-uint8 UBTFunctionLibrary::GetBlackboardValueAsEnum(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsEnum");
-
-	Params::BTFunctionLibrary_GetBlackboardValueAsEnum Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.Key = std::move(Key);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsFloat
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UBTFunctionLibrary::GetBlackboardValueAsFloat(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsFloat");
-
-	Params::BTFunctionLibrary_GetBlackboardValueAsFloat Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.Key = std::move(Key);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsInt
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UBTFunctionLibrary::GetBlackboardValueAsInt(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsInt");
-
-	Params::BTFunctionLibrary_GetBlackboardValueAsInt Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.Key = std::move(Key);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsName
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class FName UBTFunctionLibrary::GetBlackboardValueAsName(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsName");
-
-	Params::BTFunctionLibrary_GetBlackboardValueAsName Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.Key = std::move(Key);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsObject
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UObject* UBTFunctionLibrary::GetBlackboardValueAsObject(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsObject");
-
-	Params::BTFunctionLibrary_GetBlackboardValueAsObject Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.Key = std::move(Key);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsRotator
-// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// struct FRotator                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
-struct FRotator UBTFunctionLibrary::GetBlackboardValueAsRotator(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsRotator");
-
-	Params::BTFunctionLibrary_GetBlackboardValueAsRotator Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.Key = std::move(Key);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsString
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class FString UBTFunctionLibrary::GetBlackboardValueAsString(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsString");
-
-	Params::BTFunctionLibrary_GetBlackboardValueAsString Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.Key = std::move(Key);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsVector
-// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 // struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-struct FVector UBTFunctionLibrary::GetBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+struct FVector UPathFollowingComponent::GetPathDestination() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsVector");
+		Func = Class->GetFunction("PathFollowingComponent", "GetPathDestination");
 
-	Params::BTFunctionLibrary_GetBlackboardValueAsVector Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.Key = std::move(Key);
+	Params::PathFollowingComponent_GetPathDestination Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
-}
-
-
-// Function AIModule.BTFunctionLibrary.GetOwnerComponent
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UBehaviorTreeComponent*           ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UBehaviorTreeComponent* UBTFunctionLibrary::GetOwnerComponent(class UBTNode* NodeOwner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetOwnerComponent");
-
-	Params::BTFunctionLibrary_GetOwnerComponent Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AIModule.BTFunctionLibrary.GetOwnersBlackboard
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UBlackboardComponent*             ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UBlackboardComponent* UBTFunctionLibrary::GetOwnersBlackboard(class UBTNode* NodeOwner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetOwnersBlackboard");
-
-	Params::BTFunctionLibrary_GetOwnersBlackboard Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsBool
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// bool                                    Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTFunctionLibrary::SetBlackboardValueAsBool(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, bool Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsBool");
-
-	Params::BTFunctionLibrary_SetBlackboardValueAsBool Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.Key = std::move(Key);
-	Parms.Value = Value;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsClass
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// class UClass*                           Value                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTFunctionLibrary::SetBlackboardValueAsClass(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, class UClass* Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsClass");
-
-	Params::BTFunctionLibrary_SetBlackboardValueAsClass Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.Key = std::move(Key);
-	Parms.Value = Value;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsEnum
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// uint8                                   Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTFunctionLibrary::SetBlackboardValueAsEnum(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, uint8 Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsEnum");
-
-	Params::BTFunctionLibrary_SetBlackboardValueAsEnum Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.Key = std::move(Key);
-	Parms.Value = Value;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsFloat
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// float                                   Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTFunctionLibrary::SetBlackboardValueAsFloat(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, float Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsFloat");
-
-	Params::BTFunctionLibrary_SetBlackboardValueAsFloat Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.Key = std::move(Key);
-	Parms.Value = Value;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsInt
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// int32                                   Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTFunctionLibrary::SetBlackboardValueAsInt(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, int32 Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsInt");
-
-	Params::BTFunctionLibrary_SetBlackboardValueAsInt Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.Key = std::move(Key);
-	Parms.Value = Value;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsName
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// class FName                             Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTFunctionLibrary::SetBlackboardValueAsName(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, class FName Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsName");
-
-	Params::BTFunctionLibrary_SetBlackboardValueAsName Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.Key = std::move(Key);
-	Parms.Value = Value;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsObject
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// class UObject*                          Value                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTFunctionLibrary::SetBlackboardValueAsObject(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, class UObject* Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsObject");
-
-	Params::BTFunctionLibrary_SetBlackboardValueAsObject Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.Key = std::move(Key);
-	Parms.Value = Value;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsRotator
-// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// struct FRotator                         Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
-void UBTFunctionLibrary::SetBlackboardValueAsRotator(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const struct FRotator& Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsRotator");
-
-	Params::BTFunctionLibrary_SetBlackboardValueAsRotator Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.Key = std::move(Key);
-	Parms.Value = std::move(Value);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsString
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// class FString                           Value                                                  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTFunctionLibrary::SetBlackboardValueAsString(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const class FString& Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsString");
-
-	Params::BTFunctionLibrary_SetBlackboardValueAsString Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.Key = std::move(Key);
-	Parms.Value = std::move(Value);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsVector
-// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// struct FVector                          Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTFunctionLibrary::SetBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const struct FVector& Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsVector");
-
-	Params::BTFunctionLibrary_SetBlackboardValueAsVector Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.Key = std::move(Key);
-	Parms.Value = std::move(Value);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AIModule.BTFunctionLibrary.StartUsingExternalEvent
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           OwningActor                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTFunctionLibrary::StartUsingExternalEvent(class UBTNode* NodeOwner, class AActor* OwningActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "StartUsingExternalEvent");
-
-	Params::BTFunctionLibrary_StartUsingExternalEvent Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-	Parms.OwningActor = OwningActor;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AIModule.BTFunctionLibrary.StopUsingExternalEvent
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTFunctionLibrary::StopUsingExternalEvent(class UBTNode* NodeOwner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "StopUsingExternalEvent");
-
-	Params::BTFunctionLibrary_StopUsingExternalEvent Parms{};
-
-	Parms.NodeOwner = NodeOwner;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
 }
 
 
@@ -1442,241 +686,24 @@ bool AAIController::HasPartialPath() const
 }
 
 
-// Function AIModule.NavLocalGridManager.AddLocalNavigationGridForBox
-// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FVector                          Location                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FVector                          Extent                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FRotator                         Rotation                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-// int32                                   Radius2D                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   Height                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bRebuildGrids                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UNavLocalGridManager::AddLocalNavigationGridForBox(class UObject* WorldContextObject, const struct FVector& Location, const struct FVector& Extent, const struct FRotator& Rotation, const int32 Radius2D, const float Height, bool bRebuildGrids)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavLocalGridManager", "AddLocalNavigationGridForBox");
-
-	Params::NavLocalGridManager_AddLocalNavigationGridForBox Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-	Parms.Location = std::move(Location);
-	Parms.Extent = std::move(Extent);
-	Parms.Rotation = std::move(Rotation);
-	Parms.Radius2D = Radius2D;
-	Parms.Height = Height;
-	Parms.bRebuildGrids = bRebuildGrids;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AIModule.NavLocalGridManager.AddLocalNavigationGridForCapsule
-// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FVector                          Location                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   CapsuleRadius                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   CapsuleHalfHeight                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Radius2D                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   Height                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bRebuildGrids                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UNavLocalGridManager::AddLocalNavigationGridForCapsule(class UObject* WorldContextObject, const struct FVector& Location, float CapsuleRadius, float CapsuleHalfHeight, const int32 Radius2D, const float Height, bool bRebuildGrids)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavLocalGridManager", "AddLocalNavigationGridForCapsule");
-
-	Params::NavLocalGridManager_AddLocalNavigationGridForCapsule Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-	Parms.Location = std::move(Location);
-	Parms.CapsuleRadius = CapsuleRadius;
-	Parms.CapsuleHalfHeight = CapsuleHalfHeight;
-	Parms.Radius2D = Radius2D;
-	Parms.Height = Height;
-	Parms.bRebuildGrids = bRebuildGrids;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AIModule.NavLocalGridManager.AddLocalNavigationGridForPoint
-// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FVector                          Location                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Radius2D                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   Height                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bRebuildGrids                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UNavLocalGridManager::AddLocalNavigationGridForPoint(class UObject* WorldContextObject, const struct FVector& Location, const int32 Radius2D, const float Height, bool bRebuildGrids)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavLocalGridManager", "AddLocalNavigationGridForPoint");
-
-	Params::NavLocalGridManager_AddLocalNavigationGridForPoint Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-	Parms.Location = std::move(Location);
-	Parms.Radius2D = Radius2D;
-	Parms.Height = Height;
-	Parms.bRebuildGrids = bRebuildGrids;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AIModule.NavLocalGridManager.AddLocalNavigationGridForPoints
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FVector>                  Locations                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-// int32                                   Radius2D                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   Height                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bRebuildGrids                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UNavLocalGridManager::AddLocalNavigationGridForPoints(class UObject* WorldContextObject, const TArray<struct FVector>& Locations, const int32 Radius2D, const float Height, bool bRebuildGrids)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavLocalGridManager", "AddLocalNavigationGridForPoints");
-
-	Params::NavLocalGridManager_AddLocalNavigationGridForPoints Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-	Parms.Locations = std::move(Locations);
-	Parms.Radius2D = Radius2D;
-	Parms.Height = Height;
-	Parms.bRebuildGrids = bRebuildGrids;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AIModule.NavLocalGridManager.FindLocalNavigationGridPath
-// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FVector                          Start                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FVector                          End                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FVector>                  PathPoints                                             (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UNavLocalGridManager::FindLocalNavigationGridPath(class UObject* WorldContextObject, const struct FVector& Start, const struct FVector& End, TArray<struct FVector>* PathPoints)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavLocalGridManager", "FindLocalNavigationGridPath");
-
-	Params::NavLocalGridManager_FindLocalNavigationGridPath Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-	Parms.Start = std::move(Start);
-	Parms.End = std::move(End);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (PathPoints != nullptr)
-		*PathPoints = std::move(Parms.PathPoints);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AIModule.NavLocalGridManager.RemoveLocalNavigationGrid
+// Function AIModule.PawnAction.CreateActionInstance
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   GridId                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bRebuildGrids                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TSubclassOf<class UPawnAction>          ActionClass                                            (Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UPawnAction*                      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UNavLocalGridManager::RemoveLocalNavigationGrid(class UObject* WorldContextObject, int32 GridId, bool bRebuildGrids)
+class UPawnAction* UPawnAction::CreateActionInstance(class UObject* WorldContextObject, TSubclassOf<class UPawnAction> ActionClass)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavLocalGridManager", "RemoveLocalNavigationGrid");
+		Func = StaticClass()->GetFunction("PawnAction", "CreateActionInstance");
 
-	Params::NavLocalGridManager_RemoveLocalNavigationGrid Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-	Parms.GridId = GridId;
-	Parms.bRebuildGrids = bRebuildGrids;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AIModule.NavLocalGridManager.SetLocalNavigationGridDensity
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   CellSize                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UNavLocalGridManager::SetLocalNavigationGridDensity(class UObject* WorldContextObject, float CellSize)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavLocalGridManager", "SetLocalNavigationGridDensity");
-
-	Params::NavLocalGridManager_SetLocalNavigationGridDensity Parms{};
+	Params::PawnAction_CreateActionInstance Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
-	Parms.CellSize = CellSize;
+	Parms.ActionClass = ActionClass;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1686,6 +713,160 @@ bool UNavLocalGridManager::SetLocalNavigationGridDensity(class UObject* WorldCon
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.PawnAction.Finish
+// (Native, Protected, BlueprintCallable)
+// Parameters:
+// EPawnActionResult                       WithResult                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UPawnAction::Finish(EPawnActionResult WithResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PawnAction", "Finish");
+
+	Params::PawnAction_Finish Parms{};
+
+	Parms.WithResult = WithResult;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AIModule.PawnAction.GetActionPriority
+// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// EAIRequestPriority                      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EAIRequestPriority UPawnAction::GetActionPriority()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PawnAction", "GetActionPriority");
+
+	Params::PawnAction_GetActionPriority Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.EnvQueryContext_BlueprintBase.ProvideActorsSet
+// (Event, Public, HasOutParams, BlueprintEvent, Const)
+// Parameters:
+// class UObject*                          QuerierObject                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           QuerierActor                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<class AActor*>                   ResultingActorsSet                                     (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+
+void UEnvQueryContext_BlueprintBase::ProvideActorsSet(class UObject* QuerierObject, class AActor* QuerierActor, TArray<class AActor*>* ResultingActorsSet) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EnvQueryContext_BlueprintBase", "ProvideActorsSet");
+
+	Params::EnvQueryContext_BlueprintBase_ProvideActorsSet Parms{};
+
+	Parms.QuerierObject = QuerierObject;
+	Parms.QuerierActor = QuerierActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ResultingActorsSet != nullptr)
+		*ResultingActorsSet = std::move(Parms.ResultingActorsSet);
+}
+
+
+// Function AIModule.EnvQueryContext_BlueprintBase.ProvideLocationsSet
+// (Event, Public, HasOutParams, BlueprintEvent, Const)
+// Parameters:
+// class UObject*                          QuerierObject                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           QuerierActor                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<struct FVector>                  ResultingLocationSet                                   (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+
+void UEnvQueryContext_BlueprintBase::ProvideLocationsSet(class UObject* QuerierObject, class AActor* QuerierActor, TArray<struct FVector>* ResultingLocationSet) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EnvQueryContext_BlueprintBase", "ProvideLocationsSet");
+
+	Params::EnvQueryContext_BlueprintBase_ProvideLocationsSet Parms{};
+
+	Parms.QuerierObject = QuerierObject;
+	Parms.QuerierActor = QuerierActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ResultingLocationSet != nullptr)
+		*ResultingLocationSet = std::move(Parms.ResultingLocationSet);
+}
+
+
+// Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleActor
+// (Event, Public, HasOutParams, BlueprintEvent, Const)
+// Parameters:
+// class UObject*                          QuerierObject                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           QuerierActor                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           ResultingActor                                         (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UEnvQueryContext_BlueprintBase::ProvideSingleActor(class UObject* QuerierObject, class AActor* QuerierActor, class AActor** ResultingActor) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EnvQueryContext_BlueprintBase", "ProvideSingleActor");
+
+	Params::EnvQueryContext_BlueprintBase_ProvideSingleActor Parms{};
+
+	Parms.QuerierObject = QuerierObject;
+	Parms.QuerierActor = QuerierActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ResultingActor != nullptr)
+		*ResultingActor = Parms.ResultingActor;
+}
+
+
+// Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleLocation
+// (Event, Public, HasOutParams, HasDefaults, BlueprintEvent, Const)
+// Parameters:
+// class UObject*                          QuerierObject                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           QuerierActor                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector                          ResultingLocation                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UEnvQueryContext_BlueprintBase::ProvideSingleLocation(class UObject* QuerierObject, class AActor* QuerierActor, struct FVector* ResultingLocation) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EnvQueryContext_BlueprintBase", "ProvideSingleLocation");
+
+	Params::EnvQueryContext_BlueprintBase_ProvideSingleLocation Parms{};
+
+	Parms.QuerierObject = QuerierObject;
+	Parms.QuerierActor = QuerierActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ResultingLocation != nullptr)
+		*ResultingLocation = std::move(Parms.ResultingLocation);
 }
 
 
@@ -1837,33 +1018,6 @@ void UPawnAction_BlueprintBase::ActionTickAnyThread(class APawn* ControlledPawn,
 }
 
 
-// Function AIModule.AIAsyncTaskBlueprintProxy.OnMoveCompleted
-// (Final, Native, Public)
-// Parameters:
-// struct FAIRequestID                     RequestID                                              (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EPathFollowingResult                    MovementResult                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAIAsyncTaskBlueprintProxy::OnMoveCompleted(const struct FAIRequestID& RequestID, EPathFollowingResult MovementResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIAsyncTaskBlueprintProxy", "OnMoveCompleted");
-
-	Params::AIAsyncTaskBlueprintProxy_OnMoveCompleted Parms{};
-
-	Parms.RequestID = std::move(RequestID);
-	Parms.MovementResult = MovementResult;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function AIModule.PawnActionsComponent.K2_PerformAction
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -1984,40 +1138,23 @@ bool UPawnActionsComponent::K2_PushAction(class UPawnAction* NewAction, EAIReque
 }
 
 
-// Function AIModule.BTTask_BlueprintBase.FinishAbort
-// (Final, Native, Protected, BlueprintCallable)
-
-void UBTTask_BlueprintBase::FinishAbort()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "FinishAbort");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AIModule.BTTask_BlueprintBase.FinishExecute
-// (Final, Native, Protected, BlueprintCallable)
+// Function AIModule.AIAsyncTaskBlueprintProxy.OnMoveCompleted
+// (Final, Native, Public)
 // Parameters:
-// bool                                    bSuccess                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FAIRequestID                     RequestID                                              (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EPathFollowingResult                    MovementResult                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UBTTask_BlueprintBase::FinishExecute(bool bSuccess)
+void UAIAsyncTaskBlueprintProxy::OnMoveCompleted(const struct FAIRequestID& RequestID, EPathFollowingResult MovementResult)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "FinishExecute");
+		Func = Class->GetFunction("AIAsyncTaskBlueprintProxy", "OnMoveCompleted");
 
-	Params::BTTask_BlueprintBase_FinishExecute Parms{};
+	Params::AIAsyncTaskBlueprintProxy_OnMoveCompleted Parms{};
 
-	Parms.bSuccess = bSuccess;
+	Parms.RequestID = std::move(RequestID);
+	Parms.MovementResult = MovementResult;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2028,341 +1165,61 @@ void UBTTask_BlueprintBase::FinishExecute(bool bSuccess)
 }
 
 
-// Function AIModule.BTTask_BlueprintBase.ReceiveAbort
-// (Event, Protected, BlueprintEvent)
+// Function AIModule.AISense_Prediction.RequestControllerPredictionEvent
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class AActor*                           OwnerActor                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AAIController*                    Requestor                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           PredictedActor                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   PredictionTime                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UBTTask_BlueprintBase::ReceiveAbort(class AActor* OwnerActor)
+void UAISense_Prediction::RequestControllerPredictionEvent(class AAIController* Requestor, class AActor* PredictedActor, float PredictionTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveAbort");
+		Func = StaticClass()->GetFunction("AISense_Prediction", "RequestControllerPredictionEvent");
 
-	Params::BTTask_BlueprintBase_ReceiveAbort Parms{};
+	Params::AISense_Prediction_RequestControllerPredictionEvent Parms{};
 
-	Parms.OwnerActor = OwnerActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AIModule.BTTask_BlueprintBase.ReceiveAbortAI
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class AAIController*                    OwnerController                                        (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class APawn*                            ControlledPawn                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTTask_BlueprintBase::ReceiveAbortAI(class AAIController* OwnerController, class APawn* ControlledPawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveAbortAI");
-
-	Params::BTTask_BlueprintBase_ReceiveAbortAI Parms{};
-
-	Parms.OwnerController = OwnerController;
-	Parms.ControlledPawn = ControlledPawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AIModule.BTTask_BlueprintBase.ReceiveExecute
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class AActor*                           OwnerActor                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTTask_BlueprintBase::ReceiveExecute(class AActor* OwnerActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveExecute");
-
-	Params::BTTask_BlueprintBase_ReceiveExecute Parms{};
-
-	Parms.OwnerActor = OwnerActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AIModule.BTTask_BlueprintBase.ReceiveExecuteAI
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class AAIController*                    OwnerController                                        (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class APawn*                            ControlledPawn                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTTask_BlueprintBase::ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveExecuteAI");
-
-	Params::BTTask_BlueprintBase_ReceiveExecuteAI Parms{};
-
-	Parms.OwnerController = OwnerController;
-	Parms.ControlledPawn = ControlledPawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AIModule.BTTask_BlueprintBase.ReceiveTick
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class AActor*                           OwnerActor                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   DeltaSeconds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTTask_BlueprintBase::ReceiveTick(class AActor* OwnerActor, float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveTick");
-
-	Params::BTTask_BlueprintBase_ReceiveTick Parms{};
-
-	Parms.OwnerActor = OwnerActor;
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AIModule.BTTask_BlueprintBase.ReceiveTickAI
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class AAIController*                    OwnerController                                        (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class APawn*                            ControlledPawn                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   DeltaSeconds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTTask_BlueprintBase::ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveTickAI");
-
-	Params::BTTask_BlueprintBase_ReceiveTickAI Parms{};
-
-	Parms.OwnerController = OwnerController;
-	Parms.ControlledPawn = ControlledPawn;
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AIModule.BTTask_BlueprintBase.SetFinishOnMessage
-// (Final, Native, Protected, BlueprintCallable)
-// Parameters:
-// class FName                             MessageName                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBTTask_BlueprintBase::SetFinishOnMessage(class FName MessageName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "SetFinishOnMessage");
-
-	Params::BTTask_BlueprintBase_SetFinishOnMessage Parms{};
-
-	Parms.MessageName = MessageName;
+	Parms.Requestor = Requestor;
+	Parms.PredictedActor = PredictedActor;
+	Parms.PredictionTime = PredictionTime;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// Function AIModule.BTTask_BlueprintBase.SetFinishOnMessageWithId
-// (Final, Native, Protected, BlueprintCallable)
+// Function AIModule.AISense_Prediction.RequestPawnPredictionEvent
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class FName                             MessageName                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   RequestID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class APawn*                            Requestor                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           PredictedActor                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   PredictionTime                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UBTTask_BlueprintBase::SetFinishOnMessageWithId(class FName MessageName, int32 RequestID)
+void UAISense_Prediction::RequestPawnPredictionEvent(class APawn* Requestor, class AActor* PredictedActor, float PredictionTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "SetFinishOnMessageWithId");
+		Func = StaticClass()->GetFunction("AISense_Prediction", "RequestPawnPredictionEvent");
 
-	Params::BTTask_BlueprintBase_SetFinishOnMessageWithId Parms{};
+	Params::AISense_Prediction_RequestPawnPredictionEvent Parms{};
 
-	Parms.MessageName = MessageName;
-	Parms.RequestID = RequestID;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AIModule.BTTask_BlueprintBase.IsTaskAborting
-// (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UBTTask_BlueprintBase::IsTaskAborting() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "IsTaskAborting");
-
-	Params::BTTask_BlueprintBase_IsTaskAborting Parms{};
+	Parms.Requestor = Requestor;
+	Parms.PredictedActor = PredictedActor;
+	Parms.PredictionTime = PredictionTime;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AIModule.BTTask_BlueprintBase.IsTaskExecuting
-// (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UBTTask_BlueprintBase::IsTaskExecuting() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "IsTaskExecuting");
-
-	Params::BTTask_BlueprintBase_IsTaskExecuting Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AIModule.PathFollowingComponent.OnActorBump
-// (Native, Public, HasOutParams, HasDefaults)
-// Parameters:
-// class AActor*                           SelfActor                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           OtherActor                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FVector                          NormalImpulse                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FHitResult                       Hit                                                    (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
-void UPathFollowingComponent::OnActorBump(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PathFollowingComponent", "OnActorBump");
-
-	Params::PathFollowingComponent_OnActorBump Parms{};
-
-	Parms.SelfActor = SelfActor;
-	Parms.OtherActor = OtherActor;
-	Parms.NormalImpulse = std::move(NormalImpulse);
-	Parms.Hit = std::move(Hit);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AIModule.PathFollowingComponent.OnNavDataRegistered
-// (Final, Native, Protected)
-// Parameters:
-// class ANavigationData*                  NavData                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UPathFollowingComponent::OnNavDataRegistered(class ANavigationData* NavData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PathFollowingComponent", "OnNavDataRegistered");
-
-	Params::PathFollowingComponent_OnNavDataRegistered Parms{};
-
-	Parms.NavData = NavData;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AIModule.PathFollowingComponent.GetPathActionType
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// EPathFollowingAction                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EPathFollowingAction UPathFollowingComponent::GetPathActionType() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PathFollowingComponent", "GetPathActionType");
-
-	Params::PathFollowingComponent_GetPathActionType Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AIModule.PathFollowingComponent.GetPathDestination
-// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FVector UPathFollowingComponent::GetPathDestination() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PathFollowingComponent", "GetPathDestination");
-
-	Params::PathFollowingComponent_GetPathDestination Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
@@ -3293,6 +2150,788 @@ bool UBlackboardComponent::IsVectorValueSet(const class FName& KeyName) const
 }
 
 
+// Function AIModule.BTFunctionLibrary.ClearBlackboardValue
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UBTFunctionLibrary::ClearBlackboardValue(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "ClearBlackboardValue");
+
+	Params::BTFunctionLibrary_ClearBlackboardValue Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.Key = std::move(Key);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AIModule.BTFunctionLibrary.ClearBlackboardValueAsVector
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UBTFunctionLibrary::ClearBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "ClearBlackboardValueAsVector");
+
+	Params::BTFunctionLibrary_ClearBlackboardValueAsVector Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.Key = std::move(Key);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsActor
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// class AActor*                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class AActor* UBTFunctionLibrary::GetBlackboardValueAsActor(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsActor");
+
+	Params::BTFunctionLibrary_GetBlackboardValueAsActor Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.Key = std::move(Key);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsBool
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UBTFunctionLibrary::GetBlackboardValueAsBool(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsBool");
+
+	Params::BTFunctionLibrary_GetBlackboardValueAsBool Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.Key = std::move(Key);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsClass
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// class UClass*                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UClass* UBTFunctionLibrary::GetBlackboardValueAsClass(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsClass");
+
+	Params::BTFunctionLibrary_GetBlackboardValueAsClass Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.Key = std::move(Key);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsEnum
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// uint8                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+uint8 UBTFunctionLibrary::GetBlackboardValueAsEnum(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsEnum");
+
+	Params::BTFunctionLibrary_GetBlackboardValueAsEnum Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.Key = std::move(Key);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsFloat
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UBTFunctionLibrary::GetBlackboardValueAsFloat(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsFloat");
+
+	Params::BTFunctionLibrary_GetBlackboardValueAsFloat Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.Key = std::move(Key);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsInt
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UBTFunctionLibrary::GetBlackboardValueAsInt(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsInt");
+
+	Params::BTFunctionLibrary_GetBlackboardValueAsInt Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.Key = std::move(Key);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsName
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FName UBTFunctionLibrary::GetBlackboardValueAsName(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsName");
+
+	Params::BTFunctionLibrary_GetBlackboardValueAsName Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.Key = std::move(Key);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsObject
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UObject* UBTFunctionLibrary::GetBlackboardValueAsObject(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsObject");
+
+	Params::BTFunctionLibrary_GetBlackboardValueAsObject Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.Key = std::move(Key);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsRotator
+// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// struct FRotator                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+struct FRotator UBTFunctionLibrary::GetBlackboardValueAsRotator(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsRotator");
+
+	Params::BTFunctionLibrary_GetBlackboardValueAsRotator Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.Key = std::move(Key);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsString
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString UBTFunctionLibrary::GetBlackboardValueAsString(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsString");
+
+	Params::BTFunctionLibrary_GetBlackboardValueAsString Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.Key = std::move(Key);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsVector
+// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FVector UBTFunctionLibrary::GetBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsVector");
+
+	Params::BTFunctionLibrary_GetBlackboardValueAsVector Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.Key = std::move(Key);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.BTFunctionLibrary.GetOwnerComponent
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UBehaviorTreeComponent*           ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UBehaviorTreeComponent* UBTFunctionLibrary::GetOwnerComponent(class UBTNode* NodeOwner)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetOwnerComponent");
+
+	Params::BTFunctionLibrary_GetOwnerComponent Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.BTFunctionLibrary.GetOwnersBlackboard
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UBlackboardComponent*             ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UBlackboardComponent* UBTFunctionLibrary::GetOwnersBlackboard(class UBTNode* NodeOwner)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetOwnersBlackboard");
+
+	Params::BTFunctionLibrary_GetOwnersBlackboard Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsBool
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTFunctionLibrary::SetBlackboardValueAsBool(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, bool Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsBool");
+
+	Params::BTFunctionLibrary_SetBlackboardValueAsBool Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.Key = std::move(Key);
+	Parms.Value = Value;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsClass
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// class UClass*                           Value                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTFunctionLibrary::SetBlackboardValueAsClass(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, class UClass* Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsClass");
+
+	Params::BTFunctionLibrary_SetBlackboardValueAsClass Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.Key = std::move(Key);
+	Parms.Value = Value;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsEnum
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// uint8                                   Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTFunctionLibrary::SetBlackboardValueAsEnum(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, uint8 Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsEnum");
+
+	Params::BTFunctionLibrary_SetBlackboardValueAsEnum Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.Key = std::move(Key);
+	Parms.Value = Value;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsFloat
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// float                                   Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTFunctionLibrary::SetBlackboardValueAsFloat(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, float Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsFloat");
+
+	Params::BTFunctionLibrary_SetBlackboardValueAsFloat Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.Key = std::move(Key);
+	Parms.Value = Value;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsInt
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// int32                                   Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTFunctionLibrary::SetBlackboardValueAsInt(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, int32 Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsInt");
+
+	Params::BTFunctionLibrary_SetBlackboardValueAsInt Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.Key = std::move(Key);
+	Parms.Value = Value;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsName
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// class FName                             Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTFunctionLibrary::SetBlackboardValueAsName(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, class FName Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsName");
+
+	Params::BTFunctionLibrary_SetBlackboardValueAsName Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.Key = std::move(Key);
+	Parms.Value = Value;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsObject
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// class UObject*                          Value                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTFunctionLibrary::SetBlackboardValueAsObject(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, class UObject* Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsObject");
+
+	Params::BTFunctionLibrary_SetBlackboardValueAsObject Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.Key = std::move(Key);
+	Parms.Value = Value;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsRotator
+// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// struct FRotator                         Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+void UBTFunctionLibrary::SetBlackboardValueAsRotator(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const struct FRotator& Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsRotator");
+
+	Params::BTFunctionLibrary_SetBlackboardValueAsRotator Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.Key = std::move(Key);
+	Parms.Value = std::move(Value);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsString
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// class FString                           Value                                                  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTFunctionLibrary::SetBlackboardValueAsString(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const class FString& Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsString");
+
+	Params::BTFunctionLibrary_SetBlackboardValueAsString Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.Key = std::move(Key);
+	Parms.Value = std::move(Value);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsVector
+// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FBlackboardKeySelector           Key                                                    (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// struct FVector                          Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTFunctionLibrary::SetBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const struct FVector& Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsVector");
+
+	Params::BTFunctionLibrary_SetBlackboardValueAsVector Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.Key = std::move(Key);
+	Parms.Value = std::move(Value);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AIModule.BTFunctionLibrary.StartUsingExternalEvent
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           OwningActor                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTFunctionLibrary::StartUsingExternalEvent(class UBTNode* NodeOwner, class AActor* OwningActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "StartUsingExternalEvent");
+
+	Params::BTFunctionLibrary_StartUsingExternalEvent Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+	Parms.OwningActor = OwningActor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AIModule.BTFunctionLibrary.StopUsingExternalEvent
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UBTNode*                          NodeOwner                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTFunctionLibrary::StopUsingExternalEvent(class UBTNode* NodeOwner)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("BTFunctionLibrary", "StopUsingExternalEvent");
+
+	Params::BTFunctionLibrary_StopUsingExternalEvent Parms{};
+
+	Parms.NodeOwner = NodeOwner;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheck
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -3609,6 +3248,121 @@ bool UBTDecorator_BlueprintBase::IsDecoratorObserverActive() const
 }
 
 
+// Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedActor
+// (Final, Native, Public, BlueprintCallable, Const)
+// Parameters:
+// class AActor*                           GeneratedActor                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UEnvQueryGenerator_BlueprintBase::AddGeneratedActor(class AActor* GeneratedActor) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EnvQueryGenerator_BlueprintBase", "AddGeneratedActor");
+
+	Params::EnvQueryGenerator_BlueprintBase_AddGeneratedActor Parms{};
+
+	Parms.GeneratedActor = GeneratedActor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedVector
+// (Final, Native, Public, HasDefaults, BlueprintCallable, Const)
+// Parameters:
+// struct FVector                          GeneratedVector                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UEnvQueryGenerator_BlueprintBase::AddGeneratedVector(const struct FVector& GeneratedVector) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EnvQueryGenerator_BlueprintBase", "AddGeneratedVector");
+
+	Params::EnvQueryGenerator_BlueprintBase_AddGeneratedVector Parms{};
+
+	Parms.GeneratedVector = std::move(GeneratedVector);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AIModule.EnvQueryGenerator_BlueprintBase.DoItemGeneration
+// (Event, Public, HasOutParams, BlueprintEvent, Const)
+// Parameters:
+// TArray<struct FVector>                  ContextLocations                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UEnvQueryGenerator_BlueprintBase::DoItemGeneration(const TArray<struct FVector>& ContextLocations) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EnvQueryGenerator_BlueprintBase", "DoItemGeneration");
+
+	Params::EnvQueryGenerator_BlueprintBase_DoItemGeneration Parms{};
+
+	Parms.ContextLocations = std::move(ContextLocations);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AIModule.EnvQueryGenerator_BlueprintBase.DoItemGenerationFromActors
+// (Event, Public, HasOutParams, BlueprintEvent, Const)
+// Parameters:
+// TArray<class AActor*>                   ContextActors                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UEnvQueryGenerator_BlueprintBase::DoItemGenerationFromActors(const TArray<class AActor*>& ContextActors) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EnvQueryGenerator_BlueprintBase", "DoItemGenerationFromActors");
+
+	Params::EnvQueryGenerator_BlueprintBase_DoItemGenerationFromActors Parms{};
+
+	Parms.ContextActors = std::move(ContextActors);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AIModule.EnvQueryGenerator_BlueprintBase.GetQuerier
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UObject* UEnvQueryGenerator_BlueprintBase::GetQuerier() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EnvQueryGenerator_BlueprintBase", "GetQuerier");
+
+	Params::EnvQueryGenerator_BlueprintBase_GetQuerier Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function AIModule.BTService_BlueprintBase.ReceiveActivation
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -3799,6 +3553,328 @@ bool UBTService_BlueprintBase::IsServiceActive() const
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.BTTask_BlueprintBase.FinishAbort
+// (Final, Native, Protected, BlueprintCallable)
+
+void UBTTask_BlueprintBase::FinishAbort()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_BlueprintBase", "FinishAbort");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AIModule.BTTask_BlueprintBase.FinishExecute
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+// bool                                    bSuccess                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTTask_BlueprintBase::FinishExecute(bool bSuccess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_BlueprintBase", "FinishExecute");
+
+	Params::BTTask_BlueprintBase_FinishExecute Parms{};
+
+	Parms.bSuccess = bSuccess;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AIModule.BTTask_BlueprintBase.ReceiveAbort
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class AActor*                           OwnerActor                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTTask_BlueprintBase::ReceiveAbort(class AActor* OwnerActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveAbort");
+
+	Params::BTTask_BlueprintBase_ReceiveAbort Parms{};
+
+	Parms.OwnerActor = OwnerActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AIModule.BTTask_BlueprintBase.ReceiveAbortAI
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class AAIController*                    OwnerController                                        (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class APawn*                            ControlledPawn                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTTask_BlueprintBase::ReceiveAbortAI(class AAIController* OwnerController, class APawn* ControlledPawn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveAbortAI");
+
+	Params::BTTask_BlueprintBase_ReceiveAbortAI Parms{};
+
+	Parms.OwnerController = OwnerController;
+	Parms.ControlledPawn = ControlledPawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AIModule.BTTask_BlueprintBase.ReceiveExecute
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class AActor*                           OwnerActor                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTTask_BlueprintBase::ReceiveExecute(class AActor* OwnerActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveExecute");
+
+	Params::BTTask_BlueprintBase_ReceiveExecute Parms{};
+
+	Parms.OwnerActor = OwnerActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AIModule.BTTask_BlueprintBase.ReceiveExecuteAI
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class AAIController*                    OwnerController                                        (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class APawn*                            ControlledPawn                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTTask_BlueprintBase::ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveExecuteAI");
+
+	Params::BTTask_BlueprintBase_ReceiveExecuteAI Parms{};
+
+	Parms.OwnerController = OwnerController;
+	Parms.ControlledPawn = ControlledPawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AIModule.BTTask_BlueprintBase.ReceiveTick
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class AActor*                           OwnerActor                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   DeltaSeconds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTTask_BlueprintBase::ReceiveTick(class AActor* OwnerActor, float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveTick");
+
+	Params::BTTask_BlueprintBase_ReceiveTick Parms{};
+
+	Parms.OwnerActor = OwnerActor;
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AIModule.BTTask_BlueprintBase.ReceiveTickAI
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class AAIController*                    OwnerController                                        (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class APawn*                            ControlledPawn                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   DeltaSeconds                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTTask_BlueprintBase::ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveTickAI");
+
+	Params::BTTask_BlueprintBase_ReceiveTickAI Parms{};
+
+	Parms.OwnerController = OwnerController;
+	Parms.ControlledPawn = ControlledPawn;
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AIModule.BTTask_BlueprintBase.SetFinishOnMessage
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+// class FName                             MessageName                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTTask_BlueprintBase::SetFinishOnMessage(class FName MessageName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_BlueprintBase", "SetFinishOnMessage");
+
+	Params::BTTask_BlueprintBase_SetFinishOnMessage Parms{};
+
+	Parms.MessageName = MessageName;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AIModule.BTTask_BlueprintBase.SetFinishOnMessageWithId
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+// class FName                             MessageName                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   RequestID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBTTask_BlueprintBase::SetFinishOnMessageWithId(class FName MessageName, int32 RequestID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_BlueprintBase", "SetFinishOnMessageWithId");
+
+	Params::BTTask_BlueprintBase_SetFinishOnMessageWithId Parms{};
+
+	Parms.MessageName = MessageName;
+	Parms.RequestID = RequestID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AIModule.BTTask_BlueprintBase.IsTaskAborting
+// (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UBTTask_BlueprintBase::IsTaskAborting() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_BlueprintBase", "IsTaskAborting");
+
+	Params::BTTask_BlueprintBase_IsTaskAborting Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.BTTask_BlueprintBase.IsTaskExecuting
+// (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UBTTask_BlueprintBase::IsTaskExecuting() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BTTask_BlueprintBase", "IsTaskExecuting");
+
+	Params::BTTask_BlueprintBase_IsTaskExecuting Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.AITask_MoveTo.AIMoveTo
+// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// class AAIController*                    Controller                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector                          GoalLocation                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           GoalActor                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   AcceptanceRadius                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EAIOptionFlag                           StopOnOverlap                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EAIOptionFlag                           AcceptPartialPath                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bUsePathfinding                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bLockAILogic                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bUseContinuousGoalTracking                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EAIOptionFlag                           ProjectGoalOnNavigation                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAITask_MoveTo*                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UAITask_MoveTo* UAITask_MoveTo::AIMoveTo(class AAIController* Controller, const struct FVector& GoalLocation, class AActor* GoalActor, float AcceptanceRadius, EAIOptionFlag StopOnOverlap, EAIOptionFlag AcceptPartialPath, bool bUsePathfinding, bool bLockAILogic, bool bUseContinuousGoalTracking, EAIOptionFlag ProjectGoalOnNavigation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AITask_MoveTo", "AIMoveTo");
+
+	Params::AITask_MoveTo_AIMoveTo Parms{};
+
+	Parms.Controller = Controller;
+	Parms.GoalLocation = std::move(GoalLocation);
+	Parms.GoalActor = GoalActor;
+	Parms.AcceptanceRadius = AcceptanceRadius;
+	Parms.StopOnOverlap = StopOnOverlap;
+	Parms.AcceptPartialPath = AcceptPartialPath;
+	Parms.bUsePathfinding = bUsePathfinding;
+	Parms.bLockAILogic = bLockAILogic;
+	Parms.bUseContinuousGoalTracking = bUseContinuousGoalTracking;
+	Parms.ProjectGoalOnNavigation = ProjectGoalOnNavigation;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -4279,110 +4355,6 @@ void UAIBlueprintHelperLibrary::UnlockAIResourcesWithAnimation(class UAnimInstan
 }
 
 
-// Function AIModule.EnvQueryContext_BlueprintBase.ProvideActorsSet
-// (Event, Public, HasOutParams, BlueprintEvent, Const)
-// Parameters:
-// class UObject*                          QuerierObject                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           QuerierActor                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<class AActor*>                   ResultingActorsSet                                     (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-
-void UEnvQueryContext_BlueprintBase::ProvideActorsSet(class UObject* QuerierObject, class AActor* QuerierActor, TArray<class AActor*>* ResultingActorsSet) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnvQueryContext_BlueprintBase", "ProvideActorsSet");
-
-	Params::EnvQueryContext_BlueprintBase_ProvideActorsSet Parms{};
-
-	Parms.QuerierObject = QuerierObject;
-	Parms.QuerierActor = QuerierActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ResultingActorsSet != nullptr)
-		*ResultingActorsSet = std::move(Parms.ResultingActorsSet);
-}
-
-
-// Function AIModule.EnvQueryContext_BlueprintBase.ProvideLocationsSet
-// (Event, Public, HasOutParams, BlueprintEvent, Const)
-// Parameters:
-// class UObject*                          QuerierObject                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           QuerierActor                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<struct FVector>                  ResultingLocationSet                                   (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-
-void UEnvQueryContext_BlueprintBase::ProvideLocationsSet(class UObject* QuerierObject, class AActor* QuerierActor, TArray<struct FVector>* ResultingLocationSet) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnvQueryContext_BlueprintBase", "ProvideLocationsSet");
-
-	Params::EnvQueryContext_BlueprintBase_ProvideLocationsSet Parms{};
-
-	Parms.QuerierObject = QuerierObject;
-	Parms.QuerierActor = QuerierActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ResultingLocationSet != nullptr)
-		*ResultingLocationSet = std::move(Parms.ResultingLocationSet);
-}
-
-
-// Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleActor
-// (Event, Public, HasOutParams, BlueprintEvent, Const)
-// Parameters:
-// class UObject*                          QuerierObject                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           QuerierActor                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           ResultingActor                                         (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UEnvQueryContext_BlueprintBase::ProvideSingleActor(class UObject* QuerierObject, class AActor* QuerierActor, class AActor** ResultingActor) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnvQueryContext_BlueprintBase", "ProvideSingleActor");
-
-	Params::EnvQueryContext_BlueprintBase_ProvideSingleActor Parms{};
-
-	Parms.QuerierObject = QuerierObject;
-	Parms.QuerierActor = QuerierActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ResultingActor != nullptr)
-		*ResultingActor = Parms.ResultingActor;
-}
-
-
-// Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleLocation
-// (Event, Public, HasOutParams, HasDefaults, BlueprintEvent, Const)
-// Parameters:
-// class UObject*                          QuerierObject                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           QuerierActor                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FVector                          ResultingLocation                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UEnvQueryContext_BlueprintBase::ProvideSingleLocation(class UObject* QuerierObject, class AActor* QuerierActor, struct FVector* ResultingLocation) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnvQueryContext_BlueprintBase", "ProvideSingleLocation");
-
-	Params::EnvQueryContext_BlueprintBase_ProvideSingleLocation Parms{};
-
-	Parms.QuerierObject = QuerierObject;
-	Parms.QuerierActor = QuerierActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ResultingLocation != nullptr)
-		*ResultingLocation = std::move(Parms.ResultingLocation);
-}
-
-
 // DelegateFunction AIModule.EnvQueryInstanceBlueprintWrapper.EQSQueryDoneSignature__DelegateSignature
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
@@ -4604,121 +4576,6 @@ class UEnvQueryInstanceBlueprintWrapper* UEnvQueryManager::RunEQSQuery(class UOb
 }
 
 
-// Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedActor
-// (Final, Native, Public, BlueprintCallable, Const)
-// Parameters:
-// class AActor*                           GeneratedActor                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UEnvQueryGenerator_BlueprintBase::AddGeneratedActor(class AActor* GeneratedActor) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnvQueryGenerator_BlueprintBase", "AddGeneratedActor");
-
-	Params::EnvQueryGenerator_BlueprintBase_AddGeneratedActor Parms{};
-
-	Parms.GeneratedActor = GeneratedActor;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedVector
-// (Final, Native, Public, HasDefaults, BlueprintCallable, Const)
-// Parameters:
-// struct FVector                          GeneratedVector                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UEnvQueryGenerator_BlueprintBase::AddGeneratedVector(const struct FVector& GeneratedVector) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnvQueryGenerator_BlueprintBase", "AddGeneratedVector");
-
-	Params::EnvQueryGenerator_BlueprintBase_AddGeneratedVector Parms{};
-
-	Parms.GeneratedVector = std::move(GeneratedVector);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AIModule.EnvQueryGenerator_BlueprintBase.DoItemGeneration
-// (Event, Public, HasOutParams, BlueprintEvent, Const)
-// Parameters:
-// TArray<struct FVector>                  ContextLocations                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UEnvQueryGenerator_BlueprintBase::DoItemGeneration(const TArray<struct FVector>& ContextLocations) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnvQueryGenerator_BlueprintBase", "DoItemGeneration");
-
-	Params::EnvQueryGenerator_BlueprintBase_DoItemGeneration Parms{};
-
-	Parms.ContextLocations = std::move(ContextLocations);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AIModule.EnvQueryGenerator_BlueprintBase.DoItemGenerationFromActors
-// (Event, Public, HasOutParams, BlueprintEvent, Const)
-// Parameters:
-// TArray<class AActor*>                   ContextActors                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UEnvQueryGenerator_BlueprintBase::DoItemGenerationFromActors(const TArray<class AActor*>& ContextActors) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnvQueryGenerator_BlueprintBase", "DoItemGenerationFromActors");
-
-	Params::EnvQueryGenerator_BlueprintBase_DoItemGenerationFromActors Parms{};
-
-	Parms.ContextActors = std::move(ContextActors);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AIModule.EnvQueryGenerator_BlueprintBase.GetQuerier
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UObject* UEnvQueryGenerator_BlueprintBase::GetQuerier() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnvQueryGenerator_BlueprintBase", "GetQuerier");
-
-	Params::EnvQueryGenerator_BlueprintBase_GetQuerier Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
 // Function AIModule.CrowdFollowingComponent.SuspendCrowdSteering
 // (Native, Public, BlueprintCallable)
 // Parameters:
@@ -4859,6 +4716,253 @@ bool ANavLinkProxy::IsSmartLinkEnabled() const
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.NavLocalGridManager.AddLocalNavigationGridForBox
+// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector                          Location                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector                          Extent                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FRotator                         Rotation                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// int32                                   Radius2D                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   Height                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bRebuildGrids                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UNavLocalGridManager::AddLocalNavigationGridForBox(class UObject* WorldContextObject, const struct FVector& Location, const struct FVector& Extent, const struct FRotator& Rotation, const int32 Radius2D, const float Height, bool bRebuildGrids)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("NavLocalGridManager", "AddLocalNavigationGridForBox");
+
+	Params::NavLocalGridManager_AddLocalNavigationGridForBox Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.Location = std::move(Location);
+	Parms.Extent = std::move(Extent);
+	Parms.Rotation = std::move(Rotation);
+	Parms.Radius2D = Radius2D;
+	Parms.Height = Height;
+	Parms.bRebuildGrids = bRebuildGrids;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.NavLocalGridManager.AddLocalNavigationGridForCapsule
+// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector                          Location                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   CapsuleRadius                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   CapsuleHalfHeight                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Radius2D                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   Height                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bRebuildGrids                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UNavLocalGridManager::AddLocalNavigationGridForCapsule(class UObject* WorldContextObject, const struct FVector& Location, float CapsuleRadius, float CapsuleHalfHeight, const int32 Radius2D, const float Height, bool bRebuildGrids)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("NavLocalGridManager", "AddLocalNavigationGridForCapsule");
+
+	Params::NavLocalGridManager_AddLocalNavigationGridForCapsule Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.Location = std::move(Location);
+	Parms.CapsuleRadius = CapsuleRadius;
+	Parms.CapsuleHalfHeight = CapsuleHalfHeight;
+	Parms.Radius2D = Radius2D;
+	Parms.Height = Height;
+	Parms.bRebuildGrids = bRebuildGrids;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.NavLocalGridManager.AddLocalNavigationGridForPoint
+// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector                          Location                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Radius2D                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   Height                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bRebuildGrids                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UNavLocalGridManager::AddLocalNavigationGridForPoint(class UObject* WorldContextObject, const struct FVector& Location, const int32 Radius2D, const float Height, bool bRebuildGrids)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("NavLocalGridManager", "AddLocalNavigationGridForPoint");
+
+	Params::NavLocalGridManager_AddLocalNavigationGridForPoint Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.Location = std::move(Location);
+	Parms.Radius2D = Radius2D;
+	Parms.Height = Height;
+	Parms.bRebuildGrids = bRebuildGrids;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.NavLocalGridManager.AddLocalNavigationGridForPoints
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<struct FVector>                  Locations                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// int32                                   Radius2D                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   Height                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bRebuildGrids                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UNavLocalGridManager::AddLocalNavigationGridForPoints(class UObject* WorldContextObject, const TArray<struct FVector>& Locations, const int32 Radius2D, const float Height, bool bRebuildGrids)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("NavLocalGridManager", "AddLocalNavigationGridForPoints");
+
+	Params::NavLocalGridManager_AddLocalNavigationGridForPoints Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.Locations = std::move(Locations);
+	Parms.Radius2D = Radius2D;
+	Parms.Height = Height;
+	Parms.bRebuildGrids = bRebuildGrids;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.NavLocalGridManager.FindLocalNavigationGridPath
+// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector                          Start                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector                          End                                                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<struct FVector>                  PathPoints                                             (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UNavLocalGridManager::FindLocalNavigationGridPath(class UObject* WorldContextObject, const struct FVector& Start, const struct FVector& End, TArray<struct FVector>* PathPoints)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("NavLocalGridManager", "FindLocalNavigationGridPath");
+
+	Params::NavLocalGridManager_FindLocalNavigationGridPath Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.Start = std::move(Start);
+	Parms.End = std::move(End);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (PathPoints != nullptr)
+		*PathPoints = std::move(Parms.PathPoints);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AIModule.NavLocalGridManager.RemoveLocalNavigationGrid
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   GridId                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bRebuildGrids                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UNavLocalGridManager::RemoveLocalNavigationGrid(class UObject* WorldContextObject, int32 GridId, bool bRebuildGrids)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("NavLocalGridManager", "RemoveLocalNavigationGrid");
+
+	Params::NavLocalGridManager_RemoveLocalNavigationGrid Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.GridId = GridId;
+	Parms.bRebuildGrids = bRebuildGrids;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AIModule.NavLocalGridManager.SetLocalNavigationGridDensity
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   CellSize                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UNavLocalGridManager::SetLocalNavigationGridDensity(class UObject* WorldContextObject, float CellSize)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("NavLocalGridManager", "SetLocalNavigationGridDensity");
+
+	Params::NavLocalGridManager_SetLocalNavigationGridDensity Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.CellSize = CellSize;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -5594,64 +5698,6 @@ void UAISense_Hearing::ReportNoiseEvent(class UObject* WorldContextObject, const
 }
 
 
-// Function AIModule.AISense_Prediction.RequestControllerPredictionEvent
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class AAIController*                    Requestor                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           PredictedActor                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   PredictionTime                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAISense_Prediction::RequestControllerPredictionEvent(class AAIController* Requestor, class AActor* PredictedActor, float PredictionTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AISense_Prediction", "RequestControllerPredictionEvent");
-
-	Params::AISense_Prediction_RequestControllerPredictionEvent Parms{};
-
-	Parms.Requestor = Requestor;
-	Parms.PredictedActor = PredictedActor;
-	Parms.PredictionTime = PredictionTime;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AIModule.AISense_Prediction.RequestPawnPredictionEvent
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class APawn*                            Requestor                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           PredictedActor                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   PredictionTime                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAISense_Prediction::RequestPawnPredictionEvent(class APawn* Requestor, class AActor* PredictedActor, float PredictionTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AISense_Prediction", "RequestPawnPredictionEvent");
-
-	Params::AISense_Prediction_RequestPawnPredictionEvent Parms{};
-
-	Parms.Requestor = Requestor;
-	Parms.PredictedActor = PredictedActor;
-	Parms.PredictionTime = PredictionTime;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function AIModule.AISense_Touch.ReportTouchEvent
 // (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -5845,52 +5891,6 @@ float UPawnSensingComponent::GetPeripheralVisionCosine() const
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AIModule.AITask_MoveTo.AIMoveTo
-// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
-// Parameters:
-// class AAIController*                    Controller                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FVector                          GoalLocation                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           GoalActor                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   AcceptanceRadius                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EAIOptionFlag                           StopOnOverlap                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EAIOptionFlag                           AcceptPartialPath                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bUsePathfinding                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bLockAILogic                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bUseContinuousGoalTracking                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EAIOptionFlag                           ProjectGoalOnNavigation                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UAITask_MoveTo*                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UAITask_MoveTo* UAITask_MoveTo::AIMoveTo(class AAIController* Controller, const struct FVector& GoalLocation, class AActor* GoalActor, float AcceptanceRadius, EAIOptionFlag StopOnOverlap, EAIOptionFlag AcceptPartialPath, bool bUsePathfinding, bool bLockAILogic, bool bUseContinuousGoalTracking, EAIOptionFlag ProjectGoalOnNavigation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AITask_MoveTo", "AIMoveTo");
-
-	Params::AITask_MoveTo_AIMoveTo Parms{};
-
-	Parms.Controller = Controller;
-	Parms.GoalLocation = std::move(GoalLocation);
-	Parms.GoalActor = GoalActor;
-	Parms.AcceptanceRadius = AcceptanceRadius;
-	Parms.StopOnOverlap = StopOnOverlap;
-	Parms.AcceptPartialPath = AcceptPartialPath;
-	Parms.bUsePathfinding = bUsePathfinding;
-	Parms.bLockAILogic = bLockAILogic;
-	Parms.bUseContinuousGoalTracking = bUseContinuousGoalTracking;
-	Parms.ProjectGoalOnNavigation = ProjectGoalOnNavigation;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 

@@ -12,8 +12,8 @@
 
 #include "CoreUObject_structs.hpp"
 #include "F_NPC_PathWalkArray_structs.hpp"
-#include "Pal_structs.hpp"
 #include "F_NPC_PathWalkPoint_structs.hpp"
+#include "Pal_structs.hpp"
 
 
 namespace SDK::Params
@@ -51,13 +51,13 @@ public:
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3686[0x3];                                     // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4078[0x3];                                     // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3687[0x4];                                     // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4079[0x4];                                     // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_NPC_WalkPathPoint_1_C*              K2Node_DynamicCast_AsBP_NPC_Walk_Path_Point_1;     // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3688[0x2];                                     // 0x0082(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_407A[0x2];                                     // 0x0082(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -94,12 +94,12 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3689[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_407B[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ABP_NPC_WalkPathPoint_1_C*              K2Node_DynamicCast_AsBP_NPC_Walk_Path_Point_1;     // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_368A[0x2];                                     // 0x005A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_407C[0x2];                                     // 0x005A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FF_NPC_PathWalkArray                   K2Node_MakeStruct_F_NPC_PathWalkArray;             // 0x0060(0x0010)(HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0070(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -107,10 +107,10 @@ public:
 	float                                         CallFunc_BreakRotator_Roll;                        // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakRotator_Pitch;                       // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakRotator_Yaw;                         // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_368B[0x4];                                     // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_407D[0x4];                                     // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FF_NPC_PathWalkPoint                   K2Node_MakeStruct_F_NPC_PathWalkPoint;             // 0x00B0(0x0030)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_368C[0x4];                                     // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_407E[0x4];                                     // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        K2Node_MakeStruct_Yaw_13_9634CB3043B1505237E811853806822B_ImplicitCast; // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_PalRandomIncidentSpawner_C_Create_Walk_Path) == 0x000008, "Wrong alignment on BP_PalRandomIncidentSpawner_C_Create_Walk_Path");
@@ -146,15 +146,15 @@ public:
 	class UPalDebugSetting*                       CallFunc_GetPalDebugSetting_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0010(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetAreaRadius_ReturnValue;                // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_368D[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_407F[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalDebugSetting*                       CallFunc_GetPalDebugSetting_ReturnValue_1;         // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetAreaRadius_ReturnValue_1;              // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_368E[0x4];                                     // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4080[0x4];                                     // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalDebugSetting*                       CallFunc_GetPalDebugSetting_ReturnValue_2;         // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x0060(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetAreaRadius_ReturnValue_2;              // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_368F[0x4];                                     // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4081[0x4];                                     // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalDebugSetting*                       CallFunc_GetPalDebugSetting_ReturnValue_3;         // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -172,6 +172,23 @@ static_assert(offsetof(BP_PalRandomIncidentSpawner_C_CreateDebugShape, CallFunc_
 static_assert(offsetof(BP_PalRandomIncidentSpawner_C_CreateDebugShape, CallFunc_GetAreaRadius_ReturnValue_2) == 0x000078, "Member 'BP_PalRandomIncidentSpawner_C_CreateDebugShape::CallFunc_GetAreaRadius_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(BP_PalRandomIncidentSpawner_C_CreateDebugShape, CallFunc_GetPalDebugSetting_ReturnValue_3) == 0x000080, "Member 'BP_PalRandomIncidentSpawner_C_CreateDebugShape::CallFunc_GetPalDebugSetting_ReturnValue_3' has a wrong offset!");
 static_assert(offsetof(BP_PalRandomIncidentSpawner_C_CreateDebugShape, CallFunc_IsValid_ReturnValue) == 0x000088, "Member 'BP_PalRandomIncidentSpawner_C_CreateDebugShape::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+
+// Function BP_PalRandomIncidentSpawner.BP_PalRandomIncidentSpawner_C.DestroyCollisionComponents
+// 0x0004 (0x0004 - 0x0000)
+struct BP_PalRandomIncidentSpawner_C_DestroyCollisionComponents final
+{
+public:
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_PalRandomIncidentSpawner_C_DestroyCollisionComponents) == 0x000001, "Wrong alignment on BP_PalRandomIncidentSpawner_C_DestroyCollisionComponents");
+static_assert(sizeof(BP_PalRandomIncidentSpawner_C_DestroyCollisionComponents) == 0x000004, "Wrong size on BP_PalRandomIncidentSpawner_C_DestroyCollisionComponents");
+static_assert(offsetof(BP_PalRandomIncidentSpawner_C_DestroyCollisionComponents, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_PalRandomIncidentSpawner_C_DestroyCollisionComponents::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentSpawner_C_DestroyCollisionComponents, CallFunc_IsValid_ReturnValue_1) == 0x000001, "Member 'BP_PalRandomIncidentSpawner_C_DestroyCollisionComponents::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentSpawner_C_DestroyCollisionComponents, CallFunc_IsValid_ReturnValue_2) == 0x000002, "Member 'BP_PalRandomIncidentSpawner_C_DestroyCollisionComponents::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentSpawner_C_DestroyCollisionComponents, CallFunc_IsValid_ReturnValue_3) == 0x000003, "Member 'BP_PalRandomIncidentSpawner_C_DestroyCollisionComponents::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
 
 // Function BP_PalRandomIncidentSpawner.BP_PalRandomIncidentSpawner_C.EditorSetup_WalkPointRef
 // 0x0028 (0x0028 - 0x0000)
@@ -196,15 +213,15 @@ struct BP_PalRandomIncidentSpawner_C_ExecuteUbergraph_BP_PalRandomIncidentSpawne
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3690[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4082[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIncidentBase*                       K2Node_Event_Incident;                             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalIncidentDynamicParameterRandom*     K2Node_Event_DynamicParameter;                     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalIncidentNotifyListener*             K2Node_CustomEvent_Listener;                       // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EPalIncidentState                             K2Node_CustomEvent_IncidentState;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3691[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalIncidentNotifyParameter            K2Node_CustomEvent_Parameter;                      // 0x0028(0x0028)(ConstParm, NoDestructor)
+	uint8                                         Pad_4083[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalIncidentNotifyParameter            K2Node_CustomEvent_parameter;                      // 0x0028(0x0028)(ConstParm, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3692[0x3];                                     // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4084[0x3];                                     // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_CreateDebugShape_Delta_ImplicitCast;      // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -215,7 +232,7 @@ static_assert(offsetof(BP_PalRandomIncidentSpawner_C_ExecuteUbergraph_BP_PalRand
 static_assert(offsetof(BP_PalRandomIncidentSpawner_C_ExecuteUbergraph_BP_PalRandomIncidentSpawner, K2Node_Event_DynamicParameter) == 0x000010, "Member 'BP_PalRandomIncidentSpawner_C_ExecuteUbergraph_BP_PalRandomIncidentSpawner::K2Node_Event_DynamicParameter' has a wrong offset!");
 static_assert(offsetof(BP_PalRandomIncidentSpawner_C_ExecuteUbergraph_BP_PalRandomIncidentSpawner, K2Node_CustomEvent_Listener) == 0x000018, "Member 'BP_PalRandomIncidentSpawner_C_ExecuteUbergraph_BP_PalRandomIncidentSpawner::K2Node_CustomEvent_Listener' has a wrong offset!");
 static_assert(offsetof(BP_PalRandomIncidentSpawner_C_ExecuteUbergraph_BP_PalRandomIncidentSpawner, K2Node_CustomEvent_IncidentState) == 0x000020, "Member 'BP_PalRandomIncidentSpawner_C_ExecuteUbergraph_BP_PalRandomIncidentSpawner::K2Node_CustomEvent_IncidentState' has a wrong offset!");
-static_assert(offsetof(BP_PalRandomIncidentSpawner_C_ExecuteUbergraph_BP_PalRandomIncidentSpawner, K2Node_CustomEvent_Parameter) == 0x000028, "Member 'BP_PalRandomIncidentSpawner_C_ExecuteUbergraph_BP_PalRandomIncidentSpawner::K2Node_CustomEvent_Parameter' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentSpawner_C_ExecuteUbergraph_BP_PalRandomIncidentSpawner, K2Node_CustomEvent_parameter) == 0x000028, "Member 'BP_PalRandomIncidentSpawner_C_ExecuteUbergraph_BP_PalRandomIncidentSpawner::K2Node_CustomEvent_parameter' has a wrong offset!");
 static_assert(offsetof(BP_PalRandomIncidentSpawner_C_ExecuteUbergraph_BP_PalRandomIncidentSpawner, K2Node_SwitchEnum_CmpSuccess) == 0x000050, "Member 'BP_PalRandomIncidentSpawner_C_ExecuteUbergraph_BP_PalRandomIncidentSpawner::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(BP_PalRandomIncidentSpawner_C_ExecuteUbergraph_BP_PalRandomIncidentSpawner, K2Node_Event_DeltaSeconds) == 0x000054, "Member 'BP_PalRandomIncidentSpawner_C_ExecuteUbergraph_BP_PalRandomIncidentSpawner::K2Node_Event_DeltaSeconds' has a wrong offset!");
 static_assert(offsetof(BP_PalRandomIncidentSpawner_C_ExecuteUbergraph_BP_PalRandomIncidentSpawner, CallFunc_CreateDebugShape_Delta_ImplicitCast) == 0x000058, "Member 'BP_PalRandomIncidentSpawner_C_ExecuteUbergraph_BP_PalRandomIncidentSpawner::CallFunc_CreateDebugShape_Delta_ImplicitCast' has a wrong offset!");
@@ -227,7 +244,7 @@ struct BP_PalRandomIncidentSpawner_C_OnIncidentNotify final
 public:
 	class UPalIncidentNotifyListener*             Listener;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EPalIncidentState                             IncidentState;                                     // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3693[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4085[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalIncidentNotifyParameter            Param_Parameter;                                   // 0x0010(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
 static_assert(alignof(BP_PalRandomIncidentSpawner_C_OnIncidentNotify) == 0x000008, "Wrong alignment on BP_PalRandomIncidentSpawner_C_OnIncidentNotify");
@@ -270,6 +287,23 @@ public:
 static_assert(alignof(BP_PalRandomIncidentSpawner_C_ReleaseIncident) == 0x000001, "Wrong alignment on BP_PalRandomIncidentSpawner_C_ReleaseIncident");
 static_assert(sizeof(BP_PalRandomIncidentSpawner_C_ReleaseIncident) == 0x000001, "Wrong size on BP_PalRandomIncidentSpawner_C_ReleaseIncident");
 static_assert(offsetof(BP_PalRandomIncidentSpawner_C_ReleaseIncident, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_PalRandomIncidentSpawner_C_ReleaseIncident::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+
+// Function BP_PalRandomIncidentSpawner.BP_PalRandomIncidentSpawner_C.SetAreaRadiuses
+// 0x0004 (0x0004 - 0x0000)
+struct BP_PalRandomIncidentSpawner_C_SetAreaRadiuses final
+{
+public:
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_PalRandomIncidentSpawner_C_SetAreaRadiuses) == 0x000001, "Wrong alignment on BP_PalRandomIncidentSpawner_C_SetAreaRadiuses");
+static_assert(sizeof(BP_PalRandomIncidentSpawner_C_SetAreaRadiuses) == 0x000004, "Wrong size on BP_PalRandomIncidentSpawner_C_SetAreaRadiuses");
+static_assert(offsetof(BP_PalRandomIncidentSpawner_C_SetAreaRadiuses, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_PalRandomIncidentSpawner_C_SetAreaRadiuses::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentSpawner_C_SetAreaRadiuses, CallFunc_IsValid_ReturnValue_1) == 0x000001, "Member 'BP_PalRandomIncidentSpawner_C_SetAreaRadiuses::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentSpawner_C_SetAreaRadiuses, CallFunc_IsValid_ReturnValue_2) == 0x000002, "Member 'BP_PalRandomIncidentSpawner_C_SetAreaRadiuses::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_PalRandomIncidentSpawner_C_SetAreaRadiuses, CallFunc_IsValid_ReturnValue_3) == 0x000003, "Member 'BP_PalRandomIncidentSpawner_C_SetAreaRadiuses::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
 
 // Function BP_PalRandomIncidentSpawner.BP_PalRandomIncidentSpawner_C.SetupIncident
 // 0x0028 (0x0028 - 0x0000)

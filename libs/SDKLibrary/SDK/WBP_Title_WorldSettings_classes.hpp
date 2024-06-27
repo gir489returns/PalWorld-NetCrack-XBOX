@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Title_WorldSettings.WBP_Title_WorldSettings_C
-// 0x0558 (0x0960 - 0x0408)
+// 0x05D8 (0x09E0 - 0x0408)
 class UWBP_Title_WorldSettings_C final : public UPalUserWidget
 {
 public:
@@ -41,78 +41,102 @@ public:
 	class UWBP_Title_WorldSettingsInfo_C*         WBP_Title_WorldSettingsInfo_3;                     // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_AutoResetGuildNoOnlinePlayers;       // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_AutoResetGuildTimeNoOnlinePlayers;   // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_BaseCampWorkerNum;                   // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_BuildObjectDamageRate;               // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_BuildObjectDeteriorationRate;        // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_CollectionDropRate;                  // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_CollectionObjectHpRate;              // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_CollectionObjectRespawnSpeedRate;    // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_DayTimeSpeedRate;                    // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_DeathPenalty;                        // 0x04C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_Difficulty_InnerSetting;             // 0x04D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_DifficultyCustom;                    // 0x04D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_DifficultySetting;                   // 0x04E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_EggHatchingTimeRate;                 // 0x04E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_EnablePoop;                          // 0x04F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_EnableRaid;                          // 0x04F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_EnemyDropItemRate;                   // 0x0500(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_ExpRate;                             // 0x0508(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_GuildPlayerMaxNum;                   // 0x0510(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_MaxDropItemNum;                      // 0x0518(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_MaxPoopNum;                          // 0x0520(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_MultiSetting;                        // 0x0528(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_NightTimeSpeedRate;                  // 0x0530(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PalAutoHPRegeneRate;                 // 0x0538(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PalAutoHpRegeneRateInSleep;          // 0x0540(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PalCaptureRateAdd;                   // 0x0548(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PalDamageRateAttack;                 // 0x0550(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PalDamageRateDefense;                // 0x0558(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PalSpawnNumRate;                     // 0x0560(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PalStaminaDecreaseRate;              // 0x0568(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PalStomachDecreaseRate;              // 0x0570(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PasswordOnOff;                       // 0x0578(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PasswordSetting;                     // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PlayerAutoHPRegeneRate;              // 0x0588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PlayerAutoHPRegeneRateInSleep;       // 0x0590(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PlayerDamageRateDefense;             // 0x0598(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PlayerDamagerRateAttack;             // 0x05A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PlayerStaminaDecreaseRate;           // 0x05A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PlayerStomachDecreaseRate;           // 0x05B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_WorldName;                           // 0x05B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_             OnClickedCancel;                                   // 0x05C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnClickedConfirm;                                  // 0x05D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                          IsCustomDifficultySetting;                         // 0x05E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45DE[0x3];                                     // 0x05E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalOptionWorldStaticSettings          SatticWorldSetting;                                // 0x05E4(0x00F0)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	uint8                                         Pad_45DF[0x4];                                     // 0x06D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalOptionWorldSettings                CachedOriginalWorldSetting;                        // 0x06D8(0x0138)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FPalOptionWorldSettings                EditedWorldSetting;                                // 0x0810(0x0138)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          IsEditedSettingFlag;                               // 0x0948(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsEditedFromPreset;                                // 0x0949(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Is_New_World;                                      // 0x094A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45E0[0x5];                                     // 0x094B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	FMulticastInlineDelegateProperty_             OnClickedWorldNameInputButton;                     // 0x0950(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_AutoSaveInterval;                    // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_BaseCampMaxNumInGuild;               // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_BaseCampWorkerNum;                   // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_BuildObjectDamageRate;               // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_BuildObjectDeteriorationRate;        // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_CollectionDropRate;                  // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_CollectionObjectHpRate;              // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_CollectionObjectRespawnSpeedRate;    // 0x04C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_DayTimeSpeedRate;                    // 0x04D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_DeathPenalty;                        // 0x04D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_Difficulty_InnerSetting;             // 0x04E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_DifficultyCustom;                    // 0x04E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_DifficultySetting;                   // 0x04F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_EggHatchingTimeRate;                 // 0x04F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_EnablePoop;                          // 0x0500(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_EnableRaid;                          // 0x0508(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_EnemyDropItemRate;                   // 0x0510(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_ExpRate;                             // 0x0518(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_GuildPlayerMaxNum;                   // 0x0520(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_MaxDropItemNum;                      // 0x0528(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_MaxPoopNum;                          // 0x0530(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_MultiSetting;                        // 0x0538(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_NightTimeSpeedRate;                  // 0x0540(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PalAutoHPRegeneRate;                 // 0x0548(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PalAutoHpRegeneRateInSleep;          // 0x0550(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PalCaptureRateAdd;                   // 0x0558(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PalDamageRateAttack;                 // 0x0560(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PalDamageRateDefense;                // 0x0568(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PalSpawnNumRate;                     // 0x0570(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PalStaminaDecreaseRate;              // 0x0578(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PalStomachDecreaseRate;              // 0x0580(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PasswordOnOff;                       // 0x0588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PasswordSetting;                     // 0x0590(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PlayerAutoHPRegeneRate;              // 0x0598(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PlayerAutoHPRegeneRateInSleep;       // 0x05A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PlayerDamageRateDefense;             // 0x05A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PlayerDamagerRateAttack;             // 0x05B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PlayerStaminaDecreaseRate;           // 0x05B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PlayerStomachDecreaseRate;           // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_Randomizer;                          // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_RandomizerSeed;                      // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_WorldName;                           // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_             OnClickedCancel;                                   // 0x05E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnClickedConfirm;                                  // 0x05F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          IsCustomDifficultySetting;                         // 0x0600(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4846[0x3];                                     // 0x0601(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalOptionWorldStaticSettings          SatticWorldSetting;                                // 0x0604(0x0100)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	uint8                                         Pad_4847[0x4];                                     // 0x0704(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalOptionWorldSettings                CachedOriginalWorldSetting;                        // 0x0708(0x0158)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPalOptionWorldSettings                EditedWorldSetting;                                // 0x0860(0x0158)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          IsEditedSettingFlag;                               // 0x09B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEditedFromPreset;                                // 0x09B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Is_New_World;                                      // 0x09BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4848[0x5];                                     // 0x09BB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             OnClickedWorldNameInputButton;                     // 0x09C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnClickedRandomizerSeedInputButton;                // 0x09D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
+	void UpdateRandomizerSeedVisibility();
+	void TogglePanel(bool IsCustomPanel);
+	void SetWorldName(const class FString& NewWorldName);
+	void Setup(const struct FPalOptionWorldSettings& WorldSetting, bool IsNewWorld, bool CanMulti, const class FString& WorldSaveDirectoryName, const class FString& WorldName);
+	void SetRandomizerSeed(const class FString& NewSeed);
+	void OnClickedWorldNameInputButton__DelegateSignature();
+	void OnClickedRandomizerSeedInputButton__DelegateSignature();
+	void OnClickedConfirm__DelegateSignature();
+	void OnClickedCancel__DelegateSignature();
 	void MarkDirtyWorldSetting();
 	void IsTextEditing(bool* IsEditing);
 	void IsEditingCustomDifficulty(bool* IsEditing);
 	void IsEditedSetting(bool* IsEdited);
 	void GetWorldName(class FString* WorldName);
+	void GetRandomizerSeed(class FString* WorldName);
 	void GetFocusTarget(class UWidget** TargetWidget);
 	void GetEditedWorldSetting(struct FPalOptionWorldSettings* WorldSetting);
 	void ExecuteUbergraph_WBP_Title_WorldSettings(int32 EntryPoint);
 	void EndCustomDifficultySetting();
 	void DisplayDifficultyDesc(EPalOptionWorldDifficulty DifficultyTyper);
 	void Destruct();
+	void CreateRandomizerModeSettingStrings(TArray<class FString>* OutStrings);
 	void CreateDifficultySettingStrings(TArray<class FString>* OutStrings);
+	void CreateDeathPenaltySettingStrings(TArray<class FString>* OutStrings);
+	void CreateAutoSaveSettingStrings(TArray<class FString>* OutStrings);
+	void ConvertUIIndexToRandomizerMode(int32 UIIndex, EPalRandomizerType* RandomizerType);
 	void ConvertUIIndexToDifficulty(int32 UIIndex, EPalOptionWorldDifficulty* DifficultyType);
 	void ConvertUIIndexToDeathPenalty(int32 UIIndex, EPalOptionWorldDeathPenalty* DeathPenaltyType);
+	void ConvertRandomizerModeToUIIndex(EPalRandomizerType RandomizerType, int32* UIIndex);
+	void ConvertIndexToAutoSaveTime(int32 Param_Index, double* Time);
 	void ConvertDifficultyToUIIndex(EPalOptionWorldDifficulty DifficultyType, int32* UIIndex);
 	void ConvertDeathPenaltyToUIIndex(EPalOptionWorldDeathPenalty DeathPenaltyType, int32* UIIndex);
+	void ConvertAutoSaveTimeToIndex(double Time, int32* Param_Index);
 	void Construct();
 	void CancelTextEdit();
 	void BndEvt__WBP_Title_WorldSettings_WorldSettings_WorldName_K2Node_ComponentBoundEvent_31_OnClickedSettingButton__DelegateSignature();
+	void BndEvt__WBP_Title_WorldSettings_WorldSettings_RandomizerSeed_K2Node_ComponentBoundEvent_43_OnClickedSettingButton__DelegateSignature();
+	void BndEvt__WBP_Title_WorldSettings_WorldSettings_Randomizer_K2Node_ComponentBoundEvent_42_OnChangedSelectIndex__DelegateSignature(int32 NewIndex);
 	void BndEvt__WBP_Title_WorldSettings_WorldSettings_PlayerStomachDecreaseRate_K2Node_ComponentBoundEvent_22_OnChangedValue__DelegateSignature(double NewValue);
 	void BndEvt__WBP_Title_WorldSettings_WorldSettings_PlayerStaminaDecreaseRate_K2Node_ComponentBoundEvent_23_OnChangedValue__DelegateSignature(double NewValue);
 	void BndEvt__WBP_Title_WorldSettings_WorldSettings_PlayerDamagerRateAttack_K2Node_ComponentBoundEvent_20_OnChangedValue__DelegateSignature(double NewValue);
@@ -144,6 +168,8 @@ public:
 	void BndEvt__WBP_Title_WorldSettings_WorldSettings_BuildObjectDeteriorationRate_K2Node_ComponentBoundEvent_36_OnChangedValue__DelegateSignature(double NewValue);
 	void BndEvt__WBP_Title_WorldSettings_WorldSettings_BuildObjectDamageRate_K2Node_ComponentBoundEvent_26_OnChangedValue__DelegateSignature(double NewValue);
 	void BndEvt__WBP_Title_WorldSettings_WorldSettings_BaseCampWorkerNum_K2Node_ComponentBoundEvent_41_OnChangedValue__DelegateSignature(double NewValue);
+	void BndEvt__WBP_Title_WorldSettings_WorldSettings_BaseCampMaxNumInGuild_K2Node_ComponentBoundEvent_44_OnChangedValue__DelegateSignature(double NewValue);
+	void BndEvt__WBP_Title_WorldSettings_WorldSettings_AutoSaveInterval_K2Node_ComponentBoundEvent_46_OnChangedSelectIndex__DelegateSignature(int32 NewIndex);
 	void BndEvt__WBP_Title_WorldSettings_WorldSettings_AutoResetGuildTimeNoOnlinePlayers_K2Node_ComponentBoundEvent_34_OnChangedValue__DelegateSignature(double NewValue);
 	void BndEvt__WBP_Title_WorldSettings_WorldSettings_AutoResetGuildNoOnlinePlayers_K2Node_ComponentBoundEvent_33_OnSwitchChanged__DelegateSignature(bool IsOn);
 	void BndEvt__WBP_Title_WorldSettings_WorldSettings_AGuildPlayerMaxNum_K2Node_ComponentBoundEvent_35_OnChangedValue__DelegateSignature(double NewValue);
@@ -151,18 +177,11 @@ public:
 	void BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature(bool IsOn);
 	void BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature(bool IsOn);
 	void BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature(int32 NewIndex);
+	void BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultyCustom_K2Node_ComponentBoundEvent_7_OnClickedSettingButton__DelegateSignature();
 	void BndEvt__WBP_Title_WorldSettings_WBP_Title_SettingsButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
 	void BndEvt__WBP_Title_WorldSettings_WBP_Title_SettingsButton_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
 	void ApplyWorldSettingToUI(const struct FPalOptionWorldSettings& WorldSetting);
 	void ApplyDifficultyPreset(EPalOptionWorldDifficulty DifficultyType);
-	void CreateDeathPenaltySettingStrings(TArray<class FString>* OutStrings);
-	void BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultyCustom_K2Node_ComponentBoundEvent_7_OnClickedSettingButton__DelegateSignature();
-	void OnClickedCancel__DelegateSignature();
-	void OnClickedConfirm__DelegateSignature();
-	void OnClickedWorldNameInputButton__DelegateSignature();
-	void Setup(const struct FPalOptionWorldSettings& WorldSetting, bool IsNewWorld, bool CanMulti, const class FString& WorldSaveDirectoryName, const class FString& WorldName);
-	void SetWorldName(const class FString& NewWorldName);
-	void TogglePanel(bool IsCustomPanel);
 
 public:
 	static class UClass* StaticClass()
@@ -175,7 +194,7 @@ public:
 	}
 };
 static_assert(alignof(UWBP_Title_WorldSettings_C) == 0x000008, "Wrong alignment on UWBP_Title_WorldSettings_C");
-static_assert(sizeof(UWBP_Title_WorldSettings_C) == 0x000960, "Wrong size on UWBP_Title_WorldSettings_C");
+static_assert(sizeof(UWBP_Title_WorldSettings_C) == 0x0009E0, "Wrong size on UWBP_Title_WorldSettings_C");
 static_assert(offsetof(UWBP_Title_WorldSettings_C, UberGraphFrame) == 0x000408, "Member 'UWBP_Title_WorldSettings_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_Title_WorldSettings_C, Anm_DefaultToDetail) == 0x000410, "Member 'UWBP_Title_WorldSettings_C::Anm_DefaultToDetail' has a wrong offset!");
 static_assert(offsetof(UWBP_Title_WorldSettings_C, Canvas_DifficultySetting) == 0x000418, "Member 'UWBP_Title_WorldSettings_C::Canvas_DifficultySetting' has a wrong offset!");
@@ -193,54 +212,59 @@ static_assert(offsetof(UWBP_Title_WorldSettings_C, WBP_Title_WorldSettingsInfo_2
 static_assert(offsetof(UWBP_Title_WorldSettings_C, WBP_Title_WorldSettingsInfo_3) == 0x000478, "Member 'UWBP_Title_WorldSettings_C::WBP_Title_WorldSettingsInfo_3' has a wrong offset!");
 static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_AutoResetGuildNoOnlinePlayers) == 0x000480, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_AutoResetGuildNoOnlinePlayers' has a wrong offset!");
 static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_AutoResetGuildTimeNoOnlinePlayers) == 0x000488, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_AutoResetGuildTimeNoOnlinePlayers' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_BaseCampWorkerNum) == 0x000490, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_BaseCampWorkerNum' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_BuildObjectDamageRate) == 0x000498, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_BuildObjectDamageRate' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_BuildObjectDeteriorationRate) == 0x0004A0, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_BuildObjectDeteriorationRate' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_CollectionDropRate) == 0x0004A8, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_CollectionDropRate' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_CollectionObjectHpRate) == 0x0004B0, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_CollectionObjectHpRate' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_CollectionObjectRespawnSpeedRate) == 0x0004B8, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_CollectionObjectRespawnSpeedRate' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_DayTimeSpeedRate) == 0x0004C0, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_DayTimeSpeedRate' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_DeathPenalty) == 0x0004C8, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_DeathPenalty' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_Difficulty_InnerSetting) == 0x0004D0, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_Difficulty_InnerSetting' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_DifficultyCustom) == 0x0004D8, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_DifficultyCustom' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_DifficultySetting) == 0x0004E0, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_DifficultySetting' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_EggHatchingTimeRate) == 0x0004E8, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_EggHatchingTimeRate' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_EnablePoop) == 0x0004F0, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_EnablePoop' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_EnableRaid) == 0x0004F8, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_EnableRaid' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_EnemyDropItemRate) == 0x000500, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_EnemyDropItemRate' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_ExpRate) == 0x000508, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_ExpRate' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_GuildPlayerMaxNum) == 0x000510, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_GuildPlayerMaxNum' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_MaxDropItemNum) == 0x000518, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_MaxDropItemNum' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_MaxPoopNum) == 0x000520, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_MaxPoopNum' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_MultiSetting) == 0x000528, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_MultiSetting' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_NightTimeSpeedRate) == 0x000530, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_NightTimeSpeedRate' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PalAutoHPRegeneRate) == 0x000538, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PalAutoHPRegeneRate' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PalAutoHpRegeneRateInSleep) == 0x000540, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PalAutoHpRegeneRateInSleep' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PalCaptureRateAdd) == 0x000548, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PalCaptureRateAdd' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PalDamageRateAttack) == 0x000550, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PalDamageRateAttack' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PalDamageRateDefense) == 0x000558, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PalDamageRateDefense' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PalSpawnNumRate) == 0x000560, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PalSpawnNumRate' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PalStaminaDecreaseRate) == 0x000568, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PalStaminaDecreaseRate' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PalStomachDecreaseRate) == 0x000570, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PalStomachDecreaseRate' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PasswordOnOff) == 0x000578, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PasswordOnOff' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PasswordSetting) == 0x000580, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PasswordSetting' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PlayerAutoHPRegeneRate) == 0x000588, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PlayerAutoHPRegeneRate' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PlayerAutoHPRegeneRateInSleep) == 0x000590, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PlayerAutoHPRegeneRateInSleep' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PlayerDamageRateDefense) == 0x000598, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PlayerDamageRateDefense' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PlayerDamagerRateAttack) == 0x0005A0, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PlayerDamagerRateAttack' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PlayerStaminaDecreaseRate) == 0x0005A8, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PlayerStaminaDecreaseRate' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PlayerStomachDecreaseRate) == 0x0005B0, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PlayerStomachDecreaseRate' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_WorldName) == 0x0005B8, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_WorldName' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, OnClickedCancel) == 0x0005C0, "Member 'UWBP_Title_WorldSettings_C::OnClickedCancel' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, OnClickedConfirm) == 0x0005D0, "Member 'UWBP_Title_WorldSettings_C::OnClickedConfirm' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, IsCustomDifficultySetting) == 0x0005E0, "Member 'UWBP_Title_WorldSettings_C::IsCustomDifficultySetting' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, SatticWorldSetting) == 0x0005E4, "Member 'UWBP_Title_WorldSettings_C::SatticWorldSetting' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, CachedOriginalWorldSetting) == 0x0006D8, "Member 'UWBP_Title_WorldSettings_C::CachedOriginalWorldSetting' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, EditedWorldSetting) == 0x000810, "Member 'UWBP_Title_WorldSettings_C::EditedWorldSetting' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, IsEditedSettingFlag) == 0x000948, "Member 'UWBP_Title_WorldSettings_C::IsEditedSettingFlag' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, IsEditedFromPreset) == 0x000949, "Member 'UWBP_Title_WorldSettings_C::IsEditedFromPreset' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, Is_New_World) == 0x00094A, "Member 'UWBP_Title_WorldSettings_C::Is_New_World' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, OnClickedWorldNameInputButton) == 0x000950, "Member 'UWBP_Title_WorldSettings_C::OnClickedWorldNameInputButton' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_AutoSaveInterval) == 0x000490, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_AutoSaveInterval' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_BaseCampMaxNumInGuild) == 0x000498, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_BaseCampMaxNumInGuild' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_BaseCampWorkerNum) == 0x0004A0, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_BaseCampWorkerNum' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_BuildObjectDamageRate) == 0x0004A8, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_BuildObjectDamageRate' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_BuildObjectDeteriorationRate) == 0x0004B0, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_BuildObjectDeteriorationRate' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_CollectionDropRate) == 0x0004B8, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_CollectionDropRate' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_CollectionObjectHpRate) == 0x0004C0, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_CollectionObjectHpRate' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_CollectionObjectRespawnSpeedRate) == 0x0004C8, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_CollectionObjectRespawnSpeedRate' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_DayTimeSpeedRate) == 0x0004D0, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_DayTimeSpeedRate' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_DeathPenalty) == 0x0004D8, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_DeathPenalty' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_Difficulty_InnerSetting) == 0x0004E0, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_Difficulty_InnerSetting' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_DifficultyCustom) == 0x0004E8, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_DifficultyCustom' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_DifficultySetting) == 0x0004F0, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_DifficultySetting' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_EggHatchingTimeRate) == 0x0004F8, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_EggHatchingTimeRate' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_EnablePoop) == 0x000500, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_EnablePoop' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_EnableRaid) == 0x000508, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_EnableRaid' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_EnemyDropItemRate) == 0x000510, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_EnemyDropItemRate' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_ExpRate) == 0x000518, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_ExpRate' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_GuildPlayerMaxNum) == 0x000520, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_GuildPlayerMaxNum' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_MaxDropItemNum) == 0x000528, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_MaxDropItemNum' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_MaxPoopNum) == 0x000530, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_MaxPoopNum' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_MultiSetting) == 0x000538, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_MultiSetting' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_NightTimeSpeedRate) == 0x000540, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_NightTimeSpeedRate' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PalAutoHPRegeneRate) == 0x000548, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PalAutoHPRegeneRate' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PalAutoHpRegeneRateInSleep) == 0x000550, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PalAutoHpRegeneRateInSleep' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PalCaptureRateAdd) == 0x000558, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PalCaptureRateAdd' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PalDamageRateAttack) == 0x000560, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PalDamageRateAttack' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PalDamageRateDefense) == 0x000568, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PalDamageRateDefense' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PalSpawnNumRate) == 0x000570, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PalSpawnNumRate' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PalStaminaDecreaseRate) == 0x000578, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PalStaminaDecreaseRate' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PalStomachDecreaseRate) == 0x000580, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PalStomachDecreaseRate' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PasswordOnOff) == 0x000588, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PasswordOnOff' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PasswordSetting) == 0x000590, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PasswordSetting' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PlayerAutoHPRegeneRate) == 0x000598, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PlayerAutoHPRegeneRate' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PlayerAutoHPRegeneRateInSleep) == 0x0005A0, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PlayerAutoHPRegeneRateInSleep' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PlayerDamageRateDefense) == 0x0005A8, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PlayerDamageRateDefense' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PlayerDamagerRateAttack) == 0x0005B0, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PlayerDamagerRateAttack' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PlayerStaminaDecreaseRate) == 0x0005B8, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PlayerStaminaDecreaseRate' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PlayerStomachDecreaseRate) == 0x0005C0, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PlayerStomachDecreaseRate' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_Randomizer) == 0x0005C8, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_Randomizer' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_RandomizerSeed) == 0x0005D0, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_RandomizerSeed' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_WorldName) == 0x0005D8, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_WorldName' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, OnClickedCancel) == 0x0005E0, "Member 'UWBP_Title_WorldSettings_C::OnClickedCancel' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, OnClickedConfirm) == 0x0005F0, "Member 'UWBP_Title_WorldSettings_C::OnClickedConfirm' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, IsCustomDifficultySetting) == 0x000600, "Member 'UWBP_Title_WorldSettings_C::IsCustomDifficultySetting' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, SatticWorldSetting) == 0x000604, "Member 'UWBP_Title_WorldSettings_C::SatticWorldSetting' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, CachedOriginalWorldSetting) == 0x000708, "Member 'UWBP_Title_WorldSettings_C::CachedOriginalWorldSetting' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, EditedWorldSetting) == 0x000860, "Member 'UWBP_Title_WorldSettings_C::EditedWorldSetting' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, IsEditedSettingFlag) == 0x0009B8, "Member 'UWBP_Title_WorldSettings_C::IsEditedSettingFlag' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, IsEditedFromPreset) == 0x0009B9, "Member 'UWBP_Title_WorldSettings_C::IsEditedFromPreset' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, Is_New_World) == 0x0009BA, "Member 'UWBP_Title_WorldSettings_C::Is_New_World' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, OnClickedWorldNameInputButton) == 0x0009C0, "Member 'UWBP_Title_WorldSettings_C::OnClickedWorldNameInputButton' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, OnClickedRandomizerSeedInputButton) == 0x0009D0, "Member 'UWBP_Title_WorldSettings_C::OnClickedRandomizerSeedInputButton' has a wrong offset!");
 
 }
 
