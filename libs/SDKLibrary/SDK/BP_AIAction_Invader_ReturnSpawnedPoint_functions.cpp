@@ -79,6 +79,26 @@ void UBP_AIAction_Invader_ReturnSpawnedPoint_C::ExecuteUbergraph_BP_AIAction_Inv
 }
 
 
+// Function BP_AIAction_Invader_ReturnSpawnedPoint.BP_AIAction_Invader_ReturnSpawnedPoint_C.«¹¿à¤ÙóÈ
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalVisualEffectBase*             VisualEffect                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_Invader_ReturnSpawnedPoint_C::________(class UPalVisualEffectBase* VisualEffect)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_Invader_ReturnSpawnedPoint_C", "«¹¿à¤ÙóÈ");
+
+	Params::BP_AIAction_Invader_ReturnSpawnedPoint_C_________ Parms{};
+
+	Parms.VisualEffect = VisualEffect;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_AIAction_Invader_ReturnSpawnedPoint.BP_AIAction_Invader_ReturnSpawnedPoint_C.«¹¿à¤ÙóÈ_0
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:

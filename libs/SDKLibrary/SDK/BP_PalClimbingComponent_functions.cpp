@@ -31,6 +31,27 @@ void UBP_PalClimbingComponent_C::Cancel_Ray_Check()
 }
 
 
+// Function BP_PalClimbingComponent.BP_PalClimbingComponent_C.CanClimbingStart
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool                                    Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_PalClimbingComponent_C::CanClimbingStart(bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalClimbingComponent_C", "CanClimbingStart");
+
+	Params::BP_PalClimbingComponent_C_CanClimbingStart Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
 // Function BP_PalClimbingComponent.BP_PalClimbingComponent_C.CenterRayCast
 // (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -651,6 +672,26 @@ void UBP_PalClimbingComponent_C::StartClimbing(const struct FHitResult& HitResul
 	Parms.HitResult = std::move(HitResult);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalClimbingComponent.BP_PalClimbingComponent_C.TryClimbAfterGrappling
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UBP_PalClimbingComponent_C::TryClimbAfterGrappling()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalClimbingComponent_C", "TryClimbAfterGrappling");
+
+	Params::BP_PalClimbingComponent_C_TryClimbAfterGrappling Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 

@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function BP_MonsterAIController_NPCOtomo.BP_MonsterAIController_NPCOtomo_C.ExecuteUbergraph_BP_MonsterAIController_NPCOtomo
-// (Final, UbergraphFunction)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -94,6 +94,26 @@ void ABP_MonsterAIController_NPCOtomo_C::ReceivePossess(class APawn* PossessedPa
 	Params::BP_MonsterAIController_NPCOtomo_C_ReceivePossess Parms{};
 
 	Parms.PossessedPawn = PossessedPawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MonsterAIController_NPCOtomo.BP_MonsterAIController_NPCOtomo_C.«¹¿à¤ÙóÈ_2
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FPalDeadInfo                     DeadInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void ABP_MonsterAIController_NPCOtomo_C::_________2(const struct FPalDeadInfo& DeadInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MonsterAIController_NPCOtomo_C", "«¹¿à¤ÙóÈ_2");
+
+	Params::BP_MonsterAIController_NPCOtomo_C__________2 Parms{};
+
+	Parms.DeadInfo = std::move(DeadInfo);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

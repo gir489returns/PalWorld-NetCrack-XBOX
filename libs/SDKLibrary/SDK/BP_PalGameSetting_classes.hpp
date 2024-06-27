@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalGameSetting.BP_PalGameSetting_C
-// 0x0000 (0x16B8 - 0x16B8)
+// 0x0000 (0x1848 - 0x1848)
 class UBP_PalGameSetting_C final : public UPalGameSetting
 {
 public:
@@ -36,7 +36,7 @@ public:
 	}
 };
 static_assert(alignof(UBP_PalGameSetting_C) == 0x000008, "Wrong alignment on UBP_PalGameSetting_C");
-static_assert(sizeof(UBP_PalGameSetting_C) == 0x0016B8, "Wrong size on UBP_PalGameSetting_C");
+static_assert(sizeof(UBP_PalGameSetting_C) == 0x001848, "Wrong size on UBP_PalGameSetting_C");
 
 }
 

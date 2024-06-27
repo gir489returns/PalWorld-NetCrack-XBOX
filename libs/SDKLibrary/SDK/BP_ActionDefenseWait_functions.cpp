@@ -65,6 +65,20 @@ void UBP_ActionDefenseWait_C::OnEndAction()
 }
 
 
+// Function BP_ActionDefenseWait.BP_ActionDefenseWait_C.SetupMontage
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBP_ActionDefenseWait_C::SetupMontage()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionDefenseWait_C", "SetupMontage");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_ActionDefenseWait.BP_ActionDefenseWait_C.TickAction
 // (Event, Public, BlueprintEvent)
 // Parameters:

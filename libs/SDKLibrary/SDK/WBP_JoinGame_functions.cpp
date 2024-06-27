@@ -17,103 +17,315 @@
 namespace SDK
 {
 
-// Function WBP_JoinGame.WBP_JoinGame_C.BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_11_OnClickedServerList_HistoryButton__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_JoinGame_C::BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_11_OnClickedServerList_HistoryButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_11_OnClickedServerList_HistoryButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_JoinGame.WBP_JoinGame_C.BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_2_OnClickedServerList_OfficialButton__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_JoinGame_C::BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_2_OnClickedServerList_OfficialButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_2_OnClickedServerList_OfficialButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_JoinGame.WBP_JoinGame_C.BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_JoinGame.WBP_JoinGame_C.Ñ¹ïüÉKÕe›
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
+// class UPalHUDDispatchParameterBase*     Param_Param                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_JoinGame_C::_____K_e_(class UPalHUDDispatchParameterBase* Param_Param)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_JoinGame_C", "Ñ¹ïüÉKÕe›");
+
+	Params::WBP_JoinGame_C______K_e_ Parms{};
+
+	Parms.Param_Param = Param_Param;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_JoinGame.WBP_JoinGame_C.«¹¿à¤ÙóÈ_0
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_JoinGame_C::_________0(bool bResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_JoinGame_C", "«¹¿à¤ÙóÈ_0");
+
+	Params::WBP_JoinGame_C__________0 Parms{};
+
+	Parms.bResult = bResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_JoinGame.WBP_JoinGame_C.«¹¿à¤ÙóÈ
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_JoinGame_C::________(bool bResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_JoinGame_C", "«¹¿à¤ÙóÈ");
+
+	Params::WBP_JoinGame_C_________ Parms{};
+
+	Parms.bResult = bResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_JoinGame.WBP_JoinGame_C.RequestGetServerListBP
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalUIServerListFilterType              Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                           Region                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// int32                                   PageOffset                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                           Word                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 // EPalUIServerListSortType                Param_SortType                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_JoinGame_C::BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature(EPalUIServerListSortType Param_SortType)
+void UWBP_JoinGame_C::RequestGetServerListBP(EPalUIServerListFilterType Type, const class FString& Region, int32 PageOffset, const class FString& Word, EPalUIServerListSortType Param_SortType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature");
+		Func = Class->GetFunction("WBP_JoinGame_C", "RequestGetServerListBP");
 
-	Params::WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature Parms{};
+	Params::WBP_JoinGame_C_RequestGetServerListBP Parms{};
 
+	Parms.Type = Type;
+	Parms.Region = std::move(Region);
+	Parms.PageOffset = PageOffset;
+	Parms.Word = std::move(Word);
 	Parms.Param_SortType = Param_SortType;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_JoinGame.WBP_JoinGame_C.BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FString                           Param_SearchWord                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// Function WBP_JoinGame.WBP_JoinGame_C.PreviousButton
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_JoinGame_C::BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature(const class FString& Param_SearchWord)
+void UWBP_JoinGame_C::PreviousButton()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature");
+		Func = Class->GetFunction("WBP_JoinGame_C", "PreviousButton");
 
-	Params::WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Param_SearchWord = std::move(Param_SearchWord);
+
+// Function WBP_JoinGame.WBP_JoinGame_C.Passworde›Œ
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalHUDDispatchParameterBase*     Param_Param                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_JoinGame_C::Passworde__(class UPalHUDDispatchParameterBase* Param_Param)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_JoinGame_C", "Passworde›Œ");
+
+	Params::WBP_JoinGame_C_Passworde__ Parms{};
+
+	Parms.Param_Param = Param_Param;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_JoinGame.WBP_JoinGame_C.BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWBP_Title_WorldSelect_ListContent_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_JoinGame.WBP_JoinGame_C.OpenJoinServerDialog
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_JoinGame_C::BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* Widget)
+void UWBP_JoinGame_C::OpenJoinServerDialog()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature");
+		Func = Class->GetFunction("WBP_JoinGame_C", "OpenJoinServerDialog");
 
-	Params::WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Widget = Widget;
+
+// Function WBP_JoinGame.WBP_JoinGame_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_JoinGame_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_JoinGame_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_JoinGame.WBP_JoinGame_C.OnCompleteGetServerListEvent
+// (Event, Public, BlueprintEvent)
+
+void UWBP_JoinGame_C::OnCompleteGetServerListEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_JoinGame_C", "OnCompleteGetServerListEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_JoinGame.WBP_JoinGame_C.OnCloseJoinServerDialog
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_JoinGame_C::OnCloseJoinServerDialog(bool bResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_JoinGame_C", "OnCloseJoinServerDialog");
+
+	Params::WBP_JoinGame_C_OnCloseJoinServerDialog Parms{};
+
+	Parms.bResult = bResult;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_JoinGame.WBP_JoinGame_C.BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_7_OnClickedServerList_CommunityButton__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_JoinGame.WBP_JoinGame_C.OnClicked_JoinByIPButton
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                           Address                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void UWBP_JoinGame_C::BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_7_OnClickedServerList_CommunityButton__DelegateSignature()
+void UWBP_JoinGame_C::OnClicked_JoinByIPButton(const class FString& Address)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_7_OnClickedServerList_CommunityButton__DelegateSignature");
+		Func = Class->GetFunction("WBP_JoinGame_C", "OnClicked_JoinByIPButton");
+
+	Params::WBP_JoinGame_C_OnClicked_JoinByIPButton Parms{};
+
+	Parms.Address = std::move(Address);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_JoinGame.WBP_JoinGame_C.OnChangeVersionIgnoreCheckbox
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsChecked                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_JoinGame_C::OnChangeVersionIgnoreCheckbox(bool bIsChecked)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_JoinGame_C", "OnChangeVersionIgnoreCheckbox");
+
+	Params::WBP_JoinGame_C_OnChangeVersionIgnoreCheckbox Parms{};
+
+	Parms.bIsChecked = bIsChecked;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_JoinGame.WBP_JoinGame_C.OnCancelAction
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_JoinGame_C::OnCancelAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_JoinGame_C", "OnCancelAction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_JoinGame.WBP_JoinGame_C.NextButton
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_JoinGame_C::NextButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_JoinGame_C", "NextButton");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_JoinGame.WBP_JoinGame_C.ExecuteUbergraph_WBP_JoinGame
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_JoinGame_C::ExecuteUbergraph_WBP_JoinGame(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_JoinGame_C", "ExecuteUbergraph_WBP_JoinGame");
+
+	Params::WBP_JoinGame_C_ExecuteUbergraph_WBP_JoinGame Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_JoinGame.WBP_JoinGame_C.DisplayServer
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_JoinGame_C::DisplayServer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_JoinGame_C", "DisplayServer");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_JoinGame.WBP_JoinGame_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_JoinGame_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_JoinGame_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_JoinGame.WBP_JoinGame_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_JoinGame_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_JoinGame_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -143,319 +355,105 @@ void UWBP_JoinGame_C::Completed_B0C690024643A528EA9A2B9DAEA567A3(const class FSt
 }
 
 
-// Function WBP_JoinGame.WBP_JoinGame_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_JoinGame.WBP_JoinGame_C.BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_7_OnClickedServerList_CommunityButton__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_JoinGame_C::Construct()
+void UWBP_JoinGame_C::BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_7_OnClickedServerList_CommunityButton__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "Construct");
+		Func = Class->GetFunction("WBP_JoinGame_C", "BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_7_OnClickedServerList_CommunityButton__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_JoinGame.WBP_JoinGame_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_JoinGame_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_JoinGame.WBP_JoinGame_C.DisplayServer
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_JoinGame_C::DisplayServer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "DisplayServer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_JoinGame.WBP_JoinGame_C.ExecuteUbergraph_WBP_JoinGame
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_JoinGame.WBP_JoinGame_C.BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_Title_WorldSelect_ListContent_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_JoinGame_C::ExecuteUbergraph_WBP_JoinGame(int32 EntryPoint)
+void UWBP_JoinGame_C::BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "ExecuteUbergraph_WBP_JoinGame");
+		Func = Class->GetFunction("WBP_JoinGame_C", "BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature");
 
-	Params::WBP_JoinGame_C_ExecuteUbergraph_WBP_JoinGame Parms{};
+	Params::WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_JoinGame.WBP_JoinGame_C.NextButton
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_JoinGame_C::NextButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "NextButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_JoinGame.WBP_JoinGame_C.OnCancelAction
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_JoinGame_C::OnCancelAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "OnCancelAction");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_JoinGame.WBP_JoinGame_C.OnChangeVersionIgnoreCheckbox
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_JoinGame.WBP_JoinGame_C.BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    bIsChecked                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                           Param_SearchWord                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void UWBP_JoinGame_C::OnChangeVersionIgnoreCheckbox(bool bIsChecked)
+void UWBP_JoinGame_C::BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature(const class FString& Param_SearchWord)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "OnChangeVersionIgnoreCheckbox");
+		Func = Class->GetFunction("WBP_JoinGame_C", "BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature");
 
-	Params::WBP_JoinGame_C_OnChangeVersionIgnoreCheckbox Parms{};
+	Params::WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature Parms{};
 
-	Parms.bIsChecked = bIsChecked;
+	Parms.Param_SearchWord = std::move(Param_SearchWord);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_JoinGame.WBP_JoinGame_C.OnClicked_JoinByIPButton
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_JoinGame.WBP_JoinGame_C.BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class FString                           Address                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UWBP_JoinGame_C::OnClicked_JoinByIPButton(const class FString& Address)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "OnClicked_JoinByIPButton");
-
-	Params::WBP_JoinGame_C_OnClicked_JoinByIPButton Parms{};
-
-	Parms.Address = std::move(Address);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_JoinGame.WBP_JoinGame_C.OnCloseJoinServerDialog
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_JoinGame_C::OnCloseJoinServerDialog(bool bResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "OnCloseJoinServerDialog");
-
-	Params::WBP_JoinGame_C_OnCloseJoinServerDialog Parms{};
-
-	Parms.bResult = bResult;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_JoinGame.WBP_JoinGame_C.OnCompleteGetServerListEvent
-// (Event, Public, BlueprintEvent)
-
-void UWBP_JoinGame_C::OnCompleteGetServerListEvent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "OnCompleteGetServerListEvent");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_JoinGame.WBP_JoinGame_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_JoinGame_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_JoinGame.WBP_JoinGame_C.OpenJoinServerDialog
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_JoinGame_C::OpenJoinServerDialog()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "OpenJoinServerDialog");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_JoinGame.WBP_JoinGame_C.Passworde›Œ
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalHUDDispatchParameterBase*     Param_Param                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_JoinGame_C::Passworde__(class UPalHUDDispatchParameterBase* Param_Param)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "Passworde›Œ");
-
-	Params::WBP_JoinGame_C_Passworde__ Parms{};
-
-	Parms.Param_Param = Param_Param;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_JoinGame.WBP_JoinGame_C.PreviousButton
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_JoinGame_C::PreviousButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "PreviousButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_JoinGame.WBP_JoinGame_C.RequestGetServerListBP
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalUIServerListFilterType              Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString                           Region                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// bool                                    IsCleanCache                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   PageOffset                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString                           Word                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 // EPalUIServerListSortType                Param_SortType                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_JoinGame_C::RequestGetServerListBP(EPalUIServerListFilterType Type, const class FString& Region, bool IsCleanCache, int32 PageOffset, const class FString& Word, EPalUIServerListSortType Param_SortType)
+void UWBP_JoinGame_C::BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature(EPalUIServerListSortType Param_SortType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "RequestGetServerListBP");
+		Func = Class->GetFunction("WBP_JoinGame_C", "BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature");
 
-	Params::WBP_JoinGame_C_RequestGetServerListBP Parms{};
+	Params::WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature Parms{};
 
-	Parms.Type = Type;
-	Parms.Region = std::move(Region);
-	Parms.IsCleanCache = IsCleanCache;
-	Parms.PageOffset = PageOffset;
-	Parms.Word = std::move(Word);
 	Parms.Param_SortType = Param_SortType;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_JoinGame.WBP_JoinGame_C.«¹¿à¤ÙóÈ
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_JoinGame.WBP_JoinGame_C.BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_2_OnClickedServerList_OfficialButton__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_JoinGame_C::________(bool bResult)
+void UWBP_JoinGame_C::BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_2_OnClickedServerList_OfficialButton__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "«¹¿à¤ÙóÈ");
+		Func = Class->GetFunction("WBP_JoinGame_C", "BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_2_OnClickedServerList_OfficialButton__DelegateSignature");
 
-	Params::WBP_JoinGame_C_________ Parms{};
-
-	Parms.bResult = bResult;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_JoinGame.WBP_JoinGame_C.«¹¿à¤ÙóÈ_0
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_JoinGame.WBP_JoinGame_C.BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_11_OnClickedServerList_HistoryButton__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_JoinGame_C::_________0(bool bResult)
+void UWBP_JoinGame_C::BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_11_OnClickedServerList_HistoryButton__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "«¹¿à¤ÙóÈ_0");
+		Func = Class->GetFunction("WBP_JoinGame_C", "BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_11_OnClickedServerList_HistoryButton__DelegateSignature");
 
-	Params::WBP_JoinGame_C__________0 Parms{};
-
-	Parms.bResult = bResult;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_JoinGame.WBP_JoinGame_C.Ñ¹ïüÉKÕe›
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalHUDDispatchParameterBase*     Param_Param                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_JoinGame_C::_____K_e_(class UPalHUDDispatchParameterBase* Param_Param)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "Ñ¹ïüÉKÕe›");
-
-	Params::WBP_JoinGame_C______K_e_ Parms{};
-
-	Parms.Param_Param = Param_Param;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

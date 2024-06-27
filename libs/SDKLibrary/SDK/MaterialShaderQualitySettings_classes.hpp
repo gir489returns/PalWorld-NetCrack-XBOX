@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_classes.hpp"
 #include "MaterialShaderQualitySettings_structs.hpp"
+#include "CoreUObject_classes.hpp"
 
 
 namespace SDK
@@ -23,7 +23,7 @@ class UShaderPlatformQualitySettings final : public UObject
 {
 public:
 	struct FMaterialQualityOverrides              QualityOverrides[0x4];                             // 0x0028(0x0008)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3179[0x10];                                    // 0x0048(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_333D[0x10];                                    // 0x0048(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

@@ -52,7 +52,7 @@ void ABP_CopyMesh_FunnelEndEmissive_C::ExecuteUbergraph_BP_CopyMesh_FunnelEndEmi
 
 
 // Function BP_CopyMesh_FunnelEndEmissive.BP_CopyMesh_FunnelEndEmissive_C.PlayPalReturnSound
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 
 void ABP_CopyMesh_FunnelEndEmissive_C::PlayPalReturnSound()
 {

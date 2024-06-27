@@ -409,6 +409,20 @@ void UWBP_OptionSettings_ListContent_C::ExecuteUbergraph_WBP_OptionSettings_List
 }
 
 
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_OptionSettings_ListContent_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 

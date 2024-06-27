@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "AkAudio_structs.hpp"
 #include "Engine_structs.hpp"
 #include "BP_ActionSimpleMonoMontage_classes.hpp"
-#include "AkAudio_structs.hpp"
 
 
 namespace SDK
@@ -25,6 +25,7 @@ class UBP_ActionUnlockCagePalLock_C final : public UBP_ActionSimpleMonoMontage_C
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_ActionUnlockCagePalLock_C;       // 0x0168(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class FName                                   FlagName;                                          // 0x0170(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAkAudioEvent*                          AkEventUnlockCage;                                 // 0x0178(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_ActionUnlockCagePalLock(int32 EntryPoint);
@@ -46,6 +47,7 @@ static_assert(alignof(UBP_ActionUnlockCagePalLock_C) == 0x000010, "Wrong alignme
 static_assert(sizeof(UBP_ActionUnlockCagePalLock_C) == 0x000180, "Wrong size on UBP_ActionUnlockCagePalLock_C");
 static_assert(offsetof(UBP_ActionUnlockCagePalLock_C, UberGraphFrame_BP_ActionUnlockCagePalLock_C) == 0x000168, "Member 'UBP_ActionUnlockCagePalLock_C::UberGraphFrame_BP_ActionUnlockCagePalLock_C' has a wrong offset!");
 static_assert(offsetof(UBP_ActionUnlockCagePalLock_C, FlagName) == 0x000170, "Member 'UBP_ActionUnlockCagePalLock_C::FlagName' has a wrong offset!");
+static_assert(offsetof(UBP_ActionUnlockCagePalLock_C, AkEventUnlockCage) == 0x000178, "Member 'UBP_ActionUnlockCagePalLock_C::AkEventUnlockCage' has a wrong offset!");
 
 }
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "MovieScene_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -51,7 +51,7 @@ struct FTemplateSequenceBindingOverrideData final
 public:
 	TWeakObjectPtr<class UObject>                 Object;                                            // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bOverridesDefault;                                 // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2274[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_232A[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FTemplateSequenceBindingOverrideData) == 0x000004, "Wrong alignment on FTemplateSequenceBindingOverrideData");
 static_assert(sizeof(FTemplateSequenceBindingOverrideData) == 0x00000C, "Wrong size on FTemplateSequenceBindingOverrideData");

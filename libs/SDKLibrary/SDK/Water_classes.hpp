@@ -130,7 +130,7 @@ public:
 	struct FBuoyancyData                          BuoyancyData;                                      // 0x00D0(0x0090)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	TArray<class UWaterBodyComponent*>            CurrentWaterBodyComponents;                        // 0x0160(0x0010)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	class UPrimitiveComponent*                    SimulatingComponent;                               // 0x0170(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E7D[0x90];                                     // 0x0178(0x0090)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E6D[0x90];                                     // 0x0178(0x0090)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void GetLastWaterSurfaceInfo(struct FVector* OutWaterPlaneLocation, struct FVector* OutWaterPlaneNormal, struct FVector* OutWaterSurfacePosition, float* OutWaterDepth, int32* OutWaterBodyIdx, struct FVector* OutWaterVelocity);
@@ -182,9 +182,9 @@ static_assert(sizeof(UWaterWavesBase) == 0x000028, "Wrong size on UWaterWavesBas
 class ABuoyancyManager final : public AActor
 {
 public:
-	uint8                                         Pad_E7E[0x50];                                     // 0x0290(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E6E[0x50];                                     // 0x0290(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UBuoyancyComponent*>             BuoyancyComponents;                                // 0x02E0(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_E7F[0x68];                                     // 0x02F0(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E6F[0x68];                                     // 0x02F0(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static bool GetBuoyancyComponentManager(const class UObject* WorldContextObject, class ABuoyancyManager** Manager);
@@ -215,14 +215,14 @@ public:
 	struct FVector2D                              ZoneExtent;                                        // 0x02B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                         CaptureZOffset;                                    // 0x02C8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bHalfPrecisionTexture;                             // 0x02CC(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_E81[0x3];                                      // 0x02CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E71[0x3];                                      // 0x02CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         VelocityBlurRadius;                                // 0x02D0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_E82[0x4];                                      // 0x02D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E72[0x4];                                      // 0x02D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                TessellatedWaterMeshExtent;                        // 0x02D8(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint32                                        NonTessellatedLODSectionScale;                     // 0x02F0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	int32                                         OverlapPriority;                                   // 0x02F4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bEnableNonTessellatedLODMesh;                      // 0x02F8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_E83[0x27];                                     // 0x02F9(0x0027)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E73[0x27];                                     // 0x02F9(0x0027)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -257,7 +257,7 @@ public:
 	bool                                          bIncludeWaves;                                     // 0x01F8(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSimpleWaves;                                      // 0x01F9(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnoreExclusionVolumes;                           // 0x01FA(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E84[0x5];                                      // 0x01FB(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E74[0x5];                                      // 0x01FB(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -281,7 +281,7 @@ class UGerstnerWaterWaveGeneratorSpectrum final : public UGerstnerWaterWaveGener
 {
 public:
 	EWaveSpectrumType                             SpectrumType;                                      // 0x0028(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E85[0x7];                                      // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E75[0x7];                                      // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FGerstnerWaveOctave>            Octaves;                                           // 0x0030(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 
 public:
@@ -324,7 +324,7 @@ public:
 	class UGerstnerWaterWaveGeneratorBase*        GerstnerWaveGenerator;                             // 0x0028(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FGerstnerWave>                  GerstnerWaves;                                     // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	float                                         MaxWaveHeight;                                     // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E86[0x4];                                      // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E76[0x4];                                      // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -347,7 +347,7 @@ static_assert(offsetof(UGerstnerWaterWaves, MaxWaveHeight) == 0x000040, "Member 
 class UGerstnerWaterWaveSubsystem final : public UEngineSubsystem
 {
 public:
-	uint8                                         Pad_E87[0x18];                                     // 0x0030(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E77[0x18];                                     // 0x0030(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -369,7 +369,7 @@ class ULakeCollisionComponent final : public UPrimitiveComponent
 public:
 	class UBodySetup*                             CachedBodySetup;                                   // 0x0538(0x0008)(ZeroConstructor, NoDestructor, NonPIEDuplicateTransient, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FVector                                BoxExtent;                                         // 0x0540(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_E88[0x8];                                      // 0x0558(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E78[0x8];                                      // 0x0558(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -434,7 +434,7 @@ class UOceanCollisionComponent final : public UPrimitiveComponent
 {
 public:
 	class UBodySetup*                             CachedBodySetup;                                   // 0x0538(0x0008)(ZeroConstructor, NoDestructor, NonPIEDuplicateTransient, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_E89[0x40];                                     // 0x0540(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E79[0x40];                                     // 0x0540(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -472,13 +472,13 @@ static_assert(sizeof(UOceanBoxCollisionComponent) == 0x000580, "Wrong size on UO
 class AWaterBody : public AActor
 {
 public:
-	uint8                                         Pad_E8A[0x8];                                      // 0x0290(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E7A[0x8];                                      // 0x0290(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWaterSplineComponent*                  SplineComp;                                        // 0x0298(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UWaterSplineMetadata*                   WaterSplineMetadata;                               // 0x02A0(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UWaterBodyComponent*                    WaterBodyComponent;                                // 0x02A8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         WaterBodyIndex;                                    // 0x02B0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, DuplicateTransient, IsPlainOldData, NonTransactional, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EWaterBodyType                                WaterBodyType;                                     // 0x02B4(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E8B[0x3];                                      // 0x02B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E7B[0x3];                                      // 0x02B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWaterWavesBase*                        WaterWaves;                                        // 0x02B8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
@@ -542,7 +542,7 @@ public:
 	class UPhysicalMaterial*                      PhysicalMaterial;                                  // 0x0538(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         TargetWaveMaskDepth;                               // 0x0540(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxWaveHeightOffset;                               // 0x0544(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E8D[0x8];                                      // 0x0548(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E7D[0x8];                                      // 0x0548(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FUnderwaterPostProcessSettings         UnderwaterPostProcessSettings;                     // 0x0550(0x0700)(Edit, BlueprintVisible, AdvancedDisplay, NativeAccessSpecifierPublic)
 	struct FWaterCurveSettings                    CurveSettings;                                     // 0x0C50(0x0020)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	class UMaterialInterface*                     WaterMaterial;                                     // 0x0C70(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -554,11 +554,11 @@ public:
 	float                                         ShapeDilation;                                     // 0x0D18(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CollisionHeightOffset;                             // 0x0D1C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAffectsLandscape;                                 // 0x0D20(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E8E[0x3];                                      // 0x0D21(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E7E[0x3];                                      // 0x0D21(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         WaterBodyIndex;                                    // 0x0D24(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, EditConst, DuplicateTransient, IsPlainOldData, NonTransactional, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UStaticMesh*                            WaterMeshOverride;                                 // 0x0D28(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bAlwaysGenerateWaterMeshTiles;                     // 0x0D30(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E8F[0x3];                                      // 0x0D31(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E7F[0x3];                                      // 0x0D31(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         OverlapMaterialPriority;                           // 0x0D34(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UWaterSplineMetadata*                   WaterSplineMetadata;                               // 0x0D38(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UMaterialInstanceDynamic*               WaterMID;                                          // 0x0D40(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, TextExportTransient, NonPIEDuplicateTransient, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -570,10 +570,10 @@ public:
 	TWeakObjectPtr<class ALandscapeProxy>         Landscape;                                         // 0x0D80(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TSoftObjectPtr<class AWaterZone>              OwningWaterZone;                                   // 0x0D88(0x0030)(Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TSoftObjectPtr<class AWaterZone>              WaterZoneOverride;                                 // 0x0DB8(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, AdvancedDisplay, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E90[0x8];                                      // 0x0DE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E80[0x8];                                      // 0x0DE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPostProcessSettings                   CurrentPostProcessSettings;                        // 0x0DF0(0x06E0)(Transient, Protected, NativeAccessSpecifierProtected)
 	TSubclassOf<class UNavAreaBase>               WaterNavAreaClass;                                 // 0x14D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E91[0x50];                                     // 0x14D8(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E81[0x50];                                     // 0x14D8(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        FixedWaterDepth;                                   // 0x1528(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
@@ -686,7 +686,7 @@ class UWaterBodyCustomComponent final : public UWaterBodyComponent
 {
 public:
 	class UStaticMeshComponent*                   MeshComp;                                          // 0x1530(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, NonPIEDuplicateTransient, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E94[0x8];                                      // 0x1538(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E84[0x8];                                      // 0x1538(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -708,7 +708,7 @@ class AWaterBodyExclusionVolume final : public APhysicsVolume
 {
 public:
 	bool                                          bExcludeAllOverlappingWaterBodies;                 // 0x02D8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E95[0x7];                                      // 0x02D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E85[0x7];                                      // 0x02D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AWaterBody*>                     WaterBodiesToExclude;                              // 0x02E0(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, UObjectWrapper, NativeAccessSpecifierPublic)
 
 public:
@@ -748,7 +748,7 @@ static_assert(sizeof(UWaterBodyHLODBuilder) == 0x000028, "Wrong size on UWaterBo
 class AWaterBodyIsland final : public AActor
 {
 public:
-	uint8                                         Pad_E96[0x8];                                      // 0x0290(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E86[0x8];                                      // 0x0290(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWaterSplineComponent*                  SplineComp;                                        // 0x0298(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
@@ -883,7 +883,7 @@ public:
 	struct FVector2D                              VisualExtents;                                     // 0x1550(0x0010)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FVector                                CollisionExtents;                                  // 0x1560(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         HeightOffset;                                      // 0x1578(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E97[0x4];                                      // 0x157C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E87[0x4];                                      // 0x157C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -993,14 +993,14 @@ class UWaterMeshComponent final : public UMeshComponent
 {
 public:
 	int32                                         ForceCollapseDensityLevel;                         // 0x0570(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E98[0x4];                                      // 0x0574(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E88[0x4];                                      // 0x0574(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     FarDistanceMaterial;                               // 0x0578(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         FarDistanceMeshExtent;                             // 0x0580(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         TileSize;                                          // 0x0584(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FIntPoint                              ExtentInTiles;                                     // 0x0588(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_E99[0x98];                                     // 0x0590(0x0098)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E89[0x98];                                     // 0x0590(0x0098)(Fixing Size After Last Property [ Dumper-7 ])
 	TSet<class UMaterialInterface*>               UsedMaterials;                                     // 0x0628(0x0050)(Transient, TextExportTransient, NonPIEDuplicateTransient, UObjectWrapper, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_E9A[0x10];                                     // 0x0678(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E8A[0x10];                                     // 0x0678(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         TessellationFactor;                                // 0x0688(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                         LODScale;                                          // 0x068C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
@@ -1034,11 +1034,11 @@ class UWaterRuntimeSettings final : public UDeveloperSettings
 {
 public:
 	ECollisionChannel                             CollisionChannelForWaterTraces;                    // 0x0038(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E9B[0x7];                                      // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E8B[0x7];                                      // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UMaterialParameterCollection> MaterialParameterCollection;                       // 0x0040(0x0030)(Edit, Config, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         WaterBodyIconWorldZOffset;                         // 0x0070(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   DefaultWaterCollisionProfileName;                  // 0x0074(0x0008)(Edit, ZeroConstructor, Config, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_E9C[0x4];                                      // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E8C[0x4];                                      // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UMaterialInterface>      DefaultWaterInfoMaterial;                          // 0x0080(0x0030)(Edit, Config, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TSubclassOf<class UWaterBodyRiverComponent>   WaterBodyRiverComponentClass;                      // 0x00B0(0x0008)(Edit, ZeroConstructor, Config, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TSubclassOf<class UWaterBodyLakeComponent>    WaterBodyLakeComponentClass;                       // 0x00B8(0x0008)(Edit, ZeroConstructor, Config, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -1074,7 +1074,7 @@ class UWaterSplineComponent final : public USplineComponent
 public:
 	struct FWaterSplineCurveDefaults              WaterSplineDefaults;                               // 0x0638(0x0010)(Edit, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
 	struct FWaterSplineCurveDefaults              PreviousWaterSplineDefaults;                       // 0x0648(0x0010)(NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E9D[0x8];                                      // 0x0658(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E8D[0x8];                                      // 0x0658(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1096,15 +1096,15 @@ static_assert(offsetof(UWaterSplineComponent, PreviousWaterSplineDefaults) == 0x
 class UWaterSubsystem final : public UTickableWorldSubsystem
 {
 public:
-	uint8                                         Pad_E9E[0x38];                                     // 0x0040(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E8E[0x38];                                     // 0x0040(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABuoyancyManager*                       BuoyancyManager;                                   // 0x0078(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnCameraUnderwaterStateChanged;                    // 0x0080(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnWaterScalabilityChanged;                         // 0x0090(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	class UStaticMesh*                            DefaultRiverMesh;                                  // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UStaticMesh*                            DefaultLakeMesh;                                   // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E9F[0x28];                                     // 0x00B0(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E8F[0x28];                                     // 0x00B0(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialParameterCollection*           MaterialParameterCollection;                       // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_EA0[0x30];                                     // 0x00E0(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E90[0x30];                                     // 0x00E0(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static int32 GetShallowWaterMaxDynamicForces();

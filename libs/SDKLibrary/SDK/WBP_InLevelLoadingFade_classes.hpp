@@ -12,19 +12,23 @@
 
 #include "Engine_structs.hpp"
 #include "WBP_PalFadeWidgetBase_classes.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_InLevelLoadingFade.WBP_InLevelLoadingFade_C
-// 0x0018 (0x0428 - 0x0410)
+// 0x0028 (0x0438 - 0x0410)
 class UWBP_InLevelLoadingFade_C final : public UWBP_PalFadeWidgetBase_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0410(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UWidgetAnimation*                       In;                                                // 0x0418(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UWBP_LoadingScreen_C*                   WBP_LoadingScreen;                                 // 0x0420(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_ProgressBar_C*               WBP_Title_ProgressBar;                             // 0x0428(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	int32                                         Step;                                              // 0x0430(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ProgressDisplay;                                   // 0x0434(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void AnmEvent_In();
@@ -33,10 +37,12 @@ public:
 	void Destruct();
 	void ExecuteUbergraph_WBP_InLevelLoadingFade(int32 EntryPoint);
 	void FadeIn();
+	void FadeOut();
 	void Finished_50648C2D41952F044CFD8F9629D4027A();
 	void Finished_BCA2D9DB46EBD8925174F885E2A96DAA();
-	void FadeOut();
+	void Setup(class UPalHUDDispatchParameter_FadeWidget* Param_FadeParameter);
 	void Setup_ForOverride();
+	void UpdateProgressStep(int32 AddStep, int32 MaxStep);
 
 public:
 	static class UClass* StaticClass()
@@ -49,10 +55,13 @@ public:
 	}
 };
 static_assert(alignof(UWBP_InLevelLoadingFade_C) == 0x000008, "Wrong alignment on UWBP_InLevelLoadingFade_C");
-static_assert(sizeof(UWBP_InLevelLoadingFade_C) == 0x000428, "Wrong size on UWBP_InLevelLoadingFade_C");
+static_assert(sizeof(UWBP_InLevelLoadingFade_C) == 0x000438, "Wrong size on UWBP_InLevelLoadingFade_C");
 static_assert(offsetof(UWBP_InLevelLoadingFade_C, UberGraphFrame) == 0x000410, "Member 'UWBP_InLevelLoadingFade_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_InLevelLoadingFade_C, In) == 0x000418, "Member 'UWBP_InLevelLoadingFade_C::In' has a wrong offset!");
 static_assert(offsetof(UWBP_InLevelLoadingFade_C, WBP_LoadingScreen) == 0x000420, "Member 'UWBP_InLevelLoadingFade_C::WBP_LoadingScreen' has a wrong offset!");
+static_assert(offsetof(UWBP_InLevelLoadingFade_C, WBP_Title_ProgressBar) == 0x000428, "Member 'UWBP_InLevelLoadingFade_C::WBP_Title_ProgressBar' has a wrong offset!");
+static_assert(offsetof(UWBP_InLevelLoadingFade_C, Step) == 0x000430, "Member 'UWBP_InLevelLoadingFade_C::Step' has a wrong offset!");
+static_assert(offsetof(UWBP_InLevelLoadingFade_C, ProgressDisplay) == 0x000434, "Member 'UWBP_InLevelLoadingFade_C::ProgressDisplay' has a wrong offset!");
 
 }
 

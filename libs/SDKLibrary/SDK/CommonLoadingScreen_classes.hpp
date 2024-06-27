@@ -33,7 +33,7 @@ public:
 	bool                                          ForceLoadingScreenVisible;                         // 0x0069(0x0001)(Edit, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          HoldLoadingScreenAdditionalSecsEvenInEditor;       // 0x006A(0x0001)(Edit, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ForceTickLoadingScreenEvenInEditor;                // 0x006B(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C26[0x4];                                     // 0x006C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CB7[0x4];                                     // 0x006C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -79,7 +79,7 @@ static_assert(sizeof(ILoadingProcessInterface) == 0x000028, "Wrong size on ILoad
 class ULoadingProcessTask final : public UObject
 {
 public:
-	uint8                                         Pad_1C27[0x18];                                    // 0x0028(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CB8[0x18];                                    // 0x0028(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class ULoadingProcessTask* CreateLoadingScreenProcessTask(class UObject* WorldContextObject, const class FString& ShowLoadingScreenReason);
@@ -105,7 +105,7 @@ static_assert(sizeof(ULoadingProcessTask) == 0x000040, "Wrong size on ULoadingPr
 class ULoadingScreenManager final : public UGameInstanceSubsystem
 {
 public:
-	uint8                                         Pad_1C28[0x80];                                    // 0x0030(0x0080)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CB9[0x80];                                    // 0x0030(0x0080)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class FString GetDebugReasonForShowingOrHidingLoadingScreen() const;

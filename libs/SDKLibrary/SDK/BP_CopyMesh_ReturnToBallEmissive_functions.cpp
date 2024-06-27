@@ -52,7 +52,7 @@ void ABP_CopyMesh_ReturnToBallEmissive_C::ExecuteUbergraph_BP_CopyMesh_ReturnToB
 
 
 // Function BP_CopyMesh_ReturnToBallEmissive.BP_CopyMesh_ReturnToBallEmissive_C.PlayPalReturnSound
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 
 void ABP_CopyMesh_ReturnToBallEmissive_C::PlayPalReturnSound()
 {

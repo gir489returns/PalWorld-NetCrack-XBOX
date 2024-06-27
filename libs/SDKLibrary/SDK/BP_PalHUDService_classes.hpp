@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalHUDService.BP_PalHUDService_C
-// 0x0000 (0x0108 - 0x0108)
+// 0x0000 (0x0120 - 0x0120)
 class UBP_PalHUDService_C final : public UPalHUDService
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UBP_PalHUDService_C) == 0x000008, "Wrong alignment on UBP_PalHUDService_C");
-static_assert(sizeof(UBP_PalHUDService_C) == 0x000108, "Wrong size on UBP_PalHUDService_C");
+static_assert(sizeof(UBP_PalHUDService_C) == 0x000120, "Wrong size on UBP_PalHUDService_C");
 
 }
 

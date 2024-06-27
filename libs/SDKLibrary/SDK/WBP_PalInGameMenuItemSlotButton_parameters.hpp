@@ -41,15 +41,14 @@ static_assert(sizeof(WBP_PalInGameMenuItemSlotButton_C_AnmEvent_RepairMark) == 0
 static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_AnmEvent_RepairMark, IsEnable) == 0x000000, "Member 'WBP_PalInGameMenuItemSlotButton_C_AnmEvent_RepairMark::IsEnable' has a wrong offset!");
 
 // Function WBP_PalInGameMenuItemSlotButton.WBP_PalInGameMenuItemSlotButton_C.ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton
-// 0x0160 (0x0160 - 0x0000)
+// 0x0150 (0x0150 - 0x0000)
 struct WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_477B[0x1];                                     // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_110F[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(class UWBP_PalItemSlotButtonBase_C* Widget)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class UWBP_PalItemSlotButtonBase_C* Widget)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0018(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class UWBP_PalItemSlotButtonBase_C* Widget)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x0028(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -57,53 +56,51 @@ public:
 	TDelegate<void(class UWBP_PalItemSlotButtonBase_C* Widget)> K2Node_CreateDelegate_OutputDelegate_4;            // 0x0048(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_5;            // 0x0058(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_477C[0x3];                                     // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1110[0x3];                                     // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_6;            // 0x006C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x007D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_477D[0x2];                                     // 0x007E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1111[0x2];                                     // 0x007E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetEndTime_ReturnValue;                   // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetEndTime_ReturnValue_1;                 // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_IsEnable;                       // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_477E[0x3];                                     // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1112[0x3];                                     // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_CustomEvent_Rarity;                         // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_1;                              // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_477F[0x7];                                     // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1113[0x7];                                     // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationTimeRange_ReturnValue;       // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4780[0x7];                                     // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_PalItemSlotButtonBase_C*           K2Node_CustomEvent_Widget_4;                       // 0x00D0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_PalItemSlotButtonBase_C*           K2Node_CustomEvent_Widget_3;                       // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_PalItemSlotButtonBase_C*           K2Node_CustomEvent_Widget_2;                       // 0x00E0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1114[0x7];                                     // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_PalItemSlotButtonBase_C*           K2Node_CustomEvent_widget_4;                       // 0x00D0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalItemSlotButtonBase_C*           K2Node_CustomEvent_widget_3;                       // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalItemSlotButtonBase_C*           K2Node_CustomEvent_widget_2;                       // 0x00E0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_CustomEvent_LiftNum;                        // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4781[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_PalItemSlotButtonBase_C*           K2Node_CustomEvent_Widget_1;                       // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_PalItemSlotButtonBase_C*           K2Node_CustomEvent_Widget;                         // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_3;              // 0x0108(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWBP_PalItemSlotBase_C*                 CallFunc_RegisterItemSlotWidget_itemSlotWidget;    // 0x0110(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_4;              // 0x0118(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(double MaxDurability, double NowDurability, class UWBP_PalItemSlotButtonBase_C* SelfWidget)> K2Node_CreateDelegate_OutputDelegate_7;            // 0x0120(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_8;            // 0x0130(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0140(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalUILiftSlotModel*                    CallFunc_GetLiftSlotModel_ReturnValue;             // 0x0148(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_Lock;                           // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4782[0x2];                                     // 0x0152(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_PlayAnimationTimeRange_StartAtTime_ImplicitCast; // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_PlayAnimationTimeRange_EndAtTime_ImplicitCast; // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1115[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_PalItemSlotButtonBase_C*           K2Node_CustomEvent_widget_1;                       // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalItemSlotButtonBase_C*           K2Node_CustomEvent_widget;                         // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalItemSlotBase_C*                 CallFunc_RegisterItemSlotWidget_itemSlotWidget;    // 0x0100(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0108(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(double MaxDurability, double NowDurability, class UWBP_PalItemSlotButtonBase_C* SelfWidget)> K2Node_CreateDelegate_OutputDelegate_7;            // 0x0110(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_8;            // 0x0120(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0130(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalUILiftSlotModel*                    CallFunc_GetLiftSlotModel_ReturnValue;             // 0x0138(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_Lock;                           // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0141(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0142(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1116[0x1];                                     // 0x0143(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_PlayAnimationTimeRange_StartAtTime_ImplicitCast; // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_PlayAnimationTimeRange_EndAtTime_ImplicitCast; // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton) == 0x000008, "Wrong alignment on WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton");
-static_assert(sizeof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton) == 0x000160, "Wrong size on WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton");
+static_assert(sizeof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton) == 0x000150, "Wrong size on WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton");
 static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, EntryPoint) == 0x000000, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::EntryPoint' has a wrong offset!");
 static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, Temp_byte_Variable) == 0x000004, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, CallFunc_Not_PreBool_ReturnValue) == 0x000005, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, Temp_byte_Variable_1) == 0x000006, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, Temp_byte_Variable_1) == 0x000005, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::Temp_byte_Variable_1' has a wrong offset!");
 static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, K2Node_CreateDelegate_OutputDelegate_1) == 0x000018, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
 static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, K2Node_CreateDelegate_OutputDelegate_2) == 0x000028, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
@@ -126,24 +123,23 @@ static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_Pa
 static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, CallFunc_Add_DoubleDouble_ReturnValue) == 0x0000B8, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, CallFunc_PlayAnimationTimeRange_ReturnValue) == 0x0000C0, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::CallFunc_PlayAnimationTimeRange_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, K2Node_Select_Default) == 0x0000C8, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, K2Node_CustomEvent_Widget_4) == 0x0000D0, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::K2Node_CustomEvent_Widget_4' has a wrong offset!");
-static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, K2Node_CustomEvent_Widget_3) == 0x0000D8, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::K2Node_CustomEvent_Widget_3' has a wrong offset!");
-static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, K2Node_CustomEvent_Widget_2) == 0x0000E0, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::K2Node_CustomEvent_Widget_2' has a wrong offset!");
+static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, K2Node_CustomEvent_widget_4) == 0x0000D0, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::K2Node_CustomEvent_widget_4' has a wrong offset!");
+static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, K2Node_CustomEvent_widget_3) == 0x0000D8, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::K2Node_CustomEvent_widget_3' has a wrong offset!");
+static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, K2Node_CustomEvent_widget_2) == 0x0000E0, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::K2Node_CustomEvent_widget_2' has a wrong offset!");
 static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, K2Node_CustomEvent_LiftNum) == 0x0000E8, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::K2Node_CustomEvent_LiftNum' has a wrong offset!");
-static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, K2Node_CustomEvent_Widget_1) == 0x0000F0, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::K2Node_CustomEvent_Widget_1' has a wrong offset!");
-static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, K2Node_CustomEvent_Widget) == 0x0000F8, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::K2Node_CustomEvent_Widget' has a wrong offset!");
-static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, CallFunc_PlayAnimation_ReturnValue_2) == 0x000100, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, CallFunc_PlayAnimation_ReturnValue_3) == 0x000108, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, CallFunc_RegisterItemSlotWidget_itemSlotWidget) == 0x000110, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::CallFunc_RegisterItemSlotWidget_itemSlotWidget' has a wrong offset!");
-static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, CallFunc_PlayAnimation_ReturnValue_4) == 0x000118, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::CallFunc_PlayAnimation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, K2Node_CreateDelegate_OutputDelegate_7) == 0x000120, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, K2Node_CreateDelegate_OutputDelegate_8) == 0x000130, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, CallFunc_GetHUDService_ReturnValue) == 0x000140, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::CallFunc_GetHUDService_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, CallFunc_GetLiftSlotModel_ReturnValue) == 0x000148, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::CallFunc_GetLiftSlotModel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, K2Node_CustomEvent_Lock) == 0x000150, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::K2Node_CustomEvent_Lock' has a wrong offset!");
-static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, K2Node_Select_Default_1) == 0x000151, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, CallFunc_PlayAnimationTimeRange_StartAtTime_ImplicitCast) == 0x000154, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::CallFunc_PlayAnimationTimeRange_StartAtTime_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, CallFunc_PlayAnimationTimeRange_EndAtTime_ImplicitCast) == 0x000158, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::CallFunc_PlayAnimationTimeRange_EndAtTime_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, K2Node_CustomEvent_widget_1) == 0x0000F0, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::K2Node_CustomEvent_widget_1' has a wrong offset!");
+static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, K2Node_CustomEvent_widget) == 0x0000F8, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::K2Node_CustomEvent_widget' has a wrong offset!");
+static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, CallFunc_RegisterItemSlotWidget_itemSlotWidget) == 0x000100, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::CallFunc_RegisterItemSlotWidget_itemSlotWidget' has a wrong offset!");
+static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, CallFunc_PlayAnimation_ReturnValue_2) == 0x000108, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, K2Node_CreateDelegate_OutputDelegate_7) == 0x000110, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
+static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, K2Node_CreateDelegate_OutputDelegate_8) == 0x000120, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
+static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, CallFunc_GetHUDService_ReturnValue) == 0x000130, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::CallFunc_GetHUDService_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, CallFunc_GetLiftSlotModel_ReturnValue) == 0x000138, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::CallFunc_GetLiftSlotModel_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, K2Node_CustomEvent_Lock) == 0x000140, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::K2Node_CustomEvent_Lock' has a wrong offset!");
+static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, K2Node_Select_Default_1) == 0x000141, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, CallFunc_Not_PreBool_ReturnValue) == 0x000142, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, CallFunc_PlayAnimationTimeRange_StartAtTime_ImplicitCast) == 0x000144, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::CallFunc_PlayAnimationTimeRange_StartAtTime_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton, CallFunc_PlayAnimationTimeRange_EndAtTime_ImplicitCast) == 0x000148, "Member 'WBP_PalInGameMenuItemSlotButton_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlotButton::CallFunc_PlayAnimationTimeRange_EndAtTime_ImplicitCast' has a wrong offset!");
 
 // Function WBP_PalInGameMenuItemSlotButton.WBP_PalInGameMenuItemSlotButton_C.On Notify Durability Impl
 // 0x0038 (0x0038 - 0x0000)
@@ -157,7 +153,7 @@ public:
 	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_DoubleDouble_ReturnValue;      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4783[0x1];                                     // 0x0023(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1117[0x1];                                     // 0x0023(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0024(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetPercent_InPercent_ImplicitCast;        // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -180,7 +176,7 @@ struct WBP_PalInGameMenuItemSlotButton_C_On_Set_Valid_Slot_Impl final
 public:
 	class UPalStaticItemDataBase*                 StaticItemData;                                    // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Min_ReturnValue;                          // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4784[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1118[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalItemSlot*                           CallFunc_GetTargetSlot_targetSlot;                 // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -189,16 +185,16 @@ public:
 	class UPalItemSlot*                           CallFunc_GetTargetSlot_targetSlot_1;               // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalDynamicItemDataBase*                CallFunc_TryGetDynamicItemData_OutDynamicItemData; // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_TryGetDynamicItemData_ReturnValue;        // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4785[0x3];                                     // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1119[0x3];                                     // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalItemId                             CallFunc_GetItemId_ReturnValue;                    // 0x005C(0x0028)(ConstParm, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4786[0x4];                                     // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_111A[0x4];                                     // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IPalObjectDurabilityInterface> K2Node_DynamicCast_AsPal_Object_Durability_Interface; // 0x0088(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4787[0x3];                                     // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_111B[0x3];                                     // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetMaxDurability_ReturnValue;             // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalStaticItemDataBase*                 CallFunc_GetStaticItemData_ReturnValue;            // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4788[0x7];                                     // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_111C[0x7];                                     // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Multiply_DoubleDouble_B_ImplicitCast;     // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Greater_DoubleDouble_A_ImplicitCast;      // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -262,7 +258,7 @@ struct WBP_PalInGameMenuItemSlotButton_C_OnLiftedEvent final
 {
 public:
 	int32                                         LiftNum;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4789[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_111D[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_PalInGameMenuItemSlotButton_C_OnLiftedEvent) == 0x000008, "Wrong alignment on WBP_PalInGameMenuItemSlotButton_C_OnLiftedEvent");
@@ -279,14 +275,14 @@ public:
 	class UPalItemSlot*                           CallFunc_GetTargetSlot_targetSlot;                 // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalItemSlot*                           CallFunc_GetTargetSlot_targetSlot_1;               // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_478A[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_111E[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetCorruptionRemainTimeText_ReturnValue;  // 0x0020(0x0018)()
 	struct FPalItemId                             CallFunc_GetItemId_ReturnValue;                    // 0x0038(0x0028)(ConstParm, NoDestructor, HasGetValueTypeHash)
 	class UPalStaticItemDataBase*                 CallFunc_GetStaticItemData_ReturnValue;            // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalItemSlot*                           CallFunc_GetTargetSlot_targetSlot_2;               // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetCorruptionProgressRate_ReturnValue;    // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_478B[0x3];                                     // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_111F[0x3];                                     // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Greater_DoubleDouble_A_ImplicitCast;      // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Subtract_DoubleDouble_B_ImplicitCast;     // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -320,6 +316,28 @@ static_assert(alignof(WBP_PalInGameMenuItemSlotButton_C_OnUnhoveredEvent) == 0x0
 static_assert(sizeof(WBP_PalInGameMenuItemSlotButton_C_OnUnhoveredEvent) == 0x000008, "Wrong size on WBP_PalInGameMenuItemSlotButton_C_OnUnhoveredEvent");
 static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_OnUnhoveredEvent, Widget) == 0x000000, "Member 'WBP_PalInGameMenuItemSlotButton_C_OnUnhoveredEvent::Widget' has a wrong offset!");
 
+// Function WBP_PalInGameMenuItemSlotButton.WBP_PalInGameMenuItemSlotButton_C.RegisterButton
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalInGameMenuItemSlotButton_C_RegisterButton final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_PalInGameMenuItemSlotButton_C_RegisterButton) == 0x000008, "Wrong alignment on WBP_PalInGameMenuItemSlotButton_C_RegisterButton");
+static_assert(sizeof(WBP_PalInGameMenuItemSlotButton_C_RegisterButton) == 0x000008, "Wrong size on WBP_PalInGameMenuItemSlotButton_C_RegisterButton");
+static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_RegisterButton, Button) == 0x000000, "Member 'WBP_PalInGameMenuItemSlotButton_C_RegisterButton::Button' has a wrong offset!");
+
+// Function WBP_PalInGameMenuItemSlotButton.WBP_PalInGameMenuItemSlotButton_C.RegisterItemSlotWidget
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalInGameMenuItemSlotButton_C_RegisterItemSlotWidget final
+{
+public:
+	class UWBP_PalItemSlotBase_C*                 ItemSlotWidget;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_PalInGameMenuItemSlotButton_C_RegisterItemSlotWidget) == 0x000008, "Wrong alignment on WBP_PalInGameMenuItemSlotButton_C_RegisterItemSlotWidget");
+static_assert(sizeof(WBP_PalInGameMenuItemSlotButton_C_RegisterItemSlotWidget) == 0x000008, "Wrong size on WBP_PalInGameMenuItemSlotButton_C_RegisterItemSlotWidget");
+static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_RegisterItemSlotWidget, ItemSlotWidget) == 0x000000, "Member 'WBP_PalInGameMenuItemSlotButton_C_RegisterItemSlotWidget::ItemSlotWidget' has a wrong offset!");
+
 // Function WBP_PalInGameMenuItemSlotButton.WBP_PalInGameMenuItemSlotButton_C.SetEnableDefaultClickSound
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_PalInGameMenuItemSlotButton_C_SetEnableDefaultClickSound final
@@ -338,14 +356,14 @@ struct WBP_PalInGameMenuItemSlotButton_C_SetPalGearIcon final
 public:
 	class FName                                   ItemId;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_478C[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1120[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_478D[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1121[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Split_LeftS;                              // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Split_RightS;                             // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Split_ReturnValue;                        // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_478E[0x3];                                     // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1122[0x3];                                     // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x004C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue;            // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0055(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -394,28 +412,6 @@ public:
 static_assert(alignof(WBP_PalInGameMenuItemSlotButton_C_ToggleLock) == 0x000001, "Wrong alignment on WBP_PalInGameMenuItemSlotButton_C_ToggleLock");
 static_assert(sizeof(WBP_PalInGameMenuItemSlotButton_C_ToggleLock) == 0x000001, "Wrong size on WBP_PalInGameMenuItemSlotButton_C_ToggleLock");
 static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_ToggleLock, Lock) == 0x000000, "Member 'WBP_PalInGameMenuItemSlotButton_C_ToggleLock::Lock' has a wrong offset!");
-
-// Function WBP_PalInGameMenuItemSlotButton.WBP_PalInGameMenuItemSlotButton_C.RegisterButton
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalInGameMenuItemSlotButton_C_RegisterButton final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_PalInGameMenuItemSlotButton_C_RegisterButton) == 0x000008, "Wrong alignment on WBP_PalInGameMenuItemSlotButton_C_RegisterButton");
-static_assert(sizeof(WBP_PalInGameMenuItemSlotButton_C_RegisterButton) == 0x000008, "Wrong size on WBP_PalInGameMenuItemSlotButton_C_RegisterButton");
-static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_RegisterButton, Button) == 0x000000, "Member 'WBP_PalInGameMenuItemSlotButton_C_RegisterButton::Button' has a wrong offset!");
-
-// Function WBP_PalInGameMenuItemSlotButton.WBP_PalInGameMenuItemSlotButton_C.RegisterItemSlotWidget
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalInGameMenuItemSlotButton_C_RegisterItemSlotWidget final
-{
-public:
-	class UWBP_PalItemSlotBase_C*                 ItemSlotWidget;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_PalInGameMenuItemSlotButton_C_RegisterItemSlotWidget) == 0x000008, "Wrong alignment on WBP_PalInGameMenuItemSlotButton_C_RegisterItemSlotWidget");
-static_assert(sizeof(WBP_PalInGameMenuItemSlotButton_C_RegisterItemSlotWidget) == 0x000008, "Wrong size on WBP_PalInGameMenuItemSlotButton_C_RegisterItemSlotWidget");
-static_assert(offsetof(WBP_PalInGameMenuItemSlotButton_C_RegisterItemSlotWidget, ItemSlotWidget) == 0x000000, "Member 'WBP_PalInGameMenuItemSlotButton_C_RegisterItemSlotWidget::ItemSlotWidget' has a wrong offset!");
 
 }
 

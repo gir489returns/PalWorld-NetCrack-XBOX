@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -61,7 +61,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45A6[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_48BD[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        K2Node_CustomEvent_DelayTime;                      // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
 	class ABP_Player_ForUI_C*                     CallFunc_GetDisplayCharacterActor_UIDisplayPlayer; // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -83,12 +83,12 @@ struct WBP_PalPlayerInframeRender_C_Initialize final
 {
 public:
 	int32                                         TextureSize;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45A7[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_48BE[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45A8[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_48BF[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue_1;                   // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0050(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -130,11 +130,11 @@ public:
 	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45A9[0x6];                                     // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_48C0[0x6];                                     // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalWeaponBase*                         CallFunc_GetHasWeapon_ReturnValue;                 // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45AA[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_48C1[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_Player_ForUI_C*                     CallFunc_GetDisplayCharacterActor_UIDisplayPlayer; // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_PalPlayerInframeRender_C_On_Changed_Weapon) == 0x000008, "Wrong alignment on WBP_PalPlayerInframeRender_C_On_Changed_Weapon");
@@ -165,47 +165,49 @@ static_assert(offsetof(WBP_PalPlayerInframeRender_C_OnUpdateEquipmentSlot, SlotT
 static_assert(offsetof(WBP_PalPlayerInframeRender_C_OnUpdateEquipmentSlot, K2Node_SwitchEnum_CmpSuccess) == 0x000009, "Member 'WBP_PalPlayerInframeRender_C_OnUpdateEquipmentSlot::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function WBP_PalPlayerInframeRender.WBP_PalPlayerInframeRender_C.RegisterEvent
-// 0x0058 (0x0058 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct WBP_PalPlayerInframeRender_C_RegisterEvent final
 {
 public:
-	TDelegate<void(class UPalItemSlot* ItemSlot, EPalPlayerEquipItemSlotType SlotType)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalPlayerInventoryData*                CallFunc_GetLocalInventoryData_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45AB[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class APalWeaponBase* Weapon)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x001C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45AC[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalShooterComponent*                   CallFunc_GetComponentByClass_ReturnValue;          // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45AD[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalWeaponBase*                         CallFunc_GetHasWeapon_ReturnValue;                 // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalItemSlot* ItemSlot, EPalPlayerEquipItemSlotType SlotType)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalPlayerInventoryData*                CallFunc_GetLocalInventoryData_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_48C2[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class APalWeaponBase* Weapon)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x002C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_48C3[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalShooterComponent*                   CallFunc_GetComponentByClass_ReturnValue;          // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_48C4[0x7];                                     // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalWeaponBase*                         CallFunc_GetHasWeapon_ReturnValue;                 // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_PalPlayerInframeRender_C_RegisterEvent) == 0x000008, "Wrong alignment on WBP_PalPlayerInframeRender_C_RegisterEvent");
-static_assert(sizeof(WBP_PalPlayerInframeRender_C_RegisterEvent) == 0x000058, "Wrong size on WBP_PalPlayerInframeRender_C_RegisterEvent");
+static_assert(sizeof(WBP_PalPlayerInframeRender_C_RegisterEvent) == 0x000068, "Wrong size on WBP_PalPlayerInframeRender_C_RegisterEvent");
 static_assert(offsetof(WBP_PalPlayerInframeRender_C_RegisterEvent, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'WBP_PalPlayerInframeRender_C_RegisterEvent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_PalPlayerInframeRender_C_RegisterEvent, CallFunc_GetLocalInventoryData_ReturnValue) == 0x000010, "Member 'WBP_PalPlayerInframeRender_C_RegisterEvent::CallFunc_GetLocalInventoryData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PalPlayerInframeRender_C_RegisterEvent, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'WBP_PalPlayerInframeRender_C_RegisterEvent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PalPlayerInframeRender_C_RegisterEvent, K2Node_CreateDelegate_OutputDelegate_1) == 0x00001C, "Member 'WBP_PalPlayerInframeRender_C_RegisterEvent::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_PalPlayerInframeRender_C_RegisterEvent, CallFunc_GetPalmi_ReturnValue) == 0x000030, "Member 'WBP_PalPlayerInframeRender_C_RegisterEvent::CallFunc_GetPalmi_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PalPlayerInframeRender_C_RegisterEvent, CallFunc_GetComponentByClass_ReturnValue) == 0x000038, "Member 'WBP_PalPlayerInframeRender_C_RegisterEvent::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PalPlayerInframeRender_C_RegisterEvent, CallFunc_IsValid_ReturnValue_1) == 0x000040, "Member 'WBP_PalPlayerInframeRender_C_RegisterEvent::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PalPlayerInframeRender_C_RegisterEvent, CallFunc_GetHasWeapon_ReturnValue) == 0x000048, "Member 'WBP_PalPlayerInframeRender_C_RegisterEvent::CallFunc_GetHasWeapon_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PalPlayerInframeRender_C_RegisterEvent, CallFunc_IsValid_ReturnValue_2) == 0x000050, "Member 'WBP_PalPlayerInframeRender_C_RegisterEvent::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_PalPlayerInframeRender_C_RegisterEvent, K2Node_CreateDelegate_OutputDelegate_1) == 0x000010, "Member 'WBP_PalPlayerInframeRender_C_RegisterEvent::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(WBP_PalPlayerInframeRender_C_RegisterEvent, CallFunc_GetLocalInventoryData_ReturnValue) == 0x000020, "Member 'WBP_PalPlayerInframeRender_C_RegisterEvent::CallFunc_GetLocalInventoryData_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PalPlayerInframeRender_C_RegisterEvent, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'WBP_PalPlayerInframeRender_C_RegisterEvent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PalPlayerInframeRender_C_RegisterEvent, K2Node_CreateDelegate_OutputDelegate_2) == 0x00002C, "Member 'WBP_PalPlayerInframeRender_C_RegisterEvent::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(WBP_PalPlayerInframeRender_C_RegisterEvent, CallFunc_GetPalmi_ReturnValue) == 0x000040, "Member 'WBP_PalPlayerInframeRender_C_RegisterEvent::CallFunc_GetPalmi_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PalPlayerInframeRender_C_RegisterEvent, CallFunc_GetComponentByClass_ReturnValue) == 0x000048, "Member 'WBP_PalPlayerInframeRender_C_RegisterEvent::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PalPlayerInframeRender_C_RegisterEvent, CallFunc_IsValid_ReturnValue_1) == 0x000050, "Member 'WBP_PalPlayerInframeRender_C_RegisterEvent::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_PalPlayerInframeRender_C_RegisterEvent, CallFunc_GetHasWeapon_ReturnValue) == 0x000058, "Member 'WBP_PalPlayerInframeRender_C_RegisterEvent::CallFunc_GetHasWeapon_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PalPlayerInframeRender_C_RegisterEvent, CallFunc_IsValid_ReturnValue_2) == 0x000060, "Member 'WBP_PalPlayerInframeRender_C_RegisterEvent::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
 
-// Function WBP_PalPlayerInframeRender.WBP_PalPlayerInframeRender_C.RequestCaptureByMakeInfo
-// 0x0098 (0x0098 - 0x0000)
-struct WBP_PalPlayerInframeRender_C_RequestCaptureByMakeInfo final
+// Function WBP_PalPlayerInframeRender.WBP_PalPlayerInframeRender_C.Request Capture by Make Info
+// 0x0158 (0x0158 - 0x0000)
+struct WBP_PalPlayerInframeRender_C_Request_Capture_by_Make_Info final
 {
 public:
-	struct FPalPlayerDataCharacterMakeInfo        MakeInfo;                                          // 0x0000(0x0094)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalPlayerDataCharacterMakeInfo        MakeInfo;                                          // 0x0000(0x0150)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PalPlayerInframeRender_C_RequestCaptureByMakeInfo) == 0x000004, "Wrong alignment on WBP_PalPlayerInframeRender_C_RequestCaptureByMakeInfo");
-static_assert(sizeof(WBP_PalPlayerInframeRender_C_RequestCaptureByMakeInfo) == 0x000098, "Wrong size on WBP_PalPlayerInframeRender_C_RequestCaptureByMakeInfo");
-static_assert(offsetof(WBP_PalPlayerInframeRender_C_RequestCaptureByMakeInfo, MakeInfo) == 0x000000, "Member 'WBP_PalPlayerInframeRender_C_RequestCaptureByMakeInfo::MakeInfo' has a wrong offset!");
-static_assert(offsetof(WBP_PalPlayerInframeRender_C_RequestCaptureByMakeInfo, CallFunc_IsValid_ReturnValue) == 0x000094, "Member 'WBP_PalPlayerInframeRender_C_RequestCaptureByMakeInfo::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(alignof(WBP_PalPlayerInframeRender_C_Request_Capture_by_Make_Info) == 0x000008, "Wrong alignment on WBP_PalPlayerInframeRender_C_Request_Capture_by_Make_Info");
+static_assert(sizeof(WBP_PalPlayerInframeRender_C_Request_Capture_by_Make_Info) == 0x000158, "Wrong size on WBP_PalPlayerInframeRender_C_Request_Capture_by_Make_Info");
+static_assert(offsetof(WBP_PalPlayerInframeRender_C_Request_Capture_by_Make_Info, MakeInfo) == 0x000000, "Member 'WBP_PalPlayerInframeRender_C_Request_Capture_by_Make_Info::MakeInfo' has a wrong offset!");
+static_assert(offsetof(WBP_PalPlayerInframeRender_C_Request_Capture_by_Make_Info, CallFunc_IsValid_ReturnValue) == 0x000150, "Member 'WBP_PalPlayerInframeRender_C_Request_Capture_by_Make_Info::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function WBP_PalPlayerInframeRender.WBP_PalPlayerInframeRender_C.RequestCaptureMyPlayer
 // 0x0001 (0x0001 - 0x0000)
@@ -241,31 +243,33 @@ static_assert(sizeof(WBP_PalPlayerInframeRender_C_ResetCameraLocation) == 0x0000
 static_assert(offsetof(WBP_PalPlayerInframeRender_C_ResetCameraLocation, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'WBP_PalPlayerInframeRender_C_ResetCameraLocation::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function WBP_PalPlayerInframeRender.WBP_PalPlayerInframeRender_C.UnregisterEvent
-// 0x0048 (0x0048 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct WBP_PalPlayerInframeRender_C_UnregisterEvent final
 {
 public:
-	TDelegate<void(class UPalItemSlot* ItemSlot, EPalPlayerEquipItemSlotType SlotType)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalPlayerInventoryData*                CallFunc_GetLocalInventoryData_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45AE[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class APalWeaponBase* Weapon)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x001C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45AF[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalShooterComponent*                   CallFunc_GetComponentByClass_ReturnValue;          // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalItemSlot* ItemSlot, EPalPlayerEquipItemSlotType SlotType)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalPlayerInventoryData*                CallFunc_GetLocalInventoryData_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_48C5[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class APalWeaponBase* Weapon)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x002C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_48C6[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalShooterComponent*                   CallFunc_GetComponentByClass_ReturnValue;          // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_PalPlayerInframeRender_C_UnregisterEvent) == 0x000008, "Wrong alignment on WBP_PalPlayerInframeRender_C_UnregisterEvent");
-static_assert(sizeof(WBP_PalPlayerInframeRender_C_UnregisterEvent) == 0x000048, "Wrong size on WBP_PalPlayerInframeRender_C_UnregisterEvent");
+static_assert(sizeof(WBP_PalPlayerInframeRender_C_UnregisterEvent) == 0x000058, "Wrong size on WBP_PalPlayerInframeRender_C_UnregisterEvent");
 static_assert(offsetof(WBP_PalPlayerInframeRender_C_UnregisterEvent, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'WBP_PalPlayerInframeRender_C_UnregisterEvent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_PalPlayerInframeRender_C_UnregisterEvent, CallFunc_GetLocalInventoryData_ReturnValue) == 0x000010, "Member 'WBP_PalPlayerInframeRender_C_UnregisterEvent::CallFunc_GetLocalInventoryData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PalPlayerInframeRender_C_UnregisterEvent, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'WBP_PalPlayerInframeRender_C_UnregisterEvent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PalPlayerInframeRender_C_UnregisterEvent, K2Node_CreateDelegate_OutputDelegate_1) == 0x00001C, "Member 'WBP_PalPlayerInframeRender_C_UnregisterEvent::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_PalPlayerInframeRender_C_UnregisterEvent, CallFunc_GetPalmi_ReturnValue) == 0x000030, "Member 'WBP_PalPlayerInframeRender_C_UnregisterEvent::CallFunc_GetPalmi_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PalPlayerInframeRender_C_UnregisterEvent, CallFunc_GetComponentByClass_ReturnValue) == 0x000038, "Member 'WBP_PalPlayerInframeRender_C_UnregisterEvent::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PalPlayerInframeRender_C_UnregisterEvent, CallFunc_IsValid_ReturnValue_1) == 0x000040, "Member 'WBP_PalPlayerInframeRender_C_UnregisterEvent::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PalPlayerInframeRender_C_UnregisterEvent, CallFunc_IsValid_ReturnValue_2) == 0x000041, "Member 'WBP_PalPlayerInframeRender_C_UnregisterEvent::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_PalPlayerInframeRender_C_UnregisterEvent, K2Node_CreateDelegate_OutputDelegate_1) == 0x000010, "Member 'WBP_PalPlayerInframeRender_C_UnregisterEvent::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(WBP_PalPlayerInframeRender_C_UnregisterEvent, CallFunc_GetLocalInventoryData_ReturnValue) == 0x000020, "Member 'WBP_PalPlayerInframeRender_C_UnregisterEvent::CallFunc_GetLocalInventoryData_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PalPlayerInframeRender_C_UnregisterEvent, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'WBP_PalPlayerInframeRender_C_UnregisterEvent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PalPlayerInframeRender_C_UnregisterEvent, K2Node_CreateDelegate_OutputDelegate_2) == 0x00002C, "Member 'WBP_PalPlayerInframeRender_C_UnregisterEvent::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(WBP_PalPlayerInframeRender_C_UnregisterEvent, CallFunc_GetPalmi_ReturnValue) == 0x000040, "Member 'WBP_PalPlayerInframeRender_C_UnregisterEvent::CallFunc_GetPalmi_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PalPlayerInframeRender_C_UnregisterEvent, CallFunc_GetComponentByClass_ReturnValue) == 0x000048, "Member 'WBP_PalPlayerInframeRender_C_UnregisterEvent::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PalPlayerInframeRender_C_UnregisterEvent, CallFunc_IsValid_ReturnValue_1) == 0x000050, "Member 'WBP_PalPlayerInframeRender_C_UnregisterEvent::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_PalPlayerInframeRender_C_UnregisterEvent, CallFunc_IsValid_ReturnValue_2) == 0x000051, "Member 'WBP_PalPlayerInframeRender_C_UnregisterEvent::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
 
 }
 

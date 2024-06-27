@@ -13,56 +13,57 @@
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
 #include "Engine_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_JoinGame.WBP_JoinGame_C
-// 0x0230 (0x06C0 - 0x0490)
+// 0x0240 (0x06E0 - 0x04A0)
 class UWBP_JoinGame_C final : public UPalUIJoinGameBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0490(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 Image_69;                                          // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_PalDebugInfo_C*                    WBP_PalDebugInfo;                                  // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldMenu_Head_C*            WBP_Title_WorldMenu_Head;                          // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSelect_C*               WBP_Title_WorldSelect;                             // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	EPalUIServerListSortType                      SortType;                                          // 0x04B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalUIServerListFilterType                    ServerFilterType;                                  // 0x04B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4880[0x6];                                     // 0x04BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalUIServerDisplayData                ClickedServerInfo;                                 // 0x04C0(0x01A0)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FDataTableRowHandle                    JoinServerDialogMsgID;                             // 0x0660(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	TSoftObjectPtr<class UWBP_Title_WorldSelect_ListContent_C> LastClickedServerButton;                           // 0x0670(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, InstancedReference, HasGetValueTypeHash)
-	TArray<class FString>                         OfficialServerAddress;                             // 0x06A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FString                                 SearchWord;                                        // 0x06B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04A0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 Image_69;                                          // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_PalDebugInfo_C*                    WBP_PalDebugInfo;                                  // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldMenu_Head_C*            WBP_Title_WorldMenu_Head;                          // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSelect_C*               WBP_Title_WorldSelect;                             // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	EPalUIServerListSortType                      SortType;                                          // 0x04C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3EFC[0x7];                                     // 0x04C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalUIServerDisplayData                ClickedServerInfo;                                 // 0x04D0(0x01A0)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FDataTableRowHandle                    JoinServerDialogMsgID;                             // 0x0670(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	TSoftObjectPtr<class UWBP_Title_WorldSelect_ListContent_C> LastClickedServerButton;                           // 0x0680(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, InstancedReference, HasGetValueTypeHash)
+	TArray<class FString>                         OfficialServerAddress;                             // 0x06B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FString                                 SearchWord;                                        // 0x06C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	TArray<class FString>                         RegionStrings;                                     // 0x06D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_11_OnClickedServerList_HistoryButton__DelegateSignature();
-	void BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_2_OnClickedServerList_OfficialButton__DelegateSignature();
-	void BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature(EPalUIServerListSortType Param_SortType);
-	void BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature(const class FString& Param_SearchWord);
-	void BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* Widget);
-	void BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_7_OnClickedServerList_CommunityButton__DelegateSignature();
-	void Completed_B0C690024643A528EA9A2B9DAEA567A3(const class FString& ResponseBody, bool bResponseOK, int32 ResponseCode);
-	void Construct();
-	void Destruct();
-	void DisplayServer();
-	void ExecuteUbergraph_WBP_JoinGame(int32 EntryPoint);
-	void NextButton();
-	void OnCancelAction();
-	void OnChangeVersionIgnoreCheckbox(bool bIsChecked);
-	void OnClicked_JoinByIPButton(const class FString& Address);
-	void OnCloseJoinServerDialog(bool bResult);
-	void OnCompleteGetServerListEvent();
-	void OnInitialized();
-	void OpenJoinServerDialog();
-	void Passworde__(class UPalHUDDispatchParameterBase* Param_Param);
-	void PreviousButton();
-	void RequestGetServerListBP(EPalUIServerListFilterType Type, const class FString& Region, bool IsCleanCache, int32 PageOffset, const class FString& Word, EPalUIServerListSortType Param_SortType);
-	void ________(bool bResult);
-	void _________0(bool bResult);
 	void _____K_e_(class UPalHUDDispatchParameterBase* Param_Param);
+	void _________0(bool bResult);
+	void ________(bool bResult);
+	void RequestGetServerListBP(EPalUIServerListFilterType Type, const class FString& Region, int32 PageOffset, const class FString& Word, EPalUIServerListSortType Param_SortType);
+	void PreviousButton();
+	void Passworde__(class UPalHUDDispatchParameterBase* Param_Param);
+	void OpenJoinServerDialog();
+	void OnInitialized();
+	void OnCompleteGetServerListEvent();
+	void OnCloseJoinServerDialog(bool bResult);
+	void OnClicked_JoinByIPButton(const class FString& Address);
+	void OnChangeVersionIgnoreCheckbox(bool bIsChecked);
+	void OnCancelAction();
+	void NextButton();
+	void ExecuteUbergraph_WBP_JoinGame(int32 EntryPoint);
+	void DisplayServer();
+	void Destruct();
+	void Construct();
+	void Completed_B0C690024643A528EA9A2B9DAEA567A3(const class FString& ResponseBody, bool bResponseOK, int32 ResponseCode);
+	void BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_7_OnClickedServerList_CommunityButton__DelegateSignature();
+	void BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* Widget);
+	void BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature(const class FString& Param_SearchWord);
+	void BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature(EPalUIServerListSortType Param_SortType);
+	void BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_2_OnClickedServerList_OfficialButton__DelegateSignature();
+	void BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_11_OnClickedServerList_HistoryButton__DelegateSignature();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 
@@ -77,19 +78,19 @@ public:
 	}
 };
 static_assert(alignof(UWBP_JoinGame_C) == 0x000008, "Wrong alignment on UWBP_JoinGame_C");
-static_assert(sizeof(UWBP_JoinGame_C) == 0x0006C0, "Wrong size on UWBP_JoinGame_C");
-static_assert(offsetof(UWBP_JoinGame_C, UberGraphFrame) == 0x000490, "Member 'UWBP_JoinGame_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_JoinGame_C, Image_69) == 0x000498, "Member 'UWBP_JoinGame_C::Image_69' has a wrong offset!");
-static_assert(offsetof(UWBP_JoinGame_C, WBP_PalDebugInfo) == 0x0004A0, "Member 'UWBP_JoinGame_C::WBP_PalDebugInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_JoinGame_C, WBP_Title_WorldMenu_Head) == 0x0004A8, "Member 'UWBP_JoinGame_C::WBP_Title_WorldMenu_Head' has a wrong offset!");
-static_assert(offsetof(UWBP_JoinGame_C, WBP_Title_WorldSelect) == 0x0004B0, "Member 'UWBP_JoinGame_C::WBP_Title_WorldSelect' has a wrong offset!");
-static_assert(offsetof(UWBP_JoinGame_C, SortType) == 0x0004B8, "Member 'UWBP_JoinGame_C::SortType' has a wrong offset!");
-static_assert(offsetof(UWBP_JoinGame_C, ServerFilterType) == 0x0004B9, "Member 'UWBP_JoinGame_C::ServerFilterType' has a wrong offset!");
-static_assert(offsetof(UWBP_JoinGame_C, ClickedServerInfo) == 0x0004C0, "Member 'UWBP_JoinGame_C::ClickedServerInfo' has a wrong offset!");
-static_assert(offsetof(UWBP_JoinGame_C, JoinServerDialogMsgID) == 0x000660, "Member 'UWBP_JoinGame_C::JoinServerDialogMsgID' has a wrong offset!");
-static_assert(offsetof(UWBP_JoinGame_C, LastClickedServerButton) == 0x000670, "Member 'UWBP_JoinGame_C::LastClickedServerButton' has a wrong offset!");
-static_assert(offsetof(UWBP_JoinGame_C, OfficialServerAddress) == 0x0006A0, "Member 'UWBP_JoinGame_C::OfficialServerAddress' has a wrong offset!");
-static_assert(offsetof(UWBP_JoinGame_C, SearchWord) == 0x0006B0, "Member 'UWBP_JoinGame_C::SearchWord' has a wrong offset!");
+static_assert(sizeof(UWBP_JoinGame_C) == 0x0006E0, "Wrong size on UWBP_JoinGame_C");
+static_assert(offsetof(UWBP_JoinGame_C, UberGraphFrame) == 0x0004A0, "Member 'UWBP_JoinGame_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UWBP_JoinGame_C, Image_69) == 0x0004A8, "Member 'UWBP_JoinGame_C::Image_69' has a wrong offset!");
+static_assert(offsetof(UWBP_JoinGame_C, WBP_PalDebugInfo) == 0x0004B0, "Member 'UWBP_JoinGame_C::WBP_PalDebugInfo' has a wrong offset!");
+static_assert(offsetof(UWBP_JoinGame_C, WBP_Title_WorldMenu_Head) == 0x0004B8, "Member 'UWBP_JoinGame_C::WBP_Title_WorldMenu_Head' has a wrong offset!");
+static_assert(offsetof(UWBP_JoinGame_C, WBP_Title_WorldSelect) == 0x0004C0, "Member 'UWBP_JoinGame_C::WBP_Title_WorldSelect' has a wrong offset!");
+static_assert(offsetof(UWBP_JoinGame_C, SortType) == 0x0004C8, "Member 'UWBP_JoinGame_C::SortType' has a wrong offset!");
+static_assert(offsetof(UWBP_JoinGame_C, ClickedServerInfo) == 0x0004D0, "Member 'UWBP_JoinGame_C::ClickedServerInfo' has a wrong offset!");
+static_assert(offsetof(UWBP_JoinGame_C, JoinServerDialogMsgID) == 0x000670, "Member 'UWBP_JoinGame_C::JoinServerDialogMsgID' has a wrong offset!");
+static_assert(offsetof(UWBP_JoinGame_C, LastClickedServerButton) == 0x000680, "Member 'UWBP_JoinGame_C::LastClickedServerButton' has a wrong offset!");
+static_assert(offsetof(UWBP_JoinGame_C, OfficialServerAddress) == 0x0006B0, "Member 'UWBP_JoinGame_C::OfficialServerAddress' has a wrong offset!");
+static_assert(offsetof(UWBP_JoinGame_C, SearchWord) == 0x0006C0, "Member 'UWBP_JoinGame_C::SearchWord' has a wrong offset!");
+static_assert(offsetof(UWBP_JoinGame_C, RegionStrings) == 0x0006D0, "Member 'UWBP_JoinGame_C::RegionStrings' has a wrong offset!");
 
 }
 

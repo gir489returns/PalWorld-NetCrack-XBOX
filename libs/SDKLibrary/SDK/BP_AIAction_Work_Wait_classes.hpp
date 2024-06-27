@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_AIAction_Work_Wait.BP_AIAction_Work_Wait_C
-// 0x0000 (0x0158 - 0x0158)
+// 0x0000 (0x0198 - 0x0198)
 class UBP_AIAction_Work_Wait_C : public UPalAIActionWorkerWait
 {
 public:
@@ -34,7 +34,7 @@ public:
 	}
 };
 static_assert(alignof(UBP_AIAction_Work_Wait_C) == 0x000008, "Wrong alignment on UBP_AIAction_Work_Wait_C");
-static_assert(sizeof(UBP_AIAction_Work_Wait_C) == 0x000158, "Wrong size on UBP_AIAction_Work_Wait_C");
+static_assert(sizeof(UBP_AIAction_Work_Wait_C) == 0x000198, "Wrong size on UBP_AIAction_Work_Wait_C");
 
 }
 

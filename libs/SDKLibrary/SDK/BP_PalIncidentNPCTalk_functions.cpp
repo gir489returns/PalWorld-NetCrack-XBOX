@@ -51,19 +51,19 @@ void UBP_PalIncidentNPCTalk_C::AttachCamera()
 }
 
 
-// Function BP_PalIncidentNPCTalk.BP_PalIncidentNPCTalk_C.AttackToPlayer
+// Function BP_PalIncidentNPCTalk.BP_PalIncidentNPCTalk_C.Attack to Player
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FPalNPCTalkSystemCustomFunctionParametersParam                                                  (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void UBP_PalIncidentNPCTalk_C::AttackToPlayer(const struct FPalNPCTalkSystemCustomFunctionParameters& Param)
+void UBP_PalIncidentNPCTalk_C::Attack_to_Player(const struct FPalNPCTalkSystemCustomFunctionParameters& Param)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalIncidentNPCTalk_C", "AttackToPlayer");
+		Func = Class->GetFunction("BP_PalIncidentNPCTalk_C", "Attack to Player");
 
-	Params::BP_PalIncidentNPCTalk_C_AttackToPlayer Parms{};
+	Params::BP_PalIncidentNPCTalk_C_Attack_to_Player Parms{};
 
 	Parms.Param = std::move(Param);
 
@@ -388,6 +388,29 @@ void UBP_PalIncidentNPCTalk_C::HasRequestItem(const struct FPalNPCTalkSystemCust
 }
 
 
+// Function BP_PalIncidentNPCTalk.BP_PalIncidentNPCTalk_C.IsExistCustomEvent
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             CustomEventName                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UBP_PalIncidentNPCTalk_C::IsExistCustomEvent(const class FName& CustomEventName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalIncidentNPCTalk_C", "IsExistCustomEvent");
+
+	Params::BP_PalIncidentNPCTalk_C_IsExistCustomEvent Parms{};
+
+	Parms.CustomEventName = CustomEventName;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
 // Function BP_PalIncidentNPCTalk.BP_PalIncidentNPCTalk_C.Lottery Index by Weights
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -442,6 +465,20 @@ void UBP_PalIncidentNPCTalk_C::LotteryItemAndNum(const struct FPalNPCTalkSystemC
 }
 
 
+// Function BP_PalIncidentNPCTalk.BP_PalIncidentNPCTalk_C.On Talk Character Captured
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UBP_PalIncidentNPCTalk_C::On_Talk_Character_Captured()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalIncidentNPCTalk_C", "On Talk Character Captured");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_PalIncidentNPCTalk.BP_PalIncidentNPCTalk_C.OnBegin
 // (Event, Public, BlueprintEvent)
 
@@ -467,6 +504,48 @@ void UBP_PalIncidentNPCTalk_C::OnCanceled()
 		Func = Class->GetFunction("BP_PalIncidentNPCTalk_C", "OnCanceled");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PalIncidentNPCTalk.BP_PalIncidentNPCTalk_C.OnCustomEvent
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             CustomEventName                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FPalNPCTalkSystemCustomFunctionParametersParameter                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+
+void UBP_PalIncidentNPCTalk_C::OnCustomEvent(const class FName& CustomEventName, const struct FPalNPCTalkSystemCustomFunctionParameters& Parameter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalIncidentNPCTalk_C", "OnCustomEvent");
+
+	Params::BP_PalIncidentNPCTalk_C_OnCustomEvent Parms{};
+
+	Parms.CustomEventName = CustomEventName;
+	Parms.Parameter = std::move(Parameter);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalIncidentNPCTalk.BP_PalIncidentNPCTalk_C.OnDamageReaction
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FPalDamageRactionInfo            DamageReactionInfo                                     (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void UBP_PalIncidentNPCTalk_C::OnDamageReaction(const struct FPalDamageRactionInfo& DamageReactionInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalIncidentNPCTalk_C", "OnDamageReaction");
+
+	Params::BP_PalIncidentNPCTalk_C_OnDamageReaction Parms{};
+
+	Parms.DamageReactionInfo = std::move(DamageReactionInfo);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -671,20 +750,6 @@ void UBP_PalIncidentNPCTalk_C::OnTalkCharacterBattleModeChanged(bool IsBattle)
 	Parms.IsBattle = IsBattle;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PalIncidentNPCTalk.BP_PalIncidentNPCTalk_C.OnTalkCharacterCaptured
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UBP_PalIncidentNPCTalk_C::OnTalkCharacterCaptured()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalIncidentNPCTalk_C", "OnTalkCharacterCaptured");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

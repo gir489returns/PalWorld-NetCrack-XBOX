@@ -108,7 +108,7 @@ struct PreviewGeometry_CreateInWorld final
 {
 public:
 	class UWorld*                                 World;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B07[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B6C[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             WithTransform;                                     // 0x0010(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(PreviewGeometry_CreateInWorld) == 0x000010, "Wrong alignment on PreviewGeometry_CreateInWorld");
@@ -172,7 +172,7 @@ public:
 	class FString                                 LineSetIdentifier;                                 // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDestroy;                                          // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B08[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B6D[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PreviewGeometry_RemoveLineSet) == 0x000008, "Wrong alignment on PreviewGeometry_RemoveLineSet");
 static_assert(sizeof(PreviewGeometry_RemoveLineSet) == 0x000018, "Wrong size on PreviewGeometry_RemoveLineSet");
@@ -188,7 +188,7 @@ public:
 	class FString                                 PointSetIdentifier;                                // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDestroy;                                          // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B09[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B6E[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PreviewGeometry_RemovePointSet) == 0x000008, "Wrong alignment on PreviewGeometry_RemovePointSet");
 static_assert(sizeof(PreviewGeometry_RemovePointSet) == 0x000018, "Wrong size on PreviewGeometry_RemovePointSet");
@@ -226,7 +226,7 @@ public:
 	class FString                                 LineSetIdentifier;                                 // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UMaterialInterface*                     NewMaterial;                                       // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B0A[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B6F[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PreviewGeometry_SetLineSetMaterial) == 0x000008, "Wrong alignment on PreviewGeometry_SetLineSetMaterial");
 static_assert(sizeof(PreviewGeometry_SetLineSetMaterial) == 0x000020, "Wrong size on PreviewGeometry_SetLineSetMaterial");
@@ -242,7 +242,7 @@ public:
 	class FString                                 LineSetIdentifier;                                 // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bVisible;                                          // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B0B[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B70[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PreviewGeometry_SetLineSetVisibility) == 0x000008, "Wrong alignment on PreviewGeometry_SetLineSetVisibility");
 static_assert(sizeof(PreviewGeometry_SetLineSetVisibility) == 0x000018, "Wrong size on PreviewGeometry_SetLineSetVisibility");
@@ -258,7 +258,7 @@ public:
 	class FString                                 PointSetIdentifier;                                // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UMaterialInterface*                     NewMaterial;                                       // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B0C[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B71[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PreviewGeometry_SetPointSetMaterial) == 0x000008, "Wrong alignment on PreviewGeometry_SetPointSetMaterial");
 static_assert(sizeof(PreviewGeometry_SetPointSetMaterial) == 0x000020, "Wrong size on PreviewGeometry_SetPointSetMaterial");
@@ -274,7 +274,7 @@ public:
 	class FString                                 PointSetIdentifier;                                // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bVisible;                                          // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B0D[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B72[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PreviewGeometry_SetPointSetVisibility) == 0x000008, "Wrong alignment on PreviewGeometry_SetPointSetVisibility");
 static_assert(sizeof(PreviewGeometry_SetPointSetVisibility) == 0x000018, "Wrong size on PreviewGeometry_SetPointSetVisibility");

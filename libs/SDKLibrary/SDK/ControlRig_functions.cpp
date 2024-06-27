@@ -7014,6 +7014,200 @@ float UControlRigComponent::GetAbsoluteTime() const
 }
 
 
+// Function ControlRig.ControlRigPoseAsset.GetCurrentPose
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UControlRig*                      InControlRig                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FControlRigControlPose           OutPose                                                (Parm, OutParm, NativeAccessSpecifierPublic)
+
+void UControlRigPoseAsset::GetCurrentPose(class UControlRig* InControlRig, struct FControlRigControlPose* OutPose)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ControlRigPoseAsset", "GetCurrentPose");
+
+	Params::ControlRigPoseAsset_GetCurrentPose Parms{};
+
+	Parms.InControlRig = InControlRig;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutPose != nullptr)
+		*OutPose = std::move(Parms.OutPose);
+}
+
+
+// Function ControlRig.ControlRigPoseAsset.PastePose
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UControlRig*                      InControlRig                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bDoKey                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bDoMirror                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UControlRigPoseAsset::PastePose(class UControlRig* InControlRig, bool bDoKey, bool bDoMirror)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ControlRigPoseAsset", "PastePose");
+
+	Params::ControlRigPoseAsset_PastePose Parms{};
+
+	Parms.InControlRig = InControlRig;
+	Parms.bDoKey = bDoKey;
+	Parms.bDoMirror = bDoMirror;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function ControlRig.ControlRigPoseAsset.ReplaceControlName
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class FName                             CurrentName                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FName                             NewName                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UControlRigPoseAsset::ReplaceControlName(const class FName& CurrentName, const class FName& NewName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ControlRigPoseAsset", "ReplaceControlName");
+
+	Params::ControlRigPoseAsset_ReplaceControlName Parms{};
+
+	Parms.CurrentName = CurrentName;
+	Parms.NewName = NewName;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function ControlRig.ControlRigPoseAsset.SavePose
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UControlRig*                      InControlRig                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bUseAll                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UControlRigPoseAsset::SavePose(class UControlRig* InControlRig, bool bUseAll)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ControlRigPoseAsset", "SavePose");
+
+	Params::ControlRigPoseAsset_SavePose Parms{};
+
+	Parms.InControlRig = InControlRig;
+	Parms.bUseAll = bUseAll;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function ControlRig.ControlRigPoseAsset.SelectControls
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UControlRig*                      InControlRig                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bDoMirror                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UControlRigPoseAsset::SelectControls(class UControlRig* InControlRig, bool bDoMirror)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ControlRigPoseAsset", "SelectControls");
+
+	Params::ControlRigPoseAsset_SelectControls Parms{};
+
+	Parms.InControlRig = InControlRig;
+	Parms.bDoMirror = bDoMirror;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function ControlRig.ControlRigPoseAsset.DoesMirrorMatch
+// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UControlRig*                      ControlRig                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FName                             ControlName                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UControlRigPoseAsset::DoesMirrorMatch(class UControlRig* ControlRig, const class FName& ControlName) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ControlRigPoseAsset", "DoesMirrorMatch");
+
+	Params::ControlRigPoseAsset_DoesMirrorMatch Parms{};
+
+	Parms.ControlRig = ControlRig;
+	Parms.ControlName = ControlName;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function ControlRig.ControlRigPoseAsset.GetControlNames
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// TArray<class FName>                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+
+TArray<class FName> UControlRigPoseAsset::GetControlNames() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ControlRigPoseAsset", "GetControlNames");
+
+	Params::ControlRigPoseAsset_GetControlNames Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function ControlRig.RigHierarchyController.AddAnimationChannel_ForBlueprint
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -7932,200 +8126,6 @@ bool URigHierarchyController::SetControlSettings(const struct FRigElementKey& In
 	Parms.InKey = std::move(InKey);
 	Parms.InSettings = std::move(InSettings);
 	Parms.bSetupUndo = bSetupUndo;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function ControlRig.ControlRigPoseAsset.GetCurrentPose
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UControlRig*                      InControlRig                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FControlRigControlPose           OutPose                                                (Parm, OutParm, NativeAccessSpecifierPublic)
-
-void UControlRigPoseAsset::GetCurrentPose(class UControlRig* InControlRig, struct FControlRigControlPose* OutPose)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ControlRigPoseAsset", "GetCurrentPose");
-
-	Params::ControlRigPoseAsset_GetCurrentPose Parms{};
-
-	Parms.InControlRig = InControlRig;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutPose != nullptr)
-		*OutPose = std::move(Parms.OutPose);
-}
-
-
-// Function ControlRig.ControlRigPoseAsset.PastePose
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UControlRig*                      InControlRig                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bDoKey                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bDoMirror                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UControlRigPoseAsset::PastePose(class UControlRig* InControlRig, bool bDoKey, bool bDoMirror)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ControlRigPoseAsset", "PastePose");
-
-	Params::ControlRigPoseAsset_PastePose Parms{};
-
-	Parms.InControlRig = InControlRig;
-	Parms.bDoKey = bDoKey;
-	Parms.bDoMirror = bDoMirror;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function ControlRig.ControlRigPoseAsset.ReplaceControlName
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class FName                             CurrentName                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FName                             NewName                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UControlRigPoseAsset::ReplaceControlName(const class FName& CurrentName, const class FName& NewName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ControlRigPoseAsset", "ReplaceControlName");
-
-	Params::ControlRigPoseAsset_ReplaceControlName Parms{};
-
-	Parms.CurrentName = CurrentName;
-	Parms.NewName = NewName;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function ControlRig.ControlRigPoseAsset.SavePose
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UControlRig*                      InControlRig                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bUseAll                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UControlRigPoseAsset::SavePose(class UControlRig* InControlRig, bool bUseAll)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ControlRigPoseAsset", "SavePose");
-
-	Params::ControlRigPoseAsset_SavePose Parms{};
-
-	Parms.InControlRig = InControlRig;
-	Parms.bUseAll = bUseAll;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function ControlRig.ControlRigPoseAsset.SelectControls
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UControlRig*                      InControlRig                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bDoMirror                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UControlRigPoseAsset::SelectControls(class UControlRig* InControlRig, bool bDoMirror)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ControlRigPoseAsset", "SelectControls");
-
-	Params::ControlRigPoseAsset_SelectControls Parms{};
-
-	Parms.InControlRig = InControlRig;
-	Parms.bDoMirror = bDoMirror;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function ControlRig.ControlRigPoseAsset.DoesMirrorMatch
-// (Final, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class UControlRig*                      ControlRig                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FName                             ControlName                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UControlRigPoseAsset::DoesMirrorMatch(class UControlRig* ControlRig, const class FName& ControlName) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ControlRigPoseAsset", "DoesMirrorMatch");
-
-	Params::ControlRigPoseAsset_DoesMirrorMatch Parms{};
-
-	Parms.ControlRig = ControlRig;
-	Parms.ControlName = ControlName;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function ControlRig.ControlRigPoseAsset.GetControlNames
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// TArray<class FName>                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-
-TArray<class FName> UControlRigPoseAsset::GetControlNames() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ControlRigPoseAsset", "GetControlNames");
-
-	Params::ControlRigPoseAsset_GetControlNames Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

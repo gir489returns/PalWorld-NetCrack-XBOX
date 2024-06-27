@@ -159,55 +159,33 @@ enum class ENetCloseResult : uint8
 	ENetCloseResult_MAX                      = 109,
 };
 
-// ScriptStruct NetCore.FastArraySerializer
-// 0x0108 (0x0108 - 0x0000)
-struct alignas(0x08) FFastArraySerializer
-{
-public:
-	uint8                                         Pad_3356[0x54];                                    // 0x0000(0x0054)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         ArrayReplicationKey;                               // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3357[0xA8];                                    // 0x0058(0x00A8)(Fixing Size After Last Property [ Dumper-7 ])
-	EFastArraySerializerDeltaFlags                DeltaFlags;                                        // 0x0100(0x0001)(ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_3358[0x7];                                     // 0x0101(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FFastArraySerializer) == 0x000008, "Wrong alignment on FFastArraySerializer");
-static_assert(sizeof(FFastArraySerializer) == 0x000108, "Wrong size on FFastArraySerializer");
-static_assert(offsetof(FFastArraySerializer, ArrayReplicationKey) == 0x000054, "Member 'FFastArraySerializer::ArrayReplicationKey' has a wrong offset!");
-static_assert(offsetof(FFastArraySerializer, DeltaFlags) == 0x000100, "Member 'FFastArraySerializer::DeltaFlags' has a wrong offset!");
-
 // ScriptStruct NetCore.StateStruct
 // 0x0018 (0x0018 - 0x0000)
 struct FStateStruct
 {
 public:
-	uint8                                         Pad_3359[0x8];                                     // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34F6[0x8];                                     // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 StateName;                                         // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
 static_assert(alignof(FStateStruct) == 0x000008, "Wrong alignment on FStateStruct");
 static_assert(sizeof(FStateStruct) == 0x000018, "Wrong size on FStateStruct");
 static_assert(offsetof(FStateStruct, StateName) == 0x000008, "Member 'FStateStruct::StateName' has a wrong offset!");
 
-// ScriptStruct NetCore.EscalationState
-// 0x0018 (0x0030 - 0x0018)
-struct FEscalationState : public FStateStruct
+// ScriptStruct NetCore.FastArraySerializer
+// 0x0108 (0x0108 - 0x0000)
+struct alignas(0x08) FFastArraySerializer
 {
 public:
-	bool                                          bLogEscalate;                                      // 0x0018(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bDormant;                                          // 0x0019(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         CooloffTime;                                       // 0x001A(0x0002)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int16                                         AutoEscalateTime;                                  // 0x001C(0x0002)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int8                                          HighestTimePeriod;                                 // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_335A[0x1];                                     // 0x001F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<int8>                                  AllTimePeriods;                                    // 0x0020(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_34F7[0x54];                                    // 0x0000(0x0054)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ArrayReplicationKey;                               // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_34F8[0xA8];                                    // 0x0058(0x00A8)(Fixing Size After Last Property [ Dumper-7 ])
+	EFastArraySerializerDeltaFlags                DeltaFlags;                                        // 0x0100(0x0001)(ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_34F9[0x7];                                     // 0x0101(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FEscalationState) == 0x000008, "Wrong alignment on FEscalationState");
-static_assert(sizeof(FEscalationState) == 0x000030, "Wrong size on FEscalationState");
-static_assert(offsetof(FEscalationState, bLogEscalate) == 0x000018, "Member 'FEscalationState::bLogEscalate' has a wrong offset!");
-static_assert(offsetof(FEscalationState, bDormant) == 0x000019, "Member 'FEscalationState::bDormant' has a wrong offset!");
-static_assert(offsetof(FEscalationState, CooloffTime) == 0x00001A, "Member 'FEscalationState::CooloffTime' has a wrong offset!");
-static_assert(offsetof(FEscalationState, AutoEscalateTime) == 0x00001C, "Member 'FEscalationState::AutoEscalateTime' has a wrong offset!");
-static_assert(offsetof(FEscalationState, HighestTimePeriod) == 0x00001E, "Member 'FEscalationState::HighestTimePeriod' has a wrong offset!");
-static_assert(offsetof(FEscalationState, AllTimePeriods) == 0x000020, "Member 'FEscalationState::AllTimePeriods' has a wrong offset!");
+static_assert(alignof(FFastArraySerializer) == 0x000008, "Wrong alignment on FFastArraySerializer");
+static_assert(sizeof(FFastArraySerializer) == 0x000108, "Wrong size on FFastArraySerializer");
+static_assert(offsetof(FFastArraySerializer, ArrayReplicationKey) == 0x000054, "Member 'FFastArraySerializer::ArrayReplicationKey' has a wrong offset!");
+static_assert(offsetof(FFastArraySerializer, DeltaFlags) == 0x000100, "Member 'FFastArraySerializer::DeltaFlags' has a wrong offset!");
 
 // ScriptStruct NetCore.FastArraySerializerItem
 // 0x000C (0x000C - 0x0000)
@@ -231,12 +209,34 @@ struct FNetAnalyticsDataConfig final
 public:
 	class FName                                   DataName;                                          // 0x0000(0x0008)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnabled;                                          // 0x0008(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_335B[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34FA[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FNetAnalyticsDataConfig) == 0x000004, "Wrong alignment on FNetAnalyticsDataConfig");
 static_assert(sizeof(FNetAnalyticsDataConfig) == 0x00000C, "Wrong size on FNetAnalyticsDataConfig");
 static_assert(offsetof(FNetAnalyticsDataConfig, DataName) == 0x000000, "Member 'FNetAnalyticsDataConfig::DataName' has a wrong offset!");
 static_assert(offsetof(FNetAnalyticsDataConfig, bEnabled) == 0x000008, "Member 'FNetAnalyticsDataConfig::bEnabled' has a wrong offset!");
+
+// ScriptStruct NetCore.EscalationState
+// 0x0018 (0x0030 - 0x0018)
+struct FEscalationState : public FStateStruct
+{
+public:
+	bool                                          bLogEscalate;                                      // 0x0018(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bDormant;                                          // 0x0019(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         CooloffTime;                                       // 0x001A(0x0002)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int16                                         AutoEscalateTime;                                  // 0x001C(0x0002)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int8                                          HighestTimePeriod;                                 // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_34FB[0x1];                                     // 0x001F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<int8>                                  AllTimePeriods;                                    // 0x0020(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+};
+static_assert(alignof(FEscalationState) == 0x000008, "Wrong alignment on FEscalationState");
+static_assert(sizeof(FEscalationState) == 0x000030, "Wrong size on FEscalationState");
+static_assert(offsetof(FEscalationState, bLogEscalate) == 0x000018, "Member 'FEscalationState::bLogEscalate' has a wrong offset!");
+static_assert(offsetof(FEscalationState, bDormant) == 0x000019, "Member 'FEscalationState::bDormant' has a wrong offset!");
+static_assert(offsetof(FEscalationState, CooloffTime) == 0x00001A, "Member 'FEscalationState::CooloffTime' has a wrong offset!");
+static_assert(offsetof(FEscalationState, AutoEscalateTime) == 0x00001C, "Member 'FEscalationState::AutoEscalateTime' has a wrong offset!");
+static_assert(offsetof(FEscalationState, HighestTimePeriod) == 0x00001E, "Member 'FEscalationState::HighestTimePeriod' has a wrong offset!");
+static_assert(offsetof(FEscalationState, AllTimePeriods) == 0x000020, "Member 'FEscalationState::AllTimePeriods' has a wrong offset!");
 
 // ScriptStruct NetCore.NetFaultState
 // 0x0010 (0x0040 - 0x0030)
@@ -244,14 +244,14 @@ struct FNetFaultState final : public FEscalationState
 {
 public:
 	bool                                          bCloseConnection;                                  // 0x0030(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_335C[0x1];                                     // 0x0031(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34FC[0x1];                                     // 0x0031(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int16                                         EscalateQuotaFaultsPerPeriod;                      // 0x0032(0x0002)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int8                                          EscalateQuotaFaultPercentPerPeriod;                // 0x0034(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_335D[0x1];                                     // 0x0035(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34FD[0x1];                                     // 0x0035(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int16                                         DescalateQuotaFaultsPerPeriod;                     // 0x0036(0x0002)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int8                                          DescalateQuotaFaultPercentPerPeriod;               // 0x0038(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int8                                          EscalateQuotaTimePeriod;                           // 0x0039(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_335E[0x6];                                     // 0x003A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34FE[0x6];                                     // 0x003A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FNetFaultState) == 0x000008, "Wrong alignment on FNetFaultState");
 static_assert(sizeof(FNetFaultState) == 0x000040, "Wrong size on FNetFaultState");

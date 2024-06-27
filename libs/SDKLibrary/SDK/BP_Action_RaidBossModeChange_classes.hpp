@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -23,7 +23,7 @@ namespace SDK
 class UBP_Action_RaidBossModeChange_C final : public UPalActionBase
 {
 public:
-	uint8                                         Pad_43E3[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FE7[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0140(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	FMulticastInlineDelegateProperty_             AddStatusEventDispatcher;                          // 0x0148(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
@@ -31,6 +31,7 @@ public:
 	void AddStatusEventDispatcher__DelegateSignature();
 	void EmitWarpEffect();
 	void ExecuteUbergraph_BP_Action_RaidBossModeChange(int32 EntryPoint);
+	void FindModeChangeVisualEffectType(EPalElementType Element, EPalVisualEffectID* VisualEffect, TSoftClassPtr<class UClass>* Value);
 	void FindMontage(EPalGeneralMontageType MontageType, class UAnimMontage** Montage);
 	void OnBeginAction();
 	void OnEndAction();

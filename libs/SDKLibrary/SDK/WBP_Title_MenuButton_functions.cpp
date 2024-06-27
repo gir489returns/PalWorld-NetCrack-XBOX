@@ -17,19 +17,108 @@
 namespace SDK
 {
 
-// Function WBP_Title_MenuButton.WBP_Title_MenuButton_C.BndEvt__WBP_Title_MenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Title_MenuButton.WBP_Title_MenuButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Title_MenuButton_C::BndEvt__WBP_Title_MenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Title_MenuButton_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_MenuButton_C", "BndEvt__WBP_Title_MenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Title_MenuButton_C", "PreConstruct");
 
-	Params::WBP_Title_MenuButton_C_BndEvt__WBP_Title_MenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Title_MenuButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_MenuButton.WBP_Title_MenuButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Title_MenuButton_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_MenuButton_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Title_MenuButton.WBP_Title_MenuButton_C.OnClicked__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Title_MenuButton_C::OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_MenuButton_C", "OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Title_MenuButton.WBP_Title_MenuButton_C.GetMenuType
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// E_PalUITitleMenuButtonType              BindedMenuType                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_MenuButton_C::GetMenuType(E_PalUITitleMenuButtonType* BindedMenuType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_MenuButton_C", "GetMenuType");
+
+	Params::WBP_Title_MenuButton_C_GetMenuType Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (BindedMenuType != nullptr)
+		*BindedMenuType = Parms.BindedMenuType;
+}
+
+
+// Function WBP_Title_MenuButton.WBP_Title_MenuButton_C.ExecuteUbergraph_WBP_Title_MenuButton
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_MenuButton_C::ExecuteUbergraph_WBP_Title_MenuButton(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_MenuButton_C", "ExecuteUbergraph_WBP_Title_MenuButton");
+
+	Params::WBP_Title_MenuButton_C_ExecuteUbergraph_WBP_Title_MenuButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_MenuButton.WBP_Title_MenuButton_C.BndEvt__WBP_Title_MenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_MenuButton_C::BndEvt__WBP_Title_MenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_MenuButton_C", "BndEvt__WBP_Title_MenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_Title_MenuButton_C_BndEvt__WBP_Title_MenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -57,110 +146,21 @@ void UWBP_Title_MenuButton_C::BndEvt__WBP_Title_MenuButton_WBP_PalInvisibleButto
 }
 
 
-// Function WBP_Title_MenuButton.WBP_Title_MenuButton_C.BndEvt__WBP_Title_MenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_Title_MenuButton.WBP_Title_MenuButton_C.BndEvt__WBP_Title_MenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Title_MenuButton_C::BndEvt__WBP_Title_MenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Title_MenuButton_C::BndEvt__WBP_Title_MenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_MenuButton_C", "BndEvt__WBP_Title_MenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Title_MenuButton_C", "BndEvt__WBP_Title_MenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Title_MenuButton_C_BndEvt__WBP_Title_MenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Title_MenuButton_C_BndEvt__WBP_Title_MenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Title_MenuButton.WBP_Title_MenuButton_C.ExecuteUbergraph_WBP_Title_MenuButton
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Title_MenuButton_C::ExecuteUbergraph_WBP_Title_MenuButton(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_MenuButton_C", "ExecuteUbergraph_WBP_Title_MenuButton");
-
-	Params::WBP_Title_MenuButton_C_ExecuteUbergraph_WBP_Title_MenuButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Title_MenuButton.WBP_Title_MenuButton_C.GetMenuType
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// E_PalUITitleMenuButtonType              BindedMenuType                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Title_MenuButton_C::GetMenuType(E_PalUITitleMenuButtonType* BindedMenuType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_MenuButton_C", "GetMenuType");
-
-	Params::WBP_Title_MenuButton_C_GetMenuType Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (BindedMenuType != nullptr)
-		*BindedMenuType = Parms.BindedMenuType;
-}
-
-
-// Function WBP_Title_MenuButton.WBP_Title_MenuButton_C.OnClicked__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Title_MenuButton_C::OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_MenuButton_C", "OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Title_MenuButton.WBP_Title_MenuButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Title_MenuButton_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_MenuButton_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Title_MenuButton.WBP_Title_MenuButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Title_MenuButton_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_MenuButton_C", "PreConstruct");
-
-	Params::WBP_Title_MenuButton_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

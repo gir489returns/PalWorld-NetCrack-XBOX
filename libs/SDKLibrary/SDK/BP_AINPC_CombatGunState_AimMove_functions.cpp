@@ -17,6 +17,27 @@
 namespace SDK
 {
 
+// Function BP_AINPC_CombatGunState_AimMove.BP_AINPC_CombatGunState_AimMove_C.CanMove
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool                                    Param_CanMove                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AINPC_CombatGunState_AimMove_C::CanMove(bool* Param_CanMove)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AINPC_CombatGunState_AimMove_C", "CanMove");
+
+	Params::BP_AINPC_CombatGunState_AimMove_C_CanMove Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Param_CanMove != nullptr)
+		*Param_CanMove = Parms.Param_CanMove;
+}
+
+
 // Function BP_AINPC_CombatGunState_AimMove.BP_AINPC_CombatGunState_AimMove_C.ExecuteUbergraph_BP_AINPC_CombatGunState_AimMove
 // (Final, UbergraphFunction)
 // Parameters:

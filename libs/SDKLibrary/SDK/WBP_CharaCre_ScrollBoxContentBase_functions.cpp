@@ -20,7 +20,7 @@ namespace SDK
 // Function WBP_CharaCre_ScrollBoxContentBase.WBP_CharaCre_ScrollBoxContentBase_C.ApplyMakeInfo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPalPlayerDataCharacterMakeInfo  MakeInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FPalPlayerDataCharacterMakeInfo  MakeInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 
 void UWBP_CharaCre_ScrollBoxContentBase_C::ApplyMakeInfo(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo)
 {
@@ -99,15 +99,15 @@ void UWBP_CharaCre_ScrollBoxContentBase_C::OnClosedSelectColorWindow_Internal(cl
 }
 
 
-// Function WBP_CharaCre_ScrollBoxContentBase.WBP_CharaCre_ScrollBoxContentBase_C.OnNotifyCloseSelectColorWIndow__DelegateSignature
+// Function WBP_CharaCre_ScrollBoxContentBase.WBP_CharaCre_ScrollBoxContentBase_C.OnNotifyCloseSelectColorWindow__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 
-void UWBP_CharaCre_ScrollBoxContentBase_C::OnNotifyCloseSelectColorWIndow__DelegateSignature()
+void UWBP_CharaCre_ScrollBoxContentBase_C::OnNotifyCloseSelectColorWindow__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CharaCre_ScrollBoxContentBase_C", "OnNotifyCloseSelectColorWIndow__DelegateSignature");
+		Func = Class->GetFunction("WBP_CharaCre_ScrollBoxContentBase_C", "OnNotifyCloseSelectColorWindow__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "GeometryCache_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
@@ -27,6 +27,17 @@ public:
 static_assert(alignof(GeometryCacheActor_GetGeometryCacheComponent) == 0x000008, "Wrong alignment on GeometryCacheActor_GetGeometryCacheComponent");
 static_assert(sizeof(GeometryCacheActor_GetGeometryCacheComponent) == 0x000008, "Wrong size on GeometryCacheActor_GetGeometryCacheComponent");
 static_assert(offsetof(GeometryCacheActor_GetGeometryCacheComponent, ReturnValue) == 0x000000, "Member 'GeometryCacheActor_GetGeometryCacheComponent::ReturnValue' has a wrong offset!");
+
+// Function GeometryCache.GeometryCacheTrack_TransformGroupAnimation.SetMesh
+// 0x00C8 (0x00C8 - 0x0000)
+struct GeometryCacheTrack_TransformGroupAnimation_SetMesh final
+{
+public:
+	struct FGeometryCacheMeshData                 NewMeshData;                                       // 0x0000(0x00C8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(GeometryCacheTrack_TransformGroupAnimation_SetMesh) == 0x000008, "Wrong alignment on GeometryCacheTrack_TransformGroupAnimation_SetMesh");
+static_assert(sizeof(GeometryCacheTrack_TransformGroupAnimation_SetMesh) == 0x0000C8, "Wrong size on GeometryCacheTrack_TransformGroupAnimation_SetMesh");
+static_assert(offsetof(GeometryCacheTrack_TransformGroupAnimation_SetMesh, NewMeshData) == 0x000000, "Member 'GeometryCacheTrack_TransformGroupAnimation_SetMesh::NewMeshData' has a wrong offset!");
 
 // Function GeometryCache.GeometryCacheComponent.SetExtrapolateFrames
 // 0x0001 (0x0001 - 0x0000)
@@ -46,7 +57,7 @@ struct GeometryCacheComponent_SetGeometryCache final
 public:
 	class UGeometryCache*                         NewGeomCache;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23BF[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2431[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GeometryCacheComponent_SetGeometryCache) == 0x000008, "Wrong alignment on GeometryCacheComponent_SetGeometryCache");
 static_assert(sizeof(GeometryCacheComponent_SetGeometryCache) == 0x000010, "Wrong size on GeometryCacheComponent_SetGeometryCache");
@@ -128,7 +139,7 @@ public:
 	bool                                          bInIsRunning;                                      // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInBackwards;                                      // 0x0005(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInIsLooping;                                      // 0x0006(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23C0[0x1];                                     // 0x0007(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2432[0x1];                                     // 0x0007(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GeometryCacheComponent_TickAtThisTime) == 0x000004, "Wrong alignment on GeometryCacheComponent_TickAtThisTime");
 static_assert(sizeof(GeometryCacheComponent_TickAtThisTime) == 0x000008, "Wrong size on GeometryCacheComponent_TickAtThisTime");
@@ -287,7 +298,7 @@ struct GeometryCacheTrack_FlipbookAnimation_AddMeshSample final
 public:
 	struct FGeometryCacheMeshData                 MeshData;                                          // 0x0000(0x00C8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	float                                         SampleTime;                                        // 0x00C8(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23C3[0x4];                                     // 0x00CC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2434[0x4];                                     // 0x00CC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GeometryCacheTrack_FlipbookAnimation_AddMeshSample) == 0x000008, "Wrong alignment on GeometryCacheTrack_FlipbookAnimation_AddMeshSample");
 static_assert(sizeof(GeometryCacheTrack_FlipbookAnimation_AddMeshSample) == 0x0000D0, "Wrong size on GeometryCacheTrack_FlipbookAnimation_AddMeshSample");
@@ -304,17 +315,6 @@ public:
 static_assert(alignof(GeometryCacheTrack_TransformAnimation_SetMesh) == 0x000008, "Wrong alignment on GeometryCacheTrack_TransformAnimation_SetMesh");
 static_assert(sizeof(GeometryCacheTrack_TransformAnimation_SetMesh) == 0x0000C8, "Wrong size on GeometryCacheTrack_TransformAnimation_SetMesh");
 static_assert(offsetof(GeometryCacheTrack_TransformAnimation_SetMesh, NewMeshData) == 0x000000, "Member 'GeometryCacheTrack_TransformAnimation_SetMesh::NewMeshData' has a wrong offset!");
-
-// Function GeometryCache.GeometryCacheTrack_TransformGroupAnimation.SetMesh
-// 0x00C8 (0x00C8 - 0x0000)
-struct GeometryCacheTrack_TransformGroupAnimation_SetMesh final
-{
-public:
-	struct FGeometryCacheMeshData                 NewMeshData;                                       // 0x0000(0x00C8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GeometryCacheTrack_TransformGroupAnimation_SetMesh) == 0x000008, "Wrong alignment on GeometryCacheTrack_TransformGroupAnimation_SetMesh");
-static_assert(sizeof(GeometryCacheTrack_TransformGroupAnimation_SetMesh) == 0x0000C8, "Wrong size on GeometryCacheTrack_TransformGroupAnimation_SetMesh");
-static_assert(offsetof(GeometryCacheTrack_TransformGroupAnimation_SetMesh, NewMeshData) == 0x000000, "Member 'GeometryCacheTrack_TransformGroupAnimation_SetMesh::NewMeshData' has a wrong offset!");
 
 }
 

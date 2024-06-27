@@ -21,6 +21,7 @@ namespace SDK
 class UBP_AINPC_CombatGunState_FireMove_Shotgun_C final : public UBP_AINPC_CombatGunState_FireMove_C
 {
 public:
+	void CanMove(bool* Param_CanMove);
 	void MoveDIrectionWorldSpace(struct FVector* Direction);
 
 public:

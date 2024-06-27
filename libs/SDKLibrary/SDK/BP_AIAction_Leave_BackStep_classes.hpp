@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "AIModule_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "Engine_structs.hpp"
+#include "AIModule_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -28,7 +28,7 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0148(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	bool                                          EndAble;                                           // 0x0150(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          TurnAble;                                          // 0x0151(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_413F[0x6];                                     // 0x0152(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_36E7[0x6];                                     // 0x0152(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVector>                        GoalLocationList;                                  // 0x0158(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          JumpFailure;                                       // 0x0168(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

@@ -34,8 +34,8 @@ public:
 	void EnableCollision();
 	void EndCollision();
 	void ExecuteUbergraph_BP_SkillEffect_GeneralWork(int32 EntryPoint);
-	void SetupCollision(const struct FVector& TargetLocationPoint, const struct FVector& ImpactPoint);
 	void ReceiveBeginPlay();
+	void SetupCollision(const struct FVector& TargetLocationPoint, const struct FVector& ImpactPoint);
 
 public:
 	static class UClass* StaticClass()

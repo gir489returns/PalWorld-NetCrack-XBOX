@@ -12,8 +12,8 @@
 
 #include "AIModule_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Pal_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Pal_structs.hpp"
 
 
 namespace SDK::Params
@@ -43,6 +43,39 @@ static_assert(sizeof(BP_AIActionEscape_C_ActionFinished) == 0x000010, "Wrong siz
 static_assert(offsetof(BP_AIActionEscape_C_ActionFinished, ControlledPawn) == 0x000000, "Member 'BP_AIActionEscape_C_ActionFinished::ControlledPawn' has a wrong offset!");
 static_assert(offsetof(BP_AIActionEscape_C_ActionFinished, WithResult) == 0x000008, "Member 'BP_AIActionEscape_C_ActionFinished::WithResult' has a wrong offset!");
 
+// Function BP_AIActionEscape.BP_AIActionEscape_C.ActionPause
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIActionEscape_C_ActionPause final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIActionEscape_C_ActionPause) == 0x000008, "Wrong alignment on BP_AIActionEscape_C_ActionPause");
+static_assert(sizeof(BP_AIActionEscape_C_ActionPause) == 0x000008, "Wrong size on BP_AIActionEscape_C_ActionPause");
+static_assert(offsetof(BP_AIActionEscape_C_ActionPause, ControlledPawn) == 0x000000, "Member 'BP_AIActionEscape_C_ActionPause::ControlledPawn' has a wrong offset!");
+
+// Function BP_AIActionEscape.BP_AIActionEscape_C.ActionResume
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIActionEscape_C_ActionResume final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIActionEscape_C_ActionResume) == 0x000008, "Wrong alignment on BP_AIActionEscape_C_ActionResume");
+static_assert(sizeof(BP_AIActionEscape_C_ActionResume) == 0x000008, "Wrong size on BP_AIActionEscape_C_ActionResume");
+static_assert(offsetof(BP_AIActionEscape_C_ActionResume, ControlledPawn) == 0x000000, "Member 'BP_AIActionEscape_C_ActionResume::ControlledPawn' has a wrong offset!");
+
+// Function BP_AIActionEscape.BP_AIActionEscape_C.ActionStart
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIActionEscape_C_ActionStart final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIActionEscape_C_ActionStart) == 0x000008, "Wrong alignment on BP_AIActionEscape_C_ActionStart");
+static_assert(sizeof(BP_AIActionEscape_C_ActionStart) == 0x000008, "Wrong size on BP_AIActionEscape_C_ActionStart");
+static_assert(offsetof(BP_AIActionEscape_C_ActionStart, ControlledPawn) == 0x000000, "Member 'BP_AIActionEscape_C_ActionStart::ControlledPawn' has a wrong offset!");
+
 // Function BP_AIActionEscape.BP_AIActionEscape_C.ActionTick
 // 0x0010 (0x0010 - 0x0000)
 struct BP_AIActionEscape_C_ActionTick final
@@ -62,22 +95,22 @@ struct BP_AIActionEscape_C_ChangeReturnMode final
 {
 public:
 	bool                                          ChangeSuccess;                                     // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E99[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BC6[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalAIController*                       TempAICon;                                         // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	class UBP_PalAIBlackboard_Common_C*           TempBB;                                            // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IBPI_GoBackTeritory_C> K2Node_DynamicCast_AsBPI_Go_Back_Teritory;         // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E9A[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BC7[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalAIBlackboardBase*                   CallFunc_GetMyPalBlackboard_ReturnValue;           // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UBP_PalAIBlackboard_Common_C*           K2Node_DynamicCast_AsBP_Pal_AIBlackboard_Common;   // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E9B[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BC8[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalAIBlackboardBase*                   CallFunc_GetMyPalBlackboard_ReturnValue_1;         // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_DoubleDouble_ReturnValue;            // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E9C[0x7];                                     // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BC9[0x7];                                     // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBP_PalAIBlackboard_Common_C*           K2Node_DynamicCast_AsBP_Pal_AIBlackboard_Common_1; // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E9D[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BCA[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AController*                            CallFunc_GetController_ReturnValue_1;              // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -85,7 +118,7 @@ public:
 	class APalAIController*                       K2Node_DynamicCast_AsPal_AIController;             // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsNearTwoPoint_ReturnValue;               // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E9E[0x2];                                     // 0x00A2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BCB[0x2];                                     // 0x00A2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_IsNearTwoPoint_distance_ImplicitCast;     // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_AIActionEscape_C_ChangeReturnMode) == 0x000008, "Wrong alignment on BP_AIActionEscape_C_ChangeReturnMode");
@@ -120,11 +153,11 @@ public:
 	bool                                          CallFunc_SetGoalLocation_Success;                  // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPathFollowingResult                          K2Node_CustomEvent_MovementResult_1;               // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPathFollowingResult                          K2Node_CustomEvent_MovementResult;                 // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E9F[0x1];                                     // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BCC[0x1];                                     // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(EPathFollowingResult MovementResult)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EPathFollowingResult                          Temp_byte_Variable;                                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EA0[0x6];                                     // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BCD[0x6];                                     // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AController*                            CallFunc_GetController_ReturnValue_1;              // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -133,36 +166,36 @@ public:
 	class AController*                            CallFunc_GetController_ReturnValue_2;              // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_2;                 // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EA1[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BCE[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0060(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsNearTwoPoint_ReturnValue;               // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EA2[0x3];                                     // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BCF[0x3];                                     // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(EPathFollowingResult MovementResult)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0084(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EA3[0x4];                                     // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BD0[0x4];                                     // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue_3;              // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  K2Node_Event_ControlledPawn_5;                     // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_3;                 // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UCharacterMovementComponent*            CallFunc_GetComponentByClass_ReturnValue;          // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  K2Node_Event_ControlledPawn_4;                     // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EA4[0x4];                                     // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BD1[0x4];                                     // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  K2Node_Event_ControlledPawn_3;                     // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  K2Node_Event_ControlledPawn_2;                     // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EPawnActionResult                             K2Node_Event_WithResult;                           // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EA5[0x7];                                     // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BD2[0x7];                                     // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  K2Node_Event_ControlledPawn_1;                     // 0x00E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  K2Node_Event_ControlledPawn;                       // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsNearTwoActor_ReturnValue;               // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EA6[0x7];                                     // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BD3[0x7];                                     // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue_4;              // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_4;                 // 0x0108(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UCharacterMovementComponent*            CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0110(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class APalAIController*                       CallFunc_GetPalAIController_ReturnValue;           // 0x0118(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalSquad*                              CallFunc_GetSquad_ReturnValue;                     // 0x0120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EA7[0x7];                                     // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BD4[0x7];                                     // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue_5;              // 0x0130(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_5;                 // 0x0138(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_CreateMoveToProxyObject_AcceptanceRadius_ImplicitCast; // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -223,14 +256,14 @@ struct BP_AIActionEscape_C_Is_Far_Spawn_Point final
 {
 public:
 	bool                                          IsFar;                                             // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EA8[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BD5[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UBP_PalAIBlackboard_Common_C*           CallFunc_GetSelfPalBlackBoard_PalBlackBoard;       // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsNearTwoPoint_ReturnValue;               // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EA9[0x2];                                     // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BD6[0x2];                                     // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_IsNearTwoPoint_distance_ImplicitCast;     // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_AIActionEscape_C_Is_Far_Spawn_Point) == 0x000008, "Wrong alignment on BP_AIActionEscape_C_Is_Far_Spawn_Point");
@@ -255,6 +288,17 @@ static_assert(alignof(BP_AIActionEscape_C_OnFail_023A017548911A48339C18BEF9D1B04
 static_assert(sizeof(BP_AIActionEscape_C_OnFail_023A017548911A48339C18BEF9D1B042) == 0x000001, "Wrong size on BP_AIActionEscape_C_OnFail_023A017548911A48339C18BEF9D1B042");
 static_assert(offsetof(BP_AIActionEscape_C_OnFail_023A017548911A48339C18BEF9D1B042, MovementResult) == 0x000000, "Member 'BP_AIActionEscape_C_OnFail_023A017548911A48339C18BEF9D1B042::MovementResult' has a wrong offset!");
 
+// Function BP_AIActionEscape.BP_AIActionEscape_C.OnSquadMemberDeadEvent
+// 0x0050 (0x0050 - 0x0000)
+struct BP_AIActionEscape_C_OnSquadMemberDeadEvent final
+{
+public:
+	struct FPalDeadInfo                           DeadInbfo;                                         // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+static_assert(alignof(BP_AIActionEscape_C_OnSquadMemberDeadEvent) == 0x000008, "Wrong alignment on BP_AIActionEscape_C_OnSquadMemberDeadEvent");
+static_assert(sizeof(BP_AIActionEscape_C_OnSquadMemberDeadEvent) == 0x000050, "Wrong size on BP_AIActionEscape_C_OnSquadMemberDeadEvent");
+static_assert(offsetof(BP_AIActionEscape_C_OnSquadMemberDeadEvent, DeadInbfo) == 0x000000, "Member 'BP_AIActionEscape_C_OnSquadMemberDeadEvent::DeadInbfo' has a wrong offset!");
+
 // Function BP_AIActionEscape.BP_AIActionEscape_C.OnSuccess_023A017548911A48339C18BEF9D1B042
 // 0x0001 (0x0001 - 0x0000)
 struct BP_AIActionEscape_C_OnSuccess_023A017548911A48339C18BEF9D1B042 final
@@ -272,14 +316,14 @@ struct BP_AIActionEscape_C_SetGoalLocation final
 {
 public:
 	bool                                          Success;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EAA[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BD7[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                SelfPos;                                           // 0x0008(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable;                                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EAB[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BD8[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EAC[0x2];                                     // 0x0032(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BD9[0x2];                                     // 0x0032(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -290,7 +334,7 @@ public:
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EAD[0x6];                                     // 0x009A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BDA[0x6];                                     // 0x009A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x00A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x00B8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Vector_Normal2D_ReturnValue;              // 0x00D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -303,10 +347,10 @@ public:
 	bool                                          CallFunc_LineTraceSingle_ReturnValue;              // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0249(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x024A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EAE[0x1];                                     // 0x024B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BDB[0x1];                                     // 0x024B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x024C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EAF[0x4];                                     // 0x0254(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BDC[0x4];                                     // 0x0254(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0258(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0270(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0288(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -319,7 +363,7 @@ public:
 	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x02E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x02E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x02E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EB0[0x4];                                     // 0x02EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BDD[0x4];                                     // 0x02EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x02F0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0308(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast;             // 0x0320(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -371,50 +415,6 @@ static_assert(offsetof(BP_AIActionEscape_C_SetGoalLocation, CallFunc_BreakHitRes
 static_assert(offsetof(BP_AIActionEscape_C_SetGoalLocation, CallFunc_BreakHitResult_TraceStart) == 0x0002F0, "Member 'BP_AIActionEscape_C_SetGoalLocation::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
 static_assert(offsetof(BP_AIActionEscape_C_SetGoalLocation, CallFunc_BreakHitResult_TraceEnd) == 0x000308, "Member 'BP_AIActionEscape_C_SetGoalLocation::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
 static_assert(offsetof(BP_AIActionEscape_C_SetGoalLocation, CallFunc_MakeRotator_Yaw_ImplicitCast) == 0x000320, "Member 'BP_AIActionEscape_C_SetGoalLocation::CallFunc_MakeRotator_Yaw_ImplicitCast' has a wrong offset!");
-
-// Function BP_AIActionEscape.BP_AIActionEscape_C.ActionPause
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIActionEscape_C_ActionPause final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIActionEscape_C_ActionPause) == 0x000008, "Wrong alignment on BP_AIActionEscape_C_ActionPause");
-static_assert(sizeof(BP_AIActionEscape_C_ActionPause) == 0x000008, "Wrong size on BP_AIActionEscape_C_ActionPause");
-static_assert(offsetof(BP_AIActionEscape_C_ActionPause, ControlledPawn) == 0x000000, "Member 'BP_AIActionEscape_C_ActionPause::ControlledPawn' has a wrong offset!");
-
-// Function BP_AIActionEscape.BP_AIActionEscape_C.ActionResume
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIActionEscape_C_ActionResume final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIActionEscape_C_ActionResume) == 0x000008, "Wrong alignment on BP_AIActionEscape_C_ActionResume");
-static_assert(sizeof(BP_AIActionEscape_C_ActionResume) == 0x000008, "Wrong size on BP_AIActionEscape_C_ActionResume");
-static_assert(offsetof(BP_AIActionEscape_C_ActionResume, ControlledPawn) == 0x000000, "Member 'BP_AIActionEscape_C_ActionResume::ControlledPawn' has a wrong offset!");
-
-// Function BP_AIActionEscape.BP_AIActionEscape_C.ActionStart
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIActionEscape_C_ActionStart final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIActionEscape_C_ActionStart) == 0x000008, "Wrong alignment on BP_AIActionEscape_C_ActionStart");
-static_assert(sizeof(BP_AIActionEscape_C_ActionStart) == 0x000008, "Wrong size on BP_AIActionEscape_C_ActionStart");
-static_assert(offsetof(BP_AIActionEscape_C_ActionStart, ControlledPawn) == 0x000000, "Member 'BP_AIActionEscape_C_ActionStart::ControlledPawn' has a wrong offset!");
-
-// Function BP_AIActionEscape.BP_AIActionEscape_C.OnSquadMemberDeadEvent
-// 0x0050 (0x0050 - 0x0000)
-struct BP_AIActionEscape_C_OnSquadMemberDeadEvent final
-{
-public:
-	struct FPalDeadInfo                           DeadInbfo;                                         // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-static_assert(alignof(BP_AIActionEscape_C_OnSquadMemberDeadEvent) == 0x000008, "Wrong alignment on BP_AIActionEscape_C_OnSquadMemberDeadEvent");
-static_assert(sizeof(BP_AIActionEscape_C_OnSquadMemberDeadEvent) == 0x000050, "Wrong size on BP_AIActionEscape_C_OnSquadMemberDeadEvent");
-static_assert(offsetof(BP_AIActionEscape_C_OnSquadMemberDeadEvent, DeadInbfo) == 0x000000, "Member 'BP_AIActionEscape_C_OnSquadMemberDeadEvent::DeadInbfo' has a wrong offset!");
 
 // Function BP_AIActionEscape.BP_AIActionEscape_C.SoundEvent
 // 0x0018 (0x0018 - 0x0000)

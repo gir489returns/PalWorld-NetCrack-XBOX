@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "Pal_structs.hpp"
+#include "Engine_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "BP_AIAction_CanCombatBase_classes.hpp"
-#include "Engine_structs.hpp"
-#include "Pal_structs.hpp"
 
 
 namespace SDK
@@ -28,7 +28,7 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_AIAction_Visitor_TravelToBaseCamp_C; // 0x0158(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct FVector                                BaseCampLocation;                                  // 0x0160(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          DashMode;                                          // 0x0178(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E53[0x7];                                     // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E54[0x7];                                     // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnArrivedTargetPoint;                              // 0x0180(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FVector                                PrevLocation;                                      // 0x0190(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        StuckElapsedTime;                                  // 0x01A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -38,17 +38,17 @@ public:
 public:
 	void ActionAbort(class APawn* ControlledPawn);
 	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
-	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
-	void ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp(int32 EntryPoint);
-	void OnArrivedTargetPoint__DelegateSignature();
-	void OnStuck__DelegateSignature();
-	void Tick_Move_to_Base_Camp(class AActor* ControlledPawn, float DeltaTime);
 	void ActionPause(class APawn* ControlledPawn);
 	void ActionResume(class APawn* ControlledPawn);
 	void ActionStart(class APawn* ControlledPawn);
+	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
+	void ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp(int32 EntryPoint);
 	void Fun_Damage_AIResponse(const struct FPalDamageResult& DamageResult);
+	void OnArrivedTargetPoint__DelegateSignature();
+	void OnStuck__DelegateSignature();
 	void SightCheckAndResponse(EPalAIResponseType Current, bool OverrideIsDamage, bool* ChangeNextAction);
 	void SoundEvent(const struct FVector& EmitLocation);
+	void Tick_Move_to_Base_Camp(class AActor* ControlledPawn, float DeltaTime);
 
 public:
 	static class UClass* StaticClass()

@@ -17,6 +17,33 @@
 namespace SDK
 {
 
+// Function InteractiveToolsFramework.GizmoRenderMultiTarget.UpdateVisibilityState
+// (Native, Public)
+// Parameters:
+// bool                                    bVisible                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// uint32                                  InPartIdentifier                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IGizmoRenderMultiTarget::UpdateVisibilityState(bool bVisible, uint32 InPartIdentifier)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GizmoRenderMultiTarget", "UpdateVisibilityState");
+
+	Params::GizmoRenderMultiTarget_UpdateVisibilityState Parms{};
+
+	Parms.bVisible = bVisible;
+	Parms.InPartIdentifier = InPartIdentifier;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function InteractiveToolsFramework.GizmoBaseComponent.UpdateHoverState
 // (Final, Native, Public)
 // Parameters:
@@ -342,33 +369,6 @@ void IGizmoClickMultiTarget::UpdateInteractingState(bool bInteracting, uint32 In
 	Params::GizmoClickMultiTarget_UpdateInteractingState Parms{};
 
 	Parms.bInteracting = bInteracting;
-	Parms.InPartIdentifier = InPartIdentifier;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function InteractiveToolsFramework.GizmoRenderMultiTarget.UpdateVisibilityState
-// (Native, Public)
-// Parameters:
-// bool                                    bVisible                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// uint32                                  InPartIdentifier                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void IGizmoRenderMultiTarget::UpdateVisibilityState(bool bVisible, uint32 InPartIdentifier)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GizmoRenderMultiTarget", "UpdateVisibilityState");
-
-	Params::GizmoRenderMultiTarget_UpdateVisibilityState Parms{};
-
-	Parms.bVisible = bVisible;
 	Parms.InPartIdentifier = InPartIdentifier;
 
 	auto Flgs = Func->FunctionFlags;

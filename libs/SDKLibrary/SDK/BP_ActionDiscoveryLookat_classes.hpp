@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Pal_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -22,7 +22,7 @@ namespace SDK
 class UBP_ActionDiscoveryLookat_C final : public UPalActionBase
 {
 public:
-	uint8                                         Pad_41A2[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_40B1[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0140(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UNiagaraComponent*                      Niagra;                                            // 0x0148(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 

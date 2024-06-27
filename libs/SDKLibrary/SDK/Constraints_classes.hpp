@@ -10,16 +10,40 @@
 
 #include "Basic.hpp"
 
-#include "Constraints_structs.hpp"
 #include "MovieScene_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
 #include "Engine_classes.hpp"
+#include "Constraints_structs.hpp"
 #include "AnimationCore_structs.hpp"
 
 
 namespace SDK
 {
+
+// Class Constraints.TickableConstraint
+// 0x0048 (0x0070 - 0x0028)
+class UTickableConstraint : public UObject
+{
+public:
+	struct FConstraintTickFunction                ConstraintTick;                                    // 0x0028(0x0040)(NativeAccessSpecifierPublic)
+	bool                                          Active;                                            // 0x0068(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2262[0x7];                                     // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"TickableConstraint">();
+	}
+	static class UTickableConstraint* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UTickableConstraint>();
+	}
+};
+static_assert(alignof(UTickableConstraint) == 0x000008, "Wrong alignment on UTickableConstraint");
+static_assert(sizeof(UTickableConstraint) == 0x000070, "Wrong size on UTickableConstraint");
+static_assert(offsetof(UTickableConstraint, ConstraintTick) == 0x000028, "Member 'UTickableConstraint::ConstraintTick' has a wrong offset!");
+static_assert(offsetof(UTickableConstraint, Active) == 0x000068, "Member 'UTickableConstraint::Active' has a wrong offset!");
 
 // Class Constraints.TransformableHandle
 // 0x0030 (0x0058 - 0x0028)
@@ -27,7 +51,7 @@ class UTransformableHandle : public UObject
 {
 public:
 	struct FMovieSceneObjectBindingID             ConstraintBindingID;                               // 0x0028(0x0018)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_219F[0x18];                                    // 0x0040(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2263[0x18];                                    // 0x0040(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -64,30 +88,6 @@ static_assert(alignof(AConstraintsActor) == 0x000008, "Wrong alignment on AConst
 static_assert(sizeof(AConstraintsActor) == 0x000298, "Wrong size on AConstraintsActor");
 static_assert(offsetof(AConstraintsActor, ConstraintsManager) == 0x000290, "Member 'AConstraintsActor::ConstraintsManager' has a wrong offset!");
 
-// Class Constraints.TickableConstraint
-// 0x0048 (0x0070 - 0x0028)
-class UTickableConstraint : public UObject
-{
-public:
-	struct FConstraintTickFunction                ConstraintTick;                                    // 0x0028(0x0040)(NativeAccessSpecifierPublic)
-	bool                                          Active;                                            // 0x0068(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21A0[0x7];                                     // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"TickableConstraint">();
-	}
-	static class UTickableConstraint* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UTickableConstraint>();
-	}
-};
-static_assert(alignof(UTickableConstraint) == 0x000008, "Wrong alignment on UTickableConstraint");
-static_assert(sizeof(UTickableConstraint) == 0x000070, "Wrong size on UTickableConstraint");
-static_assert(offsetof(UTickableConstraint, ConstraintTick) == 0x000028, "Member 'UTickableConstraint::ConstraintTick' has a wrong offset!");
-static_assert(offsetof(UTickableConstraint, Active) == 0x000068, "Member 'UTickableConstraint::Active' has a wrong offset!");
-
 // Class Constraints.ConstraintsManager
 // 0x0020 (0x0048 - 0x0028)
 class UConstraintsManager final : public UObject
@@ -95,7 +95,7 @@ class UConstraintsManager final : public UObject
 public:
 	FMulticastSparseDelegateProperty_             OnConstraintAdded_BP;                              // 0x0028(0x0001)(InstancedReference, BlueprintAssignable, NoDestructor, NativeAccessSpecifierPublic)
 	FMulticastSparseDelegateProperty_             OnConstraintRemoved_BP;                            // 0x0029(0x0001)(InstancedReference, BlueprintAssignable, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21A1[0xE];                                     // 0x002A(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2264[0xE];                                     // 0x002A(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UTickableConstraint*>            Constraints;                                       // 0x0038(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate)
 
 public:
@@ -113,61 +113,6 @@ static_assert(sizeof(UConstraintsManager) == 0x000048, "Wrong size on UConstrain
 static_assert(offsetof(UConstraintsManager, OnConstraintAdded_BP) == 0x000028, "Member 'UConstraintsManager::OnConstraintAdded_BP' has a wrong offset!");
 static_assert(offsetof(UConstraintsManager, OnConstraintRemoved_BP) == 0x000029, "Member 'UConstraintsManager::OnConstraintRemoved_BP' has a wrong offset!");
 static_assert(offsetof(UConstraintsManager, Constraints) == 0x000038, "Member 'UConstraintsManager::Constraints' has a wrong offset!");
-
-// Class Constraints.TickableTransformConstraint
-// 0x0020 (0x0090 - 0x0070)
-class UTickableTransformConstraint : public UTickableConstraint
-{
-public:
-	class UTransformableHandle*                   ParentTRSHandle;                                   // 0x0070(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTransformableHandle*                   ChildTRSHandle;                                    // 0x0078(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bMaintainOffset;                                   // 0x0080(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21A2[0x3];                                     // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Weight;                                            // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bDynamicOffset;                                    // 0x0088(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ETransformConstraintType                      Type;                                              // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_21A3[0x6];                                     // 0x008A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"TickableTransformConstraint">();
-	}
-	static class UTickableTransformConstraint* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UTickableTransformConstraint>();
-	}
-};
-static_assert(alignof(UTickableTransformConstraint) == 0x000008, "Wrong alignment on UTickableTransformConstraint");
-static_assert(sizeof(UTickableTransformConstraint) == 0x000090, "Wrong size on UTickableTransformConstraint");
-static_assert(offsetof(UTickableTransformConstraint, ParentTRSHandle) == 0x000070, "Member 'UTickableTransformConstraint::ParentTRSHandle' has a wrong offset!");
-static_assert(offsetof(UTickableTransformConstraint, ChildTRSHandle) == 0x000078, "Member 'UTickableTransformConstraint::ChildTRSHandle' has a wrong offset!");
-static_assert(offsetof(UTickableTransformConstraint, bMaintainOffset) == 0x000080, "Member 'UTickableTransformConstraint::bMaintainOffset' has a wrong offset!");
-static_assert(offsetof(UTickableTransformConstraint, Weight) == 0x000084, "Member 'UTickableTransformConstraint::Weight' has a wrong offset!");
-static_assert(offsetof(UTickableTransformConstraint, bDynamicOffset) == 0x000088, "Member 'UTickableTransformConstraint::bDynamicOffset' has a wrong offset!");
-static_assert(offsetof(UTickableTransformConstraint, Type) == 0x000089, "Member 'UTickableTransformConstraint::Type' has a wrong offset!");
-
-// Class Constraints.TickableTranslationConstraint
-// 0x0020 (0x00B0 - 0x0090)
-class UTickableTranslationConstraint final : public UTickableTransformConstraint
-{
-public:
-	uint8                                         Pad_21A4[0x8];                                     // 0x0090(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                OffsetTranslation;                                 // 0x0098(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"TickableTranslationConstraint">();
-	}
-	static class UTickableTranslationConstraint* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UTickableTranslationConstraint>();
-	}
-};
-static_assert(alignof(UTickableTranslationConstraint) == 0x000008, "Wrong alignment on UTickableTranslationConstraint");
-static_assert(sizeof(UTickableTranslationConstraint) == 0x0000B0, "Wrong size on UTickableTranslationConstraint");
-static_assert(offsetof(UTickableTranslationConstraint, OffsetTranslation) == 0x000098, "Member 'UTickableTranslationConstraint::OffsetTranslation' has a wrong offset!");
 
 // Class Constraints.ConstraintsScriptingLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -216,12 +161,67 @@ static_assert(sizeof(UTransformableComponentHandle) == 0x000068, "Wrong size on 
 static_assert(offsetof(UTransformableComponentHandle, Component) == 0x000058, "Member 'UTransformableComponentHandle::Component' has a wrong offset!");
 static_assert(offsetof(UTransformableComponentHandle, SocketName) == 0x000060, "Member 'UTransformableComponentHandle::SocketName' has a wrong offset!");
 
+// Class Constraints.TickableTransformConstraint
+// 0x0020 (0x0090 - 0x0070)
+class UTickableTransformConstraint : public UTickableConstraint
+{
+public:
+	class UTransformableHandle*                   ParentTRSHandle;                                   // 0x0070(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTransformableHandle*                   ChildTRSHandle;                                    // 0x0078(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bMaintainOffset;                                   // 0x0080(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2268[0x3];                                     // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Weight;                                            // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bDynamicOffset;                                    // 0x0088(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ETransformConstraintType                      Type;                                              // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_2269[0x6];                                     // 0x008A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"TickableTransformConstraint">();
+	}
+	static class UTickableTransformConstraint* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UTickableTransformConstraint>();
+	}
+};
+static_assert(alignof(UTickableTransformConstraint) == 0x000008, "Wrong alignment on UTickableTransformConstraint");
+static_assert(sizeof(UTickableTransformConstraint) == 0x000090, "Wrong size on UTickableTransformConstraint");
+static_assert(offsetof(UTickableTransformConstraint, ParentTRSHandle) == 0x000070, "Member 'UTickableTransformConstraint::ParentTRSHandle' has a wrong offset!");
+static_assert(offsetof(UTickableTransformConstraint, ChildTRSHandle) == 0x000078, "Member 'UTickableTransformConstraint::ChildTRSHandle' has a wrong offset!");
+static_assert(offsetof(UTickableTransformConstraint, bMaintainOffset) == 0x000080, "Member 'UTickableTransformConstraint::bMaintainOffset' has a wrong offset!");
+static_assert(offsetof(UTickableTransformConstraint, Weight) == 0x000084, "Member 'UTickableTransformConstraint::Weight' has a wrong offset!");
+static_assert(offsetof(UTickableTransformConstraint, bDynamicOffset) == 0x000088, "Member 'UTickableTransformConstraint::bDynamicOffset' has a wrong offset!");
+static_assert(offsetof(UTickableTransformConstraint, Type) == 0x000089, "Member 'UTickableTransformConstraint::Type' has a wrong offset!");
+
+// Class Constraints.TickableTranslationConstraint
+// 0x0020 (0x00B0 - 0x0090)
+class UTickableTranslationConstraint final : public UTickableTransformConstraint
+{
+public:
+	uint8                                         Pad_226A[0x8];                                     // 0x0090(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                OffsetTranslation;                                 // 0x0098(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"TickableTranslationConstraint">();
+	}
+	static class UTickableTranslationConstraint* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UTickableTranslationConstraint>();
+	}
+};
+static_assert(alignof(UTickableTranslationConstraint) == 0x000008, "Wrong alignment on UTickableTranslationConstraint");
+static_assert(sizeof(UTickableTranslationConstraint) == 0x0000B0, "Wrong size on UTickableTranslationConstraint");
+static_assert(offsetof(UTickableTranslationConstraint, OffsetTranslation) == 0x000098, "Member 'UTickableTranslationConstraint::OffsetTranslation' has a wrong offset!");
+
 // Class Constraints.TickableRotationConstraint
 // 0x0030 (0x00C0 - 0x0090)
 class UTickableRotationConstraint final : public UTickableTransformConstraint
 {
 public:
-	uint8                                         Pad_21A8[0x10];                                    // 0x0090(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_226B[0x10];                                    // 0x0090(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FQuat                                  OffsetRotation;                                    // 0x00A0(0x0020)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
@@ -243,7 +243,7 @@ static_assert(offsetof(UTickableRotationConstraint, OffsetRotation) == 0x0000A0,
 class UTickableScaleConstraint final : public UTickableTransformConstraint
 {
 public:
-	uint8                                         Pad_21A9[0x8];                                     // 0x0090(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_226C[0x8];                                     // 0x0090(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                OffsetScale;                                       // 0x0098(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
@@ -265,10 +265,10 @@ static_assert(offsetof(UTickableScaleConstraint, OffsetScale) == 0x000098, "Memb
 class UTickableParentConstraint final : public UTickableTransformConstraint
 {
 public:
-	uint8                                         Pad_21AA[0x10];                                    // 0x0090(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_226D[0x10];                                    // 0x0090(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             OffsetTransform;                                   // 0x00A0(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bScaling;                                          // 0x0100(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_21AB[0xF];                                     // 0x0101(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_226E[0xF];                                     // 0x0101(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

@@ -60,21 +60,19 @@ static_assert(offsetof(BP_HumanCryComponent_C_Initialize, K2Node_DynamicCast_AsP
 static_assert(offsetof(BP_HumanCryComponent_C_Initialize, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'BP_HumanCryComponent_C_Initialize::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function BP_HumanCryComponent.BP_HumanCryComponent_C.PlayCry
-// 0x0030 (0x0030 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct BP_HumanCryComponent_C_PlayCry final
 {
 public:
 	class UAkAudioEvent*                          AkEvent;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FAkExternalSourceInfo>          Temp_struct_Variable;                              // 0x0008(0x0010)(ConstParm, ReferenceParm)
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable;                            // 0x0018(0x0010)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable;                            // 0x0008(0x0010)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_HumanCryComponent_C_PlayCry) == 0x000008, "Wrong alignment on BP_HumanCryComponent_C_PlayCry");
-static_assert(sizeof(BP_HumanCryComponent_C_PlayCry) == 0x000030, "Wrong size on BP_HumanCryComponent_C_PlayCry");
+static_assert(sizeof(BP_HumanCryComponent_C_PlayCry) == 0x000020, "Wrong size on BP_HumanCryComponent_C_PlayCry");
 static_assert(offsetof(BP_HumanCryComponent_C_PlayCry, AkEvent) == 0x000000, "Member 'BP_HumanCryComponent_C_PlayCry::AkEvent' has a wrong offset!");
-static_assert(offsetof(BP_HumanCryComponent_C_PlayCry, Temp_struct_Variable) == 0x000008, "Member 'BP_HumanCryComponent_C_PlayCry::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BP_HumanCryComponent_C_PlayCry, Temp_delegate_Variable) == 0x000018, "Member 'BP_HumanCryComponent_C_PlayCry::Temp_delegate_Variable' has a wrong offset!");
-static_assert(offsetof(BP_HumanCryComponent_C_PlayCry, CallFunc_PostEvent_ReturnValue) == 0x000028, "Member 'BP_HumanCryComponent_C_PlayCry::CallFunc_PostEvent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HumanCryComponent_C_PlayCry, Temp_delegate_Variable) == 0x000008, "Member 'BP_HumanCryComponent_C_PlayCry::Temp_delegate_Variable' has a wrong offset!");
+static_assert(offsetof(BP_HumanCryComponent_C_PlayCry, CallFunc_PostEvent_ReturnValue) == 0x000018, "Member 'BP_HumanCryComponent_C_PlayCry::CallFunc_PostEvent_ReturnValue' has a wrong offset!");
 
 }
 

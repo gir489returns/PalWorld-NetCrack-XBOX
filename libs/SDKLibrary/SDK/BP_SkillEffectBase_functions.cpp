@@ -169,6 +169,30 @@ void ABP_SkillEffectBase_C::FindTargetLocationConsiderRide(struct FVector* Targe
 }
 
 
+// Function BP_SkillEffectBase.BP_SkillEffectBase_C.GetAttackLocationByTargetActor
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class AActor*                           TargetActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          AttackLocation                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SkillEffectBase_C::GetAttackLocationByTargetActor(class AActor* TargetActor, struct FVector* AttackLocation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SkillEffectBase_C", "GetAttackLocationByTargetActor");
+
+	Params::BP_SkillEffectBase_C_GetAttackLocationByTargetActor Parms{};
+
+	Parms.TargetActor = TargetActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (AttackLocation != nullptr)
+		*AttackLocation = std::move(Parms.AttackLocation);
+}
+
+
 // Function BP_SkillEffectBase.BP_SkillEffectBase_C.GetHomingEndDot
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:

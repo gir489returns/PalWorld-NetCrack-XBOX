@@ -189,6 +189,27 @@ void UPalBossBattleSequence_Opening_C::IsAssetLoadingCompleted(bool* NewParam)
 }
 
 
+// Function PalBossBattleSequence_Opening.PalBossBattleSequence_Opening_C.IsLoadingAction
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool                                    Param_IsLoadingAction                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPalBossBattleSequence_Opening_C::IsLoadingAction(bool* Param_IsLoadingAction)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalBossBattleSequence_Opening_C", "IsLoadingAction");
+
+	Params::PalBossBattleSequence_Opening_C_IsLoadingAction Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Param_IsLoadingAction != nullptr)
+		*Param_IsLoadingAction = Parms.Param_IsLoadingAction;
+}
+
+
 // Function PalBossBattleSequence_Opening.PalBossBattleSequence_Opening_C.IsSkipCutscene
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -244,6 +265,26 @@ void UPalBossBattleSequence_Opening_C::LogShow(const class FString& String)
 }
 
 
+// Function PalBossBattleSequence_Opening.PalBossBattleSequence_Opening_C.OnActionBegin
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalActionBase*                   Action                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UPalBossBattleSequence_Opening_C::OnActionBegin(const class UPalActionBase* Action)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalBossBattleSequence_Opening_C", "OnActionBegin");
+
+	Params::PalBossBattleSequence_Opening_C_OnActionBegin Parms{};
+
+	Parms.Action = Action;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function PalBossBattleSequence_Opening.PalBossBattleSequence_Opening_C.OnBeginSequence
 // (Event, Public, BlueprintEvent)
 
@@ -255,6 +296,26 @@ void UPalBossBattleSequence_Opening_C::OnBeginSequence()
 		Func = Class->GetFunction("PalBossBattleSequence_Opening_C", "OnBeginSequence");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function PalBossBattleSequence_Opening.PalBossBattleSequence_Opening_C.OnEventCreated
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalBossBattleEventBase*          BossBattleEvent                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UPalBossBattleSequence_Opening_C::OnEventCreated(class UPalBossBattleEventBase* BossBattleEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalBossBattleSequence_Opening_C", "OnEventCreated");
+
+	Params::PalBossBattleSequence_Opening_C_OnEventCreated Parms{};
+
+	Parms.BossBattleEvent = BossBattleEvent;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -335,6 +396,20 @@ void UPalBossBattleSequence_Opening_C::OnLoaded_95B43418450294BEE8289E863350333C
 	Parms.Loaded = Loaded;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PalBossBattleSequence_Opening.PalBossBattleSequence_Opening_C.OnLoadingActionEnd
+// (BlueprintCallable, BlueprintEvent)
+
+void UPalBossBattleSequence_Opening_C::OnLoadingActionEnd()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalBossBattleSequence_Opening_C", "OnLoadingActionEnd");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -459,6 +534,20 @@ void UPalBossBattleSequence_Opening_C::TickSequence(float DeltaTime)
 	Parms.DeltaTime = DeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PalBossBattleSequence_Opening.PalBossBattleSequence_Opening_C.TryEventInitialize
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UPalBossBattleSequence_Opening_C::TryEventInitialize()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PalBossBattleSequence_Opening_C", "TryEventInitialize");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

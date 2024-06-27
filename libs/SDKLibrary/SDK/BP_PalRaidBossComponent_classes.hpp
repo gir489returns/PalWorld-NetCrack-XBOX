@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Pal_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -34,7 +34,7 @@ public:
 	void Spawn_Delegate(const struct FPalInstanceID& ID);
 	void Spawn_One_Pal(const struct FPalRaidBossSpawnInfo& SpawnInfo, int32 Param_Index, const struct FTransform& SpawnerTransform, class UPalIndividualCharacterHandle** Handle);
 	void Spawn_Volume();
-	void SpawnRaidBoss_BP(const struct FPalRaidBossSpawnInfoList& SpawnInfo, const struct FTransform& SpawnTransform, TArray<class UPalIndividualCharacterHandle*>* OutIndividualHandle);
+	void SpawnRaidBoss_BP(const struct FPalRaidBossSpawnInfoList& SpawnInfo, const struct FTransform& SpawnTransform);
 
 public:
 	static class UClass* StaticClass()

@@ -68,9 +68,9 @@ void UWBP_PalHungerHud_C::ExecuteUbergraph_WBP_PalHungerHud(int32 EntryPoint)
 // Function WBP_PalHungerHud.WBP_PalHungerHud_C.GetLocalPlayerGroupID
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FGuid                            GroupID                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGuid                            GroupId                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalHungerHud_C::GetLocalPlayerGroupID(struct FGuid* GroupID)
+void UWBP_PalHungerHud_C::GetLocalPlayerGroupID(struct FGuid* GroupId)
 {
 	static class UFunction* Func = nullptr;
 
@@ -81,8 +81,8 @@ void UWBP_PalHungerHud_C::GetLocalPlayerGroupID(struct FGuid* GroupID)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (GroupID != nullptr)
-		*GroupID = std::move(Parms.GroupID);
+	if (GroupId != nullptr)
+		*GroupId = std::move(Parms.GroupId);
 }
 
 

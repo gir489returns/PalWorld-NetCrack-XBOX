@@ -49,7 +49,7 @@ public:
 	struct FQuat                                  Rotation;                                          // 0x0020(0x0020)(ConstParm, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         PositionAlpha;                                     // 0x0040(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         RotationAlpha;                                     // 0x0044(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2232[0x8];                                     // 0x0048(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22E8[0x8];                                     // 0x0048(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(IKRigComponent_SetIKRigGoalPositionAndRotation) == 0x000010, "Wrong alignment on IKRigComponent_SetIKRigGoalPositionAndRotation");
 static_assert(sizeof(IKRigComponent_SetIKRigGoalPositionAndRotation) == 0x000050, "Wrong size on IKRigComponent_SetIKRigGoalPositionAndRotation");
@@ -65,11 +65,11 @@ struct IKRigComponent_SetIKRigGoalTransform final
 {
 public:
 	class FName                                   GoalName;                                          // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2233[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22E9[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Transform;                                         // 0x0010(0x0060)(ConstParm, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         PositionAlpha;                                     // 0x0070(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         RotationAlpha;                                     // 0x0074(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2234[0x8];                                     // 0x0078(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22EA[0x8];                                     // 0x0078(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(IKRigComponent_SetIKRigGoalTransform) == 0x000010, "Wrong alignment on IKRigComponent_SetIKRigGoalTransform");
 static_assert(sizeof(IKRigComponent_SetIKRigGoalTransform) == 0x000080, "Wrong size on IKRigComponent_SetIKRigGoalTransform");

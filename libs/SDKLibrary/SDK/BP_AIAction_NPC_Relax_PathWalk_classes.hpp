@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
 #include "F_NPC_PathWalkArray_structs.hpp"
 #include "BP_AIAction_NPC_RelaxBase_classes.hpp"
 
@@ -28,10 +28,10 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_AIAction_NPC_Relax_PathWalk_C;   // 0x01F8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class ABP_NPC_WalkPathPoint_1_C*              Path;                                              // 0x0200(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                         CurrentPointIndex;                                 // 0x0208(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C5E[0x4];                                     // 0x020C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D9E[0x4];                                     // 0x020C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                TargetPoint;                                       // 0x0210(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          WaitMode;                                          // 0x0228(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C5F[0x7];                                     // 0x0229(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D9F[0x7];                                     // 0x0229(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalActionBase*                         WaitAction;                                        // 0x0230(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FF_NPC_PathWalkArray                   PathArray;                                         // 0x0238(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FVector                                PrevLocation;                                      // 0x0248(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

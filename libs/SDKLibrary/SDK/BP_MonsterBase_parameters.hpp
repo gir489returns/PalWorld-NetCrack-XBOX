@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Pal_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -29,17 +29,17 @@ public:
 	struct FPalLogAdditionalData                  K2Node_MakeStruct_PalLogAdditionalData;            // 0x0060(0x0038)()
 	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character;                // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3606[0x7];                                     // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4451[0x7];                                     // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character_1;              // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3607[0x7];                                     // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4452[0x7];                                     // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetNickName_outName;                      // 0x00C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x00D0(0x0018)()
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00E8(0x0050)(HasGetValueTypeHash)
 	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0138(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsOtomo_ReturnValue;                      // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3608[0x7];                                     // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4453[0x7];                                     // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_CreateLogText_outText;                    // 0x0148(0x0018)()
 	class FString                                 CallFunc_GetNickName_outName_1;                    // 0x0160(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class UPalLogManager*                         CallFunc_GetLogManager_ReturnValue;                // 0x0170(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -85,14 +85,14 @@ public:
 	struct FPalInstanceID                         CallFunc_GetIndividualIDByActor_ReturnValue;       // 0x0060(0x0030)(HasGetValueTypeHash)
 	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character;                // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3609[0x7];                                     // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4454[0x7];                                     // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character_1;              // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_360A[0x7];                                     // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4455[0x7];                                     // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalLogAdditionalData                  K2Node_MakeStruct_PalLogAdditionalData;            // 0x00B0(0x0038)()
 	struct FPalInstanceID                         CallFunc_GetIndividualIDByActor_ReturnValue_1;     // 0x00E8(0x0030)(HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_PalInstanceIDPalInstanceID_ReturnValue; // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_360B[0x7];                                     // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4456[0x7];                                     // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x0120(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_GetNickName_outName;                      // 0x0128(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0138(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -100,7 +100,7 @@ public:
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0158(0x0050)(HasGetValueTypeHash)
 	class FString                                 CallFunc_GetNickName_outName_1;                    // 0x01A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsOtomo_ReturnValue;                      // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_360C[0x7];                                     // 0x01B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4457[0x7];                                     // 0x01B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x01C0(0x0018)()
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x01D8(0x0050)(HasGetValueTypeHash)
 	class FText                                   CallFunc_CreateLogText_outText;                    // 0x0228(0x0018)()
@@ -184,174 +184,163 @@ static_assert(sizeof(BP_MonsterBase_C_Event_DeadGiftExp) == 0x000050, "Wrong siz
 static_assert(offsetof(BP_MonsterBase_C_Event_DeadGiftExp, DeadInfo) == 0x000000, "Member 'BP_MonsterBase_C_Event_DeadGiftExp::DeadInfo' has a wrong offset!");
 
 // Function BP_MonsterBase.BP_MonsterBase_C.ExecuteUbergraph_BP_MonsterBase
-// 0x0430 (0x0430 - 0x0000)
+// 0x0410 (0x0410 - 0x0000)
 struct BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_360D[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalVisualEffectDynamicParameter       K2Node_MakeStruct_PalVisualEffectDynamicParameter; // 0x0008(0x0010)()
-	class FName                                   K2Node_CustomEvent_NotifyName_4;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_CustomEvent_NotifyName_3;                   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x0028(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_CustomEvent_NotifyName_2;                   // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_1;            // 0x0040(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_CustomEvent_NotifyName_1;                   // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_2;            // 0x0058(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_CustomEvent_NotifyName;                     // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_3;            // 0x0070(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable;                                // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalGeneralMontageType                        Temp_byte_Variable;                                // 0x0088(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_360E[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_CustomEvent_Loaded;                         // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 AddLevel, int32 NowLevel)> K2Node_CreateDelegate_OutputDelegate_4;            // 0x0098(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable;                              // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraSystem*                         K2Node_DynamicCast_AsNiagara_System;               // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_360F[0x7];                                     // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AController*                            CallFunc_GetController_ReturnValue;                // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalCharacterMovementComponent*         K2Node_ComponentBoundEvent_component_2;            // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3610[0x3];                                     // 0x00D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     CallFunc_GetMaterial_ReturnValue;                  // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalDeadInfo                           K2Node_CustomEvent_DeadInfo;                       // 0x00E0(0x0050)(NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3611[0x7];                                     // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               K2Node_DynamicCast_AsMaterial_Instance_Dynamic;    // 0x0138(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3612[0x7];                                     // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalCharacterMovementComponent*         K2Node_ComponentBoundEvent_component_1;            // 0x0148(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_ComponentBoundEvent_Hit;                    // 0x0150(0x00E8)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class UPalCharacterMovementComponent*         K2Node_ComponentBoundEvent_component;              // 0x0238(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FPalDeadInfo& DeadInfo)> K2Node_CreateDelegate_OutputDelegate_5;            // 0x0240(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_6;            // 0x0250(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalVisualEffectDynamicParameter       K2Node_MakeStruct_PalVisualEffectDynamicParameter_1; // 0x0260(0x0010)()
-	class UPalVisualEffectBase*                   CallFunc_AddVisualEffect_ReturnValue;              // 0x0270(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_GetEffectScale_Scale;                     // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetJumpEffectSpawnLocation_Location;      // 0x0280(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalDeadInfo                           K2Node_Event_DeadInfo;                             // 0x0298(0x0050)(ConstParm, NoDestructor)
-	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue;        // 0x02E8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FPalDamageResult                       K2Node_Event_DamageResult;                         // 0x02F0(0x0050)(ConstParm, NoDestructor)
-	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0340(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UAnimMontage*                           CallFunc_Map_Find_Value;                           // 0x0348(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0350(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0351(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0352(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3613[0x5];                                     // 0x0353(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetJumpEffectSpawnLocation_Location_1;    // 0x0358(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue_1;      // 0x0370(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_GetEffectScale_Scale_1;                   // 0x0378(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalExpDatabase*                        CallFunc_GetExpDatabase_ReturnValue;               // 0x0380(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalCharacterOnCompleteInitializeParameterWrapper* CallFunc_GetOnCompleteInitializeParameterDelegate_ReturnValue; // 0x0388(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class APalCharacter* InCharacter)> K2Node_CreateDelegate_OutputDelegate_7;            // 0x0390(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          K2Node_CustomEvent_InCharacter;                    // 0x03A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_8;            // 0x03A8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x03B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3614[0x3];                                     // 0x03B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_CustomEvent_addLevel;                       // 0x03BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_nowLevel;                       // 0x03C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3615[0x4];                                     // 0x03C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNiagaraComponent*                      CallFunc_SpawnSystemAttached_ReturnValue;          // 0x03C8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetActiveActorFlag_ReturnValue;           // 0x03D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3616[0x3];                                     // 0x03D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetScaledCapsuleRadius_ReturnValue;       // 0x03D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalGeneralMontageType                        Temp_byte_Variable_1;                              // 0x03D8(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3617[0x7];                                     // 0x03D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x03E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAnimMontage*                           CallFunc_Map_Find_Value_1;                         // 0x03E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x03F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3618[0x7];                                     // 0x03F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPlayMontageCallbackProxy*              CallFunc_CreateProxyObjectForPlayMontage_ReturnValue; // 0x03F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0400(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0401(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsRarePal_ReturnValue;                    // 0x0402(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsWildNPC_ReturnValue;                    // 0x0403(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0404(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3619[0x3];                                     // 0x0405(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalVisualEffectBase*                   CallFunc_AddVisualEffect_Local_ReturnValue;        // 0x0408(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_UpdateFlyEffect_DeltaTime_ImplicitCast;   // 0x0410(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetVariableFloat_InValue_ImplicitCast;    // 0x0418(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetVariableFloat_InValue_ImplicitCast_1;  // 0x041C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Divide_DoubleDouble_A_ImplicitCast;       // 0x0420(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetVariableFloat_InValue_ImplicitCast_2;  // 0x0428(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_CustomEvent_NotifyName_4;                   // 0x0004(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_CustomEvent_NotifyName_3;                   // 0x000C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x0014(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_CustomEvent_NotifyName_2;                   // 0x0024(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_1;            // 0x002C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_CustomEvent_NotifyName_1;                   // 0x003C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_2;            // 0x0044(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_CustomEvent_NotifyName;                     // 0x0054(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_3;            // 0x005C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable;                                // 0x006C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalGeneralMontageType                        Temp_byte_Variable;                                // 0x0074(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4458[0x3];                                     // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                K2Node_CustomEvent_Loaded;                         // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(int32 AddLevel, int32 NowLevel)> K2Node_CreateDelegate_OutputDelegate_4;            // 0x0080(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable;                              // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraSystem*                         K2Node_DynamicCast_AsNiagara_System;               // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4459[0x7];                                     // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AController*                            CallFunc_GetController_ReturnValue;                // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalCharacterMovementComponent*         K2Node_ComponentBoundEvent_component_2;            // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_445A[0x3];                                     // 0x00BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     CallFunc_GetMaterial_ReturnValue;                  // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalDeadInfo                           K2Node_CustomEvent_DeadInfo;                       // 0x00C8(0x0050)(NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_445B[0x7];                                     // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               K2Node_DynamicCast_AsMaterial_Instance_Dynamic;    // 0x0120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_445C[0x7];                                     // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalCharacterMovementComponent*         K2Node_ComponentBoundEvent_component_1;            // 0x0130(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_ComponentBoundEvent_Hit;                    // 0x0138(0x00E8)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class UPalCharacterMovementComponent*         K2Node_ComponentBoundEvent_component;              // 0x0220(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const struct FPalDeadInfo& DeadInfo)> K2Node_CreateDelegate_OutputDelegate_5;            // 0x0228(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class FName NotifyName)>       K2Node_CreateDelegate_OutputDelegate_6;            // 0x0238(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalVisualEffectDynamicParameter       K2Node_MakeStruct_PalVisualEffectDynamicParameter; // 0x0248(0x0010)()
+	class UPalVisualEffectBase*                   CallFunc_AddVisualEffect_ReturnValue;              // 0x0258(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_GetEffectScale_Scale;                     // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetJumpEffectSpawnLocation_Location;      // 0x0268(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalDeadInfo                           K2Node_Event_DeadInfo;                             // 0x0280(0x0050)(ConstParm, NoDestructor)
+	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue;        // 0x02D0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FPalDamageResult                       K2Node_Event_DamageResult;                         // 0x02D8(0x0050)(ConstParm, NoDestructor)
+	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0328(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UAnimMontage*                           CallFunc_Map_Find_Value;                           // 0x0330(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0338(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0339(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x033A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_445D[0x5];                                     // 0x033B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetJumpEffectSpawnLocation_Location_1;    // 0x0340(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue_1;      // 0x0358(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_GetEffectScale_Scale_1;                   // 0x0360(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalExpDatabase*                        CallFunc_GetExpDatabase_ReturnValue;               // 0x0368(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalCharacterOnCompleteInitializeParameterWrapper* CallFunc_GetOnCompleteInitializeParameterDelegate_ReturnValue; // 0x0370(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class APalCharacter* InCharacter)> K2Node_CreateDelegate_OutputDelegate_7;            // 0x0378(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          K2Node_CustomEvent_InCharacter;                    // 0x0388(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_8;            // 0x0390(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x03A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_445E[0x3];                                     // 0x03A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_addLevel;                       // 0x03A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_nowLevel;                       // 0x03A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_445F[0x4];                                     // 0x03AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNiagaraComponent*                      CallFunc_SpawnSystemAttached_ReturnValue;          // 0x03B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetActiveActorFlag_ReturnValue;           // 0x03B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4460[0x3];                                     // 0x03B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetScaledCapsuleRadius_ReturnValue;       // 0x03BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalGeneralMontageType                        Temp_byte_Variable_1;                              // 0x03C0(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4461[0x7];                                     // 0x03C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x03C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAnimMontage*                           CallFunc_Map_Find_Value_1;                         // 0x03D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x03D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x03D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4462[0x6];                                     // 0x03DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPlayMontageCallbackProxy*              CallFunc_CreateProxyObjectForPlayMontage_ReturnValue; // 0x03E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x03E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4463[0x7];                                     // 0x03E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_UpdateFlyEffect_DeltaTime_ImplicitCast;   // 0x03F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetVariableFloat_InValue_ImplicitCast;    // 0x03F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetVariableFloat_InValue_ImplicitCast_1;  // 0x03FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Divide_DoubleDouble_A_ImplicitCast;       // 0x0400(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetVariableFloat_InValue_ImplicitCast_2;  // 0x0408(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase) == 0x000008, "Wrong alignment on BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase");
-static_assert(sizeof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase) == 0x000430, "Wrong size on BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase");
+static_assert(sizeof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase) == 0x000410, "Wrong size on BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase");
 static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, EntryPoint) == 0x000000, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_MakeStruct_PalVisualEffectDynamicParameter) == 0x000008, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_MakeStruct_PalVisualEffectDynamicParameter' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CustomEvent_NotifyName_4) == 0x000018, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CustomEvent_NotifyName_4' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CustomEvent_NotifyName_3) == 0x000020, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CustomEvent_NotifyName_3' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CreateDelegate_OutputDelegate) == 0x000028, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CustomEvent_NotifyName_2) == 0x000038, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CustomEvent_NotifyName_2' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CreateDelegate_OutputDelegate_1) == 0x000040, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CustomEvent_NotifyName_1) == 0x000050, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CustomEvent_NotifyName_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CreateDelegate_OutputDelegate_2) == 0x000058, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CustomEvent_NotifyName) == 0x000068, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CustomEvent_NotifyName' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CreateDelegate_OutputDelegate_3) == 0x000070, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, Temp_name_Variable) == 0x000080, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, Temp_byte_Variable) == 0x000088, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CustomEvent_Loaded) == 0x000090, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CreateDelegate_OutputDelegate_4) == 0x000098, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, Temp_object_Variable) == 0x0000A8, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_DynamicCast_AsNiagara_System) == 0x0000B0, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_DynamicCast_AsNiagara_System' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_DynamicCast_bSuccess) == 0x0000B8, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_GetController_ReturnValue) == 0x0000C0, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_GetController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_ComponentBoundEvent_component_2) == 0x0000C8, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_ComponentBoundEvent_component_2' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_Event_DeltaSeconds) == 0x0000D0, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000D4, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_GetMaterial_ReturnValue) == 0x0000D8, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CustomEvent_DeadInfo) == 0x0000E0, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CustomEvent_DeadInfo' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_IsValid_ReturnValue) == 0x000130, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_DynamicCast_AsMaterial_Instance_Dynamic) == 0x000138, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_DynamicCast_AsMaterial_Instance_Dynamic' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_DynamicCast_bSuccess_1) == 0x000140, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_ComponentBoundEvent_component_1) == 0x000148, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_ComponentBoundEvent_component_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_ComponentBoundEvent_Hit) == 0x000150, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_ComponentBoundEvent_Hit' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_ComponentBoundEvent_component) == 0x000238, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_ComponentBoundEvent_component' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CreateDelegate_OutputDelegate_5) == 0x000240, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CreateDelegate_OutputDelegate_6) == 0x000250, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_MakeStruct_PalVisualEffectDynamicParameter_1) == 0x000260, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_MakeStruct_PalVisualEffectDynamicParameter_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_AddVisualEffect_ReturnValue) == 0x000270, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_AddVisualEffect_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_GetEffectScale_Scale) == 0x000278, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_GetEffectScale_Scale' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_GetJumpEffectSpawnLocation_Location) == 0x000280, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_GetJumpEffectSpawnLocation_Location' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_Event_DeadInfo) == 0x000298, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_Event_DeadInfo' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_SpawnSystemAtLocation_ReturnValue) == 0x0002E8, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_SpawnSystemAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_Event_DamageResult) == 0x0002F0, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_Event_DamageResult' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_GetAnimInstance_ReturnValue) == 0x000340, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_GetAnimInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_Map_Find_Value) == 0x000348, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_Map_Find_ReturnValue) == 0x000350, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000351, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_IsValid_ReturnValue_1) == 0x000352, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_GetJumpEffectSpawnLocation_Location_1) == 0x000358, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_GetJumpEffectSpawnLocation_Location_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_SpawnSystemAtLocation_ReturnValue_1) == 0x000370, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_SpawnSystemAtLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_GetEffectScale_Scale_1) == 0x000378, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_GetEffectScale_Scale_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_GetExpDatabase_ReturnValue) == 0x000380, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_GetExpDatabase_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_GetOnCompleteInitializeParameterDelegate_ReturnValue) == 0x000388, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_GetOnCompleteInitializeParameterDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CreateDelegate_OutputDelegate_7) == 0x000390, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CustomEvent_InCharacter) == 0x0003A0, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CustomEvent_InCharacter' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CreateDelegate_OutputDelegate_8) == 0x0003A8, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_IsValid_ReturnValue_2) == 0x0003B8, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CustomEvent_addLevel) == 0x0003BC, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CustomEvent_addLevel' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CustomEvent_nowLevel) == 0x0003C0, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CustomEvent_nowLevel' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_SpawnSystemAttached_ReturnValue) == 0x0003C8, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_SpawnSystemAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_GetActiveActorFlag_ReturnValue) == 0x0003D0, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_GetActiveActorFlag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_GetScaledCapsuleRadius_ReturnValue) == 0x0003D4, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_GetScaledCapsuleRadius_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, Temp_byte_Variable_1) == 0x0003D8, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x0003E0, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_Map_Find_Value_1) == 0x0003E8, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_Map_Find_Value_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_Map_Find_ReturnValue_1) == 0x0003F0, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_CreateProxyObjectForPlayMontage_ReturnValue) == 0x0003F8, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_CreateProxyObjectForPlayMontage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_IsValid_ReturnValue_3) == 0x000400, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_IsValid_ReturnValue_4) == 0x000401, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_IsRarePal_ReturnValue) == 0x000402, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_IsRarePal_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_IsWildNPC_ReturnValue) == 0x000403, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_IsWildNPC_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_BooleanAND_ReturnValue) == 0x000404, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_AddVisualEffect_Local_ReturnValue) == 0x000408, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_AddVisualEffect_Local_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_UpdateFlyEffect_DeltaTime_ImplicitCast) == 0x000410, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_UpdateFlyEffect_DeltaTime_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_SetVariableFloat_InValue_ImplicitCast) == 0x000418, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_SetVariableFloat_InValue_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_SetVariableFloat_InValue_ImplicitCast_1) == 0x00041C, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_SetVariableFloat_InValue_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_Divide_DoubleDouble_A_ImplicitCast) == 0x000420, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_Divide_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_SetVariableFloat_InValue_ImplicitCast_2) == 0x000428, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_SetVariableFloat_InValue_ImplicitCast_2' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CustomEvent_NotifyName_4) == 0x000004, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CustomEvent_NotifyName_4' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CustomEvent_NotifyName_3) == 0x00000C, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CustomEvent_NotifyName_3' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CreateDelegate_OutputDelegate) == 0x000014, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CustomEvent_NotifyName_2) == 0x000024, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CustomEvent_NotifyName_2' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CreateDelegate_OutputDelegate_1) == 0x00002C, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CustomEvent_NotifyName_1) == 0x00003C, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CustomEvent_NotifyName_1' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CreateDelegate_OutputDelegate_2) == 0x000044, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CustomEvent_NotifyName) == 0x000054, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CustomEvent_NotifyName' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CreateDelegate_OutputDelegate_3) == 0x00005C, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, Temp_name_Variable) == 0x00006C, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::Temp_name_Variable' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, Temp_byte_Variable) == 0x000074, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CustomEvent_Loaded) == 0x000078, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CustomEvent_Loaded' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CreateDelegate_OutputDelegate_4) == 0x000080, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, Temp_object_Variable) == 0x000090, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_DynamicCast_AsNiagara_System) == 0x000098, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_DynamicCast_AsNiagara_System' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_DynamicCast_bSuccess) == 0x0000A0, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_GetController_ReturnValue) == 0x0000A8, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_GetController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_ComponentBoundEvent_component_2) == 0x0000B0, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_ComponentBoundEvent_component_2' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_Event_DeltaSeconds) == 0x0000B8, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000BC, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_GetMaterial_ReturnValue) == 0x0000C0, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CustomEvent_DeadInfo) == 0x0000C8, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CustomEvent_DeadInfo' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_IsValid_ReturnValue) == 0x000118, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_DynamicCast_AsMaterial_Instance_Dynamic) == 0x000120, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_DynamicCast_AsMaterial_Instance_Dynamic' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_DynamicCast_bSuccess_1) == 0x000128, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_ComponentBoundEvent_component_1) == 0x000130, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_ComponentBoundEvent_component_1' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_ComponentBoundEvent_Hit) == 0x000138, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_ComponentBoundEvent_Hit' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_ComponentBoundEvent_component) == 0x000220, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_ComponentBoundEvent_component' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CreateDelegate_OutputDelegate_5) == 0x000228, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CreateDelegate_OutputDelegate_6) == 0x000238, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_MakeStruct_PalVisualEffectDynamicParameter) == 0x000248, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_MakeStruct_PalVisualEffectDynamicParameter' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_AddVisualEffect_ReturnValue) == 0x000258, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_AddVisualEffect_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_GetEffectScale_Scale) == 0x000260, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_GetEffectScale_Scale' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_GetJumpEffectSpawnLocation_Location) == 0x000268, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_GetJumpEffectSpawnLocation_Location' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_Event_DeadInfo) == 0x000280, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_Event_DeadInfo' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_SpawnSystemAtLocation_ReturnValue) == 0x0002D0, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_SpawnSystemAtLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_Event_DamageResult) == 0x0002D8, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_Event_DamageResult' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_GetAnimInstance_ReturnValue) == 0x000328, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_GetAnimInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_Map_Find_Value) == 0x000330, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_Map_Find_Value' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_Map_Find_ReturnValue) == 0x000338, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000339, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_IsValid_ReturnValue_1) == 0x00033A, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_GetJumpEffectSpawnLocation_Location_1) == 0x000340, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_GetJumpEffectSpawnLocation_Location_1' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_SpawnSystemAtLocation_ReturnValue_1) == 0x000358, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_SpawnSystemAtLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_GetEffectScale_Scale_1) == 0x000360, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_GetEffectScale_Scale_1' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_GetExpDatabase_ReturnValue) == 0x000368, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_GetExpDatabase_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_GetOnCompleteInitializeParameterDelegate_ReturnValue) == 0x000370, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_GetOnCompleteInitializeParameterDelegate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CreateDelegate_OutputDelegate_7) == 0x000378, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CustomEvent_InCharacter) == 0x000388, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CustomEvent_InCharacter' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CreateDelegate_OutputDelegate_8) == 0x000390, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_IsValid_ReturnValue_2) == 0x0003A0, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CustomEvent_addLevel) == 0x0003A4, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CustomEvent_addLevel' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, K2Node_CustomEvent_nowLevel) == 0x0003A8, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::K2Node_CustomEvent_nowLevel' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_SpawnSystemAttached_ReturnValue) == 0x0003B0, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_SpawnSystemAttached_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_GetActiveActorFlag_ReturnValue) == 0x0003B8, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_GetActiveActorFlag_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_GetScaledCapsuleRadius_ReturnValue) == 0x0003BC, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_GetScaledCapsuleRadius_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, Temp_byte_Variable_1) == 0x0003C0, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x0003C8, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_Map_Find_Value_1) == 0x0003D0, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_Map_Find_Value_1' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_Map_Find_ReturnValue_1) == 0x0003D8, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_IsValid_ReturnValue_3) == 0x0003D9, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_CreateProxyObjectForPlayMontage_ReturnValue) == 0x0003E0, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_CreateProxyObjectForPlayMontage_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_IsValid_ReturnValue_4) == 0x0003E8, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_UpdateFlyEffect_DeltaTime_ImplicitCast) == 0x0003F0, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_UpdateFlyEffect_DeltaTime_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_SetVariableFloat_InValue_ImplicitCast) == 0x0003F8, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_SetVariableFloat_InValue_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_SetVariableFloat_InValue_ImplicitCast_1) == 0x0003FC, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_SetVariableFloat_InValue_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_Divide_DoubleDouble_A_ImplicitCast) == 0x000400, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_Divide_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase, CallFunc_SetVariableFloat_InValue_ImplicitCast_2) == 0x000408, "Member 'BP_MonsterBase_C_ExecuteUbergraph_BP_MonsterBase::CallFunc_SetVariableFloat_InValue_ImplicitCast_2' has a wrong offset!");
 
 // Function BP_MonsterBase.BP_MonsterBase_C.GetFlyEffectAttachOffset
 // 0x00F0 (0x00F0 - 0x0000)
@@ -379,7 +368,7 @@ public:
 	TArray<class USceneComponent*>                NewLocalVar_0;                                     // 0x0010(0x0010)(Edit, BlueprintVisible, ContainsInstancedReference)
 	class USkeletalMeshComponent*                 CallFunc_GetHandAttachMesh_ReturnValue;            // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_361A[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4464[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USkeletalMeshComponent*                 CallFunc_GetHandAttachMesh_ReturnValue_1;          // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -478,10 +467,10 @@ public:
 	struct FHitResult                             Hit;                                               // 0x0008(0x00E8)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_361B[0x2];                                     // 0x00F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4465[0x2];                                     // 0x00F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_361C[0x4];                                     // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4466[0x4];                                     // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0100(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0118(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0130(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -494,18 +483,18 @@ public:
 	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_361D[0x4];                                     // 0x0194(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4467[0x4];                                     // 0x0194(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0198(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x01B0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsPalCharacter_ReturnValue;               // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x01C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x01CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_361E[0x5];                                     // 0x01CB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4468[0x5];                                     // 0x01CB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_GetJumpEffectSpawnLocation_Location;      // 0x01D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_GetEffectScale_Scale;                     // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue;        // 0x01F0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsFlyPal_ReturnValue;                     // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_361F[0x3];                                     // 0x01F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4469[0x3];                                     // 0x01F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SetVariableFloat_InValue_ImplicitCast;    // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_MonsterBase_C_OnLanded_Proc) == 0x000008, "Wrong alignment on BP_MonsterBase_C_OnLanded_Proc");
@@ -616,7 +605,7 @@ struct BP_MonsterBase_C_UpdateFlyEffect final
 public:
 	double                                        DeltaTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3620[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_446A[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_VSize_ReturnValue;                        // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_NormalizeToRange_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_FClamp_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -643,7 +632,7 @@ public:
 	class UPalStaticCharacterParameterComponent*  CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FPalSizeParameterDataRow               CallFunc_FindPalSizeParameter_RowData;             // 0x0018(0x0018)()
 	bool                                          CallFunc_FindPalSizeParameter_ReturnValue;         // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3621[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_446B[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        K2Node_FunctionResult_Scale_ImplicitCast;          // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_MonsterBase_C_GetEffectScale) == 0x000008, "Wrong alignment on BP_MonsterBase_C_GetEffectScale");
@@ -668,12 +657,12 @@ public:
 	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x00A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x00B8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_DoesSocketExist_ReturnValue;              // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3622[0x7];                                     // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_446C[0x7];                                     // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalDatabaseCharacterParameter*         CallFunc_GetDatabaseCharacterParameter_ReturnValue; // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalStaticCharacterParameterComponent*  CallFunc_GetComponentByClass_ReturnValue;          // 0x00E0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FPalSizeParameterDataRow               CallFunc_FindPalSizeParameter_RowData;             // 0x00E8(0x0018)()
 	bool                                          CallFunc_FindPalSizeParameter_ReturnValue;         // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3623[0x7];                                     // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_446D[0x7];                                     // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0108(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector_X;                            // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector_Y;                            // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

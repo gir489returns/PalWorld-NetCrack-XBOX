@@ -206,7 +206,7 @@ namespace UC
 	template <typename KeyType, typename ValueType>
 	class TPair
 	{
-	private:
+	public:
 		KeyType First;
 		ValueType Second;
 
@@ -326,6 +326,9 @@ namespace UC
 
 	class FString : public TArray<wchar_t>
 	{
+	public:
+		friend std::ostream& operator<<(std::ostream& Stream, const UC::FString& Str) { return Stream << Str.ToString(); }
+
 	public:
 		using TArray::TArray;
 

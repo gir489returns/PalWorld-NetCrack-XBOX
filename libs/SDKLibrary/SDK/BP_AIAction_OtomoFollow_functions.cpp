@@ -245,6 +245,27 @@ void UBP_AIAction_OtomoFollow_C::GetTargetLocationInAim(struct FVector* Location
 }
 
 
+// Function BP_AIAction_OtomoFollow.BP_AIAction_OtomoFollow_C.GetTargetLocationInBuildingMode
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector                          Location                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_OtomoFollow_C::GetTargetLocationInBuildingMode(struct FVector* Location)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_OtomoFollow_C", "GetTargetLocationInBuildingMode");
+
+	Params::BP_AIAction_OtomoFollow_C_GetTargetLocationInBuildingMode Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Location != nullptr)
+		*Location = std::move(Parms.Location);
+}
+
+
 // Function BP_AIAction_OtomoFollow.BP_AIAction_OtomoFollow_C.GetTargetLocationInHighSpeed
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -284,6 +305,48 @@ void UBP_AIAction_OtomoFollow_C::GetTargetLocationInWalk(struct FVector* Locatio
 
 	if (Location != nullptr)
 		*Location = std::move(Parms.Location);
+}
+
+
+// Function BP_AIAction_OtomoFollow.BP_AIAction_OtomoFollow_C.IsBuildingMode
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool                                    IsBuilding                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_OtomoFollow_C::IsBuildingMode(bool* IsBuilding)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_OtomoFollow_C", "IsBuildingMode");
+
+	Params::BP_AIAction_OtomoFollow_C_IsBuildingMode Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsBuilding != nullptr)
+		*IsBuilding = Parms.IsBuilding;
+}
+
+
+// Function BP_AIAction_OtomoFollow.BP_AIAction_OtomoFollow_C.IsTurnInBuildingMode
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool                                    IsTurn                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_OtomoFollow_C::IsTurnInBuildingMode(bool* IsTurn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_OtomoFollow_C", "IsTurnInBuildingMode");
+
+	Params::BP_AIAction_OtomoFollow_C_IsTurnInBuildingMode Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsTurn != nullptr)
+		*IsTurn = Parms.IsTurn;
 }
 
 

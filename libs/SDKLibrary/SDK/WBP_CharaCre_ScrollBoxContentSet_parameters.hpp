@@ -19,35 +19,36 @@ namespace SDK::Params
 {
 
 // Function WBP_CharaCre_ScrollBoxContentSet.WBP_CharaCre_ScrollBoxContentSet_C.ApplyMakeInfo
-// 0x00D8 (0x00D8 - 0x0000)
+// 0x0198 (0x0198 - 0x0000)
 struct WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo final
 {
 public:
-	struct FPalPlayerDataCharacterMakeInfo        MakeInfo;                                          // 0x0000(0x0094)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x00A0(0x0010)(ReferenceParm, ContainsInstancedReference)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_455A[0x4];                                     // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_455B[0x7];                                     // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_CharaCre_ScrollBoxContentBase_C*   K2Node_DynamicCast_AsWBP_Chara_Cre_Scroll_Box_Content_Base; // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalPlayerDataCharacterMakeInfo        MakeInfo;                                          // 0x0000(0x0150)(BlueprintVisible, BlueprintReadOnly, Parm)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3D95[0x4];                                     // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0160(0x0010)(ReferenceParm, ContainsInstancedReference)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3D96[0x4];                                     // 0x0174(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0178(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3D97[0x7];                                     // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_CharaCre_ScrollBoxContentBase_C*   K2Node_DynamicCast_AsWBP_Chara_Cre_Scroll_Box_Content_Base; // 0x0188(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo) == 0x000008, "Wrong alignment on WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo");
-static_assert(sizeof(WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo) == 0x0000D8, "Wrong size on WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo");
+static_assert(sizeof(WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo) == 0x000198, "Wrong size on WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo");
 static_assert(offsetof(WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo, MakeInfo) == 0x000000, "Member 'WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo::MakeInfo' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo, Temp_int_Array_Index_Variable) == 0x000094, "Member 'WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo, Temp_int_Loop_Counter_Variable) == 0x000098, "Member 'WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo, CallFunc_Add_IntInt_ReturnValue) == 0x00009C, "Member 'WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo, CallFunc_GetAllChildren_ReturnValue) == 0x0000A0, "Member 'WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo, CallFunc_Array_Length_ReturnValue) == 0x0000B0, "Member 'WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo, CallFunc_Array_Get_Item) == 0x0000B8, "Member 'WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo, CallFunc_Less_IntInt_ReturnValue) == 0x0000C0, "Member 'WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo, K2Node_DynamicCast_AsWBP_Chara_Cre_Scroll_Box_Content_Base) == 0x0000C8, "Member 'WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo::K2Node_DynamicCast_AsWBP_Chara_Cre_Scroll_Box_Content_Base' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo, K2Node_DynamicCast_bSuccess) == 0x0000D0, "Member 'WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo, Temp_int_Array_Index_Variable) == 0x000150, "Member 'WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo, Temp_int_Loop_Counter_Variable) == 0x000154, "Member 'WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo, CallFunc_Add_IntInt_ReturnValue) == 0x000158, "Member 'WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo, CallFunc_GetAllChildren_ReturnValue) == 0x000160, "Member 'WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo::CallFunc_GetAllChildren_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo, CallFunc_Array_Length_ReturnValue) == 0x000170, "Member 'WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo, CallFunc_Array_Get_Item) == 0x000178, "Member 'WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo, CallFunc_Less_IntInt_ReturnValue) == 0x000180, "Member 'WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo, K2Node_DynamicCast_AsWBP_Chara_Cre_Scroll_Box_Content_Base) == 0x000188, "Member 'WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo::K2Node_DynamicCast_AsWBP_Chara_Cre_Scroll_Box_Content_Base' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo, K2Node_DynamicCast_bSuccess) == 0x000190, "Member 'WBP_CharaCre_ScrollBoxContentSet_C_ApplyMakeInfo::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function WBP_CharaCre_ScrollBoxContentSet.WBP_CharaCre_ScrollBoxContentSet_C.ChangeMakeCategory
 // 0x0010 (0x0010 - 0x0000)
@@ -55,7 +56,7 @@ struct WBP_CharaCre_ScrollBoxContentSet_C_ChangeMakeCategory final
 {
 public:
 	E_UICharacterMakeCategory                     NewCategory;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_455C[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D98[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_CharaCre_ScrollBoxContentBase_C*   CallFunc_GetWidgetByCategory_Widget;               // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_CharaCre_ScrollBoxContentSet_C_ChangeMakeCategory) == 0x000008, "Wrong alignment on WBP_CharaCre_ScrollBoxContentSet_C_ChangeMakeCategory");
@@ -80,7 +81,7 @@ struct WBP_CharaCre_ScrollBoxContentSet_C_GetRestoreFocusTarget final
 {
 public:
 	E_UICharacterMakeCategory                     CategoryType;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_455D[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D99[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                Widget;                                            // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWBP_CharaCre_ScrollBoxContentBase_C*   CallFunc_GetWidgetByCategory_Widget;               // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_GetTopFocusTarget_Widget;                 // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -129,7 +130,7 @@ struct WBP_CharaCre_ScrollBoxContentSet_C_GetTopFocusTarget final
 {
 public:
 	E_UICharacterMakeCategory                     NewCategory;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_455E[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D9A[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                Widget;                                            // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWBP_CharaCre_ScrollBoxContentBase_C*   CallFunc_GetWidgetByCategory_Widget;               // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_GetTopFocusTarget_Widget;                 // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -147,14 +148,14 @@ struct WBP_CharaCre_ScrollBoxContentSet_C_GetWidgetByCategory final
 {
 public:
 	E_UICharacterMakeCategory                     TargetCategory;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_455F[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D9B[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_CharaCre_ScrollBoxContentBase_C*   Widget;                                            // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                TmpWidget;                                         // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4560[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D9C[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_CharaCre_ScrollBoxContentBase_C*   K2Node_DynamicCast_AsWBP_Chara_Cre_Scroll_Box_Content_Base; // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4561[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D9D[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_GetWidgetAtIndex_ReturnValue;             // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_GetWidgetAtIndex_ReturnValue_1;           // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_GetWidgetAtIndex_ReturnValue_2;           // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)

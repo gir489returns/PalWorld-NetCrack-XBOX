@@ -15,7 +15,7 @@ namespace SDK
 {
 
 // UserDefinedEnum E_UICharacterMakeCategory.E_UICharacterMakeCategory
-// NumValues: 0x0009
+// NumValues: 0x000A
 enum class E_UICharacterMakeCategory : uint8
 {
 	NewEnumerator3                           = 0,
@@ -26,7 +26,8 @@ enum class E_UICharacterMakeCategory : uint8
 	NewEnumerator5                           = 5,
 	NewEnumerator6                           = 6,
 	NewEnumerator7                           = 7,
-	E_MAX                                    = 8,
+	NewEnumerator8                           = 8,
+	E_MAX                                    = 9,
 };
 
 }

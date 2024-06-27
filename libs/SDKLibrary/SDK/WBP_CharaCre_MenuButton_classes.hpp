@@ -35,13 +35,16 @@ public:
 	class UWBP_PalInvisibleButton_C*              WBP_PalInvisibleButton;                            // 0x02C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_             OnClicked;                                         // 0x02C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	E_UICharacterMakeCategory                     BindCategory;                                      // 0x02D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_457F[0x7];                                     // 0x02D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4878[0x7];                                     // 0x02D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<E_UICharacterMakeCategory, struct FDataTableRowHandle> MsgIDMap;                                          // 0x02E0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void AnmEvent_Normal();
+	void AnmEvent_Reset();
 	void AnmEvent_Select();
 	void BndEvt__WBP_CharaCre_MenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void Construct();
+	void Destruct();
 	void ExecuteUbergraph_WBP_CharaCre_MenuButton(int32 EntryPoint);
 	void GetBindedCategory(E_UICharacterMakeCategory* CategoryType);
 	void OnClicked__DelegateSignature(class UWBP_CharaCre_MenuButton_C* Button);

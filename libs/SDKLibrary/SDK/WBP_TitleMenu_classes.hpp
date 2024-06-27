@@ -45,20 +45,20 @@ public:
 	struct FDataTableRowHandle                    ServerNoticeMsgID;                                 // 0x0380(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void BndEvt__WBP_TitleMenu_WBP_Title_MenuButton_Credit_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature();
-	void BndEvt__WBP_TitleMenu_WBP_Title_MenuButton_ExitGame_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature();
-	void BndEvt__WBP_TitleMenu_WBP_Title_MenuButton_News_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature();
-	void BndEvt__WBP_TitleMenu_WBP_Title_MenuButton_Option_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void BndEvt__WBP_TitleMenu_WBP_Title_MenuButton_StartLocalGame_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
-	void BndEvt__WBP_TitleMenu_WBP_Title_MenuButton_StartMultiGame_InviteCode_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature();
-	void BndEvt__WBP_TitleMenu_WBP_Title_MenuButton_StartMultiGame_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
-	void BndEvt__WBP_TitleMenu_WBP_Title_MenuButton_Tips_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature();
-	void Construct();
-	void ExecuteUbergraph_WBP_TitleMenu(int32 EntryPoint);
-	void GetTopButton(class UWidget** TargetWidget);
-	void OnClickedMenu__DelegateSignature(class UWBP_Title_MenuButton_C* ButtonWidget);
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void ________(bool bResult);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void OnClickedMenu__DelegateSignature(class UWBP_Title_MenuButton_C* ButtonWidget);
+	void GetTopButton(class UWidget** TargetWidget);
+	void ExecuteUbergraph_WBP_TitleMenu(int32 EntryPoint);
+	void Construct();
+	void BndEvt__WBP_TitleMenu_WBP_Title_MenuButton_Tips_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature();
+	void BndEvt__WBP_TitleMenu_WBP_Title_MenuButton_StartMultiGame_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
+	void BndEvt__WBP_TitleMenu_WBP_Title_MenuButton_StartMultiGame_InviteCode_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature();
+	void BndEvt__WBP_TitleMenu_WBP_Title_MenuButton_StartLocalGame_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
+	void BndEvt__WBP_TitleMenu_WBP_Title_MenuButton_Option_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	void BndEvt__WBP_TitleMenu_WBP_Title_MenuButton_News_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature();
+	void BndEvt__WBP_TitleMenu_WBP_Title_MenuButton_ExitGame_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature();
+	void BndEvt__WBP_TitleMenu_WBP_Title_MenuButton_Credit_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

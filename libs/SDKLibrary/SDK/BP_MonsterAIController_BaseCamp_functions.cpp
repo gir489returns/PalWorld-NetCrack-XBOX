@@ -283,72 +283,6 @@ void ABP_MonsterAIController_BaseCamp_C::SetAction_BaseCamp(class UClass* AIActi
 }
 
 
-// Function BP_MonsterAIController_BaseCamp.BP_MonsterAIController_BaseCamp_C.SetAction_BaseCamp_Fighter
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalAIActionBaseCampBase*         Action                                                 (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MonsterAIController_BaseCamp_C::SetAction_BaseCamp_Fighter(class UPalAIActionBaseCampBase** Action)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MonsterAIController_BaseCamp_C", "SetAction_BaseCamp_Fighter");
-
-	Params::BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Action != nullptr)
-		*Action = Parms.Action;
-}
-
-
-// Function BP_MonsterAIController_BaseCamp.BP_MonsterAIController_BaseCamp_C.SetAction_BaseCamp_Fighter_ByDefenseType
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalMapObjectDefenseType                DefenseType                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPalAIActionBaseCampFighter*      FighterAction                                          (Parm, OutParm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-
-void ABP_MonsterAIController_BaseCamp_C::SetAction_BaseCamp_Fighter_ByDefenseType(EPalMapObjectDefenseType DefenseType, class UPalAIActionBaseCampFighter** FighterAction)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MonsterAIController_BaseCamp_C", "SetAction_BaseCamp_Fighter_ByDefenseType");
-
-	Params::BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_Fighter_ByDefenseType Parms{};
-
-	Parms.DefenseType = DefenseType;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (FighterAction != nullptr)
-		*FighterAction = Parms.FighterAction;
-}
-
-
-// Function BP_MonsterAIController_BaseCamp.BP_MonsterAIController_BaseCamp_C.SetAction_BaseCamp_FighterGunner
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalAIActionBaseCampBase*         Action                                                 (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MonsterAIController_BaseCamp_C::SetAction_BaseCamp_FighterGunner(class UPalAIActionBaseCampBase** Action)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MonsterAIController_BaseCamp_C", "SetAction_BaseCamp_FighterGunner");
-
-	Params::BP_MonsterAIController_BaseCamp_C_SetAction_BaseCamp_FighterGunner Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Action != nullptr)
-		*Action = Parms.Action;
-}
-
-
 // Function BP_MonsterAIController_BaseCamp.BP_MonsterAIController_BaseCamp_C.SetAction_BaseCamp_Worker
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -677,34 +611,6 @@ void ABP_MonsterAIController_BaseCamp_C::SetBaseCampActionWithFixAssign(const st
 	Parms.DistanceFixAssignTargetting = DistanceFixAssignTargetting;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MonsterAIController_BaseCamp.BP_MonsterAIController_BaseCamp_C.SetBaseCampFighterAction
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_MonsterAIController_BaseCamp_C::SetBaseCampFighterAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MonsterAIController_BaseCamp_C", "SetBaseCampFighterAction");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MonsterAIController_BaseCamp.BP_MonsterAIController_BaseCamp_C.SetBaseCampFighterGunnerAction
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_MonsterAIController_BaseCamp_C::SetBaseCampFighterGunnerAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MonsterAIController_BaseCamp_C", "SetBaseCampFighterGunnerAction");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -28,7 +28,7 @@ class UEndMatchCallbackProxy final : public UOnlineBlueprintCallProxyBase
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailure;                                         // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15FF[0x30];                                    // 0x0050(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15F0[0x30];                                    // 0x0050(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UEndMatchCallbackProxy* EndMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, TScriptInterface<class ITurnBasedMatchInterface> MatchActor, const class FString& MatchID, EMPMatchOutcome LocalPlayerOutcome, EMPMatchOutcome OtherPlayersOutcome);
@@ -76,7 +76,7 @@ class UCreateSessionCallbackProxy final : public UOnlineBlueprintCallProxyBase
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailure;                                         // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1604[0x48];                                    // 0x0050(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15F5[0x48];                                    // 0x0050(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UCreateSessionCallbackProxy* CreateSession(class UObject* WorldContextObject, class APlayerController* PlayerController, int32 PublicConnections, bool bUseLAN);
@@ -103,7 +103,7 @@ class UAchievementQueryCallbackProxy final : public UOnlineBlueprintCallProxyBas
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailure;                                         // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1606[0x18];                                    // 0x0050(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15F7[0x18];                                    // 0x0050(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UAchievementQueryCallbackProxy* CacheAchievementDescriptions(class UObject* WorldContextObject, class APlayerController* PlayerController);
@@ -131,7 +131,7 @@ class UAchievementWriteCallbackProxy final : public UOnlineBlueprintCallProxyBas
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailure;                                         // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1607[0x30];                                    // 0x0050(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15F8[0x30];                                    // 0x0050(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UAchievementWriteCallbackProxy* WriteAchievementProgress(class UObject* WorldContextObject, class APlayerController* PlayerController, class FName AchievementName, float Progress, int32 UserTag);
@@ -158,7 +158,7 @@ class UConnectionCallbackProxy final : public UOnlineBlueprintCallProxyBase
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailure;                                         // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1608[0x28];                                    // 0x0050(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15F9[0x28];                                    // 0x0050(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UConnectionCallbackProxy* ConnectToService(class UObject* WorldContextObject, class APlayerController* PlayerController);
@@ -185,7 +185,7 @@ class UDestroySessionCallbackProxy final : public UOnlineBlueprintCallProxyBase
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailure;                                         // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1609[0x28];                                    // 0x0050(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15FA[0x28];                                    // 0x0050(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UDestroySessionCallbackProxy* DestroySession(class UObject* WorldContextObject, class APlayerController* PlayerController);
@@ -212,7 +212,7 @@ class UEndTurnCallbackProxy final : public UOnlineBlueprintCallProxyBase
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailure;                                         // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_160A[0x28];                                    // 0x0050(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15FB[0x28];                                    // 0x0050(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UEndTurnCallbackProxy* EndTurn(class UObject* WorldContextObject, class APlayerController* PlayerController, const class FString& MatchID, TScriptInterface<class ITurnBasedMatchInterface> TurnBasedMatchInterface);
@@ -239,7 +239,7 @@ class UFindSessionsCallbackProxy final : public UOnlineBlueprintCallProxyBase
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailure;                                         // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_160B[0x40];                                    // 0x0050(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15FC[0x40];                                    // 0x0050(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UFindSessionsCallbackProxy* FindSessions(class UObject* WorldContextObject, class APlayerController* PlayerController, int32 MaxResults, bool bUseLAN);
@@ -270,7 +270,7 @@ class UFindTurnBasedMatchCallbackProxy final : public UOnlineBlueprintCallProxyB
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailure;                                         // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1610[0x38];                                    // 0x0050(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1601[0x38];                                    // 0x0050(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UFindTurnBasedMatchCallbackProxy* FindTurnBasedMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, TScriptInterface<class ITurnBasedMatchInterface> MatchActor, int32 MinPlayers, int32 MaxPlayers, int32 PlayerGroup, bool ShowExistingMatches);
@@ -297,7 +297,7 @@ class UInAppPurchaseCallbackProxy2 final : public UObject
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailure;                                         // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1612[0x60];                                    // 0x0048(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1603[0x60];                                    // 0x0048(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UInAppPurchaseCallbackProxy2* CreateProxyObjectForInAppPurchase(class APlayerController* PlayerController, const struct FInAppPurchaseProductRequest2& ProductRequest);
@@ -326,7 +326,7 @@ class UInAppPurchaseQueryCallbackProxy2 final : public UObject
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailure;                                         // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1613[0x20];                                    // 0x0048(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1604[0x20];                                    // 0x0048(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UInAppPurchaseQueryCallbackProxy2* CreateProxyObjectForInAppPurchaseQuery(class APlayerController* PlayerController, const TArray<class FString>& ProductIdentifiers);
@@ -353,7 +353,7 @@ class UInAppPurchaseRestoreCallbackProxy2 final : public UObject
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailure;                                         // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1614[0x68];                                    // 0x0048(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1605[0x68];                                    // 0x0048(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UInAppPurchaseRestoreCallbackProxy2* CreateProxyObjectForInAppPurchaseRestore(const TArray<struct FInAppPurchaseProductRequest2>& ConsumableProductFlags, class APlayerController* PlayerController);
@@ -379,9 +379,9 @@ static_assert(offsetof(UInAppPurchaseRestoreCallbackProxy2, OnFailure) == 0x0000
 class alignas(0x10) UIpConnection : public UNetConnection
 {
 public:
-	uint8                                         Pad_1615[0x74];                                    // 0x3308(0x0074)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1606[0x74];                                    // 0x3308(0x0074)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         SocketErrorDisconnectDelay;                        // 0x337C(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1616[0x18];                                    // 0x3380(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1607[0x18];                                    // 0x3380(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -405,18 +405,18 @@ class UIpNetDriver : public UNetDriver
 public:
 	uint8                                         LogPortUnreach : 1;                                // 0x0790(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Config, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         AllowPlayerPortUnreach : 1;                        // 0x0790(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Config, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_1617[0x3];                                     // 0x0791(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1608[0x3];                                     // 0x0791(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	uint32                                        MaxPortCountToTry;                                 // 0x0794(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1618[0x4];                                     // 0x0798(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1609[0x4];                                     // 0x0798(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	uint32                                        ServerDesiredSocketReceiveBufferBytes;             // 0x079C(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint32                                        ServerDesiredSocketSendBufferBytes;                // 0x07A0(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint32                                        ClientDesiredSocketReceiveBufferBytes;             // 0x07A4(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint32                                        ClientDesiredSocketSendBufferBytes;                // 0x07A8(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1619[0x4];                                     // 0x07AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_160A[0x4];                                     // 0x07AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        MaxSecondsInReceive;                               // 0x07B0(0x0008)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	int32                                         NbPacketsBetweenReceiveTimeTest;                   // 0x07B8(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                         ResolutionConnectionTimeout;                       // 0x07BC(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_161A[0x80];                                    // 0x07C0(0x0080)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_160B[0x80];                                    // 0x07C0(0x0080)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -446,7 +446,7 @@ class UJoinSessionCallbackProxy final : public UOnlineBlueprintCallProxyBase
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailure;                                         // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_161B[0x148];                                   // 0x0050(0x0148)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_160C[0x148];                                   // 0x0050(0x0148)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UJoinSessionCallbackProxy* JoinSession(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FBlueprintSessionResult& SearchResult);
@@ -493,7 +493,7 @@ class ULeaderboardFlushCallbackProxy final : public UObject
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailure;                                         // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_161D[0x20];                                    // 0x0048(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_160E[0x20];                                    // 0x0048(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class ULeaderboardFlushCallbackProxy* CreateProxyObjectForFlush(class APlayerController* PlayerController, class FName SessionName);
@@ -520,7 +520,7 @@ class ULeaderboardQueryCallbackProxy final : public UObject
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailure;                                         // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_161E[0x50];                                    // 0x0048(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_160F[0x50];                                    // 0x0048(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class ULeaderboardQueryCallbackProxy* CreateProxyObjectForIntQuery(class APlayerController* PlayerController, class FName StatName);
@@ -547,7 +547,7 @@ class ULogoutCallbackProxy final : public UBlueprintAsyncActionBase
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailure;                                         // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_161F[0x18];                                    // 0x0050(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1610[0x18];                                    // 0x0050(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class ULogoutCallbackProxy* Logout(class UObject* WorldContextObject, class APlayerController* PlayerController);
@@ -572,11 +572,11 @@ static_assert(offsetof(ULogoutCallbackProxy, OnFailure) == 0x000040, "Member 'UL
 class AOnlineBeacon : public AActor
 {
 public:
-	uint8                                         Pad_1620[0x8];                                     // 0x0290(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1611[0x8];                                     // 0x0290(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         BeaconConnectionInitialTimeout;                    // 0x0298(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         BeaconConnectionTimeout;                           // 0x029C(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UNetDriver*                             NetDriver;                                         // 0x02A0(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1621[0x18];                                    // 0x02A8(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1612[0x18];                                    // 0x02A8(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -602,7 +602,7 @@ public:
 	class AOnlineBeaconHostObject*                BeaconOwner;                                       // 0x02C0(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UNetConnection*                         BeaconConnection;                                  // 0x02C8(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EBeaconConnectionState                        ConnectionState;                                   // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1622[0x4F];                                    // 0x02D1(0x004F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1613[0x4F];                                    // 0x02D1(0x004F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ClientOnConnected();
@@ -630,11 +630,11 @@ class AOnlineBeaconHost final : public AOnlineBeacon
 public:
 	int32                                         ListenPort;                                        // 0x02C0(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAuthRequired;                                     // 0x02C4(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1623[0x3];                                     // 0x02C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1614[0x3];                                     // 0x02C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	uint32                                        MaxAuthTokenSize;                                  // 0x02C8(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1624[0x54];                                    // 0x02CC(0x0054)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1615[0x54];                                    // 0x02CC(0x0054)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AOnlineBeaconClient*>            ClientActors;                                      // 0x0320(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1625[0xA0];                                    // 0x0330(0x00A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1616[0xA0];                                    // 0x0330(0x00A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -686,7 +686,7 @@ public:
 	TMap<class FName, class FName>                MappedUniqueNetIdTypes;                            // 0x0028(0x0050)(Config, NativeAccessSpecifierPrivate)
 	TArray<class FName>                           CompatibleUniqueNetIdTypes;                        // 0x0078(0x0010)(ZeroConstructor, Config, NativeAccessSpecifierPrivate)
 	class FName                                   VoiceSubsystemNameOverride;                        // 0x0088(0x0008)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1626[0xF8];                                    // 0x0090(0x00F8)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1617[0xF8];                                    // 0x0090(0x00F8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -710,7 +710,7 @@ class UOnlinePIESettings final : public UDeveloperSettings
 {
 public:
 	bool                                          bOnlinePIEEnabled;                                 // 0x0038(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1627[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1618[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FPIELoginSettingsInternal>      Logins;                                            // 0x0040(0x0010)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic)
 
 public:
@@ -750,10 +750,10 @@ static_assert(sizeof(UOnlineServicesEngineInterfaceImpl) == 0x000028, "Wrong siz
 class UOnlineSessionClient final : public UOnlineSession
 {
 public:
-	uint8                                         Pad_1628[0x1B0];                                   // 0x0028(0x01B0)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1619[0x1B0];                                   // 0x0028(0x01B0)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bIsFromInvite;                                     // 0x01D8(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bHandlingDisconnect;                               // 0x01D9(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1629[0x6];                                     // 0x01DA(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_161A[0x6];                                     // 0x01DA(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -775,13 +775,13 @@ static_assert(offsetof(UOnlineSessionClient, bHandlingDisconnect) == 0x0001D9, "
 class APartyBeaconClient final : public AOnlineBeaconClient
 {
 public:
-	uint8                                         Pad_162A[0x30];                                    // 0x0320(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_161B[0x30];                                    // 0x0320(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 DestSessionId;                                     // 0x0350(0x0010)(ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FPartyReservation                      PendingReservation;                                // 0x0360(0x0058)(Protected, NativeAccessSpecifierProtected)
 	EClientRequestType                            RequestType;                                       // 0x03B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bPendingReservationSent;                           // 0x03B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bCancelReservation;                                // 0x03BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_162B[0x2D];                                    // 0x03BB(0x002D)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_161C[0x2D];                                    // 0x03BB(0x002D)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ClientCancelReservationResponse(EPartyReservationResult ReservationResponse);
@@ -818,12 +818,12 @@ class APartyBeaconHost final : public AOnlineBeaconHostObject
 {
 public:
 	class UPartyBeaconState*                      State;                                             // 0x02B8(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_162C[0x60];                                    // 0x02C0(0x0060)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_161D[0x60];                                    // 0x02C0(0x0060)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bLogoutOnSessionTimeout;                           // 0x0320(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_162D[0x3];                                     // 0x0321(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_161E[0x3];                                     // 0x0321(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         SessionTimeoutSecs;                                // 0x0324(0x0004)(ZeroConstructor, Transient, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         TravelSessionTimeoutSecs;                          // 0x0328(0x0004)(ZeroConstructor, Transient, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_162E[0x4];                                     // 0x032C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_161F[0x4];                                     // 0x032C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -856,13 +856,13 @@ public:
 	int32                                         ReservedHostTeamNum;                               // 0x0048(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         ForceTeamNum;                                      // 0x004C(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bRestrictCrossConsole;                             // 0x0050(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_162F[0x7];                                     // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1620[0x7];                                     // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         PlatformCrossplayRestrictions;                     // 0x0058(0x0010)(ZeroConstructor, Config, Protected, NativeAccessSpecifierProtected)
 	TArray<struct FPartyBeaconCrossplayPlatformMapping> PlatformTypeMapping;                               // 0x0068(0x0010)(ZeroConstructor, Config, Protected, NativeAccessSpecifierProtected)
 	bool                                          bEnableRemovalRequests;                            // 0x0078(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1630[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1621[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FPartyReservation>              Reservations;                                      // 0x0080(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1631[0x10];                                    // 0x0090(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1622[0x10];                                    // 0x0090(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -897,7 +897,7 @@ class UQuitMatchCallbackProxy final : public UOnlineBlueprintCallProxyBase
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailure;                                         // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1632[0x28];                                    // 0x0050(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1623[0x28];                                    // 0x0050(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UQuitMatchCallbackProxy* QuitMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, const class FString& MatchID, EMPMatchOutcome Outcome, int32 TurnTimeoutInSeconds);
@@ -924,7 +924,7 @@ class UShowLoginUICallbackProxy final : public UBlueprintAsyncActionBase
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailure;                                         // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1634[0x10];                                    // 0x0050(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1625[0x10];                                    // 0x0050(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UShowLoginUICallbackProxy* ShowExternalLoginUI(class UObject* WorldContextObject, class APlayerController* InPlayerController);
@@ -949,13 +949,13 @@ static_assert(offsetof(UShowLoginUICallbackProxy, OnFailure) == 0x000040, "Membe
 class ASpectatorBeaconClient final : public AOnlineBeaconClient
 {
 public:
-	uint8                                         Pad_1635[0x30];                                    // 0x0320(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1626[0x30];                                    // 0x0320(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 DestSessionId;                                     // 0x0350(0x0010)(ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FSpectatorReservation                  PendingReservation;                                // 0x0360(0x0088)(Protected, NativeAccessSpecifierProtected)
 	ESpectatorClientRequestType                   RequestType;                                       // 0x03E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bPendingReservationSent;                           // 0x03E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bCancelReservation;                                // 0x03EA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1636[0x2D];                                    // 0x03EB(0x002D)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1627[0x2D];                                    // 0x03EB(0x002D)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ClientCancelReservationResponse(ESpectatorReservationResult ReservationResponse);
@@ -989,12 +989,12 @@ class ASpectatorBeaconHost final : public AOnlineBeaconHostObject
 {
 public:
 	class USpectatorBeaconState*                  State;                                             // 0x02B8(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1637[0x60];                                    // 0x02C0(0x0060)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1628[0x60];                                    // 0x02C0(0x0060)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bLogoutOnSessionTimeout;                           // 0x0320(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1638[0x3];                                     // 0x0321(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1629[0x3];                                     // 0x0321(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         SessionTimeoutSecs;                                // 0x0324(0x0004)(ZeroConstructor, Transient, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         TravelSessionTimeoutSecs;                          // 0x0328(0x0004)(ZeroConstructor, Transient, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1639[0x4];                                     // 0x032C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_162A[0x4];                                     // 0x032C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1022,9 +1022,9 @@ public:
 	int32                                         NumConsumedReservations;                           // 0x0030(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         MaxReservations;                                   // 0x0034(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bRestrictCrossConsole;                             // 0x0038(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_163A[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_162B[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSpectatorReservation>          Reservations;                                      // 0x0040(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_163B[0x10];                                    // 0x0050(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_162C[0x10];                                    // 0x0050(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1110,7 +1110,7 @@ static_assert(sizeof(UTurnBasedBlueprintLibrary) == 0x000028, "Wrong size on UTu
 class UVoipListenerSynthComponent final : public USynthComponent
 {
 public:
-	uint8                                         Pad_163F[0x60];                                    // 0x0790(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1630[0x60];                                    // 0x0790(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool IsIdling();

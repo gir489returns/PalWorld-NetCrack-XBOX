@@ -23,7 +23,7 @@ namespace SDK
 class UImGuiInputHandler final : public UObject
 {
 public:
-	uint8                                         Pad_1C2E[0x28];                                    // 0x0028(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CC6[0x28];                                    // 0x0028(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -48,7 +48,7 @@ public:
 	bool                                          bShareGamepadInput;                                // 0x0049(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bShareMouseInput;                                  // 0x004A(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bUseSoftwareCursor;                                // 0x004B(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1C2F[0x4];                                     // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CC7[0x4];                                     // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FImGuiKeyInfo                          ToggleInput;                                       // 0x0050(0x0020)(Edit, Config, Protected, NativeAccessSpecifierProtected)
 	struct FImGuiCanvasSizeInfo                   CanvasSize;                                        // 0x0070(0x0010)(Edit, Config, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	struct FImGuiDPIScaleInfo                     DPIScale;                                          // 0x0080(0x0098)(Edit, Config, Protected, NativeAccessSpecifierProtected)

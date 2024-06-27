@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Pal_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -33,13 +33,13 @@ public:
 	class FName                                   CloseActionName;                                   // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ChangeNoteContent(class FName NoteTitle);
-	void ClosePanel();
-	void ExecuteUbergraph_WBP_Option_HelpGuide(int32 EntryPoint);
-	void Finished_80D7C1A8449D6AAAECA77A96E24A7B39();
-	struct FEventReply OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent);
+	void Setup(class FName NoteTitle);
 	void OnSetup();
-	void Setup();
+	struct FEventReply OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent);
+	void Finished_80D7C1A8449D6AAAECA77A96E24A7B39();
+	void ExecuteUbergraph_WBP_Option_HelpGuide(int32 EntryPoint);
+	void ClosePanel();
+	void Change_Note_Content(class FName NoteTitle);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

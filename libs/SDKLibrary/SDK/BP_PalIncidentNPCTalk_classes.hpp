@@ -10,18 +10,18 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "E_PalItemShopTabType_structs.hpp"
+#include "Pal_structs.hpp"
+#include "Engine_structs.hpp"
 #include "BP_PalIncidentBase_classes.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Pal_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalIncidentNPCTalk.BP_PalIncidentNPCTalk_C
-// 0x00B0 (0x0210 - 0x0160)
+// 0x00C0 (0x0220 - 0x0160)
 class UBP_PalIncidentNPCTalk_C final : public UBP_PalIncidentBase_C
 {
 public:
@@ -31,26 +31,28 @@ public:
 	class UPalNPCMultiTalkHandle*                 MultiTalkHandle;                                   // 0x0180(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsTalking;                                         // 0x0188(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsShopping;                                        // 0x0189(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_377B[0x6];                                     // 0x018A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_45B7[0x6];                                     // 0x018A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_PalIncidentCamera_C*                Camera;                                            // 0x0190(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 PlayerViewTarget;                                  // 0x0198(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class FString                                 TalkSequence;                                      // 0x01A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                          IsDelayFinish;                                     // 0x01B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_377C[0x7];                                     // 0x01B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_45B8[0x7];                                     // 0x01B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        DelayFinishElapsedTime;                            // 0x01B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalHUDDispatchParameterBase*           ItemShopHUDParameter;                              // 0x01C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UPalHUDDispatchParameterBase*           PalShopHUDParameter;                               // 0x01C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	E_PalItemShopTabType                          OpenItemShopTabType;                               // 0x01D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	E_PalItemShopTabType                          OpenPalShopTabType;                                // 0x01D1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_377D[0x2];                                     // 0x01D2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_45B9[0x2];                                     // 0x01D2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGuid                                  TalkUIID;                                          // 0x01D4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGuid                                  ItemShopUIID;                                      // 0x01E4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGuid                                  PalShopUIID;                                       // 0x01F4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_45BA[0x4];                                     // 0x0204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FName>                           CustomFunctionNames;                               // 0x0208(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void AddItemToInventory(const struct FPalNPCTalkSystemCustomFunctionParameters& Param);
 	void AttachCamera();
-	void AttackToPlayer(const struct FPalNPCTalkSystemCustomFunctionParameters& Param);
+	void Attack_to_Player(const struct FPalNPCTalkSystemCustomFunctionParameters& Param);
 	void CreateCamera();
 	void CunsumeRequestItem(const struct FPalNPCTalkSystemCustomFunctionParameters& Param);
 	void CustomFunctionTemplate(const struct FPalNPCTalkSystemCustomFunctionParameters& Param);
@@ -65,10 +67,14 @@ public:
 	void GetTalkId(class FName* TalkId);
 	void GetTalkType(EPalIncidentTalkType* TalkType);
 	void HasRequestItem(const struct FPalNPCTalkSystemCustomFunctionParameters& Param);
+	bool IsExistCustomEvent(const class FName& CustomEventName);
 	void Lottery_Index_by_Weights(TArray<double>& Weights, int32* Param_Index);
 	void LotteryItemAndNum(const struct FPalNPCTalkSystemCustomFunctionParameters& Param, class FName* AddItemName1, int32* AddItemNum1);
+	void On_Talk_Character_Captured();
 	void OnBegin();
 	void OnCanceled();
+	void OnCustomEvent(const class FName& CustomEventName, const struct FPalNPCTalkSystemCustomFunctionParameters& Parameter);
+	void OnDamageReaction(const struct FPalDamageRactionInfo& DamageReactionInfo);
 	void OnEnd();
 	void OnForceStop();
 	void OnGenerated();
@@ -81,7 +87,6 @@ public:
 	void OnRegisteredPalShopEvent();
 	void OnShopUIClosed(class UPalHUDDispatchParameterBase* Param);
 	void OnTalkCharacterBattleModeChanged(bool IsBattle);
-	void OnTalkCharacterCaptured();
 	void OnTalkCharacterDead(const struct FPalDeadInfo& Info);
 	void OnTalkUIClosed(class UPalHUDDispatchParameterBase* Param);
 	void OpenItemShop_AsyncLoadAsset(class UPalHUDDispatchParameterBase* HUDParam);
@@ -115,7 +120,7 @@ public:
 	}
 };
 static_assert(alignof(UBP_PalIncidentNPCTalk_C) == 0x000010, "Wrong alignment on UBP_PalIncidentNPCTalk_C");
-static_assert(sizeof(UBP_PalIncidentNPCTalk_C) == 0x000210, "Wrong size on UBP_PalIncidentNPCTalk_C");
+static_assert(sizeof(UBP_PalIncidentNPCTalk_C) == 0x000220, "Wrong size on UBP_PalIncidentNPCTalk_C");
 static_assert(offsetof(UBP_PalIncidentNPCTalk_C, UberGraphFrame) == 0x000160, "Member 'UBP_PalIncidentNPCTalk_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UBP_PalIncidentNPCTalk_C, TalkData) == 0x000168, "Member 'UBP_PalIncidentNPCTalk_C::TalkData' has a wrong offset!");
 static_assert(offsetof(UBP_PalIncidentNPCTalk_C, ShopID) == 0x000170, "Member 'UBP_PalIncidentNPCTalk_C::ShopID' has a wrong offset!");
@@ -134,6 +139,7 @@ static_assert(offsetof(UBP_PalIncidentNPCTalk_C, OpenPalShopTabType) == 0x0001D1
 static_assert(offsetof(UBP_PalIncidentNPCTalk_C, TalkUIID) == 0x0001D4, "Member 'UBP_PalIncidentNPCTalk_C::TalkUIID' has a wrong offset!");
 static_assert(offsetof(UBP_PalIncidentNPCTalk_C, ItemShopUIID) == 0x0001E4, "Member 'UBP_PalIncidentNPCTalk_C::ItemShopUIID' has a wrong offset!");
 static_assert(offsetof(UBP_PalIncidentNPCTalk_C, PalShopUIID) == 0x0001F4, "Member 'UBP_PalIncidentNPCTalk_C::PalShopUIID' has a wrong offset!");
+static_assert(offsetof(UBP_PalIncidentNPCTalk_C, CustomFunctionNames) == 0x000208, "Member 'UBP_PalIncidentNPCTalk_C::CustomFunctionNames' has a wrong offset!");
 
 }
 

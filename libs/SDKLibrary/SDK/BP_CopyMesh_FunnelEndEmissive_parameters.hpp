@@ -24,7 +24,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3719[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4AB9[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class USceneComponent*>                CallFunc_GetAllMesh_OutComponent;                  // 0x0008(0x0010)(ReferenceParm, ContainsInstancedReference)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -33,11 +33,11 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_371A[0x2];                                     // 0x0036(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4ABA[0x2];                                     // 0x0036(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue_1;  // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue_2;  // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_371B[0x2];                                     // 0x003E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4ABB[0x2];                                     // 0x003E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_FClamp_ReturnValue;                       // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -45,11 +45,11 @@ public:
 	double                                        CallFunc_FClamp_ReturnValue_1;                     // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Lerp_ReturnValue;                         // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_371C[0x4];                                     // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4ABC[0x4];                                     // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Add_DoubleDouble_ReturnValue_1;           // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_371D[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4ABD[0x4];                                     // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Add_DoubleDouble_B_ImplicitCast;          // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -83,19 +83,17 @@ static_assert(offsetof(BP_CopyMesh_FunnelEndEmissive_C_ExecuteUbergraph_BP_CopyM
 static_assert(offsetof(BP_CopyMesh_FunnelEndEmissive_C_ExecuteUbergraph_BP_CopyMesh_FunnelEndEmissive, CallFunc_Add_DoubleDouble_B_ImplicitCast) == 0x000098, "Member 'BP_CopyMesh_FunnelEndEmissive_C_ExecuteUbergraph_BP_CopyMesh_FunnelEndEmissive::CallFunc_Add_DoubleDouble_B_ImplicitCast' has a wrong offset!");
 
 // Function BP_CopyMesh_FunnelEndEmissive.BP_CopyMesh_FunnelEndEmissive_C.PlayPalReturnSound
-// 0x0028 (0x0028 - 0x0000)
+// 0x0014 (0x0014 - 0x0000)
 struct BP_CopyMesh_FunnelEndEmissive_C_PlayPalReturnSound final
 {
 public:
-	TArray<struct FAkExternalSourceInfo>          Temp_struct_Variable;                              // 0x0000(0x0010)(ConstParm, ReferenceParm)
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable;                            // 0x0010(0x0010)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable;                            // 0x0000(0x0010)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CopyMesh_FunnelEndEmissive_C_PlayPalReturnSound) == 0x000008, "Wrong alignment on BP_CopyMesh_FunnelEndEmissive_C_PlayPalReturnSound");
-static_assert(sizeof(BP_CopyMesh_FunnelEndEmissive_C_PlayPalReturnSound) == 0x000028, "Wrong size on BP_CopyMesh_FunnelEndEmissive_C_PlayPalReturnSound");
-static_assert(offsetof(BP_CopyMesh_FunnelEndEmissive_C_PlayPalReturnSound, Temp_struct_Variable) == 0x000000, "Member 'BP_CopyMesh_FunnelEndEmissive_C_PlayPalReturnSound::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CopyMesh_FunnelEndEmissive_C_PlayPalReturnSound, Temp_delegate_Variable) == 0x000010, "Member 'BP_CopyMesh_FunnelEndEmissive_C_PlayPalReturnSound::Temp_delegate_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CopyMesh_FunnelEndEmissive_C_PlayPalReturnSound, CallFunc_PostEvent_ReturnValue) == 0x000020, "Member 'BP_CopyMesh_FunnelEndEmissive_C_PlayPalReturnSound::CallFunc_PostEvent_ReturnValue' has a wrong offset!");
+static_assert(alignof(BP_CopyMesh_FunnelEndEmissive_C_PlayPalReturnSound) == 0x000004, "Wrong alignment on BP_CopyMesh_FunnelEndEmissive_C_PlayPalReturnSound");
+static_assert(sizeof(BP_CopyMesh_FunnelEndEmissive_C_PlayPalReturnSound) == 0x000014, "Wrong size on BP_CopyMesh_FunnelEndEmissive_C_PlayPalReturnSound");
+static_assert(offsetof(BP_CopyMesh_FunnelEndEmissive_C_PlayPalReturnSound, Temp_delegate_Variable) == 0x000000, "Member 'BP_CopyMesh_FunnelEndEmissive_C_PlayPalReturnSound::Temp_delegate_Variable' has a wrong offset!");
+static_assert(offsetof(BP_CopyMesh_FunnelEndEmissive_C_PlayPalReturnSound, CallFunc_PostEvent_ReturnValue) == 0x000010, "Member 'BP_CopyMesh_FunnelEndEmissive_C_PlayPalReturnSound::CallFunc_PostEvent_ReturnValue' has a wrong offset!");
 
 // Function BP_CopyMesh_FunnelEndEmissive.BP_CopyMesh_FunnelEndEmissive_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -117,12 +115,12 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_371E[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4ABE[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UMaterialInstanceDynamic*>       CallFunc_GetMainMeshMaterials_ReturnValue;         // 0x0018(0x0010)(ReferenceParm)
 	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_371F[0x3];                                     // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4ABF[0x3];                                     // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_CopyMesh_FunnelEndEmissive_C_SetEmission) == 0x000008, "Wrong alignment on BP_CopyMesh_FunnelEndEmissive_C_SetEmission");
@@ -146,12 +144,12 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3720[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4AC0[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UMaterialInstanceDynamic*>       CallFunc_GetMainMeshMaterials_ReturnValue;         // 0x0018(0x0010)(ReferenceParm)
 	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3721[0x3];                                     // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4AC1[0x3];                                     // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_CopyMesh_FunnelEndEmissive_C_SetFade) == 0x000008, "Wrong alignment on BP_CopyMesh_FunnelEndEmissive_C_SetFade");

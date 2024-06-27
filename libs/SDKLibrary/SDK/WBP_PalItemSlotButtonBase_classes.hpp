@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_PalItemSlotButtonBase.WBP_PalItemSlotButtonBase_C
-// 0x0160 (0x0568 - 0x0408)
+// 0x0170 (0x0578 - 0x0408)
 class UWBP_PalItemSlotButtonBase_C : public UPalUserWidget
 {
 public:
@@ -37,28 +37,30 @@ public:
 	FMulticastInlineDelegateProperty_             OnDropped;                                         // 0x04A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnDropCanceled;                                    // 0x04B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          IsEnableDragDrop;                                  // 0x04C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FAE[0x7];                                     // 0x04C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B94[0x7];                                     // 0x04C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnLiftedButton;                                    // 0x04C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnFinishLiftedButton;                              // 0x04D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          IsDisplayingItemInfo;                              // 0x04E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsDisplayCommonItemInfoWindow;                     // 0x04E9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FAF[0x6];                                     // 0x04EA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B95[0x6];                                     // 0x04EA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnSetEmptySlot;                                    // 0x04F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnSetValidSlot;                                    // 0x0500(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          IsEnableSpreadLift;                                // 0x0510(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsUsableSlot;                                      // 0x0511(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FB0[0x2];                                     // 0x0512(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B96[0x2];                                     // 0x0512(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalDataTableRowName_UIInputAction     HalfLiftAction_ForPad;                             // 0x0514(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FPalDataTableRowName_UIInputAction     UseAction_ForPad;                                  // 0x051C(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FPalUIActionBindData                   HalfLiftActionHandle_ForPad;                       // 0x0524(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	struct FPalUIActionBindData                   UseActionHandle_ForPad;                            // 0x0528(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	bool                                          IsSupportedQuickMove;                              // 0x052C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsEnableQuickEquip;                                // 0x052D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FB1[0x2];                                     // 0x052E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B97[0x2];                                     // 0x052E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnNotifyDurability;                                // 0x0530(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnCorruptionUpdate;                                // 0x0540(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnRequestUseItem;                                  // 0x0550(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          IsShowPrice;                                       // 0x0560(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4B98[0x7];                                     // 0x0561(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             OnTriedEquipSlot;                                  // 0x0568(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void Bind_Button_Events();
@@ -92,7 +94,7 @@ public:
 	void OnLiftedButton__DelegateSignature(int32 LiftNum, class UWBP_PalItemSlotButtonBase_C* Widget);
 	void OnLiftedButton_Internal(int32 LiftedItemNum);
 	void OnMiddleClicked_Internal();
-	void OnMiddleClickedButton__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
+	void OnMiddleClickedButton__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* buttonBase);
 	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	void OnNotifyDurability__DelegateSignature(double MaxDurability, double NowDurability, class UWBP_PalItemSlotButtonBase_C* SelfWidget);
@@ -100,11 +102,12 @@ public:
 	struct FEventReply OnPreviewMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	void OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent);
 	void OnRequestUseItem__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Button);
-	void OnRightClickedButton__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
+	void OnRightClickedButton__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* buttonBase, EPalItemSlotPressType PressType);
 	void OnSetEmpty_internal();
 	void OnSetEmptySlot__DelegateSignature();
 	void OnSetValid_Internal();
 	void OnSetValidSlot__DelegateSignature();
+	void OnTriedEquipSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Widget);
 	void OnUnFocusedWidget__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Widget);
 	void OnUnhovered_Internal(class UCommonButtonBase* Button);
 	void OnUnhoveredButton__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Widget);
@@ -128,7 +131,7 @@ public:
 	}
 };
 static_assert(alignof(UWBP_PalItemSlotButtonBase_C) == 0x000008, "Wrong alignment on UWBP_PalItemSlotButtonBase_C");
-static_assert(sizeof(UWBP_PalItemSlotButtonBase_C) == 0x000568, "Wrong size on UWBP_PalItemSlotButtonBase_C");
+static_assert(sizeof(UWBP_PalItemSlotButtonBase_C) == 0x000578, "Wrong size on UWBP_PalItemSlotButtonBase_C");
 static_assert(offsetof(UWBP_PalItemSlotButtonBase_C, UberGraphFrame) == 0x000408, "Member 'UWBP_PalItemSlotButtonBase_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_PalItemSlotButtonBase_C, My_Button) == 0x000410, "Member 'UWBP_PalItemSlotButtonBase_C::My_Button' has a wrong offset!");
 static_assert(offsetof(UWBP_PalItemSlotButtonBase_C, MyItemSlotWidget) == 0x000418, "Member 'UWBP_PalItemSlotButtonBase_C::MyItemSlotWidget' has a wrong offset!");
@@ -161,6 +164,7 @@ static_assert(offsetof(UWBP_PalItemSlotButtonBase_C, OnNotifyDurability) == 0x00
 static_assert(offsetof(UWBP_PalItemSlotButtonBase_C, OnCorruptionUpdate) == 0x000540, "Member 'UWBP_PalItemSlotButtonBase_C::OnCorruptionUpdate' has a wrong offset!");
 static_assert(offsetof(UWBP_PalItemSlotButtonBase_C, OnRequestUseItem) == 0x000550, "Member 'UWBP_PalItemSlotButtonBase_C::OnRequestUseItem' has a wrong offset!");
 static_assert(offsetof(UWBP_PalItemSlotButtonBase_C, IsShowPrice) == 0x000560, "Member 'UWBP_PalItemSlotButtonBase_C::IsShowPrice' has a wrong offset!");
+static_assert(offsetof(UWBP_PalItemSlotButtonBase_C, OnTriedEquipSlot) == 0x000568, "Member 'UWBP_PalItemSlotButtonBase_C::OnTriedEquipSlot' has a wrong offset!");
 
 }
 

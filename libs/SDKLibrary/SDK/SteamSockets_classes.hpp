@@ -21,7 +21,7 @@ namespace SDK
 class USteamSocketsNetConnection final : public UNetConnection
 {
 public:
-	uint8                                         Pad_171F[0x18];                                    // 0x3308(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1725[0x18];                                    // 0x3308(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -41,7 +41,7 @@ static_assert(sizeof(USteamSocketsNetConnection) == 0x003320, "Wrong size on USt
 class USteamSocketsNetDriver final : public UNetDriver
 {
 public:
-	uint8                                         Pad_1720[0x10];                                    // 0x0790(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1726[0x10];                                    // 0x0790(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "EWildPalAIMoveMode_structs.hpp"
-#include "AIModule_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "BP_AIAction_CanCombatBase_classes.hpp"
 #include "Engine_structs.hpp"
-#include "EWildPalAIRestType_structs.hpp"
 #include "Pal_structs.hpp"
+#include "AIModule_structs.hpp"
+#include "EWildPalAIRestType_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "EWildPalAIMoveMode_structs.hpp"
+#include "BP_AIAction_CanCombatBase_classes.hpp"
 
 
 namespace SDK
@@ -31,29 +31,29 @@ public:
 	struct FVector                                SpawnedPosition;                                   // 0x0160(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                GoalPosition;                                      // 0x0178(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          InitEnd;                                           // 0x0190(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E1B[0x7];                                     // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4018[0x7];                                     // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                PrePos;                                            // 0x0198(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                           StackTimerHandle;                                  // 0x01B0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                SpawnerLocation;                                   // 0x01B8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        WalkingTimer;                                      // 0x01D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        TempDeltaTime;                                     // 0x01D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          RestMode;                                          // 0x01E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E1C[0x7];                                     // 0x01E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4019[0x7];                                     // 0x01E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        FollowRandomDistance;                              // 0x01E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                           StateUpdateTimerHandle;                            // 0x01F0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                RestStartPosition;                                 // 0x01F8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EWildPalAIMoveMode                            MoveMode;                                          // 0x0210(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EWildPalAIRestType                            RestType;                                          // 0x0211(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E1D[0x6];                                     // 0x0212(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_401A[0x6];                                     // 0x0212(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        WalkingRadius;                                     // 0x0218(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsGroupBehavior;                                   // 0x0220(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsCancelThisAIAction;                              // 0x0221(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsTickStop;                                        // 0x0222(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E1E[0x5];                                     // 0x0223(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_401B[0x5];                                     // 0x0223(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           TickStopTimer;                                     // 0x0228(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                           DrinkWaterTimerHandle;                             // 0x0230(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          DrinkWaterCheckFlag;                               // 0x0238(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E1F[0x7];                                     // 0x0239(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_401C[0x7];                                     // 0x0239(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CurrentTarget;                                     // 0x0240(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	EPalAIResponseType                            CurrentResponse;                                   // 0x0248(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsSleep;                                           // 0x0249(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -61,7 +61,10 @@ public:
 public:
 	void ActionAbort(class APawn* ControlledPawn);
 	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
+	void ActionPause(class APawn* ControlledPawn);
 	void ActionPostTick(class APawn* ControlledPawn, float DeltaSeconds);
+	void ActionResume(class APawn* ControlledPawn);
+	void ActionStart(class APawn* ControlledPawn);
 	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void ActionTickAnyThread(class APawn* ControlledPawn, float DeltaSeconds);
 	void ChangeNextMovePosition(double Radius, const struct FVector& CenterPos);
@@ -84,12 +87,9 @@ public:
 	void RestModeUpdate(bool Nest);
 	void RestModeWalk();
 	void SetDrinkWaterFlag();
+	void SoundEvent(const struct FVector& EmitLocation);
 	void StateUpdate();
 	void _________Stack();
-	void ActionPause(class APawn* ControlledPawn);
-	void ActionResume(class APawn* ControlledPawn);
-	void ActionStart(class APawn* ControlledPawn);
-	void SoundEvent(const struct FVector& EmitLocation);
 
 public:
 	static class UClass* StaticClass()

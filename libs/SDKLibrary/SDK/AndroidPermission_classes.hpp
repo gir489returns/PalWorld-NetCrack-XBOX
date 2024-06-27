@@ -23,7 +23,7 @@ class UAndroidPermissionCallbackProxy final : public UObject
 {
 public:
 	FMulticastInlineDelegateProperty_             OnPermissionsGrantedDynamicDelegate;               // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2430[0x18];                                    // 0x0038(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24DD[0x18];                                    // 0x0038(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

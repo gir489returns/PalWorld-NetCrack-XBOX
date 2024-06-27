@@ -65,6 +65,34 @@ void UBP_Action_RaidBossModeChange_C::ExecuteUbergraph_BP_Action_RaidBossModeCha
 }
 
 
+// Function BP_Action_RaidBossModeChange.BP_Action_RaidBossModeChange_C.FindModeChangeVisualEffectType
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// EPalElementType                         Element                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalVisualEffectID                      VisualEffect                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TSoftClassPtr<class UClass>             Value                                                  (Parm, OutParm, UObjectWrapper, HasGetValueTypeHash)
+
+void UBP_Action_RaidBossModeChange_C::FindModeChangeVisualEffectType(EPalElementType Element, EPalVisualEffectID* VisualEffect, TSoftClassPtr<class UClass>* Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Action_RaidBossModeChange_C", "FindModeChangeVisualEffectType");
+
+	Params::BP_Action_RaidBossModeChange_C_FindModeChangeVisualEffectType Parms{};
+
+	Parms.Element = Element;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (VisualEffect != nullptr)
+		*VisualEffect = Parms.VisualEffect;
+
+	if (Value != nullptr)
+		*Value = Parms.Value;
+}
+
+
 // Function BP_Action_RaidBossModeChange.BP_Action_RaidBossModeChange_C.FindMontage
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:

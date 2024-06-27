@@ -21,7 +21,7 @@ struct FFPalRequestItemLotteryDataTableRow final
 public:
 	class FName                                   ItemName_2_BD5693AE46A268A165B9F0A534652D84;       // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ItemNum_28_5D424FC741B30676B343719C44549878;       // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_375E[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3AB8[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Weight_8_F7EB66974C769D7AA8EA0B99E234AE6B;         // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(FFPalRequestItemLotteryDataTableRow) == 0x000008, "Wrong alignment on FFPalRequestItemLotteryDataTableRow");

@@ -171,6 +171,20 @@ void UWBP_PalCommonCharacterSlot_C::On_Set_Rarity_Binded(bool IsBoss, bool IsRar
 }
 
 
+// Function WBP_PalCommonCharacterSlot.WBP_PalCommonCharacterSlot_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PalCommonCharacterSlot_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCommonCharacterSlot_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_PalCommonCharacterSlot.WBP_PalCommonCharacterSlot_C.OnNotifyBattleModeChanged_Binded
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -295,6 +309,20 @@ void UWBP_PalCommonCharacterSlot_C::OnTargetCharcaterEndSleep()
 }
 
 
+// Function WBP_PalCommonCharacterSlot.WBP_PalCommonCharacterSlot_C.OnUpdateFavorite_Binded
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalCommonCharacterSlot_C::OnUpdateFavorite_Binded()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCommonCharacterSlot_C", "OnUpdateFavorite_Binded");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_PalCommonCharacterSlot.WBP_PalCommonCharacterSlot_C.OnUpdateHP_Binded
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -354,20 +382,6 @@ void UWBP_PalCommonCharacterSlot_C::OnUpdateSlot_Binded(class UPalIndividualChar
 	Parms.Param_TargetSlot = Param_TargetSlot;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalCommonCharacterSlot.WBP_PalCommonCharacterSlot_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalCommonCharacterSlot_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCommonCharacterSlot_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

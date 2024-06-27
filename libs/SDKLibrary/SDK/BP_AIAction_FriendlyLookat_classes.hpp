@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "BP_AIAction_CanCombatBase_classes.hpp"
 #include "Engine_structs.hpp"
+#include "BP_AIAction_CanCombatBase_classes.hpp"
 #include "AIModule_structs.hpp"
 
 
@@ -32,9 +32,9 @@ public:
 
 public:
 	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
+	void ActionStart(class APawn* ControlledPawn);
 	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void ExecuteUbergraph_BP_AIAction_FriendlyLookat(int32 EntryPoint);
-	void ActionStart(class APawn* ControlledPawn);
 
 public:
 	static class UClass* StaticClass()

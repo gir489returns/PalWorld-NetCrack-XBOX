@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_classes.hpp"
-#include "CoreUObject_classes.hpp"
 #include "LocationServicesBPLibrary_structs.hpp"
+#include "CoreUObject_classes.hpp"
 
 
 namespace SDK

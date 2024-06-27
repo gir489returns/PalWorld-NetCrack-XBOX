@@ -215,19 +215,19 @@ void UWBP_PalPlayerInframeRender_C::RegisterEvent()
 }
 
 
-// Function WBP_PalPlayerInframeRender.WBP_PalPlayerInframeRender_C.RequestCaptureByMakeInfo
+// Function WBP_PalPlayerInframeRender.WBP_PalPlayerInframeRender_C.Request Capture by Make Info
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPalPlayerDataCharacterMakeInfo  MakeInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FPalPlayerDataCharacterMakeInfo  MakeInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_PalPlayerInframeRender_C::RequestCaptureByMakeInfo(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo)
+void UWBP_PalPlayerInframeRender_C::Request_Capture_by_Make_Info(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalPlayerInframeRender_C", "RequestCaptureByMakeInfo");
+		Func = Class->GetFunction("WBP_PalPlayerInframeRender_C", "Request Capture by Make Info");
 
-	Params::WBP_PalPlayerInframeRender_C_RequestCaptureByMakeInfo Parms{};
+	Params::WBP_PalPlayerInframeRender_C_Request_Capture_by_Make_Info Parms{};
 
 	Parms.MakeInfo = std::move(MakeInfo);
 

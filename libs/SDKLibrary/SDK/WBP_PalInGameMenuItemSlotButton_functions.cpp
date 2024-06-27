@@ -329,6 +329,48 @@ void UWBP_PalInGameMenuItemSlotButton_C::OnUnhoveredEvent(class UWBP_PalItemSlot
 }
 
 
+// Function WBP_PalInGameMenuItemSlotButton.WBP_PalInGameMenuItemSlotButton_C.RegisterButton
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalInGameMenuItemSlotButton_C::RegisterButton(class UCommonButtonBase** Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalInGameMenuItemSlotButton_C", "RegisterButton");
+
+	Params::WBP_PalInGameMenuItemSlotButton_C_RegisterButton Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Button != nullptr)
+		*Button = Parms.Button;
+}
+
+
+// Function WBP_PalInGameMenuItemSlotButton.WBP_PalInGameMenuItemSlotButton_C.RegisterItemSlotWidget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_PalItemSlotBase_C*           ItemSlotWidget                                         (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalInGameMenuItemSlotButton_C::RegisterItemSlotWidget(class UWBP_PalItemSlotBase_C** ItemSlotWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalInGameMenuItemSlotButton_C", "RegisterItemSlotWidget");
+
+	Params::WBP_PalInGameMenuItemSlotButton_C_RegisterItemSlotWidget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ItemSlotWidget != nullptr)
+		*ItemSlotWidget = Parms.ItemSlotWidget;
+}
+
+
 // Function WBP_PalInGameMenuItemSlotButton.WBP_PalInGameMenuItemSlotButton_C.SetEnableDefaultClickSound
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -420,48 +462,6 @@ void UWBP_PalInGameMenuItemSlotButton_C::ToggleLock(bool Lock)
 	Parms.Lock = Lock;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalInGameMenuItemSlotButton.WBP_PalInGameMenuItemSlotButton_C.RegisterButton
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalInGameMenuItemSlotButton_C::RegisterButton(class UCommonButtonBase** Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalInGameMenuItemSlotButton_C", "RegisterButton");
-
-	Params::WBP_PalInGameMenuItemSlotButton_C_RegisterButton Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Button != nullptr)
-		*Button = Parms.Button;
-}
-
-
-// Function WBP_PalInGameMenuItemSlotButton.WBP_PalInGameMenuItemSlotButton_C.RegisterItemSlotWidget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_PalItemSlotBase_C*           ItemSlotWidget                                         (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalInGameMenuItemSlotButton_C::RegisterItemSlotWidget(class UWBP_PalItemSlotBase_C** ItemSlotWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalInGameMenuItemSlotButton_C", "RegisterItemSlotWidget");
-
-	Params::WBP_PalInGameMenuItemSlotButton_C_RegisterItemSlotWidget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ItemSlotWidget != nullptr)
-		*ItemSlotWidget = Parms.ItemSlotWidget;
 }
 
 }

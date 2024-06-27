@@ -11,9 +11,10 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
+#include "Pal_structs.hpp"
+#include "AkAudio_structs.hpp"
 #include "Engine_structs.hpp"
 #include "PhysicsCore_structs.hpp"
-#include "Pal_structs.hpp"
 
 
 namespace SDK::Params
@@ -25,7 +26,7 @@ struct BP_AnimNotify_FootStep_C_Create_Foot_Step_Effect final
 {
 public:
 	class AActor*                                 OwnerActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39BC[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FF8[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             FootTransform;                                     // 0x0010(0x0060)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalCharacterMovementComponent*         Movement;                                          // 0x0070(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UPalStaticCharacterParameterComponent*  CallFunc_GetComponentByClass_ReturnValue;          // 0x0078(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -39,7 +40,7 @@ public:
 	class UPalDebugSetting*                       CallFunc_GetPalDebugSetting_ReturnValue;           // 0x0118(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsSteppingShallows_NewParam;              // 0x0121(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39BD[0x6];                                     // 0x0122(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FF9[0x6];                                     // 0x0122(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue_2;        // 0x0128(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPhysicalSurface                              CallFunc_GetFloorPhisicalSurface_ReturnValue;      // 0x0131(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -72,12 +73,12 @@ struct BP_AnimNotify_FootStep_C_CreateEffect final
 {
 public:
 	class AActor*                                 Owner;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39BE[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FFA[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             FootTransform;                                     // 0x0010(0x0060)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPalLandingType                               NewParam;                                          // 0x0070(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPhysicalSurface                              PhysicalSurface;                                   // 0x0071(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39BF[0x5];                                     // 0x0073(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FFB[0x5];                                     // 0x0073(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0078(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0090(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x00A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -101,20 +102,20 @@ struct BP_AnimNotify_FootStep_C_CreateFootstepDecal final
 {
 public:
 	class AActor*                                 Owner;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39C0[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FFC[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             FootTransform;                                     // 0x0010(0x0060)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 NewLocalVar_0;                                     // 0x0070(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x0078(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39C1[0x7];                                     // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FFD[0x7];                                     // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             CallFunc_GetFloorPosition_HitResult;               // 0x0088(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_GetFloorPosition_ReturnValue;             // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0171(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0172(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39C2[0x1];                                     // 0x0173(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FFE[0x1];                                     // 0x0173(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakHitResult_Time;                      // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39C3[0x4];                                     // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FFF[0x4];                                     // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0180(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0198(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x01B0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -127,7 +128,7 @@ public:
 	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x020C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39C4[0x4];                                     // 0x0214(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4000[0x4];                                     // 0x0214(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0218(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0230(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPhysicalSurface                              CallFunc_GetFloorPhisicalSurface_ReturnValue;      // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -170,7 +171,7 @@ struct BP_AnimNotify_FootStep_C_Get_Foot_Transform final
 public:
 	class AActor*                                 Owner;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EPalFootType                                  Param_FootType;                                    // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39C5[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4001[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             NewTransform;                                      // 0x0010(0x0060)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalFootIKComponent*                    FootIK;                                            // 0x0070(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UPalCharacterMovementComponent*         Movement;                                          // 0x0078(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -180,9 +181,9 @@ public:
 	struct FFootIKSetting                         CallFunc_Map_Find_Value;                           // 0x00A8(0x0014)(NoDestructor)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39C6[0x2];                                     // 0x00BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4002[0x2];                                     // 0x00BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x00C0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39C7[0x8];                                     // 0x00D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4003[0x8];                                     // 0x00D8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x00E0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_AnimNotify_FootStep_C_Get_Foot_Transform) == 0x000010, "Wrong alignment on BP_AnimNotify_FootStep_C_Get_Foot_Transform");
@@ -209,7 +210,7 @@ public:
 	class AActor*                                 Owner;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          Param_IsFootStepRun;                               // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39C8[0x6];                                     // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4004[0x6];                                     // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsCrouching_ReturnValue;                  // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -231,7 +232,7 @@ struct BP_AnimNotify_FootStep_C_IsPlaySound final
 {
 public:
 	bool                                          PlaySound;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39C9[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4005[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalDebugSetting*                       CallFunc_GetPalDebugSetting_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -248,16 +249,16 @@ struct BP_AnimNotify_FootStep_C_IsSteppingShallows final
 public:
 	class AActor*                                 OwnerActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          NewParam;                                          // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39CA[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4006[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsEnteredWater_ReturnValue;               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39CB[0x1];                                     // 0x001B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4007[0x1];                                     // 0x001B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetInWaterRate_ReturnValue;               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_DoubleDouble_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39CC[0x6];                                     // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4008[0x6];                                     // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Less_DoubleDouble_A_ImplicitCast;         // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_AnimNotify_FootStep_C_IsSteppingShallows) == 0x000008, "Wrong alignment on BP_AnimNotify_FootStep_C_IsSteppingShallows");
@@ -272,6 +273,28 @@ static_assert(offsetof(BP_AnimNotify_FootStep_C_IsSteppingShallows, CallFunc_Get
 static_assert(offsetof(BP_AnimNotify_FootStep_C_IsSteppingShallows, CallFunc_Less_DoubleDouble_ReturnValue) == 0x000020, "Member 'BP_AnimNotify_FootStep_C_IsSteppingShallows::CallFunc_Less_DoubleDouble_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_AnimNotify_FootStep_C_IsSteppingShallows, CallFunc_BooleanAND_ReturnValue) == 0x000021, "Member 'BP_AnimNotify_FootStep_C_IsSteppingShallows::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_AnimNotify_FootStep_C_IsSteppingShallows, CallFunc_Less_DoubleDouble_A_ImplicitCast) == 0x000028, "Member 'BP_AnimNotify_FootStep_C_IsSteppingShallows::CallFunc_Less_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+
+// Function BP_AnimNotify_FootStep.BP_AnimNotify_FootStep_C.IsSwimming
+// 0x0020 (0x0020 - 0x0000)
+struct BP_AnimNotify_FootStep_C_IsSwimming final
+{
+public:
+	class AActor*                                 Owner;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Param_IsSwimming;                                  // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4009[0x6];                                     // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsSwimming_ReturnValue;                   // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimNotify_FootStep_C_IsSwimming) == 0x000008, "Wrong alignment on BP_AnimNotify_FootStep_C_IsSwimming");
+static_assert(sizeof(BP_AnimNotify_FootStep_C_IsSwimming) == 0x000020, "Wrong size on BP_AnimNotify_FootStep_C_IsSwimming");
+static_assert(offsetof(BP_AnimNotify_FootStep_C_IsSwimming, Owner) == 0x000000, "Member 'BP_AnimNotify_FootStep_C_IsSwimming::Owner' has a wrong offset!");
+static_assert(offsetof(BP_AnimNotify_FootStep_C_IsSwimming, Param_IsSwimming) == 0x000008, "Member 'BP_AnimNotify_FootStep_C_IsSwimming::Param_IsSwimming' has a wrong offset!");
+static_assert(offsetof(BP_AnimNotify_FootStep_C_IsSwimming, CallFunc_IsValid_ReturnValue) == 0x000009, "Member 'BP_AnimNotify_FootStep_C_IsSwimming::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AnimNotify_FootStep_C_IsSwimming, CallFunc_GetComponentByClass_ReturnValue) == 0x000010, "Member 'BP_AnimNotify_FootStep_C_IsSwimming::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AnimNotify_FootStep_C_IsSwimming, CallFunc_IsSwimming_ReturnValue) == 0x000018, "Member 'BP_AnimNotify_FootStep_C_IsSwimming::CallFunc_IsSwimming_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AnimNotify_FootStep_C_IsSwimming, CallFunc_IsValid_ReturnValue_1) == 0x000019, "Member 'BP_AnimNotify_FootStep_C_IsSwimming::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 
 // Function BP_AnimNotify_FootStep.BP_AnimNotify_FootStep_C.MakeSwitchStatePalSize
 // 0x0028 (0x0028 - 0x0000)
@@ -298,10 +321,10 @@ public:
 	class APalMonsterCharacter*                   K2Node_DynamicCast_AsPal_Monster_Character;        // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsEditorPreviewActor_ReturnValue;         // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39CD[0x6];                                     // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_400A[0x6];                                     // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_MakeSwitchStatePalSize_PalSize;           // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39CE[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_400B[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalSoundOptions                       K2Node_MakeStruct_PalSoundOptions;                 // 0x0034(0x0004)(NoDestructor)
 	struct FPalSoundOptions                       K2Node_MakeStruct_PalSoundOptions_1;               // 0x0038(0x0004)(NoDestructor)
 	bool                                          CallFunc_IsPlaySound_PlaySound;                    // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -320,23 +343,30 @@ static_assert(offsetof(BP_AnimNotify_FootStep_C_PlaySound, K2Node_MakeStruct_Pal
 static_assert(offsetof(BP_AnimNotify_FootStep_C_PlaySound, CallFunc_IsPlaySound_PlaySound) == 0x00003C, "Member 'BP_AnimNotify_FootStep_C_PlaySound::CallFunc_IsPlaySound_PlaySound' has a wrong offset!");
 
 // Function BP_AnimNotify_FootStep.BP_AnimNotify_FootStep_C.PlayStepSound
-// 0x0028 (0x0028 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct BP_AnimNotify_FootStep_C_PlayStepSound final
 {
 public:
 	class AActor*                                 Owner;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FPalDataTableRowName_SoundID           SoundId;                                           // 0x0008(0x0008)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
-	struct FPalDataTableRowName_SoundID           K2Node_MakeStruct_PalDataTableRowName_SoundID;     // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
-	struct FPalDataTableRowName_SoundID           K2Node_MakeStruct_PalDataTableRowName_SoundID_1;   // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsFootStepRun_IsFootStepRun;              // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsSwimming_IsSwimming;                    // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_400C[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable;                            // 0x0014(0x0010)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_SoundID           K2Node_MakeStruct_PalDataTableRowName_SoundID;     // 0x0024(0x0008)(NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_SoundID           K2Node_MakeStruct_PalDataTableRowName_SoundID_1;   // 0x0030(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsFootStepRun_IsFootStepRun;              // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_AnimNotify_FootStep_C_PlayStepSound) == 0x000008, "Wrong alignment on BP_AnimNotify_FootStep_C_PlayStepSound");
-static_assert(sizeof(BP_AnimNotify_FootStep_C_PlayStepSound) == 0x000028, "Wrong size on BP_AnimNotify_FootStep_C_PlayStepSound");
+static_assert(sizeof(BP_AnimNotify_FootStep_C_PlayStepSound) == 0x000040, "Wrong size on BP_AnimNotify_FootStep_C_PlayStepSound");
 static_assert(offsetof(BP_AnimNotify_FootStep_C_PlayStepSound, Owner) == 0x000000, "Member 'BP_AnimNotify_FootStep_C_PlayStepSound::Owner' has a wrong offset!");
 static_assert(offsetof(BP_AnimNotify_FootStep_C_PlayStepSound, SoundId) == 0x000008, "Member 'BP_AnimNotify_FootStep_C_PlayStepSound::SoundId' has a wrong offset!");
-static_assert(offsetof(BP_AnimNotify_FootStep_C_PlayStepSound, K2Node_MakeStruct_PalDataTableRowName_SoundID) == 0x000010, "Member 'BP_AnimNotify_FootStep_C_PlayStepSound::K2Node_MakeStruct_PalDataTableRowName_SoundID' has a wrong offset!");
-static_assert(offsetof(BP_AnimNotify_FootStep_C_PlayStepSound, K2Node_MakeStruct_PalDataTableRowName_SoundID_1) == 0x000018, "Member 'BP_AnimNotify_FootStep_C_PlayStepSound::K2Node_MakeStruct_PalDataTableRowName_SoundID_1' has a wrong offset!");
-static_assert(offsetof(BP_AnimNotify_FootStep_C_PlayStepSound, CallFunc_IsFootStepRun_IsFootStepRun) == 0x000020, "Member 'BP_AnimNotify_FootStep_C_PlayStepSound::CallFunc_IsFootStepRun_IsFootStepRun' has a wrong offset!");
+static_assert(offsetof(BP_AnimNotify_FootStep_C_PlayStepSound, CallFunc_IsSwimming_IsSwimming) == 0x000010, "Member 'BP_AnimNotify_FootStep_C_PlayStepSound::CallFunc_IsSwimming_IsSwimming' has a wrong offset!");
+static_assert(offsetof(BP_AnimNotify_FootStep_C_PlayStepSound, Temp_delegate_Variable) == 0x000014, "Member 'BP_AnimNotify_FootStep_C_PlayStepSound::Temp_delegate_Variable' has a wrong offset!");
+static_assert(offsetof(BP_AnimNotify_FootStep_C_PlayStepSound, K2Node_MakeStruct_PalDataTableRowName_SoundID) == 0x000024, "Member 'BP_AnimNotify_FootStep_C_PlayStepSound::K2Node_MakeStruct_PalDataTableRowName_SoundID' has a wrong offset!");
+static_assert(offsetof(BP_AnimNotify_FootStep_C_PlayStepSound, CallFunc_PostEvent_ReturnValue) == 0x00002C, "Member 'BP_AnimNotify_FootStep_C_PlayStepSound::CallFunc_PostEvent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AnimNotify_FootStep_C_PlayStepSound, K2Node_MakeStruct_PalDataTableRowName_SoundID_1) == 0x000030, "Member 'BP_AnimNotify_FootStep_C_PlayStepSound::K2Node_MakeStruct_PalDataTableRowName_SoundID_1' has a wrong offset!");
+static_assert(offsetof(BP_AnimNotify_FootStep_C_PlayStepSound, CallFunc_IsFootStepRun_IsFootStepRun) == 0x000038, "Member 'BP_AnimNotify_FootStep_C_PlayStepSound::CallFunc_IsFootStepRun_IsFootStepRun' has a wrong offset!");
 
 // Function BP_AnimNotify_FootStep.BP_AnimNotify_FootStep_C.ProcFootStep
 // 0x00E0 (0x00E0 - 0x0000)
@@ -345,9 +375,9 @@ struct BP_AnimNotify_FootStep_C_ProcFootStep final
 public:
 	class AActor*                                 Owner;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EPalFootType                                  Param_FootType;                                    // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39CF[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_400D[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalDataTableRowName_SoundID           SoundId;                                           // 0x000C(0x0008)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39D0[0xC];                                     // 0x0014(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_400E[0xC];                                     // 0x0014(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             FootTransform;                                     // 0x0020(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTransform                             CallFunc_Get_Foot_Transform_NewTransform;          // 0x0080(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -366,7 +396,7 @@ struct BP_AnimNotify_FootStep_C_ProcJumpLanding final
 public:
 	class AActor*                                 Owner;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EPalFootType                                  Param_FootType;                                    // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39D1[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_400F[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 _Owner;                                            // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	struct FPalDataTableRowName_SoundID           K2Node_MakeStruct_PalDataTableRowName_SoundID;     // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
@@ -386,37 +416,37 @@ public:
 	class UAnimSequenceBase*                      Animation;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAnimNotifyEventReference              EventReference;                                    // 0x0010(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	bool                                          ReturnValue;                                       // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39D2[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4010[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Owner;                                             // 0x0040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39D3[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4011[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0050(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostEventAtLocation_ReturnValue;          // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39D4[0x4];                                     // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4012[0x4];                                     // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_FindOwnerActor_ReturnValue;               // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ACharacter*                             K2Node_DynamicCast_AsCharacter;                    // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDead_ReturnValue;                       // 0x008A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39D5[0x5];                                     // 0x008B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4013[0x5];                                     // 0x008B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPawnMovementComponent*                 CallFunc_GetMovementComponent_ReturnValue;         // 0x0090(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                K2Node_DynamicCast_AsAnimation_Editor_Preview_Actor; // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsFalling_ReturnValue;                    // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00A3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39D6[0x4];                                     // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4014[0x4];                                     // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue;          // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsRollStep_ReturnValue;                   // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsFalling_ReturnValue_1;                  // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39D7[0x4];                                     // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4015[0x4];                                     // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalDebugSetting*                       CallFunc_GetPalDebugSetting_ReturnValue;           // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue; // 0x00C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39D8[0x7];                                     // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4016[0x7];                                     // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x00D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x00E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsFootStep_ReturnValue;                   // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -466,7 +496,7 @@ public:
 	double                                        Y;                                                 // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        X;                                                 // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39D9[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4017[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0050(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -137,7 +137,7 @@ void UBP_HitEffectSlot_C::OnLoaded_D5A0C82B4BA3C329BE0E728CCA761919(class UObjec
 
 
 // Function BP_HitEffectSlot.BP_HitEffectSlot_C.PlayCameraShakeAndSoundEffect
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EPalWazaCategory                        Category                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           Attacker                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)

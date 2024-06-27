@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function AnimNotify_AkEvent.AnimNotify_AkEvent_C.Received_Notify
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
 // class USkeletalMeshComponent*           MeshComp                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UAnimSequenceBase*                Animation                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)

@@ -60,7 +60,7 @@ struct ReplicationGraphDebugActor_ServerSetCullDistanceForClass final
 public:
 	class UClass*                                 Param_Class;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CullDistance;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_191B[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1986[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ReplicationGraphDebugActor_ServerSetCullDistanceForClass) == 0x000008, "Wrong alignment on ReplicationGraphDebugActor_ServerSetCullDistanceForClass");
 static_assert(sizeof(ReplicationGraphDebugActor_ServerSetCullDistanceForClass) == 0x000010, "Wrong size on ReplicationGraphDebugActor_ServerSetCullDistanceForClass");
@@ -74,7 +74,7 @@ struct ReplicationGraphDebugActor_ServerSetPeriodFrameForClass final
 public:
 	class UClass*                                 Param_Class;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         PeriodFrame;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_191C[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1987[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ReplicationGraphDebugActor_ServerSetPeriodFrameForClass) == 0x000008, "Wrong alignment on ReplicationGraphDebugActor_ServerSetPeriodFrameForClass");
 static_assert(sizeof(ReplicationGraphDebugActor_ServerSetPeriodFrameForClass) == 0x000010, "Wrong size on ReplicationGraphDebugActor_ServerSetPeriodFrameForClass");

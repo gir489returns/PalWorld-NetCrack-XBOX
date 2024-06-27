@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "AnimGraphRuntime_structs.hpp"
 #include "CoreUObject_classes.hpp"
 
 
@@ -252,7 +252,7 @@ public:
 	FMulticastInlineDelegateProperty_             OnInterrupted;                                     // 0x0048(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnNotifyBegin;                                     // 0x0058(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnNotifyEnd;                                       // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3465[0x30];                                    // 0x0078(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_35FC[0x30];                                    // 0x0078(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UPlayMontageCallbackProxy* CreateProxyObjectForPlayMontage(class USkeletalMeshComponent* InSkeletalMeshComponent, class UAnimMontage* MontageToPlay, float PlayRate, float StartingPosition, class FName StartingSection);

@@ -17,19 +17,19 @@
 namespace SDK
 {
 
-// Function WBP_Option_HelpGuide.WBP_Option_HelpGuide_C.ChangeNoteContent
+// Function WBP_Option_HelpGuide.WBP_Option_HelpGuide_C.Setup
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             NoteTitle                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Option_HelpGuide_C::ChangeNoteContent(class FName NoteTitle)
+void UWBP_Option_HelpGuide_C::Setup(class FName NoteTitle)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_HelpGuide_C", "ChangeNoteContent");
+		Func = Class->GetFunction("WBP_Option_HelpGuide_C", "Setup");
 
-	Params::WBP_Option_HelpGuide_C_ChangeNoteContent Parms{};
+	Params::WBP_Option_HelpGuide_C_Setup Parms{};
 
 	Parms.NoteTitle = NoteTitle;
 
@@ -37,49 +37,15 @@ void UWBP_Option_HelpGuide_C::ChangeNoteContent(class FName NoteTitle)
 }
 
 
-// Function WBP_Option_HelpGuide.WBP_Option_HelpGuide_C.ClosePanel
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Option_HelpGuide.WBP_Option_HelpGuide_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Option_HelpGuide_C::ClosePanel()
+void UWBP_Option_HelpGuide_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_HelpGuide_C", "ClosePanel");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Option_HelpGuide.WBP_Option_HelpGuide_C.ExecuteUbergraph_WBP_Option_HelpGuide
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Option_HelpGuide_C::ExecuteUbergraph_WBP_Option_HelpGuide(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_HelpGuide_C", "ExecuteUbergraph_WBP_Option_HelpGuide");
-
-	Params::WBP_Option_HelpGuide_C_ExecuteUbergraph_WBP_Option_HelpGuide Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Option_HelpGuide.WBP_Option_HelpGuide_C.Finished_80D7C1A8449D6AAAECA77A96E24A7B39
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Option_HelpGuide_C::Finished_80D7C1A8449D6AAAECA77A96E24A7B39()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_HelpGuide_C", "Finished_80D7C1A8449D6AAAECA77A96E24A7B39");
+		Func = Class->GetFunction("WBP_Option_HelpGuide_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -110,31 +76,71 @@ struct FEventReply UWBP_Option_HelpGuide_C::OnAnalogValueChanged(const struct FG
 }
 
 
-// Function WBP_Option_HelpGuide.WBP_Option_HelpGuide_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_Option_HelpGuide.WBP_Option_HelpGuide_C.Finished_80D7C1A8449D6AAAECA77A96E24A7B39
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Option_HelpGuide_C::OnSetup()
+void UWBP_Option_HelpGuide_C::Finished_80D7C1A8449D6AAAECA77A96E24A7B39()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_HelpGuide_C", "OnSetup");
+		Func = Class->GetFunction("WBP_Option_HelpGuide_C", "Finished_80D7C1A8449D6AAAECA77A96E24A7B39");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Option_HelpGuide.WBP_Option_HelpGuide_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Option_HelpGuide.WBP_Option_HelpGuide_C.ExecuteUbergraph_WBP_Option_HelpGuide
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Option_HelpGuide_C::Setup()
+void UWBP_Option_HelpGuide_C::ExecuteUbergraph_WBP_Option_HelpGuide(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_HelpGuide_C", "Setup");
+		Func = Class->GetFunction("WBP_Option_HelpGuide_C", "ExecuteUbergraph_WBP_Option_HelpGuide");
+
+	Params::WBP_Option_HelpGuide_C_ExecuteUbergraph_WBP_Option_HelpGuide Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Option_HelpGuide.WBP_Option_HelpGuide_C.ClosePanel
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Option_HelpGuide_C::ClosePanel()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_HelpGuide_C", "ClosePanel");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Option_HelpGuide.WBP_Option_HelpGuide_C.Change Note Content
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NoteTitle                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Option_HelpGuide_C::Change_Note_Content(class FName NoteTitle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_HelpGuide_C", "Change Note Content");
+
+	Params::WBP_Option_HelpGuide_C_Change_Note_Content Parms{};
+
+	Parms.NoteTitle = NoteTitle;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

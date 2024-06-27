@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function BP_Action_Rolling.BP_Action_Rolling_C.EndStep
+// (BlueprintCallable, BlueprintEvent)
+
+void UBP_Action_Rolling_C::EndStep()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Action_Rolling_C", "EndStep");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_Action_Rolling.BP_Action_Rolling_C.ExecuteUbergraph_BP_Action_Rolling
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -37,34 +51,6 @@ void UBP_Action_Rolling_C::ExecuteUbergraph_BP_Action_Rolling(int32 EntryPoint)
 }
 
 
-// Function BP_Action_Rolling.BP_Action_Rolling_C.OnBreakAction
-// (Event, Public, BlueprintEvent)
-
-void UBP_Action_Rolling_C::OnBreakAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Action_Rolling_C", "OnBreakAction");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Action_Rolling.BP_Action_Rolling_C.EndStep
-// (BlueprintCallable, BlueprintEvent)
-
-void UBP_Action_Rolling_C::EndStep()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Action_Rolling_C", "EndStep");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Action_Rolling.BP_Action_Rolling_C.OnBeginAction
 // (Event, Public, BlueprintEvent)
 
@@ -74,6 +60,20 @@ void UBP_Action_Rolling_C::OnBeginAction()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_Action_Rolling_C", "OnBeginAction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Action_Rolling.BP_Action_Rolling_C.OnBreakAction
+// (Event, Public, BlueprintEvent)
+
+void UBP_Action_Rolling_C::OnBreakAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Action_Rolling_C", "OnBreakAction");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

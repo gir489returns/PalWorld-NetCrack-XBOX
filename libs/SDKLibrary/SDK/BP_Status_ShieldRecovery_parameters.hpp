@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Pal_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Pal_structs.hpp"
 
 
 namespace SDK::Params
@@ -40,15 +40,15 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AAC[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4181[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class USkeletalMeshComponent*                 CallFunc_GetMainMeshByActor_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TArray<class UMaterialInterface*>             CallFunc_GetMaterials_ReturnValue;                 // 0x0020(0x0010)(ReferenceParm)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AAD[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4182[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AAE[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4183[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               K2Node_DynamicCast_AsMaterial_Instance_Dynamic;    // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -74,19 +74,19 @@ struct BP_Status_ShieldRecovery_C_ExecuteUbergraph_BP_Status_ShieldRecovery fina
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AAF[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4184[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalDamageReactionComponent*            CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class APalCharacter* InCharacter)> K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(int32 Damage, bool IsShieldBroken)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0028(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_FClamp_ReturnValue;                       // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaTime;                            // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AB0[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4185[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetOwner_ReturnValue_1;                   // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalDamageReactionComponent*            CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0050(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FPalDamageResult                       K2Node_CustomEvent_DamageResult;                   // 0x0058(0x0050)(NoDestructor)
 	int32                                         K2Node_CustomEvent_Damage_1;                       // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AB1[0x4];                                     // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4186[0x4];                                     // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetOwner_ReturnValue_2;                   // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalDamageReactionComponent*            CallFunc_GetComponentByClass_ReturnValue_2;        // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UPalGameSetting*                        CallFunc_GetGameSetting_ReturnValue;               // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -95,7 +95,7 @@ public:
 	class APalCharacter*                          K2Node_CustomEvent_InCharacter;                    // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character;                // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AB2[0x7];                                     // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4187[0x7];                                     // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalCharacterOnCompleteInitializeParameterWrapper* CallFunc_GetOnCompleteInitializeParameterDelegate_ReturnValue; // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalIndividualCharacterParameter*       CallFunc_GetParam_IP;                              // 0x00F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalIndividualCharacterParameter*       CallFunc_GetParam_IP_1;                            // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -104,14 +104,14 @@ public:
 	class UPalIndividualCharacterParameter*       CallFunc_GetParam_IP_2;                            // 0x0118(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_FixedPoint64FixedPoint64_ReturnValue; // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0121(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AB3[0x6];                                     // 0x0122(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4188[0x6];                                     // 0x0122(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterParameter*       CallFunc_GetParam_IP_3;                            // 0x0128(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_CustomEvent_Damage;                         // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_IsShieldBroken;                 // 0x0134(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AB4[0x3];                                     // 0x0135(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4189[0x3];                                     // 0x0135(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterParameter*       CallFunc_GetParam_IP_4;                            // 0x0138(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AB5[0x7];                                     // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_418A[0x7];                                     // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterParameter*       CallFunc_GetParam_IP_5;                            // 0x0148(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(const struct FPalDamageResult& DamageResult)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x0150(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_GetOwner_ReturnValue_4;                   // 0x0160(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -123,7 +123,7 @@ public:
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AB6[0x7];                                     // 0x01A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_418B[0x7];                                     // 0x01A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFixedPoint64                          CallFunc_Convert_FloatToFixedPoint64_ReturnValue;  // 0x01A8(0x0008)(NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x01B0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_2;      // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -138,7 +138,7 @@ public:
 	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue_3;        // 0x0210(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_GetOwner_ReturnValue_7;                   // 0x0218(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue_4;        // 0x0220(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_VariableSet_tempDeltaTime_ImplicitCast;     // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_TempDeltaTime_ImplicitCast;     // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_B_ImplicitCast;     // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Convert_FloatToFixedPoint64_value_ImplicitCast; // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x023C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -202,7 +202,7 @@ static_assert(offsetof(BP_Status_ShieldRecovery_C_ExecuteUbergraph_BP_Status_Shi
 static_assert(offsetof(BP_Status_ShieldRecovery_C_ExecuteUbergraph_BP_Status_ShieldRecovery, CallFunc_GetComponentByClass_ReturnValue_3) == 0x000210, "Member 'BP_Status_ShieldRecovery_C_ExecuteUbergraph_BP_Status_ShieldRecovery::CallFunc_GetComponentByClass_ReturnValue_3' has a wrong offset!");
 static_assert(offsetof(BP_Status_ShieldRecovery_C_ExecuteUbergraph_BP_Status_ShieldRecovery, CallFunc_GetOwner_ReturnValue_7) == 0x000218, "Member 'BP_Status_ShieldRecovery_C_ExecuteUbergraph_BP_Status_ShieldRecovery::CallFunc_GetOwner_ReturnValue_7' has a wrong offset!");
 static_assert(offsetof(BP_Status_ShieldRecovery_C_ExecuteUbergraph_BP_Status_ShieldRecovery, CallFunc_GetComponentByClass_ReturnValue_4) == 0x000220, "Member 'BP_Status_ShieldRecovery_C_ExecuteUbergraph_BP_Status_ShieldRecovery::CallFunc_GetComponentByClass_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_Status_ShieldRecovery_C_ExecuteUbergraph_BP_Status_ShieldRecovery, K2Node_VariableSet_tempDeltaTime_ImplicitCast) == 0x000228, "Member 'BP_Status_ShieldRecovery_C_ExecuteUbergraph_BP_Status_ShieldRecovery::K2Node_VariableSet_tempDeltaTime_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_Status_ShieldRecovery_C_ExecuteUbergraph_BP_Status_ShieldRecovery, K2Node_VariableSet_TempDeltaTime_ImplicitCast) == 0x000228, "Member 'BP_Status_ShieldRecovery_C_ExecuteUbergraph_BP_Status_ShieldRecovery::K2Node_VariableSet_TempDeltaTime_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_Status_ShieldRecovery_C_ExecuteUbergraph_BP_Status_ShieldRecovery, CallFunc_Multiply_DoubleDouble_B_ImplicitCast) == 0x000230, "Member 'BP_Status_ShieldRecovery_C_ExecuteUbergraph_BP_Status_ShieldRecovery::CallFunc_Multiply_DoubleDouble_B_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_Status_ShieldRecovery_C_ExecuteUbergraph_BP_Status_ShieldRecovery, CallFunc_Convert_FloatToFixedPoint64_value_ImplicitCast) == 0x000238, "Member 'BP_Status_ShieldRecovery_C_ExecuteUbergraph_BP_Status_ShieldRecovery::CallFunc_Convert_FloatToFixedPoint64_value_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_Status_ShieldRecovery_C_ExecuteUbergraph_BP_Status_ShieldRecovery, CallFunc_Delay_Duration_ImplicitCast) == 0x00023C, "Member 'BP_Status_ShieldRecovery_C_ExecuteUbergraph_BP_Status_ShieldRecovery::CallFunc_Delay_Duration_ImplicitCast' has a wrong offset!");

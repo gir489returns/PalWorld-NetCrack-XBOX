@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "BP_AIAction_CanCombatBase_classes.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -31,24 +31,24 @@ public:
 	double                                        AcceptanceRadius;                                  // 0x0188(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsMoveing;                                         // 0x0190(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsLockLogic;                                       // 0x0191(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E98[0x6];                                     // 0x0192(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BC5[0x6];                                     // 0x0192(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        EndDistance;                                       // 0x0198(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ActionAbort(class APawn* ControlledPawn);
 	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
+	void ActionPause(class APawn* ControlledPawn);
+	void ActionResume(class APawn* ControlledPawn);
+	void ActionStart(class APawn* ControlledPawn);
 	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void ChangeReturnMode(bool* ChangeSuccess);
 	void ExecuteUbergraph_BP_AIActionEscape(int32 EntryPoint);
 	void Is_Far_Spawn_Point(bool* IsFar);
 	void NavMeshMove();
 	void OnFail_023A017548911A48339C18BEF9D1B042(EPathFollowingResult MovementResult);
+	void OnSquadMemberDeadEvent(const struct FPalDeadInfo& DeadInbfo);
 	void OnSuccess_023A017548911A48339C18BEF9D1B042(EPathFollowingResult MovementResult);
 	void SetGoalLocation(bool* Success);
-	void ActionPause(class APawn* ControlledPawn);
-	void ActionResume(class APawn* ControlledPawn);
-	void ActionStart(class APawn* ControlledPawn);
-	void OnSquadMemberDeadEvent(const struct FPalDeadInfo& DeadInbfo);
 	void SoundEvent(const struct FVector& EmitLocation);
 
 public:

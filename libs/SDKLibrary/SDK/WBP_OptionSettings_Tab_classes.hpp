@@ -31,11 +31,11 @@ public:
 	int32                                         Current;                                           // 0x02B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SwitchTabTo(int32 Param_Index);
-	void SwitchTab(bool Next);
-	void SetupTabs(const TArray<struct FDataTableRowHandle>& Names);
-	void Setup(class UWBP_OptionSettings_C* SettingPanel);
 	void ExecuteUbergraph_WBP_OptionSettings_Tab(int32 EntryPoint);
+	void Setup(class UWBP_OptionSettings_C* SettingPanel);
+	void SetupTabs(const TArray<struct FDataTableRowHandle>& Names);
+	void SwitchTab(bool Next);
+	void SwitchTabTo(int32 Param_Index);
 
 public:
 	static class UClass* StaticClass()

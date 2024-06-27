@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "BP_ActionStepBase_classes.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "BP_ActionStepBase_classes.hpp"
 
 
 namespace SDK
@@ -27,10 +27,10 @@ public:
 	struct FVector                                TempVelocity;                                      // 0x0230(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_Action_Rolling(int32 EntryPoint);
-	void OnBreakAction();
 	void EndStep();
+	void ExecuteUbergraph_BP_Action_Rolling(int32 EntryPoint);
 	void OnBeginAction();
+	void OnBreakAction();
 
 public:
 	static class UClass* StaticClass()

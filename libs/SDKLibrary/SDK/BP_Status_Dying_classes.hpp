@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -47,6 +47,7 @@ public:
 	void StartBindInteract(class UPalInteractDelegates* InteractDelegates);
 	void StartUnBindInteract(class UPalInteractDelegates* InteractDelegates);
 	void TickStatus(float DeltaTime);
+	void ToDeath();
 	void UpdateDyingWidget();
 
 public:

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Pal_classes.hpp"
 #include "CommonUser_structs.hpp"
 #include "Engine_structs.hpp"
-#include "Pal_classes.hpp"
 #include "E_PalUITitleMenuButtonType_structs.hpp"
 
 
@@ -28,7 +28,7 @@ public:
 	class UWBP_Title_MenuBG_C*                    WBP_Title_MenuBG;                                  // 0x0428(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_TitleMenu_C*                       WBP_TitleMenu;                                     // 0x0430(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	ECommonUserPrivilege                          Requested_Privilege;                               // 0x0438(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4899[0x7];                                     // 0x0439(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4C42[0x7];                                     // 0x0439(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UWBP_TitleFriendButton_OLD_C*>   TitleFriendButtons;                                // 0x0440(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	class ULoadingProcessTask*                    CurrentLoadingScreen;                              // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UWBP_LoadingScreen_Transition_C*        CurrentWidget;                                     // 0x0458(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)

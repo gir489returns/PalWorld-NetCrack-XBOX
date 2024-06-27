@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Glider_Item_Base.BP_Glider_Item_Base_C
-// 0x0008 (0x0320 - 0x0318)
+// 0x0008 (0x0340 - 0x0338)
 class ABP_Glider_Item_Base_C final : public ABP_GliderObjectBase_C
 {
 public:
-	class USkeletalMeshComponent*                 SkeletalMesh;                                      // 0x0318(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 SkeletalMesh;                                      // 0x0338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +34,8 @@ public:
 	}
 };
 static_assert(alignof(ABP_Glider_Item_Base_C) == 0x000008, "Wrong alignment on ABP_Glider_Item_Base_C");
-static_assert(sizeof(ABP_Glider_Item_Base_C) == 0x000320, "Wrong size on ABP_Glider_Item_Base_C");
-static_assert(offsetof(ABP_Glider_Item_Base_C, SkeletalMesh) == 0x000318, "Member 'ABP_Glider_Item_Base_C::SkeletalMesh' has a wrong offset!");
+static_assert(sizeof(ABP_Glider_Item_Base_C) == 0x000340, "Wrong size on ABP_Glider_Item_Base_C");
+static_assert(offsetof(ABP_Glider_Item_Base_C, SkeletalMesh) == 0x000338, "Member 'ABP_Glider_Item_Base_C::SkeletalMesh' has a wrong offset!");
 
 }
 

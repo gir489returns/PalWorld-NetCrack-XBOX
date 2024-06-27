@@ -27,17 +27,17 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_40B8[0x1];                                     // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4428[0x1];                                     // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_40B9[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4429[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalHUDDispatchParameter_HungerIcon*    K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_Hunger_Icon; // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_40BA[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_442A[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGuid                                  CallFunc_GetLocalPlayerGroupID_GroupID;            // 0x0034(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0044(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_40BB[0x4];                                     // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_442B[0x4];                                     // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0058(0x0008)(NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_GuidGuid_ReturnValue;          // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -64,19 +64,19 @@ static_assert(offsetof(WBP_PalHungerHud_C_ExecuteUbergraph_WBP_PalHungerHud, K2N
 struct WBP_PalHungerHud_C_GetLocalPlayerGroupID final
 {
 public:
-	struct FGuid                                  GroupID;                                           // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  GroupId;                                           // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalCharacterParameterComponent*        CallFunc_GetCharacterParameterComponent_ReturnValue; // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_40BC[0x6];                                     // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_442C[0x6];                                     // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIndividualCharacterParameter*       CallFunc_GetIndividualParameter_ReturnValue;       // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGuid                                  CallFunc_GetGroupId_ReturnValue;                   // 0x0030(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_PalHungerHud_C_GetLocalPlayerGroupID) == 0x000008, "Wrong alignment on WBP_PalHungerHud_C_GetLocalPlayerGroupID");
 static_assert(sizeof(WBP_PalHungerHud_C_GetLocalPlayerGroupID) == 0x000048, "Wrong size on WBP_PalHungerHud_C_GetLocalPlayerGroupID");
-static_assert(offsetof(WBP_PalHungerHud_C_GetLocalPlayerGroupID, GroupID) == 0x000000, "Member 'WBP_PalHungerHud_C_GetLocalPlayerGroupID::GroupID' has a wrong offset!");
+static_assert(offsetof(WBP_PalHungerHud_C_GetLocalPlayerGroupID, GroupId) == 0x000000, "Member 'WBP_PalHungerHud_C_GetLocalPlayerGroupID::GroupId' has a wrong offset!");
 static_assert(offsetof(WBP_PalHungerHud_C_GetLocalPlayerGroupID, CallFunc_GetPalmi_ReturnValue) == 0x000010, "Member 'WBP_PalHungerHud_C_GetLocalPlayerGroupID::CallFunc_GetPalmi_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_PalHungerHud_C_GetLocalPlayerGroupID, CallFunc_GetCharacterParameterComponent_ReturnValue) == 0x000018, "Member 'WBP_PalHungerHud_C_GetLocalPlayerGroupID::CallFunc_GetCharacterParameterComponent_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_PalHungerHud_C_GetLocalPlayerGroupID, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'WBP_PalHungerHud_C_GetLocalPlayerGroupID::CallFunc_IsValid_ReturnValue' has a wrong offset!");

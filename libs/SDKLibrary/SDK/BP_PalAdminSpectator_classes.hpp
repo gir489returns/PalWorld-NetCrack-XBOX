@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalAdminSpectator.BP_PalAdminSpectator_C
-// 0x0000 (0x0910 - 0x0910)
+// 0x0000 (0x0920 - 0x0920)
 class ABP_PalAdminSpectator_C final : public APalSpectator
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(ABP_PalAdminSpectator_C) == 0x000010, "Wrong alignment on ABP_PalAdminSpectator_C");
-static_assert(sizeof(ABP_PalAdminSpectator_C) == 0x000910, "Wrong size on ABP_PalAdminSpectator_C");
+static_assert(sizeof(ABP_PalAdminSpectator_C) == 0x000920, "Wrong size on ABP_PalAdminSpectator_C");
 
 }
 

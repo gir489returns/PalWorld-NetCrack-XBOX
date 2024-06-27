@@ -17,58 +17,6 @@
 namespace SDK
 {
 
-// Function GameplayTasks.GameplayTask.EndTask
-// (Final, Native, Public, BlueprintCallable)
-
-void UGameplayTask::EndTask()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayTask", "EndTask");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// DelegateFunction GameplayTasks.GameplayTask.GenericGameplayTaskDelegate__DelegateSignature
-// (MulticastDelegate, Public, Delegate)
-
-void UGameplayTask::GenericGameplayTaskDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayTask", "GenericGameplayTaskDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function GameplayTasks.GameplayTask.ReadyForActivation
-// (Final, Native, Public, BlueprintCallable)
-
-void UGameplayTask::ReadyForActivation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayTask", "ReadyForActivation");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function GameplayTasks.GameplayTasksComponent.K2_RunGameplayTask
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -125,6 +73,58 @@ void UGameplayTasksComponent::OnRep_SimulatedTasks(const TArray<class UGameplayT
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function GameplayTasks.GameplayTask.EndTask
+// (Final, Native, Public, BlueprintCallable)
+
+void UGameplayTask::EndTask()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GameplayTask", "EndTask");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// DelegateFunction GameplayTasks.GameplayTask.GenericGameplayTaskDelegate__DelegateSignature
+// (MulticastDelegate, Public, Delegate)
+
+void UGameplayTask::GenericGameplayTaskDelegate__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GameplayTask", "GenericGameplayTaskDelegate__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function GameplayTasks.GameplayTask.ReadyForActivation
+// (Final, Native, Public, BlueprintCallable)
+
+void UGameplayTask::ReadyForActivation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GameplayTask", "ReadyForActivation");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }

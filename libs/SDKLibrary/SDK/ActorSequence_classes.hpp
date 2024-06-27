@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_classes.hpp"
 #include "ActorSequence_structs.hpp"
 #include "MovieScene_structs.hpp"
 #include "MovieScene_classes.hpp"
+#include "Engine_classes.hpp"
 
 
 namespace SDK

@@ -65,6 +65,20 @@ void UWBP_WorldSetting_C::OpenStartGameCheckDialog()
 }
 
 
+// Function WBP_WorldSetting.WBP_WorldSetting_C.OpenRandomizerSeedInputWindow
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_WorldSetting_C::OpenRandomizerSeedInputWindow()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorldSetting_C", "OpenRandomizerSeedInputWindow");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_WorldSetting.WBP_WorldSetting_C.OpenCheckSaveSettingDialog
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -193,6 +207,26 @@ void UWBP_WorldSetting_C::OnClosedSaveSettingDialog(bool bResult)
 }
 
 
+// Function WBP_WorldSetting.WBP_WorldSetting_C.OnClosedRandomizerSeedInputWindow
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalHUDDispatchParameterBase*     Param_Param                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WorldSetting_C::OnClosedRandomizerSeedInputWindow(class UPalHUDDispatchParameterBase* Param_Param)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorldSetting_C", "OnClosedRandomizerSeedInputWindow");
+
+	Params::WBP_WorldSetting_C_OnClosedRandomizerSeedInputWindow Parms{};
+
+	Parms.Param_Param = Param_Param;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_WorldSetting.WBP_WorldSetting_C.OnCancelAction
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -250,6 +284,20 @@ void UWBP_WorldSetting_C::Construct()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_WorldSetting_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WorldSetting.WBP_WorldSetting_C.BndEvt__WBP_WorldSetting_WBP_Title_WorldSettings_K2Node_ComponentBoundEvent_3_OnClickedRandomizerSeedInputButton__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_WorldSetting_C::BndEvt__WBP_WorldSetting_WBP_Title_WorldSettings_K2Node_ComponentBoundEvent_3_OnClickedRandomizerSeedInputButton__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorldSetting_C", "BndEvt__WBP_WorldSetting_WBP_Title_WorldSettings_K2Node_ComponentBoundEvent_3_OnClickedRandomizerSeedInputButton__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

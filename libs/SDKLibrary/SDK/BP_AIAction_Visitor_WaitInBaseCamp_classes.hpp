@@ -25,7 +25,7 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_AIAction_Visitor_WaitInBaseCamp_C; // 0x02C8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	double                                        Timer;                                             // 0x02D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ReturnTimeMinutes;                                 // 0x02D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F83[0x4];                                     // 0x02DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_40C7[0x4];                                     // 0x02DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnWaitTimeFinished;                                // 0x02E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:

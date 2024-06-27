@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "GameplayTags_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CommonUser_structs.hpp"
-#include "GameplayTags_structs.hpp"
 #include "InputCore_structs.hpp"
 
 
@@ -29,7 +29,7 @@ public:
 	int32                                         LocalPlayerIndex;                                  // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FInputDeviceId                         PrimaryInputDevice;                                // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCanUseGuestLogin;                                 // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15B6[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15C7[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAsyncAction_CommonUserInitialize*      ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AsyncAction_CommonUserInitialize_InitializeForLocalPlay) == 0x000008, "Wrong alignment on AsyncAction_CommonUserInitialize_InitializeForLocalPlay");
@@ -47,7 +47,7 @@ struct AsyncAction_CommonUserInitialize_LoginForOnlinePlay final
 public:
 	class UCommonUserSubsystem*                   Target;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         LocalPlayerIndex;                                  // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15B7[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15C8[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAsyncAction_CommonUserInitialize*      ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AsyncAction_CommonUserInitialize_LoginForOnlinePlay) == 0x000008, "Wrong alignment on AsyncAction_CommonUserInitialize_LoginForOnlinePlay");
@@ -63,11 +63,11 @@ struct AsyncAction_CommonUserInitialize_HandleInitializationComplete final
 public:
 	const class UCommonUserInfo*                  UserInfo;                                          // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSuccess;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15B8[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15C9[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Error;                                             // 0x0010(0x0018)(Parm, NativeAccessSpecifierPublic)
 	ECommonUserPrivilege                          RequestedPrivilege;                                // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ECommonUserOnlineContext                      OnlineContext;                                     // 0x0029(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15B9[0x6];                                     // 0x002A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15CA[0x6];                                     // 0x002A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AsyncAction_CommonUserInitialize_HandleInitializationComplete) == 0x000008, "Wrong alignment on AsyncAction_CommonUserInitialize_HandleInitializationComplete");
 static_assert(sizeof(AsyncAction_CommonUserInitialize_HandleInitializationComplete) == 0x000030, "Wrong size on AsyncAction_CommonUserInitialize_HandleInitializationComplete");
@@ -96,7 +96,7 @@ public:
 	class FName                                   Key;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Value;                                             // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFoundValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15BD[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15CE[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonSession_SearchResult_GetIntSetting) == 0x000004, "Wrong alignment on CommonSession_SearchResult_GetIntSetting");
 static_assert(sizeof(CommonSession_SearchResult_GetIntSetting) == 0x000010, "Wrong size on CommonSession_SearchResult_GetIntSetting");
@@ -156,7 +156,7 @@ public:
 	class FName                                   Key;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Value;                                             // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFoundValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15BE[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15CF[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonSession_SearchResult_GetStringSetting) == 0x000008, "Wrong alignment on CommonSession_SearchResult_GetStringSetting");
 static_assert(sizeof(CommonSession_SearchResult_GetStringSetting) == 0x000020, "Wrong size on CommonSession_SearchResult_GetStringSetting");
@@ -270,7 +270,7 @@ struct CommonUserInfo_GetNetId final
 {
 public:
 	ECommonUserOnlineContext                      Context;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15C6[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15D7[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FUniqueNetIdRepl                       ReturnValue;                                       // 0x0008(0x0030)(Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(CommonUserInfo_GetNetId) == 0x000008, "Wrong alignment on CommonUserInfo_GetNetId");
@@ -309,7 +309,7 @@ struct CommonUserSubsystem_CancelUserInitialization final
 public:
 	int32                                         LocalPlayerIndex;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15C9[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15DA[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonUserSubsystem_CancelUserInitialization) == 0x000004, "Wrong alignment on CommonUserSubsystem_CancelUserInitialization");
 static_assert(sizeof(CommonUserSubsystem_CancelUserInitialization) == 0x000008, "Wrong size on CommonUserSubsystem_CancelUserInitialization");
@@ -366,7 +366,7 @@ public:
 	struct FInputDeviceId                         PrimaryInputDevice;                                // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCanUseGuestLogin;                                 // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15CA[0x2];                                     // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15DB[0x2];                                     // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonUserSubsystem_TryToInitializeForLocalPlay) == 0x000004, "Wrong alignment on CommonUserSubsystem_TryToInitializeForLocalPlay");
 static_assert(sizeof(CommonUserSubsystem_TryToInitializeForLocalPlay) == 0x00000C, "Wrong size on CommonUserSubsystem_TryToInitializeForLocalPlay");
@@ -382,7 +382,7 @@ struct CommonUserSubsystem_TryToInitializeUser final
 public:
 	struct FCommonUserInitializeParams            Params_0;                                          // 0x0000(0x0028)(Parm, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15CB[0x3];                                     // 0x0029(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15DC[0x3];                                     // 0x0029(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonUserSubsystem_TryToInitializeUser) == 0x000004, "Wrong alignment on CommonUserSubsystem_TryToInitializeUser");
 static_assert(sizeof(CommonUserSubsystem_TryToInitializeUser) == 0x00002C, "Wrong size on CommonUserSubsystem_TryToInitializeUser");
@@ -396,7 +396,7 @@ struct CommonUserSubsystem_TryToLoginForOnlinePlay final
 public:
 	int32                                         LocalPlayerIndex;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15CC[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15DD[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonUserSubsystem_TryToLoginForOnlinePlay) == 0x000004, "Wrong alignment on CommonUserSubsystem_TryToLoginForOnlinePlay");
 static_assert(sizeof(CommonUserSubsystem_TryToLoginForOnlinePlay) == 0x000008, "Wrong size on CommonUserSubsystem_TryToLoginForOnlinePlay");
@@ -410,7 +410,7 @@ struct CommonUserSubsystem_GetLocalPlayerInitializationState final
 public:
 	int32                                         LocalPlayerIndex;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ECommonUserInitializationState                ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15CD[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15DE[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonUserSubsystem_GetLocalPlayerInitializationState) == 0x000004, "Wrong alignment on CommonUserSubsystem_GetLocalPlayerInitializationState");
 static_assert(sizeof(CommonUserSubsystem_GetLocalPlayerInitializationState) == 0x000008, "Wrong size on CommonUserSubsystem_GetLocalPlayerInitializationState");
@@ -445,7 +445,7 @@ struct CommonUserSubsystem_GetUserInfoForControllerId final
 {
 public:
 	int32                                         ControllerId;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15CE[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15DF[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	const class UCommonUserInfo*                  ReturnValue;                                       // 0x0008(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(CommonUserSubsystem_GetUserInfoForControllerId) == 0x000008, "Wrong alignment on CommonUserSubsystem_GetUserInfoForControllerId");
@@ -459,7 +459,7 @@ struct CommonUserSubsystem_GetUserInfoForInputDevice final
 {
 public:
 	struct FInputDeviceId                         InputDevice;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15CF[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15E0[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	const class UCommonUserInfo*                  ReturnValue;                                       // 0x0008(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(CommonUserSubsystem_GetUserInfoForInputDevice) == 0x000008, "Wrong alignment on CommonUserSubsystem_GetUserInfoForInputDevice");
@@ -473,7 +473,7 @@ struct CommonUserSubsystem_GetUserInfoForLocalPlayerIndex final
 {
 public:
 	int32                                         LocalPlayerIndex;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15D0[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15E1[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	const class UCommonUserInfo*                  ReturnValue;                                       // 0x0008(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(CommonUserSubsystem_GetUserInfoForLocalPlayerIndex) == 0x000008, "Wrong alignment on CommonUserSubsystem_GetUserInfoForLocalPlayerIndex");
@@ -487,7 +487,7 @@ struct CommonUserSubsystem_GetUserInfoForPlatformUser final
 {
 public:
 	struct FPlatformUserId                        PlatformUser;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15D1[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15E2[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	const class UCommonUserInfo*                  ReturnValue;                                       // 0x0008(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(CommonUserSubsystem_GetUserInfoForPlatformUser) == 0x000008, "Wrong alignment on CommonUserSubsystem_GetUserInfoForPlatformUser");
@@ -501,7 +501,7 @@ struct CommonUserSubsystem_GetUserInfoForPlatformUserIndex final
 {
 public:
 	int32                                         PlatformUserIndex;                                 // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15D2[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15E3[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	const class UCommonUserInfo*                  ReturnValue;                                       // 0x0008(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(CommonUserSubsystem_GetUserInfoForPlatformUserIndex) == 0x000008, "Wrong alignment on CommonUserSubsystem_GetUserInfoForPlatformUserIndex");
@@ -529,7 +529,7 @@ struct CommonUserSubsystem_HasTraitTag final
 public:
 	struct FGameplayTag                           TraitTag;                                          // 0x0000(0x0008)(ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15D3[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15E4[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonUserSubsystem_HasTraitTag) == 0x000004, "Wrong alignment on CommonUserSubsystem_HasTraitTag");
 static_assert(sizeof(CommonUserSubsystem_HasTraitTag) == 0x00000C, "Wrong size on CommonUserSubsystem_HasTraitTag");

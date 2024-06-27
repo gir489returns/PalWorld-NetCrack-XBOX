@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function WBP_OptionSettingsOverLayWindow.WBP_OptionSettingsOverLayWindow_C.SetPadKeyA
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_OptionSettingsOverLayWindow_C::SetPadKeyA()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettingsOverLayWindow_C", "SetPadKeyA");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_OptionSettingsOverLayWindow.WBP_OptionSettingsOverLayWindow_C.ResetCommandText
 // (BlueprintCallable, BlueprintEvent)
 
@@ -132,20 +146,6 @@ void UWBP_OptionSettingsOverLayWindow_C::ExecuteUbergraph_WBP_OptionSettingsOver
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OptionSettingsOverLayWindow.WBP_OptionSettingsOverLayWindow_C.SetPadKeyA
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_OptionSettingsOverLayWindow_C::SetPadKeyA()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettingsOverLayWindow_C", "SetPadKeyA");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

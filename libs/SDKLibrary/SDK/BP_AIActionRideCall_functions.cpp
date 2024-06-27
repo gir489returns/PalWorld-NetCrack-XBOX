@@ -60,6 +60,27 @@ void UBP_AIActionRideCall_C::CanRide(bool* Param_CanRide)
 }
 
 
+// Function BP_AIActionRideCall.BP_AIActionRideCall_C.CheckWallRaycast
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    HitWall                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIActionRideCall_C::CheckWallRaycast(bool* HitWall)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIActionRideCall_C", "CheckWallRaycast");
+
+	Params::BP_AIActionRideCall_C_CheckWallRaycast Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (HitWall != nullptr)
+		*HitWall = Parms.HitWall;
+}
+
+
 // Function BP_AIActionRideCall.BP_AIActionRideCall_C.DoRide
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:

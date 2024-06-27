@@ -17,17 +17,17 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MapObject_DamagableRock_PV.BP_MapObject_DamagableRock_PV_C
-// 0x0038 (0x03E8 - 0x03B0)
+// 0x0038 (0x0420 - 0x03E8)
 class ABP_MapObject_DamagableRock_PV_C final : public APalMapObject
 {
 public:
-	class UBoxComponent*                          CheckOverlapCollision;                             // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          WorkableBounds;                                    // 0x03B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UArrowComponent*                        IndicatorOrigin;                                   // 0x03C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectDropItemParameterComponent* DropItemParameter;                                 // 0x03C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPalInteractableSphereComponentNative*  BP_InteractableSphere;                             // 0x03D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Mesh;                                              // 0x03D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x03E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          CheckOverlapCollision;                             // 0x03E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          WorkableBounds;                                    // 0x03F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UArrowComponent*                        IndicatorOrigin;                                   // 0x03F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectDropItemParameterComponent* DropItemParameter;                                 // 0x0400(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPalInteractableSphereComponentNative*  BP_InteractableSphere;                             // 0x0408(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Mesh;                                              // 0x0410(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0418(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -40,14 +40,14 @@ public:
 	}
 };
 static_assert(alignof(ABP_MapObject_DamagableRock_PV_C) == 0x000008, "Wrong alignment on ABP_MapObject_DamagableRock_PV_C");
-static_assert(sizeof(ABP_MapObject_DamagableRock_PV_C) == 0x0003E8, "Wrong size on ABP_MapObject_DamagableRock_PV_C");
-static_assert(offsetof(ABP_MapObject_DamagableRock_PV_C, CheckOverlapCollision) == 0x0003B0, "Member 'ABP_MapObject_DamagableRock_PV_C::CheckOverlapCollision' has a wrong offset!");
-static_assert(offsetof(ABP_MapObject_DamagableRock_PV_C, WorkableBounds) == 0x0003B8, "Member 'ABP_MapObject_DamagableRock_PV_C::WorkableBounds' has a wrong offset!");
-static_assert(offsetof(ABP_MapObject_DamagableRock_PV_C, IndicatorOrigin) == 0x0003C0, "Member 'ABP_MapObject_DamagableRock_PV_C::IndicatorOrigin' has a wrong offset!");
-static_assert(offsetof(ABP_MapObject_DamagableRock_PV_C, DropItemParameter) == 0x0003C8, "Member 'ABP_MapObject_DamagableRock_PV_C::DropItemParameter' has a wrong offset!");
-static_assert(offsetof(ABP_MapObject_DamagableRock_PV_C, BP_InteractableSphere) == 0x0003D0, "Member 'ABP_MapObject_DamagableRock_PV_C::BP_InteractableSphere' has a wrong offset!");
-static_assert(offsetof(ABP_MapObject_DamagableRock_PV_C, Mesh) == 0x0003D8, "Member 'ABP_MapObject_DamagableRock_PV_C::Mesh' has a wrong offset!");
-static_assert(offsetof(ABP_MapObject_DamagableRock_PV_C, DefaultSceneRoot) == 0x0003E0, "Member 'ABP_MapObject_DamagableRock_PV_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(sizeof(ABP_MapObject_DamagableRock_PV_C) == 0x000420, "Wrong size on ABP_MapObject_DamagableRock_PV_C");
+static_assert(offsetof(ABP_MapObject_DamagableRock_PV_C, CheckOverlapCollision) == 0x0003E8, "Member 'ABP_MapObject_DamagableRock_PV_C::CheckOverlapCollision' has a wrong offset!");
+static_assert(offsetof(ABP_MapObject_DamagableRock_PV_C, WorkableBounds) == 0x0003F0, "Member 'ABP_MapObject_DamagableRock_PV_C::WorkableBounds' has a wrong offset!");
+static_assert(offsetof(ABP_MapObject_DamagableRock_PV_C, IndicatorOrigin) == 0x0003F8, "Member 'ABP_MapObject_DamagableRock_PV_C::IndicatorOrigin' has a wrong offset!");
+static_assert(offsetof(ABP_MapObject_DamagableRock_PV_C, DropItemParameter) == 0x000400, "Member 'ABP_MapObject_DamagableRock_PV_C::DropItemParameter' has a wrong offset!");
+static_assert(offsetof(ABP_MapObject_DamagableRock_PV_C, BP_InteractableSphere) == 0x000408, "Member 'ABP_MapObject_DamagableRock_PV_C::BP_InteractableSphere' has a wrong offset!");
+static_assert(offsetof(ABP_MapObject_DamagableRock_PV_C, Mesh) == 0x000410, "Member 'ABP_MapObject_DamagableRock_PV_C::Mesh' has a wrong offset!");
+static_assert(offsetof(ABP_MapObject_DamagableRock_PV_C, DefaultSceneRoot) == 0x000418, "Member 'ABP_MapObject_DamagableRock_PV_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

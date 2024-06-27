@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CharaCre_BodyTypeButton.WBP_CharaCre_BodyTypeButton_C
-// 0x0060 (0x02D8 - 0x0278)
+// 0x0070 (0x02E8 - 0x0278)
 class UWBP_CharaCre_BodyTypeButton_C final : public UUserWidget
 {
 public:
@@ -32,6 +32,7 @@ public:
 	struct FDataTableRowHandle                    MsgId;                                             // 0x02B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	class FName                                   Bind_Preset_Name;                                  // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_             OnClicked;                                         // 0x02C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FDataTableRowHandle                    VoiceMsgID;                                        // 0x02D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
 	void AnmEvent_Hover();
@@ -45,6 +46,7 @@ public:
 	void GetBindedPresetName(class FName* PresetName);
 	void OnClicked__DelegateSignature(class UWBP_CharaCre_BodyTypeButton_C* Widget);
 	void Setup(class FName BindPresetName, int32 ButtonIndex);
+	void SetupAsVoice(int32 ButtonIndex);
 
 public:
 	static class UClass* StaticClass()
@@ -57,7 +59,7 @@ public:
 	}
 };
 static_assert(alignof(UWBP_CharaCre_BodyTypeButton_C) == 0x000008, "Wrong alignment on UWBP_CharaCre_BodyTypeButton_C");
-static_assert(sizeof(UWBP_CharaCre_BodyTypeButton_C) == 0x0002D8, "Wrong size on UWBP_CharaCre_BodyTypeButton_C");
+static_assert(sizeof(UWBP_CharaCre_BodyTypeButton_C) == 0x0002E8, "Wrong size on UWBP_CharaCre_BodyTypeButton_C");
 static_assert(offsetof(UWBP_CharaCre_BodyTypeButton_C, UberGraphFrame) == 0x000278, "Member 'UWBP_CharaCre_BodyTypeButton_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_CharaCre_BodyTypeButton_C, Anm_UnselectToSelect) == 0x000280, "Member 'UWBP_CharaCre_BodyTypeButton_C::Anm_UnselectToSelect' has a wrong offset!");
 static_assert(offsetof(UWBP_CharaCre_BodyTypeButton_C, Anm_NormalToFocus) == 0x000288, "Member 'UWBP_CharaCre_BodyTypeButton_C::Anm_NormalToFocus' has a wrong offset!");
@@ -68,6 +70,7 @@ static_assert(offsetof(UWBP_CharaCre_BodyTypeButton_C, WBP_PalInvisibleButton) =
 static_assert(offsetof(UWBP_CharaCre_BodyTypeButton_C, MsgId) == 0x0002B0, "Member 'UWBP_CharaCre_BodyTypeButton_C::MsgId' has a wrong offset!");
 static_assert(offsetof(UWBP_CharaCre_BodyTypeButton_C, Bind_Preset_Name) == 0x0002C0, "Member 'UWBP_CharaCre_BodyTypeButton_C::Bind_Preset_Name' has a wrong offset!");
 static_assert(offsetof(UWBP_CharaCre_BodyTypeButton_C, OnClicked) == 0x0002C8, "Member 'UWBP_CharaCre_BodyTypeButton_C::OnClicked' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_BodyTypeButton_C, VoiceMsgID) == 0x0002D8, "Member 'UWBP_CharaCre_BodyTypeButton_C::VoiceMsgID' has a wrong offset!");
 
 }
 

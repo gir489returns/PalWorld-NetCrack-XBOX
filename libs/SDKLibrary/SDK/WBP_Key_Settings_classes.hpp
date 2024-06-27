@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
+#include "Engine_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "CommonInput_structs.hpp"
 #include "UMG_classes.hpp"
@@ -33,11 +33,11 @@ public:
 	class UVerticalBox*                           VerticalBox_KM_Action;                             // 0x02A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           VerticalBox_KM_UI;                                 // 0x02A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          SomethingChanged;                                  // 0x02B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45FB[0x7];                                     // 0x02B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4A06[0x7];                                     // 0x02B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UVerticalBox*>                   VerticalBoxs;                                      // 0x02B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	TArray<class UWBP_PalCommonButtonBase_C*>     FirstRows;                                         // 0x02C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	int32                                         Current;                                           // 0x02D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45FC[0x4];                                     // 0x02DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4A07[0x4];                                     // 0x02DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<class FName, class UWBP_OptionSettings_ListContent_C*> InputActionsMap_KM;                                // 0x02E0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	TMap<class FName, class UWBP_OptionSettings_ListContent_C*> InputActionsMap_GP;                                // 0x0330(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	TMap<class FName, class UWBP_OptionSettings_ListContent_C*> UIActionsMap_KM;                                   // 0x0380(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
@@ -46,38 +46,38 @@ public:
 	TMap<class FName, struct FPalKeyAction>       AxisMap;                                           // 0x0580(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TMap<struct FPalKeyAction, class FName>       ReverseAxisMap;                                    // 0x05D0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          BackFromSetting;                                   // 0x0620(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45FD[0x7];                                     // 0x0621(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4A08[0x7];                                     // 0x0621(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FKey                                   CachedSettingKey;                                  // 0x0628(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	TArray<class FName>                           FilterActionKeys;                                  // 0x0640(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          KeyConflict_KM;                                    // 0x0650(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          UIKeyConflict_KM;                                  // 0x0651(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          KeyConflict_GP;                                    // 0x0652(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          UIKeyConflict_GP;                                  // 0x0653(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45FE[0x4];                                     // 0x0654(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4A09[0x4];                                     // 0x0654(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<class FName, class FName>                MultiKeyMap;                                       // 0x0658(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 
 public:
-	void ApplySettings();
-	void Construct();
-	void ExecuteUbergraph_WBP_Key_Settings(int32 EntryPoint);
-	void Get_Actions_By_Key(const struct FKey& Key, ECommonInputType InputType, TArray<struct FPalKeyAction>* KeyActions);
-	void Get_Conflict_Actions(const struct FPalKeyAction& CheckingAction, EPalKeyConfigCategory FilterType, TArray<struct FPalKeyAction>* KeyActions);
-	void Get_UI_Conflict_Actions(const class FName& CheckingAction, EPalKeyConfigCategory FilterType, TArray<class FName>* KeyActions);
-	void GetDesiredFocusTarget(class UWidget** Target);
-	void GetKeybyAction(const struct FPalKeyAction& PalKeyAction, EPalKeyConfigCategory FilterType, struct FKey* Key);
-	bool IsSetableAction(const struct FPalKeyAction& Key, ECommonInputType InputType);
-	void Key_Conflict_Check(EPalKeyConfigCategory FilterType);
-	void Multi_Key_Setting(const TMap<class FName, struct FPalKeyConfigKeys>& TargetMap, const class FName& ActionName, const struct FPalKeyConfigKeys& Key);
-	void On_Action_Key_Changed(class FName ActionName, const struct FKey& NewKey, EPalKeyConfigCategory InputType, EPalKeyConfigAxisFilterType AxisType);
-	void On_Key_Config_Changing(class FName KeyName, ECommonInputType InputType, EPalKeyConfigAxisFilterType AxisType);
-	void On_UI_Action_Key_Changed(class FName ActionName, const struct FKey& NewKey, EPalKeyConfigCategory InputType, EPalKeyConfigAxisFilterType AxisType);
-	void On_UI_Key_Config_Changing(class FName KeyName, ECommonInputType InputType, EPalKeyConfigAxisFilterType AxisType);
-	void OnInitialized();
-	struct FEventReply OnKeyUp(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
-	void SetDefault();
-	void SwitchPanel(int32 Param_Index);
-	void SwitchTab(bool Next);
 	void UI_Key_Conflict_Check(EPalKeyConfigCategory FilterType);
+	void SwitchTab(bool Next);
+	void SwitchPanel(int32 Param_Index);
+	void SetDefault();
+	struct FEventReply OnKeyUp(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
+	void OnInitialized();
+	void On_UI_Key_Config_Changing(class FName KeyName, ECommonInputType InputType, EPalKeyConfigAxisFilterType AxisType);
+	void On_UI_Action_Key_Changed(class FName ActionName, const struct FKey& NewKey, EPalKeyConfigCategory InputType, EPalKeyConfigAxisFilterType AxisType);
+	void On_Key_Config_Changing(class FName KeyName, ECommonInputType InputType, EPalKeyConfigAxisFilterType AxisType);
+	void On_Action_Key_Changed(class FName ActionName, const struct FKey& NewKey, EPalKeyConfigCategory InputType, EPalKeyConfigAxisFilterType AxisType);
+	void Multi_Key_Setting(const TMap<class FName, struct FPalKeyConfigKeys>& TargetMap, const class FName& ActionName, const struct FPalKeyConfigKeys& Key);
+	void Key_Conflict_Check(EPalKeyConfigCategory FilterType);
+	bool IsSetableAction(const struct FPalKeyAction& Key, ECommonInputType InputType);
+	void GetKeybyAction(const struct FPalKeyAction& PalKeyAction, EPalKeyConfigCategory FilterType, struct FKey* Key);
+	void GetDesiredFocusTarget(class UWidget** Target);
+	void Get_UI_Conflict_Actions(const class FName& CheckingAction, EPalKeyConfigCategory FilterType, TArray<class FName>* KeyActions);
+	void Get_Conflict_Actions(const struct FPalKeyAction& CheckingAction, EPalKeyConfigCategory FilterType, TArray<struct FPalKeyAction>* KeyActions);
+	void Get_Actions_By_Key(const struct FKey& Key, ECommonInputType InputType, TArray<struct FPalKeyAction>* KeyActions);
+	void ExecuteUbergraph_WBP_Key_Settings(int32 EntryPoint);
+	void Construct();
+	void ApplySettings();
 
 public:
 	static class UClass* StaticClass()

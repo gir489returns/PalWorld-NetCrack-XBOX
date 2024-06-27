@@ -17,6 +17,126 @@
 namespace SDK
 {
 
+// Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetLevelNames
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// TArray<class FName>                     InLevelNames                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UMovieSceneLevelVisibilitySection::SetLevelNames(const TArray<class FName>& InLevelNames)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MovieSceneLevelVisibilitySection", "SetLevelNames");
+
+	Params::MovieSceneLevelVisibilitySection_SetLevelNames Parms{};
+
+	Parms.InLevelNames = std::move(InLevelNames);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetVisibility
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// ELevelVisibility                        InVisibility                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMovieSceneLevelVisibilitySection::SetVisibility(ELevelVisibility InVisibility)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MovieSceneLevelVisibilitySection", "SetVisibility");
+
+	Params::MovieSceneLevelVisibilitySection_SetVisibility Parms{};
+
+	Parms.InVisibility = InVisibility;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetLevelNames
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// const TArray<class FName>               ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+const TArray<class FName> UMovieSceneLevelVisibilitySection::GetLevelNames() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MovieSceneLevelVisibilitySection", "GetLevelNames");
+
+	Params::MovieSceneLevelVisibilitySection_GetLevelNames Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetVisibility
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// ELevelVisibility                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+ELevelVisibility UMovieSceneLevelVisibilitySection::GetVisibility() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MovieSceneLevelVisibilitySection", "GetVisibility");
+
+	Params::MovieSceneLevelVisibilitySection_GetVisibility Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MovieSceneTracks.MovieSceneTransformOrigin.BP_GetTransformOrigin
+// (Event, Protected, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// struct FTransform                       ReturnValue                                            (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FTransform IMovieSceneTransformOrigin::BP_GetTransformOrigin() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MovieSceneTransformOrigin", "BP_GetTransformOrigin");
+
+	Params::MovieSceneTransformOrigin_BP_GetTransformOrigin Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
 // Function MovieSceneTracks.MovieSceneParameterSection.AddBoolParameterKey
 // (Final, Native, Public, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -382,26 +502,6 @@ void UMovieSceneParameterSection::GetParameterNames(TSet<class FName>* Parameter
 
 	if (ParameterNames != nullptr)
 		*ParameterNames = std::move(Parms.ParameterNames);
-}
-
-
-// Function MovieSceneTracks.MovieSceneTransformOrigin.BP_GetTransformOrigin
-// (Event, Protected, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// struct FTransform                       ReturnValue                                            (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FTransform IMovieSceneTransformOrigin::BP_GetTransformOrigin() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneTransformOrigin", "BP_GetTransformOrigin");
-
-	Params::MovieSceneTransformOrigin_BP_GetTransformOrigin Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 
@@ -943,106 +1043,6 @@ EDataLayerRuntimeState UMovieSceneDataLayerSection::GetPrerollState() const
 		Func = Class->GetFunction("MovieSceneDataLayerSection", "GetPrerollState");
 
 	Params::MovieSceneDataLayerSection_GetPrerollState Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetLevelNames
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// TArray<class FName>                     InLevelNames                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UMovieSceneLevelVisibilitySection::SetLevelNames(const TArray<class FName>& InLevelNames)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneLevelVisibilitySection", "SetLevelNames");
-
-	Params::MovieSceneLevelVisibilitySection_SetLevelNames Parms{};
-
-	Parms.InLevelNames = std::move(InLevelNames);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetVisibility
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// ELevelVisibility                        InVisibility                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMovieSceneLevelVisibilitySection::SetVisibility(ELevelVisibility InVisibility)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneLevelVisibilitySection", "SetVisibility");
-
-	Params::MovieSceneLevelVisibilitySection_SetVisibility Parms{};
-
-	Parms.InVisibility = InVisibility;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetLevelNames
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// const TArray<class FName>               ReturnValue                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-const TArray<class FName> UMovieSceneLevelVisibilitySection::GetLevelNames() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneLevelVisibilitySection", "GetLevelNames");
-
-	Params::MovieSceneLevelVisibilitySection_GetLevelNames Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetVisibility
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// ELevelVisibility                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-ELevelVisibility UMovieSceneLevelVisibilitySection::GetVisibility() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneLevelVisibilitySection", "GetVisibility");
-
-	Params::MovieSceneLevelVisibilitySection_GetVisibility Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

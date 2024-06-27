@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "Pal_structs.hpp"
+#include "Engine_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
-#include "Pal_structs.hpp"
 #include "BP_MonsterAIControllerBase_classes.hpp"
 
 
@@ -42,9 +42,6 @@ public:
 	void OnDeadDelegate______0(const struct FPalDeadInfo& DeadInfo);
 	void ReceivePossess(class APawn* PossessedPawn);
 	void SetAction_BaseCamp(class UClass* AIActionClass, EAIRequestPriority Priority, class UPalAIActionBaseCampBase** Action);
-	void SetAction_BaseCamp_Fighter(class UPalAIActionBaseCampBase** Action);
-	void SetAction_BaseCamp_Fighter_ByDefenseType(EPalMapObjectDefenseType DefenseType, class UPalAIActionBaseCampFighter** FighterAction);
-	void SetAction_BaseCamp_FighterGunner(class UPalAIActionBaseCampBase** Action);
 	class UPalAIActionCompositeBase* SetAction_BaseCamp_Worker();
 	void SetAction_CapturedStorage();
 	void SetAction_DefaultPos();
@@ -63,8 +60,6 @@ public:
 	void SetBaseCampActionSleepMedicalBed(const struct FGuid& TargetBedConcreteModelId);
 	void SetBaseCampActionSpawningForWork();
 	void SetBaseCampActionWithFixAssign(const struct FGuid& TargetWorkProgressId, const float DistanceFixAssignTargetting);
-	void SetBaseCampFighterAction();
-	void SetBaseCampFighterGunnerAction();
 	void SetCapturedStorageAction();
 	class UPalAIActionCompositeBase* SetCompositeActionBaseCamp(class UClass* CompositeActionClass);
 	void SetDefaultPositionAction();

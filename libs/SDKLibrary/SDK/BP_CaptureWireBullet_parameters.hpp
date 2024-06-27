@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
@@ -31,13 +31,13 @@ public:
 	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character;                // 0x0108(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21C4[0xE];                                     // 0x0112(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_40DA[0xE];                                     // 0x0112(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0120(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          CallFunc_FindOwnerPalCharacter_ReturnValue;        // 0x0180(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(const struct FGuid& SpawnGUID, class AActor* SpawnActor)> K2Node_CreateDelegate_OutputDelegate;              // 0x0188(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGuid                                  CallFunc_SpawnActorBroadcast_SpawnGuid;            // 0x0198(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_SpawnActorBroadcast_ReturnValue;          // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21C5[0x7];                                     // 0x01A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_40DB[0x7];                                     // 0x01A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_UpdateRotator_DeltaTime_ImplicitCast;     // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_CaptureWireBullet_C_ExecuteUbergraph_BP_CaptureWireBullet) == 0x000010, "Wrong alignment on BP_CaptureWireBullet_C_ExecuteUbergraph_BP_CaptureWireBullet");

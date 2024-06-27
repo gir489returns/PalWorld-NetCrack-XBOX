@@ -105,6 +105,91 @@ void UWBP_PalCharacterSlotBase_C::ExecuteUbergraph_WBP_PalCharacterSlotBase(int3
 }
 
 
+// Function WBP_PalCharacterSlotBase.WBP_PalCharacterSlotBase_C.GetIndividualHandle
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UPalIndividualCharacterHandle*    Handle                                                 (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalCharacterSlotBase_C::GetIndividualHandle(class UPalIndividualCharacterHandle** Handle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCharacterSlotBase_C", "GetIndividualHandle");
+
+	Params::WBP_PalCharacterSlotBase_C_GetIndividualHandle Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Handle != nullptr)
+		*Handle = Parms.Handle;
+}
+
+
+// Function WBP_PalCharacterSlotBase.WBP_PalCharacterSlotBase_C.GetIndividualParameter
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UPalIndividualCharacterParameter* Parameter                                              (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalCharacterSlotBase_C::GetIndividualParameter(class UPalIndividualCharacterParameter** Parameter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCharacterSlotBase_C", "GetIndividualParameter");
+
+	Params::WBP_PalCharacterSlotBase_C_GetIndividualParameter Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Parameter != nullptr)
+		*Parameter = Parms.Parameter;
+}
+
+
+// Function WBP_PalCharacterSlotBase.WBP_PalCharacterSlotBase_C.GetIndividualSlot
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UPalIndividualCharacterSlot*      Param_Slot                                             (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalCharacterSlotBase_C::GetIndividualSlot(class UPalIndividualCharacterSlot** Param_Slot)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCharacterSlotBase_C", "GetIndividualSlot");
+
+	Params::WBP_PalCharacterSlotBase_C_GetIndividualSlot Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Param_Slot != nullptr)
+		*Param_Slot = Parms.Param_Slot;
+}
+
+
+// Function WBP_PalCharacterSlotBase.WBP_PalCharacterSlotBase_C.On Update HP
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FFixedPoint64                    NowHP                                                  (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FFixedPoint64                    NowMaxHP                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void UWBP_PalCharacterSlotBase_C::On_Update_HP(const struct FFixedPoint64& NowHP, const struct FFixedPoint64& NowMaxHP)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCharacterSlotBase_C", "On Update HP");
+
+	Params::WBP_PalCharacterSlotBase_C_On_Update_HP Parms{};
+
+	Parms.NowHP = std::move(NowHP);
+	Parms.NowMaxHP = std::move(NowMaxHP);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_PalCharacterSlotBase.WBP_PalCharacterSlotBase_C.OnBeginTargetCharacterEat__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 
@@ -156,6 +241,20 @@ void UWBP_PalCharacterSlotBase_C::OnEndTargetCharacterSleep__DelegateSignature()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_PalCharacterSlotBase_C", "OnEndTargetCharacterSleep__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalCharacterSlotBase.WBP_PalCharacterSlotBase_C.OnFavoriteUpdated__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalCharacterSlotBase_C::OnFavoriteUpdated__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCharacterSlotBase_C", "OnFavoriteUpdated__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -349,25 +448,17 @@ void UWBP_PalCharacterSlotBase_C::OnTargetCharacterUpdateHP__DelegateSignature(i
 }
 
 
-// Function WBP_PalCharacterSlotBase.WBP_PalCharacterSlotBase_C.OnUpdateHp
+// Function WBP_PalCharacterSlotBase.WBP_PalCharacterSlotBase_C.OnUpdateFavorite_Internal
 // (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FFixedPoint64                    NowHP                                                  (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// struct FFixedPoint64                    NowMaxHP                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void UWBP_PalCharacterSlotBase_C::OnUpdateHp(const struct FFixedPoint64& NowHP, const struct FFixedPoint64& NowMaxHP)
+void UWBP_PalCharacterSlotBase_C::OnUpdateFavorite_Internal()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCharacterSlotBase_C", "OnUpdateHp");
+		Func = Class->GetFunction("WBP_PalCharacterSlotBase_C", "OnUpdateFavorite_Internal");
 
-	Params::WBP_PalCharacterSlotBase_C_OnUpdateHp Parms{};
-
-	Parms.NowHP = std::move(NowHP);
-	Parms.NowMaxHP = std::move(NowMaxHP);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -448,6 +539,48 @@ void UWBP_PalCharacterSlotBase_C::OnUpdateSlot_Internal(class UPalIndividualChar
 
 	Parms.Param_Slot = Param_Slot;
 	Parms.LastHandle = LastHandle;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalCharacterSlotBase.WBP_PalCharacterSlotBase_C.OnUpdateWorkId__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FGuid                            WorkId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsFixedAssign                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalCharacterSlotBase_C::OnUpdateWorkId__DelegateSignature(const struct FGuid& WorkId, bool IsFixedAssign)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCharacterSlotBase_C", "OnUpdateWorkId__DelegateSignature");
+
+	Params::WBP_PalCharacterSlotBase_C_OnUpdateWorkId__DelegateSignature Parms{};
+
+	Parms.WorkId = std::move(WorkId);
+	Parms.IsFixedAssign = IsFixedAssign;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalCharacterSlotBase.WBP_PalCharacterSlotBase_C.OnUpdateWorkId_Internal
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalCharacterParameterComponent*  Parameter                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalCharacterSlotBase_C::OnUpdateWorkId_Internal(class UPalCharacterParameterComponent* Parameter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCharacterSlotBase_C", "OnUpdateWorkId_Internal");
+
+	Params::WBP_PalCharacterSlotBase_C_OnUpdateWorkId_Internal Parms{};
+
+	Parms.Parameter = Parameter;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

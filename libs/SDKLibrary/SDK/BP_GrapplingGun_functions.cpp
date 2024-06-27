@@ -17,6 +17,30 @@
 namespace SDK
 {
 
+// Function BP_GrapplingGun.BP_GrapplingGun_C.CalcCoolTimeRate
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FVector                          HitLocation                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  CoolTime                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_GrapplingGun_C::CalcCoolTimeRate(const struct FVector& HitLocation, double* CoolTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_GrapplingGun_C", "CalcCoolTimeRate");
+
+	Params::BP_GrapplingGun_C_CalcCoolTimeRate Parms{};
+
+	Parms.HitLocation = std::move(HitLocation);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (CoolTime != nullptr)
+		*CoolTime = Parms.CoolTime;
+}
+
+
 // Function BP_GrapplingGun.BP_GrapplingGun_C.CalcShootStartParam
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -63,7 +87,7 @@ void ABP_GrapplingGun_C::EndCable(bool IsAnimationCancel)
 
 
 // Function BP_GrapplingGun.BP_GrapplingGun_C.ExecuteUbergraph_BP_GrapplingGun
-// (Final, UbergraphFunction)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -126,15 +150,23 @@ void ABP_GrapplingGun_C::IsGraplingAction(bool* bSuccess)
 
 // Function BP_GrapplingGun.BP_GrapplingGun_C.On Grapling Action Start
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector                          HitLocation                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  CoolTimeRate                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_GrapplingGun_C::On_Grapling_Action_Start()
+void ABP_GrapplingGun_C::On_Grapling_Action_Start(const struct FVector& HitLocation, double CoolTimeRate)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_GrapplingGun_C", "On Grapling Action Start");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_GrapplingGun_C_On_Grapling_Action_Start Parms{};
+
+	Parms.HitLocation = std::move(HitLocation);
+	Parms.CoolTimeRate = CoolTimeRate;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -264,6 +296,26 @@ void ABP_GrapplingGun_C::ReceiveBeginPlay()
 }
 
 
+// Function BP_GrapplingGun.BP_GrapplingGun_C.ReceiveEndPlay
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_GrapplingGun_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_GrapplingGun_C", "ReceiveEndPlay");
+
+	Params::BP_GrapplingGun_C_ReceiveEndPlay Parms{};
+
+	Parms.EndPlayReason = EndPlayReason;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_GrapplingGun.BP_GrapplingGun_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -293,20 +345,6 @@ void ABP_GrapplingGun_C::ShotCable()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_GrapplingGun_C", "ShotCable");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_GrapplingGun.BP_GrapplingGun_C.ShowHitPoint
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_GrapplingGun_C::ShowHitPoint()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GrapplingGun_C", "ShowHitPoint");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -361,7 +399,7 @@ void ABP_GrapplingGun_C::UpdateCable(double DeltaTime)
 
 
 // Function BP_GrapplingGun.BP_GrapplingGun_C.UpdateRopeEndLocation
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 
 void ABP_GrapplingGun_C::UpdateRopeEndLocation()
 {
@@ -371,6 +409,41 @@ void ABP_GrapplingGun_C::UpdateRopeEndLocation()
 		Func = Class->GetFunction("BP_GrapplingGun_C", "UpdateRopeEndLocation");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_GrapplingGun.BP_GrapplingGun_C.UpdateVisibleReticle
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_GrapplingGun_C::UpdateVisibleReticle()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_GrapplingGun_C", "UpdateVisibleReticle");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_GrapplingGun.BP_GrapplingGun_C.IsShowReticle
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// bool                                    IsShow                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_GrapplingGun_C::IsShowReticle(bool* IsShow) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_GrapplingGun_C", "IsShowReticle");
+
+	Params::BP_GrapplingGun_C_IsShowReticle Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsShow != nullptr)
+		*IsShow = Parms.IsShow;
 }
 
 }

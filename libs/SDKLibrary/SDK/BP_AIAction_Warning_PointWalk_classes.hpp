@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "EWarningPalAIMoveType_structs.hpp"
+#include "Engine_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "BP_AIAction_CanCombatBase_classes.hpp"
-#include "Engine_structs.hpp"
-#include "EWarningPalAIMoveType_structs.hpp"
 
 
 namespace SDK
@@ -36,27 +36,27 @@ public:
 	struct FVector                                TurnR_Direction;                                   // 0x01B8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                TurnL_Direction;                                   // 0x01D0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EWarningPalAIMoveType                         MoveMode;                                          // 0x01E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E71[0x7];                                     // 0x01E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C01[0x7];                                     // 0x01E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        TimeOutTime;                                       // 0x01F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalActionBase*                         TurnAction;                                        // 0x01F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ActionAbort(class APawn* ControlledPawn);
 	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
+	void ActionPause(class APawn* ControlledPawn);
+	void ActionResume(class APawn* ControlledPawn);
+	void ActionStart(class APawn* ControlledPawn);
 	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void CancelTurnAction();
 	void ExecuteUbergraph_BP_AIAction_Warning_PointWalk(int32 EntryPoint);
 	void PlayActionTurnIfNoneAction(const struct FVector& Direction);
 	void Setup(const struct FVector& AttentionLocation);
+	void SoundEvent(const struct FVector& EmitLocation);
 	void StartJump();
 	void TurnL45();
 	void TurnMode();
 	void TurnR45();
 	void UpdateMoveGoal();
-	void ActionPause(class APawn* ControlledPawn);
-	void ActionResume(class APawn* ControlledPawn);
-	void ActionStart(class APawn* ControlledPawn);
-	void SoundEvent(const struct FVector& EmitLocation);
 
 public:
 	static class UClass* StaticClass()

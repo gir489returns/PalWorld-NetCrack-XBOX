@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "WBP_CharaCre_ScrollBoxContentBase_classes.hpp"
-#include "Engine_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "Pal_structs.hpp"
+#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK
@@ -46,13 +46,13 @@ public:
 	class UWidget* CustomNavi_ToTorsoSlider(EUINavigation Param_Navigation);
 	void ExecuteUbergraph_WBP_CharaCre_ScrollBoxContent_Body(int32 EntryPoint);
 	void GetRestoreFocusTarget(class UWidget** Widget);
+	void GetTopFocusTarget(class UWidget** Widget);
 	void OnChangedSelectColor(const struct FLinearColor& Color);
 	void OnClickedBodyType__DelegateSignature(class FName PresetName);
 	void OnClickedBodyTypeButton(class UWBP_CharaCre_BodyTypeButton_C* Widget);
 	void OnClosedCOlorSelectWindow(class UPalHUDDispatchParameterBase* Param_Param);
 	void OnSelectedSkinColor__DelegateSignature(const struct FLinearColor& Color);
 	void SetDefaultBodyTypePresetName(class FName PresetName);
-	void GetTopFocusTarget(class UWidget** Widget);
 
 public:
 	static class UClass* StaticClass()

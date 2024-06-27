@@ -59,6 +59,26 @@ void UBP_AIAction_AlertByKilledFriend_C::ActionFinished(class APawn* ControlledP
 }
 
 
+// Function BP_AIAction_AlertByKilledFriend.BP_AIAction_AlertByKilledFriend_C.ActionStart
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_AlertByKilledFriend_C::ActionStart(class APawn* ControlledPawn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_AlertByKilledFriend_C", "ActionStart");
+
+	Params::BP_AIAction_AlertByKilledFriend_C_ActionStart Parms{};
+
+	Parms.ControlledPawn = ControlledPawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_AIAction_AlertByKilledFriend.BP_AIAction_AlertByKilledFriend_C.ActionTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -194,26 +214,6 @@ void UBP_AIAction_AlertByKilledFriend_C::StopMovement()
 		Func = Class->GetFunction("BP_AIAction_AlertByKilledFriend_C", "StopMovement");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_AIAction_AlertByKilledFriend.BP_AIAction_AlertByKilledFriend_C.ActionStart
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_AlertByKilledFriend_C::ActionStart(class APawn* ControlledPawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_AlertByKilledFriend_C", "ActionStart");
-
-	Params::BP_AIAction_AlertByKilledFriend_C_ActionStart Parms{};
-
-	Parms.ControlledPawn = ControlledPawn;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Pal_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Pal_structs.hpp"
 
 
 namespace SDK::Params
@@ -56,7 +56,7 @@ struct WBP_CharaCre_PresetButton_C_ExecuteUbergraph_WBP_CharaCre_PresetButton fi
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_452A[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4876[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -97,34 +97,34 @@ static_assert(sizeof(WBP_CharaCre_PresetButton_C_OnClicked__DelegateSignature) =
 static_assert(offsetof(WBP_CharaCre_PresetButton_C_OnClicked__DelegateSignature, Widget) == 0x000000, "Member 'WBP_CharaCre_PresetButton_C_OnClicked__DelegateSignature::Widget' has a wrong offset!");
 
 // Function WBP_CharaCre_PresetButton.WBP_CharaCre_PresetButton_C.Setup
-// 0x0180 (0x0180 - 0x0000)
+// 0x0238 (0x0238 - 0x0000)
 struct WBP_CharaCre_PresetButton_C_Setup final
 {
 public:
 	class FName                                   BindPresetName;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalCharacterCreationPresetDataRow     CallFunc_GetDataTableRowFromName_OutRow;           // 0x0010(0x00D0)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_452B[0x7];                                     // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00F0(0x0050)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0140(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0150(0x0018)()
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0168(0x0018)()
+	struct FPalCharacterCreationPresetDataRow     CallFunc_GetDataTableRowFromName_OutRow;           // 0x0010(0x0188)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4877[0x7];                                     // 0x0199(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x01A8(0x0050)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x01F8(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0208(0x0018)()
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0220(0x0018)()
 };
 static_assert(alignof(WBP_CharaCre_PresetButton_C_Setup) == 0x000008, "Wrong alignment on WBP_CharaCre_PresetButton_C_Setup");
-static_assert(sizeof(WBP_CharaCre_PresetButton_C_Setup) == 0x000180, "Wrong size on WBP_CharaCre_PresetButton_C_Setup");
+static_assert(sizeof(WBP_CharaCre_PresetButton_C_Setup) == 0x000238, "Wrong size on WBP_CharaCre_PresetButton_C_Setup");
 static_assert(offsetof(WBP_CharaCre_PresetButton_C_Setup, BindPresetName) == 0x000000, "Member 'WBP_CharaCre_PresetButton_C_Setup::BindPresetName' has a wrong offset!");
 static_assert(offsetof(WBP_CharaCre_PresetButton_C_Setup, ButtonIndex) == 0x000008, "Member 'WBP_CharaCre_PresetButton_C_Setup::ButtonIndex' has a wrong offset!");
 static_assert(offsetof(WBP_CharaCre_PresetButton_C_Setup, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_CharaCre_PresetButton_C_Setup::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CharaCre_PresetButton_C_Setup, CallFunc_GetDataTableRowFromName_OutRow) == 0x000010, "Member 'WBP_CharaCre_PresetButton_C_Setup::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_PresetButton_C_Setup, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0000E0, "Member 'WBP_CharaCre_PresetButton_C_Setup::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_PresetButton_C_Setup, CallFunc_Conv_IntToInt64_ReturnValue) == 0x0000E8, "Member 'WBP_CharaCre_PresetButton_C_Setup::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_PresetButton_C_Setup, K2Node_MakeStruct_FormatArgumentData) == 0x0000F0, "Member 'WBP_CharaCre_PresetButton_C_Setup::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_PresetButton_C_Setup, K2Node_MakeArray_Array) == 0x000140, "Member 'WBP_CharaCre_PresetButton_C_Setup::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_PresetButton_C_Setup, CallFunc_GetLocalizedTextFromHandle_Text) == 0x000150, "Member 'WBP_CharaCre_PresetButton_C_Setup::CallFunc_GetLocalizedTextFromHandle_Text' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_PresetButton_C_Setup, CallFunc_Format_ReturnValue) == 0x000168, "Member 'WBP_CharaCre_PresetButton_C_Setup::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_PresetButton_C_Setup, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000198, "Member 'WBP_CharaCre_PresetButton_C_Setup::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_PresetButton_C_Setup, CallFunc_Conv_IntToInt64_ReturnValue) == 0x0001A0, "Member 'WBP_CharaCre_PresetButton_C_Setup::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_PresetButton_C_Setup, K2Node_MakeStruct_FormatArgumentData) == 0x0001A8, "Member 'WBP_CharaCre_PresetButton_C_Setup::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_PresetButton_C_Setup, K2Node_MakeArray_Array) == 0x0001F8, "Member 'WBP_CharaCre_PresetButton_C_Setup::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_PresetButton_C_Setup, CallFunc_GetLocalizedTextFromHandle_Text) == 0x000208, "Member 'WBP_CharaCre_PresetButton_C_Setup::CallFunc_GetLocalizedTextFromHandle_Text' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_PresetButton_C_Setup, CallFunc_Format_ReturnValue) == 0x000220, "Member 'WBP_CharaCre_PresetButton_C_Setup::CallFunc_Format_ReturnValue' has a wrong offset!");
 
 }
 

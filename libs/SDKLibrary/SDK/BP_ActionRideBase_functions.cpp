@@ -302,7 +302,7 @@ void UBP_ActionRideBase_C::OnNotifyEnd_CD532E1C42E1BEC6059709A5FB6CCC91(class FN
 
 
 // Function BP_ActionRideBase.BP_ActionRideBase_C.PlayRideCompleteSound
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 
 void UBP_ActionRideBase_C::PlayRideCompleteSound()
 {
@@ -316,7 +316,7 @@ void UBP_ActionRideBase_C::PlayRideCompleteSound()
 
 
 // Function BP_ActionRideBase.BP_ActionRideBase_C.PlayRideStartSound
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 
 void UBP_ActionRideBase_C::PlayRideStartSound()
 {

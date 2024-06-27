@@ -38,7 +38,7 @@ void UBP_VisualEffect_SelfDestructEmissive_C::ExecuteUbergraph_BP_VisualEffect_S
 
 
 // Function BP_VisualEffect_SelfDestructEmissive.BP_VisualEffect_SelfDestructEmissive_C.FlashWithAcceleration
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

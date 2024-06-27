@@ -10,9 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
-#include "AkAudio_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
@@ -24,7 +23,7 @@ struct BP_PalCheatManager_C_ExecuteUbergraph_BP_PalCheatManager final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_474C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_374D[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UWBP_IngameMenu_Task_Tutorial_C*> CallFunc_GetAllWidgetsOfClass_FoundWidgets;        // 0x0008(0x0010)(ReferenceParm, ContainsInstancedReference)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -33,33 +32,33 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_474D[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_374E[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_474E[0x3];                                     // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_374F[0x3];                                     // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWBP_IngameMenu_Task_Tutorial_C*        CallFunc_Array_Get_Item;                           // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TArray<class APalCharacter*>                  CallFunc_GetPalMonsters_OutCharacters;             // 0x0050(0x0010)(ReferenceParm)
 	class APalCharacter*                          CallFunc_Array_Get_Item_1;                         // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_474F[0x4];                                     // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3750[0x4];                                     // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4750[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3751[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IBPI_ControllerDebugInterface_C> K2Node_DynamicCast_AsBPI_Controller_Debug_Interface; // 0x0080(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4751[0x6];                                     // 0x0092(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3752[0x6];                                     // 0x0092(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalPlayerCharacter*                    CallFunc_GetPlayerCharacter_ReturnValue;           // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4752[0x7];                                     // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3753[0x7];                                     // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APPSkyCreator_ControllerExample_C*      CallFunc_GetActorOfClass_ReturnValue;              // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4753[0x5];                                     // 0x00B3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3754[0x5];                                     // 0x00B3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x00C0(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -67,7 +66,7 @@ public:
 	class ABP_PalAdminSpectator_C*                CallFunc_FinishSpawningActor_ReturnValue;          // 0x0138(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UWBP_PalDebugInfo_C*                    CallFunc_Array_Get_Item_2;                         // 0x0140(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4754[0x3];                                     // 0x0149(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3755[0x3];                                     // 0x0149(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -114,25 +113,6 @@ static_assert(offsetof(BP_PalCheatManager_C_ExecuteUbergraph_BP_PalCheatManager,
 static_assert(offsetof(BP_PalCheatManager_C_ExecuteUbergraph_BP_PalCheatManager, CallFunc_Less_IntInt_ReturnValue_2) == 0x000150, "Member 'BP_PalCheatManager_C_ExecuteUbergraph_BP_PalCheatManager::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(BP_PalCheatManager_C_ExecuteUbergraph_BP_PalCheatManager, K2Node_Select_Default) == 0x000151, "Member 'BP_PalCheatManager_C_ExecuteUbergraph_BP_PalCheatManager::K2Node_Select_Default' has a wrong offset!");
 
-// Function BP_PalCheatManager.BP_PalCheatManager_C.PostAkEventByName
-// 0x0040 (0x0040 - 0x0000)
-struct BP_PalCheatManager_C_PostAkEventByName final
-{
-public:
-	class FString                                 EventName;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable;                            // 0x0010(0x0010)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FAkExternalSourceInfo>          Temp_struct_Variable;                              // 0x0020(0x0010)(ConstParm, ReferenceParm)
-	class APawn*                                  CallFunc_GetPlayerPawn_ReturnValue;                // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_PalCheatManager_C_PostAkEventByName) == 0x000008, "Wrong alignment on BP_PalCheatManager_C_PostAkEventByName");
-static_assert(sizeof(BP_PalCheatManager_C_PostAkEventByName) == 0x000040, "Wrong size on BP_PalCheatManager_C_PostAkEventByName");
-static_assert(offsetof(BP_PalCheatManager_C_PostAkEventByName, EventName) == 0x000000, "Member 'BP_PalCheatManager_C_PostAkEventByName::EventName' has a wrong offset!");
-static_assert(offsetof(BP_PalCheatManager_C_PostAkEventByName, Temp_delegate_Variable) == 0x000010, "Member 'BP_PalCheatManager_C_PostAkEventByName::Temp_delegate_Variable' has a wrong offset!");
-static_assert(offsetof(BP_PalCheatManager_C_PostAkEventByName, Temp_struct_Variable) == 0x000020, "Member 'BP_PalCheatManager_C_PostAkEventByName::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BP_PalCheatManager_C_PostAkEventByName, CallFunc_GetPlayerPawn_ReturnValue) == 0x000030, "Member 'BP_PalCheatManager_C_PostAkEventByName::CallFunc_GetPlayerPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PalCheatManager_C_PostAkEventByName, CallFunc_PostEvent_ReturnValue) == 0x000038, "Member 'BP_PalCheatManager_C_PostAkEventByName::CallFunc_PostEvent_ReturnValue' has a wrong offset!");
-
 // Function BP_PalCheatManager.BP_PalCheatManager_C.ToggleAllDebugInfo
 // 0x0040 (0x0040 - 0x0000)
 struct BP_PalCheatManager_C_ToggleAllDebugInfo final
@@ -141,7 +121,7 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4755[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3756[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm)
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Array_Get_Item;                           // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)

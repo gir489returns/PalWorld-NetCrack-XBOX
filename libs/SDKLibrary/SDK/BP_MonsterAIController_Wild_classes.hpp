@@ -19,7 +19,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_MonsterAIController_Wild.BP_MonsterAIController_Wild_C
 // 0x0020 (0x0570 - 0x0550)
-class ABP_MonsterAIController_Wild_C final : public ABP_MonsterAIControllerBase_C
+class ABP_MonsterAIController_Wild_C : public ABP_MonsterAIControllerBase_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_MonsterAIController_Wild_C;      // 0x0550(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

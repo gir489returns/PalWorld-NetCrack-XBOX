@@ -94,6 +94,20 @@ void UBP_PalIncidentRandom_C::CreateCharacterIdList(TArray<class FName>* Charact
 }
 
 
+// Function BP_PalIncidentRandom.BP_PalIncidentRandom_C.CreateMapObjectSpawner
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UBP_PalIncidentRandom_C::CreateMapObjectSpawner()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalIncidentRandom_C", "CreateMapObjectSpawner");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_PalIncidentRandom.BP_PalIncidentRandom_C.CreateNpcSpawner
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -103,6 +117,20 @@ void UBP_PalIncidentRandom_C::CreateNpcSpawner()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_PalIncidentRandom_C", "CreateNpcSpawner");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PalIncidentRandom.BP_PalIncidentRandom_C.CreateObjectPlacement
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UBP_PalIncidentRandom_C::CreateObjectPlacement()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalIncidentRandom_C", "CreateObjectPlacement");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -547,6 +575,34 @@ void UBP_PalIncidentRandom_C::Spawn_NPCs(class UDataTable* SpawnDataList)
 	Parms.SpawnDataList = SpawnDataList;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalIncidentRandom.BP_PalIncidentRandom_C.SpawnDropItems
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UBP_PalIncidentRandom_C::SpawnDropItems()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalIncidentRandom_C", "SpawnDropItems");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PalIncidentRandom.BP_PalIncidentRandom_C.SpawnEggs
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UBP_PalIncidentRandom_C::SpawnEggs()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalIncidentRandom_C", "SpawnEggs");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

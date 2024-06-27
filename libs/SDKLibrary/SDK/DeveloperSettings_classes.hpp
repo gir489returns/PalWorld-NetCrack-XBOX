@@ -22,7 +22,7 @@ namespace SDK
 class UDeveloperSettings : public UObject
 {
 public:
-	uint8                                         Pad_1118[0x10];                                    // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1123[0x10];                                    // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -42,7 +42,7 @@ static_assert(sizeof(UDeveloperSettings) == 0x000038, "Wrong size on UDeveloperS
 class UPlatformSettings : public UObject
 {
 public:
-	uint8                                         Pad_1119[0x18];                                    // 0x0028(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1124[0x18];                                    // 0x0028(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -56,6 +56,28 @@ public:
 };
 static_assert(alignof(UPlatformSettings) == 0x000008, "Wrong alignment on UPlatformSettings");
 static_assert(sizeof(UPlatformSettings) == 0x000040, "Wrong size on UPlatformSettings");
+
+// Class DeveloperSettings.PlatformSettingsManager
+// 0x0058 (0x0080 - 0x0028)
+class UPlatformSettingsManager final : public UObject
+{
+public:
+	TMap<TSubclassOf<class UPlatformSettings>, struct FPlatformSettingsInstances> SettingsMap;                                       // 0x0028(0x0050)(Transient, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1125[0x8];                                     // 0x0078(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"PlatformSettingsManager">();
+	}
+	static class UPlatformSettingsManager* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPlatformSettingsManager>();
+	}
+};
+static_assert(alignof(UPlatformSettingsManager) == 0x000008, "Wrong alignment on UPlatformSettingsManager");
+static_assert(sizeof(UPlatformSettingsManager) == 0x000080, "Wrong size on UPlatformSettingsManager");
+static_assert(offsetof(UPlatformSettingsManager, SettingsMap) == 0x000028, "Member 'UPlatformSettingsManager::SettingsMap' has a wrong offset!");
 
 // Class DeveloperSettings.DeveloperSettingsBackedByCVars
 // 0x0000 (0x0038 - 0x0038)
@@ -73,28 +95,6 @@ public:
 };
 static_assert(alignof(UDeveloperSettingsBackedByCVars) == 0x000008, "Wrong alignment on UDeveloperSettingsBackedByCVars");
 static_assert(sizeof(UDeveloperSettingsBackedByCVars) == 0x000038, "Wrong size on UDeveloperSettingsBackedByCVars");
-
-// Class DeveloperSettings.PlatformSettingsManager
-// 0x0058 (0x0080 - 0x0028)
-class UPlatformSettingsManager final : public UObject
-{
-public:
-	TMap<TSubclassOf<class UPlatformSettings>, struct FPlatformSettingsInstances> SettingsMap;                                       // 0x0028(0x0050)(Transient, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_111A[0x8];                                     // 0x0078(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PlatformSettingsManager">();
-	}
-	static class UPlatformSettingsManager* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UPlatformSettingsManager>();
-	}
-};
-static_assert(alignof(UPlatformSettingsManager) == 0x000008, "Wrong alignment on UPlatformSettingsManager");
-static_assert(sizeof(UPlatformSettingsManager) == 0x000080, "Wrong size on UPlatformSettingsManager");
-static_assert(offsetof(UPlatformSettingsManager, SettingsMap) == 0x000028, "Member 'UPlatformSettingsManager::SettingsMap' has a wrong offset!");
 
 }
 

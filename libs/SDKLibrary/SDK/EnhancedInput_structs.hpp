@@ -140,6 +140,33 @@ enum class ETriggerEventsSupported : uint8
 	ETriggerEventsSupported_MAX              = 8,
 };
 
+// ScriptStruct EnhancedInput.BlueprintEnhancedInputActionBinding
+// 0x0018 (0x0018 - 0x0000)
+struct FBlueprintEnhancedInputActionBinding final
+{
+public:
+	class UInputAction*                           InputAction;                                       // 0x0000(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ETriggerEvent                                 TriggerEvent;                                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_235D[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   FunctionNameToBind;                                // 0x000C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_235E[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FBlueprintEnhancedInputActionBinding) == 0x000008, "Wrong alignment on FBlueprintEnhancedInputActionBinding");
+static_assert(sizeof(FBlueprintEnhancedInputActionBinding) == 0x000018, "Wrong size on FBlueprintEnhancedInputActionBinding");
+static_assert(offsetof(FBlueprintEnhancedInputActionBinding, InputAction) == 0x000000, "Member 'FBlueprintEnhancedInputActionBinding::InputAction' has a wrong offset!");
+static_assert(offsetof(FBlueprintEnhancedInputActionBinding, TriggerEvent) == 0x000008, "Member 'FBlueprintEnhancedInputActionBinding::TriggerEvent' has a wrong offset!");
+static_assert(offsetof(FBlueprintEnhancedInputActionBinding, FunctionNameToBind) == 0x00000C, "Member 'FBlueprintEnhancedInputActionBinding::FunctionNameToBind' has a wrong offset!");
+
+// ScriptStruct EnhancedInput.InputActionValue
+// 0x0020 (0x0020 - 0x0000)
+struct alignas(0x08) FInputActionValue final
+{
+public:
+	uint8                                         Pad_235F[0x20];                                    // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FInputActionValue) == 0x000008, "Wrong alignment on FInputActionValue");
+static_assert(sizeof(FInputActionValue) == 0x000020, "Wrong size on FInputActionValue");
+
 // ScriptStruct EnhancedInput.PlayerMappableKeyOptions
 // 0x0040 (0x0040 - 0x0000)
 struct FPlayerMappableKeyOptions final
@@ -157,16 +184,6 @@ static_assert(offsetof(FPlayerMappableKeyOptions, Name) == 0x000008, "Member 'FP
 static_assert(offsetof(FPlayerMappableKeyOptions, DisplayName) == 0x000010, "Member 'FPlayerMappableKeyOptions::DisplayName' has a wrong offset!");
 static_assert(offsetof(FPlayerMappableKeyOptions, DisplayCategory) == 0x000028, "Member 'FPlayerMappableKeyOptions::DisplayCategory' has a wrong offset!");
 
-// ScriptStruct EnhancedInput.InputActionValue
-// 0x0020 (0x0020 - 0x0000)
-struct alignas(0x08) FInputActionValue final
-{
-public:
-	uint8                                         Pad_22D8[0x20];                                    // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FInputActionValue) == 0x000008, "Wrong alignment on FInputActionValue");
-static_assert(sizeof(FInputActionValue) == 0x000020, "Wrong size on FInputActionValue");
-
 // ScriptStruct EnhancedInput.EnhancedActionKeyMapping
 // 0x0088 (0x0088 - 0x0000)
 struct FEnhancedActionKeyMapping final
@@ -179,7 +196,7 @@ public:
 	struct FKey                                   Key;                                               // 0x0068(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bIsPlayerMappable : 1;                             // 0x0080(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bShouldBeIgnored : 1;                              // 0x0080(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_22D9[0x7];                                     // 0x0081(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2360[0x7];                                     // 0x0081(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FEnhancedActionKeyMapping) == 0x000008, "Wrong alignment on FEnhancedActionKeyMapping");
 static_assert(sizeof(FEnhancedActionKeyMapping) == 0x000088, "Wrong size on FEnhancedActionKeyMapping");
@@ -195,7 +212,7 @@ struct FMappingQueryIssue final
 {
 public:
 	EMappingQueryIssue                            Issue;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22DA[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2361[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UInputMappingContext*                   BlockingContext;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UInputAction*                           BlockingAction;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -204,23 +221,6 @@ static_assert(sizeof(FMappingQueryIssue) == 0x000018, "Wrong size on FMappingQue
 static_assert(offsetof(FMappingQueryIssue, Issue) == 0x000000, "Member 'FMappingQueryIssue::Issue' has a wrong offset!");
 static_assert(offsetof(FMappingQueryIssue, BlockingContext) == 0x000008, "Member 'FMappingQueryIssue::BlockingContext' has a wrong offset!");
 static_assert(offsetof(FMappingQueryIssue, BlockingAction) == 0x000010, "Member 'FMappingQueryIssue::BlockingAction' has a wrong offset!");
-
-// ScriptStruct EnhancedInput.BlueprintEnhancedInputActionBinding
-// 0x0018 (0x0018 - 0x0000)
-struct FBlueprintEnhancedInputActionBinding final
-{
-public:
-	class UInputAction*                           InputAction;                                       // 0x0000(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ETriggerEvent                                 TriggerEvent;                                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22DB[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   FunctionNameToBind;                                // 0x000C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22DC[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FBlueprintEnhancedInputActionBinding) == 0x000008, "Wrong alignment on FBlueprintEnhancedInputActionBinding");
-static_assert(sizeof(FBlueprintEnhancedInputActionBinding) == 0x000018, "Wrong size on FBlueprintEnhancedInputActionBinding");
-static_assert(offsetof(FBlueprintEnhancedInputActionBinding, InputAction) == 0x000000, "Member 'FBlueprintEnhancedInputActionBinding::InputAction' has a wrong offset!");
-static_assert(offsetof(FBlueprintEnhancedInputActionBinding, TriggerEvent) == 0x000008, "Member 'FBlueprintEnhancedInputActionBinding::TriggerEvent' has a wrong offset!");
-static_assert(offsetof(FBlueprintEnhancedInputActionBinding, FunctionNameToBind) == 0x00000C, "Member 'FBlueprintEnhancedInputActionBinding::FunctionNameToBind' has a wrong offset!");
 
 // ScriptStruct EnhancedInput.ModifyContextOptions
 // 0x0001 (0x0001 - 0x0000)
@@ -238,7 +238,7 @@ static_assert(sizeof(FModifyContextOptions) == 0x000001, "Wrong size on FModifyC
 struct alignas(0x08) FInjectedInputArray final
 {
 public:
-	uint8                                         Pad_22DD[0x10];                                    // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2362[0x10];                                    // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FInjectedInputArray) == 0x000008, "Wrong alignment on FInjectedInputArray");
 static_assert(sizeof(FInjectedInputArray) == 0x000010, "Wrong size on FInjectedInputArray");
@@ -249,12 +249,12 @@ struct FInputActionInstance final
 {
 public:
 	class UInputAction*                           SourceAction;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_22DE[0xB];                                     // 0x0008(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2363[0xB];                                     // 0x0008(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
 	ETriggerEvent                                 TriggerEvent;                                      // 0x0013(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         LastTriggeredWorldTime;                            // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TArray<class UInputTrigger*>                  Triggers;                                          // 0x0018(0x0010)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	TArray<class UInputModifier*>                 Modifiers;                                         // 0x0028(0x0010)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	uint8                                         Pad_22DF[0x20];                                    // 0x0038(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2364[0x20];                                    // 0x0038(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ElapsedProcessedTime;                              // 0x0058(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         ElapsedTriggeredTime;                              // 0x005C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
@@ -275,10 +275,10 @@ struct FBlueprintInputDebugKeyDelegateBinding final
 public:
 	struct FInputChord                            InputChord;                                        // 0x0000(0x0020)(HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EInputEvent                                   InputKeyEvent;                                     // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22E0[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2365[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   FunctionNameToBind;                                // 0x0024(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bExecuteWhenPaused;                                // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22E1[0x3];                                     // 0x002D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2366[0x3];                                     // 0x002D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FBlueprintInputDebugKeyDelegateBinding) == 0x000008, "Wrong alignment on FBlueprintInputDebugKeyDelegateBinding");
 static_assert(sizeof(FBlueprintInputDebugKeyDelegateBinding) == 0x000030, "Wrong size on FBlueprintInputDebugKeyDelegateBinding");
@@ -294,7 +294,7 @@ struct FInputComboStepData final
 public:
 	class UInputAction*                           ComboStepAction;                                   // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         TimeToPressKey;                                    // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22E2[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2367[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FInputComboStepData) == 0x000008, "Wrong alignment on FInputComboStepData");
 static_assert(sizeof(FInputComboStepData) == 0x000010, "Wrong size on FInputComboStepData");

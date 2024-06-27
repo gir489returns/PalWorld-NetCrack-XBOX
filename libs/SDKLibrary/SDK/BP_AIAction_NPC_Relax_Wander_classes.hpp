@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "BP_AIAction_NPC_Relax_PathWalk_classes.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -33,12 +33,8 @@ public:
 
 public:
 	void ActionStart(class APawn* ControlledPawn);
-	void Create_Inside_Nodes(double Radius, int32 SplitNum, TArray<struct FVector>* Nodes);
-	void CreateCircumferenceNodes(double Radius, int32 SplitNum, TArray<struct FVector>* Nodes);
-	void CreateNodes(const struct FVector& Center, double Radius, int32 SplitNum, TArray<struct FVector>* Nodes);
 	void ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander(int32 EntryPoint);
 	void Get_Arrivable_Location(const struct FVector& V, bool* Result, struct FVector* Location);
-	void HasNearPoint(TArray<struct FVector>& Nodes, const struct FVector& Point, bool* Result);
 	void OnStuck();
 	void OnTargetPointUpdateStart();
 	void SelectTargetNode(struct FVector* Location, int32* Param_Index);

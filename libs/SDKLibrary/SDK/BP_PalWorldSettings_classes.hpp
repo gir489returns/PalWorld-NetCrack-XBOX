@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_PalWorldSettings.BP_PalWorldSettings_C
-// 0x0008 (0x0528 - 0x0520)
+// 0x0008 (0x0530 - 0x0528)
 class ABP_PalWorldSettings_C final : public APalWorldSettings
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0520(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0528(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -34,8 +34,8 @@ public:
 	}
 };
 static_assert(alignof(ABP_PalWorldSettings_C) == 0x000008, "Wrong alignment on ABP_PalWorldSettings_C");
-static_assert(sizeof(ABP_PalWorldSettings_C) == 0x000528, "Wrong size on ABP_PalWorldSettings_C");
-static_assert(offsetof(ABP_PalWorldSettings_C, DefaultSceneRoot) == 0x000520, "Member 'ABP_PalWorldSettings_C::DefaultSceneRoot' has a wrong offset!");
+static_assert(sizeof(ABP_PalWorldSettings_C) == 0x000530, "Wrong size on ABP_PalWorldSettings_C");
+static_assert(offsetof(ABP_PalWorldSettings_C, DefaultSceneRoot) == 0x000528, "Member 'ABP_PalWorldSettings_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

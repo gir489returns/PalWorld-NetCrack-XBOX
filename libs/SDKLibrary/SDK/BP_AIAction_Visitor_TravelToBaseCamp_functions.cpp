@@ -59,98 +59,6 @@ void UBP_AIAction_Visitor_TravelToBaseCamp_C::ActionFinished(class APawn* Contro
 }
 
 
-// Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.ActionTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_Visitor_TravelToBaseCamp_C::ActionTick(class APawn* ControlledPawn, float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_Visitor_TravelToBaseCamp_C", "ActionTick");
-
-	Params::BP_AIAction_Visitor_TravelToBaseCamp_C_ActionTick Parms{};
-
-	Parms.ControlledPawn = ControlledPawn;
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_Visitor_TravelToBaseCamp_C::ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_Visitor_TravelToBaseCamp_C", "ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp");
-
-	Params::BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.OnArrivedTargetPoint__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UBP_AIAction_Visitor_TravelToBaseCamp_C::OnArrivedTargetPoint__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_Visitor_TravelToBaseCamp_C", "OnArrivedTargetPoint__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.OnStuck__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UBP_AIAction_Visitor_TravelToBaseCamp_C::OnStuck__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_Visitor_TravelToBaseCamp_C", "OnStuck__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.Tick Move to Base Camp
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// float                                   DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_Visitor_TravelToBaseCamp_C::Tick_Move_to_Base_Camp(class AActor* ControlledPawn, float DeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_Visitor_TravelToBaseCamp_C", "Tick Move to Base Camp");
-
-	Params::BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp Parms{};
-
-	Parms.ControlledPawn = ControlledPawn;
-	Parms.DeltaTime = DeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.ActionPause
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -211,6 +119,48 @@ void UBP_AIAction_Visitor_TravelToBaseCamp_C::ActionStart(class APawn* Controlle
 }
 
 
+// Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.ActionTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_Visitor_TravelToBaseCamp_C::ActionTick(class APawn* ControlledPawn, float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_Visitor_TravelToBaseCamp_C", "ActionTick");
+
+	Params::BP_AIAction_Visitor_TravelToBaseCamp_C_ActionTick Parms{};
+
+	Parms.ControlledPawn = ControlledPawn;
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_Visitor_TravelToBaseCamp_C::ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_Visitor_TravelToBaseCamp_C", "ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp");
+
+	Params::BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.Fun_Damage_AIResponse
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -228,6 +178,34 @@ void UBP_AIAction_Visitor_TravelToBaseCamp_C::Fun_Damage_AIResponse(const struct
 	Parms.DamageResult = std::move(DamageResult);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.OnArrivedTargetPoint__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void UBP_AIAction_Visitor_TravelToBaseCamp_C::OnArrivedTargetPoint__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_Visitor_TravelToBaseCamp_C", "OnArrivedTargetPoint__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.OnStuck__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void UBP_AIAction_Visitor_TravelToBaseCamp_C::OnStuck__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_Visitor_TravelToBaseCamp_C", "OnStuck__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -272,6 +250,28 @@ void UBP_AIAction_Visitor_TravelToBaseCamp_C::SoundEvent(const struct FVector& E
 	Params::BP_AIAction_Visitor_TravelToBaseCamp_C_SoundEvent Parms{};
 
 	Parms.EmitLocation = std::move(EmitLocation);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.Tick Move to Base Camp
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_Visitor_TravelToBaseCamp_C::Tick_Move_to_Base_Camp(class AActor* ControlledPawn, float DeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_Visitor_TravelToBaseCamp_C", "Tick Move to Base Camp");
+
+	Params::BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp Parms{};
+
+	Parms.ControlledPawn = ControlledPawn;
+	Parms.DeltaTime = DeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

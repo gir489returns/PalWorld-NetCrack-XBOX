@@ -21,7 +21,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CharaCre.WBP_CharaCre_C
-// 0x01F0 (0x0468 - 0x0278)
+// 0x0200 (0x0478 - 0x0278)
 class UWBP_CharaCre_C final : public UUserWidget
 {
 public:
@@ -29,48 +29,51 @@ public:
 	class UWidgetAnimation*                       Anm_PlayerNameEdit_OffToOn;                        // 0x0280(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UCanvasPanel*                           Canvas_PlayerName;                                 // 0x0288(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_85;                                          // 0x0290(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_ExitInGame;                                // 0x0298(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_ExitNewGame;                               // 0x02A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBP_PalTextBlock_C*                     Text_PlayerName;                                   // 0x02A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CharaCre_MenuButton_C*             WBP_CharaCre_MenuButton_Body;                      // 0x02B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CharaCre_MenuButton_C*             WBP_CharaCre_MenuButton_Finish;                    // 0x02B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CharaCre_MenuButton_C*             WBP_CharaCre_MenuButton_Finish_InGame;             // 0x02C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CharaCre_MenuButton_C*             WBP_CharaCre_MenuButton_Hair;                      // 0x02C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CharaCre_MenuButton_C*             WBP_CharaCre_MenuButton_Head;                      // 0x02D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CharaCre_MenuButton_C*             WBP_CharaCre_MenuButton_Preset;                    // 0x02D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CharaCre_MenuButton_C*             WBP_CharaCre_MenuButton_Voice;                     // 0x02E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CommonButton_C*                    WBP_CommonButton_65;                               // 0x02E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_PalCommonScrollList_C*             WBP_PalCommonScrollList_Setting;                   // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_             OnChangedTab;                                      // 0x02F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class UWBP_CharaCre_ScrollBoxContentSet_C*    ScrollBoxContentSet;                               // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_             OnLeftRotationButtonClicked;                       // 0x0310(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnRightRotationButtonClicked;                      // 0x0320(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnChangedSkinColor;                                // 0x0330(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnChangedTorsoSize;                                // 0x0340(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnChangedLegSize;                                  // 0x0350(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnChangedArmSize;                                  // 0x0360(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnChangedEyeColor;                                 // 0x0370(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnChangedBrowColor;                                // 0x0380(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnChangedHairColor;                                // 0x0390(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnSelectedBodyMesh;                                // 0x03A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnSelecteddHeadMesh;                               // 0x03B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnSelectedHairMesh;                                // 0x03C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnClickedCategoryButton;                           // 0x03D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class UWBP_CharaCre_MenuButton_C*             LastClickedButton;                                 // 0x03E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_             OnNotifyOpenSelectColorWindow;                     // 0x03E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnNotifyCloseSelectColorWIndow;                    // 0x03F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnClickedEditNameButton;                           // 0x0408(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnSelectedEyeMaterial;                             // 0x0418(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnClickedCompleteButton;                           // 0x0428(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnSelectedPreset;                                  // 0x0438(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnChangedVoiceID;                                  // 0x0448(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnClickedInGameCompleteButton;                     // 0x0458(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class USizeBox*                               SizeBox_CancelInGame;                              // 0x0298(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_ExitInGame;                                // 0x02A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_ExitNewGame;                               // 0x02A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBP_PalTextBlock_C*                     Text_PlayerName;                                   // 0x02B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CharaCre_MenuButton_C*             WBP_CharaCre_MenuButton_Body;                      // 0x02B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CharaCre_MenuButton_C*             WBP_CharaCre_MenuButton_Cancel_InGame;             // 0x02C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CharaCre_MenuButton_C*             WBP_CharaCre_MenuButton_Finish;                    // 0x02C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CharaCre_MenuButton_C*             WBP_CharaCre_MenuButton_Finish_InGame;             // 0x02D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CharaCre_MenuButton_C*             WBP_CharaCre_MenuButton_Hair;                      // 0x02D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CharaCre_MenuButton_C*             WBP_CharaCre_MenuButton_Head;                      // 0x02E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CharaCre_MenuButton_C*             WBP_CharaCre_MenuButton_Preset;                    // 0x02E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CharaCre_MenuButton_C*             WBP_CharaCre_MenuButton_Voice;                     // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CommonButton_C*                    WBP_CommonButton_65;                               // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_PalCommonScrollList_C*             WBP_PalCommonScrollList_Setting;                   // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_             OnChangedTab;                                      // 0x0308(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UWBP_CharaCre_ScrollBoxContentSet_C*    ScrollBoxContentSet;                               // 0x0318(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_             OnLeftRotationButtonClicked;                       // 0x0320(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnRightRotationButtonClicked;                      // 0x0330(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnChangedSkinColor;                                // 0x0340(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnChangedTorsoSize;                                // 0x0350(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnChangedLegSize;                                  // 0x0360(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnChangedArmSize;                                  // 0x0370(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnChangedEyeColor;                                 // 0x0380(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnChangedBrowColor;                                // 0x0390(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnChangedHairColor;                                // 0x03A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnSelectedBodyMesh;                                // 0x03B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnSelecteddHeadMesh;                               // 0x03C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnSelectedHairMesh;                                // 0x03D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnClickedCategoryButton;                           // 0x03E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UWBP_CharaCre_MenuButton_C*             LastClickedButton;                                 // 0x03F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_             OnNotifyOpenSelectColorWindow;                     // 0x03F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnNotifyCloseSelectColorWindow;                    // 0x0408(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnClickedEditNameButton;                           // 0x0418(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnSelectedEyeMaterial;                             // 0x0428(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnClickedCompleteButton;                           // 0x0438(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnSelectedPreset;                                  // 0x0448(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnChangedVoiceID;                                  // 0x0458(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnClickedInGameCompleteButton;                     // 0x0468(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void AnmEvent_NoRotation();
 	void ApplyMakeInfo(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo);
 	void BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_1_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature(class UWBP_CharaCre_MenuButton_C* Button);
 	void BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_2_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature(class UWBP_CharaCre_MenuButton_C* Button);
+	void BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_Cancel_InGame_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature(class UWBP_CharaCre_MenuButton_C* Button);
 	void BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_Finish_InGame_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature(class UWBP_CharaCre_MenuButton_C* Button);
 	void BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_Finish_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature(class UWBP_CharaCre_MenuButton_C* Button);
 	void BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_K2Node_ComponentBoundEvent_6_OnClicked__DelegateSignature(class UWBP_CharaCre_MenuButton_C* Button);
@@ -81,6 +84,7 @@ public:
 	void Construct();
 	class UWidget* CustomNavi_ToCategoryTop(EUINavigation Param_Navigation);
 	class UWidget* CustomNavi_ToNameChange(EUINavigation Param_Navigation);
+	void Destruct();
 	void ExecuteUbergraph_WBP_CharaCre(int32 EntryPoint);
 	void GetCategoryButtonByCategory(E_UICharacterMakeCategory CategoryType, class UWBP_CharaCre_MenuButton_C** Button);
 	void GetRestoreFocusTarget(E_UICharacterMakeCategory CategoryType, class UWidget** Widget);
@@ -115,7 +119,7 @@ public:
 	void OnInitialized();
 	void OnLeftRotationButtonClicked__DelegateSignature();
 	void OnNotifyClosenSelectColorWindow_Internal();
-	void OnNotifyCloseSelectColorWIndow__DelegateSignature();
+	void OnNotifyCloseSelectColorWindow__DelegateSignature();
 	void OnNotifyOpenSelectColorWindow__DelegateSignature();
 	void OnNotifyOpenSelectColorWindow_Internal();
 	void OnRightRotationButtonClicked__DelegateSignature();
@@ -145,47 +149,49 @@ public:
 	}
 };
 static_assert(alignof(UWBP_CharaCre_C) == 0x000008, "Wrong alignment on UWBP_CharaCre_C");
-static_assert(sizeof(UWBP_CharaCre_C) == 0x000468, "Wrong size on UWBP_CharaCre_C");
+static_assert(sizeof(UWBP_CharaCre_C) == 0x000478, "Wrong size on UWBP_CharaCre_C");
 static_assert(offsetof(UWBP_CharaCre_C, UberGraphFrame) == 0x000278, "Member 'UWBP_CharaCre_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_CharaCre_C, Anm_PlayerNameEdit_OffToOn) == 0x000280, "Member 'UWBP_CharaCre_C::Anm_PlayerNameEdit_OffToOn' has a wrong offset!");
 static_assert(offsetof(UWBP_CharaCre_C, Canvas_PlayerName) == 0x000288, "Member 'UWBP_CharaCre_C::Canvas_PlayerName' has a wrong offset!");
 static_assert(offsetof(UWBP_CharaCre_C, Image_85) == 0x000290, "Member 'UWBP_CharaCre_C::Image_85' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, SizeBox_ExitInGame) == 0x000298, "Member 'UWBP_CharaCre_C::SizeBox_ExitInGame' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, SizeBox_ExitNewGame) == 0x0002A0, "Member 'UWBP_CharaCre_C::SizeBox_ExitNewGame' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, Text_PlayerName) == 0x0002A8, "Member 'UWBP_CharaCre_C::Text_PlayerName' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, WBP_CharaCre_MenuButton_Body) == 0x0002B0, "Member 'UWBP_CharaCre_C::WBP_CharaCre_MenuButton_Body' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, WBP_CharaCre_MenuButton_Finish) == 0x0002B8, "Member 'UWBP_CharaCre_C::WBP_CharaCre_MenuButton_Finish' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, WBP_CharaCre_MenuButton_Finish_InGame) == 0x0002C0, "Member 'UWBP_CharaCre_C::WBP_CharaCre_MenuButton_Finish_InGame' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, WBP_CharaCre_MenuButton_Hair) == 0x0002C8, "Member 'UWBP_CharaCre_C::WBP_CharaCre_MenuButton_Hair' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, WBP_CharaCre_MenuButton_Head) == 0x0002D0, "Member 'UWBP_CharaCre_C::WBP_CharaCre_MenuButton_Head' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, WBP_CharaCre_MenuButton_Preset) == 0x0002D8, "Member 'UWBP_CharaCre_C::WBP_CharaCre_MenuButton_Preset' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, WBP_CharaCre_MenuButton_Voice) == 0x0002E0, "Member 'UWBP_CharaCre_C::WBP_CharaCre_MenuButton_Voice' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, WBP_CommonButton_65) == 0x0002E8, "Member 'UWBP_CharaCre_C::WBP_CommonButton_65' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, WBP_PalCommonScrollList_Setting) == 0x0002F0, "Member 'UWBP_CharaCre_C::WBP_PalCommonScrollList_Setting' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, OnChangedTab) == 0x0002F8, "Member 'UWBP_CharaCre_C::OnChangedTab' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, ScrollBoxContentSet) == 0x000308, "Member 'UWBP_CharaCre_C::ScrollBoxContentSet' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, OnLeftRotationButtonClicked) == 0x000310, "Member 'UWBP_CharaCre_C::OnLeftRotationButtonClicked' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, OnRightRotationButtonClicked) == 0x000320, "Member 'UWBP_CharaCre_C::OnRightRotationButtonClicked' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, OnChangedSkinColor) == 0x000330, "Member 'UWBP_CharaCre_C::OnChangedSkinColor' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, OnChangedTorsoSize) == 0x000340, "Member 'UWBP_CharaCre_C::OnChangedTorsoSize' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, OnChangedLegSize) == 0x000350, "Member 'UWBP_CharaCre_C::OnChangedLegSize' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, OnChangedArmSize) == 0x000360, "Member 'UWBP_CharaCre_C::OnChangedArmSize' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, OnChangedEyeColor) == 0x000370, "Member 'UWBP_CharaCre_C::OnChangedEyeColor' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, OnChangedBrowColor) == 0x000380, "Member 'UWBP_CharaCre_C::OnChangedBrowColor' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, OnChangedHairColor) == 0x000390, "Member 'UWBP_CharaCre_C::OnChangedHairColor' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, OnSelectedBodyMesh) == 0x0003A0, "Member 'UWBP_CharaCre_C::OnSelectedBodyMesh' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, OnSelecteddHeadMesh) == 0x0003B0, "Member 'UWBP_CharaCre_C::OnSelecteddHeadMesh' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, OnSelectedHairMesh) == 0x0003C0, "Member 'UWBP_CharaCre_C::OnSelectedHairMesh' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, OnClickedCategoryButton) == 0x0003D0, "Member 'UWBP_CharaCre_C::OnClickedCategoryButton' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, LastClickedButton) == 0x0003E0, "Member 'UWBP_CharaCre_C::LastClickedButton' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, OnNotifyOpenSelectColorWindow) == 0x0003E8, "Member 'UWBP_CharaCre_C::OnNotifyOpenSelectColorWindow' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, OnNotifyCloseSelectColorWIndow) == 0x0003F8, "Member 'UWBP_CharaCre_C::OnNotifyCloseSelectColorWIndow' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, OnClickedEditNameButton) == 0x000408, "Member 'UWBP_CharaCre_C::OnClickedEditNameButton' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, OnSelectedEyeMaterial) == 0x000418, "Member 'UWBP_CharaCre_C::OnSelectedEyeMaterial' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, OnClickedCompleteButton) == 0x000428, "Member 'UWBP_CharaCre_C::OnClickedCompleteButton' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, OnSelectedPreset) == 0x000438, "Member 'UWBP_CharaCre_C::OnSelectedPreset' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, OnChangedVoiceID) == 0x000448, "Member 'UWBP_CharaCre_C::OnChangedVoiceID' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, OnClickedInGameCompleteButton) == 0x000458, "Member 'UWBP_CharaCre_C::OnClickedInGameCompleteButton' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, SizeBox_CancelInGame) == 0x000298, "Member 'UWBP_CharaCre_C::SizeBox_CancelInGame' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, SizeBox_ExitInGame) == 0x0002A0, "Member 'UWBP_CharaCre_C::SizeBox_ExitInGame' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, SizeBox_ExitNewGame) == 0x0002A8, "Member 'UWBP_CharaCre_C::SizeBox_ExitNewGame' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, Text_PlayerName) == 0x0002B0, "Member 'UWBP_CharaCre_C::Text_PlayerName' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, WBP_CharaCre_MenuButton_Body) == 0x0002B8, "Member 'UWBP_CharaCre_C::WBP_CharaCre_MenuButton_Body' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, WBP_CharaCre_MenuButton_Cancel_InGame) == 0x0002C0, "Member 'UWBP_CharaCre_C::WBP_CharaCre_MenuButton_Cancel_InGame' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, WBP_CharaCre_MenuButton_Finish) == 0x0002C8, "Member 'UWBP_CharaCre_C::WBP_CharaCre_MenuButton_Finish' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, WBP_CharaCre_MenuButton_Finish_InGame) == 0x0002D0, "Member 'UWBP_CharaCre_C::WBP_CharaCre_MenuButton_Finish_InGame' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, WBP_CharaCre_MenuButton_Hair) == 0x0002D8, "Member 'UWBP_CharaCre_C::WBP_CharaCre_MenuButton_Hair' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, WBP_CharaCre_MenuButton_Head) == 0x0002E0, "Member 'UWBP_CharaCre_C::WBP_CharaCre_MenuButton_Head' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, WBP_CharaCre_MenuButton_Preset) == 0x0002E8, "Member 'UWBP_CharaCre_C::WBP_CharaCre_MenuButton_Preset' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, WBP_CharaCre_MenuButton_Voice) == 0x0002F0, "Member 'UWBP_CharaCre_C::WBP_CharaCre_MenuButton_Voice' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, WBP_CommonButton_65) == 0x0002F8, "Member 'UWBP_CharaCre_C::WBP_CommonButton_65' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, WBP_PalCommonScrollList_Setting) == 0x000300, "Member 'UWBP_CharaCre_C::WBP_PalCommonScrollList_Setting' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, OnChangedTab) == 0x000308, "Member 'UWBP_CharaCre_C::OnChangedTab' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, ScrollBoxContentSet) == 0x000318, "Member 'UWBP_CharaCre_C::ScrollBoxContentSet' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, OnLeftRotationButtonClicked) == 0x000320, "Member 'UWBP_CharaCre_C::OnLeftRotationButtonClicked' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, OnRightRotationButtonClicked) == 0x000330, "Member 'UWBP_CharaCre_C::OnRightRotationButtonClicked' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, OnChangedSkinColor) == 0x000340, "Member 'UWBP_CharaCre_C::OnChangedSkinColor' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, OnChangedTorsoSize) == 0x000350, "Member 'UWBP_CharaCre_C::OnChangedTorsoSize' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, OnChangedLegSize) == 0x000360, "Member 'UWBP_CharaCre_C::OnChangedLegSize' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, OnChangedArmSize) == 0x000370, "Member 'UWBP_CharaCre_C::OnChangedArmSize' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, OnChangedEyeColor) == 0x000380, "Member 'UWBP_CharaCre_C::OnChangedEyeColor' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, OnChangedBrowColor) == 0x000390, "Member 'UWBP_CharaCre_C::OnChangedBrowColor' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, OnChangedHairColor) == 0x0003A0, "Member 'UWBP_CharaCre_C::OnChangedHairColor' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, OnSelectedBodyMesh) == 0x0003B0, "Member 'UWBP_CharaCre_C::OnSelectedBodyMesh' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, OnSelecteddHeadMesh) == 0x0003C0, "Member 'UWBP_CharaCre_C::OnSelecteddHeadMesh' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, OnSelectedHairMesh) == 0x0003D0, "Member 'UWBP_CharaCre_C::OnSelectedHairMesh' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, OnClickedCategoryButton) == 0x0003E0, "Member 'UWBP_CharaCre_C::OnClickedCategoryButton' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, LastClickedButton) == 0x0003F0, "Member 'UWBP_CharaCre_C::LastClickedButton' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, OnNotifyOpenSelectColorWindow) == 0x0003F8, "Member 'UWBP_CharaCre_C::OnNotifyOpenSelectColorWindow' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, OnNotifyCloseSelectColorWindow) == 0x000408, "Member 'UWBP_CharaCre_C::OnNotifyCloseSelectColorWindow' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, OnClickedEditNameButton) == 0x000418, "Member 'UWBP_CharaCre_C::OnClickedEditNameButton' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, OnSelectedEyeMaterial) == 0x000428, "Member 'UWBP_CharaCre_C::OnSelectedEyeMaterial' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, OnClickedCompleteButton) == 0x000438, "Member 'UWBP_CharaCre_C::OnClickedCompleteButton' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, OnSelectedPreset) == 0x000448, "Member 'UWBP_CharaCre_C::OnSelectedPreset' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, OnChangedVoiceID) == 0x000458, "Member 'UWBP_CharaCre_C::OnChangedVoiceID' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, OnClickedInGameCompleteButton) == 0x000468, "Member 'UWBP_CharaCre_C::OnClickedInGameCompleteButton' has a wrong offset!");
 
 }
 

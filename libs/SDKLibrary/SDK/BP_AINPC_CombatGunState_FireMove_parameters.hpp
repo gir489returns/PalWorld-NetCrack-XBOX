@@ -34,29 +34,29 @@ public:
 	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_NPCAIController_C*                  CallFunc_GetControllerRef_NPCAICon;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaTime;                            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F16[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_46A1[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalNPCAIWeaponHandle*                  CallFunc_GetWeaponHandle_WeaponHandle;             // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F17[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_46A2[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_NPCAIController_C*                  CallFunc_GetControllerRef_NPCAICon_1;              // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalNPCAIWeaponHandle*                  CallFunc_GetWeaponHandle_WeaponHandle_1;           // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_DoubleDouble_ReturnValue;            // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F18[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_46A3[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetMaxShootCount_ReturnValue;             // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsMagazineEmpty_ReturnValue;              // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F19[0x6];                                     // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_46A4[0x6];                                     // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_NPCAIController_C*                  CallFunc_GetControllerRef_NPCAICon_2;              // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalNPCAIWeaponHandle*                  CallFunc_GetWeaponHandle_WeaponHandle_2;           // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetShootInterval_ReturnValue;             // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_AttackAblePlayerCamera_AttackAble;        // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ShootAbleSlefForwardDot_ShootAble;        // 0x005D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F1A[0x2];                                     // 0x005E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_46A5[0x2];                                     // 0x005E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F1B[0x3];                                     // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_46A6[0x3];                                     // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_StateTick_DeltaTime_ImplicitCast;         // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_VariableSet_temp_DeltaTime_ImplicitCast;    // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_Temp_DeltaTime_ImplicitCast;    // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_VariableSet_Interval_ImplicitCast;          // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove) == 0x000008, "Wrong alignment on BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove");
@@ -81,7 +81,7 @@ static_assert(offsetof(BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AI
 static_assert(offsetof(BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000060, "Member 'BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000068, "Member 'BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove, CallFunc_StateTick_DeltaTime_ImplicitCast) == 0x00006C, "Member 'BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove::CallFunc_StateTick_DeltaTime_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove, K2Node_VariableSet_temp_DeltaTime_ImplicitCast) == 0x000070, "Member 'BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove::K2Node_VariableSet_temp_DeltaTime_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove, K2Node_VariableSet_Temp_DeltaTime_ImplicitCast) == 0x000070, "Member 'BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove::K2Node_VariableSet_Temp_DeltaTime_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove, K2Node_VariableSet_Interval_ImplicitCast) == 0x000078, "Member 'BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove::K2Node_VariableSet_Interval_ImplicitCast' has a wrong offset!");
 
 // Function BP_AINPC_CombatGunState_FireMove.BP_AINPC_CombatGunState_FireMove_C.StateTick

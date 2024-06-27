@@ -122,7 +122,7 @@ void UBP_AIAction_NPC_Combat_Gun_C::ActionTick(class APawn* ControlledPawn, floa
 
 
 // Function BP_AIAction_NPC_Combat_Gun.BP_AIAction_NPC_Combat_Gun_C.Add Gun Combat State
-// (Private, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EPal_NPC_CombatGunState                 GunState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -138,6 +138,20 @@ void UBP_AIAction_NPC_Combat_Gun_C::Add_Gun_Combat_State(EPal_NPC_CombatGunState
 	Parms.GunState = GunState;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AIAction_NPC_Combat_Gun.BP_AIAction_NPC_Combat_Gun_C.AddAllState
+// (Protected, BlueprintCallable, BlueprintEvent)
+
+void UBP_AIAction_NPC_Combat_Gun_C::AddAllState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_NPC_Combat_Gun_C", "AddAllState");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -224,7 +238,7 @@ void UBP_AIAction_NPC_Combat_Gun_C::IsInMeleeAttackRange(bool* InRange)
 
 
 // Function BP_AIAction_NPC_Combat_Gun.BP_AIAction_NPC_Combat_Gun_C.IsNear_FarRange
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // double                                  Offset                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Near                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -268,6 +282,20 @@ void UBP_AIAction_NPC_Combat_Gun_C::IsNear_NearRange(double Offset, bool* Near)
 
 	if (Near != nullptr)
 		*Near = Parms.Near;
+}
+
+
+// Function BP_AIAction_NPC_Combat_Gun.BP_AIAction_NPC_Combat_Gun_C.SwitchTickState
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBP_AIAction_NPC_Combat_Gun_C::SwitchTickState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_NPC_Combat_Gun_C", "SwitchTickState");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

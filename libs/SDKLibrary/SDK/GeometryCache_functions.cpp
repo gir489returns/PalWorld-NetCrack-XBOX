@@ -42,6 +42,31 @@ class UGeometryCacheComponent* AGeometryCacheActor::GetGeometryCacheComponent() 
 }
 
 
+// Function GeometryCache.GeometryCacheTrack_TransformGroupAnimation.SetMesh
+// (Final, Native, Public, HasOutParams)
+// Parameters:
+// struct FGeometryCacheMeshData           NewMeshData                                            (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+
+void UGeometryCacheTrack_TransformGroupAnimation::SetMesh(const struct FGeometryCacheMeshData& NewMeshData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GeometryCacheTrack_TransformGroupAnimation", "SetMesh");
+
+	Params::GeometryCacheTrack_TransformGroupAnimation_SetMesh Parms{};
+
+	Parms.NewMeshData = std::move(NewMeshData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function GeometryCache.GeometryCacheComponent.Pause
 // (Final, Native, Public, BlueprintCallable)
 
@@ -755,31 +780,6 @@ void UGeometryCacheTrack_TransformAnimation::SetMesh(const struct FGeometryCache
 		Func = Class->GetFunction("GeometryCacheTrack_TransformAnimation", "SetMesh");
 
 	Params::GeometryCacheTrack_TransformAnimation_SetMesh Parms{};
-
-	Parms.NewMeshData = std::move(NewMeshData);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function GeometryCache.GeometryCacheTrack_TransformGroupAnimation.SetMesh
-// (Final, Native, Public, HasOutParams)
-// Parameters:
-// struct FGeometryCacheMeshData           NewMeshData                                            (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-
-void UGeometryCacheTrack_TransformGroupAnimation::SetMesh(const struct FGeometryCacheMeshData& NewMeshData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GeometryCacheTrack_TransformGroupAnimation", "SetMesh");
-
-	Params::GeometryCacheTrack_TransformGroupAnimation_SetMesh Parms{};
 
 	Parms.NewMeshData = std::move(NewMeshData);
 

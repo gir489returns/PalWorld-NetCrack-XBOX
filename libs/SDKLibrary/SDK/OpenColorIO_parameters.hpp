@@ -27,7 +27,7 @@ public:
 	class UTexture*                               InputTexture;                                      // 0x0088(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UTextureRenderTarget2D*                 OutputRenderTarget;                                // 0x0090(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0098(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_187F[0x7];                                     // 0x0099(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_188B[0x7];                                     // 0x0099(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(OpenColorIOBlueprintLibrary_ApplyColorSpaceTransform) == 0x000008, "Wrong alignment on OpenColorIOBlueprintLibrary_ApplyColorSpaceTransform");
 static_assert(sizeof(OpenColorIOBlueprintLibrary_ApplyColorSpaceTransform) == 0x0000A0, "Wrong size on OpenColorIOBlueprintLibrary_ApplyColorSpaceTransform");
@@ -56,10 +56,10 @@ struct OpenColorIODisplayExtensionWrapper_CreateOpenColorIODisplayExtension fina
 {
 public:
 	struct FOpenColorIODisplayConfiguration       InDisplayConfiguration;                            // 0x0000(0x0088)(Parm, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1885[0x8];                                     // 0x0088(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1891[0x8];                                     // 0x0088(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSceneViewExtensionIsActiveFunctor     IsActiveFunction;                                  // 0x0090(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class UOpenColorIODisplayExtensionWrapper*    ReturnValue;                                       // 0x00E0(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1886[0x8];                                     // 0x00E8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1892[0x8];                                     // 0x00E8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(OpenColorIODisplayExtensionWrapper_CreateOpenColorIODisplayExtension) == 0x000010, "Wrong alignment on OpenColorIODisplayExtensionWrapper_CreateOpenColorIODisplayExtension");
 static_assert(sizeof(OpenColorIODisplayExtensionWrapper_CreateOpenColorIODisplayExtension) == 0x0000F0, "Wrong size on OpenColorIODisplayExtensionWrapper_CreateOpenColorIODisplayExtension");

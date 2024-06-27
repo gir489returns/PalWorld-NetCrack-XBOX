@@ -10,47 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-#include "AkAudio_structs.hpp"
 #include "Engine_structs.hpp"
+#include "AkAudio_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "WwiseObjectUtils_structs.hpp"
 
 
 namespace SDK::Params
 {
-
-// Function AkAudio.AkPortalComponent.GetCurrentState
-// 0x0001 (0x0001 - 0x0000)
-struct AkPortalComponent_GetCurrentState final
-{
-public:
-	EAkAcousticPortalState                        ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkPortalComponent_GetCurrentState) == 0x000001, "Wrong alignment on AkPortalComponent_GetCurrentState");
-static_assert(sizeof(AkPortalComponent_GetCurrentState) == 0x000001, "Wrong size on AkPortalComponent_GetCurrentState");
-static_assert(offsetof(AkPortalComponent_GetCurrentState, ReturnValue) == 0x000000, "Member 'AkPortalComponent_GetCurrentState::ReturnValue' has a wrong offset!");
-
-// Function AkAudio.AkPortalComponent.GetPrimitiveParent
-// 0x0008 (0x0008 - 0x0000)
-struct AkPortalComponent_GetPrimitiveParent final
-{
-public:
-	class UPrimitiveComponent*                    ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkPortalComponent_GetPrimitiveParent) == 0x000008, "Wrong alignment on AkPortalComponent_GetPrimitiveParent");
-static_assert(sizeof(AkPortalComponent_GetPrimitiveParent) == 0x000008, "Wrong size on AkPortalComponent_GetPrimitiveParent");
-static_assert(offsetof(AkPortalComponent_GetPrimitiveParent, ReturnValue) == 0x000000, "Member 'AkPortalComponent_GetPrimitiveParent::ReturnValue' has a wrong offset!");
-
-// Function AkAudio.AkPortalComponent.PortalPlacementValid
-// 0x0001 (0x0001 - 0x0000)
-struct AkPortalComponent_PortalPlacementValid final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkPortalComponent_PortalPlacementValid) == 0x000001, "Wrong alignment on AkPortalComponent_PortalPlacementValid");
-static_assert(sizeof(AkPortalComponent_PortalPlacementValid) == 0x000001, "Wrong size on AkPortalComponent_PortalPlacementValid");
-static_assert(offsetof(AkPortalComponent_PortalPlacementValid, ReturnValue) == 0x000000, "Member 'AkPortalComponent_PortalPlacementValid::ReturnValue' has a wrong offset!");
 
 // Function AkAudio.AkAcousticPortal.GetCurrentState
 // 0x0001 (0x0001 - 0x0000)
@@ -63,86 +31,25 @@ static_assert(alignof(AkAcousticPortal_GetCurrentState) == 0x000001, "Wrong alig
 static_assert(sizeof(AkAcousticPortal_GetCurrentState) == 0x000001, "Wrong size on AkAcousticPortal_GetCurrentState");
 static_assert(offsetof(AkAcousticPortal_GetCurrentState, ReturnValue) == 0x000000, "Member 'AkAcousticPortal_GetCurrentState::ReturnValue' has a wrong offset!");
 
-// Function AkAudio.AkAndroidInitializationSettings.MigrateMultiCoreRendering
-// 0x0001 (0x0001 - 0x0000)
-struct AkAndroidInitializationSettings_MigrateMultiCoreRendering final
-{
-public:
-	bool                                          NewValue;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkAndroidInitializationSettings_MigrateMultiCoreRendering) == 0x000001, "Wrong alignment on AkAndroidInitializationSettings_MigrateMultiCoreRendering");
-static_assert(sizeof(AkAndroidInitializationSettings_MigrateMultiCoreRendering) == 0x000001, "Wrong size on AkAndroidInitializationSettings_MigrateMultiCoreRendering");
-static_assert(offsetof(AkAndroidInitializationSettings_MigrateMultiCoreRendering, NewValue) == 0x000000, "Member 'AkAndroidInitializationSettings_MigrateMultiCoreRendering::NewValue' has a wrong offset!");
-
-// Function AkAudio.AkAudioEvent.GetIsInfinite
-// 0x0001 (0x0001 - 0x0000)
-struct AkAudioEvent_GetIsInfinite final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkAudioEvent_GetIsInfinite) == 0x000001, "Wrong alignment on AkAudioEvent_GetIsInfinite");
-static_assert(sizeof(AkAudioEvent_GetIsInfinite) == 0x000001, "Wrong size on AkAudioEvent_GetIsInfinite");
-static_assert(offsetof(AkAudioEvent_GetIsInfinite, ReturnValue) == 0x000000, "Member 'AkAudioEvent_GetIsInfinite::ReturnValue' has a wrong offset!");
-
-// Function AkAudio.AkAudioEvent.GetMaxAttenuationRadius
-// 0x0004 (0x0004 - 0x0000)
-struct AkAudioEvent_GetMaxAttenuationRadius final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkAudioEvent_GetMaxAttenuationRadius) == 0x000004, "Wrong alignment on AkAudioEvent_GetMaxAttenuationRadius");
-static_assert(sizeof(AkAudioEvent_GetMaxAttenuationRadius) == 0x000004, "Wrong size on AkAudioEvent_GetMaxAttenuationRadius");
-static_assert(offsetof(AkAudioEvent_GetMaxAttenuationRadius, ReturnValue) == 0x000000, "Member 'AkAudioEvent_GetMaxAttenuationRadius::ReturnValue' has a wrong offset!");
-
-// Function AkAudio.AkAudioEvent.GetMaximumDuration
-// 0x0004 (0x0004 - 0x0000)
-struct AkAudioEvent_GetMaximumDuration final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkAudioEvent_GetMaximumDuration) == 0x000004, "Wrong alignment on AkAudioEvent_GetMaximumDuration");
-static_assert(sizeof(AkAudioEvent_GetMaximumDuration) == 0x000004, "Wrong size on AkAudioEvent_GetMaximumDuration");
-static_assert(offsetof(AkAudioEvent_GetMaximumDuration, ReturnValue) == 0x000000, "Member 'AkAudioEvent_GetMaximumDuration::ReturnValue' has a wrong offset!");
-
-// Function AkAudio.AkAudioEvent.GetMinimumDuration
-// 0x0004 (0x0004 - 0x0000)
-struct AkAudioEvent_GetMinimumDuration final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkAudioEvent_GetMinimumDuration) == 0x000004, "Wrong alignment on AkAudioEvent_GetMinimumDuration");
-static_assert(sizeof(AkAudioEvent_GetMinimumDuration) == 0x000004, "Wrong size on AkAudioEvent_GetMinimumDuration");
-static_assert(offsetof(AkAudioEvent_GetMinimumDuration, ReturnValue) == 0x000000, "Member 'AkAudioEvent_GetMinimumDuration::ReturnValue' has a wrong offset!");
-
 // Function AkAudio.AkGameObject.PostAkEvent
-// 0x0048 (0x0048 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct AkGameObject_PostAkEvent final
 {
 public:
 	class UAkAudioEvent*                          AkEvent;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         CallbackMask;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> PostEventCallback;                                 // 0x000C(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CA8[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FAkExternalSourceInfo>          ExternalSources;                                   // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
-	class FString                                 In_EventName;                                      // 0x0030(0x0010)(Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0040(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CA9[0x4];                                     // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	int32                                         ReturnValue;                                       // 0x001C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AkGameObject_PostAkEvent) == 0x000008, "Wrong alignment on AkGameObject_PostAkEvent");
-static_assert(sizeof(AkGameObject_PostAkEvent) == 0x000048, "Wrong size on AkGameObject_PostAkEvent");
+static_assert(sizeof(AkGameObject_PostAkEvent) == 0x000020, "Wrong size on AkGameObject_PostAkEvent");
 static_assert(offsetof(AkGameObject_PostAkEvent, AkEvent) == 0x000000, "Member 'AkGameObject_PostAkEvent::AkEvent' has a wrong offset!");
 static_assert(offsetof(AkGameObject_PostAkEvent, CallbackMask) == 0x000008, "Member 'AkGameObject_PostAkEvent::CallbackMask' has a wrong offset!");
 static_assert(offsetof(AkGameObject_PostAkEvent, PostEventCallback) == 0x00000C, "Member 'AkGameObject_PostAkEvent::PostEventCallback' has a wrong offset!");
-static_assert(offsetof(AkGameObject_PostAkEvent, ExternalSources) == 0x000020, "Member 'AkGameObject_PostAkEvent::ExternalSources' has a wrong offset!");
-static_assert(offsetof(AkGameObject_PostAkEvent, In_EventName) == 0x000030, "Member 'AkGameObject_PostAkEvent::In_EventName' has a wrong offset!");
-static_assert(offsetof(AkGameObject_PostAkEvent, ReturnValue) == 0x000040, "Member 'AkGameObject_PostAkEvent::ReturnValue' has a wrong offset!");
+static_assert(offsetof(AkGameObject_PostAkEvent, ReturnValue) == 0x00001C, "Member 'AkGameObject_PostAkEvent::ReturnValue' has a wrong offset!");
 
 // Function AkAudio.AkGameObject.PostAkEventAsync
-// 0x0050 (0x0050 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct AkGameObject_PostAkEventAsync final
 {
 public:
@@ -151,60 +58,52 @@ public:
 	int32                                         PlayingID;                                         // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         CallbackMask;                                      // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> PostEventCallback;                                 // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FAkExternalSourceInfo>          ExternalSources;                                   // 0x0028(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
-	struct FLatentActionInfo                      LatentInfo;                                        // 0x0038(0x0018)(Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
+	struct FLatentActionInfo                      LatentInfo;                                        // 0x0028(0x0018)(Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AkGameObject_PostAkEventAsync) == 0x000008, "Wrong alignment on AkGameObject_PostAkEventAsync");
-static_assert(sizeof(AkGameObject_PostAkEventAsync) == 0x000050, "Wrong size on AkGameObject_PostAkEventAsync");
+static_assert(sizeof(AkGameObject_PostAkEventAsync) == 0x000040, "Wrong size on AkGameObject_PostAkEventAsync");
 static_assert(offsetof(AkGameObject_PostAkEventAsync, WorldContextObject) == 0x000000, "Member 'AkGameObject_PostAkEventAsync::WorldContextObject' has a wrong offset!");
 static_assert(offsetof(AkGameObject_PostAkEventAsync, AkEvent) == 0x000008, "Member 'AkGameObject_PostAkEventAsync::AkEvent' has a wrong offset!");
 static_assert(offsetof(AkGameObject_PostAkEventAsync, PlayingID) == 0x000010, "Member 'AkGameObject_PostAkEventAsync::PlayingID' has a wrong offset!");
 static_assert(offsetof(AkGameObject_PostAkEventAsync, CallbackMask) == 0x000014, "Member 'AkGameObject_PostAkEventAsync::CallbackMask' has a wrong offset!");
 static_assert(offsetof(AkGameObject_PostAkEventAsync, PostEventCallback) == 0x000018, "Member 'AkGameObject_PostAkEventAsync::PostEventCallback' has a wrong offset!");
-static_assert(offsetof(AkGameObject_PostAkEventAsync, ExternalSources) == 0x000028, "Member 'AkGameObject_PostAkEventAsync::ExternalSources' has a wrong offset!");
-static_assert(offsetof(AkGameObject_PostAkEventAsync, LatentInfo) == 0x000038, "Member 'AkGameObject_PostAkEventAsync::LatentInfo' has a wrong offset!");
+static_assert(offsetof(AkGameObject_PostAkEventAsync, LatentInfo) == 0x000028, "Member 'AkGameObject_PostAkEventAsync::LatentInfo' has a wrong offset!");
 
 // Function AkAudio.AkGameObject.PostAssociatedAkEvent
-// 0x0030 (0x0030 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct AkGameObject_PostAssociatedAkEvent final
 {
 public:
 	int32                                         CallbackMask;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> PostEventCallback;                                 // 0x0004(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CAA[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FAkExternalSourceInfo>          ExternalSources;                                   // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0028(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CAB[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	int32                                         ReturnValue;                                       // 0x0014(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AkGameObject_PostAssociatedAkEvent) == 0x000008, "Wrong alignment on AkGameObject_PostAssociatedAkEvent");
-static_assert(sizeof(AkGameObject_PostAssociatedAkEvent) == 0x000030, "Wrong size on AkGameObject_PostAssociatedAkEvent");
+static_assert(alignof(AkGameObject_PostAssociatedAkEvent) == 0x000004, "Wrong alignment on AkGameObject_PostAssociatedAkEvent");
+static_assert(sizeof(AkGameObject_PostAssociatedAkEvent) == 0x000018, "Wrong size on AkGameObject_PostAssociatedAkEvent");
 static_assert(offsetof(AkGameObject_PostAssociatedAkEvent, CallbackMask) == 0x000000, "Member 'AkGameObject_PostAssociatedAkEvent::CallbackMask' has a wrong offset!");
 static_assert(offsetof(AkGameObject_PostAssociatedAkEvent, PostEventCallback) == 0x000004, "Member 'AkGameObject_PostAssociatedAkEvent::PostEventCallback' has a wrong offset!");
-static_assert(offsetof(AkGameObject_PostAssociatedAkEvent, ExternalSources) == 0x000018, "Member 'AkGameObject_PostAssociatedAkEvent::ExternalSources' has a wrong offset!");
-static_assert(offsetof(AkGameObject_PostAssociatedAkEvent, ReturnValue) == 0x000028, "Member 'AkGameObject_PostAssociatedAkEvent::ReturnValue' has a wrong offset!");
+static_assert(offsetof(AkGameObject_PostAssociatedAkEvent, ReturnValue) == 0x000014, "Member 'AkGameObject_PostAssociatedAkEvent::ReturnValue' has a wrong offset!");
 
 // Function AkAudio.AkGameObject.PostAssociatedAkEventAsync
-// 0x0050 (0x0050 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct AkGameObject_PostAssociatedAkEventAsync final
 {
 public:
 	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         CallbackMask;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> PostEventCallback;                                 // 0x000C(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CAC[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FAkExternalSourceInfo>          ExternalSources;                                   // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FLatentActionInfo                      LatentInfo;                                        // 0x0030(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	int32                                         PlayingID;                                         // 0x0048(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CAD[0x4];                                     // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D3A[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLatentActionInfo                      LatentInfo;                                        // 0x0020(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                         PlayingID;                                         // 0x0038(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D3B[0x4];                                     // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameObject_PostAssociatedAkEventAsync) == 0x000008, "Wrong alignment on AkGameObject_PostAssociatedAkEventAsync");
-static_assert(sizeof(AkGameObject_PostAssociatedAkEventAsync) == 0x000050, "Wrong size on AkGameObject_PostAssociatedAkEventAsync");
+static_assert(sizeof(AkGameObject_PostAssociatedAkEventAsync) == 0x000040, "Wrong size on AkGameObject_PostAssociatedAkEventAsync");
 static_assert(offsetof(AkGameObject_PostAssociatedAkEventAsync, WorldContextObject) == 0x000000, "Member 'AkGameObject_PostAssociatedAkEventAsync::WorldContextObject' has a wrong offset!");
 static_assert(offsetof(AkGameObject_PostAssociatedAkEventAsync, CallbackMask) == 0x000008, "Member 'AkGameObject_PostAssociatedAkEventAsync::CallbackMask' has a wrong offset!");
 static_assert(offsetof(AkGameObject_PostAssociatedAkEventAsync, PostEventCallback) == 0x00000C, "Member 'AkGameObject_PostAssociatedAkEventAsync::PostEventCallback' has a wrong offset!");
-static_assert(offsetof(AkGameObject_PostAssociatedAkEventAsync, ExternalSources) == 0x000020, "Member 'AkGameObject_PostAssociatedAkEventAsync::ExternalSources' has a wrong offset!");
-static_assert(offsetof(AkGameObject_PostAssociatedAkEventAsync, LatentInfo) == 0x000030, "Member 'AkGameObject_PostAssociatedAkEventAsync::LatentInfo' has a wrong offset!");
-static_assert(offsetof(AkGameObject_PostAssociatedAkEventAsync, PlayingID) == 0x000048, "Member 'AkGameObject_PostAssociatedAkEventAsync::PlayingID' has a wrong offset!");
+static_assert(offsetof(AkGameObject_PostAssociatedAkEventAsync, LatentInfo) == 0x000020, "Member 'AkGameObject_PostAssociatedAkEventAsync::LatentInfo' has a wrong offset!");
+static_assert(offsetof(AkGameObject_PostAssociatedAkEventAsync, PlayingID) == 0x000038, "Member 'AkGameObject_PostAssociatedAkEventAsync::PlayingID' has a wrong offset!");
 
 // Function AkAudio.AkGameObject.GetRTPCValue
 // 0x0030 (0x0030 - 0x0000)
@@ -213,13 +112,13 @@ struct AkGameObject_GetRTPCValue final
 public:
 	class UAkRtpc*                                RTPCValue;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERTPCValueType                                InputValueType;                                    // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CAE[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D3C[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Value;                                             // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERTPCValueType                                OutputValueType;                                   // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CAF[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D3D[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 RTPC;                                              // 0x0018(0x0010)(Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         PlayingID;                                         // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CB0[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D3E[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameObject_GetRTPCValue) == 0x000008, "Wrong alignment on AkGameObject_GetRTPCValue");
 static_assert(sizeof(AkGameObject_GetRTPCValue) == 0x000030, "Wrong size on AkGameObject_GetRTPCValue");
@@ -247,89 +146,189 @@ static_assert(offsetof(AkGameObject_SetRTPCValue, Value) == 0x000008, "Member 'A
 static_assert(offsetof(AkGameObject_SetRTPCValue, InterpolationTimeMs) == 0x00000C, "Member 'AkGameObject_SetRTPCValue::InterpolationTimeMs' has a wrong offset!");
 static_assert(offsetof(AkGameObject_SetRTPCValue, RTPC) == 0x000010, "Member 'AkGameObject_SetRTPCValue::RTPC' has a wrong offset!");
 
+// Function AkAudio.AkAudioType.UnloadData
+// 0x0001 (0x0001 - 0x0000)
+struct AkAudioType_UnloadData final
+{
+public:
+	bool                                          bAsync;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkAudioType_UnloadData) == 0x000001, "Wrong alignment on AkAudioType_UnloadData");
+static_assert(sizeof(AkAudioType_UnloadData) == 0x000001, "Wrong size on AkAudioType_UnloadData");
+static_assert(offsetof(AkAudioType_UnloadData, bAsync) == 0x000000, "Member 'AkAudioType_UnloadData::bAsync' has a wrong offset!");
+
+// Function AkAudio.AkAudioType.GetWwiseShortID
+// 0x0004 (0x0004 - 0x0000)
+struct AkAudioType_GetWwiseShortID final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkAudioType_GetWwiseShortID) == 0x000004, "Wrong alignment on AkAudioType_GetWwiseShortID");
+static_assert(sizeof(AkAudioType_GetWwiseShortID) == 0x000004, "Wrong size on AkAudioType_GetWwiseShortID");
+static_assert(offsetof(AkAudioType_GetWwiseShortID, ReturnValue) == 0x000000, "Member 'AkAudioType_GetWwiseShortID::ReturnValue' has a wrong offset!");
+
+// Function AkAudio.AkSlider.SetAkSliderItemId
+// 0x0010 (0x0010 - 0x0000)
+struct AkSlider_SetAkSliderItemId final
+{
+public:
+	struct FGuid                                  ItemId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkSlider_SetAkSliderItemId) == 0x000004, "Wrong alignment on AkSlider_SetAkSliderItemId");
+static_assert(sizeof(AkSlider_SetAkSliderItemId) == 0x000010, "Wrong size on AkSlider_SetAkSliderItemId");
+static_assert(offsetof(AkSlider_SetAkSliderItemId, ItemId) == 0x000000, "Member 'AkSlider_SetAkSliderItemId::ItemId' has a wrong offset!");
+
+// Function AkAudio.AkSlider.SetAkSliderItemProperty
+// 0x0010 (0x0010 - 0x0000)
+struct AkSlider_SetAkSliderItemProperty final
+{
+public:
+	class FString                                 ItemProperty;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkSlider_SetAkSliderItemProperty) == 0x000008, "Wrong alignment on AkSlider_SetAkSliderItemProperty");
+static_assert(sizeof(AkSlider_SetAkSliderItemProperty) == 0x000010, "Wrong size on AkSlider_SetAkSliderItemProperty");
+static_assert(offsetof(AkSlider_SetAkSliderItemProperty, ItemProperty) == 0x000000, "Member 'AkSlider_SetAkSliderItemProperty::ItemProperty' has a wrong offset!");
+
+// Function AkAudio.AkSlider.SetIndentHandle
+// 0x0001 (0x0001 - 0x0000)
+struct AkSlider_SetIndentHandle final
+{
+public:
+	bool                                          InValue;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkSlider_SetIndentHandle) == 0x000001, "Wrong alignment on AkSlider_SetIndentHandle");
+static_assert(sizeof(AkSlider_SetIndentHandle) == 0x000001, "Wrong size on AkSlider_SetIndentHandle");
+static_assert(offsetof(AkSlider_SetIndentHandle, InValue) == 0x000000, "Member 'AkSlider_SetIndentHandle::InValue' has a wrong offset!");
+
+// Function AkAudio.AkSlider.SetLocked
+// 0x0001 (0x0001 - 0x0000)
+struct AkSlider_SetLocked final
+{
+public:
+	bool                                          InValue;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkSlider_SetLocked) == 0x000001, "Wrong alignment on AkSlider_SetLocked");
+static_assert(sizeof(AkSlider_SetLocked) == 0x000001, "Wrong size on AkSlider_SetLocked");
+static_assert(offsetof(AkSlider_SetLocked, InValue) == 0x000000, "Member 'AkSlider_SetLocked::InValue' has a wrong offset!");
+
+// Function AkAudio.AkSlider.SetSliderBarColor
+// 0x0010 (0x0010 - 0x0000)
+struct AkSlider_SetSliderBarColor final
+{
+public:
+	struct FLinearColor                           InValue;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkSlider_SetSliderBarColor) == 0x000004, "Wrong alignment on AkSlider_SetSliderBarColor");
+static_assert(sizeof(AkSlider_SetSliderBarColor) == 0x000010, "Wrong size on AkSlider_SetSliderBarColor");
+static_assert(offsetof(AkSlider_SetSliderBarColor, InValue) == 0x000000, "Member 'AkSlider_SetSliderBarColor::InValue' has a wrong offset!");
+
+// Function AkAudio.AkSlider.SetSliderHandleColor
+// 0x0010 (0x0010 - 0x0000)
+struct AkSlider_SetSliderHandleColor final
+{
+public:
+	struct FLinearColor                           InValue;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkSlider_SetSliderHandleColor) == 0x000004, "Wrong alignment on AkSlider_SetSliderHandleColor");
+static_assert(sizeof(AkSlider_SetSliderHandleColor) == 0x000010, "Wrong size on AkSlider_SetSliderHandleColor");
+static_assert(offsetof(AkSlider_SetSliderHandleColor, InValue) == 0x000000, "Member 'AkSlider_SetSliderHandleColor::InValue' has a wrong offset!");
+
+// Function AkAudio.AkSlider.SetStepSize
+// 0x0004 (0x0004 - 0x0000)
+struct AkSlider_SetStepSize final
+{
+public:
+	float                                         InValue;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkSlider_SetStepSize) == 0x000004, "Wrong alignment on AkSlider_SetStepSize");
+static_assert(sizeof(AkSlider_SetStepSize) == 0x000004, "Wrong size on AkSlider_SetStepSize");
+static_assert(offsetof(AkSlider_SetStepSize, InValue) == 0x000000, "Member 'AkSlider_SetStepSize::InValue' has a wrong offset!");
+
+// Function AkAudio.AkSlider.SetValue
+// 0x0004 (0x0004 - 0x0000)
+struct AkSlider_SetValue final
+{
+public:
+	float                                         InValue;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkSlider_SetValue) == 0x000004, "Wrong alignment on AkSlider_SetValue");
+static_assert(sizeof(AkSlider_SetValue) == 0x000004, "Wrong size on AkSlider_SetValue");
+static_assert(offsetof(AkSlider_SetValue, InValue) == 0x000000, "Member 'AkSlider_SetValue::InValue' has a wrong offset!");
+
+// Function AkAudio.AkSlider.GetAkSliderItemId
+// 0x0010 (0x0010 - 0x0000)
+struct AkSlider_GetAkSliderItemId final
+{
+public:
+	struct FGuid                                  ReturnValue;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkSlider_GetAkSliderItemId) == 0x000004, "Wrong alignment on AkSlider_GetAkSliderItemId");
+static_assert(sizeof(AkSlider_GetAkSliderItemId) == 0x000010, "Wrong size on AkSlider_GetAkSliderItemId");
+static_assert(offsetof(AkSlider_GetAkSliderItemId, ReturnValue) == 0x000000, "Member 'AkSlider_GetAkSliderItemId::ReturnValue' has a wrong offset!");
+
+// Function AkAudio.AkSlider.GetAkSliderItemProperty
+// 0x0010 (0x0010 - 0x0000)
+struct AkSlider_GetAkSliderItemProperty final
+{
+public:
+	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkSlider_GetAkSliderItemProperty) == 0x000008, "Wrong alignment on AkSlider_GetAkSliderItemProperty");
+static_assert(sizeof(AkSlider_GetAkSliderItemProperty) == 0x000010, "Wrong size on AkSlider_GetAkSliderItemProperty");
+static_assert(offsetof(AkSlider_GetAkSliderItemProperty, ReturnValue) == 0x000000, "Member 'AkSlider_GetAkSliderItemProperty::ReturnValue' has a wrong offset!");
+
+// Function AkAudio.AkSlider.GetValue
+// 0x0004 (0x0004 - 0x0000)
+struct AkSlider_GetValue final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkSlider_GetValue) == 0x000004, "Wrong alignment on AkSlider_GetValue");
+static_assert(sizeof(AkSlider_GetValue) == 0x000004, "Wrong size on AkSlider_GetValue");
+static_assert(offsetof(AkSlider_GetValue, ReturnValue) == 0x000000, "Member 'AkSlider_GetValue::ReturnValue' has a wrong offset!");
+
+// Function AkAudio.AkComponent.GetOcclusionCollisionChannel
+// 0x0001 (0x0001 - 0x0000)
+struct AkComponent_GetOcclusionCollisionChannel final
+{
+public:
+	ECollisionChannel                             ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkComponent_GetOcclusionCollisionChannel) == 0x000001, "Wrong alignment on AkComponent_GetOcclusionCollisionChannel");
+static_assert(sizeof(AkComponent_GetOcclusionCollisionChannel) == 0x000001, "Wrong size on AkComponent_GetOcclusionCollisionChannel");
+static_assert(offsetof(AkComponent_GetOcclusionCollisionChannel, ReturnValue) == 0x000000, "Member 'AkComponent_GetOcclusionCollisionChannel::ReturnValue' has a wrong offset!");
+
 // Function AkAudio.AkComponent.PostAkEventAndWaitForEnd
-// 0x0048 (0x0048 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct AkComponent_PostAkEventAndWaitForEnd final
 {
 public:
 	class UAkAudioEvent*                          AkEvent;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 In_EventName;                                      // 0x0008(0x0010)(Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FAkExternalSourceInfo>          ExternalSources;                                   // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
-	struct FLatentActionInfo                      LatentInfo;                                        // 0x0028(0x0018)(Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0040(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CB7[0x4];                                     // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FLatentActionInfo                      LatentInfo;                                        // 0x0008(0x0018)(Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D4C[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkComponent_PostAkEventAndWaitForEnd) == 0x000008, "Wrong alignment on AkComponent_PostAkEventAndWaitForEnd");
-static_assert(sizeof(AkComponent_PostAkEventAndWaitForEnd) == 0x000048, "Wrong size on AkComponent_PostAkEventAndWaitForEnd");
+static_assert(sizeof(AkComponent_PostAkEventAndWaitForEnd) == 0x000028, "Wrong size on AkComponent_PostAkEventAndWaitForEnd");
 static_assert(offsetof(AkComponent_PostAkEventAndWaitForEnd, AkEvent) == 0x000000, "Member 'AkComponent_PostAkEventAndWaitForEnd::AkEvent' has a wrong offset!");
-static_assert(offsetof(AkComponent_PostAkEventAndWaitForEnd, In_EventName) == 0x000008, "Member 'AkComponent_PostAkEventAndWaitForEnd::In_EventName' has a wrong offset!");
-static_assert(offsetof(AkComponent_PostAkEventAndWaitForEnd, ExternalSources) == 0x000018, "Member 'AkComponent_PostAkEventAndWaitForEnd::ExternalSources' has a wrong offset!");
-static_assert(offsetof(AkComponent_PostAkEventAndWaitForEnd, LatentInfo) == 0x000028, "Member 'AkComponent_PostAkEventAndWaitForEnd::LatentInfo' has a wrong offset!");
-static_assert(offsetof(AkComponent_PostAkEventAndWaitForEnd, ReturnValue) == 0x000040, "Member 'AkComponent_PostAkEventAndWaitForEnd::ReturnValue' has a wrong offset!");
-
-// Function AkAudio.AkComponent.PostAkEventAndWaitForEndAsync
-// 0x0038 (0x0038 - 0x0000)
-struct AkComponent_PostAkEventAndWaitForEndAsync final
-{
-public:
-	class UAkAudioEvent*                          AkEvent;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PlayingID;                                         // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CB8[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FAkExternalSourceInfo>          ExternalSources;                                   // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
-	struct FLatentActionInfo                      LatentInfo;                                        // 0x0020(0x0018)(Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkComponent_PostAkEventAndWaitForEndAsync) == 0x000008, "Wrong alignment on AkComponent_PostAkEventAndWaitForEndAsync");
-static_assert(sizeof(AkComponent_PostAkEventAndWaitForEndAsync) == 0x000038, "Wrong size on AkComponent_PostAkEventAndWaitForEndAsync");
-static_assert(offsetof(AkComponent_PostAkEventAndWaitForEndAsync, AkEvent) == 0x000000, "Member 'AkComponent_PostAkEventAndWaitForEndAsync::AkEvent' has a wrong offset!");
-static_assert(offsetof(AkComponent_PostAkEventAndWaitForEndAsync, PlayingID) == 0x000008, "Member 'AkComponent_PostAkEventAndWaitForEndAsync::PlayingID' has a wrong offset!");
-static_assert(offsetof(AkComponent_PostAkEventAndWaitForEndAsync, ExternalSources) == 0x000010, "Member 'AkComponent_PostAkEventAndWaitForEndAsync::ExternalSources' has a wrong offset!");
-static_assert(offsetof(AkComponent_PostAkEventAndWaitForEndAsync, LatentInfo) == 0x000020, "Member 'AkComponent_PostAkEventAndWaitForEndAsync::LatentInfo' has a wrong offset!");
-
-// Function AkAudio.AkComponent.PostAkEventByName
-// 0x0018 (0x0018 - 0x0000)
-struct AkComponent_PostAkEventByName final
-{
-public:
-	class FString                                 In_EventName;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CB9[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(AkComponent_PostAkEventByName) == 0x000008, "Wrong alignment on AkComponent_PostAkEventByName");
-static_assert(sizeof(AkComponent_PostAkEventByName) == 0x000018, "Wrong size on AkComponent_PostAkEventByName");
-static_assert(offsetof(AkComponent_PostAkEventByName, In_EventName) == 0x000000, "Member 'AkComponent_PostAkEventByName::In_EventName' has a wrong offset!");
-static_assert(offsetof(AkComponent_PostAkEventByName, ReturnValue) == 0x000010, "Member 'AkComponent_PostAkEventByName::ReturnValue' has a wrong offset!");
+static_assert(offsetof(AkComponent_PostAkEventAndWaitForEnd, LatentInfo) == 0x000008, "Member 'AkComponent_PostAkEventAndWaitForEnd::LatentInfo' has a wrong offset!");
+static_assert(offsetof(AkComponent_PostAkEventAndWaitForEnd, ReturnValue) == 0x000020, "Member 'AkComponent_PostAkEventAndWaitForEnd::ReturnValue' has a wrong offset!");
 
 // Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEnd
-// 0x0030 (0x0030 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct AkComponent_PostAssociatedAkEventAndWaitForEnd final
 {
 public:
-	TArray<struct FAkExternalSourceInfo>          ExternalSources;                                   // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FLatentActionInfo                      LatentInfo;                                        // 0x0010(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0028(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CBA[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FLatentActionInfo                      LatentInfo;                                        // 0x0000(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D4D[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkComponent_PostAssociatedAkEventAndWaitForEnd) == 0x000008, "Wrong alignment on AkComponent_PostAssociatedAkEventAndWaitForEnd");
-static_assert(sizeof(AkComponent_PostAssociatedAkEventAndWaitForEnd) == 0x000030, "Wrong size on AkComponent_PostAssociatedAkEventAndWaitForEnd");
-static_assert(offsetof(AkComponent_PostAssociatedAkEventAndWaitForEnd, ExternalSources) == 0x000000, "Member 'AkComponent_PostAssociatedAkEventAndWaitForEnd::ExternalSources' has a wrong offset!");
-static_assert(offsetof(AkComponent_PostAssociatedAkEventAndWaitForEnd, LatentInfo) == 0x000010, "Member 'AkComponent_PostAssociatedAkEventAndWaitForEnd::LatentInfo' has a wrong offset!");
-static_assert(offsetof(AkComponent_PostAssociatedAkEventAndWaitForEnd, ReturnValue) == 0x000028, "Member 'AkComponent_PostAssociatedAkEventAndWaitForEnd::ReturnValue' has a wrong offset!");
-
-// Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEndAsync
-// 0x0030 (0x0030 - 0x0000)
-struct AkComponent_PostAssociatedAkEventAndWaitForEndAsync final
-{
-public:
-	int32                                         PlayingID;                                         // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CBB[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FAkExternalSourceInfo>          ExternalSources;                                   // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
-	struct FLatentActionInfo                      LatentInfo;                                        // 0x0018(0x0018)(Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkComponent_PostAssociatedAkEventAndWaitForEndAsync) == 0x000008, "Wrong alignment on AkComponent_PostAssociatedAkEventAndWaitForEndAsync");
-static_assert(sizeof(AkComponent_PostAssociatedAkEventAndWaitForEndAsync) == 0x000030, "Wrong size on AkComponent_PostAssociatedAkEventAndWaitForEndAsync");
-static_assert(offsetof(AkComponent_PostAssociatedAkEventAndWaitForEndAsync, PlayingID) == 0x000000, "Member 'AkComponent_PostAssociatedAkEventAndWaitForEndAsync::PlayingID' has a wrong offset!");
-static_assert(offsetof(AkComponent_PostAssociatedAkEventAndWaitForEndAsync, ExternalSources) == 0x000008, "Member 'AkComponent_PostAssociatedAkEventAndWaitForEndAsync::ExternalSources' has a wrong offset!");
-static_assert(offsetof(AkComponent_PostAssociatedAkEventAndWaitForEndAsync, LatentInfo) == 0x000018, "Member 'AkComponent_PostAssociatedAkEventAndWaitForEndAsync::LatentInfo' has a wrong offset!");
+static_assert(sizeof(AkComponent_PostAssociatedAkEventAndWaitForEnd) == 0x000020, "Wrong size on AkComponent_PostAssociatedAkEventAndWaitForEnd");
+static_assert(offsetof(AkComponent_PostAssociatedAkEventAndWaitForEnd, LatentInfo) == 0x000000, "Member 'AkComponent_PostAssociatedAkEventAndWaitForEnd::LatentInfo' has a wrong offset!");
+static_assert(offsetof(AkComponent_PostAssociatedAkEventAndWaitForEnd, ReturnValue) == 0x000018, "Member 'AkComponent_PostAssociatedAkEventAndWaitForEnd::ReturnValue' has a wrong offset!");
 
 // Function AkAudio.AkComponent.PostTrigger
 // 0x0018 (0x0018 - 0x0000)
@@ -376,6 +375,17 @@ public:
 static_assert(alignof(AkComponent_SetEarlyReflectionsVolume) == 0x000004, "Wrong alignment on AkComponent_SetEarlyReflectionsVolume");
 static_assert(sizeof(AkComponent_SetEarlyReflectionsVolume) == 0x000004, "Wrong size on AkComponent_SetEarlyReflectionsVolume");
 static_assert(offsetof(AkComponent_SetEarlyReflectionsVolume, SendVolume) == 0x000000, "Member 'AkComponent_SetEarlyReflectionsVolume::SendVolume' has a wrong offset!");
+
+// Function AkAudio.AkComponent.SetEnableSpotReflectors
+// 0x0001 (0x0001 - 0x0000)
+struct AkComponent_SetEnableSpotReflectors final
+{
+public:
+	bool                                          In_enable;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkComponent_SetEnableSpotReflectors) == 0x000001, "Wrong alignment on AkComponent_SetEnableSpotReflectors");
+static_assert(sizeof(AkComponent_SetEnableSpotReflectors) == 0x000001, "Wrong size on AkComponent_SetEnableSpotReflectors");
+static_assert(offsetof(AkComponent_SetEnableSpotReflectors, In_enable) == 0x000000, "Member 'AkComponent_SetEnableSpotReflectors::In_enable' has a wrong offset!");
 
 // Function AkAudio.AkComponent.SetGameObjectRadius
 // 0x0008 (0x0008 - 0x0000)
@@ -438,39 +448,6 @@ static_assert(offsetof(AkComponent_SetSwitch, SwitchValue) == 0x000000, "Member 
 static_assert(offsetof(AkComponent_SetSwitch, SwitchGroup) == 0x000008, "Member 'AkComponent_SetSwitch::SwitchGroup' has a wrong offset!");
 static_assert(offsetof(AkComponent_SetSwitch, SwitchState) == 0x000018, "Member 'AkComponent_SetSwitch::SwitchState' has a wrong offset!");
 
-// Function AkAudio.AkComponent.UseEarlyReflections
-// 0x0028 (0x0028 - 0x0000)
-struct AkComponent_UseEarlyReflections final
-{
-public:
-	class UAkAuxBus*                              AuxBus;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Order;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BusSendGain;                                       // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxPathLength;                                     // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          SpotReflectors;                                    // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CBC[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 AuxBusName;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkComponent_UseEarlyReflections) == 0x000008, "Wrong alignment on AkComponent_UseEarlyReflections");
-static_assert(sizeof(AkComponent_UseEarlyReflections) == 0x000028, "Wrong size on AkComponent_UseEarlyReflections");
-static_assert(offsetof(AkComponent_UseEarlyReflections, AuxBus) == 0x000000, "Member 'AkComponent_UseEarlyReflections::AuxBus' has a wrong offset!");
-static_assert(offsetof(AkComponent_UseEarlyReflections, Order) == 0x000008, "Member 'AkComponent_UseEarlyReflections::Order' has a wrong offset!");
-static_assert(offsetof(AkComponent_UseEarlyReflections, BusSendGain) == 0x00000C, "Member 'AkComponent_UseEarlyReflections::BusSendGain' has a wrong offset!");
-static_assert(offsetof(AkComponent_UseEarlyReflections, MaxPathLength) == 0x000010, "Member 'AkComponent_UseEarlyReflections::MaxPathLength' has a wrong offset!");
-static_assert(offsetof(AkComponent_UseEarlyReflections, SpotReflectors) == 0x000014, "Member 'AkComponent_UseEarlyReflections::SpotReflectors' has a wrong offset!");
-static_assert(offsetof(AkComponent_UseEarlyReflections, AuxBusName) == 0x000018, "Member 'AkComponent_UseEarlyReflections::AuxBusName' has a wrong offset!");
-
-// Function AkAudio.AkComponent.UseReverbVolumes
-// 0x0001 (0x0001 - 0x0000)
-struct AkComponent_UseReverbVolumes final
-{
-public:
-	bool                                          InUseReverbVolumes;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkComponent_UseReverbVolumes) == 0x000001, "Wrong alignment on AkComponent_UseReverbVolumes");
-static_assert(sizeof(AkComponent_UseReverbVolumes) == 0x000001, "Wrong size on AkComponent_UseReverbVolumes");
-static_assert(offsetof(AkComponent_UseReverbVolumes, InUseReverbVolumes) == 0x000000, "Member 'AkComponent_UseReverbVolumes::InUseReverbVolumes' has a wrong offset!");
-
 // Function AkAudio.AkComponent.GetAttenuationRadius
 // 0x0004 (0x0004 - 0x0000)
 struct AkComponent_GetAttenuationRadius final
@@ -481,6 +458,242 @@ public:
 static_assert(alignof(AkComponent_GetAttenuationRadius) == 0x000004, "Wrong alignment on AkComponent_GetAttenuationRadius");
 static_assert(sizeof(AkComponent_GetAttenuationRadius) == 0x000004, "Wrong size on AkComponent_GetAttenuationRadius");
 static_assert(offsetof(AkComponent_GetAttenuationRadius, ReturnValue) == 0x000000, "Member 'AkComponent_GetAttenuationRadius::ReturnValue' has a wrong offset!");
+
+// Function AkAudio.AkPortalComponent.SetDynamic
+// 0x0001 (0x0001 - 0x0000)
+struct AkPortalComponent_SetDynamic final
+{
+public:
+	bool                                          bInDynamic;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkPortalComponent_SetDynamic) == 0x000001, "Wrong alignment on AkPortalComponent_SetDynamic");
+static_assert(sizeof(AkPortalComponent_SetDynamic) == 0x000001, "Wrong size on AkPortalComponent_SetDynamic");
+static_assert(offsetof(AkPortalComponent_SetDynamic, bInDynamic) == 0x000000, "Member 'AkPortalComponent_SetDynamic::bInDynamic' has a wrong offset!");
+
+// Function AkAudio.AkPortalComponent.SetPortalOcclusion
+// 0x0004 (0x0004 - 0x0000)
+struct AkPortalComponent_SetPortalOcclusion final
+{
+public:
+	float                                         InPortalOcclusion;                                 // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkPortalComponent_SetPortalOcclusion) == 0x000004, "Wrong alignment on AkPortalComponent_SetPortalOcclusion");
+static_assert(sizeof(AkPortalComponent_SetPortalOcclusion) == 0x000004, "Wrong size on AkPortalComponent_SetPortalOcclusion");
+static_assert(offsetof(AkPortalComponent_SetPortalOcclusion, InPortalOcclusion) == 0x000000, "Member 'AkPortalComponent_SetPortalOcclusion::InPortalOcclusion' has a wrong offset!");
+
+// Function AkAudio.AkPortalComponent.GetCurrentState
+// 0x0001 (0x0001 - 0x0000)
+struct AkPortalComponent_GetCurrentState final
+{
+public:
+	EAkAcousticPortalState                        ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkPortalComponent_GetCurrentState) == 0x000001, "Wrong alignment on AkPortalComponent_GetCurrentState");
+static_assert(sizeof(AkPortalComponent_GetCurrentState) == 0x000001, "Wrong size on AkPortalComponent_GetCurrentState");
+static_assert(offsetof(AkPortalComponent_GetCurrentState, ReturnValue) == 0x000000, "Member 'AkPortalComponent_GetCurrentState::ReturnValue' has a wrong offset!");
+
+// Function AkAudio.AkPortalComponent.GetPortalOcclusion
+// 0x0004 (0x0004 - 0x0000)
+struct AkPortalComponent_GetPortalOcclusion final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkPortalComponent_GetPortalOcclusion) == 0x000004, "Wrong alignment on AkPortalComponent_GetPortalOcclusion");
+static_assert(sizeof(AkPortalComponent_GetPortalOcclusion) == 0x000004, "Wrong size on AkPortalComponent_GetPortalOcclusion");
+static_assert(offsetof(AkPortalComponent_GetPortalOcclusion, ReturnValue) == 0x000000, "Member 'AkPortalComponent_GetPortalOcclusion::ReturnValue' has a wrong offset!");
+
+// Function AkAudio.AkPortalComponent.GetPrimitiveParent
+// 0x0008 (0x0008 - 0x0000)
+struct AkPortalComponent_GetPrimitiveParent final
+{
+public:
+	class UPrimitiveComponent*                    ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkPortalComponent_GetPrimitiveParent) == 0x000008, "Wrong alignment on AkPortalComponent_GetPrimitiveParent");
+static_assert(sizeof(AkPortalComponent_GetPrimitiveParent) == 0x000008, "Wrong size on AkPortalComponent_GetPrimitiveParent");
+static_assert(offsetof(AkPortalComponent_GetPrimitiveParent, ReturnValue) == 0x000000, "Member 'AkPortalComponent_GetPrimitiveParent::ReturnValue' has a wrong offset!");
+
+// Function AkAudio.AkPortalComponent.PortalPlacementValid
+// 0x0001 (0x0001 - 0x0000)
+struct AkPortalComponent_PortalPlacementValid final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkPortalComponent_PortalPlacementValid) == 0x000001, "Wrong alignment on AkPortalComponent_PortalPlacementValid");
+static_assert(sizeof(AkPortalComponent_PortalPlacementValid) == 0x000001, "Wrong size on AkPortalComponent_PortalPlacementValid");
+static_assert(offsetof(AkPortalComponent_PortalPlacementValid, ReturnValue) == 0x000000, "Member 'AkPortalComponent_PortalPlacementValid::ReturnValue' has a wrong offset!");
+
+// Function AkAudio.AkAndroidInitializationSettings.MigrateMultiCoreRendering
+// 0x0001 (0x0001 - 0x0000)
+struct AkAndroidInitializationSettings_MigrateMultiCoreRendering final
+{
+public:
+	bool                                          NewValue;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkAndroidInitializationSettings_MigrateMultiCoreRendering) == 0x000001, "Wrong alignment on AkAndroidInitializationSettings_MigrateMultiCoreRendering");
+static_assert(sizeof(AkAndroidInitializationSettings_MigrateMultiCoreRendering) == 0x000001, "Wrong size on AkAndroidInitializationSettings_MigrateMultiCoreRendering");
+static_assert(offsetof(AkAndroidInitializationSettings_MigrateMultiCoreRendering, NewValue) == 0x000000, "Member 'AkAndroidInitializationSettings_MigrateMultiCoreRendering::NewValue' has a wrong offset!");
+
+// Function AkAudio.AkAudioEvent.ExecuteAction
+// 0x0020 (0x0020 - 0x0000)
+struct AkAudioEvent_ExecuteAction final
+{
+public:
+	EAkActionOnEventType                          ActionType;                                        // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D58[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class AActor*                           Actor;                                             // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PlayingID;                                         // 0x0010(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TransitionDuration;                                // 0x0014(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAkCurveInterpolation                         FadeCurve;                                         // 0x0018(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D59[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ReturnValue;                                       // 0x001C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkAudioEvent_ExecuteAction) == 0x000008, "Wrong alignment on AkAudioEvent_ExecuteAction");
+static_assert(sizeof(AkAudioEvent_ExecuteAction) == 0x000020, "Wrong size on AkAudioEvent_ExecuteAction");
+static_assert(offsetof(AkAudioEvent_ExecuteAction, ActionType) == 0x000000, "Member 'AkAudioEvent_ExecuteAction::ActionType' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_ExecuteAction, Actor) == 0x000008, "Member 'AkAudioEvent_ExecuteAction::Actor' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_ExecuteAction, PlayingID) == 0x000010, "Member 'AkAudioEvent_ExecuteAction::PlayingID' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_ExecuteAction, TransitionDuration) == 0x000014, "Member 'AkAudioEvent_ExecuteAction::TransitionDuration' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_ExecuteAction, FadeCurve) == 0x000018, "Member 'AkAudioEvent_ExecuteAction::FadeCurve' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_ExecuteAction, ReturnValue) == 0x00001C, "Member 'AkAudioEvent_ExecuteAction::ReturnValue' has a wrong offset!");
+
+// Function AkAudio.AkAudioEvent.PostAtLocation
+// 0x0058 (0x0058 - 0x0000)
+struct AkAudioEvent_PostAtLocation final
+{
+public:
+	struct FVector                                Location;                                          // 0x0000(0x0018)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                               Orientation;                                       // 0x0018(0x0018)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Callback;                                          // 0x0030(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CallbackMask;                                      // 0x0040(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D5A[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UObject*                          WorldContextObject;                                // 0x0048(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0050(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D5B[0x4];                                     // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(AkAudioEvent_PostAtLocation) == 0x000008, "Wrong alignment on AkAudioEvent_PostAtLocation");
+static_assert(sizeof(AkAudioEvent_PostAtLocation) == 0x000058, "Wrong size on AkAudioEvent_PostAtLocation");
+static_assert(offsetof(AkAudioEvent_PostAtLocation, Location) == 0x000000, "Member 'AkAudioEvent_PostAtLocation::Location' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostAtLocation, Orientation) == 0x000018, "Member 'AkAudioEvent_PostAtLocation::Orientation' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostAtLocation, Callback) == 0x000030, "Member 'AkAudioEvent_PostAtLocation::Callback' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostAtLocation, CallbackMask) == 0x000040, "Member 'AkAudioEvent_PostAtLocation::CallbackMask' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostAtLocation, WorldContextObject) == 0x000048, "Member 'AkAudioEvent_PostAtLocation::WorldContextObject' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostAtLocation, ReturnValue) == 0x000050, "Member 'AkAudioEvent_PostAtLocation::ReturnValue' has a wrong offset!");
+
+// Function AkAudio.AkAudioEvent.PostOnActor
+// 0x0028 (0x0028 - 0x0000)
+struct AkAudioEvent_PostOnActor final
+{
+public:
+	const class AActor*                           Actor;                                             // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Delegate;                                          // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CallbackMask;                                      // 0x0018(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bStopWhenAttachedObjectDestroyed;                  // 0x001C(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D5C[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D5D[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(AkAudioEvent_PostOnActor) == 0x000008, "Wrong alignment on AkAudioEvent_PostOnActor");
+static_assert(sizeof(AkAudioEvent_PostOnActor) == 0x000028, "Wrong size on AkAudioEvent_PostOnActor");
+static_assert(offsetof(AkAudioEvent_PostOnActor, Actor) == 0x000000, "Member 'AkAudioEvent_PostOnActor::Actor' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostOnActor, Delegate) == 0x000008, "Member 'AkAudioEvent_PostOnActor::Delegate' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostOnActor, CallbackMask) == 0x000018, "Member 'AkAudioEvent_PostOnActor::CallbackMask' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostOnActor, bStopWhenAttachedObjectDestroyed) == 0x00001C, "Member 'AkAudioEvent_PostOnActor::bStopWhenAttachedObjectDestroyed' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostOnActor, ReturnValue) == 0x000020, "Member 'AkAudioEvent_PostOnActor::ReturnValue' has a wrong offset!");
+
+// Function AkAudio.AkAudioEvent.PostOnActorAndWait
+// 0x0030 (0x0030 - 0x0000)
+struct AkAudioEvent_PostOnActorAndWait final
+{
+public:
+	const class AActor*                           Actor;                                             // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bStopWhenAttachedObjectDestroyed;                  // 0x0008(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D5E[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLatentActionInfo                      LatentActionInfo;                                  // 0x0010(0x0018)(ConstParm, Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0028(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D5F[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(AkAudioEvent_PostOnActorAndWait) == 0x000008, "Wrong alignment on AkAudioEvent_PostOnActorAndWait");
+static_assert(sizeof(AkAudioEvent_PostOnActorAndWait) == 0x000030, "Wrong size on AkAudioEvent_PostOnActorAndWait");
+static_assert(offsetof(AkAudioEvent_PostOnActorAndWait, Actor) == 0x000000, "Member 'AkAudioEvent_PostOnActorAndWait::Actor' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostOnActorAndWait, bStopWhenAttachedObjectDestroyed) == 0x000008, "Member 'AkAudioEvent_PostOnActorAndWait::bStopWhenAttachedObjectDestroyed' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostOnActorAndWait, LatentActionInfo) == 0x000010, "Member 'AkAudioEvent_PostOnActorAndWait::LatentActionInfo' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostOnActorAndWait, ReturnValue) == 0x000028, "Member 'AkAudioEvent_PostOnActorAndWait::ReturnValue' has a wrong offset!");
+
+// Function AkAudio.AkAudioEvent.PostOnComponent
+// 0x0028 (0x0028 - 0x0000)
+struct AkAudioEvent_PostOnComponent final
+{
+public:
+	class UAkComponent*                           Component;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Delegate;                                          // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CallbackMask;                                      // 0x0018(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bStopWhenAttachedObjectDestroyed;                  // 0x001C(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D60[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D61[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(AkAudioEvent_PostOnComponent) == 0x000008, "Wrong alignment on AkAudioEvent_PostOnComponent");
+static_assert(sizeof(AkAudioEvent_PostOnComponent) == 0x000028, "Wrong size on AkAudioEvent_PostOnComponent");
+static_assert(offsetof(AkAudioEvent_PostOnComponent, Component) == 0x000000, "Member 'AkAudioEvent_PostOnComponent::Component' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostOnComponent, Delegate) == 0x000008, "Member 'AkAudioEvent_PostOnComponent::Delegate' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostOnComponent, CallbackMask) == 0x000018, "Member 'AkAudioEvent_PostOnComponent::CallbackMask' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostOnComponent, bStopWhenAttachedObjectDestroyed) == 0x00001C, "Member 'AkAudioEvent_PostOnComponent::bStopWhenAttachedObjectDestroyed' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostOnComponent, ReturnValue) == 0x000020, "Member 'AkAudioEvent_PostOnComponent::ReturnValue' has a wrong offset!");
+
+// Function AkAudio.AkAudioEvent.PostOnComponentAndWait
+// 0x0030 (0x0030 - 0x0000)
+struct AkAudioEvent_PostOnComponentAndWait final
+{
+public:
+	class UAkComponent*                           Component;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bStopWhenAttachedObjectDestroyed;                  // 0x0008(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D62[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLatentActionInfo                      LatentActionInfo;                                  // 0x0010(0x0018)(ConstParm, Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0028(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D63[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(AkAudioEvent_PostOnComponentAndWait) == 0x000008, "Wrong alignment on AkAudioEvent_PostOnComponentAndWait");
+static_assert(sizeof(AkAudioEvent_PostOnComponentAndWait) == 0x000030, "Wrong size on AkAudioEvent_PostOnComponentAndWait");
+static_assert(offsetof(AkAudioEvent_PostOnComponentAndWait, Component) == 0x000000, "Member 'AkAudioEvent_PostOnComponentAndWait::Component' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostOnComponentAndWait, bStopWhenAttachedObjectDestroyed) == 0x000008, "Member 'AkAudioEvent_PostOnComponentAndWait::bStopWhenAttachedObjectDestroyed' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostOnComponentAndWait, LatentActionInfo) == 0x000010, "Member 'AkAudioEvent_PostOnComponentAndWait::LatentActionInfo' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostOnComponentAndWait, ReturnValue) == 0x000028, "Member 'AkAudioEvent_PostOnComponentAndWait::ReturnValue' has a wrong offset!");
+
+// Function AkAudio.AkAudioEvent.PostOnGameObject
+// 0x0020 (0x0020 - 0x0000)
+struct AkAudioEvent_PostOnGameObject final
+{
+public:
+	class UAkGameObject*                          GameObject;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Delegate;                                          // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CallbackMask;                                      // 0x0018(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x001C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkAudioEvent_PostOnGameObject) == 0x000008, "Wrong alignment on AkAudioEvent_PostOnGameObject");
+static_assert(sizeof(AkAudioEvent_PostOnGameObject) == 0x000020, "Wrong size on AkAudioEvent_PostOnGameObject");
+static_assert(offsetof(AkAudioEvent_PostOnGameObject, GameObject) == 0x000000, "Member 'AkAudioEvent_PostOnGameObject::GameObject' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostOnGameObject, Delegate) == 0x000008, "Member 'AkAudioEvent_PostOnGameObject::Delegate' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostOnGameObject, CallbackMask) == 0x000018, "Member 'AkAudioEvent_PostOnGameObject::CallbackMask' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostOnGameObject, ReturnValue) == 0x00001C, "Member 'AkAudioEvent_PostOnGameObject::ReturnValue' has a wrong offset!");
+
+// Function AkAudio.AkAudioEvent.PostOnGameObjectAndWait
+// 0x0028 (0x0028 - 0x0000)
+struct AkAudioEvent_PostOnGameObjectAndWait final
+{
+public:
+	class UAkGameObject*                          GameObject;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLatentActionInfo                      LatentActionInfo;                                  // 0x0008(0x0018)(ConstParm, Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D64[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(AkAudioEvent_PostOnGameObjectAndWait) == 0x000008, "Wrong alignment on AkAudioEvent_PostOnGameObjectAndWait");
+static_assert(sizeof(AkAudioEvent_PostOnGameObjectAndWait) == 0x000028, "Wrong size on AkAudioEvent_PostOnGameObjectAndWait");
+static_assert(offsetof(AkAudioEvent_PostOnGameObjectAndWait, GameObject) == 0x000000, "Member 'AkAudioEvent_PostOnGameObjectAndWait::GameObject' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostOnGameObjectAndWait, LatentActionInfo) == 0x000008, "Member 'AkAudioEvent_PostOnGameObjectAndWait::LatentActionInfo' has a wrong offset!");
+static_assert(offsetof(AkAudioEvent_PostOnGameObjectAndWait, ReturnValue) == 0x000020, "Member 'AkAudioEvent_PostOnGameObjectAndWait::ReturnValue' has a wrong offset!");
 
 // Function AkAudio.AkAudioInputComponent.PostAssociatedAudioInputEvent
 // 0x0004 (0x0004 - 0x0000)
@@ -592,6 +805,21 @@ static_assert(alignof(AkCheckBox_IsPressed) == 0x000001, "Wrong alignment on AkC
 static_assert(sizeof(AkCheckBox_IsPressed) == 0x000001, "Wrong size on AkCheckBox_IsPressed");
 static_assert(offsetof(AkCheckBox_IsPressed, ReturnValue) == 0x000000, "Member 'AkCheckBox_IsPressed::ReturnValue' has a wrong offset!");
 
+// Function AkAudio.AkGameplayStatics.AddOutput
+// 0x0030 (0x0030 - 0x0000)
+struct AkGameplayStatics_AddOutput final
+{
+public:
+	struct FAkOutputSettings                      In_Settings;                                       // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FAkOutputDeviceID                      Out_DeviceID;                                      // 0x0018(0x0008)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+	TArray<class UAkComponent*>                   In_ListenerIDs;                                    // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkGameplayStatics_AddOutput) == 0x000008, "Wrong alignment on AkGameplayStatics_AddOutput");
+static_assert(sizeof(AkGameplayStatics_AddOutput) == 0x000030, "Wrong size on AkGameplayStatics_AddOutput");
+static_assert(offsetof(AkGameplayStatics_AddOutput, In_Settings) == 0x000000, "Member 'AkGameplayStatics_AddOutput::In_Settings' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_AddOutput, Out_DeviceID) == 0x000018, "Member 'AkGameplayStatics_AddOutput::Out_DeviceID' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_AddOutput, In_ListenerIDs) == 0x000020, "Member 'AkGameplayStatics_AddOutput::In_ListenerIDs' has a wrong offset!");
+
 // Function AkAudio.AkGameplayStatics.AddOutputCaptureMarker
 // 0x0010 (0x0010 - 0x0000)
 struct AkGameplayStatics_AddOutputCaptureMarker final
@@ -613,49 +841,6 @@ public:
 static_assert(alignof(AkGameplayStatics_CancelEventCallback) == 0x000004, "Wrong alignment on AkGameplayStatics_CancelEventCallback");
 static_assert(sizeof(AkGameplayStatics_CancelEventCallback) == 0x000010, "Wrong size on AkGameplayStatics_CancelEventCallback");
 static_assert(offsetof(AkGameplayStatics_CancelEventCallback, PostEventCallback) == 0x000000, "Member 'AkGameplayStatics_CancelEventCallback::PostEventCallback' has a wrong offset!");
-
-// Function AkAudio.AkGameplayStatics.ExecuteActionOnEvent
-// 0x0028 (0x0028 - 0x0000)
-struct AkGameplayStatics_ExecuteActionOnEvent final
-{
-public:
-	class UAkAudioEvent*                          AkEvent;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAkActionOnEventType                          ActionType;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CC4[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TransitionDuration;                                // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAkCurveInterpolation                         FadeCurve;                                         // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CC5[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         PlayingID;                                         // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CC6[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(AkGameplayStatics_ExecuteActionOnEvent) == 0x000008, "Wrong alignment on AkGameplayStatics_ExecuteActionOnEvent");
-static_assert(sizeof(AkGameplayStatics_ExecuteActionOnEvent) == 0x000028, "Wrong size on AkGameplayStatics_ExecuteActionOnEvent");
-static_assert(offsetof(AkGameplayStatics_ExecuteActionOnEvent, AkEvent) == 0x000000, "Member 'AkGameplayStatics_ExecuteActionOnEvent::AkEvent' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_ExecuteActionOnEvent, ActionType) == 0x000008, "Member 'AkGameplayStatics_ExecuteActionOnEvent::ActionType' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_ExecuteActionOnEvent, Actor) == 0x000010, "Member 'AkGameplayStatics_ExecuteActionOnEvent::Actor' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_ExecuteActionOnEvent, TransitionDuration) == 0x000018, "Member 'AkGameplayStatics_ExecuteActionOnEvent::TransitionDuration' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_ExecuteActionOnEvent, FadeCurve) == 0x00001C, "Member 'AkGameplayStatics_ExecuteActionOnEvent::FadeCurve' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_ExecuteActionOnEvent, PlayingID) == 0x000020, "Member 'AkGameplayStatics_ExecuteActionOnEvent::PlayingID' has a wrong offset!");
-
-// Function AkAudio.AkGameplayStatics.ExecuteActionOnPlayingID
-// 0x0010 (0x0010 - 0x0000)
-struct AkGameplayStatics_ExecuteActionOnPlayingID final
-{
-public:
-	EAkActionOnEventType                          ActionType;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CC7[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         PlayingID;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TransitionDuration;                                // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAkCurveInterpolation                         FadeCurve;                                         // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CC8[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(AkGameplayStatics_ExecuteActionOnPlayingID) == 0x000004, "Wrong alignment on AkGameplayStatics_ExecuteActionOnPlayingID");
-static_assert(sizeof(AkGameplayStatics_ExecuteActionOnPlayingID) == 0x000010, "Wrong size on AkGameplayStatics_ExecuteActionOnPlayingID");
-static_assert(offsetof(AkGameplayStatics_ExecuteActionOnPlayingID, ActionType) == 0x000000, "Member 'AkGameplayStatics_ExecuteActionOnPlayingID::ActionType' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_ExecuteActionOnPlayingID, PlayingID) == 0x000004, "Member 'AkGameplayStatics_ExecuteActionOnPlayingID::PlayingID' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_ExecuteActionOnPlayingID, TransitionDuration) == 0x000008, "Member 'AkGameplayStatics_ExecuteActionOnPlayingID::TransitionDuration' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_ExecuteActionOnPlayingID, FadeCurve) == 0x00000C, "Member 'AkGameplayStatics_ExecuteActionOnPlayingID::FadeCurve' has a wrong offset!");
 
 // Function AkAudio.AkGameplayStatics.GetAkAudioTypeUserData
 // 0x0018 (0x0018 - 0x0000)
@@ -679,12 +864,12 @@ struct AkGameplayStatics_GetAkComponent final
 public:
 	class USceneComponent*                        AttachToComponent;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ComponentCreated;                                  // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CC9[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D70[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   AttachPointName;                                   // 0x000C(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CCA[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D71[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Location;                                          // 0x0018(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAttachLocation                               LocationType;                                      // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CCB[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D72[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAkComponent*                           ReturnValue;                                       // 0x0038(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AkGameplayStatics_GetAkComponent) == 0x000008, "Wrong alignment on AkGameplayStatics_GetAkComponent");
@@ -695,21 +880,6 @@ static_assert(offsetof(AkGameplayStatics_GetAkComponent, AttachPointName) == 0x0
 static_assert(offsetof(AkGameplayStatics_GetAkComponent, Location) == 0x000018, "Member 'AkGameplayStatics_GetAkComponent::Location' has a wrong offset!");
 static_assert(offsetof(AkGameplayStatics_GetAkComponent, LocationType) == 0x000030, "Member 'AkGameplayStatics_GetAkComponent::LocationType' has a wrong offset!");
 static_assert(offsetof(AkGameplayStatics_GetAkComponent, ReturnValue) == 0x000038, "Member 'AkGameplayStatics_GetAkComponent::ReturnValue' has a wrong offset!");
-
-// Function AkAudio.AkGameplayStatics.GetAkMediaAssetUserData
-// 0x0018 (0x0018 - 0x0000)
-struct AkGameplayStatics_GetAkMediaAssetUserData final
-{
-public:
-	const class UAkMediaAsset*                    Instance;                                          // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	const class UClass*                           Type;                                              // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UObject*                                ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkGameplayStatics_GetAkMediaAssetUserData) == 0x000008, "Wrong alignment on AkGameplayStatics_GetAkMediaAssetUserData");
-static_assert(sizeof(AkGameplayStatics_GetAkMediaAssetUserData) == 0x000018, "Wrong size on AkGameplayStatics_GetAkMediaAssetUserData");
-static_assert(offsetof(AkGameplayStatics_GetAkMediaAssetUserData, Instance) == 0x000000, "Member 'AkGameplayStatics_GetAkMediaAssetUserData::Instance' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_GetAkMediaAssetUserData, Type) == 0x000008, "Member 'AkGameplayStatics_GetAkMediaAssetUserData::Type' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_GetAkMediaAssetUserData, ReturnValue) == 0x000010, "Member 'AkGameplayStatics_GetAkMediaAssetUserData::ReturnValue' has a wrong offset!");
 
 // Function AkAudio.AkGameplayStatics.GetAvailableAudioCultures
 // 0x0010 (0x0010 - 0x0000)
@@ -733,17 +903,6 @@ static_assert(alignof(AkGameplayStatics_GetCurrentAudioCulture) == 0x000008, "Wr
 static_assert(sizeof(AkGameplayStatics_GetCurrentAudioCulture) == 0x000010, "Wrong size on AkGameplayStatics_GetCurrentAudioCulture");
 static_assert(offsetof(AkGameplayStatics_GetCurrentAudioCulture, ReturnValue) == 0x000000, "Member 'AkGameplayStatics_GetCurrentAudioCulture::ReturnValue' has a wrong offset!");
 
-// Function AkAudio.AkGameplayStatics.GetOcclusionScalingFactor
-// 0x0004 (0x0004 - 0x0000)
-struct AkGameplayStatics_GetOcclusionScalingFactor final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkGameplayStatics_GetOcclusionScalingFactor) == 0x000004, "Wrong alignment on AkGameplayStatics_GetOcclusionScalingFactor");
-static_assert(sizeof(AkGameplayStatics_GetOcclusionScalingFactor) == 0x000004, "Wrong size on AkGameplayStatics_GetOcclusionScalingFactor");
-static_assert(offsetof(AkGameplayStatics_GetOcclusionScalingFactor, ReturnValue) == 0x000000, "Member 'AkGameplayStatics_GetOcclusionScalingFactor::ReturnValue' has a wrong offset!");
-
 // Function AkAudio.AkGameplayStatics.GetRTPCValue
 // 0x0028 (0x0028 - 0x0000)
 struct AkGameplayStatics_GetRTPCValue final
@@ -752,10 +911,10 @@ public:
 	class UAkRtpc*                                RTPCValue;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         PlayingID;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERTPCValueType                                InputValueType;                                    // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CCC[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D73[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Value;                                             // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERTPCValueType                                OutputValueType;                                   // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CCD[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D74[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0018(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   RTPC;                                              // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -776,14 +935,14 @@ struct AkGameplayStatics_GetSpeakerAngles final
 public:
 	TArray<float>                                 SpeakerAngles;                                     // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	float                                         HeightAngle;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CCE[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 DeviceShareset;                                    // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D75[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 DeviceShareSet;                                    // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AkGameplayStatics_GetSpeakerAngles) == 0x000008, "Wrong alignment on AkGameplayStatics_GetSpeakerAngles");
 static_assert(sizeof(AkGameplayStatics_GetSpeakerAngles) == 0x000028, "Wrong size on AkGameplayStatics_GetSpeakerAngles");
 static_assert(offsetof(AkGameplayStatics_GetSpeakerAngles, SpeakerAngles) == 0x000000, "Member 'AkGameplayStatics_GetSpeakerAngles::SpeakerAngles' has a wrong offset!");
 static_assert(offsetof(AkGameplayStatics_GetSpeakerAngles, HeightAngle) == 0x000010, "Member 'AkGameplayStatics_GetSpeakerAngles::HeightAngle' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_GetSpeakerAngles, DeviceShareset) == 0x000018, "Member 'AkGameplayStatics_GetSpeakerAngles::DeviceShareset' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_GetSpeakerAngles, DeviceShareSet) == 0x000018, "Member 'AkGameplayStatics_GetSpeakerAngles::DeviceShareSet' has a wrong offset!");
 
 // Function AkAudio.AkGameplayStatics.IsEditor
 // 0x0001 (0x0001 - 0x0000)
@@ -803,117 +962,36 @@ struct AkGameplayStatics_IsGame final
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CCF[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D76[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_IsGame) == 0x000008, "Wrong alignment on AkGameplayStatics_IsGame");
 static_assert(sizeof(AkGameplayStatics_IsGame) == 0x000010, "Wrong size on AkGameplayStatics_IsGame");
 static_assert(offsetof(AkGameplayStatics_IsGame, WorldContextObject) == 0x000000, "Member 'AkGameplayStatics_IsGame::WorldContextObject' has a wrong offset!");
 static_assert(offsetof(AkGameplayStatics_IsGame, ReturnValue) == 0x000008, "Member 'AkGameplayStatics_IsGame::ReturnValue' has a wrong offset!");
 
-// Function AkAudio.AkGameplayStatics.LoadBank
-// 0x0038 (0x0038 - 0x0000)
-struct AkGameplayStatics_LoadBank final
-{
-public:
-	class UAkAudioBank*                           Bank;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 BankName;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLatentActionInfo                      LatentInfo;                                        // 0x0018(0x0018)(Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-	class UObject*                                WorldContextObject;                                // 0x0030(0x0008)(Parm, ZeroConstructor, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkGameplayStatics_LoadBank) == 0x000008, "Wrong alignment on AkGameplayStatics_LoadBank");
-static_assert(sizeof(AkGameplayStatics_LoadBank) == 0x000038, "Wrong size on AkGameplayStatics_LoadBank");
-static_assert(offsetof(AkGameplayStatics_LoadBank, Bank) == 0x000000, "Member 'AkGameplayStatics_LoadBank::Bank' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_LoadBank, BankName) == 0x000008, "Member 'AkGameplayStatics_LoadBank::BankName' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_LoadBank, LatentInfo) == 0x000018, "Member 'AkGameplayStatics_LoadBank::LatentInfo' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_LoadBank, WorldContextObject) == 0x000030, "Member 'AkGameplayStatics_LoadBank::WorldContextObject' has a wrong offset!");
-
-// Function AkAudio.AkGameplayStatics.LoadBankAsync
-// 0x0018 (0x0018 - 0x0000)
-struct AkGameplayStatics_LoadBankAsync final
-{
-public:
-	class UAkAudioBank*                           Bank;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(EAkResult Result)>             BankLoadedCallback;                                // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkGameplayStatics_LoadBankAsync) == 0x000008, "Wrong alignment on AkGameplayStatics_LoadBankAsync");
-static_assert(sizeof(AkGameplayStatics_LoadBankAsync) == 0x000018, "Wrong size on AkGameplayStatics_LoadBankAsync");
-static_assert(offsetof(AkGameplayStatics_LoadBankAsync, Bank) == 0x000000, "Member 'AkGameplayStatics_LoadBankAsync::Bank' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_LoadBankAsync, BankLoadedCallback) == 0x000008, "Member 'AkGameplayStatics_LoadBankAsync::BankLoadedCallback' has a wrong offset!");
-
-// Function AkAudio.AkGameplayStatics.LoadBankByName
-// 0x0010 (0x0010 - 0x0000)
-struct AkGameplayStatics_LoadBankByName final
-{
-public:
-	class FString                                 BankName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkGameplayStatics_LoadBankByName) == 0x000008, "Wrong alignment on AkGameplayStatics_LoadBankByName");
-static_assert(sizeof(AkGameplayStatics_LoadBankByName) == 0x000010, "Wrong size on AkGameplayStatics_LoadBankByName");
-static_assert(offsetof(AkGameplayStatics_LoadBankByName, BankName) == 0x000000, "Member 'AkGameplayStatics_LoadBankByName::BankName' has a wrong offset!");
-
-// Function AkAudio.AkGameplayStatics.LoadBanks
-// 0x0018 (0x0018 - 0x0000)
-struct AkGameplayStatics_LoadBanks final
-{
-public:
-	TArray<class UAkAudioBank*>                   SoundBanks;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	bool                                          SynchronizeSoundBanks;                             // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CD0[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(AkGameplayStatics_LoadBanks) == 0x000008, "Wrong alignment on AkGameplayStatics_LoadBanks");
-static_assert(sizeof(AkGameplayStatics_LoadBanks) == 0x000018, "Wrong size on AkGameplayStatics_LoadBanks");
-static_assert(offsetof(AkGameplayStatics_LoadBanks, SoundBanks) == 0x000000, "Member 'AkGameplayStatics_LoadBanks::SoundBanks' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_LoadBanks, SynchronizeSoundBanks) == 0x000010, "Member 'AkGameplayStatics_LoadBanks::SynchronizeSoundBanks' has a wrong offset!");
-
 // Function AkAudio.AkGameplayStatics.PostAndWaitForEndOfEvent
-// 0x0058 (0x0058 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct AkGameplayStatics_PostAndWaitForEndOfEvent final
 {
 public:
 	class UAkAudioEvent*                          AkEvent;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 Actor;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bStopWhenAttachedToDestroyed;                      // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CD1[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FAkExternalSourceInfo>          ExternalSources;                                   // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
-	class FString                                 EventName;                                         // 0x0028(0x0010)(Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLatentActionInfo                      LatentInfo;                                        // 0x0038(0x0018)(Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0050(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CD2[0x4];                                     // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D77[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLatentActionInfo                      LatentInfo;                                        // 0x0018(0x0018)(Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0030(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D78[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_PostAndWaitForEndOfEvent) == 0x000008, "Wrong alignment on AkGameplayStatics_PostAndWaitForEndOfEvent");
-static_assert(sizeof(AkGameplayStatics_PostAndWaitForEndOfEvent) == 0x000058, "Wrong size on AkGameplayStatics_PostAndWaitForEndOfEvent");
+static_assert(sizeof(AkGameplayStatics_PostAndWaitForEndOfEvent) == 0x000038, "Wrong size on AkGameplayStatics_PostAndWaitForEndOfEvent");
 static_assert(offsetof(AkGameplayStatics_PostAndWaitForEndOfEvent, AkEvent) == 0x000000, "Member 'AkGameplayStatics_PostAndWaitForEndOfEvent::AkEvent' has a wrong offset!");
 static_assert(offsetof(AkGameplayStatics_PostAndWaitForEndOfEvent, Actor) == 0x000008, "Member 'AkGameplayStatics_PostAndWaitForEndOfEvent::Actor' has a wrong offset!");
 static_assert(offsetof(AkGameplayStatics_PostAndWaitForEndOfEvent, bStopWhenAttachedToDestroyed) == 0x000010, "Member 'AkGameplayStatics_PostAndWaitForEndOfEvent::bStopWhenAttachedToDestroyed' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostAndWaitForEndOfEvent, ExternalSources) == 0x000018, "Member 'AkGameplayStatics_PostAndWaitForEndOfEvent::ExternalSources' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostAndWaitForEndOfEvent, EventName) == 0x000028, "Member 'AkGameplayStatics_PostAndWaitForEndOfEvent::EventName' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostAndWaitForEndOfEvent, LatentInfo) == 0x000038, "Member 'AkGameplayStatics_PostAndWaitForEndOfEvent::LatentInfo' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostAndWaitForEndOfEvent, ReturnValue) == 0x000050, "Member 'AkGameplayStatics_PostAndWaitForEndOfEvent::ReturnValue' has a wrong offset!");
-
-// Function AkAudio.AkGameplayStatics.PostAndWaitForEndOfEventAsync
-// 0x0040 (0x0040 - 0x0000)
-struct AkGameplayStatics_PostAndWaitForEndOfEventAsync final
-{
-public:
-	class UAkAudioEvent*                          AkEvent;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PlayingID;                                         // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bStopWhenAttachedToDestroyed;                      // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CD3[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FAkExternalSourceInfo>          ExternalSources;                                   // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
-	struct FLatentActionInfo                      LatentInfo;                                        // 0x0028(0x0018)(Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkGameplayStatics_PostAndWaitForEndOfEventAsync) == 0x000008, "Wrong alignment on AkGameplayStatics_PostAndWaitForEndOfEventAsync");
-static_assert(sizeof(AkGameplayStatics_PostAndWaitForEndOfEventAsync) == 0x000040, "Wrong size on AkGameplayStatics_PostAndWaitForEndOfEventAsync");
-static_assert(offsetof(AkGameplayStatics_PostAndWaitForEndOfEventAsync, AkEvent) == 0x000000, "Member 'AkGameplayStatics_PostAndWaitForEndOfEventAsync::AkEvent' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostAndWaitForEndOfEventAsync, Actor) == 0x000008, "Member 'AkGameplayStatics_PostAndWaitForEndOfEventAsync::Actor' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostAndWaitForEndOfEventAsync, PlayingID) == 0x000010, "Member 'AkGameplayStatics_PostAndWaitForEndOfEventAsync::PlayingID' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostAndWaitForEndOfEventAsync, bStopWhenAttachedToDestroyed) == 0x000014, "Member 'AkGameplayStatics_PostAndWaitForEndOfEventAsync::bStopWhenAttachedToDestroyed' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostAndWaitForEndOfEventAsync, ExternalSources) == 0x000018, "Member 'AkGameplayStatics_PostAndWaitForEndOfEventAsync::ExternalSources' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostAndWaitForEndOfEventAsync, LatentInfo) == 0x000028, "Member 'AkGameplayStatics_PostAndWaitForEndOfEventAsync::LatentInfo' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_PostAndWaitForEndOfEvent, LatentInfo) == 0x000018, "Member 'AkGameplayStatics_PostAndWaitForEndOfEvent::LatentInfo' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_PostAndWaitForEndOfEvent, ReturnValue) == 0x000030, "Member 'AkGameplayStatics_PostAndWaitForEndOfEvent::ReturnValue' has a wrong offset!");
 
 // Function AkAudio.AkGameplayStatics.PostEvent
-// 0x0058 (0x0058 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct AkGameplayStatics_PostEvent final
 {
 public:
@@ -921,102 +999,39 @@ public:
 	class AActor*                                 Actor;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         CallbackMask;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> PostEventCallback;                                 // 0x0014(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CD4[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FAkExternalSourceInfo>          ExternalSources;                                   // 0x0028(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
-	bool                                          bStopWhenAttachedToDestroyed;                      // 0x0038(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CD5[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 EventName;                                         // 0x0040(0x0010)(Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0050(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CD6[0x4];                                     // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          bStopWhenAttachedToDestroyed;                      // 0x0024(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D79[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ReturnValue;                                       // 0x0028(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D7A[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_PostEvent) == 0x000008, "Wrong alignment on AkGameplayStatics_PostEvent");
-static_assert(sizeof(AkGameplayStatics_PostEvent) == 0x000058, "Wrong size on AkGameplayStatics_PostEvent");
+static_assert(sizeof(AkGameplayStatics_PostEvent) == 0x000030, "Wrong size on AkGameplayStatics_PostEvent");
 static_assert(offsetof(AkGameplayStatics_PostEvent, AkEvent) == 0x000000, "Member 'AkGameplayStatics_PostEvent::AkEvent' has a wrong offset!");
 static_assert(offsetof(AkGameplayStatics_PostEvent, Actor) == 0x000008, "Member 'AkGameplayStatics_PostEvent::Actor' has a wrong offset!");
 static_assert(offsetof(AkGameplayStatics_PostEvent, CallbackMask) == 0x000010, "Member 'AkGameplayStatics_PostEvent::CallbackMask' has a wrong offset!");
 static_assert(offsetof(AkGameplayStatics_PostEvent, PostEventCallback) == 0x000014, "Member 'AkGameplayStatics_PostEvent::PostEventCallback' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostEvent, ExternalSources) == 0x000028, "Member 'AkGameplayStatics_PostEvent::ExternalSources' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostEvent, bStopWhenAttachedToDestroyed) == 0x000038, "Member 'AkGameplayStatics_PostEvent::bStopWhenAttachedToDestroyed' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostEvent, EventName) == 0x000040, "Member 'AkGameplayStatics_PostEvent::EventName' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostEvent, ReturnValue) == 0x000050, "Member 'AkGameplayStatics_PostEvent::ReturnValue' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_PostEvent, bStopWhenAttachedToDestroyed) == 0x000024, "Member 'AkGameplayStatics_PostEvent::bStopWhenAttachedToDestroyed' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_PostEvent, ReturnValue) == 0x000028, "Member 'AkGameplayStatics_PostEvent::ReturnValue' has a wrong offset!");
 
 // Function AkAudio.AkGameplayStatics.PostEventAtLocation
-// 0x0058 (0x0058 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct AkGameplayStatics_PostEventAtLocation final
 {
 public:
 	class UAkAudioEvent*                          AkEvent;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Location;                                          // 0x0008(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                               Orientation;                                       // 0x0020(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	class FString                                 EventName;                                         // 0x0038(0x0010)(Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UObject*                                WorldContextObject;                                // 0x0048(0x0008)(Parm, ZeroConstructor, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0050(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CD7[0x4];                                     // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UObject*                                WorldContextObject;                                // 0x0038(0x0008)(Parm, ZeroConstructor, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0040(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D7B[0x4];                                     // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_PostEventAtLocation) == 0x000008, "Wrong alignment on AkGameplayStatics_PostEventAtLocation");
-static_assert(sizeof(AkGameplayStatics_PostEventAtLocation) == 0x000058, "Wrong size on AkGameplayStatics_PostEventAtLocation");
+static_assert(sizeof(AkGameplayStatics_PostEventAtLocation) == 0x000048, "Wrong size on AkGameplayStatics_PostEventAtLocation");
 static_assert(offsetof(AkGameplayStatics_PostEventAtLocation, AkEvent) == 0x000000, "Member 'AkGameplayStatics_PostEventAtLocation::AkEvent' has a wrong offset!");
 static_assert(offsetof(AkGameplayStatics_PostEventAtLocation, Location) == 0x000008, "Member 'AkGameplayStatics_PostEventAtLocation::Location' has a wrong offset!");
 static_assert(offsetof(AkGameplayStatics_PostEventAtLocation, Orientation) == 0x000020, "Member 'AkGameplayStatics_PostEventAtLocation::Orientation' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostEventAtLocation, EventName) == 0x000038, "Member 'AkGameplayStatics_PostEventAtLocation::EventName' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostEventAtLocation, WorldContextObject) == 0x000048, "Member 'AkGameplayStatics_PostEventAtLocation::WorldContextObject' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostEventAtLocation, ReturnValue) == 0x000050, "Member 'AkGameplayStatics_PostEventAtLocation::ReturnValue' has a wrong offset!");
-
-// Function AkAudio.AkGameplayStatics.PostEventAtLocationByName
-// 0x0048 (0x0048 - 0x0000)
-struct AkGameplayStatics_PostEventAtLocationByName final
-{
-public:
-	class FString                                 EventName;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Location;                                          // 0x0010(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                               Orientation;                                       // 0x0028(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	class UObject*                                WorldContextObject;                                // 0x0040(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkGameplayStatics_PostEventAtLocationByName) == 0x000008, "Wrong alignment on AkGameplayStatics_PostEventAtLocationByName");
-static_assert(sizeof(AkGameplayStatics_PostEventAtLocationByName) == 0x000048, "Wrong size on AkGameplayStatics_PostEventAtLocationByName");
-static_assert(offsetof(AkGameplayStatics_PostEventAtLocationByName, EventName) == 0x000000, "Member 'AkGameplayStatics_PostEventAtLocationByName::EventName' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostEventAtLocationByName, Location) == 0x000010, "Member 'AkGameplayStatics_PostEventAtLocationByName::Location' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostEventAtLocationByName, Orientation) == 0x000028, "Member 'AkGameplayStatics_PostEventAtLocationByName::Orientation' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostEventAtLocationByName, WorldContextObject) == 0x000040, "Member 'AkGameplayStatics_PostEventAtLocationByName::WorldContextObject' has a wrong offset!");
-
-// Function AkAudio.AkGameplayStatics.PostEventAttached
-// 0x0038 (0x0038 - 0x0000)
-struct AkGameplayStatics_PostEventAttached final
-{
-public:
-	class UAkAudioEvent*                          AkEvent;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   AttachPointName;                                   // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bStopWhenAttachedToDestroyed;                      // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CD8[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 EventName;                                         // 0x0020(0x0010)(Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x0030(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CD9[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(AkGameplayStatics_PostEventAttached) == 0x000008, "Wrong alignment on AkGameplayStatics_PostEventAttached");
-static_assert(sizeof(AkGameplayStatics_PostEventAttached) == 0x000038, "Wrong size on AkGameplayStatics_PostEventAttached");
-static_assert(offsetof(AkGameplayStatics_PostEventAttached, AkEvent) == 0x000000, "Member 'AkGameplayStatics_PostEventAttached::AkEvent' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostEventAttached, Actor) == 0x000008, "Member 'AkGameplayStatics_PostEventAttached::Actor' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostEventAttached, AttachPointName) == 0x000010, "Member 'AkGameplayStatics_PostEventAttached::AttachPointName' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostEventAttached, bStopWhenAttachedToDestroyed) == 0x000018, "Member 'AkGameplayStatics_PostEventAttached::bStopWhenAttachedToDestroyed' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostEventAttached, EventName) == 0x000020, "Member 'AkGameplayStatics_PostEventAttached::EventName' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostEventAttached, ReturnValue) == 0x000030, "Member 'AkGameplayStatics_PostEventAttached::ReturnValue' has a wrong offset!");
-
-// Function AkAudio.AkGameplayStatics.PostEventByName
-// 0x0020 (0x0020 - 0x0000)
-struct AkGameplayStatics_PostEventByName final
-{
-public:
-	class FString                                 EventName;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bStopWhenAttachedToDestroyed;                      // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CDA[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(AkGameplayStatics_PostEventByName) == 0x000008, "Wrong alignment on AkGameplayStatics_PostEventByName");
-static_assert(sizeof(AkGameplayStatics_PostEventByName) == 0x000020, "Wrong size on AkGameplayStatics_PostEventByName");
-static_assert(offsetof(AkGameplayStatics_PostEventByName, EventName) == 0x000000, "Member 'AkGameplayStatics_PostEventByName::EventName' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostEventByName, Actor) == 0x000010, "Member 'AkGameplayStatics_PostEventByName::Actor' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_PostEventByName, bStopWhenAttachedToDestroyed) == 0x000018, "Member 'AkGameplayStatics_PostEventByName::bStopWhenAttachedToDestroyed' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_PostEventAtLocation, WorldContextObject) == 0x000038, "Member 'AkGameplayStatics_PostEventAtLocation::WorldContextObject' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_PostEventAtLocation, ReturnValue) == 0x000040, "Member 'AkGameplayStatics_PostEventAtLocation::ReturnValue' has a wrong offset!");
 
 // Function AkAudio.AkGameplayStatics.PostTrigger
 // 0x0018 (0x0018 - 0x0000)
@@ -1032,6 +1047,17 @@ static_assert(sizeof(AkGameplayStatics_PostTrigger) == 0x000018, "Wrong size on 
 static_assert(offsetof(AkGameplayStatics_PostTrigger, TriggerValue) == 0x000000, "Member 'AkGameplayStatics_PostTrigger::TriggerValue' has a wrong offset!");
 static_assert(offsetof(AkGameplayStatics_PostTrigger, Actor) == 0x000008, "Member 'AkGameplayStatics_PostTrigger::Actor' has a wrong offset!");
 static_assert(offsetof(AkGameplayStatics_PostTrigger, Trigger) == 0x000010, "Member 'AkGameplayStatics_PostTrigger::Trigger' has a wrong offset!");
+
+// Function AkAudio.AkGameplayStatics.RemoveOutput
+// 0x0008 (0x0008 - 0x0000)
+struct AkGameplayStatics_RemoveOutput final
+{
+public:
+	struct FAkOutputDeviceID                      In_OutputDeviceId;                                 // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkGameplayStatics_RemoveOutput) == 0x000008, "Wrong alignment on AkGameplayStatics_RemoveOutput");
+static_assert(sizeof(AkGameplayStatics_RemoveOutput) == 0x000008, "Wrong size on AkGameplayStatics_RemoveOutput");
+static_assert(offsetof(AkGameplayStatics_RemoveOutput, In_OutputDeviceId) == 0x000000, "Member 'AkGameplayStatics_RemoveOutput::In_OutputDeviceId' has a wrong offset!");
 
 // Function AkAudio.AkGameplayStatics.ReplaceMainOutput
 // 0x0018 (0x0018 - 0x0000)
@@ -1051,7 +1077,7 @@ struct AkGameplayStatics_ResetRTPCValue final
 public:
 	class UAkRtpc*                                RTPCValue;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         InterpolationTimeMs;                               // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CDB[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D7C[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   RTPC;                                              // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -1062,6 +1088,43 @@ static_assert(offsetof(AkGameplayStatics_ResetRTPCValue, InterpolationTimeMs) ==
 static_assert(offsetof(AkGameplayStatics_ResetRTPCValue, Actor) == 0x000010, "Member 'AkGameplayStatics_ResetRTPCValue::Actor' has a wrong offset!");
 static_assert(offsetof(AkGameplayStatics_ResetRTPCValue, RTPC) == 0x000018, "Member 'AkGameplayStatics_ResetRTPCValue::RTPC' has a wrong offset!");
 
+// Function AkAudio.AkGameplayStatics.SetActorMixerEffect
+// 0x0018 (0x0018 - 0x0000)
+struct AkGameplayStatics_SetActorMixerEffect final
+{
+public:
+	struct FAkUniqueID                            InAudioNodeID;                                     // 0x0000(0x0004)(ConstParm, Parm, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                         InEffectIndex;                                     // 0x0004(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const class UAkEffectShareSet*                InEffectShareSet;                                  // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D7D[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(AkGameplayStatics_SetActorMixerEffect) == 0x000008, "Wrong alignment on AkGameplayStatics_SetActorMixerEffect");
+static_assert(sizeof(AkGameplayStatics_SetActorMixerEffect) == 0x000018, "Wrong size on AkGameplayStatics_SetActorMixerEffect");
+static_assert(offsetof(AkGameplayStatics_SetActorMixerEffect, InAudioNodeID) == 0x000000, "Member 'AkGameplayStatics_SetActorMixerEffect::InAudioNodeID' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_SetActorMixerEffect, InEffectIndex) == 0x000004, "Member 'AkGameplayStatics_SetActorMixerEffect::InEffectIndex' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_SetActorMixerEffect, InEffectShareSet) == 0x000008, "Member 'AkGameplayStatics_SetActorMixerEffect::InEffectShareSet' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_SetActorMixerEffect, ReturnValue) == 0x000010, "Member 'AkGameplayStatics_SetActorMixerEffect::ReturnValue' has a wrong offset!");
+
+// Function AkAudio.AkGameplayStatics.SetAuxBusEffect
+// 0x0020 (0x0020 - 0x0000)
+struct AkGameplayStatics_SetAuxBusEffect final
+{
+public:
+	const class UAkAuxBus*                        InAuxBus;                                          // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InEffectIndex;                                     // 0x0008(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D7E[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UAkEffectShareSet*                InEffectShareSet;                                  // 0x0010(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D7F[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(AkGameplayStatics_SetAuxBusEffect) == 0x000008, "Wrong alignment on AkGameplayStatics_SetAuxBusEffect");
+static_assert(sizeof(AkGameplayStatics_SetAuxBusEffect) == 0x000020, "Wrong size on AkGameplayStatics_SetAuxBusEffect");
+static_assert(offsetof(AkGameplayStatics_SetAuxBusEffect, InAuxBus) == 0x000000, "Member 'AkGameplayStatics_SetAuxBusEffect::InAuxBus' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_SetAuxBusEffect, InEffectIndex) == 0x000008, "Member 'AkGameplayStatics_SetAuxBusEffect::InEffectIndex' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_SetAuxBusEffect, InEffectShareSet) == 0x000010, "Member 'AkGameplayStatics_SetAuxBusEffect::InEffectShareSet' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_SetAuxBusEffect, ReturnValue) == 0x000018, "Member 'AkGameplayStatics_SetAuxBusEffect::ReturnValue' has a wrong offset!");
+
 // Function AkAudio.AkGameplayStatics.SetBusConfig
 // 0x0018 (0x0018 - 0x0000)
 struct AkGameplayStatics_SetBusConfig final
@@ -1069,12 +1132,49 @@ struct AkGameplayStatics_SetBusConfig final
 public:
 	class FString                                 BusName;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAkChannelConfiguration                       ChannelConfiguration;                              // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CDC[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D80[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_SetBusConfig) == 0x000008, "Wrong alignment on AkGameplayStatics_SetBusConfig");
 static_assert(sizeof(AkGameplayStatics_SetBusConfig) == 0x000018, "Wrong size on AkGameplayStatics_SetBusConfig");
 static_assert(offsetof(AkGameplayStatics_SetBusConfig, BusName) == 0x000000, "Member 'AkGameplayStatics_SetBusConfig::BusName' has a wrong offset!");
 static_assert(offsetof(AkGameplayStatics_SetBusConfig, ChannelConfiguration) == 0x000010, "Member 'AkGameplayStatics_SetBusConfig::ChannelConfiguration' has a wrong offset!");
+
+// Function AkAudio.AkGameplayStatics.SetBusEffectByID
+// 0x0018 (0x0018 - 0x0000)
+struct AkGameplayStatics_SetBusEffectByID final
+{
+public:
+	struct FAkUniqueID                            InBusID;                                           // 0x0000(0x0004)(ConstParm, Parm, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                         InEffectIndex;                                     // 0x0004(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const class UAkEffectShareSet*                InEffectShareSet;                                  // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D81[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(AkGameplayStatics_SetBusEffectByID) == 0x000008, "Wrong alignment on AkGameplayStatics_SetBusEffectByID");
+static_assert(sizeof(AkGameplayStatics_SetBusEffectByID) == 0x000018, "Wrong size on AkGameplayStatics_SetBusEffectByID");
+static_assert(offsetof(AkGameplayStatics_SetBusEffectByID, InBusID) == 0x000000, "Member 'AkGameplayStatics_SetBusEffectByID::InBusID' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_SetBusEffectByID, InEffectIndex) == 0x000004, "Member 'AkGameplayStatics_SetBusEffectByID::InEffectIndex' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_SetBusEffectByID, InEffectShareSet) == 0x000008, "Member 'AkGameplayStatics_SetBusEffectByID::InEffectShareSet' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_SetBusEffectByID, ReturnValue) == 0x000010, "Member 'AkGameplayStatics_SetBusEffectByID::ReturnValue' has a wrong offset!");
+
+// Function AkAudio.AkGameplayStatics.SetBusEffectByName
+// 0x0028 (0x0028 - 0x0000)
+struct AkGameplayStatics_SetBusEffectByName final
+{
+public:
+	class FString                                 InBusName;                                         // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InEffectIndex;                                     // 0x0010(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D82[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UAkEffectShareSet*                InEffectShareSet;                                  // 0x0018(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D83[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(AkGameplayStatics_SetBusEffectByName) == 0x000008, "Wrong alignment on AkGameplayStatics_SetBusEffectByName");
+static_assert(sizeof(AkGameplayStatics_SetBusEffectByName) == 0x000028, "Wrong size on AkGameplayStatics_SetBusEffectByName");
+static_assert(offsetof(AkGameplayStatics_SetBusEffectByName, InBusName) == 0x000000, "Member 'AkGameplayStatics_SetBusEffectByName::InBusName' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_SetBusEffectByName, InEffectIndex) == 0x000010, "Member 'AkGameplayStatics_SetBusEffectByName::InEffectIndex' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_SetBusEffectByName, InEffectShareSet) == 0x000018, "Member 'AkGameplayStatics_SetBusEffectByName::InEffectShareSet' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_SetBusEffectByName, ReturnValue) == 0x000020, "Member 'AkGameplayStatics_SetBusEffectByName::ReturnValue' has a wrong offset!");
 
 // Function AkAudio.AkGameplayStatics.SetCurrentAudioCulture
 // 0x0030 (0x0030 - 0x0000)
@@ -1104,6 +1204,33 @@ static_assert(sizeof(AkGameplayStatics_SetCurrentAudioCultureAsync) == 0x000020,
 static_assert(offsetof(AkGameplayStatics_SetCurrentAudioCultureAsync, AudioCulture) == 0x000000, "Member 'AkGameplayStatics_SetCurrentAudioCultureAsync::AudioCulture' has a wrong offset!");
 static_assert(offsetof(AkGameplayStatics_SetCurrentAudioCultureAsync, Completed) == 0x000010, "Member 'AkGameplayStatics_SetCurrentAudioCultureAsync::Completed' has a wrong offset!");
 
+// Function AkAudio.AkGameplayStatics.SetDiffractionOrder
+// 0x0008 (0x0008 - 0x0000)
+struct AkGameplayStatics_SetDiffractionOrder final
+{
+public:
+	int32                                         InDiffractionOrder;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bInUpdatePaths;                                    // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D84[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(AkGameplayStatics_SetDiffractionOrder) == 0x000004, "Wrong alignment on AkGameplayStatics_SetDiffractionOrder");
+static_assert(sizeof(AkGameplayStatics_SetDiffractionOrder) == 0x000008, "Wrong size on AkGameplayStatics_SetDiffractionOrder");
+static_assert(offsetof(AkGameplayStatics_SetDiffractionOrder, InDiffractionOrder) == 0x000000, "Member 'AkGameplayStatics_SetDiffractionOrder::InDiffractionOrder' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_SetDiffractionOrder, bInUpdatePaths) == 0x000004, "Member 'AkGameplayStatics_SetDiffractionOrder::bInUpdatePaths' has a wrong offset!");
+
+// Function AkAudio.AkGameplayStatics.SetDistanceProbe
+// 0x0010 (0x0010 - 0x0000)
+struct AkGameplayStatics_SetDistanceProbe final
+{
+public:
+	class AActor*                                 Listener;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                 DistanceProbe;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkGameplayStatics_SetDistanceProbe) == 0x000008, "Wrong alignment on AkGameplayStatics_SetDistanceProbe");
+static_assert(sizeof(AkGameplayStatics_SetDistanceProbe) == 0x000010, "Wrong size on AkGameplayStatics_SetDistanceProbe");
+static_assert(offsetof(AkGameplayStatics_SetDistanceProbe, Listener) == 0x000000, "Member 'AkGameplayStatics_SetDistanceProbe::Listener' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_SetDistanceProbe, DistanceProbe) == 0x000008, "Member 'AkGameplayStatics_SetDistanceProbe::DistanceProbe' has a wrong offset!");
+
 // Function AkAudio.AkGameplayStatics.SetGameObjectToPortalObstruction
 // 0x0018 (0x0018 - 0x0000)
 struct AkGameplayStatics_SetGameObjectToPortalObstruction final
@@ -1112,13 +1239,35 @@ public:
 	class UAkComponent*                           GameObjectAkComponent;                             // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAkPortalComponent*                     PortalComponent;                                   // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ObstructionValue;                                  // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CDD[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D85[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_SetGameObjectToPortalObstruction) == 0x000008, "Wrong alignment on AkGameplayStatics_SetGameObjectToPortalObstruction");
 static_assert(sizeof(AkGameplayStatics_SetGameObjectToPortalObstruction) == 0x000018, "Wrong size on AkGameplayStatics_SetGameObjectToPortalObstruction");
 static_assert(offsetof(AkGameplayStatics_SetGameObjectToPortalObstruction, GameObjectAkComponent) == 0x000000, "Member 'AkGameplayStatics_SetGameObjectToPortalObstruction::GameObjectAkComponent' has a wrong offset!");
 static_assert(offsetof(AkGameplayStatics_SetGameObjectToPortalObstruction, PortalComponent) == 0x000008, "Member 'AkGameplayStatics_SetGameObjectToPortalObstruction::PortalComponent' has a wrong offset!");
 static_assert(offsetof(AkGameplayStatics_SetGameObjectToPortalObstruction, ObstructionValue) == 0x000010, "Member 'AkGameplayStatics_SetGameObjectToPortalObstruction::ObstructionValue' has a wrong offset!");
+
+// Function AkAudio.AkGameplayStatics.SetLoadBalancingSpread
+// 0x0004 (0x0004 - 0x0000)
+struct AkGameplayStatics_SetLoadBalancingSpread final
+{
+public:
+	int32                                         InNbFrames;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkGameplayStatics_SetLoadBalancingSpread) == 0x000004, "Wrong alignment on AkGameplayStatics_SetLoadBalancingSpread");
+static_assert(sizeof(AkGameplayStatics_SetLoadBalancingSpread) == 0x000004, "Wrong size on AkGameplayStatics_SetLoadBalancingSpread");
+static_assert(offsetof(AkGameplayStatics_SetLoadBalancingSpread, InNbFrames) == 0x000000, "Member 'AkGameplayStatics_SetLoadBalancingSpread::InNbFrames' has a wrong offset!");
+
+// Function AkAudio.AkGameplayStatics.SetMaxEmitterRoomAuxSends
+// 0x0004 (0x0004 - 0x0000)
+struct AkGameplayStatics_SetMaxEmitterRoomAuxSends final
+{
+public:
+	int32                                         InMaxEmitterRoomAuxSends;                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkGameplayStatics_SetMaxEmitterRoomAuxSends) == 0x000004, "Wrong alignment on AkGameplayStatics_SetMaxEmitterRoomAuxSends");
+static_assert(sizeof(AkGameplayStatics_SetMaxEmitterRoomAuxSends) == 0x000004, "Wrong size on AkGameplayStatics_SetMaxEmitterRoomAuxSends");
+static_assert(offsetof(AkGameplayStatics_SetMaxEmitterRoomAuxSends, InMaxEmitterRoomAuxSends) == 0x000000, "Member 'AkGameplayStatics_SetMaxEmitterRoomAuxSends::InMaxEmitterRoomAuxSends' has a wrong offset!");
 
 // Function AkAudio.AkGameplayStatics.SetMultipleChannelEmitterPositions
 // 0x0030 (0x0030 - 0x0000)
@@ -1129,7 +1278,7 @@ public:
 	TArray<EAkChannelConfiguration>               ChannelMasks;                                      // 0x0008(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FTransform>                     Positions;                                         // 0x0018(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	EAkMultiPositionType                          MultiPositionType;                                 // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CDE[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D86[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_SetMultipleChannelEmitterPositions) == 0x000008, "Wrong alignment on AkGameplayStatics_SetMultipleChannelEmitterPositions");
 static_assert(sizeof(AkGameplayStatics_SetMultipleChannelEmitterPositions) == 0x000030, "Wrong size on AkGameplayStatics_SetMultipleChannelEmitterPositions");
@@ -1147,7 +1296,7 @@ public:
 	TArray<struct FAkChannelMask>                 ChannelMasks;                                      // 0x0008(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FTransform>                     Positions;                                         // 0x0018(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	EAkMultiPositionType                          MultiPositionType;                                 // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CDF[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D87[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_SetMultipleChannelMaskEmitterPositions) == 0x000008, "Wrong alignment on AkGameplayStatics_SetMultipleChannelMaskEmitterPositions");
 static_assert(sizeof(AkGameplayStatics_SetMultipleChannelMaskEmitterPositions) == 0x000030, "Wrong size on AkGameplayStatics_SetMultipleChannelMaskEmitterPositions");
@@ -1164,7 +1313,7 @@ public:
 	class UAkComponent*                           GameObjectAkComponent;                             // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FTransform>                     Positions;                                         // 0x0008(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	EAkMultiPositionType                          MultiPositionType;                                 // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CE0[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D88[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_SetMultiplePositions) == 0x000008, "Wrong alignment on AkGameplayStatics_SetMultiplePositions");
 static_assert(sizeof(AkGameplayStatics_SetMultiplePositions) == 0x000020, "Wrong size on AkGameplayStatics_SetMultiplePositions");
@@ -1172,13 +1321,24 @@ static_assert(offsetof(AkGameplayStatics_SetMultiplePositions, GameObjectAkCompo
 static_assert(offsetof(AkGameplayStatics_SetMultiplePositions, Positions) == 0x000008, "Member 'AkGameplayStatics_SetMultiplePositions::Positions' has a wrong offset!");
 static_assert(offsetof(AkGameplayStatics_SetMultiplePositions, MultiPositionType) == 0x000018, "Member 'AkGameplayStatics_SetMultiplePositions::MultiPositionType' has a wrong offset!");
 
+// Function AkAudio.AkGameplayStatics.SetNumberOfPrimaryRays
+// 0x0004 (0x0004 - 0x0000)
+struct AkGameplayStatics_SetNumberOfPrimaryRays final
+{
+public:
+	int32                                         InNbPrimaryRays;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkGameplayStatics_SetNumberOfPrimaryRays) == 0x000004, "Wrong alignment on AkGameplayStatics_SetNumberOfPrimaryRays");
+static_assert(sizeof(AkGameplayStatics_SetNumberOfPrimaryRays) == 0x000004, "Wrong size on AkGameplayStatics_SetNumberOfPrimaryRays");
+static_assert(offsetof(AkGameplayStatics_SetNumberOfPrimaryRays, InNbPrimaryRays) == 0x000000, "Member 'AkGameplayStatics_SetNumberOfPrimaryRays::InNbPrimaryRays' has a wrong offset!");
+
 // Function AkAudio.AkGameplayStatics.SetOcclusionRefreshInterval
 // 0x0010 (0x0010 - 0x0000)
 struct AkGameplayStatics_SetOcclusionRefreshInterval final
 {
 public:
 	float                                         RefreshInterval;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CE1[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D89[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AkGameplayStatics_SetOcclusionRefreshInterval) == 0x000008, "Wrong alignment on AkGameplayStatics_SetOcclusionRefreshInterval");
@@ -1186,30 +1346,38 @@ static_assert(sizeof(AkGameplayStatics_SetOcclusionRefreshInterval) == 0x000010,
 static_assert(offsetof(AkGameplayStatics_SetOcclusionRefreshInterval, RefreshInterval) == 0x000000, "Member 'AkGameplayStatics_SetOcclusionRefreshInterval::RefreshInterval' has a wrong offset!");
 static_assert(offsetof(AkGameplayStatics_SetOcclusionRefreshInterval, Actor) == 0x000008, "Member 'AkGameplayStatics_SetOcclusionRefreshInterval::Actor' has a wrong offset!");
 
-// Function AkAudio.AkGameplayStatics.SetOcclusionScalingFactor
-// 0x0004 (0x0004 - 0x0000)
-struct AkGameplayStatics_SetOcclusionScalingFactor final
-{
-public:
-	float                                         ScalingFactor;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkGameplayStatics_SetOcclusionScalingFactor) == 0x000004, "Wrong alignment on AkGameplayStatics_SetOcclusionScalingFactor");
-static_assert(sizeof(AkGameplayStatics_SetOcclusionScalingFactor) == 0x000004, "Wrong size on AkGameplayStatics_SetOcclusionScalingFactor");
-static_assert(offsetof(AkGameplayStatics_SetOcclusionScalingFactor, ScalingFactor) == 0x000000, "Member 'AkGameplayStatics_SetOcclusionScalingFactor::ScalingFactor' has a wrong offset!");
-
 // Function AkAudio.AkGameplayStatics.SetOutputBusVolume
 // 0x0010 (0x0010 - 0x0000)
 struct AkGameplayStatics_SetOutputBusVolume final
 {
 public:
 	float                                         BusVolume;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CE2[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D8A[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AkGameplayStatics_SetOutputBusVolume) == 0x000008, "Wrong alignment on AkGameplayStatics_SetOutputBusVolume");
 static_assert(sizeof(AkGameplayStatics_SetOutputBusVolume) == 0x000010, "Wrong size on AkGameplayStatics_SetOutputBusVolume");
 static_assert(offsetof(AkGameplayStatics_SetOutputBusVolume, BusVolume) == 0x000000, "Member 'AkGameplayStatics_SetOutputBusVolume::BusVolume' has a wrong offset!");
 static_assert(offsetof(AkGameplayStatics_SetOutputBusVolume, Actor) == 0x000008, "Member 'AkGameplayStatics_SetOutputBusVolume::Actor' has a wrong offset!");
+
+// Function AkAudio.AkGameplayStatics.SetOutputDeviceEffect
+// 0x0020 (0x0020 - 0x0000)
+struct AkGameplayStatics_SetOutputDeviceEffect final
+{
+public:
+	struct FAkOutputDeviceID                      InDeviceID;                                        // 0x0000(0x0008)(ConstParm, Parm, NoDestructor, NativeAccessSpecifierPublic)
+	int32                                         InEffectIndex;                                     // 0x0008(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D8B[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UAkEffectShareSet*                InEffectShareSet;                                  // 0x0010(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D8C[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(AkGameplayStatics_SetOutputDeviceEffect) == 0x000008, "Wrong alignment on AkGameplayStatics_SetOutputDeviceEffect");
+static_assert(sizeof(AkGameplayStatics_SetOutputDeviceEffect) == 0x000020, "Wrong size on AkGameplayStatics_SetOutputDeviceEffect");
+static_assert(offsetof(AkGameplayStatics_SetOutputDeviceEffect, InDeviceID) == 0x000000, "Member 'AkGameplayStatics_SetOutputDeviceEffect::InDeviceID' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_SetOutputDeviceEffect, InEffectIndex) == 0x000008, "Member 'AkGameplayStatics_SetOutputDeviceEffect::InEffectIndex' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_SetOutputDeviceEffect, InEffectShareSet) == 0x000010, "Member 'AkGameplayStatics_SetOutputDeviceEffect::InEffectShareSet' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_SetOutputDeviceEffect, ReturnValue) == 0x000018, "Member 'AkGameplayStatics_SetOutputDeviceEffect::ReturnValue' has a wrong offset!");
 
 // Function AkAudio.AkGameplayStatics.SetPanningRule
 // 0x0001 (0x0001 - 0x0000)
@@ -1245,7 +1413,7 @@ public:
 	class UAkPortalComponent*                     PortalComponent0;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UAkPortalComponent*                     PortalComponent1;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ObstructionValue;                                  // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CE3[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D8D[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_SetPortalToPortalObstruction) == 0x000008, "Wrong alignment on AkGameplayStatics_SetPortalToPortalObstruction");
 static_assert(sizeof(AkGameplayStatics_SetPortalToPortalObstruction) == 0x000018, "Wrong size on AkGameplayStatics_SetPortalToPortalObstruction");
@@ -1260,7 +1428,7 @@ struct AkGameplayStatics_SetReflectionsOrder final
 public:
 	int32                                         Order;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          RefreshPaths;                                      // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CE4[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D8E[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkGameplayStatics_SetReflectionsOrder) == 0x000004, "Wrong alignment on AkGameplayStatics_SetReflectionsOrder");
 static_assert(sizeof(AkGameplayStatics_SetReflectionsOrder) == 0x000008, "Wrong size on AkGameplayStatics_SetReflectionsOrder");
@@ -1293,14 +1461,14 @@ struct AkGameplayStatics_SetSpeakerAngles final
 public:
 	TArray<float>                                 SpeakerAngles;                                     // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	float                                         HeightAngle;                                       // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CE5[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 DeviceShareset;                                    // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D8F[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 DeviceShareSet;                                    // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AkGameplayStatics_SetSpeakerAngles) == 0x000008, "Wrong alignment on AkGameplayStatics_SetSpeakerAngles");
 static_assert(sizeof(AkGameplayStatics_SetSpeakerAngles) == 0x000028, "Wrong size on AkGameplayStatics_SetSpeakerAngles");
 static_assert(offsetof(AkGameplayStatics_SetSpeakerAngles, SpeakerAngles) == 0x000000, "Member 'AkGameplayStatics_SetSpeakerAngles::SpeakerAngles' has a wrong offset!");
 static_assert(offsetof(AkGameplayStatics_SetSpeakerAngles, HeightAngle) == 0x000010, "Member 'AkGameplayStatics_SetSpeakerAngles::HeightAngle' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_SetSpeakerAngles, DeviceShareset) == 0x000018, "Member 'AkGameplayStatics_SetSpeakerAngles::DeviceShareset' has a wrong offset!");
+static_assert(offsetof(AkGameplayStatics_SetSpeakerAngles, DeviceShareSet) == 0x000018, "Member 'AkGameplayStatics_SetSpeakerAngles::DeviceShareSet' has a wrong offset!");
 
 // Function AkAudio.AkGameplayStatics.SetState
 // 0x0018 (0x0018 - 0x0000)
@@ -1344,10 +1512,10 @@ public:
 	struct FVector                                Location;                                          // 0x0010(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                               Orientation;                                       // 0x0028(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          AutoPost;                                          // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CE6[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D90[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 EventName;                                         // 0x0048(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          AutoDestroy;                                       // 0x0058(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CE7[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D91[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAkComponent*                           ReturnValue;                                       // 0x0060(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AkGameplayStatics_SpawnAkComponentAtLocation) == 0x000008, "Wrong alignment on AkGameplayStatics_SpawnAkComponentAtLocation");
@@ -1416,78 +1584,13 @@ static_assert(alignof(AkGameplayStatics_StopAllAmbientSounds) == 0x000008, "Wron
 static_assert(sizeof(AkGameplayStatics_StopAllAmbientSounds) == 0x000008, "Wrong size on AkGameplayStatics_StopAllAmbientSounds");
 static_assert(offsetof(AkGameplayStatics_StopAllAmbientSounds, WorldContextObject) == 0x000000, "Member 'AkGameplayStatics_StopAllAmbientSounds::WorldContextObject' has a wrong offset!");
 
-// Function AkAudio.AkGameplayStatics.UnloadBank
-// 0x0038 (0x0038 - 0x0000)
-struct AkGameplayStatics_UnloadBank final
-{
-public:
-	class UAkAudioBank*                           Bank;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 BankName;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLatentActionInfo                      LatentInfo;                                        // 0x0018(0x0018)(Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-	class UObject*                                WorldContextObject;                                // 0x0030(0x0008)(Parm, ZeroConstructor, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkGameplayStatics_UnloadBank) == 0x000008, "Wrong alignment on AkGameplayStatics_UnloadBank");
-static_assert(sizeof(AkGameplayStatics_UnloadBank) == 0x000038, "Wrong size on AkGameplayStatics_UnloadBank");
-static_assert(offsetof(AkGameplayStatics_UnloadBank, Bank) == 0x000000, "Member 'AkGameplayStatics_UnloadBank::Bank' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_UnloadBank, BankName) == 0x000008, "Member 'AkGameplayStatics_UnloadBank::BankName' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_UnloadBank, LatentInfo) == 0x000018, "Member 'AkGameplayStatics_UnloadBank::LatentInfo' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_UnloadBank, WorldContextObject) == 0x000030, "Member 'AkGameplayStatics_UnloadBank::WorldContextObject' has a wrong offset!");
-
-// Function AkAudio.AkGameplayStatics.UnloadBankAsync
-// 0x0018 (0x0018 - 0x0000)
-struct AkGameplayStatics_UnloadBankAsync final
-{
-public:
-	class UAkAudioBank*                           Bank;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(EAkResult Result)>             BankUnloadedCallback;                              // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkGameplayStatics_UnloadBankAsync) == 0x000008, "Wrong alignment on AkGameplayStatics_UnloadBankAsync");
-static_assert(sizeof(AkGameplayStatics_UnloadBankAsync) == 0x000018, "Wrong size on AkGameplayStatics_UnloadBankAsync");
-static_assert(offsetof(AkGameplayStatics_UnloadBankAsync, Bank) == 0x000000, "Member 'AkGameplayStatics_UnloadBankAsync::Bank' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_UnloadBankAsync, BankUnloadedCallback) == 0x000008, "Member 'AkGameplayStatics_UnloadBankAsync::BankUnloadedCallback' has a wrong offset!");
-
-// Function AkAudio.AkGameplayStatics.UnloadBankByName
-// 0x0010 (0x0010 - 0x0000)
-struct AkGameplayStatics_UnloadBankByName final
-{
-public:
-	class FString                                 BankName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkGameplayStatics_UnloadBankByName) == 0x000008, "Wrong alignment on AkGameplayStatics_UnloadBankByName");
-static_assert(sizeof(AkGameplayStatics_UnloadBankByName) == 0x000010, "Wrong size on AkGameplayStatics_UnloadBankByName");
-static_assert(offsetof(AkGameplayStatics_UnloadBankByName, BankName) == 0x000000, "Member 'AkGameplayStatics_UnloadBankByName::BankName' has a wrong offset!");
-
-// Function AkAudio.AkGameplayStatics.UseEarlyReflections
-// 0x0030 (0x0030 - 0x0000)
-struct AkGameplayStatics_UseEarlyReflections final
-{
-public:
-	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAkAuxBus*                              AuxBus;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Order;                                             // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BusSendGain;                                       // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxPathLength;                                     // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          SpotReflectors;                                    // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CE8[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 AuxBusName;                                        // 0x0020(0x0010)(Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkGameplayStatics_UseEarlyReflections) == 0x000008, "Wrong alignment on AkGameplayStatics_UseEarlyReflections");
-static_assert(sizeof(AkGameplayStatics_UseEarlyReflections) == 0x000030, "Wrong size on AkGameplayStatics_UseEarlyReflections");
-static_assert(offsetof(AkGameplayStatics_UseEarlyReflections, Actor) == 0x000000, "Member 'AkGameplayStatics_UseEarlyReflections::Actor' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_UseEarlyReflections, AuxBus) == 0x000008, "Member 'AkGameplayStatics_UseEarlyReflections::AuxBus' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_UseEarlyReflections, Order) == 0x000010, "Member 'AkGameplayStatics_UseEarlyReflections::Order' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_UseEarlyReflections, BusSendGain) == 0x000014, "Member 'AkGameplayStatics_UseEarlyReflections::BusSendGain' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_UseEarlyReflections, MaxPathLength) == 0x000018, "Member 'AkGameplayStatics_UseEarlyReflections::MaxPathLength' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_UseEarlyReflections, SpotReflectors) == 0x00001C, "Member 'AkGameplayStatics_UseEarlyReflections::SpotReflectors' has a wrong offset!");
-static_assert(offsetof(AkGameplayStatics_UseEarlyReflections, AuxBusName) == 0x000020, "Member 'AkGameplayStatics_UseEarlyReflections::AuxBusName' has a wrong offset!");
-
 // Function AkAudio.AkGameplayStatics.UseReverbVolumes
 // 0x0010 (0x0010 - 0x0000)
 struct AkGameplayStatics_UseReverbVolumes final
 {
 public:
 	bool                                          InUseReverbVolumes;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CE9[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D92[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AkGameplayStatics_UseReverbVolumes) == 0x000008, "Wrong alignment on AkGameplayStatics_UseReverbVolumes");
@@ -1591,7 +1694,7 @@ struct AkMIDIEventCallbackInfo_GetPitchBend final
 public:
 	struct FAkMidiPitchBend                       AsPitchBend;                                       // 0x0000(0x0008)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CEB[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D94[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkMIDIEventCallbackInfo_GetPitchBend) == 0x000004, "Wrong alignment on AkMIDIEventCallbackInfo_GetPitchBend");
 static_assert(sizeof(AkMIDIEventCallbackInfo_GetPitchBend) == 0x00000C, "Wrong size on AkMIDIEventCallbackInfo_GetPitchBend");
@@ -1621,17 +1724,6 @@ public:
 static_assert(alignof(AkMIDIEventCallbackInfo_GetType) == 0x000001, "Wrong alignment on AkMIDIEventCallbackInfo_GetType");
 static_assert(sizeof(AkMIDIEventCallbackInfo_GetType) == 0x000001, "Wrong size on AkMIDIEventCallbackInfo_GetType");
 static_assert(offsetof(AkMIDIEventCallbackInfo_GetType, ReturnValue) == 0x000000, "Member 'AkMIDIEventCallbackInfo_GetType::ReturnValue' has a wrong offset!");
-
-// Function AkAudio.AkHololensInitializationSettings.MigrateMultiCoreRendering
-// 0x0001 (0x0001 - 0x0000)
-struct AkHololensInitializationSettings_MigrateMultiCoreRendering final
-{
-public:
-	bool                                          NewValue;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkHololensInitializationSettings_MigrateMultiCoreRendering) == 0x000001, "Wrong alignment on AkHololensInitializationSettings_MigrateMultiCoreRendering");
-static_assert(sizeof(AkHololensInitializationSettings_MigrateMultiCoreRendering) == 0x000001, "Wrong size on AkHololensInitializationSettings_MigrateMultiCoreRendering");
-static_assert(offsetof(AkHololensInitializationSettings_MigrateMultiCoreRendering, NewValue) == 0x000000, "Member 'AkHololensInitializationSettings_MigrateMultiCoreRendering::NewValue' has a wrong offset!");
 
 // Function AkAudio.AkItemBoolPropertiesConv.Conv_FAkBoolPropertyToControlToString
 // 0x0020 (0x0020 - 0x0000)
@@ -1762,6 +1854,28 @@ static_assert(alignof(AkLateReverbComponent_AssociateAkTextureSetComponent) == 0
 static_assert(sizeof(AkLateReverbComponent_AssociateAkTextureSetComponent) == 0x000008, "Wrong size on AkLateReverbComponent_AssociateAkTextureSetComponent");
 static_assert(offsetof(AkLateReverbComponent_AssociateAkTextureSetComponent, TextureSetComponent) == 0x000000, "Member 'AkLateReverbComponent_AssociateAkTextureSetComponent::TextureSetComponent' has a wrong offset!");
 
+// Function AkAudio.AkLateReverbComponent.SetAutoAssignAuxBus
+// 0x0001 (0x0001 - 0x0000)
+struct AkLateReverbComponent_SetAutoAssignAuxBus final
+{
+public:
+	bool                                          bInEnable;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkLateReverbComponent_SetAutoAssignAuxBus) == 0x000001, "Wrong alignment on AkLateReverbComponent_SetAutoAssignAuxBus");
+static_assert(sizeof(AkLateReverbComponent_SetAutoAssignAuxBus) == 0x000001, "Wrong size on AkLateReverbComponent_SetAutoAssignAuxBus");
+static_assert(offsetof(AkLateReverbComponent_SetAutoAssignAuxBus, bInEnable) == 0x000000, "Member 'AkLateReverbComponent_SetAutoAssignAuxBus::bInEnable' has a wrong offset!");
+
+// Function AkAudio.AkLinuxArm64InitializationSettings.MigrateMultiCoreRendering
+// 0x0001 (0x0001 - 0x0000)
+struct AkLinuxArm64InitializationSettings_MigrateMultiCoreRendering final
+{
+public:
+	bool                                          NewValue;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkLinuxArm64InitializationSettings_MigrateMultiCoreRendering) == 0x000001, "Wrong alignment on AkLinuxArm64InitializationSettings_MigrateMultiCoreRendering");
+static_assert(sizeof(AkLinuxArm64InitializationSettings_MigrateMultiCoreRendering) == 0x000001, "Wrong size on AkLinuxArm64InitializationSettings_MigrateMultiCoreRendering");
+static_assert(offsetof(AkLinuxArm64InitializationSettings_MigrateMultiCoreRendering, NewValue) == 0x000000, "Member 'AkLinuxArm64InitializationSettings_MigrateMultiCoreRendering::NewValue' has a wrong offset!");
+
 // Function AkAudio.AkLinuxInitializationSettings.MigrateMultiCoreRendering
 // 0x0001 (0x0001 - 0x0000)
 struct AkLinuxInitializationSettings_MigrateMultiCoreRendering final
@@ -1784,16 +1898,49 @@ static_assert(alignof(AkMacInitializationSettings_MigrateMultiCoreRendering) == 
 static_assert(sizeof(AkMacInitializationSettings_MigrateMultiCoreRendering) == 0x000001, "Wrong size on AkMacInitializationSettings_MigrateMultiCoreRendering");
 static_assert(offsetof(AkMacInitializationSettings_MigrateMultiCoreRendering, NewValue) == 0x000000, "Member 'AkMacInitializationSettings_MigrateMultiCoreRendering::NewValue' has a wrong offset!");
 
-// Function AkAudio.AkPS4InitializationSettings.MigrateMultiCoreRendering
-// 0x0001 (0x0001 - 0x0000)
-struct AkPS4InitializationSettings_MigrateMultiCoreRendering final
+// Function AkAudio.AkRoomComponent.SetAuxSendLevel
+// 0x0004 (0x0004 - 0x0000)
+struct AkRoomComponent_SetAuxSendLevel final
 {
 public:
-	bool                                          NewValue;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InAuxSendLevel;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AkPS4InitializationSettings_MigrateMultiCoreRendering) == 0x000001, "Wrong alignment on AkPS4InitializationSettings_MigrateMultiCoreRendering");
-static_assert(sizeof(AkPS4InitializationSettings_MigrateMultiCoreRendering) == 0x000001, "Wrong size on AkPS4InitializationSettings_MigrateMultiCoreRendering");
-static_assert(offsetof(AkPS4InitializationSettings_MigrateMultiCoreRendering, NewValue) == 0x000000, "Member 'AkPS4InitializationSettings_MigrateMultiCoreRendering::NewValue' has a wrong offset!");
+static_assert(alignof(AkRoomComponent_SetAuxSendLevel) == 0x000004, "Wrong alignment on AkRoomComponent_SetAuxSendLevel");
+static_assert(sizeof(AkRoomComponent_SetAuxSendLevel) == 0x000004, "Wrong size on AkRoomComponent_SetAuxSendLevel");
+static_assert(offsetof(AkRoomComponent_SetAuxSendLevel, InAuxSendLevel) == 0x000000, "Member 'AkRoomComponent_SetAuxSendLevel::InAuxSendLevel' has a wrong offset!");
+
+// Function AkAudio.AkRoomComponent.SetDynamic
+// 0x0001 (0x0001 - 0x0000)
+struct AkRoomComponent_SetDynamic final
+{
+public:
+	bool                                          bInDynamic;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkRoomComponent_SetDynamic) == 0x000001, "Wrong alignment on AkRoomComponent_SetDynamic");
+static_assert(sizeof(AkRoomComponent_SetDynamic) == 0x000001, "Wrong size on AkRoomComponent_SetDynamic");
+static_assert(offsetof(AkRoomComponent_SetDynamic, bInDynamic) == 0x000000, "Member 'AkRoomComponent_SetDynamic::bInDynamic' has a wrong offset!");
+
+// Function AkAudio.AkRoomComponent.SetEnable
+// 0x0001 (0x0001 - 0x0000)
+struct AkRoomComponent_SetEnable final
+{
+public:
+	bool                                          bInEnable;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkRoomComponent_SetEnable) == 0x000001, "Wrong alignment on AkRoomComponent_SetEnable");
+static_assert(sizeof(AkRoomComponent_SetEnable) == 0x000001, "Wrong size on AkRoomComponent_SetEnable");
+static_assert(offsetof(AkRoomComponent_SetEnable, bInEnable) == 0x000000, "Member 'AkRoomComponent_SetEnable::bInEnable' has a wrong offset!");
+
+// Function AkAudio.AkRoomComponent.SetEnableReverbZone
+// 0x0001 (0x0001 - 0x0000)
+struct AkRoomComponent_SetEnableReverbZone final
+{
+public:
+	bool                                          bInEnableReverbZone;                               // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkRoomComponent_SetEnableReverbZone) == 0x000001, "Wrong alignment on AkRoomComponent_SetEnableReverbZone");
+static_assert(sizeof(AkRoomComponent_SetEnableReverbZone) == 0x000001, "Wrong size on AkRoomComponent_SetEnableReverbZone");
+static_assert(offsetof(AkRoomComponent_SetEnableReverbZone, bInEnableReverbZone) == 0x000000, "Member 'AkRoomComponent_SetEnableReverbZone::bInEnableReverbZone' has a wrong offset!");
 
 // Function AkAudio.AkRoomComponent.SetGeometryComponent
 // 0x0008 (0x0008 - 0x0000)
@@ -1806,6 +1953,53 @@ static_assert(alignof(AkRoomComponent_SetGeometryComponent) == 0x000008, "Wrong 
 static_assert(sizeof(AkRoomComponent_SetGeometryComponent) == 0x000008, "Wrong size on AkRoomComponent_SetGeometryComponent");
 static_assert(offsetof(AkRoomComponent_SetGeometryComponent, TextureSetComponent) == 0x000000, "Member 'AkRoomComponent_SetGeometryComponent::TextureSetComponent' has a wrong offset!");
 
+// Function AkAudio.AkRoomComponent.SetReverbZone
+// 0x0010 (0x0010 - 0x0000)
+struct AkRoomComponent_SetReverbZone final
+{
+public:
+	const class UAkRoomComponent*                 InParentRoom;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InTransitionRegionWidth;                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1DB2[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(AkRoomComponent_SetReverbZone) == 0x000008, "Wrong alignment on AkRoomComponent_SetReverbZone");
+static_assert(sizeof(AkRoomComponent_SetReverbZone) == 0x000010, "Wrong size on AkRoomComponent_SetReverbZone");
+static_assert(offsetof(AkRoomComponent_SetReverbZone, InParentRoom) == 0x000000, "Member 'AkRoomComponent_SetReverbZone::InParentRoom' has a wrong offset!");
+static_assert(offsetof(AkRoomComponent_SetReverbZone, InTransitionRegionWidth) == 0x000008, "Member 'AkRoomComponent_SetReverbZone::InTransitionRegionWidth' has a wrong offset!");
+
+// Function AkAudio.AkRoomComponent.SetTransmissionLoss
+// 0x0004 (0x0004 - 0x0000)
+struct AkRoomComponent_SetTransmissionLoss final
+{
+public:
+	float                                         InTransmissionLoss;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkRoomComponent_SetTransmissionLoss) == 0x000004, "Wrong alignment on AkRoomComponent_SetTransmissionLoss");
+static_assert(sizeof(AkRoomComponent_SetTransmissionLoss) == 0x000004, "Wrong size on AkRoomComponent_SetTransmissionLoss");
+static_assert(offsetof(AkRoomComponent_SetTransmissionLoss, InTransmissionLoss) == 0x000000, "Member 'AkRoomComponent_SetTransmissionLoss::InTransmissionLoss' has a wrong offset!");
+
+// Function AkAudio.AkRoomComponent.UpdateParentRoomActor
+// 0x0008 (0x0008 - 0x0000)
+struct AkRoomComponent_UpdateParentRoomActor final
+{
+public:
+	class AActor*                                 InParentRoomActor;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkRoomComponent_UpdateParentRoomActor) == 0x000008, "Wrong alignment on AkRoomComponent_UpdateParentRoomActor");
+static_assert(sizeof(AkRoomComponent_UpdateParentRoomActor) == 0x000008, "Wrong size on AkRoomComponent_UpdateParentRoomActor");
+static_assert(offsetof(AkRoomComponent_UpdateParentRoomActor, InParentRoomActor) == 0x000000, "Member 'AkRoomComponent_UpdateParentRoomActor::InParentRoomActor' has a wrong offset!");
+
+// Function AkAudio.AkRoomComponent.UpdateTransitionRegionWidth
+// 0x0004 (0x0004 - 0x0000)
+struct AkRoomComponent_UpdateTransitionRegionWidth final
+{
+public:
+	float                                         InTransitionRegionWidth;                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(AkRoomComponent_UpdateTransitionRegionWidth) == 0x000004, "Wrong alignment on AkRoomComponent_UpdateTransitionRegionWidth");
+static_assert(sizeof(AkRoomComponent_UpdateTransitionRegionWidth) == 0x000004, "Wrong size on AkRoomComponent_UpdateTransitionRegionWidth");
+static_assert(offsetof(AkRoomComponent_UpdateTransitionRegionWidth, InTransitionRegionWidth) == 0x000000, "Member 'AkRoomComponent_UpdateTransitionRegionWidth::InTransitionRegionWidth' has a wrong offset!");
+
 // Function AkAudio.AkRoomComponent.GetPrimitiveParent
 // 0x0008 (0x0008 - 0x0000)
 struct AkRoomComponent_GetPrimitiveParent final
@@ -1817,137 +2011,16 @@ static_assert(alignof(AkRoomComponent_GetPrimitiveParent) == 0x000008, "Wrong al
 static_assert(sizeof(AkRoomComponent_GetPrimitiveParent) == 0x000008, "Wrong size on AkRoomComponent_GetPrimitiveParent");
 static_assert(offsetof(AkRoomComponent_GetPrimitiveParent, ReturnValue) == 0x000000, "Member 'AkRoomComponent_GetPrimitiveParent::ReturnValue' has a wrong offset!");
 
-// Function AkAudio.AkSlider.SetAkSliderItemId
+// Function AkAudio.AkSurfaceReflectorSetComponent.UpdateAcousticProperties
 // 0x0010 (0x0010 - 0x0000)
-struct AkSlider_SetAkSliderItemId final
+struct AkSurfaceReflectorSetComponent_UpdateAcousticProperties final
 {
 public:
-	struct FGuid                                  ItemId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FAkSurfacePoly>                 In_AcousticPolys;                                  // 0x0000(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AkSlider_SetAkSliderItemId) == 0x000004, "Wrong alignment on AkSlider_SetAkSliderItemId");
-static_assert(sizeof(AkSlider_SetAkSliderItemId) == 0x000010, "Wrong size on AkSlider_SetAkSliderItemId");
-static_assert(offsetof(AkSlider_SetAkSliderItemId, ItemId) == 0x000000, "Member 'AkSlider_SetAkSliderItemId::ItemId' has a wrong offset!");
-
-// Function AkAudio.AkSlider.SetAkSliderItemProperty
-// 0x0010 (0x0010 - 0x0000)
-struct AkSlider_SetAkSliderItemProperty final
-{
-public:
-	class FString                                 ItemProperty;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkSlider_SetAkSliderItemProperty) == 0x000008, "Wrong alignment on AkSlider_SetAkSliderItemProperty");
-static_assert(sizeof(AkSlider_SetAkSliderItemProperty) == 0x000010, "Wrong size on AkSlider_SetAkSliderItemProperty");
-static_assert(offsetof(AkSlider_SetAkSliderItemProperty, ItemProperty) == 0x000000, "Member 'AkSlider_SetAkSliderItemProperty::ItemProperty' has a wrong offset!");
-
-// Function AkAudio.AkSlider.SetIndentHandle
-// 0x0001 (0x0001 - 0x0000)
-struct AkSlider_SetIndentHandle final
-{
-public:
-	bool                                          InValue;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkSlider_SetIndentHandle) == 0x000001, "Wrong alignment on AkSlider_SetIndentHandle");
-static_assert(sizeof(AkSlider_SetIndentHandle) == 0x000001, "Wrong size on AkSlider_SetIndentHandle");
-static_assert(offsetof(AkSlider_SetIndentHandle, InValue) == 0x000000, "Member 'AkSlider_SetIndentHandle::InValue' has a wrong offset!");
-
-// Function AkAudio.AkSlider.SetLocked
-// 0x0001 (0x0001 - 0x0000)
-struct AkSlider_SetLocked final
-{
-public:
-	bool                                          InValue;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkSlider_SetLocked) == 0x000001, "Wrong alignment on AkSlider_SetLocked");
-static_assert(sizeof(AkSlider_SetLocked) == 0x000001, "Wrong size on AkSlider_SetLocked");
-static_assert(offsetof(AkSlider_SetLocked, InValue) == 0x000000, "Member 'AkSlider_SetLocked::InValue' has a wrong offset!");
-
-// Function AkAudio.AkSlider.SetSliderBarColor
-// 0x0010 (0x0010 - 0x0000)
-struct AkSlider_SetSliderBarColor final
-{
-public:
-	struct FLinearColor                           InValue;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkSlider_SetSliderBarColor) == 0x000004, "Wrong alignment on AkSlider_SetSliderBarColor");
-static_assert(sizeof(AkSlider_SetSliderBarColor) == 0x000010, "Wrong size on AkSlider_SetSliderBarColor");
-static_assert(offsetof(AkSlider_SetSliderBarColor, InValue) == 0x000000, "Member 'AkSlider_SetSliderBarColor::InValue' has a wrong offset!");
-
-// Function AkAudio.AkSlider.SetSliderHandleColor
-// 0x0010 (0x0010 - 0x0000)
-struct AkSlider_SetSliderHandleColor final
-{
-public:
-	struct FLinearColor                           InValue;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkSlider_SetSliderHandleColor) == 0x000004, "Wrong alignment on AkSlider_SetSliderHandleColor");
-static_assert(sizeof(AkSlider_SetSliderHandleColor) == 0x000010, "Wrong size on AkSlider_SetSliderHandleColor");
-static_assert(offsetof(AkSlider_SetSliderHandleColor, InValue) == 0x000000, "Member 'AkSlider_SetSliderHandleColor::InValue' has a wrong offset!");
-
-// Function AkAudio.AkSlider.SetStepSize
-// 0x0004 (0x0004 - 0x0000)
-struct AkSlider_SetStepSize final
-{
-public:
-	float                                         InValue;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkSlider_SetStepSize) == 0x000004, "Wrong alignment on AkSlider_SetStepSize");
-static_assert(sizeof(AkSlider_SetStepSize) == 0x000004, "Wrong size on AkSlider_SetStepSize");
-static_assert(offsetof(AkSlider_SetStepSize, InValue) == 0x000000, "Member 'AkSlider_SetStepSize::InValue' has a wrong offset!");
-
-// Function AkAudio.AkSlider.SetValue
-// 0x0004 (0x0004 - 0x0000)
-struct AkSlider_SetValue final
-{
-public:
-	float                                         InValue;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkSlider_SetValue) == 0x000004, "Wrong alignment on AkSlider_SetValue");
-static_assert(sizeof(AkSlider_SetValue) == 0x000004, "Wrong size on AkSlider_SetValue");
-static_assert(offsetof(AkSlider_SetValue, InValue) == 0x000000, "Member 'AkSlider_SetValue::InValue' has a wrong offset!");
-
-// Function AkAudio.AkSlider.GetAkSliderItemId
-// 0x0010 (0x0010 - 0x0000)
-struct AkSlider_GetAkSliderItemId final
-{
-public:
-	struct FGuid                                  ReturnValue;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkSlider_GetAkSliderItemId) == 0x000004, "Wrong alignment on AkSlider_GetAkSliderItemId");
-static_assert(sizeof(AkSlider_GetAkSliderItemId) == 0x000010, "Wrong size on AkSlider_GetAkSliderItemId");
-static_assert(offsetof(AkSlider_GetAkSliderItemId, ReturnValue) == 0x000000, "Member 'AkSlider_GetAkSliderItemId::ReturnValue' has a wrong offset!");
-
-// Function AkAudio.AkSlider.GetAkSliderItemProperty
-// 0x0010 (0x0010 - 0x0000)
-struct AkSlider_GetAkSliderItemProperty final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkSlider_GetAkSliderItemProperty) == 0x000008, "Wrong alignment on AkSlider_GetAkSliderItemProperty");
-static_assert(sizeof(AkSlider_GetAkSliderItemProperty) == 0x000010, "Wrong size on AkSlider_GetAkSliderItemProperty");
-static_assert(offsetof(AkSlider_GetAkSliderItemProperty, ReturnValue) == 0x000000, "Member 'AkSlider_GetAkSliderItemProperty::ReturnValue' has a wrong offset!");
-
-// Function AkAudio.AkSlider.GetValue
-// 0x0004 (0x0004 - 0x0000)
-struct AkSlider_GetValue final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkSlider_GetValue) == 0x000004, "Wrong alignment on AkSlider_GetValue");
-static_assert(sizeof(AkSlider_GetValue) == 0x000004, "Wrong size on AkSlider_GetValue");
-static_assert(offsetof(AkSlider_GetValue, ReturnValue) == 0x000000, "Member 'AkSlider_GetValue::ReturnValue' has a wrong offset!");
-
-// Function AkAudio.AkSwitchInitializationSettings.MigrateMultiCoreRendering
-// 0x0001 (0x0001 - 0x0000)
-struct AkSwitchInitializationSettings_MigrateMultiCoreRendering final
-{
-public:
-	bool                                          NewValue;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkSwitchInitializationSettings_MigrateMultiCoreRendering) == 0x000001, "Wrong alignment on AkSwitchInitializationSettings_MigrateMultiCoreRendering");
-static_assert(sizeof(AkSwitchInitializationSettings_MigrateMultiCoreRendering) == 0x000001, "Wrong size on AkSwitchInitializationSettings_MigrateMultiCoreRendering");
-static_assert(offsetof(AkSwitchInitializationSettings_MigrateMultiCoreRendering, NewValue) == 0x000000, "Member 'AkSwitchInitializationSettings_MigrateMultiCoreRendering::NewValue' has a wrong offset!");
+static_assert(alignof(AkSurfaceReflectorSetComponent_UpdateAcousticProperties) == 0x000008, "Wrong alignment on AkSurfaceReflectorSetComponent_UpdateAcousticProperties");
+static_assert(sizeof(AkSurfaceReflectorSetComponent_UpdateAcousticProperties) == 0x000010, "Wrong size on AkSurfaceReflectorSetComponent_UpdateAcousticProperties");
+static_assert(offsetof(AkSurfaceReflectorSetComponent_UpdateAcousticProperties, In_AcousticPolys) == 0x000000, "Member 'AkSurfaceReflectorSetComponent_UpdateAcousticProperties::In_AcousticPolys' has a wrong offset!");
 
 // Function AkAudio.AkWaapiCalls.CallWaapi
 // 0x0040 (0x0040 - 0x0000)
@@ -1999,7 +2072,7 @@ struct AkWaapiCalls_GetSubscriptionID final
 public:
 	struct FAkWaapiSubscriptionId                 Subscription;                                      // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D25[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DC3[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkWaapiCalls_GetSubscriptionID) == 0x000008, "Wrong alignment on AkWaapiCalls_GetSubscriptionID");
 static_assert(sizeof(AkWaapiCalls_GetSubscriptionID) == 0x000010, "Wrong size on AkWaapiCalls_GetSubscriptionID");
@@ -2013,7 +2086,7 @@ struct AkWaapiCalls_RegisterWaapiConnectionLostCallback final
 public:
 	TDelegate<void()>                             Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D26[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DC4[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkWaapiCalls_RegisterWaapiConnectionLostCallback) == 0x000004, "Wrong alignment on AkWaapiCalls_RegisterWaapiConnectionLostCallback");
 static_assert(sizeof(AkWaapiCalls_RegisterWaapiConnectionLostCallback) == 0x000014, "Wrong size on AkWaapiCalls_RegisterWaapiConnectionLostCallback");
@@ -2027,7 +2100,7 @@ struct AkWaapiCalls_RegisterWaapiProjectLoadedCallback final
 public:
 	TDelegate<void()>                             Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D27[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DC5[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkWaapiCalls_RegisterWaapiProjectLoadedCallback) == 0x000004, "Wrong alignment on AkWaapiCalls_RegisterWaapiProjectLoadedCallback");
 static_assert(sizeof(AkWaapiCalls_RegisterWaapiProjectLoadedCallback) == 0x000014, "Wrong size on AkWaapiCalls_RegisterWaapiProjectLoadedCallback");
@@ -2041,7 +2114,7 @@ struct AkWaapiCalls_SetSubscriptionID final
 public:
 	struct FAkWaapiSubscriptionId                 Subscription;                                      // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ID;                                                // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D28[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DC6[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkWaapiCalls_SetSubscriptionID) == 0x000008, "Wrong alignment on AkWaapiCalls_SetSubscriptionID");
 static_assert(sizeof(AkWaapiCalls_SetSubscriptionID) == 0x000010, "Wrong size on AkWaapiCalls_SetSubscriptionID");
@@ -2058,7 +2131,7 @@ public:
 	TDelegate<void(const struct FAkWaapiSubscriptionId& SubscriptionId, const struct FAKWaapiJsonObject& WaapiJsonObject)> Callback;                                          // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAkWaapiSubscriptionId                 SubscriptionId;                                    // 0x0030(0x0008)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          SubscriptionDone;                                  // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D29[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DC7[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAKWaapiJsonObject                     ReturnValue;                                       // 0x0040(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AkWaapiCalls_SubscribeToWaapi) == 0x000008, "Wrong alignment on AkWaapiCalls_SubscribeToWaapi");
@@ -2077,7 +2150,7 @@ struct AkWaapiCalls_Unsubscribe final
 public:
 	struct FAkWaapiSubscriptionId                 SubscriptionId;                                    // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          UnsubscriptionDone;                                // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D2A[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DC8[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAKWaapiJsonObject                     ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AkWaapiCalls_Unsubscribe) == 0x000008, "Wrong alignment on AkWaapiCalls_Unsubscribe");
@@ -2161,7 +2234,7 @@ public:
 	struct FAkWaapiFieldNames                     FieldName;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FAKWaapiJsonObject                     Target;                                            // 0x0010(0x0010)(Parm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D2B[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DC9[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkWaapiJsonManager_GetBoolField) == 0x000008, "Wrong alignment on AkWaapiJsonManager_GetBoolField");
 static_assert(sizeof(AkWaapiJsonManager_GetBoolField) == 0x000028, "Wrong size on AkWaapiJsonManager_GetBoolField");
@@ -2177,7 +2250,7 @@ public:
 	struct FAkWaapiFieldNames                     FieldName;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FAKWaapiJsonObject                     Target;                                            // 0x0010(0x0010)(Parm, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D2C[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DCA[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkWaapiJsonManager_GetIntegerField) == 0x000008, "Wrong alignment on AkWaapiJsonManager_GetIntegerField");
 static_assert(sizeof(AkWaapiJsonManager_GetIntegerField) == 0x000028, "Wrong size on AkWaapiJsonManager_GetIntegerField");
@@ -2193,7 +2266,7 @@ public:
 	struct FAkWaapiFieldNames                     FieldName;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FAKWaapiJsonObject                     Target;                                            // 0x0010(0x0010)(Parm, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D2D[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DCB[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AkWaapiJsonManager_GetNumberField) == 0x000008, "Wrong alignment on AkWaapiJsonManager_GetNumberField");
 static_assert(sizeof(AkWaapiJsonManager_GetNumberField) == 0x000028, "Wrong size on AkWaapiJsonManager_GetNumberField");
@@ -2272,7 +2345,7 @@ struct AkWaapiJsonManager_SetBoolField final
 public:
 	struct FAkWaapiFieldNames                     FieldName;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          FieldValue;                                        // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D2E[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DCC[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAKWaapiJsonObject                     Target;                                            // 0x0018(0x0010)(Parm, NativeAccessSpecifierPublic)
 	struct FAKWaapiJsonObject                     ReturnValue;                                       // 0x0028(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
@@ -2290,7 +2363,7 @@ struct AkWaapiJsonManager_SetNumberField final
 public:
 	struct FAkWaapiFieldNames                     FieldName;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	float                                         FieldValue;                                        // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D2F[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DCD[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAKWaapiJsonObject                     Target;                                            // 0x0018(0x0010)(Parm, NativeAccessSpecifierPublic)
 	struct FAKWaapiJsonObject                     ReturnValue;                                       // 0x0028(0x0010)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
@@ -2427,17 +2500,6 @@ static_assert(alignof(AkXboxOneGDKInitializationSettings_MigrateMultiCoreRenderi
 static_assert(sizeof(AkXboxOneGDKInitializationSettings_MigrateMultiCoreRendering) == 0x000001, "Wrong size on AkXboxOneGDKInitializationSettings_MigrateMultiCoreRendering");
 static_assert(offsetof(AkXboxOneGDKInitializationSettings_MigrateMultiCoreRendering, NewValue) == 0x000000, "Member 'AkXboxOneGDKInitializationSettings_MigrateMultiCoreRendering::NewValue' has a wrong offset!");
 
-// Function AkAudio.AkXboxOneInitializationSettings.MigrateMultiCoreRendering
-// 0x0001 (0x0001 - 0x0000)
-struct AkXboxOneInitializationSettings_MigrateMultiCoreRendering final
-{
-public:
-	bool                                          NewValue;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(AkXboxOneInitializationSettings_MigrateMultiCoreRendering) == 0x000001, "Wrong alignment on AkXboxOneInitializationSettings_MigrateMultiCoreRendering");
-static_assert(sizeof(AkXboxOneInitializationSettings_MigrateMultiCoreRendering) == 0x000001, "Wrong size on AkXboxOneInitializationSettings_MigrateMultiCoreRendering");
-static_assert(offsetof(AkXboxOneInitializationSettings_MigrateMultiCoreRendering, NewValue) == 0x000000, "Member 'AkXboxOneInitializationSettings_MigrateMultiCoreRendering::NewValue' has a wrong offset!");
-
 // Function AkAudio.AkXSXInitializationSettings.MigrateMultiCoreRendering
 // 0x0001 (0x0001 - 0x0000)
 struct AkXSXInitializationSettings_MigrateMultiCoreRendering final
@@ -2450,7 +2512,7 @@ static_assert(sizeof(AkXSXInitializationSettings_MigrateMultiCoreRendering) == 0
 static_assert(offsetof(AkXSXInitializationSettings_MigrateMultiCoreRendering, NewValue) == 0x000000, "Member 'AkXSXInitializationSettings_MigrateMultiCoreRendering::NewValue' has a wrong offset!");
 
 // Function AkAudio.PostEventAsync.PostEventAsync
-// 0x0050 (0x0050 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct PostEventAsync_PostEventAsync final
 {
 public:
@@ -2459,22 +2521,19 @@ public:
 	class AActor*                                 Actor;                                             // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         CallbackMask;                                      // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> PostEventCallback;                                 // 0x001C(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D44[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FAkExternalSourceInfo>          ExternalSources;                                   // 0x0030(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
-	bool                                          bStopWhenAttachedToDestroyed;                      // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D45[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPostEventAsync*                        ReturnValue;                                       // 0x0048(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bStopWhenAttachedToDestroyed;                      // 0x002C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1DDE[0x3];                                     // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPostEventAsync*                        ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(PostEventAsync_PostEventAsync) == 0x000008, "Wrong alignment on PostEventAsync_PostEventAsync");
-static_assert(sizeof(PostEventAsync_PostEventAsync) == 0x000050, "Wrong size on PostEventAsync_PostEventAsync");
+static_assert(sizeof(PostEventAsync_PostEventAsync) == 0x000038, "Wrong size on PostEventAsync_PostEventAsync");
 static_assert(offsetof(PostEventAsync_PostEventAsync, WorldContextObject) == 0x000000, "Member 'PostEventAsync_PostEventAsync::WorldContextObject' has a wrong offset!");
 static_assert(offsetof(PostEventAsync_PostEventAsync, AkEvent) == 0x000008, "Member 'PostEventAsync_PostEventAsync::AkEvent' has a wrong offset!");
 static_assert(offsetof(PostEventAsync_PostEventAsync, Actor) == 0x000010, "Member 'PostEventAsync_PostEventAsync::Actor' has a wrong offset!");
 static_assert(offsetof(PostEventAsync_PostEventAsync, CallbackMask) == 0x000018, "Member 'PostEventAsync_PostEventAsync::CallbackMask' has a wrong offset!");
 static_assert(offsetof(PostEventAsync_PostEventAsync, PostEventCallback) == 0x00001C, "Member 'PostEventAsync_PostEventAsync::PostEventCallback' has a wrong offset!");
-static_assert(offsetof(PostEventAsync_PostEventAsync, ExternalSources) == 0x000030, "Member 'PostEventAsync_PostEventAsync::ExternalSources' has a wrong offset!");
-static_assert(offsetof(PostEventAsync_PostEventAsync, bStopWhenAttachedToDestroyed) == 0x000040, "Member 'PostEventAsync_PostEventAsync::bStopWhenAttachedToDestroyed' has a wrong offset!");
-static_assert(offsetof(PostEventAsync_PostEventAsync, ReturnValue) == 0x000048, "Member 'PostEventAsync_PostEventAsync::ReturnValue' has a wrong offset!");
+static_assert(offsetof(PostEventAsync_PostEventAsync, bStopWhenAttachedToDestroyed) == 0x00002C, "Member 'PostEventAsync_PostEventAsync::bStopWhenAttachedToDestroyed' has a wrong offset!");
+static_assert(offsetof(PostEventAsync_PostEventAsync, ReturnValue) == 0x000030, "Member 'PostEventAsync_PostEventAsync::ReturnValue' has a wrong offset!");
 
 // Function AkAudio.PostEventAtLocationAsync.PostEventAtLocationAsync
 // 0x0048 (0x0048 - 0x0000)

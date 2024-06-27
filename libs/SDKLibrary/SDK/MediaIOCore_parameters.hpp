@@ -24,7 +24,7 @@ struct MediaCapture_CaptureActiveSceneViewport final
 public:
 	struct FMediaCaptureOptions                   CaptureOptions;                                    // 0x0000(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1871[0x3];                                     // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_187D[0x3];                                     // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MediaCapture_CaptureActiveSceneViewport) == 0x000004, "Wrong alignment on MediaCapture_CaptureActiveSceneViewport");
 static_assert(sizeof(MediaCapture_CaptureActiveSceneViewport) == 0x00001C, "Wrong size on MediaCapture_CaptureActiveSceneViewport");
@@ -39,7 +39,7 @@ public:
 	class UTextureRenderTarget2D*                 RenderTarget;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMediaCaptureOptions                   CaptureOptions;                                    // 0x0008(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1872[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_187E[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MediaCapture_CaptureTextureRenderTarget2D) == 0x000008, "Wrong alignment on MediaCapture_CaptureTextureRenderTarget2D");
 static_assert(sizeof(MediaCapture_CaptureTextureRenderTarget2D) == 0x000028, "Wrong size on MediaCapture_CaptureTextureRenderTarget2D");
@@ -76,7 +76,7 @@ struct MediaCapture_UpdateTextureRenderTarget2D final
 public:
 	class UTextureRenderTarget2D*                 RenderTarget;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1873[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_187F[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MediaCapture_UpdateTextureRenderTarget2D) == 0x000008, "Wrong alignment on MediaCapture_UpdateTextureRenderTarget2D");
 static_assert(sizeof(MediaCapture_UpdateTextureRenderTarget2D) == 0x000010, "Wrong size on MediaCapture_UpdateTextureRenderTarget2D");
@@ -134,7 +134,7 @@ struct MediaOutput_Validate final
 public:
 	class FString                                 OutFailureReason;                                  // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1876[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1882[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MediaOutput_Validate) == 0x000008, "Wrong alignment on MediaOutput_Validate");
 static_assert(sizeof(MediaOutput_Validate) == 0x000018, "Wrong size on MediaOutput_Validate");

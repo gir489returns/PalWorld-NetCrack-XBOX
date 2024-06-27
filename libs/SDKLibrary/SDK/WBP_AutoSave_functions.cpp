@@ -87,6 +87,26 @@ void UWBP_AutoSave_C::Display()
 }
 
 
+// Function WBP_AutoSave.WBP_AutoSave_C.EndSave
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             SavingKey                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_AutoSave_C::EndSave(class FName SavingKey)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AutoSave_C", "EndSave");
+
+	Params::WBP_AutoSave_C_EndSave Parms{};
+
+	Parms.SavingKey = SavingKey;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_AutoSave.WBP_AutoSave_C.ExecuteUbergraph_WBP_AutoSave
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -107,19 +127,68 @@ void UWBP_AutoSave_C::ExecuteUbergraph_WBP_AutoSave(int32 EntryPoint)
 }
 
 
-// Function WBP_AutoSave.WBP_AutoSave_C.OnEndedAutoSave
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsSuccess                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_AutoSave.WBP_AutoSave_C.Hide
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_AutoSave_C::OnEndedAutoSave(bool IsSuccess)
+void UWBP_AutoSave_C::Hide()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AutoSave_C", "OnEndedAutoSave");
+		Func = Class->GetFunction("WBP_AutoSave_C", "Hide");
 
-	Params::WBP_AutoSave_C_OnEndedAutoSave Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_AutoSave.WBP_AutoSave_C.IsAllSaveCompleted
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool                                    bCompleted                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_AutoSave_C::IsAllSaveCompleted(bool* bCompleted)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AutoSave_C", "IsAllSaveCompleted");
+
+	Params::WBP_AutoSave_C_IsAllSaveCompleted Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bCompleted != nullptr)
+		*bCompleted = Parms.bCompleted;
+}
+
+
+// Function WBP_AutoSave.WBP_AutoSave_C.OnEndedForceDisplayingTime
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_AutoSave_C::OnEndedForceDisplayingTime()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AutoSave_C", "OnEndedForceDisplayingTime");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_AutoSave.WBP_AutoSave_C.OnEndedLocalSave
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsSuccess                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_AutoSave_C::OnEndedLocalSave(bool IsSuccess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AutoSave_C", "OnEndedLocalSave");
+
+	Params::WBP_AutoSave_C_OnEndedLocalSave Parms{};
 
 	Parms.IsSuccess = IsSuccess;
 
@@ -127,45 +196,71 @@ void UWBP_AutoSave_C::OnEndedAutoSave(bool IsSuccess)
 }
 
 
-// Function WBP_AutoSave.WBP_AutoSave_C.OnEndedForceDisplayTime
+// Function WBP_AutoSave.WBP_AutoSave_C.OnEndedWorldSave
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsSuccess                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_AutoSave_C::OnEndedForceDisplayTime()
+void UWBP_AutoSave_C::OnEndedWorldSave(bool IsSuccess)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AutoSave_C", "OnEndedForceDisplayTime");
+		Func = Class->GetFunction("WBP_AutoSave_C", "OnEndedWorldSave");
+
+	Params::WBP_AutoSave_C_OnEndedWorldSave Parms{};
+
+	Parms.IsSuccess = IsSuccess;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_AutoSave.WBP_AutoSave_C.OnStartLocalSaving
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_AutoSave_C::OnStartLocalSaving()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AutoSave_C", "OnStartLocalSaving");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_AutoSave.WBP_AutoSave_C.OnStartAutoSave
+// Function WBP_AutoSave.WBP_AutoSave_C.OnStartWorldSaving
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_AutoSave_C::OnStartAutoSave()
+void UWBP_AutoSave_C::OnStartWorldSaving()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AutoSave_C", "OnStartAutoSave");
+		Func = Class->GetFunction("WBP_AutoSave_C", "OnStartWorldSaving");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_AutoSave.WBP_AutoSave_C.TryHide
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_AutoSave.WBP_AutoSave_C.StartSaving
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             SavingKey                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_AutoSave_C::TryHide()
+void UWBP_AutoSave_C::StartSaving(class FName SavingKey)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AutoSave_C", "TryHide");
+		Func = Class->GetFunction("WBP_AutoSave_C", "StartSaving");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_AutoSave_C_StartSaving Parms{};
+
+	Parms.SavingKey = SavingKey;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

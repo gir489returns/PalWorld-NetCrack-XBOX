@@ -34,7 +34,7 @@ void UWBP_CharaCre_C::AnmEvent_NoRotation()
 // Function WBP_CharaCre.WBP_CharaCre_C.ApplyMakeInfo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPalPlayerDataCharacterMakeInfo  MakeInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FPalPlayerDataCharacterMakeInfo  MakeInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 
 void UWBP_CharaCre_C::ApplyMakeInfo(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo)
 {
@@ -84,6 +84,26 @@ void UWBP_CharaCre_C::BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_2_K2Node_Comp
 		Func = Class->GetFunction("WBP_CharaCre_C", "BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_2_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature");
 
 	Params::WBP_CharaCre_C_BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_2_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CharaCre.WBP_CharaCre_C.BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_Cancel_InGame_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWBP_CharaCre_MenuButton_C*       Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CharaCre_C::BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_Cancel_InGame_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature(class UWBP_CharaCre_MenuButton_C* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CharaCre_C", "BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_Cancel_InGame_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature");
+
+	Params::WBP_CharaCre_C_BndEvt__WBP_CharaCre_WBP_CharaCre_MenuButton_Cancel_InGame_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -282,6 +302,20 @@ class UWidget* UWBP_CharaCre_C::CustomNavi_ToNameChange(EUINavigation Param_Navi
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+}
+
+
+// Function WBP_CharaCre.WBP_CharaCre_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_CharaCre_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CharaCre_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -946,15 +980,15 @@ void UWBP_CharaCre_C::OnNotifyClosenSelectColorWindow_Internal()
 }
 
 
-// Function WBP_CharaCre.WBP_CharaCre_C.OnNotifyCloseSelectColorWIndow__DelegateSignature
+// Function WBP_CharaCre.WBP_CharaCre_C.OnNotifyCloseSelectColorWindow__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 
-void UWBP_CharaCre_C::OnNotifyCloseSelectColorWIndow__DelegateSignature()
+void UWBP_CharaCre_C::OnNotifyCloseSelectColorWindow__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CharaCre_C", "OnNotifyCloseSelectColorWIndow__DelegateSignature");
+		Func = Class->GetFunction("WBP_CharaCre_C", "OnNotifyCloseSelectColorWindow__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

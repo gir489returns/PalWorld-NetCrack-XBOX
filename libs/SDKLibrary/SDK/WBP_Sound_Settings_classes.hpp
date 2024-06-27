@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -32,24 +32,24 @@ public:
 	class UWBP_OptionSettings_ListContent_C*      WBP_OptionSettings_UI;                             // 0x02A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_OptionSettings_ListContent_C*      WBP_OptionSettings_Voice;                          // 0x02B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	struct FPalOptionAudioSettings                AudioSettingCache;                                 // 0x02B8(0x001C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	uint8                                         Pad_3855[0x4];                                     // 0x02D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_49FB[0x4];                                     // 0x02D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FDataTableRowHandle>            LevelMsgIds;                                       // 0x02D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          SomethingChanged;                                  // 0x02E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3856[0x3];                                     // 0x02E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_49FC[0x3];                                     // 0x02E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalOptionAudioSettings                OriginalSettingCache;                              // 0x02EC(0x001C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
+	void SetDefault();
+	void OnUIChanged(double Value);
+	void OnSEChanged(double Value);
+	void OnPalVoiceChanged(double Value);
+	void OnMasterChanged(double Value);
+	void OnHumanVoiceChanged(double Value);
+	void OnBGMChanged(double Value);
+	void OnAmbientChanged(double Value);
 	void ExecuteUbergraph_WBP_Sound_Settings(int32 EntryPoint);
 	void Construct();
 	void ApplySettings(bool ApplyOriginal);
-	void OnAmbientChanged(double Value);
-	void OnBGMChanged(double Value);
-	void OnHumanVoiceChanged(double Value);
-	void OnMasterChanged(double Value);
-	void OnPalVoiceChanged(double Value);
-	void OnSEChanged(double Value);
-	void OnUIChanged(double Value);
-	void SetDefault();
 
 public:
 	static class UClass* StaticClass()

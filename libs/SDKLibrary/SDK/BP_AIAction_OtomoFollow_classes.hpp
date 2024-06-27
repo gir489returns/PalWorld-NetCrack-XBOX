@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "Pal_classes.hpp"
-#include "EOtomoFollowState_structs.hpp"
+#include "Engine_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
+#include "EOtomoFollowState_structs.hpp"
 
 
 namespace SDK
@@ -29,20 +29,20 @@ public:
 	class APalCharacter*                          Trainer;                                           // 0x0138(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  SelfActor;                                         // 0x0140(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsMoveMode;                                        // 0x0148(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3BF4[0x7];                                     // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A34[0x7];                                     // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Destination;                                       // 0x0150(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CurrentMoveSpeedRate;                              // 0x0168(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalCharacterMovementComponent*         Movement;                                          // 0x0170(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	double                                        TempDeltaTime;                                     // 0x0178(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EOtomoFollowState                             FollowState;                                       // 0x0180(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3BF5[0x7];                                     // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A35[0x7];                                     // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        FolowEndDistance;                                  // 0x0188(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                DelayedDestination;                                // 0x0190(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        DefaultMaxSpeed;                                   // 0x01A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        ConstMaxSpeedRateVsPlayer;                         // 0x01B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CurrentSpeedVsPlayer;                              // 0x01B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsTurnMode;                                        // 0x01C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3BF6[0x7];                                     // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A36[0x7];                                     // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        SprintSpeedVsPlayer;                               // 0x01C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        DelayedTrainerYawDegree;                           // 0x01D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        WarpTimer;                                         // 0x01D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -50,7 +50,7 @@ public:
 	bool                                          JumpAble;                                          // 0x01F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          PlayerDelayJumpAble;                               // 0x01F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsForceFitGoal;                                    // 0x01FA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3BF7[0x1];                                     // 0x01FB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A37[0x1];                                     // 0x01FB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         TargetLocationDistanceForward;                     // 0x01FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TargetLocationDistanceRight;                       // 0x0200(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -67,8 +67,11 @@ public:
 	void ExecuteUbergraph_BP_AIAction_OtomoFollow(int32 EntryPoint);
 	void ForwardRayCheckJump(bool* DoJump);
 	void GetTargetLocationInAim(struct FVector* Location);
+	void GetTargetLocationInBuildingMode(struct FVector* Location);
 	void GetTargetLocationInHighSpeed(struct FVector* Location);
 	void GetTargetLocationInWalk(struct FVector* Location);
+	void IsBuildingMode(bool* IsBuilding);
+	void IsTurnInBuildingMode(bool* IsTurn);
 	void OnFail_1EB8A4B348D9F7922741CD9438D88086(EPathFollowingResult MovementResult);
 	void OnFail_F8B4E13F434B182E285FEEA53BAAED7C(EPathFollowingResult MovementResult);
 	void OnSuccess_1EB8A4B348D9F7922741CD9438D88086(EPathFollowingResult MovementResult);

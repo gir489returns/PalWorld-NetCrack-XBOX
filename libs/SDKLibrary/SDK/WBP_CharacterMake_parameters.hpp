@@ -10,48 +10,33 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "CommonInput_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
-#include "E_UICharacterMakeCategory_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "InputCore_structs.hpp"
-#include "Engine_structs.hpp"
+#include "E_UICharacterMakeCategory_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function WBP_CharacterMake.WBP_CharacterMake_C.ApplyPreset
-// 0x0158 (0x0158 - 0x0000)
+// 0x02A8 (0x02A8 - 0x0000)
 struct WBP_CharacterMake_C_ApplyPreset final
 {
 public:
 	class FName                                   PresetName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APalPlayerState*                        CallFunc_GetLocalPlayerState_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45D0[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalPlayerDataCharacterMake*            CallFunc_GetPalPlayerCharacterMakeData_ReturnValue; // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45D1[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalPlayerDataCharacterMakeInfo        CallFunc_GetPresetMakeInfo_OutMakeInfo;            // 0x0024(0x0094)(NoDestructor)
-	class UBP_PalPlayerDataCharacterMake_C*       K2Node_DynamicCast_AsBP_Pal_Player_Data_Character_Make; // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45D2[0x3];                                     // 0x00C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalPlayerDataCharacterMakeInfo        CallFunc_GetOriginalPresetMakeInfo_OutMakeInfo;    // 0x00C4(0x0094)(NoDestructor)
+	struct FPalPlayerDataCharacterMakeInfo        CallFunc_GetPresetMakeInfo_OutMakeInfo;            // 0x0008(0x0150)()
+	struct FPalPlayerDataCharacterMakeInfo        CallFunc_GetOriginalPresetMakeInfo_OutMakeInfo;    // 0x0158(0x0150)()
 };
 static_assert(alignof(WBP_CharacterMake_C_ApplyPreset) == 0x000008, "Wrong alignment on WBP_CharacterMake_C_ApplyPreset");
-static_assert(sizeof(WBP_CharacterMake_C_ApplyPreset) == 0x000158, "Wrong size on WBP_CharacterMake_C_ApplyPreset");
+static_assert(sizeof(WBP_CharacterMake_C_ApplyPreset) == 0x0002A8, "Wrong size on WBP_CharacterMake_C_ApplyPreset");
 static_assert(offsetof(WBP_CharacterMake_C_ApplyPreset, PresetName) == 0x000000, "Member 'WBP_CharacterMake_C_ApplyPreset::PresetName' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ApplyPreset, CallFunc_GetLocalPlayerState_ReturnValue) == 0x000008, "Member 'WBP_CharacterMake_C_ApplyPreset::CallFunc_GetLocalPlayerState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ApplyPreset, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'WBP_CharacterMake_C_ApplyPreset::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ApplyPreset, CallFunc_GetPalPlayerCharacterMakeData_ReturnValue) == 0x000018, "Member 'WBP_CharacterMake_C_ApplyPreset::CallFunc_GetPalPlayerCharacterMakeData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ApplyPreset, CallFunc_IsValid_ReturnValue_1) == 0x000020, "Member 'WBP_CharacterMake_C_ApplyPreset::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ApplyPreset, CallFunc_GetPresetMakeInfo_OutMakeInfo) == 0x000024, "Member 'WBP_CharacterMake_C_ApplyPreset::CallFunc_GetPresetMakeInfo_OutMakeInfo' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ApplyPreset, K2Node_DynamicCast_AsBP_Pal_Player_Data_Character_Make) == 0x0000B8, "Member 'WBP_CharacterMake_C_ApplyPreset::K2Node_DynamicCast_AsBP_Pal_Player_Data_Character_Make' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ApplyPreset, K2Node_DynamicCast_bSuccess) == 0x0000C0, "Member 'WBP_CharacterMake_C_ApplyPreset::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ApplyPreset, CallFunc_GetOriginalPresetMakeInfo_OutMakeInfo) == 0x0000C4, "Member 'WBP_CharacterMake_C_ApplyPreset::CallFunc_GetOriginalPresetMakeInfo_OutMakeInfo' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ApplyPreset, CallFunc_GetPresetMakeInfo_OutMakeInfo) == 0x000008, "Member 'WBP_CharacterMake_C_ApplyPreset::CallFunc_GetPresetMakeInfo_OutMakeInfo' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ApplyPreset, CallFunc_GetOriginalPresetMakeInfo_OutMakeInfo) == 0x000158, "Member 'WBP_CharacterMake_C_ApplyPreset::CallFunc_GetOriginalPresetMakeInfo_OutMakeInfo' has a wrong offset!");
 
 // Function WBP_CharacterMake.WBP_CharacterMake_C.BndEvt__WBP_CharacterMake_WBP_CharaCre_K2Node_ComponentBoundEvent_10_OnSelectedBodyMesh__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -227,7 +212,7 @@ static_assert(offsetof(WBP_CharacterMake_C_CalcEyeColor, CallFunc_GetEyeShiftRGB
 static_assert(offsetof(WBP_CharacterMake_C_CalcEyeColor, CallFunc_RecalcHSV_OutHSV) == 0x000038, "Member 'WBP_CharacterMake_C_CalcEyeColor::CallFunc_RecalcHSV_OutHSV' has a wrong offset!");
 
 // Function WBP_CharacterMake.WBP_CharacterMake_C.ExecuteUbergraph_WBP_CharacterMake
-// 0x0640 (0x0640 - 0x0000)
+// 0x0928 (0x0928 - 0x0000)
 struct WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake final
 {
 public:
@@ -237,7 +222,7 @@ public:
 	float                                         CallFunc_BreakColor_G;                             // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_B;                             // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_A;                             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45D3[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47C8[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_ComponentBoundEvent_Size_2;                 // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -264,63 +249,59 @@ public:
 	struct FLinearColor                           CallFunc_RecalcHSV_OutHSV_2;                       // 0x0140(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UBP_PalPlayerDataCharacterMake_C*       CallFunc_SpawnObject_ReturnValue;                  // 0x0150(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	E_UICharacterMakeCategory                     K2Node_ComponentBoundEvent_CategoryType;           // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45D4[0x7];                                     // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47C9[0x7];                                     // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0160(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45D5[0x7];                                     // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47CA[0x7];                                     // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalHUDDispatchParameter_CharacterMake* K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_Character_Make; // 0x0170(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45D6[0x7];                                     // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47CB[0x7];                                     // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0180(0x0040)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x01C4(0x0008)(NoDestructor)
-	uint8                                         Pad_45D7[0x4];                                     // 0x01CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47CC[0x4];                                     // 0x01CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x01D0(0x0098)(ConstParm)
 	class FName                                   K2Node_ComponentBoundEvent_EyeMaterialName;        // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetSelectedEyeHSV_HSV;                    // 0x0270(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_CalcEyeColor_OutHSV_1;                    // 0x0280(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0290(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45D8[0x3];                                     // 0x0291(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47CD[0x3];                                     // 0x0291(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0294(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45D9[0x4];                                     // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47CE[0x4];                                     // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x02A8(0x0008)(NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalPlayerDataCharacterMakeInfo        CallFunc_GetPresetMakeInfo_OutMakeInfo;            // 0x02B8(0x0094)(NoDestructor)
-	class FName                                   K2Node_ComponentBoundEvent_PresetName;             // 0x034C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45DA[0x4];                                     // 0x0354(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetNickName_Name;                         // 0x0358(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_VoiceID;                // 0x0368(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45DB[0x4];                                     // 0x036C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0370(0x0018)()
-	int32                                         CallFunc_RandomInteger_ReturnValue;                // 0x0388(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsUGCFilter_ReturnValue;                  // 0x038C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45DC[0x3];                                     // 0x038D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0390(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x03A8(0x0050)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x03F8(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0408(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0420(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FPalPlayerDataCharacterMakeInfo        CallFunc_GetPlayerMakeInfo_OutMakeInfo;            // 0x0430(0x0094)(NoDestructor)
-	bool                                          CallFunc_GetPlayerMakeInfo_ReturnValue;            // 0x04C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45DD[0x3];                                     // 0x04C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBP_PalPlayerDataCharacterMake_C*       CallFunc_Get_Character_Make_Data_Instance_MakeDataInstance_3; // 0x04C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalPlayerDataCharacterMakeInfo        CallFunc_ConvertMakeInfo_HSVToRGB_ConvertedMakeInfo; // 0x04D0(0x0094)(NoDestructor)
-	uint8                                         Pad_45DE[0x4];                                     // 0x0564(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBP_PalPlayerDataCharacterMake_C*       CallFunc_Get_Character_Make_Data_Instance_MakeDataInstance_4; // 0x0568(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalPlayerDataCharacterMakeInfo        CallFunc_ConvertMakeInfo_HSVToRGB_ConvertedMakeInfo_1; // 0x0570(0x0094)(NoDestructor)
-	uint8                                         Pad_45DF[0x4];                                     // 0x0604(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Multiply_DoubleDouble_A_ImplicitCast;     // 0x0608(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_MakeStruct_R_ImplicitCast;                  // 0x0610(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_SetFieldsInStruct_TorsoVolume_ImplicitCast; // 0x0614(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_SetFieldsInStruct_LegVolume_ImplicitCast;   // 0x0618(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_SetFieldsInStruct_ArmVolume_ImplicitCast;   // 0x061C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_VariableSet_SVMax_ImplicitCast;             // 0x0620(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_UpdateCharacterRotation_DeltaTime_ImplicitCast; // 0x0628(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Update_Camera_Location_DeltaTime_ImplicitCast; // 0x0630(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BndEvt__WBP_CharacterMake_WBP_CharaCre_K2Node_ComponentBoundEvent_4_OnChangedTorsoSize__DelegateSignature_Size_ImplicitCast; // 0x0638(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_ComponentBoundEvent_PresetName;             // 0x02B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetNickName_Name;                         // 0x02C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x02D0(0x0018)()
+	int32                                         K2Node_ComponentBoundEvent_VoiceID;                // 0x02E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomInteger_ReturnValue;                // 0x02EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x02F0(0x0018)()
+	bool                                          CallFunc_IsUGCFilter_ReturnValue;                  // 0x0308(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_47CF[0x7];                                     // 0x0309(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0310(0x0050)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0360(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0370(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0388(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FPalPlayerDataCharacterMakeInfo        CallFunc_GetPlayerMakeInfo_OutMakeInfo;            // 0x0398(0x0150)()
+	bool                                          CallFunc_GetPlayerMakeInfo_ReturnValue;            // 0x04E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_47D0[0x7];                                     // 0x04E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBP_PalPlayerDataCharacterMake_C*       CallFunc_Get_Character_Make_Data_Instance_MakeDataInstance_3; // 0x04F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalPlayerDataCharacterMakeInfo        CallFunc_ConvertMakeInfo_HSVToRGB_ConvertedMakeInfo; // 0x04F8(0x0150)()
+	class UBP_PalPlayerDataCharacterMake_C*       CallFunc_Get_Character_Make_Data_Instance_MakeDataInstance_4; // 0x0648(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalPlayerDataCharacterMakeInfo        CallFunc_ConvertMakeInfo_HSVToRGB_ConvertedMakeInfo_1; // 0x0650(0x0150)()
+	struct FPalPlayerDataCharacterMakeInfo        CallFunc_GetPresetMakeInfo_OutMakeInfo;            // 0x07A0(0x0150)()
+	double                                        CallFunc_Multiply_DoubleDouble_A_ImplicitCast;     // 0x08F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_MakeStruct_R_ImplicitCast;                  // 0x08F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_SetFieldsInStruct_TorsoVolume_ImplicitCast; // 0x08FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_SetFieldsInStruct_LegVolume_ImplicitCast;   // 0x0900(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_SetFieldsInStruct_ArmVolume_ImplicitCast;   // 0x0904(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_SVMax_ImplicitCast;             // 0x0908(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_UpdateCharacterRotation_DeltaTime_ImplicitCast; // 0x0910(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Update_Camera_Location_DeltaTime_ImplicitCast; // 0x0918(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BndEvt__WBP_CharacterMake_WBP_CharaCre_K2Node_ComponentBoundEvent_4_OnChangedTorsoSize__DelegateSignature_Size_ImplicitCast; // 0x0920(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake) == 0x000008, "Wrong alignment on WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake");
-static_assert(sizeof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake) == 0x000640, "Wrong size on WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake");
+static_assert(sizeof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake) == 0x000928, "Wrong size on WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake");
 static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, EntryPoint) == 0x000000, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::EntryPoint' has a wrong offset!");
 static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, K2Node_ComponentBoundEvent_Color_3) == 0x000004, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::K2Node_ComponentBoundEvent_Color_3' has a wrong offset!");
 static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_BreakColor_R) == 0x000014, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_BreakColor_R' has a wrong offset!");
@@ -368,33 +349,33 @@ static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, C
 static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, K2Node_CreateDelegate_OutputDelegate) == 0x000294, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0002A8, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_Conv_StringToName_ReturnValue) == 0x0002B0, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_GetPresetMakeInfo_OutMakeInfo) == 0x0002B8, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_GetPresetMakeInfo_OutMakeInfo' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, K2Node_ComponentBoundEvent_PresetName) == 0x00034C, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::K2Node_ComponentBoundEvent_PresetName' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_GetNickName_Name) == 0x000358, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_GetNickName_Name' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, K2Node_ComponentBoundEvent_VoiceID) == 0x000368, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::K2Node_ComponentBoundEvent_VoiceID' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_Conv_StringToText_ReturnValue) == 0x000370, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_RandomInteger_ReturnValue) == 0x000388, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_RandomInteger_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_IsUGCFilter_ReturnValue) == 0x00038C, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_IsUGCFilter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_Conv_IntToText_ReturnValue) == 0x000390, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, K2Node_MakeStruct_FormatArgumentData) == 0x0003A8, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, K2Node_MakeArray_Array) == 0x0003F8, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_Format_ReturnValue) == 0x000408, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_Conv_TextToString_ReturnValue) == 0x000420, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_GetPlayerMakeInfo_OutMakeInfo) == 0x000430, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_GetPlayerMakeInfo_OutMakeInfo' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_GetPlayerMakeInfo_ReturnValue) == 0x0004C4, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_GetPlayerMakeInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_Get_Character_Make_Data_Instance_MakeDataInstance_3) == 0x0004C8, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_Get_Character_Make_Data_Instance_MakeDataInstance_3' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_ConvertMakeInfo_HSVToRGB_ConvertedMakeInfo) == 0x0004D0, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_ConvertMakeInfo_HSVToRGB_ConvertedMakeInfo' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_Get_Character_Make_Data_Instance_MakeDataInstance_4) == 0x000568, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_Get_Character_Make_Data_Instance_MakeDataInstance_4' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_ConvertMakeInfo_HSVToRGB_ConvertedMakeInfo_1) == 0x000570, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_ConvertMakeInfo_HSVToRGB_ConvertedMakeInfo_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_Multiply_DoubleDouble_A_ImplicitCast) == 0x000608, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_Multiply_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, K2Node_MakeStruct_R_ImplicitCast) == 0x000610, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::K2Node_MakeStruct_R_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, K2Node_SetFieldsInStruct_TorsoVolume_ImplicitCast) == 0x000614, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::K2Node_SetFieldsInStruct_TorsoVolume_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, K2Node_SetFieldsInStruct_LegVolume_ImplicitCast) == 0x000618, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::K2Node_SetFieldsInStruct_LegVolume_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, K2Node_SetFieldsInStruct_ArmVolume_ImplicitCast) == 0x00061C, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::K2Node_SetFieldsInStruct_ArmVolume_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, K2Node_VariableSet_SVMax_ImplicitCast) == 0x000620, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::K2Node_VariableSet_SVMax_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_UpdateCharacterRotation_DeltaTime_ImplicitCast) == 0x000628, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_UpdateCharacterRotation_DeltaTime_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_Update_Camera_Location_DeltaTime_ImplicitCast) == 0x000630, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_Update_Camera_Location_DeltaTime_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_BndEvt__WBP_CharacterMake_WBP_CharaCre_K2Node_ComponentBoundEvent_4_OnChangedTorsoSize__DelegateSignature_Size_ImplicitCast) == 0x000638, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_BndEvt__WBP_CharacterMake_WBP_CharaCre_K2Node_ComponentBoundEvent_4_OnChangedTorsoSize__DelegateSignature_Size_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, K2Node_ComponentBoundEvent_PresetName) == 0x0002B8, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::K2Node_ComponentBoundEvent_PresetName' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_GetNickName_Name) == 0x0002C0, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_GetNickName_Name' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_Conv_StringToText_ReturnValue) == 0x0002D0, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, K2Node_ComponentBoundEvent_VoiceID) == 0x0002E8, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::K2Node_ComponentBoundEvent_VoiceID' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_RandomInteger_ReturnValue) == 0x0002EC, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_RandomInteger_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_Conv_IntToText_ReturnValue) == 0x0002F0, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_IsUGCFilter_ReturnValue) == 0x000308, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_IsUGCFilter_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, K2Node_MakeStruct_FormatArgumentData) == 0x000310, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, K2Node_MakeArray_Array) == 0x000360, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_Format_ReturnValue) == 0x000370, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_Conv_TextToString_ReturnValue) == 0x000388, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_GetPlayerMakeInfo_OutMakeInfo) == 0x000398, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_GetPlayerMakeInfo_OutMakeInfo' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_GetPlayerMakeInfo_ReturnValue) == 0x0004E8, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_GetPlayerMakeInfo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_Get_Character_Make_Data_Instance_MakeDataInstance_3) == 0x0004F0, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_Get_Character_Make_Data_Instance_MakeDataInstance_3' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_ConvertMakeInfo_HSVToRGB_ConvertedMakeInfo) == 0x0004F8, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_ConvertMakeInfo_HSVToRGB_ConvertedMakeInfo' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_Get_Character_Make_Data_Instance_MakeDataInstance_4) == 0x000648, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_Get_Character_Make_Data_Instance_MakeDataInstance_4' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_ConvertMakeInfo_HSVToRGB_ConvertedMakeInfo_1) == 0x000650, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_ConvertMakeInfo_HSVToRGB_ConvertedMakeInfo_1' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_GetPresetMakeInfo_OutMakeInfo) == 0x0007A0, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_GetPresetMakeInfo_OutMakeInfo' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_Multiply_DoubleDouble_A_ImplicitCast) == 0x0008F0, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_Multiply_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, K2Node_MakeStruct_R_ImplicitCast) == 0x0008F8, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::K2Node_MakeStruct_R_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, K2Node_SetFieldsInStruct_TorsoVolume_ImplicitCast) == 0x0008FC, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::K2Node_SetFieldsInStruct_TorsoVolume_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, K2Node_SetFieldsInStruct_LegVolume_ImplicitCast) == 0x000900, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::K2Node_SetFieldsInStruct_LegVolume_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, K2Node_SetFieldsInStruct_ArmVolume_ImplicitCast) == 0x000904, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::K2Node_SetFieldsInStruct_ArmVolume_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, K2Node_VariableSet_SVMax_ImplicitCast) == 0x000908, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::K2Node_VariableSet_SVMax_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_UpdateCharacterRotation_DeltaTime_ImplicitCast) == 0x000910, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_UpdateCharacterRotation_DeltaTime_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_Update_Camera_Location_DeltaTime_ImplicitCast) == 0x000918, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_Update_Camera_Location_DeltaTime_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake, CallFunc_BndEvt__WBP_CharacterMake_WBP_CharaCre_K2Node_ComponentBoundEvent_4_OnChangedTorsoSize__DelegateSignature_Size_ImplicitCast) == 0x000920, "Member 'WBP_CharacterMake_C_ExecuteUbergraph_WBP_CharacterMake::CallFunc_BndEvt__WBP_CharacterMake_WBP_CharaCre_K2Node_ComponentBoundEvent_4_OnChangedTorsoSize__DelegateSignature_Size_ImplicitCast' has a wrong offset!");
 
 // Function WBP_CharacterMake.WBP_CharacterMake_C.Get Character Make Data Instance
 // 0x0008 (0x0008 - 0x0000)
@@ -564,22 +545,22 @@ struct WBP_CharacterMake_C_GetRandomVoiceID final
 {
 public:
 	int32                                         VoiceID;                                           // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45E0[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_RandomFloat_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_CharaCre_ScrollBoxContentBase_C*   CallFunc_GetWidgetByCategory_Widget;               // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_CharaCre_ScrollBoxContent_Voice_C* K2Node_DynamicCast_AsWBP_Chara_Cre_Scroll_Box_Content_Voice; // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45E1[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_ToVoiceID_VoiceID;                        // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_47D1[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_CharaCre_ScrollBoxContentBase_C*   CallFunc_GetWidgetByCategory_Widget;               // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_CharaCre_ScrollBoxContent_Voice_C* K2Node_DynamicCast_AsWBP_Chara_Cre_Scroll_Box_Content_Voice; // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_47D2[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_CharacterMake_C_GetRandomVoiceID) == 0x000008, "Wrong alignment on WBP_CharacterMake_C_GetRandomVoiceID");
 static_assert(sizeof(WBP_CharacterMake_C_GetRandomVoiceID) == 0x000028, "Wrong size on WBP_CharacterMake_C_GetRandomVoiceID");
 static_assert(offsetof(WBP_CharacterMake_C_GetRandomVoiceID, VoiceID) == 0x000000, "Member 'WBP_CharacterMake_C_GetRandomVoiceID::VoiceID' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_GetRandomVoiceID, CallFunc_RandomFloat_ReturnValue) == 0x000008, "Member 'WBP_CharacterMake_C_GetRandomVoiceID::CallFunc_RandomFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_GetRandomVoiceID, CallFunc_GetWidgetByCategory_Widget) == 0x000010, "Member 'WBP_CharacterMake_C_GetRandomVoiceID::CallFunc_GetWidgetByCategory_Widget' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_GetRandomVoiceID, K2Node_DynamicCast_AsWBP_Chara_Cre_Scroll_Box_Content_Voice) == 0x000018, "Member 'WBP_CharacterMake_C_GetRandomVoiceID::K2Node_DynamicCast_AsWBP_Chara_Cre_Scroll_Box_Content_Voice' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_GetRandomVoiceID, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_CharacterMake_C_GetRandomVoiceID::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_GetRandomVoiceID, CallFunc_ToVoiceID_VoiceID) == 0x000024, "Member 'WBP_CharacterMake_C_GetRandomVoiceID::CallFunc_ToVoiceID_VoiceID' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_GetRandomVoiceID, CallFunc_GetWidgetByCategory_Widget) == 0x000008, "Member 'WBP_CharacterMake_C_GetRandomVoiceID::CallFunc_GetWidgetByCategory_Widget' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_GetRandomVoiceID, K2Node_DynamicCast_AsWBP_Chara_Cre_Scroll_Box_Content_Voice) == 0x000010, "Member 'WBP_CharacterMake_C_GetRandomVoiceID::K2Node_DynamicCast_AsWBP_Chara_Cre_Scroll_Box_Content_Voice' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_GetRandomVoiceID, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_CharacterMake_C_GetRandomVoiceID::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_GetRandomVoiceID, CallFunc_RandomIntegerInRange_ReturnValue) == 0x00001C, "Member 'WBP_CharacterMake_C_GetRandomVoiceID::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_GetRandomVoiceID, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'WBP_CharacterMake_C_GetRandomVoiceID::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function WBP_CharacterMake.WBP_CharacterMake_C.InitializeDisplayCharacter
 // 0x0038 (0x0038 - 0x0000)
@@ -607,15 +588,15 @@ public:
 	struct FAnalogInputEvent                      InAnalogInputEvent;                                // 0x0040(0x0048)(BlueprintVisible, BlueprintReadOnly, Parm)
 	struct FEventReply                            ReturnValue;                                       // 0x0088(0x00B8)(Parm, OutParm, ReturnParm)
 	bool                                          IsDetected;                                        // 0x0140(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45E2[0x7];                                     // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47D3[0x7];                                     // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FKeyEvent                              CallFunc_GetKeyEventFromAnalogInputEvent_ReturnValue; // 0x0148(0x0040)()
 	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x0188(0x0018)(HasGetValueTypeHash)
 	float                                         CallFunc_GetAnalogValue_ReturnValue;               // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x01A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45E3[0x3];                                     // 0x01A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47D4[0x3];                                     // 0x01A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue_1;          // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45E4[0x7];                                     // 0x01B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47D5[0x7];                                     // 0x01B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x01B8(0x00B8)()
 	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0270(0x00B8)()
 	double                                        K2Node_VariableSet_CachedAnalogValueY_ImplicitCast; // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -673,21 +654,6 @@ static_assert(alignof(WBP_CharacterMake_C_OnAppliedHairMesh) == 0x000004, "Wrong
 static_assert(sizeof(WBP_CharacterMake_C_OnAppliedHairMesh) == 0x000010, "Wrong size on WBP_CharacterMake_C_OnAppliedHairMesh");
 static_assert(offsetof(WBP_CharacterMake_C_OnAppliedHairMesh, HairMeshBaseColor) == 0x000000, "Member 'WBP_CharacterMake_C_OnAppliedHairMesh::HairMeshBaseColor' has a wrong offset!");
 
-// Function WBP_CharacterMake.WBP_CharacterMake_C.OnCancelAction
-// 0x0003 (0x0003 - 0x0000)
-struct WBP_CharacterMake_C_OnCancelAction final
-{
-public:
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CharacterMake_C_OnCancelAction) == 0x000001, "Wrong alignment on WBP_CharacterMake_C_OnCancelAction");
-static_assert(sizeof(WBP_CharacterMake_C_OnCancelAction) == 0x000003, "Wrong size on WBP_CharacterMake_C_OnCancelAction");
-static_assert(offsetof(WBP_CharacterMake_C_OnCancelAction, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'WBP_CharacterMake_C_OnCancelAction::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_OnCancelAction, CallFunc_BooleanOR_ReturnValue) == 0x000001, "Member 'WBP_CharacterMake_C_OnCancelAction::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_OnCancelAction, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000002, "Member 'WBP_CharacterMake_C_OnCancelAction::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-
 // Function WBP_CharacterMake.WBP_CharacterMake_C.OnChangeCategory_Internal
 // 0x0028 (0x0028 - 0x0000)
 struct WBP_CharacterMake_C_OnChangeCategory_Internal final
@@ -695,24 +661,26 @@ struct WBP_CharacterMake_C_OnChangeCategory_Internal final
 public:
 	E_UICharacterMakeCategory                     CategoryType;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	E_UICharacterMakeCategory                     OldCategory;                                       // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45E5[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_47D6[0x1];                                     // 0x0003(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0014(0x0004)(NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess_2;                    // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess_3;                    // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45E6[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47D7[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_GetTopFocusTarget_Widget;                 // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_CharacterMake_C_OnChangeCategory_Internal) == 0x000008, "Wrong alignment on WBP_CharacterMake_C_OnChangeCategory_Internal");
 static_assert(sizeof(WBP_CharacterMake_C_OnChangeCategory_Internal) == 0x000028, "Wrong size on WBP_CharacterMake_C_OnChangeCategory_Internal");
 static_assert(offsetof(WBP_CharacterMake_C_OnChangeCategory_Internal, CategoryType) == 0x000000, "Member 'WBP_CharacterMake_C_OnChangeCategory_Internal::CategoryType' has a wrong offset!");
 static_assert(offsetof(WBP_CharacterMake_C_OnChangeCategory_Internal, OldCategory) == 0x000001, "Member 'WBP_CharacterMake_C_OnChangeCategory_Internal::OldCategory' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_OnChangeCategory_Internal, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000002, "Member 'WBP_CharacterMake_C_OnChangeCategory_Internal::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CharacterMake_C_OnChangeCategory_Internal, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_CharacterMake_C_OnChangeCategory_Internal::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(WBP_CharacterMake_C_OnChangeCategory_Internal, CallFunc_RegisterActionBinding_ReturnValue) == 0x000014, "Member 'WBP_CharacterMake_C_OnChangeCategory_Internal::CallFunc_RegisterActionBinding_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_OnChangeCategory_Internal, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000018, "Member 'WBP_CharacterMake_C_OnChangeCategory_Internal::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_OnChangeCategory_Internal, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000018, "Member 'WBP_CharacterMake_C_OnChangeCategory_Internal::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(WBP_CharacterMake_C_OnChangeCategory_Internal, K2Node_SwitchEnum_CmpSuccess) == 0x000019, "Member 'WBP_CharacterMake_C_OnChangeCategory_Internal::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(WBP_CharacterMake_C_OnChangeCategory_Internal, K2Node_SwitchEnum_CmpSuccess_1) == 0x00001A, "Member 'WBP_CharacterMake_C_OnChangeCategory_Internal::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
 static_assert(offsetof(WBP_CharacterMake_C_OnChangeCategory_Internal, K2Node_SwitchEnum_CmpSuccess_2) == 0x00001B, "Member 'WBP_CharacterMake_C_OnChangeCategory_Internal::K2Node_SwitchEnum_CmpSuccess_2' has a wrong offset!");
@@ -768,7 +736,7 @@ public:
 	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x01F0(0x0018)(HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue_1;          // 0x0209(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45E7[0x6];                                     // 0x020A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47D8[0x6];                                     // 0x020A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0210(0x00B8)()
 	struct FEventReply                            CallFunc_Handled_ReturnValue_1;                    // 0x02C8(0x00B8)()
 	struct FEventReply                            CallFunc_Unhandled_ReturnValue_1;                  // 0x0380(0x00B8)()
@@ -798,7 +766,7 @@ public:
 	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x01F0(0x0018)(HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue_1;          // 0x0209(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45E8[0x6];                                     // 0x020A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47D9[0x6];                                     // 0x020A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0210(0x00B8)()
 	struct FEventReply                            CallFunc_Unhandled_ReturnValue_1;                  // 0x02C8(0x00B8)()
 	struct FEventReply                            CallFunc_Handled_ReturnValue_1;                    // 0x0380(0x00B8)()
@@ -825,11 +793,11 @@ public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0040(0x0098)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	struct FEventReply                            ReturnValue;                                       // 0x00D8(0x00B8)(Parm, OutParm, ReturnParm)
 	bool                                          Temp_bool_Variable;                                // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45E9[0x7];                                     // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47DA[0x7];                                     // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FKey                                   CallFunc_PointerEvent_GetEffectingButton_ReturnValue; // 0x0198(0x0018)(HasGetValueTypeHash)
 	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x01B0(0x00B8)()
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45EA[0x7];                                     // 0x0269(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47DB[0x7];                                     // 0x0269(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0270(0x00B8)()
 	struct FEventReply                            K2Node_Select_Default;                             // 0x0328(0x00B8)()
 };
@@ -854,11 +822,11 @@ public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0040(0x0098)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	struct FEventReply                            ReturnValue;                                       // 0x00D8(0x00B8)(Parm, OutParm, ReturnParm)
 	bool                                          Temp_bool_Variable;                                // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45EB[0x7];                                     // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47DC[0x7];                                     // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FKey                                   CallFunc_PointerEvent_GetEffectingButton_ReturnValue; // 0x0198(0x0018)(HasGetValueTypeHash)
 	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x01B0(0x00B8)()
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45EC[0x7];                                     // 0x0269(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47DD[0x7];                                     // 0x0269(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0270(0x00B8)()
 	struct FEventReply                            K2Node_Select_Default;                             // 0x0328(0x00B8)()
 };
@@ -923,26 +891,29 @@ static_assert(offsetof(WBP_CharacterMake_C_OnMouseMove, CallFunc_MakeRotator_Ret
 static_assert(offsetof(WBP_CharacterMake_C_OnMouseMove, CallFunc_MakeRotator_Yaw_ImplicitCast) == 0x000368, "Member 'WBP_CharacterMake_C_OnMouseMove::CallFunc_MakeRotator_Yaw_ImplicitCast' has a wrong offset!");
 
 // Function WBP_CharacterMake.WBP_CharacterMake_C.OnTriggerCancel
-// 0x0020 (0x0020 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct WBP_CharacterMake_C_OnTriggerCancel final
 {
 public:
-	class UCommonInputSubsystem*                  CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45ED[0x5];                                     // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_CharaCre_MenuButton_C*             CallFunc_GetCategoryButtonByCategory_Button;       // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_47DE[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonInputSubsystem*                  CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_47DF[0x5];                                     // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_CharaCre_MenuButton_C*             CallFunc_GetCategoryButtonByCategory_Button;       // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_CharacterMake_C_OnTriggerCancel) == 0x000008, "Wrong alignment on WBP_CharacterMake_C_OnTriggerCancel");
-static_assert(sizeof(WBP_CharacterMake_C_OnTriggerCancel) == 0x000020, "Wrong size on WBP_CharacterMake_C_OnTriggerCancel");
-static_assert(offsetof(WBP_CharacterMake_C_OnTriggerCancel, CallFunc_GetLocalPlayerSubsystem_ReturnValue) == 0x000000, "Member 'WBP_CharacterMake_C_OnTriggerCancel::CallFunc_GetLocalPlayerSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_OnTriggerCancel, CallFunc_GetCurrentInputType_ReturnValue) == 0x000008, "Member 'WBP_CharacterMake_C_OnTriggerCancel::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_OnTriggerCancel, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000009, "Member 'WBP_CharacterMake_C_OnTriggerCancel::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_OnTriggerCancel, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00000A, "Member 'WBP_CharacterMake_C_OnTriggerCancel::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_OnTriggerCancel, CallFunc_GetCategoryButtonByCategory_Button) == 0x000010, "Member 'WBP_CharacterMake_C_OnTriggerCancel::CallFunc_GetCategoryButtonByCategory_Button' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_OnTriggerCancel, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'WBP_CharacterMake_C_OnTriggerCancel::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(sizeof(WBP_CharacterMake_C_OnTriggerCancel) == 0x000028, "Wrong size on WBP_CharacterMake_C_OnTriggerCancel");
+static_assert(offsetof(WBP_CharacterMake_C_OnTriggerCancel, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'WBP_CharacterMake_C_OnTriggerCancel::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_OnTriggerCancel, CallFunc_GetLocalPlayerSubsystem_ReturnValue) == 0x000008, "Member 'WBP_CharacterMake_C_OnTriggerCancel::CallFunc_GetLocalPlayerSubsystem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_OnTriggerCancel, CallFunc_GetCurrentInputType_ReturnValue) == 0x000010, "Member 'WBP_CharacterMake_C_OnTriggerCancel::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_OnTriggerCancel, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000011, "Member 'WBP_CharacterMake_C_OnTriggerCancel::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_OnTriggerCancel, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000012, "Member 'WBP_CharacterMake_C_OnTriggerCancel::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_OnTriggerCancel, CallFunc_GetCategoryButtonByCategory_Button) == 0x000018, "Member 'WBP_CharacterMake_C_OnTriggerCancel::CallFunc_GetCategoryButtonByCategory_Button' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_OnTriggerCancel, CallFunc_IsValid_ReturnValue_1) == 0x000020, "Member 'WBP_CharacterMake_C_OnTriggerCancel::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 
 // Function WBP_CharacterMake.WBP_CharacterMake_C.OnTriggerCompleteMake
 // 0x0018 (0x0018 - 0x0000)
@@ -968,10 +939,10 @@ struct WBP_CharacterMake_C_OpenCompleteCheckDialog final
 public:
 	class UPalDialogParameterDialog*              CallFunc_CreateDispatchParameterForK2Node_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45EE[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47E0[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGuid                                  CallFunc_Push_ReturnValue;                         // 0x000C(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool bResult)>                 K2Node_CreateDelegate_OutputDelegate;              // 0x001C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45EF[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47E1[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0030(0x0018)()
 };
 static_assert(alignof(WBP_CharacterMake_C_OpenCompleteCheckDialog) == 0x000008, "Wrong alignment on WBP_CharacterMake_C_OpenCompleteCheckDialog");
@@ -1027,15 +998,15 @@ public:
 	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalHUDDispatchParameter_CharacterMake* K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_Character_Make; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45F0[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47E2[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x001C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45F1[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47E3[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue_1;              // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalHUDDispatchParameter_FadeWidget*    CallFunc_SpawnObject_ReturnValue;                  // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalPlayerState*                        CallFunc_GetLocalPlayerState_ReturnValue;          // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45F2[0x7];                                     // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47E4[0x7];                                     // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameInstance*                          CallFunc_GetGameInstance_ReturnValue;              // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalGameInstance*                       K2Node_DynamicCast_AsPal_Game_Instance;            // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1057,7 +1028,7 @@ static_assert(offsetof(WBP_CharacterMake_C_ProcessCompleteMake, K2Node_DynamicCa
 static_assert(offsetof(WBP_CharacterMake_C_ProcessCompleteMake, K2Node_DynamicCast_bSuccess_1) == 0x000068, "Member 'WBP_CharacterMake_C_ProcessCompleteMake::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
 
 // Function WBP_CharacterMake.WBP_CharacterMake_C.RandomizeMakeInfo
-// 0x03E0 (0x03E0 - 0x0000)
+// 0x04A0 (0x04A0 - 0x0000)
 struct WBP_CharacterMake_C_RandomizeMakeInfo final
 {
 public:
@@ -1071,7 +1042,7 @@ public:
 	int32                                         CallFunc_GetRandomVoiceID_VoiceID;                 // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_GetRandomHair_HairName;                   // 0x005C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_GetRandomHead_HeadName;                   // 0x0064(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45F3[0x4];                                     // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47E5[0x4];                                     // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_NameToText_ReturnValue;              // 0x0078(0x0018)()
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0090(0x0050)(HasGetValueTypeHash)
@@ -1090,25 +1061,26 @@ public:
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x02A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class UBP_PalPlayerDataCharacterMake_C*       CallFunc_Get_Character_Make_Data_Instance_MakeDataInstance; // 0x02B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x02C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45F4[0x3];                                     // 0x02C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47E6[0x3];                                     // 0x02C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           CallFunc_GetRandomColor_Color;                     // 0x02C4(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetRandomColor_Color_1;                   // 0x02D4(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetRandomColor_Color_2;                   // 0x02E4(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetRandomColor_Color_3;                   // 0x02F4(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalPlayerDataCharacterMakeInfo        CallFunc_ConvertMakeInfo_RGBToHSV_ConvertedMakeInfo; // 0x0304(0x0094)(NoDestructor)
-	double                                        CallFunc_RandomFloat_ReturnValue;                  // 0x0398(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_RandomFloat_ReturnValue_1;                // 0x03A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_MapRangeClamped_ReturnValue;              // 0x03A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_MapRangeClamped_ReturnValue_1;            // 0x03B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_RandomFloat_ReturnValue_2;                // 0x03B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_MapRangeClamped_ReturnValue_2;            // 0x03C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_ConvertMakeInfo_RGBToHSV_SVLimitValur_ImplicitCast; // 0x03C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_SetFieldsInStruct_TorsoVolume_ImplicitCast; // 0x03D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_SetFieldsInStruct_LegVolume_ImplicitCast;   // 0x03D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_SetFieldsInStruct_ArmVolume_ImplicitCast;   // 0x03D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_47E7[0x4];                                     // 0x0304(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalPlayerDataCharacterMakeInfo        CallFunc_ConvertMakeInfo_RGBToHSV_ConvertedMakeInfo; // 0x0308(0x0150)()
+	double                                        CallFunc_RandomFloat_ReturnValue;                  // 0x0458(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_RandomFloat_ReturnValue_1;                // 0x0460(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_MapRangeClamped_ReturnValue;              // 0x0468(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_MapRangeClamped_ReturnValue_1;            // 0x0470(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_RandomFloat_ReturnValue_2;                // 0x0478(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_MapRangeClamped_ReturnValue_2;            // 0x0480(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_ConvertMakeInfo_RGBToHSV_SVLimitValur_ImplicitCast; // 0x0488(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_SetFieldsInStruct_TorsoVolume_ImplicitCast; // 0x0490(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_SetFieldsInStruct_LegVolume_ImplicitCast;   // 0x0494(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_SetFieldsInStruct_ArmVolume_ImplicitCast;   // 0x0498(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_CharacterMake_C_RandomizeMakeInfo) == 0x000008, "Wrong alignment on WBP_CharacterMake_C_RandomizeMakeInfo");
-static_assert(sizeof(WBP_CharacterMake_C_RandomizeMakeInfo) == 0x0003E0, "Wrong size on WBP_CharacterMake_C_RandomizeMakeInfo");
+static_assert(sizeof(WBP_CharacterMake_C_RandomizeMakeInfo) == 0x0004A0, "Wrong size on WBP_CharacterMake_C_RandomizeMakeInfo");
 static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, TmpTorsoSize) == 0x000000, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::TmpTorsoSize' has a wrong offset!");
 static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, TmpLegSize) == 0x000008, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::TmpLegSize' has a wrong offset!");
 static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, TmpArmSize) == 0x000010, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::TmpArmSize' has a wrong offset!");
@@ -1141,17 +1113,17 @@ static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, CallFunc_GetRandom
 static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, CallFunc_GetRandomColor_Color_1) == 0x0002D4, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::CallFunc_GetRandomColor_Color_1' has a wrong offset!");
 static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, CallFunc_GetRandomColor_Color_2) == 0x0002E4, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::CallFunc_GetRandomColor_Color_2' has a wrong offset!");
 static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, CallFunc_GetRandomColor_Color_3) == 0x0002F4, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::CallFunc_GetRandomColor_Color_3' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, CallFunc_ConvertMakeInfo_RGBToHSV_ConvertedMakeInfo) == 0x000304, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::CallFunc_ConvertMakeInfo_RGBToHSV_ConvertedMakeInfo' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, CallFunc_RandomFloat_ReturnValue) == 0x000398, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::CallFunc_RandomFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, CallFunc_RandomFloat_ReturnValue_1) == 0x0003A0, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::CallFunc_RandomFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, CallFunc_MapRangeClamped_ReturnValue) == 0x0003A8, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::CallFunc_MapRangeClamped_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, CallFunc_MapRangeClamped_ReturnValue_1) == 0x0003B0, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::CallFunc_MapRangeClamped_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, CallFunc_RandomFloat_ReturnValue_2) == 0x0003B8, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::CallFunc_RandomFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, CallFunc_MapRangeClamped_ReturnValue_2) == 0x0003C0, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::CallFunc_MapRangeClamped_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, CallFunc_ConvertMakeInfo_RGBToHSV_SVLimitValur_ImplicitCast) == 0x0003C8, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::CallFunc_ConvertMakeInfo_RGBToHSV_SVLimitValur_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, K2Node_SetFieldsInStruct_TorsoVolume_ImplicitCast) == 0x0003D0, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::K2Node_SetFieldsInStruct_TorsoVolume_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, K2Node_SetFieldsInStruct_LegVolume_ImplicitCast) == 0x0003D4, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::K2Node_SetFieldsInStruct_LegVolume_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, K2Node_SetFieldsInStruct_ArmVolume_ImplicitCast) == 0x0003D8, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::K2Node_SetFieldsInStruct_ArmVolume_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, CallFunc_ConvertMakeInfo_RGBToHSV_ConvertedMakeInfo) == 0x000308, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::CallFunc_ConvertMakeInfo_RGBToHSV_ConvertedMakeInfo' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, CallFunc_RandomFloat_ReturnValue) == 0x000458, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::CallFunc_RandomFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, CallFunc_RandomFloat_ReturnValue_1) == 0x000460, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::CallFunc_RandomFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, CallFunc_MapRangeClamped_ReturnValue) == 0x000468, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::CallFunc_MapRangeClamped_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, CallFunc_MapRangeClamped_ReturnValue_1) == 0x000470, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::CallFunc_MapRangeClamped_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, CallFunc_RandomFloat_ReturnValue_2) == 0x000478, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::CallFunc_RandomFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, CallFunc_MapRangeClamped_ReturnValue_2) == 0x000480, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::CallFunc_MapRangeClamped_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, CallFunc_ConvertMakeInfo_RGBToHSV_SVLimitValur_ImplicitCast) == 0x000488, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::CallFunc_ConvertMakeInfo_RGBToHSV_SVLimitValur_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, K2Node_SetFieldsInStruct_TorsoVolume_ImplicitCast) == 0x000490, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::K2Node_SetFieldsInStruct_TorsoVolume_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, K2Node_SetFieldsInStruct_LegVolume_ImplicitCast) == 0x000494, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::K2Node_SetFieldsInStruct_LegVolume_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterMake_C_RandomizeMakeInfo, K2Node_SetFieldsInStruct_ArmVolume_ImplicitCast) == 0x000498, "Member 'WBP_CharacterMake_C_RandomizeMakeInfo::K2Node_SetFieldsInStruct_ArmVolume_ImplicitCast' has a wrong offset!");
 
 // Function WBP_CharacterMake.WBP_CharacterMake_C.RegisterStaticInputAction
 // 0x0060 (0x0060 - 0x0000)
@@ -1205,17 +1177,17 @@ public:
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Abs_ReturnValue;                          // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45F5[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47E8[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_BreakVector_X;                            // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector_Y;                            // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector_Z;                            // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Abs_ReturnValue_1;                        // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue_1;       // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45F6[0x7];                                     // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47E9[0x7];                                     // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_2;      // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45F7[0x7];                                     // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47EA[0x7];                                     // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0088(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x00A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector_X_1;                          // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1261,7 +1233,7 @@ struct WBP_CharacterMake_C_UpdateCameraLocationByWheel final
 {
 public:
 	bool                                          IsZoomIn;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45F8[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47EB[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                OldCameraRelativeLocation_MouseWheel;              // 0x0008(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_GetMaxZoomOffset_MaxOffset;               // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector_X;                            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1310,7 +1282,7 @@ public:
 	double                                        CallFunc_Abs_ReturnValue;                          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45F9[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47EC[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast;             // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1347,7 +1319,7 @@ struct WBP_CharacterMake_C_GetRestoreFocusTarget final
 public:
 	class UWidget*                                Target;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45FA[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47ED[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_GetRestoreFocusTarget_Widget;             // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_CharacterMake_C_GetRestoreFocusTarget) == 0x000008, "Wrong alignment on WBP_CharacterMake_C_GetRestoreFocusTarget");

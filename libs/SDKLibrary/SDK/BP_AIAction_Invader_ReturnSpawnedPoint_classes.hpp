@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
 #include "Pal_classes.hpp"
+#include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -30,6 +30,7 @@ public:
 	void ActionStart(class APawn* ControlledPawn);
 	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void ExecuteUbergraph_BP_AIAction_Invader_ReturnSpawnedPoint(int32 EntryPoint);
+	void ________(class UPalVisualEffectBase* VisualEffect);
 	void _________0(const struct FPalInstanceID& ID);
 
 public:

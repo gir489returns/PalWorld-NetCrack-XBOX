@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_classes.hpp"
 #include "Pal_structs.hpp"
+#include "Engine_classes.hpp"
 
 
 namespace SDK
@@ -32,7 +32,7 @@ public:
 	static void GetTalentValueTextMaterial(int32 TalentValue, class UObject* __WorldContext, class UMaterialInstance** FontMaterial);
 	static void GetTechnologyIcon(class FName TechnologyName, class UObject* __WorldContext, TSoftObjectPtr<class UTexture2D>* SoftIconTexture);
 	static void GetWorkDetailName(class UPalIndividualCharacterHandle* Handle, bool NotBattle, class UObject* __WorldContext, class FText* OutText);
-	static void IsDislayWorkSuitability_ForUI(EPalWorkSuitability Suitability, class UObject* __WorldContext, bool* ShouldDisplay);
+	static void IsDisplayWorkSuitability_ForUI(EPalWorkSuitability Suitability, class UObject* __WorldContext, bool* ShouldDisplay);
 	static void Project_Icon_Position_to_World_Postion(const struct FVector2D& MinLandscapePositionXY, const struct FVector2D& MaxLandscapePositionXY, class UWidget* TargetWigdet, class UCanvasPanel* TargetCanvas, double Scale, class UObject* __WorldContext, struct FVector* WorldPosition);
 	static void ProjectIconToWorldMap(const struct FVector2D& MinLandscapePositionXY, const struct FVector2D& MaxLandscapePositionXY, class UCanvasPanel* TargetCanvas, const struct FVector& WorldLocation, class UWidget* AddWidget, class UObject* __WorldContext);
 	static void SetItemInfo(class FName ItemId, class UPalTextBlockBase* NameTextBlock, class UPalTextBlockBase* DescTextBlock, class UImage* IconImage, class UObject* __WorldContext);

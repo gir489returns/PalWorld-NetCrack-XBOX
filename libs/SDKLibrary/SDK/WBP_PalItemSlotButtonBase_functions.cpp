@@ -581,9 +581,9 @@ void UWBP_PalItemSlotButtonBase_C::OnMiddleClicked_Internal()
 // Function WBP_PalItemSlotButtonBase.WBP_PalItemSlotButtonBase_C.OnMiddleClickedButton__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWBP_PalItemSlotButtonBase_C*     ButtonBase                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWBP_PalItemSlotButtonBase_C*     buttonBase                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalItemSlotButtonBase_C::OnMiddleClickedButton__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase)
+void UWBP_PalItemSlotButtonBase_C::OnMiddleClickedButton__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* buttonBase)
 {
 	static class UFunction* Func = nullptr;
 
@@ -592,7 +592,7 @@ void UWBP_PalItemSlotButtonBase_C::OnMiddleClickedButton__DelegateSignature(clas
 
 	Params::WBP_PalItemSlotButtonBase_C_OnMiddleClickedButton__DelegateSignature Parms{};
 
-	Parms.ButtonBase = ButtonBase;
+	Parms.buttonBase = buttonBase;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -762,10 +762,10 @@ void UWBP_PalItemSlotButtonBase_C::OnRequestUseItem__DelegateSignature(class UWB
 // Function WBP_PalItemSlotButtonBase.WBP_PalItemSlotButtonBase_C.OnRightClickedButton__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWBP_PalItemSlotButtonBase_C*     ButtonBase                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWBP_PalItemSlotButtonBase_C*     buttonBase                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalItemSlotButtonBase_C::OnRightClickedButton__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType)
+void UWBP_PalItemSlotButtonBase_C::OnRightClickedButton__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* buttonBase, EPalItemSlotPressType PressType)
 {
 	static class UFunction* Func = nullptr;
 
@@ -774,7 +774,7 @@ void UWBP_PalItemSlotButtonBase_C::OnRightClickedButton__DelegateSignature(class
 
 	Params::WBP_PalItemSlotButtonBase_C_OnRightClickedButton__DelegateSignature Parms{};
 
-	Parms.ButtonBase = ButtonBase;
+	Parms.buttonBase = buttonBase;
 	Parms.PressType = PressType;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -834,6 +834,26 @@ void UWBP_PalItemSlotButtonBase_C::OnSetValidSlot__DelegateSignature()
 		Func = Class->GetFunction("WBP_PalItemSlotButtonBase_C", "OnSetValidSlot__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalItemSlotButtonBase.WBP_PalItemSlotButtonBase_C.OnTriedEquipSlot__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_PalItemSlotButtonBase_C*     Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalItemSlotButtonBase_C::OnTriedEquipSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalItemSlotButtonBase_C", "OnTriedEquipSlot__DelegateSignature");
+
+	Params::WBP_PalItemSlotButtonBase_C_OnTriedEquipSlot__DelegateSignature Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

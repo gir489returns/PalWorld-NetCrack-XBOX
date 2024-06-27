@@ -61,15 +61,29 @@ void UBP_Status_WithVisualEffect_C::HasSelfPalElement(EPalElementType MyElement,
 }
 
 
-// Function BP_Status_WithVisualEffect.BP_Status_WithVisualEffect_C.HideReAddEffectWhenCapture
+// Function BP_Status_WithVisualEffect.BP_Status_WithVisualEffect_C.HideReAddEffect
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UBP_Status_WithVisualEffect_C::HideReAddEffectWhenCapture()
+void UBP_Status_WithVisualEffect_C::HideReAddEffect()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Status_WithVisualEffect_C", "HideReAddEffectWhenCapture");
+		Func = Class->GetFunction("BP_Status_WithVisualEffect_C", "HideReAddEffect");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Status_WithVisualEffect.BP_Status_WithVisualEffect_C.HideReAddEffectWhenInActiveOtomo
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UBP_Status_WithVisualEffect_C::HideReAddEffectWhenInActiveOtomo()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Status_WithVisualEffect_C", "HideReAddEffectWhenInActiveOtomo");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

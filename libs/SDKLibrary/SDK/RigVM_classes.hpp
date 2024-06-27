@@ -17,55 +17,6 @@
 namespace SDK
 {
 
-// Class RigVM.RigVMMemoryStorage
-// 0x0000 (0x0028 - 0x0028)
-class URigVMMemoryStorage : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"RigVMMemoryStorage">();
-	}
-	static class URigVMMemoryStorage* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<URigVMMemoryStorage>();
-	}
-};
-static_assert(alignof(URigVMMemoryStorage) == 0x000008, "Wrong alignment on URigVMMemoryStorage");
-static_assert(sizeof(URigVMMemoryStorage) == 0x000028, "Wrong size on URigVMMemoryStorage");
-
-// Class RigVM.RigVMUserWorkflowOptions
-// 0x0070 (0x0098 - 0x0028)
-class URigVMUserWorkflowOptions : public UObject
-{
-public:
-	class UObject*                                Subject;                                           // 0x0028(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FRigVMUserWorkflow                     Workflow;                                          // 0x0030(0x0058)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_21F5[0x10];                                    // 0x0088(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void ReportError(const class FString& InMessage);
-	void ReportInfo(const class FString& InMessage);
-	void ReportWarning(const class FString& InMessage);
-
-	bool IsValid() const;
-	bool RequiresDialog() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"RigVMUserWorkflowOptions">();
-	}
-	static class URigVMUserWorkflowOptions* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<URigVMUserWorkflowOptions>();
-	}
-};
-static_assert(alignof(URigVMUserWorkflowOptions) == 0x000008, "Wrong alignment on URigVMUserWorkflowOptions");
-static_assert(sizeof(URigVMUserWorkflowOptions) == 0x000098, "Wrong size on URigVMUserWorkflowOptions");
-static_assert(offsetof(URigVMUserWorkflowOptions, Subject) == 0x000028, "Member 'URigVMUserWorkflowOptions::Subject' has a wrong offset!");
-static_assert(offsetof(URigVMUserWorkflowOptions, Workflow) == 0x000030, "Member 'URigVMUserWorkflowOptions::Workflow' has a wrong offset!");
-
 // Class RigVM.RigVM
 // 0x0280 (0x02A8 - 0x0028)
 class URigVM : public UObject
@@ -74,20 +25,20 @@ public:
 	class URigVMMemoryStorage*                    WorkMemoryStorageObject;                           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class URigVMMemoryStorage*                    LiteralMemoryStorageObject;                        // 0x0030(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class URigVMMemoryStorage*                    DebugMemoryStorageObject;                          // 0x0038(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21F6[0x20];                                    // 0x0040(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22AB[0x20];                                    // 0x0040(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRigVMByteCode                         ByteCodeStorage;                                   // 0x0060(0x0030)(HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21F7[0x8];                                     // 0x0090(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22AC[0x8];                                     // 0x0090(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRigVMInstructionArray                 Instructions;                                      // 0x0098(0x0010)(Transient, NativeAccessSpecifierPrivate)
 	struct FRigVMExtendedExecuteContext           Context;                                           // 0x00A8(0x0078)(Transient, Protected, NativeAccessSpecifierProtected)
 	uint32                                        NumExecutions;                                     // 0x0120(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_21F8[0x4];                                     // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22AD[0x4];                                     // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           FunctionNamesStorage;                              // 0x0128(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_21F9[0x38];                                    // 0x0138(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22AE[0x38];                                    // 0x0138(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FRigVMParameter>                Parameters;                                        // 0x0170(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	TMap<class FName, int32>                      ParametersNameMap;                                 // 0x0180(0x0050)(NativeAccessSpecifierPrivate)
-	uint8                                         Pad_21FA[0xB8];                                    // 0x01D0(0x00B8)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22AF[0xB8];                                    // 0x01D0(0x00B8)(Fixing Size After Last Property [ Dumper-7 ])
 	class URigVM*                                 DeferredVMToCopy;                                  // 0x0288(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_21FB[0x18];                                    // 0x0290(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22B0[0x18];                                    // 0x0290(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	int32 AddRigVMFunction(class UScriptStruct* InRigVMStruct, const class FName& InMethodName);
@@ -140,12 +91,64 @@ static_assert(offsetof(URigVM, Parameters) == 0x000170, "Member 'URigVM::Paramet
 static_assert(offsetof(URigVM, ParametersNameMap) == 0x000180, "Member 'URigVM::ParametersNameMap' has a wrong offset!");
 static_assert(offsetof(URigVM, DeferredVMToCopy) == 0x000288, "Member 'URigVM::DeferredVMToCopy' has a wrong offset!");
 
+// Class RigVM.RigVMNativized
+// 0x0008 (0x02B0 - 0x02A8)
+class URigVMNativized final : public URigVM
+{
+public:
+	uint8                                         Pad_22C4[0x8];                                     // 0x02A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"RigVMNativized">();
+	}
+	static class URigVMNativized* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<URigVMNativized>();
+	}
+};
+static_assert(alignof(URigVMNativized) == 0x000008, "Wrong alignment on URigVMNativized");
+static_assert(sizeof(URigVMNativized) == 0x0002B0, "Wrong size on URigVMNativized");
+
+// Class RigVM.RigVMUserWorkflowOptions
+// 0x0070 (0x0098 - 0x0028)
+class URigVMUserWorkflowOptions : public UObject
+{
+public:
+	class UObject*                                Subject;                                           // 0x0028(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FRigVMUserWorkflow                     Workflow;                                          // 0x0030(0x0058)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_22C5[0x10];                                    // 0x0088(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void ReportError(const class FString& InMessage);
+	void ReportInfo(const class FString& InMessage);
+	void ReportWarning(const class FString& InMessage);
+
+	bool IsValid() const;
+	bool RequiresDialog() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"RigVMUserWorkflowOptions">();
+	}
+	static class URigVMUserWorkflowOptions* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<URigVMUserWorkflowOptions>();
+	}
+};
+static_assert(alignof(URigVMUserWorkflowOptions) == 0x000008, "Wrong alignment on URigVMUserWorkflowOptions");
+static_assert(sizeof(URigVMUserWorkflowOptions) == 0x000098, "Wrong size on URigVMUserWorkflowOptions");
+static_assert(offsetof(URigVMUserWorkflowOptions, Subject) == 0x000028, "Member 'URigVMUserWorkflowOptions::Subject' has a wrong offset!");
+static_assert(offsetof(URigVMUserWorkflowOptions, Workflow) == 0x000030, "Member 'URigVMUserWorkflowOptions::Workflow' has a wrong offset!");
+
 // Class RigVM.RigVMMemoryStorageGeneratorClass
 // 0x0040 (0x0270 - 0x0230)
 class URigVMMemoryStorageGeneratorClass final : public UClass
 {
 public:
-	uint8                                         Pad_220F[0x40];                                    // 0x0230(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22C6[0x40];                                    // 0x0230(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -160,25 +163,22 @@ public:
 static_assert(alignof(URigVMMemoryStorageGeneratorClass) == 0x000008, "Wrong alignment on URigVMMemoryStorageGeneratorClass");
 static_assert(sizeof(URigVMMemoryStorageGeneratorClass) == 0x000270, "Wrong size on URigVMMemoryStorageGeneratorClass");
 
-// Class RigVM.RigVMNativized
-// 0x0008 (0x02B0 - 0x02A8)
-class URigVMNativized final : public URigVM
+// Class RigVM.RigVMMemoryStorage
+// 0x0000 (0x0028 - 0x0028)
+class URigVMMemoryStorage : public UObject
 {
-public:
-	uint8                                         Pad_2210[0x8];                                     // 0x02A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RigVMNativized">();
+		return StaticClassImpl<"RigVMMemoryStorage">();
 	}
-	static class URigVMNativized* GetDefaultObj()
+	static class URigVMMemoryStorage* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<URigVMNativized>();
+		return GetDefaultObjImpl<URigVMMemoryStorage>();
 	}
 };
-static_assert(alignof(URigVMNativized) == 0x000008, "Wrong alignment on URigVMNativized");
-static_assert(sizeof(URigVMNativized) == 0x0002B0, "Wrong size on URigVMNativized");
+static_assert(alignof(URigVMMemoryStorage) == 0x000008, "Wrong alignment on URigVMMemoryStorage");
+static_assert(sizeof(URigVMMemoryStorage) == 0x000028, "Wrong size on URigVMMemoryStorage");
 
 }
 

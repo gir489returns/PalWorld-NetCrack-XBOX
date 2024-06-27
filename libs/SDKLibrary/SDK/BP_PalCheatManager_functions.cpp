@@ -79,26 +79,6 @@ void UBP_PalCheatManager_C::OpenPrivateServerForBP()
 }
 
 
-// Function BP_PalCheatManager.BP_PalCheatManager_C.PostAkEventByName
-// (Exec, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                           EventName                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UBP_PalCheatManager_C::PostAkEventByName(const class FString& EventName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalCheatManager_C", "PostAkEventByName");
-
-	Params::BP_PalCheatManager_C_PostAkEventByName Parms{};
-
-	Parms.EventName = std::move(EventName);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_PalCheatManager.BP_PalCheatManager_C.SpectatorOnForBP
 // (Event, Protected, BlueprintEvent)
 

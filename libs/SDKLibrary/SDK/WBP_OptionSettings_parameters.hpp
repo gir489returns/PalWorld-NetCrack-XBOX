@@ -10,56 +10,76 @@
 
 #include "Basic.hpp"
 
-#include "Pal_structs.hpp"
-#include "UMG_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "CommonInput_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Pal_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "UMG_structs.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK::Params
 {
 
-// Function WBP_OptionSettings.WBP_OptionSettings_C.ApplySettings
+// Function WBP_OptionSettings.WBP_OptionSettings_C.SwitchTabTo
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_OptionSettings_C_SwitchTabTo final
+{
+public:
+	int32                                         Param_Index;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_OptionSettings_C_SwitchTabTo) == 0x000004, "Wrong alignment on WBP_OptionSettings_C_SwitchTabTo");
+static_assert(sizeof(WBP_OptionSettings_C_SwitchTabTo) == 0x000004, "Wrong size on WBP_OptionSettings_C_SwitchTabTo");
+static_assert(offsetof(WBP_OptionSettings_C_SwitchTabTo, Param_Index) == 0x000000, "Member 'WBP_OptionSettings_C_SwitchTabTo::Param_Index' has a wrong offset!");
+
+// Function WBP_OptionSettings.WBP_OptionSettings_C.SetDefault
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_OptionSettings_C_ApplySettings final
+struct WBP_OptionSettings_C_SetDefault final
 {
 public:
 	bool                                          Confirmed;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_OptionSettings_C_ApplySettings) == 0x000001, "Wrong alignment on WBP_OptionSettings_C_ApplySettings");
-static_assert(sizeof(WBP_OptionSettings_C_ApplySettings) == 0x000001, "Wrong size on WBP_OptionSettings_C_ApplySettings");
-static_assert(offsetof(WBP_OptionSettings_C_ApplySettings, Confirmed) == 0x000000, "Member 'WBP_OptionSettings_C_ApplySettings::Confirmed' has a wrong offset!");
+static_assert(alignof(WBP_OptionSettings_C_SetDefault) == 0x000001, "Wrong alignment on WBP_OptionSettings_C_SetDefault");
+static_assert(sizeof(WBP_OptionSettings_C_SetDefault) == 0x000001, "Wrong size on WBP_OptionSettings_C_SetDefault");
+static_assert(offsetof(WBP_OptionSettings_C_SetDefault, Confirmed) == 0x000000, "Member 'WBP_OptionSettings_C_SetDefault::Confirmed' has a wrong offset!");
 
-// Function WBP_OptionSettings.WBP_OptionSettings_C.EmptyEvent
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_OptionSettings_C_EmptyEvent final
+// Function WBP_OptionSettings.WBP_OptionSettings_C.Set Tab Action
+// 0x002C (0x002C - 0x0000)
+struct WBP_OptionSettings_C_Set_Tab_Action final
 {
 public:
-	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Bind;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E2B[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0014(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0024(0x0004)(NoDestructor)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_1;      // 0x0028(0x0004)(NoDestructor)
 };
-static_assert(alignof(WBP_OptionSettings_C_EmptyEvent) == 0x000001, "Wrong alignment on WBP_OptionSettings_C_EmptyEvent");
-static_assert(sizeof(WBP_OptionSettings_C_EmptyEvent) == 0x000001, "Wrong size on WBP_OptionSettings_C_EmptyEvent");
-static_assert(offsetof(WBP_OptionSettings_C_EmptyEvent, bResult) == 0x000000, "Member 'WBP_OptionSettings_C_EmptyEvent::bResult' has a wrong offset!");
+static_assert(alignof(WBP_OptionSettings_C_Set_Tab_Action) == 0x000004, "Wrong alignment on WBP_OptionSettings_C_Set_Tab_Action");
+static_assert(sizeof(WBP_OptionSettings_C_Set_Tab_Action) == 0x00002C, "Wrong size on WBP_OptionSettings_C_Set_Tab_Action");
+static_assert(offsetof(WBP_OptionSettings_C_Set_Tab_Action, Bind) == 0x000000, "Member 'WBP_OptionSettings_C_Set_Tab_Action::Bind' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_Set_Tab_Action, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_OptionSettings_C_Set_Tab_Action::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_Set_Tab_Action, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'WBP_OptionSettings_C_Set_Tab_Action::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_Set_Tab_Action, CallFunc_RegisterActionBinding_ReturnValue) == 0x000024, "Member 'WBP_OptionSettings_C_Set_Tab_Action::CallFunc_RegisterActionBinding_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_Set_Tab_Action, CallFunc_RegisterActionBinding_ReturnValue_1) == 0x000028, "Member 'WBP_OptionSettings_C_Set_Tab_Action::CallFunc_RegisterActionBinding_ReturnValue_1' has a wrong offset!");
 
 // Function WBP_OptionSettings.WBP_OptionSettings_C.ExecuteUbergraph_WBP_OptionSettings
-// 0x04F8 (0x04F8 - 0x0000)
+// 0x0530 (0x0530 - 0x0000)
 struct WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_484E[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E2C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonInputSubsystem*                  CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_484F[0x2];                                     // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E2D[0x2];                                     // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0014(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0024(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0034(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0044(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x0054(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_5;            // 0x0064(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4850[0x4];                                     // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E2E[0x4];                                     // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPocketpairUserSubsystem*               CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool bResult)>                 K2Node_CreateDelegate_OutputDelegate_6;            // 0x0080(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_GetTelemetryUserId_ReturnValue;           // 0x0090(0x0010)(ZeroConstructor, HasGetValueTypeHash)
@@ -69,31 +89,31 @@ public:
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00E0(0x0050)(HasGetValueTypeHash)
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0130(0x0050)(HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4851[0x7];                                     // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E2F[0x7];                                     // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0188(0x0010)(ReferenceParm)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4852[0x7];                                     // 0x0199(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E30[0x7];                                     // 0x0199(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01A0(0x0018)()
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x01B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4853[0x7];                                     // 0x01C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E31[0x7];                                     // 0x01C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x01D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_7;            // 0x01D8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result;    // 0x01E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue; // 0x01F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4854[0x7];                                     // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E32[0x7];                                     // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0200(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result_1;  // 0x0208(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue_1; // 0x0210(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0219(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x021A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4855[0x5];                                     // 0x021B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E33[0x5];                                     // 0x021B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result_2;  // 0x0220(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue_2; // 0x0228(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4856[0x3];                                     // 0x0231(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E34[0x3];                                     // 0x0231(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_8;            // 0x0234(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_9;            // 0x0244(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0254(0x0004)(NoDestructor)
@@ -102,17 +122,17 @@ public:
 	bool                                          CallFunc_IsVisible_ReturnValue_1;                  // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsVisible_ReturnValue_2;                  // 0x0269(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_Confirmed_1;                    // 0x026A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4857[0x1];                                     // 0x026B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E35[0x1];                                     // 0x026B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(bool bResult)>                 K2Node_CreateDelegate_OutputDelegate_10;           // 0x026C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool bResult)>                 K2Node_CreateDelegate_OutputDelegate_11;           // 0x027C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4858[0x4];                                     // 0x028C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E36[0x4];                                     // 0x028C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0290(0x0018)()
 	struct FGuid                                  CallFunc_Dialog_ReturnValue;                       // 0x02A8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text_1;        // 0x02B8(0x0018)()
 	bool                                          K2Node_CustomEvent_Confirmed;                      // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4859[0x3];                                     // 0x02D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E37[0x3];                                     // 0x02D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGuid                                  CallFunc_Dialog_ReturnValue_1;                     // 0x02D4(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_485A[0x4];                                     // 0x02E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E38[0x4];                                     // 0x02E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue_1;            // 0x02E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UWBP_Sound_Settings_C*                  CallFunc_Create_ReturnValue_1;                     // 0x02F0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result_3;  // 0x02F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -129,30 +149,31 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x031F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x0320(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue_3;                  // 0x0321(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_485B[0x2];                                     // 0x0322(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E39[0x2];                                     // 0x0322(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_12;           // 0x0324(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_485C[0x4];                                     // 0x0334(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E3A[0x4];                                     // 0x0334(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue_2;            // 0x0338(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UWBP_Control_Settings_C*                CallFunc_Create_ReturnValue_2;                     // 0x0340(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_13;           // 0x0348(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result_5;  // 0x0358(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue_5; // 0x0360(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result_6;  // 0x0368(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue_6; // 0x0370(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x0378(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x0379(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_485D[0x6];                                     // 0x037A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                CallFunc_GetDesiredFocusTarget_Target;             // 0x0380(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue_7;                  // 0x0388(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue_8;                  // 0x0389(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_4;                  // 0x038A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_5;                  // 0x038B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue_9;                  // 0x038C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              CallFunc_GetVisibility_ReturnValue;                // 0x038D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue_1;          // 0x038E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_6;                  // 0x038F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0390(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_485E[0x7];                                     // 0x0391(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result_5;  // 0x0348(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue_5; // 0x0350(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result_6;  // 0x0358(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue_6; // 0x0360(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x0368(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x0369(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E3B[0x6];                                     // 0x036A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_GetDesiredFocusTarget_Target;             // 0x0370(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue_7;                  // 0x0378(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue_8;                  // 0x0379(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_4;                  // 0x037A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_5;                  // 0x037B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue_9;                  // 0x037C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              CallFunc_GetVisibility_ReturnValue;                // 0x037D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue_1;          // 0x037E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E3C[0x1];                                     // 0x037F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_13;           // 0x0380(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_6;                  // 0x0390(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0391(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E3D[0x6];                                     // 0x0392(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_GetDesiredFocusTarget_Target_1;           // 0x0398(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsVisible_ReturnValue_10;                 // 0x03A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue_7;                  // 0x03A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -163,7 +184,7 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue_4;                // 0x03A6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_5;                // 0x03A7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_CustomEvent_Index;                          // 0x03A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_485F[0x4];                                     // 0x03AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E3E[0x4];                                     // 0x03AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalOptionSubsystem*                    CallFunc_GetOptionSubsystem_ReturnValue;           // 0x03B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result_7;  // 0x03B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue_7; // 0x03C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -173,7 +194,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_8;                    // 0x03D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsVisible_ReturnValue_12;                 // 0x03DA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_6;                // 0x03DB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4860[0x4];                                     // 0x03DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E3F[0x4];                                     // 0x03DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue_3;            // 0x03E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UWBP_Other_Settings_C*                  CallFunc_Create_ReturnValue_3;                     // 0x03E8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue_9;                  // 0x03F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -185,66 +206,68 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x03F6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x03F7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue_12;                 // 0x03F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_8;                // 0x03F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4861[0x6];                                     // 0x03FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E40[0x7];                                     // 0x03F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result_9;  // 0x0400(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue_9; // 0x0408(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_14;           // 0x0410(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_9;                    // 0x0420(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4862[0x7];                                     // 0x0421(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E41[0x7];                                     // 0x0421(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result_10; // 0x0428(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue_10; // 0x0430(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_10;                   // 0x0438(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4863[0x3];                                     // 0x0439(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_15;           // 0x043C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4864[0x4];                                     // 0x044C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    CallFunc_Array_Get_Item;                           // 0x0450(0x0010)(NoDestructor)
-	struct FDataTableRowHandle                    CallFunc_Array_Get_Item_1;                         // 0x0460(0x0010)(NoDestructor)
-	TArray<struct FDataTableRowHandle>            K2Node_MakeArray_Array_1;                          // 0x0470(0x0010)(ConstParm, ReferenceParm)
-	bool                                          CallFunc_IsVisible_ReturnValue_14;                 // 0x0480(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_9;                // 0x0481(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalSupportedPlatformType                     CallFunc_GetPlatformType_ReturnValue_1;            // 0x0482(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_2;        // 0x0483(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_3;        // 0x0484(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_13;                 // 0x0485(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_10;               // 0x0486(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4865[0x1];                                     // 0x0487(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue_4;            // 0x0488(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Key_Settings_C*                    CallFunc_Create_ReturnValue_4;                     // 0x0490(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_14;                 // 0x0498(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_15;                 // 0x0499(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue_15;                 // 0x049A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_16;                 // 0x049B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue_16;                 // 0x049C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue_17;                 // 0x049D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_17;                 // 0x049E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue_18;                 // 0x049F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x04A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue_19;                 // 0x04A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4866[0x6];                                     // 0x04A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                CallFunc_GetDesiredFocusTarget_Target_2;           // 0x04A8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetDesiredFocusTarget_Target_3;           // 0x04B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue_20;                 // 0x04B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue_21;                 // 0x04B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_18;                 // 0x04BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_11;               // 0x04BB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalSupportedPlatformType                     CallFunc_GetPlatformType_ReturnValue_2;            // 0x04BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_4;        // 0x04BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_5;        // 0x04BE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_19;                 // 0x04BF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_20;                 // 0x04C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4867[0x7];                                     // 0x04C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text_2;        // 0x04C8(0x0018)()
-	bool                                          CallFunc_BooleanOR_ReturnValue_21;                 // 0x04E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4868[0x3];                                     // 0x04E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuid                                  CallFunc_Dialog_ReturnValue_2;                     // 0x04E4(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_22;                 // 0x04F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_bResult;                        // 0x04F5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsCanOpenExternalWebSite_ReturnValue;     // 0x04F6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x04F7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E42[0x7];                                     // 0x0439(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDataTableRowHandle                    CallFunc_Array_Get_Item;                           // 0x0440(0x0010)(NoDestructor)
+	struct FDataTableRowHandle                    CallFunc_Array_Get_Item_1;                         // 0x0450(0x0010)(NoDestructor)
+	TArray<struct FDataTableRowHandle>            K2Node_MakeArray_Array_1;                          // 0x0460(0x0010)(ConstParm, ReferenceParm)
+	bool                                          CallFunc_IsVisible_ReturnValue_14;                 // 0x0470(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_8;                // 0x0471(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalSupportedPlatformType                     CallFunc_GetPlatformType_ReturnValue_1;            // 0x0472(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_2;        // 0x0473(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_3;        // 0x0474(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_13;                 // 0x0475(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E43[0x2];                                     // 0x0476(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_15;           // 0x0478(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_9;                // 0x0488(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E44[0x7];                                     // 0x0489(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue_4;            // 0x0490(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Key_Settings_C*                    CallFunc_Create_ReturnValue_4;                     // 0x0498(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_14;                 // 0x04A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_15;                 // 0x04A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue_15;                 // 0x04A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_16;                 // 0x04A3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue_16;                 // 0x04A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue_17;                 // 0x04A5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_17;                 // 0x04A6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue_18;                 // 0x04A7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x04A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue_19;                 // 0x04A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E45[0x6];                                     // 0x04AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_GetDesiredFocusTarget_Target_2;           // 0x04B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetDesiredFocusTarget_Target_3;           // 0x04B8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue_20;                 // 0x04C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue_21;                 // 0x04C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_18;                 // 0x04C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_10;               // 0x04C3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalSupportedPlatformType                     CallFunc_GetPlatformType_ReturnValue_2;            // 0x04C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_4;        // 0x04C5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_5;        // 0x04C6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_19;                 // 0x04C7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_20;                 // 0x04C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E46[0x7];                                     // 0x04C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text_2;        // 0x04D0(0x0018)()
+	bool                                          CallFunc_BooleanOR_ReturnValue_21;                 // 0x04E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E47[0x3];                                     // 0x04E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuid                                  CallFunc_Dialog_ReturnValue_2;                     // 0x04EC(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_22;                 // 0x04FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_bResult;                        // 0x04FD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsCanOpenExternalWebSite_ReturnValue;     // 0x04FE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x04FF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    CallFunc_Array_Get_Item_2;                         // 0x0500(0x0010)(NoDestructor)
+	struct FDataTableRowHandle                    CallFunc_Array_Get_Item_3;                         // 0x0510(0x0010)(NoDestructor)
+	TArray<struct FDataTableRowHandle>            K2Node_MakeArray_Array_2;                          // 0x0520(0x0010)(ConstParm, ReferenceParm)
 };
 static_assert(alignof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings) == 0x000008, "Wrong alignment on WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings");
-static_assert(sizeof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings) == 0x0004F8, "Wrong size on WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings");
+static_assert(sizeof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings) == 0x000530, "Wrong size on WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings");
 static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, EntryPoint) == 0x000000, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::EntryPoint' has a wrong offset!");
 static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_GetLocalPlayerSubsystem_ReturnValue) == 0x000008, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_GetLocalPlayerSubsystem_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_GetCurrentInputType_ReturnValue) == 0x000010, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
@@ -317,23 +340,23 @@ static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings,
 static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, K2Node_CreateDelegate_OutputDelegate_12) == 0x000324, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::K2Node_CreateDelegate_OutputDelegate_12' has a wrong offset!");
 static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_GetOwningPlayer_ReturnValue_2) == 0x000338, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_GetOwningPlayer_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_Create_ReturnValue_2) == 0x000340, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_Create_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, K2Node_CreateDelegate_OutputDelegate_13) == 0x000348, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::K2Node_CreateDelegate_OutputDelegate_13' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_CreatePlayAnimationProxyObject_Result_5) == 0x000358, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_CreatePlayAnimationProxyObject_Result_5' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_5) == 0x000360, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_CreatePlayAnimationProxyObject_Result_6) == 0x000368, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_CreatePlayAnimationProxyObject_Result_6' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_6) == 0x000370, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsValid_ReturnValue_5) == 0x000378, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsValid_ReturnValue_6) == 0x000379, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_GetDesiredFocusTarget_Target) == 0x000380, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_GetDesiredFocusTarget_Target' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsVisible_ReturnValue_7) == 0x000388, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsVisible_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsVisible_ReturnValue_8) == 0x000389, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsVisible_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_4) == 0x00038A, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_5) == 0x00038B, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsVisible_ReturnValue_9) == 0x00038C, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsVisible_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_GetVisibility_ReturnValue) == 0x00038D, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_GetVisibility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_NotEqual_ByteByte_ReturnValue_1) == 0x00038E, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_NotEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_6) == 0x00038F, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_Not_PreBool_ReturnValue_1) == 0x000390, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_CreatePlayAnimationProxyObject_Result_5) == 0x000348, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_CreatePlayAnimationProxyObject_Result_5' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_5) == 0x000350, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_CreatePlayAnimationProxyObject_Result_6) == 0x000358, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_CreatePlayAnimationProxyObject_Result_6' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_6) == 0x000360, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsValid_ReturnValue_5) == 0x000368, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsValid_ReturnValue_6) == 0x000369, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_GetDesiredFocusTarget_Target) == 0x000370, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_GetDesiredFocusTarget_Target' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsVisible_ReturnValue_7) == 0x000378, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsVisible_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsVisible_ReturnValue_8) == 0x000379, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsVisible_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_4) == 0x00037A, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_5) == 0x00037B, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsVisible_ReturnValue_9) == 0x00037C, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsVisible_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_GetVisibility_ReturnValue) == 0x00037D, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_GetVisibility_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_NotEqual_ByteByte_ReturnValue_1) == 0x00037E, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_NotEqual_ByteByte_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, K2Node_CreateDelegate_OutputDelegate_13) == 0x000380, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::K2Node_CreateDelegate_OutputDelegate_13' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_6) == 0x000390, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_Not_PreBool_ReturnValue_1) == 0x000391, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_GetDesiredFocusTarget_Target_1) == 0x000398, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_GetDesiredFocusTarget_Target_1' has a wrong offset!");
 static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsVisible_ReturnValue_10) == 0x0003A0, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsVisible_ReturnValue_10' has a wrong offset!");
 static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_7) == 0x0003A1, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_7' has a wrong offset!");
@@ -364,7 +387,6 @@ static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings,
 static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0003F6, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0003F7, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_12) == 0x0003F8, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_Not_PreBool_ReturnValue_8) == 0x0003F9, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_Not_PreBool_ReturnValue_8' has a wrong offset!");
 static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_CreatePlayAnimationProxyObject_Result_9) == 0x000400, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_CreatePlayAnimationProxyObject_Result_9' has a wrong offset!");
 static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_9) == 0x000408, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_9' has a wrong offset!");
 static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, K2Node_CreateDelegate_OutputDelegate_14) == 0x000410, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::K2Node_CreateDelegate_OutputDelegate_14' has a wrong offset!");
@@ -372,89 +394,72 @@ static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings,
 static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_CreatePlayAnimationProxyObject_Result_10) == 0x000428, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_CreatePlayAnimationProxyObject_Result_10' has a wrong offset!");
 static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_CreatePlayAnimationProxyObject_ReturnValue_10) == 0x000430, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_CreatePlayAnimationProxyObject_ReturnValue_10' has a wrong offset!");
 static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsValid_ReturnValue_10) == 0x000438, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsValid_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, K2Node_CreateDelegate_OutputDelegate_15) == 0x00043C, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::K2Node_CreateDelegate_OutputDelegate_15' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_Array_Get_Item) == 0x000450, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_Array_Get_Item_1) == 0x000460, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, K2Node_MakeArray_Array_1) == 0x000470, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsVisible_ReturnValue_14) == 0x000480, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsVisible_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_Not_PreBool_ReturnValue_9) == 0x000481, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_Not_PreBool_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_GetPlatformType_ReturnValue_1) == 0x000482, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_GetPlatformType_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000483, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x000484, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_13) == 0x000485, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_Not_PreBool_ReturnValue_10) == 0x000486, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_Not_PreBool_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_GetOwningPlayer_ReturnValue_4) == 0x000488, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_GetOwningPlayer_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_Create_ReturnValue_4) == 0x000490, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_Create_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_14) == 0x000498, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_15) == 0x000499, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsVisible_ReturnValue_15) == 0x00049A, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsVisible_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_16) == 0x00049B, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsVisible_ReturnValue_16) == 0x00049C, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsVisible_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsVisible_ReturnValue_17) == 0x00049D, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsVisible_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_17) == 0x00049E, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsVisible_ReturnValue_18) == 0x00049F, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsVisible_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanAND_ReturnValue) == 0x0004A0, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsVisible_ReturnValue_19) == 0x0004A1, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsVisible_ReturnValue_19' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_GetDesiredFocusTarget_Target_2) == 0x0004A8, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_GetDesiredFocusTarget_Target_2' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_GetDesiredFocusTarget_Target_3) == 0x0004B0, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_GetDesiredFocusTarget_Target_3' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsVisible_ReturnValue_20) == 0x0004B8, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsVisible_ReturnValue_20' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsVisible_ReturnValue_21) == 0x0004B9, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsVisible_ReturnValue_21' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_18) == 0x0004BA, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_Not_PreBool_ReturnValue_11) == 0x0004BB, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_Not_PreBool_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_GetPlatformType_ReturnValue_2) == 0x0004BC, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_GetPlatformType_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_EqualEqual_ByteByte_ReturnValue_4) == 0x0004BD, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_EqualEqual_ByteByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_EqualEqual_ByteByte_ReturnValue_5) == 0x0004BE, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_EqualEqual_ByteByte_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_19) == 0x0004BF, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_19' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_20) == 0x0004C0, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_20' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_GetLocalizedTextFromHandle_Text_2) == 0x0004C8, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_GetLocalizedTextFromHandle_Text_2' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_21) == 0x0004E0, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_21' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_Dialog_ReturnValue_2) == 0x0004E4, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_Dialog_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_22) == 0x0004F4, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_22' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, K2Node_CustomEvent_bResult) == 0x0004F5, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::K2Node_CustomEvent_bResult' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsCanOpenExternalWebSite_ReturnValue) == 0x0004F6, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsCanOpenExternalWebSite_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, K2Node_Select_Default) == 0x0004F7, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_Array_Get_Item) == 0x000440, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_Array_Get_Item_1) == 0x000450, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, K2Node_MakeArray_Array_1) == 0x000460, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::K2Node_MakeArray_Array_1' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsVisible_ReturnValue_14) == 0x000470, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsVisible_ReturnValue_14' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_Not_PreBool_ReturnValue_8) == 0x000471, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_Not_PreBool_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_GetPlatformType_ReturnValue_1) == 0x000472, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_GetPlatformType_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000473, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x000474, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_13) == 0x000475, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_13' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, K2Node_CreateDelegate_OutputDelegate_15) == 0x000478, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::K2Node_CreateDelegate_OutputDelegate_15' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_Not_PreBool_ReturnValue_9) == 0x000488, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_Not_PreBool_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_GetOwningPlayer_ReturnValue_4) == 0x000490, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_GetOwningPlayer_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_Create_ReturnValue_4) == 0x000498, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_Create_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_14) == 0x0004A0, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_14' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_15) == 0x0004A1, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_15' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsVisible_ReturnValue_15) == 0x0004A2, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsVisible_ReturnValue_15' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_16) == 0x0004A3, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_16' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsVisible_ReturnValue_16) == 0x0004A4, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsVisible_ReturnValue_16' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsVisible_ReturnValue_17) == 0x0004A5, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsVisible_ReturnValue_17' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_17) == 0x0004A6, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_17' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsVisible_ReturnValue_18) == 0x0004A7, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsVisible_ReturnValue_18' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanAND_ReturnValue) == 0x0004A8, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsVisible_ReturnValue_19) == 0x0004A9, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsVisible_ReturnValue_19' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_GetDesiredFocusTarget_Target_2) == 0x0004B0, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_GetDesiredFocusTarget_Target_2' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_GetDesiredFocusTarget_Target_3) == 0x0004B8, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_GetDesiredFocusTarget_Target_3' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsVisible_ReturnValue_20) == 0x0004C0, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsVisible_ReturnValue_20' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsVisible_ReturnValue_21) == 0x0004C1, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsVisible_ReturnValue_21' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_18) == 0x0004C2, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_18' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_Not_PreBool_ReturnValue_10) == 0x0004C3, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_Not_PreBool_ReturnValue_10' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_GetPlatformType_ReturnValue_2) == 0x0004C4, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_GetPlatformType_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_EqualEqual_ByteByte_ReturnValue_4) == 0x0004C5, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_EqualEqual_ByteByte_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_EqualEqual_ByteByte_ReturnValue_5) == 0x0004C6, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_EqualEqual_ByteByte_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_19) == 0x0004C7, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_19' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_20) == 0x0004C8, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_20' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_GetLocalizedTextFromHandle_Text_2) == 0x0004D0, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_GetLocalizedTextFromHandle_Text_2' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_21) == 0x0004E8, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_21' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_Dialog_ReturnValue_2) == 0x0004EC, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_Dialog_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_BooleanOR_ReturnValue_22) == 0x0004FC, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_BooleanOR_ReturnValue_22' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, K2Node_CustomEvent_bResult) == 0x0004FD, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::K2Node_CustomEvent_bResult' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_IsCanOpenExternalWebSite_ReturnValue) == 0x0004FE, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_IsCanOpenExternalWebSite_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, K2Node_Select_Default) == 0x0004FF, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_Array_Get_Item_2) == 0x000500, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_Array_Get_Item_2' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, CallFunc_Array_Get_Item_3) == 0x000510, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::CallFunc_Array_Get_Item_3' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings, K2Node_MakeArray_Array_2) == 0x000520, "Member 'WBP_OptionSettings_C_ExecuteUbergraph_WBP_OptionSettings::K2Node_MakeArray_Array_2' has a wrong offset!");
 
-// Function WBP_OptionSettings.WBP_OptionSettings_C.Set Tab Action
-// 0x002C (0x002C - 0x0000)
-struct WBP_OptionSettings_C_Set_Tab_Action final
+// Function WBP_OptionSettings.WBP_OptionSettings_C.EmptyEvent
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_OptionSettings_C_EmptyEvent final
 {
 public:
-	bool                                          Bind;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4869[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0014(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0024(0x0004)(NoDestructor)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_1;      // 0x0028(0x0004)(NoDestructor)
+	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_OptionSettings_C_Set_Tab_Action) == 0x000004, "Wrong alignment on WBP_OptionSettings_C_Set_Tab_Action");
-static_assert(sizeof(WBP_OptionSettings_C_Set_Tab_Action) == 0x00002C, "Wrong size on WBP_OptionSettings_C_Set_Tab_Action");
-static_assert(offsetof(WBP_OptionSettings_C_Set_Tab_Action, Bind) == 0x000000, "Member 'WBP_OptionSettings_C_Set_Tab_Action::Bind' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_Set_Tab_Action, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'WBP_OptionSettings_C_Set_Tab_Action::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_Set_Tab_Action, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'WBP_OptionSettings_C_Set_Tab_Action::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_Set_Tab_Action, CallFunc_RegisterActionBinding_ReturnValue) == 0x000024, "Member 'WBP_OptionSettings_C_Set_Tab_Action::CallFunc_RegisterActionBinding_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_C_Set_Tab_Action, CallFunc_RegisterActionBinding_ReturnValue_1) == 0x000028, "Member 'WBP_OptionSettings_C_Set_Tab_Action::CallFunc_RegisterActionBinding_ReturnValue_1' has a wrong offset!");
+static_assert(alignof(WBP_OptionSettings_C_EmptyEvent) == 0x000001, "Wrong alignment on WBP_OptionSettings_C_EmptyEvent");
+static_assert(sizeof(WBP_OptionSettings_C_EmptyEvent) == 0x000001, "Wrong size on WBP_OptionSettings_C_EmptyEvent");
+static_assert(offsetof(WBP_OptionSettings_C_EmptyEvent, bResult) == 0x000000, "Member 'WBP_OptionSettings_C_EmptyEvent::bResult' has a wrong offset!");
 
-// Function WBP_OptionSettings.WBP_OptionSettings_C.SetDefault
+// Function WBP_OptionSettings.WBP_OptionSettings_C.ApplySettings
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_OptionSettings_C_SetDefault final
+struct WBP_OptionSettings_C_ApplySettings final
 {
 public:
 	bool                                          Confirmed;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_OptionSettings_C_SetDefault) == 0x000001, "Wrong alignment on WBP_OptionSettings_C_SetDefault");
-static_assert(sizeof(WBP_OptionSettings_C_SetDefault) == 0x000001, "Wrong size on WBP_OptionSettings_C_SetDefault");
-static_assert(offsetof(WBP_OptionSettings_C_SetDefault, Confirmed) == 0x000000, "Member 'WBP_OptionSettings_C_SetDefault::Confirmed' has a wrong offset!");
-
-// Function WBP_OptionSettings.WBP_OptionSettings_C.SwitchTabTo
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_OptionSettings_C_SwitchTabTo final
-{
-public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_OptionSettings_C_SwitchTabTo) == 0x000004, "Wrong alignment on WBP_OptionSettings_C_SwitchTabTo");
-static_assert(sizeof(WBP_OptionSettings_C_SwitchTabTo) == 0x000004, "Wrong size on WBP_OptionSettings_C_SwitchTabTo");
-static_assert(offsetof(WBP_OptionSettings_C_SwitchTabTo, Param_Index) == 0x000000, "Member 'WBP_OptionSettings_C_SwitchTabTo::Param_Index' has a wrong offset!");
+static_assert(alignof(WBP_OptionSettings_C_ApplySettings) == 0x000001, "Wrong alignment on WBP_OptionSettings_C_ApplySettings");
+static_assert(sizeof(WBP_OptionSettings_C_ApplySettings) == 0x000001, "Wrong size on WBP_OptionSettings_C_ApplySettings");
+static_assert(offsetof(WBP_OptionSettings_C_ApplySettings, Confirmed) == 0x000000, "Member 'WBP_OptionSettings_C_ApplySettings::Confirmed' has a wrong offset!");
 
 // Function WBP_OptionSettings.WBP_OptionSettings_C.BP_GetDesiredFocusTarget
 // 0x0028 (0x0028 - 0x0000)
@@ -465,7 +470,7 @@ public:
 	class UWidget*                                CallFunc_GetDesiredFocusTarget_Target;             // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsVisible_ReturnValue_1;                  // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_486A[0x6];                                     // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E48[0x6];                                     // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_GetDesiredFocusTarget_Target_1;           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsVisible_ReturnValue_2;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsVisible_ReturnValue_3;                  // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

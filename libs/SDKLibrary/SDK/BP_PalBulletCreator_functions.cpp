@@ -22,14 +22,14 @@ namespace SDK
 // Parameters:
 // class UObject*                          WorldContextObject                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class APalWeaponBase*                   Weapon                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TSubclassOf<class APalBullet>           bulletClass                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+// TSubclassOf<class APalBullet>           BulletClass                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 // struct FTransform                       SpawnTransform                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // ESpawnActorCollisionHandlingMethod      CollisionHandlingOverride                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           Owner                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class APawn*                            Instigator                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class APalBullet*                       ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 
-class APalBullet* UBP_PalBulletCreator_C::CreateBullet(const class UObject* WorldContextObject, class APalWeaponBase* Weapon, TSubclassOf<class APalBullet> bulletClass, const struct FTransform& SpawnTransform, ESpawnActorCollisionHandlingMethod CollisionHandlingOverride, class AActor* Owner, class APawn* Instigator)
+class APalBullet* UBP_PalBulletCreator_C::CreateBullet(const class UObject* WorldContextObject, class APalWeaponBase* Weapon, TSubclassOf<class APalBullet> BulletClass, const struct FTransform& SpawnTransform, ESpawnActorCollisionHandlingMethod CollisionHandlingOverride, class AActor* Owner, class APawn* Instigator)
 {
 	static class UFunction* Func = nullptr;
 
@@ -40,7 +40,7 @@ class APalBullet* UBP_PalBulletCreator_C::CreateBullet(const class UObject* Worl
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.Weapon = Weapon;
-	Parms.bulletClass = bulletClass;
+	Parms.BulletClass = BulletClass;
 	Parms.SpawnTransform = std::move(SpawnTransform);
 	Parms.CollisionHandlingOverride = CollisionHandlingOverride;
 	Parms.Owner = Owner;

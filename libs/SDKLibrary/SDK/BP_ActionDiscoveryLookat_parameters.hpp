@@ -15,7 +15,7 @@ namespace SDK::Params
 {
 
 // Function BP_ActionDiscoveryLookat.BP_ActionDiscoveryLookat_C.ExecuteUbergraph_BP_ActionDiscoveryLookat
-// 0x0088 (0x0088 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat final
 {
 public:
@@ -30,16 +30,18 @@ public:
 	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_3;         // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalCharacterMovementComponent*         CallFunc_GetPalCharacterMovementComponent_ReturnValue; // 0x0050(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_4;         // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_41A3[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalCharacterMovementComponent*         CallFunc_GetPalCharacterMovementComponent_ReturnValue_1; // 0x0068(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_5;         // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_6;         // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue_1;          // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_40B2[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_4;         // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_40B3[0x7];                                     // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalCharacterMovementComponent*         CallFunc_GetPalCharacterMovementComponent_ReturnValue_1; // 0x0070(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_5;         // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_6;         // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue_1;          // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat) == 0x000008, "Wrong alignment on BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat");
-static_assert(sizeof(BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat) == 0x000088, "Wrong size on BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat");
+static_assert(sizeof(BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat) == 0x000090, "Wrong size on BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat");
 static_assert(offsetof(BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat, EntryPoint) == 0x000000, "Member 'BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat, K2Node_Event_DeltaTime) == 0x000004, "Member 'BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat::K2Node_Event_DeltaTime' has a wrong offset!");
 static_assert(offsetof(BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat, CallFunc_GetActionCharacter_ReturnValue) == 0x000008, "Member 'BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat::CallFunc_GetActionCharacter_ReturnValue' has a wrong offset!");
@@ -51,12 +53,13 @@ static_assert(offsetof(BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDisc
 static_assert(offsetof(BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat, CallFunc_GetActionCharacter_ReturnValue_3) == 0x000040, "Member 'BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat::CallFunc_GetActionCharacter_ReturnValue_3' has a wrong offset!");
 static_assert(offsetof(BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat, CallFunc_GetController_ReturnValue) == 0x000048, "Member 'BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat::CallFunc_GetController_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat, CallFunc_GetPalCharacterMovementComponent_ReturnValue) == 0x000050, "Member 'BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat::CallFunc_GetPalCharacterMovementComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat, CallFunc_GetActionCharacter_ReturnValue_4) == 0x000058, "Member 'BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat::CallFunc_GetActionCharacter_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat, CallFunc_IsDedicatedServer_ReturnValue) == 0x000060, "Member 'BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat, CallFunc_GetPalCharacterMovementComponent_ReturnValue_1) == 0x000068, "Member 'BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat::CallFunc_GetPalCharacterMovementComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat, CallFunc_GetActionCharacter_ReturnValue_5) == 0x000070, "Member 'BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat::CallFunc_GetActionCharacter_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat, CallFunc_GetActionCharacter_ReturnValue_6) == 0x000078, "Member 'BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat::CallFunc_GetActionCharacter_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat, CallFunc_IsDedicatedServer_ReturnValue_1) == 0x000080, "Member 'BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat::CallFunc_IsDedicatedServer_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat, CallFunc_IsValid_ReturnValue) == 0x000058, "Member 'BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat, CallFunc_GetActionCharacter_ReturnValue_4) == 0x000060, "Member 'BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat::CallFunc_GetActionCharacter_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat, CallFunc_IsDedicatedServer_ReturnValue) == 0x000068, "Member 'BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat, CallFunc_GetPalCharacterMovementComponent_ReturnValue_1) == 0x000070, "Member 'BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat::CallFunc_GetPalCharacterMovementComponent_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat, CallFunc_GetActionCharacter_ReturnValue_5) == 0x000078, "Member 'BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat::CallFunc_GetActionCharacter_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat, CallFunc_GetActionCharacter_ReturnValue_6) == 0x000080, "Member 'BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat::CallFunc_GetActionCharacter_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat, CallFunc_IsDedicatedServer_ReturnValue_1) == 0x000088, "Member 'BP_ActionDiscoveryLookat_C_ExecuteUbergraph_BP_ActionDiscoveryLookat::CallFunc_IsDedicatedServer_ReturnValue_1' has a wrong offset!");
 
 // Function BP_ActionDiscoveryLookat.BP_ActionDiscoveryLookat_C.OnFinishedFX
 // 0x0008 (0x0008 - 0x0000)

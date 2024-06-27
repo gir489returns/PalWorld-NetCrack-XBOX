@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "BP_Status_WithVisualEffect_classes.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK

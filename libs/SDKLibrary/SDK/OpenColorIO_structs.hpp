@@ -30,7 +30,7 @@ struct FOpenColorIOColorSpace final
 public:
 	class FString                                 ColorSpaceName;                                    // 0x0000(0x0010)(Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ColorSpaceIndex;                                   // 0x0010(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_187B[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1887[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 FamilyName;                                        // 0x0018(0x0010)(Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FOpenColorIOColorSpace) == 0x000008, "Wrong alignment on FOpenColorIOColorSpace");
@@ -62,7 +62,7 @@ public:
 	struct FOpenColorIOColorSpace                 DestinationColorSpace;                             // 0x0030(0x0028)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FOpenColorIODisplayView                DestinationDisplayView;                            // 0x0058(0x0020)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	EOpenColorIOViewTransformDirection            DisplayViewDirection;                              // 0x0078(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_187C[0x7];                                     // 0x0079(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1888[0x7];                                     // 0x0079(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOpenColorIOColorConversionSettings) == 0x000008, "Wrong alignment on FOpenColorIOColorConversionSettings");
 static_assert(sizeof(FOpenColorIOColorConversionSettings) == 0x000080, "Wrong size on FOpenColorIOColorConversionSettings");
@@ -78,7 +78,7 @@ struct FOpenColorIODisplayConfiguration final
 {
 public:
 	bool                                          bIsEnabled;                                        // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_187D[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1889[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FOpenColorIOColorConversionSettings    ColorConfiguration;                                // 0x0008(0x0080)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FOpenColorIODisplayConfiguration) == 0x000008, "Wrong alignment on FOpenColorIODisplayConfiguration");

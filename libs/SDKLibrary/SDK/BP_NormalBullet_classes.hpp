@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "BP_AttackBulletBase_classes.hpp"
 #include "Engine_structs.hpp"
+#include "BP_AttackBulletBase_classes.hpp"
 
 
 namespace SDK
@@ -19,7 +19,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_NormalBullet.BP_NormalBullet_C
 // 0x0010 (0x0380 - 0x0370)
-class ABP_NormalBullet_C final : public ABP_AttackBulletBase_C
+class ABP_NormalBullet_C : public ABP_AttackBulletBase_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_NormalBullet_C;                  // 0x0370(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

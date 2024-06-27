@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -20,10 +20,10 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_ActionRandomRest.BP_ActionRandomRest_C
 // 0x0040 (0x0180 - 0x0140)
-class UBP_ActionRandomRest_C final : public UPalActionBase
+class UBP_ActionRandomRest_C : public UPalActionBase
 {
 public:
-	uint8                                         Pad_4198[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3906[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0140(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UAnimMontage*                           CurrentMontage;                                    // 0x0148(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FPalRandomRestInfo                     CurrentRestInfo;                                   // 0x0150(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
@@ -33,6 +33,7 @@ public:
 
 public:
 	void ExecuteUbergraph_BP_ActionRandomRest(int32 EntryPoint);
+	struct FPalRandomRestInfo GetRandomRestInfo();
 	void OnBeginAction();
 	void OnBlendOut_4551F62E41169AB9D4D27C8A2A1A7EE2(class FName NotifyName);
 	void OnBlendOut_903852264ADDCC5C76468EB1B01885D1(class FName NotifyName);

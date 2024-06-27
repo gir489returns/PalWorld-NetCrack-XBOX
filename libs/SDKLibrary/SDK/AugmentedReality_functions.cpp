@@ -3286,100 +3286,6 @@ void UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy::GeoTrackingAvailabili
 }
 
 
-// Function AugmentedReality.ARSharedWorldGameMode.GetARSharedWorldGameState
-// (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
-// Parameters:
-// class AARSharedWorldGameState*          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class AARSharedWorldGameState* AARSharedWorldGameMode::GetARSharedWorldGameState()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSharedWorldGameMode", "GetARSharedWorldGameState");
-
-	Params::ARSharedWorldGameMode_GetARSharedWorldGameState Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AugmentedReality.ARSharedWorldGameMode.SetARSharedWorldData
-// (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
-// Parameters:
-// TArray<uint8>                           ARWorldData                                            (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
-
-void AARSharedWorldGameMode::SetARSharedWorldData(const TArray<uint8>& ARWorldData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSharedWorldGameMode", "SetARSharedWorldData");
-
-	Params::ARSharedWorldGameMode_SetARSharedWorldData Parms{};
-
-	Parms.ARWorldData = std::move(ARWorldData);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AugmentedReality.ARSharedWorldGameMode.SetARWorldSharingIsReady
-// (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
-
-void AARSharedWorldGameMode::SetARWorldSharingIsReady()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSharedWorldGameMode", "SetARWorldSharingIsReady");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AugmentedReality.ARSharedWorldGameMode.SetPreviewImageData
-// (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
-// Parameters:
-// TArray<uint8>                           ImageData                                              (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
-
-void AARSharedWorldGameMode::SetPreviewImageData(const TArray<uint8>& ImageData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSharedWorldGameMode", "SetPreviewImageData");
-
-	Params::ARSharedWorldGameMode_SetPreviewImageData Parms{};
-
-	Parms.ImageData = std::move(ImageData);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function AugmentedReality.GetGeoLocationAsyncTaskBlueprintProxy.GetGeoLocationAtWorldPosition
 // (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -3604,31 +3510,6 @@ float UARBasicLightEstimate::GetAmbientIntensityLumens() const
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
-}
-
-
-// Function AugmentedReality.ARSkyLight.SetEnvironmentCaptureProbe
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UAREnvironmentCaptureProbe*       InCaptureProbe                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AARSkyLight::SetEnvironmentCaptureProbe(class UAREnvironmentCaptureProbe* InCaptureProbe)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSkyLight", "SetEnvironmentCaptureProbe");
-
-	Params::ARSkyLight_SetEnvironmentCaptureProbe Parms{};
-
-	Parms.InCaptureProbe = InCaptureProbe;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
 }
 
 
@@ -4613,6 +4494,100 @@ bool UARSessionConfig::ShouldResetTrackedObjects() const
 }
 
 
+// Function AugmentedReality.ARSharedWorldGameMode.GetARSharedWorldGameState
+// (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+// Parameters:
+// class AARSharedWorldGameState*          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class AARSharedWorldGameState* AARSharedWorldGameMode::GetARSharedWorldGameState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARSharedWorldGameMode", "GetARSharedWorldGameState");
+
+	Params::ARSharedWorldGameMode_GetARSharedWorldGameState Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AugmentedReality.ARSharedWorldGameMode.SetARSharedWorldData
+// (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+// Parameters:
+// TArray<uint8>                           ARWorldData                                            (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+
+void AARSharedWorldGameMode::SetARSharedWorldData(const TArray<uint8>& ARWorldData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARSharedWorldGameMode", "SetARSharedWorldData");
+
+	Params::ARSharedWorldGameMode_SetARSharedWorldData Parms{};
+
+	Parms.ARWorldData = std::move(ARWorldData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AugmentedReality.ARSharedWorldGameMode.SetARWorldSharingIsReady
+// (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+
+void AARSharedWorldGameMode::SetARWorldSharingIsReady()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARSharedWorldGameMode", "SetARWorldSharingIsReady");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AugmentedReality.ARSharedWorldGameMode.SetPreviewImageData
+// (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
+// Parameters:
+// TArray<uint8>                           ImageData                                              (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+
+void AARSharedWorldGameMode::SetPreviewImageData(const TArray<uint8>& ImageData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARSharedWorldGameMode", "SetPreviewImageData");
+
+	Params::ARSharedWorldGameMode_SetPreviewImageData Parms{};
+
+	Parms.ImageData = std::move(ImageData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function AugmentedReality.ARSharedWorldGameState.K2_OnARWorldMapIsReady
 // (Event, Public, BlueprintEvent)
 
@@ -4722,6 +4697,31 @@ void AARSharedWorldPlayerController::ServerMarkReadyForReceiving()
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AugmentedReality.ARSkyLight.SetEnvironmentCaptureProbe
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UAREnvironmentCaptureProbe*       InCaptureProbe                                         (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void AARSkyLight::SetEnvironmentCaptureProbe(class UAREnvironmentCaptureProbe* InCaptureProbe)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ARSkyLight", "SetEnvironmentCaptureProbe");
+
+	Params::ARSkyLight_SetEnvironmentCaptureProbe Parms{};
+
+	Parms.InCaptureProbe = InCaptureProbe;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }

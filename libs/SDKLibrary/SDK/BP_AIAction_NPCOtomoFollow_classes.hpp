@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "BP_AIAction_CanCombatBase_classes.hpp"
 #include "Engine_structs.hpp"
+#include "BP_AIAction_CanCombatBase_classes.hpp"
 #include "AIModule_structs.hpp"
 
 
@@ -30,12 +30,13 @@ public:
 public:
 	void ActionAbort(class APawn* ControlledPawn);
 	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
-	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
-	void ExecuteUbergraph_BP_AIAction_NPCOtomoFollow(int32 EntryPoint);
-	void OnFail_9D776B464FB7F1A972DAFDBCCA1BDFFF(EPathFollowingResult MovementResult);
-	void OnSuccess_9D776B464FB7F1A972DAFDBCCA1BDFFF(EPathFollowingResult MovementResult);
 	void ActionPause(class APawn* ControlledPawn);
 	void ActionStart(class APawn* ControlledPawn);
+	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
+	void ExecuteUbergraph_BP_AIAction_NPCOtomoFollow(int32 EntryPoint);
+	void FindTrainerKillEnemy(class AActor** Enemy);
+	void OnFail_9D776B464FB7F1A972DAFDBCCA1BDFFF(EPathFollowingResult MovementResult);
+	void OnSuccess_9D776B464FB7F1A972DAFDBCCA1BDFFF(EPathFollowingResult MovementResult);
 
 public:
 	static class UClass* StaticClass()

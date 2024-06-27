@@ -171,5 +171,25 @@ void ABP_MonsterAIController_MarchantPal_C::_________1(const struct FPalDeadInfo
 	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function BP_MonsterAIController_MarchantPal.BP_MonsterAIController_MarchantPal_C.«¹¿à¤ÙóÈ_2
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalVisualEffectBase*             VisualEffect                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MonsterAIController_MarchantPal_C::_________2(class UPalVisualEffectBase* VisualEffect)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MonsterAIController_MarchantPal_C", "«¹¿à¤ÙóÈ_2");
+
+	Params::BP_MonsterAIController_MarchantPal_C__________2 Parms{};
+
+	Parms.VisualEffect = VisualEffect;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
 }
 

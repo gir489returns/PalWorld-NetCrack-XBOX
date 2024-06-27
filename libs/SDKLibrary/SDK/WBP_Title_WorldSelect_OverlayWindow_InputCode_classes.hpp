@@ -10,17 +10,17 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "Engine_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Title_WorldSelect_OverlayWindow_InputCode.WBP_Title_WorldSelect_OverlayWindow_InputCode_C
-// 0x00A8 (0x04E8 - 0x0440)
+// 0x00B8 (0x04F8 - 0x0440)
 class UWBP_Title_WorldSelect_OverlayWindow_InputCode_C final : public UPalUIJoinGameInputCodeBase
 {
 public:
@@ -30,41 +30,46 @@ public:
 	class UBP_PalTextBlock_C*                     BP_PalTextBlock_C_166;                             // 0x0458(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCircularThrobber*                      CircularThrobber_26;                               // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UEditableTextBox*                       EditableTextBox_Code;                              // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Line;                                              // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Overlay_Wait;                                      // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBP_PalTextBlock_C*                     Text_Caution;                                      // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBP_PalTextBlock_C*                     Text_Title;                                        // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Menu_btn_C*                        WBP_Menu_btn_Close;                                // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_PalCommonWindow_C*                 WBP_PalCommonWindow;                               // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_SettingsButton_C*            WBP_Title_SettingsButton;                          // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FTimerHandle                           TimeoutTmerHandle;                                 // 0x04A8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    InputPassWordMsgID;                                // 0x04B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    InputCodeMsgID;                                    // 0x04C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                    HintTextMsgID;                                     // 0x04D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	EPalUIJoinGameInputCodeType                   InputMode;                                         // 0x04E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 IconShowHide;                                      // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Line;                                              // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_Wait;                                      // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBP_PalTextBlock_C*                     Text_Caution;                                      // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBP_PalTextBlock_C*                     Text_Title;                                        // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Menu_btn_C*                        WBP_Menu_btn_Close;                                // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_PalCommonWindow_C*                 WBP_PalCommonWindow;                               // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_PalInvisibleButton_C*              WBP_PalInvisibleButton_ShoiwHideInviteCode;        // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_SettingsButton_C*            WBP_Title_SettingsButton;                          // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FTimerHandle                           TimeoutTmerHandle;                                 // 0x04B8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    InputPassWordMsgID;                                // 0x04C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    InputCodeMsgID;                                    // 0x04D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                    HintTextMsgID;                                     // 0x04E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	EPalUIJoinGameInputCodeType                   InputMode;                                         // 0x04F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bShowInviteCode;                                   // 0x04F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_Buildup_Player_WBP_Menu_btn_Close_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature();
-	void BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_1_OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text);
-	void BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
-	void BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_WBP_Title_SettingsButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
-	void ChangeMode(EPalUIJoinGameInputCodeType Param_InputMode);
-	void CloseWaitWIndow();
-	void Construct();
-	class UWidget* CustomNavi_ToCloseButton(EUINavigation Param_Navigation);
-	class UWidget* CustomNavi_ToTextBox(EUINavigation Param_Navigation);
-	void Destruct();
-	void ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode(int32 EntryPoint);
-	void On_Cancel_Action();
-	void OnConfirmInternal();
-	void OnInitialized();
-	void OnNotifyVerifyInviteCode(bool IsValidCode, bool IsRequirePassword);
-	void OnNotifyVerifyInviteCodeImpl(bool IsValidCode, bool IsRequirePassword);
-	void OnNotifyVerifyPassword(bool IsMatchPassword);
-	void OnNotifyVerifyPasswordImpl(bool IsValidPassword);
-	void OnSetup();
-	void OnTimer_TimeoutWaitResponse();
+	void ShowHideInputText();
 	void OpenWaitWindow();
+	void OnTimer_TimeoutWaitResponse();
+	void OnSetup();
+	void OnNotifyVerifyPasswordImpl(bool IsValidPassword);
+	void OnNotifyVerifyPassword(bool IsMatchPassword);
+	void OnNotifyVerifyInviteCodeImpl(bool IsValidCode, bool IsRequirePassword);
+	void OnNotifyVerifyInviteCode(bool IsValidCode, bool IsRequirePassword);
+	void OnInitialized();
+	void OnConfirmInternal();
+	void On_Cancel_Action();
+	void ExecuteUbergraph_WBP_Title_WorldSelect_OverlayWindow_InputCode(int32 EntryPoint);
+	void Destruct();
+	class UWidget* CustomNavi_ToTextBox(EUINavigation Param_Navigation);
+	class UWidget* CustomNavi_ToCloseButton(EUINavigation Param_Navigation);
+	void Construct();
+	void CloseWaitWIndow();
+	void ChangeMode(EPalUIJoinGameInputCodeType Param_InputMode);
+	void BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_WBP_Title_SettingsButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
+	void BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_WBP_PalInvisibleButton_ShoiwHideInviteCode_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
+	void BndEvt__WBP_Title_WorldSelect_OverlayWindow_InputCode_EditableTextBox_Code_K2Node_ComponentBoundEvent_1_OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text);
+	void BndEvt__WBP_Buildup_Player_WBP_Menu_btn_Close_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 
@@ -79,25 +84,28 @@ public:
 	}
 };
 static_assert(alignof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C) == 0x000008, "Wrong alignment on UWBP_Title_WorldSelect_OverlayWindow_InputCode_C");
-static_assert(sizeof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C) == 0x0004E8, "Wrong size on UWBP_Title_WorldSelect_OverlayWindow_InputCode_C");
+static_assert(sizeof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C) == 0x0004F8, "Wrong size on UWBP_Title_WorldSelect_OverlayWindow_InputCode_C");
 static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, UberGraphFrame) == 0x000440, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, Anm_Caution) == 0x000448, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::Anm_Caution' has a wrong offset!");
 static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, Anm_Edit_OnToOff) == 0x000450, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::Anm_Edit_OnToOff' has a wrong offset!");
 static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, BP_PalTextBlock_C_166) == 0x000458, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::BP_PalTextBlock_C_166' has a wrong offset!");
 static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, CircularThrobber_26) == 0x000460, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::CircularThrobber_26' has a wrong offset!");
 static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, EditableTextBox_Code) == 0x000468, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::EditableTextBox_Code' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, Line) == 0x000470, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::Line' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, Overlay_Wait) == 0x000478, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::Overlay_Wait' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, Text_Caution) == 0x000480, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::Text_Caution' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, Text_Title) == 0x000488, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::Text_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, WBP_Menu_btn_Close) == 0x000490, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::WBP_Menu_btn_Close' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, WBP_PalCommonWindow) == 0x000498, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::WBP_PalCommonWindow' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, WBP_Title_SettingsButton) == 0x0004A0, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::WBP_Title_SettingsButton' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, TimeoutTmerHandle) == 0x0004A8, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::TimeoutTmerHandle' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, InputPassWordMsgID) == 0x0004B0, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::InputPassWordMsgID' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, InputCodeMsgID) == 0x0004C0, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::InputCodeMsgID' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, HintTextMsgID) == 0x0004D0, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::HintTextMsgID' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, InputMode) == 0x0004E0, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::InputMode' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, IconShowHide) == 0x000470, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::IconShowHide' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, Line) == 0x000478, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::Line' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, Overlay_Wait) == 0x000480, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::Overlay_Wait' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, Text_Caution) == 0x000488, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::Text_Caution' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, Text_Title) == 0x000490, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::Text_Title' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, WBP_Menu_btn_Close) == 0x000498, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::WBP_Menu_btn_Close' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, WBP_PalCommonWindow) == 0x0004A0, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::WBP_PalCommonWindow' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, WBP_PalInvisibleButton_ShoiwHideInviteCode) == 0x0004A8, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::WBP_PalInvisibleButton_ShoiwHideInviteCode' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, WBP_Title_SettingsButton) == 0x0004B0, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::WBP_Title_SettingsButton' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, TimeoutTmerHandle) == 0x0004B8, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::TimeoutTmerHandle' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, InputPassWordMsgID) == 0x0004C0, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::InputPassWordMsgID' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, InputCodeMsgID) == 0x0004D0, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::InputCodeMsgID' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, HintTextMsgID) == 0x0004E0, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::HintTextMsgID' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, InputMode) == 0x0004F0, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::InputMode' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSelect_OverlayWindow_InputCode_C, bShowInviteCode) == 0x0004F1, "Member 'UWBP_Title_WorldSelect_OverlayWindow_InputCode_C::bShowInviteCode' has a wrong offset!");
 
 }
 

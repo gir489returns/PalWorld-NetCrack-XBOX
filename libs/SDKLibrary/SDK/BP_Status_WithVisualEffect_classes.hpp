@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -34,7 +34,8 @@ public:
 public:
 	void ExecuteUbergraph_BP_Status_WithVisualEffect(int32 EntryPoint);
 	void HasSelfPalElement(EPalElementType MyElement, bool* Has);
-	void HideReAddEffectWhenCapture();
+	void HideReAddEffect();
+	void HideReAddEffectWhenInActiveOtomo();
 	void IsIgnoreElement(EPalAdditionalEffectType AddEffect, bool* Ignore);
 	void OnBeginStatus();
 	void OnEndStatus();

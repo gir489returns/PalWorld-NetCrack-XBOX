@@ -18,49 +18,13 @@
 namespace SDK
 {
 
-// Class TimeManagement.TimeManagementBlueprintLibrary
-// 0x0000 (0x0028 - 0x0028)
-class UTimeManagementBlueprintLibrary final : public UBlueprintFunctionLibrary
-{
-public:
-	static struct FFrameNumber Add_FrameNumberFrameNumber(const struct FFrameNumber& A, const struct FFrameNumber& B);
-	static struct FFrameNumber Add_FrameNumberInteger(const struct FFrameNumber& A, int32 B);
-	static int32 Conv_FrameNumberToInteger(const struct FFrameNumber& InFrameNumber);
-	static float Conv_FrameRateToSeconds(const struct FFrameRate& InFrameRate);
-	static float Conv_QualifiedFrameTimeToSeconds(const struct FQualifiedFrameTime& InFrameTime);
-	static class FString Conv_TimecodeToString(const struct FTimecode& InTimecode, bool bForceSignDisplay);
-	static struct FFrameNumber Divide_FrameNumberInteger(const struct FFrameNumber& A, int32 B);
-	static struct FTimecode GetTimecode();
-	static struct FFrameRate GetTimecodeFrameRate();
-	static bool IsValid_Framerate(const struct FFrameRate& InFrameRate);
-	static bool IsValid_MultipleOf(const struct FFrameRate& InFrameRate, const struct FFrameRate& OtherFramerate);
-	static struct FFrameNumber Multiply_FrameNumberInteger(const struct FFrameNumber& A, int32 B);
-	static struct FFrameTime Multiply_SecondsFrameRate(float TimeInSeconds, const struct FFrameRate& FrameRate);
-	static struct FFrameTime SnapFrameTimeToRate(const struct FFrameTime& SourceTime, const struct FFrameRate& SourceRate, const struct FFrameRate& SnapToRate);
-	static struct FFrameNumber Subtract_FrameNumberFrameNumber(const struct FFrameNumber& A, const struct FFrameNumber& B);
-	static struct FFrameNumber Subtract_FrameNumberInteger(const struct FFrameNumber& A, int32 B);
-	static struct FFrameTime TransformTime(const struct FFrameTime& SourceTime, const struct FFrameRate& SourceRate, const struct FFrameRate& DestinationRate);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"TimeManagementBlueprintLibrary">();
-	}
-	static class UTimeManagementBlueprintLibrary* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UTimeManagementBlueprintLibrary>();
-	}
-};
-static_assert(alignof(UTimeManagementBlueprintLibrary) == 0x000008, "Wrong alignment on UTimeManagementBlueprintLibrary");
-static_assert(sizeof(UTimeManagementBlueprintLibrary) == 0x000028, "Wrong size on UTimeManagementBlueprintLibrary");
-
 // Class TimeManagement.TimeSynchronizationSource
 // 0x0008 (0x0030 - 0x0028)
 class UTimeSynchronizationSource : public UObject
 {
 public:
 	bool                                          bUseForSynchronization;                            // 0x0028(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1214[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_124A[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         FrameOffset;                                       // 0x002C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
@@ -101,7 +65,7 @@ class UGenlockedCustomTimeStep : public UFixedFrameRateCustomTimeStep
 {
 public:
 	bool                                          bAutoDetectFormat;                                 // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1215[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_124B[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -125,7 +89,7 @@ public:
 	struct FFrameRate                             FrameRate;                                         // 0x0030(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShouldBlock;                                      // 0x0038(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bForceSingleFrameDeltaTime;                        // 0x0039(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1216[0x16];                                    // 0x003A(0x0016)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_124C[0x16];                                    // 0x003A(0x0016)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -149,7 +113,7 @@ class UGenlockedTimecodeProvider final : public UTimecodeProvider
 {
 public:
 	bool                                          bUseGenlockToCount;                                // 0x0030(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1217[0x27];                                    // 0x0031(0x0027)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_124D[0x27];                                    // 0x0031(0x0027)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -164,6 +128,42 @@ public:
 static_assert(alignof(UGenlockedTimecodeProvider) == 0x000008, "Wrong alignment on UGenlockedTimecodeProvider");
 static_assert(sizeof(UGenlockedTimecodeProvider) == 0x000058, "Wrong size on UGenlockedTimecodeProvider");
 static_assert(offsetof(UGenlockedTimecodeProvider, bUseGenlockToCount) == 0x000030, "Member 'UGenlockedTimecodeProvider::bUseGenlockToCount' has a wrong offset!");
+
+// Class TimeManagement.TimeManagementBlueprintLibrary
+// 0x0000 (0x0028 - 0x0028)
+class UTimeManagementBlueprintLibrary final : public UBlueprintFunctionLibrary
+{
+public:
+	static struct FFrameNumber Add_FrameNumberFrameNumber(const struct FFrameNumber& A, const struct FFrameNumber& B);
+	static struct FFrameNumber Add_FrameNumberInteger(const struct FFrameNumber& A, int32 B);
+	static int32 Conv_FrameNumberToInteger(const struct FFrameNumber& InFrameNumber);
+	static float Conv_FrameRateToSeconds(const struct FFrameRate& InFrameRate);
+	static float Conv_QualifiedFrameTimeToSeconds(const struct FQualifiedFrameTime& InFrameTime);
+	static class FString Conv_TimecodeToString(const struct FTimecode& InTimecode, bool bForceSignDisplay);
+	static struct FFrameNumber Divide_FrameNumberInteger(const struct FFrameNumber& A, int32 B);
+	static struct FTimecode GetTimecode();
+	static struct FFrameRate GetTimecodeFrameRate();
+	static bool IsValid_Framerate(const struct FFrameRate& InFrameRate);
+	static bool IsValid_MultipleOf(const struct FFrameRate& InFrameRate, const struct FFrameRate& OtherFramerate);
+	static struct FFrameNumber Multiply_FrameNumberInteger(const struct FFrameNumber& A, int32 B);
+	static struct FFrameTime Multiply_SecondsFrameRate(float TimeInSeconds, const struct FFrameRate& FrameRate);
+	static struct FFrameTime SnapFrameTimeToRate(const struct FFrameTime& SourceTime, const struct FFrameRate& SourceRate, const struct FFrameRate& SnapToRate);
+	static struct FFrameNumber Subtract_FrameNumberFrameNumber(const struct FFrameNumber& A, const struct FFrameNumber& B);
+	static struct FFrameNumber Subtract_FrameNumberInteger(const struct FFrameNumber& A, int32 B);
+	static struct FFrameTime TransformTime(const struct FFrameTime& SourceTime, const struct FFrameRate& SourceRate, const struct FFrameRate& DestinationRate);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"TimeManagementBlueprintLibrary">();
+	}
+	static class UTimeManagementBlueprintLibrary* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UTimeManagementBlueprintLibrary>();
+	}
+};
+static_assert(alignof(UTimeManagementBlueprintLibrary) == 0x000008, "Wrong alignment on UTimeManagementBlueprintLibrary");
+static_assert(sizeof(UTimeManagementBlueprintLibrary) == 0x000028, "Wrong size on UTimeManagementBlueprintLibrary");
 
 }
 

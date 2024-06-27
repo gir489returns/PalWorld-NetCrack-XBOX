@@ -217,7 +217,7 @@ void ABP_PalPlayerCaptureSet_C::ReceiveTick(float DeltaSeconds)
 // Function BP_PalPlayerCaptureSet.BP_PalPlayerCaptureSet_C.RequestByCharacterMakeInfo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPalPlayerDataCharacterMakeInfo  MakeInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FPalPlayerDataCharacterMakeInfo  MakeInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 
 void ABP_PalPlayerCaptureSet_C::RequestByCharacterMakeInfo(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo)
 {

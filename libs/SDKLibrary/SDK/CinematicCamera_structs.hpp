@@ -27,6 +27,35 @@ enum class ECameraFocusMethod : uint8
 	MAX                                      = 4,
 };
 
+// ScriptStruct CinematicCamera.CameraFilmbackSettings
+// 0x000C (0x000C - 0x0000)
+struct FCameraFilmbackSettings final
+{
+public:
+	float                                         SensorWidth;                                       // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SensorHeight;                                      // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SensorAspectRatio;                                 // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FCameraFilmbackSettings) == 0x000004, "Wrong alignment on FCameraFilmbackSettings");
+static_assert(sizeof(FCameraFilmbackSettings) == 0x00000C, "Wrong size on FCameraFilmbackSettings");
+static_assert(offsetof(FCameraFilmbackSettings, SensorWidth) == 0x000000, "Member 'FCameraFilmbackSettings::SensorWidth' has a wrong offset!");
+static_assert(offsetof(FCameraFilmbackSettings, SensorHeight) == 0x000004, "Member 'FCameraFilmbackSettings::SensorHeight' has a wrong offset!");
+static_assert(offsetof(FCameraFilmbackSettings, SensorAspectRatio) == 0x000008, "Member 'FCameraFilmbackSettings::SensorAspectRatio' has a wrong offset!");
+
+// ScriptStruct CinematicCamera.NamedFilmbackPreset
+// 0x0020 (0x0020 - 0x0000)
+struct FNamedFilmbackPreset final
+{
+public:
+	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FCameraFilmbackSettings                FilmbackSettings;                                  // 0x0010(0x000C)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3632[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FNamedFilmbackPreset) == 0x000008, "Wrong alignment on FNamedFilmbackPreset");
+static_assert(sizeof(FNamedFilmbackPreset) == 0x000020, "Wrong size on FNamedFilmbackPreset");
+static_assert(offsetof(FNamedFilmbackPreset, Name) == 0x000000, "Member 'FNamedFilmbackPreset::Name' has a wrong offset!");
+static_assert(offsetof(FNamedFilmbackPreset, FilmbackSettings) == 0x000010, "Member 'FNamedFilmbackPreset::FilmbackSettings' has a wrong offset!");
+
 // ScriptStruct CinematicCamera.CameraLensSettings
 // 0x001C (0x001C - 0x0000)
 struct FCameraLensSettings final
@@ -57,41 +86,12 @@ struct FNamedLensPreset final
 public:
 	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FCameraLensSettings                    LensSettings;                                      // 0x0010(0x001C)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_349B[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3633[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FNamedLensPreset) == 0x000008, "Wrong alignment on FNamedLensPreset");
 static_assert(sizeof(FNamedLensPreset) == 0x000030, "Wrong size on FNamedLensPreset");
 static_assert(offsetof(FNamedLensPreset, Name) == 0x000000, "Member 'FNamedLensPreset::Name' has a wrong offset!");
 static_assert(offsetof(FNamedLensPreset, LensSettings) == 0x000010, "Member 'FNamedLensPreset::LensSettings' has a wrong offset!");
-
-// ScriptStruct CinematicCamera.CameraFilmbackSettings
-// 0x000C (0x000C - 0x0000)
-struct FCameraFilmbackSettings final
-{
-public:
-	float                                         SensorWidth;                                       // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SensorHeight;                                      // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SensorAspectRatio;                                 // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FCameraFilmbackSettings) == 0x000004, "Wrong alignment on FCameraFilmbackSettings");
-static_assert(sizeof(FCameraFilmbackSettings) == 0x00000C, "Wrong size on FCameraFilmbackSettings");
-static_assert(offsetof(FCameraFilmbackSettings, SensorWidth) == 0x000000, "Member 'FCameraFilmbackSettings::SensorWidth' has a wrong offset!");
-static_assert(offsetof(FCameraFilmbackSettings, SensorHeight) == 0x000004, "Member 'FCameraFilmbackSettings::SensorHeight' has a wrong offset!");
-static_assert(offsetof(FCameraFilmbackSettings, SensorAspectRatio) == 0x000008, "Member 'FCameraFilmbackSettings::SensorAspectRatio' has a wrong offset!");
-
-// ScriptStruct CinematicCamera.NamedFilmbackPreset
-// 0x0020 (0x0020 - 0x0000)
-struct FNamedFilmbackPreset final
-{
-public:
-	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FCameraFilmbackSettings                FilmbackSettings;                                  // 0x0010(0x000C)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_349C[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FNamedFilmbackPreset) == 0x000008, "Wrong alignment on FNamedFilmbackPreset");
-static_assert(sizeof(FNamedFilmbackPreset) == 0x000020, "Wrong size on FNamedFilmbackPreset");
-static_assert(offsetof(FNamedFilmbackPreset, Name) == 0x000000, "Member 'FNamedFilmbackPreset::Name' has a wrong offset!");
-static_assert(offsetof(FNamedFilmbackPreset, FilmbackSettings) == 0x000010, "Member 'FNamedFilmbackPreset::FilmbackSettings' has a wrong offset!");
 
 // ScriptStruct CinematicCamera.PlateCropSettings
 // 0x0004 (0x0004 - 0x0000)
@@ -111,7 +111,7 @@ struct FNamedPlateCropPreset final
 public:
 	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPlateCropSettings                     CropSettings;                                      // 0x0010(0x0004)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_349D[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3634[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FNamedPlateCropPreset) == 0x000008, "Wrong alignment on FNamedPlateCropPreset");
 static_assert(sizeof(FNamedPlateCropPreset) == 0x000018, "Wrong size on FNamedPlateCropPreset");
@@ -126,7 +126,7 @@ public:
 	TSoftObjectPtr<class AActor>                  ActorToTrack;                                      // 0x0000(0x0030)(Edit, BlueprintVisible, Interp, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                RelativeOffset;                                    // 0x0030(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bDrawDebugTrackingFocusPoint : 1;                  // 0x0048(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_349E[0x7];                                     // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3635[0x7];                                     // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FCameraTrackingFocusSettings) == 0x000008, "Wrong alignment on FCameraTrackingFocusSettings");
 static_assert(sizeof(FCameraTrackingFocusSettings) == 0x000050, "Wrong size on FCameraTrackingFocusSettings");
@@ -139,14 +139,14 @@ struct FCameraFocusSettings final
 {
 public:
 	ECameraFocusMethod                            FocusMethod;                                       // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_349F[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3636[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ManualFocusDistance;                               // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FCameraTrackingFocusSettings           TrackingFocusSettings;                             // 0x0008(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	uint8                                         bSmoothFocusChanges : 1;                           // 0x0058(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_34A0[0x3];                                     // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3637[0x3];                                     // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         FocusSmoothingInterpSpeed;                         // 0x005C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         FocusOffset;                                       // 0x0060(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_34A1[0x4];                                     // 0x0064(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3638[0x4];                                     // 0x0064(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FCameraFocusSettings) == 0x000008, "Wrong alignment on FCameraFocusSettings");
 static_assert(sizeof(FCameraFocusSettings) == 0x000068, "Wrong size on FCameraFocusSettings");
@@ -163,13 +163,13 @@ struct FCameraLookatTrackingSettings final
 public:
 	uint8                                         bEnableLookAtTracking : 1;                         // 0x0000(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bDrawDebugLookAtTrackingPosition : 1;              // 0x0000(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_34A2[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3639[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         LookAtTrackingInterpSpeed;                         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_34A3[0x18];                                    // 0x0008(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_363A[0x18];                                    // 0x0008(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class AActor>                  ActorToTrack;                                      // 0x0020(0x0030)(Edit, BlueprintVisible, Interp, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                RelativeOffset;                                    // 0x0050(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bAllowRoll : 1;                                    // 0x0068(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_34A4[0x7];                                     // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_363B[0x7];                                     // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FCameraLookatTrackingSettings) == 0x000008, "Wrong alignment on FCameraLookatTrackingSettings");
 static_assert(sizeof(FCameraLookatTrackingSettings) == 0x000070, "Wrong size on FCameraLookatTrackingSettings");

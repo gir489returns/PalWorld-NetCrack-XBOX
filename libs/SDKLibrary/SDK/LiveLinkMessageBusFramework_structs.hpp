@@ -39,7 +39,7 @@ public:
 	class FString                                 MachineName;                                       // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGuid                                  PollRequest;                                       // 0x0020(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         LiveLinkVersion;                                   // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_35AA[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3777[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CreationPlatformTime;                              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FLiveLinkPongMessage) == 0x000008, "Wrong alignment on FLiveLinkPongMessage");
@@ -66,7 +66,7 @@ static_assert(offsetof(FLiveLinkConnectMessage, LiveLinkVersion) == 0x000000, "M
 struct FLiveLinkHeartbeatMessage final
 {
 public:
-	uint8                                         Pad_35AB[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3778[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLiveLinkHeartbeatMessage) == 0x000001, "Wrong alignment on FLiveLinkHeartbeatMessage");
 static_assert(sizeof(FLiveLinkHeartbeatMessage) == 0x000001, "Wrong size on FLiveLinkHeartbeatMessage");

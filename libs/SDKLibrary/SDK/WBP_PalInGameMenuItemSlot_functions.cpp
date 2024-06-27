@@ -51,40 +51,6 @@ void UWBP_PalInGameMenuItemSlot_C::ExecuteUbergraph_WBP_PalInGameMenuItemSlot(in
 }
 
 
-// Function WBP_PalInGameMenuItemSlot.WBP_PalInGameMenuItemSlot_C.UpdateSlotEvent
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalItemSlot*                     Param_TargetSlot                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalInGameMenuItemSlot_C::UpdateSlotEvent(class UPalItemSlot* Param_TargetSlot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalInGameMenuItemSlot_C", "UpdateSlotEvent");
-
-	Params::WBP_PalInGameMenuItemSlot_C_UpdateSlotEvent Parms{};
-
-	Parms.Param_TargetSlot = Param_TargetSlot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalInGameMenuItemSlot.WBP_PalInGameMenuItemSlot_C.ValidSlotEvent
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalInGameMenuItemSlot_C::ValidSlotEvent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalInGameMenuItemSlot_C", "ValidSlotEvent");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_PalInGameMenuItemSlot.WBP_PalInGameMenuItemSlot_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -117,6 +83,40 @@ void UWBP_PalInGameMenuItemSlot_C::RegisterItemIconWidget(class UWBP_PalItemIcon
 
 	if (IconWidget != nullptr)
 		*IconWidget = Parms.IconWidget;
+}
+
+
+// Function WBP_PalInGameMenuItemSlot.WBP_PalInGameMenuItemSlot_C.UpdateSlotEvent
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalItemSlot*                     Param_TargetSlot                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalInGameMenuItemSlot_C::UpdateSlotEvent(class UPalItemSlot* Param_TargetSlot)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalInGameMenuItemSlot_C", "UpdateSlotEvent");
+
+	Params::WBP_PalInGameMenuItemSlot_C_UpdateSlotEvent Parms{};
+
+	Parms.Param_TargetSlot = Param_TargetSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalInGameMenuItemSlot.WBP_PalInGameMenuItemSlot_C.ValidSlotEvent
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalInGameMenuItemSlot_C::ValidSlotEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalInGameMenuItemSlot_C", "ValidSlotEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

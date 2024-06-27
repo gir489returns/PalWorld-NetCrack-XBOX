@@ -27,7 +27,7 @@ public:
 	TSet<class AActor*>                           SelectedActors;                                    // 0x0020(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FGLTFExportMessages                    OutMessages;                                       // 0x0070(0x0030)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x00A0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_236B[0x7];                                     // 0x00A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23DA[0x7];                                     // 0x00A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GLTFExporter_ExportToGLTF) == 0x000008, "Wrong alignment on GLTFExporter_ExportToGLTF");
 static_assert(sizeof(GLTFExporter_ExportToGLTF) == 0x0000A8, "Wrong size on GLTFExporter_ExportToGLTF");

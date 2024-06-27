@@ -15,44 +15,44 @@ namespace SDK::Params
 {
 
 // Function BP_ActionReturnToBaseCamp.BP_ActionReturnToBaseCamp_C.ExecuteUbergraph_BP_ActionReturnToBaseCamp
-// 0x00A8 (0x00A8 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D6C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_406E[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaTime;                            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsLocalControlActor_ReturnValue;          // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D6D[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_406F[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalPlayerController*                   K2Node_DynamicCast_AsPal_Player_Controller;        // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D6E[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4070[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_Event_NotifyName;                           // 0x002C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D6F[0x3];                                     // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue_1;        // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4071[0x2];                                     // 0x0036(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_1;         // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsLocalControlActor_ReturnValue_1;        // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D70[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AController*                            CallFunc_GetController_ReturnValue_1;              // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalPlayerController*                   K2Node_DynamicCast_AsPal_Player_Controller_1;      // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D71[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_2;         // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsLocalControlActor_ReturnValue_2;        // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D72[0x7];                                     // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AController*                            CallFunc_GetController_ReturnValue_2;              // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalPlayerController*                   K2Node_DynamicCast_AsPal_Player_Controller_2;      // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D73[0x7];                                     // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_3;         // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_2;         // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsLocalControlActor_ReturnValue_1;        // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsLocalControlActor_ReturnValue_2;        // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4072[0x6];                                     // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class AController*                            CallFunc_GetController_ReturnValue_1;              // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AController*                            CallFunc_GetController_ReturnValue_2;              // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerController*                   K2Node_DynamicCast_AsPal_Player_Controller_1;      // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4073[0x7];                                     // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalPlayerController*                   K2Node_DynamicCast_AsPal_Player_Controller_2;      // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4074[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_3;         // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_4;         // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalCharacterMovementComponent*         CallFunc_GetPalCharacterMovementComponent_ReturnValue; // 0x0090(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_4;         // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalCharacterMovementComponent*         CallFunc_GetPalCharacterMovementComponent_ReturnValue_1; // 0x00A0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalCharacterMovementComponent*         CallFunc_GetPalCharacterMovementComponent_ReturnValue_1; // 0x0098(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp) == 0x000008, "Wrong alignment on BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp");
-static_assert(sizeof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp) == 0x0000A8, "Wrong size on BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp");
+static_assert(sizeof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp) == 0x0000A0, "Wrong size on BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp");
 static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, EntryPoint) == 0x000000, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, CallFunc_GetActionCharacter_ReturnValue) == 0x000008, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::CallFunc_GetActionCharacter_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, K2Node_Event_DeltaTime) == 0x000010, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::K2Node_Event_DeltaTime' has a wrong offset!");
@@ -62,20 +62,21 @@ static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionRet
 static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, K2Node_Event_NotifyName) == 0x00002C, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::K2Node_Event_NotifyName' has a wrong offset!");
 static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000034, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, CallFunc_EqualEqual_NameName_ReturnValue_1) == 0x000035, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::CallFunc_EqualEqual_NameName_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, CallFunc_GetActionCharacter_ReturnValue_1) == 0x000038, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::CallFunc_GetActionCharacter_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, CallFunc_IsLocalControlActor_ReturnValue_1) == 0x000040, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::CallFunc_IsLocalControlActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, CallFunc_GetController_ReturnValue_1) == 0x000048, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::CallFunc_GetController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, K2Node_DynamicCast_AsPal_Player_Controller_1) == 0x000050, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::K2Node_DynamicCast_AsPal_Player_Controller_1' has a wrong offset!");
-static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, K2Node_DynamicCast_bSuccess_1) == 0x000058, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, CallFunc_GetActionCharacter_ReturnValue_2) == 0x000060, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::CallFunc_GetActionCharacter_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, CallFunc_IsLocalControlActor_ReturnValue_2) == 0x000068, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::CallFunc_IsLocalControlActor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, CallFunc_GetController_ReturnValue_2) == 0x000070, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::CallFunc_GetController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, K2Node_DynamicCast_AsPal_Player_Controller_2) == 0x000078, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::K2Node_DynamicCast_AsPal_Player_Controller_2' has a wrong offset!");
-static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, K2Node_DynamicCast_bSuccess_2) == 0x000080, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, CallFunc_GetActionCharacter_ReturnValue_3) == 0x000088, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::CallFunc_GetActionCharacter_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, CallFunc_GetActionCharacter_ReturnValue_2) == 0x000040, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::CallFunc_GetActionCharacter_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, CallFunc_IsLocalControlActor_ReturnValue_1) == 0x000048, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::CallFunc_IsLocalControlActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, CallFunc_IsLocalControlActor_ReturnValue_2) == 0x000049, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::CallFunc_IsLocalControlActor_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, CallFunc_GetController_ReturnValue_1) == 0x000050, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::CallFunc_GetController_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, CallFunc_GetController_ReturnValue_2) == 0x000058, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::CallFunc_GetController_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, K2Node_DynamicCast_AsPal_Player_Controller_1) == 0x000060, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::K2Node_DynamicCast_AsPal_Player_Controller_1' has a wrong offset!");
+static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, K2Node_DynamicCast_bSuccess_1) == 0x000068, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, K2Node_DynamicCast_AsPal_Player_Controller_2) == 0x000070, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::K2Node_DynamicCast_AsPal_Player_Controller_2' has a wrong offset!");
+static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, K2Node_DynamicCast_bSuccess_2) == 0x000078, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, CallFunc_GetActionCharacter_ReturnValue_3) == 0x000080, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::CallFunc_GetActionCharacter_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, CallFunc_GetActionCharacter_ReturnValue_4) == 0x000088, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::CallFunc_GetActionCharacter_ReturnValue_4' has a wrong offset!");
 static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, CallFunc_GetPalCharacterMovementComponent_ReturnValue) == 0x000090, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::CallFunc_GetPalCharacterMovementComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, CallFunc_GetActionCharacter_ReturnValue_4) == 0x000098, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::CallFunc_GetActionCharacter_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, CallFunc_GetPalCharacterMovementComponent_ReturnValue_1) == 0x0000A0, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::CallFunc_GetPalCharacterMovementComponent_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp, CallFunc_GetPalCharacterMovementComponent_ReturnValue_1) == 0x000098, "Member 'BP_ActionReturnToBaseCamp_C_ExecuteUbergraph_BP_ActionReturnToBaseCamp::CallFunc_GetPalCharacterMovementComponent_ReturnValue_1' has a wrong offset!");
 
 // Function BP_ActionReturnToBaseCamp.BP_ActionReturnToBaseCamp_C.OnNotifyBegin
 // 0x0008 (0x0008 - 0x0000)
