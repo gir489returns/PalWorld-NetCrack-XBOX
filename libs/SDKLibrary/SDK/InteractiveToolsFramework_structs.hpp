@@ -256,7 +256,7 @@ public:
 	struct FLinearColor                           Value;                                             // 0x0000(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bHasValue;                                         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bOverridesChildState;                              // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_198A[0x2];                                     // 0x0012(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1948[0x2];                                     // 0x0012(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FGizmoElementColorAttribute) == 0x000004, "Wrong alignment on FGizmoElementColorAttribute");
 static_assert(sizeof(FGizmoElementColorAttribute) == 0x000014, "Wrong size on FGizmoElementColorAttribute");
@@ -271,7 +271,7 @@ struct FGizmoElementMaterialAttribute final
 public:
 	TWeakObjectPtr<class UMaterialInterface>      Value;                                             // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bOverridesChildState;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_198B[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1949[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FGizmoElementMaterialAttribute) == 0x000004, "Wrong alignment on FGizmoElementMaterialAttribute");
 static_assert(sizeof(FGizmoElementMaterialAttribute) == 0x00000C, "Wrong size on FGizmoElementMaterialAttribute");
@@ -345,7 +345,7 @@ static_assert(offsetof(FGizmoFloatParameterChange, CurrentValue) == 0x000004, "M
 struct alignas(0x08) FBrushStampData final
 {
 public:
-	uint8                                         Pad_198C[0x128];                                   // 0x0000(0x0128)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_194A[0x128];                                   // 0x0000(0x0128)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FBrushStampData) == 0x000008, "Wrong alignment on FBrushStampData");
 static_assert(sizeof(FBrushStampData) == 0x000128, "Wrong size on FBrushStampData");
@@ -356,7 +356,7 @@ struct FBehaviorInfo final
 {
 public:
 	class UInputBehavior*                         Behavior;                                          // 0x0000(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_198D[0x18];                                    // 0x0008(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_194B[0x18];                                    // 0x0008(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FBehaviorInfo) == 0x000008, "Wrong alignment on FBehaviorInfo");
 static_assert(sizeof(FBehaviorInfo) == 0x000020, "Wrong size on FBehaviorInfo");
@@ -367,7 +367,7 @@ static_assert(offsetof(FBehaviorInfo, Behavior) == 0x000000, "Member 'FBehaviorI
 struct alignas(0x08) FInputRayHit final
 {
 public:
-	uint8                                         Pad_198E[0x38];                                    // 0x0000(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_194C[0x38];                                    // 0x0000(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FInputRayHit) == 0x000008, "Wrong alignment on FInputRayHit");
 static_assert(sizeof(FInputRayHit) == 0x000038, "Wrong size on FInputRayHit");
@@ -378,7 +378,7 @@ struct FActiveGizmo final
 {
 public:
 	class UInteractiveGizmo*                      Gizmo;                                             // 0x0000(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_198F[0x28];                                    // 0x0008(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_194D[0x28];                                    // 0x0008(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FActiveGizmo) == 0x000008, "Wrong alignment on FActiveGizmo");
 static_assert(sizeof(FActiveGizmo) == 0x000030, "Wrong size on FActiveGizmo");

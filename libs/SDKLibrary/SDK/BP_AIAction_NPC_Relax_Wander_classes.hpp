@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "BP_AIAction_NPC_Relax_PathWalk_classes.hpp"
 #include "Engine_structs.hpp"
+#include "BP_AIAction_NPC_Relax_PathWalk_classes.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -32,13 +32,13 @@ public:
 	int32                                         WalkAreaSplit_Num;                                 // 0x02C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActionStart(class APawn* ControlledPawn);
 	void ExecuteUbergraph_BP_AIAction_NPC_Relax_Wander(int32 EntryPoint);
 	void Get_Arrivable_Location(const struct FVector& V, bool* Result, struct FVector* Location);
 	void OnStuck();
 	void OnTargetPointUpdateStart();
 	void SelectTargetNode(struct FVector* Location, int32* Param_Index);
 	void TryGetTargetLocation(int32 TryCount, bool* Result, struct FVector* Location);
+	void ActionStart(class APawn* ControlledPawn);
 
 public:
 	static class UClass* StaticClass()

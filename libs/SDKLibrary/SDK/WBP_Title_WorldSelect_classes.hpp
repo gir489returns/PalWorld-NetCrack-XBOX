@@ -71,7 +71,7 @@ public:
 	FMulticastInlineDelegateProperty_             OnClickedNewWorldButton;                           // 0x03D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnClickedStartWorldButton;                         // 0x03E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          IsOpenedLocalWorldMenu;                            // 0x03F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39B1[0x7];                                     // 0x03F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_49F3[0x7];                                     // 0x03F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_Title_WorldSelect_ListContent_C*   CachedLastClickedWorldButton;                      // 0x0400(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_             OnClickedWorldSettingButton;                       // 0x0408(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UWBP_Title_SettingsButton_C*            CachedLastClickLocalWorldMenuButton;               // 0x0418(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -99,26 +99,6 @@ public:
 	FMulticastInlineDelegateProperty_             OnClickedServerList_PreviousButton;                // 0x06B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void Update_Local_World_List_Content(const class FString& WorldPathName, const struct FPalUILocalWorldDisplayData& DisplayData);
-	void SortTypeStringToSortType(const class FString& SortTypeString, EPalUIServerListSortType* SortType);
-	void SetupComboboxStringData();
-	void SetRegions(TArray<class FString>& Regions);
-	void SearchCommit(const class FText& Text);
-	void OpenLocalWorldMenu();
-	void OnSelectedServerSortType__DelegateSignature(EPalUIServerListSortType SortType);
-	void OnInitialized();
-	void OnClickedWorldSettingButton__DelegateSignature();
-	void OnClickedWorldButton_Internal(class UWBP_Title_WorldSelect_ListContent_C* Widget);
-	void OnClickedWorldButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* ButtonWidget);
-	void OnClickedStartWorldButton__DelegateSignature();
-	void OnClickedServerSearchButton__DelegateSignature(const class FString& SearchWord);
-	void OnClickedServerList_PreviousButton__DelegateSignature();
-	void OnClickedServerList_OfficialButton__DelegateSignature();
-	void OnClickedServerList_NextButton__DelegateSignature();
-	void OnClickedServerList_HistoryButton__DelegateSignature();
-	void OnClickedServerList_CommunityButton__DelegateSignature();
-	void OnClickedServerButton_Internal(class UWBP_Title_WorldSelect_ListContent_C* Widget);
-	void OnClickedServerButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* Widget);
 	void OnClickedSelectBackupButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* SelectedWorldButton);
 	void OnClickedOpenDirectoryButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* SelectedWorldButton);
 	void OnClickedNewWorldButton_Internal(class UWBP_Title_WorldSelect_CreateWorld_ListContent_C* Widget);
@@ -160,6 +140,26 @@ public:
 	void AnmEvent_ToJoinServerMode();
 	void AddServerList(TArray<struct FPalUIServerDisplayData>& ServerDisplayData);
 	void AddLocalWorldDisplayData(TArray<struct FPalUILocalWorldDisplayData>& DisplayDataArray);
+	void OnClickedServerButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* Widget);
+	void OnClickedServerButton_Internal(class UWBP_Title_WorldSelect_ListContent_C* Widget);
+	void OnClickedServerList_CommunityButton__DelegateSignature();
+	void OnClickedServerList_HistoryButton__DelegateSignature();
+	void OnClickedServerList_NextButton__DelegateSignature();
+	void OnClickedServerList_OfficialButton__DelegateSignature();
+	void OnClickedServerList_PreviousButton__DelegateSignature();
+	void OnClickedServerSearchButton__DelegateSignature(const class FString& SearchWord);
+	void OnClickedStartWorldButton__DelegateSignature();
+	void OnClickedWorldButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* ButtonWidget);
+	void OnClickedWorldButton_Internal(class UWBP_Title_WorldSelect_ListContent_C* Widget);
+	void OnClickedWorldSettingButton__DelegateSignature();
+	void OnInitialized();
+	void OnSelectedServerSortType__DelegateSignature(EPalUIServerListSortType SortType);
+	void OpenLocalWorldMenu();
+	void SearchCommit(const class FText& Text);
+	void SetRegions(TArray<class FString>& Regions);
+	void SetupComboboxStringData();
+	void SortTypeStringToSortType(const class FString& SortTypeString, EPalUIServerListSortType* SortType);
+	void Update_Local_World_List_Content(const class FString& WorldPathName, const struct FPalUILocalWorldDisplayData& DisplayData);
 
 public:
 	static class UClass* StaticClass()

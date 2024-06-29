@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "E_PalItemShopTabType_structs.hpp"
 #include "Pal_structs.hpp"
+#include "E_PalItemShopTabType_structs.hpp"
 #include "Engine_structs.hpp"
-#include "BP_PalIncidentBase_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "BP_PalIncidentBase_classes.hpp"
 
 
 namespace SDK
@@ -31,22 +31,22 @@ public:
 	class UPalNPCMultiTalkHandle*                 MultiTalkHandle;                                   // 0x0180(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsTalking;                                         // 0x0188(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsShopping;                                        // 0x0189(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45B7[0x6];                                     // 0x018A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4635[0x6];                                     // 0x018A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_PalIncidentCamera_C*                Camera;                                            // 0x0190(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 PlayerViewTarget;                                  // 0x0198(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class FString                                 TalkSequence;                                      // 0x01A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                          IsDelayFinish;                                     // 0x01B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45B8[0x7];                                     // 0x01B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4636[0x7];                                     // 0x01B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        DelayFinishElapsedTime;                            // 0x01B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalHUDDispatchParameterBase*           ItemShopHUDParameter;                              // 0x01C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UPalHUDDispatchParameterBase*           PalShopHUDParameter;                               // 0x01C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	E_PalItemShopTabType                          OpenItemShopTabType;                               // 0x01D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	E_PalItemShopTabType                          OpenPalShopTabType;                                // 0x01D1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45B9[0x2];                                     // 0x01D2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4637[0x2];                                     // 0x01D2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGuid                                  TalkUIID;                                          // 0x01D4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGuid                                  ItemShopUIID;                                      // 0x01E4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGuid                                  PalShopUIID;                                       // 0x01F4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45BA[0x4];                                     // 0x0204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4638[0x4];                                     // 0x0204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           CustomFunctionNames;                               // 0x0208(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:

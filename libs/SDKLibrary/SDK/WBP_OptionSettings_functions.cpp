@@ -17,108 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_OptionSettings.WBP_OptionSettings_C.SwitchTabTo
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OptionSettings_C::SwitchTabTo(int32 Param_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_C", "SwitchTabTo");
-
-	Params::WBP_OptionSettings_C_SwitchTabTo Parms{};
-
-	Parms.Param_Index = Param_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OptionSettings.WBP_OptionSettings_C.SetDefaultAction
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_OptionSettings_C::SetDefaultAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_C", "SetDefaultAction");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_OptionSettings.WBP_OptionSettings_C.SetDefault
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Confirmed                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OptionSettings_C::SetDefault(bool Confirmed)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_C", "SetDefault");
-
-	Params::WBP_OptionSettings_C_SetDefault Parms{};
-
-	Parms.Confirmed = Confirmed;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OptionSettings.WBP_OptionSettings_C.Set Tab Action
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Bind                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OptionSettings_C::Set_Tab_Action(bool Bind)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_C", "Set Tab Action");
-
-	Params::WBP_OptionSettings_C_Set_Tab_Action Parms{};
-
-	Parms.Bind = Bind;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OptionSettings.WBP_OptionSettings_C.PreTab
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_OptionSettings_C::PreTab()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_C", "PreTab");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_OptionSettings.WBP_OptionSettings_C.OpenPanel
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_OptionSettings_C::OpenPanel()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_C", "OpenPanel");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_OptionSettings.WBP_OptionSettings_C.NextTab
 // (BlueprintCallable, BlueprintEvent)
 
@@ -468,6 +366,108 @@ void UWBP_OptionSettings_C::ApplySettings(bool Confirmed)
 	Params::WBP_OptionSettings_C_ApplySettings Parms{};
 
 	Parms.Confirmed = Confirmed;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OptionSettings.WBP_OptionSettings_C.OpenPanel
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_OptionSettings_C::OpenPanel()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_C", "OpenPanel");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OptionSettings.WBP_OptionSettings_C.PreTab
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_OptionSettings_C::PreTab()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_C", "PreTab");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OptionSettings.WBP_OptionSettings_C.Set Tab Action
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Bind                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OptionSettings_C::Set_Tab_Action(bool Bind)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_C", "Set Tab Action");
+
+	Params::WBP_OptionSettings_C_Set_Tab_Action Parms{};
+
+	Parms.Bind = Bind;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OptionSettings.WBP_OptionSettings_C.SetDefault
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Confirmed                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OptionSettings_C::SetDefault(bool Confirmed)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_C", "SetDefault");
+
+	Params::WBP_OptionSettings_C_SetDefault Parms{};
+
+	Parms.Confirmed = Confirmed;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OptionSettings.WBP_OptionSettings_C.SetDefaultAction
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_OptionSettings_C::SetDefaultAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_C", "SetDefaultAction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OptionSettings.WBP_OptionSettings_C.SwitchTabTo
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OptionSettings_C::SwitchTabTo(int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_C", "SwitchTabTo");
+
+	Params::WBP_OptionSettings_C_SwitchTabTo Parms{};
+
+	Parms.Param_Index = Param_Index;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

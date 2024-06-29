@@ -112,27 +112,6 @@ void UWBP_CharaCre_ScrollBoxContent_Hair_C::GetRestoreFocusTarget(class UWidget*
 }
 
 
-// Function WBP_CharaCre_ScrollBoxContent_Hair.WBP_CharaCre_ScrollBoxContent_Hair_C.GetTopFocusTarget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget*                          Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CharaCre_ScrollBoxContent_Hair_C::GetTopFocusTarget(class UWidget** Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CharaCre_ScrollBoxContent_Hair_C", "GetTopFocusTarget");
-
-	Params::WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Widget != nullptr)
-		*Widget = Parms.Widget;
-}
-
-
 // Function WBP_CharaCre_ScrollBoxContent_Hair.WBP_CharaCre_ScrollBoxContent_Hair_C.OnChangedHairColor
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -190,6 +169,27 @@ void UWBP_CharaCre_ScrollBoxContent_Hair_C::OnSelectedHairColor__DelegateSignatu
 	Parms.HSV = std::move(HSV);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CharaCre_ScrollBoxContent_Hair.WBP_CharaCre_ScrollBoxContent_Hair_C.GetTopFocusTarget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWidget*                          Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CharaCre_ScrollBoxContent_Hair_C::GetTopFocusTarget(class UWidget** Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CharaCre_ScrollBoxContent_Hair_C", "GetTopFocusTarget");
+
+	Params::WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Widget != nullptr)
+		*Widget = Parms.Widget;
 }
 
 }

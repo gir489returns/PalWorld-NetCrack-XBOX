@@ -59,66 +59,6 @@ void UBP_AIAction_Warning_PointWalk_C::ActionFinished(class APawn* ControlledPaw
 }
 
 
-// Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.ActionPause
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_Warning_PointWalk_C::ActionPause(class APawn* ControlledPawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_Warning_PointWalk_C", "ActionPause");
-
-	Params::BP_AIAction_Warning_PointWalk_C_ActionPause Parms{};
-
-	Parms.ControlledPawn = ControlledPawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.ActionResume
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_Warning_PointWalk_C::ActionResume(class APawn* ControlledPawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_Warning_PointWalk_C", "ActionResume");
-
-	Params::BP_AIAction_Warning_PointWalk_C_ActionResume Parms{};
-
-	Parms.ControlledPawn = ControlledPawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.ActionStart
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_Warning_PointWalk_C::ActionStart(class APawn* ControlledPawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_Warning_PointWalk_C", "ActionStart");
-
-	Params::BP_AIAction_Warning_PointWalk_C_ActionStart Parms{};
-
-	Parms.ControlledPawn = ControlledPawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.ActionTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -215,26 +155,6 @@ void UBP_AIAction_Warning_PointWalk_C::Setup(const struct FVector& AttentionLoca
 }
 
 
-// Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.SoundEvent
-// (Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FVector                          EmitLocation                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_Warning_PointWalk_C::SoundEvent(const struct FVector& EmitLocation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_Warning_PointWalk_C", "SoundEvent");
-
-	Params::BP_AIAction_Warning_PointWalk_C_SoundEvent Parms{};
-
-	Parms.EmitLocation = std::move(EmitLocation);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.StartJump
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -302,6 +222,86 @@ void UBP_AIAction_Warning_PointWalk_C::UpdateMoveGoal()
 		Func = Class->GetFunction("BP_AIAction_Warning_PointWalk_C", "UpdateMoveGoal");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.ActionPause
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_Warning_PointWalk_C::ActionPause(class APawn* ControlledPawn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_Warning_PointWalk_C", "ActionPause");
+
+	Params::BP_AIAction_Warning_PointWalk_C_ActionPause Parms{};
+
+	Parms.ControlledPawn = ControlledPawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.ActionResume
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_Warning_PointWalk_C::ActionResume(class APawn* ControlledPawn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_Warning_PointWalk_C", "ActionResume");
+
+	Params::BP_AIAction_Warning_PointWalk_C_ActionResume Parms{};
+
+	Parms.ControlledPawn = ControlledPawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.ActionStart
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_Warning_PointWalk_C::ActionStart(class APawn* ControlledPawn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_Warning_PointWalk_C", "ActionStart");
+
+	Params::BP_AIAction_Warning_PointWalk_C_ActionStart Parms{};
+
+	Parms.ControlledPawn = ControlledPawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.SoundEvent
+// (Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector                          EmitLocation                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_Warning_PointWalk_C::SoundEvent(const struct FVector& EmitLocation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_Warning_PointWalk_C", "SoundEvent");
+
+	Params::BP_AIAction_Warning_PointWalk_C_SoundEvent Parms{};
+
+	Parms.EmitLocation = std::move(EmitLocation);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

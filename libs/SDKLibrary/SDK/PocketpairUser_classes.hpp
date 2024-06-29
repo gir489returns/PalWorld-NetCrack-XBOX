@@ -23,7 +23,7 @@ class UHTTPRequestAsyncFunction final : public UBlueprintAsyncActionBase
 {
 public:
 	FMulticastInlineDelegateProperty_             Completed;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CE1[0xA0];                                    // 0x0040(0x00A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C8E[0xA0];                                    // 0x0040(0x00A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UHTTPRequestAsyncFunction* HTTPRequestAsyncFunction(class UPocketpairUserSubsystem* Target, const class FString& URL, const class FString& Verb);
@@ -48,7 +48,7 @@ class USwitchUserUIDefaultOnlineSubsystemAsyncFunction final : public UBlueprint
 {
 public:
 	FMulticastInlineDelegateProperty_             Completed;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CE2[0x10];                                    // 0x0040(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C8F[0x10];                                    // 0x0040(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class USwitchUserUIDefaultOnlineSubsystemAsyncFunction* SwitchUserUIAsyncFunction(class UPocketpairUserSubsystem* Target);
@@ -73,7 +73,7 @@ class ULoginDefaultOnlineSubsystemAsyncFunction final : public UBlueprintAsyncAc
 {
 public:
 	FMulticastInlineDelegateProperty_             Completed;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CE3[0x10];                                    // 0x0040(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C90[0x10];                                    // 0x0040(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class ULoginDefaultOnlineSubsystemAsyncFunction* LoginDefaultAsyncFunction(class UPocketpairUserSubsystem* Target);
@@ -98,7 +98,7 @@ class ULoginEOSAsyncFunction final : public UBlueprintAsyncActionBase
 {
 public:
 	FMulticastInlineDelegateProperty_             Completed;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CE4[0x10];                                    // 0x0040(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C91[0x10];                                    // 0x0040(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class ULoginEOSAsyncFunction* LoginEOSAsyncFunction(class UPocketpairUserSubsystem* Target);
@@ -123,7 +123,7 @@ class UCreateSessionAsyncFunction final : public UBlueprintAsyncActionBase
 {
 public:
 	FMulticastInlineDelegateProperty_             Completed;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CE5[0xA0];                                    // 0x0040(0x00A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C92[0xA0];                                    // 0x0040(0x00A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UCreateSessionAsyncFunction* CreateSessionAsyncFunction(class UPocketpairUserSubsystem* Target, bool IsDedicatedServer, int32 PublicConnections, const class FString& InviteCode, const class FString& ServerName, const class FString& Desc, const class FString& ServerAddress, int32 ServerPort, bool IsPassword, const class FString& Version, const class FString& ServerType, const class FString& Region, const class FString& Namespace);
@@ -148,7 +148,7 @@ class UFindSessionsAsyncFunction final : public UBlueprintAsyncActionBase
 {
 public:
 	FMulticastInlineDelegateProperty_             Completed;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CE8[0x90];                                    // 0x0040(0x0090)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C95[0x90];                                    // 0x0040(0x0090)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UFindSessionsAsyncFunction* FindSessionsAsyncFunction(class UPocketpairUserSubsystem* Target, bool IsDedicatedServer, const class FString& InviteCode, const class FString& ServerType, const class FString& Region, const int32 LessThanTime, const class FString& WorldGUID, const class FString& Namespace);
@@ -173,7 +173,7 @@ class UJoinSessionAsyncFunction final : public UBlueprintAsyncActionBase
 {
 public:
 	FMulticastInlineDelegateProperty_             Completed;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CEB[0x138];                                   // 0x0040(0x0138)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C98[0x138];                                   // 0x0040(0x0138)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      Controller;                                        // 0x0178(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
@@ -197,7 +197,7 @@ class USanitizeDisplayNameAsyncFunction final : public UBlueprintAsyncActionBase
 {
 public:
 	FMulticastInlineDelegateProperty_             Completed;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CEC[0x18];                                    // 0x0040(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C99[0x18];                                    // 0x0040(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class USanitizeDisplayNameAsyncFunction* SanitizeDisplayNameAsyncFunction(class UPocketpairUserSubsystem* Target, const class FString& InString);
@@ -221,7 +221,7 @@ static_assert(offsetof(USanitizeDisplayNameAsyncFunction, Completed) == 0x000030
 class UPingIP final : public UObject
 {
 public:
-	uint8                                         Pad_1CED[0x28];                                    // 0x0028(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C9A[0x28];                                    // 0x0028(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnPingComplete;                                    // 0x0050(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnPingFailure;                                     // 0x0060(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
@@ -251,7 +251,7 @@ static_assert(offsetof(UPingIP, OnPingFailure) == 0x000060, "Member 'UPingIP::On
 class UPocketpairUserInfo final : public UObject
 {
 public:
-	uint8                                         Pad_1CEE[0x10];                                    // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C9B[0x10];                                    // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class FString GetDebugString() const;
@@ -278,7 +278,7 @@ class UPocketpairFriend final : public UObject
 {
 public:
 	class FString                                 DisplayName;                                       // 0x0028(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CEF[0x30];                                    // 0x0038(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C9C[0x30];                                    // 0x0038(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	struct FUniqueNetIdRepl GetNetId();
@@ -302,9 +302,9 @@ static_assert(offsetof(UPocketpairFriend, DisplayName) == 0x000028, "Member 'UPo
 class UPocketpairUserSubsystem final : public UGameInstanceSubsystem
 {
 public:
-	uint8                                         Pad_1CF0[0x38];                                    // 0x0030(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C9D[0x38];                                    // 0x0030(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPocketpairUserInfo*                    LocalUserInfo;                                     // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1CF1[0x228];                                   // 0x0070(0x0228)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C9E[0x228];                                   // 0x0070(0x0228)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AddPingResultCache(const class FString& Address, int32 Ping);
@@ -341,7 +341,7 @@ class UGDKActivityAsyncFunction final : public UBlueprintAsyncActionBase
 {
 public:
 	FMulticastInlineDelegateProperty_             Completed;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CF7[0x28];                                    // 0x0040(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CA4[0x28];                                    // 0x0040(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UGDKActivityAsyncFunction* GDKActivityAsyncFunction(class UPocketpairUserSubsystem* Target, const class FString& ConnectionString, int32 MaxPlayerNum, int32 CurrentPlayerNum);
@@ -366,7 +366,7 @@ class UGDKInviteAsyncFunction final : public UBlueprintAsyncActionBase
 {
 public:
 	FMulticastInlineDelegateProperty_             Completed;                                         // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CF8[0x8];                                     // 0x0040(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CA5[0x8];                                     // 0x0040(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UGDKInviteAsyncFunction* GDKInviteAsyncFunction(class UPocketpairUserSubsystem* Target);

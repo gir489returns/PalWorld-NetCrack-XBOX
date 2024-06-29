@@ -31,12 +31,12 @@ public:
 
 public:
 	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
-	void ActionPause(class APawn* ControlledPawn);
-	void ActionStart(class APawn* ControlledPawn);
 	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void ExecuteUbergraph_BP_AIAction_EatDeadBody(int32 EntryPoint);
 	void RecoverHP();
 	void SelfPawn(class AActor** Param_SelfPawn);
+	void ActionPause(class APawn* ControlledPawn);
+	void ActionStart(class APawn* ControlledPawn);
 
 public:
 	static class UClass* StaticClass()

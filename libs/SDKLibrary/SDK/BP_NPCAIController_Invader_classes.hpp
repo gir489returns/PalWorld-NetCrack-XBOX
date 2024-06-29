@@ -31,11 +31,11 @@ public:
 	void ForceBattleStartForOutside(class AActor* StartActor);
 	void OnInvaderArrived();
 	void OnInvaderArrivedDelegate__DelegateSignature();
-	void ReceiveBeginPlay();
 	void ReturnSpawnedPoint(const struct FVector& ReturnPos);
+	void StartMarch(const struct FVector& GoalPos);
+	void ReceiveBeginPlay();
 	void SetAutoDefaultAIAction();
 	void StartDefaultAIAction();
-	void StartMarch(const struct FVector& GoalPos);
 
 public:
 	static class UClass* StaticClass()

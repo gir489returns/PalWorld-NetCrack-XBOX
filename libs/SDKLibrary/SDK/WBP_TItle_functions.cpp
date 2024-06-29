@@ -17,21 +17,123 @@
 namespace SDK
 {
 
-// Function WBP_TItle.WBP_TItle_C.BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_TItle.WBP_TItle_C.WBP_TItle_AutoGenFunc
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWBP_Title_MenuButton_C*          ButtonWidget                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_TItle_C::BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature(class UWBP_Title_MenuButton_C* ButtonWidget)
+void UWBP_TItle_C::WBP_TItle_AutoGenFunc(bool bResult)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TItle_C", "BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature");
+		Func = Class->GetFunction("WBP_TItle_C", "WBP_TItle_AutoGenFunc");
 
-	Params::WBP_TItle_C_BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature Parms{};
+	Params::WBP_TItle_C_WBP_TItle_AutoGenFunc Parms{};
+
+	Parms.bResult = bResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_TItle.WBP_TItle_C.SwitchUser
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_TItle_C::SwitchUser()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_TItle_C", "SwitchUser");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_TItle.WBP_TItle_C.OpenQuitGameDialog
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_TItle_C::OpenQuitGameDialog()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_TItle_C", "OpenQuitGameDialog");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_TItle.WBP_TItle_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_TItle_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_TItle_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_TItle.WBP_TItle_C.OnClosedQuitGameDialog
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_TItle_C::OnClosedQuitGameDialog(bool bResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_TItle_C", "OnClosedQuitGameDialog");
+
+	Params::WBP_TItle_C_OnClosedQuitGameDialog Parms{};
+
+	Parms.bResult = bResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_TItle.WBP_TItle_C.OnClickedMenu_Internal
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_Title_MenuButton_C*          ButtonWidget                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_TItle_C::OnClickedMenu_Internal(class UWBP_Title_MenuButton_C* ButtonWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_TItle_C", "OnClickedMenu_Internal");
+
+	Params::WBP_TItle_C_OnClickedMenu_Internal Parms{};
 
 	Parms.ButtonWidget = ButtonWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_TItle.WBP_TItle_C.ExecuteUbergraph_WBP_TItle
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_TItle_C::ExecuteUbergraph_WBP_TItle(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_TItle_C", "ExecuteUbergraph_WBP_TItle");
+
+	Params::WBP_TItle_C_ExecuteUbergraph_WBP_TItle Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -61,123 +163,21 @@ void UWBP_TItle_C::Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD(const class UPocke
 }
 
 
-// Function WBP_TItle.WBP_TItle_C.ExecuteUbergraph_WBP_TItle
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_TItle_C::ExecuteUbergraph_WBP_TItle(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TItle_C", "ExecuteUbergraph_WBP_TItle");
-
-	Params::WBP_TItle_C_ExecuteUbergraph_WBP_TItle Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_TItle.WBP_TItle_C.OnClickedMenu_Internal
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_TItle.WBP_TItle_C.BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
 // class UWBP_Title_MenuButton_C*          ButtonWidget                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_TItle_C::OnClickedMenu_Internal(class UWBP_Title_MenuButton_C* ButtonWidget)
+void UWBP_TItle_C::BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature(class UWBP_Title_MenuButton_C* ButtonWidget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TItle_C", "OnClickedMenu_Internal");
+		Func = Class->GetFunction("WBP_TItle_C", "BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature");
 
-	Params::WBP_TItle_C_OnClickedMenu_Internal Parms{};
+	Params::WBP_TItle_C_BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature Parms{};
 
 	Parms.ButtonWidget = ButtonWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_TItle.WBP_TItle_C.OnClosedQuitGameDialog
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_TItle_C::OnClosedQuitGameDialog(bool bResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TItle_C", "OnClosedQuitGameDialog");
-
-	Params::WBP_TItle_C_OnClosedQuitGameDialog Parms{};
-
-	Parms.bResult = bResult;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_TItle.WBP_TItle_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_TItle_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TItle_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_TItle.WBP_TItle_C.OpenQuitGameDialog
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_TItle_C::OpenQuitGameDialog()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TItle_C", "OpenQuitGameDialog");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_TItle.WBP_TItle_C.SwitchUser
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_TItle_C::SwitchUser()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TItle_C", "SwitchUser");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_TItle.WBP_TItle_C.WBP_TItle_AutoGenFunc
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_TItle_C::WBP_TItle_AutoGenFunc(bool bResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TItle_C", "WBP_TItle_AutoGenFunc");
-
-	Params::WBP_TItle_C_WBP_TItle_AutoGenFunc Parms{};
-
-	Parms.bResult = bResult;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

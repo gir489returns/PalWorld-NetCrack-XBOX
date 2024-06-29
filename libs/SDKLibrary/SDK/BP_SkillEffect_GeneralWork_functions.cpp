@@ -65,20 +65,6 @@ void ABP_SkillEffect_GeneralWork_C::ExecuteUbergraph_BP_SkillEffect_GeneralWork(
 }
 
 
-// Function BP_SkillEffect_GeneralWork.BP_SkillEffect_GeneralWork_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_SkillEffect_GeneralWork_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_GeneralWork_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_SkillEffect_GeneralWork.BP_SkillEffect_GeneralWork_C.SetupCollision
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -98,6 +84,20 @@ void ABP_SkillEffect_GeneralWork_C::SetupCollision(const struct FVector& TargetL
 	Parms.ImpactPoint = std::move(ImpactPoint);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SkillEffect_GeneralWork.BP_SkillEffect_GeneralWork_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_SkillEffect_GeneralWork_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SkillEffect_GeneralWork_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

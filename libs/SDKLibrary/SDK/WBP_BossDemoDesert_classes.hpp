@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "WBP_BossDemoBase_classes.hpp"
 #include "Engine_structs.hpp"
+#include "WBP_BossDemoBase_classes.hpp"
 
 
 namespace SDK

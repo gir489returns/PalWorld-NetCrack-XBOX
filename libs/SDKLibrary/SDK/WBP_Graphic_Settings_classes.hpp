@@ -54,7 +54,7 @@ public:
 	TArray<struct FDataTableRowHandle>            LevelMsgIds;                                       // 0x03E8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 	TArray<struct FDataTableRowHandle>            LevelMsgIds_Graphic;                               // 0x03F8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 	bool                                          SomethingChanged;                                  // 0x0408(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A76[0x7];                                     // 0x0409(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3633[0x7];                                     // 0x0409(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<int32, EAntiAliasingMethod>              AAMap;                                             // 0x0410(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 	TArray<class FString>                         AASettings;                                        // 0x0460(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TMap<int32, class FString>                    FPSSelection;                                      // 0x0470(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -64,31 +64,31 @@ public:
 	TMap<int32, EUDLSSMode>                       DLSSMap;                                           // 0x04F0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void SetDefault();
-	void OnWindowChanged(int32 Selection);
-	void OnVSyncChanged(bool IsOn);
-	void OnViewDisChanged(int32 Selection);
-	void OnTextureChanged(int32 Selection);
-	void OnShadowChanged(int32 Selection);
-	void OnRideCameraChanged(double Value);
-	void OnResolutionChanged(int32 Selection);
-	void OnPresetChanged(int32 Selection);
-	void OnMotionBlurChanged(bool IsOn);
-	void OnMaxFPSChanged(int32 Selection);
-	void OnLODChanged(double Value);
-	void OnFOVChanged(double Value);
-	void OnFoliageChanged(int32 Selection);
-	void OnDLSSChanged(int32 DLSSLevel);
-	void OnCommonQualityChanged(int32 Selection);
-	void OnCameraShakeChanged(bool IsOn);
-	void OnCameraRecoilChanged(bool IsOn);
-	void OnBrightnessChanged(double Value);
-	void OnAutoContrastChanged(bool IsOn);
-	void OnAAChanged(int32 Selection);
-	void GetDisplayGraphicLevel(const struct FPalOptionGraphicsSettings& GraphicLevel, EPalOptionGraphicsLevel* Graphics___);
 	void ExecuteUbergraph_WBP_Graphic_Settings(int32 EntryPoint);
 	void Construct();
 	void ApplySettings();
+	void GetDisplayGraphicLevel(const struct FPalOptionGraphicsSettings& GraphicLevel, EPalOptionGraphicsLevel* Graphics___);
+	void OnAAChanged(int32 Selection);
+	void OnAutoContrastChanged(bool IsOn);
+	void OnBrightnessChanged(double Value);
+	void OnCameraRecoilChanged(bool IsOn);
+	void OnCameraShakeChanged(bool IsOn);
+	void OnCommonQualityChanged(int32 Selection);
+	void OnDLSSChanged(int32 DLSSLevel);
+	void OnFoliageChanged(int32 Selection);
+	void OnFOVChanged(double Value);
+	void OnLODChanged(double Value);
+	void OnMaxFPSChanged(int32 Selection);
+	void OnMotionBlurChanged(bool IsOn);
+	void OnPresetChanged(int32 Selection);
+	void OnResolutionChanged(int32 Selection);
+	void OnRideCameraChanged(double Value);
+	void OnShadowChanged(int32 Selection);
+	void OnTextureChanged(int32 Selection);
+	void OnViewDisChanged(int32 Selection);
+	void OnVSyncChanged(bool IsOn);
+	void OnWindowChanged(int32 Selection);
+	void SetDefault();
 
 public:
 	static class UClass* StaticClass()

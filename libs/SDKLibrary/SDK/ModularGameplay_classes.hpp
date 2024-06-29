@@ -73,7 +73,7 @@ static_assert(sizeof(UControllerComponent) == 0x0000A0, "Wrong size on UControll
 class UGameFrameworkComponentManager final : public UGameInstanceSubsystem
 {
 public:
-	uint8                                         Pad_13DC[0x208];                                   // 0x0030(0x0208)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13C1[0x208];                                   // 0x0030(0x0208)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AddReceiver(class AActor* Receiver, bool bAddOnlyInGameWorlds);

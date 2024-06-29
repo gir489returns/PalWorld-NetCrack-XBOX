@@ -22,65 +22,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetUIConfigButton
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_OptionSettings_ListContent_C_SetUIConfigButton final
-{
-public:
-	class FName                                   UIActionName;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECommonInputType                              InputType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DAF[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FKey                                   Key;                                               // 0x0010(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_OptionSettings_ListContent_C_SetUIConfigButton) == 0x000008, "Wrong alignment on WBP_OptionSettings_ListContent_C_SetUIConfigButton");
-static_assert(sizeof(WBP_OptionSettings_ListContent_C_SetUIConfigButton) == 0x000028, "Wrong size on WBP_OptionSettings_ListContent_C_SetUIConfigButton");
-static_assert(offsetof(WBP_OptionSettings_ListContent_C_SetUIConfigButton, UIActionName) == 0x000000, "Member 'WBP_OptionSettings_ListContent_C_SetUIConfigButton::UIActionName' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_ListContent_C_SetUIConfigButton, InputType) == 0x000008, "Member 'WBP_OptionSettings_ListContent_C_SetUIConfigButton::InputType' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_ListContent_C_SetUIConfigButton, Key) == 0x000010, "Member 'WBP_OptionSettings_ListContent_C_SetUIConfigButton::Key' has a wrong offset!");
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetSwitcher
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_OptionSettings_ListContent_C_SetSwitcher final
-{
-public:
-	bool                                          CurrentOn;                                         // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_OptionSettings_ListContent_C_SetSwitcher) == 0x000001, "Wrong alignment on WBP_OptionSettings_ListContent_C_SetSwitcher");
-static_assert(sizeof(WBP_OptionSettings_ListContent_C_SetSwitcher) == 0x000001, "Wrong size on WBP_OptionSettings_ListContent_C_SetSwitcher");
-static_assert(offsetof(WBP_OptionSettings_ListContent_C_SetSwitcher, CurrentOn) == 0x000000, "Member 'WBP_OptionSettings_ListContent_C_SetSwitcher::CurrentOn' has a wrong offset!");
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetSlider
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_OptionSettings_ListContent_C_SetSlider final
-{
-public:
-	double                                        CurrentValue;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Min;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Max;                                               // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        FixedChangeValue;                                  // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          UseFixedValue;                                     // 0x0020(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_OptionSettings_ListContent_C_SetSlider) == 0x000008, "Wrong alignment on WBP_OptionSettings_ListContent_C_SetSlider");
-static_assert(sizeof(WBP_OptionSettings_ListContent_C_SetSlider) == 0x000028, "Wrong size on WBP_OptionSettings_ListContent_C_SetSlider");
-static_assert(offsetof(WBP_OptionSettings_ListContent_C_SetSlider, CurrentValue) == 0x000000, "Member 'WBP_OptionSettings_ListContent_C_SetSlider::CurrentValue' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_ListContent_C_SetSlider, Min) == 0x000008, "Member 'WBP_OptionSettings_ListContent_C_SetSlider::Min' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_ListContent_C_SetSlider, Max) == 0x000010, "Member 'WBP_OptionSettings_ListContent_C_SetSlider::Max' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_ListContent_C_SetSlider, FixedChangeValue) == 0x000018, "Member 'WBP_OptionSettings_ListContent_C_SetSlider::FixedChangeValue' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_ListContent_C_SetSlider, UseFixedValue) == 0x000020, "Member 'WBP_OptionSettings_ListContent_C_SetSlider::UseFixedValue' has a wrong offset!");
-
-// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetSelecter_String
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_OptionSettings_ListContent_C_SetSelecter_String final
-{
-public:
-	TArray<class FString>                         Selections;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	int32                                         Param_Current;                                     // 0x0010(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_OptionSettings_ListContent_C_SetSelecter_String) == 0x000008, "Wrong alignment on WBP_OptionSettings_ListContent_C_SetSelecter_String");
-static_assert(sizeof(WBP_OptionSettings_ListContent_C_SetSelecter_String) == 0x000018, "Wrong size on WBP_OptionSettings_ListContent_C_SetSelecter_String");
-static_assert(offsetof(WBP_OptionSettings_ListContent_C_SetSelecter_String, Selections) == 0x000000, "Member 'WBP_OptionSettings_ListContent_C_SetSelecter_String::Selections' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_ListContent_C_SetSelecter_String, Param_Current) == 0x000010, "Member 'WBP_OptionSettings_ListContent_C_SetSelecter_String::Param_Current' has a wrong offset!");
-
 // Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetSelecter
 // 0x0018 (0x0018 - 0x0000)
 struct WBP_OptionSettings_ListContent_C_SetSelecter final
@@ -205,56 +146,56 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DB0[0x1];                                     // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_483C[0x1];                                     // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DB1[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_483D[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            CallFunc_GetMappedKeyIcon_ReturnValue;             // 0x0010(0x00D0)()
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DB2[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_483E[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FDataTableRowHandle>            K2Node_CustomEvent_Selections_1;                   // 0x00F0(0x0010)(ConstParm, ReferenceParm)
 	int32                                         K2Node_CustomEvent_Current_1;                      // 0x0100(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DB3[0x4];                                     // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_483F[0x4];                                     // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDataTableRowHandle                    CallFunc_Array_Get_Item;                           // 0x0108(0x0010)(NoDestructor)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DB4[0x4];                                     // 0x011C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4840[0x4];                                     // 0x011C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0120(0x0018)()
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0138(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DB5[0x3];                                     // 0x0151(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4841[0x3];                                     // 0x0151(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FIntPoint                              K2Node_CustomEvent_CurrentResolution;              // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FIntPoint>                      K2Node_CustomEvent_Resolutions;                    // 0x0160(0x0010)(ConstParm, ReferenceParm)
 	struct FIntPoint                              CallFunc_Array_Get_Item_1;                         // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x017C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DB6[0x3];                                     // 0x017D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4842[0x3];                                     // 0x017D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0180(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Conv_IntToString_ReturnValue_1;           // 0x0190(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x01A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DB7[0x7];                                     // 0x01B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4843[0x7];                                     // 0x01B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x01B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DB8[0x3];                                     // 0x01C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4844[0x3];                                     // 0x01C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x01CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DB9[0x7];                                     // 0x01D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4845[0x7];                                     // 0x01D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonInputSubsystem*                  CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x01D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_CurrentOn;                      // 0x01E0(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DBA[0x7];                                     // 0x01E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4846[0x7];                                     // 0x01E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         K2Node_CustomEvent_Selections;                     // 0x01E8(0x0010)(ConstParm, ReferenceParm)
 	int32                                         K2Node_CustomEvent_Current;                        // 0x01F8(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DBB[0x4];                                     // 0x01FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4847[0x4];                                     // 0x01FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        K2Node_CustomEvent_CurrentValue;                   // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_CustomEvent_Min;                            // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_CustomEvent_Max;                            // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_CustomEvent_FixedChangeValue;               // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_UseFixedValue;                  // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DBC[0x7];                                     // 0x0221(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4848[0x7];                                     // 0x0221(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0238(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -263,17 +204,17 @@ public:
 	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0251(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0252(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DBD[0x1];                                     // 0x0253(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4849[0x1];                                     // 0x0253(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0254(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0264(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DBE[0x4];                                     // 0x0274(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_484A[0x4];                                     // 0x0274(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalUserWidget*                         CallFunc_FindOwningActivatableWidget_ReturnValue;  // 0x0278(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0280(0x0004)(NoDestructor)
-	uint8                                         Pad_3DBF[0x4];                                     // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_484B[0x4];                                     // 0x0284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalUserWidget*                         CallFunc_FindOwningActivatableWidget_ReturnValue_1; // 0x0288(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0290(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_1;      // 0x02A0(0x0004)(NoDestructor)
-	uint8                                         Pad_3DC0[0x4];                                     // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_484C[0x4];                                     // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalUserWidget*                         CallFunc_FindOwningActivatableWidget_ReturnValue_2; // 0x02A8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_2;      // 0x02B0(0x0004)(NoDestructor)
 	bool                                          CallFunc_IsVisible_ReturnValue_1;                  // 0x02B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -281,46 +222,46 @@ public:
 	struct FPalSlateNavigationSetting             K2Node_MakeStruct_PalSlateNavigationSetting;       // 0x02B6(0x0005)(NoDestructor)
 	bool                                          CallFunc_IsVisible_ReturnValue_3;                  // 0x02BB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x02BC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DC1[0x4];                                     // 0x02CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_484D[0x4];                                     // 0x02CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x02D0(0x0008)(NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x02D8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_3;      // 0x02E8(0x0004)(NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_5;            // 0x02EC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DC2[0x4];                                     // 0x02FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_484E[0x4];                                     // 0x02FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_1;        // 0x0300(0x0008)(NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsVisible_ReturnValue_4;                  // 0x0308(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DC3[0x3];                                     // 0x0309(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_484F[0x3];                                     // 0x0309(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_6;            // 0x030C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_4;      // 0x031C(0x0004)(NoDestructor)
 	TDelegate<void(ECommonInputType bNewInputType)> K2Node_CreateDelegate_OutputDelegate_7;            // 0x0320(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsVisible_ReturnValue_5;                  // 0x0330(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DC4[0x7];                                     // 0x0331(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4850[0x7];                                     // 0x0331(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue_1;      // 0x0338(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   K2Node_CustomEvent_ActionName;                     // 0x0340(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECommonInputType                              K2Node_CustomEvent_InputType_2;                    // 0x0348(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPalKeyConfigAxisFilterType                   K2Node_CustomEvent_FilterType;                     // 0x0349(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x034A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsVisible_ReturnValue_6;                  // 0x034B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DC5[0x4];                                     // 0x034C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4851[0x4];                                     // 0x034C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FKey                                   K2Node_CustomEvent_Key_1;                          // 0x0350(0x0018)(HasGetValueTypeHash)
 	ECommonInputType                              K2Node_CustomEvent_InputType_1;                    // 0x0368(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DC6[0x7];                                     // 0x0369(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4852[0x7];                                     // 0x0369(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            CallFunc_GetKeyIconByKey_ReturnValue;              // 0x0370(0x00D0)()
 	bool                                          K2Node_CustomEvent_EnableWarning;                  // 0x0440(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_CanInteract;                    // 0x0441(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DC7[0x6];                                     // 0x0442(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4853[0x6];                                     // 0x0442(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0448(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0450(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DC8[0x7];                                     // 0x0451(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4854[0x7];                                     // 0x0451(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_2;               // 0x0458(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_1;               // 0x0460(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0468(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class FName                                   K2Node_CustomEvent_UIActionName;                   // 0x0470(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECommonInputType                              K2Node_CustomEvent_InputType;                      // 0x0478(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DC9[0x7];                                     // 0x0479(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4855[0x7];                                     // 0x0479(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FKey                                   K2Node_CustomEvent_Key;                            // 0x0480(0x0018)(ConstParm, HasGetValueTypeHash)
 	bool                                          CallFunc_Key_IsValid_ReturnValue;                  // 0x0498(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DCA[0x7];                                     // 0x0499(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4856[0x7];                                     // 0x0499(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            CallFunc_GetKeyIconByKey_ReturnValue_1;            // 0x04A0(0x00D0)()
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0570(0x00D0)()
 	struct FDataTableRowHandle                    K2Node_CustomEvent_rowHandle;                      // 0x0640(0x0010)(NoDestructor)
@@ -460,6 +401,65 @@ public:
 static_assert(alignof(WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature) == 0x000008, "Wrong alignment on WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature");
 static_assert(sizeof(WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature) == 0x000008, "Wrong size on WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature");
 static_assert(offsetof(WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature, Param_Button) == 0x000000, "Member 'WBP_OptionSettings_ListContent_C_BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature::Param_Button' has a wrong offset!");
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetUIConfigButton
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_OptionSettings_ListContent_C_SetUIConfigButton final
+{
+public:
+	class FName                                   UIActionName;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECommonInputType                              InputType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4857[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FKey                                   Key;                                               // 0x0010(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_OptionSettings_ListContent_C_SetUIConfigButton) == 0x000008, "Wrong alignment on WBP_OptionSettings_ListContent_C_SetUIConfigButton");
+static_assert(sizeof(WBP_OptionSettings_ListContent_C_SetUIConfigButton) == 0x000028, "Wrong size on WBP_OptionSettings_ListContent_C_SetUIConfigButton");
+static_assert(offsetof(WBP_OptionSettings_ListContent_C_SetUIConfigButton, UIActionName) == 0x000000, "Member 'WBP_OptionSettings_ListContent_C_SetUIConfigButton::UIActionName' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_ListContent_C_SetUIConfigButton, InputType) == 0x000008, "Member 'WBP_OptionSettings_ListContent_C_SetUIConfigButton::InputType' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_ListContent_C_SetUIConfigButton, Key) == 0x000010, "Member 'WBP_OptionSettings_ListContent_C_SetUIConfigButton::Key' has a wrong offset!");
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetSwitcher
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_OptionSettings_ListContent_C_SetSwitcher final
+{
+public:
+	bool                                          CurrentOn;                                         // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_OptionSettings_ListContent_C_SetSwitcher) == 0x000001, "Wrong alignment on WBP_OptionSettings_ListContent_C_SetSwitcher");
+static_assert(sizeof(WBP_OptionSettings_ListContent_C_SetSwitcher) == 0x000001, "Wrong size on WBP_OptionSettings_ListContent_C_SetSwitcher");
+static_assert(offsetof(WBP_OptionSettings_ListContent_C_SetSwitcher, CurrentOn) == 0x000000, "Member 'WBP_OptionSettings_ListContent_C_SetSwitcher::CurrentOn' has a wrong offset!");
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetSlider
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_OptionSettings_ListContent_C_SetSlider final
+{
+public:
+	double                                        CurrentValue;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Min;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Max;                                               // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        FixedChangeValue;                                  // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          UseFixedValue;                                     // 0x0020(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_OptionSettings_ListContent_C_SetSlider) == 0x000008, "Wrong alignment on WBP_OptionSettings_ListContent_C_SetSlider");
+static_assert(sizeof(WBP_OptionSettings_ListContent_C_SetSlider) == 0x000028, "Wrong size on WBP_OptionSettings_ListContent_C_SetSlider");
+static_assert(offsetof(WBP_OptionSettings_ListContent_C_SetSlider, CurrentValue) == 0x000000, "Member 'WBP_OptionSettings_ListContent_C_SetSlider::CurrentValue' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_ListContent_C_SetSlider, Min) == 0x000008, "Member 'WBP_OptionSettings_ListContent_C_SetSlider::Min' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_ListContent_C_SetSlider, Max) == 0x000010, "Member 'WBP_OptionSettings_ListContent_C_SetSlider::Max' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_ListContent_C_SetSlider, FixedChangeValue) == 0x000018, "Member 'WBP_OptionSettings_ListContent_C_SetSlider::FixedChangeValue' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_ListContent_C_SetSlider, UseFixedValue) == 0x000020, "Member 'WBP_OptionSettings_ListContent_C_SetSlider::UseFixedValue' has a wrong offset!");
+
+// Function WBP_OptionSettings_ListContent.WBP_OptionSettings_ListContent_C.SetSelecter_String
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_OptionSettings_ListContent_C_SetSelecter_String final
+{
+public:
+	TArray<class FString>                         Selections;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	int32                                         Param_Current;                                     // 0x0010(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_OptionSettings_ListContent_C_SetSelecter_String) == 0x000008, "Wrong alignment on WBP_OptionSettings_ListContent_C_SetSelecter_String");
+static_assert(sizeof(WBP_OptionSettings_ListContent_C_SetSelecter_String) == 0x000018, "Wrong size on WBP_OptionSettings_ListContent_C_SetSelecter_String");
+static_assert(offsetof(WBP_OptionSettings_ListContent_C_SetSelecter_String, Selections) == 0x000000, "Member 'WBP_OptionSettings_ListContent_C_SetSelecter_String::Selections' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_ListContent_C_SetSelecter_String, Param_Current) == 0x000010, "Member 'WBP_OptionSettings_ListContent_C_SetSelecter_String::Param_Current' has a wrong offset!");
 
 }
 

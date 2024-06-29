@@ -107,20 +107,6 @@ void UWBP_InLevelLoadingFade_C::FadeIn()
 }
 
 
-// Function WBP_InLevelLoadingFade.WBP_InLevelLoadingFade_C.FadeOut
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_InLevelLoadingFade_C::FadeOut()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InLevelLoadingFade_C", "FadeOut");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_InLevelLoadingFade.WBP_InLevelLoadingFade_C.Finished_50648C2D41952F044CFD8F9629D4027A
 // (BlueprintCallable, BlueprintEvent)
 
@@ -130,6 +116,20 @@ void UWBP_InLevelLoadingFade_C::Finished_50648C2D41952F044CFD8F9629D4027A()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_InLevelLoadingFade_C", "Finished_50648C2D41952F044CFD8F9629D4027A");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InLevelLoadingFade.WBP_InLevelLoadingFade_C.FadeOut
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_InLevelLoadingFade_C::FadeOut()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InLevelLoadingFade_C", "FadeOut");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

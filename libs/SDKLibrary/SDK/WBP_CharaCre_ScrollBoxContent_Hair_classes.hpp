@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "WBP_CharaCre_ScrollBoxContentBase_classes.hpp"
 #include "Pal_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "WBP_CharaCre_ScrollBoxContentBase_classes.hpp"
 
 
 namespace SDK
@@ -38,10 +38,10 @@ public:
 	void Construct();
 	void ExecuteUbergraph_WBP_CharaCre_ScrollBoxContent_Hair(int32 EntryPoint);
 	void GetRestoreFocusTarget(class UWidget** Widget);
-	void GetTopFocusTarget(class UWidget** Widget);
 	void OnChangedHairColor(const struct FLinearColor& Color);
 	void OnClosedHairColorSelectWindow(class UPalHUDDispatchParameterBase* Param_Param);
 	void OnSelectedHairColor__DelegateSignature(const struct FLinearColor& HSV);
+	void GetTopFocusTarget(class UWidget** Widget);
 
 public:
 	static class UClass* StaticClass()

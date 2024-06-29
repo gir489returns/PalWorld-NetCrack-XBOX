@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Pal_structs.hpp"
 #include "BP_AIActionPairCallBase_classes.hpp"
+#include "Pal_structs.hpp"
 
 
 namespace SDK

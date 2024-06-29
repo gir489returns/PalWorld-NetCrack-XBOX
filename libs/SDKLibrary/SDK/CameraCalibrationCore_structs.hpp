@@ -115,7 +115,7 @@ enum class ELensDataCategory : uint8
 struct alignas(0x08) FBaseFocusPoint
 {
 public:
-	uint8                                         Pad_1837[0x8];                                     // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1818[0x8];                                     // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FBaseFocusPoint) == 0x000008, "Wrong alignment on FBaseFocusPoint");
 static_assert(sizeof(FBaseFocusPoint) == 0x000008, "Wrong size on FBaseFocusPoint");
@@ -125,7 +125,7 @@ static_assert(sizeof(FBaseFocusPoint) == 0x000008, "Wrong size on FBaseFocusPoin
 struct alignas(0x08) FBaseLensTable
 {
 public:
-	uint8                                         Pad_1838[0x8];                                     // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1819[0x8];                                     // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TWeakObjectPtr<class ULensFile>               LensFile;                                          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
 static_assert(alignof(FBaseLensTable) == 0x000008, "Wrong alignment on FBaseLensTable");
@@ -202,7 +202,7 @@ struct FDistortionZoomPoint final
 {
 public:
 	float                                         Zoom;                                              // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1839[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_181A[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDistortionInfo                        DistortionInfo;                                    // 0x0008(0x0010)(Edit, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FDistortionZoomPoint) == 0x000008, "Wrong alignment on FDistortionZoomPoint");
@@ -216,7 +216,7 @@ struct FDistortionFocusPoint final : public FBaseFocusPoint
 {
 public:
 	float                                         Focus;                                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_183A[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_181B[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRichCurve                             MapBlendingCurve;                                  // 0x0010(0x0080)(NativeAccessSpecifierPublic)
 	TArray<struct FDistortionZoomPoint>           ZoomPoints;                                        // 0x0090(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
@@ -267,10 +267,10 @@ struct FFocalLengthZoomPoint final
 {
 public:
 	float                                         Zoom;                                              // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_183B[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_181C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFocalLengthInfo                       FocalLengthInfo;                                   // 0x0008(0x0010)(NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bIsCalibrationPoint;                               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_183C[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_181D[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FFocalLengthZoomPoint) == 0x000008, "Wrong alignment on FFocalLengthZoomPoint");
 static_assert(sizeof(FFocalLengthZoomPoint) == 0x000020, "Wrong size on FFocalLengthZoomPoint");
@@ -284,7 +284,7 @@ struct FFocalLengthFocusPoint final : public FBaseFocusPoint
 {
 public:
 	float                                         Focus;                                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_183D[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_181E[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRichCurve                             Fx;                                                // 0x0010(0x0080)(NativeAccessSpecifierPublic)
 	struct FRichCurve                             Fy;                                                // 0x0090(0x0080)(NativeAccessSpecifierPublic)
 	TArray<struct FFocalLengthZoomPoint>          ZoomPoints;                                        // 0x0110(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
@@ -313,7 +313,7 @@ struct FImageCenterFocusPoint final : public FBaseFocusPoint
 {
 public:
 	float                                         Focus;                                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_183E[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_181F[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRichCurve                             Cx;                                                // 0x0010(0x0080)(NativeAccessSpecifierPublic)
 	struct FRichCurve                             Cy;                                                // 0x0090(0x0080)(NativeAccessSpecifierPublic)
 };
@@ -360,7 +360,7 @@ struct FSTMapInfo final
 public:
 	class UTexture*                               DistortionMap;                                     // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FCalibratedMapFormat                   MapFormat;                                         // 0x0008(0x0003)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_183F[0x5];                                     // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1820[0x5];                                     // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FSTMapInfo) == 0x000008, "Wrong alignment on FSTMapInfo");
 static_assert(sizeof(FSTMapInfo) == 0x000010, "Wrong size on FSTMapInfo");
@@ -384,7 +384,7 @@ struct FNodalPointOffset final
 {
 public:
 	struct FVector                                LocationOffset;                                    // 0x0000(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1840[0x8];                                     // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1821[0x8];                                     // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FQuat                                  RotationOffset;                                    // 0x0020(0x0020)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FNodalPointOffset) == 0x000010, "Wrong alignment on FNodalPointOffset");
@@ -399,7 +399,7 @@ struct FDistortionData final
 public:
 	TArray<struct FVector2D>                      DistortedUVs;                                      // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
 	float                                         OverscanFactor;                                    // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1841[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1822[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FDistortionData) == 0x000008, "Wrong alignment on FDistortionData");
 static_assert(sizeof(FDistortionData) == 0x000018, "Wrong size on FDistortionData");
@@ -468,7 +468,7 @@ static_assert(offsetof(FImageCenterPointInfo, ImageCenterInfo) == 0x000008, "Mem
 struct FNodalOffsetPointInfo final : public FDataTablePointInfoBase
 {
 public:
-	uint8                                         Pad_1842[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1823[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FNodalPointOffset                      NodalPointOffset;                                  // 0x0010(0x0040)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FNodalOffsetPointInfo) == 0x000010, "Wrong alignment on FNodalOffsetPointInfo");
@@ -496,7 +496,7 @@ struct FLensFilePicker final
 {
 public:
 	bool                                          bUseDefaultLensFile;                               // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1843[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1824[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ULensFile*                              LensFile;                                          // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FLensFilePicker) == 0x000008, "Wrong alignment on FLensFilePicker");
@@ -514,7 +514,7 @@ public:
 	float                                         Zoom;                                              // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FCameraFilmbackSettings                Filmback;                                          // 0x000C(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, Interp, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bIsValid;                                          // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1844[0x3];                                     // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1825[0x3];                                     // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLensFileEvaluationInputs) == 0x000004, "Wrong alignment on FLensFileEvaluationInputs");
 static_assert(sizeof(FLensFileEvaluationInputs) == 0x00001C, "Wrong size on FLensFileEvaluationInputs");
@@ -530,7 +530,7 @@ struct FNodalOffsetFocusPoint final : public FBaseFocusPoint
 {
 public:
 	float                                         Focus;                                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1845[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1826[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRichCurve                             LocationOffset[0x3];                               // 0x0010(0x0080)(NativeAccessSpecifierPublic)
 	struct FRichCurve                             RotationOffset[0x3];                               // 0x0190(0x0080)(NativeAccessSpecifierPublic)
 };
@@ -578,7 +578,7 @@ public:
 	struct FDistortionData                        DistortionData;                                    // 0x0000(0x0018)(Edit, EditConst, NativeAccessSpecifierPublic)
 	class UTextureRenderTarget2D*                 UndistortionDisplacementMap;                       // 0x0018(0x0008)(Edit, ZeroConstructor, Transient, EditConst, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UTextureRenderTarget2D*                 DistortionDisplacementMap;                         // 0x0020(0x0008)(Edit, ZeroConstructor, Transient, EditConst, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1846[0x8];                                     // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1827[0x8];                                     // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FDerivedDistortionData) == 0x000008, "Wrong alignment on FDerivedDistortionData");
 static_assert(sizeof(FDerivedDistortionData) == 0x000030, "Wrong size on FDerivedDistortionData");
@@ -592,11 +592,11 @@ struct FSTMapZoomPoint final
 {
 public:
 	float                                         Zoom;                                              // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1847[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1828[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSTMapInfo                             STMapInfo;                                         // 0x0008(0x0010)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FDerivedDistortionData                 DerivedDistortionData;                             // 0x0018(0x0030)(Transient, NativeAccessSpecifierPublic)
 	bool                                          bIsCalibrationPoint;                               // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1848[0x7];                                     // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1829[0x7];                                     // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FSTMapZoomPoint) == 0x000008, "Wrong alignment on FSTMapZoomPoint");
 static_assert(sizeof(FSTMapZoomPoint) == 0x000050, "Wrong size on FSTMapZoomPoint");
@@ -611,7 +611,7 @@ struct FSTMapFocusPoint final : public FBaseFocusPoint
 {
 public:
 	float                                         Focus;                                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1849[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_182A[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRichCurve                             MapBlendingCurve;                                  // 0x0010(0x0080)(NativeAccessSpecifierPublic)
 	TArray<struct FSTMapZoomPoint>                ZoomPoints;                                        // 0x0090(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };

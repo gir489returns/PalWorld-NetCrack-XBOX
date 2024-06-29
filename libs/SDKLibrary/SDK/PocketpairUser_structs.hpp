@@ -42,7 +42,7 @@ enum class ELoginStatusType : uint8
 struct alignas(0x04) FSocialId final
 {
 public:
-	uint8                                         Pad_1CDC[0x4];                                     // 0x0000(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C89[0x4];                                     // 0x0000(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FSocialId) == 0x000004, "Wrong alignment on FSocialId");
 static_assert(sizeof(FSocialId) == 0x000004, "Wrong size on FSocialId");
@@ -52,7 +52,7 @@ static_assert(sizeof(FSocialId) == 0x000004, "Wrong size on FSocialId");
 struct alignas(0x08) FPocketpairTelemetry final
 {
 public:
-	uint8                                         Pad_1CDD[0x40];                                    // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C8A[0x40];                                    // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FPocketpairTelemetry) == 0x000008, "Wrong alignment on FPocketpairTelemetry");
 static_assert(sizeof(FPocketpairTelemetry) == 0x000040, "Wrong size on FPocketpairTelemetry");
@@ -62,7 +62,7 @@ static_assert(sizeof(FPocketpairTelemetry) == 0x000040, "Wrong size on FPocketpa
 struct alignas(0x04) FPocketpairTelemetry_Stat final
 {
 public:
-	uint8                                         Pad_1CDE[0xC];                                     // 0x0000(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C8B[0xC];                                     // 0x0000(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FPocketpairTelemetry_Stat) == 0x000004, "Wrong alignment on FPocketpairTelemetry_Stat");
 static_assert(sizeof(FPocketpairTelemetry_Stat) == 0x00000C, "Wrong size on FPocketpairTelemetry_Stat");
@@ -72,7 +72,7 @@ static_assert(sizeof(FPocketpairTelemetry_Stat) == 0x00000C, "Wrong size on FPoc
 struct alignas(0x08) FPocketpairInventoryItem final
 {
 public:
-	uint8                                         Pad_1CDF[0x8];                                     // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C8C[0x8];                                     // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ItemId;                                            // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Num;                                               // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -87,7 +87,7 @@ struct FPocketpairInventory final
 {
 public:
 	TArray<struct FPocketpairInventoryItem>       Items;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CE0[0x8];                                     // 0x0010(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C8D[0x8];                                     // 0x0010(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FPocketpairInventory) == 0x000008, "Wrong alignment on FPocketpairInventory");
 static_assert(sizeof(FPocketpairInventory) == 0x000018, "Wrong size on FPocketpairInventory");

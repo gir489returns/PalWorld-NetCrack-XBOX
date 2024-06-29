@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "WBP_CharaCre_ScrollBoxContentBase_classes.hpp"
 #include "Engine_structs.hpp"
+#include "WBP_CharaCre_ScrollBoxContentBase_classes.hpp"
 
 
 namespace SDK
@@ -31,9 +31,9 @@ public:
 	void Construct();
 	void ExecuteUbergraph_WBP_CharaCre_ScrollBoxContent_Preset(int32 EntryPoint);
 	void GetRestoreFocusTarget(class UWidget** Widget);
-	void GetTopFocusTarget(class UWidget** Widget);
 	void OnClickedPresetButton_Internal(class UWBP_CharaCre_PresetButton_C* Widget);
 	void OnSelectedPreset__DelegateSignature(class FName PresetName);
+	void GetTopFocusTarget(class UWidget** Widget);
 
 public:
 	static class UClass* StaticClass()

@@ -47,13 +47,13 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FA6[0x5];                                     // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B46[0x5];                                     // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalOptionCommonSettings               K2Node_MakeStruct_PalOptionCommonSettings;         // 0x0008(0x0030)()
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FA7[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B47[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalOptionKeyboardSettings             K2Node_MakeStruct_PalOptionKeyboardSettings;       // 0x003C(0x0014)(NoDestructor)
 	bool                                          CallFunc_IsVisible_ReturnValue_1;                  // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FA8[0x3];                                     // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B48[0x3];                                     // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalOptionPadSettings                  K2Node_MakeStruct_PalOptionPadSettings;            // 0x0054(0x001C)(NoDestructor)
 	struct FPalOptionUISettings                   K2Node_MakeStruct_PalOptionUISettings;             // 0x0070(0x0018)(NoDestructor)
 	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -422,7 +422,7 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FA9[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B49[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalOptionSubsystem*                    CallFunc_GetOptionSubsystem_ReturnValue;           // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalOptionSubsystem*                    CallFunc_GetOptionSubsystem_ReturnValue_1;         // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FPalOptionCommonSettings               CallFunc_GetCommonSettings_ReturnValue;            // 0x0030(0x0030)(ConstParm)
@@ -432,51 +432,51 @@ public:
 	struct FPalOptionKeyboardSettings             CallFunc_GetKeyboardSettings_ReturnValue;          // 0x00EC(0x0014)(ConstParm, NoDestructor)
 	bool                                          K2Node_CustomEvent_Next;                           // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_1;                              // 0x0101(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FAA[0x6];                                     // 0x0102(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B4A[0x6];                                     // 0x0102(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UVerticalBox*                           CallFunc_Array_Get_Item;                           // 0x0108(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FAB[0x6];                                     // 0x0112(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B4B[0x6];                                     // 0x0112(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UVerticalBox*                           CallFunc_Array_Get_Item_1;                         // 0x0118(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0124(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FAC[0x3];                                     // 0x0125(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B4C[0x3];                                     // 0x0125(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UVerticalBox*                           CallFunc_Array_Get_Item_2;                         // 0x0128(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBox*                           CallFunc_Array_Get_Item_3;                         // 0x0130(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FAD[0x3];                                     // 0x0141(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B4D[0x3];                                     // 0x0141(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_2;                              // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FAE[0x3];                                     // 0x0149(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B4E[0x3];                                     // 0x0149(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_CustomEvent_Index;                          // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBox*                           CallFunc_Array_Get_Item_4;                         // 0x0150(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x015C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FAF[0x3];                                     // 0x015D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B4F[0x3];                                     // 0x015D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(bool IsOn)>                    K2Node_CreateDelegate_OutputDelegate;              // 0x0160(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0171(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsON_12;                        // 0x0172(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_IsOn_12;                        // 0x0172(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x0173(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(double Value)>                 K2Node_CreateDelegate_OutputDelegate_1;            // 0x0174(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FB0[0x4];                                     // 0x0184(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B50[0x4];                                     // 0x0184(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        K2Node_CustomEvent_Value_9;                        // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_CustomEvent_Value_8;                        // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsON_11;                        // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsON_10;                        // 0x0199(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FB1[0x2];                                     // 0x019A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          K2Node_CustomEvent_IsOn_11;                        // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_IsOn_10;                        // 0x0199(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B51[0x2];                                     // 0x019A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(double Value)>                 K2Node_CreateDelegate_OutputDelegate_2;            // 0x019C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool IsOn)>                    K2Node_CreateDelegate_OutputDelegate_3;            // 0x01AC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool IsOn)>                    K2Node_CreateDelegate_OutputDelegate_4;            // 0x01BC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FB2[0x4];                                     // 0x01CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B52[0x4];                                     // 0x01CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_GetDesiredFocusTarget_Target;             // 0x01D0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_GetDesiredFocusTarget_Target_1;           // 0x01D8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_3;                // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FB3[0x3];                                     // 0x01F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B53[0x3];                                     // 0x01F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(bool IsOn)>                    K2Node_CreateDelegate_OutputDelegate_5;            // 0x01F4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(double Value)>                 K2Node_CreateDelegate_OutputDelegate_6;            // 0x0204(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(double Value)>                 K2Node_CreateDelegate_OutputDelegate_7;            // 0x0214(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -484,56 +484,56 @@ public:
 	TDelegate<void(double Value)>                 K2Node_CreateDelegate_OutputDelegate_9;            // 0x0234(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool IsOn)>                    K2Node_CreateDelegate_OutputDelegate_10;           // 0x0244(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool IsOn)>                    K2Node_CreateDelegate_OutputDelegate_11;           // 0x0254(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsON_9;                         // 0x0264(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_IsOn_9;                         // 0x0264(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_4;                // 0x0265(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FB4[0x2];                                     // 0x0266(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B54[0x2];                                     // 0x0266(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        K2Node_CustomEvent_Value_7;                        // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_CustomEvent_Value_6;                        // 0x0270(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_2;      // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_CustomEvent_Value_5;                        // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_3;      // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_CustomEvent_Value_4;                        // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsON_8;                         // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsON_7;                         // 0x0299(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsON_6;                         // 0x029A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FB5[0x1];                                     // 0x029B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          K2Node_CustomEvent_IsOn_8;                         // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_IsOn_7;                         // 0x0299(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_IsOn_6;                         // 0x029A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B55[0x1];                                     // 0x029B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(bool IsOn)>                    K2Node_CreateDelegate_OutputDelegate_12;           // 0x029C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EPalSupportedPlatformType                     CallFunc_GetPlatformType_ReturnValue;              // 0x02AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x02AD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x02AE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x02AF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool IsOn)>                    K2Node_CreateDelegate_OutputDelegate_13;           // 0x02B0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsON_5;                         // 0x02C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_IsOn_5;                         // 0x02C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_5;                // 0x02C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FB6[0x2];                                     // 0x02C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B56[0x2];                                     // 0x02C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(bool IsOn)>                    K2Node_CreateDelegate_OutputDelegate_14;           // 0x02C4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsON_4;                         // 0x02D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsON_3;                         // 0x02D5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FB7[0x2];                                     // 0x02D6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          K2Node_CustomEvent_IsOn_4;                         // 0x02D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_IsOn_3;                         // 0x02D5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B57[0x2];                                     // 0x02D6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(bool IsOn)>                    K2Node_CreateDelegate_OutputDelegate_15;           // 0x02D8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsUGCFilter_ReturnValue;                  // 0x02E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x02E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FB8[0x2];                                     // 0x02EA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B58[0x2];                                     // 0x02EA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(double Value)>                 K2Node_CreateDelegate_OutputDelegate_16;           // 0x02EC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FB9[0x4];                                     // 0x02FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B59[0x4];                                     // 0x02FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        K2Node_CustomEvent_Value_3;                        // 0x0300(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UVerticalBox*>                   K2Node_MakeArray_Array;                            // 0x0308(0x0010)(ReferenceParm, ContainsInstancedReference)
 	TArray<class UVerticalBox*>                   K2Node_MakeArray_Array_1;                          // 0x0318(0x0010)(ReferenceParm, ContainsInstancedReference)
 	TDelegate<void(bool IsOn)>                    K2Node_CreateDelegate_OutputDelegate_17;           // 0x0328(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<class UVerticalBox*>                   K2Node_Select_Default_1;                           // 0x0338(0x0010)(ReferenceParm, ContainsInstancedReference)
-	bool                                          K2Node_CustomEvent_IsON_2;                         // 0x0348(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FBA[0x7];                                     // 0x0349(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          K2Node_CustomEvent_IsOn_2;                         // 0x0348(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B5A[0x7];                                     // 0x0349(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0350(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(double Value)>                 K2Node_CreateDelegate_OutputDelegate_18;           // 0x0358(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_CustomEvent_Value_2;                        // 0x0368(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0370(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool IsOn)>                    K2Node_CreateDelegate_OutputDelegate_19;           // 0x0374(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsON_1;                         // 0x0384(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FBB[0x3];                                     // 0x0385(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          K2Node_CustomEvent_IsOn_1;                         // 0x0384(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B5B[0x3];                                     // 0x0385(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UVerticalBox*                           CallFunc_Array_Get_Item_5;                         // 0x0388(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(bool IsOn)>                    K2Node_CreateDelegate_OutputDelegate_20;           // 0x0390(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsON;                           // 0x03A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FBC[0x3];                                     // 0x03A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          K2Node_CustomEvent_IsOn;                           // 0x03A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B5C[0x3];                                     // 0x03A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(int32 Selection)>              K2Node_CreateDelegate_OutputDelegate_21;           // 0x03A4(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_CustomEvent_ColorIndex;                     // 0x03B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_CustomEvent_Value_1;                        // 0x03B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -546,11 +546,11 @@ public:
 	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast;      // 0x0418(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_1;    // 0x0420(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_SetFieldsInStruct_MouseSensitivity_ImplicitCast; // 0x0428(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FBD[0x4];                                     // 0x042C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B5D[0x4];                                     // 0x042C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_SetSlider_Min_ImplicitCast;               // 0x0430(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_SetSlider_Max_ImplicitCast;               // 0x0438(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_SetFieldsInStruct_MouseAimSensitivity_ImplicitCast; // 0x0440(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FBE[0x4];                                     // 0x0444(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B5E[0x4];                                     // 0x0444(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_SetSlider_Min_ImplicitCast_1;             // 0x0448(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_SetSlider_Max_ImplicitCast_1;             // 0x0450(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_A_ImplicitCast;     // 0x0458(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -578,7 +578,7 @@ public:
 	double                                        CallFunc_SetSlider_Max_ImplicitCast_6;             // 0x04F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_SetValue_Max_ImplicitCast;                // 0x0500(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_SetFieldsInStruct_DamageTextScale_ImplicitCast; // 0x0508(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FBF[0x4];                                     // 0x050C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B5F[0x4];                                     // 0x050C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_6;    // 0x0510(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_SetSlider_Min_ImplicitCast_7;             // 0x0518(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_SetSlider_Max_ImplicitCast_7;             // 0x0520(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -625,13 +625,13 @@ static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Setti
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CreateDelegate_OutputDelegate) == 0x000160, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, CallFunc_Not_PreBool_ReturnValue) == 0x000170, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, CallFunc_Not_PreBool_ReturnValue_1) == 0x000171, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsON_12) == 0x000172, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsON_12' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsOn_12) == 0x000172, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsOn_12' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, CallFunc_Not_PreBool_ReturnValue_2) == 0x000173, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CreateDelegate_OutputDelegate_1) == 0x000174, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_Value_9) == 0x000188, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_Value_9' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_Value_8) == 0x000190, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_Value_8' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsON_11) == 0x000198, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsON_11' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsON_10) == 0x000199, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsON_10' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsOn_11) == 0x000198, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsOn_11' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsOn_10) == 0x000199, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsOn_10' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CreateDelegate_OutputDelegate_2) == 0x00019C, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CreateDelegate_OutputDelegate_3) == 0x0001AC, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CreateDelegate_OutputDelegate_4) == 0x0001BC, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
@@ -647,7 +647,7 @@ static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Setti
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CreateDelegate_OutputDelegate_9) == 0x000234, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CreateDelegate_OutputDelegate_10) == 0x000244, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CreateDelegate_OutputDelegate_10' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CreateDelegate_OutputDelegate_11) == 0x000254, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CreateDelegate_OutputDelegate_11' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsON_9) == 0x000264, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsON_9' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsOn_9) == 0x000264, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsOn_9' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, CallFunc_Not_PreBool_ReturnValue_4) == 0x000265, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::CallFunc_Not_PreBool_ReturnValue_4' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_Value_7) == 0x000268, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_Value_7' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_Value_6) == 0x000270, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_Value_6' has a wrong offset!");
@@ -655,20 +655,20 @@ static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Setti
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_Value_5) == 0x000280, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_Value_5' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, CallFunc_Multiply_DoubleDouble_ReturnValue_3) == 0x000288, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::CallFunc_Multiply_DoubleDouble_ReturnValue_3' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_Value_4) == 0x000290, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_Value_4' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsON_8) == 0x000298, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsON_8' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsON_7) == 0x000299, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsON_7' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsON_6) == 0x00029A, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsON_6' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsOn_8) == 0x000298, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsOn_8' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsOn_7) == 0x000299, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsOn_7' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsOn_6) == 0x00029A, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsOn_6' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CreateDelegate_OutputDelegate_12) == 0x00029C, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CreateDelegate_OutputDelegate_12' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, CallFunc_GetPlatformType_ReturnValue) == 0x0002AC, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::CallFunc_GetPlatformType_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0002AD, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0002AE, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, CallFunc_BooleanOR_ReturnValue) == 0x0002AF, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CreateDelegate_OutputDelegate_13) == 0x0002B0, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CreateDelegate_OutputDelegate_13' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsON_5) == 0x0002C0, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsON_5' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsOn_5) == 0x0002C0, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsOn_5' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, CallFunc_Not_PreBool_ReturnValue_5) == 0x0002C1, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::CallFunc_Not_PreBool_ReturnValue_5' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CreateDelegate_OutputDelegate_14) == 0x0002C4, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CreateDelegate_OutputDelegate_14' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsON_4) == 0x0002D4, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsON_4' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsON_3) == 0x0002D5, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsON_3' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsOn_4) == 0x0002D4, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsOn_4' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsOn_3) == 0x0002D5, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsOn_3' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CreateDelegate_OutputDelegate_15) == 0x0002D8, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CreateDelegate_OutputDelegate_15' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, CallFunc_IsUGCFilter_ReturnValue) == 0x0002E8, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::CallFunc_IsUGCFilter_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_Select_Default) == 0x0002E9, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_Select_Default' has a wrong offset!");
@@ -678,16 +678,16 @@ static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Setti
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_MakeArray_Array_1) == 0x000318, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_MakeArray_Array_1' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CreateDelegate_OutputDelegate_17) == 0x000328, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CreateDelegate_OutputDelegate_17' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_Select_Default_1) == 0x000338, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsON_2) == 0x000348, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsON_2' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsOn_2) == 0x000348, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsOn_2' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000350, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CreateDelegate_OutputDelegate_18) == 0x000358, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CreateDelegate_OutputDelegate_18' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_Value_2) == 0x000368, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_Value_2' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, CallFunc_FTrunc_ReturnValue) == 0x000370, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CreateDelegate_OutputDelegate_19) == 0x000374, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CreateDelegate_OutputDelegate_19' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsON_1) == 0x000384, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsON_1' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsOn_1) == 0x000384, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsOn_1' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, CallFunc_Array_Get_Item_5) == 0x000388, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::CallFunc_Array_Get_Item_5' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CreateDelegate_OutputDelegate_20) == 0x000390, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CreateDelegate_OutputDelegate_20' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsON) == 0x0003A0, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsON' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_IsOn) == 0x0003A0, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_IsOn' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CreateDelegate_OutputDelegate_21) == 0x0003A4, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CreateDelegate_OutputDelegate_21' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_ColorIndex) == 0x0003B4, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_ColorIndex' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_CustomEvent_Value_1) == 0x0003B8, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_CustomEvent_Value_1' has a wrong offset!");

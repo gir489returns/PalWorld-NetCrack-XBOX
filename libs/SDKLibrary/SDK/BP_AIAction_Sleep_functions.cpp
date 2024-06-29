@@ -39,26 +39,6 @@ void UBP_AIAction_Sleep_C::ActionFinished(class APawn* ControlledPawn, EPawnActi
 }
 
 
-// Function BP_AIAction_Sleep.BP_AIAction_Sleep_C.ActionStart
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_Sleep_C::ActionStart(class APawn* ControlledPawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_Sleep_C", "ActionStart");
-
-	Params::BP_AIAction_Sleep_C_ActionStart Parms{};
-
-	Parms.ControlledPawn = ControlledPawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_AIAction_Sleep.BP_AIAction_Sleep_C.ExecuteUbergraph_BP_AIAction_Sleep
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -114,6 +94,26 @@ void UBP_AIAction_Sleep_C::OnDamageDelegate______0(const struct FPalDamageResult
 	Params::BP_AIAction_Sleep_C_OnDamageDelegate______0 Parms{};
 
 	Parms.DamageResult = std::move(DamageResult);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AIAction_Sleep.BP_AIAction_Sleep_C.ActionStart
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_Sleep_C::ActionStart(class APawn* ControlledPawn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_Sleep_C", "ActionStart");
+
+	Params::BP_AIAction_Sleep_C_ActionStart Parms{};
+
+	Parms.ControlledPawn = ControlledPawn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

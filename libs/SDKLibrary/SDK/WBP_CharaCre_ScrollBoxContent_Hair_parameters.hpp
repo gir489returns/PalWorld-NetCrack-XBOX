@@ -50,15 +50,15 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FPalCharacterCreationColorPresetDataRow CallFunc_GetDataTableRowFromName_OutRow;           // 0x0010(0x0018)()
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49D2[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4A49[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           CallFunc_GetDataTableRowNames_OutRowNames;         // 0x0030(0x0010)(ReferenceParm)
 	class FName                                   CallFunc_Array_Get_Item;                           // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FPalCharacterCreationMeshPresetDataRow CallFunc_GetDataTableRowFromName_OutRow_1;         // 0x0048(0x0108)()
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49D3[0x3];                                     // 0x0151(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4A4A[0x3];                                     // 0x0151(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49D4[0x7];                                     // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4A4B[0x7];                                     // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_CharaCre_ColorSelect_sq_C*         K2Node_ComponentBoundEvent_Widget;                 // 0x0160(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0168(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetBindedColor_Color;                     // 0x0170(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -102,19 +102,6 @@ static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Hair_C_GetRestoreFocusTarge
 static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Hair_C_GetRestoreFocusTarget, CallFunc_GetTopFocusTarget_Widget) == 0x000008, "Member 'WBP_CharaCre_ScrollBoxContent_Hair_C_GetRestoreFocusTarget::CallFunc_GetTopFocusTarget_Widget' has a wrong offset!");
 static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Hair_C_GetRestoreFocusTarget, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'WBP_CharaCre_ScrollBoxContent_Hair_C_GetRestoreFocusTarget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
-// Function WBP_CharaCre_ScrollBoxContent_Hair.WBP_CharaCre_ScrollBoxContent_Hair_C.GetTopFocusTarget
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget final
-{
-public:
-	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetTopFocusTarget_Widget;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget) == 0x000008, "Wrong alignment on WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget");
-static_assert(sizeof(WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget) == 0x000010, "Wrong size on WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget");
-static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget, Widget) == 0x000000, "Member 'WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget, CallFunc_GetTopFocusTarget_Widget) == 0x000008, "Member 'WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget::CallFunc_GetTopFocusTarget_Widget' has a wrong offset!");
-
 // Function WBP_CharaCre_ScrollBoxContent_Hair.WBP_CharaCre_ScrollBoxContent_Hair_C.OnChangedHairColor
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_CharaCre_ScrollBoxContent_Hair_C_OnChangedHairColor final
@@ -134,12 +121,12 @@ public:
 	class UPalHUDDispatchParameterBase*           Param_Param;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UBP_CharaCre_ColorSelectWindowDispatchParameter_C* K2Node_DynamicCast_AsBP_Chara_Cre_Color_Select_Window_Dispatch_Parameter; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49D5[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4A4C[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakColor_R;                             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_G;                             // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_B;                             // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakColor_A;                             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49D6[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4A4D[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_HSVToRGBLinear_ReturnValue;               // 0x0040(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -171,6 +158,19 @@ public:
 static_assert(alignof(WBP_CharaCre_ScrollBoxContent_Hair_C_OnSelectedHairColor__DelegateSignature) == 0x000004, "Wrong alignment on WBP_CharaCre_ScrollBoxContent_Hair_C_OnSelectedHairColor__DelegateSignature");
 static_assert(sizeof(WBP_CharaCre_ScrollBoxContent_Hair_C_OnSelectedHairColor__DelegateSignature) == 0x000010, "Wrong size on WBP_CharaCre_ScrollBoxContent_Hair_C_OnSelectedHairColor__DelegateSignature");
 static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Hair_C_OnSelectedHairColor__DelegateSignature, HSV) == 0x000000, "Member 'WBP_CharaCre_ScrollBoxContent_Hair_C_OnSelectedHairColor__DelegateSignature::HSV' has a wrong offset!");
+
+// Function WBP_CharaCre_ScrollBoxContent_Hair.WBP_CharaCre_ScrollBoxContent_Hair_C.GetTopFocusTarget
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget final
+{
+public:
+	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetTopFocusTarget_Widget;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget) == 0x000008, "Wrong alignment on WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget");
+static_assert(sizeof(WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget) == 0x000010, "Wrong size on WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget");
+static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget, Widget) == 0x000000, "Member 'WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget::Widget' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget, CallFunc_GetTopFocusTarget_Widget) == 0x000008, "Member 'WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget::CallFunc_GetTopFocusTarget_Widget' has a wrong offset!");
 
 }
 

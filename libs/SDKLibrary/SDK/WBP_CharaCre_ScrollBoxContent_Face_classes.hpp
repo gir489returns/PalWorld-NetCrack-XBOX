@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "WBP_CharaCre_ScrollBoxContentBase_classes.hpp"
 #include "Pal_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "WBP_CharaCre_ScrollBoxContentBase_classes.hpp"
 
 
 namespace SDK
@@ -43,13 +43,13 @@ public:
 	void Construct();
 	void ExecuteUbergraph_WBP_CharaCre_ScrollBoxContent_Face(int32 EntryPoint);
 	void GetRestoreFocusTarget(class UWidget** Widget);
-	void GetTopFocusTarget(class UWidget** Widget);
 	void OnChangedBrowColor(const struct FLinearColor& Color);
 	void OnChangedEyeColor(const struct FLinearColor& Color);
 	void OnCloseBrowColorSelectWindow(class UPalHUDDispatchParameterBase* Param_Param);
 	void OnClosedEyeColorSelectWindow(class UPalHUDDispatchParameterBase* Param_Param);
 	void OnSelectedBrowColor__DelegateSignature(const struct FLinearColor& Color);
 	void OnSelectedEyeColor__DelegateSignature(const struct FLinearColor& Color);
+	void GetTopFocusTarget(class UWidget** Widget);
 
 public:
 	static class UClass* StaticClass()

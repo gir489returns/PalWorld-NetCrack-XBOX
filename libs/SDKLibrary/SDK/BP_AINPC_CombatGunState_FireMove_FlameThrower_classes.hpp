@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_AINPC_CombatGunState_AimMove_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK

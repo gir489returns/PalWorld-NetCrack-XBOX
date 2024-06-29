@@ -47,7 +47,7 @@ class ULiveLinkControllerBase : public UObject
 {
 public:
 	struct FComponentReference                    ComponentPicker;                                   // 0x0028(0x0028)(Edit, DisableEditOnTemplate, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1251[0x18];                                    // 0x0050(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_123F[0x18];                                    // 0x0050(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -86,7 +86,7 @@ class ULiveLinkTransformController final : public ULiveLinkControllerBase
 {
 public:
 	struct FLiveLinkTransformControllerData       TransformData;                                     // 0x0068(0x0006)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1252[0x2];                                     // 0x006E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1240[0x2];                                     // 0x006E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -110,13 +110,13 @@ public:
 	struct FLiveLinkSubjectRepresentation         SubjectRepresentation;                             // 0x00A0(0x0010)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	TMap<TSubclassOf<class ULiveLinkRole>, class ULiveLinkControllerBase*> ControllerMap;                                     // 0x00B0(0x0050)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, NoClear, Interp, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPublic)
 	bool                                          bUpdateInEditor;                                   // 0x0100(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1253[0x7];                                     // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1241[0x7];                                     // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnLiveLinkUpdated;                                 // 0x0108(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnControllerMapUpdatedDelegate;                    // 0x0118(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	bool                                          bDisableEvaluateLiveLinkWhenSpawnable;             // 0x0128(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEvaluateLiveLink;                                 // 0x0129(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUpdateInPreviewEditor;                            // 0x012A(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1254[0x1D];                                    // 0x012B(0x001D)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1242[0x1D];                                    // 0x012B(0x001D)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SetSubjectRepresentation(const struct FLiveLinkSubjectRepresentation& InSubjectRepresentation);

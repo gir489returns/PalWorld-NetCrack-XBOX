@@ -26,11 +26,11 @@ class UMediaCapture : public UObject
 {
 public:
 	FMulticastInlineDelegateProperty_             OnStateChanged;                                    // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_187A[0x18];                                    // 0x0038(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1862[0x18];                                    // 0x0038(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMediaOutput*                           MediaOutput;                                       // 0x0050(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_187B[0x10];                                    // 0x0058(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1863[0x10];                                    // 0x0058(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTextureRenderTarget2D*                 CapturingRenderTarget;                             // 0x0068(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_187C[0xD8];                                    // 0x0070(0x00D8)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1864[0xD8];                                    // 0x0070(0x00D8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool CaptureActiveSceneViewport(const struct FMediaCaptureOptions& CaptureOptions);
@@ -64,7 +64,7 @@ static_assert(offsetof(UMediaCapture, CapturingRenderTarget) == 0x000068, "Membe
 class UFileMediaCapture final : public UMediaCapture
 {
 public:
-	uint8                                         Pad_1880[0x68];                                    // 0x0148(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1868[0x68];                                    // 0x0148(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -85,7 +85,7 @@ class UMediaOutput : public UObject
 {
 public:
 	int32                                         NumberOfTextureBuffers;                            // 0x0028(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1881[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1869[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UMediaCapture* CreateMediaCapture();
@@ -115,13 +115,13 @@ public:
 	struct FDirectoryPath                         FilePath;                                          // 0x0090(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 BaseFileName;                                      // 0x00A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bOverrideDesiredSize;                              // 0x00B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1883[0x3];                                     // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_186B[0x3];                                     // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FIntPoint                              DesiredSize;                                       // 0x00B4(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bOverridePixelFormat;                              // 0x00BC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1884[0x3];                                     // 0x00BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_186C[0x3];                                     // 0x00BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	EFileMediaOutputPixelFormat                   DesiredPixelFormat;                                // 0x00C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInvertAlpha;                                      // 0x00C4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1885[0xB];                                     // 0x00C5(0x000B)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_186D[0xB];                                     // 0x00C5(0x000B)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -149,7 +149,7 @@ static_assert(offsetof(UFileMediaOutput, bInvertAlpha) == 0x0000C4, "Member 'UFi
 class UMediaIOCoreSubsystem final : public UEngineSubsystem
 {
 public:
-	uint8                                         Pad_1886[0x8];                                     // 0x0030(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_186E[0x8];                                     // 0x0030(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

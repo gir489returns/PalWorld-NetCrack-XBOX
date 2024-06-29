@@ -17,387 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_Key_Settings.WBP_Key_Settings_C.UI Key Conflict Check
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalKeyConfigCategory                   FilterType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Key_Settings_C::UI_Key_Conflict_Check(EPalKeyConfigCategory FilterType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Key_Settings_C", "UI Key Conflict Check");
-
-	Params::WBP_Key_Settings_C_UI_Key_Conflict_Check Parms{};
-
-	Parms.FilterType = FilterType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Key_Settings.WBP_Key_Settings_C.SwitchTab
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Next                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Key_Settings_C::SwitchTab(bool Next)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Key_Settings_C", "SwitchTab");
-
-	Params::WBP_Key_Settings_C_SwitchTab Parms{};
-
-	Parms.Next = Next;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Key_Settings.WBP_Key_Settings_C.SwitchPanel
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Key_Settings_C::SwitchPanel(int32 Param_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Key_Settings_C", "SwitchPanel");
-
-	Params::WBP_Key_Settings_C_SwitchPanel Parms{};
-
-	Parms.Param_Index = Param_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Key_Settings.WBP_Key_Settings_C.SetDefault
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Key_Settings_C::SetDefault()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Key_Settings_C", "SetDefault");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Key_Settings.WBP_Key_Settings_C.OnKeyUp
-// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FGeometry                        MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// struct FKeyEvent                        InKeyEvent                                             (BlueprintVisible, BlueprintReadOnly, Parm)
-// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-struct FEventReply UWBP_Key_Settings_C::OnKeyUp(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Key_Settings_C", "OnKeyUp");
-
-	Params::WBP_Key_Settings_C_OnKeyUp Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InKeyEvent = std::move(InKeyEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_Key_Settings.WBP_Key_Settings_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Key_Settings_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Key_Settings_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Key_Settings.WBP_Key_Settings_C.On UI Key Config Changing
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             KeyName                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ECommonInputType                        InputType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPalKeyConfigAxisFilterType             AxisType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Key_Settings_C::On_UI_Key_Config_Changing(class FName KeyName, ECommonInputType InputType, EPalKeyConfigAxisFilterType AxisType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Key_Settings_C", "On UI Key Config Changing");
-
-	Params::WBP_Key_Settings_C_On_UI_Key_Config_Changing Parms{};
-
-	Parms.KeyName = KeyName;
-	Parms.InputType = InputType;
-	Parms.AxisType = AxisType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Key_Settings.WBP_Key_Settings_C.On UI Action Key Changed
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FKey                             NewKey                                                 (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// EPalKeyConfigCategory                   InputType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPalKeyConfigAxisFilterType             AxisType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Key_Settings_C::On_UI_Action_Key_Changed(class FName ActionName, const struct FKey& NewKey, EPalKeyConfigCategory InputType, EPalKeyConfigAxisFilterType AxisType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Key_Settings_C", "On UI Action Key Changed");
-
-	Params::WBP_Key_Settings_C_On_UI_Action_Key_Changed Parms{};
-
-	Parms.ActionName = ActionName;
-	Parms.NewKey = std::move(NewKey);
-	Parms.InputType = InputType;
-	Parms.AxisType = AxisType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Key_Settings.WBP_Key_Settings_C.On Key Config Changing
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             KeyName                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ECommonInputType                        InputType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPalKeyConfigAxisFilterType             AxisType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Key_Settings_C::On_Key_Config_Changing(class FName KeyName, ECommonInputType InputType, EPalKeyConfigAxisFilterType AxisType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Key_Settings_C", "On Key Config Changing");
-
-	Params::WBP_Key_Settings_C_On_Key_Config_Changing Parms{};
-
-	Parms.KeyName = KeyName;
-	Parms.InputType = InputType;
-	Parms.AxisType = AxisType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Key_Settings.WBP_Key_Settings_C.On Action Key Changed
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FKey                             NewKey                                                 (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// EPalKeyConfigCategory                   InputType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPalKeyConfigAxisFilterType             AxisType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Key_Settings_C::On_Action_Key_Changed(class FName ActionName, const struct FKey& NewKey, EPalKeyConfigCategory InputType, EPalKeyConfigAxisFilterType AxisType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Key_Settings_C", "On Action Key Changed");
-
-	Params::WBP_Key_Settings_C_On_Action_Key_Changed Parms{};
-
-	Parms.ActionName = ActionName;
-	Parms.NewKey = std::move(NewKey);
-	Parms.InputType = InputType;
-	Parms.AxisType = AxisType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Key_Settings.WBP_Key_Settings_C.Multi Key Setting
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TMap<class FName, struct FPalKeyConfigKeys>TargetMap                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// class FName                             ActionName                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FPalKeyConfigKeys                Key                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_Key_Settings_C::Multi_Key_Setting(const TMap<class FName, struct FPalKeyConfigKeys>& TargetMap, const class FName& ActionName, const struct FPalKeyConfigKeys& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Key_Settings_C", "Multi Key Setting");
-
-	Params::WBP_Key_Settings_C_Multi_Key_Setting Parms{};
-
-	Parms.TargetMap = std::move(TargetMap);
-	Parms.ActionName = ActionName;
-	Parms.Key = std::move(Key);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Key_Settings.WBP_Key_Settings_C.Key Conflict Check
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalKeyConfigCategory                   FilterType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Key_Settings_C::Key_Conflict_Check(EPalKeyConfigCategory FilterType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Key_Settings_C", "Key Conflict Check");
-
-	Params::WBP_Key_Settings_C_Key_Conflict_Check Parms{};
-
-	Parms.FilterType = FilterType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Key_Settings.WBP_Key_Settings_C.IsSetableAction
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FPalKeyAction                    Key                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-// ECommonInputType                        InputType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-bool UWBP_Key_Settings_C::IsSetableAction(const struct FPalKeyAction& Key, ECommonInputType InputType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Key_Settings_C", "IsSetableAction");
-
-	Params::WBP_Key_Settings_C_IsSetableAction Parms{};
-
-	Parms.Key = std::move(Key);
-	Parms.InputType = InputType;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_Key_Settings.WBP_Key_Settings_C.GetKeybyAction
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FPalKeyAction                    PalKeyAction                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-// EPalKeyConfigCategory                   FilterType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FKey                             Key                                                    (Parm, OutParm, HasGetValueTypeHash)
-
-void UWBP_Key_Settings_C::GetKeybyAction(const struct FPalKeyAction& PalKeyAction, EPalKeyConfigCategory FilterType, struct FKey* Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Key_Settings_C", "GetKeybyAction");
-
-	Params::WBP_Key_Settings_C_GetKeybyAction Parms{};
-
-	Parms.PalKeyAction = std::move(PalKeyAction);
-	Parms.FilterType = FilterType;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Key != nullptr)
-		*Key = std::move(Parms.Key);
-}
-
-
-// Function WBP_Key_Settings.WBP_Key_Settings_C.GetDesiredFocusTarget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget*                          Target                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Key_Settings_C::GetDesiredFocusTarget(class UWidget** Target)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Key_Settings_C", "GetDesiredFocusTarget");
-
-	Params::WBP_Key_Settings_C_GetDesiredFocusTarget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Target != nullptr)
-		*Target = Parms.Target;
-}
-
-
-// Function WBP_Key_Settings.WBP_Key_Settings_C.Get UI Conflict Actions
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             CheckingAction                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPalKeyConfigCategory                   FilterType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class FName>                     KeyActions                                             (Parm, OutParm)
-
-void UWBP_Key_Settings_C::Get_UI_Conflict_Actions(const class FName& CheckingAction, EPalKeyConfigCategory FilterType, TArray<class FName>* KeyActions)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Key_Settings_C", "Get UI Conflict Actions");
-
-	Params::WBP_Key_Settings_C_Get_UI_Conflict_Actions Parms{};
-
-	Parms.CheckingAction = CheckingAction;
-	Parms.FilterType = FilterType;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (KeyActions != nullptr)
-		*KeyActions = std::move(Parms.KeyActions);
-}
-
-
-// Function WBP_Key_Settings.WBP_Key_Settings_C.Get Conflict Actions
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FPalKeyAction                    CheckingAction                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-// EPalKeyConfigCategory                   FilterType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FPalKeyAction>            KeyActions                                             (Parm, OutParm)
-
-void UWBP_Key_Settings_C::Get_Conflict_Actions(const struct FPalKeyAction& CheckingAction, EPalKeyConfigCategory FilterType, TArray<struct FPalKeyAction>* KeyActions)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Key_Settings_C", "Get Conflict Actions");
-
-	Params::WBP_Key_Settings_C_Get_Conflict_Actions Parms{};
-
-	Parms.CheckingAction = std::move(CheckingAction);
-	Parms.FilterType = FilterType;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (KeyActions != nullptr)
-		*KeyActions = std::move(Parms.KeyActions);
-}
-
-
 // Function WBP_Key_Settings.WBP_Key_Settings_C.Get Actions By Key
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -469,6 +88,387 @@ void UWBP_Key_Settings_C::ApplySettings()
 		Func = Class->GetFunction("WBP_Key_Settings_C", "ApplySettings");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Key_Settings.WBP_Key_Settings_C.Get Conflict Actions
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FPalKeyAction                    CheckingAction                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+// EPalKeyConfigCategory                   FilterType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FPalKeyAction>            KeyActions                                             (Parm, OutParm)
+
+void UWBP_Key_Settings_C::Get_Conflict_Actions(const struct FPalKeyAction& CheckingAction, EPalKeyConfigCategory FilterType, TArray<struct FPalKeyAction>* KeyActions)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Key_Settings_C", "Get Conflict Actions");
+
+	Params::WBP_Key_Settings_C_Get_Conflict_Actions Parms{};
+
+	Parms.CheckingAction = std::move(CheckingAction);
+	Parms.FilterType = FilterType;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (KeyActions != nullptr)
+		*KeyActions = std::move(Parms.KeyActions);
+}
+
+
+// Function WBP_Key_Settings.WBP_Key_Settings_C.Get UI Conflict Actions
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             CheckingAction                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalKeyConfigCategory                   FilterType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class FName>                     KeyActions                                             (Parm, OutParm)
+
+void UWBP_Key_Settings_C::Get_UI_Conflict_Actions(const class FName& CheckingAction, EPalKeyConfigCategory FilterType, TArray<class FName>* KeyActions)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Key_Settings_C", "Get UI Conflict Actions");
+
+	Params::WBP_Key_Settings_C_Get_UI_Conflict_Actions Parms{};
+
+	Parms.CheckingAction = CheckingAction;
+	Parms.FilterType = FilterType;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (KeyActions != nullptr)
+		*KeyActions = std::move(Parms.KeyActions);
+}
+
+
+// Function WBP_Key_Settings.WBP_Key_Settings_C.GetDesiredFocusTarget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWidget*                          Target                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Key_Settings_C::GetDesiredFocusTarget(class UWidget** Target)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Key_Settings_C", "GetDesiredFocusTarget");
+
+	Params::WBP_Key_Settings_C_GetDesiredFocusTarget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Target != nullptr)
+		*Target = Parms.Target;
+}
+
+
+// Function WBP_Key_Settings.WBP_Key_Settings_C.GetKeybyAction
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FPalKeyAction                    PalKeyAction                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+// EPalKeyConfigCategory                   FilterType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FKey                             Key                                                    (Parm, OutParm, HasGetValueTypeHash)
+
+void UWBP_Key_Settings_C::GetKeybyAction(const struct FPalKeyAction& PalKeyAction, EPalKeyConfigCategory FilterType, struct FKey* Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Key_Settings_C", "GetKeybyAction");
+
+	Params::WBP_Key_Settings_C_GetKeybyAction Parms{};
+
+	Parms.PalKeyAction = std::move(PalKeyAction);
+	Parms.FilterType = FilterType;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Key != nullptr)
+		*Key = std::move(Parms.Key);
+}
+
+
+// Function WBP_Key_Settings.WBP_Key_Settings_C.IsSetableAction
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FPalKeyAction                    Key                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+// ECommonInputType                        InputType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UWBP_Key_Settings_C::IsSetableAction(const struct FPalKeyAction& Key, ECommonInputType InputType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Key_Settings_C", "IsSetableAction");
+
+	Params::WBP_Key_Settings_C_IsSetableAction Parms{};
+
+	Parms.Key = std::move(Key);
+	Parms.InputType = InputType;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_Key_Settings.WBP_Key_Settings_C.Key Conflict Check
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalKeyConfigCategory                   FilterType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Key_Settings_C::Key_Conflict_Check(EPalKeyConfigCategory FilterType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Key_Settings_C", "Key Conflict Check");
+
+	Params::WBP_Key_Settings_C_Key_Conflict_Check Parms{};
+
+	Parms.FilterType = FilterType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Key_Settings.WBP_Key_Settings_C.Multi Key Setting
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TMap<class FName, struct FPalKeyConfigKeys>TargetMap                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class FName                             ActionName                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FPalKeyConfigKeys                Key                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_Key_Settings_C::Multi_Key_Setting(const TMap<class FName, struct FPalKeyConfigKeys>& TargetMap, const class FName& ActionName, const struct FPalKeyConfigKeys& Key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Key_Settings_C", "Multi Key Setting");
+
+	Params::WBP_Key_Settings_C_Multi_Key_Setting Parms{};
+
+	Parms.TargetMap = std::move(TargetMap);
+	Parms.ActionName = ActionName;
+	Parms.Key = std::move(Key);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Key_Settings.WBP_Key_Settings_C.On Action Key Changed
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FKey                             NewKey                                                 (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// EPalKeyConfigCategory                   InputType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalKeyConfigAxisFilterType             AxisType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Key_Settings_C::On_Action_Key_Changed(class FName ActionName, const struct FKey& NewKey, EPalKeyConfigCategory InputType, EPalKeyConfigAxisFilterType AxisType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Key_Settings_C", "On Action Key Changed");
+
+	Params::WBP_Key_Settings_C_On_Action_Key_Changed Parms{};
+
+	Parms.ActionName = ActionName;
+	Parms.NewKey = std::move(NewKey);
+	Parms.InputType = InputType;
+	Parms.AxisType = AxisType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Key_Settings.WBP_Key_Settings_C.On Key Config Changing
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             KeyName                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ECommonInputType                        InputType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalKeyConfigAxisFilterType             AxisType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Key_Settings_C::On_Key_Config_Changing(class FName KeyName, ECommonInputType InputType, EPalKeyConfigAxisFilterType AxisType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Key_Settings_C", "On Key Config Changing");
+
+	Params::WBP_Key_Settings_C_On_Key_Config_Changing Parms{};
+
+	Parms.KeyName = KeyName;
+	Parms.InputType = InputType;
+	Parms.AxisType = AxisType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Key_Settings.WBP_Key_Settings_C.On UI Action Key Changed
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FKey                             NewKey                                                 (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// EPalKeyConfigCategory                   InputType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalKeyConfigAxisFilterType             AxisType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Key_Settings_C::On_UI_Action_Key_Changed(class FName ActionName, const struct FKey& NewKey, EPalKeyConfigCategory InputType, EPalKeyConfigAxisFilterType AxisType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Key_Settings_C", "On UI Action Key Changed");
+
+	Params::WBP_Key_Settings_C_On_UI_Action_Key_Changed Parms{};
+
+	Parms.ActionName = ActionName;
+	Parms.NewKey = std::move(NewKey);
+	Parms.InputType = InputType;
+	Parms.AxisType = AxisType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Key_Settings.WBP_Key_Settings_C.On UI Key Config Changing
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             KeyName                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ECommonInputType                        InputType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalKeyConfigAxisFilterType             AxisType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Key_Settings_C::On_UI_Key_Config_Changing(class FName KeyName, ECommonInputType InputType, EPalKeyConfigAxisFilterType AxisType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Key_Settings_C", "On UI Key Config Changing");
+
+	Params::WBP_Key_Settings_C_On_UI_Key_Config_Changing Parms{};
+
+	Parms.KeyName = KeyName;
+	Parms.InputType = InputType;
+	Parms.AxisType = AxisType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Key_Settings.WBP_Key_Settings_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Key_Settings_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Key_Settings_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Key_Settings.WBP_Key_Settings_C.OnKeyUp
+// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FGeometry                        MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// struct FKeyEvent                        InKeyEvent                                             (BlueprintVisible, BlueprintReadOnly, Parm)
+// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+struct FEventReply UWBP_Key_Settings_C::OnKeyUp(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Key_Settings_C", "OnKeyUp");
+
+	Params::WBP_Key_Settings_C_OnKeyUp Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InKeyEvent = std::move(InKeyEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_Key_Settings.WBP_Key_Settings_C.SetDefault
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Key_Settings_C::SetDefault()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Key_Settings_C", "SetDefault");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Key_Settings.WBP_Key_Settings_C.SwitchPanel
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Key_Settings_C::SwitchPanel(int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Key_Settings_C", "SwitchPanel");
+
+	Params::WBP_Key_Settings_C_SwitchPanel Parms{};
+
+	Parms.Param_Index = Param_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Key_Settings.WBP_Key_Settings_C.SwitchTab
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Next                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Key_Settings_C::SwitchTab(bool Next)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Key_Settings_C", "SwitchTab");
+
+	Params::WBP_Key_Settings_C_SwitchTab Parms{};
+
+	Parms.Next = Next;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Key_Settings.WBP_Key_Settings_C.UI Key Conflict Check
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalKeyConfigCategory                   FilterType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Key_Settings_C::UI_Key_Conflict_Check(EPalKeyConfigCategory FilterType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Key_Settings_C", "UI Key Conflict Check");
+
+	Params::WBP_Key_Settings_C_UI_Key_Conflict_Check Parms{};
+
+	Parms.FilterType = FilterType;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }
