@@ -11,7 +11,7 @@ class config
 public:
 	//offsets
 	DWORD64 ClientBase = 0;
-	DWORD64 offset_Tick = 0x2BBAAF0;//APalPlayerCharacter::Tick 48 89 5C 24 ? 57 48 83 EC ? 48 8B F9 E8 ? ? ? ? 48 8B 8F
+	DWORD64 offset_Tick = 0x2BBAAE0;//APalPlayerCharacter::Tick 48 89 5C 24 ? 57 48 83 EC ? 48 8B F9 E8 ? ? ? ? 48 8B 8F
 	//check
 	bool IsESP = false;
 	bool IsForgeMode = false;
@@ -66,7 +66,7 @@ public:
 
 	};
 	//Filtered Items
-	std::vector<std::string> db_filteredItems{};
+	std::vector<std::string> db_filteredItems;
 	
 	
 	
