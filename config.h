@@ -66,7 +66,7 @@ public:
 
 	};
 	//Filtered Items
-	std::vector<std::string> db_filteredItems{};
+	std::vector<std::string> db_filteredItems;
 	
 	
 	
