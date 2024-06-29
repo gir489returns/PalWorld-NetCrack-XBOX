@@ -39,46 +39,6 @@ void UBP_AIAction_EatDeadBody_C::ActionFinished(class APawn* ControlledPawn, EPa
 }
 
 
-// Function BP_AIAction_EatDeadBody.BP_AIAction_EatDeadBody_C.ActionPause
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_EatDeadBody_C::ActionPause(class APawn* ControlledPawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_EatDeadBody_C", "ActionPause");
-
-	Params::BP_AIAction_EatDeadBody_C_ActionPause Parms{};
-
-	Parms.ControlledPawn = ControlledPawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_AIAction_EatDeadBody.BP_AIAction_EatDeadBody_C.ActionStart
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_EatDeadBody_C::ActionStart(class APawn* ControlledPawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_EatDeadBody_C", "ActionStart");
-
-	Params::BP_AIAction_EatDeadBody_C_ActionStart Parms{};
-
-	Parms.ControlledPawn = ControlledPawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_AIAction_EatDeadBody.BP_AIAction_EatDeadBody_C.ActionTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -153,6 +113,46 @@ void UBP_AIAction_EatDeadBody_C::SelfPawn(class AActor** Param_SelfPawn)
 
 	if (Param_SelfPawn != nullptr)
 		*Param_SelfPawn = Parms.Param_SelfPawn;
+}
+
+
+// Function BP_AIAction_EatDeadBody.BP_AIAction_EatDeadBody_C.ActionPause
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_EatDeadBody_C::ActionPause(class APawn* ControlledPawn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_EatDeadBody_C", "ActionPause");
+
+	Params::BP_AIAction_EatDeadBody_C_ActionPause Parms{};
+
+	Parms.ControlledPawn = ControlledPawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AIAction_EatDeadBody.BP_AIAction_EatDeadBody_C.ActionStart
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_EatDeadBody_C::ActionStart(class APawn* ControlledPawn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_EatDeadBody_C", "ActionStart");
+
+	Params::BP_AIAction_EatDeadBody_C_ActionStart Parms{};
+
+	Parms.ControlledPawn = ControlledPawn;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

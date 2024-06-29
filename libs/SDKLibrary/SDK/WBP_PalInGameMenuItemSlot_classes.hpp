@@ -29,10 +29,10 @@ public:
 public:
 	void EmptySlotEvent();
 	void ExecuteUbergraph_WBP_PalInGameMenuItemSlot(int32 EntryPoint);
-	void OnInitialized();
-	void RegisterItemIconWidget(class UWBP_PalItemIconBase_C** IconWidget);
 	void UpdateSlotEvent(class UPalItemSlot* Param_TargetSlot);
 	void ValidSlotEvent();
+	void OnInitialized();
+	void RegisterItemIconWidget(class UWBP_PalItemIconBase_C** IconWidget);
 
 public:
 	static class UClass* StaticClass()

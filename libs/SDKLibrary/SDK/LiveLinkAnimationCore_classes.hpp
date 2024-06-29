@@ -64,7 +64,7 @@ static_assert(sizeof(ULiveLinkRetargetAsset) == 0x000028, "Wrong size on ULiveLi
 class ULiveLinkRemapAsset final : public ULiveLinkRetargetAsset
 {
 public:
-	uint8                                         Pad_36BC[0xA0];                                    // 0x0028(0x00A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_36F0[0xA0];                                    // 0x0028(0x00A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class FName GetRemappedBoneName(class FName BoneName) const;

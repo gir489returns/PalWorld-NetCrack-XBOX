@@ -79,7 +79,7 @@ static_assert(offsetof(FDataRegistryIdFormat, BaseGameplayTag) == 0x000000, "Mem
 struct alignas(0x08) FDataRegistryLookup final
 {
 public:
-	uint8                                         Pad_13E6[0x20];                                    // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13CB[0x20];                                    // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FDataRegistryLookup) == 0x000008, "Wrong alignment on FDataRegistryLookup");
 static_assert(sizeof(FDataRegistryLookup) == 0x000020, "Wrong size on FDataRegistryLookup");
@@ -90,7 +90,7 @@ struct FDataRegistrySource_DataTableRules final
 {
 public:
 	bool                                          bPrecacheTable;                                    // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13E7[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13CC[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CachedTableKeepSeconds;                            // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FDataRegistrySource_DataTableRules) == 0x000004, "Wrong alignment on FDataRegistrySource_DataTableRules");
@@ -129,7 +129,7 @@ struct FDataRegistryCachePolicy final
 public:
 	bool                                          bCacheIsAlwaysVolatile;                            // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseCurveTableCacheVersion;                        // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13E8[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13CD[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         MinNumberKept;                                     // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxNumberKept;                                     // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ForceKeepSeconds;                                  // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -149,7 +149,7 @@ static_assert(offsetof(FDataRegistryCachePolicy, ForceReleaseSeconds) == 0x00001
 struct alignas(0x08) FDataRegistrySourceItemId final
 {
 public:
-	uint8                                         Pad_13E9[0x40];                                    // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13CE[0x40];                                    // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FDataRegistrySourceItemId) == 0x000008, "Wrong alignment on FDataRegistrySourceItemId");
 static_assert(sizeof(FDataRegistrySourceItemId) == 0x000040, "Wrong size on FDataRegistrySourceItemId");

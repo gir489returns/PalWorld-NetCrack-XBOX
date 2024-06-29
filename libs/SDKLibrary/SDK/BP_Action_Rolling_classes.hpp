@@ -27,10 +27,10 @@ public:
 	struct FVector                                TempVelocity;                                      // 0x0230(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void EndStep();
 	void ExecuteUbergraph_BP_Action_Rolling(int32 EntryPoint);
-	void OnBeginAction();
 	void OnBreakAction();
+	void EndStep();
+	void OnBeginAction();
 
 public:
 	static class UClass* StaticClass()

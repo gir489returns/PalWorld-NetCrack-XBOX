@@ -27,13 +27,13 @@ public:
 	class UPalHUDDispatchParameter_FadeWidget*    LoadingFadeParameter;                              // 0x07D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TSoftObjectPtr<class UWorld>                  LoadWorld;                                         // 0x07E0(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash)
 	bool                                          ShowedCharaMake;                                   // 0x0810(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4827[0x7];                                     // 0x0811(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4ADA[0x7];                                     // 0x0811(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftClassPtr<class UClass>                   OpeningActor;                                      // 0x0818(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	class FName                                   CutsceneName;                                      // 0x0848(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APalCutsceneActor*                      OpeningCutscene;                                   // 0x0850(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class FName                                   FlagName;                                          // 0x0858(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         PlayingID;                                         // 0x0860(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4828[0x4];                                     // 0x0864(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4ADB[0x4];                                     // 0x0864(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDataTableRowHandle                    CreateSessionErrorMsgId;                           // 0x0868(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:

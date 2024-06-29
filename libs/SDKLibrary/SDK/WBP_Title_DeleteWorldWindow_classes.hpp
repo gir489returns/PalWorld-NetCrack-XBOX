@@ -32,16 +32,16 @@ public:
 	class UWBP_PalCommonWindow_C*                 WBP_PalCommonWindow;                               // 0x0458(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void SetEnableConfirmButton(bool IsEnable);
-	void OpenCheckDialog();
-	void OnSetup();
-	void OnClosedDeleteCheckDialog(bool bResult);
-	void ExecuteUbergraph_WBP_Title_DeleteWorldWindow(int32 EntryPoint);
-	void Construct();
 	void BndEvt__WBP_Title_DeleteWorldWindow_WBP_CommonButton_Cancel_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature();
 	void BndEvt__WBP_CharaCre_PlayerNameEdit_WBP_CommonButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
 	void BndEvt__WBP_CharaCre_PlayerNameEdit_EditableTextBox_Name_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
 	void BndEvt__WBP_CharaCre_PlayerNameEdit_EditableTextBox_Name_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text);
+	void Construct();
+	void ExecuteUbergraph_WBP_Title_DeleteWorldWindow(int32 EntryPoint);
+	void OnClosedDeleteCheckDialog(bool bResult);
+	void OnSetup();
+	void OpenCheckDialog();
+	void SetEnableConfirmButton(bool IsEnable);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

@@ -17,354 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.Update Local World List Content
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                           WorldPathName                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// struct FPalUILocalWorldDisplayData      DisplayData                                            (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_Title_WorldSelect_C::Update_Local_World_List_Content(const class FString& WorldPathName, const struct FPalUILocalWorldDisplayData& DisplayData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "Update Local World List Content");
-
-	Params::WBP_Title_WorldSelect_C_Update_Local_World_List_Content Parms{};
-
-	Parms.WorldPathName = std::move(WorldPathName);
-	Parms.DisplayData = std::move(DisplayData);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.SortTypeStringToSortType
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class FString                           SortTypeString                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// EPalUIServerListSortType                SortType                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Title_WorldSelect_C::SortTypeStringToSortType(const class FString& SortTypeString, EPalUIServerListSortType* SortType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "SortTypeStringToSortType");
-
-	Params::WBP_Title_WorldSelect_C_SortTypeStringToSortType Parms{};
-
-	Parms.SortTypeString = std::move(SortTypeString);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (SortType != nullptr)
-		*SortType = Parms.SortType;
-}
-
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.SetupComboboxStringData
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Title_WorldSelect_C::SetupComboboxStringData()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "SetupComboboxStringData");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.SetRegions
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<class FString>                   Regions                                                (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_Title_WorldSelect_C::SetRegions(TArray<class FString>& Regions)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "SetRegions");
-
-	Params::WBP_Title_WorldSelect_C_SetRegions Parms{};
-
-	Parms.Regions = std::move(Regions);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Regions = std::move(Parms.Regions);
-}
-
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.SearchCommit
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FText                             Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_Title_WorldSelect_C::SearchCommit(const class FText& Text)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "SearchCommit");
-
-	Params::WBP_Title_WorldSelect_C_SearchCommit Parms{};
-
-	Parms.Text = std::move(Text);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OpenLocalWorldMenu
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Title_WorldSelect_C::OpenLocalWorldMenu()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OpenLocalWorldMenu");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnSelectedServerSortType__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalUIServerListSortType                SortType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Title_WorldSelect_C::OnSelectedServerSortType__DelegateSignature(EPalUIServerListSortType SortType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnSelectedServerSortType__DelegateSignature");
-
-	Params::WBP_Title_WorldSelect_C_OnSelectedServerSortType__DelegateSignature Parms{};
-
-	Parms.SortType = SortType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Title_WorldSelect_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedWorldSettingButton__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Title_WorldSelect_C::OnClickedWorldSettingButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedWorldSettingButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedWorldButton_Internal
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_Title_WorldSelect_ListContent_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Title_WorldSelect_C::OnClickedWorldButton_Internal(class UWBP_Title_WorldSelect_ListContent_C* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedWorldButton_Internal");
-
-	Params::WBP_Title_WorldSelect_C_OnClickedWorldButton_Internal Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedWorldButton__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_Title_WorldSelect_ListContent_C*ButtonWidget                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Title_WorldSelect_C::OnClickedWorldButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* ButtonWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedWorldButton__DelegateSignature");
-
-	Params::WBP_Title_WorldSelect_C_OnClickedWorldButton__DelegateSignature Parms{};
-
-	Parms.ButtonWidget = ButtonWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedStartWorldButton__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Title_WorldSelect_C::OnClickedStartWorldButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedStartWorldButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedServerSearchButton__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                           SearchWord                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UWBP_Title_WorldSelect_C::OnClickedServerSearchButton__DelegateSignature(const class FString& SearchWord)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedServerSearchButton__DelegateSignature");
-
-	Params::WBP_Title_WorldSelect_C_OnClickedServerSearchButton__DelegateSignature Parms{};
-
-	Parms.SearchWord = std::move(SearchWord);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedServerList_PreviousButton__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Title_WorldSelect_C::OnClickedServerList_PreviousButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedServerList_PreviousButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedServerList_OfficialButton__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Title_WorldSelect_C::OnClickedServerList_OfficialButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedServerList_OfficialButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedServerList_NextButton__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Title_WorldSelect_C::OnClickedServerList_NextButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedServerList_NextButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedServerList_HistoryButton__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Title_WorldSelect_C::OnClickedServerList_HistoryButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedServerList_HistoryButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedServerList_CommunityButton__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Title_WorldSelect_C::OnClickedServerList_CommunityButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedServerList_CommunityButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedServerButton_Internal
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_Title_WorldSelect_ListContent_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Title_WorldSelect_C::OnClickedServerButton_Internal(class UWBP_Title_WorldSelect_ListContent_C* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedServerButton_Internal");
-
-	Params::WBP_Title_WorldSelect_C_OnClickedServerButton_Internal Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedServerButton__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_Title_WorldSelect_ListContent_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Title_WorldSelect_C::OnClickedServerButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedServerButton__DelegateSignature");
-
-	Params::WBP_Title_WorldSelect_C_OnClickedServerButton__DelegateSignature Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedSelectBackupButton__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1096,6 +748,354 @@ void UWBP_Title_WorldSelect_C::AddLocalWorldDisplayData(TArray<struct FPalUILoca
 	UObject::ProcessEvent(Func, &Parms);
 
 	DisplayDataArray = std::move(Parms.DisplayDataArray);
+}
+
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedServerButton__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_Title_WorldSelect_ListContent_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_WorldSelect_C::OnClickedServerButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedServerButton__DelegateSignature");
+
+	Params::WBP_Title_WorldSelect_C_OnClickedServerButton__DelegateSignature Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedServerButton_Internal
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_Title_WorldSelect_ListContent_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_WorldSelect_C::OnClickedServerButton_Internal(class UWBP_Title_WorldSelect_ListContent_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedServerButton_Internal");
+
+	Params::WBP_Title_WorldSelect_C_OnClickedServerButton_Internal Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedServerList_CommunityButton__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Title_WorldSelect_C::OnClickedServerList_CommunityButton__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedServerList_CommunityButton__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedServerList_HistoryButton__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Title_WorldSelect_C::OnClickedServerList_HistoryButton__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedServerList_HistoryButton__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedServerList_NextButton__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Title_WorldSelect_C::OnClickedServerList_NextButton__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedServerList_NextButton__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedServerList_OfficialButton__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Title_WorldSelect_C::OnClickedServerList_OfficialButton__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedServerList_OfficialButton__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedServerList_PreviousButton__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Title_WorldSelect_C::OnClickedServerList_PreviousButton__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedServerList_PreviousButton__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedServerSearchButton__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                           SearchWord                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UWBP_Title_WorldSelect_C::OnClickedServerSearchButton__DelegateSignature(const class FString& SearchWord)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedServerSearchButton__DelegateSignature");
+
+	Params::WBP_Title_WorldSelect_C_OnClickedServerSearchButton__DelegateSignature Parms{};
+
+	Parms.SearchWord = std::move(SearchWord);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedStartWorldButton__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Title_WorldSelect_C::OnClickedStartWorldButton__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedStartWorldButton__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedWorldButton__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_Title_WorldSelect_ListContent_C*ButtonWidget                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_WorldSelect_C::OnClickedWorldButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* ButtonWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedWorldButton__DelegateSignature");
+
+	Params::WBP_Title_WorldSelect_C_OnClickedWorldButton__DelegateSignature Parms{};
+
+	Parms.ButtonWidget = ButtonWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedWorldButton_Internal
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_Title_WorldSelect_ListContent_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_WorldSelect_C::OnClickedWorldButton_Internal(class UWBP_Title_WorldSelect_ListContent_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedWorldButton_Internal");
+
+	Params::WBP_Title_WorldSelect_C_OnClickedWorldButton_Internal Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedWorldSettingButton__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Title_WorldSelect_C::OnClickedWorldSettingButton__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnClickedWorldSettingButton__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Title_WorldSelect_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnSelectedServerSortType__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalUIServerListSortType                SortType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_WorldSelect_C::OnSelectedServerSortType__DelegateSignature(EPalUIServerListSortType SortType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OnSelectedServerSortType__DelegateSignature");
+
+	Params::WBP_Title_WorldSelect_C_OnSelectedServerSortType__DelegateSignature Parms{};
+
+	Parms.SortType = SortType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OpenLocalWorldMenu
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Title_WorldSelect_C::OpenLocalWorldMenu()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "OpenLocalWorldMenu");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.SearchCommit
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FText                             Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_Title_WorldSelect_C::SearchCommit(const class FText& Text)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "SearchCommit");
+
+	Params::WBP_Title_WorldSelect_C_SearchCommit Parms{};
+
+	Parms.Text = std::move(Text);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.SetRegions
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<class FString>                   Regions                                                (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_Title_WorldSelect_C::SetRegions(TArray<class FString>& Regions)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "SetRegions");
+
+	Params::WBP_Title_WorldSelect_C_SetRegions Parms{};
+
+	Parms.Regions = std::move(Regions);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Regions = std::move(Parms.Regions);
+}
+
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.SetupComboboxStringData
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Title_WorldSelect_C::SetupComboboxStringData()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "SetupComboboxStringData");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.SortTypeStringToSortType
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FString                           SortTypeString                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// EPalUIServerListSortType                SortType                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_WorldSelect_C::SortTypeStringToSortType(const class FString& SortTypeString, EPalUIServerListSortType* SortType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "SortTypeStringToSortType");
+
+	Params::WBP_Title_WorldSelect_C_SortTypeStringToSortType Parms{};
+
+	Parms.SortTypeString = std::move(SortTypeString);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (SortType != nullptr)
+		*SortType = Parms.SortType;
+}
+
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.Update Local World List Content
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                           WorldPathName                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// struct FPalUILocalWorldDisplayData      DisplayData                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_Title_WorldSelect_C::Update_Local_World_List_Content(const class FString& WorldPathName, const struct FPalUILocalWorldDisplayData& DisplayData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_C", "Update Local World List Content");
+
+	Params::WBP_Title_WorldSelect_C_Update_Local_World_List_Content Parms{};
+
+	Parms.WorldPathName = std::move(WorldPathName);
+	Parms.DisplayData = std::move(DisplayData);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

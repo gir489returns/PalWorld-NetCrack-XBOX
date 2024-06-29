@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "E_PalItemShopTabType_structs.hpp"
 #include "Pal_classes.hpp"
+#include "E_PalItemShopTabType_structs.hpp"
 
 
 namespace SDK

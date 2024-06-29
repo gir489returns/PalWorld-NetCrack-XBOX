@@ -17,157 +17,17 @@
 namespace SDK
 {
 
-// Function WBP_Title_BackupSelect.WBP_Title_BackupSelect_C.SetBackupDisplayData
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<struct FPalUIBackupSaveDisplayData>DisplayData                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// Function WBP_Title_BackupSelect.WBP_Title_BackupSelect_C.BndEvt__WBP_Title_BackupSelect_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_Title_BackupSelect_C::SetBackupDisplayData(TArray<struct FPalUIBackupSaveDisplayData>& DisplayData)
+void UWBP_Title_BackupSelect_C::BndEvt__WBP_Title_BackupSelect_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_BackupSelect_C", "SetBackupDisplayData");
-
-	Params::WBP_Title_BackupSelect_C_SetBackupDisplayData Parms{};
-
-	Parms.DisplayData = std::move(DisplayData);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	DisplayData = std::move(Parms.DisplayData);
-}
-
-
-// Function WBP_Title_BackupSelect.WBP_Title_BackupSelect_C.OnClickedCloseButton__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Title_BackupSelect_C::OnClickedCloseButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_BackupSelect_C", "OnClickedCloseButton__DelegateSignature");
+		Func = Class->GetFunction("WBP_Title_BackupSelect_C", "BndEvt__WBP_Title_BackupSelect_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Title_BackupSelect.WBP_Title_BackupSelect_C.OnClickedBackupButton_Internal
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_Title_BackupSelect_ListContent_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Title_BackupSelect_C::OnClickedBackupButton_Internal(class UWBP_Title_BackupSelect_ListContent_C* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_BackupSelect_C", "OnClickedBackupButton_Internal");
-
-	Params::WBP_Title_BackupSelect_C_OnClickedBackupButton_Internal Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Title_BackupSelect.WBP_Title_BackupSelect_C.OnClickedBackup__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_Title_BackupSelect_ListContent_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Title_BackupSelect_C::OnClickedBackup__DelegateSignature(class UWBP_Title_BackupSelect_ListContent_C* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_BackupSelect_C", "OnClickedBackup__DelegateSignature");
-
-	Params::WBP_Title_BackupSelect_C_OnClickedBackup__DelegateSignature Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Title_BackupSelect.WBP_Title_BackupSelect_C.GetTopFocusTarget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget*                          TargetWidget                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Title_BackupSelect_C::GetTopFocusTarget(class UWidget** TargetWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_BackupSelect_C", "GetTopFocusTarget");
-
-	Params::WBP_Title_BackupSelect_C_GetTopFocusTarget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (TargetWidget != nullptr)
-		*TargetWidget = Parms.TargetWidget;
-}
-
-
-// Function WBP_Title_BackupSelect.WBP_Title_BackupSelect_C.ExecuteUbergraph_WBP_Title_BackupSelect
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Title_BackupSelect_C::ExecuteUbergraph_WBP_Title_BackupSelect(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_BackupSelect_C", "ExecuteUbergraph_WBP_Title_BackupSelect");
-
-	Params::WBP_Title_BackupSelect_C_ExecuteUbergraph_WBP_Title_BackupSelect Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Title_BackupSelect.WBP_Title_BackupSelect_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Title_BackupSelect_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_BackupSelect_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Title_BackupSelect.WBP_Title_BackupSelect_C.CustomNavi_ToListTop
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EUINavigation                           Param_Navigation                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UWBP_Title_BackupSelect_C::CustomNavi_ToListTop(EUINavigation Param_Navigation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_BackupSelect_C", "CustomNavi_ToListTop");
-
-	Params::WBP_Title_BackupSelect_C_CustomNavi_ToListTop Parms{};
-
-	Parms.Param_Navigation = Param_Navigation;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 
@@ -194,17 +54,157 @@ class UWidget* UWBP_Title_BackupSelect_C::CustomNavi_ToCloseButton(EUINavigation
 }
 
 
-// Function WBP_Title_BackupSelect.WBP_Title_BackupSelect_C.BndEvt__WBP_Title_BackupSelect_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Title_BackupSelect.WBP_Title_BackupSelect_C.CustomNavi_ToListTop
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Param_Navigation                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Title_BackupSelect_C::BndEvt__WBP_Title_BackupSelect_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
+class UWidget* UWBP_Title_BackupSelect_C::CustomNavi_ToListTop(EUINavigation Param_Navigation)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_BackupSelect_C", "BndEvt__WBP_Title_BackupSelect_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Title_BackupSelect_C", "CustomNavi_ToListTop");
+
+	Params::WBP_Title_BackupSelect_C_CustomNavi_ToListTop Parms{};
+
+	Parms.Param_Navigation = Param_Navigation;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_Title_BackupSelect.WBP_Title_BackupSelect_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Title_BackupSelect_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_BackupSelect_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Title_BackupSelect.WBP_Title_BackupSelect_C.ExecuteUbergraph_WBP_Title_BackupSelect
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_BackupSelect_C::ExecuteUbergraph_WBP_Title_BackupSelect(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_BackupSelect_C", "ExecuteUbergraph_WBP_Title_BackupSelect");
+
+	Params::WBP_Title_BackupSelect_C_ExecuteUbergraph_WBP_Title_BackupSelect Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_BackupSelect.WBP_Title_BackupSelect_C.GetTopFocusTarget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWidget*                          TargetWidget                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_BackupSelect_C::GetTopFocusTarget(class UWidget** TargetWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_BackupSelect_C", "GetTopFocusTarget");
+
+	Params::WBP_Title_BackupSelect_C_GetTopFocusTarget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (TargetWidget != nullptr)
+		*TargetWidget = Parms.TargetWidget;
+}
+
+
+// Function WBP_Title_BackupSelect.WBP_Title_BackupSelect_C.OnClickedBackup__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_Title_BackupSelect_ListContent_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_BackupSelect_C::OnClickedBackup__DelegateSignature(class UWBP_Title_BackupSelect_ListContent_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_BackupSelect_C", "OnClickedBackup__DelegateSignature");
+
+	Params::WBP_Title_BackupSelect_C_OnClickedBackup__DelegateSignature Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_BackupSelect.WBP_Title_BackupSelect_C.OnClickedBackupButton_Internal
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_Title_BackupSelect_ListContent_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_BackupSelect_C::OnClickedBackupButton_Internal(class UWBP_Title_BackupSelect_ListContent_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_BackupSelect_C", "OnClickedBackupButton_Internal");
+
+	Params::WBP_Title_BackupSelect_C_OnClickedBackupButton_Internal Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_BackupSelect.WBP_Title_BackupSelect_C.OnClickedCloseButton__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Title_BackupSelect_C::OnClickedCloseButton__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_BackupSelect_C", "OnClickedCloseButton__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Title_BackupSelect.WBP_Title_BackupSelect_C.SetBackupDisplayData
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<struct FPalUIBackupSaveDisplayData>DisplayData                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_Title_BackupSelect_C::SetBackupDisplayData(TArray<struct FPalUIBackupSaveDisplayData>& DisplayData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_BackupSelect_C", "SetBackupDisplayData");
+
+	Params::WBP_Title_BackupSelect_C_SetBackupDisplayData Parms{};
+
+	Parms.DisplayData = std::move(DisplayData);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	DisplayData = std::move(Parms.DisplayData);
 }
 
 }

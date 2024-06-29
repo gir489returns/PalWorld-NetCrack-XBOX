@@ -41,11 +41,11 @@ public:
 	class UWBP_PalKeyGuideIcon_C*                 WBP_PalKeyGuideIcon_Back;                          // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_PalKeyGuideIcon_C*                 WBP_PalKeyGuideIcon_Default;                       // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          Switching;                                         // 0x04A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E29[0x3];                                     // 0x04A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_498B[0x3];                                     // 0x04A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   DefaultActionName;                                 // 0x04AC(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   PreTabActionName;                                  // 0x04B4(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   NextTabActionName;                                 // 0x04BC(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E2A[0x4];                                     // 0x04C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_498C[0x4];                                     // 0x04C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_Graphic_Settings_C*                GraphicSettings;                                   // 0x04C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWBP_Sound_Settings_C*                  AudioSettings;                                     // 0x04D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWBP_Key_Settings_C*                    KeySettings;                                       // 0x04D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -62,12 +62,6 @@ public:
 	struct FDataTableRowHandle                    ConflictMsgId;                                     // 0x0538(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void SwitchTabTo(int32 Param_Index);
-	void SetDefaultAction();
-	void SetDefault(bool Confirmed);
-	void Set_Tab_Action(bool Bind);
-	void PreTab();
-	void OpenPanel();
 	void NextTab();
 	void Finished_EE961C0249D44ADFCC582DBCE988D50D();
 	void Finished_E609EC2649DD5C39B8991FA76989D962();
@@ -92,6 +86,12 @@ public:
 	void BndEvt__WBP_OptionSettings_WBP_OptionSettings_MenuButton_Control_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
 	void BackAction();
 	void ApplySettings(bool Confirmed);
+	void OpenPanel();
+	void PreTab();
+	void Set_Tab_Action(bool Bind);
+	void SetDefault(bool Confirmed);
+	void SetDefaultAction();
+	void SwitchTabTo(int32 Param_Index);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

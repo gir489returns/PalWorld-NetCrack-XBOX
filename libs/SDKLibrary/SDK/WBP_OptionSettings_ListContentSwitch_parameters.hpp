@@ -55,7 +55,7 @@ struct WBP_OptionSettings_ListContentSwitch_C_ExecuteUbergraph_WBP_OptionSetting
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_40F7[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_40AC[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EUMGSequencePlayMode                          Temp_byte_Variable;                                // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -63,7 +63,7 @@ public:
 	bool                                          Temp_bool_Variable_1;                              // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EUMGSequencePlayMode                          Temp_byte_Variable_2;                              // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EUMGSequencePlayMode                          Temp_byte_Variable_3;                              // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsON;                           // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_IsOn;                           // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EUMGSequencePlayMode                          K2Node_Select_Default;                             // 0x0017(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -71,7 +71,7 @@ public:
 	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EUMGSequencePlayMode                          K2Node_Select_Default_1;                           // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_40F8[0x5];                                     // 0x0033(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_40AD[0x5];                                     // 0x0033(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_3;              // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_5;               // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_4;               // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -89,7 +89,7 @@ static_assert(offsetof(WBP_OptionSettings_ListContentSwitch_C_ExecuteUbergraph_W
 static_assert(offsetof(WBP_OptionSettings_ListContentSwitch_C_ExecuteUbergraph_WBP_OptionSettings_ListContentSwitch, Temp_bool_Variable_1) == 0x000013, "Member 'WBP_OptionSettings_ListContentSwitch_C_ExecuteUbergraph_WBP_OptionSettings_ListContentSwitch::Temp_bool_Variable_1' has a wrong offset!");
 static_assert(offsetof(WBP_OptionSettings_ListContentSwitch_C_ExecuteUbergraph_WBP_OptionSettings_ListContentSwitch, Temp_byte_Variable_2) == 0x000014, "Member 'WBP_OptionSettings_ListContentSwitch_C_ExecuteUbergraph_WBP_OptionSettings_ListContentSwitch::Temp_byte_Variable_2' has a wrong offset!");
 static_assert(offsetof(WBP_OptionSettings_ListContentSwitch_C_ExecuteUbergraph_WBP_OptionSettings_ListContentSwitch, Temp_byte_Variable_3) == 0x000015, "Member 'WBP_OptionSettings_ListContentSwitch_C_ExecuteUbergraph_WBP_OptionSettings_ListContentSwitch::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_OptionSettings_ListContentSwitch_C_ExecuteUbergraph_WBP_OptionSettings_ListContentSwitch, K2Node_CustomEvent_IsON) == 0x000016, "Member 'WBP_OptionSettings_ListContentSwitch_C_ExecuteUbergraph_WBP_OptionSettings_ListContentSwitch::K2Node_CustomEvent_IsON' has a wrong offset!");
+static_assert(offsetof(WBP_OptionSettings_ListContentSwitch_C_ExecuteUbergraph_WBP_OptionSettings_ListContentSwitch, K2Node_CustomEvent_IsOn) == 0x000016, "Member 'WBP_OptionSettings_ListContentSwitch_C_ExecuteUbergraph_WBP_OptionSettings_ListContentSwitch::K2Node_CustomEvent_IsOn' has a wrong offset!");
 static_assert(offsetof(WBP_OptionSettings_ListContentSwitch_C_ExecuteUbergraph_WBP_OptionSettings_ListContentSwitch, K2Node_Select_Default) == 0x000017, "Member 'WBP_OptionSettings_ListContentSwitch_C_ExecuteUbergraph_WBP_OptionSettings_ListContentSwitch::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(WBP_OptionSettings_ListContentSwitch_C_ExecuteUbergraph_WBP_OptionSettings_ListContentSwitch, CallFunc_PlayAnimation_ReturnValue) == 0x000018, "Member 'WBP_OptionSettings_ListContentSwitch_C_ExecuteUbergraph_WBP_OptionSettings_ListContentSwitch::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_OptionSettings_ListContentSwitch_C_ExecuteUbergraph_WBP_OptionSettings_ListContentSwitch, CallFunc_PlayAnimation_ReturnValue_1) == 0x000020, "Member 'WBP_OptionSettings_ListContentSwitch_C_ExecuteUbergraph_WBP_OptionSettings_ListContentSwitch::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");

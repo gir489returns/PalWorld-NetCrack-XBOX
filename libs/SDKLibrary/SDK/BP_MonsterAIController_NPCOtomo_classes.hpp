@@ -25,7 +25,7 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_MonsterAIController_NPCOtomo_C;  // 0x0550(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UPalAISensorComponent*                  PalAISensor;                                       // 0x0558(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsOnpossessed;                                     // 0x0560(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4596[0x7];                                     // 0x0561(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4521[0x7];                                     // 0x0561(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          TrainerNPC;                                        // 0x0568(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:

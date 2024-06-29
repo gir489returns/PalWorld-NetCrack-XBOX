@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UMG_structs.hpp"
 #include "WBP_PalItemSlotButtonBase_classes.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
@@ -66,13 +66,13 @@ public:
 	void OnSetEmptySlotImpl();
 	void OnSetValidSlotEvent();
 	void OnUnhoveredEvent(class UWBP_PalItemSlotButtonBase_C* Widget);
-	void RegisterButton(class UCommonButtonBase** Button);
-	void RegisterItemSlotWidget(class UWBP_PalItemSlotBase_C** ItemSlotWidget);
 	void SetEnableDefaultClickSound(bool Enable);
 	void SetPalGearIcon(class FName ItemId);
 	void SetSlotLock();
 	void Toggle_Corruption_Visibility(bool Visible);
 	void ToggleLock(bool Lock);
+	void RegisterButton(class UCommonButtonBase** Button);
+	void RegisterItemSlotWidget(class UWBP_PalItemSlotBase_C** ItemSlotWidget);
 
 public:
 	static class UClass* StaticClass()

@@ -50,24 +50,19 @@ public:
 	class FName                                   LeftActionName;                                    // 0x04A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   RightActionName;                                   // 0x04B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Editing;                                           // 0x04B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DAD[0x7];                                     // 0x04B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_483A[0x7];                                     // 0x04B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           SubtractTimer;                                     // 0x04C0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                           AddTimer;                                          // 0x04C8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           OriginalColor;                                     // 0x04D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        ChangePercent;                                     // 0x04E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          BlockMouseClick;                                   // 0x04E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DAE[0x7];                                     // 0x04E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_483B[0x7];                                     // 0x04E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnKeyConfigClicked;                                // 0x04F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class FName                                   ActionKeyName;                                     // 0x0500(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECommonInputType                              Input_Type;                                        // 0x0508(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPalKeyConfigAxisFilterType                   Filter_Type;                                       // 0x0509(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SubtractValue();
-	void SetUIConfigButton(class FName UIActionName, ECommonInputType InputType, const struct FKey& Key);
-	void SetSwitcher(const bool CurrentOn);
-	void SetSlider(double CurrentValue, double Min, double Max, double FixedChangeValue, bool UseFixedValue);
-	void SetSelecter_String(const TArray<class FString>& Selections, const int32 Param_Current);
 	void SetSelecter(const TArray<struct FDataTableRowHandle>& Selections, const int32 Param_Current);
 	void SetResolution(const struct FIntPoint& CurrentResolution, const TArray<struct FIntPoint>& Resolutions);
 	void SetMsgId(const struct FDataTableRowHandle& RowHandle);
@@ -90,6 +85,11 @@ public:
 	void BndEvt__WBP_OptionSettings_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Param_Button);
 	void BackToList();
 	void AddValue();
+	void SubtractValue();
+	void SetUIConfigButton(class FName UIActionName, ECommonInputType InputType, const struct FKey& Key);
+	void SetSwitcher(const bool CurrentOn);
+	void SetSlider(double CurrentValue, double Min, double Max, double FixedChangeValue, bool UseFixedValue);
+	void SetSelecter_String(const TArray<class FString>& Selections, const int32 Param_Current);
 
 public:
 	static class UClass* StaticClass()

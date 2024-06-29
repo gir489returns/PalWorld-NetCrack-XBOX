@@ -32,8 +32,8 @@ public:
 	void ExecuteUbergraph_BP_RocketBullet(int32 EntryPoint);
 	void GetExplosionClass(class UClass** ExplosionClass);
 	void OnDestroy(class UPrimitiveComponent* HitComp, class AActor* OtherCharacter, class UPrimitiveComponent* OtherComp, const struct FHitResult& Hit);
-	void OnHitToActor(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FHitResult& Hit);
 	void ReceiveBeginPlay();
+	void OnHitToActor(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FHitResult& Hit);
 	void ReceiveTick(float DeltaSeconds);
 
 public:

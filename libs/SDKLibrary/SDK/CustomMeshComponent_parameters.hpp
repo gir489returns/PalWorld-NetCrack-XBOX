@@ -34,7 +34,7 @@ struct CustomMeshComponent_SetCustomMeshTriangles final
 public:
 	TArray<struct FCustomMeshTriangle>            Triangles;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24F5[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_247A[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CustomMeshComponent_SetCustomMeshTriangles) == 0x000008, "Wrong alignment on CustomMeshComponent_SetCustomMeshTriangles");
 static_assert(sizeof(CustomMeshComponent_SetCustomMeshTriangles) == 0x000018, "Wrong size on CustomMeshComponent_SetCustomMeshTriangles");

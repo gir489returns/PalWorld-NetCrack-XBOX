@@ -38,11 +38,11 @@ public:
 	void OnArrivedTargetPoint();
 	void OnStuck();
 	void OnWaitFinished();
-	void ReceiveBeginPlay();
-	void StartDefaultAIAction();
 	void StartRaid();
 	void StartReturnToSpawnedPointAction();
 	void StartWaitAction();
+	void ReceiveBeginPlay();
+	void StartDefaultAIAction();
 
 public:
 	static class UClass* StaticClass()

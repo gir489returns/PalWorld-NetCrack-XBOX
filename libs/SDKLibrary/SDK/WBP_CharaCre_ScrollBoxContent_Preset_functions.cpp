@@ -92,27 +92,6 @@ void UWBP_CharaCre_ScrollBoxContent_Preset_C::GetRestoreFocusTarget(class UWidge
 }
 
 
-// Function WBP_CharaCre_ScrollBoxContent_Preset.WBP_CharaCre_ScrollBoxContent_Preset_C.GetTopFocusTarget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget*                          Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CharaCre_ScrollBoxContent_Preset_C::GetTopFocusTarget(class UWidget** Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CharaCre_ScrollBoxContent_Preset_C", "GetTopFocusTarget");
-
-	Params::WBP_CharaCre_ScrollBoxContent_Preset_C_GetTopFocusTarget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Widget != nullptr)
-		*Widget = Parms.Widget;
-}
-
-
 // Function WBP_CharaCre_ScrollBoxContent_Preset.WBP_CharaCre_ScrollBoxContent_Preset_C.OnClickedPresetButton_Internal
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -150,6 +129,27 @@ void UWBP_CharaCre_ScrollBoxContent_Preset_C::OnSelectedPreset__DelegateSignatur
 	Parms.PresetName = PresetName;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CharaCre_ScrollBoxContent_Preset.WBP_CharaCre_ScrollBoxContent_Preset_C.GetTopFocusTarget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWidget*                          Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CharaCre_ScrollBoxContent_Preset_C::GetTopFocusTarget(class UWidget** Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CharaCre_ScrollBoxContent_Preset_C", "GetTopFocusTarget");
+
+	Params::WBP_CharaCre_ScrollBoxContent_Preset_C_GetTopFocusTarget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Widget != nullptr)
+		*Widget = Parms.Widget;
 }
 
 }

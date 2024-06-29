@@ -980,15 +980,15 @@ void UWBP_CharaCre_C::OnNotifyClosenSelectColorWindow_Internal()
 }
 
 
-// Function WBP_CharaCre.WBP_CharaCre_C.OnNotifyCloseSelectColorWindow__DelegateSignature
+// Function WBP_CharaCre.WBP_CharaCre_C.OnNotifyCloseSelectColorWIndow__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 
-void UWBP_CharaCre_C::OnNotifyCloseSelectColorWindow__DelegateSignature()
+void UWBP_CharaCre_C::OnNotifyCloseSelectColorWIndow__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CharaCre_C", "OnNotifyCloseSelectColorWindow__DelegateSignature");
+		Func = Class->GetFunction("WBP_CharaCre_C", "OnNotifyCloseSelectColorWIndow__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

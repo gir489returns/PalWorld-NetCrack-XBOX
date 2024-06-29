@@ -70,7 +70,7 @@ public:
 	class FString                                 Message;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Source;                                            // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Line;                                              // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CB5[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C65[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(WebBrowser_OnConsoleMessage__DelegateSignature) == 0x000008, "Wrong alignment on WebBrowser_OnConsoleMessage__DelegateSignature");
 static_assert(sizeof(WebBrowser_OnConsoleMessage__DelegateSignature) == 0x000028, "Wrong size on WebBrowser_OnConsoleMessage__DelegateSignature");
