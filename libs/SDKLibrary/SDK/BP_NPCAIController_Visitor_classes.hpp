@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "BP_NPCAIController_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Pal_structs.hpp"
+#include "BP_NPCAIController_classes.hpp"
 
 
 namespace SDK

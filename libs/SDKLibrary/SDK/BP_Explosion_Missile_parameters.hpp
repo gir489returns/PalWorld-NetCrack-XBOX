@@ -33,7 +33,7 @@ struct BP_Explosion_Missile_C_ExecuteUbergraph_BP_Explosion_Missile final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4911[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4884[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UNiagaraComponent*                      K2Node_ComponentBoundEvent_PSystem;                // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_Explosion_Missile_C_ExecuteUbergraph_BP_Explosion_Missile) == 0x000008, "Wrong alignment on BP_Explosion_Missile_C_ExecuteUbergraph_BP_Explosion_Missile");

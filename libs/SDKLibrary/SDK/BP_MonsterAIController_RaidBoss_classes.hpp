@@ -26,7 +26,7 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_MonsterAIController_RaidBoss_C;  // 0x0550(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UPalAISensorComponent*                  PalAISensor;                                       // 0x0558(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsNotFreeAIMode;                                   // 0x0560(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_48EB[0x3];                                     // 0x0561(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47D5[0x3];                                     // 0x0561(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGuid                                  TargetBaseCampID;                                  // 0x0564(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

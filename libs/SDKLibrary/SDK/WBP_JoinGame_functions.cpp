@@ -17,6 +17,94 @@
 namespace SDK
 {
 
+// Function WBP_JoinGame.WBP_JoinGame_C.Ñ¹ïüÉKÕe›
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalHUDDispatchParameterBase*     Param_Param                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_JoinGame_C::_____K_e_(class UPalHUDDispatchParameterBase* Param_Param)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_JoinGame_C", "Ñ¹ïüÉKÕe›");
+
+	Params::WBP_JoinGame_C______K_e_ Parms{};
+
+	Parms.Param_Param = Param_Param;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_JoinGame.WBP_JoinGame_C.«¹¿à¤ÙóÈ_0
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_JoinGame_C::_________0(bool bResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_JoinGame_C", "«¹¿à¤ÙóÈ_0");
+
+	Params::WBP_JoinGame_C__________0 Parms{};
+
+	Parms.bResult = bResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_JoinGame.WBP_JoinGame_C.«¹¿à¤ÙóÈ
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_JoinGame_C::________(bool bResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_JoinGame_C", "«¹¿à¤ÙóÈ");
+
+	Params::WBP_JoinGame_C_________ Parms{};
+
+	Parms.bResult = bResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_JoinGame.WBP_JoinGame_C.RequestGetServerListBP
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalUIServerListFilterType              Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                           Region                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// int32                                   PageOffset                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                           Word                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// EPalUIServerListSortType                Param_SortType                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_JoinGame_C::RequestGetServerListBP(EPalUIServerListFilterType Type, const class FString& Region, int32 PageOffset, const class FString& Word, EPalUIServerListSortType Param_SortType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_JoinGame_C", "RequestGetServerListBP");
+
+	Params::WBP_JoinGame_C_RequestGetServerListBP Parms{};
+
+	Parms.Type = Type;
+	Parms.Region = std::move(Region);
+	Parms.PageOffset = PageOffset;
+	Parms.Word = std::move(Word);
+	Parms.Param_SortType = Param_SortType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_JoinGame.WBP_JoinGame_C.PreviousButton
 // (BlueprintCallable, BlueprintEvent)
 
@@ -212,94 +300,6 @@ void UWBP_JoinGame_C::DisplayServer()
 		Func = Class->GetFunction("WBP_JoinGame_C", "DisplayServer");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_JoinGame.WBP_JoinGame_C.Ñ¹ïüÉKÕe›
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalHUDDispatchParameterBase*     Param_Param                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_JoinGame_C::_____K_e_(class UPalHUDDispatchParameterBase* Param_Param)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "Ñ¹ïüÉKÕe›");
-
-	Params::WBP_JoinGame_C______K_e_ Parms{};
-
-	Parms.Param_Param = Param_Param;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_JoinGame.WBP_JoinGame_C.«¹¿à¤ÙóÈ_0
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_JoinGame_C::_________0(bool bResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "«¹¿à¤ÙóÈ_0");
-
-	Params::WBP_JoinGame_C__________0 Parms{};
-
-	Parms.bResult = bResult;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_JoinGame.WBP_JoinGame_C.«¹¿à¤ÙóÈ
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_JoinGame_C::________(bool bResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "«¹¿à¤ÙóÈ");
-
-	Params::WBP_JoinGame_C_________ Parms{};
-
-	Parms.bResult = bResult;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_JoinGame.WBP_JoinGame_C.RequestGetServerListBP
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalUIServerListFilterType              Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString                           Region                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// int32                                   PageOffset                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString                           Word                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// EPalUIServerListSortType                Param_SortType                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_JoinGame_C::RequestGetServerListBP(EPalUIServerListFilterType Type, const class FString& Region, int32 PageOffset, const class FString& Word, EPalUIServerListSortType Param_SortType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JoinGame_C", "RequestGetServerListBP");
-
-	Params::WBP_JoinGame_C_RequestGetServerListBP Parms{};
-
-	Parms.Type = Type;
-	Parms.Region = std::move(Region);
-	Parms.PageOffset = PageOffset;
-	Parms.Word = std::move(Word);
-	Parms.Param_SortType = Param_SortType;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

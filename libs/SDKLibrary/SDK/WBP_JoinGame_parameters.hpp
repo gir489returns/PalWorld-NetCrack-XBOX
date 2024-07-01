@@ -20,6 +20,60 @@
 namespace SDK::Params
 {
 
+// Function WBP_JoinGame.WBP_JoinGame_C.Ñ¹ïüÉKÕe›
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_JoinGame_C______K_e_ final
+{
+public:
+	class UPalHUDDispatchParameterBase*           Param_Param;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_JoinGame_C______K_e_) == 0x000008, "Wrong alignment on WBP_JoinGame_C______K_e_");
+static_assert(sizeof(WBP_JoinGame_C______K_e_) == 0x000008, "Wrong size on WBP_JoinGame_C______K_e_");
+static_assert(offsetof(WBP_JoinGame_C______K_e_, Param_Param) == 0x000000, "Member 'WBP_JoinGame_C______K_e_::Param_Param' has a wrong offset!");
+
+// Function WBP_JoinGame.WBP_JoinGame_C.«¹¿à¤ÙóÈ_0
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_JoinGame_C__________0 final
+{
+public:
+	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_JoinGame_C__________0) == 0x000001, "Wrong alignment on WBP_JoinGame_C__________0");
+static_assert(sizeof(WBP_JoinGame_C__________0) == 0x000001, "Wrong size on WBP_JoinGame_C__________0");
+static_assert(offsetof(WBP_JoinGame_C__________0, bResult) == 0x000000, "Member 'WBP_JoinGame_C__________0::bResult' has a wrong offset!");
+
+// Function WBP_JoinGame.WBP_JoinGame_C.«¹¿à¤ÙóÈ
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_JoinGame_C_________ final
+{
+public:
+	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_JoinGame_C_________) == 0x000001, "Wrong alignment on WBP_JoinGame_C_________");
+static_assert(sizeof(WBP_JoinGame_C_________) == 0x000001, "Wrong size on WBP_JoinGame_C_________");
+static_assert(offsetof(WBP_JoinGame_C_________, bResult) == 0x000000, "Member 'WBP_JoinGame_C_________::bResult' has a wrong offset!");
+
+// Function WBP_JoinGame.WBP_JoinGame_C.RequestGetServerListBP
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_JoinGame_C_RequestGetServerListBP final
+{
+public:
+	EPalUIServerListFilterType                    Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1887[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Region;                                            // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	int32                                         PageOffset;                                        // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1888[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Word;                                              // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	EPalUIServerListSortType                      Param_SortType;                                    // 0x0030(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_JoinGame_C_RequestGetServerListBP) == 0x000008, "Wrong alignment on WBP_JoinGame_C_RequestGetServerListBP");
+static_assert(sizeof(WBP_JoinGame_C_RequestGetServerListBP) == 0x000038, "Wrong size on WBP_JoinGame_C_RequestGetServerListBP");
+static_assert(offsetof(WBP_JoinGame_C_RequestGetServerListBP, Type) == 0x000000, "Member 'WBP_JoinGame_C_RequestGetServerListBP::Type' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_RequestGetServerListBP, Region) == 0x000008, "Member 'WBP_JoinGame_C_RequestGetServerListBP::Region' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_RequestGetServerListBP, PageOffset) == 0x000018, "Member 'WBP_JoinGame_C_RequestGetServerListBP::PageOffset' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_RequestGetServerListBP, Word) == 0x000020, "Member 'WBP_JoinGame_C_RequestGetServerListBP::Word' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_RequestGetServerListBP, Param_SortType) == 0x000030, "Member 'WBP_JoinGame_C_RequestGetServerListBP::Param_SortType' has a wrong offset!");
+
 // Function WBP_JoinGame.WBP_JoinGame_C.Passworde›Œ
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_JoinGame_C_Passworde__ final
@@ -64,10 +118,10 @@ struct WBP_JoinGame_C_OnCloseJoinServerDialog final
 {
 public:
 	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A4E[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1889[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A4F[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_188A[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_Title_WorldSelect_ListContent_C*   K2Node_DynamicCast_AsWBP_Title_World_Select_List_Content; // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -121,31 +175,31 @@ public:
 	TDelegate<void(bool bResult)>                 K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGuid                                  CallFunc_Dialog_ReturnValue;                       // 0x0014(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A50[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_188B[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0028(0x0018)()
 	bool                                          Temp_bool_Variable_1;                              // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A51[0x5];                                     // 0x0043(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_188C[0x5];                                     // 0x0043(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetPassword_ReturnValue;                  // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class UPalHUDDispatchParameterBase*           K2Node_CustomEvent_Param_1;                        // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue;            // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A52[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_188D[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalHUDDispatchParame_JoinGameInputCode* K2Node_DynamicCast_AsPal_HUDDispatch_Parame_Join_Game_Input_Code; // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A53[0x3];                                     // 0x0071(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_188E[0x3];                                     // 0x0071(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(class UPalHUDDispatchParameterBase* Param)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0074(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(const class FString& Address)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x0084(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A54[0x4];                                     // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_188F[0x4];                                     // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalHUDDispatchParame_JoinGameInputCode* CallFunc_SpawnObject_ReturnValue;                  // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGuid                                  CallFunc_Push_ReturnValue;                         // 0x00A8(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_GetSelectRegion_Region;                   // 0x00B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A55[0x3];                                     // 0x00C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1890[0x3];                                     // 0x00C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(bool bIsChecked)>              K2Node_CreateDelegate_OutputDelegate_3;            // 0x00CC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_bIsChecked;                     // 0x00DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A56[0x3];                                     // 0x00DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1891[0x3];                                     // 0x00DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x00E0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_GetSelectRegion_Region_1;                 // 0x00F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 K2Node_CustomEvent_Address;                        // 0x0100(0x0010)(ZeroConstructor, HasGetValueTypeHash)
@@ -153,11 +207,11 @@ public:
 	class FString                                 CallFunc_Split_RightS;                             // 0x0120(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Split_ReturnValue;                        // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_bResult_1;                      // 0x0131(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A57[0x2];                                     // 0x0132(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1892[0x2];                                     // 0x0132(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Conv_StringToInt_ReturnValue;             // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWBP_Title_WorldSelect_ListContent_C*   K2Node_ComponentBoundEvent_Widget;                 // 0x0138(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_bResult;                        // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A58[0x7];                                     // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1893[0x7];                                     // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UWBP_Title_WorldSelect_ListContent_C> CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue; // 0x0148(0x0030)(InstancedReference, UObjectWrapper, HasGetValueTypeHash)
 	struct FPalUIServerDisplayData                CallFunc_GetBindedServerDisplayData_DisplayData;   // 0x0178(0x01A0)()
 	class FString                                 K2Node_ComponentBoundEvent_SearchWord;             // 0x0318(0x0010)(ZeroConstructor, HasGetValueTypeHash)
@@ -167,7 +221,7 @@ public:
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0358(0x0050)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x03A8(0x0010)(ReferenceParm)
 	bool                                          CallFunc_IsChecked_ReturnValue;                    // 0x03B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A59[0x7];                                     // 0x03B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1894[0x7];                                     // 0x03B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x03C0(0x0018)()
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x03D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue_1;              // 0x03E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -177,17 +231,17 @@ public:
 	class UPalHUDDispatchParameterBase*           K2Node_CustomEvent_Param;                          // 0x0418(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalHUDDispatchParame_JoinGameInputCode* K2Node_DynamicCast_AsPal_HUDDispatch_Parame_Join_Game_Input_Code_1; // 0x0420(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0428(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A5A[0x7];                                     // 0x0429(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1895[0x7];                                     // 0x0429(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetSelectRegion_Region_2;                 // 0x0430(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0440(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A5B[0x7];                                     // 0x0441(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1896[0x7];                                     // 0x0441(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetSelectRegion_Region_3;                 // 0x0448(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsEmpty_ReturnValue_1;                    // 0x0458(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A5C[0x7];                                     // 0x0459(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1897[0x7];                                     // 0x0459(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0460(0x0018)()
 	class FText                                   K2Node_Select_Default;                             // 0x0478(0x0018)()
 	bool                                          CallFunc_IsChecked_ReturnValue_1;                  // 0x0490(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A5D[0x7];                                     // 0x0491(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1898[0x7];                                     // 0x0491(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0498(0x0018)()
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x04B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_7;            // 0x04C0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -195,28 +249,28 @@ public:
 	EPalUIServerListSortType                      K2Node_ComponentBoundEvent_SortType;               // 0x04E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsCanPlayDedicatedServerIP_ReturnValue;   // 0x04E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x04E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A5E[0x5];                                     // 0x04E3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1899[0x5];                                     // 0x04E3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Temp_string_Variable;                              // 0x04E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	struct FJsonObjectWrapper                     CallFunc_FromString_OutJsonObject;                 // 0x04F8(0x0020)()
 	bool                                          CallFunc_FromString_ReturnValue;                   // 0x0518(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A5F[0x7];                                     // 0x0519(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_189A[0x7];                                     // 0x0519(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetField_OutValue;                        // 0x0520(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetField_ReturnValue;                     // 0x0530(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A60[0x7];                                     // 0x0531(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_189B[0x7];                                     // 0x0531(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         CallFunc_GetField_OutValue_1;                      // 0x0538(0x0010)(ReferenceParm)
 	bool                                          CallFunc_GetField_ReturnValue_1;                   // 0x0548(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_2;                              // 0x0549(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A61[0x2];                                     // 0x054A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_189C[0x2];                                     // 0x054A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x054C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsEmpty_ReturnValue_2;                    // 0x0550(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A62[0x7];                                     // 0x0551(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_189D[0x7];                                     // 0x0551(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 K2Node_CustomEvent_ResponseBody;                   // 0x0558(0x0010)(ConstParm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_bResponseOK;                    // 0x0568(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A63[0x3];                                     // 0x0569(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_189E[0x3];                                     // 0x0569(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_CustomEvent_ResponseCode;                   // 0x056C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class FString& ResponseBody, bool bResponseOK, int32 ResponseCode)> K2Node_CreateDelegate_OutputDelegate_8;            // 0x0570(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0580(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A64[0x7];                                     // 0x0581(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_189F[0x7];                                     // 0x0581(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetSelectRegion_Region_5;                 // 0x0588(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class UPocketpairUserSubsystem*               CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0598(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UHTTPRequestAsyncFunction*              CallFunc_HTTPRequestAsyncFunction_ReturnValue;     // 0x05A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -315,7 +369,7 @@ struct WBP_JoinGame_C_DisplayServer final
 public:
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FPalUIServerDataCollectInfo            K2Node_MakeStruct_PalUIServerDataCollectInfo;      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4A65[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_18A0[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FPalUIServerDisplayData>        CallFunc_CollectServerDisplayInfo_OutServerInfo;   // 0x0008(0x0010)(ReferenceParm)
 };
 static_assert(alignof(WBP_JoinGame_C_DisplayServer) == 0x000008, "Wrong alignment on WBP_JoinGame_C_DisplayServer");
@@ -324,60 +378,6 @@ static_assert(offsetof(WBP_JoinGame_C_DisplayServer, CallFunc_LessEqual_IntInt_R
 static_assert(offsetof(WBP_JoinGame_C_DisplayServer, K2Node_MakeStruct_PalUIServerDataCollectInfo) == 0x000001, "Member 'WBP_JoinGame_C_DisplayServer::K2Node_MakeStruct_PalUIServerDataCollectInfo' has a wrong offset!");
 static_assert(offsetof(WBP_JoinGame_C_DisplayServer, CallFunc_CollectServerDisplayInfo_OutServerInfo) == 0x000008, "Member 'WBP_JoinGame_C_DisplayServer::CallFunc_CollectServerDisplayInfo_OutServerInfo' has a wrong offset!");
 
-// Function WBP_JoinGame.WBP_JoinGame_C.Ñ¹ïüÉKÕe›
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_JoinGame_C______K_e_ final
-{
-public:
-	class UPalHUDDispatchParameterBase*           Param_Param;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_JoinGame_C______K_e_) == 0x000008, "Wrong alignment on WBP_JoinGame_C______K_e_");
-static_assert(sizeof(WBP_JoinGame_C______K_e_) == 0x000008, "Wrong size on WBP_JoinGame_C______K_e_");
-static_assert(offsetof(WBP_JoinGame_C______K_e_, Param_Param) == 0x000000, "Member 'WBP_JoinGame_C______K_e_::Param_Param' has a wrong offset!");
-
-// Function WBP_JoinGame.WBP_JoinGame_C.«¹¿à¤ÙóÈ_0
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_JoinGame_C__________0 final
-{
-public:
-	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_JoinGame_C__________0) == 0x000001, "Wrong alignment on WBP_JoinGame_C__________0");
-static_assert(sizeof(WBP_JoinGame_C__________0) == 0x000001, "Wrong size on WBP_JoinGame_C__________0");
-static_assert(offsetof(WBP_JoinGame_C__________0, bResult) == 0x000000, "Member 'WBP_JoinGame_C__________0::bResult' has a wrong offset!");
-
-// Function WBP_JoinGame.WBP_JoinGame_C.«¹¿à¤ÙóÈ
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_JoinGame_C_________ final
-{
-public:
-	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_JoinGame_C_________) == 0x000001, "Wrong alignment on WBP_JoinGame_C_________");
-static_assert(sizeof(WBP_JoinGame_C_________) == 0x000001, "Wrong size on WBP_JoinGame_C_________");
-static_assert(offsetof(WBP_JoinGame_C_________, bResult) == 0x000000, "Member 'WBP_JoinGame_C_________::bResult' has a wrong offset!");
-
-// Function WBP_JoinGame.WBP_JoinGame_C.RequestGetServerListBP
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_JoinGame_C_RequestGetServerListBP final
-{
-public:
-	EPalUIServerListFilterType                    Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A66[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Region;                                            // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	int32                                         PageOffset;                                        // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A67[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Word;                                              // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	EPalUIServerListSortType                      Param_SortType;                                    // 0x0030(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_JoinGame_C_RequestGetServerListBP) == 0x000008, "Wrong alignment on WBP_JoinGame_C_RequestGetServerListBP");
-static_assert(sizeof(WBP_JoinGame_C_RequestGetServerListBP) == 0x000038, "Wrong size on WBP_JoinGame_C_RequestGetServerListBP");
-static_assert(offsetof(WBP_JoinGame_C_RequestGetServerListBP, Type) == 0x000000, "Member 'WBP_JoinGame_C_RequestGetServerListBP::Type' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_RequestGetServerListBP, Region) == 0x000008, "Member 'WBP_JoinGame_C_RequestGetServerListBP::Region' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_RequestGetServerListBP, PageOffset) == 0x000018, "Member 'WBP_JoinGame_C_RequestGetServerListBP::PageOffset' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_RequestGetServerListBP, Word) == 0x000020, "Member 'WBP_JoinGame_C_RequestGetServerListBP::Word' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_RequestGetServerListBP, Param_SortType) == 0x000030, "Member 'WBP_JoinGame_C_RequestGetServerListBP::Param_SortType' has a wrong offset!");
-
 // Function WBP_JoinGame.WBP_JoinGame_C.Completed_B0C690024643A528EA9A2B9DAEA567A3
 // 0x0018 (0x0018 - 0x0000)
 struct WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3 final
@@ -385,7 +385,7 @@ struct WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3 final
 public:
 	class FString                                 ResponseBody;                                      // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          bResponseOK;                                       // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A68[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_18A1[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ResponseCode;                                      // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3) == 0x000008, "Wrong alignment on WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3");

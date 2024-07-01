@@ -50,7 +50,7 @@ static_assert(offsetof(FJoinabilitySettings, MaxPartySize) == 0x000010, "Member 
 struct FUniqueNetIdWrapper
 {
 public:
-	uint8                                         Pad_36C2[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_36C4[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FUniqueNetIdWrapper) == 0x000001, "Wrong alignment on FUniqueNetIdWrapper");
 static_assert(sizeof(FUniqueNetIdWrapper) == 0x000001, "Wrong size on FUniqueNetIdWrapper");

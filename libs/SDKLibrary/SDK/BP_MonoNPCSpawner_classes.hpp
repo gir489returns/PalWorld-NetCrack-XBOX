@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "F_NPC_PathWalkArray_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "F_NPC_PathWalkArray_structs.hpp"
 
 
 namespace SDK
@@ -30,7 +30,7 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	struct FPalDataTableRowName_PalHumanData      HumanName;                                         // 0x0398(0x0008)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
 	bool                                          Spawned;                                           // 0x03A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	uint8                                         Pad_457A[0x3];                                     // 0x03A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4511[0x3];                                     // 0x03A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalDataTableRowName_NPCUniqueData     UniqueName;                                        // 0x03A4(0x0008)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
 	struct FPalDataTableRowName_PalMonsterData    OtomoName;                                         // 0x03AC(0x0008)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
 	int32                                         Level;                                             // 0x03B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -46,7 +46,7 @@ public:
 	bool                                          IsLoading;                                         // 0x0410(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	bool                                          IsWorldLoadComplete;                               // 0x0411(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	bool                                          Debug_Disable;                                     // 0x0412(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	uint8                                         Pad_457B[0x5];                                     // 0x0413(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4512[0x5];                                     // 0x0413(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class ABP_NPC_WalkPathPoint_1_C*>      WalkPointRefarence;                                // 0x0418(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
 	class UPalIndividualCharacterHandle*          OtomoHandle;                                       // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	int32                                         DespawnWaitCounter;                                // 0x0430(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

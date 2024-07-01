@@ -86,19 +86,27 @@ public:
 	FMulticastInlineDelegateProperty_             OnClickedCancel;                                   // 0x05E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnClickedConfirm;                                  // 0x05F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          IsCustomDifficultySetting;                         // 0x0600(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4846[0x3];                                     // 0x0601(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C0D[0x3];                                     // 0x0601(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalOptionWorldStaticSettings          SatticWorldSetting;                                // 0x0604(0x0100)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	uint8                                         Pad_4847[0x4];                                     // 0x0704(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C0E[0x4];                                     // 0x0704(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalOptionWorldSettings                CachedOriginalWorldSetting;                        // 0x0708(0x0158)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FPalOptionWorldSettings                EditedWorldSetting;                                // 0x0860(0x0158)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          IsEditedSettingFlag;                               // 0x09B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsEditedFromPreset;                                // 0x09B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Is_New_World;                                      // 0x09BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4848[0x5];                                     // 0x09BB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C0F[0x5];                                     // 0x09BB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnClickedWorldNameInputButton;                     // 0x09C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnClickedRandomizerSeedInputButton;                // 0x09D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
+	void BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature(bool IsOn);
+	void BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature(bool IsOn);
+	void BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature(int32 NewIndex);
+	void BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultyCustom_K2Node_ComponentBoundEvent_7_OnClickedSettingButton__DelegateSignature();
+	void BndEvt__WBP_Title_WorldSettings_WBP_Title_SettingsButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
+	void BndEvt__WBP_Title_WorldSettings_WBP_Title_SettingsButton_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	void ApplyWorldSettingToUI(const struct FPalOptionWorldSettings& WorldSetting);
+	void ApplyDifficultyPreset(EPalOptionWorldDifficulty DifficultyType);
 	void UpdateRandomizerSeedVisibility();
 	void TogglePanel(bool IsCustomPanel);
 	void SetWorldName(const class FString& NewWorldName);
@@ -174,14 +182,6 @@ public:
 	void BndEvt__WBP_Title_WorldSettings_WorldSettings_AutoResetGuildNoOnlinePlayers_K2Node_ComponentBoundEvent_33_OnSwitchChanged__DelegateSignature(bool IsOn);
 	void BndEvt__WBP_Title_WorldSettings_WorldSettings_AGuildPlayerMaxNum_K2Node_ComponentBoundEvent_35_OnChangedValue__DelegateSignature(double NewValue);
 	void BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordSetting_K2Node_ComponentBoundEvent_5_OnComittedText__DelegateSignature(const class FString& NewString);
-	void BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature(bool IsOn);
-	void BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature(bool IsOn);
-	void BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature(int32 NewIndex);
-	void BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultyCustom_K2Node_ComponentBoundEvent_7_OnClickedSettingButton__DelegateSignature();
-	void BndEvt__WBP_Title_WorldSettings_WBP_Title_SettingsButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
-	void BndEvt__WBP_Title_WorldSettings_WBP_Title_SettingsButton_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void ApplyWorldSettingToUI(const struct FPalOptionWorldSettings& WorldSetting);
-	void ApplyDifficultyPreset(EPalOptionWorldDifficulty DifficultyType);
 
 public:
 	static class UClass* StaticClass()

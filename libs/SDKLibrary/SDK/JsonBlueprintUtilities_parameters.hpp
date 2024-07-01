@@ -26,7 +26,7 @@ public:
 	struct FFilePath                              File;                                              // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FJsonObjectWrapper                     OutJsonObject;                                     // 0x0018(0x0020)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B70[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B8B[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(JsonBlueprintFunctionLibrary_FromFile) == 0x000008, "Wrong alignment on JsonBlueprintFunctionLibrary_FromFile");
 static_assert(sizeof(JsonBlueprintFunctionLibrary_FromFile) == 0x000040, "Wrong size on JsonBlueprintFunctionLibrary_FromFile");
@@ -44,7 +44,7 @@ public:
 	class FString                                 JsonString;                                        // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FJsonObjectWrapper                     OutJsonObject;                                     // 0x0018(0x0020)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B71[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B8C[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(JsonBlueprintFunctionLibrary_FromString) == 0x000008, "Wrong alignment on JsonBlueprintFunctionLibrary_FromString");
 static_assert(sizeof(JsonBlueprintFunctionLibrary_FromString) == 0x000040, "Wrong size on JsonBlueprintFunctionLibrary_FromString");
@@ -62,7 +62,7 @@ public:
 	class FString                                 FieldName;                                         // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OutValue;                                          // 0x0030(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0034(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B72[0x3];                                     // 0x0035(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B8D[0x3];                                     // 0x0035(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(JsonBlueprintFunctionLibrary_GetField) == 0x000008, "Wrong alignment on JsonBlueprintFunctionLibrary_GetField");
 static_assert(sizeof(JsonBlueprintFunctionLibrary_GetField) == 0x000038, "Wrong size on JsonBlueprintFunctionLibrary_GetField");
@@ -79,7 +79,7 @@ public:
 	struct FJsonObjectWrapper                     JsonObject;                                        // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<class FString>                         FieldNames;                                        // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B73[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B8E[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(JsonBlueprintFunctionLibrary_GetFieldNames) == 0x000008, "Wrong alignment on JsonBlueprintFunctionLibrary_GetFieldNames");
 static_assert(sizeof(JsonBlueprintFunctionLibrary_GetFieldNames) == 0x000038, "Wrong size on JsonBlueprintFunctionLibrary_GetFieldNames");
@@ -95,7 +95,7 @@ public:
 	struct FJsonObjectWrapper                     JsonObject;                                        // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                 FieldName;                                         // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B74[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B8F[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(JsonBlueprintFunctionLibrary_HasField) == 0x000008, "Wrong alignment on JsonBlueprintFunctionLibrary_HasField");
 static_assert(sizeof(JsonBlueprintFunctionLibrary_HasField) == 0x000038, "Wrong size on JsonBlueprintFunctionLibrary_HasField");
@@ -112,7 +112,7 @@ public:
 	class FString                                 FieldName;                                         // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Value;                                             // 0x0030(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0034(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B75[0x3];                                     // 0x0035(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B90[0x3];                                     // 0x0035(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(JsonBlueprintFunctionLibrary_SetField) == 0x000008, "Wrong alignment on JsonBlueprintFunctionLibrary_SetField");
 static_assert(sizeof(JsonBlueprintFunctionLibrary_SetField) == 0x000038, "Wrong size on JsonBlueprintFunctionLibrary_SetField");
@@ -127,10 +127,10 @@ struct JsonBlueprintFunctionLibrary_StructToJsonString final
 {
 public:
 	int32                                         Struct;                                            // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B76[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B91[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 OutJsonString;                                     // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B77[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B92[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(JsonBlueprintFunctionLibrary_StructToJsonString) == 0x000008, "Wrong alignment on JsonBlueprintFunctionLibrary_StructToJsonString");
 static_assert(sizeof(JsonBlueprintFunctionLibrary_StructToJsonString) == 0x000020, "Wrong size on JsonBlueprintFunctionLibrary_StructToJsonString");
@@ -146,7 +146,7 @@ public:
 	struct FJsonObjectWrapper                     JsonObject;                                        // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FFilePath                              File;                                              // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B78[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B93[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(JsonBlueprintFunctionLibrary_ToFile) == 0x000008, "Wrong alignment on JsonBlueprintFunctionLibrary_ToFile");
 static_assert(sizeof(JsonBlueprintFunctionLibrary_ToFile) == 0x000038, "Wrong size on JsonBlueprintFunctionLibrary_ToFile");
@@ -162,7 +162,7 @@ public:
 	struct FJsonObjectWrapper                     JsonObject;                                        // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                 OutJsonString;                                     // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B79[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B94[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(JsonBlueprintFunctionLibrary_ToString) == 0x000008, "Wrong alignment on JsonBlueprintFunctionLibrary_ToString");
 static_assert(sizeof(JsonBlueprintFunctionLibrary_ToString) == 0x000038, "Wrong size on JsonBlueprintFunctionLibrary_ToString");

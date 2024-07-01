@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Pal_structs.hpp"
 #include "BP_AttackBulletBase_classes.hpp"
+#include "Pal_structs.hpp"
 
 
 namespace SDK
@@ -28,7 +28,7 @@ public:
 	class UStaticMeshComponent*                   SM_MissileExhaust;                                 // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   SM_Missile;                                        // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsExprosed;                                        // 0x0390(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DC5[0x7];                                     // 0x0391(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F62[0x7];                                     // 0x0391(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        HomingStartRandimTimeMin;                          // 0x0398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        HpmingAccele;                                      // 0x03A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

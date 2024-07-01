@@ -31,7 +31,7 @@ public:
 	struct FPolygonID                             PolygonID_MinusY;                                  // 0x0040(0x0004)(Parm, OutParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPolygonID                             PolygonID_PlusZ;                                   // 0x0044(0x0004)(Parm, OutParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPolygonID                             PolygonID_MinusZ;                                  // 0x0048(0x0004)(Parm, OutParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3400[0x4];                                     // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33BF[0x4];                                     // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(StaticMeshDescription_CreateCube) == 0x000008, "Wrong alignment on StaticMeshDescription_CreateCube");
 static_assert(sizeof(StaticMeshDescription_CreateCube) == 0x000050, "Wrong size on StaticMeshDescription_CreateCube");
@@ -64,10 +64,10 @@ struct StaticMeshDescription_SetVertexInstanceUV final
 {
 public:
 	struct FVertexInstanceID                      VertexInstanceID;                                  // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3401[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33C0[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              UV;                                                // 0x0008(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         UVIndex;                                           // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3402[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33C1[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(StaticMeshDescription_SetVertexInstanceUV) == 0x000008, "Wrong alignment on StaticMeshDescription_SetVertexInstanceUV");
 static_assert(sizeof(StaticMeshDescription_SetVertexInstanceUV) == 0x000020, "Wrong size on StaticMeshDescription_SetVertexInstanceUV");

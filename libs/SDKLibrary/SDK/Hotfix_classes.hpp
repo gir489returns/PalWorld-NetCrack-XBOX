@@ -23,7 +23,7 @@ namespace SDK
 class UOnlineHotfixManager final : public UObject
 {
 public:
-	uint8                                         Pad_16F0[0x1D0];                                   // 0x0028(0x01D0)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_16E6[0x1D0];                                   // 0x0028(0x01D0)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 OSSName;                                           // 0x01F8(0x0010)(ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 HotfixManagerClassName;                            // 0x0208(0x0010)(ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 DebugPrefix;                                       // 0x0218(0x0010)(ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -54,30 +54,30 @@ static_assert(offsetof(UOnlineHotfixManager, AssetsHotfixedFromIniFiles) == 0x00
 class UUpdateManager final : public UObject
 {
 public:
-	uint8                                         Pad_16F1[0x60];                                    // 0x0028(0x0060)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_16E7[0x60];                                    // 0x0028(0x0060)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         HotfixCheckCompleteDelay;                          // 0x0088(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         UpdateCheckCompleteDelay;                          // 0x008C(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         HotfixAvailabilityCheckCompleteDelay;              // 0x0090(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         UpdateCheckAvailabilityCompleteDelay;              // 0x0094(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_16F2[0x4];                                     // 0x0098(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_16E8[0x4];                                     // 0x0098(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         AppSuspendedUpdateCheckTimeSeconds;                // 0x009C(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_16F3[0x8];                                     // 0x00A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_16E9[0x8];                                     // 0x00A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bPlatformEnvironmentDetected;                      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bInitialUpdateFinished;                            // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bCheckHotfixAvailabilityOnly;                      // 0x00AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EUpdateState                                  CurrentUpdateState;                                // 0x00AB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         WorstNumFilesPendingLoadViewed;                    // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_16F4[0x4];                                     // 0x00B0(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_16EA[0x4];                                     // 0x00B0(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	EHotfixResult                                 LastHotfixResult;                                  // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_16F5[0x23];                                    // 0x00B5(0x0023)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_16EB[0x23];                                    // 0x00B5(0x0023)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDateTime                              LastUpdateCheck[0x2];                              // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EUpdateCompletionStatus                       LastCompletionResult[0x2];                         // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_16F6[0x26];                                    // 0x00EA(0x0026)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_16EC[0x26];                                    // 0x00EA(0x0026)(Fixing Size After Last Property [ Dumper-7 ])
 	class UEnum*                                  UpdateStateEnum;                                   // 0x0110(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UEnum*                                  UpdateCompletionEnum;                              // 0x0118(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FUpdateContextDefinition               UpdateContextDefinitionUnknown;                    // 0x0120(0x0068)(Config, NativeAccessSpecifierPrivate)
 	TArray<struct FUpdateContextDefinition>       UpdateContextDefinitions;                          // 0x0188(0x0010)(ZeroConstructor, Config, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_16F7[0x58];                                    // 0x0198(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_16ED[0x58];                                    // 0x0198(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

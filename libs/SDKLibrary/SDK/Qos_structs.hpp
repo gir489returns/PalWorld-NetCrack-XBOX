@@ -71,7 +71,7 @@ struct FQosPingServerInfo final
 public:
 	class FString                                 Address;                                           // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Port;                                              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_16B1[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_16A6[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FQosPingServerInfo) == 0x000008, "Wrong alignment on FQosPingServerInfo");
 static_assert(sizeof(FQosPingServerInfo) == 0x000018, "Wrong size on FQosPingServerInfo");
@@ -86,7 +86,7 @@ public:
 	class FString                                 ID;                                                // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 RegionId;                                          // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnabled;                                          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_16B2[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_16A7[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FQosPingServerInfo>             Servers;                                           // 0x0028(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FQosDatacenterInfo) == 0x000008, "Wrong alignment on FQosDatacenterInfo");
@@ -108,7 +108,7 @@ public:
 	bool                                          bAutoAssignable;                                   // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAllowSubspaceBias;                                // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FQosSubspaceComparisonParams           SubspaceBiasParams;                                // 0x002C(0x0010)(NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_16B3[0x4];                                     // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_16A8[0x4];                                     // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FQosRegionInfo) == 0x000008, "Wrong alignment on FQosRegionInfo");
 static_assert(sizeof(FQosRegionInfo) == 0x000040, "Wrong size on FQosRegionInfo");
@@ -127,13 +127,13 @@ struct FDatacenterQosInstance final
 public:
 	struct FQosDatacenterInfo                     Definition;                                        // 0x0000(0x0038)(Transient, NativeAccessSpecifierPublic)
 	EQosDatacenterResult                          Result;                                            // 0x0038(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_16B4[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_16A9[0x3];                                     // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         AvgPingMs;                                         // 0x003C(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<int32>                                 PingResults;                                       // 0x0040(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPublic)
-	uint8                                         Pad_16B5[0x8];                                     // 0x0050(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_16AA[0x8];                                     // 0x0050(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDateTime                              LastCheckTimestamp;                                // 0x0058(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUsable;                                           // 0x0060(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_16B6[0x7];                                     // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_16AB[0x7];                                     // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FDatacenterQosInstance) == 0x000008, "Wrong alignment on FDatacenterQosInstance");
 static_assert(sizeof(FDatacenterQosInstance) == 0x000068, "Wrong size on FDatacenterQosInstance");

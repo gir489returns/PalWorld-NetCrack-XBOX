@@ -28,7 +28,7 @@ public:
 	class UPalDamageReactionComponent*            DamageReaction;                                    // 0x0138(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	EPalAIResponseType                            CurrentBehavior;                                   // 0x0140(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          NextCombatModeChange;                              // 0x0141(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	uint8                                         Pad_396F[0x6];                                     // 0x0142(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A2D[0x6];                                     // 0x0142(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 TempEncountClass;                                  // 0x0148(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	class UPalAISensorComponent*                  TSCache_AISensorComponent;                         // 0x0150(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 

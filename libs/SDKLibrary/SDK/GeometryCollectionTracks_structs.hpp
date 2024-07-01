@@ -22,12 +22,12 @@ namespace SDK
 struct FMovieSceneGeometryCollectionParams
 {
 public:
-	uint8                                         Pad_237C[0x8];                                     // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_230B[0x8];                                     // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSoftObjectPath                        GeometryCollectionCache;                           // 0x0008(0x0020)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFrameNumber                           StartFrameOffset;                                  // 0x0028(0x0004)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFrameNumber                           EndFrameOffset;                                    // 0x002C(0x0004)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         PlayRate;                                          // 0x0030(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_237D[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_230C[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneGeometryCollectionParams) == 0x000008, "Wrong alignment on FMovieSceneGeometryCollectionParams");
 static_assert(sizeof(FMovieSceneGeometryCollectionParams) == 0x000038, "Wrong size on FMovieSceneGeometryCollectionParams");

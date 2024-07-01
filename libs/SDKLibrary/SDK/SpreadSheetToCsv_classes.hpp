@@ -21,7 +21,7 @@ namespace SDK
 class USpreadSheetImpoter final : public UObject
 {
 public:
-	uint8                                         Pad_1BC6[0x10];                                    // 0x0028(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BD3[0x10];                                    // 0x0028(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnGetResult;                                       // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             ErrorLogger;                                       // 0x0048(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	class UDataTable*                             TargetDataTable;                                   // 0x0058(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -32,7 +32,7 @@ public:
 	TMap<class FName, class FName>                BlueprintName2ObjectPathColumnNameMap;             // 0x0090(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	class FName                                   BlueprintNamePrefix;                               // 0x00E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bNoticeMessageAtNewRecordImported;                 // 0x00E8(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BC7[0x7];                                     // 0x00E9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1BD4[0x7];                                     // 0x00E9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class USpreadSheetImpoter* Create();

@@ -23,7 +23,7 @@ namespace SDK
 class UBP_ActionPairBehavior_FeedItem_C final : public UBP_ActionPairBehaviorBase_C
 {
 public:
-	uint8                                         Pad_3F7D[0x7];                                     // 0x0251(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_38FC[0x7];                                     // 0x0251(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_ActionPairBehavior_FeedItem_C;   // 0x0258(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:

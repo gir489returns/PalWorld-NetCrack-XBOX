@@ -33,7 +33,7 @@ struct NISLibrary_GetNISRecommendedScreenPercentage final
 {
 public:
 	EUNISMode                                     NISMode;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_189C[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_18B2[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(NISLibrary_GetNISRecommendedScreenPercentage) == 0x000004, "Wrong alignment on NISLibrary_GetNISRecommendedScreenPercentage");

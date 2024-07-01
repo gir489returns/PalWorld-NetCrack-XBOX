@@ -101,7 +101,7 @@ static_assert(sizeof(IAssetRegistry) == 0x000028, "Wrong size on IAssetRegistry"
 class UAssetRegistryImpl final : public UObject
 {
 public:
-	uint8                                         Pad_35C5[0x998];                                   // 0x0028(0x0998)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3586[0x998];                                   // 0x0028(0x0998)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

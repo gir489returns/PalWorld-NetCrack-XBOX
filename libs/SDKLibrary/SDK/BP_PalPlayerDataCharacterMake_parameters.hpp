@@ -148,7 +148,7 @@ public:
 	struct FLinearColor                           OutRGB;                                            // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FPalCharacterCreationMeshPresetDataRow CallFunc_GetDataTableRowFromName_OutRow;           // 0x0018(0x0108)()
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_442B[0x7];                                     // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47F4[0x7];                                     // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0128(0x0050)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0178(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0188(0x0018)()
@@ -174,7 +174,7 @@ public:
 	struct FLinearColor                           OutRGB;                                            // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FPalCharacterCreationMeshPresetDataRow CallFunc_GetDataTableRowFromName_OutRow;           // 0x0018(0x0108)()
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_442C[0x7];                                     // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47F5[0x7];                                     // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0128(0x0050)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0178(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0188(0x0018)()
@@ -202,15 +202,15 @@ public:
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0020(0x0050)(HasGetValueTypeHash)
 	struct FPalCharacterCreationEyeMaterialDataRow CallFunc_GetDataTableRowFromName_OutRow;           // 0x0070(0x0078)()
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_442D[0x7];                                     // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47F6[0x7];                                     // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00F0(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0100(0x0018)()
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0118(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_442E[0x7];                                     // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47F7[0x7];                                     // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalCharacterCreationMeshPresetDataRow CallFunc_GetDataTableRowFromName_OutRow_1;         // 0x0130(0x0108)()
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue_1;    // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_442F[0x7];                                     // 0x0239(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47F8[0x7];                                     // 0x0239(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0240(0x0050)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0290(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x02A0(0x0018)()
@@ -244,7 +244,7 @@ public:
 	struct FLinearColor                           OutRGB;                                            // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FPalCharacterCreationMeshPresetDataRow CallFunc_GetDataTableRowFromName_OutRow;           // 0x0018(0x0108)()
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4430[0x7];                                     // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47F9[0x7];                                     // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0128(0x0050)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0178(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0188(0x0018)()
@@ -273,7 +273,7 @@ public:
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x02C0(0x0050)(HasGetValueTypeHash)
 	struct FPalCharacterCreationPresetDataRow     CallFunc_GetDataTableRowFromName_OutRow;           // 0x0310(0x0188)()
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0498(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4431[0x7];                                     // 0x0499(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47FA[0x7];                                     // 0x0499(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x04A0(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x04B0(0x0018)()
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x04C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
@@ -301,7 +301,7 @@ public:
 	struct FPalPlayerDataCharacterMakeInfo        OutMakeInfo;                                       // 0x0010(0x0150)(Parm, OutParm)
 	struct FPalPlayerDataCharacterMakeInfo        CallFunc_GetOriginalPresetMakeInfo_OutMakeInfo;    // 0x0160(0x0150)()
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x02B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4432[0x7];                                     // 0x02B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47FB[0x7];                                     // 0x02B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalGameSetting*                        CallFunc_GetGameSetting_ReturnValue;               // 0x02B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FPalPlayerDataCharacterMakeInfo        CallFunc_ConvertMakeInfo_RGBToHSV_ConvertedMakeInfo; // 0x02C0(0x0150)()
 	double                                        CallFunc_ConvertMakeInfo_RGBToHSV_SVLimitValur_ImplicitCast; // 0x0410(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -344,7 +344,7 @@ public:
 	double                                        CallFunc_Multiply_DoubleDouble_A_ImplicitCast;     // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_A_ImplicitCast_1;   // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_MakeStruct_B_ImplicitCast;                  // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4433[0x4];                                     // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47FC[0x4];                                     // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Divide_DoubleDouble_A_ImplicitCast;       // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_MakeStruct_G_ImplicitCast;                  // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_MakeStruct_R_ImplicitCast;                  // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -407,7 +407,7 @@ public:
 	double                                        CallFunc_Divide_DoubleDouble_A_ImplicitCast;       // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Divide_DoubleDouble_A_ImplicitCast_1;     // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_MakeStruct_B_ImplicitCast;                  // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4434[0x4];                                     // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_47FD[0x4];                                     // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Divide_DoubleDouble_A_ImplicitCast_2;     // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_MakeStruct_G_ImplicitCast;                  // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_MakeStruct_R_ImplicitCast;                  // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -443,9 +443,9 @@ static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RecalcRGB, CallFunc_Divid
 static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RecalcRGB, K2Node_MakeStruct_G_ImplicitCast) == 0x0000E8, "Member 'BP_PalPlayerDataCharacterMake_C_RecalcRGB::K2Node_MakeStruct_G_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RecalcRGB, K2Node_MakeStruct_R_ImplicitCast) == 0x0000EC, "Member 'BP_PalPlayerDataCharacterMake_C_RecalcRGB::K2Node_MakeStruct_R_ImplicitCast' has a wrong offset!");
 
-// Function BP_PalPlayerDataCharacterMake.BP_PalPlayerDataCharacterMake_C.RGBtoHSV
+// Function BP_PalPlayerDataCharacterMake.BP_PalPlayerDataCharacterMake_C.RGBToHSV
 // 0x0058 (0x0058 - 0x0000)
-struct BP_PalPlayerDataCharacterMake_C_RGBtoHSV final
+struct BP_PalPlayerDataCharacterMake_C_RGBToHSV final
 {
 public:
 	struct FLinearColor                           InRGB;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -456,15 +456,15 @@ public:
 	double                                        CallFunc_Divide_DoubleDouble_A_ImplicitCast;       // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_MakeStruct_R_ImplicitCast;                  // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_PalPlayerDataCharacterMake_C_RGBtoHSV) == 0x000008, "Wrong alignment on BP_PalPlayerDataCharacterMake_C_RGBtoHSV");
-static_assert(sizeof(BP_PalPlayerDataCharacterMake_C_RGBtoHSV) == 0x000058, "Wrong size on BP_PalPlayerDataCharacterMake_C_RGBtoHSV");
-static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBtoHSV, InRGB) == 0x000000, "Member 'BP_PalPlayerDataCharacterMake_C_RGBtoHSV::InRGB' has a wrong offset!");
-static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBtoHSV, OutHSV) == 0x000010, "Member 'BP_PalPlayerDataCharacterMake_C_RGBtoHSV::OutHSV' has a wrong offset!");
-static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBtoHSV, CallFunc_RGBLinearToHSV_ReturnValue) == 0x000020, "Member 'BP_PalPlayerDataCharacterMake_C_RGBtoHSV::CallFunc_RGBLinearToHSV_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBtoHSV, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000030, "Member 'BP_PalPlayerDataCharacterMake_C_RGBtoHSV::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBtoHSV, K2Node_MakeStruct_LinearColor) == 0x000038, "Member 'BP_PalPlayerDataCharacterMake_C_RGBtoHSV::K2Node_MakeStruct_LinearColor' has a wrong offset!");
-static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBtoHSV, CallFunc_Divide_DoubleDouble_A_ImplicitCast) == 0x000048, "Member 'BP_PalPlayerDataCharacterMake_C_RGBtoHSV::CallFunc_Divide_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBtoHSV, K2Node_MakeStruct_R_ImplicitCast) == 0x000050, "Member 'BP_PalPlayerDataCharacterMake_C_RGBtoHSV::K2Node_MakeStruct_R_ImplicitCast' has a wrong offset!");
+static_assert(alignof(BP_PalPlayerDataCharacterMake_C_RGBToHSV) == 0x000008, "Wrong alignment on BP_PalPlayerDataCharacterMake_C_RGBToHSV");
+static_assert(sizeof(BP_PalPlayerDataCharacterMake_C_RGBToHSV) == 0x000058, "Wrong size on BP_PalPlayerDataCharacterMake_C_RGBToHSV");
+static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBToHSV, InRGB) == 0x000000, "Member 'BP_PalPlayerDataCharacterMake_C_RGBToHSV::InRGB' has a wrong offset!");
+static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBToHSV, OutHSV) == 0x000010, "Member 'BP_PalPlayerDataCharacterMake_C_RGBToHSV::OutHSV' has a wrong offset!");
+static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBToHSV, CallFunc_RGBLinearToHSV_ReturnValue) == 0x000020, "Member 'BP_PalPlayerDataCharacterMake_C_RGBToHSV::CallFunc_RGBLinearToHSV_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBToHSV, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000030, "Member 'BP_PalPlayerDataCharacterMake_C_RGBToHSV::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBToHSV, K2Node_MakeStruct_LinearColor) == 0x000038, "Member 'BP_PalPlayerDataCharacterMake_C_RGBToHSV::K2Node_MakeStruct_LinearColor' has a wrong offset!");
+static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBToHSV, CallFunc_Divide_DoubleDouble_A_ImplicitCast) == 0x000048, "Member 'BP_PalPlayerDataCharacterMake_C_RGBToHSV::CallFunc_Divide_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBToHSV, K2Node_MakeStruct_R_ImplicitCast) == 0x000050, "Member 'BP_PalPlayerDataCharacterMake_C_RGBToHSV::K2Node_MakeStruct_R_ImplicitCast' has a wrong offset!");
 
 // Function BP_PalPlayerDataCharacterMake.BP_PalPlayerDataCharacterMake_C.GetRandomBodyMeshName
 // 0x0010 (0x0010 - 0x0000)

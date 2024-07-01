@@ -30,7 +30,7 @@ public:
 	class UWBP_Title_WorldMenu_Head_C*            WBP_Title_WorldMenu_Head;                          // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_Title_WorldSelect_C*               WBP_Title_WorldSelect;                             // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	EPalUIServerListSortType                      SortType;                                          // 0x04C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A4D[0x7];                                     // 0x04C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1886[0x7];                                     // 0x04C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalUIServerDisplayData                ClickedServerInfo;                                 // 0x04D0(0x01A0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FDataTableRowHandle                    JoinServerDialogMsgID;                             // 0x0670(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	TSoftObjectPtr<class UWBP_Title_WorldSelect_ListContent_C> LastClickedServerButton;                           // 0x0680(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, InstancedReference, HasGetValueTypeHash)
@@ -39,6 +39,10 @@ public:
 	TArray<class FString>                         RegionStrings;                                     // 0x06D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
+	void _____K_e_(class UPalHUDDispatchParameterBase* Param_Param);
+	void _________0(bool bResult);
+	void ________(bool bResult);
+	void RequestGetServerListBP(EPalUIServerListFilterType Type, const class FString& Region, int32 PageOffset, const class FString& Word, EPalUIServerListSortType Param_SortType);
 	void PreviousButton();
 	void Passworde__(class UPalHUDDispatchParameterBase* Param_Param);
 	void OpenJoinServerDialog();
@@ -51,10 +55,6 @@ public:
 	void NextButton();
 	void ExecuteUbergraph_WBP_JoinGame(int32 EntryPoint);
 	void DisplayServer();
-	void _____K_e_(class UPalHUDDispatchParameterBase* Param_Param);
-	void _________0(bool bResult);
-	void ________(bool bResult);
-	void RequestGetServerListBP(EPalUIServerListFilterType Type, const class FString& Region, int32 PageOffset, const class FString& Word, EPalUIServerListSortType Param_SortType);
 	void Destruct();
 	void Construct();
 	void Completed_B0C690024643A528EA9A2B9DAEA567A3(const class FString& ResponseBody, bool bResponseOK, int32 ResponseCode);

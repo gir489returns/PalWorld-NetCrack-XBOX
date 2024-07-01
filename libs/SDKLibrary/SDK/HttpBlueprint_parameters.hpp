@@ -66,7 +66,7 @@ public:
 	class FString                                 HeaderName;                                        // 0x0050(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 OutHeaderValue;                                    // 0x0060(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0070(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B6E[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B89[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HttpBlueprintFunctionLibrary_GetHeaderValue) == 0x000008, "Wrong alignment on HttpBlueprintFunctionLibrary_GetHeaderValue");
 static_assert(sizeof(HttpBlueprintFunctionLibrary_GetHeaderValue) == 0x000078, "Wrong size on HttpBlueprintFunctionLibrary_GetHeaderValue");
@@ -96,7 +96,7 @@ public:
 	struct FHttpHeader                            HeaderObject;                                      // 0x0000(0x0050)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                 HeaderToRemove;                                    // 0x0050(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0060(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B6F[0x7];                                     // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B8A[0x7];                                     // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HttpBlueprintFunctionLibrary_RemoveHeader) == 0x000008, "Wrong alignment on HttpBlueprintFunctionLibrary_RemoveHeader");
 static_assert(sizeof(HttpBlueprintFunctionLibrary_RemoveHeader) == 0x000068, "Wrong size on HttpBlueprintFunctionLibrary_RemoveHeader");

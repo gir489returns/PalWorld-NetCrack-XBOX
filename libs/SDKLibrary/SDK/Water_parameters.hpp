@@ -112,7 +112,7 @@ public:
 	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ABuoyancyManager*                       Manager;                                           // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E8B[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E70[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BuoyancyManager_GetBuoyancyComponentManager) == 0x000008, "Wrong alignment on BuoyancyManager_GetBuoyancyComponentManager");
 static_assert(sizeof(BuoyancyManager_GetBuoyancyComponentManager) == 0x000018, "Wrong size on BuoyancyManager_GetBuoyancyComponentManager");
@@ -305,7 +305,7 @@ struct WaterBody_GetWaterVelocityVectorAtSplineInputKey final
 {
 public:
 	float                                         InKey;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E97[0x4];                                      // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E7C[0x4];                                      // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(WaterBody_GetWaterVelocityVectorAtSplineInputKey) == 0x000008, "Wrong alignment on WaterBody_GetWaterVelocityVectorAtSplineInputKey");
@@ -411,7 +411,7 @@ struct WaterBodyComponent_GetCollisionComponents final
 {
 public:
 	bool                                          bInOnlyEnabledComponents;                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E9D[0x7];                                      // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E82[0x7];                                      // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UPrimitiveComponent*>            ReturnValue;                                       // 0x0008(0x0010)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(WaterBodyComponent_GetCollisionComponents) == 0x000008, "Wrong alignment on WaterBodyComponent_GetCollisionComponents");
@@ -507,7 +507,7 @@ public:
 	struct FVector                                OutWaterVelocity;                                  // 0x0048(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         OutWaterDepth;                                     // 0x0060(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIncludeDepth;                                     // 0x0064(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E9E[0x3];                                      // 0x0065(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E83[0x3];                                      // 0x0065(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(WaterBodyComponent_GetWaterSurfaceInfoAtLocation) == 0x000008, "Wrong alignment on WaterBodyComponent_GetWaterSurfaceInfoAtLocation");
 static_assert(sizeof(WaterBodyComponent_GetWaterSurfaceInfoAtLocation) == 0x000068, "Wrong size on WaterBodyComponent_GetWaterSurfaceInfoAtLocation");
@@ -604,7 +604,7 @@ struct WaterSubsystem_PrintToWaterLog final
 public:
 	class FString                                 Message;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bWarning;                                          // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EAC[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E91[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(WaterSubsystem_PrintToWaterLog) == 0x000008, "Wrong alignment on WaterSubsystem_PrintToWaterLog");
 static_assert(sizeof(WaterSubsystem_PrintToWaterLog) == 0x000018, "Wrong size on WaterSubsystem_PrintToWaterLog");

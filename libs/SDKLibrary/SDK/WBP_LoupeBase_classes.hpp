@@ -26,7 +26,7 @@ public:
 	struct FVector2D                              NowPosition;                                       // 0x0468(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsFirstUpdate;                                     // 0x0478(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsInterpolationTranslate;                          // 0x0479(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_335C[0x6];                                     // 0x047A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B49[0x6];                                     // 0x047A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        InterpolationRate;                                 // 0x0480(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

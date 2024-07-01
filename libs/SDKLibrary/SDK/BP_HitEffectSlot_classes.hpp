@@ -28,11 +28,11 @@ public:
 	TArray<TSoftObjectPtr<class UNiagaraSystem>>  PreLoadList;                                       // 0x0030(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class UNiagaraSystem*>                 LoadCache;                                         // 0x0040(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          IsCrying;                                          // 0x0050(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42EA[0x7];                                     // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4220[0x7];                                     // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UClass*>                         RockBPList;                                        // 0x0058(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class UClass*>                         TreeBPList;                                        // 0x0068(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          NewVar_0;                                          // 0x0078(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42EB[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4221[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 RockBPName;                                        // 0x0080(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:

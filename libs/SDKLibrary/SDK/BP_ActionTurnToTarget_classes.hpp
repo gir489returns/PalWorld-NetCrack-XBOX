@@ -22,7 +22,7 @@ namespace SDK
 class UBP_ActionTurnToTarget_C final : public UPalActionBase
 {
 public:
-	uint8                                         Pad_37CD[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_37C9[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0140(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:

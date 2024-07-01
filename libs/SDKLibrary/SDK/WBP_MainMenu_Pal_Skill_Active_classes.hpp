@@ -41,7 +41,7 @@ public:
 	FMulticastInlineDelegateProperty_             OnHovered;                                         // 0x02F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnUnhovered;                                       // 0x0300(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	EPalWazaID                                    BindedWazaID;                                      // 0x0310(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42C2[0x7];                                     // 0x0311(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_41F6[0x7];                                     // 0x0311(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnClicked;                                         // 0x0318(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TMap<EPalElementType, TSoftObjectPtr<class UTexture2D>> ElementTextureMap;                                 // 0x0328(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FDataTableRowHandle                    EmptySlotMsgID;                                    // 0x0378(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)

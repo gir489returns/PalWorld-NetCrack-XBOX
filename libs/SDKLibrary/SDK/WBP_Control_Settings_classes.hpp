@@ -54,24 +54,25 @@ public:
 	class UWBP_OptionSettings_ListContent_C*      WBP_OptionSettings_X;                              // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_OptionSettings_ListContent_C*      WBP_OptionSettings_Y;                              // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	struct FPalOptionAudioSettings                AudioSettingCache;                                 // 0x0360(0x001C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	uint8                                         Pad_1224[0x4];                                     // 0x037C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E30[0x4];                                     // 0x037C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FDataTableRowHandle>            LevelMsgIds;                                       // 0x0380(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          SomethingChanged;                                  // 0x0390(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1225[0x3];                                     // 0x0391(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E31[0x3];                                     // 0x0391(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalOptionKeyboardSettings             KeyboardSettingCache;                              // 0x0394(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	struct FPalOptionLocalStaticSettings          LocalStaticSettingCache;                           // 0x03A8(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	struct FPalOptionPadSettings                  PadSettingCache;                                   // 0x0400(0x001C)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	uint8                                         Pad_1226[0x4];                                     // 0x041C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E32[0x4];                                     // 0x041C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UVerticalBox*>                   VerticalBoxs;                                      // 0x0420(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	TArray<class UWBP_PalCommonButtonBase_C*>     FirstRows;                                         // 0x0430(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	int32                                         Current;                                           // 0x0440(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FPalOptionUISettings                   UISettingCache;                                    // 0x0444(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	uint8                                         Pad_1227[0x4];                                     // 0x045C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E33[0x4];                                     // 0x045C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalOptionCommonSettings               CommonSettingCache;                                // 0x0460(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FDataTableRowHandle>            ColorSelections;                                   // 0x0490(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 
 public:
 	void SwitchTab(bool Next);
+	void ApplySettings();
 	void SwitchPanel(int32 Param_Index);
 	void SetDefault();
 	void OnVibChanged(bool IsOn);
@@ -101,7 +102,6 @@ public:
 	void GetDesiredFocusTarget(class UWidget** Target);
 	void ExecuteUbergraph_WBP_Control_Settings(int32 EntryPoint);
 	void Construct();
-	void ApplySettings();
 
 public:
 	static class UClass* StaticClass()

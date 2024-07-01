@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
+#include "SplineAttachment_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "SplineObject_structs.hpp"
 #include "RiverSplineElement_structs.hpp"
-#include "SplineAttachment_structs.hpp"
-#include "SplinesInEditor_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "SplineObject_structs.hpp"
+#include "SplinesInEditor_structs.hpp"
 
 
 namespace SDK
@@ -31,7 +31,7 @@ public:
 	class USplineComponent*                       MainSpline;                                        // 0x0298(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        Scene;                                             // 0x02A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                          UpdateBlueprint;                                   // 0x02A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4310[0x7];                                     // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4246[0x7];                                     // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 BasePrefabBlueprint;                               // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FRiverSplineElement>            SplineMeshes;                                      // 0x02B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FSplineAttachment>              Objects;                                           // 0x02C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -39,30 +39,30 @@ public:
 	bool                                          UseSplineMeshes;                                   // 0x02E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          UseEndFixedObjects;                                // 0x02E9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          UseStartFixedObjects;                              // 0x02EA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4311[0x5];                                     // 0x02EB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4247[0x5];                                     // 0x02EB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSplineObject>                  SplineObjects;                                     // 0x02F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FString                                 DebugText;                                         // 0x0300(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                          CurrentObjectIsSpline;                             // 0x0310(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4312[0x7];                                     // 0x0311(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4248[0x7];                                     // 0x0311(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CurrentStartPos;                                   // 0x0318(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CurrentEndPos;                                     // 0x0330(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CalcSpacing;                                       // 0x0348(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          UpVector;                                          // 0x0350(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsStartFixedObject;                                // 0x0351(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsEndFixedObject;                                  // 0x0352(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4313[0x5];                                     // 0x0353(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4249[0x5];                                     // 0x0353(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSplineAttachment>              Objects_StartFixed;                                // 0x0358(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FSplineAttachment>              Objects_EndFixed;                                  // 0x0368(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          UseObjectLoops;                                    // 0x0378(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4314[0x7];                                     // 0x0379(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_424A[0x7];                                     // 0x0379(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CalcTangentScale;                                  // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Int;                                               // 0x0388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsScaleable;                                       // 0x038C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4315[0x3];                                     // 0x038D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_424B[0x3];                                     // 0x038D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class USplineComponent*                       CurrentSpline;                                     // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          SplineObjectExists;                                // 0x0398(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          UseSplineObjects;                                  // 0x0399(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4316[0x6];                                     // 0x039A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_424C[0x6];                                     // 0x039A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVector>                        PointLocations;                                    // 0x03A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FVector>                        PointTangets;                                      // 0x03B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FVector>                        PointScales;                                       // 0x03C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -71,11 +71,11 @@ public:
 	TArray<struct FRotator>                       Debug;                                             // 0x03F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	ECollisionEnabled                             Collision;                                         // 0x0400(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CastShadow;                                        // 0x0401(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4317[0x6];                                     // 0x0402(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_424D[0x6];                                     // 0x0402(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        GlobalScale;                                       // 0x0408(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          SimulateFlowPhysics;                               // 0x0410(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          EnabledForSwimming;                                // 0x0411(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4318[0x6];                                     // 0x0412(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_424E[0x6];                                     // 0x0412(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Physics_FlowSpeed;                                 // 0x0418(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Physics_CenterMassOffset;                          // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        RiverWidth;                                        // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -85,10 +85,10 @@ public:
 	class UStaticMesh*                            RiverMesh;                                         // 0x0448(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               MaterialOverrideInstance;                          // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                         SimpleTiling_Scale_Y;                              // 0x0458(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4319[0x4];                                     // 0x045C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_424F[0x4];                                     // 0x045C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Tiling_Scale_X;                                    // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          SimpleTiling_Y;                                    // 0x0468(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_431A[0x7];                                     // 0x0469(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4250[0x7];                                     // 0x0469(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Tiling_Scale_Y;                                    // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<double>                                SplineLenghtsDebug;                                // 0x0478(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	double                                        MASTER_UV_WarpIntensity;                           // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -142,14 +142,14 @@ public:
 	TArray<class USplineMeshComponent*>           SplineOverlapVolumes;                              // 0x0618(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	double                                        Obstacles_FoamIntensityGlobal;                     // 0x0628(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ShowVolumes;                                       // 0x0630(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_431B[0x7];                                     // 0x0631(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4251[0x7];                                     // 0x0631(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        DepthVolumesScaleZ;                                // 0x0638(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        DepthVolumesOffsetZ;                               // 0x0640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Con;                                               // 0x0648(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_431C[0x3];                                     // 0x0649(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4252[0x3];                                     // 0x0649(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         TranslucentSortPriority;                           // 0x064C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          PlayInFX;                                          // 0x0650(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_431D[0x7];                                     // 0x0651(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4253[0x7];                                     // 0x0651(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystem*                        Emitter_In;                                        // 0x0658(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:

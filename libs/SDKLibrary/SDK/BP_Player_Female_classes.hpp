@@ -38,7 +38,7 @@ public:
 	class UBP_PlayerSoundEmitterComponent_C*      BP_PlayerSoundEmitterComponent;                    // 0x0CC0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UNiagaraComponent*                      SlidingParticle;                                   // 0x0CC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          UsePhysicalBone;                                   // 0x0CD0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47B2[0x7];                                     // 0x0CD1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_471C[0x7];                                     // 0x0CD1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UNiagaraSystem*                         SlidingSmokeNiagara;                               // 0x0CD8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UNiagaraSystem*                         JumpNiagara;                                       // 0x0CE0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class FName                                   SoundID_Sliding;                                   // 0x0CE8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

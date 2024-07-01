@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_OptionSettings_ClickableButton.WBP_OptionSettings_ClickableButton_C.OnClicked__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-
-void UWBP_OptionSettings_ClickableButton_C::OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ClickableButton_C", "OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_OptionSettings_ClickableButton.WBP_OptionSettings_ClickableButton_C.ExecuteUbergraph_WBP_OptionSettings_ClickableButton
 // (Final, UbergraphFunction)
 // Parameters:
@@ -88,6 +74,20 @@ void UWBP_OptionSettings_ClickableButton_C::BndEvt__WBP_OptionSettings_ListConte
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_OptionSettings_ClickableButton_C", "BndEvt__WBP_OptionSettings_ListContentSwitch_Button_ON_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OptionSettings_ClickableButton.WBP_OptionSettings_ClickableButton_C.OnClicked__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+
+void UWBP_OptionSettings_ClickableButton_C::OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ClickableButton_C", "OnClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

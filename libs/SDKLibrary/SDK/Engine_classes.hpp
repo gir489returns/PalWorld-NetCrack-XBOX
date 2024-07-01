@@ -25567,7 +25567,7 @@ public:
 	static void ResetRandomStream(const struct FRandomStream& Stream);
 	static void ResetVectorSpringState(struct FVectorSpringState& SpringState);
 	static struct FLinearColor RGBLinearToHSV(const struct FLinearColor& RGB);
-	static void RGBtoHSV(const struct FLinearColor& InColor, float* H, float* S, float* V, float* A);
+	static void RGBToHSV(const struct FLinearColor& InColor, float* H, float* S, float* V, float* A);
 	static void RGBToHSV_Vector(const struct FLinearColor& RGB, struct FLinearColor* HSV);
 	static struct FRotator RInterpTo(const struct FRotator& Current, const struct FRotator& Target, float DeltaTime, float InterpSpeed);
 	static struct FRotator RInterpTo_Constant(const struct FRotator& Current, const struct FRotator& Target, float DeltaTime, float InterpSpeed);

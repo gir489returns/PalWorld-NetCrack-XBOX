@@ -25,7 +25,7 @@ public:
 	ERejoinStatus                                 LastKnownStatus;                                   // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bRejoinAfterCheck;                                 // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bAttemptingRejoin;                                 // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_16F8[0x15D];                                   // 0x002B(0x015D)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_16EE[0x15D];                                   // 0x002B(0x015D)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

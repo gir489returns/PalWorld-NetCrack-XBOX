@@ -29,7 +29,7 @@ public:
 	class UTextureRenderTarget2D*                 RenderTarget;                                      // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsCaptureEveryFrame;                               // 0x0428(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsBindPlayerEquipment;                             // 0x0429(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1B7A[0x6];                                     // 0x042A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_483C[0x6];                                     // 0x042A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_PalPlayerCaptureSet_C*              CaptureCamera;                                     // 0x0430(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                           DelayUpdateMeshTimerHandle;                        // 0x0438(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 CaptureSetClass;                                   // 0x0440(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)

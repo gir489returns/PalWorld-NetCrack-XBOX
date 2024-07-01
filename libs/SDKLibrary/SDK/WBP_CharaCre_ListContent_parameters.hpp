@@ -20,7 +20,7 @@ struct WBP_CharaCre_ListContent_C_ExecuteUbergraph_WBP_CharaCre_ListContent fina
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_47CB[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4728[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0008(0x0018)()
 };
 static_assert(alignof(WBP_CharaCre_ListContent_C_ExecuteUbergraph_WBP_CharaCre_ListContent) == 0x000008, "Wrong alignment on WBP_CharaCre_ListContent_C_ExecuteUbergraph_WBP_CharaCre_ListContent");

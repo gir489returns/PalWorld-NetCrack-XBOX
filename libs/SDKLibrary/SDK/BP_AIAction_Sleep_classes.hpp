@@ -25,7 +25,7 @@ class UBP_AIAction_Sleep_C : public UBP_AIAction_CanCombatBase_C
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_AIAction_Sleep_C;                // 0x0158(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	bool                                          DeepSleep;                                         // 0x0160(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AA8[0x7];                                     // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BBF[0x7];                                     // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalActionComponent*                    ActionComp;                                        // 0x0168(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  PawnSelf;                                          // 0x0170(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UPalActionBase*                         SleepAction;                                       // 0x0178(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
