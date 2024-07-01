@@ -48,7 +48,7 @@ void ESP_DEBUG(float mDist, ImVec4 color, UClass* mEntType)
 	
 	auto draw = ImGui::GetBackgroundDrawList();
 
-	__int32 actorsCount = actors.size();
+	auto actorsCount = actors.size();
 	for (AActor* actor : actors)
 	{
 		FVector actorLocation = actor->K2_GetActorLocation();
@@ -571,7 +571,7 @@ void DeathAura(__int32 dmgAmount, float mDistance, bool bIntensityEffect, bool b
 	if (!Config.GetTAllPals(&outPals))
 		return;
 
-	DWORD palsCount = outPals.Num();
+	auto palsCount = outPals.Num();
 	for (auto i = 0; i < palsCount; i++)
 	{
 		APalCharacter* cEnt = outPals[i];
@@ -603,7 +603,7 @@ void TeleportAllPalsToCrosshair(float mDistance)
 {
 	TArray<APalCharacter*> outPals;
 	Config.GetTAllPals(&outPals);
-	DWORD palsCount = outPals.Num();
+	auto palsCount = outPals.Num();
 	for (int i = 0; i < palsCount; i++)
 	{
 		APalCharacter* cPal = outPals[i];

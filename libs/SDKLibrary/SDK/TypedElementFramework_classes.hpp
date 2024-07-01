@@ -100,7 +100,7 @@ static_assert(sizeof(ITypedElementCounterInterface) == 0x000028, "Wrong size on 
 class UTypedElementRegistry final : public UObject
 {
 public:
-	uint8                                         Pad_3426[0x920];                                   // 0x0028(0x0920)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33AA[0x920];                                   // 0x0028(0x0920)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UTypedElementRegistry* GetInstance();
@@ -186,7 +186,7 @@ static_assert(sizeof(ITestTypedElementInterfaceC) == 0x000028, "Wrong size on IT
 class UTestTypedElementInterfaceA_ImplTyped final : public UObject
 {
 public:
-	uint8                                         Pad_342A[0x8];                                     // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33AE[0x8];                                     // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -206,7 +206,7 @@ static_assert(sizeof(UTestTypedElementInterfaceA_ImplTyped) == 0x000030, "Wrong 
 class UTestTypedElementInterfaceA_ImplUntyped final : public UObject
 {
 public:
-	uint8                                         Pad_342B[0x8];                                     // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33AF[0x8];                                     // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -226,7 +226,7 @@ static_assert(sizeof(UTestTypedElementInterfaceA_ImplUntyped) == 0x000030, "Wron
 class UTestTypedElementInterfaceBAndC_Typed final : public UObject
 {
 public:
-	uint8                                         Pad_342C[0x10];                                    // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33B0[0x10];                                    // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

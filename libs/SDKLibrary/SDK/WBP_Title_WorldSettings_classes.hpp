@@ -86,59 +86,19 @@ public:
 	FMulticastInlineDelegateProperty_             OnClickedCancel;                                   // 0x05E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnClickedConfirm;                                  // 0x05F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          IsCustomDifficultySetting;                         // 0x0600(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_487B[0x3];                                     // 0x0601(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_492D[0x3];                                     // 0x0601(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalOptionWorldStaticSettings          SatticWorldSetting;                                // 0x0604(0x0100)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	uint8                                         Pad_487C[0x4];                                     // 0x0704(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_492E[0x4];                                     // 0x0704(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalOptionWorldSettings                CachedOriginalWorldSetting;                        // 0x0708(0x0158)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FPalOptionWorldSettings                EditedWorldSetting;                                // 0x0860(0x0158)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          IsEditedSettingFlag;                               // 0x09B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsEditedFromPreset;                                // 0x09B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Is_New_World;                                      // 0x09BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_487D[0x5];                                     // 0x09BB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_492F[0x5];                                     // 0x09BB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnClickedWorldNameInputButton;                     // 0x09C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnClickedRandomizerSeedInputButton;                // 0x09D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void UpdateRandomizerSeedVisibility();
-	void TogglePanel(bool IsCustomPanel);
-	void SetWorldName(const class FString& NewWorldName);
-	void Setup(const struct FPalOptionWorldSettings& WorldSetting, bool IsNewWorld, bool CanMulti, const class FString& WorldSaveDirectoryName, const class FString& WorldName);
-	void SetRandomizerSeed(const class FString& NewSeed);
-	void OnClickedWorldNameInputButton__DelegateSignature();
-	void OnClickedRandomizerSeedInputButton__DelegateSignature();
-	void OnClickedConfirm__DelegateSignature();
-	void OnClickedCancel__DelegateSignature();
-	void MarkDirtyWorldSetting();
-	void IsTextEditing(bool* IsEditing);
-	void IsEditingCustomDifficulty(bool* IsEditing);
-	void IsEditedSetting(bool* IsEdited);
-	void GetWorldName(class FString* WorldName);
-	void GetRandomizerSeed(class FString* WorldName);
-	void GetFocusTarget(class UWidget** TargetWidget);
-	void GetEditedWorldSetting(struct FPalOptionWorldSettings* WorldSetting);
-	void ExecuteUbergraph_WBP_Title_WorldSettings(int32 EntryPoint);
-	void EndCustomDifficultySetting();
-	void DisplayDifficultyDesc(EPalOptionWorldDifficulty DifficultyTyper);
-	void Destruct();
-	void CreateRandomizerModeSettingStrings(TArray<class FString>* OutStrings);
-	void CreateDifficultySettingStrings(TArray<class FString>* OutStrings);
-	void CreateDeathPenaltySettingStrings(TArray<class FString>* OutStrings);
-	void CreateAutoSaveSettingStrings(TArray<class FString>* OutStrings);
-	void ConvertUIIndexToRandomizerMode(int32 UIIndex, EPalRandomizerType* RandomizerType);
-	void ConvertUIIndexToDifficulty(int32 UIIndex, EPalOptionWorldDifficulty* DifficultyType);
-	void ConvertUIIndexToDeathPenalty(int32 UIIndex, EPalOptionWorldDeathPenalty* DeathPenaltyType);
-	void ConvertRandomizerModeToUIIndex(EPalRandomizerType RandomizerType, int32* UIIndex);
-	void ConvertIndexToAutoSaveTime(int32 Param_Index, double* Time);
-	void ConvertDifficultyToUIIndex(EPalOptionWorldDifficulty DifficultyType, int32* UIIndex);
-	void ConvertDeathPenaltyToUIIndex(EPalOptionWorldDeathPenalty DeathPenaltyType, int32* UIIndex);
-	void ConvertAutoSaveTimeToIndex(double Time, int32* Param_Index);
-	void Construct();
-	void CancelTextEdit();
-	void BndEvt__WBP_Title_WorldSettings_WorldSettings_WorldName_K2Node_ComponentBoundEvent_31_OnClickedSettingButton__DelegateSignature();
-	void BndEvt__WBP_Title_WorldSettings_WorldSettings_RandomizerSeed_K2Node_ComponentBoundEvent_43_OnClickedSettingButton__DelegateSignature();
-	void BndEvt__WBP_Title_WorldSettings_WorldSettings_Randomizer_K2Node_ComponentBoundEvent_42_OnChangedSelectIndex__DelegateSignature(int32 NewIndex);
-	void BndEvt__WBP_Title_WorldSettings_WorldSettings_PlayerStomachDecreaseRate_K2Node_ComponentBoundEvent_22_OnChangedValue__DelegateSignature(double NewValue);
-	void BndEvt__WBP_Title_WorldSettings_WorldSettings_PlayerStaminaDecreaseRate_K2Node_ComponentBoundEvent_23_OnChangedValue__DelegateSignature(double NewValue);
 	void BndEvt__WBP_Title_WorldSettings_WorldSettings_PlayerDamagerRateAttack_K2Node_ComponentBoundEvent_20_OnChangedValue__DelegateSignature(double NewValue);
 	void BndEvt__WBP_Title_WorldSettings_WorldSettings_PlayerDamageRateDefense_K2Node_ComponentBoundEvent_21_OnChangedValue__DelegateSignature(double NewValue);
 	void BndEvt__WBP_Title_WorldSettings_WorldSettings_PlayerAutoHPRegeneRateInSleep_K2Node_ComponentBoundEvent_25_OnChangedValue__DelegateSignature(double NewValue);
@@ -182,6 +142,46 @@ public:
 	void BndEvt__WBP_Title_WorldSettings_WBP_Title_SettingsButton_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
 	void ApplyWorldSettingToUI(const struct FPalOptionWorldSettings& WorldSetting);
 	void ApplyDifficultyPreset(EPalOptionWorldDifficulty DifficultyType);
+	void UpdateRandomizerSeedVisibility();
+	void TogglePanel(bool IsCustomPanel);
+	void SetWorldName(const class FString& NewWorldName);
+	void Setup(const struct FPalOptionWorldSettings& WorldSetting, bool IsNewWorld, bool CanMulti, const class FString& WorldSaveDirectoryName, const class FString& WorldName);
+	void SetRandomizerSeed(const class FString& NewSeed);
+	void OnClickedWorldNameInputButton__DelegateSignature();
+	void OnClickedRandomizerSeedInputButton__DelegateSignature();
+	void OnClickedConfirm__DelegateSignature();
+	void OnClickedCancel__DelegateSignature();
+	void MarkDirtyWorldSetting();
+	void IsTextEditing(bool* IsEditing);
+	void IsEditingCustomDifficulty(bool* IsEditing);
+	void IsEditedSetting(bool* IsEdited);
+	void GetWorldName(class FString* WorldName);
+	void GetRandomizerSeed(class FString* WorldName);
+	void GetFocusTarget(class UWidget** TargetWidget);
+	void GetEditedWorldSetting(struct FPalOptionWorldSettings* WorldSetting);
+	void ExecuteUbergraph_WBP_Title_WorldSettings(int32 EntryPoint);
+	void EndCustomDifficultySetting();
+	void DisplayDifficultyDesc(EPalOptionWorldDifficulty DifficultyTyper);
+	void Destruct();
+	void CreateRandomizerModeSettingStrings(TArray<class FString>* OutStrings);
+	void CreateDifficultySettingStrings(TArray<class FString>* OutStrings);
+	void CreateDeathPenaltySettingStrings(TArray<class FString>* OutStrings);
+	void CreateAutoSaveSettingStrings(TArray<class FString>* OutStrings);
+	void ConvertUIIndexToRandomizerMode(int32 UIIndex, EPalRandomizerType* RandomizerType);
+	void ConvertUIIndexToDifficulty(int32 UIIndex, EPalOptionWorldDifficulty* DifficultyType);
+	void ConvertUIIndexToDeathPenalty(int32 UIIndex, EPalOptionWorldDeathPenalty* DeathPenaltyType);
+	void ConvertRandomizerModeToUIIndex(EPalRandomizerType RandomizerType, int32* UIIndex);
+	void ConvertIndexToAutoSaveTime(int32 Param_Index, double* Time);
+	void ConvertDifficultyToUIIndex(EPalOptionWorldDifficulty DifficultyType, int32* UIIndex);
+	void ConvertDeathPenaltyToUIIndex(EPalOptionWorldDeathPenalty DeathPenaltyType, int32* UIIndex);
+	void ConvertAutoSaveTimeToIndex(double Time, int32* Param_Index);
+	void Construct();
+	void CancelTextEdit();
+	void BndEvt__WBP_Title_WorldSettings_WorldSettings_WorldName_K2Node_ComponentBoundEvent_31_OnClickedSettingButton__DelegateSignature();
+	void BndEvt__WBP_Title_WorldSettings_WorldSettings_RandomizerSeed_K2Node_ComponentBoundEvent_43_OnClickedSettingButton__DelegateSignature();
+	void BndEvt__WBP_Title_WorldSettings_WorldSettings_Randomizer_K2Node_ComponentBoundEvent_42_OnChangedSelectIndex__DelegateSignature(int32 NewIndex);
+	void BndEvt__WBP_Title_WorldSettings_WorldSettings_PlayerStomachDecreaseRate_K2Node_ComponentBoundEvent_22_OnChangedValue__DelegateSignature(double NewValue);
+	void BndEvt__WBP_Title_WorldSettings_WorldSettings_PlayerStaminaDecreaseRate_K2Node_ComponentBoundEvent_23_OnChangedValue__DelegateSignature(double NewValue);
 
 public:
 	static class UClass* StaticClass()

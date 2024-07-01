@@ -111,19 +111,19 @@ class UMotionControllerComponent final : public UPrimitiveComponent
 public:
 	int32                                         PlayerIndex;                                       // 0x0538(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EControllerHand                               Hand;                                              // 0x053C(0x0001)(BlueprintVisible, ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_33F1[0x3];                                     // 0x053D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3372[0x3];                                     // 0x053D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   MotionSource;                                      // 0x0540(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bDisableLowLatencyUpdate : 1;                      // 0x0548(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_33F2[0x3];                                     // 0x0549(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3373[0x3];                                     // 0x0549(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	ETrackingStatus                               CurrentTrackingStatus;                             // 0x054C(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDisplayDeviceModel;                               // 0x054D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_33F3[0x2];                                     // 0x054E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3374[0x2];                                     // 0x054E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   DisplayModelSource;                                // 0x0550(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UStaticMesh*                            CustomDisplayMesh;                                 // 0x0558(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class UMaterialInterface*>             DisplayMeshMaterialOverrides;                      // 0x0560(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
-	uint8                                         Pad_33F4[0xD8];                                    // 0x0570(0x00D8)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3375[0xD8];                                    // 0x0570(0x00D8)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    DisplayComponent;                                  // 0x0648(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_33F5[0x10];                                    // 0x0650(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3376[0x10];                                    // 0x0650(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	struct FVector GetHandJointPosition(int32 JointIndex, bool* bValueFound);
@@ -267,7 +267,7 @@ class UAsyncTask_LoadXRDeviceVisComponent final : public UBlueprintAsyncActionBa
 public:
 	FMulticastInlineDelegateProperty_             OnModelLoaded;                                     // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnLoadFailure;                                     // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3405[0x8];                                     // 0x0050(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3386[0x8];                                     // 0x0050(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    SpawnedComponent;                                  // 0x0058(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:

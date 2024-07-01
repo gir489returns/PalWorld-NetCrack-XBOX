@@ -226,7 +226,7 @@ enum class ELandscapeLODFalloff : uint8
 struct FLandscapeLayerBrush final
 {
 public:
-	uint8                                         Pad_342D[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33B1[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLandscapeLayerBrush) == 0x000001, "Wrong alignment on FLandscapeLayerBrush");
 static_assert(sizeof(FLandscapeLayerBrush) == 0x000001, "Wrong size on FLandscapeLayerBrush");
@@ -240,11 +240,11 @@ public:
 	class FName                                   Name;                                              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bVisible;                                          // 0x0018(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLocked;                                           // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_342E[0x2];                                     // 0x001A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33B2[0x2];                                     // 0x001A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         HeightmapAlpha;                                    // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         WeightmapAlpha;                                    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ELandscapeBlendMode                           BlendMode;                                         // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_342F[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33B3[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FLandscapeLayerBrush>           Brushes;                                           // 0x0028(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TMap<class ULandscapeLayerInfoObject*, bool>  WeightmapLayerAllocationBlend;                     // 0x0038(0x0050)(NativeAccessSpecifierPublic)
 };
@@ -295,7 +295,7 @@ public:
 	class ULandscapeLayerInfoObject*              LayerInfo;                                         // 0x0000(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         WeightmapTextureIndex;                             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         WeightmapTextureChannel;                           // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3430[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33B4[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FWeightmapLayerAllocationInfo) == 0x000008, "Wrong alignment on FWeightmapLayerAllocationInfo");
 static_assert(sizeof(FWeightmapLayerAllocationInfo) == 0x000010, "Wrong size on FWeightmapLayerAllocationInfo");
@@ -309,7 +309,7 @@ struct FLandscapeComponentMaterialOverride final
 {
 public:
 	struct FPerPlatformInt                        LODIndex;                                          // 0x0000(0x0004)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3431[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33B5[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     Material;                                          // 0x0008(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FLandscapeComponentMaterialOverride) == 0x000008, "Wrong alignment on FLandscapeComponentMaterialOverride");
@@ -323,7 +323,7 @@ struct FLandscapePerLODMaterialOverride final
 {
 public:
 	int32                                         LODIndex;                                          // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3432[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33B6[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     Material;                                          // 0x0008(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FLandscapePerLODMaterialOverride) == 0x000008, "Wrong alignment on FLandscapePerLODMaterialOverride");
@@ -375,7 +375,7 @@ static_assert(offsetof(FLandscapeLayerComponentData, WeightmapData) == 0x000008,
 struct alignas(0x08) FGizmoSelectData final
 {
 public:
-	uint8                                         Pad_3433[0x50];                                    // 0x0000(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33B7[0x50];                                    // 0x0000(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FGizmoSelectData) == 0x000008, "Wrong alignment on FGizmoSelectData");
 static_assert(sizeof(FGizmoSelectData) == 0x000050, "Wrong size on FGizmoSelectData");
@@ -389,13 +389,13 @@ public:
 	TArray<class UMaterialInterface*>             OverrideMaterials;                                 // 0x0008(0x0010)(Edit, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
 	struct FPerPlatformFloat                      GrassDensity;                                      // 0x0018(0x0004)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bUseGrid;                                          // 0x001C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3434[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33B8[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         PlacementJitter;                                   // 0x0020(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPerPlatformInt                        StartCullDistance;                                 // 0x0024(0x0004)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FPerPlatformInt                        EndCullDistance;                                   // 0x0028(0x0004)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         MinLOD;                                            // 0x002C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EGrassScaling                                 Scaling;                                           // 0x0030(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3435[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33B9[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFloatInterval                         ScaleX;                                            // 0x0034(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFloatInterval                         ScaleY;                                            // 0x003C(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFloatInterval                         ScaleZ;                                            // 0x0044(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -453,7 +453,7 @@ struct FLandscapeSplineConnection final
 public:
 	class ULandscapeSplineSegment*                Segment;                                           // 0x0000(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         End : 1;                                           // 0x0008(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_3436[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33BA[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLandscapeSplineConnection) == 0x000008, "Wrong alignment on FLandscapeSplineConnection");
 static_assert(sizeof(FLandscapeSplineConnection) == 0x000010, "Wrong size on FLandscapeSplineConnection");
@@ -464,7 +464,7 @@ static_assert(offsetof(FLandscapeSplineConnection, Segment) == 0x000000, "Member
 struct FForeignControlPointData final
 {
 public:
-	uint8                                         Pad_3437[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33BB[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FForeignControlPointData) == 0x000001, "Wrong alignment on FForeignControlPointData");
 static_assert(sizeof(FForeignControlPointData) == 0x000001, "Wrong size on FForeignControlPointData");
@@ -474,7 +474,7 @@ static_assert(sizeof(FForeignControlPointData) == 0x000001, "Wrong size on FFore
 struct FForeignSplineSegmentData final
 {
 public:
-	uint8                                         Pad_3438[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33BC[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FForeignSplineSegmentData) == 0x000001, "Wrong alignment on FForeignSplineSegmentData");
 static_assert(sizeof(FForeignSplineSegmentData) == 0x000001, "Wrong size on FForeignSplineSegmentData");
@@ -484,7 +484,7 @@ static_assert(sizeof(FForeignSplineSegmentData) == 0x000001, "Wrong size on FFor
 struct FForeignWorldSplineData final
 {
 public:
-	uint8                                         Pad_3439[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33BD[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FForeignWorldSplineData) == 0x000001, "Wrong alignment on FForeignWorldSplineData");
 static_assert(sizeof(FForeignWorldSplineData) == 0x000001, "Wrong size on FForeignWorldSplineData");
@@ -504,7 +504,7 @@ public:
 	struct FVector                                LayerFalloffLeft;                                  // 0x00A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                LayerFalloffRight;                                 // 0x00C0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         StartEndFalloff;                                   // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_343A[0x4];                                     // 0x00DC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33BE[0x4];                                     // 0x00DC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLandscapeSplineInterpPoint) == 0x000008, "Wrong alignment on FLandscapeSplineInterpPoint");
 static_assert(sizeof(FLandscapeSplineInterpPoint) == 0x0000E0, "Wrong size on FLandscapeSplineInterpPoint");
@@ -527,7 +527,7 @@ public:
 	class ULandscapeSplineControlPoint*           ControlPoint;                                      // 0x0000(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         TangentLen;                                        // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   SocketName;                                        // 0x000C(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_343B[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33BF[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLandscapeSplineSegmentConnection) == 0x000008, "Wrong alignment on FLandscapeSplineSegmentConnection");
 static_assert(sizeof(FLandscapeSplineSegmentConnection) == 0x000018, "Wrong size on FLandscapeSplineSegmentConnection");
@@ -543,15 +543,15 @@ public:
 	class UStaticMesh*                            Mesh;                                              // 0x0000(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class UMaterialInterface*>             MaterialOverrides;                                 // 0x0008(0x0010)(Edit, ZeroConstructor, AdvancedDisplay, UObjectWrapper, NativeAccessSpecifierPublic)
 	uint8                                         bCenterH : 1;                                      // 0x0018(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_343C[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33C0[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              CenterAdjust;                                      // 0x0020(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bScaleToWidth : 1;                                 // 0x0030(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_343D[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33C1[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Scale;                                             // 0x0038(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ELandscapeSplineMeshOrientation               Orientation;                                       // 0x0050(0x0001)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESplineMeshAxis                               ForwardAxis;                                       // 0x0051(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESplineMeshAxis                               UpAxis;                                            // 0x0052(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_343E[0x5];                                     // 0x0053(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33C2[0x5];                                     // 0x0053(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLandscapeSplineMeshEntry) == 0x000008, "Wrong alignment on FLandscapeSplineMeshEntry");
 static_assert(sizeof(FLandscapeSplineMeshEntry) == 0x000058, "Wrong size on FLandscapeSplineMeshEntry");
@@ -585,14 +585,14 @@ struct FLayerBlendInput final
 public:
 	class FName                                   LayerName;                                         // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ELandscapeLayerBlendType                      BlendType;                                         // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_343F[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33C3[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FExpressionInput                       LayerInput;                                        // 0x0010(0x0028)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FExpressionInput                       HeightInput;                                       // 0x0038(0x0028)(NoDestructor, NativeAccessSpecifierPublic)
 	float                                         PreviewWeight;                                     // 0x0060(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3440[0x4];                                     // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33C4[0x4];                                     // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                ConstLayerInput;                                   // 0x0068(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ConstHeightInput;                                  // 0x0080(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3441[0x4];                                     // 0x0084(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33C5[0x4];                                     // 0x0084(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLayerBlendInput) == 0x000008, "Wrong alignment on FLayerBlendInput");
 static_assert(sizeof(FLayerBlendInput) == 0x000088, "Wrong size on FLayerBlendInput");
@@ -622,7 +622,7 @@ static_assert(offsetof(FLandscapeInfoLayerSettings, LayerName) == 0x000008, "Mem
 struct FLandscapeEditorLayerSettings final
 {
 public:
-	uint8                                         Pad_3442[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33C6[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLandscapeEditorLayerSettings) == 0x000001, "Wrong alignment on FLandscapeEditorLayerSettings");
 static_assert(sizeof(FLandscapeEditorLayerSettings) == 0x000001, "Wrong size on FLandscapeEditorLayerSettings");
@@ -643,7 +643,7 @@ static_assert(offsetof(FLandscapeLayerStruct, LayerInfoObj) == 0x000000, "Member
 struct FLandscapeImportLayerInfo final
 {
 public:
-	uint8                                         Pad_3443[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33C7[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLandscapeImportLayerInfo) == 0x000001, "Wrong alignment on FLandscapeImportLayerInfo");
 static_assert(sizeof(FLandscapeImportLayerInfo) == 0x000001, "Wrong size on FLandscapeImportLayerInfo");
@@ -654,7 +654,7 @@ struct FLandscapeProxyMaterialOverride final
 {
 public:
 	struct FPerPlatformInt                        LODIndex;                                          // 0x0000(0x0004)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3444[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33C8[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     Material;                                          // 0x0008(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FLandscapeProxyMaterialOverride) == 0x000008, "Wrong alignment on FLandscapeProxyMaterialOverride");

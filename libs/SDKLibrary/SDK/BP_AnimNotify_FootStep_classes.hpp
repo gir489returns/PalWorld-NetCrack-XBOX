@@ -29,10 +29,10 @@ public:
 	bool                                          Mute;                                              // 0x0080(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPalLandingType                               LandingType;                                       // 0x0081(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPalFootType                                  FootType;                                          // 0x0082(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FF6[0x5];                                     // 0x0083(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FAD[0x5];                                     // 0x0083(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftClassPtr<class UClass>                   DebugSoundSlot;                                    // 0x0088(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, HasGetValueTypeHash)
 	EPhysicalSurface                              DebugPhysicsMaterial;                              // 0x00B8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FF7[0x3];                                     // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3FAE[0x3];                                     // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         StepCount;                                         // 0x00BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

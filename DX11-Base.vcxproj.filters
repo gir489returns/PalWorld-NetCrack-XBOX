@@ -27,9 +27,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\helper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -120,15 +117,9 @@
     <ClInclude Include="ItemList.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="initialize.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\Console.cpp">

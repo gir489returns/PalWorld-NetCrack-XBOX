@@ -30,7 +30,7 @@ public:
 	class UWBP_Title_WorldMenu_Head_C*            WBP_Title_WorldMenu_Head;                          // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_Title_WorldSelect_C*               WBP_Title_WorldSelect;                             // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	EPalUIServerListSortType                      SortType;                                          // 0x04C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EFC[0x7];                                     // 0x04C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D7A[0x7];                                     // 0x04C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalUIServerDisplayData                ClickedServerInfo;                                 // 0x04D0(0x01A0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FDataTableRowHandle                    JoinServerDialogMsgID;                             // 0x0670(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	TSoftObjectPtr<class UWBP_Title_WorldSelect_ListContent_C> LastClickedServerButton;                           // 0x0680(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, InstancedReference, HasGetValueTypeHash)

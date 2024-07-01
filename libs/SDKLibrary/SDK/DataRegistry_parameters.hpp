@@ -25,7 +25,7 @@ public:
 	struct FDataRegistryId                        ItemId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(const struct FDataRegistryId& ItemId, const struct FDataRegistryLookup& ResolvedLookup, EDataRegistryAcquireStatus Status)> AcquireCallback;                                   // 0x0010(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13F2[0x3];                                     // 0x0021(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13EA[0x3];                                     // 0x0021(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DataRegistrySubsystem_AcquireItemBP) == 0x000004, "Wrong alignment on DataRegistrySubsystem_AcquireItemBP");
 static_assert(sizeof(DataRegistrySubsystem_AcquireItemBP) == 0x000024, "Wrong size on DataRegistrySubsystem_AcquireItemBP");
@@ -67,7 +67,7 @@ public:
 	struct FDataRegistryId                        A;                                                 // 0x0000(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDataRegistryId                        B;                                                 // 0x0010(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13F3[0x3];                                     // 0x0021(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13EB[0x3];                                     // 0x0021(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DataRegistrySubsystem_EqualEqual_DataRegistryId) == 0x000004, "Wrong alignment on DataRegistrySubsystem_EqualEqual_DataRegistryId");
 static_assert(sizeof(DataRegistrySubsystem_EqualEqual_DataRegistryId) == 0x000024, "Wrong size on DataRegistrySubsystem_EqualEqual_DataRegistryId");
@@ -83,7 +83,7 @@ public:
 	struct FDataRegistryType                      A;                                                 // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDataRegistryType                      B;                                                 // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13F4[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13EC[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DataRegistrySubsystem_EqualEqual_DataRegistryType) == 0x000004, "Wrong alignment on DataRegistrySubsystem_EqualEqual_DataRegistryType");
 static_assert(sizeof(DataRegistrySubsystem_EqualEqual_DataRegistryType) == 0x000014, "Wrong size on DataRegistrySubsystem_EqualEqual_DataRegistryType");
@@ -100,7 +100,7 @@ public:
 	float                                         InputValue;                                        // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DefaultValue;                                      // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EDataRegistrySubsystemGetItemResult           OutResult;                                         // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13F5[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13ED[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         OutValue;                                          // 0x001C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DataRegistrySubsystem_EvaluateDataRegistryCurve) == 0x000004, "Wrong alignment on DataRegistrySubsystem_EvaluateDataRegistryCurve");
@@ -118,7 +118,7 @@ struct DataRegistrySubsystem_FindCachedItemBP final
 public:
 	struct FDataRegistryId                        ItemId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EDataRegistrySubsystemGetItemResult           OutResult;                                         // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13F6[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13EE[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTableRowBase                          OutItem;                                           // 0x0018(0x0008)(Parm, OutParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DataRegistrySubsystem_FindCachedItemBP) == 0x000008, "Wrong alignment on DataRegistrySubsystem_FindCachedItemBP");
@@ -135,7 +135,7 @@ public:
 	struct FDataRegistryId                        ItemId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FTableRowBase                          OutItem;                                           // 0x0010(0x0008)(Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13F7[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13EF[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DataRegistrySubsystem_GetCachedItemBP) == 0x000008, "Wrong alignment on DataRegistrySubsystem_GetCachedItemBP");
 static_assert(sizeof(DataRegistrySubsystem_GetCachedItemBP) == 0x000020, "Wrong size on DataRegistrySubsystem_GetCachedItemBP");
@@ -152,7 +152,7 @@ public:
 	struct FDataRegistryLookup                    ResolvedLookup;                                    // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FTableRowBase                          OutItem;                                           // 0x0030(0x0008)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13F8[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13F0[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DataRegistrySubsystem_GetCachedItemFromLookupBP) == 0x000008, "Wrong alignment on DataRegistrySubsystem_GetCachedItemFromLookupBP");
 static_assert(sizeof(DataRegistrySubsystem_GetCachedItemFromLookupBP) == 0x000040, "Wrong size on DataRegistrySubsystem_GetCachedItemFromLookupBP");
@@ -168,7 +168,7 @@ struct DataRegistrySubsystem_IsValidDataRegistryId final
 public:
 	struct FDataRegistryId                        DataRegistryId;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13F9[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13F1[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DataRegistrySubsystem_IsValidDataRegistryId) == 0x000004, "Wrong alignment on DataRegistrySubsystem_IsValidDataRegistryId");
 static_assert(sizeof(DataRegistrySubsystem_IsValidDataRegistryId) == 0x000014, "Wrong size on DataRegistrySubsystem_IsValidDataRegistryId");
@@ -182,7 +182,7 @@ struct DataRegistrySubsystem_IsValidDataRegistryType final
 public:
 	struct FDataRegistryType                      DataRegistryType;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13FA[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13F2[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DataRegistrySubsystem_IsValidDataRegistryType) == 0x000004, "Wrong alignment on DataRegistrySubsystem_IsValidDataRegistryType");
 static_assert(sizeof(DataRegistrySubsystem_IsValidDataRegistryType) == 0x00000C, "Wrong size on DataRegistrySubsystem_IsValidDataRegistryType");
@@ -197,7 +197,7 @@ public:
 	struct FDataRegistryId                        A;                                                 // 0x0000(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDataRegistryId                        B;                                                 // 0x0010(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13FB[0x3];                                     // 0x0021(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13F3[0x3];                                     // 0x0021(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DataRegistrySubsystem_NotEqual_DataRegistryId) == 0x000004, "Wrong alignment on DataRegistrySubsystem_NotEqual_DataRegistryId");
 static_assert(sizeof(DataRegistrySubsystem_NotEqual_DataRegistryId) == 0x000024, "Wrong size on DataRegistrySubsystem_NotEqual_DataRegistryId");
@@ -213,7 +213,7 @@ public:
 	struct FDataRegistryType                      A;                                                 // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDataRegistryType                      B;                                                 // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13FC[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13F4[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DataRegistrySubsystem_NotEqual_DataRegistryType) == 0x000004, "Wrong alignment on DataRegistrySubsystem_NotEqual_DataRegistryType");
 static_assert(sizeof(DataRegistrySubsystem_NotEqual_DataRegistryType) == 0x000014, "Wrong size on DataRegistrySubsystem_NotEqual_DataRegistryType");

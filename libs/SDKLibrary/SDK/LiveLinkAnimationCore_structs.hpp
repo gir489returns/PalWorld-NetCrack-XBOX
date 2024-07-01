@@ -26,7 +26,7 @@ public:
 	struct FLiveLinkSubjectName                   LiveLinkSubjectName;                               // 0x0020(0x0008)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSubclassOf<class ULiveLinkRetargetAsset>     RetargetAsset;                                     // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoClear, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ULiveLinkRetargetAsset*                 CurrentRetargetAsset;                              // 0x0030(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_36BB[0x10];                                    // 0x0038(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_368F[0x10];                                    // 0x0038(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FAnimNode_LiveLinkPose) == 0x000008, "Wrong alignment on FAnimNode_LiveLinkPose");
 static_assert(sizeof(FAnimNode_LiveLinkPose) == 0x000048, "Wrong size on FAnimNode_LiveLinkPose");

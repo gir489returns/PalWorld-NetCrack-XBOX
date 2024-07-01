@@ -67,7 +67,7 @@ public:
 	bool                                          bCheckAvailabilityOnly;                            // 0x0011(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPatchCheckEnabled;                                // 0x0012(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPlatformEnvironmentDetectionEnabled;              // 0x0013(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_16EA[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_16E3[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSet<class FString>                           AdditionalTags;                                    // 0x0018(0x0050)(Config, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FUpdateContextDefinition) == 0x000008, "Wrong alignment on FUpdateContextDefinition");

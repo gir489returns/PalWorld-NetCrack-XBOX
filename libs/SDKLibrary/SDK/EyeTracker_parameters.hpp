@@ -23,7 +23,7 @@ struct EyeTrackerFunctionLibrary_GetGazeData final
 public:
 	struct FEyeTrackerGazeData                    OutGazeData;                                       // 0x0000(0x0058)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0058(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3340[0x7];                                     // 0x0059(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_32C0[0x7];                                     // 0x0059(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(EyeTrackerFunctionLibrary_GetGazeData) == 0x000008, "Wrong alignment on EyeTrackerFunctionLibrary_GetGazeData");
 static_assert(sizeof(EyeTrackerFunctionLibrary_GetGazeData) == 0x000060, "Wrong size on EyeTrackerFunctionLibrary_GetGazeData");
@@ -37,7 +37,7 @@ struct EyeTrackerFunctionLibrary_GetStereoGazeData final
 public:
 	struct FEyeTrackerStereoGazeData              OutGazeData;                                       // 0x0000(0x0080)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0080(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3341[0x7];                                     // 0x0081(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_32C1[0x7];                                     // 0x0081(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(EyeTrackerFunctionLibrary_GetStereoGazeData) == 0x000008, "Wrong alignment on EyeTrackerFunctionLibrary_GetStereoGazeData");
 static_assert(sizeof(EyeTrackerFunctionLibrary_GetStereoGazeData) == 0x000088, "Wrong size on EyeTrackerFunctionLibrary_GetStereoGazeData");

@@ -22,17 +22,17 @@ struct FStructSerializerNumericTestStruct final
 {
 public:
 	int8                                          Int8;                                              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3757[0x1];                                     // 0x0001(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_371B[0x1];                                     // 0x0001(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int16                                         Int16;                                             // 0x0002(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Int32;                                             // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int64                                         Int64;                                             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Uint8;                                             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3758[0x1];                                     // 0x0011(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_371C[0x1];                                     // 0x0011(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	uint16                                        Uint16;                                            // 0x0012(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint32                                        Uint32;                                            // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint64                                        UInt64;                                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Float;                                             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3759[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_371D[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Double;                                            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FStructSerializerNumericTestStruct) == 0x000008, "Wrong alignment on FStructSerializerNumericTestStruct");
@@ -108,13 +108,13 @@ public:
 	class FString                                 String;                                            // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FText                                   Text;                                              // 0x0028(0x0018)(NativeAccessSpecifierPublic)
 	struct FVector                                Vector;                                            // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_375A[0x8];                                     // 0x0058(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_371E[0x8];                                     // 0x0058(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector4                               Vector4;                                           // 0x0060(0x0020)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                               Rotator;                                           // 0x0080(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_375B[0x8];                                     // 0x0098(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_371F[0x8];                                     // 0x0098(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FQuat                                  Quat;                                              // 0x00A0(0x0020)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FColor                                 Color;                                             // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_375C[0xC];                                     // 0x00C4(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3720[0xC];                                     // 0x00C4(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FStructSerializerBuiltinTestStruct) == 0x000010, "Wrong alignment on FStructSerializerBuiltinTestStruct");
 static_assert(sizeof(FStructSerializerBuiltinTestStruct) == 0x0000D0, "Wrong size on FStructSerializerBuiltinTestStruct");
@@ -135,20 +135,20 @@ struct FStructSerializerLWCTypesTest final
 public:
 	struct FVector                                Vector;                                            // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                              Vector2D;                                          // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_375D[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3721[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector4                               Vector4;                                           // 0x0030(0x0020)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMatrix                                Matrix;                                            // 0x0050(0x0080)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FPlane                                 Plane;                                             // 0x00D0(0x0020)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FQuat                                  Quat;                                              // 0x00F0(0x0020)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                               Rotator;                                           // 0x0110(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_375E[0x8];                                     // 0x0128(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3722[0x8];                                     // 0x0128(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Transform;                                         // 0x0130(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FBox                                   Box;                                               // 0x0190(0x0038)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FBox2D                                 Box2D;                                             // 0x01C8(0x0028)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FBoxSphereBounds                       BoxSphereBounds;                                   // 0x01F0(0x0038)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FOrientedBox                           OrientedBox;                                       // 0x0228(0x0078)(IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Float;                                             // 0x02A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_375F[0x4];                                     // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3723[0x4];                                     // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Double;                                            // 0x02A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FVector>                        VectorArray;                                       // 0x02B0(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TMap<class FString, struct FVector>           StrToVec;                                          // 0x02C0(0x0050)(NativeAccessSpecifierPublic)
@@ -204,25 +204,25 @@ struct FStructSerializerNonLWCTypesTest final
 public:
 	struct FVector3f                              Vector;                                            // 0x0000(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2f                              Vector2D;                                          // 0x000C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3760[0xC];                                     // 0x0014(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3724[0xC];                                     // 0x0014(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector4f                              Vector4;                                           // 0x0020(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMatrix44f                             Matrix;                                            // 0x0030(0x0040)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FPlane4f                               Plane;                                             // 0x0070(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FQuat4f                                Quat;                                              // 0x0080(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator3f                             Rotator;                                           // 0x0090(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3761[0x4];                                     // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3725[0x4];                                     // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform3f                           Transform;                                         // 0x00A0(0x0030)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FBox3f                                 Box;                                               // 0x00D0(0x001C)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FBox2f                                 Box2D;                                             // 0x00EC(0x0014)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FBoxSphereBounds3f                     BoxSphereBounds;                                   // 0x0100(0x001C)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FOrientedBoxFloat                      OrientedBox;                                       // 0x011C(0x003C)(NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Float;                                             // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3762[0x4];                                     // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3726[0x4];                                     // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Double;                                            // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FVector3f>                      VectorArray;                                       // 0x0168(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TMap<class FString, struct FVector3f>         StrToVec;                                          // 0x0178(0x0050)(NativeAccessSpecifierPublic)
 	TSet<struct FVector3f>                        VectorSet;                                         // 0x01C8(0x0050)(NativeAccessSpecifierPublic)
-	uint8                                         Pad_3763[0x8];                                     // 0x0218(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3727[0x8];                                     // 0x0218(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FStructSerializerNonLWCTypesTest) == 0x000010, "Wrong alignment on FStructSerializerNonLWCTypesTest");
 static_assert(sizeof(FStructSerializerNonLWCTypesTest) == 0x000220, "Wrong size on FStructSerializerNonLWCTypesTest");
@@ -250,13 +250,13 @@ struct FStructSerializerByteArray final
 {
 public:
 	int32                                         Dummy1;                                            // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3764[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3728[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<uint8>                                 ByteArray;                                         // 0x0008(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         Dummy2;                                            // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3765[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3729[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<int8>                                  Int8Array;                                         // 0x0020(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         Dummy3;                                            // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3766[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_372A[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FStructSerializerByteArray) == 0x000008, "Wrong alignment on FStructSerializerByteArray");
 static_assert(sizeof(FStructSerializerByteArray) == 0x000038, "Wrong size on FStructSerializerByteArray");
@@ -276,7 +276,7 @@ public:
 	int32                                         StaticSingleElement;                               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         StaticInt32Array[0x3];                             // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         StaticFloatArray[0x3];                             // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3767[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_372B[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVector>                        VectorArray;                                       // 0x0040(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FStructSerializerBuiltinTestStruct> StructArray;                                       // 0x0050(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
@@ -331,9 +331,9 @@ struct FStructSerializerTestStruct final
 public:
 	struct FStructSerializerNumericTestStruct     Numerics;                                          // 0x0000(0x0030)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FStructSerializerBooleanTestStruct     Booleans;                                          // 0x0030(0x0003)(NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3768[0x5];                                     // 0x0033(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_372C[0x5];                                     // 0x0033(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStructSerializerObjectTestStruct      Objects;                                           // 0x0038(0x00D0)(NativeAccessSpecifierPublic)
-	uint8                                         Pad_3769[0x8];                                     // 0x0108(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_372D[0x8];                                     // 0x0108(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStructSerializerBuiltinTestStruct     Builtins;                                          // 0x0110(0x00D0)(HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FStructSerializerArrayTestStruct       Arrays;                                            // 0x01E0(0x0060)(NativeAccessSpecifierPublic)
 	struct FStructSerializerMapTestStruct         Maps;                                              // 0x0240(0x0140)(NativeAccessSpecifierPublic)

@@ -24,10 +24,10 @@ namespace SDK
 class UProceduralMeshComponent : public UMeshComponent
 {
 public:
-	uint8                                         Pad_1824[0x8];                                     // 0x0570(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1814[0x8];                                     // 0x0570(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bUseComplexAsSimpleCollision;                      // 0x0578(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseAsyncCooking;                                  // 0x0579(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1825[0x6];                                     // 0x057A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1815[0x6];                                     // 0x057A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBodySetup*                             ProcMeshBodySetup;                                 // 0x0580(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FProcMeshSection>               ProcMeshSections;                                  // 0x0588(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	TArray<struct FKConvexElem>                   CollisionConvexElems;                              // 0x0598(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)

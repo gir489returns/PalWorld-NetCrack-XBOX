@@ -42,7 +42,7 @@ enum class ELiveLinkAxis : uint8
 struct FLiveLinkRetargetAssetReference final
 {
 public:
-	uint8                                         Pad_1217[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1206[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FLiveLinkRetargetAssetReference) == 0x000001, "Wrong alignment on FLiveLinkRetargetAssetReference");
 static_assert(sizeof(FLiveLinkRetargetAssetReference) == 0x000001, "Wrong size on FLiveLinkRetargetAssetReference");
@@ -52,12 +52,12 @@ static_assert(sizeof(FLiveLinkRetargetAssetReference) == 0x000001, "Wrong size o
 struct FProviderPollResult final
 {
 public:
-	uint8                                         Pad_1218[0x10];                                    // 0x0000(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1207[0x10];                                    // 0x0000(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Name;                                              // 0x0010(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 MachineName;                                       // 0x0020(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	double                                        MachineTimeOffset;                                 // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsValidProvider;                                  // 0x0038(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1219[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1208[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FProviderPollResult) == 0x000008, "Wrong alignment on FProviderPollResult");
 static_assert(sizeof(FProviderPollResult) == 0x000040, "Wrong size on FProviderPollResult");

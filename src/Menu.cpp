@@ -224,7 +224,7 @@ namespace DX11_Base
 
             ImGui::InputInt("Num To Add", &num_to_add);
 
-            ImGui::Combo("Item Category", &category, "Accessories\0Ammo\0Armor\0Crafting Materials\0Eggs\0Food\0Hats\0\Medicine\0Money\0Other\0Pal Spheres\0Seeds\0Tools\0Weapons\0");
+            ImGui::Combo("Item Category", &category, "Accessories\0Ammo\0Armor\0Crafting Materials\0Eggs\0Food\0Hats\0Medicine\0Money\0Other\0Pal Spheres\0Seeds\0Tools\0Weapons\0");
 
             std::initializer_list list = itemlist::accessories;
 
@@ -304,7 +304,7 @@ namespace DX11_Base
                     cur_size = 0;
                 }
 
-                cur_size += right_text.length();
+                cur_size += (int)right_text.length();
 
                 ImGui::PushID(item);
                 if (ImGui::Button(right_text.c_str()))
@@ -522,7 +522,7 @@ namespace DX11_Base
                     std::string s = Character->GetFullName();
                     size_t firstUnderscorePos = s.find('_');
 
-                    if (firstUnderscorePos != std::string::npos) 
+                    if (firstUnderscorePos != std::string::npos)
                     {
                         std::string result = s.substr(firstUnderscorePos + 1);
 
@@ -531,9 +531,8 @@ namespace DX11_Base
                         if (secondUnderscorePos != std::string::npos) {
                             result = result.substr(0, secondUnderscorePos);
                         }
-                        wchar_t  ws[255];
-                        swprintf(ws, 255, L"%hs", result);
-                        name = SDK::FString(ws);
+                        std::wstring ws = std::wstring(result.begin(), result.end());
+                        name = SDK::FString(ws.c_str());
                     }
                 }
                 ImGui::Text(name.ToString().c_str());

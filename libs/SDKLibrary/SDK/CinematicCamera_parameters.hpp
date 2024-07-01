@@ -35,7 +35,7 @@ public:
 	class FString                                 PresetName;                                        // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPlateCropSettings                     CropSettings;                                      // 0x0010(0x0004)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_363D[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_35C8[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CineCameraSettings_GetCropPresetByName) == 0x000008, "Wrong alignment on CineCameraSettings_GetCropPresetByName");
 static_assert(sizeof(CineCameraSettings_GetCropPresetByName) == 0x000018, "Wrong size on CineCameraSettings_GetCropPresetByName");
@@ -51,7 +51,7 @@ public:
 	class FString                                 PresetName;                                        // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FCameraFilmbackSettings                FilmbackSettings;                                  // 0x0010(0x000C)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_363E[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_35C9[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CineCameraSettings_GetFilmbackPresetByName) == 0x000008, "Wrong alignment on CineCameraSettings_GetFilmbackPresetByName");
 static_assert(sizeof(CineCameraSettings_GetFilmbackPresetByName) == 0x000020, "Wrong size on CineCameraSettings_GetFilmbackPresetByName");
@@ -67,7 +67,7 @@ public:
 	class FString                                 PresetName;                                        // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FCameraLensSettings                    LensSettings;                                      // 0x0010(0x001C)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x002C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_363F[0x3];                                     // 0x002D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_35CA[0x3];                                     // 0x002D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CineCameraSettings_GetLensPresetByName) == 0x000008, "Wrong alignment on CineCameraSettings_GetLensPresetByName");
 static_assert(sizeof(CineCameraSettings_GetLensPresetByName) == 0x000030, "Wrong size on CineCameraSettings_GetLensPresetByName");

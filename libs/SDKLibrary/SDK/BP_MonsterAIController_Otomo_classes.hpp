@@ -27,7 +27,7 @@ class ABP_MonsterAIController_Otomo_C final : public ABP_MonsterAIControllerBase
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_MonsterAIController_Otomo_C;     // 0x0550(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	int32                                         OtomoSlotIndex;                                    // 0x0558(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4568[0x4];                                     // 0x055C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4564[0x4];                                     // 0x055C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<EPalAIActionType, class UPalAIActionBase*> PlayingAIActionMap;                                // 0x0560(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FTimerHandle                           RegeneTimer;                                       // 0x05B0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                FollowInterpolatedPos;                             // 0x05B8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

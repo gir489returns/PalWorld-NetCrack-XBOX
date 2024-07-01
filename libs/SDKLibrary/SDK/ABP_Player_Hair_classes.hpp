@@ -24,10 +24,10 @@ namespace SDK
 class UABP_Player_Hair_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_3DD1[0x8];                                     // 0x0348(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F3E[0x8];                                     // 0x0348(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0350(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct ABP_Player_Hair::FAnimBlueprintGeneratedMutableData __AnimBlueprintMutables;                           // 0x0358(0x0002)(HasGetValueTypeHash)
-	uint8                                         Pad_3DD2[0x6];                                     // 0x035A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F3F[0x6];                                     // 0x035A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAnimSubsystemInstance                 AnimBlueprintExtension_PropertyAccess;             // 0x0360(0x0008)()
 	struct FAnimSubsystemInstance                 AnimBlueprintExtension_Base;                       // 0x0368(0x0008)()
 	struct FAnimNode_Root                         AnimGraphNode_Root_1;                              // 0x0370(0x0020)()

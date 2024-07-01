@@ -25,7 +25,7 @@ public:
 	struct FVector                                Position;                                          // 0x0000(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                OutPosition;                                       // 0x0018(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C69[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C43[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PPSkyCreator_FindLightningPosition) == 0x000008, "Wrong alignment on PPSkyCreator_FindLightningPosition");
 static_assert(sizeof(PPSkyCreator_FindLightningPosition) == 0x000038, "Wrong size on PPSkyCreator_FindLightningPosition");
@@ -40,7 +40,7 @@ struct PPSkyCreator_GetCloudDensityAtPosition final
 public:
 	struct FVector                                Position;                                          // 0x0000(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C6A[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C44[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PPSkyCreator_GetCloudDensityAtPosition) == 0x000008, "Wrong alignment on PPSkyCreator_GetCloudDensityAtPosition");
 static_assert(sizeof(PPSkyCreator_GetCloudDensityAtPosition) == 0x000020, "Wrong size on PPSkyCreator_GetCloudDensityAtPosition");
@@ -64,7 +64,7 @@ struct PPSkyCreator_GetMoonPosition final
 {
 public:
 	float                                         Time;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C6B[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C45[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRotator                               ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(PPSkyCreator_GetMoonPosition) == 0x000008, "Wrong alignment on PPSkyCreator_GetMoonPosition");
@@ -78,7 +78,7 @@ struct PPSkyCreator_GetSunPosition final
 {
 public:
 	float                                         Time;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C6C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C46[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRotator                               ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(PPSkyCreator_GetSunPosition) == 0x000008, "Wrong alignment on PPSkyCreator_GetSunPosition");
@@ -259,7 +259,7 @@ public:
 	struct FPPSkyCreatorWeatherFXSettings         InWeatherFXSettingsA;                              // 0x0000(0x0110)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FPPSkyCreatorWeatherFXSettings         InWeatherFXSettingsB;                              // 0x0110(0x0110)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Alpha;                                             // 0x0220(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C6D[0x4];                                     // 0x0224(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C47[0x4];                                     // 0x0224(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PPSkyCreator_LerpWeatherFXSettings) == 0x000008, "Wrong alignment on PPSkyCreator_LerpWeatherFXSettings");
 static_assert(sizeof(PPSkyCreator_LerpWeatherFXSettings) == 0x000228, "Wrong size on PPSkyCreator_LerpWeatherFXSettings");
@@ -290,7 +290,7 @@ public:
 	struct FPPSkyCreatorWeatherSettings           InWeatherSettingsA;                                // 0x0000(0x0458)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FPPSkyCreatorWeatherSettings           InWeatherSettingsB;                                // 0x0458(0x0458)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Alpha;                                             // 0x08B0(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C6E[0x4];                                     // 0x08B4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C48[0x4];                                     // 0x08B4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PPSkyCreator_LerpWeatherSettings) == 0x000008, "Wrong alignment on PPSkyCreator_LerpWeatherSettings");
 static_assert(sizeof(PPSkyCreator_LerpWeatherSettings) == 0x0008B8, "Wrong size on PPSkyCreator_LerpWeatherSettings");
@@ -646,7 +646,7 @@ public:
 	float                                         InLongitude;                                       // 0x0004(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         InTimeZone;                                        // 0x0008(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          InbDaylightSavingTime;                             // 0x000C(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C6F[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C49[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         InYear;                                            // 0x0010(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         InMonth;                                           // 0x0014(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         InDay;                                             // 0x0018(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1153,7 +1153,7 @@ public:
 	class UMaterialInterface*                     Material;                                          // 0x0028(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UTextureRenderTarget2D*                 RenderTarget;                                      // 0x0030(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C70[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C4A[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PPSkyCreatorFunctionLibrary_CheckCloudDensityAtPosition) == 0x000008, "Wrong alignment on PPSkyCreatorFunctionLibrary_CheckCloudDensityAtPosition");
 static_assert(sizeof(PPSkyCreatorFunctionLibrary_CheckCloudDensityAtPosition) == 0x000040, "Wrong size on PPSkyCreatorFunctionLibrary_CheckCloudDensityAtPosition");
@@ -1212,7 +1212,7 @@ struct PPSkyCreatorFunctionLibrary_FindLightningPosition final
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSampleCloudDensity;                               // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C71[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C4B[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Samples;                                           // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UMaterialParameterCollection*           ParameterCollection;                               // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UMaterialInterface*                     Material;                                          // 0x0018(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1223,10 +1223,10 @@ public:
 	float                                         MinHeight;                                         // 0x0048(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxHeight;                                         // 0x004C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DensityThreshold;                                  // 0x0050(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C72[0x4];                                     // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C4C[0x4];                                     // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                OutPosition;                                       // 0x0058(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0070(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C73[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C4D[0x7];                                     // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PPSkyCreatorFunctionLibrary_FindLightningPosition) == 0x000008, "Wrong alignment on PPSkyCreatorFunctionLibrary_FindLightningPosition");
 static_assert(sizeof(PPSkyCreatorFunctionLibrary_FindLightningPosition) == 0x000078, "Wrong size on PPSkyCreatorFunctionLibrary_FindLightningPosition");
@@ -1256,7 +1256,7 @@ public:
 	class UMaterialInterface*                     Material;                                          // 0x0028(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UTextureRenderTarget2D*                 RenderTarget;                                      // 0x0030(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0038(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C74[0x4];                                     // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C4E[0x4];                                     // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PPSkyCreatorFunctionLibrary_GetCloudDensityAtPosition) == 0x000008, "Wrong alignment on PPSkyCreatorFunctionLibrary_GetCloudDensityAtPosition");
 static_assert(sizeof(PPSkyCreatorFunctionLibrary_GetCloudDensityAtPosition) == 0x000040, "Wrong size on PPSkyCreatorFunctionLibrary_GetCloudDensityAtPosition");
@@ -1276,7 +1276,7 @@ public:
 	float                                         Longitude;                                         // 0x0004(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         TimeZone;                                          // 0x0008(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsDaylightSavingTime;                             // 0x000C(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C75[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C4F[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDateTime                              DateTime;                                          // 0x0010(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPPCelestialPositionData               ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
@@ -1298,7 +1298,7 @@ public:
 	float                                         Longitude;                                         // 0x0004(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         TimeZone;                                          // 0x0008(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsDaylightSavingTime;                             // 0x000C(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C76[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C50[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDateTime                              DateTime;                                          // 0x0010(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPPCelestialPositionData               ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };

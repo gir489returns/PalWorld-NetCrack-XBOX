@@ -24,13 +24,13 @@ class UBP_AnimNotifyState_PlaySound_C final : public UAnimNotifyState
 {
 public:
 	bool                                          Mute;                                              // 0x0030(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AC1[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_32D7[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalDataTableRowName_SoundID           SoundId;                                           // 0x0034(0x0008)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
 	bool                                          StopOnNotifyEnded;                                 // 0x003C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AC2[0x3];                                     // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_32D8[0x3];                                     // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalSoundOptions                       SoundOption;                                       // 0x0040(0x0004)(Edit, BlueprintVisible, NoDestructor)
 	class FName                                   SocketName;                                        // 0x0044(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AC3[0x4];                                     // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_32D9[0x4];                                     // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftClassPtr<class UClass>                   DebugSoundSlot;                                    // 0x0050(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	EPhysicalSurface                              DebugPhysicsMaterial;                              // 0x0080(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

@@ -48,10 +48,10 @@ public:
 	struct FGuid                                  Guid;                                              // 0x0000(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint64                                        Hash;                                              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSHAHashData                           ShaHash;                                           // 0x0018(0x0014)(NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_340F[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3393[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	int64                                         FileSize;                                          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         GroupNumber;                                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3410[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3394[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FChunkInfoData) == 0x000008, "Wrong alignment on FChunkInfoData");
 static_assert(sizeof(FChunkInfoData) == 0x000040, "Wrong size on FChunkInfoData");
@@ -83,15 +83,15 @@ struct FFileManifestData final
 public:
 	class FString                                 Filename;                                          // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSHAHashData                           FileHash;                                          // 0x0010(0x0014)(NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3411[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3395[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FChunkPartData>                 FileChunkParts;                                    // 0x0028(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<class FString>                         InstallTags;                                       // 0x0038(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          bIsUnixExecutable;                                 // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3412[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3396[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 SymlinkTarget;                                     // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsReadOnly;                                       // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsCompressed;                                     // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3413[0x6];                                     // 0x0062(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3397[0x6];                                     // 0x0062(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FFileManifestData) == 0x000008, "Wrong alignment on FFileManifestData");
 static_assert(sizeof(FFileManifestData) == 0x000068, "Wrong size on FFileManifestData");

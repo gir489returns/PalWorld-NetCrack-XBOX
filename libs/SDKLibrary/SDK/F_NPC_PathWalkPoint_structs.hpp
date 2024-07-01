@@ -24,7 +24,7 @@ struct FF_NPC_PathWalkPoint final
 public:
 	struct FVector                                Point_10_C92533D74DD6280F6FDA69B577B9BC99;         // 0x0000(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPalActionType                                WaitAction_14_5739D87348286264ED66708DF7FC3D1B;    // 0x0018(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_38BA[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_385A[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        WaitTime_15_C7E545C5478904095A8A57B5CD072C65;      // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Yaw_13_9634CB3043B1505237E811853806822B;           // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

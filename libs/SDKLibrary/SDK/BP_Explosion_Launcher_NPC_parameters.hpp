@@ -31,7 +31,7 @@ struct BP_Explosion_Launcher_NPC_C_ExecuteUbergraph_BP_Explosion_Launcher_NPC fi
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_48DE[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_491C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UNiagaraComponent*                      K2Node_ComponentBoundEvent_PSystem;                // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_Explosion_Launcher_NPC_C_ExecuteUbergraph_BP_Explosion_Launcher_NPC) == 0x000008, "Wrong alignment on BP_Explosion_Launcher_NPC_C_ExecuteUbergraph_BP_Explosion_Launcher_NPC");

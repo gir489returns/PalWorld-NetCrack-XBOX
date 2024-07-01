@@ -24,10 +24,10 @@ class ULiveLinkCameraController final : public ULiveLinkControllerBase
 {
 public:
 	bool                                          bUseCameraRange;                                   // 0x0068(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1988[0x7];                                     // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1961[0x7];                                     // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLensFilePicker                        LensFilePicker;                                    // 0x0070(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FLiveLinkCameraControllerUpdateFlags   UpdateFlags;                                       // 0x0080(0x0007)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1989[0x41];                                    // 0x0087(0x0041)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1962[0x41];                                    // 0x0087(0x0041)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

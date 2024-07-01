@@ -35,7 +35,7 @@ enum class EClusterConnectionTypeEnum : uint8
 struct FChaosHandlerSet final
 {
 public:
-	uint8                                         Pad_34A9[0x8];                                     // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_342D[0x8];                                     // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TSet<class UObject*>                          ChaosHandlers;                                     // 0x0008(0x0050)(UObjectWrapper, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FChaosHandlerSet) == 0x000008, "Wrong alignment on FChaosHandlerSet");
@@ -81,7 +81,7 @@ public:
 	class UPrimitiveComponent*                    Component;                                         // 0x0000(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Location;                                          // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Mass;                                              // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_34AA[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_342E[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FChaosRemovalEvent) == 0x000008, "Wrong alignment on FChaosRemovalEvent");
 static_assert(sizeof(FChaosRemovalEvent) == 0x000028, "Wrong size on FChaosRemovalEvent");
@@ -121,7 +121,7 @@ public:
 	struct FVector                                LinearVelocity;                                    // 0x0040(0x0018)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                AngularVelocity;                                   // 0x0058(0x0018)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Mass;                                              // 0x0070(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_34AB[0x4];                                     // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_342F[0x4];                                     // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FBox                                   LocalBounds;                                       // 0x0078(0x0038)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<int32>                                 Children;                                          // 0x00B0(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 };
@@ -141,7 +141,7 @@ static_assert(offsetof(FChaosCrumblingEvent, Children) == 0x0000B0, "Member 'FCh
 struct alignas(0x10) FBreakEventCallbackWrapper final
 {
 public:
-	uint8                                         Pad_34AC[0x40];                                    // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3430[0x40];                                    // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FBreakEventCallbackWrapper) == 0x000010, "Wrong alignment on FBreakEventCallbackWrapper");
 static_assert(sizeof(FBreakEventCallbackWrapper) == 0x000040, "Wrong size on FBreakEventCallbackWrapper");
@@ -151,7 +151,7 @@ static_assert(sizeof(FBreakEventCallbackWrapper) == 0x000040, "Wrong size on FBr
 struct alignas(0x10) FRemovalEventCallbackWrapper final
 {
 public:
-	uint8                                         Pad_34AD[0x40];                                    // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3431[0x40];                                    // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FRemovalEventCallbackWrapper) == 0x000010, "Wrong alignment on FRemovalEventCallbackWrapper");
 static_assert(sizeof(FRemovalEventCallbackWrapper) == 0x000040, "Wrong size on FRemovalEventCallbackWrapper");
@@ -161,7 +161,7 @@ static_assert(sizeof(FRemovalEventCallbackWrapper) == 0x000040, "Wrong size on F
 struct alignas(0x10) FCrumblingEventCallbackWrapper final
 {
 public:
-	uint8                                         Pad_34AE[0x40];                                    // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3432[0x40];                                    // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FCrumblingEventCallbackWrapper) == 0x000010, "Wrong alignment on FCrumblingEventCallbackWrapper");
 static_assert(sizeof(FCrumblingEventCallbackWrapper) == 0x000040, "Wrong size on FCrumblingEventCallbackWrapper");
