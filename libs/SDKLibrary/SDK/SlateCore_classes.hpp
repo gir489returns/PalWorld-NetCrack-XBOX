@@ -44,7 +44,7 @@ static_assert(offsetof(USlateWidgetStyleAsset, CustomStyle) == 0x000028, "Member
 class UFontBulkData final : public UObject
 {
 public:
-	uint8                                         Pad_31AE[0x48];                                    // 0x0028(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x48];                                      // 0x0028(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -115,7 +115,7 @@ static_assert(sizeof(USlateTypes) == 0x000028, "Wrong size on USlateTypes");
 class USlateWidgetStyleContainerBase : public UObject
 {
 public:
-	uint8                                         Pad_31AF[0x8];                                     // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

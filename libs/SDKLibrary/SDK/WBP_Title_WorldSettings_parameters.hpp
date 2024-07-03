@@ -19,237 +19,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature) == 0x000001, "Wrong alignment on WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature");
-static_assert(sizeof(WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature) == 0x000001, "Wrong size on WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature");
-static_assert(offsetof(WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature, IsOn) == 0x000000, "Member 'WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature::IsOn' has a wrong offset!");
-
-// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature) == 0x000001, "Wrong alignment on WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature");
-static_assert(sizeof(WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature) == 0x000001, "Wrong size on WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature");
-static_assert(offsetof(WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature, IsOn) == 0x000000, "Member 'WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature::IsOn' has a wrong offset!");
-
-// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature final
-{
-public:
-	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature) == 0x000004, "Wrong alignment on WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature");
-static_assert(sizeof(WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature) == 0x000004, "Wrong size on WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature");
-static_assert(offsetof(WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature, NewIndex) == 0x000000, "Member 'WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature::NewIndex' has a wrong offset!");
-
-// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.ApplyWorldSettingToUI
-// 0x0408 (0x0408 - 0x0000)
-struct WBP_Title_WorldSettings_C_ApplyWorldSettingToUI final
-{
-public:
-	struct FPalOptionWorldSettings                WorldSetting;                                      // 0x0000(0x0158)(BlueprintVisible, BlueprintReadOnly, Parm)
-	TArray<class FString>                         CallFunc_CreateAutoSaveSettingStrings_OutStrings;  // 0x0158(0x0010)(ReferenceParm)
-	int32                                         CallFunc_ConvertAutoSaveTimeToIndex_Index;         // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C10[0x4];                                     // 0x016C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0170(0x0018)()
-	TArray<class FString>                         CallFunc_CreateRandomizerModeSettingStrings_OutStrings; // 0x0188(0x0010)(ReferenceParm)
-	int32                                         CallFunc_ConvertRandomizerModeToUIIndex_UIIndex;   // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FString>                         CallFunc_CreateDeathPenaltySettingStrings_OutStrings; // 0x01A0(0x0010)(ReferenceParm)
-	int32                                         CallFunc_ConvertDeathPenaltyToUIIndex_UIIndex;     // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C11[0x4];                                     // 0x01B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_ConvertAutoSaveTimeToIndex_Time_ImplicitCast; // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast;    // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast;    // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast;    // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_FTrunc_A_ImplicitCast;                    // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_1;  // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_1;  // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_1;  // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_2;  // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_2;  // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_2;  // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_3;  // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_3;  // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_3;  // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_4;  // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_4;  // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_4;  // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_5;  // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_5;  // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_5;  // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_6;  // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_6;  // 0x0270(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_6;  // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_7;  // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_7;  // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_7;  // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_8;  // 0x0298(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_8;  // 0x02A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_8;  // 0x02A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_9;  // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_9;  // 0x02B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_9;  // 0x02C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_10; // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_10; // 0x02D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_10; // 0x02D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_11; // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_11; // 0x02E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_11; // 0x02F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_12; // 0x02F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_12; // 0x0300(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_12; // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_13; // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_13; // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_13; // 0x0320(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_14; // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_14; // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_14; // 0x0338(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_15; // 0x0340(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_15; // 0x0348(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_15; // 0x0350(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_16; // 0x0358(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_16; // 0x0360(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_16; // 0x0368(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_17; // 0x0370(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_17; // 0x0378(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_17; // 0x0380(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_18; // 0x0388(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_19; // 0x0390(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_18; // 0x0398(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_18; // 0x03A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_19; // 0x03A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_19; // 0x03B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_20; // 0x03B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_20; // 0x03C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_20; // 0x03C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_21; // 0x03D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_21; // 0x03D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_21; // 0x03E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_22; // 0x03E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_22; // 0x03F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_22; // 0x03F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_23; // 0x0400(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI) == 0x000008, "Wrong alignment on WBP_Title_WorldSettings_C_ApplyWorldSettingToUI");
-static_assert(sizeof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI) == 0x000408, "Wrong size on WBP_Title_WorldSettings_C_ApplyWorldSettingToUI");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, WorldSetting) == 0x000000, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::WorldSetting' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_CreateAutoSaveSettingStrings_OutStrings) == 0x000158, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_CreateAutoSaveSettingStrings_OutStrings' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_ConvertAutoSaveTimeToIndex_Index) == 0x000168, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_ConvertAutoSaveTimeToIndex_Index' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_Conv_StringToText_ReturnValue) == 0x000170, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_CreateRandomizerModeSettingStrings_OutStrings) == 0x000188, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_CreateRandomizerModeSettingStrings_OutStrings' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_ConvertRandomizerModeToUIIndex_UIIndex) == 0x000198, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_ConvertRandomizerModeToUIIndex_UIIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_FTrunc_ReturnValue) == 0x00019C, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_CreateDeathPenaltySettingStrings_OutStrings) == 0x0001A0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_CreateDeathPenaltySettingStrings_OutStrings' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_ConvertDeathPenaltyToUIIndex_UIIndex) == 0x0001B0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_ConvertDeathPenaltyToUIIndex_UIIndex' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_Conv_IntToDouble_ReturnValue) == 0x0001B8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_Conv_IntToDouble_ReturnValue_1) == 0x0001C0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_Conv_IntToDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_ConvertAutoSaveTimeToIndex_Time_ImplicitCast) == 0x0001C8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_ConvertAutoSaveTimeToIndex_Time_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast) == 0x0001D0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast) == 0x0001D8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast) == 0x0001E0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_FTrunc_A_ImplicitCast) == 0x0001E8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_FTrunc_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_1) == 0x0001F0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_1) == 0x0001F8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_1) == 0x000200, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_2) == 0x000208, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_2) == 0x000210, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_2) == 0x000218, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_3) == 0x000220, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_3' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_3) == 0x000228, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_3' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_3) == 0x000230, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_3' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_4) == 0x000238, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_4' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_4) == 0x000240, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_4' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_4) == 0x000248, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_4' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_5) == 0x000250, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_5' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_5) == 0x000258, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_5' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_5) == 0x000260, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_5' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_6) == 0x000268, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_6' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_6) == 0x000270, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_6' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_6) == 0x000278, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_6' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_7) == 0x000280, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_7' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_7) == 0x000288, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_7' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_7) == 0x000290, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_7' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_8) == 0x000298, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_8' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_8) == 0x0002A0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_8' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_8) == 0x0002A8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_8' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_9) == 0x0002B0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_9' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_9) == 0x0002B8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_9' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_9) == 0x0002C0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_9' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_10) == 0x0002C8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_10' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_10) == 0x0002D0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_10' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_10) == 0x0002D8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_10' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_11) == 0x0002E0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_11' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_11) == 0x0002E8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_11' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_11) == 0x0002F0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_11' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_12) == 0x0002F8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_12' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_12) == 0x000300, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_12' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_12) == 0x000308, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_12' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_13) == 0x000310, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_13' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_13) == 0x000318, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_13' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_13) == 0x000320, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_13' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_14) == 0x000328, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_14' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_14) == 0x000330, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_14' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_14) == 0x000338, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_14' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_15) == 0x000340, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_15' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_15) == 0x000348, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_15' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_15) == 0x000350, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_15' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_16) == 0x000358, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_16' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_16) == 0x000360, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_16' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_16) == 0x000368, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_16' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_17) == 0x000370, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_17' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_17) == 0x000378, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_17' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_17) == 0x000380, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_17' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_18) == 0x000388, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_18' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_19) == 0x000390, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_19' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_18) == 0x000398, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_18' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_18) == 0x0003A0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_18' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_19) == 0x0003A8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_19' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_19) == 0x0003B0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_19' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_20) == 0x0003B8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_20' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_20) == 0x0003C0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_20' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_20) == 0x0003C8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_20' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_21) == 0x0003D0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_21' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_21) == 0x0003D8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_21' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_21) == 0x0003E0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_21' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_22) == 0x0003E8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_22' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_22) == 0x0003F0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_22' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_22) == 0x0003F8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_22' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_23) == 0x000400, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_23' has a wrong offset!");
-
-// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.ApplyDifficultyPreset
-// 0x00A8 (0x00A8 - 0x0000)
-struct WBP_Title_WorldSettings_C_ApplyDifficultyPreset final
-{
-public:
-	EPalOptionWorldDifficulty                     DifficultyType;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C12[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   TmpPresetRowName;                                  // 0x0004(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C13[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalOptionWorldPresetRow               CallFunc_GetDataTableRowFromName_OutRow;           // 0x0010(0x0090)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSettings_C_ApplyDifficultyPreset) == 0x000008, "Wrong alignment on WBP_Title_WorldSettings_C_ApplyDifficultyPreset");
-static_assert(sizeof(WBP_Title_WorldSettings_C_ApplyDifficultyPreset) == 0x0000A8, "Wrong size on WBP_Title_WorldSettings_C_ApplyDifficultyPreset");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyDifficultyPreset, DifficultyType) == 0x000000, "Member 'WBP_Title_WorldSettings_C_ApplyDifficultyPreset::DifficultyType' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyDifficultyPreset, TmpPresetRowName) == 0x000004, "Member 'WBP_Title_WorldSettings_C_ApplyDifficultyPreset::TmpPresetRowName' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyDifficultyPreset, K2Node_SwitchEnum_CmpSuccess) == 0x00000C, "Member 'WBP_Title_WorldSettings_C_ApplyDifficultyPreset::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyDifficultyPreset, CallFunc_GetDataTableRowFromName_OutRow) == 0x000010, "Member 'WBP_Title_WorldSettings_C_ApplyDifficultyPreset::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyDifficultyPreset, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0000A0, "Member 'WBP_Title_WorldSettings_C_ApplyDifficultyPreset::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-
 // Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.TogglePanel
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_Title_WorldSettings_C_TogglePanel final
@@ -282,17 +51,17 @@ public:
 	struct FPalOptionWorldSettings                WorldSetting;                                      // 0x0000(0x0158)(BlueprintVisible, BlueprintReadOnly, Parm)
 	bool                                          IsNewWorld;                                        // 0x0158(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CanMulti;                                          // 0x0159(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C14[0x6];                                     // 0x015A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15A[0x6];                                      // 0x015A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 WorldSaveDirectoryName;                            // 0x0160(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 WorldName;                                         // 0x0170(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0181(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0182(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_1;                              // 0x0183(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C15[0x4];                                     // 0x0184(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_184[0x4];                                      // 0x0184(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBP_PalOptionSubsystem_C*               CallFunc_SpawnObject_ReturnValue;                  // 0x0188(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EPalOptionWorldDifficulty                     Temp_byte_Variable_2;                              // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C16[0x3];                                     // 0x0191(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_191[0x3];                                      // 0x0191(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalOptionWorldStaticSettings          CallFunc_GetOptionWorldStaticSettings_ReturnValue; // 0x0194(0x0100)(ConstParm, NoDestructor)
 	bool                                          Temp_bool_Variable_2;                              // 0x0294(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0295(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -305,14 +74,14 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x029C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x029D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x029E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C17[0x1];                                     // 0x029F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29F[0x1];                                      // 0x029F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x02A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPalOptionWorldDifficulty                     K2Node_Select_Default_2;                           // 0x02A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C18[0x7];                                     // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A9[0x7];                                      // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         CallFunc_CreateDifficultySettingStrings_OutStrings; // 0x02B0(0x0010)(ReferenceParm)
 	int32                                         CallFunc_ConvertDifficultyToUIIndex_UIIndex;       // 0x02C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default_3;                           // 0x02C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C19[0x3];                                     // 0x02C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C5[0x3];                                      // 0x02C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_SelectString_ReturnValue;                 // 0x02C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x02D8(0x0018)()
 	class FString                                 CallFunc_SelectString_ReturnValue_1;               // 0x02F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
@@ -484,7 +253,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_ComponentBoundEvent_NewIndex;               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C1A[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_ConvertIndexToAutoSaveTime_Time;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -493,22 +262,22 @@ public:
 	bool                                          CallFunc_IsOn_IsOn;                                // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_IsOn_3;                 // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C1B[0x1];                                     // 0x001F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F[0x1];                                       // 0x001F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 K2Node_ComponentBoundEvent_NewString;              // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsOn_IsOn_1;                              // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C1C[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Len_ReturnValue;                          // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C1D[0x1];                                     // 0x003B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B[0x1];                                       // 0x003B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_ComponentBoundEvent_NewIndex_4;             // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPalOptionWorldDifficulty                     CallFunc_ConvertUIIndexToDifficulty_DifficultyType; // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C1E[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_ComponentBoundEvent_NewIndex_3;             // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPalOptionWorldDifficulty                     CallFunc_ConvertUIIndexToDifficulty_DifficultyType_1; // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C1F[0x3];                                     // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        K2Node_ComponentBoundEvent_NewValue_29;            // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_ComponentBoundEvent_NewValue_28;            // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_ComponentBoundEvent_NewValue_27;            // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -534,12 +303,12 @@ public:
 	int32                                         K2Node_ComponentBoundEvent_NewIndex_2;             // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPalOptionWorldDeathPenalty                   CallFunc_ConvertUIIndexToDeathPenalty_DeathPenaltyType; // 0x010C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_IsOn_2;                 // 0x010D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C20[0x2];                                     // 0x010E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10E[0x2];                                      // 0x010E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        K2Node_ComponentBoundEvent_NewValue_7;             // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_ComponentBoundEvent_NewValue_6;             // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Round_ReturnValue;                        // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_IsCustomPanel;                  // 0x0124(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C21[0x3];                                     // 0x0125(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_125[0x3];                                      // 0x0125(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0128(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetSelectNameIndex_NowIndex;              // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_1;                              // 0x0134(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -550,30 +319,30 @@ public:
 	double                                        K2Node_ComponentBoundEvent_NewValue_4;             // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_IsOn_1;                 // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_2;                              // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C22[0x6];                                     // 0x014A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14A[0x6];                                      // 0x014A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        K2Node_ComponentBoundEvent_NewValue_3;             // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C23[0x3];                                     // 0x0159(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_159[0x3];                                      // 0x0159(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x015C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_ComponentBoundEvent_NewValue_2;             // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FTrunc_ReturnValue_1;                     // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_IsOn;                   // 0x016C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C24[0x3];                                     // 0x016D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_16D[0x3];                                      // 0x016D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        K2Node_ComponentBoundEvent_NewValue_1;             // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FTrunc_ReturnValue_2;                     // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_ComponentBoundEvent_NewIndex_1;             // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPalRandomizerType                            CallFunc_ConvertUIIndexToRandomizerMode_RandomizerType; // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0181(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C25[0x2];                                     // 0x0182(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_182[0x2];                                      // 0x0182(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGuid                                  CallFunc_NewGuid_ReturnValue;                      // 0x0184(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C26[0x4];                                     // 0x0194(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_194[0x4];                                      // 0x0194(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_GuidToString_ReturnValue;            // 0x0198(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Left_ReturnValue;                         // 0x01A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x01B8(0x0018)()
 	class FString                                 CallFunc_GetRandomizerSeed_WorldName;              // 0x01D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetButtonText_Text;                       // 0x01E0(0x0018)()
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C27[0x7];                                     // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F9[0x7];                                      // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        K2Node_ComponentBoundEvent_NewValue;               // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Round_ReturnValue_1;                      // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_SetFieldsInStruct_AutoSaveSpan_ImplicitCast; // 0x020C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -719,7 +488,7 @@ struct WBP_Title_WorldSettings_C_EndCustomDifficultySetting final
 {
 public:
 	int32                                         CallFunc_GetSelectNameIndex_NowIndex;              // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C28[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Title_WorldSettings_C_EndCustomDifficultySetting) == 0x000008, "Wrong alignment on WBP_Title_WorldSettings_C_EndCustomDifficultySetting");
@@ -733,7 +502,7 @@ struct WBP_Title_WorldSettings_C_DisplayDifficultyDesc final
 {
 public:
 	EPalOptionWorldDifficulty                     DifficultyTyper;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C29[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDataTableRowHandle                    TmpMsgID;                                          // 0x0008(0x0010)(Edit, BlueprintVisible, NoDestructor)
 	struct FDataTableRowHandle                    CustomMsgID;                                       // 0x0018(0x0010)(Edit, BlueprintVisible, NoDestructor)
 	struct FDataTableRowHandle                    VeryHardMsgID;                                     // 0x0028(0x0010)(Edit, BlueprintVisible, NoDestructor)
@@ -743,7 +512,7 @@ public:
 	struct FDataTableRowHandle                    VeryEasyMsgID;                                     // 0x0068(0x0010)(Edit, BlueprintVisible, NoDestructor)
 	class FText                                   TmpText;                                           // 0x0078(0x0018)(Edit, BlueprintVisible)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C2A[0x7];                                     // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0098(0x0018)()
 };
 static_assert(alignof(WBP_Title_WorldSettings_C_DisplayDifficultyDesc) == 0x000008, "Wrong alignment on WBP_Title_WorldSettings_C_DisplayDifficultyDesc");
@@ -971,7 +740,7 @@ struct WBP_Title_WorldSettings_C_ConvertRandomizerModeToUIIndex final
 {
 public:
 	EPalRandomizerType                            RandomizerType;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C2B[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         UIIndex;                                           // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -987,7 +756,7 @@ struct WBP_Title_WorldSettings_C_ConvertIndexToAutoSaveTime final
 {
 public:
 	int32                                         Param_Index;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C2C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Time;                                              // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -1003,7 +772,7 @@ struct WBP_Title_WorldSettings_C_ConvertDifficultyToUIIndex final
 {
 public:
 	EPalOptionWorldDifficulty                     DifficultyType;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C2D[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         UIIndex;                                           // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -1019,7 +788,7 @@ struct WBP_Title_WorldSettings_C_ConvertDeathPenaltyToUIIndex final
 {
 public:
 	EPalOptionWorldDeathPenalty                   DeathPenaltyType;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C2E[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         UIIndex;                                           // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -1492,6 +1261,237 @@ public:
 static_assert(alignof(WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordSetting_K2Node_ComponentBoundEvent_5_OnComittedText__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordSetting_K2Node_ComponentBoundEvent_5_OnComittedText__DelegateSignature");
 static_assert(sizeof(WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordSetting_K2Node_ComponentBoundEvent_5_OnComittedText__DelegateSignature) == 0x000010, "Wrong size on WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordSetting_K2Node_ComponentBoundEvent_5_OnComittedText__DelegateSignature");
 static_assert(offsetof(WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordSetting_K2Node_ComponentBoundEvent_5_OnComittedText__DelegateSignature, NewString) == 0x000000, "Member 'WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordSetting_K2Node_ComponentBoundEvent_5_OnComittedText__DelegateSignature::NewString' has a wrong offset!");
+
+// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature) == 0x000001, "Wrong alignment on WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature");
+static_assert(sizeof(WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature) == 0x000001, "Wrong size on WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature");
+static_assert(offsetof(WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature, IsOn) == 0x000000, "Member 'WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature::IsOn' has a wrong offset!");
+
+// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature) == 0x000001, "Wrong alignment on WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature");
+static_assert(sizeof(WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature) == 0x000001, "Wrong size on WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature");
+static_assert(offsetof(WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature, IsOn) == 0x000000, "Member 'WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature::IsOn' has a wrong offset!");
+
+// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature final
+{
+public:
+	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature) == 0x000004, "Wrong alignment on WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature");
+static_assert(sizeof(WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature) == 0x000004, "Wrong size on WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature");
+static_assert(offsetof(WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature, NewIndex) == 0x000000, "Member 'WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature::NewIndex' has a wrong offset!");
+
+// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.ApplyWorldSettingToUI
+// 0x0408 (0x0408 - 0x0000)
+struct WBP_Title_WorldSettings_C_ApplyWorldSettingToUI final
+{
+public:
+	struct FPalOptionWorldSettings                WorldSetting;                                      // 0x0000(0x0158)(BlueprintVisible, BlueprintReadOnly, Parm)
+	TArray<class FString>                         CallFunc_CreateAutoSaveSettingStrings_OutStrings;  // 0x0158(0x0010)(ReferenceParm)
+	int32                                         CallFunc_ConvertAutoSaveTimeToIndex_Index;         // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_16C[0x4];                                      // 0x016C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0170(0x0018)()
+	TArray<class FString>                         CallFunc_CreateRandomizerModeSettingStrings_OutStrings; // 0x0188(0x0010)(ReferenceParm)
+	int32                                         CallFunc_ConvertRandomizerModeToUIIndex_UIIndex;   // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FString>                         CallFunc_CreateDeathPenaltySettingStrings_OutStrings; // 0x01A0(0x0010)(ReferenceParm)
+	int32                                         CallFunc_ConvertDeathPenaltyToUIIndex_UIIndex;     // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1B4[0x4];                                      // 0x01B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_ConvertAutoSaveTimeToIndex_Time_ImplicitCast; // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast;    // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast;    // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast;    // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_FTrunc_A_ImplicitCast;                    // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_1;  // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_1;  // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_1;  // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_2;  // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_2;  // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_2;  // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_3;  // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_3;  // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_3;  // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_4;  // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_4;  // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_4;  // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_5;  // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_5;  // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_5;  // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_6;  // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_6;  // 0x0270(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_6;  // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_7;  // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_7;  // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_7;  // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_8;  // 0x0298(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_8;  // 0x02A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_8;  // 0x02A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_9;  // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_9;  // 0x02B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_9;  // 0x02C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_10; // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_10; // 0x02D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_10; // 0x02D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_11; // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_11; // 0x02E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_11; // 0x02F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_12; // 0x02F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_12; // 0x0300(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_12; // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_13; // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_13; // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_13; // 0x0320(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_14; // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_14; // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_14; // 0x0338(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_15; // 0x0340(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_15; // 0x0348(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_15; // 0x0350(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_16; // 0x0358(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_16; // 0x0360(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_16; // 0x0368(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_17; // 0x0370(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_17; // 0x0378(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_17; // 0x0380(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_18; // 0x0388(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_19; // 0x0390(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_18; // 0x0398(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_18; // 0x03A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_19; // 0x03A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_19; // 0x03B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_20; // 0x03B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_20; // 0x03C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_20; // 0x03C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_21; // 0x03D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_21; // 0x03D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_21; // 0x03E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_22; // 0x03E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MinValue_ImplicitCast_22; // 0x03F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_MaxValue_ImplicitCast_22; // 0x03F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetupFloatValue_NowValue_ImplicitCast_23; // 0x0400(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI) == 0x000008, "Wrong alignment on WBP_Title_WorldSettings_C_ApplyWorldSettingToUI");
+static_assert(sizeof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI) == 0x000408, "Wrong size on WBP_Title_WorldSettings_C_ApplyWorldSettingToUI");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, WorldSetting) == 0x000000, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::WorldSetting' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_CreateAutoSaveSettingStrings_OutStrings) == 0x000158, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_CreateAutoSaveSettingStrings_OutStrings' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_ConvertAutoSaveTimeToIndex_Index) == 0x000168, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_ConvertAutoSaveTimeToIndex_Index' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_Conv_StringToText_ReturnValue) == 0x000170, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_CreateRandomizerModeSettingStrings_OutStrings) == 0x000188, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_CreateRandomizerModeSettingStrings_OutStrings' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_ConvertRandomizerModeToUIIndex_UIIndex) == 0x000198, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_ConvertRandomizerModeToUIIndex_UIIndex' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_FTrunc_ReturnValue) == 0x00019C, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_CreateDeathPenaltySettingStrings_OutStrings) == 0x0001A0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_CreateDeathPenaltySettingStrings_OutStrings' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_ConvertDeathPenaltyToUIIndex_UIIndex) == 0x0001B0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_ConvertDeathPenaltyToUIIndex_UIIndex' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_Conv_IntToDouble_ReturnValue) == 0x0001B8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_Conv_IntToDouble_ReturnValue_1) == 0x0001C0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_Conv_IntToDouble_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_ConvertAutoSaveTimeToIndex_Time_ImplicitCast) == 0x0001C8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_ConvertAutoSaveTimeToIndex_Time_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast) == 0x0001D0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast) == 0x0001D8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast) == 0x0001E0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_FTrunc_A_ImplicitCast) == 0x0001E8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_FTrunc_A_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_1) == 0x0001F0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_1) == 0x0001F8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_1) == 0x000200, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_2) == 0x000208, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_2' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_2) == 0x000210, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_2' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_2) == 0x000218, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_2' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_3) == 0x000220, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_3' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_3) == 0x000228, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_3' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_3) == 0x000230, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_3' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_4) == 0x000238, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_4' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_4) == 0x000240, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_4' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_4) == 0x000248, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_4' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_5) == 0x000250, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_5' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_5) == 0x000258, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_5' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_5) == 0x000260, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_5' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_6) == 0x000268, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_6' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_6) == 0x000270, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_6' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_6) == 0x000278, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_6' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_7) == 0x000280, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_7' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_7) == 0x000288, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_7' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_7) == 0x000290, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_7' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_8) == 0x000298, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_8' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_8) == 0x0002A0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_8' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_8) == 0x0002A8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_8' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_9) == 0x0002B0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_9' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_9) == 0x0002B8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_9' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_9) == 0x0002C0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_9' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_10) == 0x0002C8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_10' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_10) == 0x0002D0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_10' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_10) == 0x0002D8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_10' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_11) == 0x0002E0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_11' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_11) == 0x0002E8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_11' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_11) == 0x0002F0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_11' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_12) == 0x0002F8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_12' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_12) == 0x000300, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_12' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_12) == 0x000308, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_12' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_13) == 0x000310, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_13' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_13) == 0x000318, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_13' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_13) == 0x000320, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_13' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_14) == 0x000328, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_14' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_14) == 0x000330, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_14' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_14) == 0x000338, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_14' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_15) == 0x000340, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_15' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_15) == 0x000348, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_15' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_15) == 0x000350, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_15' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_16) == 0x000358, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_16' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_16) == 0x000360, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_16' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_16) == 0x000368, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_16' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_17) == 0x000370, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_17' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_17) == 0x000378, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_17' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_17) == 0x000380, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_17' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_18) == 0x000388, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_18' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_19) == 0x000390, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_19' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_18) == 0x000398, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_18' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_18) == 0x0003A0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_18' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_19) == 0x0003A8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_19' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_19) == 0x0003B0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_19' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_20) == 0x0003B8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_20' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_20) == 0x0003C0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_20' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_20) == 0x0003C8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_20' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_21) == 0x0003D0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_21' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_21) == 0x0003D8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_21' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_21) == 0x0003E0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_21' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_22) == 0x0003E8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_22' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MinValue_ImplicitCast_22) == 0x0003F0, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MinValue_ImplicitCast_22' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_MaxValue_ImplicitCast_22) == 0x0003F8, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_MaxValue_ImplicitCast_22' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyWorldSettingToUI, CallFunc_SetupFloatValue_NowValue_ImplicitCast_23) == 0x000400, "Member 'WBP_Title_WorldSettings_C_ApplyWorldSettingToUI::CallFunc_SetupFloatValue_NowValue_ImplicitCast_23' has a wrong offset!");
+
+// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.ApplyDifficultyPreset
+// 0x00A8 (0x00A8 - 0x0000)
+struct WBP_Title_WorldSettings_C_ApplyDifficultyPreset final
+{
+public:
+	EPalOptionWorldDifficulty                     DifficultyType;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   TmpPresetRowName;                                  // 0x0004(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalOptionWorldPresetRow               CallFunc_GetDataTableRowFromName_OutRow;           // 0x0010(0x0090)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSettings_C_ApplyDifficultyPreset) == 0x000008, "Wrong alignment on WBP_Title_WorldSettings_C_ApplyDifficultyPreset");
+static_assert(sizeof(WBP_Title_WorldSettings_C_ApplyDifficultyPreset) == 0x0000A8, "Wrong size on WBP_Title_WorldSettings_C_ApplyDifficultyPreset");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyDifficultyPreset, DifficultyType) == 0x000000, "Member 'WBP_Title_WorldSettings_C_ApplyDifficultyPreset::DifficultyType' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyDifficultyPreset, TmpPresetRowName) == 0x000004, "Member 'WBP_Title_WorldSettings_C_ApplyDifficultyPreset::TmpPresetRowName' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyDifficultyPreset, K2Node_SwitchEnum_CmpSuccess) == 0x00000C, "Member 'WBP_Title_WorldSettings_C_ApplyDifficultyPreset::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyDifficultyPreset, CallFunc_GetDataTableRowFromName_OutRow) == 0x000010, "Member 'WBP_Title_WorldSettings_C_ApplyDifficultyPreset::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSettings_C_ApplyDifficultyPreset, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x0000A0, "Member 'WBP_Title_WorldSettings_C_ApplyDifficultyPreset::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
 
 }
 

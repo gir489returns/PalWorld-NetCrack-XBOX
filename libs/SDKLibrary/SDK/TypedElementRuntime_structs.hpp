@@ -58,7 +58,7 @@ struct alignas(0x08) FTypedElementSelectionSetState final
 {
 public:
 	TWeakObjectPtr<class UTypedElementSelectionSet> CreatedFromSelectionSet;                           // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_353A[0x10];                                    // 0x0008(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8[0x10];                                       // 0x0008(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FTypedElementSelectionSetState) == 0x000008, "Wrong alignment on FTypedElementSelectionSetState");
 static_assert(sizeof(FTypedElementSelectionSetState) == 0x000018, "Wrong size on FTypedElementSelectionSetState");

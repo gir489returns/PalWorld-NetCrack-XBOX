@@ -200,7 +200,7 @@ struct FMediaIOConfiguration final
 {
 public:
 	bool                                          bIsInput;                                          // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1862[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMediaIOConnection                     MediaConnection;                                   // 0x0004(0x0020)(Edit, EditConst, NoDestructor, NativeAccessSpecifierPublic)
 	struct FMediaIOMode                           MediaMode;                                         // 0x0024(0x0018)(Edit, EditConst, NoDestructor, NativeAccessSpecifierPublic)
 };
@@ -217,7 +217,7 @@ struct FMediaCaptureOptions final
 public:
 	EMediaCaptureOverrunAction                    OverrunAction;                                     // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EMediaCaptureCroppingType                     Crop;                                              // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1863[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FIntPoint                              CustomCapturePoint;                                // 0x0004(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bResizeSourceBuffer;                               // 0x000C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSkipFrameWhenRunningExpensiveTasks;               // 0x000D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -225,7 +225,7 @@ public:
 	bool                                          bForceAlphaToOneOnConversion;                      // 0x000F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bApplyLinearToSRGBConversion;                      // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAutostopOnCapture;                                // 0x0011(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1864[0x2];                                     // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         NumberOfFramesToCapture;                           // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FMediaCaptureOptions) == 0x000004, "Wrong alignment on FMediaCaptureOptions");
@@ -248,7 +248,7 @@ struct FMediaIOAutoDetectableTimecodeFormat_Backup final
 public:
 	EMediaIOTimecodeFormat                        TimecodeFormat;                                    // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAutoDetect;                                       // 0x0004(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1865[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMediaIOAutoDetectableTimecodeFormat_Backup) == 0x000004, "Wrong alignment on FMediaIOAutoDetectableTimecodeFormat_Backup");
 static_assert(sizeof(FMediaIOAutoDetectableTimecodeFormat_Backup) == 0x000008, "Wrong size on FMediaIOAutoDetectableTimecodeFormat_Backup");
@@ -296,7 +296,7 @@ struct FMediaIOVideoTimecodeConfiguration final
 public:
 	struct FMediaIOConfiguration                  MediaConfiguration;                                // 0x0000(0x003C)(Edit, EditConst, NoDestructor, NativeAccessSpecifierPublic)
 	EMediaIOAutoDetectableTimecodeFormat          TimecodeFormat;                                    // 0x003C(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1866[0x3];                                     // 0x003D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMediaIOVideoTimecodeConfiguration) == 0x000004, "Wrong alignment on FMediaIOVideoTimecodeConfiguration");
 static_assert(sizeof(FMediaIOVideoTimecodeConfiguration) == 0x000040, "Wrong size on FMediaIOVideoTimecodeConfiguration");

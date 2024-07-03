@@ -37,20 +37,6 @@ void UWBP_Control_Settings_C::SwitchTab(bool Next)
 }
 
 
-// Function WBP_Control_Settings.WBP_Control_Settings_C.ApplySettings
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Control_Settings_C::ApplySettings()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Control_Settings_C", "ApplySettings");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_Control_Settings.WBP_Control_Settings_C.SwitchPanel
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -615,6 +601,20 @@ void UWBP_Control_Settings_C::Construct()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_Control_Settings_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.ApplySettings
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Control_Settings_C::ApplySettings()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Control_Settings_C", "ApplySettings");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

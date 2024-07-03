@@ -29,7 +29,7 @@ public:
 	struct FLiveLinkSubjectPreset                 SubjectPreset;                                     // 0x00F0(0x0038)(NoDestructor, NativeAccessSpecifierPublic)
 	TArray<bool>                                  ChannelMask;                                       // 0x0128(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<class UMovieSceneLiveLinkSubSection*>  SubSections;                                       // 0x0138(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1212[0x10];                                    // 0x0148(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_148[0x10];                                     // 0x0148(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   SubjectName;                                       // 0x0158(0x0008)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLiveLinkFrameData                     TemplateToPush;                                    // 0x0160(0x0090)(Deprecated, NativeAccessSpecifierPublic)
 	struct FLiveLinkRefSkeleton                   RefSkeleton;                                       // 0x01F0(0x0020)(Deprecated, NativeAccessSpecifierPublic)
@@ -64,7 +64,7 @@ class UMovieSceneLiveLinkSubSection : public UObject
 public:
 	struct FLiveLinkSubSectionData                SubSectionData;                                    // 0x0028(0x0010)(NativeAccessSpecifierPublic)
 	TSubclassOf<class ULiveLinkRole>              SubjectRole;                                       // 0x0038(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1213[0x10];                                    // 0x0040(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_40[0x10];                                      // 0x0040(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -86,7 +86,7 @@ static_assert(offsetof(UMovieSceneLiveLinkSubSection, SubjectRole) == 0x000038, 
 class UMovieSceneLiveLinkSubSectionAnimation final : public UMovieSceneLiveLinkSubSection
 {
 public:
-	uint8                                         Pad_1214[0x10];                                    // 0x0050(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_50[0x10];                                      // 0x0050(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -106,7 +106,7 @@ static_assert(sizeof(UMovieSceneLiveLinkSubSectionAnimation) == 0x000060, "Wrong
 class UMovieSceneLiveLinkSubSectionBasicRole final : public UMovieSceneLiveLinkSubSection
 {
 public:
-	uint8                                         Pad_1215[0x10];                                    // 0x0050(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_50[0x10];                                      // 0x0050(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -126,7 +126,7 @@ static_assert(sizeof(UMovieSceneLiveLinkSubSectionBasicRole) == 0x000060, "Wrong
 class UMovieSceneLiveLinkSubSectionProperties final : public UMovieSceneLiveLinkSubSection
 {
 public:
-	uint8                                         Pad_1216[0x10];                                    // 0x0050(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_50[0x10];                                      // 0x0050(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -146,7 +146,7 @@ static_assert(sizeof(UMovieSceneLiveLinkSubSectionProperties) == 0x000060, "Wron
 class UMovieSceneLiveLinkTrack final : public UMovieScenePropertyTrack
 {
 public:
-	uint8                                         Pad_1217[0x8];                                     // 0x00C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C8[0x8];                                       // 0x00C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class ULiveLinkRole>              TrackRole;                                         // 0x00D0(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:

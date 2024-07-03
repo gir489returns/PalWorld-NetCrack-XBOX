@@ -116,7 +116,7 @@ public:
 	class UMaterialInterface*                     Material;                                          // 0x00F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMap<class FName, class FName>                ParamPassMappings;                                 // 0x00F8(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	TMap<class FName, struct FNamedCompMaterialParam> RequiredMaterialParams;                            // 0x0148(0x0050)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17CD[0x8];                                     // 0x0198(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_198[0x8];                                      // 0x0198(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CachedMID;                                         // 0x01A0(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
 static_assert(alignof(FCompositingMaterial) == 0x000008, "Wrong alignment on FCompositingMaterial");
@@ -153,7 +153,7 @@ public:
 	struct FVector2D                              DisplacementDecodeParameters;                      // 0x0100(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UTexture*                               DisplacementTexture;                               // 0x0110(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bUseDisplacementBlueAndAlphaChannels : 1;          // 0x0118(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_17CE[0x7];                                     // 0x0119(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FComposureUVMapSettings) == 0x000010, "Wrong alignment on FComposureUVMapSettings");
 static_assert(sizeof(FComposureUVMapSettings) == 0x000120, "Wrong size on FComposureUVMapSettings");
@@ -169,7 +169,7 @@ struct FMovieSceneComposureExportPass final
 public:
 	class FName                                   TransformPassName;                                 // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bRenamePass;                                       // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17CF[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ExportedAs;                                        // 0x000C(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FMovieSceneComposureExportPass) == 0x000004, "Wrong alignment on FMovieSceneComposureExportPass");
@@ -184,7 +184,7 @@ struct FMovieSceneComposureExportSectionTemplate final : public FMovieSceneEvalT
 {
 public:
 	struct FMovieSceneComposureExportPass         Pass;                                              // 0x0020(0x0014)(NoDestructor, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_17D0[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneComposureExportSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneComposureExportSectionTemplate");
 static_assert(sizeof(FMovieSceneComposureExportSectionTemplate) == 0x000038, "Wrong size on FMovieSceneComposureExportSectionTemplate");
@@ -200,7 +200,7 @@ public:
 	struct FMovieSceneFloatChannel                RotationAngle;                                     // 0x0478(0x0110)(NativeAccessSpecifierPrivate)
 	struct FMovieSceneFloatChannel                Scale;                                             // 0x0588(0x0110)(NativeAccessSpecifierPrivate)
 	EMovieSceneBlendType                          BlendType;                                         // 0x0698(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_17D1[0x7];                                     // 0x0699(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_699[0x7];                                      // 0x0699(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneComposurePostMoveSettingsSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneComposurePostMoveSettingsSectionTemplate");
 static_assert(sizeof(FMovieSceneComposurePostMoveSettingsSectionTemplate) == 0x0006A0, "Wrong size on FMovieSceneComposurePostMoveSettingsSectionTemplate");

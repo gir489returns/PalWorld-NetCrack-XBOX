@@ -89,7 +89,7 @@ struct MediaPlateComponent_Seek final
 public:
 	struct FTimespan                              Time;                                              // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CB5[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MediaPlateComponent_Seek) == 0x000008, "Wrong alignment on MediaPlateComponent_Seek");
 static_assert(sizeof(MediaPlateComponent_Seek) == 0x000010, "Wrong size on MediaPlateComponent_Seek");

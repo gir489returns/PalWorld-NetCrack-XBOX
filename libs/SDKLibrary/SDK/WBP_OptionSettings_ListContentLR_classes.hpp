@@ -29,7 +29,7 @@ public:
 	class UWBP_OptionSettings_ListContentLRArrow_C* WBP_OptionSettings_ListContentRArrow;              // 0x0298(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	TArray<class UWBP_OptionSettings_ListContentLRBar_C*> LRBars;                                            // 0x02A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	int32                                         Current;                                           // 0x02B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A4B[0x4];                                     // 0x02B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B4[0x4];                                      // 0x02B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         Selections;                                        // 0x02B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	FMulticastInlineDelegateProperty_             OnSelectionChanged;                                // 0x02C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 

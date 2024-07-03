@@ -24,7 +24,7 @@ struct HoudiniAssetBlueprintComponent_HasParameter final
 public:
 	class FString                                 Param_Name;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_174E[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HoudiniAssetBlueprintComponent_HasParameter) == 0x000008, "Wrong alignment on HoudiniAssetBlueprintComponent_HasParameter");
 static_assert(sizeof(HoudiniAssetBlueprintComponent_HasParameter) == 0x000018, "Wrong size on HoudiniAssetBlueprintComponent_HasParameter");
@@ -53,7 +53,7 @@ struct HoudiniAssetBlueprintComponent_SetToggleValueAt final
 public:
 	class FString                                 Param_Name;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          Value;                                             // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_174F[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Param_Index;                                       // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HoudiniAssetBlueprintComponent_SetToggleValueAt) == 0x000008, "Wrong alignment on HoudiniAssetBlueprintComponent_SetToggleValueAt");
@@ -69,7 +69,7 @@ struct HoudiniStaticMesh_AddStaticMaterial final
 public:
 	struct FStaticMaterial                        InStaticMaterial;                                  // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	uint32                                        ReturnValue;                                       // 0x0030(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17C4[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HoudiniStaticMesh_AddStaticMaterial) == 0x000008, "Wrong alignment on HoudiniStaticMesh_AddStaticMaterial");
 static_assert(sizeof(HoudiniStaticMesh_AddStaticMaterial) == 0x000038, "Wrong size on HoudiniStaticMesh_AddStaticMaterial");
@@ -104,7 +104,7 @@ struct HoudiniStaticMesh_GetMaterial final
 {
 public:
 	int32                                         InMaterialIndex;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17C5[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HoudiniStaticMesh_GetMaterial) == 0x000008, "Wrong alignment on HoudiniStaticMesh_GetMaterial");
@@ -209,7 +209,7 @@ struct HoudiniStaticMesh_SetStaticMaterial final
 {
 public:
 	uint32                                        InMaterialIndex;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17C6[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FStaticMaterial                        InStaticMaterial;                                  // 0x0008(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HoudiniStaticMesh_SetStaticMaterial) == 0x000008, "Wrong alignment on HoudiniStaticMesh_SetStaticMaterial");
@@ -237,7 +237,7 @@ struct HoudiniStaticMesh_SetTriangleVertexColor final
 public:
 	uint32                                        InTriangleIndex;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         InTriangleVertexIndex;                             // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17C7[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FColor                                 InColor;                                           // 0x0008(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HoudiniStaticMesh_SetTriangleVertexColor) == 0x000004, "Wrong alignment on HoudiniStaticMesh_SetTriangleVertexColor");
@@ -266,7 +266,7 @@ struct HoudiniStaticMesh_SetTriangleVertexNormal final
 public:
 	uint32                                        InTriangleIndex;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         InTriangleVertexIndex;                             // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17C8[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector3f                              InNormal;                                          // 0x0008(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HoudiniStaticMesh_SetTriangleVertexNormal) == 0x000004, "Wrong alignment on HoudiniStaticMesh_SetTriangleVertexNormal");
@@ -282,7 +282,7 @@ struct HoudiniStaticMesh_SetTriangleVertexUTangent final
 public:
 	uint32                                        InTriangleIndex;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         InTriangleVertexIndex;                             // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17C9[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector3f                              InUTangent;                                        // 0x0008(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HoudiniStaticMesh_SetTriangleVertexUTangent) == 0x000004, "Wrong alignment on HoudiniStaticMesh_SetTriangleVertexUTangent");
@@ -299,7 +299,7 @@ public:
 	uint32                                        InTriangleIndex;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         InTriangleVertexIndex;                             // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         InUVLayer;                                         // 0x0005(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17CA[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              InUV;                                              // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HoudiniStaticMesh_SetTriangleVertexUV) == 0x000008, "Wrong alignment on HoudiniStaticMesh_SetTriangleVertexUV");
@@ -316,7 +316,7 @@ struct HoudiniStaticMesh_SetTriangleVertexVTangent final
 public:
 	uint32                                        InTriangleIndex;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         InTriangleVertexIndex;                             // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17CB[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector3f                              InVTangent;                                        // 0x0008(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HoudiniStaticMesh_SetTriangleVertexVTangent) == 0x000004, "Wrong alignment on HoudiniStaticMesh_SetTriangleVertexVTangent");

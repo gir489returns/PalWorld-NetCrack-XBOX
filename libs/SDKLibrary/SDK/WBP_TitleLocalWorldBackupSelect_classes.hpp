@@ -34,7 +34,6 @@ public:
 	struct FDataTableRowHandle                    FailedDialogMsgID;                                 // 0x0480(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void Setup();
 	void OpenSuccessDialog();
 	void OpenFailedDialog();
 	void OpenCheckDialog();
@@ -46,6 +45,7 @@ public:
 	void Destruct();
 	void BndEvt__WBP_TitleLocalWorldBackupSelect_WBP_Title_BackupSelect_K2Node_ComponentBoundEvent_1_OnClickedBackup__DelegateSignature(class UWBP_Title_BackupSelect_ListContent_C* Widget);
 	void BndEvt__WBP_TitleLocalWorldBackupSelect_WBP_Title_BackupSelect_K2Node_ComponentBoundEvent_0_OnClickedCloseButton__DelegateSignature();
+	void Setup();
 
 	void Get_Focus_Target_Internal(class UWidget** Widget) const;
 	class UWidget* BP_GetDesiredFocusTarget() const;

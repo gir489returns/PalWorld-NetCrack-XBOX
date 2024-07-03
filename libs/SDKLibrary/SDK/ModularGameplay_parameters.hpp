@@ -24,7 +24,7 @@ struct GameFrameworkComponentManager_AddReceiver final
 public:
 	class AActor*                                 Receiver;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAddOnlyInGameWorlds;                              // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_139E[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GameFrameworkComponentManager_AddReceiver) == 0x000008, "Wrong alignment on GameFrameworkComponentManager_AddReceiver");
 static_assert(sizeof(GameFrameworkComponentManager_AddReceiver) == 0x000010, "Wrong size on GameFrameworkComponentManager_AddReceiver");
@@ -42,7 +42,7 @@ public:
 	TDelegate<void(struct FActorInitStateChangedParams& Params)> Delegate;                                          // 0x0018(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCallImmediately;                                  // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0029(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_139F[0x6];                                     // 0x002A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GameFrameworkComponentManager_RegisterAndCallForActorInitState) == 0x000008, "Wrong alignment on GameFrameworkComponentManager_RegisterAndCallForActorInitState");
 static_assert(sizeof(GameFrameworkComponentManager_RegisterAndCallForActorInitState) == 0x000030, "Wrong size on GameFrameworkComponentManager_RegisterAndCallForActorInitState");
@@ -64,7 +64,7 @@ public:
 	TDelegate<void(struct FActorInitStateChangedParams& Params)> Delegate;                                          // 0x0040(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCallImmediately;                                  // 0x0050(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0051(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13A0[0x6];                                     // 0x0052(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GameFrameworkComponentManager_RegisterAndCallForClassInitState) == 0x000008, "Wrong alignment on GameFrameworkComponentManager_RegisterAndCallForClassInitState");
 static_assert(sizeof(GameFrameworkComponentManager_RegisterAndCallForClassInitState) == 0x000058, "Wrong size on GameFrameworkComponentManager_RegisterAndCallForClassInitState");
@@ -94,7 +94,7 @@ public:
 	class AActor*                                 Receiver;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   EventName;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bOnlyInGameWorlds;                                 // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13A1[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GameFrameworkComponentManager_SendExtensionEvent) == 0x000008, "Wrong alignment on GameFrameworkComponentManager_SendExtensionEvent");
 static_assert(sizeof(GameFrameworkComponentManager_SendExtensionEvent) == 0x000018, "Wrong size on GameFrameworkComponentManager_SendExtensionEvent");
@@ -110,7 +110,7 @@ public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(struct FActorInitStateChangedParams& Params)> DelegateToRemove;                                  // 0x0008(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13A2[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GameFrameworkComponentManager_UnregisterActorInitStateDelegate) == 0x000008, "Wrong alignment on GameFrameworkComponentManager_UnregisterActorInitStateDelegate");
 static_assert(sizeof(GameFrameworkComponentManager_UnregisterActorInitStateDelegate) == 0x000020, "Wrong size on GameFrameworkComponentManager_UnregisterActorInitStateDelegate");
@@ -126,7 +126,7 @@ public:
 	TSoftClassPtr<class UClass>                   ActorClass;                                        // 0x0000(0x0030)(Parm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TDelegate<void(struct FActorInitStateChangedParams& Params)> DelegateToRemove;                                  // 0x0030(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13A3[0x7];                                     // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GameFrameworkComponentManager_UnregisterClassInitStateDelegate) == 0x000008, "Wrong alignment on GameFrameworkComponentManager_UnregisterClassInitStateDelegate");
 static_assert(sizeof(GameFrameworkComponentManager_UnregisterClassInitStateDelegate) == 0x000048, "Wrong size on GameFrameworkComponentManager_UnregisterClassInitStateDelegate");
@@ -143,7 +143,7 @@ public:
 	TDelegate<void(struct FActorInitStateChangedParams& Params)> Delegate;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCallImmediately;                                  // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13A4[0x2];                                     // 0x001A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A[0x2];                                       // 0x001A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GameFrameworkInitStateInterface_RegisterAndCallForInitStateChange) == 0x000004, "Wrong alignment on GameFrameworkInitStateInterface_RegisterAndCallForInitStateChange");
 static_assert(sizeof(GameFrameworkInitStateInterface_RegisterAndCallForInitStateChange) == 0x00001C, "Wrong size on GameFrameworkInitStateInterface_RegisterAndCallForInitStateChange");
@@ -159,7 +159,7 @@ struct GameFrameworkInitStateInterface_UnregisterInitStateDelegate final
 public:
 	TDelegate<void(struct FActorInitStateChangedParams& Params)> Delegate;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13A5[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GameFrameworkInitStateInterface_UnregisterInitStateDelegate) == 0x000004, "Wrong alignment on GameFrameworkInitStateInterface_UnregisterInitStateDelegate");
 static_assert(sizeof(GameFrameworkInitStateInterface_UnregisterInitStateDelegate) == 0x000014, "Wrong size on GameFrameworkInitStateInterface_UnregisterInitStateDelegate");
@@ -195,7 +195,7 @@ struct GameFrameworkInitStateInterface_HasReachedInitState final
 public:
 	struct FGameplayTag                           DesiredState;                                      // 0x0000(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13A6[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GameFrameworkInitStateInterface_HasReachedInitState) == 0x000004, "Wrong alignment on GameFrameworkInitStateInterface_HasReachedInitState");
 static_assert(sizeof(GameFrameworkInitStateInterface_HasReachedInitState) == 0x00000C, "Wrong size on GameFrameworkInitStateInterface_HasReachedInitState");

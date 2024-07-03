@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "BP_AIAction_NPC_CombatBase_classes.hpp"
-#include "Engine_structs.hpp"
 #include "EPal_NPC_CombatGunState_structs.hpp"
+#include "Engine_structs.hpp"
+#include "BP_AIAction_NPC_CombatBase_classes.hpp"
 #include "AIModule_structs.hpp"
 
 
@@ -28,7 +28,7 @@ public:
 	TMap<EPal_NPC_CombatGunState, class UClass*>  StateMap;                                          // 0x0190(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	EPal_NPC_CombatGunState                       CurrentState;                                      // 0x01E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsStopTick;                                        // 0x01E1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31B5[0x6];                                     // 0x01E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E2[0x6];                                      // 0x01E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Timer;                                             // 0x01E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        RandomMoveTime;                                    // 0x01F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        SideMoveTime;                                      // 0x01F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

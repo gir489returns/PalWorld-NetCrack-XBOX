@@ -13,8 +13,8 @@
 #include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
-#include "WBP_CharaCre_ScrollBoxContentBase_classes.hpp"
 #include "Pal_structs.hpp"
+#include "WBP_CharaCre_ScrollBoxContentBase_classes.hpp"
 
 
 namespace SDK

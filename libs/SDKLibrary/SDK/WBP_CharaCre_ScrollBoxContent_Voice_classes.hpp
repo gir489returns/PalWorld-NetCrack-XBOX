@@ -28,7 +28,7 @@ public:
 	TArray<class UAkAudioEvent*>                  SampleVoiceArray;                                  // 0x0448(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TMap<int32, int32>                            PlayVoiceMap;                                      // 0x0458(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                         VoiceCount;                                        // 0x04A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4918[0x4];                                     // 0x04AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4AC[0x4];                                      // 0x04AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UWBP_CharaCre_BodyTypeButton_C*> VoiceButtons;                                      // 0x04B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	class UWBP_CharaCre_BodyTypeButton_C*         LastClickedVoiceTypeButton;                        // 0x04C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 

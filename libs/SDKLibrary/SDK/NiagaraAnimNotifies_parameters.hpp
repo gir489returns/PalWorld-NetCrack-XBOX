@@ -34,7 +34,7 @@ struct AnimNotifyState_TimedNiagaraEffectAdvanced_GetNotifyProgress final
 public:
 	class UMeshComponent*                         MeshComp;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11A1[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AnimNotifyState_TimedNiagaraEffectAdvanced_GetNotifyProgress) == 0x000008, "Wrong alignment on AnimNotifyState_TimedNiagaraEffectAdvanced_GetNotifyProgress");
 static_assert(sizeof(AnimNotifyState_TimedNiagaraEffectAdvanced_GetNotifyProgress) == 0x000010, "Wrong size on AnimNotifyState_TimedNiagaraEffectAdvanced_GetNotifyProgress");

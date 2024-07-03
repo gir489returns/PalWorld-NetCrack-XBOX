@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ABP_Player_Head_structs.hpp"
 #include "Engine_structs.hpp"
+#include "ABP_Player_Head_structs.hpp"
 #include "Pal_classes.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "CoreUObject_structs.hpp"
@@ -27,7 +27,7 @@ class UABP_Player_Head_C final : public UPalPlayerHeadAnimInstance
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0380(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct ABP_Player_Head::FAnimBlueprintGeneratedMutableData __AnimBlueprintMutables;                           // 0x0388(0x0002)(HasGetValueTypeHash)
-	uint8                                         Pad_3C43[0x6];                                     // 0x038A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_38A[0x6];                                      // 0x038A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAnimSubsystemInstance                 AnimBlueprintExtension_PropertyAccess;             // 0x0390(0x0008)()
 	struct FAnimSubsystemInstance                 AnimBlueprintExtension_Base;                       // 0x0398(0x0008)()
 	struct FAnimNode_Root                         AnimGraphNode_Root_1;                              // 0x03A0(0x0020)()

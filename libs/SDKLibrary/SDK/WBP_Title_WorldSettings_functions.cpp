@@ -17,148 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Title_WorldSettings_C::BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature(bool IsOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSettings_C", "BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature");
-
-	Params::WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature Parms{};
-
-	Parms.IsOn = IsOn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Title_WorldSettings_C::BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature(bool IsOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSettings_C", "BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature");
-
-	Params::WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature Parms{};
-
-	Parms.IsOn = IsOn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Title_WorldSettings_C::BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature(int32 NewIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSettings_C", "BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature");
-
-	Params::WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature Parms{};
-
-	Parms.NewIndex = NewIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultyCustom_K2Node_ComponentBoundEvent_7_OnClickedSettingButton__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Title_WorldSettings_C::BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultyCustom_K2Node_ComponentBoundEvent_7_OnClickedSettingButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSettings_C", "BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultyCustom_K2Node_ComponentBoundEvent_7_OnClickedSettingButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.BndEvt__WBP_Title_WorldSettings_WBP_Title_SettingsButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Title_WorldSettings_C::BndEvt__WBP_Title_WorldSettings_WBP_Title_SettingsButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSettings_C", "BndEvt__WBP_Title_WorldSettings_WBP_Title_SettingsButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.BndEvt__WBP_Title_WorldSettings_WBP_Title_SettingsButton_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Title_WorldSettings_C::BndEvt__WBP_Title_WorldSettings_WBP_Title_SettingsButton_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSettings_C", "BndEvt__WBP_Title_WorldSettings_WBP_Title_SettingsButton_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.ApplyWorldSettingToUI
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FPalOptionWorldSettings          WorldSetting                                           (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_Title_WorldSettings_C::ApplyWorldSettingToUI(const struct FPalOptionWorldSettings& WorldSetting)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSettings_C", "ApplyWorldSettingToUI");
-
-	Params::WBP_Title_WorldSettings_C_ApplyWorldSettingToUI Parms{};
-
-	Parms.WorldSetting = std::move(WorldSetting);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.ApplyDifficultyPreset
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalOptionWorldDifficulty               DifficultyType                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Title_WorldSettings_C::ApplyDifficultyPreset(EPalOptionWorldDifficulty DifficultyType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSettings_C", "ApplyDifficultyPreset");
-
-	Params::WBP_Title_WorldSettings_C_ApplyDifficultyPreset Parms{};
-
-	Parms.DifficultyType = DifficultyType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.UpdateRandomizerSeedVisibility
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -1633,6 +1491,148 @@ void UWBP_Title_WorldSettings_C::BndEvt__WBP_Title_WorldSettings_WBP_Title_World
 	Params::WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordSetting_K2Node_ComponentBoundEvent_5_OnComittedText__DelegateSignature Parms{};
 
 	Parms.NewString = std::move(NewString);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_WorldSettings_C::BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSettings_C", "BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature");
+
+	Params::WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_PasswordOnOff_K2Node_ComponentBoundEvent_3_OnSwitchChanged__DelegateSignature Parms{};
+
+	Parms.IsOn = IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_WorldSettings_C::BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSettings_C", "BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature");
+
+	Params::WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_MultiSetting_K2Node_ComponentBoundEvent_0_OnSwitchChanged__DelegateSignature Parms{};
+
+	Parms.IsOn = IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_WorldSettings_C::BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature(int32 NewIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSettings_C", "BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature");
+
+	Params::WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultySetting_K2Node_ComponentBoundEvent_6_OnChangedSelectIndex__DelegateSignature Parms{};
+
+	Parms.NewIndex = NewIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultyCustom_K2Node_ComponentBoundEvent_7_OnClickedSettingButton__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Title_WorldSettings_C::BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultyCustom_K2Node_ComponentBoundEvent_7_OnClickedSettingButton__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSettings_C", "BndEvt__WBP_Title_WorldSettings_WBP_Title_WorldSettings_ListContent_DifficultyCustom_K2Node_ComponentBoundEvent_7_OnClickedSettingButton__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.BndEvt__WBP_Title_WorldSettings_WBP_Title_SettingsButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Title_WorldSettings_C::BndEvt__WBP_Title_WorldSettings_WBP_Title_SettingsButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSettings_C", "BndEvt__WBP_Title_WorldSettings_WBP_Title_SettingsButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.BndEvt__WBP_Title_WorldSettings_WBP_Title_SettingsButton_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Title_WorldSettings_C::BndEvt__WBP_Title_WorldSettings_WBP_Title_SettingsButton_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSettings_C", "BndEvt__WBP_Title_WorldSettings_WBP_Title_SettingsButton_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.ApplyWorldSettingToUI
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FPalOptionWorldSettings          WorldSetting                                           (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_Title_WorldSettings_C::ApplyWorldSettingToUI(const struct FPalOptionWorldSettings& WorldSetting)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSettings_C", "ApplyWorldSettingToUI");
+
+	Params::WBP_Title_WorldSettings_C_ApplyWorldSettingToUI Parms{};
+
+	Parms.WorldSetting = std::move(WorldSetting);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.ApplyDifficultyPreset
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalOptionWorldDifficulty               DifficultyType                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_WorldSettings_C::ApplyDifficultyPreset(EPalOptionWorldDifficulty DifficultyType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSettings_C", "ApplyDifficultyPreset");
+
+	Params::WBP_Title_WorldSettings_C_ApplyDifficultyPreset Parms{};
+
+	Parms.DifficultyType = DifficultyType;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

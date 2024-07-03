@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "BP_AIAction_NPC_CombatBase_classes.hpp"
 #include "Engine_structs.hpp"
-#include "AIModule_structs.hpp"
+#include "BP_AIAction_NPC_CombatBase_classes.hpp"
 #include "EPal_NPC_CombatMeleeState_structs.hpp"
+#include "AIModule_structs.hpp"
 
 
 namespace SDK
@@ -26,10 +26,10 @@ class UBP_AIAction_NPC_Combat_Melee_C final : public UBP_AIAction_NPC_CombatBase
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_AIAction_NPC_Combat_Melee_C;     // 0x0188(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	EPal_NPC_CombatMeleeState                     CurrentState;                                      // 0x0190(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	uint8                                         Pad_33C2[0x7];                                     // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_191[0x7];                                      // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        ConstAttackStartRange;                             // 0x0198(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsStopTick;                                        // 0x01A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	uint8                                         Pad_33C3[0x7];                                     // 0x01A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A1[0x7];                                      // 0x01A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        ConstNearAttackRange;                              // 0x01A8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Timer;                                             // 0x01B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	TMap<EPal_NPC_CombatMeleeState, class UClass*> StateMap;                                          // 0x01B8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)

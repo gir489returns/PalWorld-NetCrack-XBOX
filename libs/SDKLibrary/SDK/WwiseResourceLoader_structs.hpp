@@ -82,7 +82,7 @@ struct FWwiseAuxBusCookedData final
 {
 public:
 	int32                                         AuxBusId;                                          // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CC0[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FWwiseSoundBankCookedData>      SoundBanks;                                        // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, NativeAccessSpecifierPublic)
 	TArray<struct FWwiseMediaCookedData>          Media;                                             // 0x0018(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, NativeAccessSpecifierPublic)
 	class FName                                   DebugName;                                         // 0x0028(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -100,7 +100,7 @@ struct FWwiseGroupValueCookedData final
 {
 public:
 	EWwiseGroupType                               Type;                                              // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CC1[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         GroupId;                                           // 0x0004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ID;                                                // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   DebugName;                                         // 0x000C(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -135,16 +135,16 @@ struct FWwiseEventCookedData final
 {
 public:
 	int32                                         EventId;                                           // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CC2[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FWwiseSoundBankCookedData>      SoundBanks;                                        // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, NativeAccessSpecifierPublic)
 	TArray<struct FWwiseMediaCookedData>          Media;                                             // 0x0018(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, NativeAccessSpecifierPublic)
 	TArray<struct FWwiseExternalSourceCookedData> ExternalSources;                                   // 0x0028(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, NativeAccessSpecifierPublic)
 	TArray<struct FWwiseSwitchContainerLeafCookedData> SwitchContainerLeaves;                             // 0x0038(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, NativeAccessSpecifierPublic)
 	TSet<struct FWwiseGroupValueCookedData>       RequiredGroupValueSet;                             // 0x0048(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, EditConst, NativeAccessSpecifierPublic)
 	EWwiseEventDestroyOptions                     DestroyOptions;                                    // 0x0098(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CC3[0x3];                                     // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   DebugName;                                         // 0x009C(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CC4[0x4];                                     // 0x00A4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FWwiseEventCookedData) == 0x000008, "Wrong alignment on FWwiseEventCookedData");
 static_assert(sizeof(FWwiseEventCookedData) == 0x0000A8, "Wrong size on FWwiseEventCookedData");
@@ -181,7 +181,7 @@ struct FWwiseEventInfo final : public FWwiseObjectInfo
 public:
 	EWwiseEventSwitchContainerLoading             SwitchContainerLoading;                            // 0x0020(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EWwiseEventDestroyOptions                     DestroyOptions;                                    // 0x0021(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CC5[0x2];                                     // 0x0022(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22[0x2];                                       // 0x0022(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FWwiseEventInfo) == 0x000004, "Wrong alignment on FWwiseEventInfo");
 static_assert(sizeof(FWwiseEventInfo) == 0x000024, "Wrong size on FWwiseEventInfo");
@@ -217,7 +217,7 @@ static_assert(offsetof(FWwiseGroupValueInfo, GroupShortId) == 0x000020, "Member 
 struct FWwiseInitBankCookedData final : public FWwiseSoundBankCookedData
 {
 public:
-	uint8                                         Pad_1CC6[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FWwiseSoundBankCookedData>      SoundBanks;                                        // 0x0020(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, NativeAccessSpecifierPublic)
 	TArray<struct FWwiseMediaCookedData>          Media;                                             // 0x0030(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, NativeAccessSpecifierPublic)
 	TArray<struct FWwiseLanguageCookedData>       Language;                                          // 0x0040(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, NativeAccessSpecifierPublic)
@@ -249,7 +249,7 @@ public:
 	TMap<struct FWwiseLanguageCookedData, struct FWwiseAuxBusCookedData> AuxBusLanguageMap;                                 // 0x0000(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, EditConst, NativeAccessSpecifierPublic)
 	class FName                                   DebugName;                                         // 0x0050(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         AuxBusId;                                          // 0x0058(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CC7[0x4];                                     // 0x005C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FWwiseLocalizedAuxBusCookedData) == 0x000008, "Wrong alignment on FWwiseLocalizedAuxBusCookedData");
 static_assert(sizeof(FWwiseLocalizedAuxBusCookedData) == 0x000060, "Wrong size on FWwiseLocalizedAuxBusCookedData");
@@ -265,7 +265,7 @@ public:
 	TMap<struct FWwiseLanguageCookedData, struct FWwiseEventCookedData> EventLanguageMap;                                  // 0x0000(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, EditConst, NativeAccessSpecifierPublic)
 	class FName                                   DebugName;                                         // 0x0050(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         EventId;                                           // 0x0058(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CC8[0x4];                                     // 0x005C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FWwiseLocalizedEventCookedData) == 0x000008, "Wrong alignment on FWwiseLocalizedEventCookedData");
 static_assert(sizeof(FWwiseLocalizedEventCookedData) == 0x000060, "Wrong size on FWwiseLocalizedEventCookedData");
@@ -279,7 +279,7 @@ struct FWwiseShareSetCookedData final
 {
 public:
 	int32                                         ShareSetId;                                        // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CC9[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FWwiseSoundBankCookedData>      SoundBanks;                                        // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, NativeAccessSpecifierPublic)
 	TArray<struct FWwiseMediaCookedData>          Media;                                             // 0x0018(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, NativeAccessSpecifierPublic)
 	class FName                                   DebugName;                                         // 0x0028(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -299,7 +299,7 @@ public:
 	TMap<struct FWwiseLanguageCookedData, struct FWwiseShareSetCookedData> ShareSetLanguageMap;                               // 0x0000(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, EditConst, NativeAccessSpecifierPublic)
 	class FName                                   DebugName;                                         // 0x0050(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ShareSetId;                                        // 0x0058(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CCA[0x4];                                     // 0x005C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FWwiseLocalizedShareSetCookedData) == 0x000008, "Wrong alignment on FWwiseLocalizedShareSetCookedData");
 static_assert(sizeof(FWwiseLocalizedShareSetCookedData) == 0x000060, "Wrong size on FWwiseLocalizedShareSetCookedData");
@@ -315,7 +315,7 @@ public:
 	TMap<struct FWwiseLanguageCookedData, struct FWwiseSoundBankCookedData> SoundBankLanguageMap;                              // 0x0000(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, EditConst, NativeAccessSpecifierPublic)
 	class FName                                   DebugName;                                         // 0x0050(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         SoundBankId;                                       // 0x0058(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CCB[0x4];                                     // 0x005C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FWwiseLocalizedSoundBankCookedData) == 0x000008, "Wrong alignment on FWwiseLocalizedSoundBankCookedData");
 static_assert(sizeof(FWwiseLocalizedSoundBankCookedData) == 0x000060, "Wrong size on FWwiseLocalizedSoundBankCookedData");
@@ -341,7 +341,7 @@ static_assert(offsetof(FWwisePlatformId, PlatformName) == 0x000010, "Member 'FWw
 struct alignas(0x08) FWwiseSharedGroupValueKey final
 {
 public:
-	uint8                                         Pad_1CCC[0x10];                                    // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FWwiseSharedGroupValueKey) == 0x000008, "Wrong alignment on FWwiseSharedGroupValueKey");
 static_assert(sizeof(FWwiseSharedGroupValueKey) == 0x000010, "Wrong size on FWwiseSharedGroupValueKey");
@@ -351,9 +351,9 @@ static_assert(sizeof(FWwiseSharedGroupValueKey) == 0x000010, "Wrong size on FWwi
 struct alignas(0x08) FWwiseSharedLanguageId final
 {
 public:
-	uint8                                         Pad_1CCD[0x10];                                    // 0x0000(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	EWwiseLanguageRequirement                     LanguageRequirement;                               // 0x0010(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CCE[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FWwiseSharedLanguageId) == 0x000008, "Wrong alignment on FWwiseSharedLanguageId");
 static_assert(sizeof(FWwiseSharedLanguageId) == 0x000018, "Wrong size on FWwiseSharedLanguageId");
@@ -364,7 +364,7 @@ static_assert(offsetof(FWwiseSharedLanguageId, LanguageRequirement) == 0x000010,
 struct alignas(0x08) FWwiseSharedPlatformId final
 {
 public:
-	uint8                                         Pad_1CCF[0x10];                                    // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FWwiseSharedPlatformId) == 0x000008, "Wrong alignment on FWwiseSharedPlatformId");
 static_assert(sizeof(FWwiseSharedPlatformId) == 0x000010, "Wrong size on FWwiseSharedPlatformId");

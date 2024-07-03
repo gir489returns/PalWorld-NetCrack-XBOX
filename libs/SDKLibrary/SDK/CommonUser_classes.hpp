@@ -25,7 +25,7 @@ class UAsyncAction_CommonUserInitialize final : public UCancellableAsyncAction
 {
 public:
 	FMulticastInlineDelegateProperty_             OnInitializationComplete;                          // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1599[0x30];                                    // 0x0040(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_40[0x30];                                      // 0x0040(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UAsyncAction_CommonUserInitialize* InitializeForLocalPlay(class UCommonUserSubsystem* Target, int32 LocalPlayerIndex, const struct FInputDeviceId& PrimaryInputDevice, bool bCanUseGuestLogin);
@@ -54,13 +54,13 @@ class UCommonSession_HostSessionRequest final : public UObject
 public:
 	ECommonSessionOnlineMode                      OnlineMode;                                        // 0x0028(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseLobbies;                                       // 0x0029(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_159E[0x6];                                     // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ModeNameForAdvertisement;                          // 0x0030(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPrimaryAssetId                        MapID;                                             // 0x0040(0x0010)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UWorld>                  Map;                                               // 0x0050(0x0030)(BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMap<class FString, class FString>            ExtraArgs;                                         // 0x0080(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
 	int32                                         MaxPlayerCount;                                    // 0x00D0(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_159F[0x4];                                     // 0x00D4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -87,7 +87,7 @@ static_assert(offsetof(UCommonSession_HostSessionRequest, MaxPlayerCount) == 0x0
 class UCommonSession_SearchResult final : public UObject
 {
 public:
-	uint8                                         Pad_15A0[0x120];                                   // 0x0028(0x0120)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x120];                                     // 0x0028(0x0120)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class FString GetDescription() const;
@@ -118,9 +118,9 @@ class UCommonSession_SearchSessionRequest final : public UObject
 public:
 	ECommonSessionOnlineMode                      OnlineMode;                                        // 0x0028(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseLobbies;                                       // 0x0029(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15A3[0x6];                                     // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UCommonSession_SearchResult*>    Results;                                           // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15A4[0x18];                                    // 0x0040(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_40[0x18];                                      // 0x0040(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             K2_OnSearchFinished;                               // 0x0058(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
 
 public:
@@ -145,13 +145,13 @@ static_assert(offsetof(UCommonSession_SearchSessionRequest, K2_OnSearchFinished)
 class UCommonSessionSubsystem final : public UGameInstanceSubsystem
 {
 public:
-	uint8                                         Pad_15A5[0x18];                                    // 0x0030(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30[0x18];                                      // 0x0030(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             K2_OnUserRequestedSessionEvent;                    // 0x0048(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15A6[0x18];                                    // 0x0058(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_58[0x18];                                      // 0x0058(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             K2_OnJoinSessionCompleteEvent;                     // 0x0070(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15A7[0x18];                                    // 0x0080(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_80[0x18];                                      // 0x0080(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             K2_OnCreateSessionCompleteEvent;                   // 0x0098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15A8[0x38];                                    // 0x00A8(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A8[0x38];                                      // 0x00A8(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void CleanUpSessions();
@@ -189,7 +189,7 @@ public:
 	bool                                          bCanBeGuest;                                       // 0x0034(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsGuest;                                          // 0x0035(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ECommonUserInitializationState                InitializationState;                               // 0x0036(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15A9[0x51];                                    // 0x0037(0x0051)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_37[0x51];                                      // 0x0037(0x0051)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	ECommonUserPrivilegeResult GetCachedPrivilegeResult(ECommonUserPrivilege Privilege, ECommonUserOnlineContext Context) const;
@@ -225,9 +225,9 @@ public:
 	FMulticastInlineDelegateProperty_             OnUserInitializeComplete;                          // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnHandleSystemMessage;                             // 0x0040(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnUserPrivilegeChanged;                            // 0x0050(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15AB[0x70];                                    // 0x0060(0x0070)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_60[0x70];                                      // 0x0060(0x0070)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<int32, class UCommonUserInfo*>           LocalUserInfos;                                    // 0x00D0(0x0050)(Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	uint8                                         Pad_15AC[0x38];                                    // 0x0120(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_120[0x38];                                     // 0x0120(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool CancelUserInitialization(int32 LocalPlayerIndex);

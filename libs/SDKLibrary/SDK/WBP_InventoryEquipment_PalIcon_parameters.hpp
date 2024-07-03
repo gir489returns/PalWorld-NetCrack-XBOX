@@ -24,7 +24,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   K2Node_CustomEvent_IconId;                         // 0x0004(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FPalDataTableRowName_PalMonsterData    K2Node_MakeStruct_PalDataTableRowName_PalMonsterData; // 0x000C(0x0008)(NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4AF2[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UTexture2D>              CallFunc_GetPalIconInfoByCharacterID_outIcon;      // 0x0018(0x0030)(UObjectWrapper, HasGetValueTypeHash)
 	bool                                          CallFunc_GetPalIconInfoByCharacterID_outIsRare;    // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetPalIconInfoByCharacterID_outIsBoss;    // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -31,7 +31,7 @@ public:
 	class ABP_PalRandomIncidentNPCSpawner_C*      NPCSpawner;                                        // 0x01C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          ExcludedEvenOnce;                                  // 0x01C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          InsideActionAreaEvenOnce;                          // 0x01C9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_399C[0x6];                                     // 0x01CA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1CA[0x6];                                      // 0x01CA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FPalRandomIncidentSpawnMonsterData> OutbreakMonsters;                                  // 0x01D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class FName>                           OutbreakMonsterNames;                              // 0x01E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 

@@ -24,7 +24,7 @@ class UWBP_PalCommonButtonBase_C : public UCommonButtonBase
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x14F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	bool                                          HideFocusCursor;                                   // 0x14F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_22C7[0x7];                                     // 0x14F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14F9[0x7];                                     // 0x14F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAkAudioEvent*                          HoverAKAudioEvent;                                 // 0x1500(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UAkAudioEvent*                          UnhoverAKAudioEvent;                               // 0x1508(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UAkAudioEvent*                          ClickAKAudioEvent;                                 // 0x1510(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)

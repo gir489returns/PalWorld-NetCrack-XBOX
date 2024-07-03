@@ -54,7 +54,7 @@ public:
 	TArray<struct FDataTableRowHandle>            LevelMsgIds;                                       // 0x03E8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 	TArray<struct FDataTableRowHandle>            LevelMsgIds_Graphic;                               // 0x03F8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 	bool                                          SomethingChanged;                                  // 0x0408(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C63[0x7];                                     // 0x0409(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_409[0x7];                                      // 0x0409(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<int32, EAntiAliasingMethod>              AAMap;                                             // 0x0410(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 	TArray<class FString>                         AASettings;                                        // 0x0460(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TMap<int32, class FString>                    FPSSelection;                                      // 0x0470(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)

@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
-#include "BP_MonoNPCSpawner_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "BP_MonoNPCSpawner_classes.hpp"
 
 
 namespace SDK
@@ -28,14 +28,14 @@ public:
 	class UBoxComponent*                          BoxCollision;                                      // 0x0440(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   DummyPlayer;                                       // 0x0448(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	int32                                         SpawnPointNum;                                     // 0x0450(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_335D[0x4];                                     // 0x0454(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_454[0x4];                                      // 0x0454(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        SpawnPointRadius;                                  // 0x0458(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        RespawnDistance;                                   // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_NPCAIController_C*                  NPCAIController;                                   // 0x0468(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UPalIndividualCharacterHandle*          OwnerHandle;                                       // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          OwnerCharacter;                                    // 0x0478(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsWanted;                                          // 0x0480(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_335E[0x7];                                     // 0x0481(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_481[0x7];                                      // 0x0481(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        LostSearchTime;                                    // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        LostSearchTimer;                                   // 0x0490(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TMap<int32, struct FPalDataTableRowName_PalHumanData> PoliceHumanDataArray;                              // 0x0498(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -43,20 +43,20 @@ public:
 	TMap<class UPalIndividualCharacterHandle*, class ABP_NPCAIController_C*> NPCMap;                                            // 0x04F0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TMap<class UPalIndividualCharacterHandle*, class ABP_NPCAIController_C*> PreNPCMap;                                         // 0x0540(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                         SpawnNum;                                          // 0x0590(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_335F[0x4];                                     // 0x0594(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_594[0x4];                                      // 0x0594(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        SpawnHeightOffset;                                 // 0x0598(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         TotalReward;                                       // 0x05A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CharacterID;                                       // 0x05A4(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3360[0x4];                                     // 0x05AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5AC[0x4];                                      // 0x05AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        FloorCheckHeight;                                  // 0x05B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         PoliceLevel;                                       // 0x05B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         RespawnCheckCount;                                 // 0x05BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         RespawnCount;                                      // 0x05C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3361[0x4];                                     // 0x05C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5C4[0x4];                                      // 0x05C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        RespawnCheckTimer;                                 // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        RespawnCheckTime;                                  // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsForceSpawn;                                      // 0x05D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3362[0x7];                                     // 0x05D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5D9[0x7];                                      // 0x05D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVector>                        PreLocations;                                      // 0x05E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                         PreTargetReward;                                   // 0x05F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         TargetReward;                                      // 0x05F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -69,7 +69,7 @@ public:
 	double                                        CheckMoveFailedTime;                               // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TMap<class ABP_NPCAIController_C*, struct FVector> NPCPreLocationMap;                                 // 0x0638(0x0050)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	bool                                          IsSpawnFailed;                                     // 0x0688(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3363[0x7];                                     // 0x0689(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_689[0x7];                                      // 0x0689(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           SpawnFailedCheckTimer;                             // 0x0690(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	double                                        SpawnFailedCheckTime;                              // 0x0698(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FPalWorldSecurityWantedStateInfo       CurrentWantedStateInfo;                            // 0x06A0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)

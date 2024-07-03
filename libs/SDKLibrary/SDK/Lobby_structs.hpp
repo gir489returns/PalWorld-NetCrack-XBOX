@@ -31,7 +31,7 @@ enum class ELobbyBeaconJoinState : uint8
 struct FLobbyPlayerStateActorInfo final : public FFastArraySerializerItem
 {
 public:
-	uint8                                         Pad_16DA[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ALobbyBeaconPlayerState*                LobbyPlayerState;                                  // 0x0010(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FLobbyPlayerStateActorInfo) == 0x000008, "Wrong alignment on FLobbyPlayerStateActorInfo");

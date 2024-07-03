@@ -24,7 +24,7 @@ struct TemplateSequenceActor_SetBinding final
 public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bOverridesDefault;                                 // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_221A[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(TemplateSequenceActor_SetBinding) == 0x000008, "Wrong alignment on TemplateSequenceActor_SetBinding");
 static_assert(sizeof(TemplateSequenceActor_SetBinding) == 0x000010, "Wrong size on TemplateSequenceActor_SetBinding");
@@ -100,7 +100,7 @@ struct SequenceCameraShakeTestUtil_GetCameraCachePOV final
 {
 public:
 	class APlayerController*                      PlayerController;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_221C[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMinimalViewInfo                       ReturnValue;                                       // 0x0010(0x07C0)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SequenceCameraShakeTestUtil_GetCameraCachePOV) == 0x000010, "Wrong alignment on SequenceCameraShakeTestUtil_GetCameraCachePOV");
@@ -114,7 +114,7 @@ struct SequenceCameraShakeTestUtil_GetLastFrameCameraCachePOV final
 {
 public:
 	class APlayerController*                      PlayerController;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_221D[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMinimalViewInfo                       ReturnValue;                                       // 0x0010(0x07C0)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SequenceCameraShakeTestUtil_GetLastFrameCameraCachePOV) == 0x000010, "Wrong alignment on SequenceCameraShakeTestUtil_GetLastFrameCameraCachePOV");
@@ -129,11 +129,11 @@ struct SequenceCameraShakeTestUtil_GetPostProcessBlendCache final
 public:
 	class APlayerController*                      PlayerController;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         PPIndex;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_221E[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPostProcessSettings                   OutPPSettings;                                     // 0x0010(0x06E0)(Parm, OutParm, NativeAccessSpecifierPublic)
 	float                                         OutPPBlendWeight;                                  // 0x06F0(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x06F4(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_221F[0xB];                                     // 0x06F5(0x000B)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6F5[0xB];                                      // 0x06F5(0x000B)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SequenceCameraShakeTestUtil_GetPostProcessBlendCache) == 0x000010, "Wrong alignment on SequenceCameraShakeTestUtil_GetPostProcessBlendCache");
 static_assert(sizeof(SequenceCameraShakeTestUtil_GetPostProcessBlendCache) == 0x000700, "Wrong size on SequenceCameraShakeTestUtil_GetPostProcessBlendCache");

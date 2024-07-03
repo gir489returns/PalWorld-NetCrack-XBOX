@@ -29,7 +29,7 @@ public:
 	TArray<struct FDirectoryPath>                 DirectoriesToScan;                                 // 0x0038(0x0010)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic)
 	bool                                          bInitializeAllLoadedRegistries;                    // 0x0048(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnoreMissingCookedAssetRegistryData;             // 0x0049(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13BA[0x6];                                     // 0x004A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -59,7 +59,7 @@ public:
 	TArray<class UDataRegistrySource*>            RuntimeSources;                                    // 0x0050(0x0010)(Edit, ExportObject, ZeroConstructor, Transient, DisableEditOnInstance, EditConst, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	float                                         TimerUpdateFrequency;                              // 0x0060(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FDataRegistryCachePolicy               DefaultCachePolicy;                                // 0x0064(0x0014)(Edit, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_13BB[0x48];                                    // 0x0078(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_78[0x48];                                      // 0x0078(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -86,7 +86,7 @@ static_assert(offsetof(UDataRegistry, DefaultCachePolicy) == 0x000064, "Member '
 class UDataRegistrySource : public UObject
 {
 public:
-	uint8                                         Pad_13BC[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDataRegistrySource*                    ParentSource;                                      // 0x0030(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
@@ -109,10 +109,10 @@ class UMetaDataRegistrySource : public UDataRegistrySource
 {
 public:
 	EMetaDataRegistrySourceAssetUsage             AssetUsage;                                        // 0x0038(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_13BD[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAssetManagerSearchRules               SearchRules;                                       // 0x0040(0x0050)(Edit, NativeAccessSpecifierPublic)
 	TMap<class FName, class UDataRegistrySource*> RuntimeChildren;                                   // 0x0090(0x0050)(ExportObject, Transient, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	uint8                                         Pad_13BE[0x28];                                    // 0x00E0(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E0[0x28];                                      // 0x00E0(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -139,7 +139,7 @@ public:
 	struct FDataRegistrySource_DataTableRules     TableRules;                                        // 0x0068(0x0008)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	class UCurveTable*                            CachedTable;                                       // 0x0070(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UCurveTable*                            PreloadTable;                                      // 0x0078(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_13BF[0x28];                                    // 0x0080(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_80[0x28];                                      // 0x0080(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -190,7 +190,7 @@ public:
 	struct FDataRegistrySource_DataTableRules     TableRules;                                        // 0x0068(0x0008)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	class UDataTable*                             CachedTable;                                       // 0x0070(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UDataTable*                             PreloadTable;                                      // 0x0078(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_13C0[0x28];                                    // 0x0080(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_80[0x28];                                      // 0x0080(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -237,7 +237,7 @@ static_assert(offsetof(UMetaDataRegistrySource_DataTable, TableRules) == 0x00011
 class UDataRegistrySubsystem final : public UEngineSubsystem
 {
 public:
-	uint8                                         Pad_13C1[0x98];                                    // 0x0030(0x0098)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30[0x98];                                      // 0x0030(0x0098)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static bool AcquireItemBP(const struct FDataRegistryId& ItemId, TDelegate<void(const struct FDataRegistryId& ItemId, const struct FDataRegistryLookup& ResolvedLookup, EDataRegistryAcquireStatus Status)> AcquireCallback);

@@ -24,9 +24,9 @@ namespace SDK
 class UMovieSceneCaptureProtocolBase : public UObject
 {
 public:
-	uint8                                         Pad_35C8[0x28];                                    // 0x0028(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x28];                                      // 0x0028(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
 	EMovieSceneCaptureProtocolState               State;                                             // 0x0050(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_35C9[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	EMovieSceneCaptureProtocolState GetState() const;
@@ -86,7 +86,7 @@ class UMasterAudioSubmixCaptureProtocol final : public UMovieSceneAudioCapturePr
 {
 public:
 	class FString                                 Filename;                                          // 0x0058(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Config, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_35CA[0x28];                                    // 0x0068(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_68[0x28];                                      // 0x0068(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -126,15 +126,15 @@ class UCompositionGraphCaptureProtocol final : public UMovieSceneImageCapturePro
 public:
 	struct FCompositionGraphCapturePasses         IncludeRenderPasses;                               // 0x0058(0x0010)(Edit, BlueprintVisible, Config, NativeAccessSpecifierPublic)
 	bool                                          bCaptureFramesInHDR;                               // 0x0068(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_35CB[0x3];                                     // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         HDRCompressionQuality;                             // 0x006C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EHDRCaptureGamut                              CaptureGamut;                                      // 0x0070(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_35CC[0x7];                                     // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSoftObjectPath                        PostProcessingMaterial;                            // 0x0078(0x0020)(Edit, BlueprintVisible, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDisableScreenPercentage;                          // 0x0098(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_35CD[0x7];                                     // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     PostProcessingMaterialPtr;                         // 0x00A0(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_35CE[0x20];                                    // 0x00A8(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A8[0x20];                                      // 0x00A8(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -178,7 +178,7 @@ static_assert(sizeof(IMovieSceneCaptureInterface) == 0x000028, "Wrong size on IM
 class UFrameGrabberProtocol : public UMovieSceneImageCaptureProtocolBase
 {
 public:
-	uint8                                         Pad_35CF[0x10];                                    // 0x0058(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_58[0x10];                                      // 0x0058(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -198,7 +198,7 @@ static_assert(sizeof(UFrameGrabberProtocol) == 0x000068, "Wrong size on UFrameGr
 class UImageSequenceProtocol : public UFrameGrabberProtocol
 {
 public:
-	uint8                                         Pad_35D0[0x70];                                    // 0x0068(0x0070)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_68[0x70];                                      // 0x0068(0x0070)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -219,7 +219,7 @@ class UCompressedImageSequenceProtocol : public UImageSequenceProtocol
 {
 public:
 	int32                                         CompressionQuality;                                // 0x00D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_35D1[0x4];                                     // 0x00DC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -293,7 +293,7 @@ class UImageSequenceProtocol_EXR final : public UImageSequenceProtocol
 public:
 	bool                                          bCompressed;                                       // 0x00D8(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EHDRCaptureGamut                              CaptureGamut;                                      // 0x00D9(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_35D2[0xE];                                     // 0x00DA(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_DA[0xE];                                       // 0x00DA(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -315,7 +315,7 @@ static_assert(offsetof(UImageSequenceProtocol_EXR, CaptureGamut) == 0x0000D9, "M
 class UMovieSceneCapture : public UObject
 {
 public:
-	uint8                                         Pad_35D3[0x10];                                    // 0x0028(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x10];                                      // 0x0028(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSoftClassPath                         ImageCaptureProtocolType;                          // 0x0038(0x0020)(Edit, ZeroConstructor, Config, NoClear, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSoftClassPath                         AudioCaptureProtocolType;                          // 0x0058(0x0020)(Edit, ZeroConstructor, Config, NoClear, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UMovieSceneImageCaptureProtocolBase*    ImageCaptureProtocol;                              // 0x0078(0x0008)(Edit, ExportObject, ZeroConstructor, Transient, EditConst, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -323,10 +323,10 @@ public:
 	struct FMovieSceneCaptureSettings             Settings;                                          // 0x0088(0x0070)(Edit, BlueprintVisible, Config, NativeAccessSpecifierPublic)
 	bool                                          bUseSeparateProcess;                               // 0x00F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCloseEditorWhenCaptureStarts;                     // 0x00F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_35D4[0x6];                                     // 0x00FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_FA[0x6];                                       // 0x00FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 AdditionalCommandLineArguments;                    // 0x0100(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Config, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 InheritedCommandLineArguments;                     // 0x0110(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Transient, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_35D5[0x118];                                   // 0x0120(0x0118)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_120[0x118];                                    // 0x0120(0x0118)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UMovieSceneCaptureProtocolBase* GetAudioCaptureProtocol();
@@ -362,9 +362,9 @@ class ULevelCapture final : public UMovieSceneCapture
 {
 public:
 	bool                                          bAutoStartCapture;                                 // 0x0238(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_35D6[0xB];                                     // 0x0239(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_239[0xB];                                      // 0x0239(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGuid                                  PrerequisiteActorId;                               // 0x0244(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_35D7[0x4];                                     // 0x0254(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_254[0x4];                                      // 0x0254(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -411,7 +411,7 @@ class UUserDefinedCaptureProtocol : public UMovieSceneImageCaptureProtocolBase
 {
 public:
 	class UWorld*                                 World;                                             // 0x0058(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_35D8[0x78];                                    // 0x0060(0x0078)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_60[0x78];                                      // 0x0060(0x0078)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnBeginFinalize();
@@ -453,7 +453,7 @@ class UUserDefinedImageCaptureProtocol final : public UUserDefinedCaptureProtoco
 public:
 	EDesiredImageFormat                           Format;                                            // 0x00D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnableCompression;                                // 0x00D9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_35D9[0x2];                                     // 0x00DA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_DA[0x2];                                       // 0x00DA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CompressionQuality;                                // 0x00DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
@@ -483,9 +483,9 @@ class UVideoCaptureProtocol final : public UFrameGrabberProtocol
 {
 public:
 	bool                                          bUseCompression;                                   // 0x0068(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_35DB[0x3];                                     // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CompressionQuality;                                // 0x006C(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_35DC[0x10];                                    // 0x0070(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_70[0x10];                                      // 0x0070(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

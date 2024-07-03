@@ -37,7 +37,7 @@ public:
 	class UWBP_PalInvisibleButton_C*              WBP_PalInvisibleButton;                            // 0x02D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_             OnClicked;                                         // 0x02D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	E_PalUITitleMenuButtonType                    buttonType;                                        // 0x02E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3602[0x7];                                     // 0x02E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E9[0x7];                                      // 0x02E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<E_PalUITitleMenuButtonType, struct FDataTableRowHandle> MsgIDMap;                                          // 0x02F0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:

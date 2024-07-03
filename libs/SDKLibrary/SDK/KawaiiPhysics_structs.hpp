@@ -83,7 +83,7 @@ public:
 	struct FVector                                OffsetLocation;                                    // 0x0010(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                               OffsetRotation;                                    // 0x0028(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FVector                                Location;                                          // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BA3[0x8];                                     // 0x0058(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_58[0x8];                                       // 0x0058(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FQuat                                  Rotation;                                          // 0x0060(0x0020)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FCollisionLimitBase) == 0x000010, "Wrong alignment on FCollisionLimitBase");
@@ -101,7 +101,7 @@ struct FSphericalLimit final : public FCollisionLimitBase
 public:
 	float                                         Radius;                                            // 0x0080(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESphericalLimitType                           LimitType;                                         // 0x0084(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BA4[0xB];                                     // 0x0085(0x000B)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_85[0xB];                                       // 0x0085(0x000B)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FSphericalLimit) == 0x000010, "Wrong alignment on FSphericalLimit");
 static_assert(sizeof(FSphericalLimit) == 0x000090, "Wrong size on FSphericalLimit");
@@ -115,7 +115,7 @@ struct FCapsuleLimit final : public FCollisionLimitBase
 public:
 	float                                         Radius;                                            // 0x0080(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Length;                                            // 0x0084(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BA5[0x8];                                     // 0x0088(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_88[0x8];                                       // 0x0088(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FCapsuleLimit) == 0x000010, "Wrong alignment on FCapsuleLimit");
 static_assert(sizeof(FCapsuleLimit) == 0x000090, "Wrong size on FCapsuleLimit");
@@ -140,19 +140,19 @@ struct FKawaiiPhysicsModifyBone final
 public:
 	struct FBoneReference                         BoneRef;                                           // 0x0000(0x0010)(NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ParentIndex;                                       // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BA6[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<int32>                                 ChildIndexs;                                       // 0x0018(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FKawaiiPhysicsSettings                 PhysicsSettings;                                   // 0x0028(0x0018)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FVector                                Location;                                          // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                PrevLocation;                                      // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FQuat                                  PrevRotation;                                      // 0x0070(0x0020)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                PoseLocation;                                      // 0x0090(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BA7[0x8];                                     // 0x00A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A8[0x8];                                       // 0x00A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FQuat                                  PoseRotation;                                      // 0x00B0(0x0020)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                PoseScale;                                         // 0x00D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         LengthFromRoot;                                    // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDummy;                                            // 0x00EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BA8[0x3];                                     // 0x00ED(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_ED[0x3];                                       // 0x00ED(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FKawaiiPhysicsModifyBone) == 0x000010, "Wrong alignment on FKawaiiPhysicsModifyBone");
 static_assert(sizeof(FKawaiiPhysicsModifyBone) == 0x0000F0, "Wrong size on FKawaiiPhysicsModifyBone");
@@ -178,7 +178,7 @@ public:
 	TArray<struct FBoneReference>                 ExcludeBones;                                      // 0x00D8(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         TargetFrameRate;                                   // 0x00E8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          OverrideTargetFramerate;                           // 0x00EC(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BA9[0x3];                                     // 0x00ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_ED[0x3];                                       // 0x00ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FKawaiiPhysicsSettings                 PhysicsSettings;                                   // 0x00F0(0x0018)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	class UCurveFloat*                            DampingCurve;                                      // 0x0108(0x0008)(ZeroConstructor, Deprecated, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UCurveFloat*                            WorldDampingLocationCurve;                         // 0x0110(0x0008)(ZeroConstructor, Deprecated, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -193,12 +193,12 @@ public:
 	struct FRuntimeFloatCurve                     RadiusCurveData;                                   // 0x0358(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FRuntimeFloatCurve                     LimitAngleCurveData;                               // 0x03E0(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	bool                                          bUpdatePhysicsSettingsInGame;                      // 0x0468(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BAA[0x3];                                     // 0x0469(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_469[0x3];                                      // 0x0469(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DummyBoneLength;                                   // 0x046C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EBoneForwardAxis                              BoneForwardAxis;                                   // 0x0470(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPlanarConstraint                             PlanarConstraint;                                  // 0x0471(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ResetBoneTransformWhenBoneNotFound;                // 0x0472(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BAB[0x5];                                     // 0x0473(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_473[0x5];                                      // 0x0473(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSphericalLimit>                SphericalLimits;                                   // 0x0478(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FCapsuleLimit>                  CapsuleLimits;                                     // 0x0488(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FPlanarLimit>                   PlanarLimits;                                      // 0x0498(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
@@ -210,22 +210,22 @@ public:
 	float                                         TeleportRotationThreshold;                         // 0x04E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Gravity;                                           // 0x04E8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnableWind;                                       // 0x0500(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BAC[0x3];                                     // 0x0501(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_501[0x3];                                      // 0x0501(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         WindScale;                                         // 0x0504(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAllowWorldCollision;                              // 0x0508(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bOverrideCollisionParams;                          // 0x0509(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BAD[0x6];                                     // 0x050A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_50A[0x6];                                      // 0x050A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FBodyInstance                          CollisionChannelSettings;                          // 0x0510(0x0190)(Edit, NativeAccessSpecifierPublic)
 	bool                                          bIgnoreSelfComponent;                              // 0x06A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BAE[0x7];                                     // 0x06A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6A1[0x7];                                      // 0x06A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FBoneReference>                 IgnoreBones;                                       // 0x06A8(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<class FName>                           IgnoreBoneNamePrefix;                              // 0x06B8(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FKawaiiPhysicsModifyBone>       ModifyBones;                                       // 0x06C8(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	float                                         TotalBoneLength;                                   // 0x06D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1BAF[0x4];                                     // 0x06DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6DC[0x4];                                      // 0x06DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             PreSkelCompTransform;                              // 0x06E0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bInitPhysicsSettings;                              // 0x0740(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1BB0[0x4F];                                    // 0x0741(0x004F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_741[0x4F];                                     // 0x0741(0x004F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FAnimNode_KawaiiPhysics) == 0x000010, "Wrong alignment on FAnimNode_KawaiiPhysics");
 static_assert(sizeof(FAnimNode_KawaiiPhysics) == 0x000790, "Wrong size on FAnimNode_KawaiiPhysics");
@@ -302,7 +302,7 @@ struct FSphericalLimitData final : public FCollisionLimitDataBase
 public:
 	float                                         Radius;                                            // 0x0080(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESphericalLimitType                           LimitType;                                         // 0x0084(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BB1[0xB];                                     // 0x0085(0x000B)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_85[0xB];                                       // 0x0085(0x000B)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FSphericalLimitData) == 0x000010, "Wrong alignment on FSphericalLimitData");
 static_assert(sizeof(FSphericalLimitData) == 0x000090, "Wrong size on FSphericalLimitData");
@@ -316,7 +316,7 @@ struct FCapsuleLimitData final : public FCollisionLimitDataBase
 public:
 	float                                         Radius;                                            // 0x0080(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Length;                                            // 0x0084(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BB2[0x8];                                     // 0x0088(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_88[0x8];                                       // 0x0088(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FCapsuleLimitData) == 0x000010, "Wrong alignment on FCapsuleLimitData");
 static_assert(sizeof(FCapsuleLimitData) == 0x000090, "Wrong size on FCapsuleLimitData");

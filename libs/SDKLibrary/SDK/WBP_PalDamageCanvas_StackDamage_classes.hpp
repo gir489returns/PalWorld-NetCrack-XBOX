@@ -28,7 +28,7 @@ public:
 	class UWidgetAnimation*                       Default_In;                                        // 0x0410(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UCanvasPanel*                           CanvasPanel_0;                                     // 0x0418(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                         Damage;                                            // 0x0420(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_489D[0x4];                                     // 0x0424(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_424[0x4];                                      // 0x0424(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Hit_Location;                                      // 0x0428(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TMap<TSoftObjectPtr<class AActor>, class UPalUIDamageTextBase*> DisplayingDamageTextMap;                           // 0x0440(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	double                                        DisplayTime;                                       // 0x0490(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

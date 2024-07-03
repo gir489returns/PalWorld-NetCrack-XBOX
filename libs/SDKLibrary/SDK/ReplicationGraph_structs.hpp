@@ -49,9 +49,9 @@ static_assert(offsetof(FAlwaysRelevantActorInfo, LastViewTarget) == 0x000010, "M
 struct FTearOffActorInfo final
 {
 public:
-	uint8                                         Pad_18B3[0x8];                                     // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Actor;                                             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_18B4[0x8];                                     // 0x0010(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10[0x8];                                       // 0x0010(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FTearOffActorInfo) == 0x000008, "Wrong alignment on FTearOffActorInfo");
 static_assert(sizeof(FTearOffActorInfo) == 0x000018, "Wrong size on FTearOffActorInfo");
@@ -83,7 +83,7 @@ public:
 	uint16                                        ReplicationPeriodFrame;                            // 0x000C(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint16                                        FastPath_ReplicationPeriodFrame;                   // 0x000E(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint16                                        ActorChannelFrameTimeout;                          // 0x0010(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_18B5[0x56];                                    // 0x0012(0x0056)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12[0x56];                                      // 0x0012(0x0056)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CullDistance;                                      // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                         CullDistanceSquared;                               // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };

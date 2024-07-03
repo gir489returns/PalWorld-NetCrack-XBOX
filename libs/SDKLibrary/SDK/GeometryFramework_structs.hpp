@@ -80,7 +80,7 @@ public:
 	EDynamicMeshChangeType                        Type;                                              // 0x0000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EDynamicMeshAttributeChangeFlags              Flags;                                             // 0x0001(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsRevertChange;                                   // 0x0002(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B5F[0x1D];                                    // 0x0003(0x001D)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3[0x1D];                                       // 0x0003(0x001D)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FDynamicMeshChangeInfo) == 0x000008, "Wrong alignment on FDynamicMeshChangeInfo");
 static_assert(sizeof(FDynamicMeshChangeInfo) == 0x000020, "Wrong size on FDynamicMeshChangeInfo");

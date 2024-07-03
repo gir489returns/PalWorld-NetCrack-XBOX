@@ -21,7 +21,7 @@ struct BP_MonsterAIController_Wild_Mimicdog_C_PlayDefaultAction final
 public:
 	class UPalAIActionComponent*                  K2Node_DynamicCast_AsPal_AIAction_Component;       // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_488F[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBP_AIAction_WildMimicry_C*             CallFunc_SpawnObject_ReturnValue;                  // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_MonsterAIController_Wild_Mimicdog_C_PlayDefaultAction) == 0x000008, "Wrong alignment on BP_MonsterAIController_Wild_Mimicdog_C_PlayDefaultAction");

@@ -51,7 +51,7 @@ public:
 	bool                                          IsLowHealthBlink;                                  // 0x0602(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsDisplayHealthPercent;                            // 0x0603(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsDisplayRarity;                                   // 0x0604(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B3D[0x3];                                     // 0x0605(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_605[0x3];                                      // 0x0605(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        ChachedLastHPPercent;                              // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "EPal_AI_AlertByKilledFriendState_structs.hpp"
 #include "AIModule_structs.hpp"
+#include "EPal_AI_AlertByKilledFriendState_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "BP_AIAction_CanCombatBase_classes.hpp"
 
@@ -27,7 +27,7 @@ class UBP_AIAction_AlertByKilledFriend_C final : public UBP_AIAction_CanCombatBa
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_AIAction_AlertByKilledFriend_C;  // 0x0158(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	EPal_AI_AlertByKilledFriendState              CurrentState;                                      // 0x0160(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3BC2[0x7];                                     // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<EPal_AI_AlertByKilledFriendState, class UClass*> StateMap;                                          // 0x0168(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 	class UPalStateMachine*                       StateMacine;                                       // 0x01B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 DeadBody;                                          // 0x01C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)

@@ -26,19 +26,19 @@ class alignas(0x10) UARTrackedGeometry : public UObject
 {
 public:
 	struct FGuid                                  UniqueId;                                          // 0x0028(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3200[0x8];                                     // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             LocalToTrackingTransform;                          // 0x0040(0x0060)(IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FTransform                             LocalToAlignedTrackingTransform;                   // 0x00A0(0x0060)(IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EARTrackingState                              TrackingState;                                     // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_3201[0xF];                                     // 0x0101(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_101[0xF];                                      // 0x0101(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMRMeshComponent*                       UnderlyingMesh;                                    // 0x0110(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EARObjectClassification                       ObjectClassification;                              // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EARSpatialMeshUsageFlags                      SpatialMeshUsageFlags;                             // 0x0119(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_3202[0x16];                                    // 0x011A(0x0016)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11A[0x16];                                     // 0x011A(0x0016)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         LastUpdateFrameNumber;                             // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_3203[0xC];                                     // 0x0134(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_134[0xC];                                      // 0x0134(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   DebugName;                                         // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_3204[0x10];                                    // 0x0148(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_148[0x10];                                     // 0x0148(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UMRMeshComponent* GetUnderlyingMesh();
@@ -82,7 +82,7 @@ static_assert(offsetof(UARTrackedGeometry, DebugName) == 0x000140, "Member 'UART
 class UARGeoAnchor final : public UARTrackedGeometry
 {
 public:
-	uint8                                         Pad_3205[0x18];                                    // 0x0158(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_158[0x18];                                     // 0x0158(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	float GetAltitudeMeters() const;
@@ -233,7 +233,7 @@ static_assert(sizeof(UARTraceResultLibrary) == 0x000028, "Wrong size on UARTrace
 class UARBaseAsyncTaskBlueprintProxy : public UBlueprintAsyncActionBase
 {
 public:
-	uint8                                         Pad_3219[0x20];                                    // 0x0030(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30[0x20];                                      // 0x0030(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -255,7 +255,7 @@ class UARSaveWorldAsyncTaskBlueprintProxy final : public UARBaseAsyncTaskBluepri
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0050(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailed;                                          // 0x0060(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_321A[0x10];                                    // 0x0070(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_70[0x10];                                      // 0x0070(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UARSaveWorldAsyncTaskBlueprintProxy* ARSaveWorld(class UObject* WorldContextObject);
@@ -282,7 +282,7 @@ class UARGetCandidateObjectAsyncTaskBlueprintProxy final : public UARBaseAsyncTa
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0050(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailed;                                          // 0x0060(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_321B[0x40];                                    // 0x0070(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_70[0x40];                                      // 0x0070(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UARGetCandidateObjectAsyncTaskBlueprintProxy* ARGetCandidateObject(class UObject* WorldContextObject, const struct FVector& Location, const struct FVector& Extent);
@@ -308,14 +308,14 @@ class UARComponent : public USceneComponent
 {
 public:
 	struct FGuid                                  NativeID;                                          // 0x02A0(0x0010)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_321C[0x30];                                    // 0x02B0(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B0[0x30];                                     // 0x02B0(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bUseDefaultReplication;                            // 0x02E0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_321D[0x7];                                     // 0x02E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E1[0x7];                                      // 0x02E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     DefaultMeshMaterial;                               // 0x02E8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UMaterialInterface*                     DefaultWireframeMeshMaterial;                      // 0x02F0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UMRMeshComponent*                       MRMeshComponent;                                   // 0x02F8(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UARTrackedGeometry*                     MyTrackedGeometry;                                 // 0x0300(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_321E[0x18];                                    // 0x0308(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_308[0x18];                                     // 0x0308(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UMRMeshComponent* GetMRMesh();
@@ -379,7 +379,7 @@ class UARPointComponent final : public UARComponent
 {
 public:
 	struct FARPointUpdatePayload                  ReplicatedPayload;                                 // 0x0320(0x0001)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_321F[0xF];                                     // 0x0321(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_321[0xF];                                      // 0x0321(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ReceiveAdd(const struct FARPointUpdatePayload& Payload);
@@ -408,9 +408,9 @@ public:
 	EARFaceTransformMixing                        TransformSetting;                                  // 0x0320(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bUpdateVertexNormal;                               // 0x0321(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bFaceOutOfScreen;                                  // 0x0322(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_3220[0x5];                                     // 0x0323(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_323[0x5];                                      // 0x0323(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FARFaceUpdatePayload                   ReplicatedPayload;                                 // 0x0328(0x0060)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_3221[0x28];                                    // 0x0388(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_388[0x28];                                     // 0x0388(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static void SetFaceComponentDebugMode(EFaceComponentDebugMode NewDebugMode);
@@ -705,24 +705,24 @@ public:
 	bool                                          bEnableAutomaticCameraTracking;                    // 0x0043(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bResetCameraTracking;                              // 0x0044(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bResetTrackedObjects;                              // 0x0045(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_3228[0x2];                                     // 0x0046(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_46[0x2];                                       // 0x0046(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UARCandidateImage*>              CandidateImages;                                   // 0x0048(0x0010)(Edit, ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	int32                                         MaxNumSimultaneousImagesTracked;                   // 0x0058(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EAREnvironmentCaptureProbeType                EnvironmentCaptureProbeType;                       // 0x005C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_3229[0x3];                                     // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<uint8>                                 WorldMapData;                                      // 0x0060(0x0010)(Edit, ZeroConstructor, EditConst, Protected, NativeAccessSpecifierProtected)
 	TArray<class UARCandidateObject*>             CandidateObjects;                                  // 0x0070(0x0010)(Edit, ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	struct FARVideoFormat                         DesiredVideoFormat;                                // 0x0080(0x000C)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	bool                                          bUseOptimalVideoFormat;                            // 0x008C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EARFaceTrackingDirection                      FaceTrackingDirection;                             // 0x008D(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EARFaceTrackingUpdate                         FaceTrackingUpdate;                                // 0x008E(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_322A[0x1];                                     // 0x008F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8F[0x1];                                       // 0x008F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         MaxNumberOfTrackedFaces;                           // 0x0090(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_322B[0x4];                                     // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<uint8>                                 SerializedARCandidateImageDatabase;                // 0x0098(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	EARSessionTrackingFeature                     EnabledSessionTrackingFeature;                     // 0x00A8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EARSceneReconstruction                        SceneReconstructionMethod;                         // 0x00A9(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_322C[0x6];                                     // 0x00AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_AA[0x6];                                       // 0x00AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UARPlaneComponent>          PlaneComponentClass;                               // 0x00B0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TSubclassOf<class UARPointComponent>          PointComponentClass;                               // 0x00B8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TSubclassOf<class UARFaceComponent>           FaceComponentClass;                                // 0x00C0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -838,7 +838,7 @@ class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy final : public UARBas
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0050(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailed;                                          // 0x0060(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_322D[0x30];                                    // 0x0070(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_70[0x30];                                      // 0x0070(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy* CheckGeoTrackingAvailability(class UObject* WorldContextObject);
@@ -868,7 +868,7 @@ class UGetGeoLocationAsyncTaskBlueprintProxy final : public UARBaseAsyncTaskBlue
 public:
 	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0050(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnFailed;                                          // 0x0060(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_322F[0x38];                                    // 0x0070(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_70[0x38];                                      // 0x0070(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UGetGeoLocationAsyncTaskBlueprintProxy* GetGeoLocationAtWorldPosition(class UObject* WorldContextObject, const struct FVector& WorldPosition);
@@ -897,7 +897,7 @@ class UARLifeCycleComponent final : public USceneComponent
 public:
 	FMulticastInlineDelegateProperty_             OnARActorSpawnedDelegate;                          // 0x02A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnARActorToBeDestroyedDelegate;                    // 0x02B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3231[0x10];                                    // 0x02C0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C0[0x10];                                     // 0x02C0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void InstanceARActorSpawnedDelegate__DelegateSignature(class UClass* ComponentClass, const struct FGuid& NativeID, class AARActor* SpawnedActor);
@@ -991,14 +991,14 @@ class UARPin final : public UObject
 public:
 	class UARTrackedGeometry*                     TrackedGeometry;                                   // 0x0028(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class USceneComponent*                        PinnedComponent;                                   // 0x0030(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_3232[0x8];                                     // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             LocalToTrackingTransform;                          // 0x0040(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FTransform                             LocalToAlignedTrackingTransform;                   // 0x00A0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	EARTrackingState                              TrackingState;                                     // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_3233[0x1F];                                    // 0x0101(0x001F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_101[0x1F];                                     // 0x0101(0x001F)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnARTrackingStateChanged;                          // 0x0120(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
 	FMulticastInlineDelegateProperty_             OnARTransformUpdated;                              // 0x0130(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_3234[0x10];                                    // 0x0140(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_140[0x10];                                     // 0x0140(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void DebugDraw(class UWorld* World, const struct FLinearColor& Color, float Scale, float PersistForSeconds) const;
@@ -1035,7 +1035,7 @@ class AARSharedWorldGameMode final : public AGameMode
 {
 public:
 	int32                                         BufferSizePerChunk;                                // 0x0378(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3235[0x64];                                    // 0x037C(0x0064)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_37C[0x64];                                     // 0x037C(0x0064)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class AARSharedWorldGameState* GetARSharedWorldGameState();
@@ -1068,7 +1068,7 @@ public:
 	int32                                         ARWorldBytesTotal;                                 // 0x0324(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         PreviewImageBytesDelivered;                        // 0x0328(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ARWorldBytesDelivered;                             // 0x032C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3236[0x8];                                     // 0x0330(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_330[0x8];                                      // 0x0330(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void K2_OnARWorldMapIsReady();
@@ -1097,7 +1097,7 @@ static_assert(offsetof(AARSharedWorldGameState, ARWorldBytesDelivered) == 0x0003
 class AARSharedWorldPlayerController final : public APlayerController
 {
 public:
-	uint8                                         Pad_3237[0x8];                                     // 0x0850(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_850[0x8];                                      // 0x0850(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ClientInitSharedWorld(int32 PreviewImageSize, int32 ARWorldDataSize);
@@ -1124,7 +1124,7 @@ class AARSkyLight final : public ASkyLight
 {
 public:
 	class UAREnvironmentCaptureProbe*             CaptureProbe;                                      // 0x02A0(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_323A[0x8];                                     // 0x02A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A8[0x8];                                      // 0x02A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SetEnvironmentCaptureProbe(class UAREnvironmentCaptureProbe* InCaptureProbe);
@@ -1150,7 +1150,7 @@ class alignas(0x10) UARTexture : public UTexture
 {
 public:
 	EARTextureType                                TextureType;                                       // 0x01F0(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_323B[0x3];                                     // 0x01F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F1[0x3];                                      // 0x01F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Timestamp;                                         // 0x01F4(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGuid                                  ExternalTextureGuid;                               // 0x01F8(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                              Size;                                              // 0x0208(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1198,7 +1198,7 @@ public:
 	EARDepthQuality                               DepthQuality;                                      // 0x0218(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EARDepthAccuracy                              DepthAccuracy;                                     // 0x0219(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsTemporallySmoothed;                             // 0x021A(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_323C[0x5];                                     // 0x021B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21B[0x5];                                      // 0x021B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1222,11 +1222,11 @@ class UAREnvironmentCaptureProbeTexture final : public UTextureCube
 {
 public:
 	EARTextureType                                TextureType;                                       // 0x0290(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_323D[0x3];                                     // 0x0291(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_291[0x3];                                      // 0x0291(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Timestamp;                                         // 0x0294(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGuid                                  ExternalTextureGuid;                               // 0x0298(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                              Size;                                              // 0x02A8(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_323E[0x8];                                     // 0x02B8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B8[0x8];                                      // 0x02B8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1268,12 +1268,12 @@ class UARPlaneGeometry final : public UARTrackedGeometry
 {
 public:
 	EARPlaneOrientation                           Orientation;                                       // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_323F[0x7];                                     // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_159[0x7];                                      // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Center;                                            // 0x0160(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FVector                                Extent;                                            // 0x0178(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<struct FVector>                        BoundaryPolygon;                                   // 0x0190(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	class UARPlaneGeometry*                       SubsumedBy;                                        // 0x01A0(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_3240[0x8];                                     // 0x01A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A8[0x8];                                      // 0x01A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	TArray<struct FVector> GetBoundaryPolygonInLocalSpace() const;
@@ -1352,7 +1352,7 @@ class UARTrackedQRCode final : public UARTrackedImage
 public:
 	class FString                                 QRCode;                                            // 0x0170(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Version;                                           // 0x0180(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3241[0xC];                                     // 0x0184(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_184[0xC];                                      // 0x0184(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1376,9 +1376,9 @@ class UARFaceGeometry final : public UARTrackedGeometry
 public:
 	struct FVector                                LookAtTarget;                                      // 0x0158(0x0018)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsTracked;                                        // 0x0170(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3242[0x7];                                     // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_171[0x7];                                      // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<EARFaceBlendShape, float>                BlendShapes;                                       // 0x0178(0x0050)(NativeAccessSpecifierPrivate)
-	uint8                                         Pad_3243[0x38];                                    // 0x01C8(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C8[0x38];                                     // 0x01C8(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             LeftEyeTransform;                                  // 0x0200(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FTransform                             RightEyeTransform;                                 // 0x0260(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
@@ -1413,7 +1413,7 @@ class UAREnvironmentCaptureProbe final : public UARTrackedGeometry
 public:
 	struct FVector                                Extent;                                            // 0x0158(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UAREnvironmentCaptureProbeTexture*      EnvironmentCaptureTexture;                         // 0x0170(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_3247[0x8];                                     // 0x0178(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_178[0x8];                                      // 0x0178(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UAREnvironmentCaptureProbeTexture* GetEnvironmentCaptureTexture();
@@ -1465,7 +1465,7 @@ class UARTrackedPose final : public UARTrackedGeometry
 {
 public:
 	struct FARPose3D                              TrackedPose;                                       // 0x0158(0x0050)(NativeAccessSpecifierPrivate)
-	uint8                                         Pad_3248[0x8];                                     // 0x01A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A8[0x8];                                      // 0x01A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	const struct FARPose3D GetTrackedPoseData() const;
@@ -1592,7 +1592,7 @@ public:
 	float                                         Width;                                             // 0x0048(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         Height;                                            // 0x004C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EARCandidateImageOrientation                  Orientation;                                       // 0x0050(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_324B[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UTexture2D* GetCandidateTexture() const;

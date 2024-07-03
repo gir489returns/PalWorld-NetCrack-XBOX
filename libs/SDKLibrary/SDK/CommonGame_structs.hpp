@@ -51,7 +51,7 @@ enum class ELocalMultiplayerInteractionMode : uint8
 struct alignas(0x08) FMeasuredText final
 {
 public:
-	uint8                                         Pad_168F[0x30];                                    // 0x0000(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_0[0x30];                                       // 0x0000(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMeasuredText) == 0x000008, "Wrong alignment on FMeasuredText");
 static_assert(sizeof(FMeasuredText) == 0x000030, "Wrong size on FMeasuredText");
@@ -64,7 +64,7 @@ public:
 	class ULocalPlayer*                           LocalPlayer;                                       // 0x0000(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPrimaryGameLayout*                     RootLayout;                                        // 0x0008(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAddedToViewport;                                  // 0x0010(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1690[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FRootViewportLayoutInfo) == 0x000008, "Wrong alignment on FRootViewportLayoutInfo");
 static_assert(sizeof(FRootViewportLayoutInfo) == 0x000018, "Wrong size on FRootViewportLayoutInfo");
@@ -78,7 +78,7 @@ struct FConfirmationDialogAction final
 {
 public:
 	ECommonMessagingResult                        Result;                                            // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1691[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   OptionalDisplayText;                               // 0x0008(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FConfirmationDialogAction) == 0x000008, "Wrong alignment on FConfirmationDialogAction");
