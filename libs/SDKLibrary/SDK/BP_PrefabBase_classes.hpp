@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "RiverSplineElement_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "SplinesInEditor_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "RiverSplineElement_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 

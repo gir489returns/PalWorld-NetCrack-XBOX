@@ -9642,18 +9642,16 @@ static_assert(offsetof(FPalSlotOpItemSlotInfo, SlotID) == 0x000030, "Member 'FPa
 static_assert(offsetof(FPalSlotOpItemSlotInfo, FromSlotId) == 0x000044, "Member 'FPalSlotOpItemSlotInfo::FromSlotId' has a wrong offset!");
 
 // ScriptStruct Pal.PalCharacterSlotSaveData
-// 0x0038 (0x0058 - 0x0020)
+// 0x0008 (0x0028 - 0x0020)
 struct FPalCharacterSlotSaveData final : public FPalBinaryMemory
 {
 public:
-	struct FPalInstanceID                         IndividualId;                                      // 0x0020(0x0030)(HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EPalTribeID                                   PermissionTribeID;                                 // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	int32                                         SlotIndex;                                         // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FPalCharacterSlotSaveData) == 0x000008, "Wrong alignment on FPalCharacterSlotSaveData");
-static_assert(sizeof(FPalCharacterSlotSaveData) == 0x000058, "Wrong size on FPalCharacterSlotSaveData");
-static_assert(offsetof(FPalCharacterSlotSaveData, IndividualId) == 0x000020, "Member 'FPalCharacterSlotSaveData::IndividualId' has a wrong offset!");
-static_assert(offsetof(FPalCharacterSlotSaveData, PermissionTribeID) == 0x000050, "Member 'FPalCharacterSlotSaveData::PermissionTribeID' has a wrong offset!");
+static_assert(sizeof(FPalCharacterSlotSaveData) == 0x000028, "Wrong size on FPalCharacterSlotSaveData");
+static_assert(offsetof(FPalCharacterSlotSaveData, SlotIndex) == 0x000020, "Member 'FPalCharacterSlotSaveData::SlotIndex' has a wrong offset!");
 
 // ScriptStruct Pal.PalCharacterStoredParameterInfo
 // 0x02D8 (0x02D8 - 0x0000)
@@ -10751,18 +10749,21 @@ static_assert(offsetof(FPalDynamicItemSaveData, ID) == 0x000020, "Member 'FPalDy
 static_assert(offsetof(FPalDynamicItemSaveData, StaticItemId) == 0x000040, "Member 'FPalDynamicItemSaveData::StaticItemId' has a wrong offset!");
 
 // ScriptStruct Pal.PalCharacterContainerSaveData
-// 0x0018 (0x0038 - 0x0020)
+// 0x0020 (0x0040 - 0x0020)
 struct FPalCharacterContainerSaveData final : public FPalBinaryMemory
 {
 public:
 	bool                                          bReferenceSlot;                                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FPalCharacterSlotSaveData>      Slots;                                             // 0x0028(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	int32                                         SlotNum;                                           // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FPalCharacterContainerSaveData) == 0x000008, "Wrong alignment on FPalCharacterContainerSaveData");
-static_assert(sizeof(FPalCharacterContainerSaveData) == 0x000038, "Wrong size on FPalCharacterContainerSaveData");
+static_assert(sizeof(FPalCharacterContainerSaveData) == 0x000040, "Wrong size on FPalCharacterContainerSaveData");
 static_assert(offsetof(FPalCharacterContainerSaveData, bReferenceSlot) == 0x000020, "Member 'FPalCharacterContainerSaveData::bReferenceSlot' has a wrong offset!");
 static_assert(offsetof(FPalCharacterContainerSaveData, Slots) == 0x000028, "Member 'FPalCharacterContainerSaveData::Slots' has a wrong offset!");
+static_assert(offsetof(FPalCharacterContainerSaveData, SlotNum) == 0x000038, "Member 'FPalCharacterContainerSaveData::SlotNum' has a wrong offset!");
 
 // ScriptStruct Pal.PalCharacterParameterStorageSaveData
 // 0x0010 (0x0010 - 0x0000)
@@ -10815,7 +10816,7 @@ static_assert(offsetof(FPalSupplySaveData, LastLotteryTime) == 0x000018, "Member
 static_assert(offsetof(FPalSupplySaveData, SupplyInfos) == 0x000020, "Member 'FPalSupplySaveData::SupplyInfos' has a wrong offset!");
 
 // ScriptStruct Pal.PalWorldSaveData
-// 0x04B0 (0x04B0 - 0x0000)
+// 0x04B8 (0x04B8 - 0x0000)
 struct FPalWorldSaveData final
 {
 public:
@@ -10840,9 +10841,11 @@ public:
 	TMap<struct FGuid, struct FPalInvaderSaveData> InvaderSaveData;                                   // 0x03A0(0x0050)(NativeAccessSpecifierPublic)
 	struct FPalOilrigSaveData                     OilrigSaveData;                                    // 0x03F0(0x0050)(NativeAccessSpecifierPublic)
 	struct FPalSupplySaveData                     SupplySaveData;                                    // 0x0440(0x0070)(NativeAccessSpecifierPublic)
+	uint32                                        WorldMetaSaveVersionBitMask;                       // 0x04B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4B4[0x4];                                      // 0x04B4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FPalWorldSaveData) == 0x000008, "Wrong alignment on FPalWorldSaveData");
-static_assert(sizeof(FPalWorldSaveData) == 0x0004B0, "Wrong size on FPalWorldSaveData");
+static_assert(sizeof(FPalWorldSaveData) == 0x0004B8, "Wrong size on FPalWorldSaveData");
 static_assert(offsetof(FPalWorldSaveData, WorldName) == 0x000000, "Member 'FPalWorldSaveData::WorldName' has a wrong offset!");
 static_assert(offsetof(FPalWorldSaveData, CharacterSaveParameterMap) == 0x000010, "Member 'FPalWorldSaveData::CharacterSaveParameterMap' has a wrong offset!");
 static_assert(offsetof(FPalWorldSaveData, MapObjectSaveData) == 0x000060, "Member 'FPalWorldSaveData::MapObjectSaveData' has a wrong offset!");
@@ -10864,6 +10867,7 @@ static_assert(offsetof(FPalWorldSaveData, DungeonSaveData) == 0x000390, "Member 
 static_assert(offsetof(FPalWorldSaveData, InvaderSaveData) == 0x0003A0, "Member 'FPalWorldSaveData::InvaderSaveData' has a wrong offset!");
 static_assert(offsetof(FPalWorldSaveData, OilrigSaveData) == 0x0003F0, "Member 'FPalWorldSaveData::OilrigSaveData' has a wrong offset!");
 static_assert(offsetof(FPalWorldSaveData, SupplySaveData) == 0x000440, "Member 'FPalWorldSaveData::SupplySaveData' has a wrong offset!");
+static_assert(offsetof(FPalWorldSaveData, WorldMetaSaveVersionBitMask) == 0x0004B0, "Member 'FPalWorldSaveData::WorldMetaSaveVersionBitMask' has a wrong offset!");
 
 // ScriptStruct Pal.PalIncidentBroadcastParameter
 // 0x0090 (0x0090 - 0x0000)

@@ -99,6 +99,31 @@ public:
 	FMulticastInlineDelegateProperty_             OnClickedServerList_PreviousButton;                // 0x06B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
+	void Update_Local_World_List_Content(const class FString& WorldPathName, const struct FPalUILocalWorldDisplayData& DisplayData);
+	void SortTypeStringToSortType(const class FString& SortTypeString, EPalUIServerListSortType* SortType);
+	void SetupComboboxStringData();
+	void SetRegions(TArray<class FString>& Regions);
+	void SearchCommit(const class FText& Text);
+	void OpenLocalWorldMenu();
+	void OnSelectedServerSortType__DelegateSignature(EPalUIServerListSortType SortType);
+	void OnInitialized();
+	void OnClickedWorldSettingButton__DelegateSignature();
+	void OnClickedWorldButton_Internal(class UWBP_Title_WorldSelect_ListContent_C* Widget);
+	void OnClickedWorldButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* ButtonWidget);
+	void OnClickedStartWorldButton__DelegateSignature();
+	void OnClickedServerSearchButton__DelegateSignature(const class FString& SearchWord);
+	void OnClickedServerList_PreviousButton__DelegateSignature();
+	void OnClickedServerList_OfficialButton__DelegateSignature();
+	void OnClickedServerList_NextButton__DelegateSignature();
+	void OnClickedServerList_HistoryButton__DelegateSignature();
+	void OnClickedServerList_CommunityButton__DelegateSignature();
+	void OnClickedServerButton_Internal(class UWBP_Title_WorldSelect_ListContent_C* Widget);
+	void OnClickedServerButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* Widget);
+	void OnClickedSelectBackupButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* SelectedWorldButton);
+	void OnClickedOpenDirectoryButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* SelectedWorldButton);
+	void OnClickedNewWorldButton_Internal(class UWBP_Title_WorldSelect_CreateWorld_ListContent_C* Widget);
+	void OnClickedNewWorldButton__DelegateSignature(class UWBP_Title_WorldSelect_CreateWorld_ListContent_C* ButtonWidget);
+	void OnClickedDeleteWorldButton__DelegateSignature();
 	void OnClicked_JoinByIPButton__DelegateSignature(const class FString& Address);
 	void IsEditingSearchWord(bool* IsEditing);
 	void GetServerSearchWord(class FString* Word);
@@ -135,31 +160,6 @@ public:
 	void AnmEvent_ToJoinServerMode();
 	void AddServerList(TArray<struct FPalUIServerDisplayData>& ServerDisplayData);
 	void AddLocalWorldDisplayData(TArray<struct FPalUILocalWorldDisplayData>& DisplayDataArray);
-	void Update_Local_World_List_Content(const class FString& WorldPathName, const struct FPalUILocalWorldDisplayData& DisplayData);
-	void SortTypeStringToSortType(const class FString& SortTypeString, EPalUIServerListSortType* SortType);
-	void SetupComboboxStringData();
-	void SetRegions(TArray<class FString>& Regions);
-	void SearchCommit(const class FText& Text);
-	void OpenLocalWorldMenu();
-	void OnSelectedServerSortType__DelegateSignature(EPalUIServerListSortType SortType);
-	void OnInitialized();
-	void OnClickedWorldSettingButton__DelegateSignature();
-	void OnClickedWorldButton_Internal(class UWBP_Title_WorldSelect_ListContent_C* Widget);
-	void OnClickedWorldButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* ButtonWidget);
-	void OnClickedStartWorldButton__DelegateSignature();
-	void OnClickedServerSearchButton__DelegateSignature(const class FString& SearchWord);
-	void OnClickedServerList_PreviousButton__DelegateSignature();
-	void OnClickedServerList_OfficialButton__DelegateSignature();
-	void OnClickedServerList_NextButton__DelegateSignature();
-	void OnClickedServerList_HistoryButton__DelegateSignature();
-	void OnClickedServerList_CommunityButton__DelegateSignature();
-	void OnClickedServerButton_Internal(class UWBP_Title_WorldSelect_ListContent_C* Widget);
-	void OnClickedServerButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* Widget);
-	void OnClickedSelectBackupButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* SelectedWorldButton);
-	void OnClickedOpenDirectoryButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* SelectedWorldButton);
-	void OnClickedNewWorldButton_Internal(class UWBP_Title_WorldSelect_CreateWorld_ListContent_C* Widget);
-	void OnClickedNewWorldButton__DelegateSignature(class UWBP_Title_WorldSelect_CreateWorld_ListContent_C* ButtonWidget);
-	void OnClickedDeleteWorldButton__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

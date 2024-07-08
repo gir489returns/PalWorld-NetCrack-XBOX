@@ -18,6 +18,21 @@
 namespace SDK::Params
 {
 
+// Function WBP_TitleLocalWorldBackupSelect.WBP_TitleLocalWorldBackupSelect_C.Setup
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_TitleLocalWorldBackupSelect_C_Setup final
+{
+public:
+	TArray<struct FPalUIBackupSaveDisplayData>    CallFunc_GetBackupDisplayData_OutDisplayData;      // 0x0000(0x0010)(ReferenceParm)
+	class UWidget*                                CallFunc_GetTopFocusTarget_TargetWidget;           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_TitleLocalWorldBackupSelect_C_Setup) == 0x000008, "Wrong alignment on WBP_TitleLocalWorldBackupSelect_C_Setup");
+static_assert(sizeof(WBP_TitleLocalWorldBackupSelect_C_Setup) == 0x000020, "Wrong size on WBP_TitleLocalWorldBackupSelect_C_Setup");
+static_assert(offsetof(WBP_TitleLocalWorldBackupSelect_C_Setup, CallFunc_GetBackupDisplayData_OutDisplayData) == 0x000000, "Member 'WBP_TitleLocalWorldBackupSelect_C_Setup::CallFunc_GetBackupDisplayData_OutDisplayData' has a wrong offset!");
+static_assert(offsetof(WBP_TitleLocalWorldBackupSelect_C_Setup, CallFunc_GetTopFocusTarget_TargetWidget) == 0x000010, "Member 'WBP_TitleLocalWorldBackupSelect_C_Setup::CallFunc_GetTopFocusTarget_TargetWidget' has a wrong offset!");
+static_assert(offsetof(WBP_TitleLocalWorldBackupSelect_C_Setup, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'WBP_TitleLocalWorldBackupSelect_C_Setup::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+
 // Function WBP_TitleLocalWorldBackupSelect.WBP_TitleLocalWorldBackupSelect_C.OpenSuccessDialog
 // 0x0038 (0x0038 - 0x0000)
 struct WBP_TitleLocalWorldBackupSelect_C_OpenSuccessDialog final
@@ -153,21 +168,6 @@ public:
 static_assert(alignof(WBP_TitleLocalWorldBackupSelect_C_BndEvt__WBP_TitleLocalWorldBackupSelect_WBP_Title_BackupSelect_K2Node_ComponentBoundEvent_1_OnClickedBackup__DelegateSignature) == 0x000008, "Wrong alignment on WBP_TitleLocalWorldBackupSelect_C_BndEvt__WBP_TitleLocalWorldBackupSelect_WBP_Title_BackupSelect_K2Node_ComponentBoundEvent_1_OnClickedBackup__DelegateSignature");
 static_assert(sizeof(WBP_TitleLocalWorldBackupSelect_C_BndEvt__WBP_TitleLocalWorldBackupSelect_WBP_Title_BackupSelect_K2Node_ComponentBoundEvent_1_OnClickedBackup__DelegateSignature) == 0x000008, "Wrong size on WBP_TitleLocalWorldBackupSelect_C_BndEvt__WBP_TitleLocalWorldBackupSelect_WBP_Title_BackupSelect_K2Node_ComponentBoundEvent_1_OnClickedBackup__DelegateSignature");
 static_assert(offsetof(WBP_TitleLocalWorldBackupSelect_C_BndEvt__WBP_TitleLocalWorldBackupSelect_WBP_Title_BackupSelect_K2Node_ComponentBoundEvent_1_OnClickedBackup__DelegateSignature, Widget) == 0x000000, "Member 'WBP_TitleLocalWorldBackupSelect_C_BndEvt__WBP_TitleLocalWorldBackupSelect_WBP_Title_BackupSelect_K2Node_ComponentBoundEvent_1_OnClickedBackup__DelegateSignature::Widget' has a wrong offset!");
-
-// Function WBP_TitleLocalWorldBackupSelect.WBP_TitleLocalWorldBackupSelect_C.Setup
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_TitleLocalWorldBackupSelect_C_Setup final
-{
-public:
-	TArray<struct FPalUIBackupSaveDisplayData>    CallFunc_GetBackupDisplayData_OutDisplayData;      // 0x0000(0x0010)(ReferenceParm)
-	class UWidget*                                CallFunc_GetTopFocusTarget_TargetWidget;           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_TitleLocalWorldBackupSelect_C_Setup) == 0x000008, "Wrong alignment on WBP_TitleLocalWorldBackupSelect_C_Setup");
-static_assert(sizeof(WBP_TitleLocalWorldBackupSelect_C_Setup) == 0x000020, "Wrong size on WBP_TitleLocalWorldBackupSelect_C_Setup");
-static_assert(offsetof(WBP_TitleLocalWorldBackupSelect_C_Setup, CallFunc_GetBackupDisplayData_OutDisplayData) == 0x000000, "Member 'WBP_TitleLocalWorldBackupSelect_C_Setup::CallFunc_GetBackupDisplayData_OutDisplayData' has a wrong offset!");
-static_assert(offsetof(WBP_TitleLocalWorldBackupSelect_C_Setup, CallFunc_GetTopFocusTarget_TargetWidget) == 0x000010, "Member 'WBP_TitleLocalWorldBackupSelect_C_Setup::CallFunc_GetTopFocusTarget_TargetWidget' has a wrong offset!");
-static_assert(offsetof(WBP_TitleLocalWorldBackupSelect_C_Setup, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'WBP_TitleLocalWorldBackupSelect_C_Setup::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function WBP_TitleLocalWorldBackupSelect.WBP_TitleLocalWorldBackupSelect_C.Get Focus Target Internal
 // 0x0018 (0x0018 - 0x0000)

@@ -36820,14 +36820,14 @@ static_assert(offsetof(UPalLocalWorldSaveGame, Version) == 0x000028, "Member 'UP
 static_assert(offsetof(UPalLocalWorldSaveGame, SaveData) == 0x000030, "Member 'UPalLocalWorldSaveGame::SaveData' has a wrong offset!");
 
 // Class Pal.PalWorldSaveGame
-// 0x04C0 (0x04E8 - 0x0028)
+// 0x04C8 (0x04F0 - 0x0028)
 class UPalWorldSaveGame final : public USaveGame
 {
 public:
 	int32                                         Version;                                           // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDateTime                              Timestamp;                                         // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPalWorldSaveData                      WorldSaveData;                                     // 0x0038(0x04B0)(NativeAccessSpecifierPublic)
+	struct FPalWorldSaveData                      WorldSaveData;                                     // 0x0038(0x04B8)(NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -36840,7 +36840,7 @@ public:
 	}
 };
 static_assert(alignof(UPalWorldSaveGame) == 0x000008, "Wrong alignment on UPalWorldSaveGame");
-static_assert(sizeof(UPalWorldSaveGame) == 0x0004E8, "Wrong size on UPalWorldSaveGame");
+static_assert(sizeof(UPalWorldSaveGame) == 0x0004F0, "Wrong size on UPalWorldSaveGame");
 static_assert(offsetof(UPalWorldSaveGame, Version) == 0x000028, "Member 'UPalWorldSaveGame::Version' has a wrong offset!");
 static_assert(offsetof(UPalWorldSaveGame, Timestamp) == 0x000030, "Member 'UPalWorldSaveGame::Timestamp' has a wrong offset!");
 static_assert(offsetof(UPalWorldSaveGame, WorldSaveData) == 0x000038, "Member 'UPalWorldSaveGame::WorldSaveData' has a wrong offset!");

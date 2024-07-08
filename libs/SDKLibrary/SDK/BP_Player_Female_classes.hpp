@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "BP_PlayerBase_classes.hpp"
 #include "PhysicsCore_structs.hpp"
+#include "BP_PlayerBase_classes.hpp"
 
 
 namespace SDK

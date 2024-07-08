@@ -17,46 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_GuildMemberMenuList.WBP_GuildMemberMenuList_C.BndEvt__WBP_GuildMemberMenuList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_GuildMemberMenuList_C::BndEvt__WBP_GuildMemberMenuList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GuildMemberMenuList_C", "BndEvt__WBP_GuildMemberMenuList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_GuildMemberMenuList_C_BndEvt__WBP_GuildMemberMenuList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_GuildMemberMenuList.WBP_GuildMemberMenuList_C.BndEvt__WBP_GuildMemberMenuList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_GuildMemberMenuList_C::BndEvt__WBP_GuildMemberMenuList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GuildMemberMenuList_C", "BndEvt__WBP_GuildMemberMenuList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_GuildMemberMenuList_C_BndEvt__WBP_GuildMemberMenuList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_GuildMemberMenuList.WBP_GuildMemberMenuList_C.SetText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -151,6 +111,46 @@ void UWBP_GuildMemberMenuList_C::BndEvt__WBP_GuildMemberMenuList_WBP_PalInvisibl
 		Func = Class->GetFunction("WBP_GuildMemberMenuList_C", "BndEvt__WBP_GuildMemberMenuList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
 
 	Params::WBP_GuildMemberMenuList_C_BndEvt__WBP_GuildMemberMenuList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_GuildMemberMenuList.WBP_GuildMemberMenuList_C.BndEvt__WBP_GuildMemberMenuList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_GuildMemberMenuList_C::BndEvt__WBP_GuildMemberMenuList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GuildMemberMenuList_C", "BndEvt__WBP_GuildMemberMenuList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_GuildMemberMenuList_C_BndEvt__WBP_GuildMemberMenuList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_GuildMemberMenuList.WBP_GuildMemberMenuList_C.BndEvt__WBP_GuildMemberMenuList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_GuildMemberMenuList_C::BndEvt__WBP_GuildMemberMenuList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GuildMemberMenuList_C", "BndEvt__WBP_GuildMemberMenuList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_GuildMemberMenuList_C_BndEvt__WBP_GuildMemberMenuList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 

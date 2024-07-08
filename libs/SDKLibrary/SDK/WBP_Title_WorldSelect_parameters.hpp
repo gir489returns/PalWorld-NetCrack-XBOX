@@ -19,6 +19,255 @@
 namespace SDK::Params
 {
 
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.Update Local World List Content
+// 0x0078 (0x0078 - 0x0000)
+struct WBP_Title_WorldSelect_C_Update_Local_World_List_Content final
+{
+public:
+	class FString                                 WorldPathName;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	struct FPalUILocalWorldDisplayData            DisplayData;                                       // 0x0010(0x0058)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class UWBP_Title_WorldSelect_ListContent_C*   CallFunc_Map_Find_Value;                           // 0x0068(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSelect_C_Update_Local_World_List_Content) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_Update_Local_World_List_Content");
+static_assert(sizeof(WBP_Title_WorldSelect_C_Update_Local_World_List_Content) == 0x000078, "Wrong size on WBP_Title_WorldSelect_C_Update_Local_World_List_Content");
+static_assert(offsetof(WBP_Title_WorldSelect_C_Update_Local_World_List_Content, WorldPathName) == 0x000000, "Member 'WBP_Title_WorldSelect_C_Update_Local_World_List_Content::WorldPathName' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_Update_Local_World_List_Content, DisplayData) == 0x000010, "Member 'WBP_Title_WorldSelect_C_Update_Local_World_List_Content::DisplayData' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_Update_Local_World_List_Content, CallFunc_Map_Find_Value) == 0x000068, "Member 'WBP_Title_WorldSelect_C_Update_Local_World_List_Content::CallFunc_Map_Find_Value' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_Update_Local_World_List_Content, CallFunc_Map_Find_ReturnValue) == 0x000070, "Member 'WBP_Title_WorldSelect_C_Update_Local_World_List_Content::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.SortTypeStringToSortType
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Title_WorldSelect_C_SortTypeStringToSortType final
+{
+public:
+	class FString                                 SortTypeString;                                    // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	EPalUIServerListSortType                      SortType;                                          // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalUIServerListSortType                      CallFunc_Map_Find_Value;                           // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSelect_C_SortTypeStringToSortType) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_SortTypeStringToSortType");
+static_assert(sizeof(WBP_Title_WorldSelect_C_SortTypeStringToSortType) == 0x000018, "Wrong size on WBP_Title_WorldSelect_C_SortTypeStringToSortType");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SortTypeStringToSortType, SortTypeString) == 0x000000, "Member 'WBP_Title_WorldSelect_C_SortTypeStringToSortType::SortTypeString' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SortTypeStringToSortType, SortType) == 0x000010, "Member 'WBP_Title_WorldSelect_C_SortTypeStringToSortType::SortType' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SortTypeStringToSortType, CallFunc_Map_Find_Value) == 0x000011, "Member 'WBP_Title_WorldSelect_C_SortTypeStringToSortType::CallFunc_Map_Find_Value' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SortTypeStringToSortType, CallFunc_Map_Find_ReturnValue) == 0x000012, "Member 'WBP_Title_WorldSelect_C_SortTypeStringToSortType::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.SetupComboboxStringData
+// 0x00B8 (0x00B8 - 0x0000)
+struct WBP_Title_WorldSelect_C_SetupComboboxStringData final
+{
+public:
+	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_Conv_IntToByte_ReturnValue_1;             // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetEnumeratorValueFromIndex_ReturnValue;  // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_17[0x1];                                       // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_2;                               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_3;                               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_Conv_IntToByte_ReturnValue_2;             // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue_1;              // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_Conv_IntToByte_ReturnValue_3;             // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x002E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetEnumeratorValueFromIndex_ReturnValue_1; // 0x002F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_MakeLiteralInt_ReturnValue_1;             // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    CallFunc_Map_Find_Value;                           // 0x0038(0x0010)(NoDestructor)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0050(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    CallFunc_Map_Find_Value_1;                         // 0x0078(0x0010)(NoDestructor)
+	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text_1;        // 0x0090(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x00A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSelect_C_SetupComboboxStringData) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_SetupComboboxStringData");
+static_assert(sizeof(WBP_Title_WorldSelect_C_SetupComboboxStringData) == 0x0000B8, "Wrong size on WBP_Title_WorldSelect_C_SetupComboboxStringData");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_MakeLiteralInt_ReturnValue) == 0x000000, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, Temp_int_Variable) == 0x000004, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, Temp_int_Variable_1) == 0x000008, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::Temp_int_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Conv_IntToByte_ReturnValue) == 0x00000C, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_GetValidValue_ReturnValue) == 0x000014, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Conv_IntToByte_ReturnValue_1) == 0x000015, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Conv_IntToByte_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_GetEnumeratorValueFromIndex_ReturnValue) == 0x000016, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_GetEnumeratorValueFromIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000018, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, Temp_int_Variable_2) == 0x00001C, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::Temp_int_Variable_2' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, Temp_int_Variable_3) == 0x000020, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::Temp_int_Variable_3' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Conv_IntToByte_ReturnValue_2) == 0x000024, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Conv_IntToByte_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Add_IntInt_ReturnValue_1) == 0x000028, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_GetValidValue_ReturnValue_1) == 0x00002C, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_GetValidValue_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Conv_IntToByte_ReturnValue_3) == 0x00002D, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Conv_IntToByte_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Less_IntInt_ReturnValue) == 0x00002E, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_GetEnumeratorValueFromIndex_ReturnValue_1) == 0x00002F, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_GetEnumeratorValueFromIndex_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000030, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_MakeLiteralInt_ReturnValue_1) == 0x000034, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_MakeLiteralInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Map_Find_Value) == 0x000038, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Map_Find_Value' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Map_Find_ReturnValue) == 0x000048, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Less_IntInt_ReturnValue_1) == 0x000049, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_GetLocalizedTextFromHandle_Text) == 0x000050, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_GetLocalizedTextFromHandle_Text' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Conv_TextToString_ReturnValue) == 0x000068, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Map_Find_Value_1) == 0x000078, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Map_Find_Value_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Map_Find_ReturnValue_1) == 0x000088, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_GetLocalizedTextFromHandle_Text_1) == 0x000090, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_GetLocalizedTextFromHandle_Text_1' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Conv_TextToString_ReturnValue_1) == 0x0000A8, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.SetRegions
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Title_WorldSelect_C_SetRegions final
+{
+public:
+	TArray<class FString>                         Regions;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+static_assert(alignof(WBP_Title_WorldSelect_C_SetRegions) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_SetRegions");
+static_assert(sizeof(WBP_Title_WorldSelect_C_SetRegions) == 0x000010, "Wrong size on WBP_Title_WorldSelect_C_SetRegions");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SetRegions, Regions) == 0x000000, "Member 'WBP_Title_WorldSelect_C_SetRegions::Regions' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.SearchCommit
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Title_WorldSelect_C_SearchCommit final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+static_assert(alignof(WBP_Title_WorldSelect_C_SearchCommit) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_SearchCommit");
+static_assert(sizeof(WBP_Title_WorldSelect_C_SearchCommit) == 0x000018, "Wrong size on WBP_Title_WorldSelect_C_SearchCommit");
+static_assert(offsetof(WBP_Title_WorldSelect_C_SearchCommit, Text) == 0x000000, "Member 'WBP_Title_WorldSelect_C_SearchCommit::Text' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OpenLocalWorldMenu
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Title_WorldSelect_C_OpenLocalWorldMenu final
+{
+public:
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSelect_C_OpenLocalWorldMenu) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_OpenLocalWorldMenu");
+static_assert(sizeof(WBP_Title_WorldSelect_C_OpenLocalWorldMenu) == 0x000008, "Wrong size on WBP_Title_WorldSelect_C_OpenLocalWorldMenu");
+static_assert(offsetof(WBP_Title_WorldSelect_C_OpenLocalWorldMenu, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_Title_WorldSelect_C_OpenLocalWorldMenu::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnSelectedServerSortType__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Title_WorldSelect_C_OnSelectedServerSortType__DelegateSignature final
+{
+public:
+	EPalUIServerListSortType                      SortType;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSelect_C_OnSelectedServerSortType__DelegateSignature) == 0x000001, "Wrong alignment on WBP_Title_WorldSelect_C_OnSelectedServerSortType__DelegateSignature");
+static_assert(sizeof(WBP_Title_WorldSelect_C_OnSelectedServerSortType__DelegateSignature) == 0x000001, "Wrong size on WBP_Title_WorldSelect_C_OnSelectedServerSortType__DelegateSignature");
+static_assert(offsetof(WBP_Title_WorldSelect_C_OnSelectedServerSortType__DelegateSignature, SortType) == 0x000000, "Member 'WBP_Title_WorldSelect_C_OnSelectedServerSortType__DelegateSignature::SortType' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedWorldButton_Internal
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Title_WorldSelect_C_OnClickedWorldButton_Internal final
+{
+public:
+	class UWBP_Title_WorldSelect_ListContent_C*   Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSelect_C_OnClickedWorldButton_Internal) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_OnClickedWorldButton_Internal");
+static_assert(sizeof(WBP_Title_WorldSelect_C_OnClickedWorldButton_Internal) == 0x000010, "Wrong size on WBP_Title_WorldSelect_C_OnClickedWorldButton_Internal");
+static_assert(offsetof(WBP_Title_WorldSelect_C_OnClickedWorldButton_Internal, Widget) == 0x000000, "Member 'WBP_Title_WorldSelect_C_OnClickedWorldButton_Internal::Widget' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_C_OnClickedWorldButton_Internal, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'WBP_Title_WorldSelect_C_OnClickedWorldButton_Internal::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedWorldButton__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Title_WorldSelect_C_OnClickedWorldButton__DelegateSignature final
+{
+public:
+	class UWBP_Title_WorldSelect_ListContent_C*   ButtonWidget;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSelect_C_OnClickedWorldButton__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_OnClickedWorldButton__DelegateSignature");
+static_assert(sizeof(WBP_Title_WorldSelect_C_OnClickedWorldButton__DelegateSignature) == 0x000008, "Wrong size on WBP_Title_WorldSelect_C_OnClickedWorldButton__DelegateSignature");
+static_assert(offsetof(WBP_Title_WorldSelect_C_OnClickedWorldButton__DelegateSignature, ButtonWidget) == 0x000000, "Member 'WBP_Title_WorldSelect_C_OnClickedWorldButton__DelegateSignature::ButtonWidget' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedServerSearchButton__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Title_WorldSelect_C_OnClickedServerSearchButton__DelegateSignature final
+{
+public:
+	class FString                                 SearchWord;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSelect_C_OnClickedServerSearchButton__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_OnClickedServerSearchButton__DelegateSignature");
+static_assert(sizeof(WBP_Title_WorldSelect_C_OnClickedServerSearchButton__DelegateSignature) == 0x000010, "Wrong size on WBP_Title_WorldSelect_C_OnClickedServerSearchButton__DelegateSignature");
+static_assert(offsetof(WBP_Title_WorldSelect_C_OnClickedServerSearchButton__DelegateSignature, SearchWord) == 0x000000, "Member 'WBP_Title_WorldSelect_C_OnClickedServerSearchButton__DelegateSignature::SearchWord' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedServerButton_Internal
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Title_WorldSelect_C_OnClickedServerButton_Internal final
+{
+public:
+	class UWBP_Title_WorldSelect_ListContent_C*   Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSelect_C_OnClickedServerButton_Internal) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_OnClickedServerButton_Internal");
+static_assert(sizeof(WBP_Title_WorldSelect_C_OnClickedServerButton_Internal) == 0x000008, "Wrong size on WBP_Title_WorldSelect_C_OnClickedServerButton_Internal");
+static_assert(offsetof(WBP_Title_WorldSelect_C_OnClickedServerButton_Internal, Widget) == 0x000000, "Member 'WBP_Title_WorldSelect_C_OnClickedServerButton_Internal::Widget' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedServerButton__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Title_WorldSelect_C_OnClickedServerButton__DelegateSignature final
+{
+public:
+	class UWBP_Title_WorldSelect_ListContent_C*   Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSelect_C_OnClickedServerButton__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_OnClickedServerButton__DelegateSignature");
+static_assert(sizeof(WBP_Title_WorldSelect_C_OnClickedServerButton__DelegateSignature) == 0x000008, "Wrong size on WBP_Title_WorldSelect_C_OnClickedServerButton__DelegateSignature");
+static_assert(offsetof(WBP_Title_WorldSelect_C_OnClickedServerButton__DelegateSignature, Widget) == 0x000000, "Member 'WBP_Title_WorldSelect_C_OnClickedServerButton__DelegateSignature::Widget' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedSelectBackupButton__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Title_WorldSelect_C_OnClickedSelectBackupButton__DelegateSignature final
+{
+public:
+	class UWBP_Title_WorldSelect_ListContent_C*   SelectedWorldButton;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSelect_C_OnClickedSelectBackupButton__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_OnClickedSelectBackupButton__DelegateSignature");
+static_assert(sizeof(WBP_Title_WorldSelect_C_OnClickedSelectBackupButton__DelegateSignature) == 0x000008, "Wrong size on WBP_Title_WorldSelect_C_OnClickedSelectBackupButton__DelegateSignature");
+static_assert(offsetof(WBP_Title_WorldSelect_C_OnClickedSelectBackupButton__DelegateSignature, SelectedWorldButton) == 0x000000, "Member 'WBP_Title_WorldSelect_C_OnClickedSelectBackupButton__DelegateSignature::SelectedWorldButton' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedOpenDirectoryButton__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Title_WorldSelect_C_OnClickedOpenDirectoryButton__DelegateSignature final
+{
+public:
+	class UWBP_Title_WorldSelect_ListContent_C*   SelectedWorldButton;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSelect_C_OnClickedOpenDirectoryButton__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_OnClickedOpenDirectoryButton__DelegateSignature");
+static_assert(sizeof(WBP_Title_WorldSelect_C_OnClickedOpenDirectoryButton__DelegateSignature) == 0x000008, "Wrong size on WBP_Title_WorldSelect_C_OnClickedOpenDirectoryButton__DelegateSignature");
+static_assert(offsetof(WBP_Title_WorldSelect_C_OnClickedOpenDirectoryButton__DelegateSignature, SelectedWorldButton) == 0x000000, "Member 'WBP_Title_WorldSelect_C_OnClickedOpenDirectoryButton__DelegateSignature::SelectedWorldButton' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedNewWorldButton_Internal
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Title_WorldSelect_C_OnClickedNewWorldButton_Internal final
+{
+public:
+	class UWBP_Title_WorldSelect_CreateWorld_ListContent_C* Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSelect_C_OnClickedNewWorldButton_Internal) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_OnClickedNewWorldButton_Internal");
+static_assert(sizeof(WBP_Title_WorldSelect_C_OnClickedNewWorldButton_Internal) == 0x000008, "Wrong size on WBP_Title_WorldSelect_C_OnClickedNewWorldButton_Internal");
+static_assert(offsetof(WBP_Title_WorldSelect_C_OnClickedNewWorldButton_Internal, Widget) == 0x000000, "Member 'WBP_Title_WorldSelect_C_OnClickedNewWorldButton_Internal::Widget' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedNewWorldButton__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Title_WorldSelect_C_OnClickedNewWorldButton__DelegateSignature final
+{
+public:
+	class UWBP_Title_WorldSelect_CreateWorld_ListContent_C* ButtonWidget;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSelect_C_OnClickedNewWorldButton__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_OnClickedNewWorldButton__DelegateSignature");
+static_assert(sizeof(WBP_Title_WorldSelect_C_OnClickedNewWorldButton__DelegateSignature) == 0x000008, "Wrong size on WBP_Title_WorldSelect_C_OnClickedNewWorldButton__DelegateSignature");
+static_assert(offsetof(WBP_Title_WorldSelect_C_OnClickedNewWorldButton__DelegateSignature, ButtonWidget) == 0x000000, "Member 'WBP_Title_WorldSelect_C_OnClickedNewWorldButton__DelegateSignature::ButtonWidget' has a wrong offset!");
+
 // Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClicked_JoinByIPButton__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_Title_WorldSelect_C_OnClicked_JoinByIPButton__DelegateSignature final
@@ -525,255 +774,6 @@ static_assert(offsetof(WBP_Title_WorldSelect_C_AddLocalWorldDisplayData, CallFun
 static_assert(offsetof(WBP_Title_WorldSelect_C_AddLocalWorldDisplayData, CallFunc_AddChild_ReturnValue_1) == 0x000100, "Member 'WBP_Title_WorldSelect_C_AddLocalWorldDisplayData::CallFunc_AddChild_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(WBP_Title_WorldSelect_C_AddLocalWorldDisplayData, K2Node_DynamicCast_AsScroll_Box_Slot) == 0x000108, "Member 'WBP_Title_WorldSelect_C_AddLocalWorldDisplayData::K2Node_DynamicCast_AsScroll_Box_Slot' has a wrong offset!");
 static_assert(offsetof(WBP_Title_WorldSelect_C_AddLocalWorldDisplayData, K2Node_DynamicCast_bSuccess) == 0x000110, "Member 'WBP_Title_WorldSelect_C_AddLocalWorldDisplayData::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.Update Local World List Content
-// 0x0078 (0x0078 - 0x0000)
-struct WBP_Title_WorldSelect_C_Update_Local_World_List_Content final
-{
-public:
-	class FString                                 WorldPathName;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	struct FPalUILocalWorldDisplayData            DisplayData;                                       // 0x0010(0x0058)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class UWBP_Title_WorldSelect_ListContent_C*   CallFunc_Map_Find_Value;                           // 0x0068(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSelect_C_Update_Local_World_List_Content) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_Update_Local_World_List_Content");
-static_assert(sizeof(WBP_Title_WorldSelect_C_Update_Local_World_List_Content) == 0x000078, "Wrong size on WBP_Title_WorldSelect_C_Update_Local_World_List_Content");
-static_assert(offsetof(WBP_Title_WorldSelect_C_Update_Local_World_List_Content, WorldPathName) == 0x000000, "Member 'WBP_Title_WorldSelect_C_Update_Local_World_List_Content::WorldPathName' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_Update_Local_World_List_Content, DisplayData) == 0x000010, "Member 'WBP_Title_WorldSelect_C_Update_Local_World_List_Content::DisplayData' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_Update_Local_World_List_Content, CallFunc_Map_Find_Value) == 0x000068, "Member 'WBP_Title_WorldSelect_C_Update_Local_World_List_Content::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_Update_Local_World_List_Content, CallFunc_Map_Find_ReturnValue) == 0x000070, "Member 'WBP_Title_WorldSelect_C_Update_Local_World_List_Content::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.SortTypeStringToSortType
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Title_WorldSelect_C_SortTypeStringToSortType final
-{
-public:
-	class FString                                 SortTypeString;                                    // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	EPalUIServerListSortType                      SortType;                                          // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalUIServerListSortType                      CallFunc_Map_Find_Value;                           // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSelect_C_SortTypeStringToSortType) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_SortTypeStringToSortType");
-static_assert(sizeof(WBP_Title_WorldSelect_C_SortTypeStringToSortType) == 0x000018, "Wrong size on WBP_Title_WorldSelect_C_SortTypeStringToSortType");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SortTypeStringToSortType, SortTypeString) == 0x000000, "Member 'WBP_Title_WorldSelect_C_SortTypeStringToSortType::SortTypeString' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SortTypeStringToSortType, SortType) == 0x000010, "Member 'WBP_Title_WorldSelect_C_SortTypeStringToSortType::SortType' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SortTypeStringToSortType, CallFunc_Map_Find_Value) == 0x000011, "Member 'WBP_Title_WorldSelect_C_SortTypeStringToSortType::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SortTypeStringToSortType, CallFunc_Map_Find_ReturnValue) == 0x000012, "Member 'WBP_Title_WorldSelect_C_SortTypeStringToSortType::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.SetupComboboxStringData
-// 0x00B8 (0x00B8 - 0x0000)
-struct WBP_Title_WorldSelect_C_SetupComboboxStringData final
-{
-public:
-	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_1;                               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_Conv_IntToByte_ReturnValue_1;             // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_GetEnumeratorValueFromIndex_ReturnValue;  // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17[0x1];                                       // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_2;                               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_3;                               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_Conv_IntToByte_ReturnValue_2;             // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_GetValidValue_ReturnValue_1;              // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_Conv_IntToByte_ReturnValue_3;             // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x002E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_GetEnumeratorValueFromIndex_ReturnValue_1; // 0x002F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_MakeLiteralInt_ReturnValue_1;             // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    CallFunc_Map_Find_Value;                           // 0x0038(0x0010)(NoDestructor)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0050(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    CallFunc_Map_Find_Value_1;                         // 0x0078(0x0010)(NoDestructor)
-	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text_1;        // 0x0090(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x00A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSelect_C_SetupComboboxStringData) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_SetupComboboxStringData");
-static_assert(sizeof(WBP_Title_WorldSelect_C_SetupComboboxStringData) == 0x0000B8, "Wrong size on WBP_Title_WorldSelect_C_SetupComboboxStringData");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_MakeLiteralInt_ReturnValue) == 0x000000, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, Temp_int_Variable) == 0x000004, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, Temp_int_Variable_1) == 0x000008, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Conv_IntToByte_ReturnValue) == 0x00000C, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_GetValidValue_ReturnValue) == 0x000014, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Conv_IntToByte_ReturnValue_1) == 0x000015, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Conv_IntToByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_GetEnumeratorValueFromIndex_ReturnValue) == 0x000016, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_GetEnumeratorValueFromIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000018, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, Temp_int_Variable_2) == 0x00001C, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, Temp_int_Variable_3) == 0x000020, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Conv_IntToByte_ReturnValue_2) == 0x000024, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Conv_IntToByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Add_IntInt_ReturnValue_1) == 0x000028, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_GetValidValue_ReturnValue_1) == 0x00002C, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_GetValidValue_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Conv_IntToByte_ReturnValue_3) == 0x00002D, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Conv_IntToByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Less_IntInt_ReturnValue) == 0x00002E, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_GetEnumeratorValueFromIndex_ReturnValue_1) == 0x00002F, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_GetEnumeratorValueFromIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000030, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_MakeLiteralInt_ReturnValue_1) == 0x000034, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_MakeLiteralInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Map_Find_Value) == 0x000038, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Map_Find_ReturnValue) == 0x000048, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Less_IntInt_ReturnValue_1) == 0x000049, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_GetLocalizedTextFromHandle_Text) == 0x000050, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_GetLocalizedTextFromHandle_Text' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Conv_TextToString_ReturnValue) == 0x000068, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Map_Find_Value_1) == 0x000078, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Map_Find_Value_1' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Map_Find_ReturnValue_1) == 0x000088, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_GetLocalizedTextFromHandle_Text_1) == 0x000090, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_GetLocalizedTextFromHandle_Text_1' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetupComboboxStringData, CallFunc_Conv_TextToString_ReturnValue_1) == 0x0000A8, "Member 'WBP_Title_WorldSelect_C_SetupComboboxStringData::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.SetRegions
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Title_WorldSelect_C_SetRegions final
-{
-public:
-	TArray<class FString>                         Regions;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-static_assert(alignof(WBP_Title_WorldSelect_C_SetRegions) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_SetRegions");
-static_assert(sizeof(WBP_Title_WorldSelect_C_SetRegions) == 0x000010, "Wrong size on WBP_Title_WorldSelect_C_SetRegions");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SetRegions, Regions) == 0x000000, "Member 'WBP_Title_WorldSelect_C_SetRegions::Regions' has a wrong offset!");
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.SearchCommit
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Title_WorldSelect_C_SearchCommit final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-static_assert(alignof(WBP_Title_WorldSelect_C_SearchCommit) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_SearchCommit");
-static_assert(sizeof(WBP_Title_WorldSelect_C_SearchCommit) == 0x000018, "Wrong size on WBP_Title_WorldSelect_C_SearchCommit");
-static_assert(offsetof(WBP_Title_WorldSelect_C_SearchCommit, Text) == 0x000000, "Member 'WBP_Title_WorldSelect_C_SearchCommit::Text' has a wrong offset!");
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OpenLocalWorldMenu
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Title_WorldSelect_C_OpenLocalWorldMenu final
-{
-public:
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSelect_C_OpenLocalWorldMenu) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_OpenLocalWorldMenu");
-static_assert(sizeof(WBP_Title_WorldSelect_C_OpenLocalWorldMenu) == 0x000008, "Wrong size on WBP_Title_WorldSelect_C_OpenLocalWorldMenu");
-static_assert(offsetof(WBP_Title_WorldSelect_C_OpenLocalWorldMenu, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WBP_Title_WorldSelect_C_OpenLocalWorldMenu::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnSelectedServerSortType__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Title_WorldSelect_C_OnSelectedServerSortType__DelegateSignature final
-{
-public:
-	EPalUIServerListSortType                      SortType;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSelect_C_OnSelectedServerSortType__DelegateSignature) == 0x000001, "Wrong alignment on WBP_Title_WorldSelect_C_OnSelectedServerSortType__DelegateSignature");
-static_assert(sizeof(WBP_Title_WorldSelect_C_OnSelectedServerSortType__DelegateSignature) == 0x000001, "Wrong size on WBP_Title_WorldSelect_C_OnSelectedServerSortType__DelegateSignature");
-static_assert(offsetof(WBP_Title_WorldSelect_C_OnSelectedServerSortType__DelegateSignature, SortType) == 0x000000, "Member 'WBP_Title_WorldSelect_C_OnSelectedServerSortType__DelegateSignature::SortType' has a wrong offset!");
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedWorldButton_Internal
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Title_WorldSelect_C_OnClickedWorldButton_Internal final
-{
-public:
-	class UWBP_Title_WorldSelect_ListContent_C*   Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSelect_C_OnClickedWorldButton_Internal) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_OnClickedWorldButton_Internal");
-static_assert(sizeof(WBP_Title_WorldSelect_C_OnClickedWorldButton_Internal) == 0x000010, "Wrong size on WBP_Title_WorldSelect_C_OnClickedWorldButton_Internal");
-static_assert(offsetof(WBP_Title_WorldSelect_C_OnClickedWorldButton_Internal, Widget) == 0x000000, "Member 'WBP_Title_WorldSelect_C_OnClickedWorldButton_Internal::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_C_OnClickedWorldButton_Internal, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'WBP_Title_WorldSelect_C_OnClickedWorldButton_Internal::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedWorldButton__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Title_WorldSelect_C_OnClickedWorldButton__DelegateSignature final
-{
-public:
-	class UWBP_Title_WorldSelect_ListContent_C*   ButtonWidget;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSelect_C_OnClickedWorldButton__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_OnClickedWorldButton__DelegateSignature");
-static_assert(sizeof(WBP_Title_WorldSelect_C_OnClickedWorldButton__DelegateSignature) == 0x000008, "Wrong size on WBP_Title_WorldSelect_C_OnClickedWorldButton__DelegateSignature");
-static_assert(offsetof(WBP_Title_WorldSelect_C_OnClickedWorldButton__DelegateSignature, ButtonWidget) == 0x000000, "Member 'WBP_Title_WorldSelect_C_OnClickedWorldButton__DelegateSignature::ButtonWidget' has a wrong offset!");
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedServerSearchButton__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Title_WorldSelect_C_OnClickedServerSearchButton__DelegateSignature final
-{
-public:
-	class FString                                 SearchWord;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSelect_C_OnClickedServerSearchButton__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_OnClickedServerSearchButton__DelegateSignature");
-static_assert(sizeof(WBP_Title_WorldSelect_C_OnClickedServerSearchButton__DelegateSignature) == 0x000010, "Wrong size on WBP_Title_WorldSelect_C_OnClickedServerSearchButton__DelegateSignature");
-static_assert(offsetof(WBP_Title_WorldSelect_C_OnClickedServerSearchButton__DelegateSignature, SearchWord) == 0x000000, "Member 'WBP_Title_WorldSelect_C_OnClickedServerSearchButton__DelegateSignature::SearchWord' has a wrong offset!");
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedServerButton_Internal
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Title_WorldSelect_C_OnClickedServerButton_Internal final
-{
-public:
-	class UWBP_Title_WorldSelect_ListContent_C*   Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSelect_C_OnClickedServerButton_Internal) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_OnClickedServerButton_Internal");
-static_assert(sizeof(WBP_Title_WorldSelect_C_OnClickedServerButton_Internal) == 0x000008, "Wrong size on WBP_Title_WorldSelect_C_OnClickedServerButton_Internal");
-static_assert(offsetof(WBP_Title_WorldSelect_C_OnClickedServerButton_Internal, Widget) == 0x000000, "Member 'WBP_Title_WorldSelect_C_OnClickedServerButton_Internal::Widget' has a wrong offset!");
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedServerButton__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Title_WorldSelect_C_OnClickedServerButton__DelegateSignature final
-{
-public:
-	class UWBP_Title_WorldSelect_ListContent_C*   Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSelect_C_OnClickedServerButton__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_OnClickedServerButton__DelegateSignature");
-static_assert(sizeof(WBP_Title_WorldSelect_C_OnClickedServerButton__DelegateSignature) == 0x000008, "Wrong size on WBP_Title_WorldSelect_C_OnClickedServerButton__DelegateSignature");
-static_assert(offsetof(WBP_Title_WorldSelect_C_OnClickedServerButton__DelegateSignature, Widget) == 0x000000, "Member 'WBP_Title_WorldSelect_C_OnClickedServerButton__DelegateSignature::Widget' has a wrong offset!");
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedSelectBackupButton__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Title_WorldSelect_C_OnClickedSelectBackupButton__DelegateSignature final
-{
-public:
-	class UWBP_Title_WorldSelect_ListContent_C*   SelectedWorldButton;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSelect_C_OnClickedSelectBackupButton__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_OnClickedSelectBackupButton__DelegateSignature");
-static_assert(sizeof(WBP_Title_WorldSelect_C_OnClickedSelectBackupButton__DelegateSignature) == 0x000008, "Wrong size on WBP_Title_WorldSelect_C_OnClickedSelectBackupButton__DelegateSignature");
-static_assert(offsetof(WBP_Title_WorldSelect_C_OnClickedSelectBackupButton__DelegateSignature, SelectedWorldButton) == 0x000000, "Member 'WBP_Title_WorldSelect_C_OnClickedSelectBackupButton__DelegateSignature::SelectedWorldButton' has a wrong offset!");
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedOpenDirectoryButton__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Title_WorldSelect_C_OnClickedOpenDirectoryButton__DelegateSignature final
-{
-public:
-	class UWBP_Title_WorldSelect_ListContent_C*   SelectedWorldButton;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSelect_C_OnClickedOpenDirectoryButton__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_OnClickedOpenDirectoryButton__DelegateSignature");
-static_assert(sizeof(WBP_Title_WorldSelect_C_OnClickedOpenDirectoryButton__DelegateSignature) == 0x000008, "Wrong size on WBP_Title_WorldSelect_C_OnClickedOpenDirectoryButton__DelegateSignature");
-static_assert(offsetof(WBP_Title_WorldSelect_C_OnClickedOpenDirectoryButton__DelegateSignature, SelectedWorldButton) == 0x000000, "Member 'WBP_Title_WorldSelect_C_OnClickedOpenDirectoryButton__DelegateSignature::SelectedWorldButton' has a wrong offset!");
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedNewWorldButton_Internal
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Title_WorldSelect_C_OnClickedNewWorldButton_Internal final
-{
-public:
-	class UWBP_Title_WorldSelect_CreateWorld_ListContent_C* Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSelect_C_OnClickedNewWorldButton_Internal) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_OnClickedNewWorldButton_Internal");
-static_assert(sizeof(WBP_Title_WorldSelect_C_OnClickedNewWorldButton_Internal) == 0x000008, "Wrong size on WBP_Title_WorldSelect_C_OnClickedNewWorldButton_Internal");
-static_assert(offsetof(WBP_Title_WorldSelect_C_OnClickedNewWorldButton_Internal, Widget) == 0x000000, "Member 'WBP_Title_WorldSelect_C_OnClickedNewWorldButton_Internal::Widget' has a wrong offset!");
-
-// Function WBP_Title_WorldSelect.WBP_Title_WorldSelect_C.OnClickedNewWorldButton__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Title_WorldSelect_C_OnClickedNewWorldButton__DelegateSignature final
-{
-public:
-	class UWBP_Title_WorldSelect_CreateWorld_ListContent_C* ButtonWidget;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSelect_C_OnClickedNewWorldButton__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_C_OnClickedNewWorldButton__DelegateSignature");
-static_assert(sizeof(WBP_Title_WorldSelect_C_OnClickedNewWorldButton__DelegateSignature) == 0x000008, "Wrong size on WBP_Title_WorldSelect_C_OnClickedNewWorldButton__DelegateSignature");
-static_assert(offsetof(WBP_Title_WorldSelect_C_OnClickedNewWorldButton__DelegateSignature, ButtonWidget) == 0x000000, "Member 'WBP_Title_WorldSelect_C_OnClickedNewWorldButton__DelegateSignature::ButtonWidget' has a wrong offset!");
 
 }
 

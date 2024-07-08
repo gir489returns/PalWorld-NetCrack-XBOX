@@ -17,28 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_Option_NoteContent.WBP_Option_NoteContent_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// struct FGeometry                        MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Option_NoteContent_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_NoteContent_C", "Tick");
-
-	Params::WBP_Option_NoteContent_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_Option_NoteContent.WBP_Option_NoteContent_C.SetNoteContent
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -96,6 +74,28 @@ void UWBP_Option_NoteContent_C::ChangeOffset(double NewOffset)
 	Params::WBP_Option_NoteContent_C_ChangeOffset Parms{};
 
 	Parms.NewOffset = NewOffset;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Option_NoteContent.WBP_Option_NoteContent_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// struct FGeometry                        MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Option_NoteContent_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_NoteContent_C", "Tick");
+
+	Params::WBP_Option_NoteContent_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

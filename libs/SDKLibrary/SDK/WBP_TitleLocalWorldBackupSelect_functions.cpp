@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function WBP_TitleLocalWorldBackupSelect.WBP_TitleLocalWorldBackupSelect_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_TitleLocalWorldBackupSelect_C::Setup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_TitleLocalWorldBackupSelect_C", "Setup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_TitleLocalWorldBackupSelect.WBP_TitleLocalWorldBackupSelect_C.OpenSuccessDialog
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -196,20 +210,6 @@ void UWBP_TitleLocalWorldBackupSelect_C::BndEvt__WBP_TitleLocalWorldBackupSelect
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_TitleLocalWorldBackupSelect_C", "BndEvt__WBP_TitleLocalWorldBackupSelect_WBP_Title_BackupSelect_K2Node_ComponentBoundEvent_0_OnClickedCloseButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_TitleLocalWorldBackupSelect.WBP_TitleLocalWorldBackupSelect_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_TitleLocalWorldBackupSelect_C::Setup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TitleLocalWorldBackupSelect_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
