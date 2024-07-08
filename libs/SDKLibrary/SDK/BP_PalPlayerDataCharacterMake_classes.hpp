@@ -32,7 +32,7 @@ public:
 	void GetPresetMakeInfo(class UObject* WorldContextObject, const class FName& PresetName, struct FPalPlayerDataCharacterMakeInfo* OutMakeInfo);
 	void RecalcHSV(const struct FLinearColor& BaseHSV, const struct FLinearColor& ShiftRGB, double SVLimit, struct FLinearColor* OutHSV);
 	void RecalcRGB(const struct FLinearColor& InHSV, const struct FLinearColor& ShiftRGB, double SVLimit, struct FLinearColor* OutRGB);
-	void RGBToHSV(const struct FLinearColor& InRGB, struct FLinearColor* OutHSV);
+	void RGBtoHSV(const struct FLinearColor& InRGB, struct FLinearColor* OutHSV);
 
 	class FName GetRandomBodyMeshName() const;
 	class FName GetRandomHairMeshName() const;

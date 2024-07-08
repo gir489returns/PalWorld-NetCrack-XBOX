@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "EPalSphereCaptureFailedReason_structs.hpp"
 #include "Pal_structs.hpp"
 #include "E_PalCaptureSphereBouncedReason_structs.hpp"
+#include "EPalSphereCaptureFailedReason_structs.hpp"
 
 
 namespace SDK::Params

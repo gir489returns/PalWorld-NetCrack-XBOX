@@ -13,8 +13,8 @@
 #include "Engine_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "EWarningPalAIMoveType_structs.hpp"
 #include "BP_AIAction_CanCombatBase_classes.hpp"
+#include "EWarningPalAIMoveType_structs.hpp"
 
 
 namespace SDK

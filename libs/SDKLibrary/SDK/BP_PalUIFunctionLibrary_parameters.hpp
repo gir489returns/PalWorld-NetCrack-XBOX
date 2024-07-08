@@ -13,8 +13,8 @@
 #include "Pal_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FPalTechnologyIconData_structs.hpp"
-#include "FPalPartnerSkillIconData_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "FPalPartnerSkillIconData_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 

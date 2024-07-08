@@ -64,8 +64,6 @@ public:
 	TMap<int32, EUDLSSMode>                       DLSSMap;                                           // 0x04F0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void SetDefault();
-	void OnWindowChanged(int32 Selection);
 	void OnVSyncChanged(bool IsOn);
 	void OnViewDisChanged(int32 Selection);
 	void OnTextureChanged(int32 Selection);
@@ -89,6 +87,8 @@ public:
 	void ExecuteUbergraph_WBP_Graphic_Settings(int32 EntryPoint);
 	void Construct();
 	void ApplySettings();
+	void SetDefault();
+	void OnWindowChanged(int32 Selection);
 
 public:
 	static class UClass* StaticClass()

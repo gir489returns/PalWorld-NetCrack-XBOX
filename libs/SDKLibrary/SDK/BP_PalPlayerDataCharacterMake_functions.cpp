@@ -297,20 +297,20 @@ void UBP_PalPlayerDataCharacterMake_C::RecalcRGB(const struct FLinearColor& InHS
 }
 
 
-// Function BP_PalPlayerDataCharacterMake.BP_PalPlayerDataCharacterMake_C.RGBToHSV
+// Function BP_PalPlayerDataCharacterMake.BP_PalPlayerDataCharacterMake_C.RGBtoHSV
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // struct FLinearColor                     InRGB                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                     OutHSV                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_PalPlayerDataCharacterMake_C::RGBToHSV(const struct FLinearColor& InRGB, struct FLinearColor* OutHSV)
+void UBP_PalPlayerDataCharacterMake_C::RGBtoHSV(const struct FLinearColor& InRGB, struct FLinearColor* OutHSV)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalPlayerDataCharacterMake_C", "RGBToHSV");
+		Func = Class->GetFunction("BP_PalPlayerDataCharacterMake_C", "RGBtoHSV");
 
-	Params::BP_PalPlayerDataCharacterMake_C_RGBToHSV Parms{};
+	Params::BP_PalPlayerDataCharacterMake_C_RGBtoHSV Parms{};
 
 	Parms.InRGB = std::move(InRGB);
 

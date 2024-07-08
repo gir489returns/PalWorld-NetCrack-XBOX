@@ -17,40 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.SetDefault
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Graphic_Settings_C::SetDefault()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Graphic_Settings_C", "SetDefault");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnWindowChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Graphic_Settings_C::OnWindowChanged(int32 Selection)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnWindowChanged");
-
-	Params::WBP_Graphic_Settings_C_OnWindowChanged Parms{};
-
-	Parms.Selection = Selection;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnVSyncChanged
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -500,6 +466,40 @@ void UWBP_Graphic_Settings_C::ApplySettings()
 		Func = Class->GetFunction("WBP_Graphic_Settings_C", "ApplySettings");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.SetDefault
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Graphic_Settings_C::SetDefault()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Graphic_Settings_C", "SetDefault");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnWindowChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Graphic_Settings_C::OnWindowChanged(int32 Selection)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnWindowChanged");
+
+	Params::WBP_Graphic_Settings_C_OnWindowChanged Parms{};
+
+	Parms.Selection = Selection;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

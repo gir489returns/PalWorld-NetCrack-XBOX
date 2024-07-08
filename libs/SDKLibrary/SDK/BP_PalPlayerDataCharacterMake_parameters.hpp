@@ -443,9 +443,9 @@ static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RecalcRGB, CallFunc_Divid
 static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RecalcRGB, K2Node_MakeStruct_G_ImplicitCast) == 0x0000E8, "Member 'BP_PalPlayerDataCharacterMake_C_RecalcRGB::K2Node_MakeStruct_G_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RecalcRGB, K2Node_MakeStruct_R_ImplicitCast) == 0x0000EC, "Member 'BP_PalPlayerDataCharacterMake_C_RecalcRGB::K2Node_MakeStruct_R_ImplicitCast' has a wrong offset!");
 
-// Function BP_PalPlayerDataCharacterMake.BP_PalPlayerDataCharacterMake_C.RGBToHSV
+// Function BP_PalPlayerDataCharacterMake.BP_PalPlayerDataCharacterMake_C.RGBtoHSV
 // 0x0058 (0x0058 - 0x0000)
-struct BP_PalPlayerDataCharacterMake_C_RGBToHSV final
+struct BP_PalPlayerDataCharacterMake_C_RGBtoHSV final
 {
 public:
 	struct FLinearColor                           InRGB;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -456,15 +456,15 @@ public:
 	double                                        CallFunc_Divide_DoubleDouble_A_ImplicitCast;       // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_MakeStruct_R_ImplicitCast;                  // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_PalPlayerDataCharacterMake_C_RGBToHSV) == 0x000008, "Wrong alignment on BP_PalPlayerDataCharacterMake_C_RGBToHSV");
-static_assert(sizeof(BP_PalPlayerDataCharacterMake_C_RGBToHSV) == 0x000058, "Wrong size on BP_PalPlayerDataCharacterMake_C_RGBToHSV");
-static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBToHSV, InRGB) == 0x000000, "Member 'BP_PalPlayerDataCharacterMake_C_RGBToHSV::InRGB' has a wrong offset!");
-static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBToHSV, OutHSV) == 0x000010, "Member 'BP_PalPlayerDataCharacterMake_C_RGBToHSV::OutHSV' has a wrong offset!");
-static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBToHSV, CallFunc_RGBLinearToHSV_ReturnValue) == 0x000020, "Member 'BP_PalPlayerDataCharacterMake_C_RGBToHSV::CallFunc_RGBLinearToHSV_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBToHSV, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000030, "Member 'BP_PalPlayerDataCharacterMake_C_RGBToHSV::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBToHSV, K2Node_MakeStruct_LinearColor) == 0x000038, "Member 'BP_PalPlayerDataCharacterMake_C_RGBToHSV::K2Node_MakeStruct_LinearColor' has a wrong offset!");
-static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBToHSV, CallFunc_Divide_DoubleDouble_A_ImplicitCast) == 0x000048, "Member 'BP_PalPlayerDataCharacterMake_C_RGBToHSV::CallFunc_Divide_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBToHSV, K2Node_MakeStruct_R_ImplicitCast) == 0x000050, "Member 'BP_PalPlayerDataCharacterMake_C_RGBToHSV::K2Node_MakeStruct_R_ImplicitCast' has a wrong offset!");
+static_assert(alignof(BP_PalPlayerDataCharacterMake_C_RGBtoHSV) == 0x000008, "Wrong alignment on BP_PalPlayerDataCharacterMake_C_RGBtoHSV");
+static_assert(sizeof(BP_PalPlayerDataCharacterMake_C_RGBtoHSV) == 0x000058, "Wrong size on BP_PalPlayerDataCharacterMake_C_RGBtoHSV");
+static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBtoHSV, InRGB) == 0x000000, "Member 'BP_PalPlayerDataCharacterMake_C_RGBtoHSV::InRGB' has a wrong offset!");
+static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBtoHSV, OutHSV) == 0x000010, "Member 'BP_PalPlayerDataCharacterMake_C_RGBtoHSV::OutHSV' has a wrong offset!");
+static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBtoHSV, CallFunc_RGBLinearToHSV_ReturnValue) == 0x000020, "Member 'BP_PalPlayerDataCharacterMake_C_RGBtoHSV::CallFunc_RGBLinearToHSV_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBtoHSV, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000030, "Member 'BP_PalPlayerDataCharacterMake_C_RGBtoHSV::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBtoHSV, K2Node_MakeStruct_LinearColor) == 0x000038, "Member 'BP_PalPlayerDataCharacterMake_C_RGBtoHSV::K2Node_MakeStruct_LinearColor' has a wrong offset!");
+static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBtoHSV, CallFunc_Divide_DoubleDouble_A_ImplicitCast) == 0x000048, "Member 'BP_PalPlayerDataCharacterMake_C_RGBtoHSV::CallFunc_Divide_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_PalPlayerDataCharacterMake_C_RGBtoHSV, K2Node_MakeStruct_R_ImplicitCast) == 0x000050, "Member 'BP_PalPlayerDataCharacterMake_C_RGBtoHSV::K2Node_MakeStruct_R_ImplicitCast' has a wrong offset!");
 
 // Function BP_PalPlayerDataCharacterMake.BP_PalPlayerDataCharacterMake_C.GetRandomBodyMeshName
 // 0x0010 (0x0010 - 0x0000)
