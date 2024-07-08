@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "SplinesInEditor_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "RiverSplineElement_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
@@ -29,18 +29,18 @@ public:
 	class UStaticMesh*                            StaticMesh;                                        // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	double                                        ThicknessScale;                                    // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          UseJointMeshes;                                    // 0x02A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_40B9[0x7];                                     // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A9[0x7];                                      // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<bool>                                  JointsToExclude;                                   // 0x02B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FRandomStream                          RandomStream;                                      // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor)
 	int32                                         RandomSeed;                                        // 0x02C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_40BA[0x4];                                     // 0x02CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2CC[0x4];                                      // 0x02CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSplinesInEditor>               Splines;                                           // 0x02D0(0x0010)(Edit, BlueprintVisible)
 	bool                                          UseAdvancedSplines;                                // 0x02E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_40BB[0x7];                                     // 0x02E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E1[0x7];                                      // 0x02E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         Debug;                                             // 0x02E8(0x0010)(Edit, BlueprintVisible)
 	class USplineComponent*                       CurrentSpline;                                     // 0x02F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          SplineNotExists;                                   // 0x0300(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_40BC[0x7];                                     // 0x0301(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_301[0x7];                                      // 0x0301(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSplinesInEditor                       DefaultSplineSetup;                                // 0x0308(0x0080)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FRiverSplineElement                    CurrentSplineProperties;                           // 0x0388(0x0070)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          SplineExist;                                       // 0x03F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

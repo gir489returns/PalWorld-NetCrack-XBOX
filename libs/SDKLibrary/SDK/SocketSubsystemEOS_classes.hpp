@@ -23,7 +23,7 @@ class UNetDriverEOSBase : public UIpNetDriver
 public:
 	bool                                          bIsPassthrough;                                    // 0x0840(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsUsingP2PSockets;                                // 0x0841(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1719[0x6];                                     // 0x0842(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_842[0x6];                                      // 0x0842(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

@@ -25,7 +25,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EEndPlayReason                                K2Node_Event_EndPlayReason;                        // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_440F[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCineCameraComponent*                   CallFunc_GetCineCameraComponent_ReturnValue;       // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_PalCutsceneCamera_C_ExecuteUbergraph_BP_PalCutsceneCamera) == 0x000008, "Wrong alignment on BP_PalCutsceneCamera_C_ExecuteUbergraph_BP_PalCutsceneCamera");
@@ -63,13 +63,13 @@ struct BP_PalCutsceneCamera_C_StartCaptureBossDemo final
 {
 public:
 	EPalBossType                                  BossType;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4410[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4411[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 CallFunc_Map_Find_Value;                           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4412[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_BossDemoBase_C*                    CallFunc_Create_ReturnValue;                       // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_PalCutsceneCamera_C_StartCaptureBossDemo) == 0x000008, "Wrong alignment on BP_PalCutsceneCamera_C_StartCaptureBossDemo");

@@ -22,7 +22,7 @@ namespace SDK
 class UAudioCapture final : public UAudioGenerator
 {
 public:
-	uint8                                         Pad_2487[0x8];                                     // 0x00A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A8[0x8];                                       // 0x00A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool GetAudioCaptureDeviceInfo(struct FAudioCaptureDeviceInfo* OutInfo);
@@ -90,7 +90,7 @@ class UAudioCaptureComponent final : public USynthComponent
 {
 public:
 	int32                                         JitterLatencyFrames;                               // 0x0790(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2489[0xBC];                                    // 0x0794(0x00BC)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_794[0xBC];                                     // 0x0794(0x00BC)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

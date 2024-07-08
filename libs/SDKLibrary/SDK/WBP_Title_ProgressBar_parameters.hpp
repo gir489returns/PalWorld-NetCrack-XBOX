@@ -22,17 +22,17 @@ struct WBP_Title_ProgressBar_C_ExecuteUbergraph_WBP_Title_ProgressBar final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B88[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        K2Node_CustomEvent_NewValue;                       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0010(0x0040)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B89[0x4];                                     // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_FInterpTo_Constant_ReturnValue;           // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B8A[0x3];                                     // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SetPercent_InPercent_ImplicitCast;        // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetPercent_InPercent_ImplicitCast_1;      // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B8B[0x4];                                     // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_FInterpTo_Constant_DeltaTime_ImplicitCast; // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_Title_ProgressBar_C_ExecuteUbergraph_WBP_Title_ProgressBar) == 0x000008, "Wrong alignment on WBP_Title_ProgressBar_C_ExecuteUbergraph_WBP_Title_ProgressBar");

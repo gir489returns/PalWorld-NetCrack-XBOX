@@ -54,7 +54,7 @@ struct FCommonInputKeyBrushConfiguration final
 {
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15B3[0x8];                                     // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            KeyBrush;                                          // 0x0020(0x00D0)(Edit, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FCommonInputKeyBrushConfiguration) == 0x000010, "Wrong alignment on FCommonInputKeyBrushConfiguration");
@@ -93,15 +93,15 @@ static_assert(offsetof(FInputDeviceIdentifierPair, HardwareDeviceIdentifier) == 
 struct FCommonInputPlatformBaseData final
 {
 public:
-	uint8                                         Pad_15B4[0x8];                                     // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	ECommonInputType                              DefaultInputType;                                  // 0x0008(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bSupportsMouseAndKeyboard;                         // 0x0009(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bSupportsGamepad;                                  // 0x000A(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_15B5[0x1];                                     // 0x000B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B[0x1];                                        // 0x000B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   DefaultGamepadName;                                // 0x000C(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bCanChangeGamepadType;                             // 0x0014(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bSupportsTouch;                                    // 0x0015(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_15B6[0x2];                                     // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<TSoftClassPtr<class UClass>>           ControllerData;                                    // 0x0018(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	TArray<TSubclassOf<class UCommonInputBaseControllerData>> ControllerDataClasses;                             // 0x0028(0x0010)(ZeroConstructor, Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 };

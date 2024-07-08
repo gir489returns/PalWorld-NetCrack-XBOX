@@ -25,7 +25,7 @@ class UBP_AIAction_Death_C : public UPalAIActionBase
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0130(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	bool                                          IsPlayer;                                          // 0x0138(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3988[0x3];                                     // 0x0139(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_139[0x3];                                      // 0x0139(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         BoneIndex;                                         // 0x013C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

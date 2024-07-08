@@ -23,7 +23,7 @@ struct BP_Action_Rolling_C_ExecuteUbergraph_BP_Action_Rolling final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_40E5[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_1;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_2;         // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -33,9 +33,9 @@ public:
 	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_40E6[0x2];                                     // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalDataTableRowName_SoundID           K2Node_MakeStruct_PalDataTableRowName_SoundID;     // 0x0044(0x0008)(NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_40E7[0x4];                                     // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_5;         // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetActionVelocity_ReturnValue;            // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_Conv_VectorToRotator_ReturnValue;         // 0x0070(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)

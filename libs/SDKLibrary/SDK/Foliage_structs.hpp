@@ -80,10 +80,10 @@ struct FFoliageVertexColorChannelMask final
 {
 public:
 	uint8                                         UseMask : 1;                                       // 0x0000(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_31AB[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         MaskThreshold;                                     // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         InvertMask : 1;                                    // 0x0008(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_31AC[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FFoliageVertexColorChannelMask) == 0x000004, "Wrong alignment on FFoliageVertexColorChannelMask");
 static_assert(sizeof(FFoliageVertexColorChannelMask) == 0x00000C, "Wrong size on FFoliageVertexColorChannelMask");
@@ -95,7 +95,7 @@ struct FFoliageDensityFalloff final
 {
 public:
 	bool                                          bUseFalloffCurve;                                  // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31AD[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRuntimeFloatCurve                     FalloffCurve;                                      // 0x0008(0x0088)(Edit, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FFoliageDensityFalloff) == 0x000008, "Wrong alignment on FFoliageDensityFalloff");
@@ -111,7 +111,7 @@ public:
 	class UObject*                                FoliageTypeObject;                                 // 0x0000(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UFoliageType*                           TypeInstance;                                      // 0x0008(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bIsAsset;                                          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_31AE[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UFoliageType_InstancedStaticMesh> Type;                                              // 0x0018(0x0008)(ZeroConstructor, Deprecated, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
 static_assert(alignof(FFoliageTypeObject) == 0x000008, "Wrong alignment on FFoliageTypeObject");
@@ -129,12 +129,12 @@ public:
 	struct FQuat                                  Rotation;                                          // 0x0000(0x0020)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Location;                                          // 0x0020(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Age;                                               // 0x0038(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31AF[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Normal;                                            // 0x0040(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Scale;                                             // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31B0[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFoliageType*                           Type;                                              // 0x0060(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31B1[0x18];                                    // 0x0068(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_68[0x18];                                      // 0x0068(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FProceduralFoliageInstance) == 0x000010, "Wrong alignment on FProceduralFoliageInstance");
 static_assert(sizeof(FProceduralFoliageInstance) == 0x000080, "Wrong size on FProceduralFoliageInstance");

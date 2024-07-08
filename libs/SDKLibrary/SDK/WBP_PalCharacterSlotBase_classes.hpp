@@ -32,7 +32,7 @@ public:
 	FMulticastInlineDelegateProperty_             OnTargetCharacterUpdateHP;                         // 0x0450(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FTimerHandle                           CheckTargetConditionTimerHandle;                   // 0x0460(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          LastCombatState;                                   // 0x0468(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A74[0x7];                                     // 0x0469(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_469[0x7];                                      // 0x0469(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnNotifyWorkDetail;                                // 0x0470(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnNotifyBattleModeChanged;                         // 0x0480(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnBeginTargetCharacterSleep;                       // 0x0490(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)

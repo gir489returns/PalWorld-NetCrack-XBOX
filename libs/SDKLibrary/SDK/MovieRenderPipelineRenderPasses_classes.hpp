@@ -24,7 +24,7 @@ namespace SDK
 class UMoviePipelineImagePassBase : public UMoviePipelineRenderPass
 {
 public:
-	uint8                                         Pad_1931[0x130];                                   // 0x0048(0x0130)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_48[0x130];                                     // 0x0048(0x0130)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -47,17 +47,17 @@ public:
 	bool                                          bAccumulatorIncludesAlpha;                         // 0x0178(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDisableMultisampleEffects;                        // 0x0179(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUse32BitPostProcessMaterials;                     // 0x017A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1932[0x5];                                     // 0x017B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17B[0x5];                                      // 0x017B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FMoviePipelinePostProcessPass>  AdditionalPostProcessMaterials;                    // 0x0180(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          bRenderMainPass;                                   // 0x0190(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAddDefaultLayer;                                  // 0x0191(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1933[0x6];                                     // 0x0192(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_192[0x6];                                      // 0x0192(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FActorLayer>                    ActorLayers;                                       // 0x0198(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1934[0x10];                                    // 0x01A8(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A8[0x10];                                     // 0x01A8(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSoftObjectPath>                DataLayers;                                        // 0x01B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<class UMaterialInterface*>             ActivePostProcessMaterials;                        // 0x01C8(0x0010)(ZeroConstructor, Transient, DuplicateTransient, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	class UMaterialInterface*                     StencilLayerMaterial;                              // 0x01D8(0x0008)(ZeroConstructor, Transient, DuplicateTransient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1935[0x48];                                    // 0x01E0(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E0[0x48];                                     // 0x01E0(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -156,7 +156,7 @@ class UMoviePipelineDeferredPass_PathTracer final : public UMoviePipelineDeferre
 {
 public:
 	bool                                          bReferenceMotionBlur;                              // 0x0228(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1936[0x7];                                     // 0x0229(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_229[0x7];                                      // 0x0229(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -177,7 +177,7 @@ static_assert(offsetof(UMoviePipelineDeferredPass_PathTracer, bReferenceMotionBl
 class UMoviePipelineImageSequenceOutputBase : public UMoviePipelineOutputBase
 {
 public:
-	uint8                                         Pad_1937[0x20];                                    // 0x0048(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_48[0x20];                                      // 0x0048(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -199,7 +199,7 @@ class UMoviePipelineImageSequenceOutput_EXR final : public UMoviePipelineImageSe
 public:
 	EEXRCompressionFormat                         Compression;                                       // 0x0068(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bMultilayer;                                       // 0x0069(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1938[0x6];                                     // 0x006A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6A[0x6];                                       // 0x006A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -239,7 +239,7 @@ class UMoviePipelineImageSequenceOutput_PNG final : public UMoviePipelineImageSe
 {
 public:
 	bool                                          bWriteAlpha;                                       // 0x0068(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1939[0x7];                                     // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -278,7 +278,7 @@ class UMoviePipelineWaveOutput final : public UMoviePipelineOutputBase
 {
 public:
 	class FString                                 FileNameFormatOverride;                            // 0x0048(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_193A[0x60];                                    // 0x0058(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_58[0x60];                                      // 0x0058(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

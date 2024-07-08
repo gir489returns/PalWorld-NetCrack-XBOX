@@ -34,7 +34,7 @@ struct WBP_OptionSettings_ListContentLRBar_C_ExecuteUbergraph_WBP_OptionSettings
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_IsActive;                       // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35D3[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_OptionSettings_ListContentLRBar_C_ExecuteUbergraph_WBP_OptionSettings_ListContentLRBar) == 0x000004, "Wrong alignment on WBP_OptionSettings_ListContentLRBar_C_ExecuteUbergraph_WBP_OptionSettings_ListContentLRBar");

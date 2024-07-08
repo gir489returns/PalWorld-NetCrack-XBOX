@@ -24,7 +24,7 @@ class UBP_Status_Drown_C final : public UPalStatusBase
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0048(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	bool                                          IsDrowning;                                        // 0x0050(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3807[0x7];                                     // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           Timer;                                             // 0x0058(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:

@@ -22,7 +22,7 @@ struct BP_AINPC_CombatGunState_FireMove_Shotgun_C_CanMove final
 {
 public:
 	bool                                          Param_CanMove;                                     // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_46EF[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_GetSelfActor_SelfActor;                   // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_GetTargetActor_TargetActor;               // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsNearTwoActorWithRootRadius_ReturnValue; // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -82,24 +82,24 @@ public:
 	class FName                                   ElementCountZBinding;                              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   IterationSource;                                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ENiagaraSimStageExecuteBehavior               ExecuteBehavior;                                   // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_118F[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bWritesParticles : 1;                              // 0x0034(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bPartialParticleUpdate : 1;                        // 0x0034(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bParticleIterationStateEnabled : 1;                // 0x0034(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bOverrideElementCount : 1;                         // 0x0034(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_1190[0x3];                                     // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ParticleIterationStateBinding;                     // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1191[0x4];                                     // 0x0040(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_40[0x4];                                       // 0x0040(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FIntPoint                              ParticleIterationStateRange;                       // 0x0044(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1192[0x4];                                     // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           OutputDestinations;                                // 0x0050(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<class FName>                           InputDataInterfaces;                               // 0x0060(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         NumIterations;                                     // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   NumIterationsBinding;                              // 0x0074(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ENiagaraGpuDispatchType                       GpuDispatchType;                                   // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1193[0x3];                                     // 0x007D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_7D[0x3];                                       // 0x007D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FIntVector                             GpuDispatchNumThreads;                             // 0x0080(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1194[0x4];                                     // 0x008C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FSimulationStageMetaData) == 0x000008, "Wrong alignment on FSimulationStageMetaData");
 static_assert(sizeof(FSimulationStageMetaData) == 0x000090, "Wrong size on FSimulationStageMetaData");
@@ -124,7 +124,7 @@ static_assert(offsetof(FSimulationStageMetaData, GpuDispatchNumThreads) == 0x000
 struct alignas(0x08) FNiagaraDataInterfaceGeneratedFunction final
 {
 public:
-	uint8                                         Pad_1195[0x28];                                    // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FNiagaraDataInterfaceGeneratedFunction) == 0x000008, "Wrong alignment on FNiagaraDataInterfaceGeneratedFunction");
 static_assert(sizeof(FNiagaraDataInterfaceGeneratedFunction) == 0x000028, "Wrong size on FNiagaraDataInterfaceGeneratedFunction");
@@ -137,7 +137,7 @@ public:
 	class FString                                 DataInterfaceHLSLSymbol;                           // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 DIClassName;                                       // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint32                                        ShaderParametersOffset;                            // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1196[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FNiagaraDataInterfaceGeneratedFunction> GeneratedFunctions;                                // 0x0028(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FNiagaraDataInterfaceGPUParamInfo) == 0x000008, "Wrong alignment on FNiagaraDataInterfaceGPUParamInfo");
@@ -168,9 +168,9 @@ public:
 	TArray<struct FNiagaraDataInterfaceGPUParamInfo> DataInterfaceParamInfo;                            // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<class FString>                         LooseMetadataNames;                                // 0x0010(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          bExternalConstantsInterpolated;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1197[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FNiagaraShaderScriptExternalConstant> ExternalConstants;                                 // 0x0028(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1198[0x20];                                    // 0x0038(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_38[0x20];                                      // 0x0038(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FNiagaraShaderScriptParametersMetadata) == 0x000008, "Wrong alignment on FNiagaraShaderScriptParametersMetadata");
 static_assert(sizeof(FNiagaraShaderScriptParametersMetadata) == 0x000058, "Wrong size on FNiagaraShaderScriptParametersMetadata");
@@ -185,17 +185,17 @@ struct FNiagaraCompileEvent final
 {
 public:
 	EFNiagaraCompileEventSeverity                 Severity;                                          // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1199[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Message;                                           // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ShortDescription;                                  // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDismissable;                                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_119A[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGuid                                  NodeGuid;                                          // 0x002C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGuid                                  PinGuid;                                           // 0x003C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_119B[0x4];                                     // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FGuid>                          StackGuids;                                        // 0x0050(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	EFNiagaraCompileEventSource                   Source;                                            // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_119C[0x7];                                     // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FNiagaraCompileEvent) == 0x000008, "Wrong alignment on FNiagaraCompileEvent");
 static_assert(sizeof(FNiagaraCompileEvent) == 0x000068, "Wrong size on FNiagaraCompileEvent");

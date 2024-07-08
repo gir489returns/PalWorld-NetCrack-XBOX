@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Pal_classes.hpp"
+#include "E_PalTitleWorldSettingOptionType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
-#include "E_PalTitleWorldSettingOptionType_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -39,19 +39,19 @@ public:
 	class UWBP_PalInvisibleButton_C*              WBP_PalInvisibleButton;                            // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_Title_WorldSettings_ListButton_C*  WBP_Title_WorldSettings_ListButton;                // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	E_PalTitleWorldSettingOptionType              OptionType;                                        // 0x0470(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_488C[0x7];                                     // 0x0471(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_471[0x7];                                      // 0x0471(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDataTableRowHandle                    TitleMsgID;                                        // 0x0478(0x0010)(Edit, BlueprintVisible, NoDestructor)
 	FMulticastInlineDelegateProperty_             OnSwitchChanged;                                   // 0x0488(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnComittedText;                                    // 0x0498(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	int32                                         InputTextMaxLen;                                   // 0x04A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_488D[0x4];                                     // 0x04AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4AC[0x4];                                      // 0x04AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnChangedSelectIndex;                              // 0x04B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FDataTableRowHandle                    ButtonMsgID;                                       // 0x04C0(0x0010)(Edit, BlueprintVisible, NoDestructor)
 	FMulticastInlineDelegateProperty_             OnClickedSettingButton;                            // 0x04D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnChangedValue;                                    // 0x04E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          NowEnabled;                                        // 0x04F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsOverrideSliderStep;                              // 0x04F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_488E[0x6];                                     // 0x04F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4F2[0x6];                                      // 0x04F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        OverrideSliderStepValue;                           // 0x04F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

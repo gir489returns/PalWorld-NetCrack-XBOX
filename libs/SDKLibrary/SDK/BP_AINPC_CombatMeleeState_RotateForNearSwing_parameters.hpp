@@ -20,10 +20,10 @@ struct BP_AINPC_CombatMeleeState_RotateForNearSwing_C_ExecuteUbergraph_BP_AINPC_
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4648[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetTargetActor_TargetActor;               // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaTime;                            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4649[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_GetSelfActor_SelfActor;                   // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_AINPC_CombatMeleeState_RotateForNearSwing_C_ExecuteUbergraph_BP_AINPC_CombatMeleeState_RotateForNearSwing) == 0x000008, "Wrong alignment on BP_AINPC_CombatMeleeState_RotateForNearSwing_C_ExecuteUbergraph_BP_AINPC_CombatMeleeState_RotateForNearSwing");

@@ -69,7 +69,7 @@ public:
 	class UBP_CharaCre_ColorSelectWindowDispatchParameter_C* Parameter;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class UPalHUDDispatchParameterBase* Param)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A1C[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGuid                                  CallFunc_Push_ReturnValue;                         // 0x001C(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_CharaCre_ScrollBoxContentBase_C_OpenColorSelectWindow) == 0x000008, "Wrong alignment on WBP_CharaCre_ScrollBoxContentBase_C_OpenColorSelectWindow");

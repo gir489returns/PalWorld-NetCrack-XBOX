@@ -26,18 +26,18 @@ class UResonanceAudioSpatializationSourceSettings final : public USpatialization
 {
 public:
 	ERaSpatializationMethod                       SpatializationMethod;                              // 0x0028(0x0001)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24DF[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Pattern;                                           // 0x002C(0x0004)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Sharpness;                                         // 0x0030(0x0004)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bToggleVisualization;                              // 0x0034(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24E0[0x3];                                     // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Scale;                                             // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Spread;                                            // 0x003C(0x0004)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERaDistanceRolloffModel                       Rolloff;                                           // 0x0040(0x0001)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24E1[0x3];                                     // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         MinDistance;                                       // 0x0044(0x0004)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxDistance;                                       // 0x0048(0x0004)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24E2[0x4];                                     // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SetSoundSourceDirectivity(float InPattern, float InSharpness);
@@ -71,7 +71,7 @@ class UResonanceAudioSoundfieldSettings final : public USoundfieldEncodingSettin
 {
 public:
 	EResonanceRenderMode                          RenderMode;                                        // 0x0028(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24E3[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -113,7 +113,7 @@ static_assert(sizeof(UResonanceAudioBlueprintFunctionLibrary) == 0x000028, "Wron
 class AResonanceAudioDirectivityVisualizer final : public AActor
 {
 public:
-	uint8                                         Pad_24E4[0x70];                                    // 0x0290(0x0070)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_290[0x70];                                     // 0x0290(0x0070)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterial*                              Material;                                          // 0x0300(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UResonanceAudioSpatializationSourceSettings* Settings;                                          // 0x0308(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
@@ -137,7 +137,7 @@ static_assert(offsetof(AResonanceAudioDirectivityVisualizer, Settings) == 0x0003
 class UResonanceAudioReverbPluginPreset final : public USoundEffectSubmixPreset
 {
 public:
-	uint8                                         Pad_24E5[0x98];                                    // 0x0068(0x0098)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_68[0x98];                                      // 0x0068(0x0098)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FResonanceAudioReverbPluginSettings    Settings;                                          // 0x0100(0x0070)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
@@ -172,7 +172,7 @@ class UResonanceAudioSettings final : public UObject
 public:
 	struct FSoftObjectPath                        OutputSubmix;                                      // 0x0028(0x0020)(Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ERaQualityMode                                QualityMode;                                       // 0x0048(0x0001)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24E6[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSoftObjectPath                        GlobalReverbPreset;                                // 0x0050(0x0020)(Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSoftObjectPath                        GlobalSourcePreset;                                // 0x0070(0x0020)(Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 

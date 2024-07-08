@@ -24,10 +24,10 @@ class UBP_Status_ShieldRecovery_C final : public UPalStatusBase
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0048(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	bool                                          IsRecoverAble;                                     // 0x0050(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	uint8                                         Pad_41E5[0x7];                                     // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           RecoverStartAbleHandle;                            // 0x0058(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	bool                                          InitEnd;                                           // 0x0060(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	uint8                                         Pad_41E6[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        DamageWeight;                                      // 0x0068(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	double                                        TempDeltaTime;                                     // 0x0070(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	double                                        Const_MutekiTime;                                  // 0x0078(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

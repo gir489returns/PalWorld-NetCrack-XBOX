@@ -29,7 +29,7 @@ public:
 	class UWBP_Title_WorldSettings_C*             WBP_Title_WorldSettings;                           // 0x05B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	struct FDataTableRowHandle                    WaitingSaveMsgID;                                  // 0x05C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	bool                                          Is_New_World;                                      // 0x05D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4915[0x7];                                     // 0x05D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5D1[0x7];                                      // 0x05D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBP_HUDDispatchParameter_WorldNameInput_C* WorldNameInputDispatchParameter;                   // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UBP_HUDDispatchParameter_RandomizerSeedInput_C* RandomizerSeedInputDispatchParameter;              // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 

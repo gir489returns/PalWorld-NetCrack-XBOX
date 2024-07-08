@@ -12,10 +12,10 @@
 
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "E_PalUIItemInfoWindowDIsplayType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CommonInput_structs.hpp"
 #include "UMG_structs.hpp"
-#include "E_PalUIItemInfoWindowDIsplayType_structs.hpp"
 
 
 namespace SDK
@@ -93,7 +93,7 @@ public:
 	class UWBP_ShopSellPrice_C*                   WBP_ShopSellPrice;                                 // 0x0608(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	E_PalUIItemInfoWindowDIsplayType              NowDisplayType;                                    // 0x0610(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	E_PalUIItemInfoWindowDIsplayType              DefaultDisplayType;                                // 0x0611(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4BB6[0x6];                                     // 0x0612(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_612[0x6];                                      // 0x0612(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<EPalItemTypeA, struct FDataTableRowHandle> MainParamMsgIDMap;                                 // 0x0618(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 	TMap<EPalItemTypeA, struct FDataTableRowHandle> SubParamMsgIDMap;                                  // 0x0668(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 	struct FDataTableRowHandle                    MainParamShieldOverrideMsgID;                      // 0x06B8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor)
@@ -108,7 +108,7 @@ public:
 	struct FDataTableRowHandle                    MaskedTechDescMsgID;                               // 0x0760(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor)
 	TArray<struct FDataTableRowHandle>            RarityMsgIDs;                                      // 0x0770(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 	bool                                          IsBossTechPoint;                                   // 0x0780(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4BB7[0x7];                                     // 0x0781(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_781[0x7];                                      // 0x0781(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDataTableRowHandle                    NormalMsgId;                                       // 0x0788(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	TArray<class UWBP_InventoryEquipment_ItemInfo_addeffect_C*> AdditionalInfoArray;                               // 0x0798(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 

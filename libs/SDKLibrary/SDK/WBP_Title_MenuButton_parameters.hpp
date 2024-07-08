@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "E_PalUITitleMenuButtonType_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -45,17 +45,17 @@ struct WBP_Title_MenuButton_C_ExecuteUbergraph_WBP_Title_MenuButton final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4120[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_2;               // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_1;               // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4121[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDataTableRowHandle                    CallFunc_Map_Find_Value;                           // 0x0038(0x0010)(NoDestructor)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4122[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0050(0x0018)()
 	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue; // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0078(0x0018)()

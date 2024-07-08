@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "WBP_LoupeBase_classes.hpp"
 #include "Pal_structs.hpp"
+#include "WBP_LoupeBase_classes.hpp"
 
 
 namespace SDK

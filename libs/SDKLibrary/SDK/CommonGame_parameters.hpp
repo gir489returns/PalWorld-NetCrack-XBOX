@@ -29,7 +29,7 @@ public:
 	TSoftClassPtr<class UClass>                   UserWidgetSoftClass;                               // 0x0008(0x0030)(Parm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APlayerController*                      OwningPlayer;                                      // 0x0038(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSuspendInputUntilComplete;                        // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1690[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAsyncAction_CreateWidgetAsync*         ReturnValue;                                       // 0x0048(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AsyncAction_CreateWidgetAsync_CreateWidgetAsync) == 0x000008, "Wrong alignment on AsyncAction_CreateWidgetAsync_CreateWidgetAsync");
@@ -49,7 +49,7 @@ public:
 	TSoftClassPtr<class UClass>                   WidgetClass;                                       // 0x0008(0x0030)(Parm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGameplayTag                           LayerName;                                         // 0x0038(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSuspendInputUntilComplete;                        // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1692[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAsyncAction_PushContentToLayerForPlayer* ReturnValue;                                       // 0x0048(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AsyncAction_PushContentToLayerForPlayer_PushContentToLayerForPlayer) == 0x000008, "Wrong alignment on AsyncAction_PushContentToLayerForPlayer_PushContentToLayerForPlayer");
@@ -118,7 +118,7 @@ public:
 	ECommonUserPrivilege                          Privilege;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ECommonUserAvailability                       OldAvailability;                                   // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ECommonUserAvailability                       NewAvailability;                                   // 0x000A(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1694[0x5];                                     // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonGameInstance_HandlePrivilegeChanged) == 0x000008, "Wrong alignment on CommonGameInstance_HandlePrivilegeChanged");
 static_assert(sizeof(CommonGameInstance_HandlePrivilegeChanged) == 0x000010, "Wrong size on CommonGameInstance_HandlePrivilegeChanged");
@@ -239,7 +239,7 @@ struct CommonPlayerInputKey_StopHoldProgress final
 public:
 	class FName                                   HoldActionName;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCompletedSuccessfully;                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_169D[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonPlayerInputKey_StopHoldProgress) == 0x000004, "Wrong alignment on CommonPlayerInputKey_StopHoldProgress");
 static_assert(sizeof(CommonPlayerInputKey_StopHoldProgress) == 0x00000C, "Wrong size on CommonPlayerInputKey_StopHoldProgress");
@@ -288,7 +288,7 @@ struct CommonUIExtensions_GetOwningPlayerInputType final
 public:
 	const class UUserWidget*                      WidgetContextObject;                               // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ECommonInputType                              ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_169E[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonUIExtensions_GetOwningPlayerInputType) == 0x000008, "Wrong alignment on CommonUIExtensions_GetOwningPlayerInputType");
 static_assert(sizeof(CommonUIExtensions_GetOwningPlayerInputType) == 0x000010, "Wrong size on CommonUIExtensions_GetOwningPlayerInputType");
@@ -302,7 +302,7 @@ struct CommonUIExtensions_IsOwningPlayerUsingGamepad final
 public:
 	const class UUserWidget*                      WidgetContextObject;                               // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_169F[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonUIExtensions_IsOwningPlayerUsingGamepad) == 0x000008, "Wrong alignment on CommonUIExtensions_IsOwningPlayerUsingGamepad");
 static_assert(sizeof(CommonUIExtensions_IsOwningPlayerUsingGamepad) == 0x000010, "Wrong size on CommonUIExtensions_IsOwningPlayerUsingGamepad");
@@ -316,7 +316,7 @@ struct CommonUIExtensions_IsOwningPlayerUsingTouch final
 public:
 	const class UUserWidget*                      WidgetContextObject;                               // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_16A0[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(CommonUIExtensions_IsOwningPlayerUsingTouch) == 0x000008, "Wrong alignment on CommonUIExtensions_IsOwningPlayerUsingTouch");
 static_assert(sizeof(CommonUIExtensions_IsOwningPlayerUsingTouch) == 0x000010, "Wrong size on CommonUIExtensions_IsOwningPlayerUsingTouch");

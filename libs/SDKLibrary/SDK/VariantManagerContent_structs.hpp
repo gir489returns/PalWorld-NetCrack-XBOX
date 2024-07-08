@@ -48,7 +48,7 @@ struct FCapturedPropSegment final
 public:
 	class FString                                 PropertyName;                                      // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         PropertyIndex;                                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2375[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ComponentName;                                     // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FCapturedPropSegment) == 0x000008, "Wrong alignment on FCapturedPropSegment");
@@ -65,7 +65,7 @@ public:
 	TSoftObjectPtr<class UVariantSet>             VariantSet;                                        // 0x0000(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UVariant>                Variant;                                           // 0x0030(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnabled;                                          // 0x0060(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2376[0x7];                                     // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FVariantDependency) == 0x000008, "Wrong alignment on FVariantDependency");
 static_assert(sizeof(FVariantDependency) == 0x000068, "Wrong size on FVariantDependency");

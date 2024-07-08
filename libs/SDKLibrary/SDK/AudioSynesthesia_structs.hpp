@@ -116,7 +116,7 @@ struct FSynesthesiaSpectrumResults final
 {
 public:
 	float                                         TimeSeconds;                                       // 0x0000(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24BC[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<float>                                 SpectrumValues;                                    // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FSynesthesiaSpectrumResults) == 0x000008, "Wrong alignment on FSynesthesiaSpectrumResults");

@@ -560,7 +560,7 @@ struct FARSessionPayload final
 {
 public:
 	int32                                         ConfigFlags;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32ED[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     DefaultMeshMaterial;                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UMaterialInterface*                     DefaultWireframeMeshMaterial;                      // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -576,13 +576,13 @@ struct FARPlaneUpdatePayload final
 {
 public:
 	struct FARSessionPayload                      SessionPayload;                                    // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32EE[0x8];                                     // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             WorldTransform;                                    // 0x0020(0x0060)(BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Center;                                            // 0x0080(0x0018)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Extents;                                           // 0x0098(0x0018)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FVector>                        BoundaryVertices;                                  // 0x00B0(0x0010)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	EARObjectClassification                       ObjectClassification;                              // 0x00C0(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32EF[0xF];                                     // 0x00C1(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C1[0xF];                                       // 0x00C1(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FARPlaneUpdatePayload) == 0x000010, "Wrong alignment on FARPlaneUpdatePayload");
 static_assert(sizeof(FARPlaneUpdatePayload) == 0x0000D0, "Wrong size on FARPlaneUpdatePayload");
@@ -598,7 +598,7 @@ static_assert(offsetof(FARPlaneUpdatePayload, ObjectClassification) == 0x0000C0,
 struct FARPointUpdatePayload final
 {
 public:
-	uint8                                         Pad_32F0[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FARPointUpdatePayload) == 0x000001, "Wrong alignment on FARPointUpdatePayload");
 static_assert(sizeof(FARPointUpdatePayload) == 0x000001, "Wrong size on FARPointUpdatePayload");
@@ -626,11 +626,11 @@ struct FARImageUpdatePayload final
 {
 public:
 	struct FARSessionPayload                      SessionPayload;                                    // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32F1[0x8];                                     // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             WorldTransform;                                    // 0x0020(0x0060)(BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UARCandidateImage*                      DetectedImage;                                     // 0x0080(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                              EstimatedSize;                                     // 0x0088(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32F2[0x8];                                     // 0x0098(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_98[0x8];                                       // 0x0098(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FARImageUpdatePayload) == 0x000010, "Wrong alignment on FARImageUpdatePayload");
 static_assert(sizeof(FARImageUpdatePayload) == 0x0000A0, "Wrong size on FARImageUpdatePayload");
@@ -645,11 +645,11 @@ struct FARQRCodeUpdatePayload final
 {
 public:
 	struct FARSessionPayload                      SessionPayload;                                    // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32F3[0x8];                                     // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             WorldTransform;                                    // 0x0020(0x0060)(BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Extents;                                           // 0x0080(0x0018)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 QRCode;                                            // 0x0098(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32F4[0x8];                                     // 0x00A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A8[0x8];                                       // 0x00A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FARQRCodeUpdatePayload) == 0x000010, "Wrong alignment on FARQRCodeUpdatePayload");
 static_assert(sizeof(FARQRCodeUpdatePayload) == 0x0000B0, "Wrong size on FARQRCodeUpdatePayload");
@@ -699,10 +699,10 @@ struct FARMeshUpdatePayload final
 {
 public:
 	struct FARSessionPayload                      SessionPayload;                                    // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32F5[0x8];                                     // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             WorldTransform;                                    // 0x0020(0x0060)(BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EARObjectClassification                       ObjectClassification;                              // 0x0080(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32F6[0xF];                                     // 0x0081(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_81[0xF];                                       // 0x0081(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FARMeshUpdatePayload) == 0x000010, "Wrong alignment on FARMeshUpdatePayload");
 static_assert(sizeof(FARMeshUpdatePayload) == 0x000090, "Wrong size on FARMeshUpdatePayload");
@@ -716,13 +716,13 @@ struct FARGeoAnchorUpdatePayload final
 {
 public:
 	struct FARSessionPayload                      SessionPayload;                                    // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32F7[0x8];                                     // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             WorldTransform;                                    // 0x0020(0x0060)(BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Longitude;                                         // 0x0080(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Latitude;                                          // 0x0084(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         AltitudeMeters;                                    // 0x0088(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EARAltitudeSource                             AltitudeSource;                                    // 0x008C(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32F8[0x3];                                     // 0x008D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8D[0x3];                                       // 0x008D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 AnchorName;                                        // 0x0090(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FARGeoAnchorUpdatePayload) == 0x000010, "Wrong alignment on FARGeoAnchorUpdatePayload");
@@ -755,10 +755,10 @@ struct FARTraceResult final
 public:
 	float                                         DistanceFromCamera;                                // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	EARLineTraceChannels                          TraceChannel;                                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_32F9[0xB];                                     // 0x0005(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0xB];                                        // 0x0005(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             LocalTransform;                                    // 0x0010(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UARTrackedGeometry*                     TrackedGeometry;                                   // 0x0070(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_32FA[0x18];                                    // 0x0078(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_78[0x18];                                      // 0x0078(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FARTraceResult) == 0x000010, "Wrong alignment on FARTraceResult");
 static_assert(sizeof(FARTraceResult) == 0x000090, "Wrong size on FARTraceResult");
@@ -774,7 +774,7 @@ struct FARSessionStatus final
 public:
 	class FString                                 AdditionalInfo;                                    // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EARSessionStatus                              Status;                                            // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32FB[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FARSessionStatus) == 0x000008, "Wrong alignment on FARSessionStatus");
 static_assert(sizeof(FARSessionStatus) == 0x000018, "Wrong size on FARSessionStatus");
@@ -802,7 +802,7 @@ struct FARSkeletonDefinition final
 {
 public:
 	int32                                         NumJoints;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32FC[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           JointNames;                                        // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<int32>                                 ParentIndices;                                     // 0x0018(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 };
@@ -836,7 +836,7 @@ public:
 	TArray<struct FTransform>                     JointTransforms;                                   // 0x0028(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<bool>                                  IsJointTracked;                                    // 0x0038(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 	EARJointTransformSpace                        JointTransformSpace;                               // 0x0048(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_32FD[0x7];                                     // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FARPose3D) == 0x000008, "Wrong alignment on FARPose3D");
 static_assert(sizeof(FARPose3D) == 0x000050, "Wrong size on FARPose3D");

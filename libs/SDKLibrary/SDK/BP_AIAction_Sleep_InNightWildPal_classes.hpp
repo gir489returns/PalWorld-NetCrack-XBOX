@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "BP_AIAction_Sleep_classes.hpp"
 #include "Engine_structs.hpp"
+#include "BP_AIAction_Sleep_classes.hpp"
 
 
 namespace SDK

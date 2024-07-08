@@ -37,7 +37,7 @@ public:
 	class FName                                   BoneName;                                          // 0x00D0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USkeletalMesh*                          SkeletalMesh;                                      // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         BoneIndexOut;                                      // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3715[0x4];                                     // 0x00E4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FSkeletalMeshBoneDataflowNode) == 0x000008, "Wrong alignment on FSkeletalMeshBoneDataflowNode");
 static_assert(sizeof(FSkeletalMeshBoneDataflowNode) == 0x0000E8, "Wrong size on FSkeletalMeshBoneDataflowNode");

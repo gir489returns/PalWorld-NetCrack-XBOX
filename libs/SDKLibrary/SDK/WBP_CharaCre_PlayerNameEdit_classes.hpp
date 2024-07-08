@@ -38,7 +38,7 @@ public:
 	struct FPalDataTableRowName_UIInputAction     ShortcutConfirmInputAction;                        // 0x048C(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FPalUIActionBindData                   ShortcutConfirmInputActionHandle;                  // 0x0494(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	bool                                          ForPlayer;                                         // 0x0498(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4959[0x7];                                     // 0x0499(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_499[0x7];                                      // 0x0499(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDataTableRowHandle                    TitleMsgID_Player;                                 // 0x04A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	struct FDataTableRowHandle                    TitleMsgID_Pal;                                    // 0x04B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 

@@ -57,7 +57,7 @@ struct WBP_PalItemSlotButtonBase_C_ExecuteUbergraph_WBP_PalItemSlotButtonBase fi
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B47[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButtonBase*                      CallFunc_RegisterButton_button;                    // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWBP_PalItemSlotBase_C*                 CallFunc_RegisterItemSlotWidget_itemSlotWidget;    // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FFocusEvent                            K2Node_Event_InFocusEvent_1;                       // 0x0018(0x0008)(NoDestructor)
@@ -90,10 +90,10 @@ struct WBP_PalItemSlotButtonBase_C_GetDisplayDragItemNum final
 {
 public:
 	int32                                         DisplayNum;                                        // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B48[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalItemSlot*                           CallFunc_GetTargetSlot_targetSlot;                 // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsControlDown_ForUI_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B49[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetStackCount_ReturnValue;                // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Max_ReturnValue;                          // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -188,13 +188,13 @@ public:
 	class UDragDropOperation*                     Operation;                                         // 0x00D8(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UDragDropOperation*                     CallFunc_CreateDragDropOperation_ReturnValue;      // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetDisplayDragItemNum_DisplayNum;         // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B4A[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EC[0x4];                                       // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalItemSlot*                           CallFunc_GetTargetSlot_targetSlot;                 // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x00F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UWBP_PalItemSlotDragDropIcon_C*         CallFunc_Create_ReturnValue;                       // 0x0100(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class UDragDropOperation* Operation)> K2Node_CreateDelegate_OutputDelegate;              // 0x0108(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B4B[0x7];                                     // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalItemSlot*                           CallFunc_GetTargetSlot_targetSlot_1;               // 0x0120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -235,7 +235,7 @@ public:
 	struct FPointerEvent                          PointerEvent;                                      // 0x0040(0x0098)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class UDragDropOperation*                     Operation;                                         // 0x00D8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x00E0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B4C[0x7];                                     // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_PalItemSlotButtonBase_C*           K2Node_DynamicCast_AsWBP_Pal_Item_Slot_Button_Base; // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -310,7 +310,7 @@ struct WBP_PalItemSlotButtonBase_C_OnHalfLiftInput_Pad final
 public:
 	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B4D[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalUILiftSlotModel*                    CallFunc_GetLiftSlotModel_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -331,7 +331,7 @@ public:
 	class UPalItemSlot*                           CallFunc_GetTargetSlot_targetSlot;                 // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B4E[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalUICommonItemInfoDisplayData        K2Node_MakeStruct_PalUICommonItemInfoDisplayData;  // 0x0030(0x0030)(NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -362,7 +362,7 @@ struct WBP_PalItemSlotButtonBase_C_OnLiftedButton__DelegateSignature final
 {
 public:
 	int32                                         LiftNum;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B4F[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_PalItemSlotButtonBase_C_OnLiftedButton__DelegateSignature) == 0x000008, "Wrong alignment on WBP_PalItemSlotButtonBase_C_OnLiftedButton__DelegateSignature");
@@ -572,9 +572,9 @@ public:
 	class UPalItemIDManager*                      CallFunc_GetItemIDManager_ReturnValue;             // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalItemSlot*                           CallFunc_GetTargetSlot_targetSlot;                 // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B50[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalItemId                             CallFunc_GetItemId_ReturnValue;                    // 0x0014(0x0028)(ConstParm, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B51[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalStaticItemDataBase*                 CallFunc_GetStaticItemData_ReturnValue;            // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -616,10 +616,10 @@ struct WBP_PalItemSlotButtonBase_C_RegisterPadAction final
 public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B52[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0014(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4B53[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0028(0x0004)(NoDestructor)
 	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_1;      // 0x002C(0x0004)(NoDestructor)
 };

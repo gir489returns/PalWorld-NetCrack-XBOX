@@ -22,13 +22,13 @@ namespace SDK
 class UWwiseAudioLinkComponent final : public UAkComponent
 {
 public:
-	uint8                                         Pad_1D88[0x8];                                     // 0x04A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4A8[0x8];                                      // 0x04A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWwiseAudioLinkSettings*                Settings;                                          // 0x04B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USoundBase*                             Sound;                                             // 0x04B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAutoPlay;                                         // 0x04C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D89[0x7];                                     // 0x04C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4C1[0x7];                                      // 0x04C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAudioComponent*                        AudioComponent;                                    // 0x04C8(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1D8A[0x10];                                    // 0x04D0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4D0[0x10];                                     // 0x04D0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -54,10 +54,10 @@ class UWwiseAudioLinkSettings final : public UAudioLinkSettingsAbstract
 public:
 	TSoftObjectPtr<class UAkAudioEvent>           StartEvent;                                        // 0x0038(0x0030)(Edit, Config, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShouldClearBufferOnReceipt;                       // 0x0068(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D8B[0x3];                                     // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ProducerToConsumerBufferRatio;                     // 0x006C(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         InitialSilenceFillRatio;                           // 0x0070(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1D8C[0x14];                                    // 0x0074(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_74[0x14];                                      // 0x0074(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAkAudioEvent*                          StartEventResolved;                                // 0x0088(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:

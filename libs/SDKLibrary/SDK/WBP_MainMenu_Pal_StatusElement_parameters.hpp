@@ -23,7 +23,7 @@ struct WBP_MainMenu_Pal_StatusElement_C_Setup final
 public:
 	EPalElementType                               ElementType;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_37B2[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetPalElementTypeName_outName;            // 0x0008(0x0018)()
 	TSoftObjectPtr<class UTexture2D>              CallFunc_Map_Find_Value;                           // 0x0020(0x0030)(HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

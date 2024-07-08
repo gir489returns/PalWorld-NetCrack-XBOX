@@ -30,7 +30,7 @@ public:
 	class USphereComponent*                       SpawnCollision;                                    // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                          NotSleepFlag;                                      // 0x03A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49A9[0x7];                                     // 0x03A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A1[0x7];                                      // 0x03A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_MonsterBase_C*                      TempSpawnedMonster;                                // 0x03A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	TArray<class UPalIndividualCharacterHandle*>  IndividualHandleList;                              // 0x03B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, AdvancedDisplay)
 	double                                        ReturnTerritoryRadius;                             // 0x03C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -44,7 +44,7 @@ public:
 	double                                        DespawnPlusDistance;                               // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsLoading;                                         // 0x0430(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	bool                                          IsWorldLoadComplete;                               // 0x0431(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	uint8                                         Pad_49AA[0x2];                                     // 0x0432(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_432[0x2];                                      // 0x0432(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   SpawnerName;                                       // 0x0434(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPalSpawnedCharacterType                      SpawnerType;                                       // 0x043C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

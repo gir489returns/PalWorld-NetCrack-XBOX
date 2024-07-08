@@ -22,17 +22,17 @@ namespace SDK
 struct ABP_Player_Hair::FAnimBlueprintGeneratedConstantData final : public FAnimBlueprintConstantData
 {
 public:
-	uint8                                         Pad_3F3B[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   __NameProperty_20;                                 // 0x0004(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   __NameProperty_21;                                 // 0x000C(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   __NameProperty_22;                                 // 0x0014(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F3C[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UBlendProfile*                          __BlendProfile_23;                                 // 0x0020(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	class UCurveFloat*                            __CurveFloat_24;                                   // 0x0028(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	bool                                          __BoolProperty_25;                                 // 0x0030(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EAlphaBlendOption                             __EnumProperty_26;                                 // 0x0031(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBlendListTransitionType                      __EnumProperty_27;                                 // 0x0032(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F3D[0x5];                                     // 0x0033(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33[0x5];                                       // 0x0033(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<float>                                 __ArrayProperty_28;                                // 0x0038(0x0010)(BlueprintVisible, EditFixedSize)
 	struct FAnimNodeFunctionRef                   __StructProperty_29;                               // 0x0048(0x0020)(BlueprintVisible, NoDestructor)
 	struct FAnimSubsystem_PropertyAccess          AnimBlueprintExtension_PropertyAccess;             // 0x0068(0x0080)()

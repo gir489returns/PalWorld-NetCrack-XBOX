@@ -199,7 +199,7 @@ struct BaseDynamicMeshComponent_GetOverrideRenderMaterial final
 {
 public:
 	int32                                         MaterialIndex;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BF5[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(BaseDynamicMeshComponent_GetOverrideRenderMaterial) == 0x000008, "Wrong alignment on BaseDynamicMeshComponent_GetOverrideRenderMaterial");
@@ -258,7 +258,7 @@ struct BaseDynamicMeshComponent_HasOverrideRenderMaterial final
 public:
 	int32                                         K;                                                 // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BF6[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BaseDynamicMeshComponent_HasOverrideRenderMaterial) == 0x000004, "Wrong alignment on BaseDynamicMeshComponent_HasOverrideRenderMaterial");
 static_assert(sizeof(BaseDynamicMeshComponent_HasOverrideRenderMaterial) == 0x000008, "Wrong size on BaseDynamicMeshComponent_HasOverrideRenderMaterial");
@@ -390,7 +390,7 @@ struct DynamicMeshActor_ReleaseComputeMesh final
 public:
 	class UDynamicMesh*                           Mesh;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1BFD[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DynamicMeshActor_ReleaseComputeMesh) == 0x000008, "Wrong alignment on DynamicMeshActor_ReleaseComputeMesh");
 static_assert(sizeof(DynamicMeshActor_ReleaseComputeMesh) == 0x000010, "Wrong size on DynamicMeshActor_ReleaseComputeMesh");

@@ -66,9 +66,9 @@ static_assert(offsetof(FMetaSoundAssetDirectory, Directory) == 0x000000, "Member
 struct FMetaSoundAsyncAssetDependencies final
 {
 public:
-	uint8                                         Pad_249C[0x8];                                     // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                Metasound;                                         // 0x0008(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_249D[0x20];                                    // 0x0010(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10[0x20];                                      // 0x0010(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMetaSoundAsyncAssetDependencies) == 0x000008, "Wrong alignment on FMetaSoundAsyncAssetDependencies");
 static_assert(sizeof(FMetaSoundAsyncAssetDependencies) == 0x000030, "Wrong size on FMetaSoundAsyncAssetDependencies");

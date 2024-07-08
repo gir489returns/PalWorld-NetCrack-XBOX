@@ -19,7 +19,7 @@ namespace SDK
 struct alignas(0x08) FWebJSCallbackBase
 {
 public:
-	uint8                                         Pad_3749[0x20];                                    // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_0[0x20];                                       // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FWebJSCallbackBase) == 0x000008, "Wrong alignment on FWebJSCallbackBase");
 static_assert(sizeof(FWebJSCallbackBase) == 0x000020, "Wrong size on FWebJSCallbackBase");
