@@ -105,20 +105,6 @@ void ABP_NPCAIController_Invader_C::OnInvaderArrivedDelegate__DelegateSignature(
 }
 
 
-// Function BP_NPCAIController_Invader.BP_NPCAIController_Invader_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_NPCAIController_Invader_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAIController_Invader_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_NPCAIController_Invader.BP_NPCAIController_Invader_C.ReturnSpawnedPoint
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -136,6 +122,40 @@ void ABP_NPCAIController_Invader_C::ReturnSpawnedPoint(const struct FVector& Ret
 	Parms.ReturnPos = std::move(ReturnPos);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NPCAIController_Invader.BP_NPCAIController_Invader_C.StartMarch
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector                          GoalPos                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_NPCAIController_Invader_C::StartMarch(const struct FVector& GoalPos)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAIController_Invader_C", "StartMarch");
+
+	Params::BP_NPCAIController_Invader_C_StartMarch Parms{};
+
+	Parms.GoalPos = std::move(GoalPos);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NPCAIController_Invader.BP_NPCAIController_Invader_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_NPCAIController_Invader_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAIController_Invader_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -164,26 +184,6 @@ void ABP_NPCAIController_Invader_C::StartDefaultAIAction()
 		Func = Class->GetFunction("BP_NPCAIController_Invader_C", "StartDefaultAIAction");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_NPCAIController_Invader.BP_NPCAIController_Invader_C.StartMarch
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FVector                          GoalPos                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_NPCAIController_Invader_C::StartMarch(const struct FVector& GoalPos)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAIController_Invader_C", "StartMarch");
-
-	Params::BP_NPCAIController_Invader_C_StartMarch Parms{};
-
-	Parms.GoalPos = std::move(GoalPos);
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

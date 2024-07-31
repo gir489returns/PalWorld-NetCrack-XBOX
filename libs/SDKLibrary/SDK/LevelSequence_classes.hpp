@@ -23,34 +23,22 @@
 namespace SDK
 {
 
-// Class LevelSequence.LevelSequenceBurnInOptions
-// 0x0030 (0x0058 - 0x0028)
-class ULevelSequenceBurnInOptions final : public UObject
+// Class LevelSequence.LevelSequenceBurnInInitSettings
+// 0x0000 (0x0028 - 0x0028)
+class ULevelSequenceBurnInInitSettings final : public UObject
 {
-public:
-	bool                                          bUseBurnIn;                                        // 0x0028(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSoftClassPath                         BurnInClass;                                       // 0x0030(0x0020)(Edit, BlueprintVisible, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class ULevelSequenceBurnInInitSettings*       Settings;                                          // 0x0050(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void SetBurnIn(const struct FSoftClassPath& InBurnInClass);
-
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelSequenceBurnInOptions">();
+		return StaticClassImpl<"LevelSequenceBurnInInitSettings">();
 	}
-	static class ULevelSequenceBurnInOptions* GetDefaultObj()
+	static class ULevelSequenceBurnInInitSettings* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<ULevelSequenceBurnInOptions>();
+		return GetDefaultObjImpl<ULevelSequenceBurnInInitSettings>();
 	}
 };
-static_assert(alignof(ULevelSequenceBurnInOptions) == 0x000008, "Wrong alignment on ULevelSequenceBurnInOptions");
-static_assert(sizeof(ULevelSequenceBurnInOptions) == 0x000058, "Wrong size on ULevelSequenceBurnInOptions");
-static_assert(offsetof(ULevelSequenceBurnInOptions, bUseBurnIn) == 0x000028, "Member 'ULevelSequenceBurnInOptions::bUseBurnIn' has a wrong offset!");
-static_assert(offsetof(ULevelSequenceBurnInOptions, BurnInClass) == 0x000030, "Member 'ULevelSequenceBurnInOptions::BurnInClass' has a wrong offset!");
-static_assert(offsetof(ULevelSequenceBurnInOptions, Settings) == 0x000050, "Member 'ULevelSequenceBurnInOptions::Settings' has a wrong offset!");
+static_assert(alignof(ULevelSequenceBurnInInitSettings) == 0x000008, "Wrong alignment on ULevelSequenceBurnInInitSettings");
+static_assert(sizeof(ULevelSequenceBurnInInitSettings) == 0x000028, "Wrong size on ULevelSequenceBurnInInitSettings");
 
 // Class LevelSequence.LevelSequence
 // 0x01B8 (0x0220 - 0x0068)
@@ -156,22 +144,22 @@ static_assert(offsetof(ALevelSequenceActor, DefaultInstanceData) == 0x0002F0, "M
 static_assert(offsetof(ALevelSequenceActor, BurnInInstance) == 0x0002F8, "Member 'ALevelSequenceActor::BurnInInstance' has a wrong offset!");
 static_assert(offsetof(ALevelSequenceActor, bShowBurnin) == 0x000300, "Member 'ALevelSequenceActor::bShowBurnin' has a wrong offset!");
 
-// Class LevelSequence.LevelSequenceMetaData
-// 0x0000 (0x0028 - 0x0028)
-class ILevelSequenceMetaData final : public IInterface
+// Class LevelSequence.ReplicatedLevelSequenceActor
+// 0x0000 (0x0308 - 0x0308)
+class AReplicatedLevelSequenceActor final : public ALevelSequenceActor
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelSequenceMetaData">();
+		return StaticClassImpl<"ReplicatedLevelSequenceActor">();
 	}
-	static class ILevelSequenceMetaData* GetDefaultObj()
+	static class AReplicatedLevelSequenceActor* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<ILevelSequenceMetaData>();
+		return GetDefaultObjImpl<AReplicatedLevelSequenceActor>();
 	}
 };
-static_assert(alignof(ILevelSequenceMetaData) == 0x000008, "Wrong alignment on ILevelSequenceMetaData");
-static_assert(sizeof(ILevelSequenceMetaData) == 0x000028, "Wrong size on ILevelSequenceMetaData");
+static_assert(alignof(AReplicatedLevelSequenceActor) == 0x000008, "Wrong alignment on AReplicatedLevelSequenceActor");
+static_assert(sizeof(AReplicatedLevelSequenceActor) == 0x000308, "Wrong size on AReplicatedLevelSequenceActor");
 
 // Class LevelSequence.DefaultLevelSequenceInstanceData
 // 0x0078 (0x00A0 - 0x0028)
@@ -198,6 +186,23 @@ static_assert(sizeof(UDefaultLevelSequenceInstanceData) == 0x0000A0, "Wrong size
 static_assert(offsetof(UDefaultLevelSequenceInstanceData, TransformOriginActor) == 0x000030, "Member 'UDefaultLevelSequenceInstanceData::TransformOriginActor' has a wrong offset!");
 static_assert(offsetof(UDefaultLevelSequenceInstanceData, TransformOrigin) == 0x000040, "Member 'UDefaultLevelSequenceInstanceData::TransformOrigin' has a wrong offset!");
 
+// Class LevelSequence.LevelSequenceMetaData
+// 0x0000 (0x0028 - 0x0028)
+class ILevelSequenceMetaData final : public IInterface
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"LevelSequenceMetaData">();
+	}
+	static class ILevelSequenceMetaData* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ILevelSequenceMetaData>();
+	}
+};
+static_assert(alignof(ILevelSequenceMetaData) == 0x000008, "Wrong alignment on ILevelSequenceMetaData");
+static_assert(sizeof(ILevelSequenceMetaData) == 0x000028, "Wrong size on ILevelSequenceMetaData");
+
 // Class LevelSequence.AnimSequenceLevelSequenceLink
 // 0x0030 (0x0058 - 0x0028)
 class UAnimSequenceLevelSequenceLink final : public UAssetUserData
@@ -221,39 +226,34 @@ static_assert(sizeof(UAnimSequenceLevelSequenceLink) == 0x000058, "Wrong size on
 static_assert(offsetof(UAnimSequenceLevelSequenceLink, SkelTrackGuid) == 0x000028, "Member 'UAnimSequenceLevelSequenceLink::SkelTrackGuid' has a wrong offset!");
 static_assert(offsetof(UAnimSequenceLevelSequenceLink, PathToLevelSequence) == 0x000038, "Member 'UAnimSequenceLevelSequenceLink::PathToLevelSequence' has a wrong offset!");
 
-// Class LevelSequence.LevelSequenceBurnInInitSettings
-// 0x0000 (0x0028 - 0x0028)
-class ULevelSequenceBurnInInitSettings final : public UObject
+// Class LevelSequence.LevelSequenceBurnInOptions
+// 0x0030 (0x0058 - 0x0028)
+class ULevelSequenceBurnInOptions final : public UObject
 {
 public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"LevelSequenceBurnInInitSettings">();
-	}
-	static class ULevelSequenceBurnInInitSettings* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ULevelSequenceBurnInInitSettings>();
-	}
-};
-static_assert(alignof(ULevelSequenceBurnInInitSettings) == 0x000008, "Wrong alignment on ULevelSequenceBurnInInitSettings");
-static_assert(sizeof(ULevelSequenceBurnInInitSettings) == 0x000028, "Wrong size on ULevelSequenceBurnInInitSettings");
+	bool                                          bUseBurnIn;                                        // 0x0028(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSoftClassPath                         BurnInClass;                                       // 0x0030(0x0020)(Edit, BlueprintVisible, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ULevelSequenceBurnInInitSettings*       Settings;                                          // 0x0050(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-// Class LevelSequence.ReplicatedLevelSequenceActor
-// 0x0000 (0x0308 - 0x0308)
-class AReplicatedLevelSequenceActor final : public ALevelSequenceActor
-{
+public:
+	void SetBurnIn(const struct FSoftClassPath& InBurnInClass);
+
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ReplicatedLevelSequenceActor">();
+		return StaticClassImpl<"LevelSequenceBurnInOptions">();
 	}
-	static class AReplicatedLevelSequenceActor* GetDefaultObj()
+	static class ULevelSequenceBurnInOptions* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<AReplicatedLevelSequenceActor>();
+		return GetDefaultObjImpl<ULevelSequenceBurnInOptions>();
 	}
 };
-static_assert(alignof(AReplicatedLevelSequenceActor) == 0x000008, "Wrong alignment on AReplicatedLevelSequenceActor");
-static_assert(sizeof(AReplicatedLevelSequenceActor) == 0x000308, "Wrong size on AReplicatedLevelSequenceActor");
+static_assert(alignof(ULevelSequenceBurnInOptions) == 0x000008, "Wrong alignment on ULevelSequenceBurnInOptions");
+static_assert(sizeof(ULevelSequenceBurnInOptions) == 0x000058, "Wrong size on ULevelSequenceBurnInOptions");
+static_assert(offsetof(ULevelSequenceBurnInOptions, bUseBurnIn) == 0x000028, "Member 'ULevelSequenceBurnInOptions::bUseBurnIn' has a wrong offset!");
+static_assert(offsetof(ULevelSequenceBurnInOptions, BurnInClass) == 0x000030, "Member 'ULevelSequenceBurnInOptions::BurnInClass' has a wrong offset!");
+static_assert(offsetof(ULevelSequenceBurnInOptions, Settings) == 0x000050, "Member 'ULevelSequenceBurnInOptions::Settings' has a wrong offset!");
 
 // Class LevelSequence.LevelSequenceAnimSequenceLink
 // 0x0010 (0x0038 - 0x0028)

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "AkAudio_structs.hpp"
-#include "Engine_structs.hpp"
 #include "BP_SkillEffectBase_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK

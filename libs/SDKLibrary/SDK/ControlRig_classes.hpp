@@ -10,7 +10,6 @@
 
 #include "Basic.hpp"
 
-#include "PropertyPath_structs.hpp"
 #include "RigVM_structs.hpp"
 #include "RigVM_classes.hpp"
 #include "ControlRig_structs.hpp"
@@ -21,6 +20,7 @@
 #include "MovieSceneTracks_structs.hpp"
 #include "MovieSceneTracks_classes.hpp"
 #include "Engine_classes.hpp"
+#include "PropertyPath_structs.hpp"
 #include "LevelSequence_classes.hpp"
 #include "MovieScene_structs.hpp"
 #include "MovieScene_classes.hpp"

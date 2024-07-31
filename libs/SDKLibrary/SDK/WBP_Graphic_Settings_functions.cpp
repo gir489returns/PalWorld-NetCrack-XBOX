@@ -17,410 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnVSyncChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Graphic_Settings_C::OnVSyncChanged(bool IsOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnVSyncChanged");
-
-	Params::WBP_Graphic_Settings_C_OnVSyncChanged Parms{};
-
-	Parms.IsOn = IsOn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnViewDisChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Graphic_Settings_C::OnViewDisChanged(int32 Selection)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnViewDisChanged");
-
-	Params::WBP_Graphic_Settings_C_OnViewDisChanged Parms{};
-
-	Parms.Selection = Selection;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnTextureChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Graphic_Settings_C::OnTextureChanged(int32 Selection)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnTextureChanged");
-
-	Params::WBP_Graphic_Settings_C_OnTextureChanged Parms{};
-
-	Parms.Selection = Selection;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnShadowChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Graphic_Settings_C::OnShadowChanged(int32 Selection)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnShadowChanged");
-
-	Params::WBP_Graphic_Settings_C_OnShadowChanged Parms{};
-
-	Parms.Selection = Selection;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnRideCameraChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Graphic_Settings_C::OnRideCameraChanged(double Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnRideCameraChanged");
-
-	Params::WBP_Graphic_Settings_C_OnRideCameraChanged Parms{};
-
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnResolutionChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Graphic_Settings_C::OnResolutionChanged(int32 Selection)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnResolutionChanged");
-
-	Params::WBP_Graphic_Settings_C_OnResolutionChanged Parms{};
-
-	Parms.Selection = Selection;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnPresetChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Graphic_Settings_C::OnPresetChanged(int32 Selection)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnPresetChanged");
-
-	Params::WBP_Graphic_Settings_C_OnPresetChanged Parms{};
-
-	Parms.Selection = Selection;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnMotionBlurChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Graphic_Settings_C::OnMotionBlurChanged(bool IsOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnMotionBlurChanged");
-
-	Params::WBP_Graphic_Settings_C_OnMotionBlurChanged Parms{};
-
-	Parms.IsOn = IsOn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnMaxFPSChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Graphic_Settings_C::OnMaxFPSChanged(int32 Selection)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnMaxFPSChanged");
-
-	Params::WBP_Graphic_Settings_C_OnMaxFPSChanged Parms{};
-
-	Parms.Selection = Selection;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnLODChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Graphic_Settings_C::OnLODChanged(double Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnLODChanged");
-
-	Params::WBP_Graphic_Settings_C_OnLODChanged Parms{};
-
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnFOVChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Graphic_Settings_C::OnFOVChanged(double Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnFOVChanged");
-
-	Params::WBP_Graphic_Settings_C_OnFOVChanged Parms{};
-
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnFoliageChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Graphic_Settings_C::OnFoliageChanged(int32 Selection)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnFoliageChanged");
-
-	Params::WBP_Graphic_Settings_C_OnFoliageChanged Parms{};
-
-	Parms.Selection = Selection;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnDLSSChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   DLSSLevel                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Graphic_Settings_C::OnDLSSChanged(int32 DLSSLevel)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnDLSSChanged");
-
-	Params::WBP_Graphic_Settings_C_OnDLSSChanged Parms{};
-
-	Parms.DLSSLevel = DLSSLevel;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnCommonQualityChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Graphic_Settings_C::OnCommonQualityChanged(int32 Selection)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnCommonQualityChanged");
-
-	Params::WBP_Graphic_Settings_C_OnCommonQualityChanged Parms{};
-
-	Parms.Selection = Selection;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnCameraShakeChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Graphic_Settings_C::OnCameraShakeChanged(bool IsOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnCameraShakeChanged");
-
-	Params::WBP_Graphic_Settings_C_OnCameraShakeChanged Parms{};
-
-	Parms.IsOn = IsOn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnCameraRecoilChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Graphic_Settings_C::OnCameraRecoilChanged(bool IsOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnCameraRecoilChanged");
-
-	Params::WBP_Graphic_Settings_C_OnCameraRecoilChanged Parms{};
-
-	Parms.IsOn = IsOn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnBrightnessChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Graphic_Settings_C::OnBrightnessChanged(double Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnBrightnessChanged");
-
-	Params::WBP_Graphic_Settings_C_OnBrightnessChanged Parms{};
-
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnAutoContrastChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Graphic_Settings_C::OnAutoContrastChanged(bool IsOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnAutoContrastChanged");
-
-	Params::WBP_Graphic_Settings_C_OnAutoContrastChanged Parms{};
-
-	Parms.IsOn = IsOn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnAAChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Graphic_Settings_C::OnAAChanged(int32 Selection)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnAAChanged");
-
-	Params::WBP_Graphic_Settings_C_OnAAChanged Parms{};
-
-	Parms.Selection = Selection;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.GetDisplayGraphicLevel
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FPalOptionGraphicsSettings       GraphicLevel                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// EPalOptionGraphicsLevel                 Graphics___                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Graphic_Settings_C::GetDisplayGraphicLevel(const struct FPalOptionGraphicsSettings& GraphicLevel, EPalOptionGraphicsLevel* Graphics___)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Graphic_Settings_C", "GetDisplayGraphicLevel");
-
-	Params::WBP_Graphic_Settings_C_GetDisplayGraphicLevel Parms{};
-
-	Parms.GraphicLevel = std::move(GraphicLevel);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Graphics___ != nullptr)
-		*Graphics___ = Parms.Graphics___;
-}
-
-
 // Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.ExecuteUbergraph_WBP_Graphic_Settings
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -469,17 +65,407 @@ void UWBP_Graphic_Settings_C::ApplySettings()
 }
 
 
-// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.SetDefault
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.GetDisplayGraphicLevel
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FPalOptionGraphicsSettings       GraphicLevel                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// EPalOptionGraphicsLevel                 Graphics___                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Graphic_Settings_C::SetDefault()
+void UWBP_Graphic_Settings_C::GetDisplayGraphicLevel(const struct FPalOptionGraphicsSettings& GraphicLevel, EPalOptionGraphicsLevel* Graphics___)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Graphic_Settings_C", "SetDefault");
+		Func = Class->GetFunction("WBP_Graphic_Settings_C", "GetDisplayGraphicLevel");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Graphic_Settings_C_GetDisplayGraphicLevel Parms{};
+
+	Parms.GraphicLevel = std::move(GraphicLevel);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Graphics___ != nullptr)
+		*Graphics___ = Parms.Graphics___;
+}
+
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnAAChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Graphic_Settings_C::OnAAChanged(int32 Selection)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnAAChanged");
+
+	Params::WBP_Graphic_Settings_C_OnAAChanged Parms{};
+
+	Parms.Selection = Selection;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnAutoContrastChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Graphic_Settings_C::OnAutoContrastChanged(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnAutoContrastChanged");
+
+	Params::WBP_Graphic_Settings_C_OnAutoContrastChanged Parms{};
+
+	Parms.IsOn = IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnBrightnessChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Graphic_Settings_C::OnBrightnessChanged(double Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnBrightnessChanged");
+
+	Params::WBP_Graphic_Settings_C_OnBrightnessChanged Parms{};
+
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnCameraRecoilChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Graphic_Settings_C::OnCameraRecoilChanged(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnCameraRecoilChanged");
+
+	Params::WBP_Graphic_Settings_C_OnCameraRecoilChanged Parms{};
+
+	Parms.IsOn = IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnCameraShakeChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Graphic_Settings_C::OnCameraShakeChanged(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnCameraShakeChanged");
+
+	Params::WBP_Graphic_Settings_C_OnCameraShakeChanged Parms{};
+
+	Parms.IsOn = IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnCommonQualityChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Graphic_Settings_C::OnCommonQualityChanged(int32 Selection)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnCommonQualityChanged");
+
+	Params::WBP_Graphic_Settings_C_OnCommonQualityChanged Parms{};
+
+	Parms.Selection = Selection;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnDLSSChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   DLSSLevel                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Graphic_Settings_C::OnDLSSChanged(int32 DLSSLevel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnDLSSChanged");
+
+	Params::WBP_Graphic_Settings_C_OnDLSSChanged Parms{};
+
+	Parms.DLSSLevel = DLSSLevel;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnFoliageChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Graphic_Settings_C::OnFoliageChanged(int32 Selection)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnFoliageChanged");
+
+	Params::WBP_Graphic_Settings_C_OnFoliageChanged Parms{};
+
+	Parms.Selection = Selection;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnFOVChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Graphic_Settings_C::OnFOVChanged(double Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnFOVChanged");
+
+	Params::WBP_Graphic_Settings_C_OnFOVChanged Parms{};
+
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnLODChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Graphic_Settings_C::OnLODChanged(double Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnLODChanged");
+
+	Params::WBP_Graphic_Settings_C_OnLODChanged Parms{};
+
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnMaxFPSChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Graphic_Settings_C::OnMaxFPSChanged(int32 Selection)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnMaxFPSChanged");
+
+	Params::WBP_Graphic_Settings_C_OnMaxFPSChanged Parms{};
+
+	Parms.Selection = Selection;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnMotionBlurChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Graphic_Settings_C::OnMotionBlurChanged(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnMotionBlurChanged");
+
+	Params::WBP_Graphic_Settings_C_OnMotionBlurChanged Parms{};
+
+	Parms.IsOn = IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnPresetChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Graphic_Settings_C::OnPresetChanged(int32 Selection)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnPresetChanged");
+
+	Params::WBP_Graphic_Settings_C_OnPresetChanged Parms{};
+
+	Parms.Selection = Selection;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnResolutionChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Graphic_Settings_C::OnResolutionChanged(int32 Selection)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnResolutionChanged");
+
+	Params::WBP_Graphic_Settings_C_OnResolutionChanged Parms{};
+
+	Parms.Selection = Selection;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnRideCameraChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Graphic_Settings_C::OnRideCameraChanged(double Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnRideCameraChanged");
+
+	Params::WBP_Graphic_Settings_C_OnRideCameraChanged Parms{};
+
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnShadowChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Graphic_Settings_C::OnShadowChanged(int32 Selection)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnShadowChanged");
+
+	Params::WBP_Graphic_Settings_C_OnShadowChanged Parms{};
+
+	Parms.Selection = Selection;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnTextureChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Graphic_Settings_C::OnTextureChanged(int32 Selection)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnTextureChanged");
+
+	Params::WBP_Graphic_Settings_C_OnTextureChanged Parms{};
+
+	Parms.Selection = Selection;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnViewDisChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Graphic_Settings_C::OnViewDisChanged(int32 Selection)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnViewDisChanged");
+
+	Params::WBP_Graphic_Settings_C_OnViewDisChanged Parms{};
+
+	Parms.Selection = Selection;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.OnVSyncChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Graphic_Settings_C::OnVSyncChanged(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Graphic_Settings_C", "OnVSyncChanged");
+
+	Params::WBP_Graphic_Settings_C_OnVSyncChanged Parms{};
+
+	Parms.IsOn = IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -500,6 +486,20 @@ void UWBP_Graphic_Settings_C::OnWindowChanged(int32 Selection)
 	Parms.Selection = Selection;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Graphic_Settings.WBP_Graphic_Settings_C.SetDefault
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Graphic_Settings_C::SetDefault()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Graphic_Settings_C", "SetDefault");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

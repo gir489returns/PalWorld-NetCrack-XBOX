@@ -17,8 +17,8 @@
 #include "CommonInput_structs.hpp"
 #include "ModularGameplayActors_classes.hpp"
 #include "InputCore_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "CommonGame_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "CommonUI_classes.hpp"
 #include "GameplayTags_structs.hpp"
 

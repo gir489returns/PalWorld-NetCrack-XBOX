@@ -20,151 +20,70 @@
 namespace SDK::Params
 {
 
-// Function WBP_JoinGame.WBP_JoinGame_C.Ñ¹ïüÉKÕe›
+// Function WBP_JoinGame.WBP_JoinGame_C.BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_JoinGame_C______K_e_ final
+struct WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature final
 {
 public:
-	class UPalHUDDispatchParameterBase*           Param_Param;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Title_WorldSelect_ListContent_C*   Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_JoinGame_C______K_e_) == 0x000008, "Wrong alignment on WBP_JoinGame_C______K_e_");
-static_assert(sizeof(WBP_JoinGame_C______K_e_) == 0x000008, "Wrong size on WBP_JoinGame_C______K_e_");
-static_assert(offsetof(WBP_JoinGame_C______K_e_, Param_Param) == 0x000000, "Member 'WBP_JoinGame_C______K_e_::Param_Param' has a wrong offset!");
+static_assert(alignof(WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature) == 0x000008, "Wrong alignment on WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature");
+static_assert(sizeof(WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature) == 0x000008, "Wrong size on WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature");
+static_assert(offsetof(WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature, Widget) == 0x000000, "Member 'WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature::Widget' has a wrong offset!");
 
-// Function WBP_JoinGame.WBP_JoinGame_C.«¹¿à¤ÙóÈ_0
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_JoinGame_C__________0 final
-{
-public:
-	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_JoinGame_C__________0) == 0x000001, "Wrong alignment on WBP_JoinGame_C__________0");
-static_assert(sizeof(WBP_JoinGame_C__________0) == 0x000001, "Wrong size on WBP_JoinGame_C__________0");
-static_assert(offsetof(WBP_JoinGame_C__________0, bResult) == 0x000000, "Member 'WBP_JoinGame_C__________0::bResult' has a wrong offset!");
-
-// Function WBP_JoinGame.WBP_JoinGame_C.«¹¿à¤ÙóÈ
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_JoinGame_C_________ final
-{
-public:
-	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_JoinGame_C_________) == 0x000001, "Wrong alignment on WBP_JoinGame_C_________");
-static_assert(sizeof(WBP_JoinGame_C_________) == 0x000001, "Wrong size on WBP_JoinGame_C_________");
-static_assert(offsetof(WBP_JoinGame_C_________, bResult) == 0x000000, "Member 'WBP_JoinGame_C_________::bResult' has a wrong offset!");
-
-// Function WBP_JoinGame.WBP_JoinGame_C.RequestGetServerListBP
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_JoinGame_C_RequestGetServerListBP final
-{
-public:
-	EPalUIServerListFilterType                    Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Region;                                            // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	int32                                         PageOffset;                                        // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Word;                                              // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	EPalUIServerListSortType                      Param_SortType;                                    // 0x0030(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_JoinGame_C_RequestGetServerListBP) == 0x000008, "Wrong alignment on WBP_JoinGame_C_RequestGetServerListBP");
-static_assert(sizeof(WBP_JoinGame_C_RequestGetServerListBP) == 0x000038, "Wrong size on WBP_JoinGame_C_RequestGetServerListBP");
-static_assert(offsetof(WBP_JoinGame_C_RequestGetServerListBP, Type) == 0x000000, "Member 'WBP_JoinGame_C_RequestGetServerListBP::Type' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_RequestGetServerListBP, Region) == 0x000008, "Member 'WBP_JoinGame_C_RequestGetServerListBP::Region' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_RequestGetServerListBP, PageOffset) == 0x000018, "Member 'WBP_JoinGame_C_RequestGetServerListBP::PageOffset' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_RequestGetServerListBP, Word) == 0x000020, "Member 'WBP_JoinGame_C_RequestGetServerListBP::Word' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_RequestGetServerListBP, Param_SortType) == 0x000030, "Member 'WBP_JoinGame_C_RequestGetServerListBP::Param_SortType' has a wrong offset!");
-
-// Function WBP_JoinGame.WBP_JoinGame_C.Passworde›Œ
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_JoinGame_C_Passworde__ final
-{
-public:
-	class UPalHUDDispatchParameterBase*           Param_Param;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_JoinGame_C_Passworde__) == 0x000008, "Wrong alignment on WBP_JoinGame_C_Passworde__");
-static_assert(sizeof(WBP_JoinGame_C_Passworde__) == 0x000008, "Wrong size on WBP_JoinGame_C_Passworde__");
-static_assert(offsetof(WBP_JoinGame_C_Passworde__, Param_Param) == 0x000000, "Member 'WBP_JoinGame_C_Passworde__::Param_Param' has a wrong offset!");
-
-// Function WBP_JoinGame.WBP_JoinGame_C.OpenJoinServerDialog
-// 0x0130 (0x0130 - 0x0000)
-struct WBP_JoinGame_C_OpenJoinServerDialog final
-{
-public:
-	TDelegate<void(bool bResult)>                 K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0010(0x0018)()
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0028(0x0018)()
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0040(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0058(0x0050)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00A8(0x0050)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00F8(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0108(0x0018)()
-	struct FGuid                                  CallFunc_Dialog_ReturnValue;                       // 0x0120(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_JoinGame_C_OpenJoinServerDialog) == 0x000008, "Wrong alignment on WBP_JoinGame_C_OpenJoinServerDialog");
-static_assert(sizeof(WBP_JoinGame_C_OpenJoinServerDialog) == 0x000130, "Wrong size on WBP_JoinGame_C_OpenJoinServerDialog");
-static_assert(offsetof(WBP_JoinGame_C_OpenJoinServerDialog, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'WBP_JoinGame_C_OpenJoinServerDialog::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_OpenJoinServerDialog, CallFunc_GetLocalizedTextFromHandle_Text) == 0x000010, "Member 'WBP_JoinGame_C_OpenJoinServerDialog::CallFunc_GetLocalizedTextFromHandle_Text' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_OpenJoinServerDialog, CallFunc_Conv_StringToText_ReturnValue) == 0x000028, "Member 'WBP_JoinGame_C_OpenJoinServerDialog::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_OpenJoinServerDialog, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000040, "Member 'WBP_JoinGame_C_OpenJoinServerDialog::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_OpenJoinServerDialog, K2Node_MakeStruct_FormatArgumentData) == 0x000058, "Member 'WBP_JoinGame_C_OpenJoinServerDialog::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_OpenJoinServerDialog, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000A8, "Member 'WBP_JoinGame_C_OpenJoinServerDialog::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_OpenJoinServerDialog, K2Node_MakeArray_Array) == 0x0000F8, "Member 'WBP_JoinGame_C_OpenJoinServerDialog::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_OpenJoinServerDialog, CallFunc_Format_ReturnValue) == 0x000108, "Member 'WBP_JoinGame_C_OpenJoinServerDialog::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_OpenJoinServerDialog, CallFunc_Dialog_ReturnValue) == 0x000120, "Member 'WBP_JoinGame_C_OpenJoinServerDialog::CallFunc_Dialog_ReturnValue' has a wrong offset!");
-
-// Function WBP_JoinGame.WBP_JoinGame_C.OnCloseJoinServerDialog
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_JoinGame_C_OnCloseJoinServerDialog final
-{
-public:
-	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Title_WorldSelect_ListContent_C*   K2Node_DynamicCast_AsWBP_Title_World_Select_List_Content; // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_JoinGame_C_OnCloseJoinServerDialog) == 0x000008, "Wrong alignment on WBP_JoinGame_C_OnCloseJoinServerDialog");
-static_assert(sizeof(WBP_JoinGame_C_OnCloseJoinServerDialog) == 0x000028, "Wrong size on WBP_JoinGame_C_OnCloseJoinServerDialog");
-static_assert(offsetof(WBP_JoinGame_C_OnCloseJoinServerDialog, bResult) == 0x000000, "Member 'WBP_JoinGame_C_OnCloseJoinServerDialog::bResult' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_OnCloseJoinServerDialog, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue) == 0x000008, "Member 'WBP_JoinGame_C_OnCloseJoinServerDialog::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_OnCloseJoinServerDialog, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x000010, "Member 'WBP_JoinGame_C_OnCloseJoinServerDialog::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_OnCloseJoinServerDialog, K2Node_DynamicCast_AsWBP_Title_World_Select_List_Content) == 0x000018, "Member 'WBP_JoinGame_C_OnCloseJoinServerDialog::K2Node_DynamicCast_AsWBP_Title_World_Select_List_Content' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_OnCloseJoinServerDialog, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_JoinGame_C_OnCloseJoinServerDialog::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-
-// Function WBP_JoinGame.WBP_JoinGame_C.OnClicked_JoinByIPButton
+// Function WBP_JoinGame.WBP_JoinGame_C.BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_JoinGame_C_OnClicked_JoinByIPButton final
+struct WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature final
 {
 public:
-	class FString                                 Address;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 Param_SearchWord;                                  // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_JoinGame_C_OnClicked_JoinByIPButton) == 0x000008, "Wrong alignment on WBP_JoinGame_C_OnClicked_JoinByIPButton");
-static_assert(sizeof(WBP_JoinGame_C_OnClicked_JoinByIPButton) == 0x000010, "Wrong size on WBP_JoinGame_C_OnClicked_JoinByIPButton");
-static_assert(offsetof(WBP_JoinGame_C_OnClicked_JoinByIPButton, Address) == 0x000000, "Member 'WBP_JoinGame_C_OnClicked_JoinByIPButton::Address' has a wrong offset!");
+static_assert(alignof(WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature) == 0x000008, "Wrong alignment on WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature");
+static_assert(sizeof(WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature) == 0x000010, "Wrong size on WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature");
+static_assert(offsetof(WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature, Param_SearchWord) == 0x000000, "Member 'WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature::Param_SearchWord' has a wrong offset!");
 
-// Function WBP_JoinGame.WBP_JoinGame_C.OnChangeVersionIgnoreCheckbox
+// Function WBP_JoinGame.WBP_JoinGame_C.BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_JoinGame_C_OnChangeVersionIgnoreCheckbox final
+struct WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature final
 {
 public:
-	bool                                          bIsChecked;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalUIServerListSortType                      Param_SortType;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_JoinGame_C_OnChangeVersionIgnoreCheckbox) == 0x000001, "Wrong alignment on WBP_JoinGame_C_OnChangeVersionIgnoreCheckbox");
-static_assert(sizeof(WBP_JoinGame_C_OnChangeVersionIgnoreCheckbox) == 0x000001, "Wrong size on WBP_JoinGame_C_OnChangeVersionIgnoreCheckbox");
-static_assert(offsetof(WBP_JoinGame_C_OnChangeVersionIgnoreCheckbox, bIsChecked) == 0x000000, "Member 'WBP_JoinGame_C_OnChangeVersionIgnoreCheckbox::bIsChecked' has a wrong offset!");
+static_assert(alignof(WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature) == 0x000001, "Wrong alignment on WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature");
+static_assert(sizeof(WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature) == 0x000001, "Wrong size on WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature");
+static_assert(offsetof(WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature, Param_SortType) == 0x000000, "Member 'WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature::Param_SortType' has a wrong offset!");
 
-// Function WBP_JoinGame.WBP_JoinGame_C.OnCancelAction
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_JoinGame_C_OnCancelAction final
+// Function WBP_JoinGame.WBP_JoinGame_C.Completed_B0C690024643A528EA9A2B9DAEA567A3
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3 final
 {
 public:
-	bool                                          CallFunc_IsEditingSearchWord_IsEditing;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 ResponseBody;                                      // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          bResponseOK;                                       // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ResponseCode;                                      // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_JoinGame_C_OnCancelAction) == 0x000001, "Wrong alignment on WBP_JoinGame_C_OnCancelAction");
-static_assert(sizeof(WBP_JoinGame_C_OnCancelAction) == 0x000001, "Wrong size on WBP_JoinGame_C_OnCancelAction");
-static_assert(offsetof(WBP_JoinGame_C_OnCancelAction, CallFunc_IsEditingSearchWord_IsEditing) == 0x000000, "Member 'WBP_JoinGame_C_OnCancelAction::CallFunc_IsEditingSearchWord_IsEditing' has a wrong offset!");
+static_assert(alignof(WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3) == 0x000008, "Wrong alignment on WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3");
+static_assert(sizeof(WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3) == 0x000018, "Wrong size on WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3");
+static_assert(offsetof(WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3, ResponseBody) == 0x000000, "Member 'WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3::ResponseBody' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3, bResponseOK) == 0x000010, "Member 'WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3::bResponseOK' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3, ResponseCode) == 0x000014, "Member 'WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3::ResponseCode' has a wrong offset!");
+
+// Function WBP_JoinGame.WBP_JoinGame_C.DisplayServer
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_JoinGame_C_DisplayServer final
+{
+public:
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIServerDataCollectInfo            K2Node_MakeStruct_PalUIServerDataCollectInfo;      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FPalUIServerDisplayData>        CallFunc_CollectServerDisplayInfo_OutServerInfo;   // 0x0008(0x0010)(ReferenceParm)
+};
+static_assert(alignof(WBP_JoinGame_C_DisplayServer) == 0x000008, "Wrong alignment on WBP_JoinGame_C_DisplayServer");
+static_assert(sizeof(WBP_JoinGame_C_DisplayServer) == 0x000018, "Wrong size on WBP_JoinGame_C_DisplayServer");
+static_assert(offsetof(WBP_JoinGame_C_DisplayServer, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000000, "Member 'WBP_JoinGame_C_DisplayServer::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_DisplayServer, K2Node_MakeStruct_PalUIServerDataCollectInfo) == 0x000001, "Member 'WBP_JoinGame_C_DisplayServer::K2Node_MakeStruct_PalUIServerDataCollectInfo' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_DisplayServer, CallFunc_CollectServerDisplayInfo_OutServerInfo) == 0x000008, "Member 'WBP_JoinGame_C_DisplayServer::CallFunc_CollectServerDisplayInfo_OutServerInfo' has a wrong offset!");
 
 // Function WBP_JoinGame.WBP_JoinGame_C.ExecuteUbergraph_WBP_JoinGame
 // 0x05B0 (0x05B0 - 0x0000)
@@ -362,70 +281,151 @@ static_assert(offsetof(WBP_JoinGame_C_ExecuteUbergraph_WBP_JoinGame, CallFunc_Ge
 static_assert(offsetof(WBP_JoinGame_C_ExecuteUbergraph_WBP_JoinGame, CallFunc_HTTPRequestAsyncFunction_ReturnValue) == 0x0005A0, "Member 'WBP_JoinGame_C_ExecuteUbergraph_WBP_JoinGame::CallFunc_HTTPRequestAsyncFunction_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_JoinGame_C_ExecuteUbergraph_WBP_JoinGame, CallFunc_IsValid_ReturnValue) == 0x0005A8, "Member 'WBP_JoinGame_C_ExecuteUbergraph_WBP_JoinGame::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
-// Function WBP_JoinGame.WBP_JoinGame_C.DisplayServer
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_JoinGame_C_DisplayServer final
-{
-public:
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIServerDataCollectInfo            K2Node_MakeStruct_PalUIServerDataCollectInfo;      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FPalUIServerDisplayData>        CallFunc_CollectServerDisplayInfo_OutServerInfo;   // 0x0008(0x0010)(ReferenceParm)
-};
-static_assert(alignof(WBP_JoinGame_C_DisplayServer) == 0x000008, "Wrong alignment on WBP_JoinGame_C_DisplayServer");
-static_assert(sizeof(WBP_JoinGame_C_DisplayServer) == 0x000018, "Wrong size on WBP_JoinGame_C_DisplayServer");
-static_assert(offsetof(WBP_JoinGame_C_DisplayServer, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000000, "Member 'WBP_JoinGame_C_DisplayServer::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_DisplayServer, K2Node_MakeStruct_PalUIServerDataCollectInfo) == 0x000001, "Member 'WBP_JoinGame_C_DisplayServer::K2Node_MakeStruct_PalUIServerDataCollectInfo' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_DisplayServer, CallFunc_CollectServerDisplayInfo_OutServerInfo) == 0x000008, "Member 'WBP_JoinGame_C_DisplayServer::CallFunc_CollectServerDisplayInfo_OutServerInfo' has a wrong offset!");
-
-// Function WBP_JoinGame.WBP_JoinGame_C.Completed_B0C690024643A528EA9A2B9DAEA567A3
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3 final
-{
-public:
-	class FString                                 ResponseBody;                                      // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          bResponseOK;                                       // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         ResponseCode;                                      // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3) == 0x000008, "Wrong alignment on WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3");
-static_assert(sizeof(WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3) == 0x000018, "Wrong size on WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3");
-static_assert(offsetof(WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3, ResponseBody) == 0x000000, "Member 'WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3::ResponseBody' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3, bResponseOK) == 0x000010, "Member 'WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3::bResponseOK' has a wrong offset!");
-static_assert(offsetof(WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3, ResponseCode) == 0x000014, "Member 'WBP_JoinGame_C_Completed_B0C690024643A528EA9A2B9DAEA567A3::ResponseCode' has a wrong offset!");
-
-// Function WBP_JoinGame.WBP_JoinGame_C.BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature final
-{
-public:
-	class UWBP_Title_WorldSelect_ListContent_C*   Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature) == 0x000008, "Wrong alignment on WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature");
-static_assert(sizeof(WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature) == 0x000008, "Wrong size on WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature");
-static_assert(offsetof(WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature, Widget) == 0x000000, "Member 'WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature::Widget' has a wrong offset!");
-
-// Function WBP_JoinGame.WBP_JoinGame_C.BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature final
-{
-public:
-	class FString                                 Param_SearchWord;                                  // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature) == 0x000008, "Wrong alignment on WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature");
-static_assert(sizeof(WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature) == 0x000010, "Wrong size on WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature");
-static_assert(offsetof(WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature, Param_SearchWord) == 0x000000, "Member 'WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature::Param_SearchWord' has a wrong offset!");
-
-// Function WBP_JoinGame.WBP_JoinGame_C.BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature
+// Function WBP_JoinGame.WBP_JoinGame_C.OnCancelAction
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature final
+struct WBP_JoinGame_C_OnCancelAction final
 {
 public:
-	EPalUIServerListSortType                      Param_SortType;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEditingSearchWord_IsEditing;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature) == 0x000001, "Wrong alignment on WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature");
-static_assert(sizeof(WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature) == 0x000001, "Wrong size on WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature");
-static_assert(offsetof(WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature, Param_SortType) == 0x000000, "Member 'WBP_JoinGame_C_BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature::Param_SortType' has a wrong offset!");
+static_assert(alignof(WBP_JoinGame_C_OnCancelAction) == 0x000001, "Wrong alignment on WBP_JoinGame_C_OnCancelAction");
+static_assert(sizeof(WBP_JoinGame_C_OnCancelAction) == 0x000001, "Wrong size on WBP_JoinGame_C_OnCancelAction");
+static_assert(offsetof(WBP_JoinGame_C_OnCancelAction, CallFunc_IsEditingSearchWord_IsEditing) == 0x000000, "Member 'WBP_JoinGame_C_OnCancelAction::CallFunc_IsEditingSearchWord_IsEditing' has a wrong offset!");
+
+// Function WBP_JoinGame.WBP_JoinGame_C.OnChangeVersionIgnoreCheckbox
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_JoinGame_C_OnChangeVersionIgnoreCheckbox final
+{
+public:
+	bool                                          bIsChecked;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_JoinGame_C_OnChangeVersionIgnoreCheckbox) == 0x000001, "Wrong alignment on WBP_JoinGame_C_OnChangeVersionIgnoreCheckbox");
+static_assert(sizeof(WBP_JoinGame_C_OnChangeVersionIgnoreCheckbox) == 0x000001, "Wrong size on WBP_JoinGame_C_OnChangeVersionIgnoreCheckbox");
+static_assert(offsetof(WBP_JoinGame_C_OnChangeVersionIgnoreCheckbox, bIsChecked) == 0x000000, "Member 'WBP_JoinGame_C_OnChangeVersionIgnoreCheckbox::bIsChecked' has a wrong offset!");
+
+// Function WBP_JoinGame.WBP_JoinGame_C.OnClicked_JoinByIPButton
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_JoinGame_C_OnClicked_JoinByIPButton final
+{
+public:
+	class FString                                 Address;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_JoinGame_C_OnClicked_JoinByIPButton) == 0x000008, "Wrong alignment on WBP_JoinGame_C_OnClicked_JoinByIPButton");
+static_assert(sizeof(WBP_JoinGame_C_OnClicked_JoinByIPButton) == 0x000010, "Wrong size on WBP_JoinGame_C_OnClicked_JoinByIPButton");
+static_assert(offsetof(WBP_JoinGame_C_OnClicked_JoinByIPButton, Address) == 0x000000, "Member 'WBP_JoinGame_C_OnClicked_JoinByIPButton::Address' has a wrong offset!");
+
+// Function WBP_JoinGame.WBP_JoinGame_C.OnCloseJoinServerDialog
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_JoinGame_C_OnCloseJoinServerDialog final
+{
+public:
+	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Title_WorldSelect_ListContent_C*   K2Node_DynamicCast_AsWBP_Title_World_Select_List_Content; // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_JoinGame_C_OnCloseJoinServerDialog) == 0x000008, "Wrong alignment on WBP_JoinGame_C_OnCloseJoinServerDialog");
+static_assert(sizeof(WBP_JoinGame_C_OnCloseJoinServerDialog) == 0x000028, "Wrong size on WBP_JoinGame_C_OnCloseJoinServerDialog");
+static_assert(offsetof(WBP_JoinGame_C_OnCloseJoinServerDialog, bResult) == 0x000000, "Member 'WBP_JoinGame_C_OnCloseJoinServerDialog::bResult' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_OnCloseJoinServerDialog, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue) == 0x000008, "Member 'WBP_JoinGame_C_OnCloseJoinServerDialog::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_OnCloseJoinServerDialog, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x000010, "Member 'WBP_JoinGame_C_OnCloseJoinServerDialog::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_OnCloseJoinServerDialog, K2Node_DynamicCast_AsWBP_Title_World_Select_List_Content) == 0x000018, "Member 'WBP_JoinGame_C_OnCloseJoinServerDialog::K2Node_DynamicCast_AsWBP_Title_World_Select_List_Content' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_OnCloseJoinServerDialog, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_JoinGame_C_OnCloseJoinServerDialog::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+
+// Function WBP_JoinGame.WBP_JoinGame_C.OpenJoinServerDialog
+// 0x0130 (0x0130 - 0x0000)
+struct WBP_JoinGame_C_OpenJoinServerDialog final
+{
+public:
+	TDelegate<void(bool bResult)>                 K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0010(0x0018)()
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0028(0x0018)()
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0040(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0058(0x0050)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00A8(0x0050)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00F8(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0108(0x0018)()
+	struct FGuid                                  CallFunc_Dialog_ReturnValue;                       // 0x0120(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_JoinGame_C_OpenJoinServerDialog) == 0x000008, "Wrong alignment on WBP_JoinGame_C_OpenJoinServerDialog");
+static_assert(sizeof(WBP_JoinGame_C_OpenJoinServerDialog) == 0x000130, "Wrong size on WBP_JoinGame_C_OpenJoinServerDialog");
+static_assert(offsetof(WBP_JoinGame_C_OpenJoinServerDialog, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'WBP_JoinGame_C_OpenJoinServerDialog::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_OpenJoinServerDialog, CallFunc_GetLocalizedTextFromHandle_Text) == 0x000010, "Member 'WBP_JoinGame_C_OpenJoinServerDialog::CallFunc_GetLocalizedTextFromHandle_Text' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_OpenJoinServerDialog, CallFunc_Conv_StringToText_ReturnValue) == 0x000028, "Member 'WBP_JoinGame_C_OpenJoinServerDialog::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_OpenJoinServerDialog, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000040, "Member 'WBP_JoinGame_C_OpenJoinServerDialog::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_OpenJoinServerDialog, K2Node_MakeStruct_FormatArgumentData) == 0x000058, "Member 'WBP_JoinGame_C_OpenJoinServerDialog::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_OpenJoinServerDialog, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000A8, "Member 'WBP_JoinGame_C_OpenJoinServerDialog::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_OpenJoinServerDialog, K2Node_MakeArray_Array) == 0x0000F8, "Member 'WBP_JoinGame_C_OpenJoinServerDialog::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_OpenJoinServerDialog, CallFunc_Format_ReturnValue) == 0x000108, "Member 'WBP_JoinGame_C_OpenJoinServerDialog::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_OpenJoinServerDialog, CallFunc_Dialog_ReturnValue) == 0x000120, "Member 'WBP_JoinGame_C_OpenJoinServerDialog::CallFunc_Dialog_ReturnValue' has a wrong offset!");
+
+// Function WBP_JoinGame.WBP_JoinGame_C.Passworde›Œ
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_JoinGame_C_Passworde__ final
+{
+public:
+	class UPalHUDDispatchParameterBase*           Param_Param;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_JoinGame_C_Passworde__) == 0x000008, "Wrong alignment on WBP_JoinGame_C_Passworde__");
+static_assert(sizeof(WBP_JoinGame_C_Passworde__) == 0x000008, "Wrong size on WBP_JoinGame_C_Passworde__");
+static_assert(offsetof(WBP_JoinGame_C_Passworde__, Param_Param) == 0x000000, "Member 'WBP_JoinGame_C_Passworde__::Param_Param' has a wrong offset!");
+
+// Function WBP_JoinGame.WBP_JoinGame_C.RequestGetServerListBP
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_JoinGame_C_RequestGetServerListBP final
+{
+public:
+	EPalUIServerListFilterType                    Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Region;                                            // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	int32                                         PageOffset;                                        // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Word;                                              // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	EPalUIServerListSortType                      Param_SortType;                                    // 0x0030(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_JoinGame_C_RequestGetServerListBP) == 0x000008, "Wrong alignment on WBP_JoinGame_C_RequestGetServerListBP");
+static_assert(sizeof(WBP_JoinGame_C_RequestGetServerListBP) == 0x000038, "Wrong size on WBP_JoinGame_C_RequestGetServerListBP");
+static_assert(offsetof(WBP_JoinGame_C_RequestGetServerListBP, Type) == 0x000000, "Member 'WBP_JoinGame_C_RequestGetServerListBP::Type' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_RequestGetServerListBP, Region) == 0x000008, "Member 'WBP_JoinGame_C_RequestGetServerListBP::Region' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_RequestGetServerListBP, PageOffset) == 0x000018, "Member 'WBP_JoinGame_C_RequestGetServerListBP::PageOffset' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_RequestGetServerListBP, Word) == 0x000020, "Member 'WBP_JoinGame_C_RequestGetServerListBP::Word' has a wrong offset!");
+static_assert(offsetof(WBP_JoinGame_C_RequestGetServerListBP, Param_SortType) == 0x000030, "Member 'WBP_JoinGame_C_RequestGetServerListBP::Param_SortType' has a wrong offset!");
+
+// Function WBP_JoinGame.WBP_JoinGame_C.«¹¿à¤ÙóÈ
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_JoinGame_C_________ final
+{
+public:
+	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_JoinGame_C_________) == 0x000001, "Wrong alignment on WBP_JoinGame_C_________");
+static_assert(sizeof(WBP_JoinGame_C_________) == 0x000001, "Wrong size on WBP_JoinGame_C_________");
+static_assert(offsetof(WBP_JoinGame_C_________, bResult) == 0x000000, "Member 'WBP_JoinGame_C_________::bResult' has a wrong offset!");
+
+// Function WBP_JoinGame.WBP_JoinGame_C.«¹¿à¤ÙóÈ_0
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_JoinGame_C__________0 final
+{
+public:
+	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_JoinGame_C__________0) == 0x000001, "Wrong alignment on WBP_JoinGame_C__________0");
+static_assert(sizeof(WBP_JoinGame_C__________0) == 0x000001, "Wrong size on WBP_JoinGame_C__________0");
+static_assert(offsetof(WBP_JoinGame_C__________0, bResult) == 0x000000, "Member 'WBP_JoinGame_C__________0::bResult' has a wrong offset!");
+
+// Function WBP_JoinGame.WBP_JoinGame_C.Ñ¹ïüÉKÕe›
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_JoinGame_C______K_e_ final
+{
+public:
+	class UPalHUDDispatchParameterBase*           Param_Param;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_JoinGame_C______K_e_) == 0x000008, "Wrong alignment on WBP_JoinGame_C______K_e_");
+static_assert(sizeof(WBP_JoinGame_C______K_e_) == 0x000008, "Wrong size on WBP_JoinGame_C______K_e_");
+static_assert(offsetof(WBP_JoinGame_C______K_e_, Param_Param) == 0x000000, "Member 'WBP_JoinGame_C______K_e_::Param_Param' has a wrong offset!");
 
 // Function WBP_JoinGame.WBP_JoinGame_C.BP_GetDesiredFocusTarget
 // 0x0028 (0x0028 - 0x0000)

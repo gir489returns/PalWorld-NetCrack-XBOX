@@ -80,19 +80,28 @@ enum class EMoviePipelineShutterTiming : uint8
 	EMoviePipelineShutterTiming_MAX          = 3,
 };
 
-// ScriptStruct MovieRenderPipelineCore.MoviePipelineSidecarCamera
+// ScriptStruct MovieRenderPipelineCore.MoviePipelineSegmentWorkMetrics
 // 0x0028 (0x0028 - 0x0000)
-struct FMoviePipelineSidecarCamera final
+struct FMoviePipelineSegmentWorkMetrics final
 {
 public:
-	struct FGuid                                  BindingId;                                         // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10[0x8];                                       // 0x0010(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Name;                                              // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 SegmentName;                                       // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         OutputFrameIndex;                                  // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TotalOutputFrameCount;                             // 0x0014(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         OutputSubSampleIndex;                              // 0x0018(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TotalSubSampleCount;                               // 0x001C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         EngineWarmUpFrameIndex;                            // 0x0020(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TotalEngineWarmUpFrameCount;                       // 0x0024(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMoviePipelineSidecarCamera) == 0x000008, "Wrong alignment on FMoviePipelineSidecarCamera");
-static_assert(sizeof(FMoviePipelineSidecarCamera) == 0x000028, "Wrong size on FMoviePipelineSidecarCamera");
-static_assert(offsetof(FMoviePipelineSidecarCamera, BindingId) == 0x000000, "Member 'FMoviePipelineSidecarCamera::BindingId' has a wrong offset!");
-static_assert(offsetof(FMoviePipelineSidecarCamera, Name) == 0x000018, "Member 'FMoviePipelineSidecarCamera::Name' has a wrong offset!");
+static_assert(alignof(FMoviePipelineSegmentWorkMetrics) == 0x000008, "Wrong alignment on FMoviePipelineSegmentWorkMetrics");
+static_assert(sizeof(FMoviePipelineSegmentWorkMetrics) == 0x000028, "Wrong size on FMoviePipelineSegmentWorkMetrics");
+static_assert(offsetof(FMoviePipelineSegmentWorkMetrics, SegmentName) == 0x000000, "Member 'FMoviePipelineSegmentWorkMetrics::SegmentName' has a wrong offset!");
+static_assert(offsetof(FMoviePipelineSegmentWorkMetrics, OutputFrameIndex) == 0x000010, "Member 'FMoviePipelineSegmentWorkMetrics::OutputFrameIndex' has a wrong offset!");
+static_assert(offsetof(FMoviePipelineSegmentWorkMetrics, TotalOutputFrameCount) == 0x000014, "Member 'FMoviePipelineSegmentWorkMetrics::TotalOutputFrameCount' has a wrong offset!");
+static_assert(offsetof(FMoviePipelineSegmentWorkMetrics, OutputSubSampleIndex) == 0x000018, "Member 'FMoviePipelineSegmentWorkMetrics::OutputSubSampleIndex' has a wrong offset!");
+static_assert(offsetof(FMoviePipelineSegmentWorkMetrics, TotalSubSampleCount) == 0x00001C, "Member 'FMoviePipelineSegmentWorkMetrics::TotalSubSampleCount' has a wrong offset!");
+static_assert(offsetof(FMoviePipelineSegmentWorkMetrics, EngineWarmUpFrameIndex) == 0x000020, "Member 'FMoviePipelineSegmentWorkMetrics::EngineWarmUpFrameIndex' has a wrong offset!");
+static_assert(offsetof(FMoviePipelineSegmentWorkMetrics, TotalEngineWarmUpFrameCount) == 0x000024, "Member 'FMoviePipelineSegmentWorkMetrics::TotalEngineWarmUpFrameCount' has a wrong offset!");
 
 // ScriptStruct MovieRenderPipelineCore.MoviePipelinePassIdentifier
 // 0x0020 (0x0020 - 0x0000)
@@ -149,28 +158,19 @@ static_assert(offsetof(FMoviePipelineOutputData, Job) == 0x000008, "Member 'FMov
 static_assert(offsetof(FMoviePipelineOutputData, bSuccess) == 0x000010, "Member 'FMoviePipelineOutputData::bSuccess' has a wrong offset!");
 static_assert(offsetof(FMoviePipelineOutputData, ShotData) == 0x000018, "Member 'FMoviePipelineOutputData::ShotData' has a wrong offset!");
 
-// ScriptStruct MovieRenderPipelineCore.MoviePipelineSegmentWorkMetrics
+// ScriptStruct MovieRenderPipelineCore.MoviePipelineSidecarCamera
 // 0x0028 (0x0028 - 0x0000)
-struct FMoviePipelineSegmentWorkMetrics final
+struct FMoviePipelineSidecarCamera final
 {
 public:
-	class FString                                 SegmentName;                                       // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         OutputFrameIndex;                                  // 0x0010(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TotalOutputFrameCount;                             // 0x0014(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         OutputSubSampleIndex;                              // 0x0018(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TotalSubSampleCount;                               // 0x001C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         EngineWarmUpFrameIndex;                            // 0x0020(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TotalEngineWarmUpFrameCount;                       // 0x0024(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGuid                                  BindingId;                                         // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_10[0x8];                                       // 0x0010(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Name;                                              // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMoviePipelineSegmentWorkMetrics) == 0x000008, "Wrong alignment on FMoviePipelineSegmentWorkMetrics");
-static_assert(sizeof(FMoviePipelineSegmentWorkMetrics) == 0x000028, "Wrong size on FMoviePipelineSegmentWorkMetrics");
-static_assert(offsetof(FMoviePipelineSegmentWorkMetrics, SegmentName) == 0x000000, "Member 'FMoviePipelineSegmentWorkMetrics::SegmentName' has a wrong offset!");
-static_assert(offsetof(FMoviePipelineSegmentWorkMetrics, OutputFrameIndex) == 0x000010, "Member 'FMoviePipelineSegmentWorkMetrics::OutputFrameIndex' has a wrong offset!");
-static_assert(offsetof(FMoviePipelineSegmentWorkMetrics, TotalOutputFrameCount) == 0x000014, "Member 'FMoviePipelineSegmentWorkMetrics::TotalOutputFrameCount' has a wrong offset!");
-static_assert(offsetof(FMoviePipelineSegmentWorkMetrics, OutputSubSampleIndex) == 0x000018, "Member 'FMoviePipelineSegmentWorkMetrics::OutputSubSampleIndex' has a wrong offset!");
-static_assert(offsetof(FMoviePipelineSegmentWorkMetrics, TotalSubSampleCount) == 0x00001C, "Member 'FMoviePipelineSegmentWorkMetrics::TotalSubSampleCount' has a wrong offset!");
-static_assert(offsetof(FMoviePipelineSegmentWorkMetrics, EngineWarmUpFrameIndex) == 0x000020, "Member 'FMoviePipelineSegmentWorkMetrics::EngineWarmUpFrameIndex' has a wrong offset!");
-static_assert(offsetof(FMoviePipelineSegmentWorkMetrics, TotalEngineWarmUpFrameCount) == 0x000024, "Member 'FMoviePipelineSegmentWorkMetrics::TotalEngineWarmUpFrameCount' has a wrong offset!");
+static_assert(alignof(FMoviePipelineSidecarCamera) == 0x000008, "Wrong alignment on FMoviePipelineSidecarCamera");
+static_assert(sizeof(FMoviePipelineSidecarCamera) == 0x000028, "Wrong size on FMoviePipelineSidecarCamera");
+static_assert(offsetof(FMoviePipelineSidecarCamera, BindingId) == 0x000000, "Member 'FMoviePipelineSidecarCamera::BindingId' has a wrong offset!");
+static_assert(offsetof(FMoviePipelineSidecarCamera, Name) == 0x000018, "Member 'FMoviePipelineSidecarCamera::Name' has a wrong offset!");
 
 // ScriptStruct MovieRenderPipelineCore.MoviePipelineCameraCutInfo
 // 0x00A8 (0x00A8 - 0x0000)

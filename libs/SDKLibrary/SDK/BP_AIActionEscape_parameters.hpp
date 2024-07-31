@@ -19,63 +19,6 @@
 namespace SDK::Params
 {
 
-// Function BP_AIActionEscape.BP_AIActionEscape_C.ActionAbort
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIActionEscape_C_ActionAbort final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIActionEscape_C_ActionAbort) == 0x000008, "Wrong alignment on BP_AIActionEscape_C_ActionAbort");
-static_assert(sizeof(BP_AIActionEscape_C_ActionAbort) == 0x000008, "Wrong size on BP_AIActionEscape_C_ActionAbort");
-static_assert(offsetof(BP_AIActionEscape_C_ActionAbort, ControlledPawn) == 0x000000, "Member 'BP_AIActionEscape_C_ActionAbort::ControlledPawn' has a wrong offset!");
-
-// Function BP_AIActionEscape.BP_AIActionEscape_C.ActionFinished
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIActionEscape_C_ActionFinished final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIActionEscape_C_ActionFinished) == 0x000008, "Wrong alignment on BP_AIActionEscape_C_ActionFinished");
-static_assert(sizeof(BP_AIActionEscape_C_ActionFinished) == 0x000010, "Wrong size on BP_AIActionEscape_C_ActionFinished");
-static_assert(offsetof(BP_AIActionEscape_C_ActionFinished, ControlledPawn) == 0x000000, "Member 'BP_AIActionEscape_C_ActionFinished::ControlledPawn' has a wrong offset!");
-static_assert(offsetof(BP_AIActionEscape_C_ActionFinished, WithResult) == 0x000008, "Member 'BP_AIActionEscape_C_ActionFinished::WithResult' has a wrong offset!");
-
-// Function BP_AIActionEscape.BP_AIActionEscape_C.ActionPause
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIActionEscape_C_ActionPause final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIActionEscape_C_ActionPause) == 0x000008, "Wrong alignment on BP_AIActionEscape_C_ActionPause");
-static_assert(sizeof(BP_AIActionEscape_C_ActionPause) == 0x000008, "Wrong size on BP_AIActionEscape_C_ActionPause");
-static_assert(offsetof(BP_AIActionEscape_C_ActionPause, ControlledPawn) == 0x000000, "Member 'BP_AIActionEscape_C_ActionPause::ControlledPawn' has a wrong offset!");
-
-// Function BP_AIActionEscape.BP_AIActionEscape_C.ActionResume
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIActionEscape_C_ActionResume final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIActionEscape_C_ActionResume) == 0x000008, "Wrong alignment on BP_AIActionEscape_C_ActionResume");
-static_assert(sizeof(BP_AIActionEscape_C_ActionResume) == 0x000008, "Wrong size on BP_AIActionEscape_C_ActionResume");
-static_assert(offsetof(BP_AIActionEscape_C_ActionResume, ControlledPawn) == 0x000000, "Member 'BP_AIActionEscape_C_ActionResume::ControlledPawn' has a wrong offset!");
-
-// Function BP_AIActionEscape.BP_AIActionEscape_C.ActionStart
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIActionEscape_C_ActionStart final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIActionEscape_C_ActionStart) == 0x000008, "Wrong alignment on BP_AIActionEscape_C_ActionStart");
-static_assert(sizeof(BP_AIActionEscape_C_ActionStart) == 0x000008, "Wrong size on BP_AIActionEscape_C_ActionStart");
-static_assert(offsetof(BP_AIActionEscape_C_ActionStart, ControlledPawn) == 0x000000, "Member 'BP_AIActionEscape_C_ActionStart::ControlledPawn' has a wrong offset!");
-
 // Function BP_AIActionEscape.BP_AIActionEscape_C.ActionTick
 // 0x0010 (0x0010 - 0x0000)
 struct BP_AIActionEscape_C_ActionTick final
@@ -288,17 +231,6 @@ static_assert(alignof(BP_AIActionEscape_C_OnFail_023A017548911A48339C18BEF9D1B04
 static_assert(sizeof(BP_AIActionEscape_C_OnFail_023A017548911A48339C18BEF9D1B042) == 0x000001, "Wrong size on BP_AIActionEscape_C_OnFail_023A017548911A48339C18BEF9D1B042");
 static_assert(offsetof(BP_AIActionEscape_C_OnFail_023A017548911A48339C18BEF9D1B042, MovementResult) == 0x000000, "Member 'BP_AIActionEscape_C_OnFail_023A017548911A48339C18BEF9D1B042::MovementResult' has a wrong offset!");
 
-// Function BP_AIActionEscape.BP_AIActionEscape_C.OnSquadMemberDeadEvent
-// 0x0050 (0x0050 - 0x0000)
-struct BP_AIActionEscape_C_OnSquadMemberDeadEvent final
-{
-public:
-	struct FPalDeadInfo                           DeadInbfo;                                         // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-static_assert(alignof(BP_AIActionEscape_C_OnSquadMemberDeadEvent) == 0x000008, "Wrong alignment on BP_AIActionEscape_C_OnSquadMemberDeadEvent");
-static_assert(sizeof(BP_AIActionEscape_C_OnSquadMemberDeadEvent) == 0x000050, "Wrong size on BP_AIActionEscape_C_OnSquadMemberDeadEvent");
-static_assert(offsetof(BP_AIActionEscape_C_OnSquadMemberDeadEvent, DeadInbfo) == 0x000000, "Member 'BP_AIActionEscape_C_OnSquadMemberDeadEvent::DeadInbfo' has a wrong offset!");
-
 // Function BP_AIActionEscape.BP_AIActionEscape_C.OnSuccess_023A017548911A48339C18BEF9D1B042
 // 0x0001 (0x0001 - 0x0000)
 struct BP_AIActionEscape_C_OnSuccess_023A017548911A48339C18BEF9D1B042 final
@@ -415,6 +347,74 @@ static_assert(offsetof(BP_AIActionEscape_C_SetGoalLocation, CallFunc_BreakHitRes
 static_assert(offsetof(BP_AIActionEscape_C_SetGoalLocation, CallFunc_BreakHitResult_TraceStart) == 0x0002F0, "Member 'BP_AIActionEscape_C_SetGoalLocation::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
 static_assert(offsetof(BP_AIActionEscape_C_SetGoalLocation, CallFunc_BreakHitResult_TraceEnd) == 0x000308, "Member 'BP_AIActionEscape_C_SetGoalLocation::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
 static_assert(offsetof(BP_AIActionEscape_C_SetGoalLocation, CallFunc_MakeRotator_Yaw_ImplicitCast) == 0x000320, "Member 'BP_AIActionEscape_C_SetGoalLocation::CallFunc_MakeRotator_Yaw_ImplicitCast' has a wrong offset!");
+
+// Function BP_AIActionEscape.BP_AIActionEscape_C.ActionAbort
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIActionEscape_C_ActionAbort final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIActionEscape_C_ActionAbort) == 0x000008, "Wrong alignment on BP_AIActionEscape_C_ActionAbort");
+static_assert(sizeof(BP_AIActionEscape_C_ActionAbort) == 0x000008, "Wrong size on BP_AIActionEscape_C_ActionAbort");
+static_assert(offsetof(BP_AIActionEscape_C_ActionAbort, ControlledPawn) == 0x000000, "Member 'BP_AIActionEscape_C_ActionAbort::ControlledPawn' has a wrong offset!");
+
+// Function BP_AIActionEscape.BP_AIActionEscape_C.ActionFinished
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIActionEscape_C_ActionFinished final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIActionEscape_C_ActionFinished) == 0x000008, "Wrong alignment on BP_AIActionEscape_C_ActionFinished");
+static_assert(sizeof(BP_AIActionEscape_C_ActionFinished) == 0x000010, "Wrong size on BP_AIActionEscape_C_ActionFinished");
+static_assert(offsetof(BP_AIActionEscape_C_ActionFinished, ControlledPawn) == 0x000000, "Member 'BP_AIActionEscape_C_ActionFinished::ControlledPawn' has a wrong offset!");
+static_assert(offsetof(BP_AIActionEscape_C_ActionFinished, WithResult) == 0x000008, "Member 'BP_AIActionEscape_C_ActionFinished::WithResult' has a wrong offset!");
+
+// Function BP_AIActionEscape.BP_AIActionEscape_C.ActionPause
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIActionEscape_C_ActionPause final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIActionEscape_C_ActionPause) == 0x000008, "Wrong alignment on BP_AIActionEscape_C_ActionPause");
+static_assert(sizeof(BP_AIActionEscape_C_ActionPause) == 0x000008, "Wrong size on BP_AIActionEscape_C_ActionPause");
+static_assert(offsetof(BP_AIActionEscape_C_ActionPause, ControlledPawn) == 0x000000, "Member 'BP_AIActionEscape_C_ActionPause::ControlledPawn' has a wrong offset!");
+
+// Function BP_AIActionEscape.BP_AIActionEscape_C.ActionResume
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIActionEscape_C_ActionResume final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIActionEscape_C_ActionResume) == 0x000008, "Wrong alignment on BP_AIActionEscape_C_ActionResume");
+static_assert(sizeof(BP_AIActionEscape_C_ActionResume) == 0x000008, "Wrong size on BP_AIActionEscape_C_ActionResume");
+static_assert(offsetof(BP_AIActionEscape_C_ActionResume, ControlledPawn) == 0x000000, "Member 'BP_AIActionEscape_C_ActionResume::ControlledPawn' has a wrong offset!");
+
+// Function BP_AIActionEscape.BP_AIActionEscape_C.ActionStart
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIActionEscape_C_ActionStart final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIActionEscape_C_ActionStart) == 0x000008, "Wrong alignment on BP_AIActionEscape_C_ActionStart");
+static_assert(sizeof(BP_AIActionEscape_C_ActionStart) == 0x000008, "Wrong size on BP_AIActionEscape_C_ActionStart");
+static_assert(offsetof(BP_AIActionEscape_C_ActionStart, ControlledPawn) == 0x000000, "Member 'BP_AIActionEscape_C_ActionStart::ControlledPawn' has a wrong offset!");
+
+// Function BP_AIActionEscape.BP_AIActionEscape_C.OnSquadMemberDeadEvent
+// 0x0050 (0x0050 - 0x0000)
+struct BP_AIActionEscape_C_OnSquadMemberDeadEvent final
+{
+public:
+	struct FPalDeadInfo                           DeadInbfo;                                         // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+static_assert(alignof(BP_AIActionEscape_C_OnSquadMemberDeadEvent) == 0x000008, "Wrong alignment on BP_AIActionEscape_C_OnSquadMemberDeadEvent");
+static_assert(sizeof(BP_AIActionEscape_C_OnSquadMemberDeadEvent) == 0x000050, "Wrong size on BP_AIActionEscape_C_OnSquadMemberDeadEvent");
+static_assert(offsetof(BP_AIActionEscape_C_OnSquadMemberDeadEvent, DeadInbfo) == 0x000000, "Member 'BP_AIActionEscape_C_OnSquadMemberDeadEvent::DeadInbfo' has a wrong offset!");
 
 // Function BP_AIActionEscape.BP_AIActionEscape_C.SoundEvent
 // 0x0018 (0x0018 - 0x0000)

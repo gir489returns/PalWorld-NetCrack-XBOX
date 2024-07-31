@@ -315,26 +315,6 @@ static_assert(offsetof(UFoliageType_InstancedStaticMesh, OverrideMaterials) == 0
 static_assert(offsetof(UFoliageType_InstancedStaticMesh, NaniteOverrideMaterials) == 0x0004D8, "Member 'UFoliageType_InstancedStaticMesh::NaniteOverrideMaterials' has a wrong offset!");
 static_assert(offsetof(UFoliageType_InstancedStaticMesh, ComponentClass) == 0x0004E8, "Member 'UFoliageType_InstancedStaticMesh::ComponentClass' has a wrong offset!");
 
-// Class Foliage.InteractiveFoliageComponent
-// 0x0010 (0x0600 - 0x05F0)
-class UInteractiveFoliageComponent final : public UStaticMeshComponent
-{
-public:
-	uint8                                         Pad_5F0[0x10];                                     // 0x05F0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"InteractiveFoliageComponent">();
-	}
-	static class UInteractiveFoliageComponent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UInteractiveFoliageComponent>();
-	}
-};
-static_assert(alignof(UInteractiveFoliageComponent) == 0x000010, "Wrong alignment on UInteractiveFoliageComponent");
-static_assert(sizeof(UInteractiveFoliageComponent) == 0x000600, "Wrong size on UInteractiveFoliageComponent");
-
 // Class Foliage.ProceduralFoliageComponent
 // 0x0028 (0x00C8 - 0x00A0)
 class UProceduralFoliageComponent : public UActorComponent
@@ -410,6 +390,26 @@ public:
 };
 static_assert(alignof(AInstancedFoliageActor) == 0x000008, "Wrong alignment on AInstancedFoliageActor");
 static_assert(sizeof(AInstancedFoliageActor) == 0x0002F0, "Wrong size on AInstancedFoliageActor");
+
+// Class Foliage.InteractiveFoliageComponent
+// 0x0010 (0x0600 - 0x05F0)
+class UInteractiveFoliageComponent final : public UStaticMeshComponent
+{
+public:
+	uint8                                         Pad_5F0[0x10];                                     // 0x05F0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"InteractiveFoliageComponent">();
+	}
+	static class UInteractiveFoliageComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UInteractiveFoliageComponent>();
+	}
+};
+static_assert(alignof(UInteractiveFoliageComponent) == 0x000010, "Wrong alignment on UInteractiveFoliageComponent");
+static_assert(sizeof(UInteractiveFoliageComponent) == 0x000600, "Wrong size on UInteractiveFoliageComponent");
 
 // Class Foliage.FoliageStatistics
 // 0x0000 (0x0028 - 0x0028)

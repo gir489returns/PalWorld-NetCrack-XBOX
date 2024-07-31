@@ -51,17 +51,6 @@ static_assert(offsetof(WBP_PalInGameMenuItemSlot_C_ExecuteUbergraph_WBP_PalInGam
 static_assert(offsetof(WBP_PalInGameMenuItemSlot_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlot, K2Node_CreateDelegate_OutputDelegate_2) == 0x000090, "Member 'WBP_PalInGameMenuItemSlot_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlot::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
 static_assert(offsetof(WBP_PalInGameMenuItemSlot_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlot, CallFunc_IsValid_ReturnValue) == 0x0000A0, "Member 'WBP_PalInGameMenuItemSlot_C_ExecuteUbergraph_WBP_PalInGameMenuItemSlot::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
-// Function WBP_PalInGameMenuItemSlot.WBP_PalInGameMenuItemSlot_C.RegisterItemIconWidget
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalInGameMenuItemSlot_C_RegisterItemIconWidget final
-{
-public:
-	class UWBP_PalItemIconBase_C*                 IconWidget;                                        // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_PalInGameMenuItemSlot_C_RegisterItemIconWidget) == 0x000008, "Wrong alignment on WBP_PalInGameMenuItemSlot_C_RegisterItemIconWidget");
-static_assert(sizeof(WBP_PalInGameMenuItemSlot_C_RegisterItemIconWidget) == 0x000008, "Wrong size on WBP_PalInGameMenuItemSlot_C_RegisterItemIconWidget");
-static_assert(offsetof(WBP_PalInGameMenuItemSlot_C_RegisterItemIconWidget, IconWidget) == 0x000000, "Member 'WBP_PalInGameMenuItemSlot_C_RegisterItemIconWidget::IconWidget' has a wrong offset!");
-
 // Function WBP_PalInGameMenuItemSlot.WBP_PalInGameMenuItemSlot_C.UpdateSlotEvent
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_PalInGameMenuItemSlot_C_UpdateSlotEvent final
@@ -72,6 +61,17 @@ public:
 static_assert(alignof(WBP_PalInGameMenuItemSlot_C_UpdateSlotEvent) == 0x000008, "Wrong alignment on WBP_PalInGameMenuItemSlot_C_UpdateSlotEvent");
 static_assert(sizeof(WBP_PalInGameMenuItemSlot_C_UpdateSlotEvent) == 0x000008, "Wrong size on WBP_PalInGameMenuItemSlot_C_UpdateSlotEvent");
 static_assert(offsetof(WBP_PalInGameMenuItemSlot_C_UpdateSlotEvent, Param_TargetSlot) == 0x000000, "Member 'WBP_PalInGameMenuItemSlot_C_UpdateSlotEvent::Param_TargetSlot' has a wrong offset!");
+
+// Function WBP_PalInGameMenuItemSlot.WBP_PalInGameMenuItemSlot_C.RegisterItemIconWidget
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalInGameMenuItemSlot_C_RegisterItemIconWidget final
+{
+public:
+	class UWBP_PalItemIconBase_C*                 IconWidget;                                        // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_PalInGameMenuItemSlot_C_RegisterItemIconWidget) == 0x000008, "Wrong alignment on WBP_PalInGameMenuItemSlot_C_RegisterItemIconWidget");
+static_assert(sizeof(WBP_PalInGameMenuItemSlot_C_RegisterItemIconWidget) == 0x000008, "Wrong size on WBP_PalInGameMenuItemSlot_C_RegisterItemIconWidget");
+static_assert(offsetof(WBP_PalInGameMenuItemSlot_C_RegisterItemIconWidget, IconWidget) == 0x000000, "Member 'WBP_PalInGameMenuItemSlot_C_RegisterItemIconWidget::IconWidget' has a wrong offset!");
 
 }
 

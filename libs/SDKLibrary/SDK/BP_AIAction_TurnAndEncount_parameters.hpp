@@ -163,7 +163,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_7;                    // 0x0380(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_381[0x7];                                      // 0x0381(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalActionComponent*                    CallFunc_GetActionComponent_ReturnValue_3;         // 0x0388(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_VariableSet_TempDeltaTime_ImplicitCast;     // 0x0390(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_tempDeltaTime_ImplicitCast;     // 0x0390(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x0398(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_AIAction_TurnAndEncount_C_ExecuteUbergraph_BP_AIAction_TurnAndEncount) == 0x000010, "Wrong alignment on BP_AIAction_TurnAndEncount_C_ExecuteUbergraph_BP_AIAction_TurnAndEncount");
@@ -226,7 +226,7 @@ static_assert(offsetof(BP_AIAction_TurnAndEncount_C_ExecuteUbergraph_BP_AIAction
 static_assert(offsetof(BP_AIAction_TurnAndEncount_C_ExecuteUbergraph_BP_AIAction_TurnAndEncount, CallFunc_GetActionComponent_ReturnValue_2) == 0x000378, "Member 'BP_AIAction_TurnAndEncount_C_ExecuteUbergraph_BP_AIAction_TurnAndEncount::CallFunc_GetActionComponent_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_TurnAndEncount_C_ExecuteUbergraph_BP_AIAction_TurnAndEncount, CallFunc_IsValid_ReturnValue_7) == 0x000380, "Member 'BP_AIAction_TurnAndEncount_C_ExecuteUbergraph_BP_AIAction_TurnAndEncount::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_TurnAndEncount_C_ExecuteUbergraph_BP_AIAction_TurnAndEncount, CallFunc_GetActionComponent_ReturnValue_3) == 0x000388, "Member 'BP_AIAction_TurnAndEncount_C_ExecuteUbergraph_BP_AIAction_TurnAndEncount::CallFunc_GetActionComponent_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_TurnAndEncount_C_ExecuteUbergraph_BP_AIAction_TurnAndEncount, K2Node_VariableSet_TempDeltaTime_ImplicitCast) == 0x000390, "Member 'BP_AIAction_TurnAndEncount_C_ExecuteUbergraph_BP_AIAction_TurnAndEncount::K2Node_VariableSet_TempDeltaTime_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_TurnAndEncount_C_ExecuteUbergraph_BP_AIAction_TurnAndEncount, K2Node_VariableSet_tempDeltaTime_ImplicitCast) == 0x000390, "Member 'BP_AIAction_TurnAndEncount_C_ExecuteUbergraph_BP_AIAction_TurnAndEncount::K2Node_VariableSet_tempDeltaTime_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_TurnAndEncount_C_ExecuteUbergraph_BP_AIAction_TurnAndEncount, CallFunc_Delay_Duration_ImplicitCast) == 0x000398, "Member 'BP_AIAction_TurnAndEncount_C_ExecuteUbergraph_BP_AIAction_TurnAndEncount::CallFunc_Delay_Duration_ImplicitCast' has a wrong offset!");
 
 }

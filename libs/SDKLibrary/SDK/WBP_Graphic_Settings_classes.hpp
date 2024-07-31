@@ -12,10 +12,10 @@
 
 #include "Pal_structs.hpp"
 #include "Engine_structs.hpp"
-#include "DLSSBlueprint_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "DLSSBlueprint_structs.hpp"
 
 
 namespace SDK
@@ -64,31 +64,31 @@ public:
 	TMap<int32, EUDLSSMode>                       DLSSMap;                                           // 0x04F0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void OnVSyncChanged(bool IsOn);
-	void OnViewDisChanged(int32 Selection);
-	void OnTextureChanged(int32 Selection);
-	void OnShadowChanged(int32 Selection);
-	void OnRideCameraChanged(double Value);
-	void OnResolutionChanged(int32 Selection);
-	void OnPresetChanged(int32 Selection);
-	void OnMotionBlurChanged(bool IsOn);
-	void OnMaxFPSChanged(int32 Selection);
-	void OnLODChanged(double Value);
-	void OnFOVChanged(double Value);
-	void OnFoliageChanged(int32 Selection);
-	void OnDLSSChanged(int32 DLSSLevel);
-	void OnCommonQualityChanged(int32 Selection);
-	void OnCameraShakeChanged(bool IsOn);
-	void OnCameraRecoilChanged(bool IsOn);
-	void OnBrightnessChanged(double Value);
-	void OnAutoContrastChanged(bool IsOn);
-	void OnAAChanged(int32 Selection);
-	void GetDisplayGraphicLevel(const struct FPalOptionGraphicsSettings& GraphicLevel, EPalOptionGraphicsLevel* Graphics___);
 	void ExecuteUbergraph_WBP_Graphic_Settings(int32 EntryPoint);
 	void Construct();
 	void ApplySettings();
-	void SetDefault();
+	void GetDisplayGraphicLevel(const struct FPalOptionGraphicsSettings& GraphicLevel, EPalOptionGraphicsLevel* Graphics___);
+	void OnAAChanged(int32 Selection);
+	void OnAutoContrastChanged(bool IsOn);
+	void OnBrightnessChanged(double Value);
+	void OnCameraRecoilChanged(bool IsOn);
+	void OnCameraShakeChanged(bool IsOn);
+	void OnCommonQualityChanged(int32 Selection);
+	void OnDLSSChanged(int32 DLSSLevel);
+	void OnFoliageChanged(int32 Selection);
+	void OnFOVChanged(double Value);
+	void OnLODChanged(double Value);
+	void OnMaxFPSChanged(int32 Selection);
+	void OnMotionBlurChanged(bool IsOn);
+	void OnPresetChanged(int32 Selection);
+	void OnResolutionChanged(int32 Selection);
+	void OnRideCameraChanged(double Value);
+	void OnShadowChanged(int32 Selection);
+	void OnTextureChanged(int32 Selection);
+	void OnViewDisChanged(int32 Selection);
+	void OnVSyncChanged(bool IsOn);
 	void OnWindowChanged(int32 Selection);
+	void SetDefault();
 
 public:
 	static class UClass* StaticClass()

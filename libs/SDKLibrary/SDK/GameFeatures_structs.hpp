@@ -26,6 +26,16 @@ enum class EGameFeatureTargetState : uint8
 	EGameFeatureTargetState_MAX              = 5,
 };
 
+// ScriptStruct GameFeatures.GameFeaturePluginIdentifier
+// 0x0028 (0x0028 - 0x0000)
+struct alignas(0x08) FGameFeaturePluginIdentifier final
+{
+public:
+	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FGameFeaturePluginIdentifier) == 0x000008, "Wrong alignment on FGameFeaturePluginIdentifier");
+static_assert(sizeof(FGameFeaturePluginIdentifier) == 0x000028, "Wrong size on FGameFeaturePluginIdentifier");
+
 // ScriptStruct GameFeatures.GameFeatureComponentEntry
 // 0x0068 (0x0068 - 0x0000)
 struct FGameFeatureComponentEntry final
@@ -74,16 +84,6 @@ public:
 static_assert(alignof(FGameFeaturePluginStateMachineProperties) == 0x000008, "Wrong alignment on FGameFeaturePluginStateMachineProperties");
 static_assert(sizeof(FGameFeaturePluginStateMachineProperties) == 0x0000C8, "Wrong size on FGameFeaturePluginStateMachineProperties");
 static_assert(offsetof(FGameFeaturePluginStateMachineProperties, GameFeatureData) == 0x000088, "Member 'FGameFeaturePluginStateMachineProperties::GameFeatureData' has a wrong offset!");
-
-// ScriptStruct GameFeatures.GameFeaturePluginIdentifier
-// 0x0028 (0x0028 - 0x0000)
-struct alignas(0x08) FGameFeaturePluginIdentifier final
-{
-public:
-	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FGameFeaturePluginIdentifier) == 0x000008, "Wrong alignment on FGameFeaturePluginIdentifier");
-static_assert(sizeof(FGameFeaturePluginIdentifier) == 0x000028, "Wrong size on FGameFeaturePluginIdentifier");
 
 // ScriptStruct GameFeatures.InstallBundlePluginProtocolMetaData
 // 0x0020 (0x0020 - 0x0000)

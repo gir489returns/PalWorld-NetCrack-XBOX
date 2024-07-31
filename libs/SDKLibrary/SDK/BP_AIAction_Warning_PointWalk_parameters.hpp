@@ -19,63 +19,6 @@
 namespace SDK::Params
 {
 
-// Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.ActionAbort
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_Warning_PointWalk_C_ActionAbort final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_Warning_PointWalk_C_ActionAbort) == 0x000008, "Wrong alignment on BP_AIAction_Warning_PointWalk_C_ActionAbort");
-static_assert(sizeof(BP_AIAction_Warning_PointWalk_C_ActionAbort) == 0x000008, "Wrong size on BP_AIAction_Warning_PointWalk_C_ActionAbort");
-static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_ActionAbort, ControlledPawn) == 0x000000, "Member 'BP_AIAction_Warning_PointWalk_C_ActionAbort::ControlledPawn' has a wrong offset!");
-
-// Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.ActionFinished
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIAction_Warning_PointWalk_C_ActionFinished final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_Warning_PointWalk_C_ActionFinished) == 0x000008, "Wrong alignment on BP_AIAction_Warning_PointWalk_C_ActionFinished");
-static_assert(sizeof(BP_AIAction_Warning_PointWalk_C_ActionFinished) == 0x000010, "Wrong size on BP_AIAction_Warning_PointWalk_C_ActionFinished");
-static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_ActionFinished, ControlledPawn) == 0x000000, "Member 'BP_AIAction_Warning_PointWalk_C_ActionFinished::ControlledPawn' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_ActionFinished, WithResult) == 0x000008, "Member 'BP_AIAction_Warning_PointWalk_C_ActionFinished::WithResult' has a wrong offset!");
-
-// Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.ActionPause
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_Warning_PointWalk_C_ActionPause final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_Warning_PointWalk_C_ActionPause) == 0x000008, "Wrong alignment on BP_AIAction_Warning_PointWalk_C_ActionPause");
-static_assert(sizeof(BP_AIAction_Warning_PointWalk_C_ActionPause) == 0x000008, "Wrong size on BP_AIAction_Warning_PointWalk_C_ActionPause");
-static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_ActionPause, ControlledPawn) == 0x000000, "Member 'BP_AIAction_Warning_PointWalk_C_ActionPause::ControlledPawn' has a wrong offset!");
-
-// Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.ActionResume
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_Warning_PointWalk_C_ActionResume final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_Warning_PointWalk_C_ActionResume) == 0x000008, "Wrong alignment on BP_AIAction_Warning_PointWalk_C_ActionResume");
-static_assert(sizeof(BP_AIAction_Warning_PointWalk_C_ActionResume) == 0x000008, "Wrong size on BP_AIAction_Warning_PointWalk_C_ActionResume");
-static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_ActionResume, ControlledPawn) == 0x000000, "Member 'BP_AIAction_Warning_PointWalk_C_ActionResume::ControlledPawn' has a wrong offset!");
-
-// Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.ActionStart
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_Warning_PointWalk_C_ActionStart final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_Warning_PointWalk_C_ActionStart) == 0x000008, "Wrong alignment on BP_AIAction_Warning_PointWalk_C_ActionStart");
-static_assert(sizeof(BP_AIAction_Warning_PointWalk_C_ActionStart) == 0x000008, "Wrong size on BP_AIAction_Warning_PointWalk_C_ActionStart");
-static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_ActionStart, ControlledPawn) == 0x000000, "Member 'BP_AIAction_Warning_PointWalk_C_ActionStart::ControlledPawn' has a wrong offset!");
-
 // Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.ActionTick
 // 0x0010 (0x0010 - 0x0000)
 struct BP_AIAction_Warning_PointWalk_C_ActionTick final
@@ -150,7 +93,7 @@ public:
 	uint8                                         Pad_13A[0x6];                                      // 0x013A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  K2Node_Event_ControlledPawn_1;                     // 0x0140(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalCharacterParameterComponent*        CallFunc_GetCharacterParameter_ReturnValue;        // 0x0148(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_VariableSet_TempDeltaTime_ImplicitCast;     // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_tempDeltaTime_ImplicitCast;     // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_AIAction_Warning_PointWalk_C_ExecuteUbergraph_BP_AIAction_Warning_PointWalk) == 0x000008, "Wrong alignment on BP_AIAction_Warning_PointWalk_C_ExecuteUbergraph_BP_AIAction_Warning_PointWalk");
@@ -188,7 +131,7 @@ static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_ExecuteUbergraph_BP_AIAct
 static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_ExecuteUbergraph_BP_AIAction_Warning_PointWalk, CallFunc_SightCheckAndResponse_ChangeNextAction) == 0x000139, "Member 'BP_AIAction_Warning_PointWalk_C_ExecuteUbergraph_BP_AIAction_Warning_PointWalk::CallFunc_SightCheckAndResponse_ChangeNextAction' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_ExecuteUbergraph_BP_AIAction_Warning_PointWalk, K2Node_Event_ControlledPawn_1) == 0x000140, "Member 'BP_AIAction_Warning_PointWalk_C_ExecuteUbergraph_BP_AIAction_Warning_PointWalk::K2Node_Event_ControlledPawn_1' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_ExecuteUbergraph_BP_AIAction_Warning_PointWalk, CallFunc_GetCharacterParameter_ReturnValue) == 0x000148, "Member 'BP_AIAction_Warning_PointWalk_C_ExecuteUbergraph_BP_AIAction_Warning_PointWalk::CallFunc_GetCharacterParameter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_ExecuteUbergraph_BP_AIAction_Warning_PointWalk, K2Node_VariableSet_TempDeltaTime_ImplicitCast) == 0x000150, "Member 'BP_AIAction_Warning_PointWalk_C_ExecuteUbergraph_BP_AIAction_Warning_PointWalk::K2Node_VariableSet_TempDeltaTime_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_ExecuteUbergraph_BP_AIAction_Warning_PointWalk, K2Node_VariableSet_tempDeltaTime_ImplicitCast) == 0x000150, "Member 'BP_AIAction_Warning_PointWalk_C_ExecuteUbergraph_BP_AIAction_Warning_PointWalk::K2Node_VariableSet_tempDeltaTime_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_ExecuteUbergraph_BP_AIAction_Warning_PointWalk, CallFunc_Delay_Duration_ImplicitCast) == 0x000158, "Member 'BP_AIAction_Warning_PointWalk_C_ExecuteUbergraph_BP_AIAction_Warning_PointWalk::CallFunc_Delay_Duration_ImplicitCast' has a wrong offset!");
 
 // Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.PlayActionTurnIfNoneAction
@@ -220,21 +163,6 @@ public:
 static_assert(alignof(BP_AIAction_Warning_PointWalk_C_Setup) == 0x000008, "Wrong alignment on BP_AIAction_Warning_PointWalk_C_Setup");
 static_assert(sizeof(BP_AIAction_Warning_PointWalk_C_Setup) == 0x000018, "Wrong size on BP_AIAction_Warning_PointWalk_C_Setup");
 static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_Setup, AttentionLocation) == 0x000000, "Member 'BP_AIAction_Warning_PointWalk_C_Setup::AttentionLocation' has a wrong offset!");
-
-// Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.SoundEvent
-// 0x0028 (0x0028 - 0x0000)
-struct BP_AIAction_Warning_PointWalk_C_SoundEvent final
-{
-public:
-	struct FVector                                EmitLocation;                                      // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_Warning_PointWalk_C_SoundEvent) == 0x000008, "Wrong alignment on BP_AIAction_Warning_PointWalk_C_SoundEvent");
-static_assert(sizeof(BP_AIAction_Warning_PointWalk_C_SoundEvent) == 0x000028, "Wrong size on BP_AIAction_Warning_PointWalk_C_SoundEvent");
-static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_SoundEvent, EmitLocation) == 0x000000, "Member 'BP_AIAction_Warning_PointWalk_C_SoundEvent::EmitLocation' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_SoundEvent, CallFunc_RandomFloatInRange_ReturnValue) == 0x000018, "Member 'BP_AIAction_Warning_PointWalk_C_SoundEvent::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_SoundEvent, CallFunc_GetController_ReturnValue) == 0x000020, "Member 'BP_AIAction_Warning_PointWalk_C_SoundEvent::CallFunc_GetController_ReturnValue' has a wrong offset!");
 
 // Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.StartJump
 // 0x0020 (0x0020 - 0x0000)
@@ -340,6 +268,78 @@ static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_UpdateMoveGoal, CallFunc_
 static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_UpdateMoveGoal, CallFunc_BreakHitResult_TraceStart) == 0x0001F0, "Member 'BP_AIAction_Warning_PointWalk_C_UpdateMoveGoal::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_UpdateMoveGoal, CallFunc_BreakHitResult_TraceEnd) == 0x000208, "Member 'BP_AIAction_Warning_PointWalk_C_UpdateMoveGoal::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_UpdateMoveGoal, CallFunc_MoveToLocation_AcceptanceRadius_ImplicitCast) == 0x000220, "Member 'BP_AIAction_Warning_PointWalk_C_UpdateMoveGoal::CallFunc_MoveToLocation_AcceptanceRadius_ImplicitCast' has a wrong offset!");
+
+// Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.ActionAbort
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_Warning_PointWalk_C_ActionAbort final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_Warning_PointWalk_C_ActionAbort) == 0x000008, "Wrong alignment on BP_AIAction_Warning_PointWalk_C_ActionAbort");
+static_assert(sizeof(BP_AIAction_Warning_PointWalk_C_ActionAbort) == 0x000008, "Wrong size on BP_AIAction_Warning_PointWalk_C_ActionAbort");
+static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_ActionAbort, ControlledPawn) == 0x000000, "Member 'BP_AIAction_Warning_PointWalk_C_ActionAbort::ControlledPawn' has a wrong offset!");
+
+// Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.ActionFinished
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIAction_Warning_PointWalk_C_ActionFinished final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_Warning_PointWalk_C_ActionFinished) == 0x000008, "Wrong alignment on BP_AIAction_Warning_PointWalk_C_ActionFinished");
+static_assert(sizeof(BP_AIAction_Warning_PointWalk_C_ActionFinished) == 0x000010, "Wrong size on BP_AIAction_Warning_PointWalk_C_ActionFinished");
+static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_ActionFinished, ControlledPawn) == 0x000000, "Member 'BP_AIAction_Warning_PointWalk_C_ActionFinished::ControlledPawn' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_ActionFinished, WithResult) == 0x000008, "Member 'BP_AIAction_Warning_PointWalk_C_ActionFinished::WithResult' has a wrong offset!");
+
+// Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.ActionPause
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_Warning_PointWalk_C_ActionPause final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_Warning_PointWalk_C_ActionPause) == 0x000008, "Wrong alignment on BP_AIAction_Warning_PointWalk_C_ActionPause");
+static_assert(sizeof(BP_AIAction_Warning_PointWalk_C_ActionPause) == 0x000008, "Wrong size on BP_AIAction_Warning_PointWalk_C_ActionPause");
+static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_ActionPause, ControlledPawn) == 0x000000, "Member 'BP_AIAction_Warning_PointWalk_C_ActionPause::ControlledPawn' has a wrong offset!");
+
+// Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.ActionResume
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_Warning_PointWalk_C_ActionResume final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_Warning_PointWalk_C_ActionResume) == 0x000008, "Wrong alignment on BP_AIAction_Warning_PointWalk_C_ActionResume");
+static_assert(sizeof(BP_AIAction_Warning_PointWalk_C_ActionResume) == 0x000008, "Wrong size on BP_AIAction_Warning_PointWalk_C_ActionResume");
+static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_ActionResume, ControlledPawn) == 0x000000, "Member 'BP_AIAction_Warning_PointWalk_C_ActionResume::ControlledPawn' has a wrong offset!");
+
+// Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.ActionStart
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_Warning_PointWalk_C_ActionStart final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_Warning_PointWalk_C_ActionStart) == 0x000008, "Wrong alignment on BP_AIAction_Warning_PointWalk_C_ActionStart");
+static_assert(sizeof(BP_AIAction_Warning_PointWalk_C_ActionStart) == 0x000008, "Wrong size on BP_AIAction_Warning_PointWalk_C_ActionStart");
+static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_ActionStart, ControlledPawn) == 0x000000, "Member 'BP_AIAction_Warning_PointWalk_C_ActionStart::ControlledPawn' has a wrong offset!");
+
+// Function BP_AIAction_Warning_PointWalk.BP_AIAction_Warning_PointWalk_C.SoundEvent
+// 0x0028 (0x0028 - 0x0000)
+struct BP_AIAction_Warning_PointWalk_C_SoundEvent final
+{
+public:
+	struct FVector                                EmitLocation;                                      // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_Warning_PointWalk_C_SoundEvent) == 0x000008, "Wrong alignment on BP_AIAction_Warning_PointWalk_C_SoundEvent");
+static_assert(sizeof(BP_AIAction_Warning_PointWalk_C_SoundEvent) == 0x000028, "Wrong size on BP_AIAction_Warning_PointWalk_C_SoundEvent");
+static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_SoundEvent, EmitLocation) == 0x000000, "Member 'BP_AIAction_Warning_PointWalk_C_SoundEvent::EmitLocation' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_SoundEvent, CallFunc_RandomFloatInRange_ReturnValue) == 0x000018, "Member 'BP_AIAction_Warning_PointWalk_C_SoundEvent::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Warning_PointWalk_C_SoundEvent, CallFunc_GetController_ReturnValue) == 0x000020, "Member 'BP_AIAction_Warning_PointWalk_C_SoundEvent::CallFunc_GetController_ReturnValue' has a wrong offset!");
 
 }
 

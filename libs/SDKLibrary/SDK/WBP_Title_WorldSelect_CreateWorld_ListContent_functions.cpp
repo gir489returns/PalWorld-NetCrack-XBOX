@@ -17,62 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_Title_WorldSelect_CreateWorld_ListContent.WBP_Title_WorldSelect_CreateWorld_ListContent_C.ToMaxSaveDataMode
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Title_WorldSelect_CreateWorld_ListContent_C::ToMaxSaveDataMode()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_CreateWorld_ListContent_C", "ToMaxSaveDataMode");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Title_WorldSelect_CreateWorld_ListContent.WBP_Title_WorldSelect_CreateWorld_ListContent_C.SetupByLocalWorldDisplayData
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                           SaveDirectoryName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// struct FPalUILocalWorldDisplayData      DisplayData                                            (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_Title_WorldSelect_CreateWorld_ListContent_C::SetupByLocalWorldDisplayData(const class FString& SaveDirectoryName, const struct FPalUILocalWorldDisplayData& DisplayData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_CreateWorld_ListContent_C", "SetupByLocalWorldDisplayData");
-
-	Params::WBP_Title_WorldSelect_CreateWorld_ListContent_C_SetupByLocalWorldDisplayData Parms{};
-
-	Parms.SaveDirectoryName = std::move(SaveDirectoryName);
-	Parms.DisplayData = std::move(DisplayData);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Title_WorldSelect_CreateWorld_ListContent.WBP_Title_WorldSelect_CreateWorld_ListContent_C.OnClicked__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_Title_WorldSelect_CreateWorld_ListContent_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Title_WorldSelect_CreateWorld_ListContent_C::OnClicked__DelegateSignature(class UWBP_Title_WorldSelect_CreateWorld_ListContent_C* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_CreateWorld_ListContent_C", "OnClicked__DelegateSignature");
-
-	Params::WBP_Title_WorldSelect_CreateWorld_ListContent_C_OnClicked__DelegateSignature Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_Title_WorldSelect_CreateWorld_ListContent.WBP_Title_WorldSelect_CreateWorld_ListContent_C.GetBindedSaveDirectoryName
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -171,6 +115,62 @@ void UWBP_Title_WorldSelect_CreateWorld_ListContent_C::BndEvt__WBP_Title_WorldSe
 	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_WorldSelect_CreateWorld_ListContent.WBP_Title_WorldSelect_CreateWorld_ListContent_C.OnClicked__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_Title_WorldSelect_CreateWorld_ListContent_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_WorldSelect_CreateWorld_ListContent_C::OnClicked__DelegateSignature(class UWBP_Title_WorldSelect_CreateWorld_ListContent_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_CreateWorld_ListContent_C", "OnClicked__DelegateSignature");
+
+	Params::WBP_Title_WorldSelect_CreateWorld_ListContent_C_OnClicked__DelegateSignature Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_WorldSelect_CreateWorld_ListContent.WBP_Title_WorldSelect_CreateWorld_ListContent_C.SetupByLocalWorldDisplayData
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                           SaveDirectoryName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// struct FPalUILocalWorldDisplayData      DisplayData                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_Title_WorldSelect_CreateWorld_ListContent_C::SetupByLocalWorldDisplayData(const class FString& SaveDirectoryName, const struct FPalUILocalWorldDisplayData& DisplayData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_CreateWorld_ListContent_C", "SetupByLocalWorldDisplayData");
+
+	Params::WBP_Title_WorldSelect_CreateWorld_ListContent_C_SetupByLocalWorldDisplayData Parms{};
+
+	Parms.SaveDirectoryName = std::move(SaveDirectoryName);
+	Parms.DisplayData = std::move(DisplayData);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_WorldSelect_CreateWorld_ListContent.WBP_Title_WorldSelect_CreateWorld_ListContent_C.ToMaxSaveDataMode
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Title_WorldSelect_CreateWorld_ListContent_C::ToMaxSaveDataMode()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_CreateWorld_ListContent_C", "ToMaxSaveDataMode");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
-#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -39,31 +39,31 @@ public:
 	TArray<class FString>                         RegionStrings;                                     // 0x06D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void _____K_e_(class UPalHUDDispatchParameterBase* Param_Param);
-	void _________0(bool bResult);
-	void ________(bool bResult);
-	void RequestGetServerListBP(EPalUIServerListFilterType Type, const class FString& Region, int32 PageOffset, const class FString& Word, EPalUIServerListSortType Param_SortType);
-	void PreviousButton();
-	void Passworde__(class UPalHUDDispatchParameterBase* Param_Param);
-	void OpenJoinServerDialog();
-	void OnInitialized();
-	void OnCompleteGetServerListEvent();
-	void OnCloseJoinServerDialog(bool bResult);
-	void OnClicked_JoinByIPButton(const class FString& Address);
-	void OnChangeVersionIgnoreCheckbox(bool bIsChecked);
-	void OnCancelAction();
-	void NextButton();
-	void ExecuteUbergraph_WBP_JoinGame(int32 EntryPoint);
-	void DisplayServer();
-	void Destruct();
-	void Construct();
-	void Completed_B0C690024643A528EA9A2B9DAEA567A3(const class FString& ResponseBody, bool bResponseOK, int32 ResponseCode);
 	void BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_7_OnClickedServerList_CommunityButton__DelegateSignature();
 	void BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_6_OnClickedServerButton__DelegateSignature(class UWBP_Title_WorldSelect_ListContent_C* Widget);
 	void BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_5_OnClickedServerSearchButton__DelegateSignature(const class FString& Param_SearchWord);
 	void BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_3_OnSelectedServerSortType__DelegateSignature(EPalUIServerListSortType Param_SortType);
 	void BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_2_OnClickedServerList_OfficialButton__DelegateSignature();
 	void BndEvt__WBP_JoinGame_WBP_Title_WorldSelect_K2Node_ComponentBoundEvent_11_OnClickedServerList_HistoryButton__DelegateSignature();
+	void Completed_B0C690024643A528EA9A2B9DAEA567A3(const class FString& ResponseBody, bool bResponseOK, int32 ResponseCode);
+	void Construct();
+	void Destruct();
+	void DisplayServer();
+	void ExecuteUbergraph_WBP_JoinGame(int32 EntryPoint);
+	void NextButton();
+	void OnCancelAction();
+	void OnChangeVersionIgnoreCheckbox(bool bIsChecked);
+	void OnClicked_JoinByIPButton(const class FString& Address);
+	void OnCloseJoinServerDialog(bool bResult);
+	void OnCompleteGetServerListEvent();
+	void OnInitialized();
+	void OpenJoinServerDialog();
+	void Passworde__(class UPalHUDDispatchParameterBase* Param_Param);
+	void PreviousButton();
+	void RequestGetServerListBP(EPalUIServerListFilterType Type, const class FString& Region, int32 PageOffset, const class FString& Word, EPalUIServerListSortType Param_SortType);
+	void ________(bool bResult);
+	void _________0(bool bResult);
+	void _____K_e_(class UPalHUDDispatchParameterBase* Param_Param);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

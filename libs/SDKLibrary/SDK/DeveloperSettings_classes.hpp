@@ -57,6 +57,23 @@ public:
 static_assert(alignof(UPlatformSettings) == 0x000008, "Wrong alignment on UPlatformSettings");
 static_assert(sizeof(UPlatformSettings) == 0x000040, "Wrong size on UPlatformSettings");
 
+// Class DeveloperSettings.DeveloperSettingsBackedByCVars
+// 0x0000 (0x0038 - 0x0038)
+class UDeveloperSettingsBackedByCVars : public UDeveloperSettings
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"DeveloperSettingsBackedByCVars">();
+	}
+	static class UDeveloperSettingsBackedByCVars* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UDeveloperSettingsBackedByCVars>();
+	}
+};
+static_assert(alignof(UDeveloperSettingsBackedByCVars) == 0x000008, "Wrong alignment on UDeveloperSettingsBackedByCVars");
+static_assert(sizeof(UDeveloperSettingsBackedByCVars) == 0x000038, "Wrong size on UDeveloperSettingsBackedByCVars");
+
 // Class DeveloperSettings.PlatformSettingsManager
 // 0x0058 (0x0080 - 0x0028)
 class UPlatformSettingsManager final : public UObject
@@ -78,23 +95,6 @@ public:
 static_assert(alignof(UPlatformSettingsManager) == 0x000008, "Wrong alignment on UPlatformSettingsManager");
 static_assert(sizeof(UPlatformSettingsManager) == 0x000080, "Wrong size on UPlatformSettingsManager");
 static_assert(offsetof(UPlatformSettingsManager, SettingsMap) == 0x000028, "Member 'UPlatformSettingsManager::SettingsMap' has a wrong offset!");
-
-// Class DeveloperSettings.DeveloperSettingsBackedByCVars
-// 0x0000 (0x0038 - 0x0038)
-class UDeveloperSettingsBackedByCVars : public UDeveloperSettings
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"DeveloperSettingsBackedByCVars">();
-	}
-	static class UDeveloperSettingsBackedByCVars* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UDeveloperSettingsBackedByCVars>();
-	}
-};
-static_assert(alignof(UDeveloperSettingsBackedByCVars) == 0x000008, "Wrong alignment on UDeveloperSettingsBackedByCVars");
-static_assert(sizeof(UDeveloperSettingsBackedByCVars) == 0x000038, "Wrong size on UDeveloperSettingsBackedByCVars");
 
 }
 

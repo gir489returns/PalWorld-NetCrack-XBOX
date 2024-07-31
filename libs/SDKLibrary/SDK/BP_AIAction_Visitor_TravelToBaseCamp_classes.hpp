@@ -36,19 +36,19 @@ public:
 	bool                                          IsStuck;                                           // 0x01C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
+	void ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp(int32 EntryPoint);
+	void OnArrivedTargetPoint__DelegateSignature();
+	void OnStuck__DelegateSignature();
+	void Tick_Move_to_Base_Camp(class AActor* ControlledPawn, float DeltaTime);
 	void ActionAbort(class APawn* ControlledPawn);
 	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
 	void ActionPause(class APawn* ControlledPawn);
 	void ActionResume(class APawn* ControlledPawn);
 	void ActionStart(class APawn* ControlledPawn);
-	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
-	void ExecuteUbergraph_BP_AIAction_Visitor_TravelToBaseCamp(int32 EntryPoint);
 	void Fun_Damage_AIResponse(const struct FPalDamageResult& DamageResult);
-	void OnArrivedTargetPoint__DelegateSignature();
-	void OnStuck__DelegateSignature();
 	void SightCheckAndResponse(EPalAIResponseType Current, bool OverrideIsDamage, bool* ChangeNextAction);
 	void SoundEvent(const struct FVector& EmitLocation);
-	void Tick_Move_to_Base_Camp(class AActor* ControlledPawn, float DeltaTime);
 
 public:
 	static class UClass* StaticClass()

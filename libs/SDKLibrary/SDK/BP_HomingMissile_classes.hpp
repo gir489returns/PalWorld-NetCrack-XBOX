@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Pal_structs.hpp"
-#include "Engine_structs.hpp"
 #include "BP_AttackBulletBase_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -37,9 +37,9 @@ public:
 	void GetBulletAttackType(EPalAttackType* AttackType);
 	void GetExplosionClass(class UClass** ExplosionClass);
 	void OnDestroy(class UPrimitiveComponent* HitComp, class AActor* OtherCharacter, class UPrimitiveComponent* OtherComp, const struct FHitResult& Hit);
-	void OnHitToActor(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FHitResult& Hit);
 	void ReceiveBeginPlay();
 	void SetAttackTarget(class APalCharacter* Target);
+	void OnHitToActor(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FHitResult& Hit);
 
 public:
 	static class UClass* StaticClass()

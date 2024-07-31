@@ -81,19 +81,6 @@ static_assert(sizeof(WBP_CharaCre_ScrollBoxContent_Voice_C_GetRestoreFocusTarget
 static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Voice_C_GetRestoreFocusTarget, Widget) == 0x000000, "Member 'WBP_CharaCre_ScrollBoxContent_Voice_C_GetRestoreFocusTarget::Widget' has a wrong offset!");
 static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Voice_C_GetRestoreFocusTarget, CallFunc_GetTopFocusTarget_Widget) == 0x000008, "Member 'WBP_CharaCre_ScrollBoxContent_Voice_C_GetRestoreFocusTarget::CallFunc_GetTopFocusTarget_Widget' has a wrong offset!");
 
-// Function WBP_CharaCre_ScrollBoxContent_Voice.WBP_CharaCre_ScrollBoxContent_Voice_C.GetTopFocusTarget
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_CharaCre_ScrollBoxContent_Voice_C_GetTopFocusTarget final
-{
-public:
-	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_CharaCre_BodyTypeButton_C*         CallFunc_Array_Get_Item;                           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CharaCre_ScrollBoxContent_Voice_C_GetTopFocusTarget) == 0x000008, "Wrong alignment on WBP_CharaCre_ScrollBoxContent_Voice_C_GetTopFocusTarget");
-static_assert(sizeof(WBP_CharaCre_ScrollBoxContent_Voice_C_GetTopFocusTarget) == 0x000010, "Wrong size on WBP_CharaCre_ScrollBoxContent_Voice_C_GetTopFocusTarget");
-static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Voice_C_GetTopFocusTarget, Widget) == 0x000000, "Member 'WBP_CharaCre_ScrollBoxContent_Voice_C_GetTopFocusTarget::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Voice_C_GetTopFocusTarget, CallFunc_Array_Get_Item) == 0x000008, "Member 'WBP_CharaCre_ScrollBoxContent_Voice_C_GetTopFocusTarget::CallFunc_Array_Get_Item' has a wrong offset!");
-
 // Function WBP_CharaCre_ScrollBoxContent_Voice.WBP_CharaCre_ScrollBoxContent_Voice_C.OnChangedVoiceID__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
 struct WBP_CharaCre_ScrollBoxContent_Voice_C_OnChangedVoiceID__DelegateSignature final
@@ -180,6 +167,19 @@ static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Voice_C_Play_Sample_Voice, 
 static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Voice_C_Play_Sample_Voice, CallFunc_SelectInt_ReturnValue) == 0x0000D4, "Member 'WBP_CharaCre_ScrollBoxContent_Voice_C_Play_Sample_Voice::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Voice_C_Play_Sample_Voice, CallFunc_GetSoundPlayer_ReturnValue) == 0x0000D8, "Member 'WBP_CharaCre_ScrollBoxContent_Voice_C_Play_Sample_Voice::CallFunc_GetSoundPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Voice_C_Play_Sample_Voice, CallFunc_PlaySound_ReturnValue) == 0x0000E0, "Member 'WBP_CharaCre_ScrollBoxContent_Voice_C_Play_Sample_Voice::CallFunc_PlaySound_ReturnValue' has a wrong offset!");
+
+// Function WBP_CharaCre_ScrollBoxContent_Voice.WBP_CharaCre_ScrollBoxContent_Voice_C.GetTopFocusTarget
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_CharaCre_ScrollBoxContent_Voice_C_GetTopFocusTarget final
+{
+public:
+	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_CharaCre_BodyTypeButton_C*         CallFunc_Array_Get_Item;                           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CharaCre_ScrollBoxContent_Voice_C_GetTopFocusTarget) == 0x000008, "Wrong alignment on WBP_CharaCre_ScrollBoxContent_Voice_C_GetTopFocusTarget");
+static_assert(sizeof(WBP_CharaCre_ScrollBoxContent_Voice_C_GetTopFocusTarget) == 0x000010, "Wrong size on WBP_CharaCre_ScrollBoxContent_Voice_C_GetTopFocusTarget");
+static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Voice_C_GetTopFocusTarget, Widget) == 0x000000, "Member 'WBP_CharaCre_ScrollBoxContent_Voice_C_GetTopFocusTarget::Widget' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Voice_C_GetTopFocusTarget, CallFunc_Array_Get_Item) == 0x000008, "Member 'WBP_CharaCre_ScrollBoxContent_Voice_C_GetTopFocusTarget::CallFunc_Array_Get_Item' has a wrong offset!");
 
 }
 

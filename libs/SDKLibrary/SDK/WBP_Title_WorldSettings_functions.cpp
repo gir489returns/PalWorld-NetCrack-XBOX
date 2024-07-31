@@ -722,6 +722,26 @@ void UWBP_Title_WorldSettings_C::BndEvt__WBP_Title_WorldSettings_WorldSettings_W
 }
 
 
+// Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.BndEvt__WBP_Title_WorldSettings_WorldSettings_SupplyDropSpan_K2Node_ComponentBoundEvent_45_OnChangedValue__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// double                                  NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_WorldSettings_C::BndEvt__WBP_Title_WorldSettings_WorldSettings_SupplyDropSpan_K2Node_ComponentBoundEvent_45_OnChangedValue__DelegateSignature(double NewValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSettings_C", "BndEvt__WBP_Title_WorldSettings_WorldSettings_SupplyDropSpan_K2Node_ComponentBoundEvent_45_OnChangedValue__DelegateSignature");
+
+	Params::WBP_Title_WorldSettings_C_BndEvt__WBP_Title_WorldSettings_WorldSettings_SupplyDropSpan_K2Node_ComponentBoundEvent_45_OnChangedValue__DelegateSignature Parms{};
+
+	Parms.NewValue = NewValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Title_WorldSettings.WBP_Title_WorldSettings_C.BndEvt__WBP_Title_WorldSettings_WorldSettings_RandomizerSeed_K2Node_ComponentBoundEvent_43_OnClickedSettingButton__DelegateSignature
 // (BlueprintEvent)
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "MetasoundEngine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "MetasoundEngine_structs.hpp"
 #include "MetasoundFrontend_structs.hpp"
 #include "DeveloperSettings_classes.hpp"
 #include "Engine_classes.hpp"

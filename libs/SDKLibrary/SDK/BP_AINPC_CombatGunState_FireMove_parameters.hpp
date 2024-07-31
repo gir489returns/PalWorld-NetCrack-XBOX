@@ -56,7 +56,7 @@ public:
 	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_StateTick_DeltaTime_ImplicitCast;         // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_VariableSet_Temp_DeltaTime_ImplicitCast;    // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_temp_DeltaTime_ImplicitCast;    // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_VariableSet_Interval_ImplicitCast;          // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove) == 0x000008, "Wrong alignment on BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove");
@@ -81,7 +81,7 @@ static_assert(offsetof(BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AI
 static_assert(offsetof(BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000060, "Member 'BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000068, "Member 'BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove, CallFunc_StateTick_DeltaTime_ImplicitCast) == 0x00006C, "Member 'BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove::CallFunc_StateTick_DeltaTime_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove, K2Node_VariableSet_Temp_DeltaTime_ImplicitCast) == 0x000070, "Member 'BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove::K2Node_VariableSet_Temp_DeltaTime_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove, K2Node_VariableSet_temp_DeltaTime_ImplicitCast) == 0x000070, "Member 'BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove::K2Node_VariableSet_temp_DeltaTime_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove, K2Node_VariableSet_Interval_ImplicitCast) == 0x000078, "Member 'BP_AINPC_CombatGunState_FireMove_C_ExecuteUbergraph_BP_AINPC_CombatGunState_FireMove::K2Node_VariableSet_Interval_ImplicitCast' has a wrong offset!");
 
 // Function BP_AINPC_CombatGunState_FireMove.BP_AINPC_CombatGunState_FireMove_C.StateTick

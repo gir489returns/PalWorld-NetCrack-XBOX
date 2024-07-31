@@ -29,12 +29,12 @@ public:
 	bool                                          IsStopByDelay;                                     // 0x016A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActionResume(class APawn* ControlledPawn);
-	void ActionStart(class APawn* ControlledPawn);
 	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void ExecuteUbergraph_BP_AIAction_TurnAndEscape(int32 EntryPoint);
-	void OnSquadMemberDeadEvent(const struct FPalDeadInfo& DeadInbfo);
 	void Setup(class AActor* TargetActor);
+	void ActionResume(class APawn* ControlledPawn);
+	void ActionStart(class APawn* ControlledPawn);
+	void OnSquadMemberDeadEvent(const struct FPalDeadInfo& DeadInbfo);
 	void SoundEvent(const struct FVector& EmitLocation);
 
 public:

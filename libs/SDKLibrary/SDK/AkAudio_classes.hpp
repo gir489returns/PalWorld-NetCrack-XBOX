@@ -18,8 +18,8 @@
 #include "CoreUObject_classes.hpp"
 #include "MovieScene_structs.hpp"
 #include "MovieScene_classes.hpp"
-#include "WwiseResourceLoader_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "WwiseResourceLoader_structs.hpp"
 
 
 namespace SDK

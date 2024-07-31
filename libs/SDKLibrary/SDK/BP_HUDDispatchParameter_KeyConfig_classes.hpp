@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "CommonInput_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "CommonInput_structs.hpp"
 
 
 namespace SDK

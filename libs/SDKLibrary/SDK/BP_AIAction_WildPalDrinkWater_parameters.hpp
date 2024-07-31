@@ -16,63 +16,6 @@
 namespace SDK::Params
 {
 
-// Function BP_AIAction_WildPalDrinkWater.BP_AIAction_WildPalDrinkWater_C.ActionAbort
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_WildPalDrinkWater_C_ActionAbort final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_WildPalDrinkWater_C_ActionAbort) == 0x000008, "Wrong alignment on BP_AIAction_WildPalDrinkWater_C_ActionAbort");
-static_assert(sizeof(BP_AIAction_WildPalDrinkWater_C_ActionAbort) == 0x000008, "Wrong size on BP_AIAction_WildPalDrinkWater_C_ActionAbort");
-static_assert(offsetof(BP_AIAction_WildPalDrinkWater_C_ActionAbort, ControlledPawn) == 0x000000, "Member 'BP_AIAction_WildPalDrinkWater_C_ActionAbort::ControlledPawn' has a wrong offset!");
-
-// Function BP_AIAction_WildPalDrinkWater.BP_AIAction_WildPalDrinkWater_C.ActionFinished
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIAction_WildPalDrinkWater_C_ActionFinished final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_WildPalDrinkWater_C_ActionFinished) == 0x000008, "Wrong alignment on BP_AIAction_WildPalDrinkWater_C_ActionFinished");
-static_assert(sizeof(BP_AIAction_WildPalDrinkWater_C_ActionFinished) == 0x000010, "Wrong size on BP_AIAction_WildPalDrinkWater_C_ActionFinished");
-static_assert(offsetof(BP_AIAction_WildPalDrinkWater_C_ActionFinished, ControlledPawn) == 0x000000, "Member 'BP_AIAction_WildPalDrinkWater_C_ActionFinished::ControlledPawn' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_WildPalDrinkWater_C_ActionFinished, WithResult) == 0x000008, "Member 'BP_AIAction_WildPalDrinkWater_C_ActionFinished::WithResult' has a wrong offset!");
-
-// Function BP_AIAction_WildPalDrinkWater.BP_AIAction_WildPalDrinkWater_C.ActionPause
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_WildPalDrinkWater_C_ActionPause final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_WildPalDrinkWater_C_ActionPause) == 0x000008, "Wrong alignment on BP_AIAction_WildPalDrinkWater_C_ActionPause");
-static_assert(sizeof(BP_AIAction_WildPalDrinkWater_C_ActionPause) == 0x000008, "Wrong size on BP_AIAction_WildPalDrinkWater_C_ActionPause");
-static_assert(offsetof(BP_AIAction_WildPalDrinkWater_C_ActionPause, ControlledPawn) == 0x000000, "Member 'BP_AIAction_WildPalDrinkWater_C_ActionPause::ControlledPawn' has a wrong offset!");
-
-// Function BP_AIAction_WildPalDrinkWater.BP_AIAction_WildPalDrinkWater_C.ActionResume
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_WildPalDrinkWater_C_ActionResume final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_WildPalDrinkWater_C_ActionResume) == 0x000008, "Wrong alignment on BP_AIAction_WildPalDrinkWater_C_ActionResume");
-static_assert(sizeof(BP_AIAction_WildPalDrinkWater_C_ActionResume) == 0x000008, "Wrong size on BP_AIAction_WildPalDrinkWater_C_ActionResume");
-static_assert(offsetof(BP_AIAction_WildPalDrinkWater_C_ActionResume, ControlledPawn) == 0x000000, "Member 'BP_AIAction_WildPalDrinkWater_C_ActionResume::ControlledPawn' has a wrong offset!");
-
-// Function BP_AIAction_WildPalDrinkWater.BP_AIAction_WildPalDrinkWater_C.ActionStart
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_WildPalDrinkWater_C_ActionStart final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_WildPalDrinkWater_C_ActionStart) == 0x000008, "Wrong alignment on BP_AIAction_WildPalDrinkWater_C_ActionStart");
-static_assert(sizeof(BP_AIAction_WildPalDrinkWater_C_ActionStart) == 0x000008, "Wrong size on BP_AIAction_WildPalDrinkWater_C_ActionStart");
-static_assert(offsetof(BP_AIAction_WildPalDrinkWater_C_ActionStart, ControlledPawn) == 0x000000, "Member 'BP_AIAction_WildPalDrinkWater_C_ActionStart::ControlledPawn' has a wrong offset!");
-
 // Function BP_AIAction_WildPalDrinkWater.BP_AIAction_WildPalDrinkWater_C.ExecuteUbergraph_BP_AIAction_WildPalDrinkWater
 // 0x00C0 (0x00C0 - 0x0000)
 struct BP_AIAction_WildPalDrinkWater_C_ExecuteUbergraph_BP_AIAction_WildPalDrinkWater final
@@ -157,6 +100,63 @@ public:
 static_assert(alignof(BP_AIAction_WildPalDrinkWater_C_OnSuccess_3323B09A4DA8EB0F652C87B9DFF6FF56) == 0x000001, "Wrong alignment on BP_AIAction_WildPalDrinkWater_C_OnSuccess_3323B09A4DA8EB0F652C87B9DFF6FF56");
 static_assert(sizeof(BP_AIAction_WildPalDrinkWater_C_OnSuccess_3323B09A4DA8EB0F652C87B9DFF6FF56) == 0x000001, "Wrong size on BP_AIAction_WildPalDrinkWater_C_OnSuccess_3323B09A4DA8EB0F652C87B9DFF6FF56");
 static_assert(offsetof(BP_AIAction_WildPalDrinkWater_C_OnSuccess_3323B09A4DA8EB0F652C87B9DFF6FF56, MovementResult) == 0x000000, "Member 'BP_AIAction_WildPalDrinkWater_C_OnSuccess_3323B09A4DA8EB0F652C87B9DFF6FF56::MovementResult' has a wrong offset!");
+
+// Function BP_AIAction_WildPalDrinkWater.BP_AIAction_WildPalDrinkWater_C.ActionAbort
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_WildPalDrinkWater_C_ActionAbort final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_WildPalDrinkWater_C_ActionAbort) == 0x000008, "Wrong alignment on BP_AIAction_WildPalDrinkWater_C_ActionAbort");
+static_assert(sizeof(BP_AIAction_WildPalDrinkWater_C_ActionAbort) == 0x000008, "Wrong size on BP_AIAction_WildPalDrinkWater_C_ActionAbort");
+static_assert(offsetof(BP_AIAction_WildPalDrinkWater_C_ActionAbort, ControlledPawn) == 0x000000, "Member 'BP_AIAction_WildPalDrinkWater_C_ActionAbort::ControlledPawn' has a wrong offset!");
+
+// Function BP_AIAction_WildPalDrinkWater.BP_AIAction_WildPalDrinkWater_C.ActionFinished
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIAction_WildPalDrinkWater_C_ActionFinished final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_WildPalDrinkWater_C_ActionFinished) == 0x000008, "Wrong alignment on BP_AIAction_WildPalDrinkWater_C_ActionFinished");
+static_assert(sizeof(BP_AIAction_WildPalDrinkWater_C_ActionFinished) == 0x000010, "Wrong size on BP_AIAction_WildPalDrinkWater_C_ActionFinished");
+static_assert(offsetof(BP_AIAction_WildPalDrinkWater_C_ActionFinished, ControlledPawn) == 0x000000, "Member 'BP_AIAction_WildPalDrinkWater_C_ActionFinished::ControlledPawn' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_WildPalDrinkWater_C_ActionFinished, WithResult) == 0x000008, "Member 'BP_AIAction_WildPalDrinkWater_C_ActionFinished::WithResult' has a wrong offset!");
+
+// Function BP_AIAction_WildPalDrinkWater.BP_AIAction_WildPalDrinkWater_C.ActionPause
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_WildPalDrinkWater_C_ActionPause final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_WildPalDrinkWater_C_ActionPause) == 0x000008, "Wrong alignment on BP_AIAction_WildPalDrinkWater_C_ActionPause");
+static_assert(sizeof(BP_AIAction_WildPalDrinkWater_C_ActionPause) == 0x000008, "Wrong size on BP_AIAction_WildPalDrinkWater_C_ActionPause");
+static_assert(offsetof(BP_AIAction_WildPalDrinkWater_C_ActionPause, ControlledPawn) == 0x000000, "Member 'BP_AIAction_WildPalDrinkWater_C_ActionPause::ControlledPawn' has a wrong offset!");
+
+// Function BP_AIAction_WildPalDrinkWater.BP_AIAction_WildPalDrinkWater_C.ActionResume
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_WildPalDrinkWater_C_ActionResume final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_WildPalDrinkWater_C_ActionResume) == 0x000008, "Wrong alignment on BP_AIAction_WildPalDrinkWater_C_ActionResume");
+static_assert(sizeof(BP_AIAction_WildPalDrinkWater_C_ActionResume) == 0x000008, "Wrong size on BP_AIAction_WildPalDrinkWater_C_ActionResume");
+static_assert(offsetof(BP_AIAction_WildPalDrinkWater_C_ActionResume, ControlledPawn) == 0x000000, "Member 'BP_AIAction_WildPalDrinkWater_C_ActionResume::ControlledPawn' has a wrong offset!");
+
+// Function BP_AIAction_WildPalDrinkWater.BP_AIAction_WildPalDrinkWater_C.ActionStart
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_WildPalDrinkWater_C_ActionStart final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_WildPalDrinkWater_C_ActionStart) == 0x000008, "Wrong alignment on BP_AIAction_WildPalDrinkWater_C_ActionStart");
+static_assert(sizeof(BP_AIAction_WildPalDrinkWater_C_ActionStart) == 0x000008, "Wrong size on BP_AIAction_WildPalDrinkWater_C_ActionStart");
+static_assert(offsetof(BP_AIAction_WildPalDrinkWater_C_ActionStart, ControlledPawn) == 0x000000, "Member 'BP_AIAction_WildPalDrinkWater_C_ActionStart::ControlledPawn' has a wrong offset!");
 
 }
 

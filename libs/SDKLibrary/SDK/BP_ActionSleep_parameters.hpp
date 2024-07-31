@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "AkAudio_structs.hpp"
 #include "Engine_structs.hpp"
+#include "AkAudio_structs.hpp"
 #include "Pal_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
@@ -69,7 +69,7 @@ public:
 	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalStaticCharacterParameterComponent*  CallFunc_GetComponentByClass_ReturnValue;          // 0x0108(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class UAnimMontage* Montage)>  K2Node_CreateDelegate_OutputDelegate_5;            // 0x0110(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UAnimMontage*                           K2Node_CustomEvent_montage;                        // 0x0120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UAnimMontage*                           K2Node_CustomEvent_Montage;                        // 0x0120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable;                            // 0x0128(0x0010)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_1;         // 0x0138(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EPalGeneralMontageType                        Temp_byte_Variable_6;                              // 0x0140(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -220,7 +220,7 @@ static_assert(offsetof(BP_ActionSleep_C_ExecuteUbergraph_BP_ActionSleep, Temp_so
 static_assert(offsetof(BP_ActionSleep_C_ExecuteUbergraph_BP_ActionSleep, CallFunc_GetActionCharacter_ReturnValue) == 0x000100, "Member 'BP_ActionSleep_C_ExecuteUbergraph_BP_ActionSleep::CallFunc_GetActionCharacter_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ActionSleep_C_ExecuteUbergraph_BP_ActionSleep, CallFunc_GetComponentByClass_ReturnValue) == 0x000108, "Member 'BP_ActionSleep_C_ExecuteUbergraph_BP_ActionSleep::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ActionSleep_C_ExecuteUbergraph_BP_ActionSleep, K2Node_CreateDelegate_OutputDelegate_5) == 0x000110, "Member 'BP_ActionSleep_C_ExecuteUbergraph_BP_ActionSleep::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(BP_ActionSleep_C_ExecuteUbergraph_BP_ActionSleep, K2Node_CustomEvent_montage) == 0x000120, "Member 'BP_ActionSleep_C_ExecuteUbergraph_BP_ActionSleep::K2Node_CustomEvent_montage' has a wrong offset!");
+static_assert(offsetof(BP_ActionSleep_C_ExecuteUbergraph_BP_ActionSleep, K2Node_CustomEvent_Montage) == 0x000120, "Member 'BP_ActionSleep_C_ExecuteUbergraph_BP_ActionSleep::K2Node_CustomEvent_Montage' has a wrong offset!");
 static_assert(offsetof(BP_ActionSleep_C_ExecuteUbergraph_BP_ActionSleep, Temp_delegate_Variable) == 0x000128, "Member 'BP_ActionSleep_C_ExecuteUbergraph_BP_ActionSleep::Temp_delegate_Variable' has a wrong offset!");
 static_assert(offsetof(BP_ActionSleep_C_ExecuteUbergraph_BP_ActionSleep, CallFunc_GetActionCharacter_ReturnValue_1) == 0x000138, "Member 'BP_ActionSleep_C_ExecuteUbergraph_BP_ActionSleep::CallFunc_GetActionCharacter_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BP_ActionSleep_C_ExecuteUbergraph_BP_ActionSleep, Temp_byte_Variable_6) == 0x000140, "Member 'BP_ActionSleep_C_ExecuteUbergraph_BP_ActionSleep::Temp_byte_Variable_6' has a wrong offset!");

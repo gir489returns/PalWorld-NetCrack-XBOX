@@ -31,11 +31,13 @@ public:
 	struct FPalRaidBossSpawnInfo                  Boss_Info;                                         // 0x0078(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
+	void CompEvent(class APalCharacter* InCharacter);
 	void ExecuteUbergraph_BP_Status_RaidBossModeChange(int32 EntryPoint);
 	void FindModeChangeVisualEffectType(EPalElementType Element, EPalVisualEffectID* VisualEffect);
 	void FindRaidBossData(struct FPalRaidBossSpawnInfo* BossInfo);
 	void OnBeginStatus();
 	void OnEndStatus();
+	void SetupStatus();
 	void TickStatus(float DeltaTime);
 
 public:

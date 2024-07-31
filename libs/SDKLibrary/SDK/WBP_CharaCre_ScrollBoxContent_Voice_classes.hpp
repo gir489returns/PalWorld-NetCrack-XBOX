@@ -37,10 +37,10 @@ public:
 	void Construct();
 	void ExecuteUbergraph_WBP_CharaCre_ScrollBoxContent_Voice(int32 EntryPoint);
 	void GetRestoreFocusTarget(class UWidget** Widget);
-	void GetTopFocusTarget(class UWidget** Widget);
 	void OnChangedVoiceID__DelegateSignature(int32 VoiceID);
 	void OnClickedVoiceTypeButton(class UWBP_CharaCre_BodyTypeButton_C* Widget);
 	void Play_Sample_Voice(int32 VoiceID);
+	void GetTopFocusTarget(class UWidget** Widget);
 
 public:
 	static class UClass* StaticClass()

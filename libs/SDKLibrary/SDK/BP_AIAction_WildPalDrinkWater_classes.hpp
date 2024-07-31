@@ -29,14 +29,14 @@ public:
 	class UPalActionBase*                         EatAction;                                         // 0x0178(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void ExecuteUbergraph_BP_AIAction_WildPalDrinkWater(int32 EntryPoint);
+	void OnFail_3323B09A4DA8EB0F652C87B9DFF6FF56(EPathFollowingResult MovementResult);
+	void OnSuccess_3323B09A4DA8EB0F652C87B9DFF6FF56(EPathFollowingResult MovementResult);
 	void ActionAbort(class APawn* ControlledPawn);
 	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
 	void ActionPause(class APawn* ControlledPawn);
 	void ActionResume(class APawn* ControlledPawn);
 	void ActionStart(class APawn* ControlledPawn);
-	void ExecuteUbergraph_BP_AIAction_WildPalDrinkWater(int32 EntryPoint);
-	void OnFail_3323B09A4DA8EB0F652C87B9DFF6FF56(EPathFollowingResult MovementResult);
-	void OnSuccess_3323B09A4DA8EB0F652C87B9DFF6FF56(EPathFollowingResult MovementResult);
 
 public:
 	static class UClass* StaticClass()

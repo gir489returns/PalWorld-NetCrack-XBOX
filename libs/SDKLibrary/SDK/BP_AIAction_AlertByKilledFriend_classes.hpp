@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "EPal_AI_AlertByKilledFriendState_structs.hpp"
+#include "Engine_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "BP_AIAction_CanCombatBase_classes.hpp"
@@ -37,9 +37,6 @@ public:
 	double                                        TempDeltaTime;                                     // 0x01F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActionAbort(class APawn* ControlledPawn);
-	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
-	void ActionStart(class APawn* ControlledPawn);
 	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void AddState(EPal_AI_AlertByKilledFriendState NewParam);
 	void ChangeNextState(EPal_AI_AlertByKilledFriendState Next);
@@ -47,6 +44,9 @@ public:
 	void LineTraceGround(const struct FVector& CenterPos, bool* IsHit, struct FVector* HitPos);
 	void MoveToDeadBody();
 	void StopMovement();
+	void ActionAbort(class APawn* ControlledPawn);
+	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
+	void ActionStart(class APawn* ControlledPawn);
 
 public:
 	static class UClass* StaticClass()

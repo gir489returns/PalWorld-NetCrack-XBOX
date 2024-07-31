@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "SlateCore_structs.hpp"
+#include "E_PalTitleWorldSettingOptionType_structs.hpp"
 #include "Pal_classes.hpp"
 #include "Engine_structs.hpp"
-#include "E_PalTitleWorldSettingOptionType_structs.hpp"
 #include "UMG_structs.hpp"
-#include "SlateCore_structs.hpp"
 
 
 namespace SDK
@@ -55,6 +55,14 @@ public:
 	double                                        OverrideSliderStepValue;                           // 0x04F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void SetupTextInput(const class FString& DefaultString);
+	void SetupSelectString(TArray<class FString>& SelectStrings, int32 DefaultSelectIndex);
+	void SetupOnOff(bool Param_IsOn);
+	void SetupIntValue(int32 Value, int32 Min, int32 Max);
+	void SetupFloatValue(double NowValue, double MinValue, double MaxValue);
+	void SetEnableCautionMark(bool IsEnableMark);
+	void SetButtonText(const class FText& Text);
+	void Set_Name_Select_Index(int32 Param_Index);
 	void PreConstruct(bool IsDesignTime);
 	void OnSwitchChanged__DelegateSignature(bool Param_IsOn);
 	void OnComittedText__DelegateSignature(const class FString& NewString);
@@ -82,14 +90,6 @@ public:
 	void BndEvt__WBP_Title_WorldSettings_ListContent_EditableTextBox_46_K2Node_ComponentBoundEvent_5_OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text);
 	void BndEvt__WBP_Title_WorldSettings_ListContent_EditableTextBox_46_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
 	void AnmEvent_SetEnableBuutton(bool IsEnableButton);
-	void SetupTextInput(const class FString& DefaultString);
-	void SetupSelectString(TArray<class FString>& SelectStrings, int32 DefaultSelectIndex);
-	void SetupOnOff(bool Param_IsOn);
-	void SetupIntValue(int32 Value, int32 Min, int32 Max);
-	void SetupFloatValue(double NowValue, double MinValue, double MaxValue);
-	void SetEnableCautionMark(bool IsEnableMark);
-	void SetButtonText(const class FText& Text);
-	void Set_Name_Select_Index(int32 Param_Index);
 
 public:
 	static class UClass* StaticClass()

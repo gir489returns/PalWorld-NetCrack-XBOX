@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "EPal_NPC_CombatMeleeState_structs.hpp"
+#include "Engine_structs.hpp"
 #include "BP_AIAction_NPC_CombatBase_classes.hpp"
 #include "AIModule_structs.hpp"
 

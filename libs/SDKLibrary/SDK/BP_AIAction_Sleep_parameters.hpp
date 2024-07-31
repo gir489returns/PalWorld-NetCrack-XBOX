@@ -17,30 +17,6 @@
 namespace SDK::Params
 {
 
-// Function BP_AIAction_Sleep.BP_AIAction_Sleep_C.ActionFinished
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIAction_Sleep_C_ActionFinished final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_Sleep_C_ActionFinished) == 0x000008, "Wrong alignment on BP_AIAction_Sleep_C_ActionFinished");
-static_assert(sizeof(BP_AIAction_Sleep_C_ActionFinished) == 0x000010, "Wrong size on BP_AIAction_Sleep_C_ActionFinished");
-static_assert(offsetof(BP_AIAction_Sleep_C_ActionFinished, ControlledPawn) == 0x000000, "Member 'BP_AIAction_Sleep_C_ActionFinished::ControlledPawn' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Sleep_C_ActionFinished, WithResult) == 0x000008, "Member 'BP_AIAction_Sleep_C_ActionFinished::WithResult' has a wrong offset!");
-
-// Function BP_AIAction_Sleep.BP_AIAction_Sleep_C.ActionStart
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_Sleep_C_ActionStart final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_Sleep_C_ActionStart) == 0x000008, "Wrong alignment on BP_AIAction_Sleep_C_ActionStart");
-static_assert(sizeof(BP_AIAction_Sleep_C_ActionStart) == 0x000008, "Wrong size on BP_AIAction_Sleep_C_ActionStart");
-static_assert(offsetof(BP_AIAction_Sleep_C_ActionStart, ControlledPawn) == 0x000000, "Member 'BP_AIAction_Sleep_C_ActionStart::ControlledPawn' has a wrong offset!");
-
 // Function BP_AIAction_Sleep.BP_AIAction_Sleep_C.ExecuteUbergraph_BP_AIAction_Sleep
 // 0x00E0 (0x00E0 - 0x0000)
 struct BP_AIAction_Sleep_C_ExecuteUbergraph_BP_AIAction_Sleep final
@@ -107,6 +83,30 @@ public:
 static_assert(alignof(BP_AIAction_Sleep_C_OnDamageDelegate______0) == 0x000008, "Wrong alignment on BP_AIAction_Sleep_C_OnDamageDelegate______0");
 static_assert(sizeof(BP_AIAction_Sleep_C_OnDamageDelegate______0) == 0x000050, "Wrong size on BP_AIAction_Sleep_C_OnDamageDelegate______0");
 static_assert(offsetof(BP_AIAction_Sleep_C_OnDamageDelegate______0, DamageResult) == 0x000000, "Member 'BP_AIAction_Sleep_C_OnDamageDelegate______0::DamageResult' has a wrong offset!");
+
+// Function BP_AIAction_Sleep.BP_AIAction_Sleep_C.ActionFinished
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIAction_Sleep_C_ActionFinished final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_Sleep_C_ActionFinished) == 0x000008, "Wrong alignment on BP_AIAction_Sleep_C_ActionFinished");
+static_assert(sizeof(BP_AIAction_Sleep_C_ActionFinished) == 0x000010, "Wrong size on BP_AIAction_Sleep_C_ActionFinished");
+static_assert(offsetof(BP_AIAction_Sleep_C_ActionFinished, ControlledPawn) == 0x000000, "Member 'BP_AIAction_Sleep_C_ActionFinished::ControlledPawn' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Sleep_C_ActionFinished, WithResult) == 0x000008, "Member 'BP_AIAction_Sleep_C_ActionFinished::WithResult' has a wrong offset!");
+
+// Function BP_AIAction_Sleep.BP_AIAction_Sleep_C.ActionStart
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_Sleep_C_ActionStart final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_Sleep_C_ActionStart) == 0x000008, "Wrong alignment on BP_AIAction_Sleep_C_ActionStart");
+static_assert(sizeof(BP_AIAction_Sleep_C_ActionStart) == 0x000008, "Wrong size on BP_AIAction_Sleep_C_ActionStart");
+static_assert(offsetof(BP_AIAction_Sleep_C_ActionStart, ControlledPawn) == 0x000000, "Member 'BP_AIAction_Sleep_C_ActionStart::ControlledPawn' has a wrong offset!");
 
 }
 

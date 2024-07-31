@@ -16,41 +16,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_Title_WorldSelect_CreateWorld_ListContent.WBP_Title_WorldSelect_CreateWorld_ListContent_C.ToMaxSaveDataMode
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode final
-{
-public:
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0000(0x0018)()
-};
-static_assert(alignof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode");
-static_assert(sizeof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode) == 0x000018, "Wrong size on WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode");
-static_assert(offsetof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode, CallFunc_GetLocalizedTextFromHandle_Text) == 0x000000, "Member 'WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode::CallFunc_GetLocalizedTextFromHandle_Text' has a wrong offset!");
-
-// Function WBP_Title_WorldSelect_CreateWorld_ListContent.WBP_Title_WorldSelect_CreateWorld_ListContent_C.SetupByLocalWorldDisplayData
-// 0x0068 (0x0068 - 0x0000)
-struct WBP_Title_WorldSelect_CreateWorld_ListContent_C_SetupByLocalWorldDisplayData final
-{
-public:
-	class FString                                 SaveDirectoryName;                                 // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	struct FPalUILocalWorldDisplayData            DisplayData;                                       // 0x0010(0x0058)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-static_assert(alignof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_SetupByLocalWorldDisplayData) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_CreateWorld_ListContent_C_SetupByLocalWorldDisplayData");
-static_assert(sizeof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_SetupByLocalWorldDisplayData) == 0x000068, "Wrong size on WBP_Title_WorldSelect_CreateWorld_ListContent_C_SetupByLocalWorldDisplayData");
-static_assert(offsetof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_SetupByLocalWorldDisplayData, SaveDirectoryName) == 0x000000, "Member 'WBP_Title_WorldSelect_CreateWorld_ListContent_C_SetupByLocalWorldDisplayData::SaveDirectoryName' has a wrong offset!");
-static_assert(offsetof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_SetupByLocalWorldDisplayData, DisplayData) == 0x000010, "Member 'WBP_Title_WorldSelect_CreateWorld_ListContent_C_SetupByLocalWorldDisplayData::DisplayData' has a wrong offset!");
-
-// Function WBP_Title_WorldSelect_CreateWorld_ListContent.WBP_Title_WorldSelect_CreateWorld_ListContent_C.OnClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Title_WorldSelect_CreateWorld_ListContent_C_OnClicked__DelegateSignature final
-{
-public:
-	class UWBP_Title_WorldSelect_CreateWorld_ListContent_C* Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_OnClicked__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_CreateWorld_ListContent_C_OnClicked__DelegateSignature");
-static_assert(sizeof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_OnClicked__DelegateSignature) == 0x000008, "Wrong size on WBP_Title_WorldSelect_CreateWorld_ListContent_C_OnClicked__DelegateSignature");
-static_assert(offsetof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_OnClicked__DelegateSignature, Widget) == 0x000000, "Member 'WBP_Title_WorldSelect_CreateWorld_ListContent_C_OnClicked__DelegateSignature::Widget' has a wrong offset!");
-
 // Function WBP_Title_WorldSelect_CreateWorld_ListContent.WBP_Title_WorldSelect_CreateWorld_ListContent_C.GetBindedSaveDirectoryName
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_Title_WorldSelect_CreateWorld_ListContent_C_GetBindedSaveDirectoryName final
@@ -118,6 +83,41 @@ public:
 static_assert(alignof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_CreateWorld_ListContent_C_BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 static_assert(sizeof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature) == 0x000008, "Wrong size on WBP_Title_WorldSelect_CreateWorld_ListContent_C_BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 static_assert(offsetof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature, Button) == 0x000000, "Member 'WBP_Title_WorldSelect_CreateWorld_ListContent_C_BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature::Button' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect_CreateWorld_ListContent.WBP_Title_WorldSelect_CreateWorld_ListContent_C.OnClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Title_WorldSelect_CreateWorld_ListContent_C_OnClicked__DelegateSignature final
+{
+public:
+	class UWBP_Title_WorldSelect_CreateWorld_ListContent_C* Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_OnClicked__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_CreateWorld_ListContent_C_OnClicked__DelegateSignature");
+static_assert(sizeof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_OnClicked__DelegateSignature) == 0x000008, "Wrong size on WBP_Title_WorldSelect_CreateWorld_ListContent_C_OnClicked__DelegateSignature");
+static_assert(offsetof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_OnClicked__DelegateSignature, Widget) == 0x000000, "Member 'WBP_Title_WorldSelect_CreateWorld_ListContent_C_OnClicked__DelegateSignature::Widget' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect_CreateWorld_ListContent.WBP_Title_WorldSelect_CreateWorld_ListContent_C.SetupByLocalWorldDisplayData
+// 0x0068 (0x0068 - 0x0000)
+struct WBP_Title_WorldSelect_CreateWorld_ListContent_C_SetupByLocalWorldDisplayData final
+{
+public:
+	class FString                                 SaveDirectoryName;                                 // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	struct FPalUILocalWorldDisplayData            DisplayData;                                       // 0x0010(0x0058)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+static_assert(alignof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_SetupByLocalWorldDisplayData) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_CreateWorld_ListContent_C_SetupByLocalWorldDisplayData");
+static_assert(sizeof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_SetupByLocalWorldDisplayData) == 0x000068, "Wrong size on WBP_Title_WorldSelect_CreateWorld_ListContent_C_SetupByLocalWorldDisplayData");
+static_assert(offsetof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_SetupByLocalWorldDisplayData, SaveDirectoryName) == 0x000000, "Member 'WBP_Title_WorldSelect_CreateWorld_ListContent_C_SetupByLocalWorldDisplayData::SaveDirectoryName' has a wrong offset!");
+static_assert(offsetof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_SetupByLocalWorldDisplayData, DisplayData) == 0x000010, "Member 'WBP_Title_WorldSelect_CreateWorld_ListContent_C_SetupByLocalWorldDisplayData::DisplayData' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect_CreateWorld_ListContent.WBP_Title_WorldSelect_CreateWorld_ListContent_C.ToMaxSaveDataMode
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode final
+{
+public:
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0000(0x0018)()
+};
+static_assert(alignof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode");
+static_assert(sizeof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode) == 0x000018, "Wrong size on WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode");
+static_assert(offsetof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode, CallFunc_GetLocalizedTextFromHandle_Text) == 0x000000, "Member 'WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode::CallFunc_GetLocalizedTextFromHandle_Text' has a wrong offset!");
 
 }
 

@@ -35,20 +35,20 @@ public:
 	double                                        EndDistance;                                       // 0x0198(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActionAbort(class APawn* ControlledPawn);
-	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
-	void ActionPause(class APawn* ControlledPawn);
-	void ActionResume(class APawn* ControlledPawn);
-	void ActionStart(class APawn* ControlledPawn);
 	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void ChangeReturnMode(bool* ChangeSuccess);
 	void ExecuteUbergraph_BP_AIActionEscape(int32 EntryPoint);
 	void Is_Far_Spawn_Point(bool* IsFar);
 	void NavMeshMove();
 	void OnFail_023A017548911A48339C18BEF9D1B042(EPathFollowingResult MovementResult);
-	void OnSquadMemberDeadEvent(const struct FPalDeadInfo& DeadInbfo);
 	void OnSuccess_023A017548911A48339C18BEF9D1B042(EPathFollowingResult MovementResult);
 	void SetGoalLocation(bool* Success);
+	void ActionAbort(class APawn* ControlledPawn);
+	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
+	void ActionPause(class APawn* ControlledPawn);
+	void ActionResume(class APawn* ControlledPawn);
+	void ActionStart(class APawn* ControlledPawn);
+	void OnSquadMemberDeadEvent(const struct FPalDeadInfo& DeadInbfo);
 	void SoundEvent(const struct FVector& EmitLocation);
 
 public:

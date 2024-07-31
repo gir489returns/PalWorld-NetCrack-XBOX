@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "PhysicsCore_structs.hpp"
 #include "Engine_classes.hpp"
 #include "Pal_structs.hpp"
+#include "PhysicsCore_structs.hpp"
 
 
 namespace SDK

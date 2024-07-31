@@ -13,8 +13,8 @@
 #include "Engine_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "BP_AIAction_CanCombatBase_classes.hpp"
 #include "EWarningPalAIMoveType_structs.hpp"
+#include "BP_AIAction_CanCombatBase_classes.hpp"
 
 
 namespace SDK
@@ -41,22 +41,22 @@ public:
 	class UPalActionBase*                         TurnAction;                                        // 0x01F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActionAbort(class APawn* ControlledPawn);
-	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
-	void ActionPause(class APawn* ControlledPawn);
-	void ActionResume(class APawn* ControlledPawn);
-	void ActionStart(class APawn* ControlledPawn);
 	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void CancelTurnAction();
 	void ExecuteUbergraph_BP_AIAction_Warning_PointWalk(int32 EntryPoint);
 	void PlayActionTurnIfNoneAction(const struct FVector& Direction);
 	void Setup(const struct FVector& AttentionLocation);
-	void SoundEvent(const struct FVector& EmitLocation);
 	void StartJump();
 	void TurnL45();
 	void TurnMode();
 	void TurnR45();
 	void UpdateMoveGoal();
+	void ActionAbort(class APawn* ControlledPawn);
+	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
+	void ActionPause(class APawn* ControlledPawn);
+	void ActionResume(class APawn* ControlledPawn);
+	void ActionStart(class APawn* ControlledPawn);
+	void SoundEvent(const struct FVector& EmitLocation);
 
 public:
 	static class UClass* StaticClass()

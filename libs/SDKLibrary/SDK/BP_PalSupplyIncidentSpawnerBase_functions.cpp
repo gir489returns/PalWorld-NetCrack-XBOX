@@ -37,6 +37,20 @@ void ABP_PalSupplyIncidentSpawnerBase_C::ExecuteUbergraph_BP_PalSupplyIncidentSp
 }
 
 
+// Function BP_PalSupplyIncidentSpawnerBase.BP_PalSupplyIncidentSpawnerBase_C.WipedOut
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_PalSupplyIncidentSpawnerBase_C::WipedOut()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSupplyIncidentSpawnerBase_C", "WipedOut");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_PalSupplyIncidentSpawnerBase.BP_PalSupplyIncidentSpawnerBase_C.OnIncidentSpawned
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -82,20 +96,6 @@ void ABP_PalSupplyIncidentSpawnerBase_C::ReleaseIncident()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_PalSupplyIncidentSpawnerBase_C", "ReleaseIncident");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PalSupplyIncidentSpawnerBase.BP_PalSupplyIncidentSpawnerBase_C.WipedOut
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_PalSupplyIncidentSpawnerBase_C::WipedOut()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSupplyIncidentSpawnerBase_C", "WipedOut");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

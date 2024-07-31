@@ -21,22 +21,40 @@
 namespace SDK
 {
 
-// Class MediaAssets.MediaPlayerProxyInterface
-// 0x0000 (0x0028 - 0x0028)
-class IMediaPlayerProxyInterface final : public IInterface
+// Class MediaAssets.MediaPlaylist
+// 0x0010 (0x0038 - 0x0028)
+class UMediaPlaylist final : public UObject
 {
+public:
+	TArray<class UMediaSource*>                   Items;                                             // 0x0028(0x0010)(Edit, ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+
+public:
+	bool Add(class UMediaSource* MediaSource);
+	bool AddFile(const class FString& FilePath);
+	bool AddUrl(const class FString& URL);
+	class UMediaSource* Get(int32 Param_Index);
+	class UMediaSource* GetNext(int32* InOutIndex);
+	class UMediaSource* GetPrevious(int32* InOutIndex);
+	class UMediaSource* GetRandom(int32* OutIndex);
+	void Insert(class UMediaSource* MediaSource, int32 Param_Index);
+	int32 Num();
+	bool Remove(class UMediaSource* MediaSource);
+	bool RemoveAt(int32 Param_Index);
+	bool Replace(int32 Param_Index, class UMediaSource* Replacement);
+
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MediaPlayerProxyInterface">();
+		return StaticClassImpl<"MediaPlaylist">();
 	}
-	static class IMediaPlayerProxyInterface* GetDefaultObj()
+	static class UMediaPlaylist* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<IMediaPlayerProxyInterface>();
+		return GetDefaultObjImpl<UMediaPlaylist>();
 	}
 };
-static_assert(alignof(IMediaPlayerProxyInterface) == 0x000008, "Wrong alignment on IMediaPlayerProxyInterface");
-static_assert(sizeof(IMediaPlayerProxyInterface) == 0x000028, "Wrong size on IMediaPlayerProxyInterface");
+static_assert(alignof(UMediaPlaylist) == 0x000008, "Wrong alignment on UMediaPlaylist");
+static_assert(sizeof(UMediaPlaylist) == 0x000038, "Wrong size on UMediaPlaylist");
+static_assert(offsetof(UMediaPlaylist, Items) == 0x000028, "Member 'UMediaPlaylist::Items' has a wrong offset!");
 
 // Class MediaAssets.MediaSource
 // 0x0058 (0x0080 - 0x0028)
@@ -67,26 +85,43 @@ public:
 static_assert(alignof(UMediaSource) == 0x000008, "Wrong alignment on UMediaSource");
 static_assert(sizeof(UMediaSource) == 0x000080, "Wrong size on UMediaSource");
 
-// Class MediaAssets.PlatformMediaSource
-// 0x0008 (0x0088 - 0x0080)
-class UPlatformMediaSource final : public UMediaSource
+// Class MediaAssets.MediaPlayerProxyInterface
+// 0x0000 (0x0028 - 0x0028)
+class IMediaPlayerProxyInterface final : public IInterface
 {
 public:
-	class UMediaSource*                           MediaSource;                                       // 0x0080(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"MediaPlayerProxyInterface">();
+	}
+	static class IMediaPlayerProxyInterface* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<IMediaPlayerProxyInterface>();
+	}
+};
+static_assert(alignof(IMediaPlayerProxyInterface) == 0x000008, "Wrong alignment on IMediaPlayerProxyInterface");
+static_assert(sizeof(IMediaPlayerProxyInterface) == 0x000028, "Wrong size on IMediaPlayerProxyInterface");
+
+// Class MediaAssets.BaseMediaSource
+// 0x0008 (0x0088 - 0x0080)
+class UBaseMediaSource : public UMediaSource
+{
+public:
+	class FName                                   PlayerName;                                        // 0x0080(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlatformMediaSource">();
+		return StaticClassImpl<"BaseMediaSource">();
 	}
-	static class UPlatformMediaSource* GetDefaultObj()
+	static class UBaseMediaSource* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UPlatformMediaSource>();
+		return GetDefaultObjImpl<UBaseMediaSource>();
 	}
 };
-static_assert(alignof(UPlatformMediaSource) == 0x000008, "Wrong alignment on UPlatformMediaSource");
-static_assert(sizeof(UPlatformMediaSource) == 0x000088, "Wrong size on UPlatformMediaSource");
-static_assert(offsetof(UPlatformMediaSource, MediaSource) == 0x000080, "Member 'UPlatformMediaSource::MediaSource' has a wrong offset!");
+static_assert(alignof(UBaseMediaSource) == 0x000008, "Wrong alignment on UBaseMediaSource");
+static_assert(sizeof(UBaseMediaSource) == 0x000088, "Wrong size on UBaseMediaSource");
+static_assert(offsetof(UBaseMediaSource, PlayerName) == 0x000080, "Member 'UBaseMediaSource::PlayerName' has a wrong offset!");
 
 // Class MediaAssets.MediaSoundComponent
 // 0x00E0 (0x0870 - 0x0790)
@@ -132,27 +167,6 @@ static_assert(offsetof(UMediaSoundComponent, DynamicRateAdjustment) == 0x000794,
 static_assert(offsetof(UMediaSoundComponent, RateAdjustmentFactor) == 0x000798, "Member 'UMediaSoundComponent::RateAdjustmentFactor' has a wrong offset!");
 static_assert(offsetof(UMediaSoundComponent, RateAdjustmentRange) == 0x00079C, "Member 'UMediaSoundComponent::RateAdjustmentRange' has a wrong offset!");
 static_assert(offsetof(UMediaSoundComponent, MediaPlayer) == 0x0007B0, "Member 'UMediaSoundComponent::MediaPlayer' has a wrong offset!");
-
-// Class MediaAssets.BaseMediaSource
-// 0x0008 (0x0088 - 0x0080)
-class UBaseMediaSource : public UMediaSource
-{
-public:
-	class FName                                   PlayerName;                                        // 0x0080(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"BaseMediaSource">();
-	}
-	static class UBaseMediaSource* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBaseMediaSource>();
-	}
-};
-static_assert(alignof(UBaseMediaSource) == 0x000008, "Wrong alignment on UBaseMediaSource");
-static_assert(sizeof(UBaseMediaSource) == 0x000088, "Wrong size on UBaseMediaSource");
-static_assert(offsetof(UBaseMediaSource, PlayerName) == 0x000080, "Member 'UBaseMediaSource::PlayerName' has a wrong offset!");
 
 // Class MediaAssets.MediaTexture
 // 0x00E0 (0x02D0 - 0x01F0)
@@ -426,40 +440,26 @@ static_assert(offsetof(UMediaPlayer, VerticalFieldOfView) == 0x0000E4, "Member '
 static_assert(offsetof(UMediaPlayer, ViewRotation) == 0x0000E8, "Member 'UMediaPlayer::ViewRotation' has a wrong offset!");
 static_assert(offsetof(UMediaPlayer, PlayerGuid) == 0x000128, "Member 'UMediaPlayer::PlayerGuid' has a wrong offset!");
 
-// Class MediaAssets.MediaPlaylist
-// 0x0010 (0x0038 - 0x0028)
-class UMediaPlaylist final : public UObject
+// Class MediaAssets.PlatformMediaSource
+// 0x0008 (0x0088 - 0x0080)
+class UPlatformMediaSource final : public UMediaSource
 {
 public:
-	TArray<class UMediaSource*>                   Items;                                             // 0x0028(0x0010)(Edit, ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-
-public:
-	bool Add(class UMediaSource* MediaSource);
-	bool AddFile(const class FString& FilePath);
-	bool AddUrl(const class FString& URL);
-	class UMediaSource* Get(int32 Param_Index);
-	class UMediaSource* GetNext(int32* InOutIndex);
-	class UMediaSource* GetPrevious(int32* InOutIndex);
-	class UMediaSource* GetRandom(int32* OutIndex);
-	void Insert(class UMediaSource* MediaSource, int32 Param_Index);
-	int32 Num();
-	bool Remove(class UMediaSource* MediaSource);
-	bool RemoveAt(int32 Param_Index);
-	bool Replace(int32 Param_Index, class UMediaSource* Replacement);
+	class UMediaSource*                           MediaSource;                                       // 0x0080(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MediaPlaylist">();
+		return StaticClassImpl<"PlatformMediaSource">();
 	}
-	static class UMediaPlaylist* GetDefaultObj()
+	static class UPlatformMediaSource* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UMediaPlaylist>();
+		return GetDefaultObjImpl<UPlatformMediaSource>();
 	}
 };
-static_assert(alignof(UMediaPlaylist) == 0x000008, "Wrong alignment on UMediaPlaylist");
-static_assert(sizeof(UMediaPlaylist) == 0x000038, "Wrong size on UMediaPlaylist");
-static_assert(offsetof(UMediaPlaylist, Items) == 0x000028, "Member 'UMediaPlaylist::Items' has a wrong offset!");
+static_assert(alignof(UPlatformMediaSource) == 0x000008, "Wrong alignment on UPlatformMediaSource");
+static_assert(sizeof(UPlatformMediaSource) == 0x000088, "Wrong size on UPlatformMediaSource");
+static_assert(offsetof(UPlatformMediaSource, MediaSource) == 0x000080, "Member 'UPlatformMediaSource::MediaSource' has a wrong offset!");
 
 // Class MediaAssets.StreamMediaSource
 // 0x0010 (0x0098 - 0x0088)

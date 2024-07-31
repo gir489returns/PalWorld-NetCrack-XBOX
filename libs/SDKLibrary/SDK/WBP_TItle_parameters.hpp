@@ -18,32 +18,80 @@
 namespace SDK::Params
 {
 
-// Function WBP_TItle.WBP_TItle_C.BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_TItle_C_BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature final
+// Function WBP_TItle.WBP_TItle_C.WBP_TItle_AutoGenFunc
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_TItle_C_WBP_TItle_AutoGenFunc final
+{
+public:
+	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_TItle_C_WBP_TItle_AutoGenFunc) == 0x000001, "Wrong alignment on WBP_TItle_C_WBP_TItle_AutoGenFunc");
+static_assert(sizeof(WBP_TItle_C_WBP_TItle_AutoGenFunc) == 0x000001, "Wrong size on WBP_TItle_C_WBP_TItle_AutoGenFunc");
+static_assert(offsetof(WBP_TItle_C_WBP_TItle_AutoGenFunc, bResult) == 0x000000, "Member 'WBP_TItle_C_WBP_TItle_AutoGenFunc::bResult' has a wrong offset!");
+
+// Function WBP_TItle.WBP_TItle_C.OpenQuitGameDialog
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_TItle_C_OpenQuitGameDialog final
+{
+public:
+	struct FDataTableRowHandle                    NewLocalVar;                                       // 0x0000(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	TDelegate<void(bool bResult)>                 K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0020(0x0018)()
+	struct FGuid                                  CallFunc_Dialog_ReturnValue;                       // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_TItle_C_OpenQuitGameDialog) == 0x000008, "Wrong alignment on WBP_TItle_C_OpenQuitGameDialog");
+static_assert(sizeof(WBP_TItle_C_OpenQuitGameDialog) == 0x000048, "Wrong size on WBP_TItle_C_OpenQuitGameDialog");
+static_assert(offsetof(WBP_TItle_C_OpenQuitGameDialog, NewLocalVar) == 0x000000, "Member 'WBP_TItle_C_OpenQuitGameDialog::NewLocalVar' has a wrong offset!");
+static_assert(offsetof(WBP_TItle_C_OpenQuitGameDialog, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'WBP_TItle_C_OpenQuitGameDialog::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(WBP_TItle_C_OpenQuitGameDialog, CallFunc_GetLocalizedTextFromHandle_Text) == 0x000020, "Member 'WBP_TItle_C_OpenQuitGameDialog::CallFunc_GetLocalizedTextFromHandle_Text' has a wrong offset!");
+static_assert(offsetof(WBP_TItle_C_OpenQuitGameDialog, CallFunc_Dialog_ReturnValue) == 0x000038, "Member 'WBP_TItle_C_OpenQuitGameDialog::CallFunc_Dialog_ReturnValue' has a wrong offset!");
+
+// Function WBP_TItle.WBP_TItle_C.OnClosedQuitGameDialog
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_TItle_C_OnClosedQuitGameDialog final
+{
+public:
+	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_TItle_C_OnClosedQuitGameDialog) == 0x000008, "Wrong alignment on WBP_TItle_C_OnClosedQuitGameDialog");
+static_assert(sizeof(WBP_TItle_C_OnClosedQuitGameDialog) == 0x000010, "Wrong size on WBP_TItle_C_OnClosedQuitGameDialog");
+static_assert(offsetof(WBP_TItle_C_OnClosedQuitGameDialog, bResult) == 0x000000, "Member 'WBP_TItle_C_OnClosedQuitGameDialog::bResult' has a wrong offset!");
+static_assert(offsetof(WBP_TItle_C_OnClosedQuitGameDialog, CallFunc_GetLocalPlayerController_ReturnValue) == 0x000008, "Member 'WBP_TItle_C_OnClosedQuitGameDialog::CallFunc_GetLocalPlayerController_ReturnValue' has a wrong offset!");
+
+// Function WBP_TItle.WBP_TItle_C.OnClickedMenu_Internal
+// 0x0088 (0x0088 - 0x0000)
+struct WBP_TItle_C_OnClickedMenu_Internal final
 {
 public:
 	class UWBP_Title_MenuButton_C*                ButtonWidget;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_Push_ReturnValue;                         // 0x0008(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	E_PalUITitleMenuButtonType                    CallFunc_GetMenuType_BindedMenuType;               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalHUDDispatchParame_JoinGameInputCode* CallFunc_SpawnObject_ReturnValue;                  // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuid                                  CallFunc_Push_ReturnValue_1;                       // 0x0034(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_Push_ReturnValue_2;                       // 0x0044(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_Push_ReturnValue_3;                       // 0x0054(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_Push_ReturnValue_4;                       // 0x0064(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_Push_ReturnValue_5;                       // 0x0074(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TItle_C_BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature) == 0x000008, "Wrong alignment on WBP_TItle_C_BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature");
-static_assert(sizeof(WBP_TItle_C_BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature) == 0x000008, "Wrong size on WBP_TItle_C_BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature");
-static_assert(offsetof(WBP_TItle_C_BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature, ButtonWidget) == 0x000000, "Member 'WBP_TItle_C_BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature::ButtonWidget' has a wrong offset!");
-
-// Function WBP_TItle.WBP_TItle_C.Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_TItle_C_Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD final
-{
-public:
-	const class UPocketpairUserInfo*              UserInfo;                                          // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          bSuccess;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 ErrorStr;                                          // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_TItle_C_Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD) == 0x000008, "Wrong alignment on WBP_TItle_C_Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD");
-static_assert(sizeof(WBP_TItle_C_Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD) == 0x000020, "Wrong size on WBP_TItle_C_Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD");
-static_assert(offsetof(WBP_TItle_C_Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD, UserInfo) == 0x000000, "Member 'WBP_TItle_C_Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD::UserInfo' has a wrong offset!");
-static_assert(offsetof(WBP_TItle_C_Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD, bSuccess) == 0x000008, "Member 'WBP_TItle_C_Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD::bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_TItle_C_Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD, ErrorStr) == 0x000010, "Member 'WBP_TItle_C_Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD::ErrorStr' has a wrong offset!");
+static_assert(alignof(WBP_TItle_C_OnClickedMenu_Internal) == 0x000008, "Wrong alignment on WBP_TItle_C_OnClickedMenu_Internal");
+static_assert(sizeof(WBP_TItle_C_OnClickedMenu_Internal) == 0x000088, "Wrong size on WBP_TItle_C_OnClickedMenu_Internal");
+static_assert(offsetof(WBP_TItle_C_OnClickedMenu_Internal, ButtonWidget) == 0x000000, "Member 'WBP_TItle_C_OnClickedMenu_Internal::ButtonWidget' has a wrong offset!");
+static_assert(offsetof(WBP_TItle_C_OnClickedMenu_Internal, CallFunc_Push_ReturnValue) == 0x000008, "Member 'WBP_TItle_C_OnClickedMenu_Internal::CallFunc_Push_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TItle_C_OnClickedMenu_Internal, CallFunc_GetHUDService_ReturnValue) == 0x000018, "Member 'WBP_TItle_C_OnClickedMenu_Internal::CallFunc_GetHUDService_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TItle_C_OnClickedMenu_Internal, CallFunc_GetMenuType_BindedMenuType) == 0x000020, "Member 'WBP_TItle_C_OnClickedMenu_Internal::CallFunc_GetMenuType_BindedMenuType' has a wrong offset!");
+static_assert(offsetof(WBP_TItle_C_OnClickedMenu_Internal, CallFunc_SpawnObject_ReturnValue) == 0x000028, "Member 'WBP_TItle_C_OnClickedMenu_Internal::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_TItle_C_OnClickedMenu_Internal, K2Node_SwitchEnum_CmpSuccess) == 0x000030, "Member 'WBP_TItle_C_OnClickedMenu_Internal::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_TItle_C_OnClickedMenu_Internal, CallFunc_Push_ReturnValue_1) == 0x000034, "Member 'WBP_TItle_C_OnClickedMenu_Internal::CallFunc_Push_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_TItle_C_OnClickedMenu_Internal, CallFunc_Push_ReturnValue_2) == 0x000044, "Member 'WBP_TItle_C_OnClickedMenu_Internal::CallFunc_Push_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_TItle_C_OnClickedMenu_Internal, CallFunc_Push_ReturnValue_3) == 0x000054, "Member 'WBP_TItle_C_OnClickedMenu_Internal::CallFunc_Push_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_TItle_C_OnClickedMenu_Internal, CallFunc_Push_ReturnValue_4) == 0x000064, "Member 'WBP_TItle_C_OnClickedMenu_Internal::CallFunc_Push_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_TItle_C_OnClickedMenu_Internal, CallFunc_Push_ReturnValue_5) == 0x000074, "Member 'WBP_TItle_C_OnClickedMenu_Internal::CallFunc_Push_ReturnValue_5' has a wrong offset!");
 
 // Function WBP_TItle.WBP_TItle_C.ExecuteUbergraph_WBP_TItle
 // 0x0178 (0x0178 - 0x0000)
@@ -134,80 +182,32 @@ static_assert(offsetof(WBP_TItle_C_ExecuteUbergraph_WBP_TItle, CallFunc_Conv_Str
 static_assert(offsetof(WBP_TItle_C_ExecuteUbergraph_WBP_TItle, K2Node_CreateDelegate_OutputDelegate_2) == 0x000158, "Member 'WBP_TItle_C_ExecuteUbergraph_WBP_TItle::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
 static_assert(offsetof(WBP_TItle_C_ExecuteUbergraph_WBP_TItle, CallFunc_Dialog_ReturnValue_1) == 0x000168, "Member 'WBP_TItle_C_ExecuteUbergraph_WBP_TItle::CallFunc_Dialog_ReturnValue_1' has a wrong offset!");
 
-// Function WBP_TItle.WBP_TItle_C.OnClickedMenu_Internal
-// 0x0088 (0x0088 - 0x0000)
-struct WBP_TItle_C_OnClickedMenu_Internal final
+// Function WBP_TItle.WBP_TItle_C.Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_TItle_C_Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD final
+{
+public:
+	const class UPocketpairUserInfo*              UserInfo;                                          // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bSuccess;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 ErrorStr;                                          // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_TItle_C_Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD) == 0x000008, "Wrong alignment on WBP_TItle_C_Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD");
+static_assert(sizeof(WBP_TItle_C_Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD) == 0x000020, "Wrong size on WBP_TItle_C_Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD");
+static_assert(offsetof(WBP_TItle_C_Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD, UserInfo) == 0x000000, "Member 'WBP_TItle_C_Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD::UserInfo' has a wrong offset!");
+static_assert(offsetof(WBP_TItle_C_Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD, bSuccess) == 0x000008, "Member 'WBP_TItle_C_Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD::bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_TItle_C_Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD, ErrorStr) == 0x000010, "Member 'WBP_TItle_C_Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD::ErrorStr' has a wrong offset!");
+
+// Function WBP_TItle.WBP_TItle_C.BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_TItle_C_BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature final
 {
 public:
 	class UWBP_Title_MenuButton_C*                ButtonWidget;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  CallFunc_Push_ReturnValue;                         // 0x0008(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	E_PalUITitleMenuButtonType                    CallFunc_GetMenuType_BindedMenuType;               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalHUDDispatchParame_JoinGameInputCode* CallFunc_SpawnObject_ReturnValue;                  // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuid                                  CallFunc_Push_ReturnValue_1;                       // 0x0034(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  CallFunc_Push_ReturnValue_2;                       // 0x0044(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  CallFunc_Push_ReturnValue_3;                       // 0x0054(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  CallFunc_Push_ReturnValue_4;                       // 0x0064(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  CallFunc_Push_ReturnValue_5;                       // 0x0074(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_TItle_C_OnClickedMenu_Internal) == 0x000008, "Wrong alignment on WBP_TItle_C_OnClickedMenu_Internal");
-static_assert(sizeof(WBP_TItle_C_OnClickedMenu_Internal) == 0x000088, "Wrong size on WBP_TItle_C_OnClickedMenu_Internal");
-static_assert(offsetof(WBP_TItle_C_OnClickedMenu_Internal, ButtonWidget) == 0x000000, "Member 'WBP_TItle_C_OnClickedMenu_Internal::ButtonWidget' has a wrong offset!");
-static_assert(offsetof(WBP_TItle_C_OnClickedMenu_Internal, CallFunc_Push_ReturnValue) == 0x000008, "Member 'WBP_TItle_C_OnClickedMenu_Internal::CallFunc_Push_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TItle_C_OnClickedMenu_Internal, CallFunc_GetHUDService_ReturnValue) == 0x000018, "Member 'WBP_TItle_C_OnClickedMenu_Internal::CallFunc_GetHUDService_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TItle_C_OnClickedMenu_Internal, CallFunc_GetMenuType_BindedMenuType) == 0x000020, "Member 'WBP_TItle_C_OnClickedMenu_Internal::CallFunc_GetMenuType_BindedMenuType' has a wrong offset!");
-static_assert(offsetof(WBP_TItle_C_OnClickedMenu_Internal, CallFunc_SpawnObject_ReturnValue) == 0x000028, "Member 'WBP_TItle_C_OnClickedMenu_Internal::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_TItle_C_OnClickedMenu_Internal, K2Node_SwitchEnum_CmpSuccess) == 0x000030, "Member 'WBP_TItle_C_OnClickedMenu_Internal::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_TItle_C_OnClickedMenu_Internal, CallFunc_Push_ReturnValue_1) == 0x000034, "Member 'WBP_TItle_C_OnClickedMenu_Internal::CallFunc_Push_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_TItle_C_OnClickedMenu_Internal, CallFunc_Push_ReturnValue_2) == 0x000044, "Member 'WBP_TItle_C_OnClickedMenu_Internal::CallFunc_Push_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_TItle_C_OnClickedMenu_Internal, CallFunc_Push_ReturnValue_3) == 0x000054, "Member 'WBP_TItle_C_OnClickedMenu_Internal::CallFunc_Push_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_TItle_C_OnClickedMenu_Internal, CallFunc_Push_ReturnValue_4) == 0x000064, "Member 'WBP_TItle_C_OnClickedMenu_Internal::CallFunc_Push_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_TItle_C_OnClickedMenu_Internal, CallFunc_Push_ReturnValue_5) == 0x000074, "Member 'WBP_TItle_C_OnClickedMenu_Internal::CallFunc_Push_ReturnValue_5' has a wrong offset!");
-
-// Function WBP_TItle.WBP_TItle_C.OnClosedQuitGameDialog
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_TItle_C_OnClosedQuitGameDialog final
-{
-public:
-	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_TItle_C_OnClosedQuitGameDialog) == 0x000008, "Wrong alignment on WBP_TItle_C_OnClosedQuitGameDialog");
-static_assert(sizeof(WBP_TItle_C_OnClosedQuitGameDialog) == 0x000010, "Wrong size on WBP_TItle_C_OnClosedQuitGameDialog");
-static_assert(offsetof(WBP_TItle_C_OnClosedQuitGameDialog, bResult) == 0x000000, "Member 'WBP_TItle_C_OnClosedQuitGameDialog::bResult' has a wrong offset!");
-static_assert(offsetof(WBP_TItle_C_OnClosedQuitGameDialog, CallFunc_GetLocalPlayerController_ReturnValue) == 0x000008, "Member 'WBP_TItle_C_OnClosedQuitGameDialog::CallFunc_GetLocalPlayerController_ReturnValue' has a wrong offset!");
-
-// Function WBP_TItle.WBP_TItle_C.OpenQuitGameDialog
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_TItle_C_OpenQuitGameDialog final
-{
-public:
-	struct FDataTableRowHandle                    NewLocalVar;                                       // 0x0000(0x0010)(Edit, BlueprintVisible, NoDestructor)
-	TDelegate<void(bool bResult)>                 K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0020(0x0018)()
-	struct FGuid                                  CallFunc_Dialog_ReturnValue;                       // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_TItle_C_OpenQuitGameDialog) == 0x000008, "Wrong alignment on WBP_TItle_C_OpenQuitGameDialog");
-static_assert(sizeof(WBP_TItle_C_OpenQuitGameDialog) == 0x000048, "Wrong size on WBP_TItle_C_OpenQuitGameDialog");
-static_assert(offsetof(WBP_TItle_C_OpenQuitGameDialog, NewLocalVar) == 0x000000, "Member 'WBP_TItle_C_OpenQuitGameDialog::NewLocalVar' has a wrong offset!");
-static_assert(offsetof(WBP_TItle_C_OpenQuitGameDialog, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'WBP_TItle_C_OpenQuitGameDialog::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_TItle_C_OpenQuitGameDialog, CallFunc_GetLocalizedTextFromHandle_Text) == 0x000020, "Member 'WBP_TItle_C_OpenQuitGameDialog::CallFunc_GetLocalizedTextFromHandle_Text' has a wrong offset!");
-static_assert(offsetof(WBP_TItle_C_OpenQuitGameDialog, CallFunc_Dialog_ReturnValue) == 0x000038, "Member 'WBP_TItle_C_OpenQuitGameDialog::CallFunc_Dialog_ReturnValue' has a wrong offset!");
-
-// Function WBP_TItle.WBP_TItle_C.WBP_TItle_AutoGenFunc
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_TItle_C_WBP_TItle_AutoGenFunc final
-{
-public:
-	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_TItle_C_WBP_TItle_AutoGenFunc) == 0x000001, "Wrong alignment on WBP_TItle_C_WBP_TItle_AutoGenFunc");
-static_assert(sizeof(WBP_TItle_C_WBP_TItle_AutoGenFunc) == 0x000001, "Wrong size on WBP_TItle_C_WBP_TItle_AutoGenFunc");
-static_assert(offsetof(WBP_TItle_C_WBP_TItle_AutoGenFunc, bResult) == 0x000000, "Member 'WBP_TItle_C_WBP_TItle_AutoGenFunc::bResult' has a wrong offset!");
+static_assert(alignof(WBP_TItle_C_BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature) == 0x000008, "Wrong alignment on WBP_TItle_C_BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature");
+static_assert(sizeof(WBP_TItle_C_BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature) == 0x000008, "Wrong size on WBP_TItle_C_BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature");
+static_assert(offsetof(WBP_TItle_C_BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature, ButtonWidget) == 0x000000, "Member 'WBP_TItle_C_BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature::ButtonWidget' has a wrong offset!");
 
 // Function WBP_TItle.WBP_TItle_C.BP_GetDesiredFocusTarget
 // 0x0018 (0x0018 - 0x0000)

@@ -177,7 +177,7 @@ public:
 	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_K2_SetTimerDelegate_InitialStartDelay_ImplicitCast; // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1A4[0x4];                                      // 0x01A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        K2Node_VariableSet_TempDeltaTime_ImplicitCast;     // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_tempDeltaTime_ImplicitCast;     // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_AIAction_NPC_RelaxBase_C_ExecuteUbergraph_BP_AIAction_NPC_RelaxBase) == 0x000008, "Wrong alignment on BP_AIAction_NPC_RelaxBase_C_ExecuteUbergraph_BP_AIAction_NPC_RelaxBase");
 static_assert(sizeof(BP_AIAction_NPC_RelaxBase_C_ExecuteUbergraph_BP_AIAction_NPC_RelaxBase) == 0x0001B0, "Wrong size on BP_AIAction_NPC_RelaxBase_C_ExecuteUbergraph_BP_AIAction_NPC_RelaxBase");
@@ -223,7 +223,7 @@ static_assert(offsetof(BP_AIAction_NPC_RelaxBase_C_ExecuteUbergraph_BP_AIAction_
 static_assert(offsetof(BP_AIAction_NPC_RelaxBase_C_ExecuteUbergraph_BP_AIAction_NPC_RelaxBase, CallFunc_GeneralTurn_DeltaTime_ImplicitCast) == 0x000198, "Member 'BP_AIAction_NPC_RelaxBase_C_ExecuteUbergraph_BP_AIAction_NPC_RelaxBase::CallFunc_GeneralTurn_DeltaTime_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_NPC_RelaxBase_C_ExecuteUbergraph_BP_AIAction_NPC_RelaxBase, CallFunc_Delay_Duration_ImplicitCast) == 0x00019C, "Member 'BP_AIAction_NPC_RelaxBase_C_ExecuteUbergraph_BP_AIAction_NPC_RelaxBase::CallFunc_Delay_Duration_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_NPC_RelaxBase_C_ExecuteUbergraph_BP_AIAction_NPC_RelaxBase, CallFunc_K2_SetTimerDelegate_InitialStartDelay_ImplicitCast) == 0x0001A0, "Member 'BP_AIAction_NPC_RelaxBase_C_ExecuteUbergraph_BP_AIAction_NPC_RelaxBase::CallFunc_K2_SetTimerDelegate_InitialStartDelay_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_RelaxBase_C_ExecuteUbergraph_BP_AIAction_NPC_RelaxBase, K2Node_VariableSet_TempDeltaTime_ImplicitCast) == 0x0001A8, "Member 'BP_AIAction_NPC_RelaxBase_C_ExecuteUbergraph_BP_AIAction_NPC_RelaxBase::K2Node_VariableSet_TempDeltaTime_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_NPC_RelaxBase_C_ExecuteUbergraph_BP_AIAction_NPC_RelaxBase, K2Node_VariableSet_tempDeltaTime_ImplicitCast) == 0x0001A8, "Member 'BP_AIAction_NPC_RelaxBase_C_ExecuteUbergraph_BP_AIAction_NPC_RelaxBase::K2Node_VariableSet_tempDeltaTime_ImplicitCast' has a wrong offset!");
 
 // Function BP_AIAction_NPC_RelaxBase.BP_AIAction_NPC_RelaxBase_C.PlayDefaultAction
 // 0x0100 (0x0100 - 0x0000)

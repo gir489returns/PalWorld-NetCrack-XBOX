@@ -36,6 +36,40 @@ public:
 static_assert(alignof(UClothConfigCommon) == 0x000008, "Wrong alignment on UClothConfigCommon");
 static_assert(sizeof(UClothConfigCommon) == 0x000028, "Wrong size on UClothConfigCommon");
 
+// Class ClothingSystemRuntimeCommon.ClothingAssetCustomData
+// 0x0000 (0x0028 - 0x0028)
+class UClothingAssetCustomData final : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"ClothingAssetCustomData">();
+	}
+	static class UClothingAssetCustomData* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UClothingAssetCustomData>();
+	}
+};
+static_assert(alignof(UClothingAssetCustomData) == 0x000008, "Wrong alignment on UClothingAssetCustomData");
+static_assert(sizeof(UClothingAssetCustomData) == 0x000028, "Wrong size on UClothingAssetCustomData");
+
+// Class ClothingSystemRuntimeCommon.ClothSharedConfigCommon
+// 0x0000 (0x0028 - 0x0028)
+class UClothSharedConfigCommon : public UClothConfigCommon
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"ClothSharedConfigCommon">();
+	}
+	static class UClothSharedConfigCommon* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UClothSharedConfigCommon>();
+	}
+};
+static_assert(alignof(UClothSharedConfigCommon) == 0x000008, "Wrong alignment on UClothSharedConfigCommon");
+static_assert(sizeof(UClothSharedConfigCommon) == 0x000028, "Wrong size on UClothSharedConfigCommon");
+
 // Class ClothingSystemRuntimeCommon.ClothingAssetCommon
 // 0x00A8 (0x00F0 - 0x0048)
 class UClothingAssetCommon final : public UClothingAssetBase
@@ -71,40 +105,6 @@ static_assert(offsetof(UClothingAssetCommon, UsedBoneNames) == 0x0000C0, "Member
 static_assert(offsetof(UClothingAssetCommon, UsedBoneIndices) == 0x0000D0, "Member 'UClothingAssetCommon::UsedBoneIndices' has a wrong offset!");
 static_assert(offsetof(UClothingAssetCommon, ReferenceBoneIndex) == 0x0000E0, "Member 'UClothingAssetCommon::ReferenceBoneIndex' has a wrong offset!");
 static_assert(offsetof(UClothingAssetCommon, CustomData) == 0x0000E8, "Member 'UClothingAssetCommon::CustomData' has a wrong offset!");
-
-// Class ClothingSystemRuntimeCommon.ClothSharedConfigCommon
-// 0x0000 (0x0028 - 0x0028)
-class UClothSharedConfigCommon : public UClothConfigCommon
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ClothSharedConfigCommon">();
-	}
-	static class UClothSharedConfigCommon* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UClothSharedConfigCommon>();
-	}
-};
-static_assert(alignof(UClothSharedConfigCommon) == 0x000008, "Wrong alignment on UClothSharedConfigCommon");
-static_assert(sizeof(UClothSharedConfigCommon) == 0x000028, "Wrong size on UClothSharedConfigCommon");
-
-// Class ClothingSystemRuntimeCommon.ClothingAssetCustomData
-// 0x0000 (0x0028 - 0x0028)
-class UClothingAssetCustomData final : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ClothingAssetCustomData">();
-	}
-	static class UClothingAssetCustomData* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UClothingAssetCustomData>();
-	}
-};
-static_assert(alignof(UClothingAssetCustomData) == 0x000008, "Wrong alignment on UClothingAssetCustomData");
-static_assert(sizeof(UClothingAssetCustomData) == 0x000028, "Wrong size on UClothingAssetCustomData");
 
 // Class ClothingSystemRuntimeCommon.ClothLODDataCommon_Legacy
 // 0x0140 (0x0168 - 0x0028)

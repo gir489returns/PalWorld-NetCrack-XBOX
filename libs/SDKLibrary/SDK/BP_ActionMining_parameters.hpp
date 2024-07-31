@@ -48,7 +48,7 @@ public:
 	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_5;         // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalSkeletalMeshComponent*              CallFunc_GetMainMesh_ReturnValue_1;                // 0x0108(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UAnimMontage*                           K2Node_CustomEvent_montage;                        // 0x0110(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UAnimMontage*                           K2Node_CustomEvent_Montage;                        // 0x0110(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FName                                   K2Node_CustomEvent_NotifyName;                     // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalAnimInstance*                       K2Node_DynamicCast_AsPal_Anim_Instance;            // 0x0128(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -122,7 +122,7 @@ static_assert(offsetof(BP_ActionMining_C_ExecuteUbergraph_BP_ActionMining, CallF
 static_assert(offsetof(BP_ActionMining_C_ExecuteUbergraph_BP_ActionMining, CallFunc_IsValid_ReturnValue_2) == 0x0000F8, "Member 'BP_ActionMining_C_ExecuteUbergraph_BP_ActionMining::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(BP_ActionMining_C_ExecuteUbergraph_BP_ActionMining, CallFunc_GetActionCharacter_ReturnValue_5) == 0x000100, "Member 'BP_ActionMining_C_ExecuteUbergraph_BP_ActionMining::CallFunc_GetActionCharacter_ReturnValue_5' has a wrong offset!");
 static_assert(offsetof(BP_ActionMining_C_ExecuteUbergraph_BP_ActionMining, CallFunc_GetMainMesh_ReturnValue_1) == 0x000108, "Member 'BP_ActionMining_C_ExecuteUbergraph_BP_ActionMining::CallFunc_GetMainMesh_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ActionMining_C_ExecuteUbergraph_BP_ActionMining, K2Node_CustomEvent_montage) == 0x000110, "Member 'BP_ActionMining_C_ExecuteUbergraph_BP_ActionMining::K2Node_CustomEvent_montage' has a wrong offset!");
+static_assert(offsetof(BP_ActionMining_C_ExecuteUbergraph_BP_ActionMining, K2Node_CustomEvent_Montage) == 0x000110, "Member 'BP_ActionMining_C_ExecuteUbergraph_BP_ActionMining::K2Node_CustomEvent_Montage' has a wrong offset!");
 static_assert(offsetof(BP_ActionMining_C_ExecuteUbergraph_BP_ActionMining, K2Node_CustomEvent_NotifyName) == 0x000118, "Member 'BP_ActionMining_C_ExecuteUbergraph_BP_ActionMining::K2Node_CustomEvent_NotifyName' has a wrong offset!");
 static_assert(offsetof(BP_ActionMining_C_ExecuteUbergraph_BP_ActionMining, CallFunc_GetAnimInstance_ReturnValue) == 0x000120, "Member 'BP_ActionMining_C_ExecuteUbergraph_BP_ActionMining::CallFunc_GetAnimInstance_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ActionMining_C_ExecuteUbergraph_BP_ActionMining, K2Node_DynamicCast_AsPal_Anim_Instance) == 0x000128, "Member 'BP_ActionMining_C_ExecuteUbergraph_BP_ActionMining::K2Node_DynamicCast_AsPal_Anim_Instance' has a wrong offset!");

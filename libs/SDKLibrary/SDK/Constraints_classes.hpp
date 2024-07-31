@@ -13,13 +13,56 @@
 #include "MovieScene_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "AnimationCore_structs.hpp"
 #include "Engine_classes.hpp"
 #include "Constraints_structs.hpp"
-#include "AnimationCore_structs.hpp"
 
 
 namespace SDK
 {
+
+// Class Constraints.ConstraintsActor
+// 0x0008 (0x0298 - 0x0290)
+class AConstraintsActor final : public AActor
+{
+public:
+	class UConstraintsManager*                    ConstraintsManager;                                // 0x0290(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"ConstraintsActor">();
+	}
+	static class AConstraintsActor* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AConstraintsActor>();
+	}
+};
+static_assert(alignof(AConstraintsActor) == 0x000008, "Wrong alignment on AConstraintsActor");
+static_assert(sizeof(AConstraintsActor) == 0x000298, "Wrong size on AConstraintsActor");
+static_assert(offsetof(AConstraintsActor, ConstraintsManager) == 0x000290, "Member 'AConstraintsActor::ConstraintsManager' has a wrong offset!");
+
+// Class Constraints.TransformableHandle
+// 0x0030 (0x0058 - 0x0028)
+class UTransformableHandle : public UObject
+{
+public:
+	struct FMovieSceneObjectBindingID             ConstraintBindingID;                               // 0x0028(0x0018)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_40[0x18];                                      // 0x0040(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"TransformableHandle">();
+	}
+	static class UTransformableHandle* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UTransformableHandle>();
+	}
+};
+static_assert(alignof(UTransformableHandle) == 0x000008, "Wrong alignment on UTransformableHandle");
+static_assert(sizeof(UTransformableHandle) == 0x000058, "Wrong size on UTransformableHandle");
+static_assert(offsetof(UTransformableHandle, ConstraintBindingID) == 0x000028, "Member 'UTransformableHandle::ConstraintBindingID' has a wrong offset!");
 
 // Class Constraints.TickableConstraint
 // 0x0048 (0x0070 - 0x0028)
@@ -44,49 +87,6 @@ static_assert(alignof(UTickableConstraint) == 0x000008, "Wrong alignment on UTic
 static_assert(sizeof(UTickableConstraint) == 0x000070, "Wrong size on UTickableConstraint");
 static_assert(offsetof(UTickableConstraint, ConstraintTick) == 0x000028, "Member 'UTickableConstraint::ConstraintTick' has a wrong offset!");
 static_assert(offsetof(UTickableConstraint, Active) == 0x000068, "Member 'UTickableConstraint::Active' has a wrong offset!");
-
-// Class Constraints.TransformableHandle
-// 0x0030 (0x0058 - 0x0028)
-class UTransformableHandle : public UObject
-{
-public:
-	struct FMovieSceneObjectBindingID             ConstraintBindingID;                               // 0x0028(0x0018)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_40[0x18];                                      // 0x0040(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"TransformableHandle">();
-	}
-	static class UTransformableHandle* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UTransformableHandle>();
-	}
-};
-static_assert(alignof(UTransformableHandle) == 0x000008, "Wrong alignment on UTransformableHandle");
-static_assert(sizeof(UTransformableHandle) == 0x000058, "Wrong size on UTransformableHandle");
-static_assert(offsetof(UTransformableHandle, ConstraintBindingID) == 0x000028, "Member 'UTransformableHandle::ConstraintBindingID' has a wrong offset!");
-
-// Class Constraints.ConstraintsActor
-// 0x0008 (0x0298 - 0x0290)
-class AConstraintsActor final : public AActor
-{
-public:
-	class UConstraintsManager*                    ConstraintsManager;                                // 0x0290(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ConstraintsActor">();
-	}
-	static class AConstraintsActor* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AConstraintsActor>();
-	}
-};
-static_assert(alignof(AConstraintsActor) == 0x000008, "Wrong alignment on AConstraintsActor");
-static_assert(sizeof(AConstraintsActor) == 0x000298, "Wrong size on AConstraintsActor");
-static_assert(offsetof(AConstraintsActor, ConstraintsManager) == 0x000290, "Member 'AConstraintsActor::ConstraintsManager' has a wrong offset!");
 
 // Class Constraints.ConstraintsManager
 // 0x0020 (0x0048 - 0x0028)

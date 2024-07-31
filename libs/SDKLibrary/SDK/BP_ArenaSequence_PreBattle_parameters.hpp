@@ -19,7 +19,7 @@ namespace SDK::Params
 {
 
 // Function BP_ArenaSequence_PreBattle.BP_ArenaSequence_PreBattle_C.ActivatePals
-// 0x03B0 (0x03B0 - 0x0000)
+// 0x03E0 (0x03E0 - 0x0000)
 struct BP_ArenaSequence_PreBattle_C_ActivatePals final
 {
 public:
@@ -41,50 +41,50 @@ public:
 	class UPalIndividualCharacterHandle*          CallFunc_GetIndividualCharacterHandleByActor_ReturnValue; // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APalCharacter*                          CallFunc_GetIndividualActor_ReturnValue_1;         // 0x00E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalIndividualCharacterHandle*          CallFunc_GetIndividualCharacterHandleByActor_ReturnValue_1; // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalArenaPlayerInfo                    CallFunc_Map_Find_Value;                           // 0x00F8(0x0038)()
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0131(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_132[0x6];                                      // 0x0132(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EPalArenaPlayerIndex>                  CallFunc_Map_Keys_Keys;                            // 0x0138(0x0010)(ReferenceParm)
-	class APalCharacter*                          CallFunc_GetIndividualActor_ReturnValue_2;         // 0x0148(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPalArenaPlayerIndex                          CallFunc_Array_Get_Item;                           // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_151[0x7];                                      // 0x0151(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalCharacterMovementComponent*         CallFunc_GetPalCharacterMovementComponent_ReturnValue; // 0x0158(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0164(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x0165(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_166[0x2];                                      // 0x0166(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalCharacterMovementComponent*         CallFunc_GetPalCharacterMovementComponent_ReturnValue_1; // 0x0168(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0170(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_OtomoPalHolderComponent_C*          CallFunc_GetComponentByClass_ReturnValue;          // 0x0178(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_181[0x7];                                      // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalArenaPlayerInfo                    CallFunc_Map_Find_Value_1;                         // 0x0188(0x0038)()
-	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C1[0x7];                                      // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_GetIndividualActor_ReturnValue_3;         // 0x01C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalArenaPlayerInfo                    CallFunc_Map_Find_Value_2;                         // 0x01D0(0x0038)()
-	bool                                          CallFunc_Map_Find_ReturnValue_2;                   // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_209[0x7];                                      // 0x0209(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalArenaInstanceModel*                 CallFunc_GetInstanceModel_ReturnValue;             // 0x0210(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalArenaLevelInstance*                 CallFunc_GetArenaLevelInstance_ReturnValue;        // 0x0218(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalIndividualCharacterParameter*       CallFunc_Array_Get_Item_1;                         // 0x0220(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_228[0x8];                                      // 0x0228(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalArenaBattleFormation               CallFunc_GetBattleFormation_ReturnValue;           // 0x0230(0x0070)()
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x02A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x02A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A5[0x3];                                      // 0x02A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x02A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x02C0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x02D8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x02F0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsServer_ReturnValue;                     // 0x0350(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_351[0x7];                                      // 0x0351(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalArenaSequencer*                     CallFunc_GetOuterSequencer_ReturnValue;            // 0x0358(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TMap<EPalArenaPlayerIndex, struct FPalArenaPlayerInfo> CallFunc_GetArenaPlayerInfoMap_ReturnValue;        // 0x0360(0x0050)(ConstParm)
+	struct FPalArenaPlayerInfo                    CallFunc_Map_Find_Value;                           // 0x00F8(0x0048)()
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0141(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_142[0x6];                                      // 0x0142(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EPalArenaPlayerIndex>                  CallFunc_Map_Keys_Keys;                            // 0x0148(0x0010)(ReferenceParm)
+	class APalCharacter*                          CallFunc_GetIndividualActor_ReturnValue_2;         // 0x0158(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPalArenaPlayerIndex                          CallFunc_Array_Get_Item;                           // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalCharacterMovementComponent*         CallFunc_GetPalCharacterMovementComponent_ReturnValue; // 0x0168(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0174(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x0175(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_176[0x2];                                      // 0x0176(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalCharacterMovementComponent*         CallFunc_GetPalCharacterMovementComponent_ReturnValue_1; // 0x0178(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0180(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_OtomoPalHolderComponent_C*          CallFunc_GetComponentByClass_ReturnValue;          // 0x0188(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_191[0x7];                                      // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalArenaPlayerInfo                    CallFunc_Map_Find_Value_1;                         // 0x0198(0x0048)()
+	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E1[0x7];                                      // 0x01E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetIndividualActor_ReturnValue_3;         // 0x01E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalArenaPlayerInfo                    CallFunc_Map_Find_Value_2;                         // 0x01F0(0x0048)()
+	bool                                          CallFunc_Map_Find_ReturnValue_2;                   // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_239[0x7];                                      // 0x0239(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalArenaInstanceModel*                 CallFunc_GetInstanceModel_ReturnValue;             // 0x0240(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalArenaLevelInstance*                 CallFunc_GetArenaLevelInstance_ReturnValue;        // 0x0248(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterParameter*       CallFunc_Array_Get_Item_1;                         // 0x0250(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_258[0x8];                                      // 0x0258(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalArenaBattleFormation               CallFunc_GetBattleFormation_ReturnValue;           // 0x0260(0x0070)()
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x02D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x02D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D5[0x3];                                      // 0x02D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x02D8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x02F0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0308(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0320(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsServer_ReturnValue;                     // 0x0380(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_381[0x7];                                      // 0x0381(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalArenaSequencer*                     CallFunc_GetOuterSequencer_ReturnValue;            // 0x0388(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TMap<EPalArenaPlayerIndex, struct FPalArenaPlayerInfo> CallFunc_GetArenaPlayerInfoMap_ReturnValue;        // 0x0390(0x0050)(ConstParm)
 };
 static_assert(alignof(BP_ArenaSequence_PreBattle_C_ActivatePals) == 0x000010, "Wrong alignment on BP_ArenaSequence_PreBattle_C_ActivatePals");
-static_assert(sizeof(BP_ArenaSequence_PreBattle_C_ActivatePals) == 0x0003B0, "Wrong size on BP_ArenaSequence_PreBattle_C_ActivatePals");
+static_assert(sizeof(BP_ArenaSequence_PreBattle_C_ActivatePals) == 0x0003E0, "Wrong size on BP_ArenaSequence_PreBattle_C_ActivatePals");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, NewLocalVar) == 0x000000, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::NewLocalVar' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, PlayerInfoMap) == 0x000008, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::PlayerInfoMap' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, IndividualParameter) == 0x000058, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::IndividualParameter' has a wrong offset!");
@@ -102,37 +102,37 @@ static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetIn
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetIndividualActor_ReturnValue_1) == 0x0000E8, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetIndividualActor_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetIndividualCharacterHandleByActor_ReturnValue_1) == 0x0000F0, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetIndividualCharacterHandleByActor_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Map_Find_Value) == 0x0000F8, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Map_Find_ReturnValue) == 0x000130, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_IsValid_ReturnValue) == 0x000131, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Map_Keys_Keys) == 0x000138, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Map_Keys_Keys' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetIndividualActor_ReturnValue_2) == 0x000148, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetIndividualActor_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Array_Get_Item) == 0x000150, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetPalCharacterMovementComponent_ReturnValue) == 0x000158, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetPalCharacterMovementComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Array_Length_ReturnValue) == 0x000160, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Less_IntInt_ReturnValue) == 0x000164, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x000165, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetPalCharacterMovementComponent_ReturnValue_1) == 0x000168, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetPalCharacterMovementComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetPlayerController_ReturnValue) == 0x000170, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetComponentByClass_ReturnValue) == 0x000178, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_IsValid_ReturnValue_1) == 0x000180, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Map_Find_Value_1) == 0x000188, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Map_Find_Value_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Map_Find_ReturnValue_1) == 0x0001C0, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetIndividualActor_ReturnValue_3) == 0x0001C8, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetIndividualActor_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Map_Find_Value_2) == 0x0001D0, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Map_Find_Value_2' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Map_Find_ReturnValue_2) == 0x000208, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Map_Find_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetInstanceModel_ReturnValue) == 0x000210, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetInstanceModel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetArenaLevelInstance_ReturnValue) == 0x000218, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetArenaLevelInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Array_Get_Item_1) == 0x000220, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetBattleFormation_ReturnValue) == 0x000230, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetBattleFormation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Array_Length_ReturnValue_1) == 0x0002A0, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Less_IntInt_ReturnValue_1) == 0x0002A4, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_BreakTransform_Location) == 0x0002A8, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_BreakTransform_Rotation) == 0x0002C0, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_BreakTransform_Scale) == 0x0002D8, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_MakeTransform_ReturnValue) == 0x0002F0, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_IsServer_ReturnValue) == 0x000350, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_IsServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetOuterSequencer_ReturnValue) == 0x000358, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetOuterSequencer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetArenaPlayerInfoMap_ReturnValue) == 0x000360, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetArenaPlayerInfoMap_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Map_Find_ReturnValue) == 0x000140, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_IsValid_ReturnValue) == 0x000141, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Map_Keys_Keys) == 0x000148, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Map_Keys_Keys' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetIndividualActor_ReturnValue_2) == 0x000158, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetIndividualActor_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Array_Get_Item) == 0x000160, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetPalCharacterMovementComponent_ReturnValue) == 0x000168, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetPalCharacterMovementComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Array_Length_ReturnValue) == 0x000170, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Less_IntInt_ReturnValue) == 0x000174, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x000175, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetPalCharacterMovementComponent_ReturnValue_1) == 0x000178, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetPalCharacterMovementComponent_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetPlayerController_ReturnValue) == 0x000180, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetComponentByClass_ReturnValue) == 0x000188, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_IsValid_ReturnValue_1) == 0x000190, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Map_Find_Value_1) == 0x000198, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Map_Find_Value_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Map_Find_ReturnValue_1) == 0x0001E0, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetIndividualActor_ReturnValue_3) == 0x0001E8, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetIndividualActor_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Map_Find_Value_2) == 0x0001F0, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Map_Find_Value_2' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Map_Find_ReturnValue_2) == 0x000238, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Map_Find_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetInstanceModel_ReturnValue) == 0x000240, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetInstanceModel_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetArenaLevelInstance_ReturnValue) == 0x000248, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetArenaLevelInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Array_Get_Item_1) == 0x000250, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetBattleFormation_ReturnValue) == 0x000260, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetBattleFormation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Array_Length_ReturnValue_1) == 0x0002D0, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_Less_IntInt_ReturnValue_1) == 0x0002D4, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_BreakTransform_Location) == 0x0002D8, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_BreakTransform_Location' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_BreakTransform_Rotation) == 0x0002F0, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_BreakTransform_Rotation' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_BreakTransform_Scale) == 0x000308, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_BreakTransform_Scale' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_MakeTransform_ReturnValue) == 0x000320, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_IsServer_ReturnValue) == 0x000380, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_IsServer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetOuterSequencer_ReturnValue) == 0x000388, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetOuterSequencer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ActivatePals, CallFunc_GetArenaPlayerInfoMap_ReturnValue) == 0x000390, "Member 'BP_ArenaSequence_PreBattle_C_ActivatePals::CallFunc_GetArenaPlayerInfoMap_ReturnValue' has a wrong offset!");
 
 // Function BP_ArenaSequence_PreBattle.BP_ArenaSequence_PreBattle_C.ExecuteUbergraph_BP_ArenaSequence_PreBattle
 // 0x0040 (0x0040 - 0x0000)
@@ -180,7 +180,7 @@ static_assert(offsetof(BP_ArenaSequence_PreBattle_C_FadeOut, CallFunc_IsOutsider
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_FadeOut, CallFunc_GetHUDService_ReturnValue) == 0x000008, "Member 'BP_ArenaSequence_PreBattle_C_FadeOut::CallFunc_GetHUDService_ReturnValue' has a wrong offset!");
 
 // Function BP_ArenaSequence_PreBattle.BP_ArenaSequence_PreBattle_C.OnCameraTarget
-// 0x0128 (0x0128 - 0x0000)
+// 0x0138 (0x0138 - 0x0000)
 struct BP_ArenaSequence_PreBattle_C_OnCameraTarget final
 {
 public:
@@ -209,17 +209,17 @@ public:
 	TMap<EPalArenaPlayerIndex, struct FPalArenaPlayerInfo> CallFunc_GetArenaPlayerInfoMap_ReturnValue;        // 0x0078(0x0050)(ConstParm)
 	float                                         CallFunc_Montage_Play_ReturnValue;                 // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalArenaPlayerInfo                    CallFunc_Map_Find_Value;                           // 0x00D0(0x0038)()
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_109[0x3];                                      // 0x0109(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalIndividualCharacterParameter*       CallFunc_Array_Get_Item;                           // 0x0110(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_GetIndividualActor_ReturnValue;           // 0x0120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalArenaPlayerInfo                    CallFunc_Map_Find_Value;                           // 0x00D0(0x0048)()
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_119[0x3];                                      // 0x0119(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterParameter*       CallFunc_Array_Get_Item;                           // 0x0120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetIndividualActor_ReturnValue;           // 0x0130(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_ArenaSequence_PreBattle_C_OnCameraTarget) == 0x000008, "Wrong alignment on BP_ArenaSequence_PreBattle_C_OnCameraTarget");
-static_assert(sizeof(BP_ArenaSequence_PreBattle_C_OnCameraTarget) == 0x000128, "Wrong size on BP_ArenaSequence_PreBattle_C_OnCameraTarget");
+static_assert(sizeof(BP_ArenaSequence_PreBattle_C_OnCameraTarget) == 0x000138, "Wrong size on BP_ArenaSequence_PreBattle_C_OnCameraTarget");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_OnCameraTarget, PlayerIndex) == 0x000000, "Member 'BP_ArenaSequence_PreBattle_C_OnCameraTarget::PlayerIndex' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_OnCameraTarget, Actor) == 0x000008, "Member 'BP_ArenaSequence_PreBattle_C_OnCameraTarget::Actor' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_OnCameraTarget, Temp_bool_Variable) == 0x000010, "Member 'BP_ArenaSequence_PreBattle_C_OnCameraTarget::Temp_bool_Variable' has a wrong offset!");
@@ -240,11 +240,11 @@ static_assert(offsetof(BP_ArenaSequence_PreBattle_C_OnCameraTarget, K2Node_Selec
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_OnCameraTarget, CallFunc_GetArenaPlayerInfoMap_ReturnValue) == 0x000078, "Member 'BP_ArenaSequence_PreBattle_C_OnCameraTarget::CallFunc_GetArenaPlayerInfoMap_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_OnCameraTarget, CallFunc_Montage_Play_ReturnValue) == 0x0000C8, "Member 'BP_ArenaSequence_PreBattle_C_OnCameraTarget::CallFunc_Montage_Play_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_OnCameraTarget, CallFunc_Map_Find_Value) == 0x0000D0, "Member 'BP_ArenaSequence_PreBattle_C_OnCameraTarget::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_OnCameraTarget, CallFunc_Map_Find_ReturnValue) == 0x000108, "Member 'BP_ArenaSequence_PreBattle_C_OnCameraTarget::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_OnCameraTarget, CallFunc_Array_Length_ReturnValue) == 0x00010C, "Member 'BP_ArenaSequence_PreBattle_C_OnCameraTarget::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_OnCameraTarget, CallFunc_Array_Get_Item) == 0x000110, "Member 'BP_ArenaSequence_PreBattle_C_OnCameraTarget::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_OnCameraTarget, CallFunc_Less_IntInt_ReturnValue) == 0x000118, "Member 'BP_ArenaSequence_PreBattle_C_OnCameraTarget::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_OnCameraTarget, CallFunc_GetIndividualActor_ReturnValue) == 0x000120, "Member 'BP_ArenaSequence_PreBattle_C_OnCameraTarget::CallFunc_GetIndividualActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_OnCameraTarget, CallFunc_Map_Find_ReturnValue) == 0x000118, "Member 'BP_ArenaSequence_PreBattle_C_OnCameraTarget::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_OnCameraTarget, CallFunc_Array_Length_ReturnValue) == 0x00011C, "Member 'BP_ArenaSequence_PreBattle_C_OnCameraTarget::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_OnCameraTarget, CallFunc_Array_Get_Item) == 0x000120, "Member 'BP_ArenaSequence_PreBattle_C_OnCameraTarget::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_OnCameraTarget, CallFunc_Less_IntInt_ReturnValue) == 0x000128, "Member 'BP_ArenaSequence_PreBattle_C_OnCameraTarget::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_OnCameraTarget, CallFunc_GetIndividualActor_ReturnValue) == 0x000130, "Member 'BP_ArenaSequence_PreBattle_C_OnCameraTarget::CallFunc_GetIndividualActor_ReturnValue' has a wrong offset!");
 
 // Function BP_ArenaSequence_PreBattle.BP_ArenaSequence_PreBattle_C.OnFinishCutscene
 // 0x0001 (0x0001 - 0x0000)
@@ -298,7 +298,7 @@ static_assert(offsetof(BP_ArenaSequence_PreBattle_C_PlayCutscene, K2Node_Dynamic
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_PlayCutscene, CallFunc_GetTransform_ReturnValue) == 0x0000E0, "Member 'BP_ArenaSequence_PreBattle_C_PlayCutscene::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
 
 // Function BP_ArenaSequence_PreBattle.BP_ArenaSequence_PreBattle_C.RideLeaderPal
-// 0x0100 (0x0100 - 0x0000)
+// 0x0110 (0x0110 - 0x0000)
 struct BP_ArenaSequence_PreBattle_C_RideLeaderPal final
 {
 public:
@@ -313,27 +313,27 @@ public:
 	EPalArenaPlayerIndex                          CallFunc_Array_Get_Item;                           // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x007D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_7E[0x2];                                       // 0x007E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalArenaPlayerInfo                    CallFunc_Map_Find_Value;                           // 0x0080(0x0038)()
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_GetIndividualActor_ReturnValue;           // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CA[0x6];                                       // 0x00CA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_GetIndividualActor_ReturnValue_1;         // 0x00D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalRiderComponent*                     CallFunc_GetComponentByClass_ReturnValue;          // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E2[0x6];                                       // 0x00E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalRideMarkerComponent*                CallFunc_GetComponentByClass_ReturnValue_1;        // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPalPartnerSkillParameterComponent*     CallFunc_GetComponentByClass_ReturnValue_2;        // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Ride_ReturnValue;                         // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsRestrictedByItems_ReturnValue;          // 0x00FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x00FB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalArenaPlayerInfo                    CallFunc_Map_Find_Value;                           // 0x0080(0x0048)()
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetIndividualActor_ReturnValue;           // 0x00D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_DA[0x6];                                       // 0x00DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetIndividualActor_ReturnValue_1;         // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalRiderComponent*                     CallFunc_GetComponentByClass_ReturnValue;          // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F2[0x6];                                       // 0x00F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalRideMarkerComponent*                CallFunc_GetComponentByClass_ReturnValue_1;        // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalPartnerSkillParameterComponent*     CallFunc_GetComponentByClass_ReturnValue_2;        // 0x0100(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Ride_ReturnValue;                         // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0109(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsRestrictedByItems_ReturnValue;          // 0x010A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x010B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_ArenaSequence_PreBattle_C_RideLeaderPal) == 0x000008, "Wrong alignment on BP_ArenaSequence_PreBattle_C_RideLeaderPal");
-static_assert(sizeof(BP_ArenaSequence_PreBattle_C_RideLeaderPal) == 0x000100, "Wrong size on BP_ArenaSequence_PreBattle_C_RideLeaderPal");
+static_assert(sizeof(BP_ArenaSequence_PreBattle_C_RideLeaderPal) == 0x000110, "Wrong size on BP_ArenaSequence_PreBattle_C_RideLeaderPal");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, Temp_int_Loop_Counter_Variable) == 0x000000, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, Temp_int_Array_Index_Variable) == 0x000008, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::Temp_int_Array_Index_Variable' has a wrong offset!");
@@ -344,20 +344,20 @@ static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_Arra
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_Array_Get_Item) == 0x00007C, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_Less_IntInt_ReturnValue) == 0x00007D, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_Map_Find_Value) == 0x000080, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_Map_Find_ReturnValue) == 0x0000B8, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_GetIndividualActor_ReturnValue) == 0x0000C0, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_GetIndividualActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_IsValid_ReturnValue) == 0x0000C8, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_IsValid_ReturnValue_1) == 0x0000C9, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_GetIndividualActor_ReturnValue_1) == 0x0000D0, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_GetIndividualActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_GetComponentByClass_ReturnValue) == 0x0000D8, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_IsValid_ReturnValue_2) == 0x0000E0, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_IsValid_ReturnValue_3) == 0x0000E1, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_GetComponentByClass_ReturnValue_1) == 0x0000E8, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_GetComponentByClass_ReturnValue_2) == 0x0000F0, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_GetComponentByClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_Ride_ReturnValue) == 0x0000F8, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_Ride_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_IsValid_ReturnValue_4) == 0x0000F9, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_IsRestrictedByItems_ReturnValue) == 0x0000FA, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_IsRestrictedByItems_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_IsValid_ReturnValue_5) == 0x0000FB, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_Map_Find_ReturnValue) == 0x0000C8, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_GetIndividualActor_ReturnValue) == 0x0000D0, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_GetIndividualActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_IsValid_ReturnValue) == 0x0000D8, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_IsValid_ReturnValue_1) == 0x0000D9, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_GetIndividualActor_ReturnValue_1) == 0x0000E0, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_GetIndividualActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_GetComponentByClass_ReturnValue) == 0x0000E8, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_IsValid_ReturnValue_2) == 0x0000F0, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_IsValid_ReturnValue_3) == 0x0000F1, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_GetComponentByClass_ReturnValue_1) == 0x0000F8, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_GetComponentByClass_ReturnValue_2) == 0x000100, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_GetComponentByClass_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_Ride_ReturnValue) == 0x000108, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_Ride_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_IsValid_ReturnValue_4) == 0x000109, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_IsRestrictedByItems_ReturnValue) == 0x00010A, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_IsRestrictedByItems_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_RideLeaderPal, CallFunc_IsValid_ReturnValue_5) == 0x00010B, "Member 'BP_ArenaSequence_PreBattle_C_RideLeaderPal::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
 
 // Function BP_ArenaSequence_PreBattle.BP_ArenaSequence_PreBattle_C.SetDisableLookAtAllPal
 // 0x0048 (0x0048 - 0x0000)
@@ -392,7 +392,7 @@ static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetDisableLookAtAllPal, Call
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetDisableLookAtAllPal, CallFunc_GetComponentByClass_ReturnValue) == 0x000040, "Member 'BP_ArenaSequence_PreBattle_C_SetDisableLookAtAllPal::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
 
 // Function BP_ArenaSequence_PreBattle.BP_ArenaSequence_PreBattle_C.SetupFormation
-// 0x02C0 (0x02C0 - 0x0000)
+// 0x02D0 (0x02D0 - 0x0000)
 struct BP_ArenaSequence_PreBattle_C_SetupFormation final
 {
 public:
@@ -412,29 +412,29 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0095(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_96[0xA];                                       // 0x0096(0x000A)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalArenaBattleFormation               CallFunc_GetBattleFormation_ReturnValue;           // 0x00A0(0x0070)()
-	struct FPalArenaPlayerInfo                    CallFunc_Map_Find_Value;                           // 0x0110(0x0038)()
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_149[0x7];                                      // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0150(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0168(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0180(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetIndividualActor_ReturnValue;           // 0x0198(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1A1[0x7];                                      // 0x01A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalIndividualCharacterParameter*       CallFunc_Array_Get_Item_1;                         // 0x01A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetIndividualActor_ReturnValue_1;         // 0x01B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x01BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x01BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1BE[0x2];                                      // 0x01BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_AdjustActorToFloor_ReturnValue;           // 0x01C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_AdjustActorToFloor_ReturnValue_1;         // 0x01C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetActorLocationAndRotation_SweepHitResult; // 0x01D0(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_K2_SetActorLocationAndRotation_ReturnValue; // 0x02B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x02B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalArenaPlayerInfo                    CallFunc_Map_Find_Value;                           // 0x0110(0x0048)()
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_159[0x7];                                      // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0160(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0178(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0190(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetIndividualActor_ReturnValue;           // 0x01A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1B1[0x7];                                      // 0x01B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterParameter*       CallFunc_Array_Get_Item_1;                         // 0x01B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetIndividualActor_ReturnValue_1;         // 0x01C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x01C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x01CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x01CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CE[0x2];                                      // 0x01CE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_AdjustActorToFloor_ReturnValue;           // 0x01D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_AdjustActorToFloor_ReturnValue_1;         // 0x01D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetActorLocationAndRotation_SweepHitResult; // 0x01E0(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_K2_SetActorLocationAndRotation_ReturnValue; // 0x02C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x02C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_ArenaSequence_PreBattle_C_SetupFormation) == 0x000010, "Wrong alignment on BP_ArenaSequence_PreBattle_C_SetupFormation");
-static_assert(sizeof(BP_ArenaSequence_PreBattle_C_SetupFormation) == 0x0002C0, "Wrong size on BP_ArenaSequence_PreBattle_C_SetupFormation");
+static_assert(sizeof(BP_ArenaSequence_PreBattle_C_SetupFormation) == 0x0002D0, "Wrong size on BP_ArenaSequence_PreBattle_C_SetupFormation");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, Temp_int_Array_Index_Variable) == 0x000000, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
@@ -451,22 +451,22 @@ static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_Arr
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_Less_IntInt_ReturnValue) == 0x000095, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_GetBattleFormation_ReturnValue) == 0x0000A0, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_GetBattleFormation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_Map_Find_Value) == 0x000110, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_Map_Find_ReturnValue) == 0x000148, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_BreakTransform_Location) == 0x000150, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_BreakTransform_Rotation) == 0x000168, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_BreakTransform_Scale) == 0x000180, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_GetIndividualActor_ReturnValue) == 0x000198, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_GetIndividualActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_IsValid_ReturnValue) == 0x0001A0, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_Array_Get_Item_1) == 0x0001A8, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_GetIndividualActor_ReturnValue_1) == 0x0001B0, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_GetIndividualActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_Array_Length_ReturnValue_1) == 0x0001B8, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_IsValid_ReturnValue_1) == 0x0001BC, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_Less_IntInt_ReturnValue_1) == 0x0001BD, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_AdjustActorToFloor_ReturnValue) == 0x0001C0, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_AdjustActorToFloor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_AdjustActorToFloor_ReturnValue_1) == 0x0001C8, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_AdjustActorToFloor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_K2_SetActorLocationAndRotation_SweepHitResult) == 0x0001D0, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_K2_SetActorLocationAndRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_K2_SetActorLocationAndRotation_ReturnValue) == 0x0002B8, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_K2_SetActorLocationAndRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_IsValid_ReturnValue_2) == 0x0002B9, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_Map_Find_ReturnValue) == 0x000158, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_BreakTransform_Location) == 0x000160, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_BreakTransform_Location' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_BreakTransform_Rotation) == 0x000178, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_BreakTransform_Rotation' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_BreakTransform_Scale) == 0x000190, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_BreakTransform_Scale' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_GetIndividualActor_ReturnValue) == 0x0001A8, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_GetIndividualActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_IsValid_ReturnValue) == 0x0001B0, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_Array_Get_Item_1) == 0x0001B8, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_GetIndividualActor_ReturnValue_1) == 0x0001C0, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_GetIndividualActor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_Array_Length_ReturnValue_1) == 0x0001C8, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_IsValid_ReturnValue_1) == 0x0001CC, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_Less_IntInt_ReturnValue_1) == 0x0001CD, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_AdjustActorToFloor_ReturnValue) == 0x0001D0, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_AdjustActorToFloor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_AdjustActorToFloor_ReturnValue_1) == 0x0001D8, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_AdjustActorToFloor_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_K2_SetActorLocationAndRotation_SweepHitResult) == 0x0001E0, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_K2_SetActorLocationAndRotation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_K2_SetActorLocationAndRotation_ReturnValue) == 0x0002C8, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_K2_SetActorLocationAndRotation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupFormation, CallFunc_IsValid_ReturnValue_2) == 0x0002C9, "Member 'BP_ArenaSequence_PreBattle_C_SetupFormation::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
 
 // Function BP_ArenaSequence_PreBattle.BP_ArenaSequence_PreBattle_C.SetupLocalPlayerCamera
 // 0x00F0 (0x00F0 - 0x0000)
@@ -527,7 +527,7 @@ static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupStatus, CallFunc_Less_I
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_SetupStatus, CallFunc_GetIndividualParameter_ReturnValue) == 0x000040, "Member 'BP_ArenaSequence_PreBattle_C_SetupStatus::CallFunc_GetIndividualParameter_ReturnValue' has a wrong offset!");
 
 // Function BP_ArenaSequence_PreBattle.BP_ArenaSequence_PreBattle_C.ToggleMutePals
-// 0x0158 (0x0158 - 0x0000)
+// 0x0168 (0x0168 - 0x0000)
 struct BP_ArenaSequence_PreBattle_C_ToggleMutePals final
 {
 public:
@@ -551,17 +551,17 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<EPalArenaPlayerIndex, struct FPalArenaPlayerInfo> CallFunc_GetArenaPlayerInfoMap_ReturnValue_1;      // 0x00A8(0x0050)(ConstParm)
-	struct FPalArenaPlayerInfo                    CallFunc_Map_Find_Value;                           // 0x00F8(0x0038)()
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_GetIndividualActor_ReturnValue;           // 0x0138(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_PalCryComponent_C*                  CallFunc_GetComponentByClass_ReturnValue;          // 0x0140(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPalIndividualCharacterParameter*       CallFunc_Array_Get_Item_1;                         // 0x0148(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0154(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalArenaPlayerInfo                    CallFunc_Map_Find_Value;                           // 0x00F8(0x0048)()
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetIndividualActor_ReturnValue;           // 0x0148(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_PalCryComponent_C*                  CallFunc_GetComponentByClass_ReturnValue;          // 0x0150(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterParameter*       CallFunc_Array_Get_Item_1;                         // 0x0158(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0164(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_ArenaSequence_PreBattle_C_ToggleMutePals) == 0x000008, "Wrong alignment on BP_ArenaSequence_PreBattle_C_ToggleMutePals");
-static_assert(sizeof(BP_ArenaSequence_PreBattle_C_ToggleMutePals) == 0x000158, "Wrong size on BP_ArenaSequence_PreBattle_C_ToggleMutePals");
+static_assert(sizeof(BP_ArenaSequence_PreBattle_C_ToggleMutePals) == 0x000168, "Wrong size on BP_ArenaSequence_PreBattle_C_ToggleMutePals");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ToggleMutePals, DisableCrying) == 0x000000, "Member 'BP_ArenaSequence_PreBattle_C_ToggleMutePals::DisableCrying' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ToggleMutePals, PlayerIndex) == 0x000001, "Member 'BP_ArenaSequence_PreBattle_C_ToggleMutePals::PlayerIndex' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ToggleMutePals, IndividualParameter) == 0x000008, "Member 'BP_ArenaSequence_PreBattle_C_ToggleMutePals::IndividualParameter' has a wrong offset!");
@@ -580,12 +580,12 @@ static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ToggleMutePals, CallFunc_Get
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ToggleMutePals, CallFunc_Less_IntInt_ReturnValue) == 0x0000A0, "Member 'BP_ArenaSequence_PreBattle_C_ToggleMutePals::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ToggleMutePals, CallFunc_GetArenaPlayerInfoMap_ReturnValue_1) == 0x0000A8, "Member 'BP_ArenaSequence_PreBattle_C_ToggleMutePals::CallFunc_GetArenaPlayerInfoMap_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ToggleMutePals, CallFunc_Map_Find_Value) == 0x0000F8, "Member 'BP_ArenaSequence_PreBattle_C_ToggleMutePals::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ToggleMutePals, CallFunc_Map_Find_ReturnValue) == 0x000130, "Member 'BP_ArenaSequence_PreBattle_C_ToggleMutePals::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ToggleMutePals, CallFunc_GetIndividualActor_ReturnValue) == 0x000138, "Member 'BP_ArenaSequence_PreBattle_C_ToggleMutePals::CallFunc_GetIndividualActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ToggleMutePals, CallFunc_GetComponentByClass_ReturnValue) == 0x000140, "Member 'BP_ArenaSequence_PreBattle_C_ToggleMutePals::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ToggleMutePals, CallFunc_Array_Get_Item_1) == 0x000148, "Member 'BP_ArenaSequence_PreBattle_C_ToggleMutePals::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ToggleMutePals, CallFunc_Array_Length_ReturnValue_1) == 0x000150, "Member 'BP_ArenaSequence_PreBattle_C_ToggleMutePals::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ToggleMutePals, CallFunc_Less_IntInt_ReturnValue_1) == 0x000154, "Member 'BP_ArenaSequence_PreBattle_C_ToggleMutePals::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ToggleMutePals, CallFunc_Map_Find_ReturnValue) == 0x000140, "Member 'BP_ArenaSequence_PreBattle_C_ToggleMutePals::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ToggleMutePals, CallFunc_GetIndividualActor_ReturnValue) == 0x000148, "Member 'BP_ArenaSequence_PreBattle_C_ToggleMutePals::CallFunc_GetIndividualActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ToggleMutePals, CallFunc_GetComponentByClass_ReturnValue) == 0x000150, "Member 'BP_ArenaSequence_PreBattle_C_ToggleMutePals::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ToggleMutePals, CallFunc_Array_Get_Item_1) == 0x000158, "Member 'BP_ArenaSequence_PreBattle_C_ToggleMutePals::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ToggleMutePals, CallFunc_Array_Length_ReturnValue_1) == 0x000160, "Member 'BP_ArenaSequence_PreBattle_C_ToggleMutePals::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_PreBattle_C_ToggleMutePals, CallFunc_Less_IntInt_ReturnValue_1) == 0x000164, "Member 'BP_ArenaSequence_PreBattle_C_ToggleMutePals::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
 
 }
 

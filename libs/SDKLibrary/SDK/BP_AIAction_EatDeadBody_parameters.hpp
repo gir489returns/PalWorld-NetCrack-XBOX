@@ -17,41 +17,6 @@
 namespace SDK::Params
 {
 
-// Function BP_AIAction_EatDeadBody.BP_AIAction_EatDeadBody_C.ActionFinished
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIAction_EatDeadBody_C_ActionFinished final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_EatDeadBody_C_ActionFinished) == 0x000008, "Wrong alignment on BP_AIAction_EatDeadBody_C_ActionFinished");
-static_assert(sizeof(BP_AIAction_EatDeadBody_C_ActionFinished) == 0x000010, "Wrong size on BP_AIAction_EatDeadBody_C_ActionFinished");
-static_assert(offsetof(BP_AIAction_EatDeadBody_C_ActionFinished, ControlledPawn) == 0x000000, "Member 'BP_AIAction_EatDeadBody_C_ActionFinished::ControlledPawn' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_EatDeadBody_C_ActionFinished, WithResult) == 0x000008, "Member 'BP_AIAction_EatDeadBody_C_ActionFinished::WithResult' has a wrong offset!");
-
-// Function BP_AIAction_EatDeadBody.BP_AIAction_EatDeadBody_C.ActionPause
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_EatDeadBody_C_ActionPause final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_EatDeadBody_C_ActionPause) == 0x000008, "Wrong alignment on BP_AIAction_EatDeadBody_C_ActionPause");
-static_assert(sizeof(BP_AIAction_EatDeadBody_C_ActionPause) == 0x000008, "Wrong size on BP_AIAction_EatDeadBody_C_ActionPause");
-static_assert(offsetof(BP_AIAction_EatDeadBody_C_ActionPause, ControlledPawn) == 0x000000, "Member 'BP_AIAction_EatDeadBody_C_ActionPause::ControlledPawn' has a wrong offset!");
-
-// Function BP_AIAction_EatDeadBody.BP_AIAction_EatDeadBody_C.ActionStart
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_EatDeadBody_C_ActionStart final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_EatDeadBody_C_ActionStart) == 0x000008, "Wrong alignment on BP_AIAction_EatDeadBody_C_ActionStart");
-static_assert(sizeof(BP_AIAction_EatDeadBody_C_ActionStart) == 0x000008, "Wrong size on BP_AIAction_EatDeadBody_C_ActionStart");
-static_assert(offsetof(BP_AIAction_EatDeadBody_C_ActionStart, ControlledPawn) == 0x000000, "Member 'BP_AIAction_EatDeadBody_C_ActionStart::ControlledPawn' has a wrong offset!");
-
 // Function BP_AIAction_EatDeadBody.BP_AIAction_EatDeadBody_C.ActionTick
 // 0x0010 (0x0010 - 0x0000)
 struct BP_AIAction_EatDeadBody_C_ActionTick final
@@ -117,7 +82,7 @@ public:
 	uint8                                         Pad_FE[0x2];                                       // 0x00FE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GeneralTurnToActor_WithMovementRotationSpeed_DeltaTime_ImplicitCast; // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_104[0x4];                                      // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        K2Node_VariableSet_TempDeltaTime_ImplicitCast;     // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_tempDeltaTime_ImplicitCast;     // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_AIAction_EatDeadBody_C_ExecuteUbergraph_BP_AIAction_EatDeadBody) == 0x000008, "Wrong alignment on BP_AIAction_EatDeadBody_C_ExecuteUbergraph_BP_AIAction_EatDeadBody");
 static_assert(sizeof(BP_AIAction_EatDeadBody_C_ExecuteUbergraph_BP_AIAction_EatDeadBody) == 0x000110, "Wrong size on BP_AIAction_EatDeadBody_C_ExecuteUbergraph_BP_AIAction_EatDeadBody");
@@ -157,7 +122,7 @@ static_assert(offsetof(BP_AIAction_EatDeadBody_C_ExecuteUbergraph_BP_AIAction_Ea
 static_assert(offsetof(BP_AIAction_EatDeadBody_C_ExecuteUbergraph_BP_AIAction_EatDeadBody, CallFunc_IsValid_ReturnValue) == 0x0000FC, "Member 'BP_AIAction_EatDeadBody_C_ExecuteUbergraph_BP_AIAction_EatDeadBody::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_EatDeadBody_C_ExecuteUbergraph_BP_AIAction_EatDeadBody, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x0000FD, "Member 'BP_AIAction_EatDeadBody_C_ExecuteUbergraph_BP_AIAction_EatDeadBody::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_EatDeadBody_C_ExecuteUbergraph_BP_AIAction_EatDeadBody, CallFunc_GeneralTurnToActor_WithMovementRotationSpeed_DeltaTime_ImplicitCast) == 0x000100, "Member 'BP_AIAction_EatDeadBody_C_ExecuteUbergraph_BP_AIAction_EatDeadBody::CallFunc_GeneralTurnToActor_WithMovementRotationSpeed_DeltaTime_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_EatDeadBody_C_ExecuteUbergraph_BP_AIAction_EatDeadBody, K2Node_VariableSet_TempDeltaTime_ImplicitCast) == 0x000108, "Member 'BP_AIAction_EatDeadBody_C_ExecuteUbergraph_BP_AIAction_EatDeadBody::K2Node_VariableSet_TempDeltaTime_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_EatDeadBody_C_ExecuteUbergraph_BP_AIAction_EatDeadBody, K2Node_VariableSet_tempDeltaTime_ImplicitCast) == 0x000108, "Member 'BP_AIAction_EatDeadBody_C_ExecuteUbergraph_BP_AIAction_EatDeadBody::K2Node_VariableSet_tempDeltaTime_ImplicitCast' has a wrong offset!");
 
 // Function BP_AIAction_EatDeadBody.BP_AIAction_EatDeadBody_C.RecoverHP
 // 0x0030 (0x0030 - 0x0000)
@@ -194,6 +159,41 @@ static_assert(sizeof(BP_AIAction_EatDeadBody_C_SelfPawn) == 0x000018, "Wrong siz
 static_assert(offsetof(BP_AIAction_EatDeadBody_C_SelfPawn, Param_SelfPawn) == 0x000000, "Member 'BP_AIAction_EatDeadBody_C_SelfPawn::Param_SelfPawn' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_EatDeadBody_C_SelfPawn, CallFunc_GetController_ReturnValue) == 0x000008, "Member 'BP_AIAction_EatDeadBody_C_SelfPawn::CallFunc_GetController_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_EatDeadBody_C_SelfPawn, CallFunc_K2_GetPawn_ReturnValue) == 0x000010, "Member 'BP_AIAction_EatDeadBody_C_SelfPawn::CallFunc_K2_GetPawn_ReturnValue' has a wrong offset!");
+
+// Function BP_AIAction_EatDeadBody.BP_AIAction_EatDeadBody_C.ActionFinished
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIAction_EatDeadBody_C_ActionFinished final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_EatDeadBody_C_ActionFinished) == 0x000008, "Wrong alignment on BP_AIAction_EatDeadBody_C_ActionFinished");
+static_assert(sizeof(BP_AIAction_EatDeadBody_C_ActionFinished) == 0x000010, "Wrong size on BP_AIAction_EatDeadBody_C_ActionFinished");
+static_assert(offsetof(BP_AIAction_EatDeadBody_C_ActionFinished, ControlledPawn) == 0x000000, "Member 'BP_AIAction_EatDeadBody_C_ActionFinished::ControlledPawn' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_EatDeadBody_C_ActionFinished, WithResult) == 0x000008, "Member 'BP_AIAction_EatDeadBody_C_ActionFinished::WithResult' has a wrong offset!");
+
+// Function BP_AIAction_EatDeadBody.BP_AIAction_EatDeadBody_C.ActionPause
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_EatDeadBody_C_ActionPause final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_EatDeadBody_C_ActionPause) == 0x000008, "Wrong alignment on BP_AIAction_EatDeadBody_C_ActionPause");
+static_assert(sizeof(BP_AIAction_EatDeadBody_C_ActionPause) == 0x000008, "Wrong size on BP_AIAction_EatDeadBody_C_ActionPause");
+static_assert(offsetof(BP_AIAction_EatDeadBody_C_ActionPause, ControlledPawn) == 0x000000, "Member 'BP_AIAction_EatDeadBody_C_ActionPause::ControlledPawn' has a wrong offset!");
+
+// Function BP_AIAction_EatDeadBody.BP_AIAction_EatDeadBody_C.ActionStart
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_EatDeadBody_C_ActionStart final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_EatDeadBody_C_ActionStart) == 0x000008, "Wrong alignment on BP_AIAction_EatDeadBody_C_ActionStart");
+static_assert(sizeof(BP_AIAction_EatDeadBody_C_ActionStart) == 0x000008, "Wrong size on BP_AIAction_EatDeadBody_C_ActionStart");
+static_assert(offsetof(BP_AIAction_EatDeadBody_C_ActionStart, ControlledPawn) == 0x000000, "Member 'BP_AIAction_EatDeadBody_C_ActionStart::ControlledPawn' has a wrong offset!");
 
 }
 

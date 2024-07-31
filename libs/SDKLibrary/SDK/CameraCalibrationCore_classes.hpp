@@ -12,12 +12,12 @@
 
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "CinematicCamera_structs.hpp"
 #include "CameraCalibrationCore_structs.hpp"
 #include "DeveloperSettings_classes.hpp"
 #include "ProceduralMeshComponent_classes.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "CinematicCamera_structs.hpp"
 
 
 namespace SDK

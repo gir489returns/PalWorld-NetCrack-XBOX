@@ -102,19 +102,6 @@ static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Hair_C_GetRestoreFocusTarge
 static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Hair_C_GetRestoreFocusTarget, CallFunc_GetTopFocusTarget_Widget) == 0x000008, "Member 'WBP_CharaCre_ScrollBoxContent_Hair_C_GetRestoreFocusTarget::CallFunc_GetTopFocusTarget_Widget' has a wrong offset!");
 static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Hair_C_GetRestoreFocusTarget, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'WBP_CharaCre_ScrollBoxContent_Hair_C_GetRestoreFocusTarget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
-// Function WBP_CharaCre_ScrollBoxContent_Hair.WBP_CharaCre_ScrollBoxContent_Hair_C.GetTopFocusTarget
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget final
-{
-public:
-	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetTopFocusTarget_Widget;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget) == 0x000008, "Wrong alignment on WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget");
-static_assert(sizeof(WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget) == 0x000010, "Wrong size on WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget");
-static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget, Widget) == 0x000000, "Member 'WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget, CallFunc_GetTopFocusTarget_Widget) == 0x000008, "Member 'WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget::CallFunc_GetTopFocusTarget_Widget' has a wrong offset!");
-
 // Function WBP_CharaCre_ScrollBoxContent_Hair.WBP_CharaCre_ScrollBoxContent_Hair_C.OnChangedHairColor
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_CharaCre_ScrollBoxContent_Hair_C_OnChangedHairColor final
@@ -171,6 +158,19 @@ public:
 static_assert(alignof(WBP_CharaCre_ScrollBoxContent_Hair_C_OnSelectedHairColor__DelegateSignature) == 0x000004, "Wrong alignment on WBP_CharaCre_ScrollBoxContent_Hair_C_OnSelectedHairColor__DelegateSignature");
 static_assert(sizeof(WBP_CharaCre_ScrollBoxContent_Hair_C_OnSelectedHairColor__DelegateSignature) == 0x000010, "Wrong size on WBP_CharaCre_ScrollBoxContent_Hair_C_OnSelectedHairColor__DelegateSignature");
 static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Hair_C_OnSelectedHairColor__DelegateSignature, HSV) == 0x000000, "Member 'WBP_CharaCre_ScrollBoxContent_Hair_C_OnSelectedHairColor__DelegateSignature::HSV' has a wrong offset!");
+
+// Function WBP_CharaCre_ScrollBoxContent_Hair.WBP_CharaCre_ScrollBoxContent_Hair_C.GetTopFocusTarget
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget final
+{
+public:
+	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetTopFocusTarget_Widget;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget) == 0x000008, "Wrong alignment on WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget");
+static_assert(sizeof(WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget) == 0x000010, "Wrong size on WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget");
+static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget, Widget) == 0x000000, "Member 'WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget::Widget' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget, CallFunc_GetTopFocusTarget_Widget) == 0x000008, "Member 'WBP_CharaCre_ScrollBoxContent_Hair_C_GetTopFocusTarget::CallFunc_GetTopFocusTarget_Widget' has a wrong offset!");
 
 }
 

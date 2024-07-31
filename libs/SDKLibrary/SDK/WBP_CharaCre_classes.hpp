@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "E_UICharacterMakeCategory_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 #include "SlateCore_structs.hpp"
-#include "E_UICharacterMakeCategory_structs.hpp"
 
 
 namespace SDK
@@ -60,7 +60,7 @@ public:
 	FMulticastInlineDelegateProperty_             OnClickedCategoryButton;                           // 0x03E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UWBP_CharaCre_MenuButton_C*             LastClickedButton;                                 // 0x03F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_             OnNotifyOpenSelectColorWindow;                     // 0x03F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnNotifyCloseSelectColorWindow;                    // 0x0408(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnNotifyCloseSelectColorWIndow;                    // 0x0408(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnClickedEditNameButton;                           // 0x0418(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnSelectedEyeMaterial;                             // 0x0428(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnClickedCompleteButton;                           // 0x0438(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
@@ -119,7 +119,7 @@ public:
 	void OnInitialized();
 	void OnLeftRotationButtonClicked__DelegateSignature();
 	void OnNotifyClosenSelectColorWindow_Internal();
-	void OnNotifyCloseSelectColorWindow__DelegateSignature();
+	void OnNotifyCloseSelectColorWIndow__DelegateSignature();
 	void OnNotifyOpenSelectColorWindow__DelegateSignature();
 	void OnNotifyOpenSelectColorWindow_Internal();
 	void OnRightRotationButtonClicked__DelegateSignature();
@@ -185,7 +185,7 @@ static_assert(offsetof(UWBP_CharaCre_C, OnSelectedHairMesh) == 0x0003D0, "Member
 static_assert(offsetof(UWBP_CharaCre_C, OnClickedCategoryButton) == 0x0003E0, "Member 'UWBP_CharaCre_C::OnClickedCategoryButton' has a wrong offset!");
 static_assert(offsetof(UWBP_CharaCre_C, LastClickedButton) == 0x0003F0, "Member 'UWBP_CharaCre_C::LastClickedButton' has a wrong offset!");
 static_assert(offsetof(UWBP_CharaCre_C, OnNotifyOpenSelectColorWindow) == 0x0003F8, "Member 'UWBP_CharaCre_C::OnNotifyOpenSelectColorWindow' has a wrong offset!");
-static_assert(offsetof(UWBP_CharaCre_C, OnNotifyCloseSelectColorWindow) == 0x000408, "Member 'UWBP_CharaCre_C::OnNotifyCloseSelectColorWindow' has a wrong offset!");
+static_assert(offsetof(UWBP_CharaCre_C, OnNotifyCloseSelectColorWIndow) == 0x000408, "Member 'UWBP_CharaCre_C::OnNotifyCloseSelectColorWIndow' has a wrong offset!");
 static_assert(offsetof(UWBP_CharaCre_C, OnClickedEditNameButton) == 0x000418, "Member 'UWBP_CharaCre_C::OnClickedEditNameButton' has a wrong offset!");
 static_assert(offsetof(UWBP_CharaCre_C, OnSelectedEyeMaterial) == 0x000428, "Member 'UWBP_CharaCre_C::OnSelectedEyeMaterial' has a wrong offset!");
 static_assert(offsetof(UWBP_CharaCre_C, OnClickedCompleteButton) == 0x000438, "Member 'UWBP_CharaCre_C::OnClickedCompleteButton' has a wrong offset!");

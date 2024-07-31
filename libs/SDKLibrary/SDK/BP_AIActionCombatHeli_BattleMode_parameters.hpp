@@ -66,7 +66,7 @@ public:
 	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x0070(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsNearTarget2D_Near;                      // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        K2Node_VariableSet_TempDeltaTime_ImplicitCast;     // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_tempDeltaTime_ImplicitCast;     // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_ActionTick_DeltaSeconds_ImplicitCast;     // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_AIActionCombatHeli_BattleMode_C_ExecuteUbergraph_BP_AIActionCombatHeli_BattleMode) == 0x000008, "Wrong alignment on BP_AIActionCombatHeli_BattleMode_C_ExecuteUbergraph_BP_AIActionCombatHeli_BattleMode");
@@ -88,7 +88,7 @@ static_assert(offsetof(BP_AIActionCombatHeli_BattleMode_C_ExecuteUbergraph_BP_AI
 static_assert(offsetof(BP_AIActionCombatHeli_BattleMode_C_ExecuteUbergraph_BP_AIActionCombatHeli_BattleMode, CallFunc_GetCharacter_ReturnValue_3) == 0x000068, "Member 'BP_AIActionCombatHeli_BattleMode_C_ExecuteUbergraph_BP_AIActionCombatHeli_BattleMode::CallFunc_GetCharacter_ReturnValue_3' has a wrong offset!");
 static_assert(offsetof(BP_AIActionCombatHeli_BattleMode_C_ExecuteUbergraph_BP_AIActionCombatHeli_BattleMode, CallFunc_GetActorForwardVector_ReturnValue) == 0x000070, "Member 'BP_AIActionCombatHeli_BattleMode_C_ExecuteUbergraph_BP_AIActionCombatHeli_BattleMode::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_AIActionCombatHeli_BattleMode_C_ExecuteUbergraph_BP_AIActionCombatHeli_BattleMode, CallFunc_IsNearTarget2D_Near) == 0x000088, "Member 'BP_AIActionCombatHeli_BattleMode_C_ExecuteUbergraph_BP_AIActionCombatHeli_BattleMode::CallFunc_IsNearTarget2D_Near' has a wrong offset!");
-static_assert(offsetof(BP_AIActionCombatHeli_BattleMode_C_ExecuteUbergraph_BP_AIActionCombatHeli_BattleMode, K2Node_VariableSet_TempDeltaTime_ImplicitCast) == 0x000090, "Member 'BP_AIActionCombatHeli_BattleMode_C_ExecuteUbergraph_BP_AIActionCombatHeli_BattleMode::K2Node_VariableSet_TempDeltaTime_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_AIActionCombatHeli_BattleMode_C_ExecuteUbergraph_BP_AIActionCombatHeli_BattleMode, K2Node_VariableSet_tempDeltaTime_ImplicitCast) == 0x000090, "Member 'BP_AIActionCombatHeli_BattleMode_C_ExecuteUbergraph_BP_AIActionCombatHeli_BattleMode::K2Node_VariableSet_tempDeltaTime_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_AIActionCombatHeli_BattleMode_C_ExecuteUbergraph_BP_AIActionCombatHeli_BattleMode, CallFunc_ActionTick_DeltaSeconds_ImplicitCast) == 0x000098, "Member 'BP_AIActionCombatHeli_BattleMode_C_ExecuteUbergraph_BP_AIActionCombatHeli_BattleMode::CallFunc_ActionTick_DeltaSeconds_ImplicitCast' has a wrong offset!");
 
 // Function BP_AIActionCombatHeli_BattleMode.BP_AIActionCombatHeli_BattleMode_C.FindTarget

@@ -10,49 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "EPal_AI_AlertByKilledFriendState_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
-
-// Function BP_AIAction_AlertByKilledFriend.BP_AIAction_AlertByKilledFriend_C.ActionAbort
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_AlertByKilledFriend_C_ActionAbort final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_AlertByKilledFriend_C_ActionAbort) == 0x000008, "Wrong alignment on BP_AIAction_AlertByKilledFriend_C_ActionAbort");
-static_assert(sizeof(BP_AIAction_AlertByKilledFriend_C_ActionAbort) == 0x000008, "Wrong size on BP_AIAction_AlertByKilledFriend_C_ActionAbort");
-static_assert(offsetof(BP_AIAction_AlertByKilledFriend_C_ActionAbort, ControlledPawn) == 0x000000, "Member 'BP_AIAction_AlertByKilledFriend_C_ActionAbort::ControlledPawn' has a wrong offset!");
-
-// Function BP_AIAction_AlertByKilledFriend.BP_AIAction_AlertByKilledFriend_C.ActionFinished
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIAction_AlertByKilledFriend_C_ActionFinished final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_AlertByKilledFriend_C_ActionFinished) == 0x000008, "Wrong alignment on BP_AIAction_AlertByKilledFriend_C_ActionFinished");
-static_assert(sizeof(BP_AIAction_AlertByKilledFriend_C_ActionFinished) == 0x000010, "Wrong size on BP_AIAction_AlertByKilledFriend_C_ActionFinished");
-static_assert(offsetof(BP_AIAction_AlertByKilledFriend_C_ActionFinished, ControlledPawn) == 0x000000, "Member 'BP_AIAction_AlertByKilledFriend_C_ActionFinished::ControlledPawn' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_AlertByKilledFriend_C_ActionFinished, WithResult) == 0x000008, "Member 'BP_AIAction_AlertByKilledFriend_C_ActionFinished::WithResult' has a wrong offset!");
-
-// Function BP_AIAction_AlertByKilledFriend.BP_AIAction_AlertByKilledFriend_C.ActionStart
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_AlertByKilledFriend_C_ActionStart final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_AlertByKilledFriend_C_ActionStart) == 0x000008, "Wrong alignment on BP_AIAction_AlertByKilledFriend_C_ActionStart");
-static_assert(sizeof(BP_AIAction_AlertByKilledFriend_C_ActionStart) == 0x000008, "Wrong size on BP_AIAction_AlertByKilledFriend_C_ActionStart");
-static_assert(offsetof(BP_AIAction_AlertByKilledFriend_C_ActionStart, ControlledPawn) == 0x000000, "Member 'BP_AIAction_AlertByKilledFriend_C_ActionStart::ControlledPawn' has a wrong offset!");
 
 // Function BP_AIAction_AlertByKilledFriend.BP_AIAction_AlertByKilledFriend_C.ActionTick
 // 0x0010 (0x0010 - 0x0000)
@@ -143,7 +108,7 @@ public:
 	class UClass*                                 CallFunc_Map_Find_Value;                           // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        K2Node_VariableSet_TempDeltaTime_ImplicitCast;     // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_tempDeltaTime_ImplicitCast;     // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Tick_DeltaTime_ImplicitCast;              // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_ActionTick_DeltaSeconds_ImplicitCast;     // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -174,7 +139,7 @@ static_assert(offsetof(BP_AIAction_AlertByKilledFriend_C_ExecuteUbergraph_BP_AIA
 static_assert(offsetof(BP_AIAction_AlertByKilledFriend_C_ExecuteUbergraph_BP_AIAction_AlertByKilledFriend, Temp_byte_Variable) == 0x0000B1, "Member 'BP_AIAction_AlertByKilledFriend_C_ExecuteUbergraph_BP_AIAction_AlertByKilledFriend::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_AlertByKilledFriend_C_ExecuteUbergraph_BP_AIAction_AlertByKilledFriend, CallFunc_Map_Find_Value) == 0x0000B8, "Member 'BP_AIAction_AlertByKilledFriend_C_ExecuteUbergraph_BP_AIAction_AlertByKilledFriend::CallFunc_Map_Find_Value' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_AlertByKilledFriend_C_ExecuteUbergraph_BP_AIAction_AlertByKilledFriend, CallFunc_Map_Find_ReturnValue) == 0x0000C0, "Member 'BP_AIAction_AlertByKilledFriend_C_ExecuteUbergraph_BP_AIAction_AlertByKilledFriend::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_AlertByKilledFriend_C_ExecuteUbergraph_BP_AIAction_AlertByKilledFriend, K2Node_VariableSet_TempDeltaTime_ImplicitCast) == 0x0000C8, "Member 'BP_AIAction_AlertByKilledFriend_C_ExecuteUbergraph_BP_AIAction_AlertByKilledFriend::K2Node_VariableSet_TempDeltaTime_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_AlertByKilledFriend_C_ExecuteUbergraph_BP_AIAction_AlertByKilledFriend, K2Node_VariableSet_tempDeltaTime_ImplicitCast) == 0x0000C8, "Member 'BP_AIAction_AlertByKilledFriend_C_ExecuteUbergraph_BP_AIAction_AlertByKilledFriend::K2Node_VariableSet_tempDeltaTime_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_AlertByKilledFriend_C_ExecuteUbergraph_BP_AIAction_AlertByKilledFriend, CallFunc_Tick_DeltaTime_ImplicitCast) == 0x0000D0, "Member 'BP_AIAction_AlertByKilledFriend_C_ExecuteUbergraph_BP_AIAction_AlertByKilledFriend::CallFunc_Tick_DeltaTime_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_AlertByKilledFriend_C_ExecuteUbergraph_BP_AIAction_AlertByKilledFriend, CallFunc_ActionTick_DeltaSeconds_ImplicitCast) == 0x0000D4, "Member 'BP_AIAction_AlertByKilledFriend_C_ExecuteUbergraph_BP_AIAction_AlertByKilledFriend::CallFunc_ActionTick_DeltaSeconds_ImplicitCast' has a wrong offset!");
 
@@ -268,6 +233,41 @@ public:
 static_assert(alignof(BP_AIAction_AlertByKilledFriend_C_StopMovement) == 0x000008, "Wrong alignment on BP_AIAction_AlertByKilledFriend_C_StopMovement");
 static_assert(sizeof(BP_AIAction_AlertByKilledFriend_C_StopMovement) == 0x000008, "Wrong size on BP_AIAction_AlertByKilledFriend_C_StopMovement");
 static_assert(offsetof(BP_AIAction_AlertByKilledFriend_C_StopMovement, CallFunc_GetController_ReturnValue) == 0x000000, "Member 'BP_AIAction_AlertByKilledFriend_C_StopMovement::CallFunc_GetController_ReturnValue' has a wrong offset!");
+
+// Function BP_AIAction_AlertByKilledFriend.BP_AIAction_AlertByKilledFriend_C.ActionAbort
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_AlertByKilledFriend_C_ActionAbort final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_AlertByKilledFriend_C_ActionAbort) == 0x000008, "Wrong alignment on BP_AIAction_AlertByKilledFriend_C_ActionAbort");
+static_assert(sizeof(BP_AIAction_AlertByKilledFriend_C_ActionAbort) == 0x000008, "Wrong size on BP_AIAction_AlertByKilledFriend_C_ActionAbort");
+static_assert(offsetof(BP_AIAction_AlertByKilledFriend_C_ActionAbort, ControlledPawn) == 0x000000, "Member 'BP_AIAction_AlertByKilledFriend_C_ActionAbort::ControlledPawn' has a wrong offset!");
+
+// Function BP_AIAction_AlertByKilledFriend.BP_AIAction_AlertByKilledFriend_C.ActionFinished
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIAction_AlertByKilledFriend_C_ActionFinished final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_AlertByKilledFriend_C_ActionFinished) == 0x000008, "Wrong alignment on BP_AIAction_AlertByKilledFriend_C_ActionFinished");
+static_assert(sizeof(BP_AIAction_AlertByKilledFriend_C_ActionFinished) == 0x000010, "Wrong size on BP_AIAction_AlertByKilledFriend_C_ActionFinished");
+static_assert(offsetof(BP_AIAction_AlertByKilledFriend_C_ActionFinished, ControlledPawn) == 0x000000, "Member 'BP_AIAction_AlertByKilledFriend_C_ActionFinished::ControlledPawn' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_AlertByKilledFriend_C_ActionFinished, WithResult) == 0x000008, "Member 'BP_AIAction_AlertByKilledFriend_C_ActionFinished::WithResult' has a wrong offset!");
+
+// Function BP_AIAction_AlertByKilledFriend.BP_AIAction_AlertByKilledFriend_C.ActionStart
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_AlertByKilledFriend_C_ActionStart final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_AlertByKilledFriend_C_ActionStart) == 0x000008, "Wrong alignment on BP_AIAction_AlertByKilledFriend_C_ActionStart");
+static_assert(sizeof(BP_AIAction_AlertByKilledFriend_C_ActionStart) == 0x000008, "Wrong size on BP_AIAction_AlertByKilledFriend_C_ActionStart");
+static_assert(offsetof(BP_AIAction_AlertByKilledFriend_C_ActionStart, ControlledPawn) == 0x000000, "Member 'BP_AIAction_AlertByKilledFriend_C_ActionStart::ControlledPawn' has a wrong offset!");
 
 }
 

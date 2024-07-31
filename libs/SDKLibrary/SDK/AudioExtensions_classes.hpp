@@ -17,37 +17,22 @@
 namespace SDK
 {
 
-// Class AudioExtensions.AudioParameterControllerInterface
+// Class AudioExtensions.ReverbPluginSourceSettingsBase
 // 0x0000 (0x0028 - 0x0028)
-class IAudioParameterControllerInterface : public IInterface
+class UReverbPluginSourceSettingsBase final : public UObject
 {
-public:
-	void ResetParameters();
-	void SetBoolArrayParameter(class FName InName, const TArray<bool>& InValue);
-	void SetBoolParameter(class FName InName, bool InBool);
-	void SetFloatArrayParameter(class FName InName, const TArray<float>& InValue);
-	void SetFloatParameter(class FName InName, float InFloat);
-	void SetIntArrayParameter(class FName InName, const TArray<int32>& InValue);
-	void SetIntParameter(class FName InName, int32 InInt);
-	void SetObjectArrayParameter(class FName InName, const TArray<class UObject*>& InValue);
-	void SetObjectParameter(class FName InName, class UObject* InValue);
-	void SetParameters_Blueprint(const TArray<struct FAudioParameter>& InParameters);
-	void SetStringArrayParameter(class FName InName, const TArray<class FString>& InValue);
-	void SetStringParameter(class FName InName, const class FString& InValue);
-	void SetTriggerParameter(class FName InName);
-
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AudioParameterControllerInterface">();
+		return StaticClassImpl<"ReverbPluginSourceSettingsBase">();
 	}
-	static class IAudioParameterControllerInterface* GetDefaultObj()
+	static class UReverbPluginSourceSettingsBase* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<IAudioParameterControllerInterface>();
+		return GetDefaultObjImpl<UReverbPluginSourceSettingsBase>();
 	}
 };
-static_assert(alignof(IAudioParameterControllerInterface) == 0x000008, "Wrong alignment on IAudioParameterControllerInterface");
-static_assert(sizeof(IAudioParameterControllerInterface) == 0x000028, "Wrong size on IAudioParameterControllerInterface");
+static_assert(alignof(UReverbPluginSourceSettingsBase) == 0x000008, "Wrong alignment on UReverbPluginSourceSettingsBase");
+static_assert(sizeof(UReverbPluginSourceSettingsBase) == 0x000028, "Wrong size on UReverbPluginSourceSettingsBase");
 
 // Class AudioExtensions.SoundfieldEncodingSettingsBase
 // 0x0000 (0x0028 - 0x0028)
@@ -83,22 +68,22 @@ public:
 static_assert(alignof(USpatializationPluginSourceSettingsBase) == 0x000008, "Wrong alignment on USpatializationPluginSourceSettingsBase");
 static_assert(sizeof(USpatializationPluginSourceSettingsBase) == 0x000028, "Wrong size on USpatializationPluginSourceSettingsBase");
 
-// Class AudioExtensions.ReverbPluginSourceSettingsBase
+// Class AudioExtensions.OcclusionPluginSourceSettingsBase
 // 0x0000 (0x0028 - 0x0028)
-class UReverbPluginSourceSettingsBase final : public UObject
+class UOcclusionPluginSourceSettingsBase final : public UObject
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ReverbPluginSourceSettingsBase">();
+		return StaticClassImpl<"OcclusionPluginSourceSettingsBase">();
 	}
-	static class UReverbPluginSourceSettingsBase* GetDefaultObj()
+	static class UOcclusionPluginSourceSettingsBase* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UReverbPluginSourceSettingsBase>();
+		return GetDefaultObjImpl<UOcclusionPluginSourceSettingsBase>();
 	}
 };
-static_assert(alignof(UReverbPluginSourceSettingsBase) == 0x000008, "Wrong alignment on UReverbPluginSourceSettingsBase");
-static_assert(sizeof(UReverbPluginSourceSettingsBase) == 0x000028, "Wrong size on UReverbPluginSourceSettingsBase");
+static_assert(alignof(UOcclusionPluginSourceSettingsBase) == 0x000008, "Wrong alignment on UOcclusionPluginSourceSettingsBase");
+static_assert(sizeof(UOcclusionPluginSourceSettingsBase) == 0x000028, "Wrong size on UOcclusionPluginSourceSettingsBase");
 
 // Class AudioExtensions.SourceDataOverridePluginSourceSettingsBase
 // 0x0000 (0x0028 - 0x0028)
@@ -117,22 +102,37 @@ public:
 static_assert(alignof(USourceDataOverridePluginSourceSettingsBase) == 0x000008, "Wrong alignment on USourceDataOverridePluginSourceSettingsBase");
 static_assert(sizeof(USourceDataOverridePluginSourceSettingsBase) == 0x000028, "Wrong size on USourceDataOverridePluginSourceSettingsBase");
 
-// Class AudioExtensions.OcclusionPluginSourceSettingsBase
+// Class AudioExtensions.AudioParameterControllerInterface
 // 0x0000 (0x0028 - 0x0028)
-class UOcclusionPluginSourceSettingsBase final : public UObject
+class IAudioParameterControllerInterface : public IInterface
 {
+public:
+	void ResetParameters();
+	void SetBoolArrayParameter(class FName InName, const TArray<bool>& InValue);
+	void SetBoolParameter(class FName InName, bool InBool);
+	void SetFloatArrayParameter(class FName InName, const TArray<float>& InValue);
+	void SetFloatParameter(class FName InName, float InFloat);
+	void SetIntArrayParameter(class FName InName, const TArray<int32>& InValue);
+	void SetIntParameter(class FName InName, int32 InInt);
+	void SetObjectArrayParameter(class FName InName, const TArray<class UObject*>& InValue);
+	void SetObjectParameter(class FName InName, class UObject* InValue);
+	void SetParameters_Blueprint(const TArray<struct FAudioParameter>& InParameters);
+	void SetStringArrayParameter(class FName InName, const TArray<class FString>& InValue);
+	void SetStringParameter(class FName InName, const class FString& InValue);
+	void SetTriggerParameter(class FName InName);
+
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OcclusionPluginSourceSettingsBase">();
+		return StaticClassImpl<"AudioParameterControllerInterface">();
 	}
-	static class UOcclusionPluginSourceSettingsBase* GetDefaultObj()
+	static class IAudioParameterControllerInterface* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UOcclusionPluginSourceSettingsBase>();
+		return GetDefaultObjImpl<IAudioParameterControllerInterface>();
 	}
 };
-static_assert(alignof(UOcclusionPluginSourceSettingsBase) == 0x000008, "Wrong alignment on UOcclusionPluginSourceSettingsBase");
-static_assert(sizeof(UOcclusionPluginSourceSettingsBase) == 0x000028, "Wrong size on UOcclusionPluginSourceSettingsBase");
+static_assert(alignof(IAudioParameterControllerInterface) == 0x000008, "Wrong alignment on IAudioParameterControllerInterface");
+static_assert(sizeof(IAudioParameterControllerInterface) == 0x000028, "Wrong size on IAudioParameterControllerInterface");
 
 // Class AudioExtensions.AudioCodecEncoderSettings
 // 0x0008 (0x0030 - 0x0028)

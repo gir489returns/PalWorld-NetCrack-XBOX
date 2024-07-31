@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "RigVM_structs.hpp"
-#include "AnimationCore_structs.hpp"
 #include "ControlRig_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "AnimationCore_structs.hpp"
 
 
 namespace SDK::Params

@@ -27,7 +27,7 @@ public:
 	class UPalIncidentNotifyListener*             K2Node_CustomEvent_Listener;                       // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EPalIncidentState                             K2Node_CustomEvent_IncidentState;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalIncidentNotifyParameter            K2Node_CustomEvent_parameter;                      // 0x0028(0x0028)(ConstParm, NoDestructor)
+	struct FPalIncidentNotifyParameter            K2Node_CustomEvent_Parameter;                      // 0x0028(0x0028)(ConstParm, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -40,7 +40,7 @@ static_assert(offsetof(BP_PalInvaderManager_C_ExecuteUbergraph_BP_PalInvaderMana
 static_assert(offsetof(BP_PalInvaderManager_C_ExecuteUbergraph_BP_PalInvaderManager, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'BP_PalInvaderManager_C_ExecuteUbergraph_BP_PalInvaderManager::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(BP_PalInvaderManager_C_ExecuteUbergraph_BP_PalInvaderManager, K2Node_CustomEvent_Listener) == 0x000018, "Member 'BP_PalInvaderManager_C_ExecuteUbergraph_BP_PalInvaderManager::K2Node_CustomEvent_Listener' has a wrong offset!");
 static_assert(offsetof(BP_PalInvaderManager_C_ExecuteUbergraph_BP_PalInvaderManager, K2Node_CustomEvent_IncidentState) == 0x000020, "Member 'BP_PalInvaderManager_C_ExecuteUbergraph_BP_PalInvaderManager::K2Node_CustomEvent_IncidentState' has a wrong offset!");
-static_assert(offsetof(BP_PalInvaderManager_C_ExecuteUbergraph_BP_PalInvaderManager, K2Node_CustomEvent_parameter) == 0x000028, "Member 'BP_PalInvaderManager_C_ExecuteUbergraph_BP_PalInvaderManager::K2Node_CustomEvent_parameter' has a wrong offset!");
+static_assert(offsetof(BP_PalInvaderManager_C_ExecuteUbergraph_BP_PalInvaderManager, K2Node_CustomEvent_Parameter) == 0x000028, "Member 'BP_PalInvaderManager_C_ExecuteUbergraph_BP_PalInvaderManager::K2Node_CustomEvent_Parameter' has a wrong offset!");
 static_assert(offsetof(BP_PalInvaderManager_C_ExecuteUbergraph_BP_PalInvaderManager, K2Node_SwitchEnum_CmpSuccess) == 0x000050, "Member 'BP_PalInvaderManager_C_ExecuteUbergraph_BP_PalInvaderManager::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(BP_PalInvaderManager_C_ExecuteUbergraph_BP_PalInvaderManager, CallFunc_IsValid_ReturnValue) == 0x000051, "Member 'BP_PalInvaderManager_C_ExecuteUbergraph_BP_PalInvaderManager::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_PalInvaderManager_C_ExecuteUbergraph_BP_PalInvaderManager, CallFunc_IsValid_ReturnValue_1) == 0x000052, "Member 'BP_PalInvaderManager_C_ExecuteUbergraph_BP_PalInvaderManager::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");

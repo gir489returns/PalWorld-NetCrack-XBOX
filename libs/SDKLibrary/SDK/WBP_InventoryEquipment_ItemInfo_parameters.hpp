@@ -14,8 +14,8 @@
 #include "Pal_structs.hpp"
 #include "CommonInput_structs.hpp"
 #include "UMG_structs.hpp"
-#include "E_PalUIItemInfoWindowDIsplayType_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "E_PalUIItemInfoWindowDIsplayType_structs.hpp"
 
 
 namespace SDK::Params

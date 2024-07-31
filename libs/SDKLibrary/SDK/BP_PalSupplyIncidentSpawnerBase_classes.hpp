@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_PalRandomIncidentSpawnerTemplate_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -28,10 +28,10 @@ public:
 
 public:
 	void ExecuteUbergraph_BP_PalSupplyIncidentSpawnerBase(int32 EntryPoint);
+	void WipedOut();
 	void OnIncidentSpawned(class UPalIncidentBase* Incident, class UPalIncidentDynamicParameterRandom* DynamicParameter);
 	void ReceiveBeginPlay();
 	void ReleaseIncident();
-	void WipedOut();
 
 public:
 	static class UClass* StaticClass()

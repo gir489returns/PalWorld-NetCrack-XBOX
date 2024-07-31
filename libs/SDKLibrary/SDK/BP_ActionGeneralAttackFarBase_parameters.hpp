@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "EEffectSpawnParametersType_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "EEffectSpawnParametersType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 
@@ -86,7 +86,7 @@ struct BP_ActionGeneralAttackFarBase_C_ExecuteUbergraph_BP_ActionGeneralAttackFa
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSkillEffectSpawnParameter             K2Node_Event_parameter;                            // 0x0008(0x0038)(ConstParm, NoDestructor)
+	struct FSkillEffectSpawnParameter             K2Node_Event_Parameter;                            // 0x0008(0x0038)(ConstParm, NoDestructor)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate;              // 0x0044(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaTime;                            // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -129,7 +129,7 @@ public:
 static_assert(alignof(BP_ActionGeneralAttackFarBase_C_ExecuteUbergraph_BP_ActionGeneralAttackFarBase) == 0x000008, "Wrong alignment on BP_ActionGeneralAttackFarBase_C_ExecuteUbergraph_BP_ActionGeneralAttackFarBase");
 static_assert(sizeof(BP_ActionGeneralAttackFarBase_C_ExecuteUbergraph_BP_ActionGeneralAttackFarBase) == 0x000138, "Wrong size on BP_ActionGeneralAttackFarBase_C_ExecuteUbergraph_BP_ActionGeneralAttackFarBase");
 static_assert(offsetof(BP_ActionGeneralAttackFarBase_C_ExecuteUbergraph_BP_ActionGeneralAttackFarBase, EntryPoint) == 0x000000, "Member 'BP_ActionGeneralAttackFarBase_C_ExecuteUbergraph_BP_ActionGeneralAttackFarBase::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_ActionGeneralAttackFarBase_C_ExecuteUbergraph_BP_ActionGeneralAttackFarBase, K2Node_Event_parameter) == 0x000008, "Member 'BP_ActionGeneralAttackFarBase_C_ExecuteUbergraph_BP_ActionGeneralAttackFarBase::K2Node_Event_parameter' has a wrong offset!");
+static_assert(offsetof(BP_ActionGeneralAttackFarBase_C_ExecuteUbergraph_BP_ActionGeneralAttackFarBase, K2Node_Event_Parameter) == 0x000008, "Member 'BP_ActionGeneralAttackFarBase_C_ExecuteUbergraph_BP_ActionGeneralAttackFarBase::K2Node_Event_Parameter' has a wrong offset!");
 static_assert(offsetof(BP_ActionGeneralAttackFarBase_C_ExecuteUbergraph_BP_ActionGeneralAttackFarBase, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'BP_ActionGeneralAttackFarBase_C_ExecuteUbergraph_BP_ActionGeneralAttackFarBase::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ActionGeneralAttackFarBase_C_ExecuteUbergraph_BP_ActionGeneralAttackFarBase, K2Node_CreateDelegate_OutputDelegate) == 0x000044, "Member 'BP_ActionGeneralAttackFarBase_C_ExecuteUbergraph_BP_ActionGeneralAttackFarBase::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(BP_ActionGeneralAttackFarBase_C_ExecuteUbergraph_BP_ActionGeneralAttackFarBase, K2Node_Event_DeltaTime) == 0x000054, "Member 'BP_ActionGeneralAttackFarBase_C_ExecuteUbergraph_BP_ActionGeneralAttackFarBase::K2Node_Event_DeltaTime' has a wrong offset!");

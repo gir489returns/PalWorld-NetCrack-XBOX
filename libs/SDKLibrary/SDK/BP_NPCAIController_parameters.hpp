@@ -107,7 +107,7 @@ public:
 	class UPalIncidentNotifyListener*             K2Node_CustomEvent_Listener;                       // 0x0550(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EPalIncidentState                             K2Node_CustomEvent_IncidentState;                  // 0x0558(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_559[0x7];                                      // 0x0559(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalIncidentNotifyParameter            K2Node_CustomEvent_parameter;                      // 0x0560(0x0028)(ConstParm, NoDestructor)
+	struct FPalIncidentNotifyParameter            K2Node_CustomEvent_Parameter;                      // 0x0560(0x0028)(ConstParm, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0588(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_589[0x7];                                      // 0x0589(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalIncidentDynamicParameter*           CallFunc_GetDynamicParameter_ReturnValue;          // 0x0590(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -191,7 +191,7 @@ static_assert(offsetof(BP_NPCAIController_C_ExecuteUbergraph_BP_NPCAIController,
 static_assert(offsetof(BP_NPCAIController_C_ExecuteUbergraph_BP_NPCAIController, CallFunc_CreateIndividual_ReturnValue) == 0x000548, "Member 'BP_NPCAIController_C_ExecuteUbergraph_BP_NPCAIController::CallFunc_CreateIndividual_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_NPCAIController_C_ExecuteUbergraph_BP_NPCAIController, K2Node_CustomEvent_Listener) == 0x000550, "Member 'BP_NPCAIController_C_ExecuteUbergraph_BP_NPCAIController::K2Node_CustomEvent_Listener' has a wrong offset!");
 static_assert(offsetof(BP_NPCAIController_C_ExecuteUbergraph_BP_NPCAIController, K2Node_CustomEvent_IncidentState) == 0x000558, "Member 'BP_NPCAIController_C_ExecuteUbergraph_BP_NPCAIController::K2Node_CustomEvent_IncidentState' has a wrong offset!");
-static_assert(offsetof(BP_NPCAIController_C_ExecuteUbergraph_BP_NPCAIController, K2Node_CustomEvent_parameter) == 0x000560, "Member 'BP_NPCAIController_C_ExecuteUbergraph_BP_NPCAIController::K2Node_CustomEvent_parameter' has a wrong offset!");
+static_assert(offsetof(BP_NPCAIController_C_ExecuteUbergraph_BP_NPCAIController, K2Node_CustomEvent_Parameter) == 0x000560, "Member 'BP_NPCAIController_C_ExecuteUbergraph_BP_NPCAIController::K2Node_CustomEvent_Parameter' has a wrong offset!");
 static_assert(offsetof(BP_NPCAIController_C_ExecuteUbergraph_BP_NPCAIController, K2Node_SwitchEnum_CmpSuccess) == 0x000588, "Member 'BP_NPCAIController_C_ExecuteUbergraph_BP_NPCAIController::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(BP_NPCAIController_C_ExecuteUbergraph_BP_NPCAIController, CallFunc_GetDynamicParameter_ReturnValue) == 0x000590, "Member 'BP_NPCAIController_C_ExecuteUbergraph_BP_NPCAIController::CallFunc_GetDynamicParameter_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_NPCAIController_C_ExecuteUbergraph_BP_NPCAIController, CallFunc_IsValid_ReturnValue_2) == 0x000598, "Member 'BP_NPCAIController_C_ExecuteUbergraph_BP_NPCAIController::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");

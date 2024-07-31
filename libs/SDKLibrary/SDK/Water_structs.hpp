@@ -67,6 +67,34 @@ enum class EWaterBrushFalloffMode : uint8
 	EWaterBrushFalloffMode_MAX               = 2,
 };
 
+// ScriptStruct Water.GerstnerWave
+// 0x0048 (0x0048 - 0x0000)
+struct FGerstnerWave final
+{
+public:
+	float                                         WaveLength;                                        // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Amplitude;                                         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Steepness;                                         // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                Direction;                                         // 0x0010(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              WaveVector;                                        // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WaveSpeed;                                         // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WKA;                                               // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Q;                                                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PhaseOffset;                                       // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FGerstnerWave) == 0x000008, "Wrong alignment on FGerstnerWave");
+static_assert(sizeof(FGerstnerWave) == 0x000048, "Wrong size on FGerstnerWave");
+static_assert(offsetof(FGerstnerWave, WaveLength) == 0x000000, "Member 'FGerstnerWave::WaveLength' has a wrong offset!");
+static_assert(offsetof(FGerstnerWave, Amplitude) == 0x000004, "Member 'FGerstnerWave::Amplitude' has a wrong offset!");
+static_assert(offsetof(FGerstnerWave, Steepness) == 0x000008, "Member 'FGerstnerWave::Steepness' has a wrong offset!");
+static_assert(offsetof(FGerstnerWave, Direction) == 0x000010, "Member 'FGerstnerWave::Direction' has a wrong offset!");
+static_assert(offsetof(FGerstnerWave, WaveVector) == 0x000028, "Member 'FGerstnerWave::WaveVector' has a wrong offset!");
+static_assert(offsetof(FGerstnerWave, WaveSpeed) == 0x000038, "Member 'FGerstnerWave::WaveSpeed' has a wrong offset!");
+static_assert(offsetof(FGerstnerWave, WKA) == 0x00003C, "Member 'FGerstnerWave::WKA' has a wrong offset!");
+static_assert(offsetof(FGerstnerWave, Q) == 0x000040, "Member 'FGerstnerWave::Q' has a wrong offset!");
+static_assert(offsetof(FGerstnerWave, PhaseOffset) == 0x000044, "Member 'FGerstnerWave::PhaseOffset' has a wrong offset!");
+
 // ScriptStruct Water.SphericalPontoon
 // 0x02D0 (0x02D0 - 0x0000)
 struct FSphericalPontoon final
@@ -116,6 +144,77 @@ static_assert(offsetof(FSphericalPontoon, WaterVelocity) == 0x0000F0, "Member 'F
 static_assert(offsetof(FSphericalPontoon, WaterBodyIndex) == 0x000108, "Member 'FSphericalPontoon::WaterBodyIndex' has a wrong offset!");
 static_assert(offsetof(FSphericalPontoon, bIsInWater) == 0x00010C, "Member 'FSphericalPontoon::bIsInWater' has a wrong offset!");
 static_assert(offsetof(FSphericalPontoon, CurrentWaterBodyComponent) == 0x0002B8, "Member 'FSphericalPontoon::CurrentWaterBodyComponent' has a wrong offset!");
+
+// ScriptStruct Water.BuoyancyData
+// 0x0090 (0x0090 - 0x0000)
+struct FBuoyancyData final
+{
+public:
+	TArray<struct FSphericalPontoon>              Pontoons;                                          // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	bool                                          bCenterPontoonsOnCOM;                              // 0x0010(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         BuoyancyCoefficient;                               // 0x0014(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BuoyancyDamp;                                      // 0x0018(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BuoyancyDamp2;                                     // 0x001C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BuoyancyRampMinVelocity;                           // 0x0020(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BuoyancyRampMaxVelocity;                           // 0x0024(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         BuoyancyRampMax;                                   // 0x0028(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxBuoyantForce;                                   // 0x002C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bApplyDragForcesInWater;                           // 0x0030(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DragCoefficient;                                   // 0x0034(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DragCoefficient2;                                  // 0x0038(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AngularDragCoefficient;                            // 0x003C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxDragSpeed;                                      // 0x0040(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bApplyRiverForces;                                 // 0x0044(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         RiverPontoonIndex;                                 // 0x0048(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WaterShorePushFactor;                              // 0x004C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         RiverTraversalPathWidth;                           // 0x0050(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxShorePushForce;                                 // 0x0054(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WaterVelocityStrength;                             // 0x0058(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxWaterForce;                                     // 0x005C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAlwaysAllowLateralPush;                           // 0x0060(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAllowCurrentWhenMovingFastUpstream;               // 0x0061(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bApplyDownstreamAngularRotation;                   // 0x0062(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_63[0x5];                                       // 0x0063(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                DownstreamAxisOfRotation;                          // 0x0068(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DownstreamRotationStrength;                        // 0x0080(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DownstreamRotationStiffness;                       // 0x0084(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DownstreamRotationAngularDamping;                  // 0x0088(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DownstreamMaxAcceleration;                         // 0x008C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FBuoyancyData) == 0x000008, "Wrong alignment on FBuoyancyData");
+static_assert(sizeof(FBuoyancyData) == 0x000090, "Wrong size on FBuoyancyData");
+static_assert(offsetof(FBuoyancyData, Pontoons) == 0x000000, "Member 'FBuoyancyData::Pontoons' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, bCenterPontoonsOnCOM) == 0x000010, "Member 'FBuoyancyData::bCenterPontoonsOnCOM' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, BuoyancyCoefficient) == 0x000014, "Member 'FBuoyancyData::BuoyancyCoefficient' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, BuoyancyDamp) == 0x000018, "Member 'FBuoyancyData::BuoyancyDamp' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, BuoyancyDamp2) == 0x00001C, "Member 'FBuoyancyData::BuoyancyDamp2' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, BuoyancyRampMinVelocity) == 0x000020, "Member 'FBuoyancyData::BuoyancyRampMinVelocity' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, BuoyancyRampMaxVelocity) == 0x000024, "Member 'FBuoyancyData::BuoyancyRampMaxVelocity' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, BuoyancyRampMax) == 0x000028, "Member 'FBuoyancyData::BuoyancyRampMax' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, MaxBuoyantForce) == 0x00002C, "Member 'FBuoyancyData::MaxBuoyantForce' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, bApplyDragForcesInWater) == 0x000030, "Member 'FBuoyancyData::bApplyDragForcesInWater' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, DragCoefficient) == 0x000034, "Member 'FBuoyancyData::DragCoefficient' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, DragCoefficient2) == 0x000038, "Member 'FBuoyancyData::DragCoefficient2' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, AngularDragCoefficient) == 0x00003C, "Member 'FBuoyancyData::AngularDragCoefficient' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, MaxDragSpeed) == 0x000040, "Member 'FBuoyancyData::MaxDragSpeed' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, bApplyRiverForces) == 0x000044, "Member 'FBuoyancyData::bApplyRiverForces' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, RiverPontoonIndex) == 0x000048, "Member 'FBuoyancyData::RiverPontoonIndex' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, WaterShorePushFactor) == 0x00004C, "Member 'FBuoyancyData::WaterShorePushFactor' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, RiverTraversalPathWidth) == 0x000050, "Member 'FBuoyancyData::RiverTraversalPathWidth' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, MaxShorePushForce) == 0x000054, "Member 'FBuoyancyData::MaxShorePushForce' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, WaterVelocityStrength) == 0x000058, "Member 'FBuoyancyData::WaterVelocityStrength' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, MaxWaterForce) == 0x00005C, "Member 'FBuoyancyData::MaxWaterForce' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, bAlwaysAllowLateralPush) == 0x000060, "Member 'FBuoyancyData::bAlwaysAllowLateralPush' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, bAllowCurrentWhenMovingFastUpstream) == 0x000061, "Member 'FBuoyancyData::bAllowCurrentWhenMovingFastUpstream' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, bApplyDownstreamAngularRotation) == 0x000062, "Member 'FBuoyancyData::bApplyDownstreamAngularRotation' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, DownstreamAxisOfRotation) == 0x000068, "Member 'FBuoyancyData::DownstreamAxisOfRotation' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, DownstreamRotationStrength) == 0x000080, "Member 'FBuoyancyData::DownstreamRotationStrength' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, DownstreamRotationStiffness) == 0x000084, "Member 'FBuoyancyData::DownstreamRotationStiffness' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, DownstreamRotationAngularDamping) == 0x000088, "Member 'FBuoyancyData::DownstreamRotationAngularDamping' has a wrong offset!");
+static_assert(offsetof(FBuoyancyData, DownstreamMaxAcceleration) == 0x00008C, "Member 'FBuoyancyData::DownstreamMaxAcceleration' has a wrong offset!");
 
 // ScriptStruct Water.WaterFalloffSettings
 // 0x0014 (0x0014 - 0x0000)
@@ -285,77 +384,6 @@ static_assert(offsetof(FWaterBodyWeightmapSettings, TextureInfluence) == 0x00001
 static_assert(offsetof(FWaterBodyWeightmapSettings, Midpoint) == 0x000018, "Member 'FWaterBodyWeightmapSettings::Midpoint' has a wrong offset!");
 static_assert(offsetof(FWaterBodyWeightmapSettings, FinalOpacity) == 0x00001C, "Member 'FWaterBodyWeightmapSettings::FinalOpacity' has a wrong offset!");
 
-// ScriptStruct Water.BuoyancyData
-// 0x0090 (0x0090 - 0x0000)
-struct FBuoyancyData final
-{
-public:
-	TArray<struct FSphericalPontoon>              Pontoons;                                          // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	bool                                          bCenterPontoonsOnCOM;                              // 0x0010(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         BuoyancyCoefficient;                               // 0x0014(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BuoyancyDamp;                                      // 0x0018(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BuoyancyDamp2;                                     // 0x001C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BuoyancyRampMinVelocity;                           // 0x0020(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BuoyancyRampMaxVelocity;                           // 0x0024(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         BuoyancyRampMax;                                   // 0x0028(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxBuoyantForce;                                   // 0x002C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bApplyDragForcesInWater;                           // 0x0030(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DragCoefficient;                                   // 0x0034(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DragCoefficient2;                                  // 0x0038(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AngularDragCoefficient;                            // 0x003C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxDragSpeed;                                      // 0x0040(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bApplyRiverForces;                                 // 0x0044(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         RiverPontoonIndex;                                 // 0x0048(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WaterShorePushFactor;                              // 0x004C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         RiverTraversalPathWidth;                           // 0x0050(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxShorePushForce;                                 // 0x0054(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WaterVelocityStrength;                             // 0x0058(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxWaterForce;                                     // 0x005C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAlwaysAllowLateralPush;                           // 0x0060(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAllowCurrentWhenMovingFastUpstream;               // 0x0061(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bApplyDownstreamAngularRotation;                   // 0x0062(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_63[0x5];                                       // 0x0063(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                DownstreamAxisOfRotation;                          // 0x0068(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DownstreamRotationStrength;                        // 0x0080(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DownstreamRotationStiffness;                       // 0x0084(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DownstreamRotationAngularDamping;                  // 0x0088(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DownstreamMaxAcceleration;                         // 0x008C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FBuoyancyData) == 0x000008, "Wrong alignment on FBuoyancyData");
-static_assert(sizeof(FBuoyancyData) == 0x000090, "Wrong size on FBuoyancyData");
-static_assert(offsetof(FBuoyancyData, Pontoons) == 0x000000, "Member 'FBuoyancyData::Pontoons' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, bCenterPontoonsOnCOM) == 0x000010, "Member 'FBuoyancyData::bCenterPontoonsOnCOM' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, BuoyancyCoefficient) == 0x000014, "Member 'FBuoyancyData::BuoyancyCoefficient' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, BuoyancyDamp) == 0x000018, "Member 'FBuoyancyData::BuoyancyDamp' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, BuoyancyDamp2) == 0x00001C, "Member 'FBuoyancyData::BuoyancyDamp2' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, BuoyancyRampMinVelocity) == 0x000020, "Member 'FBuoyancyData::BuoyancyRampMinVelocity' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, BuoyancyRampMaxVelocity) == 0x000024, "Member 'FBuoyancyData::BuoyancyRampMaxVelocity' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, BuoyancyRampMax) == 0x000028, "Member 'FBuoyancyData::BuoyancyRampMax' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, MaxBuoyantForce) == 0x00002C, "Member 'FBuoyancyData::MaxBuoyantForce' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, bApplyDragForcesInWater) == 0x000030, "Member 'FBuoyancyData::bApplyDragForcesInWater' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, DragCoefficient) == 0x000034, "Member 'FBuoyancyData::DragCoefficient' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, DragCoefficient2) == 0x000038, "Member 'FBuoyancyData::DragCoefficient2' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, AngularDragCoefficient) == 0x00003C, "Member 'FBuoyancyData::AngularDragCoefficient' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, MaxDragSpeed) == 0x000040, "Member 'FBuoyancyData::MaxDragSpeed' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, bApplyRiverForces) == 0x000044, "Member 'FBuoyancyData::bApplyRiverForces' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, RiverPontoonIndex) == 0x000048, "Member 'FBuoyancyData::RiverPontoonIndex' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, WaterShorePushFactor) == 0x00004C, "Member 'FBuoyancyData::WaterShorePushFactor' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, RiverTraversalPathWidth) == 0x000050, "Member 'FBuoyancyData::RiverTraversalPathWidth' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, MaxShorePushForce) == 0x000054, "Member 'FBuoyancyData::MaxShorePushForce' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, WaterVelocityStrength) == 0x000058, "Member 'FBuoyancyData::WaterVelocityStrength' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, MaxWaterForce) == 0x00005C, "Member 'FBuoyancyData::MaxWaterForce' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, bAlwaysAllowLateralPush) == 0x000060, "Member 'FBuoyancyData::bAlwaysAllowLateralPush' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, bAllowCurrentWhenMovingFastUpstream) == 0x000061, "Member 'FBuoyancyData::bAllowCurrentWhenMovingFastUpstream' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, bApplyDownstreamAngularRotation) == 0x000062, "Member 'FBuoyancyData::bApplyDownstreamAngularRotation' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, DownstreamAxisOfRotation) == 0x000068, "Member 'FBuoyancyData::DownstreamAxisOfRotation' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, DownstreamRotationStrength) == 0x000080, "Member 'FBuoyancyData::DownstreamRotationStrength' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, DownstreamRotationStiffness) == 0x000084, "Member 'FBuoyancyData::DownstreamRotationStiffness' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, DownstreamRotationAngularDamping) == 0x000088, "Member 'FBuoyancyData::DownstreamRotationAngularDamping' has a wrong offset!");
-static_assert(offsetof(FBuoyancyData, DownstreamMaxAcceleration) == 0x00008C, "Member 'FBuoyancyData::DownstreamMaxAcceleration' has a wrong offset!");
-
 // ScriptStruct Water.WaterCurveSettings
 // 0x0020 (0x0020 - 0x0000)
 struct FWaterCurveSettings final
@@ -376,34 +404,6 @@ static_assert(offsetof(FWaterCurveSettings, ElevationCurveAsset) == 0x000008, "M
 static_assert(offsetof(FWaterCurveSettings, ChannelEdgeOffset) == 0x000010, "Member 'FWaterCurveSettings::ChannelEdgeOffset' has a wrong offset!");
 static_assert(offsetof(FWaterCurveSettings, ChannelDepth) == 0x000014, "Member 'FWaterCurveSettings::ChannelDepth' has a wrong offset!");
 static_assert(offsetof(FWaterCurveSettings, CurveRampWidth) == 0x000018, "Member 'FWaterCurveSettings::CurveRampWidth' has a wrong offset!");
-
-// ScriptStruct Water.GerstnerWave
-// 0x0048 (0x0048 - 0x0000)
-struct FGerstnerWave final
-{
-public:
-	float                                         WaveLength;                                        // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Amplitude;                                         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Steepness;                                         // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                Direction;                                         // 0x0010(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              WaveVector;                                        // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WaveSpeed;                                         // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WKA;                                               // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Q;                                                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PhaseOffset;                                       // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FGerstnerWave) == 0x000008, "Wrong alignment on FGerstnerWave");
-static_assert(sizeof(FGerstnerWave) == 0x000048, "Wrong size on FGerstnerWave");
-static_assert(offsetof(FGerstnerWave, WaveLength) == 0x000000, "Member 'FGerstnerWave::WaveLength' has a wrong offset!");
-static_assert(offsetof(FGerstnerWave, Amplitude) == 0x000004, "Member 'FGerstnerWave::Amplitude' has a wrong offset!");
-static_assert(offsetof(FGerstnerWave, Steepness) == 0x000008, "Member 'FGerstnerWave::Steepness' has a wrong offset!");
-static_assert(offsetof(FGerstnerWave, Direction) == 0x000010, "Member 'FGerstnerWave::Direction' has a wrong offset!");
-static_assert(offsetof(FGerstnerWave, WaveVector) == 0x000028, "Member 'FGerstnerWave::WaveVector' has a wrong offset!");
-static_assert(offsetof(FGerstnerWave, WaveSpeed) == 0x000038, "Member 'FGerstnerWave::WaveSpeed' has a wrong offset!");
-static_assert(offsetof(FGerstnerWave, WKA) == 0x00003C, "Member 'FGerstnerWave::WKA' has a wrong offset!");
-static_assert(offsetof(FGerstnerWave, Q) == 0x000040, "Member 'FGerstnerWave::Q' has a wrong offset!");
-static_assert(offsetof(FGerstnerWave, PhaseOffset) == 0x000044, "Member 'FGerstnerWave::PhaseOffset' has a wrong offset!");
 
 // ScriptStruct Water.GerstnerWaveOctave
 // 0x0014 (0x0014 - 0x0000)

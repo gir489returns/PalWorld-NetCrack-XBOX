@@ -17,28 +17,6 @@
 namespace SDK::Params
 {
 
-// Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.ActionResume
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_TurnAndEscape_C_ActionResume final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_TurnAndEscape_C_ActionResume) == 0x000008, "Wrong alignment on BP_AIAction_TurnAndEscape_C_ActionResume");
-static_assert(sizeof(BP_AIAction_TurnAndEscape_C_ActionResume) == 0x000008, "Wrong size on BP_AIAction_TurnAndEscape_C_ActionResume");
-static_assert(offsetof(BP_AIAction_TurnAndEscape_C_ActionResume, ControlledPawn) == 0x000000, "Member 'BP_AIAction_TurnAndEscape_C_ActionResume::ControlledPawn' has a wrong offset!");
-
-// Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.ActionStart
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_TurnAndEscape_C_ActionStart final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_TurnAndEscape_C_ActionStart) == 0x000008, "Wrong alignment on BP_AIAction_TurnAndEscape_C_ActionStart");
-static_assert(sizeof(BP_AIAction_TurnAndEscape_C_ActionStart) == 0x000008, "Wrong size on BP_AIAction_TurnAndEscape_C_ActionStart");
-static_assert(offsetof(BP_AIAction_TurnAndEscape_C_ActionStart, ControlledPawn) == 0x000000, "Member 'BP_AIAction_TurnAndEscape_C_ActionStart::ControlledPawn' has a wrong offset!");
-
 // Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.ActionTick
 // 0x0010 (0x0010 - 0x0000)
 struct BP_AIAction_TurnAndEscape_C_ActionTick final
@@ -135,17 +113,6 @@ static_assert(offsetof(BP_AIAction_TurnAndEscape_C_ExecuteUbergraph_BP_AIAction_
 static_assert(offsetof(BP_AIAction_TurnAndEscape_C_ExecuteUbergraph_BP_AIAction_TurnAndEscape, K2Node_Event_ControlledPawn) == 0x000148, "Member 'BP_AIAction_TurnAndEscape_C_ExecuteUbergraph_BP_AIAction_TurnAndEscape::K2Node_Event_ControlledPawn' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_TurnAndEscape_C_ExecuteUbergraph_BP_AIAction_TurnAndEscape, CallFunc_Delay_Duration_ImplicitCast) == 0x000150, "Member 'BP_AIAction_TurnAndEscape_C_ExecuteUbergraph_BP_AIAction_TurnAndEscape::CallFunc_Delay_Duration_ImplicitCast' has a wrong offset!");
 
-// Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.OnSquadMemberDeadEvent
-// 0x0050 (0x0050 - 0x0000)
-struct BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent final
-{
-public:
-	struct FPalDeadInfo                           DeadInbfo;                                         // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-static_assert(alignof(BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent) == 0x000008, "Wrong alignment on BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent");
-static_assert(sizeof(BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent) == 0x000050, "Wrong size on BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent");
-static_assert(offsetof(BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent, DeadInbfo) == 0x000000, "Member 'BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent::DeadInbfo' has a wrong offset!");
-
 // Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.Setup
 // 0x0010 (0x0010 - 0x0000)
 struct BP_AIAction_TurnAndEscape_C_Setup final
@@ -158,6 +125,39 @@ static_assert(alignof(BP_AIAction_TurnAndEscape_C_Setup) == 0x000008, "Wrong ali
 static_assert(sizeof(BP_AIAction_TurnAndEscape_C_Setup) == 0x000010, "Wrong size on BP_AIAction_TurnAndEscape_C_Setup");
 static_assert(offsetof(BP_AIAction_TurnAndEscape_C_Setup, TargetActor) == 0x000000, "Member 'BP_AIAction_TurnAndEscape_C_Setup::TargetActor' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_TurnAndEscape_C_Setup, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'BP_AIAction_TurnAndEscape_C_Setup::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+
+// Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.ActionResume
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_TurnAndEscape_C_ActionResume final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_TurnAndEscape_C_ActionResume) == 0x000008, "Wrong alignment on BP_AIAction_TurnAndEscape_C_ActionResume");
+static_assert(sizeof(BP_AIAction_TurnAndEscape_C_ActionResume) == 0x000008, "Wrong size on BP_AIAction_TurnAndEscape_C_ActionResume");
+static_assert(offsetof(BP_AIAction_TurnAndEscape_C_ActionResume, ControlledPawn) == 0x000000, "Member 'BP_AIAction_TurnAndEscape_C_ActionResume::ControlledPawn' has a wrong offset!");
+
+// Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.ActionStart
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_TurnAndEscape_C_ActionStart final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_TurnAndEscape_C_ActionStart) == 0x000008, "Wrong alignment on BP_AIAction_TurnAndEscape_C_ActionStart");
+static_assert(sizeof(BP_AIAction_TurnAndEscape_C_ActionStart) == 0x000008, "Wrong size on BP_AIAction_TurnAndEscape_C_ActionStart");
+static_assert(offsetof(BP_AIAction_TurnAndEscape_C_ActionStart, ControlledPawn) == 0x000000, "Member 'BP_AIAction_TurnAndEscape_C_ActionStart::ControlledPawn' has a wrong offset!");
+
+// Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.OnSquadMemberDeadEvent
+// 0x0050 (0x0050 - 0x0000)
+struct BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent final
+{
+public:
+	struct FPalDeadInfo                           DeadInbfo;                                         // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+static_assert(alignof(BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent) == 0x000008, "Wrong alignment on BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent");
+static_assert(sizeof(BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent) == 0x000050, "Wrong size on BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent");
+static_assert(offsetof(BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent, DeadInbfo) == 0x000000, "Member 'BP_AIAction_TurnAndEscape_C_OnSquadMemberDeadEvent::DeadInbfo' has a wrong offset!");
 
 // Function BP_AIAction_TurnAndEscape.BP_AIAction_TurnAndEscape_C.SoundEvent
 // 0x0018 (0x0018 - 0x0000)

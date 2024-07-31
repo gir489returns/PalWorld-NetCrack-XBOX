@@ -113,28 +113,6 @@ static_assert(offsetof(BP_NPCAIController_Visitor_C_FindTargetPlayer, CallFunc_V
 static_assert(offsetof(BP_NPCAIController_Visitor_C_FindTargetPlayer, CallFunc_Less_DoubleDouble_ReturnValue) == 0x0000A0, "Member 'BP_NPCAIController_Visitor_C_FindTargetPlayer::CallFunc_Less_DoubleDouble_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_NPCAIController_Visitor_C_FindTargetPlayer, CallFunc_BooleanOR_ReturnValue) == 0x0000A1, "Member 'BP_NPCAIController_Visitor_C_FindTargetPlayer::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
-// Function BP_NPCAIController_Visitor.BP_NPCAIController_Visitor_C.StartDefaultAIAction
-// 0x0078 (0x0078 - 0x0000)
-struct BP_NPCAIController_Visitor_C_StartDefaultAIAction final
-{
-public:
-	struct FPalAIActionDynamicParameter           K2Node_MakeStruct_PalAIActionDynamicParameter;     // 0x0000(0x0050)(NoDestructor)
-	class UPalAIActionComponent*                  K2Node_DynamicCast_AsPal_AIAction_Component;       // 0x0050(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalAIActionBase*                       CallFunc_SetActionClassParameter_ReturnValue;      // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_AIAction_Visitor_TravelToBaseCamp_C* K2Node_DynamicCast_AsBP_AIAction_Visitor_Travel_to_Base_Camp; // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_NPCAIController_Visitor_C_StartDefaultAIAction) == 0x000008, "Wrong alignment on BP_NPCAIController_Visitor_C_StartDefaultAIAction");
-static_assert(sizeof(BP_NPCAIController_Visitor_C_StartDefaultAIAction) == 0x000078, "Wrong size on BP_NPCAIController_Visitor_C_StartDefaultAIAction");
-static_assert(offsetof(BP_NPCAIController_Visitor_C_StartDefaultAIAction, K2Node_MakeStruct_PalAIActionDynamicParameter) == 0x000000, "Member 'BP_NPCAIController_Visitor_C_StartDefaultAIAction::K2Node_MakeStruct_PalAIActionDynamicParameter' has a wrong offset!");
-static_assert(offsetof(BP_NPCAIController_Visitor_C_StartDefaultAIAction, K2Node_DynamicCast_AsPal_AIAction_Component) == 0x000050, "Member 'BP_NPCAIController_Visitor_C_StartDefaultAIAction::K2Node_DynamicCast_AsPal_AIAction_Component' has a wrong offset!");
-static_assert(offsetof(BP_NPCAIController_Visitor_C_StartDefaultAIAction, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'BP_NPCAIController_Visitor_C_StartDefaultAIAction::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_NPCAIController_Visitor_C_StartDefaultAIAction, CallFunc_SetActionClassParameter_ReturnValue) == 0x000060, "Member 'BP_NPCAIController_Visitor_C_StartDefaultAIAction::CallFunc_SetActionClassParameter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_NPCAIController_Visitor_C_StartDefaultAIAction, K2Node_DynamicCast_AsBP_AIAction_Visitor_Travel_to_Base_Camp) == 0x000068, "Member 'BP_NPCAIController_Visitor_C_StartDefaultAIAction::K2Node_DynamicCast_AsBP_AIAction_Visitor_Travel_to_Base_Camp' has a wrong offset!");
-static_assert(offsetof(BP_NPCAIController_Visitor_C_StartDefaultAIAction, K2Node_DynamicCast_bSuccess_1) == 0x000070, "Member 'BP_NPCAIController_Visitor_C_StartDefaultAIAction::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-
 // Function BP_NPCAIController_Visitor.BP_NPCAIController_Visitor_C.StartRaid
 // 0x0008 (0x0008 - 0x0000)
 struct BP_NPCAIController_Visitor_C_StartRaid final
@@ -184,6 +162,28 @@ static_assert(offsetof(BP_NPCAIController_Visitor_C_StartWaitAction, K2Node_Make
 static_assert(offsetof(BP_NPCAIController_Visitor_C_StartWaitAction, CallFunc_SetActionClassParameter_ReturnValue) == 0x000058, "Member 'BP_NPCAIController_Visitor_C_StartWaitAction::CallFunc_SetActionClassParameter_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_NPCAIController_Visitor_C_StartWaitAction, K2Node_DynamicCast_AsBP_AIAction_Visitor_Wait_in_Base_Camp) == 0x000060, "Member 'BP_NPCAIController_Visitor_C_StartWaitAction::K2Node_DynamicCast_AsBP_AIAction_Visitor_Wait_in_Base_Camp' has a wrong offset!");
 static_assert(offsetof(BP_NPCAIController_Visitor_C_StartWaitAction, K2Node_DynamicCast_bSuccess) == 0x000068, "Member 'BP_NPCAIController_Visitor_C_StartWaitAction::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+
+// Function BP_NPCAIController_Visitor.BP_NPCAIController_Visitor_C.StartDefaultAIAction
+// 0x0078 (0x0078 - 0x0000)
+struct BP_NPCAIController_Visitor_C_StartDefaultAIAction final
+{
+public:
+	struct FPalAIActionDynamicParameter           K2Node_MakeStruct_PalAIActionDynamicParameter;     // 0x0000(0x0050)(NoDestructor)
+	class UPalAIActionComponent*                  K2Node_DynamicCast_AsPal_AIAction_Component;       // 0x0050(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalAIActionBase*                       CallFunc_SetActionClassParameter_ReturnValue;      // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_AIAction_Visitor_TravelToBaseCamp_C* K2Node_DynamicCast_AsBP_AIAction_Visitor_Travel_to_Base_Camp; // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_NPCAIController_Visitor_C_StartDefaultAIAction) == 0x000008, "Wrong alignment on BP_NPCAIController_Visitor_C_StartDefaultAIAction");
+static_assert(sizeof(BP_NPCAIController_Visitor_C_StartDefaultAIAction) == 0x000078, "Wrong size on BP_NPCAIController_Visitor_C_StartDefaultAIAction");
+static_assert(offsetof(BP_NPCAIController_Visitor_C_StartDefaultAIAction, K2Node_MakeStruct_PalAIActionDynamicParameter) == 0x000000, "Member 'BP_NPCAIController_Visitor_C_StartDefaultAIAction::K2Node_MakeStruct_PalAIActionDynamicParameter' has a wrong offset!");
+static_assert(offsetof(BP_NPCAIController_Visitor_C_StartDefaultAIAction, K2Node_DynamicCast_AsPal_AIAction_Component) == 0x000050, "Member 'BP_NPCAIController_Visitor_C_StartDefaultAIAction::K2Node_DynamicCast_AsPal_AIAction_Component' has a wrong offset!");
+static_assert(offsetof(BP_NPCAIController_Visitor_C_StartDefaultAIAction, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'BP_NPCAIController_Visitor_C_StartDefaultAIAction::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_NPCAIController_Visitor_C_StartDefaultAIAction, CallFunc_SetActionClassParameter_ReturnValue) == 0x000060, "Member 'BP_NPCAIController_Visitor_C_StartDefaultAIAction::CallFunc_SetActionClassParameter_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_NPCAIController_Visitor_C_StartDefaultAIAction, K2Node_DynamicCast_AsBP_AIAction_Visitor_Travel_to_Base_Camp) == 0x000068, "Member 'BP_NPCAIController_Visitor_C_StartDefaultAIAction::K2Node_DynamicCast_AsBP_AIAction_Visitor_Travel_to_Base_Camp' has a wrong offset!");
+static_assert(offsetof(BP_NPCAIController_Visitor_C_StartDefaultAIAction, K2Node_DynamicCast_bSuccess_1) == 0x000070, "Member 'BP_NPCAIController_Visitor_C_StartDefaultAIAction::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
 
 }
 

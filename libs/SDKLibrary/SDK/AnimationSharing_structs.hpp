@@ -69,24 +69,6 @@ static_assert(offsetof(FAnimationStateEntry, MaximumNumberOfConcurrentInstances)
 static_assert(offsetof(FAnimationStateEntry, WiggleTimePercentage) == 0x000028, "Member 'FAnimationStateEntry::WiggleTimePercentage' has a wrong offset!");
 static_assert(offsetof(FAnimationStateEntry, bRequiresCurves) == 0x00002C, "Member 'FAnimationStateEntry::bRequiresCurves' has a wrong offset!");
 
-// ScriptStruct AnimationSharing.AnimationSharingScalability
-// 0x0010 (0x0010 - 0x0000)
-struct FAnimationSharingScalability final
-{
-public:
-	struct FPerPlatformBool                       UseBlendTransitions;                               // 0x0000(0x0001)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPerPlatformFloat                      BlendSignificanceValue;                            // 0x0004(0x0004)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FPerPlatformInt                        MaximumNumberConcurrentBlends;                     // 0x0008(0x0004)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FPerPlatformFloat                      TickSignificanceValue;                             // 0x000C(0x0004)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FAnimationSharingScalability) == 0x000004, "Wrong alignment on FAnimationSharingScalability");
-static_assert(sizeof(FAnimationSharingScalability) == 0x000010, "Wrong size on FAnimationSharingScalability");
-static_assert(offsetof(FAnimationSharingScalability, UseBlendTransitions) == 0x000000, "Member 'FAnimationSharingScalability::UseBlendTransitions' has a wrong offset!");
-static_assert(offsetof(FAnimationSharingScalability, BlendSignificanceValue) == 0x000004, "Member 'FAnimationSharingScalability::BlendSignificanceValue' has a wrong offset!");
-static_assert(offsetof(FAnimationSharingScalability, MaximumNumberConcurrentBlends) == 0x000008, "Member 'FAnimationSharingScalability::MaximumNumberConcurrentBlends' has a wrong offset!");
-static_assert(offsetof(FAnimationSharingScalability, TickSignificanceValue) == 0x00000C, "Member 'FAnimationSharingScalability::TickSignificanceValue' has a wrong offset!");
-
 // ScriptStruct AnimationSharing.PerSkeletonAnimationSharingSetup
 // 0x0038 (0x0038 - 0x0000)
 struct FPerSkeletonAnimationSharingSetup final
@@ -107,6 +89,24 @@ static_assert(offsetof(FPerSkeletonAnimationSharingSetup, BlendAnimBlueprint) ==
 static_assert(offsetof(FPerSkeletonAnimationSharingSetup, AdditiveAnimBlueprint) == 0x000018, "Member 'FPerSkeletonAnimationSharingSetup::AdditiveAnimBlueprint' has a wrong offset!");
 static_assert(offsetof(FPerSkeletonAnimationSharingSetup, StateProcessorClass) == 0x000020, "Member 'FPerSkeletonAnimationSharingSetup::StateProcessorClass' has a wrong offset!");
 static_assert(offsetof(FPerSkeletonAnimationSharingSetup, AnimationStates) == 0x000028, "Member 'FPerSkeletonAnimationSharingSetup::AnimationStates' has a wrong offset!");
+
+// ScriptStruct AnimationSharing.AnimationSharingScalability
+// 0x0010 (0x0010 - 0x0000)
+struct FAnimationSharingScalability final
+{
+public:
+	struct FPerPlatformBool                       UseBlendTransitions;                               // 0x0000(0x0001)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPerPlatformFloat                      BlendSignificanceValue;                            // 0x0004(0x0004)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPerPlatformInt                        MaximumNumberConcurrentBlends;                     // 0x0008(0x0004)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPerPlatformFloat                      TickSignificanceValue;                             // 0x000C(0x0004)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FAnimationSharingScalability) == 0x000004, "Wrong alignment on FAnimationSharingScalability");
+static_assert(sizeof(FAnimationSharingScalability) == 0x000010, "Wrong size on FAnimationSharingScalability");
+static_assert(offsetof(FAnimationSharingScalability, UseBlendTransitions) == 0x000000, "Member 'FAnimationSharingScalability::UseBlendTransitions' has a wrong offset!");
+static_assert(offsetof(FAnimationSharingScalability, BlendSignificanceValue) == 0x000004, "Member 'FAnimationSharingScalability::BlendSignificanceValue' has a wrong offset!");
+static_assert(offsetof(FAnimationSharingScalability, MaximumNumberConcurrentBlends) == 0x000008, "Member 'FAnimationSharingScalability::MaximumNumberConcurrentBlends' has a wrong offset!");
+static_assert(offsetof(FAnimationSharingScalability, TickSignificanceValue) == 0x00000C, "Member 'FAnimationSharingScalability::TickSignificanceValue' has a wrong offset!");
 
 // ScriptStruct AnimationSharing.TickAnimationSharingFunction
 // 0x0008 (0x0030 - 0x0028)

@@ -36,15 +36,15 @@ public:
 	class UWBP_Title_MenuButton_C*                LastClickedButton;                                 // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature(class UWBP_Title_MenuButton_C* ButtonWidget);
-	void Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD(const class UPocketpairUserInfo* UserInfo, bool bSuccess, const class FString& ErrorStr);
-	void ExecuteUbergraph_WBP_TItle(int32 EntryPoint);
-	void OnClickedMenu_Internal(class UWBP_Title_MenuButton_C* ButtonWidget);
-	void OnClosedQuitGameDialog(bool bResult);
-	void OnSetup();
-	void OpenQuitGameDialog();
-	void SwitchUser();
 	void WBP_TItle_AutoGenFunc(bool bResult);
+	void SwitchUser();
+	void OpenQuitGameDialog();
+	void OnSetup();
+	void OnClosedQuitGameDialog(bool bResult);
+	void OnClickedMenu_Internal(class UWBP_Title_MenuButton_C* ButtonWidget);
+	void ExecuteUbergraph_WBP_TItle(int32 EntryPoint);
+	void Completed_0EC96F8E452B5A23D69FAFB13A8CD5AD(const class UPocketpairUserInfo* UserInfo, bool bSuccess, const class FString& ErrorStr);
+	void BndEvt__WBP_TItle_WBP_TitleMenu_K2Node_ComponentBoundEvent_6_OnClickedMenu__DelegateSignature(class UWBP_Title_MenuButton_C* ButtonWidget);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

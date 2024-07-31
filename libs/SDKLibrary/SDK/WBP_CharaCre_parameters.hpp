@@ -13,8 +13,8 @@
 #include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "E_UICharacterMakeCategory_structs.hpp"
 #include "Pal_structs.hpp"
+#include "E_UICharacterMakeCategory_structs.hpp"
 
 
 namespace SDK::Params

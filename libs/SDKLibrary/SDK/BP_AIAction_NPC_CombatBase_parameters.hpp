@@ -240,7 +240,7 @@ public:
 	class UBP_PalAIBlackboard_Common_C*           CallFunc_GetMyBB_PalBrackboard_1;                  // 0x0168(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_171[0x7];                                      // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        K2Node_VariableSet_TempDeltaTime_ImplicitCast;     // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_tempDeltaTime_ImplicitCast;     // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_AIAction_NPC_CombatBase_C_ExecuteUbergraph_BP_AIAction_NPC_CombatBase) == 0x000008, "Wrong alignment on BP_AIAction_NPC_CombatBase_C_ExecuteUbergraph_BP_AIAction_NPC_CombatBase");
 static_assert(sizeof(BP_AIAction_NPC_CombatBase_C_ExecuteUbergraph_BP_AIAction_NPC_CombatBase) == 0x000180, "Wrong size on BP_AIAction_NPC_CombatBase_C_ExecuteUbergraph_BP_AIAction_NPC_CombatBase");
@@ -277,7 +277,7 @@ static_assert(offsetof(BP_AIAction_NPC_CombatBase_C_ExecuteUbergraph_BP_AIAction
 static_assert(offsetof(BP_AIAction_NPC_CombatBase_C_ExecuteUbergraph_BP_AIAction_NPC_CombatBase, CallFunc_GetMyBB_self_CastInput_1) == 0x000158, "Member 'BP_AIAction_NPC_CombatBase_C_ExecuteUbergraph_BP_AIAction_NPC_CombatBase::CallFunc_GetMyBB_self_CastInput_1' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_NPC_CombatBase_C_ExecuteUbergraph_BP_AIAction_NPC_CombatBase, CallFunc_GetMyBB_PalBrackboard_1) == 0x000168, "Member 'BP_AIAction_NPC_CombatBase_C_ExecuteUbergraph_BP_AIAction_NPC_CombatBase::CallFunc_GetMyBB_PalBrackboard_1' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_NPC_CombatBase_C_ExecuteUbergraph_BP_AIAction_NPC_CombatBase, CallFunc_IsValid_ReturnValue_2) == 0x000170, "Member 'BP_AIAction_NPC_CombatBase_C_ExecuteUbergraph_BP_AIAction_NPC_CombatBase::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_NPC_CombatBase_C_ExecuteUbergraph_BP_AIAction_NPC_CombatBase, K2Node_VariableSet_TempDeltaTime_ImplicitCast) == 0x000178, "Member 'BP_AIAction_NPC_CombatBase_C_ExecuteUbergraph_BP_AIAction_NPC_CombatBase::K2Node_VariableSet_TempDeltaTime_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_NPC_CombatBase_C_ExecuteUbergraph_BP_AIAction_NPC_CombatBase, K2Node_VariableSet_tempDeltaTime_ImplicitCast) == 0x000178, "Member 'BP_AIAction_NPC_CombatBase_C_ExecuteUbergraph_BP_AIAction_NPC_CombatBase::K2Node_VariableSet_tempDeltaTime_ImplicitCast' has a wrong offset!");
 
 // Function BP_AIAction_NPC_CombatBase.BP_AIAction_NPC_CombatBase_C.FindTargetNearPoint
 // 0x0268 (0x0268 - 0x0000)

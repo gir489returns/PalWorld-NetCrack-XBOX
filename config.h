@@ -11,7 +11,7 @@ class config
 public:
 	//offsets
 	DWORD64 ClientBase = 0;
-	DWORD64 offset_Tick = 0x2BBE0D0;//APalPlayerCharacter::Tick 48 89 5C 24 ? 57 48 83 EC ? 48 8B F9 E8 ? ? ? ? 48 8B 8F
+	DWORD64 offset_Tick = 0x2BC1F10;//APalPlayerCharacter::Tick 48 89 5C 24 ? 57 48 83 EC ? 48 8B F9 E8 ? ? ? ? 48 8B 8F
 	//check
 	bool IsESP = false;
 	bool IsForgeMode = false;

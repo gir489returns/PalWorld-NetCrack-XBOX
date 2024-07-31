@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "BP_MonsterAIControllerBase_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "BP_MonsterAIControllerBase_classes.hpp"
 
 
 namespace SDK

@@ -151,23 +151,6 @@ static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Body_C_GetRestoreFocusTarge
 static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Body_C_GetRestoreFocusTarget, CallFunc_GetTopFocusTarget_Widget) == 0x000008, "Member 'WBP_CharaCre_ScrollBoxContent_Body_C_GetRestoreFocusTarget::CallFunc_GetTopFocusTarget_Widget' has a wrong offset!");
 static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Body_C_GetRestoreFocusTarget, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'WBP_CharaCre_ScrollBoxContent_Body_C_GetRestoreFocusTarget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
-// Function WBP_CharaCre_ScrollBoxContent_Body.WBP_CharaCre_ScrollBoxContent_Body_C.GetTopFocusTarget
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget final
-{
-public:
-	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_CharaCre_BodyTypeButton_C*         K2Node_DynamicCast_AsWBP_Chara_Cre_Body_Type_Button; // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget) == 0x000008, "Wrong alignment on WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget");
-static_assert(sizeof(WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget) == 0x000020, "Wrong size on WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget");
-static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget, Widget) == 0x000000, "Member 'WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget::Widget' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget, CallFunc_GetChildAt_ReturnValue) == 0x000008, "Member 'WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget, K2Node_DynamicCast_AsWBP_Chara_Cre_Body_Type_Button) == 0x000010, "Member 'WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget::K2Node_DynamicCast_AsWBP_Chara_Cre_Body_Type_Button' has a wrong offset!");
-static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-
 // Function WBP_CharaCre_ScrollBoxContent_Body.WBP_CharaCre_ScrollBoxContent_Body_C.OnChangedSelectColor
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_CharaCre_ScrollBoxContent_Body_C_OnChangedSelectColor final
@@ -292,6 +275,23 @@ static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Body_C_SetDefaultBodyTypePr
 static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Body_C_SetDefaultBodyTypePresetName, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x000049, "Member 'WBP_CharaCre_ScrollBoxContent_Body_C_SetDefaultBodyTypePresetName::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Body_C_SetDefaultBodyTypePresetName, CallFunc_GetBindedPresetName_PresetName) == 0x00004C, "Member 'WBP_CharaCre_ScrollBoxContent_Body_C_SetDefaultBodyTypePresetName::CallFunc_GetBindedPresetName_PresetName' has a wrong offset!");
 static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Body_C_SetDefaultBodyTypePresetName, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000054, "Member 'WBP_CharaCre_ScrollBoxContent_Body_C_SetDefaultBodyTypePresetName::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
+
+// Function WBP_CharaCre_ScrollBoxContent_Body.WBP_CharaCre_ScrollBoxContent_Body_C.GetTopFocusTarget
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget final
+{
+public:
+	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_CharaCre_BodyTypeButton_C*         K2Node_DynamicCast_AsWBP_Chara_Cre_Body_Type_Button; // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget) == 0x000008, "Wrong alignment on WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget");
+static_assert(sizeof(WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget) == 0x000020, "Wrong size on WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget");
+static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget, Widget) == 0x000000, "Member 'WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget::Widget' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget, CallFunc_GetChildAt_ReturnValue) == 0x000008, "Member 'WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget, K2Node_DynamicCast_AsWBP_Chara_Cre_Body_Type_Button) == 0x000010, "Member 'WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget::K2Node_DynamicCast_AsWBP_Chara_Cre_Body_Type_Button' has a wrong offset!");
+static_assert(offsetof(WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_CharaCre_ScrollBoxContent_Body_C_GetTopFocusTarget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 }
 

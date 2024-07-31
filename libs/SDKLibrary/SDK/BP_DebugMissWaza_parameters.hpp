@@ -67,7 +67,7 @@ public:
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1E9[0x3];                                      // 0x01E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_PlayAnimMontage_ReturnValue;              // 0x01EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_VariableSet_TempDeltaTime_ImplicitCast;     // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_tempDeltaTime_ImplicitCast;     // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        K2Node_VariableSet_Yaw_ImplicitCast;               // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_DebugMissWaza_C_ExecuteUbergraph_BP_DebugMissWaza) == 0x000010, "Wrong alignment on BP_DebugMissWaza_C_ExecuteUbergraph_BP_DebugMissWaza");
@@ -111,7 +111,7 @@ static_assert(offsetof(BP_DebugMissWaza_C_ExecuteUbergraph_BP_DebugMissWaza, Cal
 static_assert(offsetof(BP_DebugMissWaza_C_ExecuteUbergraph_BP_DebugMissWaza, CallFunc_Map_Find_Value) == 0x0001E0, "Member 'BP_DebugMissWaza_C_ExecuteUbergraph_BP_DebugMissWaza::CallFunc_Map_Find_Value' has a wrong offset!");
 static_assert(offsetof(BP_DebugMissWaza_C_ExecuteUbergraph_BP_DebugMissWaza, CallFunc_Map_Find_ReturnValue) == 0x0001E8, "Member 'BP_DebugMissWaza_C_ExecuteUbergraph_BP_DebugMissWaza::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_DebugMissWaza_C_ExecuteUbergraph_BP_DebugMissWaza, CallFunc_PlayAnimMontage_ReturnValue) == 0x0001EC, "Member 'BP_DebugMissWaza_C_ExecuteUbergraph_BP_DebugMissWaza::CallFunc_PlayAnimMontage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DebugMissWaza_C_ExecuteUbergraph_BP_DebugMissWaza, K2Node_VariableSet_TempDeltaTime_ImplicitCast) == 0x0001F0, "Member 'BP_DebugMissWaza_C_ExecuteUbergraph_BP_DebugMissWaza::K2Node_VariableSet_TempDeltaTime_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_DebugMissWaza_C_ExecuteUbergraph_BP_DebugMissWaza, K2Node_VariableSet_tempDeltaTime_ImplicitCast) == 0x0001F0, "Member 'BP_DebugMissWaza_C_ExecuteUbergraph_BP_DebugMissWaza::K2Node_VariableSet_tempDeltaTime_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_DebugMissWaza_C_ExecuteUbergraph_BP_DebugMissWaza, K2Node_VariableSet_Yaw_ImplicitCast) == 0x0001F8, "Member 'BP_DebugMissWaza_C_ExecuteUbergraph_BP_DebugMissWaza::K2Node_VariableSet_Yaw_ImplicitCast' has a wrong offset!");
 
 // Function BP_DebugMissWaza.BP_DebugMissWaza_C.SetTransform

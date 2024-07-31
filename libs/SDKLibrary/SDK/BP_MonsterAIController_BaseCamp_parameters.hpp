@@ -69,7 +69,7 @@ public:
 	struct FPalDeadInfo                           K2Node_CustomEvent_DeadInfo;                       // 0x0298(0x0050)(NoDestructor)
 	class UPalDamageReactionComponent*            CallFunc_GetComponentByClass_ReturnValue;          // 0x02E8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue_1;        // 0x02F0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FPalMonsterControllerBaseCampHungryParameter K2Node_Event_parameter_1;                          // 0x02F8(0x000C)(ConstParm, NoDestructor)
+	struct FPalMonsterControllerBaseCampHungryParameter K2Node_Event_Parameter_1;                          // 0x02F8(0x000C)(ConstParm, NoDestructor)
 	uint8                                         Pad_304[0x4];                                      // 0x0304(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalAIActionBaseCampBase*               CallFunc_SetAction_RecoverHungry_Action;           // 0x0308(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGuid                                  K2Node_Event_TargetBedConcreteModelId;             // 0x0310(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -77,7 +77,7 @@ public:
 	EAIRequestPriority                            K2Node_Event_Priority;                             // 0x0328(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_329[0x7];                                      // 0x0329(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalMonsterControllerBaseCampLogContent K2Node_Event_Content;                              // 0x0330(0x0048)(ConstParm)
-	struct FPalAIActionBaseCampSleepActivelyParameter K2Node_Event_parameter;                            // 0x0378(0x0004)(ConstParm, NoDestructor)
+	struct FPalAIActionBaseCampSleepActivelyParameter K2Node_Event_Parameter;                            // 0x0378(0x0004)(ConstParm, NoDestructor)
 	uint8                                         Pad_37C[0x4];                                      // 0x037C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_SetAction_WithFixAssignRange_Range_ImplicitCast; // 0x0380(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -122,13 +122,13 @@ static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_Mon
 static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_CustomEvent_DeadInfo) == 0x000298, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_CustomEvent_DeadInfo' has a wrong offset!");
 static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_GetComponentByClass_ReturnValue) == 0x0002E8, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_GetComponentByClass_ReturnValue_1) == 0x0002F0, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_parameter_1) == 0x0002F8, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_parameter_1' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_Parameter_1) == 0x0002F8, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_Parameter_1' has a wrong offset!");
 static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_SetAction_RecoverHungry_Action) == 0x000308, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_SetAction_RecoverHungry_Action' has a wrong offset!");
 static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_TargetBedConcreteModelId) == 0x000310, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_TargetBedConcreteModelId' has a wrong offset!");
 static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_Action) == 0x000320, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_Action' has a wrong offset!");
 static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_Priority) == 0x000328, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_Priority' has a wrong offset!");
 static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_Content) == 0x000330, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_Content' has a wrong offset!");
-static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_parameter) == 0x000378, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_parameter' has a wrong offset!");
+static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, K2Node_Event_Parameter) == 0x000378, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::K2Node_Event_Parameter' has a wrong offset!");
 static_assert(offsetof(BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp, CallFunc_SetAction_WithFixAssignRange_Range_ImplicitCast) == 0x000380, "Member 'BP_MonsterAIController_BaseCamp_C_ExecuteUbergraph_BP_MonsterAIController_BaseCamp::CallFunc_SetAction_WithFixAssignRange_Range_ImplicitCast' has a wrong offset!");
 
 // Function BP_MonsterAIController_BaseCamp.BP_MonsterAIController_BaseCamp_C.FailedFixedAssign

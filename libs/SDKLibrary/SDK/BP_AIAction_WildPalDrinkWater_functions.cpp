@@ -17,6 +17,66 @@
 namespace SDK
 {
 
+// Function BP_AIAction_WildPalDrinkWater.BP_AIAction_WildPalDrinkWater_C.ExecuteUbergraph_BP_AIAction_WildPalDrinkWater
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_WildPalDrinkWater_C::ExecuteUbergraph_BP_AIAction_WildPalDrinkWater(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_WildPalDrinkWater_C", "ExecuteUbergraph_BP_AIAction_WildPalDrinkWater");
+
+	Params::BP_AIAction_WildPalDrinkWater_C_ExecuteUbergraph_BP_AIAction_WildPalDrinkWater Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AIAction_WildPalDrinkWater.BP_AIAction_WildPalDrinkWater_C.OnFail_3323B09A4DA8EB0F652C87B9DFF6FF56
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPathFollowingResult                    MovementResult                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_WildPalDrinkWater_C::OnFail_3323B09A4DA8EB0F652C87B9DFF6FF56(EPathFollowingResult MovementResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_WildPalDrinkWater_C", "OnFail_3323B09A4DA8EB0F652C87B9DFF6FF56");
+
+	Params::BP_AIAction_WildPalDrinkWater_C_OnFail_3323B09A4DA8EB0F652C87B9DFF6FF56 Parms{};
+
+	Parms.MovementResult = MovementResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AIAction_WildPalDrinkWater.BP_AIAction_WildPalDrinkWater_C.OnSuccess_3323B09A4DA8EB0F652C87B9DFF6FF56
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPathFollowingResult                    MovementResult                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_WildPalDrinkWater_C::OnSuccess_3323B09A4DA8EB0F652C87B9DFF6FF56(EPathFollowingResult MovementResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_WildPalDrinkWater_C", "OnSuccess_3323B09A4DA8EB0F652C87B9DFF6FF56");
+
+	Params::BP_AIAction_WildPalDrinkWater_C_OnSuccess_3323B09A4DA8EB0F652C87B9DFF6FF56 Parms{};
+
+	Parms.MovementResult = MovementResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_AIAction_WildPalDrinkWater.BP_AIAction_WildPalDrinkWater_C.ActionAbort
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -114,66 +174,6 @@ void UBP_AIAction_WildPalDrinkWater_C::ActionStart(class APawn* ControlledPawn)
 	Params::BP_AIAction_WildPalDrinkWater_C_ActionStart Parms{};
 
 	Parms.ControlledPawn = ControlledPawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_AIAction_WildPalDrinkWater.BP_AIAction_WildPalDrinkWater_C.ExecuteUbergraph_BP_AIAction_WildPalDrinkWater
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_WildPalDrinkWater_C::ExecuteUbergraph_BP_AIAction_WildPalDrinkWater(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_WildPalDrinkWater_C", "ExecuteUbergraph_BP_AIAction_WildPalDrinkWater");
-
-	Params::BP_AIAction_WildPalDrinkWater_C_ExecuteUbergraph_BP_AIAction_WildPalDrinkWater Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_AIAction_WildPalDrinkWater.BP_AIAction_WildPalDrinkWater_C.OnFail_3323B09A4DA8EB0F652C87B9DFF6FF56
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPathFollowingResult                    MovementResult                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_WildPalDrinkWater_C::OnFail_3323B09A4DA8EB0F652C87B9DFF6FF56(EPathFollowingResult MovementResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_WildPalDrinkWater_C", "OnFail_3323B09A4DA8EB0F652C87B9DFF6FF56");
-
-	Params::BP_AIAction_WildPalDrinkWater_C_OnFail_3323B09A4DA8EB0F652C87B9DFF6FF56 Parms{};
-
-	Parms.MovementResult = MovementResult;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_AIAction_WildPalDrinkWater.BP_AIAction_WildPalDrinkWater_C.OnSuccess_3323B09A4DA8EB0F652C87B9DFF6FF56
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPathFollowingResult                    MovementResult                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_WildPalDrinkWater_C::OnSuccess_3323B09A4DA8EB0F652C87B9DFF6FF56(EPathFollowingResult MovementResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_WildPalDrinkWater_C", "OnSuccess_3323B09A4DA8EB0F652C87B9DFF6FF56");
-
-	Params::BP_AIAction_WildPalDrinkWater_C_OnSuccess_3323B09A4DA8EB0F652C87B9DFF6FF56 Parms{};
-
-	Parms.MovementResult = MovementResult;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

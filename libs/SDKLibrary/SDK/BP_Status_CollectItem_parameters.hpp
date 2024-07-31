@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "FPassiveSkillCollectItemLotteryData_structs.hpp"
 #include "Pal_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "FPassiveSkillCollectItemLotteryData_structs.hpp"
 
 
 namespace SDK::Params

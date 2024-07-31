@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "CommonInput_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
-#include "Engine_structs.hpp"
+#include "UMG_structs.hpp"
+#include "CommonInput_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK

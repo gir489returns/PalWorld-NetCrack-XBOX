@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_SkillEffectBase_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -34,8 +34,8 @@ public:
 	void EnableCollision();
 	void EndCollision();
 	void ExecuteUbergraph_BP_SkillEffect_GeneralWork(int32 EntryPoint);
-	void ReceiveBeginPlay();
 	void SetupCollision(const struct FVector& TargetLocationPoint, const struct FVector& ImpactPoint);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

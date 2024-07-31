@@ -173,80 +173,82 @@ static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction, CallFu
 static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction, CallFunc_Less_DoubleDouble_A_ImplicitCast) == 0x000028, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction::CallFunc_Less_DoubleDouble_A_ImplicitCast' has a wrong offset!");
 
 // Function BP_AIAction_CombatPal_RaidBoss.BP_AIAction_CombatPal_RaidBoss_C.ChangeNextAction_ConsiderBaseCamp
-// 0x0118 (0x0118 - 0x0000)
+// 0x0120 (0x0120 - 0x0000)
 struct BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp final
 {
 public:
 	EPalWazaID                                    TempWazaID;                                        // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 K2Node_ClassDynamicCast_AsPal_Action_Waza_Base;    // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ClassDynamicCast_bSuccess;                  // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalLookAtComponent*                    CallFunc_GetComponentByClass_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalAICombatModule_RaidBoss*            CallFunc_GetCombatModuleRaid_ModuleRaidBoss;       // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_FindPlayerTarget_ReturnValue;             // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalRaidBossManager*                    CallFunc_GetRaidBossManager_ReturnValue;           // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetNPCTargetCount_ForForcePlayerTarget_ReturnValue; // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_46[0x2];                                       // 0x0046(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character;         // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalActiveSkillSlot*                    CallFunc_GetSkillSlotRef_SkillSlot;                // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalStaticCharacterParameterComponent*  CallFunc_GetStaticParamCompRef_StaticParamComp;    // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FindSlotIndexByWazaID_ReturnValue;        // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UPalActionBase>             CallFunc_Map_Find_Value;                           // 0x0070(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalCharacterParameterComponent*        CallFunc_GetCharacterParameter_ReturnValue;        // 0x0080(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPalIndividualCharacterParameter*       CallFunc_GetIndividualParameter_ReturnValue;       // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalRaidBossManager*                    CallFunc_GetRaidBossManager_ReturnValue_1;         // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetCharacterID_ReturnValue;               // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalRaidBossSpawnInfo                  CallFunc_FindRaidBossInfoByCharacterID_ReturnValue; // 0x00A0(0x0058)()
-	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character;                // 0x00F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_101[0x3];                                      // 0x0101(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalWazaID                                    CallFunc_Array_Random_OutItem;                     // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalActiveSkillSlot*                    CallFunc_GetSkillSlotRef_SkillSlot;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 K2Node_ClassDynamicCast_AsPal_Action_Waza_Base;    // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ClassDynamicCast_bSuccess;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalLookAtComponent*                    CallFunc_GetComponentByClass_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalAICombatModule_RaidBoss*            CallFunc_GetCombatModuleRaid_ModuleRaidBoss;       // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_FindPlayerTarget_ReturnValue;             // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalRaidBossManager*                    CallFunc_GetRaidBossManager_ReturnValue;           // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetNPCTargetCount_ForForcePlayerTarget_ReturnValue; // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4E[0x2];                                       // 0x004E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character;         // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalActiveSkillSlot*                    CallFunc_GetSkillSlotRef_SkillSlot_1;              // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalStaticCharacterParameterComponent*  CallFunc_GetStaticParamCompRef_StaticParamComp;    // 0x0068(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FindSlotIndexByWazaID_ReturnValue;        // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPalActionBase>             CallFunc_Map_Find_Value;                           // 0x0078(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalCharacterParameterComponent*        CallFunc_GetCharacterParameter_ReturnValue;        // 0x0088(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterParameter*       CallFunc_GetIndividualParameter_ReturnValue;       // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalRaidBossManager*                    CallFunc_GetRaidBossManager_ReturnValue_1;         // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetCharacterID_ReturnValue;               // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalRaidBossSpawnInfo                  CallFunc_FindRaidBossInfoByCharacterID_ReturnValue; // 0x00A8(0x0058)()
+	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character;                // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_109[0x3];                                      // 0x0109(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Random_OutIndex;                    // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalWazaID                                    CallFunc_Array_Random_OutItem;                     // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_111[0x3];                                      // 0x0111(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Random_OutIndex;                    // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp) == 0x000008, "Wrong alignment on BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp");
-static_assert(sizeof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp) == 0x000118, "Wrong size on BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp");
+static_assert(sizeof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp) == 0x000120, "Wrong size on BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp");
 static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, TempWazaID) == 0x000000, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::TempWazaID' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, K2Node_ClassDynamicCast_AsPal_Action_Waza_Base) == 0x000008, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::K2Node_ClassDynamicCast_AsPal_Action_Waza_Base' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, K2Node_ClassDynamicCast_bSuccess) == 0x000010, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_GetComponentByClass_ReturnValue) == 0x000018, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000020, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_GetCombatModuleRaid_ModuleRaidBoss) == 0x000028, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_GetCombatModuleRaid_ModuleRaidBoss' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_FindPlayerTarget_ReturnValue) == 0x000030, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_FindPlayerTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_GetRaidBossManager_ReturnValue) == 0x000038, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_GetRaidBossManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_GetNPCTargetCount_ForForcePlayerTarget_ReturnValue) == 0x000040, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_GetNPCTargetCount_ForForcePlayerTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_IsValid_ReturnValue) == 0x000044, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000045, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, K2Node_DynamicCast_AsPal_Player_Character) == 0x000048, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::K2Node_DynamicCast_AsPal_Player_Character' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_GetSkillSlotRef_SkillSlot) == 0x000058, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_GetSkillSlotRef_SkillSlot' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_GetStaticParamCompRef_StaticParamComp) == 0x000060, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_GetStaticParamCompRef_StaticParamComp' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_FindSlotIndexByWazaID_ReturnValue) == 0x000068, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_FindSlotIndexByWazaID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_Map_Find_Value) == 0x000070, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_Map_Find_ReturnValue) == 0x000078, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_GetCharacterParameter_ReturnValue) == 0x000080, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_GetCharacterParameter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_GetIndividualParameter_ReturnValue) == 0x000088, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_GetIndividualParameter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_GetRaidBossManager_ReturnValue_1) == 0x000090, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_GetRaidBossManager_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_GetCharacterID_ReturnValue) == 0x000098, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_GetCharacterID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_FindRaidBossInfoByCharacterID_ReturnValue) == 0x0000A0, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_FindRaidBossInfoByCharacterID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, K2Node_DynamicCast_AsPal_Character) == 0x0000F8, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::K2Node_DynamicCast_AsPal_Character' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, K2Node_DynamicCast_bSuccess_1) == 0x000100, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_Array_Length_ReturnValue) == 0x000104, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_Array_Random_OutItem) == 0x000108, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_Array_Random_OutItem' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_Array_Random_OutIndex) == 0x00010C, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_Array_Random_OutIndex' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000110, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_GetSkillSlotRef_SkillSlot) == 0x000008, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_GetSkillSlotRef_SkillSlot' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, K2Node_ClassDynamicCast_AsPal_Action_Waza_Base) == 0x000010, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::K2Node_ClassDynamicCast_AsPal_Action_Waza_Base' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, K2Node_ClassDynamicCast_bSuccess) == 0x000018, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_GetComponentByClass_ReturnValue) == 0x000020, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000028, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_GetCombatModuleRaid_ModuleRaidBoss) == 0x000030, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_GetCombatModuleRaid_ModuleRaidBoss' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_FindPlayerTarget_ReturnValue) == 0x000038, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_FindPlayerTarget_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_GetRaidBossManager_ReturnValue) == 0x000040, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_GetRaidBossManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_GetNPCTargetCount_ForForcePlayerTarget_ReturnValue) == 0x000048, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_GetNPCTargetCount_ForForcePlayerTarget_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_IsValid_ReturnValue) == 0x00004C, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00004D, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, K2Node_DynamicCast_AsPal_Player_Character) == 0x000050, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::K2Node_DynamicCast_AsPal_Player_Character' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_GetSkillSlotRef_SkillSlot_1) == 0x000060, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_GetSkillSlotRef_SkillSlot_1' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_GetStaticParamCompRef_StaticParamComp) == 0x000068, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_GetStaticParamCompRef_StaticParamComp' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_FindSlotIndexByWazaID_ReturnValue) == 0x000070, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_FindSlotIndexByWazaID_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_Map_Find_Value) == 0x000078, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_Map_Find_Value' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_Map_Find_ReturnValue) == 0x000080, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_GetCharacterParameter_ReturnValue) == 0x000088, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_GetCharacterParameter_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_GetIndividualParameter_ReturnValue) == 0x000090, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_GetIndividualParameter_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_GetRaidBossManager_ReturnValue_1) == 0x000098, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_GetRaidBossManager_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_GetCharacterID_ReturnValue) == 0x0000A0, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_GetCharacterID_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_FindRaidBossInfoByCharacterID_ReturnValue) == 0x0000A8, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_FindRaidBossInfoByCharacterID_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, K2Node_DynamicCast_AsPal_Character) == 0x000100, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::K2Node_DynamicCast_AsPal_Character' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, K2Node_DynamicCast_bSuccess_1) == 0x000108, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_Array_Length_ReturnValue) == 0x00010C, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_Array_Random_OutItem) == 0x000110, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_Array_Random_OutItem' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_Array_Random_OutIndex) == 0x000114, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_Array_Random_OutIndex' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000118, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ChangeNextAction_ConsiderBaseCamp::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
 
 // Function BP_AIAction_CombatPal_RaidBoss.BP_AIAction_CombatPal_RaidBoss_C.ExecuteUbergraph_BP_AIAction_CombatPal_RaidBoss
 // 0x0158 (0x0158 - 0x0000)
@@ -333,102 +335,29 @@ static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ExecuteUbergraph_BP_AIAc
 static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_ExecuteUbergraph_BP_AIAction_CombatPal_RaidBoss, CallFunc_Less_DoubleDouble_A_ImplicitCast) == 0x000150, "Member 'BP_AIAction_CombatPal_RaidBoss_C_ExecuteUbergraph_BP_AIAction_CombatPal_RaidBoss::CallFunc_Less_DoubleDouble_A_ImplicitCast' has a wrong offset!");
 
 // Function BP_AIAction_CombatPal_RaidBoss.BP_AIAction_CombatPal_RaidBoss_C.FindNearestCampTarget
-// 0x01D0 (0x01D0 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget final
 {
 public:
 	class AActor*                                 Param_TargetActor;                                 // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         TargetActorList;                                   // 0x0008(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
-	struct FVector                                CampPos;                                           // 0x0018(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        NearestDistance;                                   // 0x0030(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 WazaTarget;                                        // 0x0038(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	const class AActor*                           Temp_object_Variable;                              // 0x0050(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalAICombatModule_RaidBoss*            CallFunc_GetCombatModuleRaid_ModuleRaidBoss;       // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_GetBaseCampActor_ReturnValue;             // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0095(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_96[0x2];                                       // 0x0096(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0098(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalAIController*                       CallFunc_GetPalAIController_ReturnValue;           // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x00C0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_VSizeXYSquared_ReturnValue;               // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_DoubleDouble_ReturnValue;            // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x00E5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E6[0x2];                                       // 0x00E6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_Array_Get_Item_1;                         // 0x00E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalBaseCampManager*                    CallFunc_GetBaseCampManager_ReturnValue;           // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalBaseCampModel*                      CallFunc_TryGetModel_OutModel;                     // 0x0108(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_TryGetModel_ReturnValue;                  // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_111[0xF];                                      // 0x0111(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0120(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0180(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0198(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x01B0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Const_MaxDistance;                                 // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         TargetActorList;                                   // 0x0010(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
+	struct FVector                                CampPos;                                           // 0x0020(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        NearestDistance;                                   // 0x0038(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 WazaTarget;                                        // 0x0040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
+	class UPalAICombatModule_RaidBoss*            CallFunc_GetCombatModuleRaid_ModuleRaidBoss;       // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_GetBaseCampActor_ReturnValue;             // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget) == 0x000010, "Wrong alignment on BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget");
-static_assert(sizeof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget) == 0x0001D0, "Wrong size on BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget");
+static_assert(alignof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget) == 0x000008, "Wrong alignment on BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget");
+static_assert(sizeof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget) == 0x000058, "Wrong size on BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget");
 static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, Param_TargetActor) == 0x000000, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::Param_TargetActor' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, TargetActorList) == 0x000008, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::TargetActorList' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CampPos) == 0x000018, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CampPos' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, NearestDistance) == 0x000030, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::NearestDistance' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, WazaTarget) == 0x000038, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::WazaTarget' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, Temp_int_Loop_Counter_Variable) == 0x000040, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_Add_IntInt_ReturnValue) == 0x000044, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, Temp_int_Array_Index_Variable) == 0x000048, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, Temp_object_Variable) == 0x000050, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, Temp_int_Loop_Counter_Variable_1) == 0x000058, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_Add_IntInt_ReturnValue_1) == 0x00005C, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, Temp_int_Array_Index_Variable_1) == 0x000060, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, Temp_int_Loop_Counter_Variable_2) == 0x000064, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_Add_IntInt_ReturnValue_2) == 0x000068, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, Temp_int_Array_Index_Variable_2) == 0x00006C, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_GetCombatModuleRaid_ModuleRaidBoss) == 0x000070, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_GetCombatModuleRaid_ModuleRaidBoss' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_GetBaseCampActor_ReturnValue) == 0x000078, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_GetBaseCampActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_IsValid_ReturnValue) == 0x000080, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_Array_Get_Item) == 0x000088, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_Array_Length_ReturnValue) == 0x000090, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_Less_IntInt_ReturnValue) == 0x000094, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_IsValid_ReturnValue_1) == 0x000095, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000098, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_Array_Add_ReturnValue) == 0x0000B0, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_GetPalAIController_ReturnValue) == 0x0000B8, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_GetPalAIController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0000C0, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_VSizeXYSquared_ReturnValue) == 0x0000D8, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_VSizeXYSquared_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_Array_Length_ReturnValue_1) == 0x0000E0, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_Less_DoubleDouble_ReturnValue) == 0x0000E4, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_Less_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000E5, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_Array_Get_Item_1) == 0x0000E8, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_Array_Length_ReturnValue_2) == 0x0000F0, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_Array_Add_ReturnValue_1) == 0x0000F4, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_Less_IntInt_ReturnValue_2) == 0x0000F8, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_GetBaseCampManager_ReturnValue) == 0x000100, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_GetBaseCampManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_TryGetModel_OutModel) == 0x000108, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_TryGetModel_OutModel' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_TryGetModel_ReturnValue) == 0x000110, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_TryGetModel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_GetTransform_ReturnValue) == 0x000120, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_BreakTransform_Location) == 0x000180, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_BreakTransform_Rotation) == 0x000198, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_BreakTransform_Scale) == 0x0001B0, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_BreakTransform_Scale' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, Const_MaxDistance) == 0x000008, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::Const_MaxDistance' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, TargetActorList) == 0x000010, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::TargetActorList' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CampPos) == 0x000020, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CampPos' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, NearestDistance) == 0x000038, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::NearestDistance' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, WazaTarget) == 0x000040, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::WazaTarget' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_GetCombatModuleRaid_ModuleRaidBoss) == 0x000048, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_GetCombatModuleRaid_ModuleRaidBoss' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget, CallFunc_GetBaseCampActor_ReturnValue) == 0x000050, "Member 'BP_AIAction_CombatPal_RaidBoss_C_FindNearestCampTarget::CallFunc_GetBaseCampActor_ReturnValue' has a wrong offset!");
 
 // Function BP_AIAction_CombatPal_RaidBoss.BP_AIAction_CombatPal_RaidBoss_C.GetCombatModuleRaid
 // 0x0018 (0x0018 - 0x0000)
@@ -570,38 +499,41 @@ static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_OnPlayAction, K2Node_Dyn
 static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_OnPlayAction, K2Node_CreateDelegate_OutputDelegate) == 0x00003C, "Member 'BP_AIAction_CombatPal_RaidBoss_C_OnPlayAction::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
 // Function BP_AIAction_CombatPal_RaidBoss.BP_AIAction_CombatPal_RaidBoss_C.PlayWarpAction
-// 0x0190 (0x0190 - 0x0000)
+// 0x01A0 (0x01A0 - 0x0000)
 struct BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction final
 {
 public:
-	class AActor*                                 CallFunc_FindNearestCampTarget_TargetActor;        // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalStaticCharacterParameterComponent*  CallFunc_GetStaticParamCompRef_StaticParamComp;    // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FActionDynamicParameter                K2Node_MakeStruct_ActionDynamicParameter;          // 0x0010(0x00E0)()
-	class UPalCharacterParameterComponent*        CallFunc_GetCharacterParameter_ReturnValue;        // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPalRaidBossManager*                    CallFunc_GetRaidBossManager_ReturnValue;           // 0x00F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalIndividualCharacterParameter*       CallFunc_GetIndividualParameter_ReturnValue;       // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalActionComponent*                    CallFunc_GetActionComponent_ReturnValue;           // 0x0108(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetCharacterID_ReturnValue;               // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalRaidBossSpawnInfo                  CallFunc_FindRaidBossInfoByCharacterID_ReturnValue; // 0x0118(0x0058)()
-	TSubclassOf<class UPalActionBase>             CallFunc_Map_Find_Value;                           // 0x0170(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalActionBase*                         CallFunc_PlayActionParameter_ReturnValue;          // 0x0180(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalActiveSkillSlot*                    CallFunc_GetSkillSlotRef_SkillSlot;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_FindNearestCampTarget_TargetActor;        // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalStaticCharacterParameterComponent*  CallFunc_GetStaticParamCompRef_StaticParamComp;    // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FActionDynamicParameter                K2Node_MakeStruct_ActionDynamicParameter;          // 0x0020(0x00E0)()
+	class UPalCharacterParameterComponent*        CallFunc_GetCharacterParameter_ReturnValue;        // 0x0100(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalRaidBossManager*                    CallFunc_GetRaidBossManager_ReturnValue;           // 0x0108(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterParameter*       CallFunc_GetIndividualParameter_ReturnValue;       // 0x0110(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalActionComponent*                    CallFunc_GetActionComponent_ReturnValue;           // 0x0118(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetCharacterID_ReturnValue;               // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalRaidBossSpawnInfo                  CallFunc_FindRaidBossInfoByCharacterID_ReturnValue; // 0x0128(0x0058)()
+	TSubclassOf<class UPalActionBase>             CallFunc_Map_Find_Value;                           // 0x0180(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_189[0x7];                                      // 0x0189(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalActionBase*                         CallFunc_PlayActionParameter_ReturnValue;          // 0x0190(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction) == 0x000010, "Wrong alignment on BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction");
-static_assert(sizeof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction) == 0x000190, "Wrong size on BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, CallFunc_FindNearestCampTarget_TargetActor) == 0x000000, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::CallFunc_FindNearestCampTarget_TargetActor' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, CallFunc_GetStaticParamCompRef_StaticParamComp) == 0x000008, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::CallFunc_GetStaticParamCompRef_StaticParamComp' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, K2Node_MakeStruct_ActionDynamicParameter) == 0x000010, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::K2Node_MakeStruct_ActionDynamicParameter' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, CallFunc_GetCharacterParameter_ReturnValue) == 0x0000F0, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::CallFunc_GetCharacterParameter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, CallFunc_GetRaidBossManager_ReturnValue) == 0x0000F8, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::CallFunc_GetRaidBossManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, CallFunc_GetIndividualParameter_ReturnValue) == 0x000100, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::CallFunc_GetIndividualParameter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, CallFunc_GetActionComponent_ReturnValue) == 0x000108, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::CallFunc_GetActionComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, CallFunc_GetCharacterID_ReturnValue) == 0x000110, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::CallFunc_GetCharacterID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, CallFunc_FindRaidBossInfoByCharacterID_ReturnValue) == 0x000118, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::CallFunc_FindRaidBossInfoByCharacterID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, CallFunc_Map_Find_Value) == 0x000170, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, CallFunc_Map_Find_ReturnValue) == 0x000178, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, CallFunc_PlayActionParameter_ReturnValue) == 0x000180, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::CallFunc_PlayActionParameter_ReturnValue' has a wrong offset!");
+static_assert(sizeof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction) == 0x0001A0, "Wrong size on BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, CallFunc_GetSkillSlotRef_SkillSlot) == 0x000000, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::CallFunc_GetSkillSlotRef_SkillSlot' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, CallFunc_FindNearestCampTarget_TargetActor) == 0x000008, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::CallFunc_FindNearestCampTarget_TargetActor' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, CallFunc_GetStaticParamCompRef_StaticParamComp) == 0x000010, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::CallFunc_GetStaticParamCompRef_StaticParamComp' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, K2Node_MakeStruct_ActionDynamicParameter) == 0x000020, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::K2Node_MakeStruct_ActionDynamicParameter' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, CallFunc_GetCharacterParameter_ReturnValue) == 0x000100, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::CallFunc_GetCharacterParameter_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, CallFunc_GetRaidBossManager_ReturnValue) == 0x000108, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::CallFunc_GetRaidBossManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, CallFunc_GetIndividualParameter_ReturnValue) == 0x000110, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::CallFunc_GetIndividualParameter_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, CallFunc_GetActionComponent_ReturnValue) == 0x000118, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::CallFunc_GetActionComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, CallFunc_GetCharacterID_ReturnValue) == 0x000120, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::CallFunc_GetCharacterID_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, CallFunc_FindRaidBossInfoByCharacterID_ReturnValue) == 0x000128, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::CallFunc_FindRaidBossInfoByCharacterID_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, CallFunc_Map_Find_Value) == 0x000180, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::CallFunc_Map_Find_Value' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, CallFunc_Map_Find_ReturnValue) == 0x000188, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction, CallFunc_PlayActionParameter_ReturnValue) == 0x000190, "Member 'BP_AIAction_CombatPal_RaidBoss_C_PlayWarpAction::CallFunc_PlayActionParameter_ReturnValue' has a wrong offset!");
 
 }
 

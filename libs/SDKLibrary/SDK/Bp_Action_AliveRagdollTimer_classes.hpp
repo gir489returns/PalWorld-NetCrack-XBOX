@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "BP_Action_AliveRagdoll_classes.hpp"
 #include "Engine_structs.hpp"
+#include "BP_Action_AliveRagdoll_classes.hpp"
 
 
 namespace SDK
