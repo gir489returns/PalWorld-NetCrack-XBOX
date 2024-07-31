@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CommonInput_structs.hpp"
-#include "InputCore_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "Pal_structs.hpp"
+#include "InputCore_structs.hpp"
 #include "Engine_structs.hpp"
 
 

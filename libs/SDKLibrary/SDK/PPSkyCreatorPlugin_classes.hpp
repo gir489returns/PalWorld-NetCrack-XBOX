@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "PPSkyCreatorPlugin_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "CoreUObject_structs.hpp"
+#include "PPSkyCreatorPlugin_structs.hpp"
 
 
 namespace SDK

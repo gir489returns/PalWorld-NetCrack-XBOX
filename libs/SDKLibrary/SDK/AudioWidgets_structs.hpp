@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -41,21 +41,6 @@ static_assert(sizeof(FMeterChannelInfo) == 0x00000C, "Wrong size on FMeterChanne
 static_assert(offsetof(FMeterChannelInfo, MeterValue) == 0x000000, "Member 'FMeterChannelInfo::MeterValue' has a wrong offset!");
 static_assert(offsetof(FMeterChannelInfo, PeakValue) == 0x000004, "Member 'FMeterChannelInfo::PeakValue' has a wrong offset!");
 static_assert(offsetof(FMeterChannelInfo, ClippingValue) == 0x000008, "Member 'FMeterChannelInfo::ClippingValue' has a wrong offset!");
-
-// ScriptStruct AudioWidgets.AudioTextBoxStyle
-// 0x00F8 (0x0100 - 0x0008)
-struct FAudioTextBoxStyle final : public FSlateWidgetStyle
-{
-public:
-	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            BackgroundImage;                                   // 0x0010(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSlateColor                            BackgroundColor;                                   // 0x00E0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F4[0xC];                                       // 0x00F4(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FAudioTextBoxStyle) == 0x000010, "Wrong alignment on FAudioTextBoxStyle");
-static_assert(sizeof(FAudioTextBoxStyle) == 0x000100, "Wrong size on FAudioTextBoxStyle");
-static_assert(offsetof(FAudioTextBoxStyle, BackgroundImage) == 0x000010, "Member 'FAudioTextBoxStyle::BackgroundImage' has a wrong offset!");
-static_assert(offsetof(FAudioTextBoxStyle, BackgroundColor) == 0x0000E0, "Member 'FAudioTextBoxStyle::BackgroundColor' has a wrong offset!");
 
 // ScriptStruct AudioWidgets.AudioMeterStyle
 // 0x04C8 (0x04D0 - 0x0008)
@@ -102,6 +87,21 @@ static_assert(offsetof(FAudioMeterStyle, ScaleHashWidth) == 0x000460, "Member 'F
 static_assert(offsetof(FAudioMeterStyle, ScaleHashHeight) == 0x000464, "Member 'FAudioMeterStyle::ScaleHashHeight' has a wrong offset!");
 static_assert(offsetof(FAudioMeterStyle, DecibelsPerHash) == 0x000468, "Member 'FAudioMeterStyle::DecibelsPerHash' has a wrong offset!");
 static_assert(offsetof(FAudioMeterStyle, Font) == 0x000470, "Member 'FAudioMeterStyle::Font' has a wrong offset!");
+
+// ScriptStruct AudioWidgets.AudioTextBoxStyle
+// 0x00F8 (0x0100 - 0x0008)
+struct FAudioTextBoxStyle final : public FSlateWidgetStyle
+{
+public:
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            BackgroundImage;                                   // 0x0010(0x00D0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSlateColor                            BackgroundColor;                                   // 0x00E0(0x0014)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	uint8                                         Pad_F4[0xC];                                       // 0x00F4(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FAudioTextBoxStyle) == 0x000010, "Wrong alignment on FAudioTextBoxStyle");
+static_assert(sizeof(FAudioTextBoxStyle) == 0x000100, "Wrong size on FAudioTextBoxStyle");
+static_assert(offsetof(FAudioTextBoxStyle, BackgroundImage) == 0x000010, "Member 'FAudioTextBoxStyle::BackgroundImage' has a wrong offset!");
+static_assert(offsetof(FAudioTextBoxStyle, BackgroundColor) == 0x0000E0, "Member 'FAudioTextBoxStyle::BackgroundColor' has a wrong offset!");
 
 // ScriptStruct AudioWidgets.AudioSliderStyle
 // 0x0748 (0x0750 - 0x0008)

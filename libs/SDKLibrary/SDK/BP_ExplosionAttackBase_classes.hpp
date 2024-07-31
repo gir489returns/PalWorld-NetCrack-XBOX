@@ -34,6 +34,7 @@ public:
 	class UClass*                                 CameraShakeClass;                                  // 0x02C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void Can_Damage_by_Ray_Check(class UPrimitiveComponent* OtherHitCollision, bool* CanDamage);
 	void DisableCollision();
 	void ExecuteUbergraph_BP_ExplosionAttackBase(int32 EntryPoint);
 	void FindAttacker(class AActor** Attacker);

@@ -50,6 +50,29 @@ public:
 static_assert(alignof(UMediaSource) == 0x000008, "Wrong alignment on UMediaSource");
 static_assert(sizeof(UMediaSource) == 0x000080, "Wrong size on UMediaSource");
 
+// Class MediaAssets.MediaTimeStampInfo
+// 0x0010 (0x0038 - 0x0028)
+class UMediaTimeStampInfo final : public UObject
+{
+public:
+	struct FTimespan                              Time;                                              // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int64                                         SequenceIndex;                                     // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"MediaTimeStampInfo">();
+	}
+	static class UMediaTimeStampInfo* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMediaTimeStampInfo>();
+	}
+};
+static_assert(alignof(UMediaTimeStampInfo) == 0x000008, "Wrong alignment on UMediaTimeStampInfo");
+static_assert(sizeof(UMediaTimeStampInfo) == 0x000038, "Wrong size on UMediaTimeStampInfo");
+static_assert(offsetof(UMediaTimeStampInfo, Time) == 0x000028, "Member 'UMediaTimeStampInfo::Time' has a wrong offset!");
+static_assert(offsetof(UMediaTimeStampInfo, SequenceIndex) == 0x000030, "Member 'UMediaTimeStampInfo::SequenceIndex' has a wrong offset!");
+
 // Class MediaAssets.BaseMediaSource
 // 0x0008 (0x0088 - 0x0080)
 class UBaseMediaSource : public UMediaSource
@@ -240,29 +263,6 @@ static_assert(alignof(UMediaComponent) == 0x000008, "Wrong alignment on UMediaCo
 static_assert(sizeof(UMediaComponent) == 0x0000B0, "Wrong size on UMediaComponent");
 static_assert(offsetof(UMediaComponent, MediaTexture) == 0x0000A0, "Member 'UMediaComponent::MediaTexture' has a wrong offset!");
 static_assert(offsetof(UMediaComponent, MediaPlayer) == 0x0000A8, "Member 'UMediaComponent::MediaPlayer' has a wrong offset!");
-
-// Class MediaAssets.MediaTimeStampInfo
-// 0x0010 (0x0038 - 0x0028)
-class UMediaTimeStampInfo final : public UObject
-{
-public:
-	struct FTimespan                              Time;                                              // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int64                                         SequenceIndex;                                     // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MediaTimeStampInfo">();
-	}
-	static class UMediaTimeStampInfo* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMediaTimeStampInfo>();
-	}
-};
-static_assert(alignof(UMediaTimeStampInfo) == 0x000008, "Wrong alignment on UMediaTimeStampInfo");
-static_assert(sizeof(UMediaTimeStampInfo) == 0x000038, "Wrong size on UMediaTimeStampInfo");
-static_assert(offsetof(UMediaTimeStampInfo, Time) == 0x000028, "Member 'UMediaTimeStampInfo::Time' has a wrong offset!");
-static_assert(offsetof(UMediaTimeStampInfo, SequenceIndex) == 0x000030, "Member 'UMediaTimeStampInfo::SequenceIndex' has a wrong offset!");
 
 // Class MediaAssets.MediaPlayer
 // 0x0118 (0x0140 - 0x0028)

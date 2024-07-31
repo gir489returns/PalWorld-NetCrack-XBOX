@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "AudioWidgets_structs.hpp"
-#include "UMG_classes.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_classes.hpp"
 #include "CoreUObject_structs.hpp"
 
 

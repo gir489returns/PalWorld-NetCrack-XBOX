@@ -145,6 +145,51 @@ enum class EMediaIOReferenceType : uint32
 	EMediaIOReferenceType_MAX                = 3,
 };
 
+// ScriptStruct MediaIOCore.MediaCaptureOptions
+// 0x0018 (0x0018 - 0x0000)
+struct FMediaCaptureOptions final
+{
+public:
+	EMediaCaptureOverrunAction                    OverrunAction;                                     // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EMediaCaptureCroppingType                     Crop;                                              // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FIntPoint                              CustomCapturePoint;                                // 0x0004(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bResizeSourceBuffer;                               // 0x000C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bSkipFrameWhenRunningExpensiveTasks;               // 0x000D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bConvertToDesiredPixelFormat;                      // 0x000E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bForceAlphaToOneOnConversion;                      // 0x000F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bApplyLinearToSRGBConversion;                      // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAutostopOnCapture;                                // 0x0011(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         NumberOfFramesToCapture;                           // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FMediaCaptureOptions) == 0x000004, "Wrong alignment on FMediaCaptureOptions");
+static_assert(sizeof(FMediaCaptureOptions) == 0x000018, "Wrong size on FMediaCaptureOptions");
+static_assert(offsetof(FMediaCaptureOptions, OverrunAction) == 0x000000, "Member 'FMediaCaptureOptions::OverrunAction' has a wrong offset!");
+static_assert(offsetof(FMediaCaptureOptions, Crop) == 0x000001, "Member 'FMediaCaptureOptions::Crop' has a wrong offset!");
+static_assert(offsetof(FMediaCaptureOptions, CustomCapturePoint) == 0x000004, "Member 'FMediaCaptureOptions::CustomCapturePoint' has a wrong offset!");
+static_assert(offsetof(FMediaCaptureOptions, bResizeSourceBuffer) == 0x00000C, "Member 'FMediaCaptureOptions::bResizeSourceBuffer' has a wrong offset!");
+static_assert(offsetof(FMediaCaptureOptions, bSkipFrameWhenRunningExpensiveTasks) == 0x00000D, "Member 'FMediaCaptureOptions::bSkipFrameWhenRunningExpensiveTasks' has a wrong offset!");
+static_assert(offsetof(FMediaCaptureOptions, bConvertToDesiredPixelFormat) == 0x00000E, "Member 'FMediaCaptureOptions::bConvertToDesiredPixelFormat' has a wrong offset!");
+static_assert(offsetof(FMediaCaptureOptions, bForceAlphaToOneOnConversion) == 0x00000F, "Member 'FMediaCaptureOptions::bForceAlphaToOneOnConversion' has a wrong offset!");
+static_assert(offsetof(FMediaCaptureOptions, bApplyLinearToSRGBConversion) == 0x000010, "Member 'FMediaCaptureOptions::bApplyLinearToSRGBConversion' has a wrong offset!");
+static_assert(offsetof(FMediaCaptureOptions, bAutostopOnCapture) == 0x000011, "Member 'FMediaCaptureOptions::bAutostopOnCapture' has a wrong offset!");
+static_assert(offsetof(FMediaCaptureOptions, NumberOfFramesToCapture) == 0x000014, "Member 'FMediaCaptureOptions::NumberOfFramesToCapture' has a wrong offset!");
+
+// ScriptStruct MediaIOCore.MediaIOAutoDetectableTimecodeFormat_Backup
+// 0x0008 (0x0008 - 0x0000)
+struct FMediaIOAutoDetectableTimecodeFormat_Backup final
+{
+public:
+	EMediaIOTimecodeFormat                        TimecodeFormat;                                    // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAutoDetect;                                       // 0x0004(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FMediaIOAutoDetectableTimecodeFormat_Backup) == 0x000004, "Wrong alignment on FMediaIOAutoDetectableTimecodeFormat_Backup");
+static_assert(sizeof(FMediaIOAutoDetectableTimecodeFormat_Backup) == 0x000008, "Wrong size on FMediaIOAutoDetectableTimecodeFormat_Backup");
+static_assert(offsetof(FMediaIOAutoDetectableTimecodeFormat_Backup, TimecodeFormat) == 0x000000, "Member 'FMediaIOAutoDetectableTimecodeFormat_Backup::TimecodeFormat' has a wrong offset!");
+static_assert(offsetof(FMediaIOAutoDetectableTimecodeFormat_Backup, bAutoDetect) == 0x000004, "Member 'FMediaIOAutoDetectableTimecodeFormat_Backup::bAutoDetect' has a wrong offset!");
+
 // ScriptStruct MediaIOCore.MediaIODevice
 // 0x000C (0x000C - 0x0000)
 struct FMediaIODevice final
@@ -209,51 +254,6 @@ static_assert(sizeof(FMediaIOConfiguration) == 0x00003C, "Wrong size on FMediaIO
 static_assert(offsetof(FMediaIOConfiguration, bIsInput) == 0x000000, "Member 'FMediaIOConfiguration::bIsInput' has a wrong offset!");
 static_assert(offsetof(FMediaIOConfiguration, MediaConnection) == 0x000004, "Member 'FMediaIOConfiguration::MediaConnection' has a wrong offset!");
 static_assert(offsetof(FMediaIOConfiguration, MediaMode) == 0x000024, "Member 'FMediaIOConfiguration::MediaMode' has a wrong offset!");
-
-// ScriptStruct MediaIOCore.MediaCaptureOptions
-// 0x0018 (0x0018 - 0x0000)
-struct FMediaCaptureOptions final
-{
-public:
-	EMediaCaptureOverrunAction                    OverrunAction;                                     // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EMediaCaptureCroppingType                     Crop;                                              // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FIntPoint                              CustomCapturePoint;                                // 0x0004(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bResizeSourceBuffer;                               // 0x000C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bSkipFrameWhenRunningExpensiveTasks;               // 0x000D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bConvertToDesiredPixelFormat;                      // 0x000E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bForceAlphaToOneOnConversion;                      // 0x000F(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bApplyLinearToSRGBConversion;                      // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAutostopOnCapture;                                // 0x0011(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         NumberOfFramesToCapture;                           // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FMediaCaptureOptions) == 0x000004, "Wrong alignment on FMediaCaptureOptions");
-static_assert(sizeof(FMediaCaptureOptions) == 0x000018, "Wrong size on FMediaCaptureOptions");
-static_assert(offsetof(FMediaCaptureOptions, OverrunAction) == 0x000000, "Member 'FMediaCaptureOptions::OverrunAction' has a wrong offset!");
-static_assert(offsetof(FMediaCaptureOptions, Crop) == 0x000001, "Member 'FMediaCaptureOptions::Crop' has a wrong offset!");
-static_assert(offsetof(FMediaCaptureOptions, CustomCapturePoint) == 0x000004, "Member 'FMediaCaptureOptions::CustomCapturePoint' has a wrong offset!");
-static_assert(offsetof(FMediaCaptureOptions, bResizeSourceBuffer) == 0x00000C, "Member 'FMediaCaptureOptions::bResizeSourceBuffer' has a wrong offset!");
-static_assert(offsetof(FMediaCaptureOptions, bSkipFrameWhenRunningExpensiveTasks) == 0x00000D, "Member 'FMediaCaptureOptions::bSkipFrameWhenRunningExpensiveTasks' has a wrong offset!");
-static_assert(offsetof(FMediaCaptureOptions, bConvertToDesiredPixelFormat) == 0x00000E, "Member 'FMediaCaptureOptions::bConvertToDesiredPixelFormat' has a wrong offset!");
-static_assert(offsetof(FMediaCaptureOptions, bForceAlphaToOneOnConversion) == 0x00000F, "Member 'FMediaCaptureOptions::bForceAlphaToOneOnConversion' has a wrong offset!");
-static_assert(offsetof(FMediaCaptureOptions, bApplyLinearToSRGBConversion) == 0x000010, "Member 'FMediaCaptureOptions::bApplyLinearToSRGBConversion' has a wrong offset!");
-static_assert(offsetof(FMediaCaptureOptions, bAutostopOnCapture) == 0x000011, "Member 'FMediaCaptureOptions::bAutostopOnCapture' has a wrong offset!");
-static_assert(offsetof(FMediaCaptureOptions, NumberOfFramesToCapture) == 0x000014, "Member 'FMediaCaptureOptions::NumberOfFramesToCapture' has a wrong offset!");
-
-// ScriptStruct MediaIOCore.MediaIOAutoDetectableTimecodeFormat_Backup
-// 0x0008 (0x0008 - 0x0000)
-struct FMediaIOAutoDetectableTimecodeFormat_Backup final
-{
-public:
-	EMediaIOTimecodeFormat                        TimecodeFormat;                                    // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAutoDetect;                                       // 0x0004(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FMediaIOAutoDetectableTimecodeFormat_Backup) == 0x000004, "Wrong alignment on FMediaIOAutoDetectableTimecodeFormat_Backup");
-static_assert(sizeof(FMediaIOAutoDetectableTimecodeFormat_Backup) == 0x000008, "Wrong size on FMediaIOAutoDetectableTimecodeFormat_Backup");
-static_assert(offsetof(FMediaIOAutoDetectableTimecodeFormat_Backup, TimecodeFormat) == 0x000000, "Member 'FMediaIOAutoDetectableTimecodeFormat_Backup::TimecodeFormat' has a wrong offset!");
-static_assert(offsetof(FMediaIOAutoDetectableTimecodeFormat_Backup, bAutoDetect) == 0x000004, "Member 'FMediaIOAutoDetectableTimecodeFormat_Backup::bAutoDetect' has a wrong offset!");
 
 // ScriptStruct MediaIOCore.MediaIOInputConfiguration
 // 0x0044 (0x0044 - 0x0000)

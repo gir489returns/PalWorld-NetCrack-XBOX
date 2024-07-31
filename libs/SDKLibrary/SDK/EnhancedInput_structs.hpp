@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "InputCore_structs.hpp"
-#include "Slate_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Slate_structs.hpp"
 
 
 namespace SDK
@@ -140,22 +140,30 @@ enum class ETriggerEventsSupported : uint8
 	ETriggerEventsSupported_MAX              = 8,
 };
 
-// ScriptStruct EnhancedInput.BlueprintEnhancedInputActionBinding
-// 0x0018 (0x0018 - 0x0000)
-struct FBlueprintEnhancedInputActionBinding final
+// ScriptStruct EnhancedInput.InputActionInstance
+// 0x0060 (0x0060 - 0x0000)
+struct FInputActionInstance final
 {
 public:
-	class UInputAction*                           InputAction;                                       // 0x0000(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ETriggerEvent                                 TriggerEvent;                                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   FunctionNameToBind;                                // 0x000C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UInputAction*                           SourceAction;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_8[0xB];                                        // 0x0008(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
+	ETriggerEvent                                 TriggerEvent;                                      // 0x0013(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         LastTriggeredWorldTime;                            // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<class UInputTrigger*>                  Triggers;                                          // 0x0018(0x0010)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	TArray<class UInputModifier*>                 Modifiers;                                         // 0x0028(0x0010)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	uint8                                         Pad_38[0x20];                                      // 0x0038(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ElapsedProcessedTime;                              // 0x0058(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         ElapsedTriggeredTime;                              // 0x005C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FBlueprintEnhancedInputActionBinding) == 0x000008, "Wrong alignment on FBlueprintEnhancedInputActionBinding");
-static_assert(sizeof(FBlueprintEnhancedInputActionBinding) == 0x000018, "Wrong size on FBlueprintEnhancedInputActionBinding");
-static_assert(offsetof(FBlueprintEnhancedInputActionBinding, InputAction) == 0x000000, "Member 'FBlueprintEnhancedInputActionBinding::InputAction' has a wrong offset!");
-static_assert(offsetof(FBlueprintEnhancedInputActionBinding, TriggerEvent) == 0x000008, "Member 'FBlueprintEnhancedInputActionBinding::TriggerEvent' has a wrong offset!");
-static_assert(offsetof(FBlueprintEnhancedInputActionBinding, FunctionNameToBind) == 0x00000C, "Member 'FBlueprintEnhancedInputActionBinding::FunctionNameToBind' has a wrong offset!");
+static_assert(alignof(FInputActionInstance) == 0x000008, "Wrong alignment on FInputActionInstance");
+static_assert(sizeof(FInputActionInstance) == 0x000060, "Wrong size on FInputActionInstance");
+static_assert(offsetof(FInputActionInstance, SourceAction) == 0x000000, "Member 'FInputActionInstance::SourceAction' has a wrong offset!");
+static_assert(offsetof(FInputActionInstance, TriggerEvent) == 0x000013, "Member 'FInputActionInstance::TriggerEvent' has a wrong offset!");
+static_assert(offsetof(FInputActionInstance, LastTriggeredWorldTime) == 0x000014, "Member 'FInputActionInstance::LastTriggeredWorldTime' has a wrong offset!");
+static_assert(offsetof(FInputActionInstance, Triggers) == 0x000018, "Member 'FInputActionInstance::Triggers' has a wrong offset!");
+static_assert(offsetof(FInputActionInstance, Modifiers) == 0x000028, "Member 'FInputActionInstance::Modifiers' has a wrong offset!");
+static_assert(offsetof(FInputActionInstance, ElapsedProcessedTime) == 0x000058, "Member 'FInputActionInstance::ElapsedProcessedTime' has a wrong offset!");
+static_assert(offsetof(FInputActionInstance, ElapsedTriggeredTime) == 0x00005C, "Member 'FInputActionInstance::ElapsedTriggeredTime' has a wrong offset!");
 
 // ScriptStruct EnhancedInput.InputActionValue
 // 0x0020 (0x0020 - 0x0000)
@@ -222,6 +230,23 @@ static_assert(offsetof(FMappingQueryIssue, Issue) == 0x000000, "Member 'FMapping
 static_assert(offsetof(FMappingQueryIssue, BlockingContext) == 0x000008, "Member 'FMappingQueryIssue::BlockingContext' has a wrong offset!");
 static_assert(offsetof(FMappingQueryIssue, BlockingAction) == 0x000010, "Member 'FMappingQueryIssue::BlockingAction' has a wrong offset!");
 
+// ScriptStruct EnhancedInput.BlueprintEnhancedInputActionBinding
+// 0x0018 (0x0018 - 0x0000)
+struct FBlueprintEnhancedInputActionBinding final
+{
+public:
+	class UInputAction*                           InputAction;                                       // 0x0000(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ETriggerEvent                                 TriggerEvent;                                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   FunctionNameToBind;                                // 0x000C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FBlueprintEnhancedInputActionBinding) == 0x000008, "Wrong alignment on FBlueprintEnhancedInputActionBinding");
+static_assert(sizeof(FBlueprintEnhancedInputActionBinding) == 0x000018, "Wrong size on FBlueprintEnhancedInputActionBinding");
+static_assert(offsetof(FBlueprintEnhancedInputActionBinding, InputAction) == 0x000000, "Member 'FBlueprintEnhancedInputActionBinding::InputAction' has a wrong offset!");
+static_assert(offsetof(FBlueprintEnhancedInputActionBinding, TriggerEvent) == 0x000008, "Member 'FBlueprintEnhancedInputActionBinding::TriggerEvent' has a wrong offset!");
+static_assert(offsetof(FBlueprintEnhancedInputActionBinding, FunctionNameToBind) == 0x00000C, "Member 'FBlueprintEnhancedInputActionBinding::FunctionNameToBind' has a wrong offset!");
+
 // ScriptStruct EnhancedInput.ModifyContextOptions
 // 0x0001 (0x0001 - 0x0000)
 struct FModifyContextOptions final
@@ -242,31 +267,6 @@ public:
 };
 static_assert(alignof(FInjectedInputArray) == 0x000008, "Wrong alignment on FInjectedInputArray");
 static_assert(sizeof(FInjectedInputArray) == 0x000010, "Wrong size on FInjectedInputArray");
-
-// ScriptStruct EnhancedInput.InputActionInstance
-// 0x0060 (0x0060 - 0x0000)
-struct FInputActionInstance final
-{
-public:
-	class UInputAction*                           SourceAction;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_8[0xB];                                        // 0x0008(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
-	ETriggerEvent                                 TriggerEvent;                                      // 0x0013(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         LastTriggeredWorldTime;                            // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<class UInputTrigger*>                  Triggers;                                          // 0x0018(0x0010)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	TArray<class UInputModifier*>                 Modifiers;                                         // 0x0028(0x0010)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, ContainsInstancedReference, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	uint8                                         Pad_38[0x20];                                      // 0x0038(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ElapsedProcessedTime;                              // 0x0058(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         ElapsedTriggeredTime;                              // 0x005C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-};
-static_assert(alignof(FInputActionInstance) == 0x000008, "Wrong alignment on FInputActionInstance");
-static_assert(sizeof(FInputActionInstance) == 0x000060, "Wrong size on FInputActionInstance");
-static_assert(offsetof(FInputActionInstance, SourceAction) == 0x000000, "Member 'FInputActionInstance::SourceAction' has a wrong offset!");
-static_assert(offsetof(FInputActionInstance, TriggerEvent) == 0x000013, "Member 'FInputActionInstance::TriggerEvent' has a wrong offset!");
-static_assert(offsetof(FInputActionInstance, LastTriggeredWorldTime) == 0x000014, "Member 'FInputActionInstance::LastTriggeredWorldTime' has a wrong offset!");
-static_assert(offsetof(FInputActionInstance, Triggers) == 0x000018, "Member 'FInputActionInstance::Triggers' has a wrong offset!");
-static_assert(offsetof(FInputActionInstance, Modifiers) == 0x000028, "Member 'FInputActionInstance::Modifiers' has a wrong offset!");
-static_assert(offsetof(FInputActionInstance, ElapsedProcessedTime) == 0x000058, "Member 'FInputActionInstance::ElapsedProcessedTime' has a wrong offset!");
-static_assert(offsetof(FInputActionInstance, ElapsedTriggeredTime) == 0x00005C, "Member 'FInputActionInstance::ElapsedTriggeredTime' has a wrong offset!");
 
 // ScriptStruct EnhancedInput.BlueprintInputDebugKeyDelegateBinding
 // 0x0030 (0x0030 - 0x0000)

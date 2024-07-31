@@ -67,33 +67,25 @@ enum class EWaterBrushFalloffMode : uint8
 	EWaterBrushFalloffMode_MAX               = 2,
 };
 
-// ScriptStruct Water.GerstnerWave
-// 0x0048 (0x0048 - 0x0000)
-struct FGerstnerWave final
+// ScriptStruct Water.GerstnerWaveOctave
+// 0x0014 (0x0014 - 0x0000)
+struct FGerstnerWaveOctave final
 {
 public:
-	float                                         WaveLength;                                        // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Amplitude;                                         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Steepness;                                         // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                Direction;                                         // 0x0010(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              WaveVector;                                        // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WaveSpeed;                                         // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WKA;                                               // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Q;                                                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PhaseOffset;                                       // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NumWaves;                                          // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AmplitudeScale;                                    // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MainDirection;                                     // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SpreadAngle;                                       // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUniformSpread;                                    // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FGerstnerWave) == 0x000008, "Wrong alignment on FGerstnerWave");
-static_assert(sizeof(FGerstnerWave) == 0x000048, "Wrong size on FGerstnerWave");
-static_assert(offsetof(FGerstnerWave, WaveLength) == 0x000000, "Member 'FGerstnerWave::WaveLength' has a wrong offset!");
-static_assert(offsetof(FGerstnerWave, Amplitude) == 0x000004, "Member 'FGerstnerWave::Amplitude' has a wrong offset!");
-static_assert(offsetof(FGerstnerWave, Steepness) == 0x000008, "Member 'FGerstnerWave::Steepness' has a wrong offset!");
-static_assert(offsetof(FGerstnerWave, Direction) == 0x000010, "Member 'FGerstnerWave::Direction' has a wrong offset!");
-static_assert(offsetof(FGerstnerWave, WaveVector) == 0x000028, "Member 'FGerstnerWave::WaveVector' has a wrong offset!");
-static_assert(offsetof(FGerstnerWave, WaveSpeed) == 0x000038, "Member 'FGerstnerWave::WaveSpeed' has a wrong offset!");
-static_assert(offsetof(FGerstnerWave, WKA) == 0x00003C, "Member 'FGerstnerWave::WKA' has a wrong offset!");
-static_assert(offsetof(FGerstnerWave, Q) == 0x000040, "Member 'FGerstnerWave::Q' has a wrong offset!");
-static_assert(offsetof(FGerstnerWave, PhaseOffset) == 0x000044, "Member 'FGerstnerWave::PhaseOffset' has a wrong offset!");
+static_assert(alignof(FGerstnerWaveOctave) == 0x000004, "Wrong alignment on FGerstnerWaveOctave");
+static_assert(sizeof(FGerstnerWaveOctave) == 0x000014, "Wrong size on FGerstnerWaveOctave");
+static_assert(offsetof(FGerstnerWaveOctave, NumWaves) == 0x000000, "Member 'FGerstnerWaveOctave::NumWaves' has a wrong offset!");
+static_assert(offsetof(FGerstnerWaveOctave, AmplitudeScale) == 0x000004, "Member 'FGerstnerWaveOctave::AmplitudeScale' has a wrong offset!");
+static_assert(offsetof(FGerstnerWaveOctave, MainDirection) == 0x000008, "Member 'FGerstnerWaveOctave::MainDirection' has a wrong offset!");
+static_assert(offsetof(FGerstnerWaveOctave, SpreadAngle) == 0x00000C, "Member 'FGerstnerWaveOctave::SpreadAngle' has a wrong offset!");
+static_assert(offsetof(FGerstnerWaveOctave, bUniformSpread) == 0x000010, "Member 'FGerstnerWaveOctave::bUniformSpread' has a wrong offset!");
 
 // ScriptStruct Water.SphericalPontoon
 // 0x02D0 (0x02D0 - 0x0000)
@@ -405,25 +397,33 @@ static_assert(offsetof(FWaterCurveSettings, ChannelEdgeOffset) == 0x000010, "Mem
 static_assert(offsetof(FWaterCurveSettings, ChannelDepth) == 0x000014, "Member 'FWaterCurveSettings::ChannelDepth' has a wrong offset!");
 static_assert(offsetof(FWaterCurveSettings, CurveRampWidth) == 0x000018, "Member 'FWaterCurveSettings::CurveRampWidth' has a wrong offset!");
 
-// ScriptStruct Water.GerstnerWaveOctave
-// 0x0014 (0x0014 - 0x0000)
-struct FGerstnerWaveOctave final
+// ScriptStruct Water.GerstnerWave
+// 0x0048 (0x0048 - 0x0000)
+struct FGerstnerWave final
 {
 public:
-	int32                                         NumWaves;                                          // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AmplitudeScale;                                    // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MainDirection;                                     // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SpreadAngle;                                       // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUniformSpread;                                    // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	float                                         WaveLength;                                        // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Amplitude;                                         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Steepness;                                         // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                Direction;                                         // 0x0010(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              WaveVector;                                        // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WaveSpeed;                                         // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WKA;                                               // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Q;                                                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PhaseOffset;                                       // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FGerstnerWaveOctave) == 0x000004, "Wrong alignment on FGerstnerWaveOctave");
-static_assert(sizeof(FGerstnerWaveOctave) == 0x000014, "Wrong size on FGerstnerWaveOctave");
-static_assert(offsetof(FGerstnerWaveOctave, NumWaves) == 0x000000, "Member 'FGerstnerWaveOctave::NumWaves' has a wrong offset!");
-static_assert(offsetof(FGerstnerWaveOctave, AmplitudeScale) == 0x000004, "Member 'FGerstnerWaveOctave::AmplitudeScale' has a wrong offset!");
-static_assert(offsetof(FGerstnerWaveOctave, MainDirection) == 0x000008, "Member 'FGerstnerWaveOctave::MainDirection' has a wrong offset!");
-static_assert(offsetof(FGerstnerWaveOctave, SpreadAngle) == 0x00000C, "Member 'FGerstnerWaveOctave::SpreadAngle' has a wrong offset!");
-static_assert(offsetof(FGerstnerWaveOctave, bUniformSpread) == 0x000010, "Member 'FGerstnerWaveOctave::bUniformSpread' has a wrong offset!");
+static_assert(alignof(FGerstnerWave) == 0x000008, "Wrong alignment on FGerstnerWave");
+static_assert(sizeof(FGerstnerWave) == 0x000048, "Wrong size on FGerstnerWave");
+static_assert(offsetof(FGerstnerWave, WaveLength) == 0x000000, "Member 'FGerstnerWave::WaveLength' has a wrong offset!");
+static_assert(offsetof(FGerstnerWave, Amplitude) == 0x000004, "Member 'FGerstnerWave::Amplitude' has a wrong offset!");
+static_assert(offsetof(FGerstnerWave, Steepness) == 0x000008, "Member 'FGerstnerWave::Steepness' has a wrong offset!");
+static_assert(offsetof(FGerstnerWave, Direction) == 0x000010, "Member 'FGerstnerWave::Direction' has a wrong offset!");
+static_assert(offsetof(FGerstnerWave, WaveVector) == 0x000028, "Member 'FGerstnerWave::WaveVector' has a wrong offset!");
+static_assert(offsetof(FGerstnerWave, WaveSpeed) == 0x000038, "Member 'FGerstnerWave::WaveSpeed' has a wrong offset!");
+static_assert(offsetof(FGerstnerWave, WKA) == 0x00003C, "Member 'FGerstnerWave::WKA' has a wrong offset!");
+static_assert(offsetof(FGerstnerWave, Q) == 0x000040, "Member 'FGerstnerWave::Q' has a wrong offset!");
+static_assert(offsetof(FGerstnerWave, PhaseOffset) == 0x000044, "Member 'FGerstnerWave::PhaseOffset' has a wrong offset!");
 
 // ScriptStruct Water.UnderwaterPostProcessSettings
 // 0x0700 (0x0700 - 0x0000)

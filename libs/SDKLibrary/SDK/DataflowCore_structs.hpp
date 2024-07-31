@@ -14,19 +14,6 @@
 namespace SDK
 {
 
-// ScriptStruct DataflowCore.DataflowNode
-// 0x00D0 (0x00D0 - 0x0000)
-struct alignas(0x08) FDataflowNode
-{
-public:
-	uint8                                         Pad_0[0xC8];                                       // 0x0000(0x00C8)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bActive;                                           // 0x00C8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FDataflowNode) == 0x000008, "Wrong alignment on FDataflowNode");
-static_assert(sizeof(FDataflowNode) == 0x0000D0, "Wrong size on FDataflowNode");
-static_assert(offsetof(FDataflowNode, bActive) == 0x0000C8, "Member 'FDataflowNode::bActive' has a wrong offset!");
-
 // ScriptStruct DataflowCore.DataflowConnection
 // 0x0040 (0x0040 - 0x0000)
 struct alignas(0x08) FDataflowConnection
@@ -46,6 +33,19 @@ public:
 };
 static_assert(alignof(FDataflowInput) == 0x000008, "Wrong alignment on FDataflowInput");
 static_assert(sizeof(FDataflowInput) == 0x000048, "Wrong size on FDataflowInput");
+
+// ScriptStruct DataflowCore.DataflowNode
+// 0x00D0 (0x00D0 - 0x0000)
+struct alignas(0x08) FDataflowNode
+{
+public:
+	uint8                                         Pad_0[0xC8];                                       // 0x0000(0x00C8)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bActive;                                           // 0x00C8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FDataflowNode) == 0x000008, "Wrong alignment on FDataflowNode");
+static_assert(sizeof(FDataflowNode) == 0x0000D0, "Wrong size on FDataflowNode");
+static_assert(offsetof(FDataflowNode, bActive) == 0x0000C8, "Member 'FDataflowNode::bActive' has a wrong offset!");
 
 // ScriptStruct DataflowCore.DataflowOutput
 // 0x0028 (0x0068 - 0x0040)

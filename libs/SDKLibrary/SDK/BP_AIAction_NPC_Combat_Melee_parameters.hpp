@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "EPal_NPC_CombatMeleeState_structs.hpp"
 #include "AIModule_structs.hpp"
+#include "EPal_NPC_CombatMeleeState_structs.hpp"
 
 
 namespace SDK::Params

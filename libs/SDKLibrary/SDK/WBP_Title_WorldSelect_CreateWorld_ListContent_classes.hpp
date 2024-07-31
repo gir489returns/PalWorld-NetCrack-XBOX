@@ -33,7 +33,6 @@ public:
 	struct FDataTableRowHandle                    MsgId;                                             // 0x02C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void ToMaxSaveDataMode();
 	void SetupByLocalWorldDisplayData(const class FString& SaveDirectoryName, const struct FPalUILocalWorldDisplayData& DisplayData);
 	void OnClicked__DelegateSignature(class UWBP_Title_WorldSelect_CreateWorld_ListContent_C* Widget);
 	void GetBindedSaveDirectoryName(class FString* DirectoryName);
@@ -41,6 +40,7 @@ public:
 	void BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 	void BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 	void BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void ToMaxSaveDataMode();
 
 public:
 	static class UClass* StaticClass()

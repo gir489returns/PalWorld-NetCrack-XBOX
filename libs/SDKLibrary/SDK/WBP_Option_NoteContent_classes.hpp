@@ -31,10 +31,10 @@ public:
 	double                                        New_Offset;                                        // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void SetNoteContent(class UPalNoteData* NoteData, const class FText& Desc);
 	void ExecuteUbergraph_WBP_Option_NoteContent(int32 EntryPoint);
 	void ChangeOffset(double NewOffset);
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 
 public:
 	static class UClass* StaticClass()

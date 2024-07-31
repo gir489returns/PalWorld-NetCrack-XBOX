@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "CinematicCamera_structs.hpp"
 #include "CameraCalibrationCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "CinematicCamera_structs.hpp"
 
 
 namespace SDK::Params

@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Title_WorldSettings.WBP_Title_WorldSettings_C
-// 0x05D8 (0x09E0 - 0x0408)
+// 0x05E8 (0x09F0 - 0x0408)
 class UWBP_Title_WorldSettings_C final : public UPalUserWidget
 {
 public:
@@ -82,21 +82,22 @@ public:
 	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_PlayerStomachDecreaseRate;           // 0x05C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_Randomizer;                          // 0x05C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_RandomizerSeed;                      // 0x05D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_WorldName;                           // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_             OnClickedCancel;                                   // 0x05E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnClickedConfirm;                                  // 0x05F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                          IsCustomDifficultySetting;                         // 0x0600(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_601[0x3];                                      // 0x0601(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalOptionWorldStaticSettings          SatticWorldSetting;                                // 0x0604(0x0100)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	uint8                                         Pad_704[0x4];                                      // 0x0704(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalOptionWorldSettings                CachedOriginalWorldSetting;                        // 0x0708(0x0158)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FPalOptionWorldSettings                EditedWorldSetting;                                // 0x0860(0x0158)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          IsEditedSettingFlag;                               // 0x09B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsEditedFromPreset;                                // 0x09B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Is_New_World;                                      // 0x09BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9BB[0x5];                                      // 0x09BB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	FMulticastInlineDelegateProperty_             OnClickedWorldNameInputButton;                     // 0x09C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_             OnClickedRandomizerSeedInputButton;                // 0x09D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_SupplyDropSpan;                      // 0x05D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Title_WorldSettings_ListContent_C* WorldSettings_WorldName;                           // 0x05E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_             OnClickedCancel;                                   // 0x05E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnClickedConfirm;                                  // 0x05F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          IsCustomDifficultySetting;                         // 0x0608(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_609[0x3];                                      // 0x0609(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalOptionWorldStaticSettings          SatticWorldSetting;                                // 0x060C(0x0108)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	uint8                                         Pad_714[0x4];                                      // 0x0714(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalOptionWorldSettings                CachedOriginalWorldSetting;                        // 0x0718(0x0158)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPalOptionWorldSettings                EditedWorldSetting;                                // 0x0870(0x0158)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          IsEditedSettingFlag;                               // 0x09C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEditedFromPreset;                                // 0x09C9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Is_New_World;                                      // 0x09CA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9CB[0x5];                                      // 0x09CB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             OnClickedWorldNameInputButton;                     // 0x09D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_             OnClickedRandomizerSeedInputButton;                // 0x09E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void UpdateRandomizerSeedVisibility();
@@ -135,6 +136,7 @@ public:
 	void Construct();
 	void CancelTextEdit();
 	void BndEvt__WBP_Title_WorldSettings_WorldSettings_WorldName_K2Node_ComponentBoundEvent_31_OnClickedSettingButton__DelegateSignature();
+	void BndEvt__WBP_Title_WorldSettings_WorldSettings_SupplyDropSpan_K2Node_ComponentBoundEvent_45_OnChangedValue__DelegateSignature(double NewValue);
 	void BndEvt__WBP_Title_WorldSettings_WorldSettings_RandomizerSeed_K2Node_ComponentBoundEvent_43_OnClickedSettingButton__DelegateSignature();
 	void BndEvt__WBP_Title_WorldSettings_WorldSettings_Randomizer_K2Node_ComponentBoundEvent_42_OnChangedSelectIndex__DelegateSignature(int32 NewIndex);
 	void BndEvt__WBP_Title_WorldSettings_WorldSettings_PlayerStomachDecreaseRate_K2Node_ComponentBoundEvent_22_OnChangedValue__DelegateSignature(double NewValue);
@@ -194,7 +196,7 @@ public:
 	}
 };
 static_assert(alignof(UWBP_Title_WorldSettings_C) == 0x000008, "Wrong alignment on UWBP_Title_WorldSettings_C");
-static_assert(sizeof(UWBP_Title_WorldSettings_C) == 0x0009E0, "Wrong size on UWBP_Title_WorldSettings_C");
+static_assert(sizeof(UWBP_Title_WorldSettings_C) == 0x0009F0, "Wrong size on UWBP_Title_WorldSettings_C");
 static_assert(offsetof(UWBP_Title_WorldSettings_C, UberGraphFrame) == 0x000408, "Member 'UWBP_Title_WorldSettings_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_Title_WorldSettings_C, Anm_DefaultToDetail) == 0x000410, "Member 'UWBP_Title_WorldSettings_C::Anm_DefaultToDetail' has a wrong offset!");
 static_assert(offsetof(UWBP_Title_WorldSettings_C, Canvas_DifficultySetting) == 0x000418, "Member 'UWBP_Title_WorldSettings_C::Canvas_DifficultySetting' has a wrong offset!");
@@ -253,18 +255,19 @@ static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PlayerStaminaDe
 static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_PlayerStomachDecreaseRate) == 0x0005C0, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_PlayerStomachDecreaseRate' has a wrong offset!");
 static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_Randomizer) == 0x0005C8, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_Randomizer' has a wrong offset!");
 static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_RandomizerSeed) == 0x0005D0, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_RandomizerSeed' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_WorldName) == 0x0005D8, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_WorldName' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, OnClickedCancel) == 0x0005E0, "Member 'UWBP_Title_WorldSettings_C::OnClickedCancel' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, OnClickedConfirm) == 0x0005F0, "Member 'UWBP_Title_WorldSettings_C::OnClickedConfirm' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, IsCustomDifficultySetting) == 0x000600, "Member 'UWBP_Title_WorldSettings_C::IsCustomDifficultySetting' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, SatticWorldSetting) == 0x000604, "Member 'UWBP_Title_WorldSettings_C::SatticWorldSetting' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, CachedOriginalWorldSetting) == 0x000708, "Member 'UWBP_Title_WorldSettings_C::CachedOriginalWorldSetting' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, EditedWorldSetting) == 0x000860, "Member 'UWBP_Title_WorldSettings_C::EditedWorldSetting' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, IsEditedSettingFlag) == 0x0009B8, "Member 'UWBP_Title_WorldSettings_C::IsEditedSettingFlag' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, IsEditedFromPreset) == 0x0009B9, "Member 'UWBP_Title_WorldSettings_C::IsEditedFromPreset' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, Is_New_World) == 0x0009BA, "Member 'UWBP_Title_WorldSettings_C::Is_New_World' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, OnClickedWorldNameInputButton) == 0x0009C0, "Member 'UWBP_Title_WorldSettings_C::OnClickedWorldNameInputButton' has a wrong offset!");
-static_assert(offsetof(UWBP_Title_WorldSettings_C, OnClickedRandomizerSeedInputButton) == 0x0009D0, "Member 'UWBP_Title_WorldSettings_C::OnClickedRandomizerSeedInputButton' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_SupplyDropSpan) == 0x0005D8, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_SupplyDropSpan' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, WorldSettings_WorldName) == 0x0005E0, "Member 'UWBP_Title_WorldSettings_C::WorldSettings_WorldName' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, OnClickedCancel) == 0x0005E8, "Member 'UWBP_Title_WorldSettings_C::OnClickedCancel' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, OnClickedConfirm) == 0x0005F8, "Member 'UWBP_Title_WorldSettings_C::OnClickedConfirm' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, IsCustomDifficultySetting) == 0x000608, "Member 'UWBP_Title_WorldSettings_C::IsCustomDifficultySetting' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, SatticWorldSetting) == 0x00060C, "Member 'UWBP_Title_WorldSettings_C::SatticWorldSetting' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, CachedOriginalWorldSetting) == 0x000718, "Member 'UWBP_Title_WorldSettings_C::CachedOriginalWorldSetting' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, EditedWorldSetting) == 0x000870, "Member 'UWBP_Title_WorldSettings_C::EditedWorldSetting' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, IsEditedSettingFlag) == 0x0009C8, "Member 'UWBP_Title_WorldSettings_C::IsEditedSettingFlag' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, IsEditedFromPreset) == 0x0009C9, "Member 'UWBP_Title_WorldSettings_C::IsEditedFromPreset' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, Is_New_World) == 0x0009CA, "Member 'UWBP_Title_WorldSettings_C::Is_New_World' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, OnClickedWorldNameInputButton) == 0x0009D0, "Member 'UWBP_Title_WorldSettings_C::OnClickedWorldNameInputButton' has a wrong offset!");
+static_assert(offsetof(UWBP_Title_WorldSettings_C, OnClickedRandomizerSeedInputButton) == 0x0009E0, "Member 'UWBP_Title_WorldSettings_C::OnClickedRandomizerSeedInputButton' has a wrong offset!");
 
 }
 

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Pal_structs.hpp"
 #include "BP_AINPC_CombatState_Base_classes.hpp"
+#include "Pal_structs.hpp"
 
 
 namespace SDK

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "UMG_classes.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK

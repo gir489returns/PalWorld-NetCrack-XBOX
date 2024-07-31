@@ -104,23 +104,6 @@ static_assert(sizeof(UAudioAnalyzer) == 0x000090, "Wrong size on UAudioAnalyzer"
 static_assert(offsetof(UAudioAnalyzer, AudioBus) == 0x000028, "Member 'UAudioAnalyzer::AudioBus' has a wrong offset!");
 static_assert(offsetof(UAudioAnalyzer, AudioAnalyzerSubsystem) == 0x000038, "Member 'UAudioAnalyzer::AudioAnalyzerSubsystem' has a wrong offset!");
 
-// Class AudioAnalyzer.AudioAnalyzerNRTSettings
-// 0x0000 (0x0028 - 0x0028)
-class UAudioAnalyzerNRTSettings : public UAudioAnalyzerAssetBase
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AudioAnalyzerNRTSettings">();
-	}
-	static class UAudioAnalyzerNRTSettings* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAudioAnalyzerNRTSettings>();
-	}
-};
-static_assert(alignof(UAudioAnalyzerNRTSettings) == 0x000008, "Wrong alignment on UAudioAnalyzerNRTSettings");
-static_assert(sizeof(UAudioAnalyzerNRTSettings) == 0x000028, "Wrong size on UAudioAnalyzerNRTSettings");
-
 // Class AudioAnalyzer.AudioAnalyzerSubsystem
 // 0x0020 (0x0050 - 0x0030)
 class UAudioAnalyzerSubsystem final : public UEngineSubsystem
@@ -142,6 +125,23 @@ public:
 static_assert(alignof(UAudioAnalyzerSubsystem) == 0x000008, "Wrong alignment on UAudioAnalyzerSubsystem");
 static_assert(sizeof(UAudioAnalyzerSubsystem) == 0x000050, "Wrong size on UAudioAnalyzerSubsystem");
 static_assert(offsetof(UAudioAnalyzerSubsystem, AudioAnalyzers) == 0x000030, "Member 'UAudioAnalyzerSubsystem::AudioAnalyzers' has a wrong offset!");
+
+// Class AudioAnalyzer.AudioAnalyzerNRTSettings
+// 0x0000 (0x0028 - 0x0028)
+class UAudioAnalyzerNRTSettings : public UAudioAnalyzerAssetBase
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"AudioAnalyzerNRTSettings">();
+	}
+	static class UAudioAnalyzerNRTSettings* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAudioAnalyzerNRTSettings>();
+	}
+};
+static_assert(alignof(UAudioAnalyzerNRTSettings) == 0x000008, "Wrong alignment on UAudioAnalyzerNRTSettings");
+static_assert(sizeof(UAudioAnalyzerNRTSettings) == 0x000028, "Wrong size on UAudioAnalyzerNRTSettings");
 
 }
 

@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function MovieSceneTracks.MovieSceneTransformOrigin.BP_GetTransformOrigin
+// (Event, Protected, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// struct FTransform                       ReturnValue                                            (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FTransform IMovieSceneTransformOrigin::BP_GetTransformOrigin() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MovieSceneTransformOrigin", "BP_GetTransformOrigin");
+
+	Params::MovieSceneTransformOrigin_BP_GetTransformOrigin Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
 // Function MovieSceneTracks.MovieSceneParameterSection.AddBoolParameterKey
 // (Final, Native, Public, HasDefaults, BlueprintCallable)
 // Parameters:
@@ -382,26 +402,6 @@ void UMovieSceneParameterSection::GetParameterNames(TSet<class FName>* Parameter
 
 	if (ParameterNames != nullptr)
 		*ParameterNames = std::move(Parms.ParameterNames);
-}
-
-
-// Function MovieSceneTracks.MovieSceneTransformOrigin.BP_GetTransformOrigin
-// (Event, Protected, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// struct FTransform                       ReturnValue                                            (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FTransform IMovieSceneTransformOrigin::BP_GetTransformOrigin() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneTransformOrigin", "BP_GetTransformOrigin");
-
-	Params::MovieSceneTransformOrigin_BP_GetTransformOrigin Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 

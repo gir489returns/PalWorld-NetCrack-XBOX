@@ -17,6 +17,50 @@
 namespace SDK::Params
 {
 
+// Function GeometryFramework.DynamicMesh.Reset
+// 0x0008 (0x0008 - 0x0000)
+struct DynamicMesh_Reset final
+{
+public:
+	class UDynamicMesh*                           ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(DynamicMesh_Reset) == 0x000008, "Wrong alignment on DynamicMesh_Reset");
+static_assert(sizeof(DynamicMesh_Reset) == 0x000008, "Wrong size on DynamicMesh_Reset");
+static_assert(offsetof(DynamicMesh_Reset, ReturnValue) == 0x000000, "Member 'DynamicMesh_Reset::ReturnValue' has a wrong offset!");
+
+// Function GeometryFramework.DynamicMesh.ResetToCube
+// 0x0008 (0x0008 - 0x0000)
+struct DynamicMesh_ResetToCube final
+{
+public:
+	class UDynamicMesh*                           ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(DynamicMesh_ResetToCube) == 0x000008, "Wrong alignment on DynamicMesh_ResetToCube");
+static_assert(sizeof(DynamicMesh_ResetToCube) == 0x000008, "Wrong size on DynamicMesh_ResetToCube");
+static_assert(offsetof(DynamicMesh_ResetToCube, ReturnValue) == 0x000000, "Member 'DynamicMesh_ResetToCube::ReturnValue' has a wrong offset!");
+
+// Function GeometryFramework.DynamicMesh.GetTriangleCount
+// 0x0004 (0x0004 - 0x0000)
+struct DynamicMesh_GetTriangleCount final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(DynamicMesh_GetTriangleCount) == 0x000004, "Wrong alignment on DynamicMesh_GetTriangleCount");
+static_assert(sizeof(DynamicMesh_GetTriangleCount) == 0x000004, "Wrong size on DynamicMesh_GetTriangleCount");
+static_assert(offsetof(DynamicMesh_GetTriangleCount, ReturnValue) == 0x000000, "Member 'DynamicMesh_GetTriangleCount::ReturnValue' has a wrong offset!");
+
+// Function GeometryFramework.DynamicMesh.IsEmpty
+// 0x0001 (0x0001 - 0x0000)
+struct DynamicMesh_IsEmpty final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(DynamicMesh_IsEmpty) == 0x000001, "Wrong alignment on DynamicMesh_IsEmpty");
+static_assert(sizeof(DynamicMesh_IsEmpty) == 0x000001, "Wrong size on DynamicMesh_IsEmpty");
+static_assert(offsetof(DynamicMesh_IsEmpty, ReturnValue) == 0x000000, "Member 'DynamicMesh_IsEmpty::ReturnValue' has a wrong offset!");
+
 // Function GeometryFramework.BaseDynamicMeshComponent.GetDynamicMesh
 // 0x0008 (0x0008 - 0x0000)
 struct BaseDynamicMeshComponent_GetDynamicMesh final
@@ -407,50 +451,6 @@ public:
 static_assert(alignof(DynamicMeshActor_GetDynamicMeshComponent) == 0x000008, "Wrong alignment on DynamicMeshActor_GetDynamicMeshComponent");
 static_assert(sizeof(DynamicMeshActor_GetDynamicMeshComponent) == 0x000008, "Wrong size on DynamicMeshActor_GetDynamicMeshComponent");
 static_assert(offsetof(DynamicMeshActor_GetDynamicMeshComponent, ReturnValue) == 0x000000, "Member 'DynamicMeshActor_GetDynamicMeshComponent::ReturnValue' has a wrong offset!");
-
-// Function GeometryFramework.DynamicMesh.Reset
-// 0x0008 (0x0008 - 0x0000)
-struct DynamicMesh_Reset final
-{
-public:
-	class UDynamicMesh*                           ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(DynamicMesh_Reset) == 0x000008, "Wrong alignment on DynamicMesh_Reset");
-static_assert(sizeof(DynamicMesh_Reset) == 0x000008, "Wrong size on DynamicMesh_Reset");
-static_assert(offsetof(DynamicMesh_Reset, ReturnValue) == 0x000000, "Member 'DynamicMesh_Reset::ReturnValue' has a wrong offset!");
-
-// Function GeometryFramework.DynamicMesh.ResetToCube
-// 0x0008 (0x0008 - 0x0000)
-struct DynamicMesh_ResetToCube final
-{
-public:
-	class UDynamicMesh*                           ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(DynamicMesh_ResetToCube) == 0x000008, "Wrong alignment on DynamicMesh_ResetToCube");
-static_assert(sizeof(DynamicMesh_ResetToCube) == 0x000008, "Wrong size on DynamicMesh_ResetToCube");
-static_assert(offsetof(DynamicMesh_ResetToCube, ReturnValue) == 0x000000, "Member 'DynamicMesh_ResetToCube::ReturnValue' has a wrong offset!");
-
-// Function GeometryFramework.DynamicMesh.GetTriangleCount
-// 0x0004 (0x0004 - 0x0000)
-struct DynamicMesh_GetTriangleCount final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(DynamicMesh_GetTriangleCount) == 0x000004, "Wrong alignment on DynamicMesh_GetTriangleCount");
-static_assert(sizeof(DynamicMesh_GetTriangleCount) == 0x000004, "Wrong size on DynamicMesh_GetTriangleCount");
-static_assert(offsetof(DynamicMesh_GetTriangleCount, ReturnValue) == 0x000000, "Member 'DynamicMesh_GetTriangleCount::ReturnValue' has a wrong offset!");
-
-// Function GeometryFramework.DynamicMesh.IsEmpty
-// 0x0001 (0x0001 - 0x0000)
-struct DynamicMesh_IsEmpty final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(DynamicMesh_IsEmpty) == 0x000001, "Wrong alignment on DynamicMesh_IsEmpty");
-static_assert(sizeof(DynamicMesh_IsEmpty) == 0x000001, "Wrong size on DynamicMesh_IsEmpty");
-static_assert(offsetof(DynamicMesh_IsEmpty, ReturnValue) == 0x000000, "Member 'DynamicMesh_IsEmpty::ReturnValue' has a wrong offset!");
 
 // Function GeometryFramework.DynamicMeshPool.RequestMesh
 // 0x0008 (0x0008 - 0x0000)

@@ -16,17 +16,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_Title_WorldSelect_CreateWorld_ListContent.WBP_Title_WorldSelect_CreateWorld_ListContent_C.ToMaxSaveDataMode
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode final
-{
-public:
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0000(0x0018)()
-};
-static_assert(alignof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode");
-static_assert(sizeof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode) == 0x000018, "Wrong size on WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode");
-static_assert(offsetof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode, CallFunc_GetLocalizedTextFromHandle_Text) == 0x000000, "Member 'WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode::CallFunc_GetLocalizedTextFromHandle_Text' has a wrong offset!");
-
 // Function WBP_Title_WorldSelect_CreateWorld_ListContent.WBP_Title_WorldSelect_CreateWorld_ListContent_C.SetupByLocalWorldDisplayData
 // 0x0068 (0x0068 - 0x0000)
 struct WBP_Title_WorldSelect_CreateWorld_ListContent_C_SetupByLocalWorldDisplayData final
@@ -118,6 +107,17 @@ public:
 static_assert(alignof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_CreateWorld_ListContent_C_BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 static_assert(sizeof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature) == 0x000008, "Wrong size on WBP_Title_WorldSelect_CreateWorld_ListContent_C_BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 static_assert(offsetof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature, Button) == 0x000000, "Member 'WBP_Title_WorldSelect_CreateWorld_ListContent_C_BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature::Button' has a wrong offset!");
+
+// Function WBP_Title_WorldSelect_CreateWorld_ListContent.WBP_Title_WorldSelect_CreateWorld_ListContent_C.ToMaxSaveDataMode
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode final
+{
+public:
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0000(0x0018)()
+};
+static_assert(alignof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode) == 0x000008, "Wrong alignment on WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode");
+static_assert(sizeof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode) == 0x000018, "Wrong size on WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode");
+static_assert(offsetof(WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode, CallFunc_GetLocalizedTextFromHandle_Text) == 0x000000, "Member 'WBP_Title_WorldSelect_CreateWorld_ListContent_C_ToMaxSaveDataMode::CallFunc_GetLocalizedTextFromHandle_Text' has a wrong offset!");
 
 }
 

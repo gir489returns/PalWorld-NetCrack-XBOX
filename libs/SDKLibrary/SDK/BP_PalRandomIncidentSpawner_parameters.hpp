@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
+#include "Pal_structs.hpp"
 #include "F_NPC_PathWalkArray_structs.hpp"
 #include "F_NPC_PathWalkPoint_structs.hpp"
-#include "Pal_structs.hpp"
 
 
 namespace SDK::Params

@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "F_NPC_PathWalkArray_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "F_NPC_PathWalkArray_structs.hpp"
 
 
 namespace SDK

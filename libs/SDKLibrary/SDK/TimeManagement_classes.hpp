@@ -57,6 +57,30 @@ static_assert(alignof(UGenlockedCustomTimeStep) == 0x000008, "Wrong alignment on
 static_assert(sizeof(UGenlockedCustomTimeStep) == 0x000030, "Wrong size on UGenlockedCustomTimeStep");
 static_assert(offsetof(UGenlockedCustomTimeStep, bAutoDetectFormat) == 0x000028, "Member 'UGenlockedCustomTimeStep::bAutoDetectFormat' has a wrong offset!");
 
+// Class TimeManagement.TimeSynchronizationSource
+// 0x0008 (0x0030 - 0x0028)
+class UTimeSynchronizationSource : public UObject
+{
+public:
+	bool                                          bUseForSynchronization;                            // 0x0028(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         FrameOffset;                                       // 0x002C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"TimeSynchronizationSource">();
+	}
+	static class UTimeSynchronizationSource* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UTimeSynchronizationSource>();
+	}
+};
+static_assert(alignof(UTimeSynchronizationSource) == 0x000008, "Wrong alignment on UTimeSynchronizationSource");
+static_assert(sizeof(UTimeSynchronizationSource) == 0x000030, "Wrong size on UTimeSynchronizationSource");
+static_assert(offsetof(UTimeSynchronizationSource, bUseForSynchronization) == 0x000028, "Member 'UTimeSynchronizationSource::bUseForSynchronization' has a wrong offset!");
+static_assert(offsetof(UTimeSynchronizationSource, FrameOffset) == 0x00002C, "Member 'UTimeSynchronizationSource::FrameOffset' has a wrong offset!");
+
 // Class TimeManagement.GenlockedFixedRateCustomTimeStep
 // 0x0020 (0x0050 - 0x0030)
 class UGenlockedFixedRateCustomTimeStep final : public UGenlockedCustomTimeStep
@@ -82,30 +106,6 @@ static_assert(sizeof(UGenlockedFixedRateCustomTimeStep) == 0x000050, "Wrong size
 static_assert(offsetof(UGenlockedFixedRateCustomTimeStep, FrameRate) == 0x000030, "Member 'UGenlockedFixedRateCustomTimeStep::FrameRate' has a wrong offset!");
 static_assert(offsetof(UGenlockedFixedRateCustomTimeStep, bShouldBlock) == 0x000038, "Member 'UGenlockedFixedRateCustomTimeStep::bShouldBlock' has a wrong offset!");
 static_assert(offsetof(UGenlockedFixedRateCustomTimeStep, bForceSingleFrameDeltaTime) == 0x000039, "Member 'UGenlockedFixedRateCustomTimeStep::bForceSingleFrameDeltaTime' has a wrong offset!");
-
-// Class TimeManagement.TimeSynchronizationSource
-// 0x0008 (0x0030 - 0x0028)
-class UTimeSynchronizationSource : public UObject
-{
-public:
-	bool                                          bUseForSynchronization;                            // 0x0028(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         FrameOffset;                                       // 0x002C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"TimeSynchronizationSource">();
-	}
-	static class UTimeSynchronizationSource* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UTimeSynchronizationSource>();
-	}
-};
-static_assert(alignof(UTimeSynchronizationSource) == 0x000008, "Wrong alignment on UTimeSynchronizationSource");
-static_assert(sizeof(UTimeSynchronizationSource) == 0x000030, "Wrong size on UTimeSynchronizationSource");
-static_assert(offsetof(UTimeSynchronizationSource, bUseForSynchronization) == 0x000028, "Member 'UTimeSynchronizationSource::bUseForSynchronization' has a wrong offset!");
-static_assert(offsetof(UTimeSynchronizationSource, FrameOffset) == 0x00002C, "Member 'UTimeSynchronizationSource::FrameOffset' has a wrong offset!");
 
 // Class TimeManagement.GenlockedTimecodeProvider
 // 0x0028 (0x0058 - 0x0030)

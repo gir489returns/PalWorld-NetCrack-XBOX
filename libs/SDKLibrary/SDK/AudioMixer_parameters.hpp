@@ -17,6 +17,32 @@
 namespace SDK::Params
 {
 
+// Function AudioMixer.SubmixEffectReverbPreset.SetSettings
+// 0x0040 (0x0040 - 0x0000)
+struct SubmixEffectReverbPreset_SetSettings final
+{
+public:
+	struct FSubmixEffectReverbSettings            InSettings;                                        // 0x0000(0x0040)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(SubmixEffectReverbPreset_SetSettings) == 0x000004, "Wrong alignment on SubmixEffectReverbPreset_SetSettings");
+static_assert(sizeof(SubmixEffectReverbPreset_SetSettings) == 0x000040, "Wrong size on SubmixEffectReverbPreset_SetSettings");
+static_assert(offsetof(SubmixEffectReverbPreset_SetSettings, InSettings) == 0x000000, "Member 'SubmixEffectReverbPreset_SetSettings::InSettings' has a wrong offset!");
+
+// Function AudioMixer.SubmixEffectReverbPreset.SetSettingsWithReverbEffect
+// 0x0010 (0x0010 - 0x0000)
+struct SubmixEffectReverbPreset_SetSettingsWithReverbEffect final
+{
+public:
+	const class UReverbEffect*                    InReverbEffect;                                    // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WetLevel;                                          // 0x0008(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         DryLevel;                                          // 0x000C(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(SubmixEffectReverbPreset_SetSettingsWithReverbEffect) == 0x000008, "Wrong alignment on SubmixEffectReverbPreset_SetSettingsWithReverbEffect");
+static_assert(sizeof(SubmixEffectReverbPreset_SetSettingsWithReverbEffect) == 0x000010, "Wrong size on SubmixEffectReverbPreset_SetSettingsWithReverbEffect");
+static_assert(offsetof(SubmixEffectReverbPreset_SetSettingsWithReverbEffect, InReverbEffect) == 0x000000, "Member 'SubmixEffectReverbPreset_SetSettingsWithReverbEffect::InReverbEffect' has a wrong offset!");
+static_assert(offsetof(SubmixEffectReverbPreset_SetSettingsWithReverbEffect, WetLevel) == 0x000008, "Member 'SubmixEffectReverbPreset_SetSettingsWithReverbEffect::WetLevel' has a wrong offset!");
+static_assert(offsetof(SubmixEffectReverbPreset_SetSettingsWithReverbEffect, DryLevel) == 0x00000C, "Member 'SubmixEffectReverbPreset_SetSettingsWithReverbEffect::DryLevel' has a wrong offset!");
+
 // Function AudioMixer.SynthComponent.SetLowPassFilterEnabled
 // 0x0001 (0x0001 - 0x0000)
 struct SynthComponent_SetLowPassFilterEnabled final
@@ -135,39 +161,6 @@ public:
 static_assert(alignof(SynthComponent_IsPlaying) == 0x000001, "Wrong alignment on SynthComponent_IsPlaying");
 static_assert(sizeof(SynthComponent_IsPlaying) == 0x000001, "Wrong size on SynthComponent_IsPlaying");
 static_assert(offsetof(SynthComponent_IsPlaying, ReturnValue) == 0x000000, "Member 'SynthComponent_IsPlaying::ReturnValue' has a wrong offset!");
-
-// Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetAudioBus
-// 0x0008 (0x0008 - 0x0000)
-struct SubmixEffectDynamicsProcessorPreset_SetAudioBus final
-{
-public:
-	class UAudioBus*                              AudioBus;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(SubmixEffectDynamicsProcessorPreset_SetAudioBus) == 0x000008, "Wrong alignment on SubmixEffectDynamicsProcessorPreset_SetAudioBus");
-static_assert(sizeof(SubmixEffectDynamicsProcessorPreset_SetAudioBus) == 0x000008, "Wrong size on SubmixEffectDynamicsProcessorPreset_SetAudioBus");
-static_assert(offsetof(SubmixEffectDynamicsProcessorPreset_SetAudioBus, AudioBus) == 0x000000, "Member 'SubmixEffectDynamicsProcessorPreset_SetAudioBus::AudioBus' has a wrong offset!");
-
-// Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetExternalSubmix
-// 0x0008 (0x0008 - 0x0000)
-struct SubmixEffectDynamicsProcessorPreset_SetExternalSubmix final
-{
-public:
-	class USoundSubmix*                           Submix;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(SubmixEffectDynamicsProcessorPreset_SetExternalSubmix) == 0x000008, "Wrong alignment on SubmixEffectDynamicsProcessorPreset_SetExternalSubmix");
-static_assert(sizeof(SubmixEffectDynamicsProcessorPreset_SetExternalSubmix) == 0x000008, "Wrong size on SubmixEffectDynamicsProcessorPreset_SetExternalSubmix");
-static_assert(offsetof(SubmixEffectDynamicsProcessorPreset_SetExternalSubmix, Submix) == 0x000000, "Member 'SubmixEffectDynamicsProcessorPreset_SetExternalSubmix::Submix' has a wrong offset!");
-
-// Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetSettings
-// 0x0060 (0x0060 - 0x0000)
-struct SubmixEffectDynamicsProcessorPreset_SetSettings final
-{
-public:
-	struct FSubmixEffectDynamicsProcessorSettings Param_Settings;                                    // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(SubmixEffectDynamicsProcessorPreset_SetSettings) == 0x000008, "Wrong alignment on SubmixEffectDynamicsProcessorPreset_SetSettings");
-static_assert(sizeof(SubmixEffectDynamicsProcessorPreset_SetSettings) == 0x000060, "Wrong size on SubmixEffectDynamicsProcessorPreset_SetSettings");
-static_assert(offsetof(SubmixEffectDynamicsProcessorPreset_SetSettings, Param_Settings) == 0x000000, "Member 'SubmixEffectDynamicsProcessorPreset_SetSettings::Param_Settings' has a wrong offset!");
 
 // Function AudioMixer.AudioMixerBlueprintLibrary.AddMasterSubmixEffect
 // 0x0010 (0x0010 - 0x0000)
@@ -770,6 +763,39 @@ static_assert(sizeof(AudioMixerBlueprintLibrary_TrimAudioCache) == 0x000008, "Wr
 static_assert(offsetof(AudioMixerBlueprintLibrary_TrimAudioCache, InMegabytesToFree) == 0x000000, "Member 'AudioMixerBlueprintLibrary_TrimAudioCache::InMegabytesToFree' has a wrong offset!");
 static_assert(offsetof(AudioMixerBlueprintLibrary_TrimAudioCache, ReturnValue) == 0x000004, "Member 'AudioMixerBlueprintLibrary_TrimAudioCache::ReturnValue' has a wrong offset!");
 
+// Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetAudioBus
+// 0x0008 (0x0008 - 0x0000)
+struct SubmixEffectDynamicsProcessorPreset_SetAudioBus final
+{
+public:
+	class UAudioBus*                              AudioBus;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(SubmixEffectDynamicsProcessorPreset_SetAudioBus) == 0x000008, "Wrong alignment on SubmixEffectDynamicsProcessorPreset_SetAudioBus");
+static_assert(sizeof(SubmixEffectDynamicsProcessorPreset_SetAudioBus) == 0x000008, "Wrong size on SubmixEffectDynamicsProcessorPreset_SetAudioBus");
+static_assert(offsetof(SubmixEffectDynamicsProcessorPreset_SetAudioBus, AudioBus) == 0x000000, "Member 'SubmixEffectDynamicsProcessorPreset_SetAudioBus::AudioBus' has a wrong offset!");
+
+// Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetExternalSubmix
+// 0x0008 (0x0008 - 0x0000)
+struct SubmixEffectDynamicsProcessorPreset_SetExternalSubmix final
+{
+public:
+	class USoundSubmix*                           Submix;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(SubmixEffectDynamicsProcessorPreset_SetExternalSubmix) == 0x000008, "Wrong alignment on SubmixEffectDynamicsProcessorPreset_SetExternalSubmix");
+static_assert(sizeof(SubmixEffectDynamicsProcessorPreset_SetExternalSubmix) == 0x000008, "Wrong size on SubmixEffectDynamicsProcessorPreset_SetExternalSubmix");
+static_assert(offsetof(SubmixEffectDynamicsProcessorPreset_SetExternalSubmix, Submix) == 0x000000, "Member 'SubmixEffectDynamicsProcessorPreset_SetExternalSubmix::Submix' has a wrong offset!");
+
+// Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetSettings
+// 0x0060 (0x0060 - 0x0000)
+struct SubmixEffectDynamicsProcessorPreset_SetSettings final
+{
+public:
+	struct FSubmixEffectDynamicsProcessorSettings Param_Settings;                                    // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(SubmixEffectDynamicsProcessorPreset_SetSettings) == 0x000008, "Wrong alignment on SubmixEffectDynamicsProcessorPreset_SetSettings");
+static_assert(sizeof(SubmixEffectDynamicsProcessorPreset_SetSettings) == 0x000060, "Wrong size on SubmixEffectDynamicsProcessorPreset_SetSettings");
+static_assert(offsetof(SubmixEffectDynamicsProcessorPreset_SetSettings, Param_Settings) == 0x000000, "Member 'SubmixEffectDynamicsProcessorPreset_SetSettings::Param_Settings' has a wrong offset!");
+
 // Function AudioMixer.SubmixEffectSubmixEQPreset.SetSettings
 // 0x0010 (0x0010 - 0x0000)
 struct SubmixEffectSubmixEQPreset_SetSettings final
@@ -780,32 +806,6 @@ public:
 static_assert(alignof(SubmixEffectSubmixEQPreset_SetSettings) == 0x000008, "Wrong alignment on SubmixEffectSubmixEQPreset_SetSettings");
 static_assert(sizeof(SubmixEffectSubmixEQPreset_SetSettings) == 0x000010, "Wrong size on SubmixEffectSubmixEQPreset_SetSettings");
 static_assert(offsetof(SubmixEffectSubmixEQPreset_SetSettings, InSettings) == 0x000000, "Member 'SubmixEffectSubmixEQPreset_SetSettings::InSettings' has a wrong offset!");
-
-// Function AudioMixer.SubmixEffectReverbPreset.SetSettings
-// 0x0040 (0x0040 - 0x0000)
-struct SubmixEffectReverbPreset_SetSettings final
-{
-public:
-	struct FSubmixEffectReverbSettings            InSettings;                                        // 0x0000(0x0040)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(SubmixEffectReverbPreset_SetSettings) == 0x000004, "Wrong alignment on SubmixEffectReverbPreset_SetSettings");
-static_assert(sizeof(SubmixEffectReverbPreset_SetSettings) == 0x000040, "Wrong size on SubmixEffectReverbPreset_SetSettings");
-static_assert(offsetof(SubmixEffectReverbPreset_SetSettings, InSettings) == 0x000000, "Member 'SubmixEffectReverbPreset_SetSettings::InSettings' has a wrong offset!");
-
-// Function AudioMixer.SubmixEffectReverbPreset.SetSettingsWithReverbEffect
-// 0x0010 (0x0010 - 0x0000)
-struct SubmixEffectReverbPreset_SetSettingsWithReverbEffect final
-{
-public:
-	const class UReverbEffect*                    InReverbEffect;                                    // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WetLevel;                                          // 0x0008(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         DryLevel;                                          // 0x000C(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(SubmixEffectReverbPreset_SetSettingsWithReverbEffect) == 0x000008, "Wrong alignment on SubmixEffectReverbPreset_SetSettingsWithReverbEffect");
-static_assert(sizeof(SubmixEffectReverbPreset_SetSettingsWithReverbEffect) == 0x000010, "Wrong size on SubmixEffectReverbPreset_SetSettingsWithReverbEffect");
-static_assert(offsetof(SubmixEffectReverbPreset_SetSettingsWithReverbEffect, InReverbEffect) == 0x000000, "Member 'SubmixEffectReverbPreset_SetSettingsWithReverbEffect::InReverbEffect' has a wrong offset!");
-static_assert(offsetof(SubmixEffectReverbPreset_SetSettingsWithReverbEffect, WetLevel) == 0x000008, "Member 'SubmixEffectReverbPreset_SetSettingsWithReverbEffect::WetLevel' has a wrong offset!");
-static_assert(offsetof(SubmixEffectReverbPreset_SetSettingsWithReverbEffect, DryLevel) == 0x00000C, "Member 'SubmixEffectReverbPreset_SetSettingsWithReverbEffect::DryLevel' has a wrong offset!");
 
 // Function AudioMixer.QuartzClockHandle.GetCurrentTimestamp
 // 0x0018 (0x0018 - 0x0000)

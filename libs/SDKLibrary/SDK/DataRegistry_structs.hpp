@@ -63,16 +63,6 @@ enum class EDataRegistryAvailability : uint8
 	EDataRegistryAvailability_MAX            = 6,
 };
 
-// ScriptStruct DataRegistry.DataRegistrySourceItemId
-// 0x0040 (0x0040 - 0x0000)
-struct alignas(0x08) FDataRegistrySourceItemId final
-{
-public:
-	uint8                                         Pad_0[0x40];                                       // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FDataRegistrySourceItemId) == 0x000008, "Wrong alignment on FDataRegistrySourceItemId");
-static_assert(sizeof(FDataRegistrySourceItemId) == 0x000040, "Wrong size on FDataRegistrySourceItemId");
-
 // ScriptStruct DataRegistry.DataRegistryLookup
 // 0x0020 (0x0020 - 0x0000)
 struct alignas(0x08) FDataRegistryLookup final
@@ -83,27 +73,15 @@ public:
 static_assert(alignof(FDataRegistryLookup) == 0x000008, "Wrong alignment on FDataRegistryLookup");
 static_assert(sizeof(FDataRegistryLookup) == 0x000020, "Wrong size on FDataRegistryLookup");
 
-// ScriptStruct DataRegistry.DataRegistryCachePolicy
-// 0x0014 (0x0014 - 0x0000)
-struct FDataRegistryCachePolicy final
+// ScriptStruct DataRegistry.DataRegistrySourceItemId
+// 0x0040 (0x0040 - 0x0000)
+struct alignas(0x08) FDataRegistrySourceItemId final
 {
 public:
-	bool                                          bCacheIsAlwaysVolatile;                            // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseCurveTableCacheVersion;                        // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         MinNumberKept;                                     // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaxNumberKept;                                     // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ForceKeepSeconds;                                  // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ForceReleaseSeconds;                               // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_0[0x40];                                       // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FDataRegistryCachePolicy) == 0x000004, "Wrong alignment on FDataRegistryCachePolicy");
-static_assert(sizeof(FDataRegistryCachePolicy) == 0x000014, "Wrong size on FDataRegistryCachePolicy");
-static_assert(offsetof(FDataRegistryCachePolicy, bCacheIsAlwaysVolatile) == 0x000000, "Member 'FDataRegistryCachePolicy::bCacheIsAlwaysVolatile' has a wrong offset!");
-static_assert(offsetof(FDataRegistryCachePolicy, bUseCurveTableCacheVersion) == 0x000001, "Member 'FDataRegistryCachePolicy::bUseCurveTableCacheVersion' has a wrong offset!");
-static_assert(offsetof(FDataRegistryCachePolicy, MinNumberKept) == 0x000004, "Member 'FDataRegistryCachePolicy::MinNumberKept' has a wrong offset!");
-static_assert(offsetof(FDataRegistryCachePolicy, MaxNumberKept) == 0x000008, "Member 'FDataRegistryCachePolicy::MaxNumberKept' has a wrong offset!");
-static_assert(offsetof(FDataRegistryCachePolicy, ForceKeepSeconds) == 0x00000C, "Member 'FDataRegistryCachePolicy::ForceKeepSeconds' has a wrong offset!");
-static_assert(offsetof(FDataRegistryCachePolicy, ForceReleaseSeconds) == 0x000010, "Member 'FDataRegistryCachePolicy::ForceReleaseSeconds' has a wrong offset!");
+static_assert(alignof(FDataRegistrySourceItemId) == 0x000008, "Wrong alignment on FDataRegistrySourceItemId");
+static_assert(sizeof(FDataRegistrySourceItemId) == 0x000040, "Wrong size on FDataRegistrySourceItemId");
 
 // ScriptStruct DataRegistry.DataRegistryType
 // 0x0008 (0x0008 - 0x0000)
@@ -129,16 +107,27 @@ static_assert(sizeof(FDataRegistryId) == 0x000010, "Wrong size on FDataRegistryI
 static_assert(offsetof(FDataRegistryId, RegistryType) == 0x000000, "Member 'FDataRegistryId::RegistryType' has a wrong offset!");
 static_assert(offsetof(FDataRegistryId, ItemName) == 0x000008, "Member 'FDataRegistryId::ItemName' has a wrong offset!");
 
-// ScriptStruct DataRegistry.DataRegistryIdFormat
-// 0x0008 (0x0008 - 0x0000)
-struct FDataRegistryIdFormat final
+// ScriptStruct DataRegistry.DataRegistryCachePolicy
+// 0x0014 (0x0014 - 0x0000)
+struct FDataRegistryCachePolicy final
 {
 public:
-	struct FGameplayTag                           BaseGameplayTag;                                   // 0x0000(0x0008)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCacheIsAlwaysVolatile;                            // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseCurveTableCacheVersion;                        // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         MinNumberKept;                                     // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxNumberKept;                                     // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ForceKeepSeconds;                                  // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ForceReleaseSeconds;                               // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FDataRegistryIdFormat) == 0x000004, "Wrong alignment on FDataRegistryIdFormat");
-static_assert(sizeof(FDataRegistryIdFormat) == 0x000008, "Wrong size on FDataRegistryIdFormat");
-static_assert(offsetof(FDataRegistryIdFormat, BaseGameplayTag) == 0x000000, "Member 'FDataRegistryIdFormat::BaseGameplayTag' has a wrong offset!");
+static_assert(alignof(FDataRegistryCachePolicy) == 0x000004, "Wrong alignment on FDataRegistryCachePolicy");
+static_assert(sizeof(FDataRegistryCachePolicy) == 0x000014, "Wrong size on FDataRegistryCachePolicy");
+static_assert(offsetof(FDataRegistryCachePolicy, bCacheIsAlwaysVolatile) == 0x000000, "Member 'FDataRegistryCachePolicy::bCacheIsAlwaysVolatile' has a wrong offset!");
+static_assert(offsetof(FDataRegistryCachePolicy, bUseCurveTableCacheVersion) == 0x000001, "Member 'FDataRegistryCachePolicy::bUseCurveTableCacheVersion' has a wrong offset!");
+static_assert(offsetof(FDataRegistryCachePolicy, MinNumberKept) == 0x000004, "Member 'FDataRegistryCachePolicy::MinNumberKept' has a wrong offset!");
+static_assert(offsetof(FDataRegistryCachePolicy, MaxNumberKept) == 0x000008, "Member 'FDataRegistryCachePolicy::MaxNumberKept' has a wrong offset!");
+static_assert(offsetof(FDataRegistryCachePolicy, ForceKeepSeconds) == 0x00000C, "Member 'FDataRegistryCachePolicy::ForceKeepSeconds' has a wrong offset!");
+static_assert(offsetof(FDataRegistryCachePolicy, ForceReleaseSeconds) == 0x000010, "Member 'FDataRegistryCachePolicy::ForceReleaseSeconds' has a wrong offset!");
 
 // ScriptStruct DataRegistry.DataRegistrySource_DataTableRules
 // 0x0008 (0x0008 - 0x0000)
@@ -153,6 +142,17 @@ static_assert(alignof(FDataRegistrySource_DataTableRules) == 0x000004, "Wrong al
 static_assert(sizeof(FDataRegistrySource_DataTableRules) == 0x000008, "Wrong size on FDataRegistrySource_DataTableRules");
 static_assert(offsetof(FDataRegistrySource_DataTableRules, bPrecacheTable) == 0x000000, "Member 'FDataRegistrySource_DataTableRules::bPrecacheTable' has a wrong offset!");
 static_assert(offsetof(FDataRegistrySource_DataTableRules, CachedTableKeepSeconds) == 0x000004, "Member 'FDataRegistrySource_DataTableRules::CachedTableKeepSeconds' has a wrong offset!");
+
+// ScriptStruct DataRegistry.DataRegistryIdFormat
+// 0x0008 (0x0008 - 0x0000)
+struct FDataRegistryIdFormat final
+{
+public:
+	struct FGameplayTag                           BaseGameplayTag;                                   // 0x0000(0x0008)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FDataRegistryIdFormat) == 0x000004, "Wrong alignment on FDataRegistryIdFormat");
+static_assert(sizeof(FDataRegistryIdFormat) == 0x000008, "Wrong size on FDataRegistryIdFormat");
+static_assert(offsetof(FDataRegistryIdFormat, BaseGameplayTag) == 0x000000, "Member 'FDataRegistryIdFormat::BaseGameplayTag' has a wrong offset!");
 
 }
 

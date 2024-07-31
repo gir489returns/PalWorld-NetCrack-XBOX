@@ -19,6 +19,32 @@
 namespace SDK
 {
 
+// Class AudioMixer.SubmixEffectReverbPreset
+// 0x00A8 (0x0110 - 0x0068)
+class USubmixEffectReverbPreset final : public USoundEffectSubmixPreset
+{
+public:
+	uint8                                         Pad_68[0x68];                                      // 0x0068(0x0068)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSubmixEffectReverbSettings            Settings;                                          // 0x00D0(0x0040)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+
+public:
+	void SetSettings(const struct FSubmixEffectReverbSettings& InSettings);
+	void SetSettingsWithReverbEffect(const class UReverbEffect* InReverbEffect, const float WetLevel, const float DryLevel);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"SubmixEffectReverbPreset">();
+	}
+	static class USubmixEffectReverbPreset* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<USubmixEffectReverbPreset>();
+	}
+};
+static_assert(alignof(USubmixEffectReverbPreset) == 0x000008, "Wrong alignment on USubmixEffectReverbPreset");
+static_assert(sizeof(USubmixEffectReverbPreset) == 0x000110, "Wrong size on USubmixEffectReverbPreset");
+static_assert(offsetof(USubmixEffectReverbPreset, Settings) == 0x0000D0, "Member 'USubmixEffectReverbPreset::Settings' has a wrong offset!");
+
 // Class AudioMixer.SynthComponent
 // 0x04F0 (0x0790 - 0x02A0)
 class USynthComponent : public USceneComponent
@@ -98,33 +124,27 @@ static_assert(offsetof(USynthComponent, OnAudioEnvelopeValue) == 0x000728, "Memb
 static_assert(offsetof(USynthComponent, Synth) == 0x000758, "Member 'USynthComponent::Synth' has a wrong offset!");
 static_assert(offsetof(USynthComponent, AudioComponent) == 0x000760, "Member 'USynthComponent::AudioComponent' has a wrong offset!");
 
-// Class AudioMixer.SubmixEffectDynamicsProcessorPreset
-// 0x00E8 (0x0150 - 0x0068)
-class USubmixEffectDynamicsProcessorPreset final : public USoundEffectSubmixPreset
+// Class AudioMixer.SynthSound
+// 0x0020 (0x04C0 - 0x04A0)
+class USynthSound final : public USoundWaveProcedural
 {
 public:
-	uint8                                         Pad_68[0x88];                                      // 0x0068(0x0088)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSubmixEffectDynamicsProcessorSettings Settings;                                          // 0x00F0(0x0060)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-
-public:
-	void ResetKey();
-	void SetAudioBus(class UAudioBus* AudioBus);
-	void SetExternalSubmix(class USoundSubmix* Submix);
-	void SetSettings(const struct FSubmixEffectDynamicsProcessorSettings& Param_Settings);
+	TWeakObjectPtr<class USynthComponent>         OwningSynthComponent;                              // 0x04A0(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_4A8[0x18];                                     // 0x04A8(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SubmixEffectDynamicsProcessorPreset">();
+		return StaticClassImpl<"SynthSound">();
 	}
-	static class USubmixEffectDynamicsProcessorPreset* GetDefaultObj()
+	static class USynthSound* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<USubmixEffectDynamicsProcessorPreset>();
+		return GetDefaultObjImpl<USynthSound>();
 	}
 };
-static_assert(alignof(USubmixEffectDynamicsProcessorPreset) == 0x000008, "Wrong alignment on USubmixEffectDynamicsProcessorPreset");
-static_assert(sizeof(USubmixEffectDynamicsProcessorPreset) == 0x000150, "Wrong size on USubmixEffectDynamicsProcessorPreset");
-static_assert(offsetof(USubmixEffectDynamicsProcessorPreset, Settings) == 0x0000F0, "Member 'USubmixEffectDynamicsProcessorPreset::Settings' has a wrong offset!");
+static_assert(alignof(USynthSound) == 0x000008, "Wrong alignment on USynthSound");
+static_assert(sizeof(USynthSound) == 0x0004C0, "Wrong size on USynthSound");
+static_assert(offsetof(USynthSound, OwningSynthComponent) == 0x0004A0, "Member 'USynthSound::OwningSynthComponent' has a wrong offset!");
 
 // Class AudioMixer.AudioGenerator
 // 0x0080 (0x00A8 - 0x0028)
@@ -145,6 +165,44 @@ public:
 };
 static_assert(alignof(UAudioGenerator) == 0x000008, "Wrong alignment on UAudioGenerator");
 static_assert(sizeof(UAudioGenerator) == 0x0000A8, "Wrong size on UAudioGenerator");
+
+// Class AudioMixer.AudioDeviceNotificationSubsystem
+// 0x00F8 (0x0128 - 0x0030)
+class UAudioDeviceNotificationSubsystem final : public UEngineSubsystem
+{
+public:
+	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             DefaultCaptureDeviceChanged;                       // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_48[0x18];                                      // 0x0048(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             DefaultRenderDeviceChanged;                        // 0x0060(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_70[0x18];                                      // 0x0070(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             DeviceAdded;                                       // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_98[0x18];                                      // 0x0098(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             DeviceRemoved;                                     // 0x00B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C0[0x18];                                      // 0x00C0(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             DeviceStateChanged;                                // 0x00D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E8[0x18];                                      // 0x00E8(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             DeviceSwitched;                                    // 0x0100(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_110[0x18];                                     // 0x0110(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"AudioDeviceNotificationSubsystem">();
+	}
+	static class UAudioDeviceNotificationSubsystem* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAudioDeviceNotificationSubsystem>();
+	}
+};
+static_assert(alignof(UAudioDeviceNotificationSubsystem) == 0x000008, "Wrong alignment on UAudioDeviceNotificationSubsystem");
+static_assert(sizeof(UAudioDeviceNotificationSubsystem) == 0x000128, "Wrong size on UAudioDeviceNotificationSubsystem");
+static_assert(offsetof(UAudioDeviceNotificationSubsystem, DefaultCaptureDeviceChanged) == 0x000038, "Member 'UAudioDeviceNotificationSubsystem::DefaultCaptureDeviceChanged' has a wrong offset!");
+static_assert(offsetof(UAudioDeviceNotificationSubsystem, DefaultRenderDeviceChanged) == 0x000060, "Member 'UAudioDeviceNotificationSubsystem::DefaultRenderDeviceChanged' has a wrong offset!");
+static_assert(offsetof(UAudioDeviceNotificationSubsystem, DeviceAdded) == 0x000088, "Member 'UAudioDeviceNotificationSubsystem::DeviceAdded' has a wrong offset!");
+static_assert(offsetof(UAudioDeviceNotificationSubsystem, DeviceRemoved) == 0x0000B0, "Member 'UAudioDeviceNotificationSubsystem::DeviceRemoved' has a wrong offset!");
+static_assert(offsetof(UAudioDeviceNotificationSubsystem, DeviceStateChanged) == 0x0000D8, "Member 'UAudioDeviceNotificationSubsystem::DeviceStateChanged' has a wrong offset!");
+static_assert(offsetof(UAudioDeviceNotificationSubsystem, DeviceSwitched) == 0x000100, "Member 'UAudioDeviceNotificationSubsystem::DeviceSwitched' has a wrong offset!");
 
 // Class AudioMixer.AudioMixerBlueprintLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -203,65 +261,33 @@ public:
 static_assert(alignof(UAudioMixerBlueprintLibrary) == 0x000008, "Wrong alignment on UAudioMixerBlueprintLibrary");
 static_assert(sizeof(UAudioMixerBlueprintLibrary) == 0x000028, "Wrong size on UAudioMixerBlueprintLibrary");
 
-// Class AudioMixer.AudioDeviceNotificationSubsystem
-// 0x00F8 (0x0128 - 0x0030)
-class UAudioDeviceNotificationSubsystem final : public UEngineSubsystem
+// Class AudioMixer.SubmixEffectDynamicsProcessorPreset
+// 0x00E8 (0x0150 - 0x0068)
+class USubmixEffectDynamicsProcessorPreset final : public USoundEffectSubmixPreset
 {
 public:
-	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	FMulticastInlineDelegateProperty_             DefaultCaptureDeviceChanged;                       // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_48[0x18];                                      // 0x0048(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	FMulticastInlineDelegateProperty_             DefaultRenderDeviceChanged;                        // 0x0060(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_70[0x18];                                      // 0x0070(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	FMulticastInlineDelegateProperty_             DeviceAdded;                                       // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_98[0x18];                                      // 0x0098(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	FMulticastInlineDelegateProperty_             DeviceRemoved;                                     // 0x00B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C0[0x18];                                      // 0x00C0(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	FMulticastInlineDelegateProperty_             DeviceStateChanged;                                // 0x00D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E8[0x18];                                      // 0x00E8(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	FMulticastInlineDelegateProperty_             DeviceSwitched;                                    // 0x0100(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_110[0x18];                                     // 0x0110(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_68[0x88];                                      // 0x0068(0x0088)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSubmixEffectDynamicsProcessorSettings Settings;                                          // 0x00F0(0x0060)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+
+public:
+	void ResetKey();
+	void SetAudioBus(class UAudioBus* AudioBus);
+	void SetExternalSubmix(class USoundSubmix* Submix);
+	void SetSettings(const struct FSubmixEffectDynamicsProcessorSettings& Param_Settings);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AudioDeviceNotificationSubsystem">();
+		return StaticClassImpl<"SubmixEffectDynamicsProcessorPreset">();
 	}
-	static class UAudioDeviceNotificationSubsystem* GetDefaultObj()
+	static class USubmixEffectDynamicsProcessorPreset* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UAudioDeviceNotificationSubsystem>();
+		return GetDefaultObjImpl<USubmixEffectDynamicsProcessorPreset>();
 	}
 };
-static_assert(alignof(UAudioDeviceNotificationSubsystem) == 0x000008, "Wrong alignment on UAudioDeviceNotificationSubsystem");
-static_assert(sizeof(UAudioDeviceNotificationSubsystem) == 0x000128, "Wrong size on UAudioDeviceNotificationSubsystem");
-static_assert(offsetof(UAudioDeviceNotificationSubsystem, DefaultCaptureDeviceChanged) == 0x000038, "Member 'UAudioDeviceNotificationSubsystem::DefaultCaptureDeviceChanged' has a wrong offset!");
-static_assert(offsetof(UAudioDeviceNotificationSubsystem, DefaultRenderDeviceChanged) == 0x000060, "Member 'UAudioDeviceNotificationSubsystem::DefaultRenderDeviceChanged' has a wrong offset!");
-static_assert(offsetof(UAudioDeviceNotificationSubsystem, DeviceAdded) == 0x000088, "Member 'UAudioDeviceNotificationSubsystem::DeviceAdded' has a wrong offset!");
-static_assert(offsetof(UAudioDeviceNotificationSubsystem, DeviceRemoved) == 0x0000B0, "Member 'UAudioDeviceNotificationSubsystem::DeviceRemoved' has a wrong offset!");
-static_assert(offsetof(UAudioDeviceNotificationSubsystem, DeviceStateChanged) == 0x0000D8, "Member 'UAudioDeviceNotificationSubsystem::DeviceStateChanged' has a wrong offset!");
-static_assert(offsetof(UAudioDeviceNotificationSubsystem, DeviceSwitched) == 0x000100, "Member 'UAudioDeviceNotificationSubsystem::DeviceSwitched' has a wrong offset!");
-
-// Class AudioMixer.SynthSound
-// 0x0020 (0x04C0 - 0x04A0)
-class USynthSound final : public USoundWaveProcedural
-{
-public:
-	TWeakObjectPtr<class USynthComponent>         OwningSynthComponent;                              // 0x04A0(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_4A8[0x18];                                     // 0x04A8(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"SynthSound">();
-	}
-	static class USynthSound* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<USynthSound>();
-	}
-};
-static_assert(alignof(USynthSound) == 0x000008, "Wrong alignment on USynthSound");
-static_assert(sizeof(USynthSound) == 0x0004C0, "Wrong size on USynthSound");
-static_assert(offsetof(USynthSound, OwningSynthComponent) == 0x0004A0, "Member 'USynthSound::OwningSynthComponent' has a wrong offset!");
+static_assert(alignof(USubmixEffectDynamicsProcessorPreset) == 0x000008, "Wrong alignment on USubmixEffectDynamicsProcessorPreset");
+static_assert(sizeof(USubmixEffectDynamicsProcessorPreset) == 0x000150, "Wrong size on USubmixEffectDynamicsProcessorPreset");
+static_assert(offsetof(USubmixEffectDynamicsProcessorPreset, Settings) == 0x0000F0, "Member 'USubmixEffectDynamicsProcessorPreset::Settings' has a wrong offset!");
 
 // Class AudioMixer.SubmixEffectSubmixEQPreset
 // 0x0048 (0x00B0 - 0x0068)
@@ -287,32 +313,6 @@ public:
 static_assert(alignof(USubmixEffectSubmixEQPreset) == 0x000008, "Wrong alignment on USubmixEffectSubmixEQPreset");
 static_assert(sizeof(USubmixEffectSubmixEQPreset) == 0x0000B0, "Wrong size on USubmixEffectSubmixEQPreset");
 static_assert(offsetof(USubmixEffectSubmixEQPreset, Settings) == 0x0000A0, "Member 'USubmixEffectSubmixEQPreset::Settings' has a wrong offset!");
-
-// Class AudioMixer.SubmixEffectReverbPreset
-// 0x00A8 (0x0110 - 0x0068)
-class USubmixEffectReverbPreset final : public USoundEffectSubmixPreset
-{
-public:
-	uint8                                         Pad_68[0x68];                                      // 0x0068(0x0068)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSubmixEffectReverbSettings            Settings;                                          // 0x00D0(0x0040)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-
-public:
-	void SetSettings(const struct FSubmixEffectReverbSettings& InSettings);
-	void SetSettingsWithReverbEffect(const class UReverbEffect* InReverbEffect, const float WetLevel, const float DryLevel);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"SubmixEffectReverbPreset">();
-	}
-	static class USubmixEffectReverbPreset* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<USubmixEffectReverbPreset>();
-	}
-};
-static_assert(alignof(USubmixEffectReverbPreset) == 0x000008, "Wrong alignment on USubmixEffectReverbPreset");
-static_assert(sizeof(USubmixEffectReverbPreset) == 0x000110, "Wrong size on USubmixEffectReverbPreset");
-static_assert(offsetof(USubmixEffectReverbPreset, Settings) == 0x0000D0, "Member 'USubmixEffectReverbPreset::Settings' has a wrong offset!");
 
 // Class AudioMixer.QuartzClockHandle
 // 0x01C0 (0x01E8 - 0x0028)

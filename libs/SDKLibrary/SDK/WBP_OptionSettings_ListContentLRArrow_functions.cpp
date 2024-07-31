@@ -31,40 +31,6 @@ void UWBP_OptionSettings_ListContentLRArrow_C::OnClicked__DelegateSignature()
 }
 
 
-// Function WBP_OptionSettings_ListContentLRArrow.WBP_OptionSettings_ListContentLRArrow_C.ExecuteUbergraph_WBP_OptionSettings_ListContentLRArrow
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OptionSettings_ListContentLRArrow_C::ExecuteUbergraph_WBP_OptionSettings_ListContentLRArrow(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContentLRArrow_C", "ExecuteUbergraph_WBP_OptionSettings_ListContentLRArrow");
-
-	Params::WBP_OptionSettings_ListContentLRArrow_C_ExecuteUbergraph_WBP_OptionSettings_ListContentLRArrow Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OptionSettings_ListContentLRArrow.WBP_OptionSettings_ListContentLRArrow_C.ClickInternal
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_OptionSettings_ListContentLRArrow_C::ClickInternal()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContentLRArrow_C", "ClickInternal");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_OptionSettings_ListContentLRArrow.WBP_OptionSettings_ListContentLRArrow_C.Click
 // (BlueprintCallable, BlueprintEvent)
 
@@ -136,6 +102,40 @@ void UWBP_OptionSettings_ListContentLRArrow_C::BndEvt__WBP_OptionSettings_ListCo
 	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OptionSettings_ListContentLRArrow.WBP_OptionSettings_ListContentLRArrow_C.ExecuteUbergraph_WBP_OptionSettings_ListContentLRArrow
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OptionSettings_ListContentLRArrow_C::ExecuteUbergraph_WBP_OptionSettings_ListContentLRArrow(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContentLRArrow_C", "ExecuteUbergraph_WBP_OptionSettings_ListContentLRArrow");
+
+	Params::WBP_OptionSettings_ListContentLRArrow_C_ExecuteUbergraph_WBP_OptionSettings_ListContentLRArrow Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OptionSettings_ListContentLRArrow.WBP_OptionSettings_ListContentLRArrow_C.ClickInternal
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_OptionSettings_ListContentLRArrow_C::ClickInternal()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContentLRArrow_C", "ClickInternal");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

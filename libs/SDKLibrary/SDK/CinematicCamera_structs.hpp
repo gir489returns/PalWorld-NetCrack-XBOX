@@ -27,6 +27,29 @@ enum class ECameraFocusMethod : uint8
 	MAX                                      = 4,
 };
 
+// ScriptStruct CinematicCamera.CameraLensSettings
+// 0x001C (0x001C - 0x0000)
+struct FCameraLensSettings final
+{
+public:
+	float                                         MinFocalLength;                                    // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxFocalLength;                                    // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinFStop;                                          // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxFStop;                                          // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MinimumFocusDistance;                              // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SqueezeFactor;                                     // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DiaphragmBladeCount;                               // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FCameraLensSettings) == 0x000004, "Wrong alignment on FCameraLensSettings");
+static_assert(sizeof(FCameraLensSettings) == 0x00001C, "Wrong size on FCameraLensSettings");
+static_assert(offsetof(FCameraLensSettings, MinFocalLength) == 0x000000, "Member 'FCameraLensSettings::MinFocalLength' has a wrong offset!");
+static_assert(offsetof(FCameraLensSettings, MaxFocalLength) == 0x000004, "Member 'FCameraLensSettings::MaxFocalLength' has a wrong offset!");
+static_assert(offsetof(FCameraLensSettings, MinFStop) == 0x000008, "Member 'FCameraLensSettings::MinFStop' has a wrong offset!");
+static_assert(offsetof(FCameraLensSettings, MaxFStop) == 0x00000C, "Member 'FCameraLensSettings::MaxFStop' has a wrong offset!");
+static_assert(offsetof(FCameraLensSettings, MinimumFocusDistance) == 0x000010, "Member 'FCameraLensSettings::MinimumFocusDistance' has a wrong offset!");
+static_assert(offsetof(FCameraLensSettings, SqueezeFactor) == 0x000014, "Member 'FCameraLensSettings::SqueezeFactor' has a wrong offset!");
+static_assert(offsetof(FCameraLensSettings, DiaphragmBladeCount) == 0x000018, "Member 'FCameraLensSettings::DiaphragmBladeCount' has a wrong offset!");
+
 // ScriptStruct CinematicCamera.CameraFilmbackSettings
 // 0x000C (0x000C - 0x0000)
 struct FCameraFilmbackSettings final
@@ -41,6 +64,34 @@ static_assert(sizeof(FCameraFilmbackSettings) == 0x00000C, "Wrong size on FCamer
 static_assert(offsetof(FCameraFilmbackSettings, SensorWidth) == 0x000000, "Member 'FCameraFilmbackSettings::SensorWidth' has a wrong offset!");
 static_assert(offsetof(FCameraFilmbackSettings, SensorHeight) == 0x000004, "Member 'FCameraFilmbackSettings::SensorHeight' has a wrong offset!");
 static_assert(offsetof(FCameraFilmbackSettings, SensorAspectRatio) == 0x000008, "Member 'FCameraFilmbackSettings::SensorAspectRatio' has a wrong offset!");
+
+// ScriptStruct CinematicCamera.NamedFilmbackPreset
+// 0x0020 (0x0020 - 0x0000)
+struct FNamedFilmbackPreset final
+{
+public:
+	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FCameraFilmbackSettings                FilmbackSettings;                                  // 0x0010(0x000C)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FNamedFilmbackPreset) == 0x000008, "Wrong alignment on FNamedFilmbackPreset");
+static_assert(sizeof(FNamedFilmbackPreset) == 0x000020, "Wrong size on FNamedFilmbackPreset");
+static_assert(offsetof(FNamedFilmbackPreset, Name) == 0x000000, "Member 'FNamedFilmbackPreset::Name' has a wrong offset!");
+static_assert(offsetof(FNamedFilmbackPreset, FilmbackSettings) == 0x000010, "Member 'FNamedFilmbackPreset::FilmbackSettings' has a wrong offset!");
+
+// ScriptStruct CinematicCamera.NamedLensPreset
+// 0x0030 (0x0030 - 0x0000)
+struct FNamedLensPreset final
+{
+public:
+	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FCameraLensSettings                    LensSettings;                                      // 0x0010(0x001C)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FNamedLensPreset) == 0x000008, "Wrong alignment on FNamedLensPreset");
+static_assert(sizeof(FNamedLensPreset) == 0x000030, "Wrong size on FNamedLensPreset");
+static_assert(offsetof(FNamedLensPreset, Name) == 0x000000, "Member 'FNamedLensPreset::Name' has a wrong offset!");
+static_assert(offsetof(FNamedLensPreset, LensSettings) == 0x000010, "Member 'FNamedLensPreset::LensSettings' has a wrong offset!");
 
 // ScriptStruct CinematicCamera.PlateCropSettings
 // 0x0004 (0x0004 - 0x0000)
@@ -66,57 +117,6 @@ static_assert(alignof(FNamedPlateCropPreset) == 0x000008, "Wrong alignment on FN
 static_assert(sizeof(FNamedPlateCropPreset) == 0x000018, "Wrong size on FNamedPlateCropPreset");
 static_assert(offsetof(FNamedPlateCropPreset, Name) == 0x000000, "Member 'FNamedPlateCropPreset::Name' has a wrong offset!");
 static_assert(offsetof(FNamedPlateCropPreset, CropSettings) == 0x000010, "Member 'FNamedPlateCropPreset::CropSettings' has a wrong offset!");
-
-// ScriptStruct CinematicCamera.NamedFilmbackPreset
-// 0x0020 (0x0020 - 0x0000)
-struct FNamedFilmbackPreset final
-{
-public:
-	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FCameraFilmbackSettings                FilmbackSettings;                                  // 0x0010(0x000C)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FNamedFilmbackPreset) == 0x000008, "Wrong alignment on FNamedFilmbackPreset");
-static_assert(sizeof(FNamedFilmbackPreset) == 0x000020, "Wrong size on FNamedFilmbackPreset");
-static_assert(offsetof(FNamedFilmbackPreset, Name) == 0x000000, "Member 'FNamedFilmbackPreset::Name' has a wrong offset!");
-static_assert(offsetof(FNamedFilmbackPreset, FilmbackSettings) == 0x000010, "Member 'FNamedFilmbackPreset::FilmbackSettings' has a wrong offset!");
-
-// ScriptStruct CinematicCamera.CameraLensSettings
-// 0x001C (0x001C - 0x0000)
-struct FCameraLensSettings final
-{
-public:
-	float                                         MinFocalLength;                                    // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxFocalLength;                                    // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinFStop;                                          // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxFStop;                                          // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinimumFocusDistance;                              // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SqueezeFactor;                                     // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DiaphragmBladeCount;                               // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FCameraLensSettings) == 0x000004, "Wrong alignment on FCameraLensSettings");
-static_assert(sizeof(FCameraLensSettings) == 0x00001C, "Wrong size on FCameraLensSettings");
-static_assert(offsetof(FCameraLensSettings, MinFocalLength) == 0x000000, "Member 'FCameraLensSettings::MinFocalLength' has a wrong offset!");
-static_assert(offsetof(FCameraLensSettings, MaxFocalLength) == 0x000004, "Member 'FCameraLensSettings::MaxFocalLength' has a wrong offset!");
-static_assert(offsetof(FCameraLensSettings, MinFStop) == 0x000008, "Member 'FCameraLensSettings::MinFStop' has a wrong offset!");
-static_assert(offsetof(FCameraLensSettings, MaxFStop) == 0x00000C, "Member 'FCameraLensSettings::MaxFStop' has a wrong offset!");
-static_assert(offsetof(FCameraLensSettings, MinimumFocusDistance) == 0x000010, "Member 'FCameraLensSettings::MinimumFocusDistance' has a wrong offset!");
-static_assert(offsetof(FCameraLensSettings, SqueezeFactor) == 0x000014, "Member 'FCameraLensSettings::SqueezeFactor' has a wrong offset!");
-static_assert(offsetof(FCameraLensSettings, DiaphragmBladeCount) == 0x000018, "Member 'FCameraLensSettings::DiaphragmBladeCount' has a wrong offset!");
-
-// ScriptStruct CinematicCamera.NamedLensPreset
-// 0x0030 (0x0030 - 0x0000)
-struct FNamedLensPreset final
-{
-public:
-	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FCameraLensSettings                    LensSettings;                                      // 0x0010(0x001C)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FNamedLensPreset) == 0x000008, "Wrong alignment on FNamedLensPreset");
-static_assert(sizeof(FNamedLensPreset) == 0x000030, "Wrong size on FNamedLensPreset");
-static_assert(offsetof(FNamedLensPreset, Name) == 0x000000, "Member 'FNamedLensPreset::Name' has a wrong offset!");
-static_assert(offsetof(FNamedLensPreset, LensSettings) == 0x000010, "Member 'FNamedLensPreset::LensSettings' has a wrong offset!");
 
 // ScriptStruct CinematicCamera.CameraTrackingFocusSettings
 // 0x0050 (0x0050 - 0x0000)

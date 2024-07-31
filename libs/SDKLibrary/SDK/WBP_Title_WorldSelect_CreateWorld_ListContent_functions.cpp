@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_Title_WorldSelect_CreateWorld_ListContent.WBP_Title_WorldSelect_CreateWorld_ListContent_C.ToMaxSaveDataMode
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Title_WorldSelect_CreateWorld_ListContent_C::ToMaxSaveDataMode()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelect_CreateWorld_ListContent_C", "ToMaxSaveDataMode");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_Title_WorldSelect_CreateWorld_ListContent.WBP_Title_WorldSelect_CreateWorld_ListContent_C.SetupByLocalWorldDisplayData
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -171,6 +157,20 @@ void UWBP_Title_WorldSelect_CreateWorld_ListContent_C::BndEvt__WBP_Title_WorldSe
 	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_WorldSelect_CreateWorld_ListContent.WBP_Title_WorldSelect_CreateWorld_ListContent_C.ToMaxSaveDataMode
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Title_WorldSelect_CreateWorld_ListContent_C::ToMaxSaveDataMode()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelect_CreateWorld_ListContent_C", "ToMaxSaveDataMode");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

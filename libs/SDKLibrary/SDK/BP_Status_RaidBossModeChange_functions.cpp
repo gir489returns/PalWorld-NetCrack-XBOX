@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function BP_Status_RaidBossModeChange.BP_Status_RaidBossModeChange_C.CompEvent
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APalCharacter*                    InCharacter                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_Status_RaidBossModeChange_C::CompEvent(class APalCharacter* InCharacter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Status_RaidBossModeChange_C", "CompEvent");
+
+	Params::BP_Status_RaidBossModeChange_C_CompEvent Parms{};
+
+	Parms.InCharacter = InCharacter;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_Status_RaidBossModeChange.BP_Status_RaidBossModeChange_C.ExecuteUbergraph_BP_Status_RaidBossModeChange
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -105,6 +125,20 @@ void UBP_Status_RaidBossModeChange_C::OnEndStatus()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_Status_RaidBossModeChange_C", "OnEndStatus");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Status_RaidBossModeChange.BP_Status_RaidBossModeChange_C.SetupStatus
+// (BlueprintCallable, BlueprintEvent)
+
+void UBP_Status_RaidBossModeChange_C::SetupStatus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Status_RaidBossModeChange_C", "SetupStatus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

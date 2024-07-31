@@ -18,7 +18,7 @@ namespace SDK::Params
 {
 
 // Function BP_ArenaSequence_InBattle.BP_ArenaSequence_InBattle_C.ChangeArenaInBattleCharacterts
-// 0x00E0 (0x00E0 - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts final
 {
 public:
@@ -37,16 +37,16 @@ public:
 	EPalArenaPlayerIndex                          CallFunc_Array_Get_Item;                           // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalArenaPlayerInfo                    CallFunc_Map_Find_Value;                           // 0x0090(0x0038)()
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CA[0x6];                                       // 0x00CA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalIndividualCharacterParameter*       CallFunc_Array_Get_Item_1;                         // 0x00D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x00DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalArenaPlayerInfo                    CallFunc_Map_Find_Value;                           // 0x0090(0x0048)()
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_DA[0x6];                                       // 0x00DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterParameter*       CallFunc_Array_Get_Item_1;                         // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x00EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts) == 0x000008, "Wrong alignment on BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts");
-static_assert(sizeof(BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts) == 0x0000E0, "Wrong size on BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts");
+static_assert(sizeof(BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts) == 0x0000F0, "Wrong size on BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts");
 static_assert(offsetof(BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts, InBattle) == 0x000000, "Member 'BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts::InBattle' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts, Temp_int_Array_Index_Variable) == 0x000004, "Member 'BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts::Temp_int_Array_Index_Variable' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts::Temp_int_Loop_Counter_Variable' has a wrong offset!");
@@ -60,11 +60,11 @@ static_assert(offsetof(BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharactert
 static_assert(offsetof(BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts, CallFunc_Array_Get_Item) == 0x000088, "Member 'BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts, CallFunc_Array_Length_ReturnValue) == 0x00008C, "Member 'BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts, CallFunc_Map_Find_Value) == 0x000090, "Member 'BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts, CallFunc_Map_Find_ReturnValue) == 0x0000C8, "Member 'BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts, CallFunc_Less_IntInt_ReturnValue) == 0x0000C9, "Member 'BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts, CallFunc_Array_Get_Item_1) == 0x0000D0, "Member 'BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts, CallFunc_Array_Length_ReturnValue_1) == 0x0000D8, "Member 'BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000DC, "Member 'BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts, CallFunc_Map_Find_ReturnValue) == 0x0000D8, "Member 'BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts, CallFunc_Less_IntInt_ReturnValue) == 0x0000D9, "Member 'BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts, CallFunc_Array_Get_Item_1) == 0x0000E0, "Member 'BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts, CallFunc_Array_Length_ReturnValue_1) == 0x0000E8, "Member 'BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000EC, "Member 'BP_ArenaSequence_InBattle_C_ChangeArenaInBattleCharacterts::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
 
 // Function BP_ArenaSequence_InBattle.BP_ArenaSequence_InBattle_C.CheckBattleEnd
 // 0x0003 (0x0003 - 0x0000)
@@ -121,92 +121,97 @@ static_assert(offsetof(BP_ArenaSequence_InBattle_C_EnableMovement, CallFunc_GetC
 static_assert(offsetof(BP_ArenaSequence_InBattle_C_EnableMovement, CallFunc_IsRiding_ReturnValue) == 0x000060, "Member 'BP_ArenaSequence_InBattle_C_EnableMovement::CallFunc_IsRiding_ReturnValue' has a wrong offset!");
 
 // Function BP_ArenaSequence_InBattle.BP_ArenaSequence_InBattle_C.ExecuteUbergraph_BP_ArenaSequence_InBattle
-// 0x0160 (0x0160 - 0x0000)
+// 0x0178 (0x0178 - 0x0000)
 struct BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsServer_ReturnValue;                     // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalArenaInstanceModel*                 CallFunc_GetInstanceModel_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaTime;                            // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalArenaInstanceModel*                 CallFunc_GetInstanceModel_ReturnValue_1;           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalArenaSequencer*                     CallFunc_GetOuterSequencer_ReturnValue;            // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_CalcRemainBattleTime_ReturnValue;         // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class APalCharacter*>                  CallFunc_GetInBattleCharacterAll_ReturnValue;      // 0x0040(0x0010)(ReferenceParm)
-	class APalCharacter*                          CallFunc_Array_Get_Item;                           // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalDamageReactionComponent*            CallFunc_GetComponentByClass_ReturnValue;          // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalArenaSequencer*                     CallFunc_GetOuterSequencer_ReturnValue;            // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsServer_ReturnValue;                     // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalArenaInstanceModel*                 CallFunc_GetInstanceModel_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaTime;                            // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalArenaInstanceModel*                 CallFunc_GetInstanceModel_ReturnValue_1;           // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalArenaSequencer*                     CallFunc_GetOuterSequencer_ReturnValue_1;          // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_CalcRemainBattleTime_ReturnValue;         // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class APalCharacter*>                  CallFunc_GetInBattleCharacterAll_ReturnValue;      // 0x0050(0x0010)(ReferenceParm)
+	class APalCharacter*                          CallFunc_Array_Get_Item;                           // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalDeadInfo                           K2Node_CustomEvent_DeadInfo;                       // 0x0070(0x0050)(NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C1[0x3];                                       // 0x00C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FPalDeadInfo& DeadInfo)> K2Node_CreateDelegate_OutputDelegate;              // 0x00C8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsServer_ReturnValue_1;                   // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalArenaSequencer*                     CallFunc_GetOuterSequencer_ReturnValue_1;          // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class APalCharacter*>                  CallFunc_GetInBattleCharacterAll_ReturnValue_1;    // 0x00E8(0x0010)(ReferenceParm)
-	TDelegate<void(const struct FPalDeadInfo& DeadInfo)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x00F8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_Array_Get_Item_1;                         // 0x0108(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalDamageReactionComponent*            CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0118(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_121[0x7];                                      // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalArenaInstanceModel*                 CallFunc_GetInstanceModel_ReturnValue_2;           // 0x0128(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0130(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_CalcRemainBattleTime_ReturnValue_1;       // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0148(0x0008)(NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_InvalidateTimerHandle_ReturnValue;     // 0x0150(0x0008)(NoDestructor, HasGetValueTypeHash)
-	class UPalArenaSequencer*                     CallFunc_GetOuterSequencer_ReturnValue_2;          // 0x0158(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalDamageReactionComponent*            CallFunc_GetComponentByClass_ReturnValue;          // 0x0070(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalDeadInfo                           K2Node_CustomEvent_DeadInfo;                       // 0x0080(0x0050)(NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D1[0x3];                                       // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const struct FPalDeadInfo& DeadInfo)> K2Node_CreateDelegate_OutputDelegate;              // 0x00D8(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsServer_ReturnValue_1;                   // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalArenaSequencer*                     CallFunc_GetOuterSequencer_ReturnValue_2;          // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class APalCharacter*>                  CallFunc_GetInBattleCharacterAll_ReturnValue_1;    // 0x00F8(0x0010)(ReferenceParm)
+	TDelegate<void(const struct FPalDeadInfo& DeadInfo)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0108(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_Array_Get_Item_1;                         // 0x0118(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_124[0x4];                                      // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalDamageReactionComponent*            CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0128(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalArenaInstanceModel*                 CallFunc_GetInstanceModel_ReturnValue_2;           // 0x0138(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0140(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_CalcRemainBattleTime_ReturnValue_1;       // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0158(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_InvalidateTimerHandle_ReturnValue;     // 0x0160(0x0008)(NoDestructor, HasGetValueTypeHash)
+	class UPalArenaSequencer*                     CallFunc_GetOuterSequencer_ReturnValue_3;          // 0x0168(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalArenaSequencer*                     CallFunc_GetOuterSequencer_ReturnValue_4;          // 0x0170(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle) == 0x000008, "Wrong alignment on BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle");
-static_assert(sizeof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle) == 0x000160, "Wrong size on BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle");
+static_assert(sizeof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle) == 0x000178, "Wrong size on BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle");
 static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, EntryPoint) == 0x000000, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, Temp_int_Array_Index_Variable_1) == 0x000010, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_IsServer_ReturnValue) == 0x000014, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_IsServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_GetInstanceModel_ReturnValue) == 0x000018, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_GetInstanceModel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, K2Node_Event_DeltaTime) == 0x000020, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::K2Node_Event_DeltaTime' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_GetInstanceModel_ReturnValue_1) == 0x000028, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_GetInstanceModel_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_GetOuterSequencer_ReturnValue) == 0x000030, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_GetOuterSequencer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_CalcRemainBattleTime_ReturnValue) == 0x000038, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_CalcRemainBattleTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_GetInBattleCharacterAll_ReturnValue) == 0x000040, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_GetInBattleCharacterAll_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_Array_Get_Item) == 0x000050, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_Array_Length_ReturnValue) == 0x000058, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_GetComponentByClass_ReturnValue) == 0x000060, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, Temp_int_Loop_Counter_Variable_1) == 0x000068, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, K2Node_CustomEvent_DeadInfo) == 0x000070, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::K2Node_CustomEvent_DeadInfo' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_Less_IntInt_ReturnValue) == 0x0000C0, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000C4, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, K2Node_CreateDelegate_OutputDelegate) == 0x0000C8, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_IsServer_ReturnValue_1) == 0x0000D8, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_IsServer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_GetOuterSequencer_ReturnValue_1) == 0x0000E0, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_GetOuterSequencer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_GetInBattleCharacterAll_ReturnValue_1) == 0x0000E8, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_GetInBattleCharacterAll_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000F8, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_Array_Get_Item_1) == 0x000108, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_Array_Length_ReturnValue_1) == 0x000110, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_GetComponentByClass_ReturnValue_1) == 0x000118, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_Less_IntInt_ReturnValue_1) == 0x000120, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_GetInstanceModel_ReturnValue_2) == 0x000128, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_GetInstanceModel_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, K2Node_CreateDelegate_OutputDelegate_2) == 0x000130, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_CalcRemainBattleTime_ReturnValue_1) == 0x000140, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_CalcRemainBattleTime_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000144, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000148, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_K2_InvalidateTimerHandle_ReturnValue) == 0x000150, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_K2_InvalidateTimerHandle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_GetOuterSequencer_ReturnValue_2) == 0x000158, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_GetOuterSequencer_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_GetOuterSequencer_ReturnValue) == 0x000008, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_GetOuterSequencer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, Temp_int_Loop_Counter_Variable) == 0x000010, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, Temp_int_Array_Index_Variable) == 0x000018, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, Temp_int_Array_Index_Variable_1) == 0x00001C, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::Temp_int_Array_Index_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_IsServer_ReturnValue) == 0x000020, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_IsServer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_GetInstanceModel_ReturnValue) == 0x000028, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_GetInstanceModel_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, K2Node_Event_DeltaTime) == 0x000030, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::K2Node_Event_DeltaTime' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_GetInstanceModel_ReturnValue_1) == 0x000038, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_GetInstanceModel_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_GetOuterSequencer_ReturnValue_1) == 0x000040, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_GetOuterSequencer_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_CalcRemainBattleTime_ReturnValue) == 0x000048, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_CalcRemainBattleTime_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_GetInBattleCharacterAll_ReturnValue) == 0x000050, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_GetInBattleCharacterAll_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_Array_Get_Item) == 0x000060, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_Array_Length_ReturnValue) == 0x000068, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_GetComponentByClass_ReturnValue) == 0x000070, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, Temp_int_Loop_Counter_Variable_1) == 0x000078, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, K2Node_CustomEvent_DeadInfo) == 0x000080, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::K2Node_CustomEvent_DeadInfo' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_Less_IntInt_ReturnValue) == 0x0000D0, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000D4, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, K2Node_CreateDelegate_OutputDelegate) == 0x0000D8, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_IsServer_ReturnValue_1) == 0x0000E8, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_IsServer_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_GetOuterSequencer_ReturnValue_2) == 0x0000F0, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_GetOuterSequencer_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_GetInBattleCharacterAll_ReturnValue_1) == 0x0000F8, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_GetInBattleCharacterAll_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, K2Node_CreateDelegate_OutputDelegate_1) == 0x000108, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_Array_Get_Item_1) == 0x000118, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_Array_Length_ReturnValue_1) == 0x000120, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_GetComponentByClass_ReturnValue_1) == 0x000128, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_Less_IntInt_ReturnValue_1) == 0x000130, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_GetInstanceModel_ReturnValue_2) == 0x000138, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_GetInstanceModel_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, K2Node_CreateDelegate_OutputDelegate_2) == 0x000140, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_CalcRemainBattleTime_ReturnValue_1) == 0x000150, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_CalcRemainBattleTime_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000154, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000158, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_K2_InvalidateTimerHandle_ReturnValue) == 0x000160, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_K2_InvalidateTimerHandle_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_GetOuterSequencer_ReturnValue_3) == 0x000168, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_GetOuterSequencer_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle, CallFunc_GetOuterSequencer_ReturnValue_4) == 0x000170, "Member 'BP_ArenaSequence_InBattle_C_ExecuteUbergraph_BP_ArenaSequence_InBattle::CallFunc_GetOuterSequencer_ReturnValue_4' has a wrong offset!");
 
 // Function BP_ArenaSequence_InBattle.BP_ArenaSequence_InBattle_C.OnDeadCharacter
 // 0x0050 (0x0050 - 0x0000)
@@ -231,7 +236,7 @@ static_assert(sizeof(BP_ArenaSequence_InBattle_C_OnTimerTick__DelegateSignature)
 static_assert(offsetof(BP_ArenaSequence_InBattle_C_OnTimerTick__DelegateSignature, Time) == 0x000000, "Member 'BP_ArenaSequence_InBattle_C_OnTimerTick__DelegateSignature::Time' has a wrong offset!");
 
 // Function BP_ArenaSequence_InBattle.BP_ArenaSequence_InBattle_C.SetDisableOtomoDeadReturn
-// 0x00F8 (0x00F8 - 0x0000)
+// 0x0108 (0x0108 - 0x0000)
 struct BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn final
 {
 public:
@@ -249,20 +254,20 @@ public:
 	EPalArenaPlayerIndex                          CallFunc_Array_Get_Item;                           // 0x0084(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0085(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_86[0x2];                                       // 0x0086(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalArenaPlayerInfo                    CallFunc_Map_Find_Value;                           // 0x0088(0x0038)()
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_GetIndividualActor_ReturnValue;           // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character;         // 0x00D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalPlayerController*                   CallFunc_GetPalPlayerController_ReturnValue;       // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalOtomoHolderComponentBase*           CallFunc_GetComponentByClass_ReturnValue;          // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalArenaPlayerInfo                    CallFunc_Map_Find_Value;                           // 0x0088(0x0048)()
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetIndividualActor_ReturnValue;           // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character;         // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalPlayerController*                   CallFunc_GetPalPlayerController_ReturnValue;       // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalOtomoHolderComponentBase*           CallFunc_GetComponentByClass_ReturnValue;          // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0101(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn) == 0x000008, "Wrong alignment on BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn");
-static_assert(sizeof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn) == 0x0000F8, "Wrong size on BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn");
+static_assert(sizeof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn) == 0x000108, "Wrong size on BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn");
 static_assert(offsetof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn, Disable) == 0x000000, "Member 'BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn::Disable' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn::Temp_int_Loop_Counter_Variable' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
@@ -275,14 +280,14 @@ static_assert(offsetof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn, Ca
 static_assert(offsetof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn, CallFunc_Array_Get_Item) == 0x000084, "Member 'BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn::CallFunc_Array_Get_Item' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn, CallFunc_Less_IntInt_ReturnValue) == 0x000085, "Member 'BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn, CallFunc_Map_Find_Value) == 0x000088, "Member 'BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn, CallFunc_Map_Find_ReturnValue) == 0x0000C0, "Member 'BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn, CallFunc_GetIndividualActor_ReturnValue) == 0x0000C8, "Member 'BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn::CallFunc_GetIndividualActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn, K2Node_DynamicCast_AsPal_Player_Character) == 0x0000D0, "Member 'BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn::K2Node_DynamicCast_AsPal_Player_Character' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn, K2Node_DynamicCast_bSuccess) == 0x0000D8, "Member 'BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn, CallFunc_GetPalPlayerController_ReturnValue) == 0x0000E0, "Member 'BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn::CallFunc_GetPalPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn, CallFunc_GetComponentByClass_ReturnValue) == 0x0000E8, "Member 'BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn, CallFunc_IsValid_ReturnValue) == 0x0000F0, "Member 'BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn, CallFunc_IsValid_ReturnValue_1) == 0x0000F1, "Member 'BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn, CallFunc_Map_Find_ReturnValue) == 0x0000D0, "Member 'BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn, CallFunc_GetIndividualActor_ReturnValue) == 0x0000D8, "Member 'BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn::CallFunc_GetIndividualActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn, K2Node_DynamicCast_AsPal_Player_Character) == 0x0000E0, "Member 'BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn::K2Node_DynamicCast_AsPal_Player_Character' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn, K2Node_DynamicCast_bSuccess) == 0x0000E8, "Member 'BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn, CallFunc_GetPalPlayerController_ReturnValue) == 0x0000F0, "Member 'BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn::CallFunc_GetPalPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn, CallFunc_GetComponentByClass_ReturnValue) == 0x0000F8, "Member 'BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn, CallFunc_IsValid_ReturnValue) == 0x000100, "Member 'BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn, CallFunc_IsValid_ReturnValue_1) == 0x000101, "Member 'BP_ArenaSequence_InBattle_C_SetDisableOtomoDeadReturn::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 
 // Function BP_ArenaSequence_InBattle.BP_ArenaSequence_InBattle_C.SetInBattleControllerSetting
 // 0x0048 (0x0048 - 0x0000)

@@ -24,14 +24,14 @@ namespace ABP_Player_Head
 	struct FAnimBlueprintGeneratedMutableData;
 }
 
-namespace ABP_NPC_Base
+namespace ABP_Player_Hair
 {
 	struct FAnimBlueprintGeneratedConstantData;
 	struct FAnimBlueprintGeneratedMutableData;
 }
 
-namespace ABP_Player_Hair
+namespace ABP_NPC_Base
 {
-	struct FAnimBlueprintGeneratedConstantData;
 	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
 }

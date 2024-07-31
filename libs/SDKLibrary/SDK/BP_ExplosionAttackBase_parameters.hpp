@@ -10,13 +10,93 @@
 
 #include "Basic.hpp"
 
-#include "Pal_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Pal_structs.hpp"
 
 
 namespace SDK::Params
 {
+
+// Function BP_ExplosionAttackBase.BP_ExplosionAttackBase_C.Can Damage by Ray Check
+// 0x02A0 (0x02A0 - 0x0000)
+struct BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check final
+{
+public:
+	class UPrimitiveComponent*                    OtherHitCollision;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CanDamage;                                         // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetComponentBounds_Origin;                // 0x0010(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetComponentBounds_BoxExtent;             // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetComponentBounds_SphereRadius;          // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue;           // 0x0050(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0068(0x0010)(ConstParm, ReferenceParm)
+	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x0078(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x0090(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x00A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x00C0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_LineTraceSingle_OutHit;                   // 0x00D8(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_LineTraceSingle_ReturnValue;              // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x01C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x01C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C3[0x1];                                      // 0x01C3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x01C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x01C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CC[0x4];                                      // 0x01CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x01D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x01E8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0200(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x0218(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x0230(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x0238(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x0240(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_BoneName;                  // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_264[0x4];                                      // 0x0264(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0268(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0280(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check) == 0x000008, "Wrong alignment on BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check");
+static_assert(sizeof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check) == 0x0002A0, "Wrong size on BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, OtherHitCollision) == 0x000000, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::OtherHitCollision' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CanDamage) == 0x000008, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CanDamage' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_GetComponentBounds_Origin) == 0x000010, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_GetComponentBounds_Origin' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_GetComponentBounds_BoxExtent) == 0x000028, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_GetComponentBounds_BoxExtent' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_GetComponentBounds_SphereRadius) == 0x000040, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_GetComponentBounds_SphereRadius' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_GetOwner_ReturnValue) == 0x000048, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_Conv_FloatToVector_ReturnValue) == 0x000050, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_Conv_FloatToVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, Temp_object_Variable) == 0x000068, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_GetActorForwardVector_ReturnValue) == 0x000078, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_Multiply_VectorVector_ReturnValue) == 0x000090, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000A8, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_Add_VectorVector_ReturnValue) == 0x0000C0, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_LineTraceSingle_OutHit) == 0x0000D8, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_LineTraceSingle_OutHit' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_LineTraceSingle_ReturnValue) == 0x0001C0, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_LineTraceSingle_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_BreakHitResult_bBlockingHit) == 0x0001C1, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_BreakHitResult_bInitialOverlap) == 0x0001C2, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_BreakHitResult_Time) == 0x0001C4, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_BreakHitResult_Distance) == 0x0001C8, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_BreakHitResult_Location) == 0x0001D0, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_BreakHitResult_ImpactPoint) == 0x0001E8, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_BreakHitResult_Normal) == 0x000200, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_BreakHitResult_ImpactNormal) == 0x000218, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_BreakHitResult_PhysMat) == 0x000230, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_BreakHitResult_HitActor) == 0x000238, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_BreakHitResult_HitComponent) == 0x000240, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_BreakHitResult_HitBoneName) == 0x000248, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_BreakHitResult_BoneName) == 0x000250, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_BreakHitResult_BoneName' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_BreakHitResult_HitItem) == 0x000258, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_BreakHitResult_ElementIndex) == 0x00025C, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_BreakHitResult_FaceIndex) == 0x000260, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_BreakHitResult_TraceStart) == 0x000268, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_BreakHitResult_TraceEnd) == 0x000280, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000298, "Member 'BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
 
 // Function BP_ExplosionAttackBase.BP_ExplosionAttackBase_C.ExecuteUbergraph_BP_ExplosionAttackBase
 // 0x0098 (0x0098 - 0x0000)
@@ -160,13 +240,15 @@ public:
 	int32                                         HitCount;                                          // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 OwnerCharacter;                                    // 0x0048(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Get_Attackable_Friend_IsFriendAttack;     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Is_Attack_Able_IsHit;                     // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Get_Attackable_Friend_IsFriendAttack_1;   // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalAdditionalEffectType                      CallFunc_GetEffectType_Effect;                     // 0x0053(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetEffectValue_Value;                     // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalElementType                               CallFunc_GetElement_Element;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_Can_Damage_by_Ray_Check_CanDamage;        // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Get_Attackable_Friend_IsFriendAttack;     // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Is_Attack_Able_IsHit;                     // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Get_Attackable_Friend_IsFriendAttack_1;   // 0x0053(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalAdditionalEffectType                      CallFunc_GetEffectType_Effect;                     // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetEffectValue_Value;                     // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalElementType                               CallFunc_GetElement_Element;                       // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_FindAttacker_Attacker;                    // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EPalAttackType                                CallFunc_GetWeaponAttackType_AttackType;           // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -189,12 +271,13 @@ static_assert(offsetof(BP_ExplosionAttackBase_C_OnHit, FoliageIndex) == 0x000018
 static_assert(offsetof(BP_ExplosionAttackBase_C_OnHit, HitLocation) == 0x000028, "Member 'BP_ExplosionAttackBase_C_OnHit::HitLocation' has a wrong offset!");
 static_assert(offsetof(BP_ExplosionAttackBase_C_OnHit, HitCount) == 0x000040, "Member 'BP_ExplosionAttackBase_C_OnHit::HitCount' has a wrong offset!");
 static_assert(offsetof(BP_ExplosionAttackBase_C_OnHit, OwnerCharacter) == 0x000048, "Member 'BP_ExplosionAttackBase_C_OnHit::OwnerCharacter' has a wrong offset!");
-static_assert(offsetof(BP_ExplosionAttackBase_C_OnHit, CallFunc_Get_Attackable_Friend_IsFriendAttack) == 0x000050, "Member 'BP_ExplosionAttackBase_C_OnHit::CallFunc_Get_Attackable_Friend_IsFriendAttack' has a wrong offset!");
-static_assert(offsetof(BP_ExplosionAttackBase_C_OnHit, CallFunc_Is_Attack_Able_IsHit) == 0x000051, "Member 'BP_ExplosionAttackBase_C_OnHit::CallFunc_Is_Attack_Able_IsHit' has a wrong offset!");
-static_assert(offsetof(BP_ExplosionAttackBase_C_OnHit, CallFunc_Get_Attackable_Friend_IsFriendAttack_1) == 0x000052, "Member 'BP_ExplosionAttackBase_C_OnHit::CallFunc_Get_Attackable_Friend_IsFriendAttack_1' has a wrong offset!");
-static_assert(offsetof(BP_ExplosionAttackBase_C_OnHit, CallFunc_GetEffectType_Effect) == 0x000053, "Member 'BP_ExplosionAttackBase_C_OnHit::CallFunc_GetEffectType_Effect' has a wrong offset!");
-static_assert(offsetof(BP_ExplosionAttackBase_C_OnHit, CallFunc_GetEffectValue_Value) == 0x000054, "Member 'BP_ExplosionAttackBase_C_OnHit::CallFunc_GetEffectValue_Value' has a wrong offset!");
-static_assert(offsetof(BP_ExplosionAttackBase_C_OnHit, CallFunc_GetElement_Element) == 0x000058, "Member 'BP_ExplosionAttackBase_C_OnHit::CallFunc_GetElement_Element' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_OnHit, CallFunc_Can_Damage_by_Ray_Check_CanDamage) == 0x000050, "Member 'BP_ExplosionAttackBase_C_OnHit::CallFunc_Can_Damage_by_Ray_Check_CanDamage' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_OnHit, CallFunc_Get_Attackable_Friend_IsFriendAttack) == 0x000051, "Member 'BP_ExplosionAttackBase_C_OnHit::CallFunc_Get_Attackable_Friend_IsFriendAttack' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_OnHit, CallFunc_Is_Attack_Able_IsHit) == 0x000052, "Member 'BP_ExplosionAttackBase_C_OnHit::CallFunc_Is_Attack_Able_IsHit' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_OnHit, CallFunc_Get_Attackable_Friend_IsFriendAttack_1) == 0x000053, "Member 'BP_ExplosionAttackBase_C_OnHit::CallFunc_Get_Attackable_Friend_IsFriendAttack_1' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_OnHit, CallFunc_GetEffectType_Effect) == 0x000054, "Member 'BP_ExplosionAttackBase_C_OnHit::CallFunc_GetEffectType_Effect' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_OnHit, CallFunc_GetEffectValue_Value) == 0x000058, "Member 'BP_ExplosionAttackBase_C_OnHit::CallFunc_GetEffectValue_Value' has a wrong offset!");
+static_assert(offsetof(BP_ExplosionAttackBase_C_OnHit, CallFunc_GetElement_Element) == 0x00005C, "Member 'BP_ExplosionAttackBase_C_OnHit::CallFunc_GetElement_Element' has a wrong offset!");
 static_assert(offsetof(BP_ExplosionAttackBase_C_OnHit, CallFunc_FindAttacker_Attacker) == 0x000060, "Member 'BP_ExplosionAttackBase_C_OnHit::CallFunc_FindAttacker_Attacker' has a wrong offset!");
 static_assert(offsetof(BP_ExplosionAttackBase_C_OnHit, CallFunc_GetWeaponAttackType_AttackType) == 0x000068, "Member 'BP_ExplosionAttackBase_C_OnHit::CallFunc_GetWeaponAttackType_AttackType' has a wrong offset!");
 static_assert(offsetof(BP_ExplosionAttackBase_C_OnHit, CallFunc_GetOverlapFoliageIndexByComponent_ReturnValue) == 0x000070, "Member 'BP_ExplosionAttackBase_C_OnHit::CallFunc_GetOverlapFoliageIndexByComponent_ReturnValue' has a wrong offset!");

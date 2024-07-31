@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "EPal_AI_AlertByKilledFriendState_structs.hpp"
 #include "Engine_structs.hpp"
+#include "EPal_AI_AlertByKilledFriendState_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "BP_AIAction_CanCombatBase_classes.hpp"

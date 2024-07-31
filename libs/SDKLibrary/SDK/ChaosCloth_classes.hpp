@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "ChaosCloth_structs.hpp"
 #include "ClothingSystemRuntimeCommon_structs.hpp"
 #include "ClothingSystemRuntimeCommon_classes.hpp"
-#include "ChaosCloth_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "ClothingSystemRuntimeInterface_classes.hpp"
 

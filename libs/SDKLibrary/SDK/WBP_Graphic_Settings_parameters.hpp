@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Pal_structs.hpp"
+#include "DLSSBlueprint_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "DLSSBlueprint_structs.hpp"
 #include "Engine_structs.hpp"
 
 

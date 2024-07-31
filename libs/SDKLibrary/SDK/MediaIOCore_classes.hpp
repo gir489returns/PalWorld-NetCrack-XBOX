@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "ImageWriteQueue_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
 #include "Engine_classes.hpp"
 #include "MediaIOCore_structs.hpp"
-#include "ImageWriteQueue_structs.hpp"
 
 
 namespace SDK

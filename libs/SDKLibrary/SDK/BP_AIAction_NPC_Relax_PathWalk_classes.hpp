@@ -12,9 +12,9 @@
 
 #include "Engine_structs.hpp"
 #include "AIModule_structs.hpp"
-#include "BP_AIAction_NPC_RelaxBase_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "F_NPC_PathWalkArray_structs.hpp"
+#include "BP_AIAction_NPC_RelaxBase_classes.hpp"
 
 
 namespace SDK

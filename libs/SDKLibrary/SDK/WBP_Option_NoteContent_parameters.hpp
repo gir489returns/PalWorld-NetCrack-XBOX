@@ -10,12 +10,25 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
 {
+
+// Function WBP_Option_NoteContent.WBP_Option_NoteContent_C.Tick
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_Option_NoteContent_C_Tick final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Option_NoteContent_C_Tick) == 0x000008, "Wrong alignment on WBP_Option_NoteContent_C_Tick");
+static_assert(sizeof(WBP_Option_NoteContent_C_Tick) == 0x000048, "Wrong size on WBP_Option_NoteContent_C_Tick");
+static_assert(offsetof(WBP_Option_NoteContent_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_Option_NoteContent_C_Tick::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_Option_NoteContent_C_Tick, InDeltaTime) == 0x000040, "Member 'WBP_Option_NoteContent_C_Tick::InDeltaTime' has a wrong offset!");
 
 // Function WBP_Option_NoteContent.WBP_Option_NoteContent_C.SetNoteContent
 // 0x0020 (0x0020 - 0x0000)
@@ -98,19 +111,6 @@ public:
 static_assert(alignof(WBP_Option_NoteContent_C_ChangeOffset) == 0x000008, "Wrong alignment on WBP_Option_NoteContent_C_ChangeOffset");
 static_assert(sizeof(WBP_Option_NoteContent_C_ChangeOffset) == 0x000008, "Wrong size on WBP_Option_NoteContent_C_ChangeOffset");
 static_assert(offsetof(WBP_Option_NoteContent_C_ChangeOffset, NewOffset) == 0x000000, "Member 'WBP_Option_NoteContent_C_ChangeOffset::NewOffset' has a wrong offset!");
-
-// Function WBP_Option_NoteContent.WBP_Option_NoteContent_C.Tick
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_Option_NoteContent_C_Tick final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Option_NoteContent_C_Tick) == 0x000008, "Wrong alignment on WBP_Option_NoteContent_C_Tick");
-static_assert(sizeof(WBP_Option_NoteContent_C_Tick) == 0x000048, "Wrong size on WBP_Option_NoteContent_C_Tick");
-static_assert(offsetof(WBP_Option_NoteContent_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_Option_NoteContent_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Option_NoteContent_C_Tick, InDeltaTime) == 0x000040, "Member 'WBP_Option_NoteContent_C_Tick::InDeltaTime' has a wrong offset!");
 
 }
 

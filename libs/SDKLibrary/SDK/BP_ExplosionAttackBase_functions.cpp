@@ -17,6 +17,30 @@
 namespace SDK
 {
 
+// Function BP_ExplosionAttackBase.BP_ExplosionAttackBase_C.Can Damage by Ray Check
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPrimitiveComponent*              OtherHitCollision                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    CanDamage                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ExplosionAttackBase_C::Can_Damage_by_Ray_Check(class UPrimitiveComponent* OtherHitCollision, bool* CanDamage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ExplosionAttackBase_C", "Can Damage by Ray Check");
+
+	Params::BP_ExplosionAttackBase_C_Can_Damage_by_Ray_Check Parms{};
+
+	Parms.OtherHitCollision = OtherHitCollision;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (CanDamage != nullptr)
+		*CanDamage = Parms.CanDamage;
+}
+
+
 // Function BP_ExplosionAttackBase.BP_ExplosionAttackBase_C.DisableCollision
 // (BlueprintCallable, BlueprintEvent)
 

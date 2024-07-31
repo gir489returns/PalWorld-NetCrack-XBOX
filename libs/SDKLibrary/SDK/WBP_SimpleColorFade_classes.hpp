@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "WBP_PalFadeWidgetBase_classes.hpp"
 #include "UMG_structs.hpp"
+#include "WBP_PalFadeWidgetBase_classes.hpp"
 
 
 namespace SDK

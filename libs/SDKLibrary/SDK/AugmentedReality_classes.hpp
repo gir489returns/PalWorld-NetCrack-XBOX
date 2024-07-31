@@ -10,98 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "AugmentedReality_structs.hpp"
 #include "Engine_classes.hpp"
+#include "AugmentedReality_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
 
 
 namespace SDK
 {
-
-// Class AugmentedReality.ARTrackedGeometry
-// 0x0138 (0x0160 - 0x0028)
-#pragma pack(push, 0x1)
-class alignas(0x10) UARTrackedGeometry : public UObject
-{
-public:
-	struct FGuid                                  UniqueId;                                          // 0x0028(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             LocalToTrackingTransform;                          // 0x0040(0x0060)(IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FTransform                             LocalToAlignedTrackingTransform;                   // 0x00A0(0x0060)(IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EARTrackingState                              TrackingState;                                     // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_101[0xF];                                      // 0x0101(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMRMeshComponent*                       UnderlyingMesh;                                    // 0x0110(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EARObjectClassification                       ObjectClassification;                              // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EARSpatialMeshUsageFlags                      SpatialMeshUsageFlags;                             // 0x0119(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_11A[0x16];                                     // 0x011A(0x0016)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         LastUpdateFrameNumber;                             // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_134[0xC];                                      // 0x0134(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   DebugName;                                         // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_148[0x10];                                     // 0x0148(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	class UMRMeshComponent* GetUnderlyingMesh();
-
-	class FName GetDebugName() const;
-	int32 GetLastUpdateFrameNumber() const;
-	float GetLastUpdateTimestamp() const;
-	struct FTransform GetLocalToTrackingTransform() const;
-	struct FTransform GetLocalToWorldTransform() const;
-	class FString GetName() const;
-	EARObjectClassification GetObjectClassification() const;
-	EARTrackingState GetTrackingState() const;
-	bool HasSpatialMeshUsageFlag(const EARSpatialMeshUsageFlags InFlag) const;
-	bool IsTracked() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ARTrackedGeometry">();
-	}
-	static class UARTrackedGeometry* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UARTrackedGeometry>();
-	}
-};
-#pragma pack(pop)
-static_assert(alignof(UARTrackedGeometry) == 0x000010, "Wrong alignment on UARTrackedGeometry");
-static_assert(sizeof(UARTrackedGeometry) == 0x000160, "Wrong size on UARTrackedGeometry");
-static_assert(offsetof(UARTrackedGeometry, UniqueId) == 0x000028, "Member 'UARTrackedGeometry::UniqueId' has a wrong offset!");
-static_assert(offsetof(UARTrackedGeometry, LocalToTrackingTransform) == 0x000040, "Member 'UARTrackedGeometry::LocalToTrackingTransform' has a wrong offset!");
-static_assert(offsetof(UARTrackedGeometry, LocalToAlignedTrackingTransform) == 0x0000A0, "Member 'UARTrackedGeometry::LocalToAlignedTrackingTransform' has a wrong offset!");
-static_assert(offsetof(UARTrackedGeometry, TrackingState) == 0x000100, "Member 'UARTrackedGeometry::TrackingState' has a wrong offset!");
-static_assert(offsetof(UARTrackedGeometry, UnderlyingMesh) == 0x000110, "Member 'UARTrackedGeometry::UnderlyingMesh' has a wrong offset!");
-static_assert(offsetof(UARTrackedGeometry, ObjectClassification) == 0x000118, "Member 'UARTrackedGeometry::ObjectClassification' has a wrong offset!");
-static_assert(offsetof(UARTrackedGeometry, SpatialMeshUsageFlags) == 0x000119, "Member 'UARTrackedGeometry::SpatialMeshUsageFlags' has a wrong offset!");
-static_assert(offsetof(UARTrackedGeometry, LastUpdateFrameNumber) == 0x000130, "Member 'UARTrackedGeometry::LastUpdateFrameNumber' has a wrong offset!");
-static_assert(offsetof(UARTrackedGeometry, DebugName) == 0x000140, "Member 'UARTrackedGeometry::DebugName' has a wrong offset!");
-
-// Class AugmentedReality.ARGeoAnchor
-// 0x0010 (0x0170 - 0x0160)
-class UARGeoAnchor final : public UARTrackedGeometry
-{
-public:
-	uint8                                         Pad_158[0x18];                                     // 0x0158(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	float GetAltitudeMeters() const;
-	EARAltitudeSource GetAltitudeSource() const;
-	float GetLatitude() const;
-	float GetLongitude() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ARGeoAnchor">();
-	}
-	static class UARGeoAnchor* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UARGeoAnchor>();
-	}
-};
-static_assert(alignof(UARGeoAnchor) == 0x000010, "Wrong alignment on UARGeoAnchor");
-static_assert(sizeof(UARGeoAnchor) == 0x000170, "Wrong size on UARGeoAnchor");
 
 // Class AugmentedReality.ARActor
 // 0x0000 (0x0290 - 0x0290)
@@ -598,6 +514,31 @@ static_assert(alignof(UARMeshComponent) == 0x000010, "Wrong alignment on UARMesh
 static_assert(sizeof(UARMeshComponent) == 0x0003B0, "Wrong size on UARMeshComponent");
 static_assert(offsetof(UARMeshComponent, ReplicatedPayload) == 0x000320, "Member 'UARMeshComponent::ReplicatedPayload' has a wrong offset!");
 
+// Class AugmentedReality.ARSkyLight
+// 0x0010 (0x02B0 - 0x02A0)
+class AARSkyLight final : public ASkyLight
+{
+public:
+	class UAREnvironmentCaptureProbe*             CaptureProbe;                                      // 0x02A0(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2A8[0x8];                                      // 0x02A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void SetEnvironmentCaptureProbe(class UAREnvironmentCaptureProbe* InCaptureProbe);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"ARSkyLight">();
+	}
+	static class AARSkyLight* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AARSkyLight>();
+	}
+};
+static_assert(alignof(AARSkyLight) == 0x000008, "Wrong alignment on AARSkyLight");
+static_assert(sizeof(AARSkyLight) == 0x0002B0, "Wrong size on AARSkyLight");
+static_assert(offsetof(AARSkyLight, CaptureProbe) == 0x0002A0, "Member 'AARSkyLight::CaptureProbe' has a wrong offset!");
+
 // Class AugmentedReality.ARGeoAnchorComponent
 // 0x00A0 (0x03C0 - 0x0320)
 class UARGeoAnchorComponent final : public UARComponent
@@ -651,6 +592,51 @@ public:
 static_assert(alignof(UARDependencyHandler) == 0x000008, "Wrong alignment on UARDependencyHandler");
 static_assert(sizeof(UARDependencyHandler) == 0x000028, "Wrong size on UARDependencyHandler");
 
+// Class AugmentedReality.ARPin
+// 0x0128 (0x0150 - 0x0028)
+class UARPin final : public UObject
+{
+public:
+	class UARTrackedGeometry*                     TrackedGeometry;                                   // 0x0028(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USceneComponent*                        PinnedComponent;                                   // 0x0030(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             LocalToTrackingTransform;                          // 0x0040(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FTransform                             LocalToAlignedTrackingTransform;                   // 0x00A0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	EARTrackingState                              TrackingState;                                     // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_101[0x1F];                                     // 0x0101(0x001F)(Fixing Size After Last Property [ Dumper-7 ])
+	FMulticastInlineDelegateProperty_             OnARTrackingStateChanged;                          // 0x0120(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
+	FMulticastInlineDelegateProperty_             OnARTransformUpdated;                              // 0x0130(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_140[0x10];                                     // 0x0140(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void DebugDraw(class UWorld* World, const struct FLinearColor& Color, float Scale, float PersistForSeconds) const;
+	class FName GetDebugName() const;
+	struct FTransform GetLocalToTrackingTransform() const;
+	struct FTransform GetLocalToWorldTransform() const;
+	class USceneComponent* GetPinnedComponent() const;
+	class UARTrackedGeometry* GetTrackedGeometry() const;
+	EARTrackingState GetTrackingState() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"ARPin">();
+	}
+	static class UARPin* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UARPin>();
+	}
+};
+static_assert(alignof(UARPin) == 0x000010, "Wrong alignment on UARPin");
+static_assert(sizeof(UARPin) == 0x000150, "Wrong size on UARPin");
+static_assert(offsetof(UARPin, TrackedGeometry) == 0x000028, "Member 'UARPin::TrackedGeometry' has a wrong offset!");
+static_assert(offsetof(UARPin, PinnedComponent) == 0x000030, "Member 'UARPin::PinnedComponent' has a wrong offset!");
+static_assert(offsetof(UARPin, LocalToTrackingTransform) == 0x000040, "Member 'UARPin::LocalToTrackingTransform' has a wrong offset!");
+static_assert(offsetof(UARPin, LocalToAlignedTrackingTransform) == 0x0000A0, "Member 'UARPin::LocalToAlignedTrackingTransform' has a wrong offset!");
+static_assert(offsetof(UARPin, TrackingState) == 0x000100, "Member 'UARPin::TrackingState' has a wrong offset!");
+static_assert(offsetof(UARPin, OnARTrackingStateChanged) == 0x000120, "Member 'UARPin::OnARTrackingStateChanged' has a wrong offset!");
+static_assert(offsetof(UARPin, OnARTransformUpdated) == 0x000130, "Member 'UARPin::OnARTransformUpdated' has a wrong offset!");
+
 // Class AugmentedReality.ARGeoTrackingSupport
 // 0x0000 (0x0028 - 0x0028)
 class UARGeoTrackingSupport final : public UObject
@@ -677,6 +663,185 @@ public:
 };
 static_assert(alignof(UARGeoTrackingSupport) == 0x000008, "Wrong alignment on UARGeoTrackingSupport");
 static_assert(sizeof(UARGeoTrackingSupport) == 0x000028, "Wrong size on UARGeoTrackingSupport");
+
+// Class AugmentedReality.CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy
+// 0x0050 (0x00A0 - 0x0050)
+class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy final : public UARBaseAsyncTaskBlueprintProxy
+{
+public:
+	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0050(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_             OnFailed;                                          // 0x0060(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_70[0x30];                                      // 0x0070(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy* CheckGeoTrackingAvailability(class UObject* WorldContextObject);
+	static class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy* CheckGeoTrackingAvailabilityAtLocation(class UObject* WorldContextObject, float Longitude, float Latitude);
+
+	void GeoTrackingAvailabilityDelegate__DelegateSignature(bool bIsAvailable, const class FString& Error);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy">();
+	}
+	static class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy>();
+	}
+};
+static_assert(alignof(UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy) == 0x000008, "Wrong alignment on UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy");
+static_assert(sizeof(UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy) == 0x0000A0, "Wrong size on UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy");
+static_assert(offsetof(UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy, OnSuccess) == 0x000050, "Member 'UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy::OnSuccess' has a wrong offset!");
+static_assert(offsetof(UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy, OnFailed) == 0x000060, "Member 'UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy::OnFailed' has a wrong offset!");
+
+// Class AugmentedReality.GetGeoLocationAsyncTaskBlueprintProxy
+// 0x0058 (0x00A8 - 0x0050)
+class UGetGeoLocationAsyncTaskBlueprintProxy final : public UARBaseAsyncTaskBlueprintProxy
+{
+public:
+	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0050(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_             OnFailed;                                          // 0x0060(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_70[0x38];                                      // 0x0070(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UGetGeoLocationAsyncTaskBlueprintProxy* GetGeoLocationAtWorldPosition(class UObject* WorldContextObject, const struct FVector& WorldPosition);
+
+	void GetGeoLocationDelegate__DelegateSignature(float Longitude, float Latitude, float Altitude, const class FString& Error);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"GetGeoLocationAsyncTaskBlueprintProxy">();
+	}
+	static class UGetGeoLocationAsyncTaskBlueprintProxy* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UGetGeoLocationAsyncTaskBlueprintProxy>();
+	}
+};
+static_assert(alignof(UGetGeoLocationAsyncTaskBlueprintProxy) == 0x000008, "Wrong alignment on UGetGeoLocationAsyncTaskBlueprintProxy");
+static_assert(sizeof(UGetGeoLocationAsyncTaskBlueprintProxy) == 0x0000A8, "Wrong size on UGetGeoLocationAsyncTaskBlueprintProxy");
+static_assert(offsetof(UGetGeoLocationAsyncTaskBlueprintProxy, OnSuccess) == 0x000050, "Member 'UGetGeoLocationAsyncTaskBlueprintProxy::OnSuccess' has a wrong offset!");
+static_assert(offsetof(UGetGeoLocationAsyncTaskBlueprintProxy, OnFailed) == 0x000060, "Member 'UGetGeoLocationAsyncTaskBlueprintProxy::OnFailed' has a wrong offset!");
+
+// Class AugmentedReality.ARLifeCycleComponent
+// 0x0030 (0x02D0 - 0x02A0)
+class UARLifeCycleComponent final : public USceneComponent
+{
+public:
+	FMulticastInlineDelegateProperty_             OnARActorSpawnedDelegate;                          // 0x02A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_             OnARActorToBeDestroyedDelegate;                    // 0x02B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2C0[0x10];                                     // 0x02C0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void InstanceARActorSpawnedDelegate__DelegateSignature(class UClass* ComponentClass, const struct FGuid& NativeID, class AARActor* SpawnedActor);
+	void InstanceARActorToBeDestroyedDelegate__DelegateSignature(class AARActor* Actor);
+	void ServerDestroyARActor(class AARActor* Actor);
+	void ServerSpawnARActor(class UClass* ComponentClass, const struct FGuid& NativeID);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"ARLifeCycleComponent">();
+	}
+	static class UARLifeCycleComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UARLifeCycleComponent>();
+	}
+};
+static_assert(alignof(UARLifeCycleComponent) == 0x000010, "Wrong alignment on UARLifeCycleComponent");
+static_assert(sizeof(UARLifeCycleComponent) == 0x0002D0, "Wrong size on UARLifeCycleComponent");
+static_assert(offsetof(UARLifeCycleComponent, OnARActorSpawnedDelegate) == 0x0002A0, "Member 'UARLifeCycleComponent::OnARActorSpawnedDelegate' has a wrong offset!");
+static_assert(offsetof(UARLifeCycleComponent, OnARActorToBeDestroyedDelegate) == 0x0002B0, "Member 'UARLifeCycleComponent::OnARActorToBeDestroyedDelegate' has a wrong offset!");
+
+// Class AugmentedReality.ARSharedWorldPlayerController
+// 0x0008 (0x0858 - 0x0850)
+class AARSharedWorldPlayerController final : public APlayerController
+{
+public:
+	uint8                                         Pad_850[0x8];                                      // 0x0850(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void ClientInitSharedWorld(int32 PreviewImageSize, int32 ARWorldDataSize);
+	void ClientUpdateARWorldData(int32 Offset, const TArray<uint8>& Buffer);
+	void ClientUpdatePreviewImageData(int32 Offset, const TArray<uint8>& Buffer);
+	void ServerMarkReadyForReceiving();
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"ARSharedWorldPlayerController">();
+	}
+	static class AARSharedWorldPlayerController* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AARSharedWorldPlayerController>();
+	}
+};
+static_assert(alignof(AARSharedWorldPlayerController) == 0x000008, "Wrong alignment on AARSharedWorldPlayerController");
+static_assert(sizeof(AARSharedWorldPlayerController) == 0x000858, "Wrong size on AARSharedWorldPlayerController");
+
+// Class AugmentedReality.ARLightEstimate
+// 0x0000 (0x0028 - 0x0028)
+class UARLightEstimate : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"ARLightEstimate">();
+	}
+	static class UARLightEstimate* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UARLightEstimate>();
+	}
+};
+static_assert(alignof(UARLightEstimate) == 0x000008, "Wrong alignment on UARLightEstimate");
+static_assert(sizeof(UARLightEstimate) == 0x000028, "Wrong size on UARLightEstimate");
+
+// Class AugmentedReality.ARBasicLightEstimate
+// 0x0018 (0x0040 - 0x0028)
+class UARBasicLightEstimate final : public UARLightEstimate
+{
+public:
+	float                                         AmbientIntensityLumens;                            // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         AmbientColorTemperatureKelvin;                     // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FLinearColor                           AmbientColor;                                      // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+public:
+	struct FLinearColor GetAmbientColor() const;
+	float GetAmbientColorTemperatureKelvin() const;
+	float GetAmbientIntensityLumens() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"ARBasicLightEstimate">();
+	}
+	static class UARBasicLightEstimate* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UARBasicLightEstimate>();
+	}
+};
+static_assert(alignof(UARBasicLightEstimate) == 0x000008, "Wrong alignment on UARBasicLightEstimate");
+static_assert(sizeof(UARBasicLightEstimate) == 0x000040, "Wrong size on UARBasicLightEstimate");
+static_assert(offsetof(UARBasicLightEstimate, AmbientIntensityLumens) == 0x000028, "Member 'UARBasicLightEstimate::AmbientIntensityLumens' has a wrong offset!");
+static_assert(offsetof(UARBasicLightEstimate, AmbientColorTemperatureKelvin) == 0x00002C, "Member 'UARBasicLightEstimate::AmbientColorTemperatureKelvin' has a wrong offset!");
+static_assert(offsetof(UARBasicLightEstimate, AmbientColor) == 0x000030, "Member 'UARBasicLightEstimate::AmbientColor' has a wrong offset!");
+
+// Class AugmentedReality.AROriginActor
+// 0x0000 (0x0290 - 0x0290)
+class AAROriginActor final : public AActor
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"AROriginActor">();
+	}
+	static class AAROriginActor* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AAROriginActor>();
+	}
+};
+static_assert(alignof(AAROriginActor) == 0x000008, "Wrong alignment on AAROriginActor");
+static_assert(sizeof(AAROriginActor) == 0x000290, "Wrong size on AAROriginActor");
 
 // Class AugmentedReality.ARSessionConfig
 // 0x00E0 (0x0110 - 0x0030)
@@ -831,204 +996,6 @@ static_assert(offsetof(UARSessionConfig, GeoAnchorComponentClass) == 0x0000F8, "
 static_assert(offsetof(UARSessionConfig, DefaultMeshMaterial) == 0x000100, "Member 'UARSessionConfig::DefaultMeshMaterial' has a wrong offset!");
 static_assert(offsetof(UARSessionConfig, DefaultWireframeMeshMaterial) == 0x000108, "Member 'UARSessionConfig::DefaultWireframeMeshMaterial' has a wrong offset!");
 
-// Class AugmentedReality.CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy
-// 0x0050 (0x00A0 - 0x0050)
-class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy final : public UARBaseAsyncTaskBlueprintProxy
-{
-public:
-	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0050(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	FMulticastInlineDelegateProperty_             OnFailed;                                          // 0x0060(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_70[0x30];                                      // 0x0070(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy* CheckGeoTrackingAvailability(class UObject* WorldContextObject);
-	static class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy* CheckGeoTrackingAvailabilityAtLocation(class UObject* WorldContextObject, float Longitude, float Latitude);
-
-	void GeoTrackingAvailabilityDelegate__DelegateSignature(bool bIsAvailable, const class FString& Error);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy">();
-	}
-	static class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy>();
-	}
-};
-static_assert(alignof(UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy) == 0x000008, "Wrong alignment on UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy");
-static_assert(sizeof(UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy) == 0x0000A0, "Wrong size on UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy");
-static_assert(offsetof(UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy, OnSuccess) == 0x000050, "Member 'UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy::OnSuccess' has a wrong offset!");
-static_assert(offsetof(UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy, OnFailed) == 0x000060, "Member 'UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy::OnFailed' has a wrong offset!");
-
-// Class AugmentedReality.GetGeoLocationAsyncTaskBlueprintProxy
-// 0x0058 (0x00A8 - 0x0050)
-class UGetGeoLocationAsyncTaskBlueprintProxy final : public UARBaseAsyncTaskBlueprintProxy
-{
-public:
-	FMulticastInlineDelegateProperty_             OnSuccess;                                         // 0x0050(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	FMulticastInlineDelegateProperty_             OnFailed;                                          // 0x0060(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_70[0x38];                                      // 0x0070(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UGetGeoLocationAsyncTaskBlueprintProxy* GetGeoLocationAtWorldPosition(class UObject* WorldContextObject, const struct FVector& WorldPosition);
-
-	void GetGeoLocationDelegate__DelegateSignature(float Longitude, float Latitude, float Altitude, const class FString& Error);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"GetGeoLocationAsyncTaskBlueprintProxy">();
-	}
-	static class UGetGeoLocationAsyncTaskBlueprintProxy* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UGetGeoLocationAsyncTaskBlueprintProxy>();
-	}
-};
-static_assert(alignof(UGetGeoLocationAsyncTaskBlueprintProxy) == 0x000008, "Wrong alignment on UGetGeoLocationAsyncTaskBlueprintProxy");
-static_assert(sizeof(UGetGeoLocationAsyncTaskBlueprintProxy) == 0x0000A8, "Wrong size on UGetGeoLocationAsyncTaskBlueprintProxy");
-static_assert(offsetof(UGetGeoLocationAsyncTaskBlueprintProxy, OnSuccess) == 0x000050, "Member 'UGetGeoLocationAsyncTaskBlueprintProxy::OnSuccess' has a wrong offset!");
-static_assert(offsetof(UGetGeoLocationAsyncTaskBlueprintProxy, OnFailed) == 0x000060, "Member 'UGetGeoLocationAsyncTaskBlueprintProxy::OnFailed' has a wrong offset!");
-
-// Class AugmentedReality.ARLifeCycleComponent
-// 0x0030 (0x02D0 - 0x02A0)
-class UARLifeCycleComponent final : public USceneComponent
-{
-public:
-	FMulticastInlineDelegateProperty_             OnARActorSpawnedDelegate;                          // 0x02A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	FMulticastInlineDelegateProperty_             OnARActorToBeDestroyedDelegate;                    // 0x02B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2C0[0x10];                                     // 0x02C0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void InstanceARActorSpawnedDelegate__DelegateSignature(class UClass* ComponentClass, const struct FGuid& NativeID, class AARActor* SpawnedActor);
-	void InstanceARActorToBeDestroyedDelegate__DelegateSignature(class AARActor* Actor);
-	void ServerDestroyARActor(class AARActor* Actor);
-	void ServerSpawnARActor(class UClass* ComponentClass, const struct FGuid& NativeID);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ARLifeCycleComponent">();
-	}
-	static class UARLifeCycleComponent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UARLifeCycleComponent>();
-	}
-};
-static_assert(alignof(UARLifeCycleComponent) == 0x000010, "Wrong alignment on UARLifeCycleComponent");
-static_assert(sizeof(UARLifeCycleComponent) == 0x0002D0, "Wrong size on UARLifeCycleComponent");
-static_assert(offsetof(UARLifeCycleComponent, OnARActorSpawnedDelegate) == 0x0002A0, "Member 'UARLifeCycleComponent::OnARActorSpawnedDelegate' has a wrong offset!");
-static_assert(offsetof(UARLifeCycleComponent, OnARActorToBeDestroyedDelegate) == 0x0002B0, "Member 'UARLifeCycleComponent::OnARActorToBeDestroyedDelegate' has a wrong offset!");
-
-// Class AugmentedReality.ARLightEstimate
-// 0x0000 (0x0028 - 0x0028)
-class UARLightEstimate : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ARLightEstimate">();
-	}
-	static class UARLightEstimate* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UARLightEstimate>();
-	}
-};
-static_assert(alignof(UARLightEstimate) == 0x000008, "Wrong alignment on UARLightEstimate");
-static_assert(sizeof(UARLightEstimate) == 0x000028, "Wrong size on UARLightEstimate");
-
-// Class AugmentedReality.ARBasicLightEstimate
-// 0x0018 (0x0040 - 0x0028)
-class UARBasicLightEstimate final : public UARLightEstimate
-{
-public:
-	float                                         AmbientIntensityLumens;                            // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         AmbientColorTemperatureKelvin;                     // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FLinearColor                           AmbientColor;                                      // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-
-public:
-	struct FLinearColor GetAmbientColor() const;
-	float GetAmbientColorTemperatureKelvin() const;
-	float GetAmbientIntensityLumens() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ARBasicLightEstimate">();
-	}
-	static class UARBasicLightEstimate* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UARBasicLightEstimate>();
-	}
-};
-static_assert(alignof(UARBasicLightEstimate) == 0x000008, "Wrong alignment on UARBasicLightEstimate");
-static_assert(sizeof(UARBasicLightEstimate) == 0x000040, "Wrong size on UARBasicLightEstimate");
-static_assert(offsetof(UARBasicLightEstimate, AmbientIntensityLumens) == 0x000028, "Member 'UARBasicLightEstimate::AmbientIntensityLumens' has a wrong offset!");
-static_assert(offsetof(UARBasicLightEstimate, AmbientColorTemperatureKelvin) == 0x00002C, "Member 'UARBasicLightEstimate::AmbientColorTemperatureKelvin' has a wrong offset!");
-static_assert(offsetof(UARBasicLightEstimate, AmbientColor) == 0x000030, "Member 'UARBasicLightEstimate::AmbientColor' has a wrong offset!");
-
-// Class AugmentedReality.AROriginActor
-// 0x0000 (0x0290 - 0x0290)
-class AAROriginActor final : public AActor
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AROriginActor">();
-	}
-	static class AAROriginActor* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AAROriginActor>();
-	}
-};
-static_assert(alignof(AAROriginActor) == 0x000008, "Wrong alignment on AAROriginActor");
-static_assert(sizeof(AAROriginActor) == 0x000290, "Wrong size on AAROriginActor");
-
-// Class AugmentedReality.ARPin
-// 0x0128 (0x0150 - 0x0028)
-class UARPin final : public UObject
-{
-public:
-	class UARTrackedGeometry*                     TrackedGeometry;                                   // 0x0028(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USceneComponent*                        PinnedComponent;                                   // 0x0030(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             LocalToTrackingTransform;                          // 0x0040(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FTransform                             LocalToAlignedTrackingTransform;                   // 0x00A0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	EARTrackingState                              TrackingState;                                     // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_101[0x1F];                                     // 0x0101(0x001F)(Fixing Size After Last Property [ Dumper-7 ])
-	FMulticastInlineDelegateProperty_             OnARTrackingStateChanged;                          // 0x0120(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
-	FMulticastInlineDelegateProperty_             OnARTransformUpdated;                              // 0x0130(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_140[0x10];                                     // 0x0140(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void DebugDraw(class UWorld* World, const struct FLinearColor& Color, float Scale, float PersistForSeconds) const;
-	class FName GetDebugName() const;
-	struct FTransform GetLocalToTrackingTransform() const;
-	struct FTransform GetLocalToWorldTransform() const;
-	class USceneComponent* GetPinnedComponent() const;
-	class UARTrackedGeometry* GetTrackedGeometry() const;
-	EARTrackingState GetTrackingState() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ARPin">();
-	}
-	static class UARPin* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UARPin>();
-	}
-};
-static_assert(alignof(UARPin) == 0x000010, "Wrong alignment on UARPin");
-static_assert(sizeof(UARPin) == 0x000150, "Wrong size on UARPin");
-static_assert(offsetof(UARPin, TrackedGeometry) == 0x000028, "Member 'UARPin::TrackedGeometry' has a wrong offset!");
-static_assert(offsetof(UARPin, PinnedComponent) == 0x000030, "Member 'UARPin::PinnedComponent' has a wrong offset!");
-static_assert(offsetof(UARPin, LocalToTrackingTransform) == 0x000040, "Member 'UARPin::LocalToTrackingTransform' has a wrong offset!");
-static_assert(offsetof(UARPin, LocalToAlignedTrackingTransform) == 0x0000A0, "Member 'UARPin::LocalToAlignedTrackingTransform' has a wrong offset!");
-static_assert(offsetof(UARPin, TrackingState) == 0x000100, "Member 'UARPin::TrackingState' has a wrong offset!");
-static_assert(offsetof(UARPin, OnARTrackingStateChanged) == 0x000120, "Member 'UARPin::OnARTrackingStateChanged' has a wrong offset!");
-static_assert(offsetof(UARPin, OnARTransformUpdated) == 0x000130, "Member 'UARPin::OnARTransformUpdated' has a wrong offset!");
-
 // Class AugmentedReality.ARSharedWorldGameMode
 // 0x0068 (0x03E0 - 0x0378)
 class AARSharedWorldGameMode final : public AGameMode
@@ -1091,57 +1058,6 @@ static_assert(offsetof(AARSharedWorldGameState, PreviewImageBytesTotal) == 0x000
 static_assert(offsetof(AARSharedWorldGameState, ARWorldBytesTotal) == 0x000324, "Member 'AARSharedWorldGameState::ARWorldBytesTotal' has a wrong offset!");
 static_assert(offsetof(AARSharedWorldGameState, PreviewImageBytesDelivered) == 0x000328, "Member 'AARSharedWorldGameState::PreviewImageBytesDelivered' has a wrong offset!");
 static_assert(offsetof(AARSharedWorldGameState, ARWorldBytesDelivered) == 0x00032C, "Member 'AARSharedWorldGameState::ARWorldBytesDelivered' has a wrong offset!");
-
-// Class AugmentedReality.ARSharedWorldPlayerController
-// 0x0008 (0x0858 - 0x0850)
-class AARSharedWorldPlayerController final : public APlayerController
-{
-public:
-	uint8                                         Pad_850[0x8];                                      // 0x0850(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void ClientInitSharedWorld(int32 PreviewImageSize, int32 ARWorldDataSize);
-	void ClientUpdateARWorldData(int32 Offset, const TArray<uint8>& Buffer);
-	void ClientUpdatePreviewImageData(int32 Offset, const TArray<uint8>& Buffer);
-	void ServerMarkReadyForReceiving();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ARSharedWorldPlayerController">();
-	}
-	static class AARSharedWorldPlayerController* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AARSharedWorldPlayerController>();
-	}
-};
-static_assert(alignof(AARSharedWorldPlayerController) == 0x000008, "Wrong alignment on AARSharedWorldPlayerController");
-static_assert(sizeof(AARSharedWorldPlayerController) == 0x000858, "Wrong size on AARSharedWorldPlayerController");
-
-// Class AugmentedReality.ARSkyLight
-// 0x0010 (0x02B0 - 0x02A0)
-class AARSkyLight final : public ASkyLight
-{
-public:
-	class UAREnvironmentCaptureProbe*             CaptureProbe;                                      // 0x02A0(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2A8[0x8];                                      // 0x02A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void SetEnvironmentCaptureProbe(class UAREnvironmentCaptureProbe* InCaptureProbe);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ARSkyLight">();
-	}
-	static class AARSkyLight* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AARSkyLight>();
-	}
-};
-static_assert(alignof(AARSkyLight) == 0x000008, "Wrong alignment on AARSkyLight");
-static_assert(sizeof(AARSkyLight) == 0x0002B0, "Wrong size on AARSkyLight");
-static_assert(offsetof(AARSkyLight, CaptureProbe) == 0x0002A0, "Member 'AARSkyLight::CaptureProbe' has a wrong offset!");
 
 // Class AugmentedReality.ARTexture
 // 0x0030 (0x0220 - 0x01F0)
@@ -1261,6 +1177,64 @@ public:
 };
 static_assert(alignof(UARTraceResultDummy) == 0x000008, "Wrong alignment on UARTraceResultDummy");
 static_assert(sizeof(UARTraceResultDummy) == 0x000028, "Wrong size on UARTraceResultDummy");
+
+// Class AugmentedReality.ARTrackedGeometry
+// 0x0138 (0x0160 - 0x0028)
+#pragma pack(push, 0x1)
+class alignas(0x10) UARTrackedGeometry : public UObject
+{
+public:
+	struct FGuid                                  UniqueId;                                          // 0x0028(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             LocalToTrackingTransform;                          // 0x0040(0x0060)(IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FTransform                             LocalToAlignedTrackingTransform;                   // 0x00A0(0x0060)(IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EARTrackingState                              TrackingState;                                     // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_101[0xF];                                      // 0x0101(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMRMeshComponent*                       UnderlyingMesh;                                    // 0x0110(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EARObjectClassification                       ObjectClassification;                              // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EARSpatialMeshUsageFlags                      SpatialMeshUsageFlags;                             // 0x0119(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_11A[0x16];                                     // 0x011A(0x0016)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LastUpdateFrameNumber;                             // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_134[0xC];                                      // 0x0134(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   DebugName;                                         // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_148[0x10];                                     // 0x0148(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	class UMRMeshComponent* GetUnderlyingMesh();
+
+	class FName GetDebugName() const;
+	int32 GetLastUpdateFrameNumber() const;
+	float GetLastUpdateTimestamp() const;
+	struct FTransform GetLocalToTrackingTransform() const;
+	struct FTransform GetLocalToWorldTransform() const;
+	class FString GetName() const;
+	EARObjectClassification GetObjectClassification() const;
+	EARTrackingState GetTrackingState() const;
+	bool HasSpatialMeshUsageFlag(const EARSpatialMeshUsageFlags InFlag) const;
+	bool IsTracked() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"ARTrackedGeometry">();
+	}
+	static class UARTrackedGeometry* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UARTrackedGeometry>();
+	}
+};
+#pragma pack(pop)
+static_assert(alignof(UARTrackedGeometry) == 0x000010, "Wrong alignment on UARTrackedGeometry");
+static_assert(sizeof(UARTrackedGeometry) == 0x000160, "Wrong size on UARTrackedGeometry");
+static_assert(offsetof(UARTrackedGeometry, UniqueId) == 0x000028, "Member 'UARTrackedGeometry::UniqueId' has a wrong offset!");
+static_assert(offsetof(UARTrackedGeometry, LocalToTrackingTransform) == 0x000040, "Member 'UARTrackedGeometry::LocalToTrackingTransform' has a wrong offset!");
+static_assert(offsetof(UARTrackedGeometry, LocalToAlignedTrackingTransform) == 0x0000A0, "Member 'UARTrackedGeometry::LocalToAlignedTrackingTransform' has a wrong offset!");
+static_assert(offsetof(UARTrackedGeometry, TrackingState) == 0x000100, "Member 'UARTrackedGeometry::TrackingState' has a wrong offset!");
+static_assert(offsetof(UARTrackedGeometry, UnderlyingMesh) == 0x000110, "Member 'UARTrackedGeometry::UnderlyingMesh' has a wrong offset!");
+static_assert(offsetof(UARTrackedGeometry, ObjectClassification) == 0x000118, "Member 'UARTrackedGeometry::ObjectClassification' has a wrong offset!");
+static_assert(offsetof(UARTrackedGeometry, SpatialMeshUsageFlags) == 0x000119, "Member 'UARTrackedGeometry::SpatialMeshUsageFlags' has a wrong offset!");
+static_assert(offsetof(UARTrackedGeometry, LastUpdateFrameNumber) == 0x000130, "Member 'UARTrackedGeometry::LastUpdateFrameNumber' has a wrong offset!");
+static_assert(offsetof(UARTrackedGeometry, DebugName) == 0x000140, "Member 'UARTrackedGeometry::DebugName' has a wrong offset!");
 
 // Class AugmentedReality.ARPlaneGeometry
 // 0x0050 (0x01B0 - 0x0160)
@@ -1503,6 +1477,32 @@ public:
 };
 static_assert(alignof(UARMeshGeometry) == 0x000010, "Wrong alignment on UARMeshGeometry");
 static_assert(sizeof(UARMeshGeometry) == 0x000160, "Wrong size on UARMeshGeometry");
+
+// Class AugmentedReality.ARGeoAnchor
+// 0x0010 (0x0170 - 0x0160)
+class UARGeoAnchor final : public UARTrackedGeometry
+{
+public:
+	uint8                                         Pad_158[0x18];                                     // 0x0158(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	float GetAltitudeMeters() const;
+	EARAltitudeSource GetAltitudeSource() const;
+	float GetLatitude() const;
+	float GetLongitude() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"ARGeoAnchor">();
+	}
+	static class UARGeoAnchor* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UARGeoAnchor>();
+	}
+};
+static_assert(alignof(UARGeoAnchor) == 0x000010, "Wrong alignment on UARGeoAnchor");
+static_assert(sizeof(UARGeoAnchor) == 0x000170, "Wrong size on UARGeoAnchor");
 
 // Class AugmentedReality.ARTrackableNotifyComponent
 // 0x0150 (0x01F0 - 0x00A0)
